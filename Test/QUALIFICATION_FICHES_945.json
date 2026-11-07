@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-29",
+  "nature": "Rattachement automatique ;ne renseigne pas la recette utilisateur",
+  "sources_humaines_sha256": {
+    "docs/recette/CAHIER_RECETTE_HISABPRO.xlsx": "a857310bf3a2cf78413f7fcb56d280592a215478507fcae985008cafe57cf837"
+  },
+  "fiches": [
+    {
+      "fiche": "HP-FIS-033",
+      "objectif_source": "Variante TVA encaissement",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Partiel",
+      "methode": "API réelle,copie TVA ciblée ;annualité795distincte au débit",
+      "portee": "Nouvelle société encaissement :avance24000TTC(20000HT/4000TVA),facture120000HT/solde120000TTC sans doubleTVA,impayée14400et chèque2000rejeté :juin24000,décembre0. Pas de rejeu des50opérations annuelles dans ce régime,ni de simulation de changement du régime de pièces validées.",
+      "tests_executés": [
+        "Test.test_tva_imputations945_isole::test_945_variante_encaissement_impaye_et_acompte_du_cahier"
+      ],
+      "limites": "Déclarations de contrôle sans gel de dépôt ;pas de donnée réelle ni nouvelleODTVAautomatique. Sources historiques inconnues signalées,sans réparation. Rejets après encaissement sur périodes déjà déclarées et ventilation comptable inter-périodes restent à qualifier. HP-FIS-033Partiel :copieTVAciblée,sans reprise complète des50opérations annuelles au régime encaissement ;statut humain Non testé. Anciennes qualifications restent des preuves historiques,pas une réexécution globale sur945."
+    }
+  ],
+  "apres": {
+    "Réussi": 236,
+    "Partiel": 7,
+    "Non qualifié par fiche": 19,
+    "Bloqué (source)": 10
+  }
+}

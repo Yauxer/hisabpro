@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "lot": 765,
+  "cas_existants_regroupes": 272,
+  "statuts_initiaux": {
+    "Non testé": 262,
+    "Bloqué": 10
+  },
+  "sources": [
+    {
+      "campagne": "PRINCIPAL",
+      "fichier": "CAHIER_RECETTE_HISABPRO.xlsx",
+      "sha256": "a857310bf3a2cf78413f7fcb56d280592a215478507fcae985008cafe57cf837",
+      "cas": 218,
+      "limite": "Société ATLAS RECETTE 2025 ; exercice complet puis ouverture 2026. Suivre Ordre de passage.",
+      "guide": "CAHIER_RECETTE_HISABPRO.pdf"
+    },
+    {
+      "campagne": "F755",
+      "fichier": "CAHIER_RECETTE_FISCALE_755.xlsx",
+      "sha256": "9595c7dc9bbb7b0ea4b2e0be20950f520820ce3a2a7d8fc0c264ea86af12d6bb",
+      "cas": 14,
+      "limite": "Société neuve ATLAS CONSEIL 755 ; balances N/N-1. Solde proposé 3 650 MAD ; aucune écriture au Journal.",
+      "guide": "CAHIER_RECETTE_FISCALE_755.docx"
+    },
+    {
+      "campagne": "TIERS759",
+      "fichier": "MODE_EMPLOI_TIERS759.xlsx",
+      "sha256": "040c93d8ed3e611b0c628192154a961fb5c438614c48745a7fcdaaf73c5561f7",
+      "cas": 8,
+      "limite": "Copie/société fictive dédiée ; oracles documentaires 1 400 / 740 / 37. Ne pas les assimiler aux honoraires 21 500 de 755.",
+      "guide": "MODE_EMPLOI_TIERS759.docx"
+    },
+    {
+      "campagne": "TP761",
+      "fichier": "MODE_EMPLOI_TP761.xlsx",
+      "sha256": "5a1f9a339b7d6db19cd119905725bc79f91eee5532f1df1113489321c2ad7436",
+      "cas": 8,
+      "limite": "Copie/société fictive dédiée ; VL 42 000, brut 7 200, avis 7 400, écart −200 ; aucun impôt dû confirmé.",
+      "guide": "MODE_EMPLOI_TP761.docx"
+    },
+    {
+      "campagne": "CR749",
+      "fichier": "MODE_EMPLOI_CREDITS_IS_749.xlsx",
+      "sha256": "ae65de37039afe7e67c6c2ec65ce212a9481dc7593e887297a9c2c3cec2461bf",
+      "cas": 8,
+      "limite": "Variante indépendante de crédits ; ne pas ajouter ses montants à 755.",
+      "guide": "MODE_EMPLOI_CREDITS_IS_749.docx"
+    },
+    {
+      "campagne": "AP751",
+      "fichier": "MODE_EMPLOI_ACOMPTES_IS_751.xlsx",
+      "sha256": "4ace1ddb918af67022186df5e3c4e63e02bb977795a572234c71e18142252229",
+      "cas": 8,
+      "limite": "Variante indépendante d’acomptes ; ne pas ajouter ses montants à 755.",
+      "guide": "MODE_EMPLOI_ACOMPTES_IS_751.docx"
+    },
+    {
+      "campagne": "LIQ753",
+      "fichier": "MODE_EMPLOI_LIQUIDATION_753.xlsx",
+      "sha256": "73cc8dd672d0aeff802b175c146c1dbd8d7db55dc40117715615c9fcc9c7c314",
+      "cas": 8,
+      "limite": "Variante indépendante ; maximum 3 000 − crédits 325 − acomptes 1 250 = solde proposé 1 425 MAD, distinct de 3 650 de 755.",
+      "guide": "MODE_EMPLOI_LIQUIDATION_753.docx"
+    }
+  ],
+  "recette_utilisateur_executee": false,
+  "formules_office_executees": false,
+  "base_consultee": false,
+  "nouvelles_regles_fiscales": false,
+  "RH_paie_et_point6": "différés",
+  "autres_annexes": "distinctes, non intégrées à ces 272 cas"
+}

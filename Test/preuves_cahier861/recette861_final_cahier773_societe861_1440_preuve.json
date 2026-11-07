@@ -1,0 +1,30 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_pnjq261z",
+  "nonce": "926d88ce570b45078d2fb6bc8e549413",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-SEC-010",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "societe861": {
+    "societe_A": 8,
+    "societe_B": 9,
+    "brouillon_non_transmis": true,
+    "profil_A_conserve": true,
+    "profil_B_conserve": true,
+    "role_recharge": "lecture",
+    "creation_directe_refusee": 403,
+    "temoin_A_invisible_B": true,
+    "core_A_conserve": true,
+    "core_B_vide": true,
+    "aucun_PATCH_profil": true,
+    "limite": "Préconditions créées par API fictive ; formulaire, sélection de société et contrôle des commandes exécutés dans Edge réel. Le rechargement après bascule est le comportement existant."
+  }
+}

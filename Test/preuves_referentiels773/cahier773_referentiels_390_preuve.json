@@ -1,0 +1,123 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_6nko0dif",
+  "nonce": "e5514a0299a140d7a2846885c6e53974",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [
+    {
+      "id": "HP-ADM-006",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-007",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-008",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-009",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-010",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-011",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-012",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-013",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-014",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-015",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    }
+  ],
+  "tiers": {
+    "C-MARCH": {
+      "id": 10,
+      "compte": "3421",
+      "auxiliaire": "C00000010"
+    },
+    "C-SERVICE": {
+      "id": 11,
+      "compte": "3421",
+      "auxiliaire": "C00000011"
+    },
+    "C-IMPAYE": {
+      "id": 12,
+      "compte": "3421",
+      "auxiliaire": "C00000012"
+    },
+    "F-MARCH": {
+      "id": 13,
+      "compte": "4411",
+      "auxiliaire": "F00000013"
+    },
+    "F-SERVICE": {
+      "id": 14,
+      "compte": "4411",
+      "auxiliaire": "F00000014"
+    },
+    "F-CONTROLE": {
+      "id": 15,
+      "compte": "4411",
+      "auxiliaire": "F00000015"
+    },
+    "F-IMMO": {
+      "id": 16,
+      "compte": "4481",
+      "auxiliaire": "F00000016"
+    }
+  },
+  "articles": {
+    "M-01": {
+      "id": 4,
+      "stockable": true,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": "6111",
+      "compte_vente": "7111"
+    },
+    "S-VTE": {
+      "id": 5,
+      "stockable": false,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": null,
+      "compte_vente": "7124"
+    },
+    "S-ACH": {
+      "id": 6,
+      "stockable": false,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": "6125",
+      "compte_vente": null
+    }
+  },
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier."
+}

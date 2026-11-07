@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="55.321" timestamp="2026-10-28T12:48:24.084630+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_paie891_variables_isole" name="test_891_variable_saisie_et_decision_personnel_edge[1440]" time="37.438"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: None&#10;Error: strict mode violation: get_by_text(&quot;Approuvée&quot;) resolved to 2 elements:&#10;    1) &lt;option value=&quot;APPROUVE&quot;&gt;Approuvée&lt;/option&gt; aka get_by_label(&quot;Statut des variables&quot;)&#10;    2) &lt;p&gt;002 · 2026-11 · Approuvée&lt;/p&gt; aka get_by_text(&quot;· 2026-11 · Approuvée&quot;)&#10; &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; get_by_text(&quot;Approuvée&quot;) with timeout 5000ms&#10;  - waiting for get_by_text(&quot;Approuvée&quot;)">application = {'api_url': 'http://127.0.0.1:51214', 'web_url': 'http://127.0.0.1:51215', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_8jhfloir'), 'nonce': '948f979d092945c694d8345875a92e73', ...}, ...}
+largeur = 1440
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_891_variable_saisie_et_decision_personnel_edge(application,largeur):
+        app=application
+        with closing(client(app)[0]) as admin:
+            prep,u,mail,secret=role_client(app,admin,'personnel');valid,v,mailv,secretv=role_client(app,admin,'personnel')
+            with closing(prep),closing(valid):
+                droit=None
+                for uid in [u['id'],v['id']]:
+                    for cap in CAPS:
+                        g=grant(admin,uid,cap)
+                        if uid==u['id'] and cap=='personnel.lire_remuneration':droit=g['id']
+                activer(admin);sid=ok(admin.get('/api/auth/me'))['societe_id'];eq={'a':prep,'b':valid,'uid':u['id'],'bid':v['id'],'sid':sid}
+                eid,_=avec_salaire(eq);rid=rubrique(eq,formule='MONTANT' if largeur==1440 else 'QUANTITE_TAUX');avant=comptabilite(app,sid)
+                with sync_playwright() as p:
+                    browser=p.chromium.launch(executable_path=chromium_executable(),headless=True)
+                    try:
+                        cp=browser.new_context(viewport={'width':largeur,'height':1000});cv=browser.new_context(viewport={'width':largeur,'height':1000});page=cp.new_page();review=cv.new_page()
+                        ep,sp=observer(page,app['api_url']);ev,sv=observer(review,app['api_url'])
+                        connexion_personnel(page,app,mail,secret);connexion_personnel(review,app,mailv,secretv)
+                        page.goto(app['web_url']+'/personnel-paie/elements/variables');page.get_by_label('Mois des variables',exact=True).fill('2026-11')
+                        page.get_by_role('button',name='Saisir une variable',exact=True).click();d=page.get_by_role('dialog')
+                        d.get_by_label('Période de la variable',exact=True).fill('2026-11');d.get_by_label('Date d’effet de la variable',exact=True).fill('2026-11-15')
+                        d.get_by_label('Salarié de la variable',exact=True).select_option(str(eid));d.get_by_label('Rubrique de la variable',exact=True).select_option(str(rid))
+                        if largeur==1440:d.get_by_label('Montant de la variable (MAD)',exact=True).fill('800.01')
+                        else:
+                            d.get_by_label('Quantité de la variable',exact=True).fill('3');d.get_by_label('Taux unitaire de la variable (MAD)',exact=True).fill('0.335')
+                        d.get_by_label('Référence justificatif ATTESTATION_FICTIVE',exact=True).fill('JUSTIFICATIF-UI-FICTIF891')
+                        d.get_by_label('Référence de la source de la variable',exact=True).fill('SOURCE-UI-FICTIVE891');d.get_by_label('Motif de saisie de la variable',exact=True).fill('Saisie fictive891')
+                        d.get_by_role('button',name='Enregistrer le brouillon',exact=True).click();expect(d).to_have_count(0)
+                        item=ok(prep.get(V))['elements'][0];i=item['id'];assert item['montant']==('800.01' if largeur==1440 else '1.01')
+                        page.get_by_role('button',name=f'Consulter la variable {i}',exact=True).click();expect(page.get_by_text('Rémunération contractuelle à cette date : 9000.10 MAD',exact=False)).to_be_visible()
+                        page.get_by_role('button',name=f'Soumettre la variable {i}',exact=True).click();d=page.get_by_role('dialog');d.get_by_label('Motif de l’action sur la variable',exact=True).fill('Soumission fictive891');d.get_by_role('button',name='Confirmer l’action',exact=True).click();expect(d).to_have_count(0)
+                        review.goto(app['web_url']+'/personnel-paie/elements/variables');review.get_by_label('Mois des variables',exact=True).fill('2026-11');review.get_by_role('button',name=f'Consulter la variable {i}',exact=True).click()
+                        expect(review.get_by_text('ATTESTATION_FICTIVE : JUSTIFICATIF-UI-FICTIF891',exact=True)).to_be_visible()
+                        review.get_by_role('button',name=f'Approuver la variable {i}',exact=True).click();d=review.get_by_role('dialog')
+                        d.get_by_label('Motif de l’action sur la variable',exact=True).fill('Approbation indépendante fictive891');d.get_by_label('Référence du contrôle de la variable',exact=True).fill('CONTROLE-UI-FICTIF891')
+                        d.get_by_label('Je suis indépendant du préparateur et du bénéficiaire de cette variable.',exact=True).check();d.get_by_label('J’ai vérifié la source et les justificatifs de cette variable.',exact=True).check()
+                        d.get_by_role('button',name='Confirmer l’action',exact=True).click();expect(d).to_have_count(0)
+                        page.get_by_role('button',name='Actualiser',exact=True).click();expect(page.get_by_label('Mois des variables',exact=True)).to_have_value('2026-11')
+&gt;                       expect(page.get_by_text('Approuvée',exact=False)).to_be_visible();assert ok(prep.get(f'{V}/{i}'))['statut']=='APPROUVE'
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E                       AssertionError: Locator expected to be visible
+E                       Actual value: None
+E                       Error: strict mode violation: get_by_text("Approuvée") resolved to 2 elements:
+E                           1) &lt;option value="APPROUVE"&gt;Approuvée&lt;/option&gt; aka get_by_label("Statut des variables")
+E                           2) &lt;p&gt;002 · 2026-11 · Approuvée&lt;/p&gt; aka get_by_text("· 2026-11 · Approuvée")
+E                        
+E                       Call log:
+E                         - Expect "to_be_visible" get_by_text("Approuvée") with timeout 5000ms
+E                         - waiting for get_by_text("Approuvée")
+
+Test\test_e2e_paie891_variables_isole.py:54: AssertionError</failure></testcase><testcase classname="Test.test_e2e_paie891_variables_isole" name="test_891_variable_saisie_et_decision_personnel_edge[390]" time="13.972"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: None&#10;Error: strict mode violation: get_by_text(&quot;Approuvée&quot;) resolved to 2 elements:&#10;    1) &lt;option value=&quot;APPROUVE&quot;&gt;Approuvée&lt;/option&gt; aka get_by_label(&quot;Statut des variables&quot;)&#10;    2) &lt;p&gt;002 · 2026-11 · Approuvée&lt;/p&gt; aka get_by_text(&quot;· 2026-11 · Approuvée&quot;)&#10; &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; get_by_text(&quot;Approuvée&quot;) with timeout 5000ms&#10;  - waiting for get_by_text(&quot;Approuvée&quot;)&#10;    - locator resolved to &lt;option value=&quot;APPROUVE&quot;&gt;Approuvée&lt;/option&gt;&#10;    - unexpected value &quot;hidden&quot;">application = {'api_url': 'http://127.0.0.1:51214', 'web_url': 'http://127.0.0.1:51215', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_8jhfloir'), 'nonce': '948f979d092945c694d8345875a92e73', ...}, ...}
+largeur = 390
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_891_variable_saisie_et_decision_personnel_edge(application,largeur):
+        app=application
+        with closing(client(app)[0]) as admin:
+            prep,u,mail,secret=role_client(app,admin,'personnel');valid,v,mailv,secretv=role_client(app,admin,'personnel')
+            with closing(prep),closing(valid):
+                droit=None
+                for uid in [u['id'],v['id']]:
+                    for cap in CAPS:
+                        g=grant(admin,uid,cap)
+                        if uid==u['id'] and cap=='personnel.lire_remuneration':droit=g['id']
+                activer(admin);sid=ok(admin.get('/api/auth/me'))['societe_id'];eq={'a':prep,'b':valid,'uid':u['id'],'bid':v['id'],'sid':sid}
+                eid,_=avec_salaire(eq);rid=rubrique(eq,formule='MONTANT' if largeur==1440 else 'QUANTITE_TAUX');avant=comptabilite(app,sid)
+                with sync_playwright() as p:
+                    browser=p.chromium.launch(executable_path=chromium_executable(),headless=True)
+                    try:
+                        cp=browser.new_context(viewport={'width':largeur,'height':1000});cv=browser.new_context(viewport={'width':largeur,'height':1000});page=cp.new_page();review=cv.new_page()
+                        ep,sp=observer(page,app['api_url']);ev,sv=observer(review,app['api_url'])
+                        connexion_personnel(page,app,mail,secret);connexion_personnel(review,app,mailv,secretv)
+                        page.goto(app['web_url']+'/personnel-paie/elements/variables');page.get_by_label('Mois des variables',exact=True).fill('2026-11')
+                        page.get_by_role('button',name='Saisir une variable',exact=True).click();d=page.get_by_role('dialog')
+                        d.get_by_label('Période de la variable',exact=True).fill('2026-11');d.get_by_label('Date d’effet de la variable',exact=True).fill('2026-11-15')
+                        d.get_by_label('Salarié de la variable',exact=True).select_option(str(eid));d.get_by_label('Rubrique de la variable',exact=True).select_option(str(rid))
+                        if largeur==1440:d.get_by_label('Montant de la variable (MAD)',exact=True).fill('800.01')
+                        else:
+                            d.get_by_label('Quantité de la variable',exact=True).fill('3');d.get_by_label('Taux unitaire de la variable (MAD)',exact=True).fill('0.335')
+                        d.get_by_label('Référence justificatif ATTESTATION_FICTIVE',exact=True).fill('JUSTIFICATIF-UI-FICTIF891')
+                        d.get_by_label('Référence de la source de la variable',exact=True).fill('SOURCE-UI-FICTIVE891');d.get_by_label('Motif de saisie de la variable',exact=True).fill('Saisie fictive891')
+                        d.get_by_role('button',name='Enregistrer le brouillon',exact=True).click();expect(d).to_have_count(0)
+                        item=ok(prep.get(V))['elements'][0];i=item['id'];assert item['montant']==('800.01' if largeur==1440 else '1.01')
+                        page.get_by_role('button',name=f'Consulter la variable {i}',exact=True).click();expect(page.get_by_text('Rémunération contractuelle à cette date : 9000.10 MAD',exact=False)).to_be_visible()
+                        page.get_by_role('button',name=f'Soumettre la variable {i}',exact=True).click();d=page.get_by_role('dialog');d.get_by_label('Motif de l’action sur la variable',exact=True).fill('Soumission fictive891');d.get_by_role('button',name='Confirmer l’action',exact=True).click();expect(d).to_have_count(0)
+                        review.goto(app['web_url']+'/personnel-paie/elements/variables');review.get_by_label('Mois des variables',exact=True).fill('2026-11');review.get_by_role('button',name=f'Consulter la variable {i}',exact=True).click()
+                        expect(review.get_by_text('ATTESTATION_FICTIVE : JUSTIFICATIF-UI-FICTIF891',exact=True)).to_be_visible()
+                        review.get_by_role('button',name=f'Approuver la variable {i}',exact=True).click();d=review.get_by_role('dialog')
+                        d.get_by_label('Motif de l’action sur la variable',exact=True).fill('Approbation indépendante fictive891');d.get_by_label('Référence du contrôle de la variable',exact=True).fill('CONTROLE-UI-FICTIF891')
+                        d.get_by_label('Je suis indépendant du préparateur et du bénéficiaire de cette variable.',exact=True).check();d.get_by_label('J’ai vérifié la source et les justificatifs de cette variable.',exact=True).check()
+                        d.get_by_role('button',name='Confirmer l’action',exact=True).click();expect(d).to_have_count(0)
+                        page.get_by_role('button',name='Actualiser',exact=True).click();expect(page.get_by_label('Mois des variables',exact=True)).to_have_value('2026-11')
+&gt;                       expect(page.get_by_text('Approuvée',exact=False)).to_be_visible();assert ok(prep.get(f'{V}/{i}'))['statut']=='APPROUVE'
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E                       AssertionError: Locator expected to be visible
+E                       Actual value: None
+E                       Error: strict mode violation: get_by_text("Approuvée") resolved to 2 elements:
+E                           1) &lt;option value="APPROUVE"&gt;Approuvée&lt;/option&gt; aka get_by_label("Statut des variables")
+E                           2) &lt;p&gt;002 · 2026-11 · Approuvée&lt;/p&gt; aka get_by_text("· 2026-11 · Approuvée")
+E                        
+E                       Call log:
+E                         - Expect "to_be_visible" get_by_text("Approuvée") with timeout 5000ms
+E                         - waiting for get_by_text("Approuvée")
+E                           - locator resolved to &lt;option value="APPROUVE"&gt;Approuvée&lt;/option&gt;
+E                           - unexpected value "hidden"
+
+Test\test_e2e_paie891_variables_isole.py:54: AssertionError</failure></testcase></testsuite></testsuites>

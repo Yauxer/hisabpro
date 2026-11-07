@@ -1,0 +1,265 @@
+{
+  "date": "2026-10-29",
+  "nature": "Rattachement automatique ;ne renseigne pas la recette utilisateur",
+  "sources_humaines_sha256": {
+    "docs/recette/MODE_EMPLOI_ACOMPTES_IS_751.xlsx": "4ace1ddb918af67022186df5e3c4e63e02bb977795a572234c71e18142252229",
+    "docs/recette/MODE_EMPLOI_LIQUIDATION_753.xlsx": "73cc8dd672d0aeff802b175c146c1dbd8d7db55dc40117715615c9fcc9c7c314"
+  },
+  "fiches": [
+    {
+      "fiche": "AP751-01",
+      "objectif_source": "Saisir le profil et les deux mouvements exactement comme ci-dessus ; conserver puis rouvrir.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Profil et2mouvements saisis/conservés/rouverts ;1000cash+100excédent+150retenues=1250proposés,échéancier partiel et sources conservées.",
+      "tests_executés": [
+        "Test.test_e2e_balance_acomptes751_isole::test_751_acomptes_droits_exports_brouillon_mobile[admin-1440]",
+        "Test.test_e2e_balance_acomptes751_isole::test_751_acomptes_droits_exports_brouillon_mobile[comptable-390]",
+        "Test.test_e2e_balance_acomptes751_isole::test_751_acomptes_droits_exports_brouillon_mobile[lecture-390]",
+        "Test.test_balance_acomptes751_isole::test_751_versions_rejeu_lecture_sans_recalcul"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "AP751-02",
+      "objectif_source": "Modifier le versement de la ligne 1 sans conserver ; télécharger PDF/Excel/ZIP.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "Versement du brouillon passé0sans conserver ;PDF/Excel/ZIP téléchargent1250du snapshot et logo,pas le brouillon.",
+      "tests_executés": [
+        "Test.test_e2e_balance_acomptes751_isole::test_751_acomptes_droits_exports_brouillon_mobile[admin-1440]",
+        "Test.test_e2e_balance_acomptes751_isole::test_751_acomptes_droits_exports_brouillon_mobile[comptable-390]",
+        "Test.test_e2e_balance_acomptes751_isole::test_751_acomptes_droits_exports_brouillon_mobile[lecture-390]"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "AP751-03",
+      "objectif_source": "Inverser uniquement les références CR749-A/B entre les deux mouvements puis conserver ; comparer les deux rapprochements.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle et oracle indépendant",
+      "portee": "Seules référencesCR749-A/B inversées :total150reste identique,rapprochements individuels incohérents,acomptes indisponibles ;ancienne version1250figée. GestesUI à effectuer humainement.",
+      "tests_executés": [
+        "Test.test_qualification_cycle_is941_isole::test_941_acomptes_references_inversees_annuelle_inconnue_neant_sans_zero",
+        "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[references_inversees]"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "AP751-04",
+      "objectif_source": "Depuis une copie du jeu fictif, tenter NaN puis excédent 101 sur la ligne 1 ; tenter un doublon AP751-A.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "NaN refusé par vrai formulaire ;excédent101 et doublon source rejetés par API sans mutation. Référence de crédit incorrecte signalée puis corrigée sans F5.",
+      "tests_executés": [
+        "Test.test_e2e_balance_acomptes751_isole::test_751_nan_refuse_puis_reference_credit_corrigee_sans_f5",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse-NaN]",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse-Infinity]",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse-True]",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse--1]",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse-0.001]",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse-1e9999]",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse-10000000000000]",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[credit_anterieur-101]",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[date_mouvement-2026-02-30]",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[numero-5]",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[rattachement_confirme-True]",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[reference_source-]",
+        "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[inconnu-0]",
+        "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[omission]",
+        "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[doublon_source]",
+        "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[deux_profils]",
+        "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[absence_contradictoire]",
+        "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[solde_injecte]",
+        "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[date_controle]",
+        "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[minimum_reference]"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "AP751-05",
+      "objectif_source": "Dans la rubrique crédits, changer seulement le total de CR749-A300 en 301 puis conserver ; rouvrir les acomptes, relire et conserver une nouvelle qualification.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Crédit300→301conservé ;ancien contrôle1250reste figé et signale source modifiée,puis nouvelle qualification explicite rétablit la cohérence.",
+      "tests_executés": [
+        "Test.test_e2e_balance_acomptes751_isole::test_751_credits_changes_actualisation_explicite_interface",
+        "Test.test_balance_acomptes751_isole::test_751_credits_change_comparaison_et_versions_figees"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "AP751-06",
+      "objectif_source": "Laisser la référence annuelle vide dans le profil, conserver avec les deux mouvements valides.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle",
+      "portee": "Référence annuelle vide conservée :calendrier indisponible,1250déclarés connus restent proposés sans inventer une référence annuelle ;versions anciennes préservées. GestesUI non rejoués941.",
+      "tests_executés": [
+        "Test.test_qualification_cycle_is941_isole::test_941_acomptes_references_inversees_annuelle_inconnue_neant_sans_zero"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "AP751-07",
+      "objectif_source": "Déclarer seulement AP-LIGNES néant avec justification, sans confirmer une absence exhaustive et en conservant les crédits déjà utilisés 150.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle et oracle indépendant",
+      "portee": "Lignes néant sans absence exhaustive confirmée,crédits déjà utilisés150conservés :proposition indisponible,pas0 ;aucun paiement. GestesUI non rejoués941.",
+      "tests_executés": [
+        "Test.test_qualification_cycle_is941_isole::test_941_acomptes_references_inversees_annuelle_inconnue_neant_sans_zero",
+        "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[neant_seul]"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "AP751-08",
+      "objectif_source": "Avec rôles comptable puis lecture sur écran 390 px, consulter et télécharger les pièces ; comparer le logo et les montants aux contrôles.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Comptable/lecteur390,admin1440 ;PDF/Excel/ZIP réels1250+logo,commandes selon rôle et API403/404,aucune donnée comptable modifiée.",
+      "tests_executés": [
+        "Test.test_e2e_balance_acomptes751_isole::test_751_acomptes_droits_exports_brouillon_mobile[admin-1440]",
+        "Test.test_e2e_balance_acomptes751_isole::test_751_acomptes_droits_exports_brouillon_mobile[comptable-390]",
+        "Test.test_e2e_balance_acomptes751_isole::test_751_acomptes_droits_exports_brouillon_mobile[lecture-390]",
+        "Test.test_balance_acomptes751_isole::test_751_droits_societes_devise_hash_concurrence"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "LIQ753-01",
+      "objectif_source": "Préparer les contrôles décrits, saisir les cinq confirmations de revue et l’excédent annuel 0 ; conserver.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Cinq confirmations de revue et excédent annuel0conservés :3000−325−1250=1425proposés,aucune liquidation ou paiement confirmé.",
+      "tests_executés": [
+        "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[admin-1440]",
+        "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[comptable-390]",
+        "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[lecture-390]",
+        "Test.test_balance_liquidation753_isole::test_753_versions_rejeu_lecture_sans_recalcul"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "LIQ753-02",
+      "objectif_source": "Après conservation, modifier une confirmation du brouillon en non puis télécharger le ZIP.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "ConfirmationB12du brouillon passée non sans conserver ;ZIP/PDF/Excel exportent toujours le snapshot1425et le logo.",
+      "tests_executés": [
+        "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[admin-1440]",
+        "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[comptable-390]",
+        "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[lecture-390]"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "LIQ753-03",
+      "objectif_source": "Conserver une revue avec ordre non confirmé ou excédent annuel laissé vide.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Ordre non confirmé et excédent annuel inconnu conservés en versions distinctes :proposition indisponible,ancienne1425figée,témoin définitif préservé.",
+      "tests_executés": [
+        "Test.test_e2e_balance_liquidation753_isole::test_753_nan_refuse_puis_revue_incomplete_et_reprise_sans_f5",
+        "Test.test_qualification_cycle_is941_isole::test_941_revue_ordre_non_et_excedent_inconnu_conserves_sans_solde"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "LIQ753-04",
+      "objectif_source": "Tenter NaN puis 0,01 MAD d’excédent annuel alors que le restant justifié est 0.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "NaN réellement refusé par formulaire ;excédent0.01alors que restant0refusé par API,sans mutation ;revue incomplète puis reprise explicite.",
+      "tests_executés": [
+        "Test.test_e2e_balance_liquidation753_isole::test_753_nan_refuse_puis_revue_incomplete_et_reprise_sans_f5",
+        "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-NaN]",
+        "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-Infinity]",
+        "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-True]",
+        "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel--1]",
+        "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-0.001]",
+        "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-1e9999]",
+        "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-10000000000000]",
+        "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-0.01]",
+        "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[ordre_examine-probable]",
+        "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[b12_verifie-True]",
+        "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[reference_source-]",
+        "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[inconnu-0]"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "LIQ753-05",
+      "objectif_source": "Changer le taux B12 en 10 et conserver ; observer l’ancienne proposition ; tenter une nouvelle revue avant actualisation CM.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "TauxB12passé10 :ancienne proposition1425figée,sources modifiées,nouvelle revue indisponible tant que CMnon reprise.",
+      "tests_executés": [
+        "Test.test_e2e_balance_liquidation753_isole::test_753_b12_change_cm_actualisee_avant_nouvelle_proposition_interface",
+        "Test.test_balance_liquidation753_isole::test_753_sources_synchronisees_ancien_calcul_fige_et_revue_explicitement_reprise"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "LIQ753-06",
+      "objectif_source": "Après le cas précédent, revoir et conserver la CM sur le nouveau B12 ; conserver une nouvelle proposition.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "CMrevue sur nouveauB12 puis nouvelle proposition :cohérence rétablie,1425selon maximum3000du jeu ;ancienne version intacte.",
+      "tests_executés": [
+        "Test.test_e2e_balance_liquidation753_isole::test_753_b12_change_cm_actualisee_avant_nouvelle_proposition_interface",
+        "Test.test_balance_liquidation753_isole::test_753_sources_synchronisees_ancien_calcul_fige_et_revue_explicitement_reprise"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "LIQ753-07",
+      "objectif_source": "Comparer sans qualification CSS puis avec CSS2026 qualifiée sur bénéfice fiscal 2025 de 100000 MAD.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle et interface",
+      "portee": "CSSnon qualifiée puis qualification2026/bénéfice2025de100000 :CSS0séparée,sourceCSSmodifiée sans ISmodifié,ancienne proposition figée,pas de totalIS+CSS.",
+      "tests_executés": [
+        "Test.test_balance_liquidation753_isole::test_753_css_separee_n_actualise_pas_is_historique",
+        "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[admin-1440]",
+        "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[comptable-390]",
+        "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[lecture-390]"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    },
+    {
+      "fiche": "LIQ753-08",
+      "objectif_source": "Avec rôles comptable puis lecture sur 390 px, consulter et télécharger PDF/Excel/ZIP.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Comptable/lecteur390,admin1440 :PDF/Excel/ZIP réels1425+logo,absence de conservation pourlecteur,403/404API et sources préservées.",
+      "tests_executés": [
+        "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[admin-1440]",
+        "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[comptable-390]",
+        "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[lecture-390]",
+        "Test.test_balance_liquidation753_isole::test_753_droits_societes_devise_hash_concurrence"
+      ],
+      "limites": "Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes."
+    }
+  ],
+  "apres": {
+    "Réussi": 235,
+    "Partiel": 6,
+    "Non qualifié par fiche": 22,
+    "Bloqué (source)": 9
+  }
+}

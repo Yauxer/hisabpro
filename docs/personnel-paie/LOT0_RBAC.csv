@@ -1,0 +1,26 @@
+capacite;administrateur_societe;gestionnaire_personnel;gestionnaire_paie;responsable_validation;comptable;tresorier;auditeur;garde_transverse
+personnel.lire_identite;H;H;H;H;H;M;H;Societe explicite et projection minimale
+personnel.lire_remuneration;H;H;H;H;H;M;H;Aucun droit implicite du role global admin ou lecture
+personnel.lire_identifiants_sensibles;H;H;M;H;M;H;M;"Masque serveur par defaut;valeur complete seulement si habilitation specifique"
+personnel.creer;H;H;-;-;-;-;-;Brouillon sans ecriture
+personnel.proposer_changement;H;H;H;-;-;-;-;"Revision attendue et historique;pas ecrasement du salaire"
+personnel.soumettre;H;H;H;-;-;-;-;Auteur et motif traces
+personnel.approuver;H;-;-;H;-;-;-;Ni preparateur ni beneficiaire de sa propre operation sensible
+personnel.sortie_archivage;H;H;-;H;-;-;-;"Workflow controle;pas suppression si reference"
+personnel.audit_lire;H;H;H;H;H;M;H;"Evenements limites au perimetre autorise;sans secrets"
+personnel.habilitations_administrer;H;-;-;-;-;-;-;"Droit administration distinct des droits financiers;trace des delegations"
+paie.rubriques_preparer;-;-;H;-;H;-;-;Comptes et regles independamment qualifies
+paie.variables_preparer;-;H;H;-;-;-;-;Aucune ecriture a la saisie
+paie.variables_approuver;H;-;-;H;-;-;-;Separation des acteurs sensibles
+paie.campagne_preparer;-;-;H;-;-;-;-;Regles versionnees et sources
+paie.campagne_approuver;H;-;-;H;-;-;-;"Snapshot fige;pas validation comptable implicite"
+paie.od_preparer;-;-;-;-;H;-;-;"Campagne approuvee;periode et plan existants"
+paie.od_valider;-;-;-;H;H;-;-;"Capacite comptable requise;workflow distinct"
+paie.paiement_preparer;-;-;-;-;-;H;-;Dette reelle et beneficiaire approuve
+paie.paiement_approuver;H;-;-;H;-;H;-;Signataire habilite different du preparateur
+paie.paiement_confirmer;-;-;-;-;-;H;-;"Preuve execution;transmis ne vaut pas execute"
+paie.declaration_preparer;-;-;H;-;-;-;-;"Format verifie;aucun depot automatique presume"
+paie.declaration_valider;H;-;-;H;H;-;-;Preuve de depot distincte de validation interne
+paie.export_financier;H;-;H;H;H;H;H;"Autorisation explicite par type de document;cache prive"
+paie.cloture_proposer;-;-;H;-;H;-;-;Justification et detection doublon
+paie.cloture_valider;-;-;-;H;H;-;-;Validation comptable et extourne si applicable

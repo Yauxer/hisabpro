@@ -1,0 +1,18 @@
+{
+  "role": "comptable",
+  "largeur": 390,
+  "solde_propose": "1425.00",
+  "exports_individuels": {
+    "pdf": {
+      "sha256": "bdd2f48c17e41afc2f0573a989a2a51026c5d62a3548736f0afe06cc5c59bb97",
+      "montant_et_logo_verifies": true
+    },
+    "xlsx": {
+      "sha256": "e4c6eb8038ccfe4af05c6d9868160d7a94838a50bced99140c9e39b44e60c0f4",
+      "montant_et_logo_verifies": true
+    }
+  },
+  "ZIP_snapshot_verifie": true,
+  "aucune_liquidation_ou_paiement_confirme": true,
+  "sources_hors_preparations_inchangees": true
+}

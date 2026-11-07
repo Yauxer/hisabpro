@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="69.767" timestamp="2026-10-24T17:06:54.215617+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_inventaire779_isole" name="test_779_cahier_cycle_inventaire_stock6600_etats_provisoires[1440]" time="66.788"><failure message="AssertionError: {&quot;detail&quot;:&quot;L'écriture de stock de clôture est déjà définitive. Elle ne peut plus être régénérée : utilisez une contrepassation traçable dans le Journal si une correction est nécessaire.&quot;}">application = {'api_url': 'http://127.0.0.1:50733', 'web_url': 'http://127.0.0.1:50734', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_o12khgfw'), 'nonce': 'fc4e7df28d6048679f4f5893ae75dc37', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette779_cible/test_779_cahier_cycle_inventai0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_779_cahier_cycle_inventaire_stock6600_etats_provisoires(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'inventaire779') as (api,page,sid,preuve):
+&gt;     tiers,articles=referentiels(api,page,application,sid,preuve);cycle(api,page,application,sid,tiers,articles,preuve,tmp_path);suite(api,page,application,sid,tiers,articles,preuve);inventaire(api,page,application,sid,articles,preuve)
+                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_inventaire779_isole.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\cahier_inventaire779_support.py:24: in inventaire
+    second=ok(api.post('/api/inventaire/comptabiliser-stock',params={'exercice':2025}));assert second['deja_rapproche'] and second['ecriture_id'] is None;assert core(app,sid)==stable and stable[:13]==initial
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [409 Conflict]&gt;, status = 200
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":"L'écriture de stock de clôture est déjà définitive. Elle ne peut plus être régénérée : utilisez une contrepassation traçable dans le Journal si une correction est nécessaire."}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase></testsuite></testsuites>

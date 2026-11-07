@@ -1,0 +1,11 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_f3b5fp6y",
+  "nonce": "dcb97294cc194a52b8fd35642d5d043c",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError(\"assert 'CL' in ['AC', 'VT', 'BQ', 'CA', 'OD', 'AN', ...]\")",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier."
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="58.469" timestamp="2026-10-25T20:33:40.067526+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_echeancier827_isole" name="test_827_echeancier_contractuel_paiement_et_etic[1440]" time="54.345"><failure message="AssertionError: Locator expected to contain text '31/05/25'&#10;Actual value:  30/04/25 (543j retard) &#10;Call log:&#10;  - Expect &quot;to_contain_text&quot; locator(&quot;tbody tr&quot;).filter(has_text=&quot;FA-2025-001&quot;).locator(&quot;td&quot;).nth(9) with timeout 5000ms&#10;  - waiting for locator(&quot;tbody tr&quot;).filter(has_text=&quot;FA-2025-001&quot;).locator(&quot;td&quot;).nth(9)&#10;    14 × locator resolved to &lt;td&gt;…&lt;/td&gt;&#10;       - unexpected value &quot; 30/04/25 (543j retard)&quot;&#10;&#10;Aria snapshot:&#10;- cell &quot;30/04/25 (543j retard)&quot;">application = {'api_url': 'http://127.0.0.1:62654', 'web_url': 'http://127.0.0.1:62655', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_8ex84ayw'), 'nonce': 'db4368c34b744c66a47a3672cd255c7a', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette827_retard_avant/test_827_echeancier_contractue0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_827_echeancier_contractuel_paiement_et_etic(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'echeancier827') as (api,page,sid,preuve):
+      t=next(t for t in DATA['tiers'] if t['code']=='C-SERVICE');tiers=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'client','compte_client':'3421'}),201)
+      a=next(a for a in DATA['articles'] if a['code']=='S-VTE');article=ok(api.post('/api/articles',json={'code':a['code'],'designation':a['designation'],'is_stockable':False,'stock_actuel':0,'prix_vente_ht':1000,'tva':20,'compte_vente':'7124'}),201)
+      b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      page.goto(application['web_url']+'/factures');page.get_by_role('button',name='Nouvelle facture',exact=True).click();m=page.get_by_role('dialog',name='Nouvelle facture',exact=True);champ(m,'Date *').fill('2025-04-01');m.get_by_placeholder('Rechercher un',exact=False).fill(tiers['nom']);m.get_by_text(tiers['nom'],exact=True).click();m.get_by_placeholder('N° BC, bon de commande...').fill('VAR-ECHEANCIER-827');m.get_by_placeholder('Description ou article...').fill(article['designation']);m.locator('li').filter(has_text=article['designation']).click();ed=m.locator('.hp-invoice-line-editor');ed.locator('input[type=number]').nth(0).fill('1');ed.locator('input[type=number]').nth(1).fill('1000')
+      m.get_by_role('button',name='Échéancier',exact=True).click();m.get_by_role('button',name='50 / 50',exact=True).click();rows=m.locator('[class*="echeancierRows"] &gt; div');expect(rows).to_have_count(2)
+      for i,jour in enumerate(['2025-04-30','2025-05-31']):rows.nth(i).locator('input[type=date]').fill(jour);expect(rows.nth(i).locator('input[type=number]')).to_have_value('50')
+      m.get_by_role('button',name='Enregistrer en brouillon',exact=False).click()
+      with page.expect_response(lambda r:r.url.endswith('/api/factures') and r.request.method=='POST') as r:m.get_by_role('button',name='Enregistrer le brouillon',exact=True).click()
+      f=ok(r.value,201);fid=f['id'];m.wait_for(state='hidden');assert D(str(f['total_ttc']))==1200
+      initial=echeancier(api,fid,'2025-04-01');assert initial['personnalise'] and [(e['date_echeance'],D(str(e['montant']))) for e in initial['echeances']]==[('2025-04-30',D(600)),('2025-05-31',D(600))]
+      f,_=officialiser(page,application,f,tiers);valider_journal(page,application,1);payer(page,application,f,tiers,600,'2025-04-30','VAR-ECHEANCIER-PAY-827',banque);valider_journal(page,application,1)
+      es=ok(api.get('/api/ecritures',params={'exercice':2025}));assert len(es)==2 and all(e['est_validee'] for e in es)
+      for journal,jour,attendu in [('VT','2025-04-01',{'3421':(1200,0),'7124':(0,1000),'4455':(0,200)}),('BQ','2025-04-30',{'5141':(600,0),'3421':(0,600)})]:
+       e=next(e for e in es if e['journal']==journal);assert e['date']==jour and {l['compte']:(D(str(l['debit'])),D(str(l['credit']))) for l in e['lignes']}=={k:tuple(map(D,v)) for k,v in attendu.items()}
+      avant=core(application,sid);controle={}
+      for jour,retard in [('2025-05-30',0),('2025-05-31',0),('2025-06-01',1)]:
+       s=echeancier(api,fid,jour);controle[jour]=s;assert D(str(s['reste_du']))==600 and s['nb_ouvertes']==1 and s['echeances'][0]['reste_du']==0 and s['echeances'][1]['reste_du']==600 and s['prochaine_echeance']['date_echeance']=='2025-05-31' and s['echeances'][1]['jours_retard']==retard
+      f=next(f for f in ok(api.get('/api/factures',params={'exercice':2025})) if f['id']==fid);assert f['statut']=='partiellement_payee'
+&gt;     page.goto(application['web_url']+'/factures');row=page.locator('tbody tr').filter(has_text=f['numero']);expect(row.locator('td').nth(9)).to_contain_text('31/05/25');row.click();expect(page.get_by_text('Échéancier de paiement',exact=True)).to_be_visible();expect(page.get_by_text('30/04/25',exact=True).first).to_be_visible();expect(page.get_by_text('31/05/25',exact=True).first).to_be_visible();expect(page.get_by_text('Réglée',exact=True)).to_be_visible();page.reload();page.locator('tbody tr').filter(has_text=f['numero']).click();expect(page.get_by_text('Échéancier de paiement',exact=True)).to_be_visible()
+                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to contain text '31/05/25'
+E     Actual value:  30/04/25 (543j retard) 
+E     Call log:
+E       - Expect "to_contain_text" locator("tbody tr").filter(has_text="FA-2025-001").locator("td").nth(9) with timeout 5000ms
+E       - waiting for locator("tbody tr").filter(has_text="FA-2025-001").locator("td").nth(9)
+E         14 × locator resolved to &lt;td&gt;…&lt;/td&gt;
+E            - unexpected value " 30/04/25 (543j retard)"
+E     
+E     Aria snapshot:
+E     - cell "30/04/25 (543j retard)"
+
+Test\test_e2e_cahier_echeancier827_isole.py:37: AssertionError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,44 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_ihu3kxh4",
+  "nonce": "a394cf9187b4494eaaefb4ca78199c05",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-NEG-014",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-015",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-016",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "retour845": {
+    "vendu": 100,
+    "tentative": 101,
+    "UI_refus": true,
+    "statut": 409,
+    "stock_et_journal_conserves": true
+  },
+  "tiers845": {
+    "statut": 422,
+    "facture_autre_tiers_absente_UI": true,
+    "aucune_mutation": true
+  },
+  "plafond845": {
+    "credit": 3000,
+    "tentative": 3001,
+    "statut": 409,
+    "UI_refus": true,
+    "aucune_mutation": true,
+    "montant_exact_accepte": 3000
+  }
+}

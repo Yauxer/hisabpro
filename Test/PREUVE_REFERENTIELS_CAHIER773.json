@@ -1,0 +1,100 @@
+{
+  "resultats": [
+    {
+      "campagne": "recette773_referentiels",
+      "tests": 1,
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 59.15,
+      "code": 1
+    },
+    {
+      "campagne": "recette773_referentiels_apres",
+      "tests": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 59.85,
+      "code": 0
+    },
+    {
+      "campagne": "recette773_final",
+      "tests": 6,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 118.16,
+      "code": 0
+    },
+    {
+      "campagne": "recette773_cibles",
+      "tests": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 60.59,
+      "code": 0
+    }
+  ],
+  "build": {
+    "code": 0,
+    "secondes": 5.13,
+    "avertissement": "Bundle >500kB"
+  },
+  "cas_cahier": [
+    {
+      "id": "HP-ADM-006",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-007",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-008",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-009",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-010",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-011",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-012",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-013",
+      "statut": "Partiel",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire",
+      "limite": "Création/édition stock zéro/TVA/achat/vente réussies. Comptes3111/6114 non exposés sur formulaire article,à vérifier lors du vrai inventaire avant qualification complète."
+    },
+    {
+      "id": "HP-ADM-014",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-015",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    }
+  ],
+  "limites": "Société et paramètres parAPI ;pas de génération commerciale dans ce lot ;9cas complets et1partiel après déduplication des largeurs. Aucun statut humain prérempli,aucune base réelle.",
+  "application": "Seul tri de Tiers.jsx modifié :identifiant décroissant après chargement complet ;API et sélecteurs conservent leur tri existant."
+}

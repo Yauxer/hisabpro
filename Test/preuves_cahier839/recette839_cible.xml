@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="2" time="597.683" timestamp="2026-10-25T23:28:57.958941+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_integrite839_isole" name="test_839_cycle_annuel_et_integrite[1440]" time="356.418" /><testcase classname="Test.test_e2e_cahier_integrite839_isole" name="test_839_cycle_annuel_et_integrite[390]" time="237.355"><failure message="playwright._impl._errors.TimeoutError: Locator.inner_text: Timeout 15000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;body&quot;)">application = {'api_url': 'http://127.0.0.1:49779', 'web_url': 'http://127.0.0.1:49780', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_rkarr1bu'), 'nonce': 'a344d3e1d90f4cc9bcdb9642b1637a41', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette839_cible/test_839_cycle_annuel_et_integ1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_839_cycle_annuel_et_integrite(application,largeur,tmp_path,navigations_completes823):
+&gt;    with laboratoire(application,largeur,tmp_path,'integrite839') as (api,page,sid,preuve):
+
+Test\test_e2e_cahier_integrite839_isole.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:158: in __exit__
+    self.gen.throw(typ, value, traceback)
+Test\cahier_formulaires773_support.py:40: in laboratoire
+    preuve['erreur']=repr(e);print('DIAGNOSTIC',page.url,errors,serveur,page.locator('body').inner_text()[-4500:]);page.screenshot(path=str(tmp_path/f'cahier773_{nom}_echec.png'),full_page=True);raise
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\playwright\sync_api\_generated.py:19603: in inner_text
+    self._sync(self._impl_obj.inner_text(timeout=to_milliseconds(timeout)))
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_locator.py:502: in inner_text
+    return await self._frame.inner_text(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_frame.py:744: in inner_text
+    return await self._channel.send(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x00000254642C3910&gt;
+cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x000002546A124F40&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        parsed_st = _attach_api_call_information(
+            getattr(task, "__pw_stack__", None) or _capture_stack_trace(),
+            is_internal,
+            title,
+        )
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Locator.inner_text: Timeout 15000ms exceeded.
+E           Call log:
+E             - waiting for locator("body")
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:632: TimeoutError</failure></testcase></testsuite></testsuites>

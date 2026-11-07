@@ -1,0 +1,50 @@
+[
+  [
+    "PA-M921-01",
+    "Calculer depuis les sources approuvées",
+    "Société vierge et prérequis exacts du jeu ; acteurs distincts pour les approbations.",
+    "Toutes les données du jeu, notamment rubrique mensuelle avant approbation, FP2250.03, autres0.00, famille2, références et confirmations.",
+    "Préparer brut9800.11, social puis bases fiscales. Depuis le résultat de P909 ouvrir Préparer le RNI mensuel. Vérifier identité et novembre2026, saisir le jeu, conserver le contrôle. Déplier bases, variables et fractions ; revenir à la préparation source.",
+    "RNI6990.08 ; équivalence avant597.0240, réduction100.0000 et après497.0240 (62128/125). Les déductions et sources sont lisibles. Retenue/net/versement restent indisponibles ; aucune déclaration autorisée."
+  ],
+  [
+    "PA-M921-02",
+    "Conserver les inconnues",
+    "PA-M921-01, nouvelle simulation avec clé automatiquement renouvelée.",
+    "Premier essai : famille vide et non confirmée, autres données identiques. Second essai : frais et référence des frais vides.",
+    "Conserver les deux contrôles successifs et consulter les anomalies. Ne pas remplacer les champs vides par zéro.",
+    "Famille inconnue : RNI6990.08 et avant597.0240 connus, après réduction indéterminé. Frais inconnus : RNI et équivalence indéterminés. Ancien contrôle inchangé."
+  ],
+  [
+    "PA-M921-03",
+    "Isoler primes, rappels et versements hors année",
+    "Nouvelle source approuvée dans une période distincte ; suivre le guide919 pour documenter les dates.",
+    "Référence du gain2025-01-01au2025-12-31 et preuve RAPPEL-FICTIF921 ; ou rubrique Ponctuelle ; autre cas : versement source2025-12-05 et preuve VERSEMENT-FICTIF921, date globale laissée vide.",
+    "Créer ces nouvelles sources avant le brut/social/bases. Ouvrir le contrôle mensuel et saisir les déclarations de PA-M921-01, sans retirer le rattachement ni changer les confirmations pour contourner le contrôle.",
+    "RATTACHEMENT_SPECIFIQUE ou VERSEMENT_SOURCE_AUTRE_ANNEE ; RNI et équivalence indisponibles même si mois complet confirmé. Aucune assimilation au mois courant ni recalcul automatique des périodes2025."
+  ],
+  [
+    "PA-M921-04",
+    "Refuser déductions excessives et données invalides",
+    "Nouvelle simulation sur la source initiale.",
+    "Essai1 : frais9000.11 > base de frais9000.10. Essai2 : frais2250.03 et autres8000.00. Références fictives explicites pour chaque déclaration.",
+    "Saisir chaque combinaison et lire les anomalies. Essayer aussi montant négatif, non numérique ou trois décimales ; corriger dans le formulaire.",
+    "Déductions excessives : RNI indéterminé, aucune réduction arbitraire à zéro. Formats invalides refusés sans conserver un calcul trompeur. Pas de modification comptable."
+  ],
+  [
+    "PA-M921-05",
+    "Détecter les sources devenues anciennes",
+    "PA-M921-01 conservé ; nouvelle rubrique distincte, ne pas réécrire les anciennes sources.",
+    "EXTRA_MENSUEL_FICTIF921, Gain, Ponctuelle, Montant exact,100.00 pour novembre2026 ; justificatif et source FICTIF921, approbation indépendante.",
+    "Approuver cette nouvelle variable. Depuis l’ancienne préparation fiscale tenter un nouveau contrôle ; relire le contrôle déjà conservé. Repréparer les bases pour inclure la nouvelle source avant tout autre calcul.",
+    "Nouvelle création depuis sources périmées refusée409 ; ancien contrôle et empreinte conservés lisibles. Rejeu identique par clé idempotente restitué sans recalcul (contrôle technique API)."
+  ],
+  [
+    "PA-M921-06",
+    "Vérifier accès, petit écran et restauration",
+    "Deux sociétés fictives, rôle Personnel seul habilité identité/rémunération ; responsable de sauvegarde sur copie.",
+    "Contrôle de PA-M921-01 ; largeurs1440px et390px. Accès successifs utilisateur habilité, autre société et droit révoqué.",
+    "Consulter le contrôle et ses sources ; changer de société ; révoquer les droits puis Actualiser. Sauvegarder/restaurer uniquement l’environnement isolé puis relire sous rôle limité.",
+    "Aucune fuite inter-société ; accès refusé et état effacé après révocation. Formulaire et résultat lisibles sans débordement horizontal.100tables, source, montants, fractions, empreintes et droits restaurés ; journal comptable inchangé."
+  ]
+]

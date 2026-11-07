@@ -1,0 +1,1295 @@
+{
+  "sous_etape": "1A.1",
+  "campagnes": [
+    {
+      "campagne": "personnel873_cible",
+      "cas": 23,
+      "echecs": 4,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 61.86,
+      "code": 1
+    },
+    {
+      "campagne": "personnel873_reprise",
+      "cas": 23,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 55.88,
+      "code": 0
+    },
+    {
+      "campagne": "personnel873_edge_reproduction",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 49.87,
+      "code": 1
+    },
+    {
+      "campagne": "personnel873_edge_details",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 47.9,
+      "code": 1
+    },
+    {
+      "campagne": "personnel873_final",
+      "cas": 27,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 96.11,
+      "code": 0
+    },
+    {
+      "campagne": "personnel873_deploiement",
+      "cas": 3,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 54.76,
+      "code": 0
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "cas": 141,
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 296.22,
+      "code": 1
+    },
+    {
+      "campagne": "personnel873_ui_historiques",
+      "cas": 7,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 123.79,
+      "code": 0
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "cas": 19,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 41.47,
+      "code": 0
+    },
+    {
+      "campagne": "personnel873_utilisateurs",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 31.85,
+      "code": 0
+    },
+    {
+      "campagne": "personnel873_metadonnees",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 25.93,
+      "code": 0
+    }
+  ],
+  "selection_finale": [
+    "personnel873_final",
+    "personnel873_deploiement",
+    "personnel873_connexes",
+    "personnel873_ui_historiques",
+    "personnel873_scanner",
+    "personnel873_utilisateurs",
+    "personnel873_metadonnees"
+  ],
+  "resultats_distincts": [
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_installation_sans_activation_et_admin_sans_droit_implicite",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_masques_sur_liste_simulation_et_anciens_exports",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_revocation_immediate_meme_session_et_historique",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_administration_reservee_admin[lecture]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_administration_reservee_admin[comptable]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_payload_habilitation_strict[payload0]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_payload_habilitation_strict[payload1]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_payload_habilitation_strict[payload2]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_payload_habilitation_strict[payload3]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_payload_habilitation_strict[payload4]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_payload_habilitation_strict[payload5]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_societes_invite_et_module_desactive",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_anciennes_mutations_interdites_sans_alterer_donnees[creation]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_anciennes_mutations_interdites_sans_alterer_donnees[edition]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_anciennes_mutations_interdites_sans_alterer_donnees[archive]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_anciennes_mutations_interdites_sans_alterer_donnees[absence]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_anciennes_mutations_interdites_sans_alterer_donnees[decision]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_anciennes_mutations_interdites_sans_alterer_donnees[referentiel]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_anciennes_mutations_interdites_sans_alterer_donnees[avance]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_anciennes_mutations_interdites_sans_alterer_donnees[annulation_avance]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_double_delegation_concurrente_unique",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_compte_reference_ne_peut_pas_etre_supprime",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_securite_sans_authentification",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_sql_historique_et_activation_immutables",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_activation_attend_operation_historique",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_e2e_personnel_habilitations873_isole",
+      "test": "test_873_protection_personnel_et_revocation_dans_edge[1440]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_final",
+      "classe": "Test.test_e2e_personnel_habilitations873_isole",
+      "test": "test_873_protection_personnel_et_revocation_dans_edge[390]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_metadonnees",
+      "classe": "Test.test_personnel_habilitations873_compat_isole",
+      "test": "test_873_sans_migration_acces_historique_et_administration_indisponible",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_metadonnees",
+      "classe": "Test.test_personnel_habilitations873_compat_isole",
+      "test": "test_873_installation_partielle_refuse_lecture_et_mutation",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_deploiement",
+      "classe": "Test.test_personnel_habilitations873_isole",
+      "test": "test_873_rejeu105_avec_historique_et_activation_preserves",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_oracle_mensuel_complet[0-601.56-8903.64]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_oracle_mensuel_complet[2-501.56-9003.64]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_oracle_mensuel_complet[6-301.56-9203.64]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_aucune_charge_famille_deduite_du_mariage_ni_des_enfants",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_reference_incomplete_bloquee_sans_taux_silencieux",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_referentiel_incoherent_refuse[doublon]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_referentiel_incoherent_refuse[nan]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_referentiel_incoherent_refuse[negatif]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_referentiel_incoherent_refuse[discontinu]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_referentiel_incoherent_refuse[ouvert]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_referentiel_incoherent_refuse[sans_bareme]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_referentiel_incoherent_refuse[sans_deduction]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_dossier_non_fini_ou_negatif_refuse[NaN]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_dossier_non_fini_ou_negatif_refuse[Infinity]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_dossier_non_fini_ou_negatif_refuse[-inf]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_dossier_non_fini_ou_negatif_refuse[True]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_dossier_non_fini_ou_negatif_refuse[False]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_dossier_non_fini_ou_negatif_refuse[-1]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_dossier_non_fini_ou_negatif_refuse[1e+20]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_dossier_non_fini_ou_negatif_refuse[valeur7]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_dossier_non_fini_ou_negatif_refuse[None]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_dossier_invalide_refuse[nom-  ]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_dossier_invalide_refuse[nom-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_dossier_invalide_refuse[numero_cnss-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_dossier_invalide_refuse[nb_enfants-True]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_dossier_invalide_refuse[nb_enfants--1]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_dossier_invalide_refuse[personnes_charge_ir-7]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_dossier_invalide_refuse[personnes_charge_ir-1.5]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_dossier_invalide_refuse[situation_familiale-inconnue]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_dates_sortie_avant_entree_refusees",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_zero_et_dossier_optionnel_autorises",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_historique_invalide_bloque_simulation[NaN]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_historique_invalide_bloque_simulation[Infinity]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_historique_invalide_bloque_simulation[-1]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_service",
+      "test": "test_salaire_historique_invalide_bloque_simulation[1e300]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_admin_transitions_autorisees[demande-approuve]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_admin_transitions_autorisees[demande-refuse]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_admin_transitions_autorisees[demande-annule]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_admin_transitions_autorisees[approuve-annule]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_transition_deja_traitee_refusee[refuse-approuve]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_transition_deja_traitee_refusee[annule-approuve]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_transition_deja_traitee_refusee[approuve-refuse]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_transition_deja_traitee_refusee[approuve-approuve]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_transition_deja_traitee_refusee[refuse-annule]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_transition_deja_traitee_refusee[annule-annule]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_comptable_ne_decide_pas_meme_auteur[approuve]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_comptable_ne_decide_pas_meme_auteur[refuse]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_annulation_seul_auteur_ou_admin",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_demande_invalide_refusee[valeurs0]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_demande_invalide_refusee[valeurs1]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_demande_invalide_refusee[valeurs2]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_demande_invalide_refusee[valeurs3]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_demande_invalide_refusee[valeurs4]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_demande_invalide_refusee[valeurs5]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_service",
+      "test": "test_un_jour_et_motif_facultatif",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_empreinte_identite_annee_ordre_et_source_preserves",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_diagnostics_taux_non_numeriques_et_bornes[NaN]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_diagnostics_taux_non_numeriques_et_bornes[Infinity]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_diagnostics_taux_non_numeriques_et_bornes[-Infinity]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_diagnostics_taux_non_numeriques_et_bornes[-1]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_diagnostics_taux_non_numeriques_et_bornes[1.5]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_diagnostics_taux_non_numeriques_et_bornes[True]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_diagnostics_taux_non_numeriques_et_bornes[None]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_sources_refusent_urls_dangereuses_sans_telechargement[http://example.com/a]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_sources_refusent_urls_dangereuses_sans_telechargement[file:///etc/passwd]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_sources_refusent_urls_dangereuses_sans_telechargement[https://u:p@example.com/a]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_sources_refusent_urls_dangereuses_sans_telechargement[https://example.com/a b]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_contrat_ne_recoit_pas_taux_statut_ni_societe_du_client",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_service",
+      "test": "test_metadonnees_facultatives_sans_dates_inventees",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_postgres",
+      "test": "test_api_grh_creer_modifier_archiver_restaurer_et_societes",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_postgres",
+      "test": "test_api_salaire_invalide_ne_persiste_pas[nan]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_postgres",
+      "test": "test_api_salaire_invalide_ne_persiste_pas[inf]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_postgres",
+      "test": "test_api_salaire_invalide_ne_persiste_pas[True]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_postgres",
+      "test": "test_api_salaire_invalide_ne_persiste_pas[-1]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_postgres",
+      "test": "test_api_lecture_interdit_mutations_reelles",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_postgres",
+      "test": "test_api_annee_obligatoire_aucun_fallback",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_postgres",
+      "test": "test_api_simulation_oracle_et_entrees_sorties",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_postgres",
+      "test": "test_migration_droits_colonnes_sans_societe_update",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_postgres",
+      "test": "test_080_legacy_preserve_et_vrai_runtime_non_owner",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_grh_postgres",
+      "test": "test_api_historique_nan_lisible_et_simulation_bloquee",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_postgres",
+      "test": "test_parcours_demande_approbation_annulation_historique_persistant",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_postgres",
+      "test": "test_periodes_chevauchement_dates_et_societes",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_postgres",
+      "test": "test_permissions_lecture_comptable_et_annulation_auteur",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_postgres",
+      "test": "test_concurrence_deux_demandes_chevauchantes",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_postgres",
+      "test": "test_historique_immutable_owner_runtime_et_migration_idempotente",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_postgres",
+      "test": "test_concurrence_deux_decisions_une_seule_trace",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_postgres",
+      "test": "test_fk_societe_interdit_absence_autre_employe_meme_en_sql",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_postgres",
+      "test": "test_081_sur_cluster_sans_role_applicatif_et_sans_donnees",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_grh_absences_postgres",
+      "test": "test_081_retire_default_cdi_sans_reclasser_valeurs_ambigues",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_postgres",
+      "test": "test_api_versions_sources_scope_identique_et_annee",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_postgres",
+      "test": "test_api_capture_reelle_perime_et_parametres_intacts",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_postgres",
+      "test": "test_api_historiques_non_finis_lisibles_capture_refusee[NaN]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_postgres",
+      "test": "test_api_historiques_non_finis_lisibles_capture_refusee[Infinity]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_postgres",
+      "test": "test_api_historiques_non_finis_lisibles_capture_refusee[-Infinity]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_postgres",
+      "test": "test_api_concurrence_versions_sans_collision",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_postgres",
+      "test": "test_api_permissions_reelles_et_corps_borne[lecture]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_postgres",
+      "test": "test_api_permissions_reelles_et_corps_borne[comptable]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_postgres",
+      "test": "test_api_extra_client_refuse_et_annee_explicite",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_paie_referentiel_postgres",
+      "test": "test_082_rejeu_versions_preservees_et_appendonly_runtime_owner",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_demarrage_grh_base_existante_postgres",
+      "test": "test_ancienne_table_sans_cle_composite_reproduction_et_reprise[False]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_demarrage_grh_base_existante_postgres",
+      "test": "test_ancienne_table_sans_cle_composite_reproduction_et_reprise[True]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_demarrage_grh_base_existante_postgres",
+      "test": "test_base_vierge_et_absences_existantes_sans_cle_composite",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_demarrage_grh_base_existante_postgres",
+      "test": "test_import_main_reel_et_http_sur_ancienne_base",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_demarrage_grh_base_existante_postgres",
+      "test": "test_referentiel_protege_au_demarrage_et_version_conservee_au_rejeu",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_cycle_affectation_recuperation_annulation_reaffectation_sans_ecriture",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_refus_metier_et_isolation[doublon]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_refus_metier_et_isolation[exces]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_refus_metier_et_isolation[date_anterieure]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_refus_metier_et_isolation[brouillon]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_refus_metier_et_isolation[autre_compte]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_refus_metier_et_isolation[archive]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_refus_metier_et_isolation[autre_societe]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_refus_metier_et_isolation[cloture]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_saisie_stricte_aucun_montant_libre[payload0]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_saisie_stricte_aucun_montant_libre[payload1]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_saisie_stricte_aucun_montant_libre[payload2]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_saisie_stricte_aucun_montant_libre[payload3]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_lecture_seule_et_droits_sql_immutabilite",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_recuperations_concurrentes_une_seule_acceptee",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_sql_natif_refuse_contournements_sans_muter_sources[tiers_societe]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_sql_natif_refuse_contournements_sans_muter_sources[source_societe]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_sql_natif_refuse_contournements_sans_muter_sources[brouillon]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_sql_natif_refuse_contournements_sans_muter_sources[autre_compte]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_sql_natif_refuse_contournements_sans_muter_sources[exces]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_sql_natif_refuse_contournements_sans_muter_sources[cloture]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_sql_natif_refuse_contournements_sans_muter_sources[annulation_incomplete]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_sql_recuperations_concurrentes_serializees",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_onglet_affectation_solde_actualise_annulation_edge[1440]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_connexes",
+      "classe": "Test.test_avances_salaries_isole",
+      "test": "test_onglet_affectation_solde_actualise_annulation_edge[390]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_fact11_production_hardening",
+      "test": "test_role_est_revalide_en_base_a_chaque_requete",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_fact11_production_hardening",
+      "test": "test_routes_metier_modifiantes_sont_protegees_par_rbac",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_fact11_production_hardening",
+      "test": "test_avoirs_acomptes_lettrage_et_pieces_jointes_bloquent_lecture_seule",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_fact11_production_hardening",
+      "test": "test_pieces_jointes_sont_bornees_au_tenant_et_protegees_du_path_traversal",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_fact11_production_hardening",
+      "test": "test_rapprochement_refuse_un_reglement_dune_autre_societe",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_fact11_production_hardening",
+      "test": "test_audit_applicatif_est_append_only_et_journalise_toutes_les_mutations_http",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_fact11_production_hardening",
+      "test": "test_controle_production_couvre_les_incoherences_critiques",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_fact11_production_hardening",
+      "test": "test_controle_production_et_journal_sont_reserves_admin",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_fact11_production_hardening",
+      "test": "test_migration_verrouille_les_roles_et_donne_les_droits_audit_necessaires",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_fact11_production_hardening",
+      "test": "test_get_modules_et_periodes_ne_font_plus_decriture_sur_get",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_fact11_production_hardening",
+      "test": "test_production_refuse_secrets_db_par_defaut_en_prod",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_fact11_production_hardening",
+      "test": "test_parametres_expose_controle_production_et_piste_audit_admin",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_ui_historiques",
+      "classe": "Test.test_e2e_paie_grh_isole",
+      "test": "test_paie_grh_dossier_crud_periode_et_calcul_absent_ui",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_ui_historiques",
+      "classe": "Test.test_e2e_paie_grh_isole",
+      "test": "test_paie_grh_lecture_et_isolation_societes_ui",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_ui_historiques",
+      "classe": "Test.test_e2e_paie_grh_isole",
+      "test": "test_paie_simulation_export_csv_reference_fictive",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_ui_historiques",
+      "classe": "Test.test_e2e_paie_referentiel_isole",
+      "test": "test_referentiel_documentaire_versions_permissions_et_scope_reels[1440]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_ui_historiques",
+      "classe": "Test.test_e2e_paie_referentiel_isole",
+      "test": "test_referentiel_documentaire_versions_permissions_et_scope_reels[390]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_ui_historiques",
+      "classe": "Test.test_e2e_grh_absences_isole",
+      "test": "test_grh_demande_decision_annulation_historique_et_negatifs_ui",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_ui_historiques",
+      "classe": "Test.test_e2e_grh_absences_isole",
+      "test": "test_grh_auteur_comptable_lecture_et_autre_societe_ui",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_apercu_inventaire_isole",
+      "test": "test_apercu_sans_creation_avec_montants_et_dates_exacts[cca-6125-3491-3491-6125-True]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_apercu_inventaire_isole",
+      "test": "test_apercu_sans_creation_avec_montants_et_dates_exacts[pca-7124-4491-7124-4491-True]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_apercu_inventaire_isole",
+      "test": "test_apercu_sans_creation_avec_montants_et_dates_exacts[fnp-6125-4417-6125-4417-True]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_apercu_inventaire_isole",
+      "test": "test_apercu_sans_creation_avec_montants_et_dates_exacts[fae-7124-3427-3427-7124-True]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_apercu_inventaire_isole",
+      "test": "test_apercu_sans_creation_avec_montants_et_dates_exacts[provision_risque-6195-1518-6195-1518-False]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_apercu_inventaire_isole",
+      "test": "test_apercu_sans_creation_avec_montants_et_dates_exacts[depreciation_client-61964-3942-61964-3942-False]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_scanner",
+      "classe": "Test.test_apercu_inventaire_isole",
+      "test": "test_apercu_sans_creation_avec_montants_et_dates_exacts[depreciation_stock-61961-3911-61961-3911-False]",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_utilisateurs",
+      "classe": "Test.test_multi_societes_runtime_isole",
+      "test": "test090_creation_seconde_societe_et_switch_api",
+      "statut": "reussi"
+    },
+    {
+      "campagne": "personnel873_utilisateurs",
+      "classe": "Test.test_multi_societes_runtime_isole",
+      "test": "test090_invitation_changement_role_desactivation_et_suppression_secondaire",
+      "statut": "reussi"
+    }
+  ],
+  "nombre_distinct": 187,
+  "repartition": {
+    "API_SQL_bootstrap_PG_natif_isole": 95,
+    "Edge_API_PG_natif_isole": 11,
+    "unitaires_et_controles_sources": 81
+  },
+  "build": {
+    "code": 0,
+    "secondes_vite": 10.07,
+    "secondes_commande": 13.98,
+    "avertissements": [
+      "taille des chunks",
+      "import xlsx statique/dynamique"
+    ]
+  },
+  "compilation": {
+    "code": 0,
+    "fichiers": [
+      "hisabpro-backend/routers/avances_salaries.py",
+      "hisabpro-backend/routers/employes.py",
+      "hisabpro-backend/routers/grh.py",
+      "hisabpro-backend/routers/personnel_habilitations.py",
+      "hisabpro-backend/routers/utilisateurs.py",
+      "hisabpro-backend/services/personnel_acces_service.py",
+      "Test/test_e2e_personnel_habilitations873_isole.py",
+      "Test/test_fact11_production_hardening.py",
+      "Test/test_personnel_habilitations873_compat_isole.py",
+      "Test/test_personnel_habilitations873_isole.py"
+    ]
+  },
+  "limites": [
+    "Aucun PostgreSQL utilisateur ni donnée réelle",
+    "Migration105 non installée sur environnement utilisateur",
+    "Mode historique inchangé sans activation explicite",
+    "Protection actuelle de consultation ;circuit de changements et approbations à suivre",
+    "Profil Personnel seul non livré"
+  ],
+  "fichiers_preuves": {
+    "Test/preuves_personnel873/personnel873_cible.xml": "4598b795663b512fe00ec63765df231e490e632865f5d0a15d6750f4c39f23c1",
+    "Test/preuves_personnel873/personnel873_connexes.xml": "8c95a695c91256aebf84a4ab1a7cf87306ac0ea6b7541885c4a187f65551b73d",
+    "Test/preuves_personnel873/personnel873_deploiement.xml": "7aa087e7f17f38e2be0550755e94b0b3524553b7b6b55bac4476524c04708be9",
+    "Test/preuves_personnel873/personnel873_edge_1440_preuve.json": "bf7404120627a2fe8041e30394e0087296865d74fd30874db492de26edeaed3c",
+    "Test/preuves_personnel873/personnel873_edge_390_preuve.json": "65422e299f1a39a26422f4f7eb9d2015121a0aedab61c9cdae6d9aeab63acfa8",
+    "Test/preuves_personnel873/personnel873_edge_details.xml": "27ea2f170da6af402f44e336edf54ba0ba85361304a97fc7c6cb31cf1d28468d",
+    "Test/preuves_personnel873/personnel873_edge_reproduction.xml": "cbf42402cfab8debfeec420854f724e365c6c690e4b443fb3ea801e6adb6d931",
+    "Test/preuves_personnel873/personnel873_final.xml": "64f4a611c7c4a5205716bc47b8d1bb23a22767639ff5fa96d99a8b960c0c7622",
+    "Test/preuves_personnel873/personnel873_metadonnees.xml": "db4a176e96f7a598dcfc6b415458488bedbe8bfe7e0a44e3ca60bf99732f24e7",
+    "Test/preuves_personnel873/personnel873_reprise.xml": "975eaf044444f0d20b79938d6a00545d594d6e01c09ec43442f16568d3fe9ae3",
+    "Test/preuves_personnel873/personnel873_scanner.xml": "96c0d25b6fb6b8e5091966c70894e20fb174aa5caef8b0078b96a71d4599f965",
+    "Test/preuves_personnel873/personnel873_ui_historiques.xml": "4945488d67c732dbacbc6f3c1770c417823ab594d483b21dd2e93d6099a192fe",
+    "Test/preuves_personnel873/personnel873_utilisateurs.xml": "08d77012af9c21587471afe224bf1c06ccade5528555ee8baa49b2fff290829e"
+  },
+  "verification_complementaire": "Module actif/inactif remonté fidèlement même avant activation de la protection ;compatibilité historique conservée.",
+  "candidat": {
+    "chemin": "Test/CANDIDAT_PERSONNEL_PAIE_873.json",
+    "sha256": "a08ccd072931abc78518714ba409ba89201e2fc95f0906fc9f035fa3aefe134b",
+    "sources": 466
+  }
+}

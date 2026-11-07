@@ -1,0 +1,5886 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_fi79e6lo",
+  "nonce": "9eccdd0f71344323aaa92acd33d7fa6f",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-ADM-006",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-007",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-008",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-009",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-010",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-011",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-012",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-013",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-014",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-015",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-IMM-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-IMM-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-015",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-008",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-016",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-009",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-017",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-012",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-013",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-014",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-015",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-008",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-016",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-017",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-018",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-009",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-018",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-019",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-STK-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-IMM-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-019",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CPT-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-020",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-025",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-026",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-021",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-022",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-023",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-024",
+      "statut": "Partiel",
+      "limite": "Base/calcul/minimum etexonération du scénario testés ;variation nonexonérée observée avantparamétrage, pas surune copie dédiée."
+    },
+    {
+      "id": "HP-CLO-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-027",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-028",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-029",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-030",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-008",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-009",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-012",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-013",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-014",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-015",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-016",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-017",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-020",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-021",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-022",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-023",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-024",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-003",
+      "statut": "Partiel",
+      "limite": "B6échéancesnonqualifiées ;B7documentécomplet ;B13méthodeàdocumenter ;B14liquidationsOD àrapprocher."
+    },
+    {
+      "id": "HP-ETA-018",
+      "statut": "Partiel",
+      "limite": "B6échéancesnonqualifiées ;B7documentécomplet ;B13méthodeàdocumenter ;B14liquidationsOD àrapprocher."
+    },
+    {
+      "id": "HP-ETA-019",
+      "statut": "Partiel",
+      "limite": "B6échéancesnonqualifiées ;B7documentécomplet ;B13méthodeàdocumenter ;B14liquidationsOD àrapprocher."
+    }
+  ],
+  "tiers": {
+    "C-MARCH": {
+      "id": 3,
+      "compte": "3421",
+      "auxiliaire": "C00000003"
+    },
+    "C-SERVICE": {
+      "id": 4,
+      "compte": "3421",
+      "auxiliaire": "C00000004"
+    },
+    "C-IMPAYE": {
+      "id": 5,
+      "compte": "3421",
+      "auxiliaire": "C00000005"
+    },
+    "F-MARCH": {
+      "id": 6,
+      "compte": "4411",
+      "auxiliaire": "F00000006"
+    },
+    "F-SERVICE": {
+      "id": 7,
+      "compte": "4411",
+      "auxiliaire": "F00000007"
+    },
+    "F-CONTROLE": {
+      "id": 8,
+      "compte": "4411",
+      "auxiliaire": "F00000008"
+    },
+    "F-IMMO": {
+      "id": 9,
+      "compte": "4481",
+      "auxiliaire": "F00000009"
+    }
+  },
+  "articles": {
+    "M-01": {
+      "id": 1,
+      "stockable": true,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": "6111",
+      "compte_vente": "7111"
+    },
+    "S-VTE": {
+      "id": 2,
+      "stockable": false,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": null,
+      "compte_vente": "7124"
+    },
+    "S-ACH": {
+      "id": 3,
+      "stockable": false,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": "6125",
+      "compte_vente": null
+    }
+  },
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "operations": [
+    {
+      "reference": "CAP-01",
+      "id": 1,
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "200000.00",
+          "0.00"
+        ],
+        "1111": [
+          "0.00",
+          "200000.00"
+        ]
+      }
+    },
+    {
+      "reference": "IMMO-ACQ",
+      "id": 2,
+      "date": "2025-01-01",
+      "journal": "AC",
+      "lignes": {
+        "2355": [
+          "24000.00",
+          "0.00"
+        ],
+        "34551": [
+          "4800.00",
+          "0.00"
+        ],
+        "4481": [
+          "0.00",
+          "28800.00"
+        ]
+      }
+    },
+    {
+      "reference": "IMMO-PAY",
+      "id": 3,
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "lignes": {
+        "4481": [
+          "28800.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "28800.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-F01",
+      "id": 4,
+      "date": "2025-01-04",
+      "journal": "BQ",
+      "lignes": {
+        "3411": [
+          "6000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-01",
+      "id": 5,
+      "date": "2025-01-05",
+      "journal": "AC",
+      "lignes": {
+        "6111": [
+          "10000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2000.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-F01-IMP",
+      "id": 6,
+      "date": "2025-01-05",
+      "journal": "OD",
+      "lignes": {
+        "4411": [
+          "6000.00",
+          "0.00"
+        ],
+        "3411": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-01-PAY",
+      "id": 7,
+      "date": "2025-01-07",
+      "journal": "BQ",
+      "lignes": {
+        "4411": [
+          "6000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-02",
+      "id": 8,
+      "date": "2025-01-10",
+      "journal": "AC",
+      "lignes": {
+        "6111": [
+          "12000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2400.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-01",
+      "id": 9,
+      "date": "2025-01-20",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "30000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "5000.00"
+        ],
+        "7111": [
+          "0.00",
+          "25000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-01-PAY",
+      "id": 10,
+      "date": "2025-01-25",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "10000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01",
+      "id": 11,
+      "date": "2025-01-26",
+      "journal": "AE",
+      "lignes": {
+        "51111": [
+          "20000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-01",
+      "id": 12,
+      "date": "2025-01-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "5000.00",
+          "0.00"
+        ],
+        "3456": [
+          "1800.00",
+          "0.00"
+        ],
+        "34551": [
+          "0.00",
+          "4800.00"
+        ],
+        "34552": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01-REM",
+      "id": 13,
+      "date": "2025-02-01",
+      "journal": "AE",
+      "lignes": {
+        "51112": [
+          "20000.00",
+          "0.00"
+        ],
+        "51111": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01-ENC",
+      "id": 14,
+      "date": "2025-02-05",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "20000.00",
+          "0.00"
+        ],
+        "51112": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-SERVICE",
+      "id": 15,
+      "date": "2025-02-10",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "12000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2400.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "AV-01",
+      "id": 16,
+      "date": "2025-02-10",
+      "journal": "AV",
+      "lignes": {
+        "7111": [
+          "2500.00",
+          "0.00"
+        ],
+        "4455": [
+          "500.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "3000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-SERVICE-PAY",
+      "id": 17,
+      "date": "2025-02-15",
+      "journal": "BQ",
+      "lignes": {
+        "4411": [
+          "14400.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-02",
+      "id": 18,
+      "date": "2025-02-28",
+      "journal": "OD",
+      "lignes": {
+        "3456": [
+          "2900.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "500.00"
+        ],
+        "34552": [
+          "0.00",
+          "2400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-02",
+      "id": 19,
+      "date": "2025-03-01",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "18000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "3000.00"
+        ],
+        "7111": [
+          "0.00",
+          "15000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-F01",
+      "id": 20,
+      "date": "2025-03-01",
+      "journal": "AE",
+      "lignes": {
+        "4411": [
+          "14400.00",
+          "0.00"
+        ],
+        "4415": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-02-PAY",
+      "id": 21,
+      "date": "2025-03-05",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "5000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "5000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-F01-PAY",
+      "id": 22,
+      "date": "2025-03-20",
+      "journal": "BQ",
+      "lignes": {
+        "4415": [
+          "14400.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-03",
+      "id": 23,
+      "date": "2025-03-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "3000.00",
+          "0.00"
+        ],
+        "34552": [
+          "0.00",
+          "2400.00"
+        ],
+        "3456": [
+          "0.00",
+          "600.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01",
+      "id": 24,
+      "date": "2025-04-01",
+      "journal": "AE",
+      "lignes": {
+        "3425": [
+          "10000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01-REM",
+      "id": 25,
+      "date": "2025-05-15",
+      "journal": "AE",
+      "lignes": {
+        "51132": [
+          "10000.00",
+          "0.00"
+        ],
+        "3425": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01-ENC",
+      "id": 26,
+      "date": "2025-05-16",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "9990.00",
+          "0.00"
+        ],
+        "61472": [
+          "10.00",
+          "0.00"
+        ],
+        "51132": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-C01",
+      "id": 27,
+      "date": "2025-06-01",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "24000.00",
+          "0.00"
+        ],
+        "4421": [
+          "0.00",
+          "24000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-SERVICE",
+      "id": 28,
+      "date": "2025-06-15",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "144000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "24000.00"
+        ],
+        "7124": [
+          "0.00",
+          "120000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-C01-IMP",
+      "id": 29,
+      "date": "2025-06-15",
+      "journal": "OD",
+      "lignes": {
+        "4421": [
+          "24000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "24000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-SERVICE-PAY",
+      "id": 30,
+      "date": "2025-06-30",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "120000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "120000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-06",
+      "id": 31,
+      "date": "2025-06-30",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "24000.00",
+          "0.00"
+        ],
+        "3456": [
+          "0.00",
+          "4100.00"
+        ],
+        "4456": [
+          "0.00",
+          "19900.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-06-PAY",
+      "id": 32,
+      "date": "2025-07-20",
+      "journal": "BQ",
+      "lignes": {
+        "4456": [
+          "19900.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "19900.00"
+        ]
+      }
+    },
+    {
+      "reference": "INT-PPRF",
+      "id": 33,
+      "date": "2025-11-30",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "800.00",
+          "0.00"
+        ],
+        "3453": [
+          "200.00",
+          "0.00"
+        ],
+        "7381": [
+          "0.00",
+          "1000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ASS-01",
+      "id": 34,
+      "date": "2025-12-01",
+      "journal": "BQ",
+      "lignes": {
+        "6134": [
+          "12000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "REF-02",
+      "id": 35,
+      "date": "2025-12-02",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "200.00",
+          "0.00"
+        ],
+        "34552": [
+          "40.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "240.00"
+        ]
+      }
+    },
+    {
+      "reference": "REF-002",
+      "id": 36,
+      "date": "2025-12-02",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "200.00",
+          "0.00"
+        ],
+        "34552": [
+          "40.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "240.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-IMPAYEE",
+      "id": 37,
+      "date": "2025-12-10",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "14400.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "2400.00"
+        ],
+        "7124": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-REJET",
+      "id": 38,
+      "date": "2025-12-12",
+      "journal": "AE",
+      "lignes": {
+        "51111": [
+          "2000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-REJET-INV",
+      "id": 39,
+      "date": "2025-12-15",
+      "journal": "OD",
+      "lignes": {
+        "3421": [
+          "2000.00",
+          "0.00"
+        ],
+        "51111": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AMENDE",
+      "id": 40,
+      "date": "2025-12-20",
+      "journal": "BQ",
+      "lignes": {
+        "6583": [
+          "500.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "500.00"
+        ]
+      }
+    },
+    {
+      "reference": "FRAIS-BQ",
+      "id": 41,
+      "date": "2025-12-31",
+      "journal": "BQ",
+      "lignes": {
+        "61473": [
+          "60.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "60.00"
+        ]
+      }
+    },
+    {
+      "reference": "STOCK-FIN",
+      "id": 42,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "3111": [
+          "6600.00",
+          "0.00"
+        ],
+        "6114": [
+          "0.00",
+          "6600.00"
+        ]
+      }
+    },
+    {
+      "reference": "AMORT-2025",
+      "id": 43,
+      "date": "2025-12-31",
+      "journal": "AM",
+      "lignes": {
+        "61935": [
+          "4800.00",
+          "0.00"
+        ],
+        "28355": [
+          "0.00",
+          "4800.00"
+        ]
+      }
+    },
+    {
+      "reference": "CCA-2025",
+      "id": 44,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "3491": [
+          "11000.00",
+          "0.00"
+        ],
+        "6134": [
+          "0.00",
+          "11000.00"
+        ]
+      }
+    },
+    {
+      "reference": "FNP-2025",
+      "id": 46,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "6125": [
+          "3000.00",
+          "0.00"
+        ],
+        "4417": [
+          "0.00",
+          "3000.00"
+        ]
+      }
+    },
+    {
+      "reference": "PROV-RISQUE",
+      "id": 48,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "61955": [
+          "1500.00",
+          "0.00"
+        ],
+        "1518": [
+          "0.00",
+          "1500.00"
+        ]
+      }
+    },
+    {
+      "reference": "DEPR-CLIENT",
+      "id": 49,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "61964": [
+          "2000.00",
+          "0.00"
+        ],
+        "3942": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-12",
+      "id": 50,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "2400.00",
+          "0.00"
+        ],
+        "4456": [
+          "0.00",
+          "2400.00"
+        ]
+      }
+    },
+    {
+      "reference": "IS-2025",
+      "id": 51,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "6701": [
+          "23420.25",
+          "0.00"
+        ],
+        "4453": [
+          "0.00",
+          "23420.25"
+        ]
+      }
+    },
+    {
+      "reference": "PPRF-IMP",
+      "id": 52,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "4453": [
+          "200.00",
+          "0.00"
+        ],
+        "3453": [
+          "0.00",
+          "200.00"
+        ]
+      }
+    }
+  ],
+  "dialogues": [
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 2 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider définitivement le brouillon #1 ?\nLe numéro sera attribué et la facture deviendra non modifiable."
+    },
+    {
+      "type": "confirm",
+      "message": "Générer l'écriture comptable de la facture FA-2025-001 ?"
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 4 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider définitivement le brouillon #2 ?\nLe numéro sera attribué et la facture deviendra non modifiable."
+    },
+    {
+      "type": "confirm",
+      "message": "Générer l'écriture comptable de la facture FA-2025-002 ?"
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "alert",
+      "message": "Brouillon de facture #3 créé à partir de BL-2025-001. Validez-le depuis Factures pour obtenir son numéro définitif."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider définitivement le brouillon #3 ?\nLe numéro sera attribué et la facture deviendra non modifiable."
+    },
+    {
+      "type": "confirm",
+      "message": "Générer l'écriture comptable de la facture FA-2025-003 ?"
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider définitivement le brouillon #4 ?\nLe numéro sera attribué et la facture deviendra non modifiable."
+    },
+    {
+      "type": "confirm",
+      "message": "Générer l'écriture comptable de la facture FA-2025-004 ?"
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Comptabiliser l'avoir AV-2025-001 (3.000,00 MAD) ?\nUne écriture inverse de la facture d'origine sera générée dans le journal AV."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider définitivement le brouillon #5 ?\nLe numéro sera attribué et la facture deviendra non modifiable."
+    },
+    {
+      "type": "confirm",
+      "message": "Générer l'écriture comptable de la facture FA-2025-005 ?"
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider définitivement le brouillon #6 ?\nLe numéro sera attribué et la facture deviendra non modifiable."
+    },
+    {
+      "type": "confirm",
+      "message": "Générer l'écriture comptable de la facture FA-2025-006 ?"
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider définitivement le brouillon #7 ?\nLe numéro sera attribué et la facture deviendra non modifiable."
+    },
+    {
+      "type": "confirm",
+      "message": "Générer l'écriture comptable de la facture FA-2025-007 ?"
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider définitivement le brouillon #8 ?\nLe numéro sera attribué et la facture deviendra non modifiable."
+    },
+    {
+      "type": "confirm",
+      "message": "Générer l'écriture comptable de la facture FA-2025-008 ?"
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider définitivement le brouillon #9 ?\nLe numéro sera attribué et la facture deviendra non modifiable."
+    },
+    {
+      "type": "confirm",
+      "message": "Générer l'écriture comptable de la facture FA-2025-009 ?"
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider l'inventaire physique du 2025-12-31 ?\n\n1 article(s) seront figés dans la photographie d'inventaire.\n0 écart(s) de quantité seront régularisés.\nImpact des écarts : 0,00 MAD.\n\nLe stock final devra ensuite être rapproché de la comptabilité."
+    },
+    {
+      "type": "alert",
+      "message": "Inventaire STOCK-FIN validé.\n\n0 article(s) régularisé(s)\nPertes : 0,00 MAD\nExcédents : 0,00 MAD\nImpact net : 0,00 MAD\nValeur du stock figée : 6.600,00 MAD"
+    },
+    {
+      "type": "confirm",
+      "message": "Générer l'écriture de stock final 2025 ?\n\nStock physique brut : 6.600,00 MAD\nStock comptable brut : 0,00 MAD\nÉcart : 6.600,00 MAD\n\nL'écriture sera créée en brouillon au 2025-12-31."
+    },
+    {
+      "type": "alert",
+      "message": "Écriture de stock 2025 générée en brouillon.\nValidez ensuite cette écriture dans le Journal."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "alert",
+      "message": "Écriture générée — 2025 : 4.800,00 MAD"
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Clôturer l'exercice 2025 ?\n\n• Le résultat net (106.409,75 MAD) sera constaté.\n• Les soldes seront reportés en à-nouveaux sur 2026.\n• L'exercice 2025 sera verrouillé définitivement.\n\nAprès clôture, toute correction devra être enregistrée sur une période ouverte ultérieure."
+    },
+    {
+      "type": "alert",
+      "message": "Exercice 2025 clôturé.\nRésultat : 106.409,75 MAD (bénéfice)\nÀ-nouveaux générés sur 2026."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 2 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Confirmer définitivement la liquidation IS 2025 ? Cette photographie fiscale deviendra immuable."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    }
+  ],
+  "limite_cycle": "Capital etacquisition présents danscette société ;autres opérations annuelles encoreàintercaler chronologiquement.",
+  "requetes_echouees": [
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:61064/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    }
+  ],
+  "lettrage_fournisseur": "AAA",
+  "cycle": {
+    "factures": [
+      1,
+      2,
+      3
+    ],
+    "devis": 1,
+    "bc": 1,
+    "bl": 1,
+    "ecritures": 10,
+    "lignes": 24,
+    "total_debit_credit": "342000.00",
+    "stock": 100,
+    "cmup": 110,
+    "reste_vente": 20000
+  },
+  "suite777": {
+    "ecritures": 21,
+    "lignes": 52,
+    "debit_credit": "480900.00",
+    "stock": 60,
+    "cmup": 110,
+    "reste_vente2": 10000,
+    "avoir": 1,
+    "facture2": 5,
+    "prefixe_valide_inchange": true,
+    "imputation_credit_sans_nouvelle_ecriture": true
+  },
+  "semestre789": {
+    "ecritures": 31,
+    "lignes": 76,
+    "debit_credit": "864300.00",
+    "soldes": {
+      "1111": "-200000.00",
+      "2355": "24000.00",
+      "4456": "-19900.00",
+      "5141": "319390.00",
+      "6111": "22000.00",
+      "6125": "12000.00",
+      "61472": "10.00",
+      "7111": "-37500.00",
+      "7124": "-120000.00"
+    },
+    "references": [
+      "CAP-01",
+      "IMMO-ACQ",
+      "IMMO-PAY",
+      "AC-F01",
+      "ACH-01",
+      "AC-F01-IMP",
+      "ACH-01-PAY",
+      "ACH-02",
+      "VENTE-01",
+      "VENTE-01-PAY",
+      "CHQ-01",
+      "TVA-01",
+      "CHQ-01-REM",
+      "CHQ-01-ENC",
+      "ACH-SERVICE",
+      "AV-01",
+      "ACH-SERVICE-PAY",
+      "TVA-02",
+      "VENTE-02",
+      "EFF-F01",
+      "VENTE-02-PAY",
+      "EFF-F01-PAY",
+      "TVA-03",
+      "EFF-C01",
+      "EFF-C01-REM",
+      "EFF-C01-ENC",
+      "AC-C01",
+      "VENTE-SERVICE",
+      "AC-C01-IMP",
+      "VENTE-SERVICE-PAY",
+      "TVA-06"
+    ],
+    "stock": 60,
+    "cmup": 110,
+    "frais_effet": "10.00",
+    "ordre_chronologique": true,
+    "limite": "Arrêt30/06/2025 ;les écritures TVA sont saisies manuellement conformément aux fichesFIS015/016/017/018, pas des déclarations automatiques. Pas de clôture ni de dotation annuelle anticipée."
+  },
+  "ajustements791": [
+    {
+      "reference": "CCA-2025",
+      "id": 1,
+      "ecriture": 44,
+      "contrepassation2026": 45
+    },
+    {
+      "reference": "FNP-2025",
+      "id": 2,
+      "ecriture": 46,
+      "contrepassation2026": 47
+    },
+    {
+      "reference": "PROV-RISQUE",
+      "id": 3,
+      "ecriture": 48,
+      "contrepassation2026": null
+    },
+    {
+      "reference": "DEPR-CLIENT",
+      "id": 4,
+      "ecriture": 49,
+      "contrepassation2026": null
+    }
+  ],
+  "controle_cloture791": {
+    "exercice": 2025,
+    "date_debut": "2025-01-01",
+    "date_fin": "2025-12-31",
+    "date_fin_atteinte": true,
+    "est_clos": false,
+    "date_cloture": null,
+    "nb_ecritures": 50,
+    "total_charges": 64090.25,
+    "total_produits": 170500.0,
+    "resultat_net": 106409.75,
+    "type_resultat": "bénéfice",
+    "compte_resultat": "1191",
+    "equilibre": true,
+    "ecart": 0.0,
+    "apercu_a_nouveaux": [
+      {
+        "compte": "1111",
+        "debit": 0.0,
+        "credit": 200000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1518",
+        "debit": 0.0,
+        "credit": 1500.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "2355",
+        "debit": 24000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "28355",
+        "debit": 0.0,
+        "credit": 4800.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3111",
+        "debit": 6600.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3421",
+        "debit": 14400.0,
+        "credit": 0.0,
+        "tiers_id": 5,
+        "nature_auxiliaire": "client",
+        "compte_auxiliaire_snapshot": "C00000005",
+        "libelle_auxiliaire_snapshot": "Client Impayé Recette"
+      },
+      {
+        "compte": "34552",
+        "debit": 80.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3491",
+        "debit": 11000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3942",
+        "debit": 0.0,
+        "credit": 2000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4411",
+        "debit": 0.0,
+        "credit": 480.0,
+        "tiers_id": 8,
+        "nature_auxiliaire": "fournisseur",
+        "compte_auxiliaire_snapshot": "F00000008",
+        "libelle_auxiliaire_snapshot": "Fournisseur Contrôle Références Recette"
+      },
+      {
+        "compte": "4417",
+        "debit": 0.0,
+        "credit": 3000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4453",
+        "debit": 0.0,
+        "credit": 23220.25,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4456",
+        "debit": 0.0,
+        "credit": 2400.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "5141",
+        "debit": 287730.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1191",
+        "debit": 0.0,
+        "credit": 106409.75,
+        "resultat": true
+      }
+    ],
+    "total_an_debit": 343810.0,
+    "total_an_credit": 343810.0,
+    "dotations_manquantes": [],
+    "nb_dotations_manquantes": 0,
+    "total_dotations_manquantes": 0.0,
+    "nb_ecritures_brouillon": 0,
+    "ecritures_brouillon": [],
+    "nb_ajustements_inventaire": 4,
+    "stock_cloture": {
+      "exercice": 2025,
+      "date_fin": "2025-12-31",
+      "nb_articles": 1,
+      "inventaire_requis": true,
+      "inventaire_valide": true,
+      "inventaire_id": 1,
+      "inventaire_reference": "STOCK-FIN",
+      "valeur_physique_brute": 6600.0,
+      "valeur_comptable_brute": 6600.0,
+      "depreciations": 0.0,
+      "valeur_comptable_nette": 6600.0,
+      "ecart_brut": 0.0,
+      "valorisation_complete": true,
+      "diagnostics": [],
+      "stock_rapproche": true,
+      "ecriture_stock_id": 42,
+      "ecriture_stock_validee": true,
+      "lignes": [
+        {
+          "article_id": 1,
+          "code": "M-01",
+          "designation": "Marchandise de recette",
+          "quantite": 60.0,
+          "cmup": 110.0,
+          "valeur": 6600.0,
+          "nombres_diagnostics": {},
+          "compte_stock": "3111",
+          "compte_variation": "6114"
+        }
+      ]
+    },
+    "immobilisations_rapprochement": {
+      "brut_module": 24000.0,
+      "brut_comptable": 24000.0,
+      "ecart_brut": 0.0,
+      "amortissements_module": 4800.0,
+      "amortissements_comptables": 4800.0,
+      "ecart_amortissements": 0.0,
+      "vnc_module": 19200.0,
+      "vnc_comptable": 19200.0,
+      "ecart_vnc": 0.0,
+      "rapproche": true,
+      "details_comptes": [
+        {
+          "nature": "brut",
+          "compte": "2355",
+          "module": 24000.0,
+          "comptable": 24000.0,
+          "ecart": 0.0
+        },
+        {
+          "nature": "amortissement",
+          "compte": "28355",
+          "module": 4800.0,
+          "comptable": 4800.0,
+          "ecart": 0.0
+        }
+      ]
+    },
+    "nb_documents_non_comptabilises": 0,
+    "documents_non_comptabilises": [],
+    "affectation_resultat": null,
+    "resultat_anterieur_a_reclasser": null,
+    "fiscalite_is": {
+      "applicable": true,
+      "attendu": 22807.75,
+      "comptabilise": 23420.25,
+      "compte_charge_attendu": "6701",
+      "nature_impot": "IS",
+      "absente": false,
+      "coherente": false,
+      "a_comptabiliser": 0.0,
+      "resultat_comptable_avant_is": 129830.0,
+      "resultat_net_apres_is": null,
+      "deficits_a_confirmer": false
+    },
+    "fec_controle": {
+      "conforme": true,
+      "nb_bloquants": 0,
+      "nb_avertissements": 1,
+      "bloquants": []
+    }
+  },
+  "annuel791": {
+    "ecritures2025": 50,
+    "lignes2025": 118,
+    "debit_credit": "971560.25",
+    "contrepassations2026_brouillon": 2,
+    "lignes2026": 4,
+    "resultats": {
+      "banque": "287730.00",
+      "stock_valeur": "6600.00",
+      "total_actif_net": "337010.0",
+      "total_passif_net": "337010.0",
+      "resultat_net": "106409.75",
+      "caf": "112709.75"
+    },
+    "soldes": {
+      "1111": "-200000.00",
+      "1518": "-1500.00",
+      "2355": "24000.00",
+      "28355": "-4800.00",
+      "3111": "6600.00",
+      "3421": "14400.00",
+      "34552": "80.00",
+      "3491": "11000.00",
+      "3942": "-2000.00",
+      "4411": "-480.00",
+      "4417": "-3000.00",
+      "4453": "-23220.25",
+      "4456": "-2400.00",
+      "5141": "287730.00",
+      "6111": "22000.00",
+      "6114": "-6600.00",
+      "6125": "15400.00",
+      "6134": "1000.00",
+      "61472": "10.00",
+      "61473": "60.00",
+      "61935": "4800.00",
+      "61955": "1500.00",
+      "61964": "2000.00",
+      "6583": "500.00",
+      "6701": "23420.25",
+      "7111": "-37500.00",
+      "7124": "-132000.00",
+      "7381": "-1000.00"
+    },
+    "stock": 60,
+    "cmup": 110,
+    "originaux_semestre_inchanges": true,
+    "limite": "États annuels et flux produits testés, pas clôture définitive, déclarations fiscales ni recette humaine ;contrôles réels non contournés."
+  },
+  "controle_avant_cloture793": {
+    "exercice": 2025,
+    "date_debut": "2025-01-01",
+    "date_fin": "2025-12-31",
+    "date_fin_atteinte": true,
+    "est_clos": false,
+    "date_cloture": null,
+    "nb_ecritures": 50,
+    "total_charges": 64090.25,
+    "total_produits": 170500.0,
+    "resultat_net": 106409.75,
+    "type_resultat": "bénéfice",
+    "compte_resultat": "1191",
+    "equilibre": true,
+    "ecart": 0.0,
+    "apercu_a_nouveaux": [
+      {
+        "compte": "1111",
+        "debit": 0.0,
+        "credit": 200000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1518",
+        "debit": 0.0,
+        "credit": 1500.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "2355",
+        "debit": 24000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "28355",
+        "debit": 0.0,
+        "credit": 4800.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3111",
+        "debit": 6600.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3421",
+        "debit": 14400.0,
+        "credit": 0.0,
+        "tiers_id": 5,
+        "nature_auxiliaire": "client",
+        "compte_auxiliaire_snapshot": "C00000005",
+        "libelle_auxiliaire_snapshot": "Client Impayé Recette"
+      },
+      {
+        "compte": "34552",
+        "debit": 80.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3491",
+        "debit": 11000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3942",
+        "debit": 0.0,
+        "credit": 2000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4411",
+        "debit": 0.0,
+        "credit": 480.0,
+        "tiers_id": 8,
+        "nature_auxiliaire": "fournisseur",
+        "compte_auxiliaire_snapshot": "F00000008",
+        "libelle_auxiliaire_snapshot": "Fournisseur Contrôle Références Recette"
+      },
+      {
+        "compte": "4417",
+        "debit": 0.0,
+        "credit": 3000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4453",
+        "debit": 0.0,
+        "credit": 23220.25,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4456",
+        "debit": 0.0,
+        "credit": 2400.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "5141",
+        "debit": 287730.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1191",
+        "debit": 0.0,
+        "credit": 106409.75,
+        "resultat": true
+      }
+    ],
+    "total_an_debit": 343810.0,
+    "total_an_credit": 343810.0,
+    "dotations_manquantes": [],
+    "nb_dotations_manquantes": 0,
+    "total_dotations_manquantes": 0.0,
+    "nb_ecritures_brouillon": 0,
+    "ecritures_brouillon": [],
+    "nb_ajustements_inventaire": 4,
+    "stock_cloture": {
+      "exercice": 2025,
+      "date_fin": "2025-12-31",
+      "nb_articles": 1,
+      "inventaire_requis": true,
+      "inventaire_valide": true,
+      "inventaire_id": 1,
+      "inventaire_reference": "STOCK-FIN",
+      "valeur_physique_brute": 6600.0,
+      "valeur_comptable_brute": 6600.0,
+      "depreciations": 0.0,
+      "valeur_comptable_nette": 6600.0,
+      "ecart_brut": 0.0,
+      "valorisation_complete": true,
+      "diagnostics": [],
+      "stock_rapproche": true,
+      "ecriture_stock_id": 42,
+      "ecriture_stock_validee": true,
+      "lignes": [
+        {
+          "article_id": 1,
+          "code": "M-01",
+          "designation": "Marchandise de recette",
+          "quantite": 60.0,
+          "cmup": 110.0,
+          "valeur": 6600.0,
+          "nombres_diagnostics": {},
+          "compte_stock": "3111",
+          "compte_variation": "6114"
+        }
+      ]
+    },
+    "immobilisations_rapprochement": {
+      "brut_module": 24000.0,
+      "brut_comptable": 24000.0,
+      "ecart_brut": 0.0,
+      "amortissements_module": 4800.0,
+      "amortissements_comptables": 4800.0,
+      "ecart_amortissements": 0.0,
+      "vnc_module": 19200.0,
+      "vnc_comptable": 19200.0,
+      "ecart_vnc": 0.0,
+      "rapproche": true,
+      "details_comptes": [
+        {
+          "nature": "brut",
+          "compte": "2355",
+          "module": 24000.0,
+          "comptable": 24000.0,
+          "ecart": 0.0
+        },
+        {
+          "nature": "amortissement",
+          "compte": "28355",
+          "module": 4800.0,
+          "comptable": 4800.0,
+          "ecart": 0.0
+        }
+      ]
+    },
+    "nb_documents_non_comptabilises": 0,
+    "documents_non_comptabilises": [],
+    "affectation_resultat": null,
+    "resultat_anterieur_a_reclasser": null,
+    "fiscalite_is": {
+      "applicable": true,
+      "attendu": 23420.25,
+      "comptabilise": 23420.25,
+      "compte_charge_attendu": "6701",
+      "nature_impot": "IS",
+      "absente": false,
+      "coherente": true,
+      "a_comptabiliser": 0.0,
+      "resultat_comptable_avant_is": 129830.0,
+      "resultat_net_apres_is": 106409.75,
+      "deficits_a_confirmer": false
+    },
+    "fec_controle": {
+      "conforme": true,
+      "nb_bloquants": 0,
+      "nb_avertissements": 1,
+      "bloquants": []
+    }
+  },
+  "cloture793": {
+    "resultat_net": "106409.75",
+    "reintegrations": "4000.00",
+    "benefice_fiscal": "133830.00",
+    "is": "23420.25",
+    "credit": "200.00",
+    "solde": "23220.25",
+    "an2026_id": 54,
+    "total_an": "343810.00",
+    "soldes_an": {
+      "1111": "-200000.00",
+      "1191": "-106409.75",
+      "1518": "-1500.00",
+      "2355": "24000.00",
+      "28355": "-4800.00",
+      "3111": "6600.00",
+      "3421": "14400.00",
+      "34552": "80.00",
+      "3491": "11000.00",
+      "3942": "-2000.00",
+      "4411": "-480.00",
+      "4417": "-3000.00",
+      "4453": "-23220.25",
+      "4456": "-2400.00",
+      "5141": "287730.00"
+    },
+    "contrepassations2026_validees": 2,
+    "cinquante_originaux2025_inchanges": true,
+    "ecriture_sur_clos_refusee": 423,
+    "liquidation_figee": true,
+    "cm_scenario": "0.00",
+    "cm_avant_parametrage": "3000.00",
+    "css_reference_manquante_visible": true,
+    "limite": "Hypothèses fiscales explicites du jeu fictif, pas validation réglementaire ;CMsanscopiecontrôle dédiée restePartiel. DéclarationsTVA/exportsannuels etrecettehumaine restentàqualifier."
+  },
+  "paiements2026_795": [
+    {
+      "reference": "TVA-12-PAY",
+      "date": "2026-01-20",
+      "debit": "4456",
+      "credit": "5141",
+      "montant": "2400.00",
+      "id": 55
+    },
+    {
+      "reference": "IS-2025-PAY",
+      "date": "2026-03-31",
+      "debit": "4453",
+      "credit": "5141",
+      "montant": "23220.25",
+      "id": 56
+    },
+    {
+      "reference": "AP1-2026",
+      "date": "2026-03-31",
+      "debit": "3453",
+      "credit": "5141",
+      "montant": "6691.50",
+      "id": 57
+    },
+    {
+      "reference": "AP2-2026",
+      "date": "2026-06-30",
+      "debit": "3453",
+      "credit": "5141",
+      "montant": "2000.00",
+      "id": 58
+    }
+  ],
+  "echeances795": {
+    "date_controle": "2026-10-29",
+    "banque_apres_soldes2025": "262109.75",
+    "banque_apres_acomptes2026": "253418.25",
+    "reference_acomptes": {
+      "disponible": true,
+      "non_applicable": false,
+      "montant_annuel": 26766.0,
+      "source": "transition_2023_2026",
+      "libelle_source": "Bénéfice fiscal 2025 × taux IS applicable à 2026",
+      "exercice_reference": 2025,
+      "benefice_reference": 133830.0,
+      "taux_reference": 20.0,
+      "provisoire": false
+    },
+    "acomptes": [
+      {
+        "numero": 1,
+        "date_echeance": "2026-03-31",
+        "montant_du": 6691.5,
+        "credit_n_1_impute": 0.0,
+        "credit_ras_impute": 0.0,
+        "montant_net_a_verser": 6691.5,
+        "montant_verse": 6691.5,
+        "date_versement": "2026-03-31",
+        "reference_paiement": "AP1-2026",
+        "dispense": false,
+        "reference_dispense": null,
+        "commentaire": null,
+        "statut": "solde",
+        "reste_a_couvrir": 0.0
+      },
+      {
+        "numero": 2,
+        "date_echeance": "2026-06-30",
+        "montant_du": 6691.5,
+        "credit_n_1_impute": 0.0,
+        "credit_ras_impute": 0.0,
+        "montant_net_a_verser": 6691.5,
+        "montant_verse": 2000.0,
+        "date_versement": "2026-06-30",
+        "reference_paiement": "AP2-2026",
+        "dispense": false,
+        "reference_dispense": null,
+        "commentaire": null,
+        "statut": "partiel_en_retard",
+        "reste_a_couvrir": 4691.5
+      },
+      {
+        "numero": 3,
+        "date_echeance": "2026-09-30",
+        "montant_du": 6691.5,
+        "credit_n_1_impute": 0.0,
+        "credit_ras_impute": 0.0,
+        "montant_net_a_verser": 6691.5,
+        "montant_verse": 0.0,
+        "date_versement": null,
+        "reference_paiement": null,
+        "dispense": false,
+        "reference_dispense": null,
+        "commentaire": null,
+        "statut": "en_retard",
+        "reste_a_couvrir": 6691.5
+      },
+      {
+        "numero": 4,
+        "date_echeance": "2026-12-31",
+        "montant_du": 6691.5,
+        "credit_n_1_impute": 0.0,
+        "credit_ras_impute": 0.0,
+        "montant_net_a_verser": 6691.5,
+        "montant_verse": 0.0,
+        "date_versement": null,
+        "reference_paiement": null,
+        "dispense": false,
+        "reference_dispense": null,
+        "commentaire": null,
+        "statut": "a_venir",
+        "reste_a_couvrir": 6691.5
+      }
+    ],
+    "css": {
+      "applicable": true,
+      "disponible": true,
+      "annee": 2026,
+      "exercice_reference": 2025,
+      "base": 133830.0,
+      "taux": 0.0,
+      "montant_du": 0.0,
+      "source": "liquidation_n_1",
+      "libelle_source": "Bénéfice net fiscal confirmé de l'exercice 2025",
+      "date_echeance": "2026-03-31",
+      "exoneree_permanente": false,
+      "sous_seuil": true,
+      "paiement": null,
+      "montant_verse": 0.0,
+      "reste_a_payer": 0.0,
+      "excedent_verse": 0.0,
+      "statut": "non_due"
+    },
+    "metadonnees_fiscales_sans_double_ecriture": true,
+    "cloture_et_snapshot2025_inchanges": true,
+    "limite": "Montants du jeu fictif,statuts adaptés àdatecourante ;CSSmoteur0neprouvepasabsenceobligationdéclarative. Pasdedépôt niPGutilisateur."
+  },
+  "etic805": {
+    "avant": {
+      "exercice": 2025,
+      "societe": {
+        "raison_sociale": "ATLAS RECETTE HISABPRO SARL — FICTIVE",
+        "identifiant_fiscal": "99000001",
+        "ice": "009900000000001",
+        "capital_social": 200000.0
+      },
+      "source": {
+        "ecritures_validees_incluses": 50,
+        "brouillons_exclus": 0,
+        "clotures_techniques_exclues": 1,
+        "comptes_mouvementes": 40,
+        "date_min": "2025-01-01",
+        "date_max": "2025-12-31",
+        "exercice_clos": true
+      },
+      "controle_source": {
+        "total_debit": 971560.25,
+        "total_credit": 971560.25,
+        "ecart_balance": 0.0,
+        "balance_equilibree": true,
+        "avertissements": []
+      },
+      "sections": [
+        {
+          "code": "A1",
+          "groupe": "A",
+          "titre": "Principales méthodes d'évaluation spécifiques à l'entreprise",
+          "mode": "manuel",
+          "type_saisie": "texte",
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "A2",
+          "groupe": "A",
+          "titre": "État des dérogations",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "indication",
+              "label": "Indication / dérogation",
+              "type": "text"
+            },
+            {
+              "cle": "justification",
+              "label": "Justification",
+              "type": "text"
+            },
+            {
+              "cle": "influence",
+              "label": "Influence sur patrimoine / résultat",
+              "type": "text"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "A3",
+          "groupe": "A",
+          "titre": "État des changements de méthodes",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "nature",
+              "label": "Nature du changement",
+              "type": "text"
+            },
+            {
+              "cle": "justification",
+              "label": "Justification",
+              "type": "text"
+            },
+            {
+              "cle": "influence",
+              "label": "Influence chiffrée / qualitative",
+              "type": "text"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B1",
+          "groupe": "B",
+          "titre": "Détail des non-valeurs",
+          "mode": "auto",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "montant"
+            ],
+            "lignes": []
+          },
+          "contenu": {},
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B2",
+          "groupe": "B",
+          "titre": "Tableau des immobilisations",
+          "mode": "assiste",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "debut",
+              "augmentations",
+              "diminutions",
+              "fin_module",
+              "solde_comptable_fin",
+              "ecart"
+            ],
+            "lignes": [
+              {
+                "compte": "2355",
+                "intitule": "Matériel informatique",
+                "debut": 0.0,
+                "augmentations": 24000.0,
+                "diminutions": 0.0,
+                "fin_module": 24000.0,
+                "solde_comptable_fin": 24000.0,
+                "ecart": 0.0
+              }
+            ],
+            "avertissement": "Le rapprochement utilise les mouvements comptables pour les non-valeurs (21) et le registre des immobilisations pour les comptes 22/23 ; tout écart résiduel doit être justifié avant arrêté."
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B2bis",
+          "groupe": "B",
+          "titre": "Tableau des amortissements",
+          "mode": "auto",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "cumul_debut",
+              "dotations",
+              "amort_sorties",
+              "cumul_fin"
+            ],
+            "lignes": [
+              {
+                "compte": "28355",
+                "intitule": "Amortissements du matériel informatique",
+                "cumul_debut": 0.0,
+                "dotations": 4800.0,
+                "amort_sorties": 0.0,
+                "cumul_fin": 4800.0
+              }
+            ]
+          },
+          "contenu": {},
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B3",
+          "groupe": "B",
+          "titre": "Plus ou moins-values sur cessions ou retraits d'immobilisations",
+          "mode": "assiste",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "date",
+              "designation",
+              "type",
+              "valeur_entree",
+              "vna",
+              "prix_cession",
+              "plus_moins_value"
+            ],
+            "lignes": []
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B4",
+          "groupe": "B",
+          "titre": "Tableau des titres de participation",
+          "mode": "assiste",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "montant"
+            ],
+            "lignes": [],
+            "avertissement": "Les informations sur l'émetteur, le capital, la quote-part détenue et les produits reçus ne sont pas déductibles du seul compte général : complétez-les dans les notes si nécessaire."
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B5",
+          "groupe": "B",
+          "titre": "Tableau des provisions",
+          "mode": "auto",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "debut",
+              "dotations",
+              "reprises_utilisations",
+              "fin"
+            ],
+            "lignes": [
+              {
+                "compte": "1518",
+                "intitule": "Autres provisions pour risques",
+                "debut": 0.0,
+                "dotations": 1500.0,
+                "reprises_utilisations": 0.0,
+                "fin": 1500.0
+              },
+              {
+                "compte": "3942",
+                "intitule": "Provisions pour dépréciation des clients et comptes rattachés",
+                "debut": 0.0,
+                "dotations": 2000.0,
+                "reprises_utilisations": 0.0,
+                "fin": 2000.0
+              }
+            ]
+          },
+          "contenu": {},
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B6",
+          "groupe": "B",
+          "titre": "Tableau des créances",
+          "mode": "assiste",
+          "type_saisie": "ventilation",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "montant"
+            ],
+            "lignes": [
+              {
+                "compte": "3421",
+                "intitule": "Clients",
+                "montant": 14400.0,
+                "echeance_auto_total": 14400.0,
+                "echeance_auto_ecart": 0.0,
+                "echeance_auto_non_qualifie": 14400.0,
+                "echeance_auto_nb_factures": 4,
+                "echeance_auto_nb_factures_historiques": 0,
+                "echeance_auto_anomalies_sources": [
+                  {
+                    "facture_id": 9,
+                    "numero": "FA-2025-009",
+                    "reste_du": 14400.0,
+                    "motifs": [
+                      "Règlement 9 : Rejet sans date historique liée : effet sur le solde à la clôture à vérifier."
+                    ]
+                  }
+                ],
+                "echeance_auto_diagnostic": {
+                  "plus_un_an": 0.0,
+                  "moins_un_an": 0.0,
+                  "echues": 0.0
+                },
+                "echeance_auto_compta_diagnostic": {
+                  "total": 14400.0,
+                  "sources": [
+                    {
+                      "source": "acompte",
+                      "montant": -24000.0,
+                      "nb_lignes": 1
+                    },
+                    {
+                      "source": "avoir",
+                      "montant": -3000.0,
+                      "nb_lignes": 1
+                    },
+                    {
+                      "source": "facture",
+                      "montant": 206400.0,
+                      "nb_lignes": 4
+                    },
+                    {
+                      "source": "reglement",
+                      "montant": -165000.0,
+                      "nb_lignes": 7
+                    }
+                  ],
+                  "mouvements": [
+                    {
+                      "numero": "VT-2025-0001",
+                      "date": "2025-01-20",
+                      "journal": "VT",
+                      "libelle": "Facture FA-2025-003 Client Marchandises Recette",
+                      "reference": "FA-2025-003",
+                      "source": "facture",
+                      "debit": 30000.0,
+                      "credit": 0.0,
+                      "impact_solde": 30000.0
+                    },
+                    {
+                      "numero": "BQ-2025-0005",
+                      "date": "2025-01-25",
+                      "journal": "BQ",
+                      "libelle": "Règlement Client Marchandises Recette PAY-V01",
+                      "reference": "PAY-V01",
+                      "source": "reglement",
+                      "debit": 0.0,
+                      "credit": 10000.0,
+                      "impact_solde": -10000.0
+                    },
+                    {
+                      "numero": "AE-2025-0001",
+                      "date": "2025-01-26",
+                      "journal": "AE",
+                      "libelle": "Réception chèque — Client Marchandises Recette",
+                      "reference": "CHQ-01",
+                      "source": "reglement",
+                      "debit": 0.0,
+                      "credit": 20000.0,
+                      "impact_solde": -20000.0
+                    },
+                    {
+                      "numero": "AV-2025-0001",
+                      "date": "2025-02-10",
+                      "journal": "AV",
+                      "libelle": "Avoir AV-2025-001 Client Marchandises Recette",
+                      "reference": "AV-2025-001",
+                      "source": "avoir",
+                      "debit": 0.0,
+                      "credit": 3000.0,
+                      "impact_solde": -3000.0
+                    },
+                    {
+                      "numero": "VT-2025-0002",
+                      "date": "2025-03-01",
+                      "journal": "VT",
+                      "libelle": "Facture FA-2025-005 Client Marchandises Recette",
+                      "reference": "FA-2025-005",
+                      "source": "facture",
+                      "debit": 18000.0,
+                      "credit": 0.0,
+                      "impact_solde": 18000.0
+                    },
+                    {
+                      "numero": "BQ-2025-0008",
+                      "date": "2025-03-05",
+                      "journal": "BQ",
+                      "libelle": "Règlement Client Marchandises Recette PAY-V02",
+                      "reference": "PAY-V02",
+                      "source": "reglement",
+                      "debit": 0.0,
+                      "credit": 5000.0,
+                      "impact_solde": -5000.0
+                    },
+                    {
+                      "numero": "AE-2025-0004",
+                      "date": "2025-04-01",
+                      "journal": "AE",
+                      "libelle": "Acceptation effet — Client Marchandises Recette",
+                      "reference": "EFF-C01",
+                      "source": "reglement",
+                      "debit": 0.0,
+                      "credit": 10000.0,
+                      "impact_solde": -10000.0
+                    },
+                    {
+                      "numero": "VT-2025-0003",
+                      "date": "2025-06-15",
+                      "journal": "VT",
+                      "libelle": "Facture FA-2025-006 Client Services Recette",
+                      "reference": "FA-2025-006",
+                      "source": "facture",
+                      "debit": 144000.0,
+                      "credit": 0.0,
+                      "impact_solde": 144000.0
+                    },
+                    {
+                      "numero": "OD-2025-0005",
+                      "date": "2025-06-15",
+                      "journal": "OD",
+                      "libelle": "Imputation acompte AC-2025-002 sur FA-2025-006",
+                      "reference": "AC-2025-002",
+                      "source": "acompte",
+                      "debit": 0.0,
+                      "credit": 24000.0,
+                      "impact_solde": -24000.0
+                    },
+                    {
+                      "numero": "BQ-2025-0012",
+                      "date": "2025-06-30",
+                      "journal": "BQ",
+                      "libelle": "Règlement Client Services Recette VENTE-SERVICE-PAY",
+                      "reference": "VENTE-SERVICE-PAY",
+                      "source": "reglement",
+                      "debit": 0.0,
+                      "credit": 120000.0,
+                      "impact_solde": -120000.0
+                    },
+                    {
+                      "numero": "VT-2025-0004",
+                      "date": "2025-12-10",
+                      "journal": "VT",
+                      "libelle": "Facture FA-2025-009 Client Impayé Recette",
+                      "reference": "FA-2025-009",
+                      "source": "facture",
+                      "debit": 14400.0,
+                      "credit": 0.0,
+                      "impact_solde": 14400.0
+                    },
+                    {
+                      "numero": "AE-2025-0006",
+                      "date": "2025-12-12",
+                      "journal": "AE",
+                      "libelle": "Réception chèque — Client Impayé Recette",
+                      "reference": "CHQ-REJET",
+                      "source": "reglement",
+                      "debit": 0.0,
+                      "credit": 2000.0,
+                      "impact_solde": -2000.0
+                    },
+                    {
+                      "numero": "OD-2025-0007",
+                      "date": "2025-12-15",
+                      "journal": "OD",
+                      "libelle": "Impayé cheque — Client Impayé Recette",
+                      "reference": "CHQ-REJET",
+                      "source": "reglement",
+                      "debit": 2000.0,
+                      "credit": 0.0,
+                      "impact_solde": 2000.0
+                    }
+                  ]
+                }
+              },
+              {
+                "compte": "34552",
+                "intitule": "État - TVA récupérable sur charges",
+                "montant": 80.0
+              },
+              {
+                "compte": "3491",
+                "intitule": "Charges constatées d'avance",
+                "montant": 11000.0
+              }
+            ],
+            "avertissement": "Les échéances des factures clients sont préremplies automatiquement lorsqu'elles recoupent exactement le solde comptable ; les autres ventilations restent extra-comptables."
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [
+            {
+              "compte": "3421",
+              "intitule": "Clients",
+              "total": 14400.0,
+              "plus_un_an": null,
+              "moins_un_an": null,
+              "echues": null,
+              "devises": null,
+              "etat_organismes_publics": null,
+              "entreprises_liees": null,
+              "effets": null
+            },
+            {
+              "compte": "34552",
+              "intitule": "État - TVA récupérable sur charges",
+              "total": 80.0,
+              "plus_un_an": null,
+              "moins_un_an": null,
+              "echues": null,
+              "devises": null,
+              "etat_organismes_publics": 80.0,
+              "entreprises_liees": null,
+              "effets": null
+            },
+            {
+              "compte": "3491",
+              "intitule": "Charges constatées d'avance",
+              "total": 11000.0,
+              "plus_un_an": null,
+              "moins_un_an": null,
+              "echues": null,
+              "devises": null,
+              "etat_organismes_publics": null,
+              "entreprises_liees": null,
+              "effets": null
+            }
+          ],
+          "erreurs_ventilation": [
+            "3421 : renseignez la ventilation + d'un an.",
+            "3421 : renseignez la ventilation - d'un an.",
+            "3421 : renseignez la ventilation échues et non recouvrées.",
+            "3421 : renseignez montant en devises ou confirmez que les autres analyses sont néant.",
+            "3421 : renseignez Etat / organismes publics ou confirmez que les autres analyses sont néant.",
+            "3421 : renseignez entreprises liées ou confirmez que les autres analyses sont néant.",
+            "3421 : renseignez montant représenté par effets ou confirmez que les autres analyses sont néant.",
+            "34552 : renseignez la ventilation + d'un an.",
+            "34552 : renseignez la ventilation - d'un an.",
+            "34552 : renseignez la ventilation échues et non recouvrées.",
+            "34552 : renseignez montant en devises ou confirmez que les autres analyses sont néant.",
+            "34552 : renseignez entreprises liées ou confirmez que les autres analyses sont néant.",
+            "34552 : renseignez montant représenté par effets ou confirmez que les autres analyses sont néant.",
+            "3491 : renseignez la ventilation + d'un an.",
+            "3491 : renseignez la ventilation - d'un an.",
+            "3491 : renseignez la ventilation échues et non recouvrées.",
+            "3491 : renseignez montant en devises ou confirmez que les autres analyses sont néant.",
+            "3491 : renseignez Etat / organismes publics ou confirmez que les autres analyses sont néant.",
+            "3491 : renseignez entreprises liées ou confirmez que les autres analyses sont néant.",
+            "3491 : renseignez montant représenté par effets ou confirmez que les autres analyses sont néant."
+          ],
+          "updated_at": null
+        },
+        {
+          "code": "B7",
+          "groupe": "B",
+          "titre": "Tableau des dettes",
+          "mode": "assiste",
+          "type_saisie": "ventilation",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "montant"
+            ],
+            "lignes": [
+              {
+                "compte": "4411",
+                "intitule": "Fournisseurs",
+                "montant": 480.0,
+                "echeance_auto_total": 480.0,
+                "echeance_auto_ecart": 0.0,
+                "echeance_auto_non_qualifie": 0.0,
+                "echeance_auto_nb_factures": 5,
+                "echeance_auto_nb_factures_historiques": 0,
+                "echeance_auto_anomalies_sources": [],
+                "echeance_auto_diagnostic": {
+                  "plus_un_an": 0.0,
+                  "moins_un_an": 0.0,
+                  "echues": 480.0
+                },
+                "echeance_auto": {
+                  "plus_un_an": 0.0,
+                  "moins_un_an": 0.0,
+                  "echues": 480.0
+                },
+                "echeance_auto_source": "factures et échéanciers à la date de clôture"
+              },
+              {
+                "compte": "4417",
+                "intitule": "Fournisseurs - factures non parvenues",
+                "montant": 3000.0
+              },
+              {
+                "compte": "4453",
+                "intitule": "État - impôts sur les résultats",
+                "montant": 23220.25
+              },
+              {
+                "compte": "4456",
+                "intitule": "État - TVA due (suivant déclarations)",
+                "montant": 2400.0
+              }
+            ],
+            "avertissement": "Les échéances des factures fournisseurs sont préremplies automatiquement lorsqu'elles recoupent exactement le solde comptable ; les autres ventilations restent extra-comptables."
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [
+            {
+              "compte": "4411",
+              "intitule": "Fournisseurs",
+              "total": 480.0,
+              "plus_un_an": 0.0,
+              "moins_un_an": 0.0,
+              "echues": 480.0,
+              "devises": null,
+              "etat_organismes_publics": null,
+              "entreprises_liees": null,
+              "effets": null
+            },
+            {
+              "compte": "4417",
+              "intitule": "Fournisseurs - factures non parvenues",
+              "total": 3000.0,
+              "plus_un_an": null,
+              "moins_un_an": null,
+              "echues": null,
+              "devises": null,
+              "etat_organismes_publics": null,
+              "entreprises_liees": null,
+              "effets": null
+            },
+            {
+              "compte": "4453",
+              "intitule": "État - impôts sur les résultats",
+              "total": 23220.25,
+              "plus_un_an": null,
+              "moins_un_an": null,
+              "echues": null,
+              "devises": null,
+              "etat_organismes_publics": 23220.25,
+              "entreprises_liees": null,
+              "effets": null
+            },
+            {
+              "compte": "4456",
+              "intitule": "État - TVA due (suivant déclarations)",
+              "total": 2400.0,
+              "plus_un_an": null,
+              "moins_un_an": null,
+              "echues": null,
+              "devises": null,
+              "etat_organismes_publics": 2400.0,
+              "entreprises_liees": null,
+              "effets": null
+            }
+          ],
+          "erreurs_ventilation": [
+            "4411 : renseignez montant en devises ou confirmez que les autres analyses sont néant.",
+            "4411 : renseignez Etat / organismes publics ou confirmez que les autres analyses sont néant.",
+            "4411 : renseignez entreprises liées ou confirmez que les autres analyses sont néant.",
+            "4411 : renseignez montant représenté par effets ou confirmez que les autres analyses sont néant.",
+            "4417 : renseignez la ventilation + d'un an.",
+            "4417 : renseignez la ventilation - d'un an.",
+            "4417 : renseignez la ventilation échues et non payées.",
+            "4417 : renseignez montant en devises ou confirmez que les autres analyses sont néant.",
+            "4417 : renseignez Etat / organismes publics ou confirmez que les autres analyses sont néant.",
+            "4417 : renseignez entreprises liées ou confirmez que les autres analyses sont néant.",
+            "4417 : renseignez montant représenté par effets ou confirmez que les autres analyses sont néant.",
+            "4453 : renseignez la ventilation + d'un an.",
+            "4453 : renseignez la ventilation - d'un an.",
+            "4453 : renseignez la ventilation échues et non payées.",
+            "4453 : renseignez montant en devises ou confirmez que les autres analyses sont néant.",
+            "4453 : renseignez entreprises liées ou confirmez que les autres analyses sont néant.",
+            "4453 : renseignez montant représenté par effets ou confirmez que les autres analyses sont néant.",
+            "4456 : renseignez la ventilation + d'un an.",
+            "4456 : renseignez la ventilation - d'un an.",
+            "4456 : renseignez la ventilation échues et non payées.",
+            "4456 : renseignez montant en devises ou confirmez que les autres analyses sont néant.",
+            "4456 : renseignez entreprises liées ou confirmez que les autres analyses sont néant.",
+            "4456 : renseignez montant représenté par effets ou confirmez que les autres analyses sont néant."
+          ],
+          "updated_at": null
+        },
+        {
+          "code": "B8",
+          "groupe": "B",
+          "titre": "Sûretés réelles données ou reçues",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "nature",
+              "label": "Nature",
+              "type": "text"
+            },
+            {
+              "cle": "objet",
+              "label": "Objet",
+              "type": "text"
+            },
+            {
+              "cle": "tiers",
+              "label": "Tiers",
+              "type": "text"
+            },
+            {
+              "cle": "montant_couvert",
+              "label": "Montant couvert",
+              "type": "number"
+            },
+            {
+              "cle": "valeur_nette",
+              "label": "Valeur nette comptable",
+              "type": "number"
+            },
+            {
+              "cle": "inscription",
+              "label": "Date / lieu d'inscription",
+              "type": "text"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B9",
+          "groupe": "B",
+          "titre": "Engagements financiers reçus ou donnés hors crédit-bail",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "sens",
+              "label": "Reçu / donné",
+              "type": "text"
+            },
+            {
+              "cle": "nature",
+              "label": "Nature",
+              "type": "text"
+            },
+            {
+              "cle": "montant",
+              "label": "Montant exercice",
+              "type": "number"
+            },
+            {
+              "cle": "montant_n1",
+              "label": "Montant N-1",
+              "type": "number"
+            },
+            {
+              "cle": "observation",
+              "label": "Observation",
+              "type": "text"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B10",
+          "groupe": "B",
+          "titre": "Tableau des biens en crédit-bail",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "bien",
+              "label": "Bien",
+              "type": "text"
+            },
+            {
+              "cle": "date_contrat",
+              "label": "Date contrat",
+              "type": "date"
+            },
+            {
+              "cle": "duree",
+              "label": "Durée",
+              "type": "text"
+            },
+            {
+              "cle": "valeur_estimee",
+              "label": "Valeur estimée",
+              "type": "number"
+            },
+            {
+              "cle": "redevances_exercice",
+              "label": "Redevances exercice",
+              "type": "number"
+            },
+            {
+              "cle": "redevances_restantes",
+              "label": "Redevances restantes",
+              "type": "number"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B11",
+          "groupe": "B",
+          "titre": "Détail des postes du CPC",
+          "mode": "auto",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "nature",
+              "montant"
+            ],
+            "lignes": [
+              {
+                "compte": "6111",
+                "intitule": "Achats de marchandises (groupe A)",
+                "nature": "Charge",
+                "montant": 22000.0
+              },
+              {
+                "compte": "6114",
+                "intitule": "Variation de stocks de marchandises",
+                "nature": "Charge",
+                "montant": -6600.0
+              },
+              {
+                "compte": "6125",
+                "intitule": "Achats non stockés de matières et fournitures",
+                "nature": "Charge",
+                "montant": 15400.0
+              },
+              {
+                "compte": "6134",
+                "intitule": "Primes d'assurances",
+                "nature": "Charge",
+                "montant": 1000.0
+              },
+              {
+                "compte": "61472",
+                "intitule": "Frais sur effets de commerce",
+                "nature": "Charge",
+                "montant": 10.0
+              },
+              {
+                "compte": "61473",
+                "intitule": "Frais et commissions sur services bancaires",
+                "nature": "Charge",
+                "montant": 60.0
+              },
+              {
+                "compte": "61935",
+                "intitule": "DEA des mobiliers, matériels de bureau et aménagements divers",
+                "nature": "Charge",
+                "montant": 4800.0
+              },
+              {
+                "compte": "61955",
+                "intitule": "DEP pour risques et charges durables",
+                "nature": "Charge",
+                "montant": 1500.0
+              },
+              {
+                "compte": "61964",
+                "intitule": "DEP pour dépréciation des créances de l'actif circulant",
+                "nature": "Charge",
+                "montant": 2000.0
+              },
+              {
+                "compte": "6583",
+                "intitule": "Pénalités et amendes fiscales ou pénales",
+                "nature": "Charge",
+                "montant": 500.0
+              },
+              {
+                "compte": "6701",
+                "intitule": "Impôts sur les bénéfices",
+                "nature": "Charge",
+                "montant": 23420.25
+              },
+              {
+                "compte": "7111",
+                "intitule": "Ventes de marchandises au Maroc",
+                "nature": "Produit",
+                "montant": 37500.0
+              },
+              {
+                "compte": "7124",
+                "intitule": "Ventes de services produits au Maroc",
+                "nature": "Produit",
+                "montant": 132000.0
+              },
+              {
+                "compte": "7381",
+                "intitule": "Intérêts et produits assimilés",
+                "nature": "Produit",
+                "montant": 1000.0
+              }
+            ]
+          },
+          "contenu": {},
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B12",
+          "groupe": "B",
+          "titre": "Passage du résultat net comptable au résultat net fiscal",
+          "mode": "auto",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "rubrique",
+              "montant"
+            ],
+            "lignes": [
+              {
+                "rubrique": "Résultat net comptable",
+                "montant": 106409.75
+              },
+              {
+                "rubrique": "Réintégrations fiscales (dont IS comptabilisé)",
+                "montant": 27420.25
+              },
+              {
+                "rubrique": "Déductions fiscales",
+                "montant": 0.0
+              },
+              {
+                "rubrique": "Résultat fiscal avant déficits",
+                "montant": 133830.0
+              },
+              {
+                "rubrique": "Déficits imputés",
+                "montant": 0.0
+              },
+              {
+                "rubrique": "Bénéfice fiscal imposable",
+                "montant": 133830.0
+              }
+            ],
+            "source": "Moteur fiscal Patch 08"
+          },
+          "contenu": {},
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B13",
+          "groupe": "B",
+          "titre": "Détermination du résultat courant après impôts",
+          "mode": "assiste",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "rubrique",
+              "montant"
+            ],
+            "lignes": [
+              {
+                "rubrique": "Résultat courant avant impôts",
+                "montant": 130330.0
+              },
+              {
+                "rubrique": "Impôts sur les résultats comptabilisés",
+                "montant": 23420.25
+              },
+              {
+                "rubrique": "Résultat courant après impôts — indicatif",
+                "montant": 106909.75
+              }
+            ],
+            "avertissement": "L'affectation de l'impôt entre résultat courant et non courant peut nécessiter un ajustement extra-comptable ; vérifiez ce tableau avant arrêté."
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "B14",
+          "groupe": "B",
+          "titre": "Détail de la taxe sur la valeur ajoutée",
+          "mode": "assiste",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "nature",
+              "solde_debut",
+              "operations",
+              "declarations",
+              "solde_fin"
+            ],
+            "lignes": [
+              {
+                "nature": "A. TVA facturée / collectée",
+                "solde_debut": 0.0,
+                "operations": 33900.0,
+                "declarations": 33900.0,
+                "solde_fin": 0.0
+              },
+              {
+                "nature": "B. TVA récupérable",
+                "solde_debut": 0.0,
+                "operations": 11680.0,
+                "declarations": 11600.0,
+                "solde_fin": 80.0
+              },
+              {
+                "nature": "• sur charges",
+                "solde_debut": 0.0,
+                "operations": 6880.0,
+                "declarations": 6800.0,
+                "solde_fin": 80.0
+              },
+              {
+                "nature": "• sur immobilisations",
+                "solde_debut": 0.0,
+                "operations": 4800.0,
+                "declarations": 4800.0,
+                "solde_fin": 0.0
+              },
+              {
+                "nature": "C. TVA due ou crédit de TVA (A - B)",
+                "solde_debut": 0.0,
+                "operations": 22220.0,
+                "declarations": 22300.0,
+                "solde_fin": -80.0
+              }
+            ],
+            "avertissement": "La colonne « déclarations » est reconstituée à partir du journal TVA (TV) et des liquidations OD équilibrées exclusivement en comptes TVA avec contrepartie 4456 ou 3456. Ces mouvements comptables ne prouvent pas un dépôt fiscal : vérifiez-les avec les déclarations effectivement déposées. Le solde A - B porte sur 4455/34551/34552, distinct de la dette déjà liquidée en 4456 ou du crédit reporté en 3456."
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "C1",
+          "groupe": "C",
+          "titre": "État de répartition du capital social",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "associe",
+              "label": "Actionnaire / associé",
+              "type": "text"
+            },
+            {
+              "cle": "identifiant",
+              "label": "Identifiant / adresse",
+              "type": "text"
+            },
+            {
+              "cle": "titres",
+              "label": "Nombre de titres / parts",
+              "type": "number"
+            },
+            {
+              "cle": "nominal",
+              "label": "Valeur nominale",
+              "type": "number"
+            },
+            {
+              "cle": "capital",
+              "label": "Montant du capital détenu",
+              "type": "number"
+            },
+            {
+              "cle": "pourcentage",
+              "label": "% capital",
+              "type": "number"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "C2",
+          "groupe": "C",
+          "titre": "Affectation des résultats intervenue au cours de l'exercice",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "sens",
+              "label": "Origine / affectation",
+              "type": "text"
+            },
+            {
+              "cle": "nature",
+              "label": "Nature",
+              "type": "text"
+            },
+            {
+              "cle": "montant",
+              "label": "Montant",
+              "type": "number"
+            },
+            {
+              "cle": "observation",
+              "label": "Observation",
+              "type": "text"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "C3",
+          "groupe": "C",
+          "titre": "Résultats et autres éléments caractéristiques des trois derniers exercices",
+          "mode": "auto",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "exercice",
+              "situation_nette",
+              "chiffre_affaires_ht",
+              "resultat_avant_impots",
+              "impots_resultats",
+              "resultat_net",
+              "salaires_bruts",
+              "effectif_indicatif"
+            ],
+            "lignes": [
+              {
+                "exercice": 2023,
+                "situation_nette": null,
+                "chiffre_affaires_ht": null,
+                "resultat_avant_impots": null,
+                "impots_resultats": null,
+                "resultat_net": null,
+                "salaires_bruts": null,
+                "effectif_indicatif": null
+              },
+              {
+                "exercice": 2024,
+                "situation_nette": null,
+                "chiffre_affaires_ht": null,
+                "resultat_avant_impots": null,
+                "impots_resultats": null,
+                "resultat_net": null,
+                "salaires_bruts": null,
+                "effectif_indicatif": null
+              },
+              {
+                "exercice": 2025,
+                "situation_nette": 306409.75,
+                "chiffre_affaires_ht": 169500.0,
+                "resultat_avant_impots": 129830.0,
+                "impots_resultats": 23420.25,
+                "resultat_net": 106409.75,
+                "salaires_bruts": 0.0,
+                "effectif_indicatif": 0
+              }
+            ],
+            "avertissement": "Les bénéfices distribués et le résultat par titre dépendent de l'affectation/actionnariat saisis dans C1/C2 et ne sont pas inventés automatiquement."
+          },
+          "contenu": {},
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "C4",
+          "groupe": "C",
+          "titre": "Opérations en devises comptabilisées pendant l'exercice",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "devise",
+              "label": "Devise",
+              "type": "text"
+            },
+            {
+              "cle": "achats",
+              "label": "Achats",
+              "type": "number"
+            },
+            {
+              "cle": "ventes",
+              "label": "Ventes",
+              "type": "number"
+            },
+            {
+              "cle": "creances",
+              "label": "Créances",
+              "type": "number"
+            },
+            {
+              "cle": "dettes",
+              "label": "Dettes",
+              "type": "number"
+            },
+            {
+              "cle": "observation",
+              "label": "Observation",
+              "type": "text"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        },
+        {
+          "code": "C5",
+          "groupe": "C",
+          "titre": "Datation et événements postérieurs",
+          "mode": "manuel",
+          "type_saisie": "texte",
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {},
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": null
+        }
+      ],
+      "progression": {
+        "completes": 6,
+        "total": 23,
+        "pourcentage": 26
+      },
+      "referentiel": {
+        "modele": "ETIC — modèle normal CGNC",
+        "sections": "A1-A3, B1-B14, C1-C5",
+        "note": "Les états automatiques proviennent des écritures validées. Les informations extra-comptables restent à confirmer ou à saisir."
+      },
+      "verrouillee": false,
+      "motif_verrouillage": null
+    },
+    "sections_verifiees": [
+      "A1",
+      "A2",
+      "A3",
+      "B1",
+      "B2",
+      "B2bis",
+      "B3",
+      "B4",
+      "B5",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "sources_b7": {
+      "factures_examinees": 5,
+      "references_impayees": [
+        "002",
+        "02"
+      ],
+      "echues_certaines": "480.00"
+    },
+    "qualification_manuelle_3421": {
+      "montant": "14400",
+      "echeance": "2025-12-20",
+      "rejet_comptabilise": "2025-12-15",
+      "alerte_automatique_conservee": [
+        {
+          "facture_id": 9,
+          "numero": "FA-2025-009",
+          "reste_du": 14400.0,
+          "motifs": [
+            "Règlement 9 : Rejet sans date historique liée : effet sur le solde à la clôture à vérifier."
+          ]
+        }
+      ]
+    },
+    "apres": {
+      "exercice": 2025,
+      "societe": {
+        "raison_sociale": "ATLAS RECETTE HISABPRO SARL — FICTIVE",
+        "identifiant_fiscal": "99000001",
+        "ice": "009900000000001",
+        "capital_social": 200000.0
+      },
+      "source": {
+        "ecritures_validees_incluses": 50,
+        "brouillons_exclus": 0,
+        "clotures_techniques_exclues": 1,
+        "comptes_mouvementes": 40,
+        "date_min": "2025-01-01",
+        "date_max": "2025-12-31",
+        "exercice_clos": true
+      },
+      "controle_source": {
+        "total_debit": 971560.25,
+        "total_credit": 971560.25,
+        "ecart_balance": 0.0,
+        "balance_equilibree": true,
+        "avertissements": []
+      },
+      "sections": [
+        {
+          "code": "A1",
+          "groupe": "A",
+          "titre": "Principales méthodes d'évaluation spécifiques à l'entreprise",
+          "mode": "manuel",
+          "type_saisie": "texte",
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {
+            "texte": "CMUP des marchandises ; coûts historiques ; informatique linéaire 5 ans ; cut-off CCA/FNP ; FAE seulement en variante ; provisions documentées."
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:25.403484"
+        },
+        {
+          "code": "A2",
+          "groupe": "A",
+          "titre": "État des dérogations",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "indication",
+              "label": "Indication / dérogation",
+              "type": "text"
+            },
+            {
+              "cle": "justification",
+              "label": "Justification",
+              "type": "text"
+            },
+            {
+              "cle": "influence",
+              "label": "Influence sur patrimoine / résultat",
+              "type": "text"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {
+            "neant": true
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:26.315875"
+        },
+        {
+          "code": "A3",
+          "groupe": "A",
+          "titre": "État des changements de méthodes",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "nature",
+              "label": "Nature du changement",
+              "type": "text"
+            },
+            {
+              "cle": "justification",
+              "label": "Justification",
+              "type": "text"
+            },
+            {
+              "cle": "influence",
+              "label": "Influence chiffrée / qualitative",
+              "type": "text"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {
+            "neant": true
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:27.176951"
+        },
+        {
+          "code": "B1",
+          "groupe": "B",
+          "titre": "Détail des non-valeurs",
+          "mode": "auto",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "montant"
+            ],
+            "lignes": []
+          },
+          "contenu": {
+            "notes": "Néant : pas de non-valeurs."
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:28.587576"
+        },
+        {
+          "code": "B2",
+          "groupe": "B",
+          "titre": "Tableau des immobilisations",
+          "mode": "assiste",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "debut",
+              "augmentations",
+              "diminutions",
+              "fin_module",
+              "solde_comptable_fin",
+              "ecart"
+            ],
+            "lignes": [
+              {
+                "compte": "2355",
+                "intitule": "Matériel informatique",
+                "debut": 0.0,
+                "augmentations": 24000.0,
+                "diminutions": 0.0,
+                "fin_module": 24000.0,
+                "solde_comptable_fin": 24000.0,
+                "ecart": 0.0
+              }
+            ],
+            "avertissement": "Le rapprochement utilise les mouvements comptables pour les non-valeurs (21) et le registre des immobilisations pour les comptes 22/23 ; tout écart résiduel doit être justifié avant arrêté."
+          },
+          "contenu": {
+            "notes": "IMMO-01 acquisition 24 000, aucune cession/réévaluation.",
+            "confirme": true
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:29.565284"
+        },
+        {
+          "code": "B2bis",
+          "groupe": "B",
+          "titre": "Tableau des amortissements",
+          "mode": "auto",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "cumul_debut",
+              "dotations",
+              "amort_sorties",
+              "cumul_fin"
+            ],
+            "lignes": [
+              {
+                "compte": "28355",
+                "intitule": "Amortissements du matériel informatique",
+                "cumul_debut": 0.0,
+                "dotations": 4800.0,
+                "amort_sorties": 0.0,
+                "cumul_fin": 4800.0
+              }
+            ]
+          },
+          "contenu": {
+            "notes": "Dotation 4 800, cumul 4 800, VNC19 200."
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:30.620278"
+        },
+        {
+          "code": "B3",
+          "groupe": "B",
+          "titre": "Plus ou moins-values sur cessions ou retraits d'immobilisations",
+          "mode": "assiste",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "date",
+              "designation",
+              "type",
+              "valeur_entree",
+              "vna",
+              "prix_cession",
+              "plus_moins_value"
+            ],
+            "lignes": []
+          },
+          "contenu": {
+            "notes": "Néant : aucune cession principale.",
+            "confirme": true
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:31.587865"
+        },
+        {
+          "code": "B4",
+          "groupe": "B",
+          "titre": "Tableau des titres de participation",
+          "mode": "assiste",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "montant"
+            ],
+            "lignes": [],
+            "avertissement": "Les informations sur l'émetteur, le capital, la quote-part détenue et les produits reçus ne sont pas déductibles du seul compte général : complétez-les dans les notes si nécessaire."
+          },
+          "contenu": {
+            "notes": "Néant : aucune participation.",
+            "confirme": true
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:32.569538"
+        },
+        {
+          "code": "B5",
+          "groupe": "B",
+          "titre": "Tableau des provisions",
+          "mode": "auto",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "debut",
+              "dotations",
+              "reprises_utilisations",
+              "fin"
+            ],
+            "lignes": [
+              {
+                "compte": "1518",
+                "intitule": "Autres provisions pour risques",
+                "debut": 0.0,
+                "dotations": 1500.0,
+                "reprises_utilisations": 0.0,
+                "fin": 1500.0
+              },
+              {
+                "compte": "3942",
+                "intitule": "Provisions pour dépréciation des clients et comptes rattachés",
+                "debut": 0.0,
+                "dotations": 2000.0,
+                "reprises_utilisations": 0.0,
+                "fin": 2000.0
+              }
+            ]
+          },
+          "contenu": {
+            "notes": "Provision risque 1 500 et dépréciation client 2 000, autres variations 0."
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:33.585766"
+        },
+        {
+          "code": "B6",
+          "groupe": "B",
+          "titre": "Tableau des créances",
+          "mode": "assiste",
+          "type_saisie": "ventilation",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "montant"
+            ],
+            "lignes": [
+              {
+                "compte": "3421",
+                "intitule": "Clients",
+                "montant": 14400.0,
+                "echeance_auto_total": 14400.0,
+                "echeance_auto_ecart": 0.0,
+                "echeance_auto_non_qualifie": 14400.0,
+                "echeance_auto_nb_factures": 4,
+                "echeance_auto_nb_factures_historiques": 0,
+                "echeance_auto_anomalies_sources": [
+                  {
+                    "facture_id": 9,
+                    "numero": "FA-2025-009",
+                    "reste_du": 14400.0,
+                    "motifs": [
+                      "Règlement 9 : Rejet sans date historique liée : effet sur le solde à la clôture à vérifier."
+                    ]
+                  }
+                ],
+                "echeance_auto_diagnostic": {
+                  "plus_un_an": 0.0,
+                  "moins_un_an": 0.0,
+                  "echues": 0.0
+                },
+                "echeance_auto_compta_diagnostic": {
+                  "total": 14400.0,
+                  "sources": [
+                    {
+                      "source": "acompte",
+                      "montant": -24000.0,
+                      "nb_lignes": 1
+                    },
+                    {
+                      "source": "avoir",
+                      "montant": -3000.0,
+                      "nb_lignes": 1
+                    },
+                    {
+                      "source": "facture",
+                      "montant": 206400.0,
+                      "nb_lignes": 4
+                    },
+                    {
+                      "source": "reglement",
+                      "montant": -165000.0,
+                      "nb_lignes": 7
+                    }
+                  ],
+                  "mouvements": [
+                    {
+                      "numero": "VT-2025-0001",
+                      "date": "2025-01-20",
+                      "journal": "VT",
+                      "libelle": "Facture FA-2025-003 Client Marchandises Recette",
+                      "reference": "FA-2025-003",
+                      "source": "facture",
+                      "debit": 30000.0,
+                      "credit": 0.0,
+                      "impact_solde": 30000.0
+                    },
+                    {
+                      "numero": "BQ-2025-0005",
+                      "date": "2025-01-25",
+                      "journal": "BQ",
+                      "libelle": "Règlement Client Marchandises Recette PAY-V01",
+                      "reference": "PAY-V01",
+                      "source": "reglement",
+                      "debit": 0.0,
+                      "credit": 10000.0,
+                      "impact_solde": -10000.0
+                    },
+                    {
+                      "numero": "AE-2025-0001",
+                      "date": "2025-01-26",
+                      "journal": "AE",
+                      "libelle": "Réception chèque — Client Marchandises Recette",
+                      "reference": "CHQ-01",
+                      "source": "reglement",
+                      "debit": 0.0,
+                      "credit": 20000.0,
+                      "impact_solde": -20000.0
+                    },
+                    {
+                      "numero": "AV-2025-0001",
+                      "date": "2025-02-10",
+                      "journal": "AV",
+                      "libelle": "Avoir AV-2025-001 Client Marchandises Recette",
+                      "reference": "AV-2025-001",
+                      "source": "avoir",
+                      "debit": 0.0,
+                      "credit": 3000.0,
+                      "impact_solde": -3000.0
+                    },
+                    {
+                      "numero": "VT-2025-0002",
+                      "date": "2025-03-01",
+                      "journal": "VT",
+                      "libelle": "Facture FA-2025-005 Client Marchandises Recette",
+                      "reference": "FA-2025-005",
+                      "source": "facture",
+                      "debit": 18000.0,
+                      "credit": 0.0,
+                      "impact_solde": 18000.0
+                    },
+                    {
+                      "numero": "BQ-2025-0008",
+                      "date": "2025-03-05",
+                      "journal": "BQ",
+                      "libelle": "Règlement Client Marchandises Recette PAY-V02",
+                      "reference": "PAY-V02",
+                      "source": "reglement",
+                      "debit": 0.0,
+                      "credit": 5000.0,
+                      "impact_solde": -5000.0
+                    },
+                    {
+                      "numero": "AE-2025-0004",
+                      "date": "2025-04-01",
+                      "journal": "AE",
+                      "libelle": "Acceptation effet — Client Marchandises Recette",
+                      "reference": "EFF-C01",
+                      "source": "reglement",
+                      "debit": 0.0,
+                      "credit": 10000.0,
+                      "impact_solde": -10000.0
+                    },
+                    {
+                      "numero": "VT-2025-0003",
+                      "date": "2025-06-15",
+                      "journal": "VT",
+                      "libelle": "Facture FA-2025-006 Client Services Recette",
+                      "reference": "FA-2025-006",
+                      "source": "facture",
+                      "debit": 144000.0,
+                      "credit": 0.0,
+                      "impact_solde": 144000.0
+                    },
+                    {
+                      "numero": "OD-2025-0005",
+                      "date": "2025-06-15",
+                      "journal": "OD",
+                      "libelle": "Imputation acompte AC-2025-002 sur FA-2025-006",
+                      "reference": "AC-2025-002",
+                      "source": "acompte",
+                      "debit": 0.0,
+                      "credit": 24000.0,
+                      "impact_solde": -24000.0
+                    },
+                    {
+                      "numero": "BQ-2025-0012",
+                      "date": "2025-06-30",
+                      "journal": "BQ",
+                      "libelle": "Règlement Client Services Recette VENTE-SERVICE-PAY",
+                      "reference": "VENTE-SERVICE-PAY",
+                      "source": "reglement",
+                      "debit": 0.0,
+                      "credit": 120000.0,
+                      "impact_solde": -120000.0
+                    },
+                    {
+                      "numero": "VT-2025-0004",
+                      "date": "2025-12-10",
+                      "journal": "VT",
+                      "libelle": "Facture FA-2025-009 Client Impayé Recette",
+                      "reference": "FA-2025-009",
+                      "source": "facture",
+                      "debit": 14400.0,
+                      "credit": 0.0,
+                      "impact_solde": 14400.0
+                    },
+                    {
+                      "numero": "AE-2025-0006",
+                      "date": "2025-12-12",
+                      "journal": "AE",
+                      "libelle": "Réception chèque — Client Impayé Recette",
+                      "reference": "CHQ-REJET",
+                      "source": "reglement",
+                      "debit": 0.0,
+                      "credit": 2000.0,
+                      "impact_solde": -2000.0
+                    },
+                    {
+                      "numero": "OD-2025-0007",
+                      "date": "2025-12-15",
+                      "journal": "OD",
+                      "libelle": "Impayé cheque — Client Impayé Recette",
+                      "reference": "CHQ-REJET",
+                      "source": "reglement",
+                      "debit": 2000.0,
+                      "credit": 0.0,
+                      "impact_solde": 2000.0
+                    }
+                  ]
+                }
+              },
+              {
+                "compte": "34552",
+                "intitule": "État - TVA récupérable sur charges",
+                "montant": 80.0
+              },
+              {
+                "compte": "3491",
+                "intitule": "Charges constatées d'avance",
+                "montant": 11000.0
+              }
+            ],
+            "avertissement": "Les échéances des factures clients sont préremplies automatiquement lorsqu'elles recoupent exactement le solde comptable ; les autres ventilations restent extra-comptables."
+          },
+          "contenu": {
+            "ventilations": {
+              "3421": {
+                "plus_un_an": "0",
+                "moins_un_an": "0",
+                "echues": "14400"
+              }
+            },
+            "autres_analyses_neant": true,
+            "notes": "VENTE-IMPAYEE : échéance au 20/12/2025, solde de 14 400 qualifié manuellement depuis la facture et le rejet CHQ-REJET comptabilisé le 15/12/2025 ; alerte automatique conservée, pas de lien historique inventé. Lignes 34552 = 80 et 3491 = 11 000 : ventilation à qualifier depuis les pièces, aucune date supposée. Autres analyses néant selon les hypothèses du jeu."
+          },
+          "complete": false,
+          "ventilation": [
+            {
+              "compte": "3421",
+              "intitule": "Clients",
+              "total": 14400.0,
+              "plus_un_an": 0.0,
+              "moins_un_an": 0.0,
+              "echues": 14400.0,
+              "devises": 0.0,
+              "etat_organismes_publics": 0.0,
+              "entreprises_liees": 0.0,
+              "effets": 0.0
+            },
+            {
+              "compte": "34552",
+              "intitule": "État - TVA récupérable sur charges",
+              "total": 80.0,
+              "plus_un_an": null,
+              "moins_un_an": null,
+              "echues": null,
+              "devises": 0.0,
+              "etat_organismes_publics": 80.0,
+              "entreprises_liees": 0.0,
+              "effets": 0.0
+            },
+            {
+              "compte": "3491",
+              "intitule": "Charges constatées d'avance",
+              "total": 11000.0,
+              "plus_un_an": null,
+              "moins_un_an": null,
+              "echues": null,
+              "devises": 0.0,
+              "etat_organismes_publics": 0.0,
+              "entreprises_liees": 0.0,
+              "effets": 0.0
+            }
+          ],
+          "erreurs_ventilation": [
+            "34552 : renseignez la ventilation + d'un an.",
+            "34552 : renseignez la ventilation - d'un an.",
+            "34552 : renseignez la ventilation échues et non recouvrées.",
+            "3491 : renseignez la ventilation + d'un an.",
+            "3491 : renseignez la ventilation - d'un an.",
+            "3491 : renseignez la ventilation échues et non recouvrées."
+          ],
+          "updated_at": "2026-10-29T20:27:46.878770"
+        },
+        {
+          "code": "B7",
+          "groupe": "B",
+          "titre": "Tableau des dettes",
+          "mode": "assiste",
+          "type_saisie": "ventilation",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "montant"
+            ],
+            "lignes": [
+              {
+                "compte": "4411",
+                "intitule": "Fournisseurs",
+                "montant": 480.0,
+                "echeance_auto_total": 480.0,
+                "echeance_auto_ecart": 0.0,
+                "echeance_auto_non_qualifie": 0.0,
+                "echeance_auto_nb_factures": 5,
+                "echeance_auto_nb_factures_historiques": 0,
+                "echeance_auto_anomalies_sources": [],
+                "echeance_auto_diagnostic": {
+                  "plus_un_an": 0.0,
+                  "moins_un_an": 0.0,
+                  "echues": 480.0
+                },
+                "echeance_auto": {
+                  "plus_un_an": 0.0,
+                  "moins_un_an": 0.0,
+                  "echues": 480.0
+                },
+                "echeance_auto_source": "factures et échéanciers à la date de clôture"
+              },
+              {
+                "compte": "4417",
+                "intitule": "Fournisseurs - factures non parvenues",
+                "montant": 3000.0
+              },
+              {
+                "compte": "4453",
+                "intitule": "État - impôts sur les résultats",
+                "montant": 23220.25
+              },
+              {
+                "compte": "4456",
+                "intitule": "État - TVA due (suivant déclarations)",
+                "montant": 2400.0
+              }
+            ],
+            "avertissement": "Les échéances des factures fournisseurs sont préremplies automatiquement lorsqu'elles recoupent exactement le solde comptable ; les autres ventilations restent extra-comptables."
+          },
+          "contenu": {
+            "ventilations": {
+              "4417": {
+                "plus_un_an": "0",
+                "moins_un_an": "3000",
+                "echues": "0"
+              },
+              "4453": {
+                "plus_un_an": "0",
+                "moins_un_an": "23220.25",
+                "echues": "0"
+              },
+              "4456": {
+                "plus_un_an": "0",
+                "moins_un_an": "2400",
+                "echues": "0"
+              }
+            },
+            "autres_analyses_neant": true,
+            "notes": "FNP-01 : échéance contractuelle au 31/01/2026 selon le cahier. IS de 23 220,25 payé le 31/03/2026 et TVA de 2 400 payée le 20/01/2026 : écritures N+1 effectivement jouées. Références 02 et 002 distinctes, échéances au 31/12/2025 ; autres analyses néant selon le cas fictif.",
+            "confirme": true
+          },
+          "complete": true,
+          "ventilation": [
+            {
+              "compte": "4411",
+              "intitule": "Fournisseurs",
+              "total": 480.0,
+              "plus_un_an": 0.0,
+              "moins_un_an": 0.0,
+              "echues": 480.0,
+              "devises": 0.0,
+              "etat_organismes_publics": 0.0,
+              "entreprises_liees": 0.0,
+              "effets": 0.0
+            },
+            {
+              "compte": "4417",
+              "intitule": "Fournisseurs - factures non parvenues",
+              "total": 3000.0,
+              "plus_un_an": 0.0,
+              "moins_un_an": 3000.0,
+              "echues": 0.0,
+              "devises": 0.0,
+              "etat_organismes_publics": 0.0,
+              "entreprises_liees": 0.0,
+              "effets": 0.0
+            },
+            {
+              "compte": "4453",
+              "intitule": "État - impôts sur les résultats",
+              "total": 23220.25,
+              "plus_un_an": 0.0,
+              "moins_un_an": 23220.25,
+              "echues": 0.0,
+              "devises": 0.0,
+              "etat_organismes_publics": 23220.25,
+              "entreprises_liees": 0.0,
+              "effets": 0.0
+            },
+            {
+              "compte": "4456",
+              "intitule": "État - TVA due (suivant déclarations)",
+              "total": 2400.0,
+              "plus_un_an": 0.0,
+              "moins_un_an": 2400.0,
+              "echues": 0.0,
+              "devises": 0.0,
+              "etat_organismes_publics": 2400.0,
+              "entreprises_liees": 0.0,
+              "effets": 0.0
+            }
+          ],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:45.662466"
+        },
+        {
+          "code": "B8",
+          "groupe": "B",
+          "titre": "Sûretés réelles données ou reçues",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "nature",
+              "label": "Nature",
+              "type": "text"
+            },
+            {
+              "cle": "objet",
+              "label": "Objet",
+              "type": "text"
+            },
+            {
+              "cle": "tiers",
+              "label": "Tiers",
+              "type": "text"
+            },
+            {
+              "cle": "montant_couvert",
+              "label": "Montant couvert",
+              "type": "number"
+            },
+            {
+              "cle": "valeur_nette",
+              "label": "Valeur nette comptable",
+              "type": "number"
+            },
+            {
+              "cle": "inscription",
+              "label": "Date / lieu d'inscription",
+              "type": "text"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {
+            "neant": true
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:34.537923"
+        },
+        {
+          "code": "B9",
+          "groupe": "B",
+          "titre": "Engagements financiers reçus ou donnés hors crédit-bail",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "sens",
+              "label": "Reçu / donné",
+              "type": "text"
+            },
+            {
+              "cle": "nature",
+              "label": "Nature",
+              "type": "text"
+            },
+            {
+              "cle": "montant",
+              "label": "Montant exercice",
+              "type": "number"
+            },
+            {
+              "cle": "montant_n1",
+              "label": "Montant N-1",
+              "type": "number"
+            },
+            {
+              "cle": "observation",
+              "label": "Observation",
+              "type": "text"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {
+            "neant": true
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:35.499535"
+        },
+        {
+          "code": "B10",
+          "groupe": "B",
+          "titre": "Tableau des biens en crédit-bail",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "bien",
+              "label": "Bien",
+              "type": "text"
+            },
+            {
+              "cle": "date_contrat",
+              "label": "Date contrat",
+              "type": "date"
+            },
+            {
+              "cle": "duree",
+              "label": "Durée",
+              "type": "text"
+            },
+            {
+              "cle": "valeur_estimee",
+              "label": "Valeur estimée",
+              "type": "number"
+            },
+            {
+              "cle": "redevances_exercice",
+              "label": "Redevances exercice",
+              "type": "number"
+            },
+            {
+              "cle": "redevances_restantes",
+              "label": "Redevances restantes",
+              "type": "number"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {
+            "neant": true
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:37.126590"
+        },
+        {
+          "code": "B11",
+          "groupe": "B",
+          "titre": "Détail des postes du CPC",
+          "mode": "auto",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "compte",
+              "intitule",
+              "nature",
+              "montant"
+            ],
+            "lignes": [
+              {
+                "compte": "6111",
+                "intitule": "Achats de marchandises (groupe A)",
+                "nature": "Charge",
+                "montant": 22000.0
+              },
+              {
+                "compte": "6114",
+                "intitule": "Variation de stocks de marchandises",
+                "nature": "Charge",
+                "montant": -6600.0
+              },
+              {
+                "compte": "6125",
+                "intitule": "Achats non stockés de matières et fournitures",
+                "nature": "Charge",
+                "montant": 15400.0
+              },
+              {
+                "compte": "6134",
+                "intitule": "Primes d'assurances",
+                "nature": "Charge",
+                "montant": 1000.0
+              },
+              {
+                "compte": "61472",
+                "intitule": "Frais sur effets de commerce",
+                "nature": "Charge",
+                "montant": 10.0
+              },
+              {
+                "compte": "61473",
+                "intitule": "Frais et commissions sur services bancaires",
+                "nature": "Charge",
+                "montant": 60.0
+              },
+              {
+                "compte": "61935",
+                "intitule": "DEA des mobiliers, matériels de bureau et aménagements divers",
+                "nature": "Charge",
+                "montant": 4800.0
+              },
+              {
+                "compte": "61955",
+                "intitule": "DEP pour risques et charges durables",
+                "nature": "Charge",
+                "montant": 1500.0
+              },
+              {
+                "compte": "61964",
+                "intitule": "DEP pour dépréciation des créances de l'actif circulant",
+                "nature": "Charge",
+                "montant": 2000.0
+              },
+              {
+                "compte": "6583",
+                "intitule": "Pénalités et amendes fiscales ou pénales",
+                "nature": "Charge",
+                "montant": 500.0
+              },
+              {
+                "compte": "6701",
+                "intitule": "Impôts sur les bénéfices",
+                "nature": "Charge",
+                "montant": 23420.25
+              },
+              {
+                "compte": "7111",
+                "intitule": "Ventes de marchandises au Maroc",
+                "nature": "Produit",
+                "montant": 37500.0
+              },
+              {
+                "compte": "7124",
+                "intitule": "Ventes de services produits au Maroc",
+                "nature": "Produit",
+                "montant": 132000.0
+              },
+              {
+                "compte": "7381",
+                "intitule": "Intérêts et produits assimilés",
+                "nature": "Produit",
+                "montant": 1000.0
+              }
+            ]
+          },
+          "contenu": {
+            "notes": "Vérifier détail CPC avec l'oracle."
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:38.106851"
+        },
+        {
+          "code": "B12",
+          "groupe": "B",
+          "titre": "Passage du résultat net comptable au résultat net fiscal",
+          "mode": "auto",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "rubrique",
+              "montant"
+            ],
+            "lignes": [
+              {
+                "rubrique": "Résultat net comptable",
+                "montant": 106409.75
+              },
+              {
+                "rubrique": "Réintégrations fiscales (dont IS comptabilisé)",
+                "montant": 27420.25
+              },
+              {
+                "rubrique": "Déductions fiscales",
+                "montant": 0.0
+              },
+              {
+                "rubrique": "Résultat fiscal avant déficits",
+                "montant": 133830.0
+              },
+              {
+                "rubrique": "Déficits imputés",
+                "montant": 0.0
+              },
+              {
+                "rubrique": "Bénéfice fiscal imposable",
+                "montant": 133830.0
+              }
+            ],
+            "source": "Moteur fiscal Patch 08"
+          },
+          "contenu": {
+            "notes": "Résultatnet 106 409,75 +IS 23 420,25 +réintégrations 4 000 =133 830 ; déductions/déficits 0."
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:39.016853"
+        },
+        {
+          "code": "B13",
+          "groupe": "B",
+          "titre": "Détermination du résultat courant après impôts",
+          "mode": "assiste",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "rubrique",
+              "montant"
+            ],
+            "lignes": [
+              {
+                "rubrique": "Résultat courant avant impôts",
+                "montant": 130330.0
+              },
+              {
+                "rubrique": "Impôts sur les résultats comptabilisés",
+                "montant": 23420.25
+              },
+              {
+                "rubrique": "Résultat courant après impôts — indicatif",
+                "montant": 106909.75
+              }
+            ],
+            "avertissement": "L'affectation de l'impôt entre résultat courant et non courant peut nécessiter un ajustement extra-comptable ; vérifiez ce tableau avant arrêté."
+          },
+          "contenu": {
+            "notes": "Méthode d'affectation de l'IS entre courant et non courant non fournie par le cahier. Résultat courant 130 330 ; total IS 23 420,25. Ne pas confirmer arbitrairement."
+          },
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:48.576938"
+        },
+        {
+          "code": "B14",
+          "groupe": "B",
+          "titre": "Détail de la taxe sur la valeur ajoutée",
+          "mode": "assiste",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "nature",
+              "solde_debut",
+              "operations",
+              "declarations",
+              "solde_fin"
+            ],
+            "lignes": [
+              {
+                "nature": "A. TVA facturée / collectée",
+                "solde_debut": 0.0,
+                "operations": 33900.0,
+                "declarations": 33900.0,
+                "solde_fin": 0.0
+              },
+              {
+                "nature": "B. TVA récupérable",
+                "solde_debut": 0.0,
+                "operations": 11680.0,
+                "declarations": 11600.0,
+                "solde_fin": 80.0
+              },
+              {
+                "nature": "• sur charges",
+                "solde_debut": 0.0,
+                "operations": 6880.0,
+                "declarations": 6800.0,
+                "solde_fin": 80.0
+              },
+              {
+                "nature": "• sur immobilisations",
+                "solde_debut": 0.0,
+                "operations": 4800.0,
+                "declarations": 4800.0,
+                "solde_fin": 0.0
+              },
+              {
+                "nature": "C. TVA due ou crédit de TVA (A - B)",
+                "solde_debut": 0.0,
+                "operations": 22220.0,
+                "declarations": 22300.0,
+                "solde_fin": -80.0
+              }
+            ],
+            "avertissement": "La colonne « déclarations » est reconstituée à partir du journal TVA (TV) et des liquidations OD équilibrées exclusivement en comptes TVA avec contrepartie 4456 ou 3456. Ces mouvements comptables ne prouvent pas un dépôt fiscal : vérifiez-les avec les déclarations effectivement déposées. Le solde A - B porte sur 4455/34551/34552, distinct de la dette déjà liquidée en 4456 ou du crédit reporté en 3456."
+          },
+          "contenu": {
+            "notes": "Les liquidations du jeu sont passées en OD. Leur rapprochement avec le tableau automatique doit être vérifié avant confirmation. TVA collectée 33 900 / récupérable 11 600 / due fin N 2 400 selon le parcours des déclarations ; 34552 non payée 80. Rapprochement à documenter : ne pas confirmer un tableau automatique non recoupé."
+          },
+          "complete": false,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:49.938802"
+        },
+        {
+          "code": "C1",
+          "groupe": "C",
+          "titre": "État de répartition du capital social",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "associe",
+              "label": "Actionnaire / associé",
+              "type": "text"
+            },
+            {
+              "cle": "identifiant",
+              "label": "Identifiant / adresse",
+              "type": "text"
+            },
+            {
+              "cle": "titres",
+              "label": "Nombre de titres / parts",
+              "type": "number"
+            },
+            {
+              "cle": "nominal",
+              "label": "Valeur nominale",
+              "type": "number"
+            },
+            {
+              "cle": "capital",
+              "label": "Montant du capital détenu",
+              "type": "number"
+            },
+            {
+              "cle": "pourcentage",
+              "label": "% capital",
+              "type": "number"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {
+            "lignes": [
+              {
+                "associe": "Associé Recette",
+                "identifiant": "REC-ASSOC01",
+                "titres": "2000",
+                "nominal": "100",
+                "capital": "200000",
+                "pourcentage": "100"
+              }
+            ]
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:40.047971"
+        },
+        {
+          "code": "C2",
+          "groupe": "C",
+          "titre": "Affectation des résultats intervenue au cours de l'exercice",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "sens",
+              "label": "Origine / affectation",
+              "type": "text"
+            },
+            {
+              "cle": "nature",
+              "label": "Nature",
+              "type": "text"
+            },
+            {
+              "cle": "montant",
+              "label": "Montant",
+              "type": "number"
+            },
+            {
+              "cle": "observation",
+              "label": "Observation",
+              "type": "text"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {
+            "neant": true
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:40.993321"
+        },
+        {
+          "code": "C3",
+          "groupe": "C",
+          "titre": "Résultats et autres éléments caractéristiques des trois derniers exercices",
+          "mode": "auto",
+          "type_saisie": "notes",
+          "automatique": {
+            "colonnes": [
+              "exercice",
+              "situation_nette",
+              "chiffre_affaires_ht",
+              "resultat_avant_impots",
+              "impots_resultats",
+              "resultat_net",
+              "salaires_bruts",
+              "effectif_indicatif"
+            ],
+            "lignes": [
+              {
+                "exercice": 2023,
+                "situation_nette": null,
+                "chiffre_affaires_ht": null,
+                "resultat_avant_impots": null,
+                "impots_resultats": null,
+                "resultat_net": null,
+                "salaires_bruts": null,
+                "effectif_indicatif": null
+              },
+              {
+                "exercice": 2024,
+                "situation_nette": null,
+                "chiffre_affaires_ht": null,
+                "resultat_avant_impots": null,
+                "impots_resultats": null,
+                "resultat_net": null,
+                "salaires_bruts": null,
+                "effectif_indicatif": null
+              },
+              {
+                "exercice": 2025,
+                "situation_nette": 306409.75,
+                "chiffre_affaires_ht": 169500.0,
+                "resultat_avant_impots": 129830.0,
+                "impots_resultats": 23420.25,
+                "resultat_net": 106409.75,
+                "salaires_bruts": 0.0,
+                "effectif_indicatif": 0
+              }
+            ],
+            "avertissement": "Les bénéfices distribués et le résultat par titre dépendent de l'affectation/actionnariat saisis dans C1/C2 et ne sont pas inventés automatiquement."
+          },
+          "contenu": {
+            "notes": "2025 données oracle ; antériorités absentes, pas de faux zéro publié comme historique."
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:42.046029"
+        },
+        {
+          "code": "C4",
+          "groupe": "C",
+          "titre": "Opérations en devises comptabilisées pendant l'exercice",
+          "mode": "manuel",
+          "type_saisie": "table",
+          "colonnes_saisie": [
+            {
+              "cle": "devise",
+              "label": "Devise",
+              "type": "text"
+            },
+            {
+              "cle": "achats",
+              "label": "Achats",
+              "type": "number"
+            },
+            {
+              "cle": "ventes",
+              "label": "Ventes",
+              "type": "number"
+            },
+            {
+              "cle": "creances",
+              "label": "Créances",
+              "type": "number"
+            },
+            {
+              "cle": "dettes",
+              "label": "Dettes",
+              "type": "number"
+            },
+            {
+              "cle": "observation",
+              "label": "Observation",
+              "type": "text"
+            }
+          ],
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {
+            "neant": true
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:42.945187"
+        },
+        {
+          "code": "C5",
+          "groupe": "C",
+          "titre": "Datation et événements postérieurs",
+          "mode": "manuel",
+          "type_saisie": "texte",
+          "automatique": {
+            "colonnes": [],
+            "lignes": []
+          },
+          "contenu": {
+            "texte": "État fictif du cahier préparé au 06/10/2026 ; contrôle automatisé exécuté le 25/10/2026. Événements N+1 effectivement enregistrés dans ce laboratoire : TVA décembre 2025 payée 2 400 MAD le 20/01/2026 ; IS 2025 payé 23 220,25 MAD le 31/03/2026. Acomptes 2026 : 6 691,50 MAD le 31/03 et 2 000 MAD le 30/06. Aucun événement réel n’est affirmé."
+          },
+          "complete": true,
+          "ventilation": [],
+          "erreurs_ventilation": [],
+          "updated_at": "2026-10-29T20:27:44.395417"
+        }
+      ],
+      "progression": {
+        "completes": 20,
+        "total": 23,
+        "pourcentage": 87
+      },
+      "referentiel": {
+        "modele": "ETIC — modèle normal CGNC",
+        "sections": "A1-A3, B1-B14, C1-C5",
+        "note": "Les états automatiques proviennent des écritures validées. Les informations extra-comptables restent à confirmer ou à saisir."
+      },
+      "verrouillee": false,
+      "motif_verrouillage": null
+    },
+    "b6_partiel": {
+      "code": "B6",
+      "groupe": "B",
+      "titre": "Tableau des créances",
+      "mode": "assiste",
+      "type_saisie": "ventilation",
+      "automatique": {
+        "colonnes": [
+          "compte",
+          "intitule",
+          "montant"
+        ],
+        "lignes": [
+          {
+            "compte": "3421",
+            "intitule": "Clients",
+            "montant": 14400.0,
+            "echeance_auto_total": 14400.0,
+            "echeance_auto_ecart": 0.0,
+            "echeance_auto_non_qualifie": 14400.0,
+            "echeance_auto_nb_factures": 4,
+            "echeance_auto_nb_factures_historiques": 0,
+            "echeance_auto_anomalies_sources": [
+              {
+                "facture_id": 9,
+                "numero": "FA-2025-009",
+                "reste_du": 14400.0,
+                "motifs": [
+                  "Règlement 9 : Rejet sans date historique liée : effet sur le solde à la clôture à vérifier."
+                ]
+              }
+            ],
+            "echeance_auto_diagnostic": {
+              "plus_un_an": 0.0,
+              "moins_un_an": 0.0,
+              "echues": 0.0
+            },
+            "echeance_auto_compta_diagnostic": {
+              "total": 14400.0,
+              "sources": [
+                {
+                  "source": "acompte",
+                  "montant": -24000.0,
+                  "nb_lignes": 1
+                },
+                {
+                  "source": "avoir",
+                  "montant": -3000.0,
+                  "nb_lignes": 1
+                },
+                {
+                  "source": "facture",
+                  "montant": 206400.0,
+                  "nb_lignes": 4
+                },
+                {
+                  "source": "reglement",
+                  "montant": -165000.0,
+                  "nb_lignes": 7
+                }
+              ],
+              "mouvements": [
+                {
+                  "numero": "VT-2025-0001",
+                  "date": "2025-01-20",
+                  "journal": "VT",
+                  "libelle": "Facture FA-2025-003 Client Marchandises Recette",
+                  "reference": "FA-2025-003",
+                  "source": "facture",
+                  "debit": 30000.0,
+                  "credit": 0.0,
+                  "impact_solde": 30000.0
+                },
+                {
+                  "numero": "BQ-2025-0005",
+                  "date": "2025-01-25",
+                  "journal": "BQ",
+                  "libelle": "Règlement Client Marchandises Recette PAY-V01",
+                  "reference": "PAY-V01",
+                  "source": "reglement",
+                  "debit": 0.0,
+                  "credit": 10000.0,
+                  "impact_solde": -10000.0
+                },
+                {
+                  "numero": "AE-2025-0001",
+                  "date": "2025-01-26",
+                  "journal": "AE",
+                  "libelle": "Réception chèque — Client Marchandises Recette",
+                  "reference": "CHQ-01",
+                  "source": "reglement",
+                  "debit": 0.0,
+                  "credit": 20000.0,
+                  "impact_solde": -20000.0
+                },
+                {
+                  "numero": "AV-2025-0001",
+                  "date": "2025-02-10",
+                  "journal": "AV",
+                  "libelle": "Avoir AV-2025-001 Client Marchandises Recette",
+                  "reference": "AV-2025-001",
+                  "source": "avoir",
+                  "debit": 0.0,
+                  "credit": 3000.0,
+                  "impact_solde": -3000.0
+                },
+                {
+                  "numero": "VT-2025-0002",
+                  "date": "2025-03-01",
+                  "journal": "VT",
+                  "libelle": "Facture FA-2025-005 Client Marchandises Recette",
+                  "reference": "FA-2025-005",
+                  "source": "facture",
+                  "debit": 18000.0,
+                  "credit": 0.0,
+                  "impact_solde": 18000.0
+                },
+                {
+                  "numero": "BQ-2025-0008",
+                  "date": "2025-03-05",
+                  "journal": "BQ",
+                  "libelle": "Règlement Client Marchandises Recette PAY-V02",
+                  "reference": "PAY-V02",
+                  "source": "reglement",
+                  "debit": 0.0,
+                  "credit": 5000.0,
+                  "impact_solde": -5000.0
+                },
+                {
+                  "numero": "AE-2025-0004",
+                  "date": "2025-04-01",
+                  "journal": "AE",
+                  "libelle": "Acceptation effet — Client Marchandises Recette",
+                  "reference": "EFF-C01",
+                  "source": "reglement",
+                  "debit": 0.0,
+                  "credit": 10000.0,
+                  "impact_solde": -10000.0
+                },
+                {
+                  "numero": "VT-2025-0003",
+                  "date": "2025-06-15",
+                  "journal": "VT",
+                  "libelle": "Facture FA-2025-006 Client Services Recette",
+                  "reference": "FA-2025-006",
+                  "source": "facture",
+                  "debit": 144000.0,
+                  "credit": 0.0,
+                  "impact_solde": 144000.0
+                },
+                {
+                  "numero": "OD-2025-0005",
+                  "date": "2025-06-15",
+                  "journal": "OD",
+                  "libelle": "Imputation acompte AC-2025-002 sur FA-2025-006",
+                  "reference": "AC-2025-002",
+                  "source": "acompte",
+                  "debit": 0.0,
+                  "credit": 24000.0,
+                  "impact_solde": -24000.0
+                },
+                {
+                  "numero": "BQ-2025-0012",
+                  "date": "2025-06-30",
+                  "journal": "BQ",
+                  "libelle": "Règlement Client Services Recette VENTE-SERVICE-PAY",
+                  "reference": "VENTE-SERVICE-PAY",
+                  "source": "reglement",
+                  "debit": 0.0,
+                  "credit": 120000.0,
+                  "impact_solde": -120000.0
+                },
+                {
+                  "numero": "VT-2025-0004",
+                  "date": "2025-12-10",
+                  "journal": "VT",
+                  "libelle": "Facture FA-2025-009 Client Impayé Recette",
+                  "reference": "FA-2025-009",
+                  "source": "facture",
+                  "debit": 14400.0,
+                  "credit": 0.0,
+                  "impact_solde": 14400.0
+                },
+                {
+                  "numero": "AE-2025-0006",
+                  "date": "2025-12-12",
+                  "journal": "AE",
+                  "libelle": "Réception chèque — Client Impayé Recette",
+                  "reference": "CHQ-REJET",
+                  "source": "reglement",
+                  "debit": 0.0,
+                  "credit": 2000.0,
+                  "impact_solde": -2000.0
+                },
+                {
+                  "numero": "OD-2025-0007",
+                  "date": "2025-12-15",
+                  "journal": "OD",
+                  "libelle": "Impayé cheque — Client Impayé Recette",
+                  "reference": "CHQ-REJET",
+                  "source": "reglement",
+                  "debit": 2000.0,
+                  "credit": 0.0,
+                  "impact_solde": 2000.0
+                }
+              ]
+            }
+          },
+          {
+            "compte": "34552",
+            "intitule": "État - TVA récupérable sur charges",
+            "montant": 80.0
+          },
+          {
+            "compte": "3491",
+            "intitule": "Charges constatées d'avance",
+            "montant": 11000.0
+          }
+        ],
+        "avertissement": "Les échéances des factures clients sont préremplies automatiquement lorsqu'elles recoupent exactement le solde comptable ; les autres ventilations restent extra-comptables."
+      },
+      "contenu": {
+        "ventilations": {
+          "3421": {
+            "plus_un_an": "0",
+            "moins_un_an": "0",
+            "echues": "14400"
+          }
+        },
+        "autres_analyses_neant": true,
+        "notes": "VENTE-IMPAYEE : échéance au 20/12/2025, solde de 14 400 qualifié manuellement depuis la facture et le rejet CHQ-REJET comptabilisé le 15/12/2025 ; alerte automatique conservée, pas de lien historique inventé. Lignes 34552 = 80 et 3491 = 11 000 : ventilation à qualifier depuis les pièces, aucune date supposée. Autres analyses néant selon les hypothèses du jeu."
+      },
+      "complete": false,
+      "ventilation": [
+        {
+          "compte": "3421",
+          "intitule": "Clients",
+          "total": 14400.0,
+          "plus_un_an": 0.0,
+          "moins_un_an": 0.0,
+          "echues": 14400.0,
+          "devises": 0.0,
+          "etat_organismes_publics": 0.0,
+          "entreprises_liees": 0.0,
+          "effets": 0.0
+        },
+        {
+          "compte": "34552",
+          "intitule": "État - TVA récupérable sur charges",
+          "total": 80.0,
+          "plus_un_an": null,
+          "moins_un_an": null,
+          "echues": null,
+          "devises": 0.0,
+          "etat_organismes_publics": 80.0,
+          "entreprises_liees": 0.0,
+          "effets": 0.0
+        },
+        {
+          "compte": "3491",
+          "intitule": "Charges constatées d'avance",
+          "total": 11000.0,
+          "plus_un_an": null,
+          "moins_un_an": null,
+          "echues": null,
+          "devises": 0.0,
+          "etat_organismes_publics": 0.0,
+          "entreprises_liees": 0.0,
+          "effets": 0.0
+        }
+      ],
+      "erreurs_ventilation": [
+        "34552 : renseignez la ventilation + d'un an.",
+        "34552 : renseignez la ventilation - d'un an.",
+        "34552 : renseignez la ventilation échues et non recouvrées.",
+        "3491 : renseignez la ventilation + d'un an.",
+        "3491 : renseignez la ventilation - d'un an.",
+        "3491 : renseignez la ventilation échues et non recouvrées."
+      ],
+      "updated_at": "2026-10-29T20:27:46.878770"
+    },
+    "b7_complet": {
+      "code": "B7",
+      "groupe": "B",
+      "titre": "Tableau des dettes",
+      "mode": "assiste",
+      "type_saisie": "ventilation",
+      "automatique": {
+        "colonnes": [
+          "compte",
+          "intitule",
+          "montant"
+        ],
+        "lignes": [
+          {
+            "compte": "4411",
+            "intitule": "Fournisseurs",
+            "montant": 480.0,
+            "echeance_auto_total": 480.0,
+            "echeance_auto_ecart": 0.0,
+            "echeance_auto_non_qualifie": 0.0,
+            "echeance_auto_nb_factures": 5,
+            "echeance_auto_nb_factures_historiques": 0,
+            "echeance_auto_anomalies_sources": [],
+            "echeance_auto_diagnostic": {
+              "plus_un_an": 0.0,
+              "moins_un_an": 0.0,
+              "echues": 480.0
+            },
+            "echeance_auto": {
+              "plus_un_an": 0.0,
+              "moins_un_an": 0.0,
+              "echues": 480.0
+            },
+            "echeance_auto_source": "factures et échéanciers à la date de clôture"
+          },
+          {
+            "compte": "4417",
+            "intitule": "Fournisseurs - factures non parvenues",
+            "montant": 3000.0
+          },
+          {
+            "compte": "4453",
+            "intitule": "État - impôts sur les résultats",
+            "montant": 23220.25
+          },
+          {
+            "compte": "4456",
+            "intitule": "État - TVA due (suivant déclarations)",
+            "montant": 2400.0
+          }
+        ],
+        "avertissement": "Les échéances des factures fournisseurs sont préremplies automatiquement lorsqu'elles recoupent exactement le solde comptable ; les autres ventilations restent extra-comptables."
+      },
+      "contenu": {
+        "ventilations": {
+          "4417": {
+            "plus_un_an": "0",
+            "moins_un_an": "3000",
+            "echues": "0"
+          },
+          "4453": {
+            "plus_un_an": "0",
+            "moins_un_an": "23220.25",
+            "echues": "0"
+          },
+          "4456": {
+            "plus_un_an": "0",
+            "moins_un_an": "2400",
+            "echues": "0"
+          }
+        },
+        "autres_analyses_neant": true,
+        "notes": "FNP-01 : échéance contractuelle au 31/01/2026 selon le cahier. IS de 23 220,25 payé le 31/03/2026 et TVA de 2 400 payée le 20/01/2026 : écritures N+1 effectivement jouées. Références 02 et 002 distinctes, échéances au 31/12/2025 ; autres analyses néant selon le cas fictif.",
+        "confirme": true
+      },
+      "complete": true,
+      "ventilation": [
+        {
+          "compte": "4411",
+          "intitule": "Fournisseurs",
+          "total": 480.0,
+          "plus_un_an": 0.0,
+          "moins_un_an": 0.0,
+          "echues": 480.0,
+          "devises": 0.0,
+          "etat_organismes_publics": 0.0,
+          "entreprises_liees": 0.0,
+          "effets": 0.0
+        },
+        {
+          "compte": "4417",
+          "intitule": "Fournisseurs - factures non parvenues",
+          "total": 3000.0,
+          "plus_un_an": 0.0,
+          "moins_un_an": 3000.0,
+          "echues": 0.0,
+          "devises": 0.0,
+          "etat_organismes_publics": 0.0,
+          "entreprises_liees": 0.0,
+          "effets": 0.0
+        },
+        {
+          "compte": "4453",
+          "intitule": "État - impôts sur les résultats",
+          "total": 23220.25,
+          "plus_un_an": 0.0,
+          "moins_un_an": 23220.25,
+          "echues": 0.0,
+          "devises": 0.0,
+          "etat_organismes_publics": 23220.25,
+          "entreprises_liees": 0.0,
+          "effets": 0.0
+        },
+        {
+          "compte": "4456",
+          "intitule": "État - TVA due (suivant déclarations)",
+          "total": 2400.0,
+          "plus_un_an": 0.0,
+          "moins_un_an": 2400.0,
+          "echues": 0.0,
+          "devises": 0.0,
+          "etat_organismes_publics": 2400.0,
+          "entreprises_liees": 0.0,
+          "effets": 0.0
+        }
+      ],
+      "erreurs_ventilation": [],
+      "updated_at": "2026-10-29T20:27:45.662466"
+    },
+    "confirmation_b6_incomplete_refusee": 422,
+    "limites": {
+      "B13": "Méthode d'affectation de l'IS entre courant et non courant non fournie par le cahier. Résultat courant 130 330 ; total IS 23 420,25. Ne pas confirmer arbitrairement.",
+      "B14": "Les liquidations du jeu sont passées en OD. Leur rapprochement avec le tableau automatique doit être vérifié avant confirmation. TVA collectée 33 900 / récupérable 11 600 / due fin N 2 400 selon le parcours des déclarations ; 34552 non payée 80. Rapprochement à documenter : ne pas confirmer un tableau automatique non recoupé."
+    },
+    "archive_refusee": 409,
+    "controles_archive": {
+      "pret_a_finaliser": false,
+      "nb_bloquants": 1,
+      "nb_avertissements": 1,
+      "items": [
+        {
+          "code": "IDENTITE_IF",
+          "libelle": "Identifiant fiscal renseigné",
+          "ok": true,
+          "details": "Renseignez l'IF dans les paramètres société.",
+          "bloquant": true
+        },
+        {
+          "code": "IDENTITE_ICE",
+          "libelle": "ICE renseigné",
+          "ok": true,
+          "details": "Renseignez l'ICE dans les paramètres société.",
+          "bloquant": true
+        },
+        {
+          "code": "SOURCE_BALANCE",
+          "libelle": "Balance générale équilibrée",
+          "ok": true,
+          "details": "Écart : 0.00 MAD",
+          "bloquant": true
+        },
+        {
+          "code": "BROUILLONS",
+          "libelle": "Aucun brouillon dans l'exercice",
+          "ok": true,
+          "details": "0 brouillon(s) exclu(s).",
+          "bloquant": true
+        },
+        {
+          "code": "EXERCICE_CLOTURE",
+          "libelle": "Exercice comptable clôturé",
+          "ok": true,
+          "details": "La liasse peut être prévisualisée avant clôture, mais pas finalisée.",
+          "bloquant": true
+        },
+        {
+          "code": "BILAN_EQUI",
+          "libelle": "Bilan actif/passif équilibré",
+          "ok": true,
+          "details": "Écart : 0.00 MAD",
+          "bloquant": true
+        },
+        {
+          "code": "FEC_CONFORME",
+          "libelle": "FEC conforme aux contrôles Avis n°24",
+          "ok": true,
+          "details": "0 anomalie(s) bloquante(s), 0 avertissement(s).",
+          "bloquant": true
+        },
+        {
+          "code": "ETIC_COMPLETE",
+          "libelle": "ETIC complète",
+          "ok": false,
+          "details": "20/23 sections complètes.",
+          "bloquant": true
+        },
+        {
+          "code": "LIQUIDATION_IS",
+          "libelle": "Liquidation IS confirmée",
+          "ok": true,
+          "details": "Confirmez la liquidation fiscale avant finalisation.",
+          "bloquant": true
+        },
+        {
+          "code": "RESULTAT_COMPTABLE_FISCAL",
+          "libelle": "Résultat avant IS cohérent entre CPC et fiscalité",
+          "ok": true,
+          "details": "CPC 129830.00 / Fiscal 129830.00 MAD",
+          "bloquant": true
+        },
+        {
+          "code": "COMPARATIF_N1",
+          "libelle": "Comparatif N-1 disponible",
+          "ok": false,
+          "details": "Aucune donnée N-1 ; acceptable pour un premier exercice ou une reprise.",
+          "bloquant": false
+        },
+        {
+          "code": "TABLEAU_FINANCEMENT",
+          "libelle": "Contrôle du tableau de financement",
+          "ok": true,
+          "details": "Premier exercice / reprise sans comparatif N-1 : contrôle de variation non applicable.",
+          "bloquant": true
+        }
+      ],
+      "bloquants": [
+        {
+          "code": "ETIC_COMPLETE",
+          "libelle": "ETIC complète",
+          "ok": false,
+          "details": "20/23 sections complètes.",
+          "bloquant": true
+        }
+      ],
+      "avertissements": [
+        {
+          "code": "COMPARATIF_N1",
+          "libelle": "Comparatif N-1 disponible",
+          "ok": false,
+          "details": "Aucune donnée N-1 ; acceptable pour un premier exercice ou une reprise.",
+          "bloquant": false
+        }
+      ]
+    },
+    "ecritures_et_snapshot_inchanges": true
+  },
+  "fichiers805": [
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\etic949_final\\test_805_etic_documente_et_arc0\\liasse_etic805.xlsx",
+      "sha256": "bcaec4d7f83398d398e91fc0b30492e88f21ab7db391d443a82fd1d81783fd1b"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\etic949_final\\test_805_etic_documente_et_arc0\\liasse_etic805.pdf",
+      "sha256": "0f63f9d575307cb4be19ad8aab876dc8c7ea25fbe6114823d13b0c53bb49d175"
+    }
+  ]
+}

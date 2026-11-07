@@ -1,0 +1,5012 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_rkarr1bu",
+  "nonce": "a344d3e1d90f4cc9bcdb9642b1637a41",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-ADM-006",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-007",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-008",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-009",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-010",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-011",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-012",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-013",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-014",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-015",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-IMM-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-IMM-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-015",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-008",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-016",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-009",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-017",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-012",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-013",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-014",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-015",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-008",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-016",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-017",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-018",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-009",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-018",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-019",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-STK-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-IMM-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-019",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CPT-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-020",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-025",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-026",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-021",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-022",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-023",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-024",
+      "statut": "Partiel",
+      "limite": "Base/calcul/minimum etexonération du scénario testés ;variation nonexonérée observée avantparamétrage, pas surune copie dédiée."
+    },
+    {
+      "id": "HP-CLO-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-027",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-ETA-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-LIA-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-037",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-038",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-039",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-040",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {
+    "C-MARCH": {
+      "id": 3,
+      "compte": "3421",
+      "auxiliaire": "C00000003"
+    },
+    "C-SERVICE": {
+      "id": 4,
+      "compte": "3421",
+      "auxiliaire": "C00000004"
+    },
+    "C-IMPAYE": {
+      "id": 5,
+      "compte": "3421",
+      "auxiliaire": "C00000005"
+    },
+    "F-MARCH": {
+      "id": 6,
+      "compte": "4411",
+      "auxiliaire": "F00000006"
+    },
+    "F-SERVICE": {
+      "id": 7,
+      "compte": "4411",
+      "auxiliaire": "F00000007"
+    },
+    "F-CONTROLE": {
+      "id": 8,
+      "compte": "4411",
+      "auxiliaire": "F00000008"
+    },
+    "F-IMMO": {
+      "id": 9,
+      "compte": "4481",
+      "auxiliaire": "F00000009"
+    }
+  },
+  "articles": {
+    "M-01": {
+      "id": 1,
+      "stockable": true,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": "6111",
+      "compte_vente": "7111"
+    },
+    "S-VTE": {
+      "id": 2,
+      "stockable": false,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": null,
+      "compte_vente": "7124"
+    },
+    "S-ACH": {
+      "id": 3,
+      "stockable": false,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": "6125",
+      "compte_vente": null
+    }
+  },
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "operations": [
+    {
+      "reference": "CAP-01",
+      "id": 1,
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "200000.00",
+          "0.00"
+        ],
+        "1111": [
+          "0.00",
+          "200000.00"
+        ]
+      }
+    },
+    {
+      "reference": "IMMO-ACQ",
+      "id": 2,
+      "date": "2025-01-01",
+      "journal": "AC",
+      "lignes": {
+        "2355": [
+          "24000.00",
+          "0.00"
+        ],
+        "34551": [
+          "4800.00",
+          "0.00"
+        ],
+        "4481": [
+          "0.00",
+          "28800.00"
+        ]
+      }
+    },
+    {
+      "reference": "IMMO-PAY",
+      "id": 3,
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "lignes": {
+        "4481": [
+          "28800.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "28800.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-F01",
+      "id": 4,
+      "date": "2025-01-04",
+      "journal": "BQ",
+      "lignes": {
+        "3411": [
+          "6000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-01",
+      "id": 5,
+      "date": "2025-01-05",
+      "journal": "AC",
+      "lignes": {
+        "6111": [
+          "10000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2000.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-F01-IMP",
+      "id": 6,
+      "date": "2025-01-05",
+      "journal": "OD",
+      "lignes": {
+        "4411": [
+          "6000.00",
+          "0.00"
+        ],
+        "3411": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-01-PAY",
+      "id": 7,
+      "date": "2025-01-07",
+      "journal": "BQ",
+      "lignes": {
+        "4411": [
+          "6000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-02",
+      "id": 8,
+      "date": "2025-01-10",
+      "journal": "AC",
+      "lignes": {
+        "6111": [
+          "12000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2400.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-01",
+      "id": 9,
+      "date": "2025-01-20",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "30000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "5000.00"
+        ],
+        "7111": [
+          "0.00",
+          "25000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-01-PAY",
+      "id": 10,
+      "date": "2025-01-25",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "10000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01",
+      "id": 11,
+      "date": "2025-01-26",
+      "journal": "AE",
+      "lignes": {
+        "51111": [
+          "20000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-01",
+      "id": 12,
+      "date": "2025-01-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "5000.00",
+          "0.00"
+        ],
+        "3456": [
+          "1800.00",
+          "0.00"
+        ],
+        "34551": [
+          "0.00",
+          "4800.00"
+        ],
+        "34552": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01-REM",
+      "id": 13,
+      "date": "2025-02-01",
+      "journal": "AE",
+      "lignes": {
+        "51112": [
+          "20000.00",
+          "0.00"
+        ],
+        "51111": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01-ENC",
+      "id": 14,
+      "date": "2025-02-05",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "20000.00",
+          "0.00"
+        ],
+        "51112": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-SERVICE",
+      "id": 15,
+      "date": "2025-02-10",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "12000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2400.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "AV-01",
+      "id": 16,
+      "date": "2025-02-10",
+      "journal": "AV",
+      "lignes": {
+        "7111": [
+          "2500.00",
+          "0.00"
+        ],
+        "4455": [
+          "500.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "3000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-SERVICE-PAY",
+      "id": 17,
+      "date": "2025-02-15",
+      "journal": "BQ",
+      "lignes": {
+        "4411": [
+          "14400.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-02",
+      "id": 18,
+      "date": "2025-02-28",
+      "journal": "OD",
+      "lignes": {
+        "3456": [
+          "2900.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "500.00"
+        ],
+        "34552": [
+          "0.00",
+          "2400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-02",
+      "id": 19,
+      "date": "2025-03-01",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "18000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "3000.00"
+        ],
+        "7111": [
+          "0.00",
+          "15000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-F01",
+      "id": 20,
+      "date": "2025-03-01",
+      "journal": "AE",
+      "lignes": {
+        "4411": [
+          "14400.00",
+          "0.00"
+        ],
+        "4415": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-02-PAY",
+      "id": 21,
+      "date": "2025-03-05",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "5000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "5000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-F01-PAY",
+      "id": 22,
+      "date": "2025-03-20",
+      "journal": "BQ",
+      "lignes": {
+        "4415": [
+          "14400.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-03",
+      "id": 23,
+      "date": "2025-03-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "3000.00",
+          "0.00"
+        ],
+        "34552": [
+          "0.00",
+          "2400.00"
+        ],
+        "3456": [
+          "0.00",
+          "600.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01",
+      "id": 24,
+      "date": "2025-04-01",
+      "journal": "AE",
+      "lignes": {
+        "3425": [
+          "10000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01-REM",
+      "id": 25,
+      "date": "2025-05-15",
+      "journal": "AE",
+      "lignes": {
+        "51132": [
+          "10000.00",
+          "0.00"
+        ],
+        "3425": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01-ENC",
+      "id": 26,
+      "date": "2025-05-16",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "9990.00",
+          "0.00"
+        ],
+        "61472": [
+          "10.00",
+          "0.00"
+        ],
+        "51132": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-C01",
+      "id": 27,
+      "date": "2025-06-01",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "24000.00",
+          "0.00"
+        ],
+        "4421": [
+          "0.00",
+          "24000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-SERVICE",
+      "id": 28,
+      "date": "2025-06-15",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "144000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "24000.00"
+        ],
+        "7124": [
+          "0.00",
+          "120000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-C01-IMP",
+      "id": 29,
+      "date": "2025-06-15",
+      "journal": "OD",
+      "lignes": {
+        "4421": [
+          "24000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "24000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-SERVICE-PAY",
+      "id": 30,
+      "date": "2025-06-30",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "120000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "120000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-06",
+      "id": 31,
+      "date": "2025-06-30",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "24000.00",
+          "0.00"
+        ],
+        "3456": [
+          "0.00",
+          "4100.00"
+        ],
+        "4456": [
+          "0.00",
+          "19900.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-06-PAY",
+      "id": 32,
+      "date": "2025-07-20",
+      "journal": "BQ",
+      "lignes": {
+        "4456": [
+          "19900.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "19900.00"
+        ]
+      }
+    },
+    {
+      "reference": "INT-PPRF",
+      "id": 33,
+      "date": "2025-11-30",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "800.00",
+          "0.00"
+        ],
+        "3453": [
+          "200.00",
+          "0.00"
+        ],
+        "7381": [
+          "0.00",
+          "1000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ASS-01",
+      "id": 34,
+      "date": "2025-12-01",
+      "journal": "BQ",
+      "lignes": {
+        "6134": [
+          "12000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "REF-02",
+      "id": 35,
+      "date": "2025-12-02",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "200.00",
+          "0.00"
+        ],
+        "34552": [
+          "40.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "240.00"
+        ]
+      }
+    },
+    {
+      "reference": "REF-002",
+      "id": 36,
+      "date": "2025-12-02",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "200.00",
+          "0.00"
+        ],
+        "34552": [
+          "40.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "240.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-IMPAYEE",
+      "id": 37,
+      "date": "2025-12-10",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "14400.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "2400.00"
+        ],
+        "7124": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-REJET",
+      "id": 38,
+      "date": "2025-12-12",
+      "journal": "AE",
+      "lignes": {
+        "51111": [
+          "2000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-REJET-INV",
+      "id": 39,
+      "date": "2025-12-15",
+      "journal": "OD",
+      "lignes": {
+        "3421": [
+          "2000.00",
+          "0.00"
+        ],
+        "51111": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AMENDE",
+      "id": 40,
+      "date": "2025-12-20",
+      "journal": "BQ",
+      "lignes": {
+        "6583": [
+          "500.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "500.00"
+        ]
+      }
+    },
+    {
+      "reference": "FRAIS-BQ",
+      "id": 41,
+      "date": "2025-12-31",
+      "journal": "BQ",
+      "lignes": {
+        "61473": [
+          "60.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "60.00"
+        ]
+      }
+    },
+    {
+      "reference": "STOCK-FIN",
+      "id": 42,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "3111": [
+          "6600.00",
+          "0.00"
+        ],
+        "6114": [
+          "0.00",
+          "6600.00"
+        ]
+      }
+    },
+    {
+      "reference": "AMORT-2025",
+      "id": 43,
+      "date": "2025-12-31",
+      "journal": "AM",
+      "lignes": {
+        "61935": [
+          "4800.00",
+          "0.00"
+        ],
+        "28355": [
+          "0.00",
+          "4800.00"
+        ]
+      }
+    },
+    {
+      "reference": "CCA-2025",
+      "id": 44,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "3491": [
+          "11000.00",
+          "0.00"
+        ],
+        "6134": [
+          "0.00",
+          "11000.00"
+        ]
+      }
+    },
+    {
+      "reference": "FNP-2025",
+      "id": 46,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "6125": [
+          "3000.00",
+          "0.00"
+        ],
+        "4417": [
+          "0.00",
+          "3000.00"
+        ]
+      }
+    },
+    {
+      "reference": "PROV-RISQUE",
+      "id": 48,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "61955": [
+          "1500.00",
+          "0.00"
+        ],
+        "1518": [
+          "0.00",
+          "1500.00"
+        ]
+      }
+    },
+    {
+      "reference": "DEPR-CLIENT",
+      "id": 49,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "61964": [
+          "2000.00",
+          "0.00"
+        ],
+        "3942": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-12",
+      "id": 50,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "2400.00",
+          "0.00"
+        ],
+        "4456": [
+          "0.00",
+          "2400.00"
+        ]
+      }
+    },
+    {
+      "reference": "IS-2025",
+      "id": 51,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "6701": [
+          "23420.25",
+          "0.00"
+        ],
+        "4453": [
+          "0.00",
+          "23420.25"
+        ]
+      }
+    },
+    {
+      "reference": "PPRF-IMP",
+      "id": 52,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "4453": [
+          "200.00",
+          "0.00"
+        ],
+        "3453": [
+          "0.00",
+          "200.00"
+        ]
+      }
+    }
+  ],
+  "limite_cycle": "Capital etacquisition présents danscette société ;autres opérations annuelles encoreàintercaler chronologiquement.",
+  "requetes_echouees": [
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:49779/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    }
+  ],
+  "lettrage_fournisseur": "AAA",
+  "cycle": {
+    "factures": [
+      1,
+      2,
+      3
+    ],
+    "devis": 1,
+    "bc": 1,
+    "bl": 1,
+    "ecritures": 10,
+    "lignes": 24,
+    "total_debit_credit": "342000.00",
+    "stock": 100,
+    "cmup": 110,
+    "reste_vente": 20000
+  },
+  "suite777": {
+    "ecritures": 21,
+    "lignes": 52,
+    "debit_credit": "480900.00",
+    "stock": 60,
+    "cmup": 110,
+    "reste_vente2": 10000,
+    "avoir": 1,
+    "facture2": 5,
+    "prefixe_valide_inchange": true,
+    "imputation_credit_sans_nouvelle_ecriture": true
+  },
+  "semestre789": {
+    "ecritures": 31,
+    "lignes": 76,
+    "debit_credit": "864300.00",
+    "soldes": {
+      "1111": "-200000.00",
+      "2355": "24000.00",
+      "4456": "-19900.00",
+      "5141": "319390.00",
+      "6111": "22000.00",
+      "6125": "12000.00",
+      "61472": "10.00",
+      "7111": "-37500.00",
+      "7124": "-120000.00"
+    },
+    "references": [
+      "CAP-01",
+      "IMMO-ACQ",
+      "IMMO-PAY",
+      "AC-F01",
+      "ACH-01",
+      "AC-F01-IMP",
+      "ACH-01-PAY",
+      "ACH-02",
+      "VENTE-01",
+      "VENTE-01-PAY",
+      "CHQ-01",
+      "TVA-01",
+      "CHQ-01-REM",
+      "CHQ-01-ENC",
+      "ACH-SERVICE",
+      "AV-01",
+      "ACH-SERVICE-PAY",
+      "TVA-02",
+      "VENTE-02",
+      "EFF-F01",
+      "VENTE-02-PAY",
+      "EFF-F01-PAY",
+      "TVA-03",
+      "EFF-C01",
+      "EFF-C01-REM",
+      "EFF-C01-ENC",
+      "AC-C01",
+      "VENTE-SERVICE",
+      "AC-C01-IMP",
+      "VENTE-SERVICE-PAY",
+      "TVA-06"
+    ],
+    "stock": 60,
+    "cmup": 110,
+    "frais_effet": "10.00",
+    "ordre_chronologique": true,
+    "limite": "Arrêt30/06/2025 ;les écritures TVA sont saisies manuellement conformément aux fichesFIS015/016/017/018, pas des déclarations automatiques. Pas de clôture ni de dotation annuelle anticipée."
+  },
+  "integrite839": {
+    "HP-NEG-010": {
+      "statut": 409,
+      "detail": "La facture FA-2025-003 est déjà comptabilisée : une seconde comptabilisation créerait une écriture en doublon."
+    },
+    "HP-NEG-011": {
+      "statut": 409,
+      "detail": "Facture validée : les données de facturation sont figées. Utilisez un avoir ou un document correctif pour la corriger."
+    },
+    "journal_definitif": {
+      "edition": {
+        "statut": 423,
+        "detail": "Écriture BQ-2025-0001 définitive : impossible de la modifier. Utilisez une contrepassation."
+      },
+      "suppression": {
+        "statut": 423,
+        "detail": "Écriture BQ-2025-0001 définitive : impossible de la supprimer. Utilisez une contrepassation."
+      }
+    },
+    "HP-NEG-037": {
+      "refus_creation": {
+        "statut": 423,
+        "detail": "Période Janvier 2025 fermée : impossible d'y créer une écriture."
+      },
+      "fermeture_reouverture_UI": 200,
+      "audit_deux_transitions_acteur": true,
+      "originaux_conserves": true
+    },
+    "HP-NEG-038": {
+      "statut": 409,
+      "detail": "Clôture prématurée interdite : l'exercice se termine le 2027-12-31. La clôture définitive ne peut être lancée qu'à compter de cette date."
+    },
+    "HP-NEG-039": {
+      "creation": {
+        "statut": 423,
+        "detail": "Exercice 2025 clôturé : impossible d'y créer une écriture."
+      },
+      "edition": {
+        "statut": 423,
+        "detail": "Écriture BQ-2025-0001 définitive : impossible de la modifier. Utilisez une contrepassation."
+      },
+      "suppression": {
+        "statut": 423,
+        "detail": "Écriture BQ-2025-0001 définitive : impossible de la supprimer. Utilisez une contrepassation."
+      },
+      "reouverture": {
+        "statut": 423,
+        "detail": "Exercice définitivement clôturé : ses périodes restent verrouillées."
+      },
+      "facture": {
+        "statut": 409,
+        "detail": "Facture validée : les données de facturation sont figées. Utilisez un avoir ou un document correctif pour la corriger."
+      }
+    },
+    "HP-NEG-040": {
+      "statut": 400,
+      "detail": "L'exercice 2025 est déjà clôturé."
+    },
+    "originaux_conserves": true,
+    "report_AN_unique": true,
+    "aucun_contournement_cloture": true
+  },
+  "ajustements791": [
+    {
+      "reference": "CCA-2025",
+      "id": 1,
+      "ecriture": 44,
+      "contrepassation2026": 45
+    },
+    {
+      "reference": "FNP-2025",
+      "id": 2,
+      "ecriture": 46,
+      "contrepassation2026": 47
+    },
+    {
+      "reference": "PROV-RISQUE",
+      "id": 3,
+      "ecriture": 48,
+      "contrepassation2026": null
+    },
+    {
+      "reference": "DEPR-CLIENT",
+      "id": 4,
+      "ecriture": 49,
+      "contrepassation2026": null
+    }
+  ],
+  "controle_cloture791": {
+    "exercice": 2025,
+    "date_debut": "2025-01-01",
+    "date_fin": "2025-12-31",
+    "date_fin_atteinte": true,
+    "est_clos": false,
+    "date_cloture": null,
+    "nb_ecritures": 50,
+    "total_charges": 64090.25,
+    "total_produits": 170500.0,
+    "resultat_net": 106409.75,
+    "type_resultat": "bénéfice",
+    "compte_resultat": "1191",
+    "equilibre": true,
+    "ecart": 0.0,
+    "apercu_a_nouveaux": [
+      {
+        "compte": "1111",
+        "debit": 0.0,
+        "credit": 200000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1518",
+        "debit": 0.0,
+        "credit": 1500.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "2355",
+        "debit": 24000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "28355",
+        "debit": 0.0,
+        "credit": 4800.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3111",
+        "debit": 6600.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3421",
+        "debit": 14400.0,
+        "credit": 0.0,
+        "tiers_id": 5,
+        "nature_auxiliaire": "client",
+        "compte_auxiliaire_snapshot": "C00000005",
+        "libelle_auxiliaire_snapshot": "Client Impayé Recette"
+      },
+      {
+        "compte": "34552",
+        "debit": 80.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3491",
+        "debit": 11000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3942",
+        "debit": 0.0,
+        "credit": 2000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4411",
+        "debit": 0.0,
+        "credit": 480.0,
+        "tiers_id": 8,
+        "nature_auxiliaire": "fournisseur",
+        "compte_auxiliaire_snapshot": "F00000008",
+        "libelle_auxiliaire_snapshot": "Fournisseur Contrôle Références Recette"
+      },
+      {
+        "compte": "4417",
+        "debit": 0.0,
+        "credit": 3000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4453",
+        "debit": 0.0,
+        "credit": 23220.25,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4456",
+        "debit": 0.0,
+        "credit": 2400.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "5141",
+        "debit": 287730.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1191",
+        "debit": 0.0,
+        "credit": 106409.75,
+        "resultat": true
+      }
+    ],
+    "total_an_debit": 343810.0,
+    "total_an_credit": 343810.0,
+    "dotations_manquantes": [],
+    "nb_dotations_manquantes": 0,
+    "total_dotations_manquantes": 0.0,
+    "nb_ecritures_brouillon": 0,
+    "ecritures_brouillon": [],
+    "nb_ajustements_inventaire": 4,
+    "stock_cloture": {
+      "exercice": 2025,
+      "date_fin": "2025-12-31",
+      "nb_articles": 1,
+      "inventaire_requis": true,
+      "inventaire_valide": true,
+      "inventaire_id": 1,
+      "inventaire_reference": "STOCK-FIN",
+      "valeur_physique_brute": 6600.0,
+      "valeur_comptable_brute": 6600.0,
+      "depreciations": 0.0,
+      "valeur_comptable_nette": 6600.0,
+      "ecart_brut": 0.0,
+      "valorisation_complete": true,
+      "diagnostics": [],
+      "stock_rapproche": true,
+      "ecriture_stock_id": 42,
+      "ecriture_stock_validee": true,
+      "lignes": [
+        {
+          "article_id": 1,
+          "code": "M-01",
+          "designation": "Marchandise de recette",
+          "quantite": 60.0,
+          "cmup": 110.0,
+          "valeur": 6600.0,
+          "nombres_diagnostics": {},
+          "compte_stock": "3111",
+          "compte_variation": "6114"
+        }
+      ]
+    },
+    "immobilisations_rapprochement": {
+      "brut_module": 24000.0,
+      "brut_comptable": 24000.0,
+      "ecart_brut": 0.0,
+      "amortissements_module": 4800.0,
+      "amortissements_comptables": 4800.0,
+      "ecart_amortissements": 0.0,
+      "vnc_module": 19200.0,
+      "vnc_comptable": 19200.0,
+      "ecart_vnc": 0.0,
+      "rapproche": true,
+      "details_comptes": [
+        {
+          "nature": "brut",
+          "compte": "2355",
+          "module": 24000.0,
+          "comptable": 24000.0,
+          "ecart": 0.0
+        },
+        {
+          "nature": "amortissement",
+          "compte": "28355",
+          "module": 4800.0,
+          "comptable": 4800.0,
+          "ecart": 0.0
+        }
+      ]
+    },
+    "nb_documents_non_comptabilises": 0,
+    "documents_non_comptabilises": [],
+    "affectation_resultat": null,
+    "resultat_anterieur_a_reclasser": null,
+    "fiscalite_is": {
+      "applicable": true,
+      "attendu": 22807.75,
+      "comptabilise": 23420.25,
+      "compte_charge_attendu": "6701",
+      "nature_impot": "IS",
+      "absente": false,
+      "coherente": false,
+      "a_comptabiliser": 0.0,
+      "resultat_comptable_avant_is": 129830.0,
+      "resultat_net_apres_is": null,
+      "deficits_a_confirmer": false
+    },
+    "fec_controle": {
+      "conforme": true,
+      "nb_bloquants": 0,
+      "nb_avertissements": 1,
+      "bloquants": []
+    }
+  },
+  "annuel791": {
+    "ecritures2025": 50,
+    "lignes2025": 118,
+    "debit_credit": "971560.25",
+    "contrepassations2026_brouillon": 2,
+    "lignes2026": 4,
+    "resultats": {
+      "banque": "287730.00",
+      "stock_valeur": "6600.00",
+      "total_actif_net": "337010.0",
+      "total_passif_net": "337010.0",
+      "resultat_net": "106409.75",
+      "caf": "112709.75"
+    },
+    "soldes": {
+      "1111": "-200000.00",
+      "1518": "-1500.00",
+      "2355": "24000.00",
+      "28355": "-4800.00",
+      "3111": "6600.00",
+      "3421": "14400.00",
+      "34552": "80.00",
+      "3491": "11000.00",
+      "3942": "-2000.00",
+      "4411": "-480.00",
+      "4417": "-3000.00",
+      "4453": "-23220.25",
+      "4456": "-2400.00",
+      "5141": "287730.00",
+      "6111": "22000.00",
+      "6114": "-6600.00",
+      "6125": "15400.00",
+      "6134": "1000.00",
+      "61472": "10.00",
+      "61473": "60.00",
+      "61935": "4800.00",
+      "61955": "1500.00",
+      "61964": "2000.00",
+      "6583": "500.00",
+      "6701": "23420.25",
+      "7111": "-37500.00",
+      "7124": "-132000.00",
+      "7381": "-1000.00"
+    },
+    "stock": 60,
+    "cmup": 110,
+    "originaux_semestre_inchanges": true,
+    "limite": "États annuels et flux produits testés, pas clôture définitive, déclarations fiscales ni recette humaine ;contrôles réels non contournés."
+  },
+  "controle_avant_cloture793": {
+    "exercice": 2025,
+    "date_debut": "2025-01-01",
+    "date_fin": "2025-12-31",
+    "date_fin_atteinte": true,
+    "est_clos": false,
+    "date_cloture": null,
+    "nb_ecritures": 50,
+    "total_charges": 64090.25,
+    "total_produits": 170500.0,
+    "resultat_net": 106409.75,
+    "type_resultat": "bénéfice",
+    "compte_resultat": "1191",
+    "equilibre": true,
+    "ecart": 0.0,
+    "apercu_a_nouveaux": [
+      {
+        "compte": "1111",
+        "debit": 0.0,
+        "credit": 200000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1518",
+        "debit": 0.0,
+        "credit": 1500.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "2355",
+        "debit": 24000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "28355",
+        "debit": 0.0,
+        "credit": 4800.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3111",
+        "debit": 6600.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3421",
+        "debit": 14400.0,
+        "credit": 0.0,
+        "tiers_id": 5,
+        "nature_auxiliaire": "client",
+        "compte_auxiliaire_snapshot": "C00000005",
+        "libelle_auxiliaire_snapshot": "Client Impayé Recette"
+      },
+      {
+        "compte": "34552",
+        "debit": 80.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3491",
+        "debit": 11000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3942",
+        "debit": 0.0,
+        "credit": 2000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4411",
+        "debit": 0.0,
+        "credit": 480.0,
+        "tiers_id": 8,
+        "nature_auxiliaire": "fournisseur",
+        "compte_auxiliaire_snapshot": "F00000008",
+        "libelle_auxiliaire_snapshot": "Fournisseur Contrôle Références Recette"
+      },
+      {
+        "compte": "4417",
+        "debit": 0.0,
+        "credit": 3000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4453",
+        "debit": 0.0,
+        "credit": 23220.25,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4456",
+        "debit": 0.0,
+        "credit": 2400.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "5141",
+        "debit": 287730.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1191",
+        "debit": 0.0,
+        "credit": 106409.75,
+        "resultat": true
+      }
+    ],
+    "total_an_debit": 343810.0,
+    "total_an_credit": 343810.0,
+    "dotations_manquantes": [],
+    "nb_dotations_manquantes": 0,
+    "total_dotations_manquantes": 0.0,
+    "nb_ecritures_brouillon": 0,
+    "ecritures_brouillon": [],
+    "nb_ajustements_inventaire": 4,
+    "stock_cloture": {
+      "exercice": 2025,
+      "date_fin": "2025-12-31",
+      "nb_articles": 1,
+      "inventaire_requis": true,
+      "inventaire_valide": true,
+      "inventaire_id": 1,
+      "inventaire_reference": "STOCK-FIN",
+      "valeur_physique_brute": 6600.0,
+      "valeur_comptable_brute": 6600.0,
+      "depreciations": 0.0,
+      "valeur_comptable_nette": 6600.0,
+      "ecart_brut": 0.0,
+      "valorisation_complete": true,
+      "diagnostics": [],
+      "stock_rapproche": true,
+      "ecriture_stock_id": 42,
+      "ecriture_stock_validee": true,
+      "lignes": [
+        {
+          "article_id": 1,
+          "code": "M-01",
+          "designation": "Marchandise de recette",
+          "quantite": 60.0,
+          "cmup": 110.0,
+          "valeur": 6600.0,
+          "nombres_diagnostics": {},
+          "compte_stock": "3111",
+          "compte_variation": "6114"
+        }
+      ]
+    },
+    "immobilisations_rapprochement": {
+      "brut_module": 24000.0,
+      "brut_comptable": 24000.0,
+      "ecart_brut": 0.0,
+      "amortissements_module": 4800.0,
+      "amortissements_comptables": 4800.0,
+      "ecart_amortissements": 0.0,
+      "vnc_module": 19200.0,
+      "vnc_comptable": 19200.0,
+      "ecart_vnc": 0.0,
+      "rapproche": true,
+      "details_comptes": [
+        {
+          "nature": "brut",
+          "compte": "2355",
+          "module": 24000.0,
+          "comptable": 24000.0,
+          "ecart": 0.0
+        },
+        {
+          "nature": "amortissement",
+          "compte": "28355",
+          "module": 4800.0,
+          "comptable": 4800.0,
+          "ecart": 0.0
+        }
+      ]
+    },
+    "nb_documents_non_comptabilises": 0,
+    "documents_non_comptabilises": [],
+    "affectation_resultat": null,
+    "resultat_anterieur_a_reclasser": null,
+    "fiscalite_is": {
+      "applicable": true,
+      "attendu": 23420.25,
+      "comptabilise": 23420.25,
+      "compte_charge_attendu": "6701",
+      "nature_impot": "IS",
+      "absente": false,
+      "coherente": true,
+      "a_comptabiliser": 0.0,
+      "resultat_comptable_avant_is": 129830.0,
+      "resultat_net_apres_is": 106409.75,
+      "deficits_a_confirmer": false
+    },
+    "fec_controle": {
+      "conforme": true,
+      "nb_bloquants": 0,
+      "nb_avertissements": 1,
+      "bloquants": []
+    }
+  },
+  "cloture793": {
+    "resultat_net": "106409.75",
+    "reintegrations": "4000.00",
+    "benefice_fiscal": "133830.00",
+    "is": "23420.25",
+    "credit": "200.00",
+    "solde": "23220.25",
+    "an2026_id": 54,
+    "total_an": "343810.00",
+    "soldes_an": {
+      "1111": "-200000.00",
+      "1191": "-106409.75",
+      "1518": "-1500.00",
+      "2355": "24000.00",
+      "28355": "-4800.00",
+      "3111": "6600.00",
+      "3421": "14400.00",
+      "34552": "80.00",
+      "3491": "11000.00",
+      "3942": "-2000.00",
+      "4411": "-480.00",
+      "4417": "-3000.00",
+      "4453": "-23220.25",
+      "4456": "-2400.00",
+      "5141": "287730.00"
+    },
+    "contrepassations2026_validees": 2,
+    "cinquante_originaux2025_inchanges": true,
+    "ecriture_sur_clos_refusee": 423,
+    "liquidation_figee": true,
+    "cm_scenario": "0.00",
+    "cm_avant_parametrage": "3000.00",
+    "css_reference_manquante_visible": true,
+    "limite": "Hypothèses fiscales explicites du jeu fictif, pas validation réglementaire ;CMsanscopiecontrôle dédiée restePartiel. DéclarationsTVA/exportsannuels etrecettehumaine restentàqualifier."
+  },
+  "etats803": {
+    "bilan": {
+      "actif": {
+        "immobilise": [
+          {
+            "code": "21",
+            "libelle": "Immobilisations en non-valeurs",
+            "brut": 0.0,
+            "amort_prov": 0.0,
+            "net": 0.0,
+            "net_n1": null
+          },
+          {
+            "code": "22",
+            "libelle": "Immobilisations incorporelles",
+            "brut": 0.0,
+            "amort_prov": 0.0,
+            "net": 0.0,
+            "net_n1": null
+          },
+          {
+            "code": "23",
+            "libelle": "Immobilisations corporelles",
+            "brut": 24000.0,
+            "amort_prov": 4800.0,
+            "net": 19200.0,
+            "net_n1": null
+          },
+          {
+            "code": "24/25",
+            "libelle": "Immobilisations financières",
+            "brut": 0.0,
+            "amort_prov": 0.0,
+            "net": 0.0,
+            "net_n1": null
+          },
+          {
+            "code": "27",
+            "libelle": "Écarts de conversion - actif",
+            "brut": 0.0,
+            "amort_prov": 0.0,
+            "net": 0.0,
+            "net_n1": null
+          }
+        ],
+        "circulant": [
+          {
+            "code": "31",
+            "libelle": "Stocks",
+            "brut": 6600.0,
+            "amort_prov": 0.0,
+            "net": 6600.0,
+            "net_n1": null
+          },
+          {
+            "code": "341",
+            "libelle": "Fournisseurs débiteurs, avances",
+            "brut": 0.0,
+            "amort_prov": 0.0,
+            "net": 0.0,
+            "net_n1": null
+          },
+          {
+            "code": "342",
+            "libelle": "Clients et comptes rattachés",
+            "brut": 14400.0,
+            "amort_prov": 2000.0,
+            "net": 12400.0,
+            "net_n1": null
+          },
+          {
+            "code": "343",
+            "libelle": "Personnel - débiteur",
+            "brut": 0.0,
+            "amort_prov": 0.0,
+            "net": 0.0,
+            "net_n1": null
+          },
+          {
+            "code": "345",
+            "libelle": "État - débiteur",
+            "brut": 80.0,
+            "amort_prov": 0.0,
+            "net": 80.0,
+            "net_n1": null
+          },
+          {
+            "code": "346",
+            "libelle": "Comptes d'associés - débiteurs",
+            "brut": 0.0,
+            "amort_prov": 0.0,
+            "net": 0.0,
+            "net_n1": null
+          },
+          {
+            "code": "348",
+            "libelle": "Autres débiteurs",
+            "brut": 0.0,
+            "amort_prov": 0.0,
+            "net": 0.0,
+            "net_n1": null
+          },
+          {
+            "code": "349",
+            "libelle": "Comptes de régularisation - actif",
+            "brut": 11000.0,
+            "amort_prov": 0.0,
+            "net": 11000.0,
+            "net_n1": null
+          },
+          {
+            "code": "350",
+            "libelle": "Titres et valeurs de placement",
+            "brut": 0.0,
+            "amort_prov": 0.0,
+            "net": 0.0,
+            "net_n1": null
+          },
+          {
+            "code": "37",
+            "libelle": "Écarts de conversion - actif circulant",
+            "brut": 0.0,
+            "amort_prov": 0.0,
+            "net": 0.0,
+            "net_n1": null
+          }
+        ],
+        "tresorerie": [
+          {
+            "code": "511",
+            "libelle": "Chèques et valeurs à encaisser",
+            "brut": 0.0,
+            "amort_prov": 0.0,
+            "net": 0.0,
+            "net_n1": null
+          },
+          {
+            "code": "514",
+            "libelle": "Banques, TG et CCP",
+            "brut": 287730.0,
+            "amort_prov": 0.0,
+            "net": 287730.0,
+            "net_n1": null
+          },
+          {
+            "code": "516",
+            "libelle": "Caisses, régies d'avances",
+            "brut": 0.0,
+            "amort_prov": 0.0,
+            "net": 0.0,
+            "net_n1": null
+          }
+        ],
+        "total": {
+          "brut": 343810.0,
+          "amort_prov": 6800.0,
+          "net": 337010.0
+        },
+        "total_n1": null
+      },
+      "passif": {
+        "capitaux_propres": [
+          {
+            "code": "111",
+            "libelle": "Capital social ou personnel",
+            "montant": 200000.0,
+            "n1": null
+          },
+          {
+            "code": "112/113",
+            "libelle": "Primes d'émission, fusion et apport",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "114/115",
+            "libelle": "Réserves",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "116",
+            "libelle": "Report à nouveau (+/-)",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "118",
+            "libelle": "Résultats nets en instance d'affectation (+/-)",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "119_ANT",
+            "libelle": "Résultat antérieur en attente d'affectation (+/-)",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "RESULTAT",
+            "libelle": "Résultat net de l'exercice (+/-)",
+            "montant": 106409.75,
+            "n1": null
+          }
+        ],
+        "financement_permanent": [
+          {
+            "code": "131/135",
+            "libelle": "Capitaux propres assimilés",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "141/148",
+            "libelle": "Dettes de financement",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "151/155",
+            "libelle": "Provisions durables pour risques et charges",
+            "montant": 1500.0,
+            "n1": null
+          },
+          {
+            "code": "17",
+            "libelle": "Écarts de conversion - passif",
+            "montant": 0.0,
+            "n1": null
+          }
+        ],
+        "passif_circulant": [
+          {
+            "code": "441",
+            "libelle": "Fournisseurs et comptes rattachés",
+            "montant": 3480.0,
+            "n1": null
+          },
+          {
+            "code": "442",
+            "libelle": "Clients créditeurs, avances et acomptes",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "443",
+            "libelle": "Personnel - créditeur",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "444",
+            "libelle": "Organismes sociaux",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "445",
+            "libelle": "État - créditeur",
+            "montant": 25620.25,
+            "n1": null
+          },
+          {
+            "code": "446",
+            "libelle": "Comptes d'associés - créditeurs",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "448",
+            "libelle": "Autres créanciers",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "449",
+            "libelle": "Comptes de régularisation - passif",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "45",
+            "libelle": "Autres provisions pour risques et charges",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "47",
+            "libelle": "Écarts de conversion - passif circulant",
+            "montant": 0.0,
+            "n1": null
+          }
+        ],
+        "tresorerie": [
+          {
+            "code": "552/553",
+            "libelle": "Crédits d'escompte et de trésorerie",
+            "montant": 0.0,
+            "n1": null
+          },
+          {
+            "code": "554",
+            "libelle": "Banques (soldes créditeurs)",
+            "montant": 0.0,
+            "n1": null
+          }
+        ],
+        "total": 337010.0,
+        "total_n1": null
+      },
+      "equilibre": true,
+      "ecart": 0.0,
+      "detail": {
+        "actif": [
+          {
+            "type": "titre",
+            "label": "ACTIF IMMOBILISÉ",
+            "valeurs": []
+          },
+          {
+            "type": "rubrique",
+            "numero": "A",
+            "label": "Immobilisations en non-valeurs",
+            "valeurs": [
+              0.0,
+              0.0,
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "detail",
+            "numero": "211",
+            "label": "Frais préliminaires",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "212",
+            "label": "Charges à répartir sur plusieurs exercices",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "213",
+            "label": "Primes de remboursement des obligations",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "rubrique",
+            "numero": "B",
+            "label": "Immobilisations incorporelles",
+            "valeurs": [
+              0.0,
+              0.0,
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "detail",
+            "numero": "221",
+            "label": "Immobilisations en recherche et développement",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "222",
+            "label": "Brevets, marques, droits et valeurs similaires",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "223",
+            "label": "Fonds commercial",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "228",
+            "label": "Autres immobilisations incorporelles",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "rubrique",
+            "numero": "C",
+            "label": "Immobilisations corporelles",
+            "valeurs": [
+              24000.0,
+              4800.0,
+              19200.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "detail",
+            "numero": "231",
+            "label": "Terrains",
+            "valeurs": [
+              0.0,
+              null,
+              null,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "232",
+            "label": "Constructions",
+            "valeurs": [
+              0.0,
+              null,
+              null,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "233",
+            "label": "Installations techniques, matériel et outillage",
+            "valeurs": [
+              0.0,
+              null,
+              null,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "234",
+            "label": "Matériel de transport",
+            "valeurs": [
+              0.0,
+              null,
+              null,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "235",
+            "label": "Mobilier, matériel de bureau et aménagements divers",
+            "valeurs": [
+              24000.0,
+              null,
+              null,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "238",
+            "label": "Autres immobilisations corporelles et en cours",
+            "valeurs": [
+              0.0,
+              null,
+              null,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "rubrique",
+            "numero": "D",
+            "label": "Immobilisations financières",
+            "valeurs": [
+              0.0,
+              0.0,
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "detail",
+            "numero": "241",
+            "label": "Prêts immobilisés",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "248",
+            "label": "Autres créances financières",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "251",
+            "label": "Titres de participation",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "258",
+            "label": "Autres titres immobilisés",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "rubrique",
+            "numero": "E",
+            "label": "Écarts de conversion — actif",
+            "valeurs": [
+              0.0,
+              0.0,
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "detail",
+            "numero": "271",
+            "label": "Diminution des créances immobilisées",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "272",
+            "label": "Augmentation des dettes de financement",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "total",
+            "label": "TOTAL I — ACTIF IMMOBILISÉ",
+            "valeurs": [
+              24000.0,
+              4800.0,
+              19200.0,
+              null
+            ]
+          },
+          {
+            "type": "titre",
+            "label": "ACTIF CIRCULANT (HORS TRÉSORERIE)",
+            "valeurs": []
+          },
+          {
+            "type": "rubrique",
+            "numero": "F",
+            "label": "Stocks",
+            "valeurs": [
+              6600.0,
+              0.0,
+              6600.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "detail",
+            "numero": "311",
+            "label": "Marchandises",
+            "valeurs": [
+              6600.0,
+              null,
+              6600.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "312",
+            "label": "Matières et fournitures consommables",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "313",
+            "label": "Produits en cours",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "314",
+            "label": "Produits intermédiaires et produits résiduels",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "detail",
+            "numero": "315",
+            "label": "Produits finis",
+            "valeurs": [
+              0.0,
+              null,
+              0.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "rubrique",
+            "numero": "G1",
+            "label": "Fournisseurs débiteurs, avances",
+            "valeurs": [
+              0.0,
+              0.0,
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "G2",
+            "label": "Clients et comptes rattachés",
+            "valeurs": [
+              14400.0,
+              2000.0,
+              12400.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "G3",
+            "label": "Personnel — débiteur",
+            "valeurs": [
+              0.0,
+              0.0,
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "G4",
+            "label": "État — débiteur",
+            "valeurs": [
+              80.0,
+              0.0,
+              80.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "detail",
+            "numero": "3455",
+            "label": "TVA récupérable",
+            "valeurs": [
+              80.0,
+              null,
+              80.0,
+              null
+            ],
+            "niveau": 1
+          },
+          {
+            "type": "rubrique",
+            "numero": "G5",
+            "label": "Comptes d'associés — débiteurs",
+            "valeurs": [
+              0.0,
+              0.0,
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "G6",
+            "label": "Autres débiteurs",
+            "valeurs": [
+              0.0,
+              0.0,
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "G7",
+            "label": "Comptes de régularisation — actif",
+            "valeurs": [
+              11000.0,
+              0.0,
+              11000.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "H",
+            "label": "Titres et valeurs de placement",
+            "valeurs": [
+              0.0,
+              0.0,
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "I",
+            "label": "Écarts de conversion — actif circulant",
+            "valeurs": [
+              0.0,
+              0.0,
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "total",
+            "label": "TOTAL II — ACTIF CIRCULANT",
+            "valeurs": [
+              32080.0,
+              2000.0,
+              30080.0,
+              null
+            ]
+          },
+          {
+            "type": "titre",
+            "label": "TRÉSORERIE — ACTIF",
+            "valeurs": []
+          },
+          {
+            "type": "rubrique",
+            "numero": "511",
+            "label": "Chèques et valeurs à encaisser",
+            "valeurs": [
+              0.0,
+              0.0,
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "514",
+            "label": "Banques, TG et CCP",
+            "valeurs": [
+              287730.0,
+              0.0,
+              287730.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "516",
+            "label": "Caisses, régies d'avances",
+            "valeurs": [
+              0.0,
+              0.0,
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "total",
+            "label": "TOTAL III — TRÉSORERIE ACTIF",
+            "valeurs": [
+              287730.0,
+              0.0,
+              287730.0,
+              null
+            ]
+          },
+          {
+            "type": "total",
+            "label": "TOTAL GÉNÉRAL ACTIF",
+            "valeurs": [
+              343810.0,
+              6800.0,
+              337010.0,
+              null
+            ]
+          }
+        ],
+        "passif": [
+          {
+            "type": "titre",
+            "label": "CAPITAUX PROPRES",
+            "valeurs": []
+          },
+          {
+            "type": "rubrique",
+            "numero": "111",
+            "label": "Capital social ou personnel",
+            "valeurs": [
+              200000.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "112/113",
+            "label": "Primes d'émission, de fusion, d'apport",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "114/115",
+            "label": "Réserves (légale et autres)",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "116",
+            "label": "Report à nouveau (±)",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "118",
+            "label": "Résultats nets en instance d'affectation (±)",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "119",
+            "label": "Résultat antérieur en attente d’affectation (119)",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "R",
+            "label": "Résultat net de l'exercice (±)",
+            "valeurs": [
+              106409.75,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "total",
+            "label": "TOTAL CAPITAUX PROPRES",
+            "valeurs": [
+              306409.75,
+              null
+            ]
+          },
+          {
+            "type": "titre",
+            "label": "AUTRES FINANCEMENTS PERMANENTS",
+            "valeurs": []
+          },
+          {
+            "type": "rubrique",
+            "numero": "13",
+            "label": "Capitaux propres assimilés (subventions, prov. réglementées)",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "14",
+            "label": "Dettes de financement",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "15",
+            "label": "Provisions durables pour risques et charges",
+            "valeurs": [
+              1500.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "17",
+            "label": "Écarts de conversion — passif",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "total",
+            "label": "TOTAL I — FINANCEMENT PERMANENT",
+            "valeurs": [
+              307909.75,
+              null
+            ]
+          },
+          {
+            "type": "titre",
+            "label": "PASSIF CIRCULANT (HORS TRÉSORERIE)",
+            "valeurs": []
+          },
+          {
+            "type": "rubrique",
+            "numero": "441",
+            "label": "Fournisseurs et comptes rattachés",
+            "valeurs": [
+              3480.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "442",
+            "label": "Clients créditeurs, avances et acomptes",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "443",
+            "label": "Personnel — créditeur",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "444",
+            "label": "Organismes sociaux",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "445",
+            "label": "État — créditeur",
+            "valeurs": [
+              25620.25,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "446",
+            "label": "Comptes d'associés — créditeurs",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "448",
+            "label": "Autres créanciers",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "449",
+            "label": "Comptes de régularisation — passif",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "45",
+            "label": "Autres provisions pour risques et charges",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "47",
+            "label": "Écarts de conversion — passif circulant",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "total",
+            "label": "TOTAL II — PASSIF CIRCULANT",
+            "valeurs": [
+              29100.25,
+              null
+            ]
+          },
+          {
+            "type": "titre",
+            "label": "TRÉSORERIE — PASSIF",
+            "valeurs": []
+          },
+          {
+            "type": "rubrique",
+            "numero": "552/553",
+            "label": "Crédits d'escompte et de trésorerie",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "rubrique",
+            "numero": "554",
+            "label": "Banques (soldes créditeurs)",
+            "valeurs": [
+              0.0,
+              null
+            ],
+            "niveau": 0
+          },
+          {
+            "type": "total",
+            "label": "TOTAL III — TRÉSORERIE PASSIF",
+            "valeurs": [
+              0.0,
+              null
+            ]
+          },
+          {
+            "type": "total",
+            "label": "TOTAL GÉNÉRAL PASSIF",
+            "valeurs": [
+              337010.0,
+              null
+            ]
+          }
+        ]
+      }
+    },
+    "cpc": {
+      "lignes": [
+        {
+          "type": "titre",
+          "code": "I",
+          "libelle": "Produits d'exploitation",
+          "montant": null,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Ventes de marchandises",
+          "montant": 37500.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Ventes de biens et services produits",
+          "montant": 132000.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Variation des stocks de produits",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Immobilisations produites par l'entreprise",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Subventions d'exploitation",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Autres produits d'exploitation",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Reprises d'exploitation / transferts",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "total",
+          "code": "I",
+          "libelle": "Total Produits d'exploitation",
+          "montant": 169500.0,
+          "n1": null
+        },
+        {
+          "type": "titre",
+          "code": "II",
+          "libelle": "Charges d'exploitation",
+          "montant": null,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Achats revendus de marchandises",
+          "montant": 15400.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Achats consommés de matières et fournitures",
+          "montant": 15400.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Autres charges externes",
+          "montant": 1070.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Impôts et taxes",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Charges de personnel",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Autres charges d'exploitation",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Dotations d'exploitation",
+          "montant": 8300.0,
+          "n1": null
+        },
+        {
+          "type": "total",
+          "code": "II",
+          "libelle": "Total Charges d'exploitation",
+          "montant": 40170.0,
+          "n1": null
+        },
+        {
+          "type": "total",
+          "code": "III",
+          "libelle": "Résultat d'exploitation",
+          "montant": 129330.0,
+          "n1": null
+        },
+        {
+          "type": "titre",
+          "code": "IV",
+          "libelle": "Produits financiers",
+          "montant": null,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Produits des titres",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Gains de change",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Intérêts et autres produits financiers",
+          "montant": 1000.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Reprises financières",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "total",
+          "code": "IV",
+          "libelle": "Total Produits financiers",
+          "montant": 1000.0,
+          "n1": null
+        },
+        {
+          "type": "titre",
+          "code": "V",
+          "libelle": "Charges financières",
+          "montant": null,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Charges d'intérêts",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Pertes de change",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Autres charges financières",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Dotations financières",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "total",
+          "code": "V",
+          "libelle": "Total Charges financières",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "total",
+          "code": "VI",
+          "libelle": "Résultat financier",
+          "montant": 1000.0,
+          "n1": null
+        },
+        {
+          "type": "total",
+          "code": "VII",
+          "libelle": "Résultat courant",
+          "montant": 130330.0,
+          "n1": null
+        },
+        {
+          "type": "titre",
+          "code": "VIII",
+          "libelle": "Produits non courants",
+          "montant": null,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Produits de cession d'immobilisations",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Subventions d'équilibre",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Reprises sur subventions d'investissement",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Autres produits non courants",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Reprises non courantes",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "total",
+          "code": "VIII",
+          "libelle": "Total Produits non courants",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "titre",
+          "code": "IX",
+          "libelle": "Charges non courantes",
+          "montant": null,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "VNA des immobilisations cédées",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Subventions accordées",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Autres charges non courantes",
+          "montant": 500.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "",
+          "libelle": "Dotations non courantes",
+          "montant": 0.0,
+          "n1": null
+        },
+        {
+          "type": "total",
+          "code": "IX",
+          "libelle": "Total Charges non courantes",
+          "montant": 500.0,
+          "n1": null
+        },
+        {
+          "type": "total",
+          "code": "X",
+          "libelle": "Résultat non courant",
+          "montant": -500.0,
+          "n1": null
+        },
+        {
+          "type": "total",
+          "code": "XI",
+          "libelle": "Résultat avant impôts",
+          "montant": 129830.0,
+          "n1": null
+        },
+        {
+          "type": "ligne",
+          "code": "XII",
+          "libelle": "Impôts sur les résultats",
+          "montant": 23420.25,
+          "n1": null
+        },
+        {
+          "type": "total",
+          "code": "XV",
+          "libelle": "Résultat net de l'exercice",
+          "montant": 106409.75,
+          "n1": null
+        }
+      ],
+      "resultat_net": 106409.75,
+      "resultat_net_n1": null
+    },
+    "esg": {
+      "lignes": [
+        {
+          "code": "I",
+          "libelle": "Marge brute",
+          "montant": 22100.0,
+          "n1": null
+        },
+        {
+          "code": "II",
+          "libelle": "Production de l'exercice",
+          "montant": 132000.0,
+          "n1": null
+        },
+        {
+          "code": "III",
+          "libelle": "Consommation de l'exercice",
+          "montant": 16470.0,
+          "n1": null
+        },
+        {
+          "code": "IV",
+          "libelle": "Valeur ajoutée",
+          "montant": 137630.0,
+          "n1": null
+        },
+        {
+          "code": "V",
+          "libelle": "Excédent brut d'exploitation",
+          "montant": 137630.0,
+          "n1": null
+        },
+        {
+          "code": "VI",
+          "libelle": "Résultat d'exploitation",
+          "montant": 129330.0,
+          "n1": null
+        },
+        {
+          "code": "VII",
+          "libelle": "Résultat financier",
+          "montant": 1000.0,
+          "n1": null
+        },
+        {
+          "code": "VIII",
+          "libelle": "Résultat courant",
+          "montant": 130330.0,
+          "n1": null
+        },
+        {
+          "code": "IX",
+          "libelle": "Résultat non courant",
+          "montant": -500.0,
+          "n1": null
+        },
+        {
+          "code": "X",
+          "libelle": "Résultat net",
+          "montant": 106409.75,
+          "n1": null
+        },
+        {
+          "code": "CAF",
+          "libelle": "Capacité d'autofinancement",
+          "montant": 112709.75,
+          "n1": null
+        }
+      ],
+      "caf": 112709.75,
+      "caf_n1": null
+    },
+    "financement": {
+      "applicable": false,
+      "motif_non_applicable": "Aucune donnée N-1 : le tableau de financement comparatif ne peut pas être établi pour un premier exercice ou une reprise sans balance d'ouverture/comparatif.",
+      "synthese": [
+        {
+          "libelle": "Financement permanent",
+          "n": 307909.75,
+          "n1": null,
+          "emploi": null,
+          "ressource": null,
+          "total": false
+        },
+        {
+          "libelle": "Moins actif immobilisé",
+          "n": 19200.0,
+          "n1": null,
+          "emploi": null,
+          "ressource": null,
+          "total": false
+        },
+        {
+          "libelle": "Fonds de roulement fonctionnel (A)",
+          "n": 288709.75,
+          "n1": null,
+          "emploi": null,
+          "ressource": null,
+          "total": true
+        },
+        {
+          "libelle": "Actif circulant hors trésorerie",
+          "n": 30080.0,
+          "n1": null,
+          "emploi": null,
+          "ressource": null,
+          "total": false
+        },
+        {
+          "libelle": "Moins passif circulant hors trésorerie",
+          "n": 29100.25,
+          "n1": null,
+          "emploi": null,
+          "ressource": null,
+          "total": false
+        },
+        {
+          "libelle": "Besoin de financement global (B)",
+          "n": 979.75,
+          "n1": null,
+          "emploi": null,
+          "ressource": null,
+          "total": true
+        },
+        {
+          "libelle": "Trésorerie nette (A - B)",
+          "n": 287730.0,
+          "n1": null,
+          "emploi": null,
+          "ressource": null,
+          "total": true
+        }
+      ],
+      "ressources": [
+        {
+          "code": "A",
+          "libelle": "AUTOFINANCEMENT (A)",
+          "montant": 112709.75,
+          "n1": null,
+          "total": true,
+          "niveau": 0,
+          "signe": null
+        },
+        {
+          "code": "A1",
+          "libelle": "+ Capacité d'autofinancement",
+          "montant": 112709.75,
+          "n1": null,
+          "total": false,
+          "niveau": 1,
+          "signe": "+"
+        },
+        {
+          "code": "A2",
+          "libelle": "- Distributions de bénéfices",
+          "montant": 0.0,
+          "n1": null,
+          "total": false,
+          "niveau": 1,
+          "signe": "-"
+        },
+        {
+          "code": "B",
+          "libelle": "CESSIONS ET RÉDUCTIONS D'IMMOBILISATIONS (B)",
+          "montant": 0.0,
+          "n1": null,
+          "total": true,
+          "niveau": 0,
+          "signe": null
+        },
+        {
+          "code": "B1",
+          "libelle": "+ Cessions d'immobilisations incorporelles",
+          "montant": 0.0,
+          "n1": null,
+          "total": false,
+          "niveau": 1,
+          "signe": "+"
+        },
+        {
+          "code": "B2",
+          "libelle": "+ Cessions d'immobilisations corporelles",
+          "montant": 0.0,
+          "n1": null,
+          "total": false,
+          "niveau": 1,
+          "signe": "+"
+        },
+        {
+          "code": "B3",
+          "libelle": "+ Cessions d'immobilisations financières",
+          "montant": 0.0,
+          "n1": null,
+          "total": false,
+          "niveau": 1,
+          "signe": "+"
+        },
+        {
+          "code": "B4",
+          "libelle": "+ Récupérations sur créances immobilisées",
+          "montant": 0.0,
+          "n1": null,
+          "total": false,
+          "niveau": 1,
+          "signe": "+"
+        },
+        {
+          "code": "C",
+          "libelle": "AUGMENTATION DES CAPITAUX PROPRES ET ASSIMILÉS (C)",
+          "montant": 200000.0,
+          "n1": null,
+          "total": true,
+          "niveau": 0,
+          "signe": null
+        },
+        {
+          "code": "C1",
+          "libelle": "+ Augmentation du capital, apports",
+          "montant": 200000.0,
+          "n1": null,
+          "total": false,
+          "niveau": 1,
+          "signe": "+"
+        },
+        {
+          "code": "C2",
+          "libelle": "+ Subventions d'investissement",
+          "montant": 0.0,
+          "n1": null,
+          "total": false,
+          "niveau": 1,
+          "signe": "+"
+        },
+        {
+          "code": "D",
+          "libelle": "AUGMENTATION DES DETTES DE FINANCEMENT (D)",
+          "montant": 0.0,
+          "n1": null,
+          "total": true,
+          "niveau": 0,
+          "signe": null
+        }
+      ],
+      "emplois": [
+        {
+          "code": "E",
+          "libelle": "ACQUISITIONS ET AUGMENTATIONS D'IMMOBILISATIONS (E)",
+          "montant": 24000.0,
+          "n1": null,
+          "total": true,
+          "niveau": 0,
+          "signe": null
+        },
+        {
+          "code": "E1",
+          "libelle": "+ Acquisitions d'immobilisations incorporelles",
+          "montant": 0.0,
+          "n1": null,
+          "total": false,
+          "niveau": 1,
+          "signe": "+"
+        },
+        {
+          "code": "E2",
+          "libelle": "+ Acquisitions d'immobilisations corporelles",
+          "montant": 24000.0,
+          "n1": null,
+          "total": false,
+          "niveau": 1,
+          "signe": "+"
+        },
+        {
+          "code": "E3",
+          "libelle": "+ Acquisitions d'immobilisations financières",
+          "montant": 0.0,
+          "n1": null,
+          "total": false,
+          "niveau": 1,
+          "signe": "+"
+        },
+        {
+          "code": "E4",
+          "libelle": "+ Augmentation des créances immobilisées",
+          "montant": 0.0,
+          "n1": null,
+          "total": false,
+          "niveau": 1,
+          "signe": "+"
+        },
+        {
+          "code": "F",
+          "libelle": "REMBOURSEMENT DES CAPITAUX PROPRES (F)",
+          "montant": 0.0,
+          "n1": null,
+          "total": true,
+          "niveau": 0,
+          "signe": null
+        },
+        {
+          "code": "G",
+          "libelle": "REMBOURSEMENT DES DETTES DE FINANCEMENT (G)",
+          "montant": 0.0,
+          "n1": null,
+          "total": true,
+          "niveau": 0,
+          "signe": null
+        },
+        {
+          "code": "H",
+          "libelle": "EMPLOIS EN NON-VALEURS (H)",
+          "montant": 0.0,
+          "n1": null,
+          "total": true,
+          "niveau": 0,
+          "signe": null
+        }
+      ],
+      "total_ressources": 312709.75,
+      "total_emplois": 24000.0,
+      "total_general_ressources": null,
+      "total_general_emplois": null,
+      "variation_fonds_roulement": null,
+      "variation_bfg": null,
+      "variation_tresorerie": null,
+      "controle": null,
+      "ecart_controle": null,
+      "ecart_total_general": null,
+      "masses_n": {
+        "financement_permanent": 307909.75,
+        "actif_immobilise": 19200.0,
+        "fonds_roulement": 288709.75,
+        "actif_circulant": 30080.0,
+        "passif_circulant": 29100.25,
+        "bfg": 979.75,
+        "tresorerie_actif": 287730.0,
+        "tresorerie_passif": 0.0,
+        "tresorerie_nette": 287730.0
+      },
+      "masses_n1": null,
+      "source_flux": "mouvements_valides_ventiles_cgnc_hors_an_cloture",
+      "avertissements": []
+    },
+    "controles_liasse": {
+      "pret_a_finaliser": false,
+      "nb_bloquants": 1,
+      "nb_avertissements": 1,
+      "items": [
+        {
+          "code": "IDENTITE_IF",
+          "libelle": "Identifiant fiscal renseigné",
+          "ok": true,
+          "details": "Renseignez l'IF dans les paramètres société.",
+          "bloquant": true
+        },
+        {
+          "code": "IDENTITE_ICE",
+          "libelle": "ICE renseigné",
+          "ok": true,
+          "details": "Renseignez l'ICE dans les paramètres société.",
+          "bloquant": true
+        },
+        {
+          "code": "SOURCE_BALANCE",
+          "libelle": "Balance générale équilibrée",
+          "ok": true,
+          "details": "Écart : 0.00 MAD",
+          "bloquant": true
+        },
+        {
+          "code": "BROUILLONS",
+          "libelle": "Aucun brouillon dans l'exercice",
+          "ok": true,
+          "details": "0 brouillon(s) exclu(s).",
+          "bloquant": true
+        },
+        {
+          "code": "EXERCICE_CLOTURE",
+          "libelle": "Exercice comptable clôturé",
+          "ok": true,
+          "details": "La liasse peut être prévisualisée avant clôture, mais pas finalisée.",
+          "bloquant": true
+        },
+        {
+          "code": "BILAN_EQUI",
+          "libelle": "Bilan actif/passif équilibré",
+          "ok": true,
+          "details": "Écart : 0.00 MAD",
+          "bloquant": true
+        },
+        {
+          "code": "FEC_CONFORME",
+          "libelle": "FEC conforme aux contrôles Avis n°24",
+          "ok": true,
+          "details": "0 anomalie(s) bloquante(s), 0 avertissement(s).",
+          "bloquant": true
+        },
+        {
+          "code": "ETIC_COMPLETE",
+          "libelle": "ETIC complète",
+          "ok": false,
+          "details": "6/23 sections complètes.",
+          "bloquant": true
+        },
+        {
+          "code": "LIQUIDATION_IS",
+          "libelle": "Liquidation IS confirmée",
+          "ok": true,
+          "details": "Confirmez la liquidation fiscale avant finalisation.",
+          "bloquant": true
+        },
+        {
+          "code": "RESULTAT_COMPTABLE_FISCAL",
+          "libelle": "Résultat avant IS cohérent entre CPC et fiscalité",
+          "ok": true,
+          "details": "CPC 129830.00 / Fiscal 129830.00 MAD",
+          "bloquant": true
+        },
+        {
+          "code": "COMPARATIF_N1",
+          "libelle": "Comparatif N-1 disponible",
+          "ok": false,
+          "details": "Aucune donnée N-1 ; acceptable pour un premier exercice ou une reprise.",
+          "bloquant": false
+        },
+        {
+          "code": "TABLEAU_FINANCEMENT",
+          "libelle": "Contrôle du tableau de financement",
+          "ok": true,
+          "details": "Premier exercice / reprise sans comparatif N-1 : contrôle de variation non applicable.",
+          "bloquant": true
+        }
+      ],
+      "bloquants": [
+        {
+          "code": "ETIC_COMPLETE",
+          "libelle": "ETIC complète",
+          "ok": false,
+          "details": "6/23 sections complètes.",
+          "bloquant": true
+        }
+      ],
+      "avertissements": [
+        {
+          "code": "COMPARATIF_N1",
+          "libelle": "Comparatif N-1 disponible",
+          "ok": false,
+          "details": "Aucune donnée N-1 ; acceptable pour un premier exercice ou une reprise.",
+          "bloquant": false
+        }
+      ]
+    },
+    "ecritures_et_snapshot_inchanges": true
+  },
+  "fichiers803": [
+    {
+      "nom": "Liasse Excel",
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette839_cible\\test_839_cycle_annuel_et_integ0\\liasse803.xlsx",
+      "sha256": "fa41028353300d13d0fc7431781ffe8b84180be3d479087c2d0232c42bfaffe8"
+    },
+    {
+      "nom": "Liasse PDF",
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette839_cible\\test_839_cycle_annuel_et_integ0\\liasse803.pdf",
+      "sha256": "07bf7db53a607a7fc4e26e0cbc83679d419073d5bec848d6c104e69a77cc74d2"
+    },
+    {
+      "nom": "Livre inventaire PDF",
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette839_cible\\test_839_cycle_annuel_et_integ0\\livre803.pdf",
+      "sha256": "af9bf520cd5cba31aeb77ee232040dd2e4b2a96c72a2e992c610294045d10259"
+    },
+    {
+      "nom": "FEC texte",
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette839_cible\\test_839_cycle_annuel_et_integ0\\fec803.txt",
+      "sha256": "9326c30f4a5f38cee6138ed0052888b801ee547e66694b134a2b717e0522401d"
+    }
+  ],
+  "livre803": {
+    "version": 2,
+    "genere_le": "2026-10-25T23:34:49",
+    "exercice": {
+      "annee": 2025,
+      "date_debut": "2025-01-01",
+      "date_fin": "2025-12-31",
+      "statut": "cloture",
+      "cloture": true,
+      "date_cloture": "2026-10-25T23:34:27.400660"
+    },
+    "comptabilite": {
+      "nb_ecritures_validees": 50,
+      "nb_brouillons": 0,
+      "total_debit": 971560.25,
+      "total_credit": 971560.25,
+      "balance_equilibree": true,
+      "balance_comptes_bilan": [
+        {
+          "compte": "1111",
+          "debit": 0.0,
+          "credit": 200000.0,
+          "solde": -200000.0,
+          "sens": "C"
+        },
+        {
+          "compte": "1518",
+          "debit": 0.0,
+          "credit": 1500.0,
+          "solde": -1500.0,
+          "sens": "C"
+        },
+        {
+          "compte": "2355",
+          "debit": 24000.0,
+          "credit": 0.0,
+          "solde": 24000.0,
+          "sens": "D"
+        },
+        {
+          "compte": "28355",
+          "debit": 0.0,
+          "credit": 4800.0,
+          "solde": -4800.0,
+          "sens": "C"
+        },
+        {
+          "compte": "3111",
+          "debit": 6600.0,
+          "credit": 0.0,
+          "solde": 6600.0,
+          "sens": "D"
+        },
+        {
+          "compte": "3421",
+          "debit": 14400.0,
+          "credit": 0.0,
+          "solde": 14400.0,
+          "sens": "D"
+        },
+        {
+          "compte": "34552",
+          "debit": 80.0,
+          "credit": 0.0,
+          "solde": 80.0,
+          "sens": "D"
+        },
+        {
+          "compte": "3491",
+          "debit": 11000.0,
+          "credit": 0.0,
+          "solde": 11000.0,
+          "sens": "D"
+        },
+        {
+          "compte": "3942",
+          "debit": 0.0,
+          "credit": 2000.0,
+          "solde": -2000.0,
+          "sens": "C"
+        },
+        {
+          "compte": "4411",
+          "debit": 0.0,
+          "credit": 480.0,
+          "solde": -480.0,
+          "sens": "C"
+        },
+        {
+          "compte": "4417",
+          "debit": 0.0,
+          "credit": 3000.0,
+          "solde": -3000.0,
+          "sens": "C"
+        },
+        {
+          "compte": "4453",
+          "debit": 0.0,
+          "credit": 23220.25,
+          "solde": -23220.25,
+          "sens": "C"
+        },
+        {
+          "compte": "4456",
+          "debit": 0.0,
+          "credit": 2400.0,
+          "solde": -2400.0,
+          "sens": "C"
+        },
+        {
+          "compte": "5141",
+          "debit": 287730.0,
+          "credit": 0.0,
+          "solde": 287730.0,
+          "sens": "D"
+        }
+      ]
+    },
+    "bilan": {
+      "actif_immobilise": [
+        {
+          "label": "Immobilisations en non-valeurs",
+          "brut": 0.0,
+          "amort": 0.0,
+          "net": 0.0
+        },
+        {
+          "label": "Immobilisations incorporelles",
+          "brut": 0.0,
+          "amort": 0.0,
+          "net": 0.0
+        },
+        {
+          "label": "Immobilisations corporelles",
+          "brut": 24000.0,
+          "amort": 4800.0,
+          "net": 19200.0
+        },
+        {
+          "label": "Immobilisations financières",
+          "brut": 0.0,
+          "amort": 0.0,
+          "net": 0.0
+        },
+        {
+          "label": "Écarts de conversion — actif",
+          "brut": 0.0,
+          "amort": 0.0,
+          "net": 0.0
+        }
+      ],
+      "actif_circulant": [
+        {
+          "label": "Stocks",
+          "brut": 6600.0,
+          "amort": 0.0,
+          "net": 6600.0
+        },
+        {
+          "label": "Fournisseurs débiteurs, avances",
+          "brut": 0.0,
+          "amort": 0.0,
+          "net": 0.0
+        },
+        {
+          "label": "Clients et comptes rattachés",
+          "brut": 14400.0,
+          "amort": 2000.0,
+          "net": 12400.0
+        },
+        {
+          "label": "Personnel — débiteur",
+          "brut": 0.0,
+          "amort": 0.0,
+          "net": 0.0
+        },
+        {
+          "label": "État — débiteur",
+          "brut": 80.0,
+          "amort": 0.0,
+          "net": 80.0
+        },
+        {
+          "label": "Comptes d'associés — débiteurs",
+          "brut": 0.0,
+          "amort": 0.0,
+          "net": 0.0
+        },
+        {
+          "label": "Autres débiteurs",
+          "brut": 0.0,
+          "amort": 0.0,
+          "net": 0.0
+        },
+        {
+          "label": "Comptes de régularisation — actif",
+          "brut": 11000.0,
+          "amort": 0.0,
+          "net": 11000.0
+        },
+        {
+          "label": "Titres et valeurs de placement",
+          "brut": 0.0,
+          "amort": 0.0,
+          "net": 0.0
+        },
+        {
+          "label": "Écarts de conversion — actif circulant",
+          "brut": 0.0,
+          "amort": 0.0,
+          "net": 0.0
+        }
+      ],
+      "tresorerie_actif": [
+        {
+          "label": "Chèques et valeurs à encaisser",
+          "brut": 0.0,
+          "amort": 0.0,
+          "net": 0.0
+        },
+        {
+          "label": "Banques, TG et CCP — soldes débiteurs",
+          "brut": 287730.0,
+          "amort": 0.0,
+          "net": 287730.0
+        },
+        {
+          "label": "Caisses, régies d'avances",
+          "brut": 0.0,
+          "amort": 0.0,
+          "net": 0.0
+        }
+      ],
+      "capitaux_propres": [
+        {
+          "label": "Capital social ou personnel",
+          "montant": 200000.0
+        },
+        {
+          "label": "Primes d'émission, fusion, apport",
+          "montant": 0.0
+        },
+        {
+          "label": "Réserves",
+          "montant": 0.0
+        },
+        {
+          "label": "Report à nouveau",
+          "montant": 0.0
+        },
+        {
+          "label": "Résultats en instance d'affectation",
+          "montant": 0.0
+        },
+        {
+          "label": "Résultat antérieur en attente d'affectation (119)",
+          "montant": 0.0
+        },
+        {
+          "label": "Résultat net de l'exercice",
+          "montant": 106409.75
+        }
+      ],
+      "financement_permanent": [
+        {
+          "label": "Capitaux propres assimilés",
+          "montant": 0.0
+        },
+        {
+          "label": "Dettes de financement",
+          "montant": 0.0
+        },
+        {
+          "label": "Provisions durables pour risques et charges",
+          "montant": 1500.0
+        },
+        {
+          "label": "Écarts de conversion — passif",
+          "montant": 0.0
+        }
+      ],
+      "passif_circulant": [
+        {
+          "label": "Fournisseurs et comptes rattachés",
+          "montant": 3480.0
+        },
+        {
+          "label": "Clients créditeurs, avances et acomptes",
+          "montant": 0.0
+        },
+        {
+          "label": "Personnel — créditeur",
+          "montant": 0.0
+        },
+        {
+          "label": "Organismes sociaux",
+          "montant": 0.0
+        },
+        {
+          "label": "État — créditeur",
+          "montant": 25620.25
+        },
+        {
+          "label": "Comptes d'associés — créditeurs",
+          "montant": 0.0
+        },
+        {
+          "label": "Autres créanciers",
+          "montant": 0.0
+        },
+        {
+          "label": "Comptes de régularisation — passif",
+          "montant": 0.0
+        },
+        {
+          "label": "Autres provisions pour risques et charges",
+          "montant": 0.0
+        },
+        {
+          "label": "Écarts de conversion — passif circulant",
+          "montant": 0.0
+        }
+      ],
+      "tresorerie_passif": [
+        {
+          "label": "Crédits d'escompte et de trésorerie",
+          "montant": 0.0
+        },
+        {
+          "label": "Banques — soldes créditeurs",
+          "montant": 0.0
+        },
+        {
+          "label": "Soldes créditeurs des comptes de trésorerie-actif à reclasser",
+          "montant": 0.0
+        }
+      ],
+      "total_actif": 337010.0,
+      "total_passif": 337010.0,
+      "ecart": 0.0,
+      "equilibre": true
+    },
+    "cpc": {
+      "produits_exploitation": {
+        "Ventes de marchandises": 37500.0,
+        "Ventes de biens et services": 132000.0,
+        "Variation de stocks de produits": 0.0,
+        "Immobilisations produites": 0.0,
+        "Subventions d'exploitation": 0.0,
+        "Autres produits d'exploitation": 0.0,
+        "Reprises et transferts": 0.0
+      },
+      "total_produits_exploitation": 169500.0,
+      "charges_exploitation": {
+        "Achats revendus": 15400.0,
+        "Achats consommés": 15400.0,
+        "Autres charges externes": 1070.0,
+        "Impôts et taxes": 0.0,
+        "Charges de personnel": 0.0,
+        "Autres charges d'exploitation": 0.0,
+        "Dotations d'exploitation": 8300.0
+      },
+      "total_charges_exploitation": 40170.0,
+      "resultat_exploitation": 129330.0,
+      "produits_financiers": {
+        "Produits des titres": 0.0,
+        "Gains de change": 0.0,
+        "Intérêts et autres produits": 1000.0,
+        "Reprises financières": 0.0
+      },
+      "total_produits_financiers": 1000.0,
+      "charges_financieres": {
+        "Charges d'intérêts": 0.0,
+        "Pertes de change": 0.0,
+        "Autres charges financières": 0.0,
+        "Dotations financières": 0.0
+      },
+      "total_charges_financieres": 0.0,
+      "resultat_financier": 1000.0,
+      "resultat_courant": 130330.0,
+      "produits_non_courants": {
+        "Produits de cession d'immobilisations": 0.0,
+        "Subventions d'équilibre": 0.0,
+        "Reprises sur subventions": 0.0,
+        "Autres produits non courants": 0.0,
+        "Reprises non courantes": 0.0
+      },
+      "total_produits_non_courants": 0.0,
+      "charges_non_courantes": {
+        "VNA des immobilisations cédées": 0.0,
+        "Subventions accordées": 0.0,
+        "Autres charges non courantes": 500.0,
+        "Dotations non courantes": 0.0
+      },
+      "total_charges_non_courantes": 500.0,
+      "resultat_non_courant": -500.0,
+      "resultat_avant_impot": 129830.0,
+      "impot_resultat": 23420.25,
+      "resultat_net": 106409.75
+    },
+    "stocks": {
+      "lignes": [
+        {
+          "article_id": 1,
+          "code": "M-01",
+          "designation": "Marchandise de recette",
+          "unite": "unité",
+          "quantite": 60.0,
+          "cmup": 110.0,
+          "valeur": 6600.0,
+          "nombres_diagnostics": {},
+          "emplacement": null,
+          "compte_stock": "3111",
+          "compte_variation": "6114"
+        }
+      ],
+      "nb_articles": 1,
+      "inventaire_valide": true,
+      "inventaire_reference": "STOCK-FIN",
+      "date_inventaire": "2025-12-31",
+      "valeur_physique": 6600.0,
+      "valeur_comptable_brute": 6600.0,
+      "depreciations": 0.0,
+      "valeur_comptable_nette": 6600.0,
+      "ecart_physique_comptable": 0.0,
+      "valorisation_complete": true,
+      "diagnostics": [],
+      "historique_stock_limite": false
+    },
+    "immobilisations": {
+      "lignes": [
+        {
+          "id": 1,
+          "reference": "IMMO-01",
+          "designation": "Ordinateur de recette",
+          "categorie": "Matériel informatique",
+          "date_acquisition": "2025-01-01",
+          "date_mise_en_service": "2025-01-01",
+          "compte_immo": "2355",
+          "compte_amort": "28355",
+          "valeur_brute": 24000.0,
+          "amortissements_cumules": 4800.0,
+          "vnc": 19200.0
+        }
+      ],
+      "nb": 1,
+      "valeur_brute": 24000.0,
+      "amortissements_cumules": 4800.0,
+      "vnc": 19200.0,
+      "rapprochement": {
+        "brut_module": 24000.0,
+        "brut_comptable": 24000.0,
+        "ecart_brut": 0.0,
+        "amortissements_module": 4800.0,
+        "amortissements_comptables": 4800.0,
+        "ecart_amortissements": 0.0,
+        "vnc_module": 19200.0,
+        "vnc_comptable": 19200.0,
+        "ecart_vnc": 0.0,
+        "rapproche": true,
+        "details_comptes": [
+          {
+            "nature": "brut",
+            "compte": "2355",
+            "module": 24000.0,
+            "comptable": 24000.0,
+            "ecart": 0.0
+          },
+          {
+            "nature": "amortissement",
+            "compte": "28355",
+            "module": 4800.0,
+            "comptable": 4800.0,
+            "ecart": 0.0
+          }
+        ]
+      }
+    },
+    "ajustements_inventaire": [
+      {
+        "id": 1,
+        "type": "cca",
+        "libelle": "Assurance ASS-01,11 mois 2026",
+        "montant": 11000.0,
+        "compte_activite": "6134",
+        "compte_contrepartie": "3491"
+      },
+      {
+        "id": 4,
+        "type": "depreciation_client",
+        "libelle": "Dépréciation VENTE-IMPAYEE selon REC-DEP01",
+        "montant": 2000.0,
+        "compte_activite": "61964",
+        "compte_contrepartie": "3942"
+      },
+      {
+        "id": 2,
+        "type": "fnp",
+        "libelle": "Service livré décembre, contrat FNP-01",
+        "montant": 3000.0,
+        "compte_activite": "6125",
+        "compte_contrepartie": "4417"
+      },
+      {
+        "id": 3,
+        "type": "provision_risque",
+        "libelle": "Litige REC-LIT01 probable, conditions fiscales non satisfaites",
+        "montant": 1500.0,
+        "compte_activite": "61955",
+        "compte_contrepartie": "1518"
+      }
+    ],
+    "controles": {
+      "exercice_cloture": true,
+      "aucun_brouillon": true,
+      "balance_equilibree": true,
+      "bilan_equilibre": true,
+      "inventaire_stock_valide": true,
+      "stock_rapproche": true,
+      "valorisation_stock_complete": true,
+      "immobilisations_rapprochees": true,
+      "historique_stock_limite": false,
+      "archivable": true
+    }
+  },
+  "controle_cloture803": {
+    "exercice": 2025,
+    "date_debut": "2025-01-01",
+    "date_fin": "2025-12-31",
+    "date_fin_atteinte": true,
+    "est_clos": true,
+    "date_cloture": "2026-10-25T23:34:27.400660",
+    "nb_ecritures": 51,
+    "total_charges": 64090.25,
+    "total_produits": 170500.0,
+    "resultat_net": 106409.75,
+    "type_resultat": "bénéfice",
+    "compte_resultat": "1191",
+    "equilibre": true,
+    "ecart": 0.0,
+    "apercu_a_nouveaux": [
+      {
+        "compte": "1111",
+        "debit": 0.0,
+        "credit": 200000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1518",
+        "debit": 0.0,
+        "credit": 1500.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "2355",
+        "debit": 24000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "28355",
+        "debit": 0.0,
+        "credit": 4800.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3111",
+        "debit": 6600.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3421",
+        "debit": 14400.0,
+        "credit": 0.0,
+        "tiers_id": 5,
+        "nature_auxiliaire": "client",
+        "compte_auxiliaire_snapshot": "C00000005",
+        "libelle_auxiliaire_snapshot": "Client Impayé Recette"
+      },
+      {
+        "compte": "34552",
+        "debit": 80.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3491",
+        "debit": 11000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3942",
+        "debit": 0.0,
+        "credit": 2000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4411",
+        "debit": 0.0,
+        "credit": 480.0,
+        "tiers_id": 8,
+        "nature_auxiliaire": "fournisseur",
+        "compte_auxiliaire_snapshot": "F00000008",
+        "libelle_auxiliaire_snapshot": "Fournisseur Contrôle Références Recette"
+      },
+      {
+        "compte": "4417",
+        "debit": 0.0,
+        "credit": 3000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4453",
+        "debit": 0.0,
+        "credit": 23220.25,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4456",
+        "debit": 0.0,
+        "credit": 2400.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "5141",
+        "debit": 287730.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1191",
+        "debit": 0.0,
+        "credit": 106409.75,
+        "resultat": true
+      }
+    ],
+    "total_an_debit": 343810.0,
+    "total_an_credit": 343810.0,
+    "dotations_manquantes": [],
+    "nb_dotations_manquantes": 0,
+    "total_dotations_manquantes": 0.0,
+    "nb_ecritures_brouillon": 0,
+    "ecritures_brouillon": [],
+    "nb_ajustements_inventaire": 4,
+    "stock_cloture": {
+      "exercice": 2025,
+      "date_fin": "2025-12-31",
+      "nb_articles": 1,
+      "inventaire_requis": true,
+      "inventaire_valide": true,
+      "inventaire_id": 1,
+      "inventaire_reference": "STOCK-FIN",
+      "valeur_physique_brute": 6600.0,
+      "valeur_comptable_brute": 6600.0,
+      "depreciations": 0.0,
+      "valeur_comptable_nette": 6600.0,
+      "ecart_brut": 0.0,
+      "valorisation_complete": true,
+      "diagnostics": [],
+      "stock_rapproche": true,
+      "ecriture_stock_id": 42,
+      "ecriture_stock_validee": true,
+      "lignes": [
+        {
+          "article_id": 1,
+          "code": "M-01",
+          "designation": "Marchandise de recette",
+          "quantite": 60.0,
+          "cmup": 110.0,
+          "valeur": 6600.0,
+          "nombres_diagnostics": {},
+          "compte_stock": "3111",
+          "compte_variation": "6114"
+        }
+      ]
+    },
+    "immobilisations_rapprochement": {
+      "brut_module": 24000.0,
+      "brut_comptable": 24000.0,
+      "ecart_brut": 0.0,
+      "amortissements_module": 4800.0,
+      "amortissements_comptables": 4800.0,
+      "ecart_amortissements": 0.0,
+      "vnc_module": 19200.0,
+      "vnc_comptable": 19200.0,
+      "ecart_vnc": 0.0,
+      "rapproche": true,
+      "details_comptes": [
+        {
+          "nature": "brut",
+          "compte": "2355",
+          "module": 24000.0,
+          "comptable": 24000.0,
+          "ecart": 0.0
+        },
+        {
+          "nature": "amortissement",
+          "compte": "28355",
+          "module": 4800.0,
+          "comptable": 4800.0,
+          "ecart": 0.0
+        }
+      ]
+    },
+    "nb_documents_non_comptabilises": 0,
+    "documents_non_comptabilises": [],
+    "affectation_resultat": {
+      "exercice_origine": 2025,
+      "exercice_affectation": 2026,
+      "resultat_origine": 106409.75,
+      "type_resultat": "benefice",
+      "compte_source": "1191",
+      "montant_restant": 106409.75,
+      "affecte": false,
+      "exercice_affectation_disponible": true,
+      "reclasse_en_instance": false,
+      "ecriture_reclassement_id": null,
+      "decision_tracee": false,
+      "date_debut": "2026-01-01",
+      "date_fin": "2026-12-31",
+      "forme_juridique": "SARL",
+      "capital_social": 200000.0,
+      "forme_juridique_supportee": true,
+      "referentiel_reserve_legale": "DOC, articles 1038-1039 (SARL)",
+      "taux_reserve_legale": 0.05,
+      "plafond_ratio_reserve_legale": 0.2,
+      "pertes_anterieures": 0.0,
+      "pertes_a_apurer": 0.0,
+      "reserve_legale_avant": 0.0,
+      "reserve_legale_minimale": 5320.49,
+      "plafond_reserve_legale": 40000.0,
+      "dividendes_max_sur_resultat": 101089.26,
+      "benefice_distribuable_indicatif": 101089.26,
+      "montant_a_ventiler": 106409.75
+    },
+    "resultat_anterieur_a_reclasser": null,
+    "fiscalite_is": {
+      "applicable": true,
+      "attendu": 23420.25,
+      "comptabilise": 23420.25,
+      "compte_charge_attendu": "6701",
+      "nature_impot": "IS",
+      "absente": false,
+      "coherente": true,
+      "a_comptabiliser": 0.0,
+      "resultat_comptable_avant_is": 129830.0,
+      "resultat_net_apres_is": 106409.75,
+      "deficits_a_confirmer": false
+    },
+    "fec_controle": {
+      "conforme": true,
+      "nb_bloquants": 0,
+      "nb_avertissements": 0,
+      "bloquants": []
+    }
+  },
+  "fec803": {
+    "controle": {
+      "exercice": 2025,
+      "conforme_export": true,
+      "nb_ecritures": 51,
+      "nb_ecritures_validees": 51,
+      "nb_ecritures_brouillon": 0,
+      "nb_lignes": 145,
+      "total_debit": 1646060.0,
+      "total_credit": 1646060.0,
+      "equilibre": true,
+      "ecart": 0.0,
+      "nb_bloquants": 0,
+      "nb_avertissements": 0,
+      "bloquants": [],
+      "avertissements": [],
+      "controle_auxiliaires": {
+        "3421": {
+          "collectif_debit": 208400.0,
+          "collectif_credit": 194000.0,
+          "auxiliaires_debit": 208400.0,
+          "auxiliaires_credit": 194000.0,
+          "conforme": true
+        },
+        "4411": {
+          "collectif_debit": 40800.0,
+          "collectif_credit": 41280.0,
+          "auxiliaires_debit": 40800.0,
+          "auxiliaires_credit": 41280.0,
+          "conforme": true
+        }
+      },
+      "exercice_cloture": true
+    },
+    "lignes": 145,
+    "colonnes": 18,
+    "total_debit": "1646060.00",
+    "total_credit": "1646060.00",
+    "references_litterales": [
+      "02",
+      "002"
+    ],
+    "reparations_automatiques": 0,
+    "precisions": "Le cahier cite16colonnes principales ;le format existant en ajoute2 de devise,soit18. Test technique du format actuel,pas validation réglementaire ni dépôt."
+  }
+}

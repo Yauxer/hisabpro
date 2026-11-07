@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "societe_fictive": true,
+  "exercice": 2026,
+  "devise": "MAD",
+  "parcours": "Guide consolidé ETIC697/699/701",
+  "balances": {
+    "n": "BALANCE_FICTIVE_ETIC701_N.csv",
+    "n1": "BALANCE_FICTIVE_ETIC701_N1.csv"
+  },
+  "attendus_independants": {
+    "debit_credit_n": "17000.00",
+    "debit_credit_n1": "6000.00",
+    "capital_111_n": "10000.00",
+    "produits_n": "2000.00",
+    "charges_credit_bail_n": "1200.00",
+    "resultat_net_n": "800.00",
+    "caf_n": "800.00",
+    "total_actif_n": "15800.00",
+    "total_passif_n": "15800.00",
+    "banque_n": "6800.00",
+    "resultat_net_n1": "0.00",
+    "caf_n1": "0.00"
+  },
+  "suretes_engagements": [
+    {
+      "code": "B8",
+      "statut": "documente",
+      "justification": "Contrat fictif697 — sûreté déclarée",
+      "lignes": [
+        {
+          "nature": "Hypothèque fictive697",
+          "objet": "Immeuble fictif",
+          "tiers": "Banque fictive697",
+          "montant_couvert": "12345.67",
+          "valeur_nette": null,
+          "inscription": "À confirmer",
+          "reference_source": "Annexe A fictive697"
+        }
+      ]
+    },
+    {
+      "code": "B9",
+      "statut": "documente",
+      "justification": "Relevé fictif697 des engagements",
+      "lignes": [
+        {
+          "sens": "Donné",
+          "nature": "Caution fictive697",
+          "montant": "2000.00",
+          "montant_n1": "0.00",
+          "observation": "Recette uniquement",
+          "reference_source": "Annexe B fictive697"
+        }
+      ]
+    }
+  ],
+  "annexes": [
+    {
+      "code": "A2",
+      "statut": "neant_declare",
+      "justification": "Revue fictive699 : aucune dérogation déclarée",
+      "lignes": []
+    },
+    {
+      "code": "A3",
+      "statut": "neant_declare",
+      "justification": "Revue fictive699 : aucun changement de méthode déclaré",
+      "lignes": []
+    },
+    {
+      "code": "B10",
+      "statut": "documente",
+      "justification": "Contrat fictif699, sans qualification réglementaire présumée",
+      "lignes": [
+        {
+          "bien": "Machine en crédit-bail fictif699",
+          "date_contrat": "2025-12-15",
+          "duree": "48 mois",
+          "valeur_estimee": "10000.00",
+          "redevances_exercice": "1200.00",
+          "redevances_restantes": "6400.00",
+          "reference_source": "Contrat A fictif699"
+        }
+      ]
+    },
+    {
+      "code": "C1",
+      "statut": "documente",
+      "justification": "Registre fictif699 des associés",
+      "lignes": [
+        {
+          "associe": "Associé unique fictif699",
+          "identifiant": "Identifiant de recette uniquement",
+          "titres": "100",
+          "nominal": "100.00",
+          "capital": "10000.00",
+          "pourcentage": "100",
+          "reference_source": "Registre A fictif699"
+        }
+      ]
+    },
+    {
+      "code": "C2",
+      "statut": "neant_declare",
+      "justification": "PV fictif699 : aucune affectation durant cet exercice",
+      "lignes": []
+    },
+    {
+      "code": "C4",
+      "statut": "documente",
+      "justification": "État fictif699 des contre-valeurs comptabilisées en MAD",
+      "lignes": [
+        {
+          "devise": "EUR",
+          "achats": "0.00",
+          "ventes": "2000.00",
+          "creances": null,
+          "dettes": null,
+          "observation": "Contre-valeurs en MAD sourcées ; aucun cours de change présumé",
+          "reference_source": "État A fictif699"
+        }
+      ]
+    }
+  ],
+  "variantes_controles_capital": [
+    {
+      "cas": "capital_coherent",
+      "titres": "100",
+      "nominal": "100.00",
+      "capital": "10000.00",
+      "pourcentage": "100",
+      "capital_balance_111": "10000.00",
+      "produit": "10000.00",
+      "ecart_ligne": "0.00",
+      "ecart_balance": "0.00",
+      "ecart_pourcentages": "0"
+    },
+    {
+      "cas": "ecarts_centimes",
+      "titres": "100",
+      "nominal": "100.00",
+      "capital": "9999.99",
+      "pourcentage": "99.99",
+      "capital_balance_111": "10000.00",
+      "produit": "10000.00",
+      "ecart_ligne": "-0.01",
+      "ecart_balance": "-0.01",
+      "ecart_pourcentages": "-0.01"
+    },
+    {
+      "cas": "inconnus",
+      "titres": "100",
+      "nominal": null,
+      "capital": null,
+      "pourcentage": null,
+      "capital_balance_111": "10000.00",
+      "produit": null,
+      "ecart_ligne": null,
+      "ecart_balance": null,
+      "ecart_pourcentages": null
+    }
+  ],
+  "preuves_humaines": "16cas Non testé. Les références de sources sont fictives, pas des contrats ou décisions réels.",
+  "note": "La variante N ajoute la charge6132 du crédit-bail, déjà référencée dans le plan HisabPro, et réduit la banque du même montant. Elle est destinée au parcours consolidé ; les trois guides unitaires gardent leurs propres jeux. Aucun Journal réel modifié.",
+  "fichiers": {
+    "BALANCE_FICTIVE_ETIC701_N.csv": {
+      "sha256": "22e9ff4f9e80ea5437e6e1aaaaa277ed4de606289d23083aee992d3cde277185",
+      "taille": 147
+    },
+    "BALANCE_FICTIVE_ETIC701_N1.csv": {
+      "sha256": "23870db4f5c4254cf1cb4bd4d850cd0fecdd840cbd53222d7e40c35bde7ca8ca",
+      "taille": 74
+    }
+  }
+}

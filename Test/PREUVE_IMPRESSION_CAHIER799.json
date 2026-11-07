@@ -1,0 +1,423 @@
+{
+  "resultats": [
+    {
+      "campagne": "recette799_avant",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 91.85,
+      "code": 1
+    },
+    {
+      "campagne": "recette799_cible",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 56.33,
+      "code": 0
+    },
+    {
+      "campagne": "recette799_complet",
+      "cas": 5,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 470.37,
+      "code": 0
+    }
+  ],
+  "impressions": [
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_rjver32k",
+      "nonce": "f4b637e16497458aa373222f54d242f7",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 1440,
+      "cas": [],
+      "tiers": {},
+      "articles": {},
+      "erreur": "AssertionError(\"{'pieces': 45, 'lignes': 90, 'total_debit': '4500.00', 'total_credit': '4500.00', ...}\\nassert {'PRINT799-04...PRINT799-044'} == {'PRINT799-00...799-005', ...}\\n  \\n  Extra items in the right set:\\n  'PRINT799-031'\\n  'PRINT799-012'\\n  'PRINT799-008'\\n  'PRINT799-015'\\n  'PRINT799-026'...\\n  \\n  ...Full output truncated (36 lines hidden), use '-vv' to show\")",
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "impression799": {
+        "pieces": 45,
+        "lignes": 90,
+        "total_debit": "4500.00",
+        "total_credit": "4500.00",
+        "geometrie": {
+          "height": "1006px",
+          "overflow": "auto",
+          "scrollHeight": 3811,
+          "clientHeight": 1006
+        },
+        "pdf": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette799_avant\\test_799_journal_impression_ex0\\journal799_1440.pdf",
+        "sha256": "11eb34d7ea3d5a324fedb20fddd92115a5b223300710c08849e7679f3c2fc203",
+        "pages": 1,
+        "references_retrouvees": [
+          "PRINT799-040",
+          "PRINT799-041",
+          "PRINT799-042",
+          "PRINT799-043",
+          "PRINT799-044"
+        ],
+        "manquantes": [
+          "PRINT799-000",
+          "PRINT799-001",
+          "PRINT799-002",
+          "PRINT799-003",
+          "PRINT799-004",
+          "PRINT799-005",
+          "PRINT799-006",
+          "PRINT799-007",
+          "PRINT799-008",
+          "PRINT799-009",
+          "PRINT799-010",
+          "PRINT799-011",
+          "PRINT799-012",
+          "PRINT799-013",
+          "PRINT799-014",
+          "PRINT799-015",
+          "PRINT799-016",
+          "PRINT799-017",
+          "PRINT799-018",
+          "PRINT799-019",
+          "PRINT799-020",
+          "PRINT799-021",
+          "PRINT799-022",
+          "PRINT799-023",
+          "PRINT799-024",
+          "PRINT799-025",
+          "PRINT799-026",
+          "PRINT799-027",
+          "PRINT799-028",
+          "PRINT799-029",
+          "PRINT799-030",
+          "PRINT799-031",
+          "PRINT799-032",
+          "PRINT799-033",
+          "PRINT799-034",
+          "PRINT799-035",
+          "PRINT799-036",
+          "PRINT799-037",
+          "PRINT799-038",
+          "PRINT799-039"
+        ]
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_rjver32k",
+      "nonce": "f4b637e16497458aa373222f54d242f7",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 390,
+      "cas": [],
+      "tiers": {},
+      "articles": {},
+      "erreur": "AssertionError(\"{'pieces': 45, 'lignes': 90, 'total_debit': '4500.00', 'total_credit': '4500.00', ...}\\nassert {'PRINT799-04...PRINT799-044'} == {'PRINT799-00...799-005', ...}\\n  \\n  Extra items in the right set:\\n  'PRINT799-031'\\n  'PRINT799-012'\\n  'PRINT799-008'\\n  'PRINT799-015'\\n  'PRINT799-026'...\\n  \\n  ...Full output truncated (36 lines hidden), use '-vv' to show\")",
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "impression799": {
+        "pieces": 45,
+        "lignes": 90,
+        "total_debit": "4500.00",
+        "total_credit": "4500.00",
+        "geometrie": {
+          "height": "967px",
+          "overflow": "auto",
+          "scrollHeight": 5069,
+          "clientHeight": 967
+        },
+        "pdf": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette799_avant\\test_799_journal_impression_ex1\\journal799_390.pdf",
+        "sha256": "79fb9d1b839442e5a9bce3e0bbdbc64d67a309a4db8d75a8c9bb735be6897036",
+        "pages": 1,
+        "references_retrouvees": [
+          "PRINT799-040",
+          "PRINT799-041",
+          "PRINT799-042",
+          "PRINT799-043",
+          "PRINT799-044"
+        ],
+        "manquantes": [
+          "PRINT799-000",
+          "PRINT799-001",
+          "PRINT799-002",
+          "PRINT799-003",
+          "PRINT799-004",
+          "PRINT799-005",
+          "PRINT799-006",
+          "PRINT799-007",
+          "PRINT799-008",
+          "PRINT799-009",
+          "PRINT799-010",
+          "PRINT799-011",
+          "PRINT799-012",
+          "PRINT799-013",
+          "PRINT799-014",
+          "PRINT799-015",
+          "PRINT799-016",
+          "PRINT799-017",
+          "PRINT799-018",
+          "PRINT799-019",
+          "PRINT799-020",
+          "PRINT799-021",
+          "PRINT799-022",
+          "PRINT799-023",
+          "PRINT799-024",
+          "PRINT799-025",
+          "PRINT799-026",
+          "PRINT799-027",
+          "PRINT799-028",
+          "PRINT799-029",
+          "PRINT799-030",
+          "PRINT799-031",
+          "PRINT799-032",
+          "PRINT799-033",
+          "PRINT799-034",
+          "PRINT799-035",
+          "PRINT799-036",
+          "PRINT799-037",
+          "PRINT799-038",
+          "PRINT799-039"
+        ]
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_g0oq87r6",
+      "nonce": "2121ff1f72d049ccb77df25880a7bd75",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 1440,
+      "cas": [],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "impression799": {
+        "pieces": 45,
+        "lignes": 90,
+        "total_debit": "4500.00",
+        "total_credit": "4500.00",
+        "geometrie": {
+          "height": "3810.89px",
+          "overflow": "visible",
+          "scrollHeight": 3811,
+          "clientHeight": 3811
+        },
+        "pdf": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette799_cible\\test_799_journal_impression_ex0\\journal799_1440.pdf",
+        "sha256": "9e45b0f84864dde06df95dc040268f51867760833eb9062bb1dc87a8b60c0381",
+        "pages": 6,
+        "references_retrouvees": [
+          "PRINT799-000",
+          "PRINT799-001",
+          "PRINT799-002",
+          "PRINT799-003",
+          "PRINT799-004",
+          "PRINT799-005",
+          "PRINT799-006",
+          "PRINT799-007",
+          "PRINT799-008",
+          "PRINT799-009",
+          "PRINT799-010",
+          "PRINT799-011",
+          "PRINT799-012",
+          "PRINT799-013",
+          "PRINT799-014",
+          "PRINT799-015",
+          "PRINT799-016",
+          "PRINT799-017",
+          "PRINT799-018",
+          "PRINT799-019",
+          "PRINT799-020",
+          "PRINT799-021",
+          "PRINT799-022",
+          "PRINT799-023",
+          "PRINT799-024",
+          "PRINT799-025",
+          "PRINT799-026",
+          "PRINT799-027",
+          "PRINT799-028",
+          "PRINT799-029",
+          "PRINT799-030",
+          "PRINT799-031",
+          "PRINT799-032",
+          "PRINT799-033",
+          "PRINT799-034",
+          "PRINT799-035",
+          "PRINT799-036",
+          "PRINT799-037",
+          "PRINT799-038",
+          "PRINT799-039",
+          "PRINT799-040",
+          "PRINT799-041",
+          "PRINT799-042",
+          "PRINT799-043",
+          "PRINT799-044"
+        ],
+        "manquantes": [],
+        "ecritures_inchangees": true
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_g0oq87r6",
+      "nonce": "2121ff1f72d049ccb77df25880a7bd75",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 390,
+      "cas": [],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "impression799": {
+        "pieces": 45,
+        "lignes": 90,
+        "total_debit": "4500.00",
+        "total_credit": "4500.00",
+        "geometrie": {
+          "height": "5069.48px",
+          "overflow": "visible",
+          "scrollHeight": 5069,
+          "clientHeight": 5069
+        },
+        "pdf": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette799_cible\\test_799_journal_impression_ex1\\journal799_390.pdf",
+        "sha256": "9592e9d1cdfd5f12576dc3687d07de6b4bcb753b0f82cfd1df7b75def762ecad",
+        "pages": 6,
+        "references_retrouvees": [
+          "PRINT799-000",
+          "PRINT799-001",
+          "PRINT799-002",
+          "PRINT799-003",
+          "PRINT799-004",
+          "PRINT799-005",
+          "PRINT799-006",
+          "PRINT799-007",
+          "PRINT799-008",
+          "PRINT799-009",
+          "PRINT799-010",
+          "PRINT799-011",
+          "PRINT799-012",
+          "PRINT799-013",
+          "PRINT799-014",
+          "PRINT799-015",
+          "PRINT799-016",
+          "PRINT799-017",
+          "PRINT799-018",
+          "PRINT799-019",
+          "PRINT799-020",
+          "PRINT799-021",
+          "PRINT799-022",
+          "PRINT799-023",
+          "PRINT799-024",
+          "PRINT799-025",
+          "PRINT799-026",
+          "PRINT799-027",
+          "PRINT799-028",
+          "PRINT799-029",
+          "PRINT799-030",
+          "PRINT799-031",
+          "PRINT799-032",
+          "PRINT799-033",
+          "PRINT799-034",
+          "PRINT799-035",
+          "PRINT799-036",
+          "PRINT799-037",
+          "PRINT799-038",
+          "PRINT799-039",
+          "PRINT799-040",
+          "PRINT799-041",
+          "PRINT799-042",
+          "PRINT799-043",
+          "PRINT799-044"
+        ],
+        "manquantes": [],
+        "ecritures_inchangees": true
+      }
+    }
+  ],
+  "exports": [
+    {
+      "fichier": "Test/preuves_impression799/1440_CAP-01_telecharge.pdf",
+      "sha256": "6d35910c651376162e27e3b7b870e1cd4ed422007cd6b6d0a9ba657a2e5cdf0a"
+    },
+    {
+      "fichier": "Test/preuves_impression799/1440_journal.csv",
+      "sha256": "81e6937255ae827e3ee7627ab2482211618408d16c30a9d8c00cceec21b535e8"
+    },
+    {
+      "fichier": "Test/preuves_impression799/1440_journal_imprime.pdf",
+      "sha256": "9e4b144c664e9237713288d42e713f44011ba770c3388170b2cb221a3be842e5"
+    },
+    {
+      "fichier": "Test/preuves_impression799/1440_grand_livre.csv",
+      "sha256": "70c3716bcc9ee20c5608f73fbe48277ac22f568d5771dca099b6edb2af61e242"
+    },
+    {
+      "fichier": "Test/preuves_impression799/1440_generale.xlsx",
+      "sha256": "b8341f6647f2c209e98f8ffa3d21faf56acfd69406abff593d142a4a44cd8bae"
+    },
+    {
+      "fichier": "Test/preuves_impression799/1440_generale.pdf",
+      "sha256": "10bf257a85862eb9f550cc8967fbf553ca4f1e7149cea09fd8895e629bc2b37f"
+    },
+    {
+      "fichier": "Test/preuves_impression799/1440_clients.xlsx",
+      "sha256": "e1fdfa5bc35c4974c887d2dbcb6229bc6924bd6eb0cdedc913e045270b1d94f9"
+    },
+    {
+      "fichier": "Test/preuves_impression799/1440_clients.pdf",
+      "sha256": "6ec678467ea9c9d432d322d5e92f9441e8f8de2abc74652cc0d9f07f3b8aa61d"
+    },
+    {
+      "fichier": "Test/preuves_impression799/1440_fournisseurs.xlsx",
+      "sha256": "6f03277ae81f7d6e58ce89d670a3c6365b69af5cd96acf60c20b5ac1e9cf36b1"
+    },
+    {
+      "fichier": "Test/preuves_impression799/1440_fournisseurs.pdf",
+      "sha256": "533ed6f636e421edcc0b0f69e669316f8facb4051d0e89b231daf0fc9fa88d6d"
+    },
+    {
+      "fichier": "Test/preuves_impression799/390_CAP-01_telecharge.pdf",
+      "sha256": "6d35910c651376162e27e3b7b870e1cd4ed422007cd6b6d0a9ba657a2e5cdf0a"
+    },
+    {
+      "fichier": "Test/preuves_impression799/390_journal.csv",
+      "sha256": "fa653124ef8d0eb9f31db2e12eb518470ea5b07982b56edc91c1748d32a45ad6"
+    },
+    {
+      "fichier": "Test/preuves_impression799/390_journal_imprime.pdf",
+      "sha256": "1bfa0539489449d0d4f88f8e6dc80478280b51a8a7a1b1a03c07b453675f87a8"
+    },
+    {
+      "fichier": "Test/preuves_impression799/390_grand_livre.csv",
+      "sha256": "5ab77ccae6006e7cc550b3b2f1cd235f0f13b8cfe86d4731fb516faec0055df6"
+    },
+    {
+      "fichier": "Test/preuves_impression799/390_generale.xlsx",
+      "sha256": "b8341f6647f2c209e98f8ffa3d21faf56acfd69406abff593d142a4a44cd8bae"
+    },
+    {
+      "fichier": "Test/preuves_impression799/390_generale.pdf",
+      "sha256": "c449c82e00d29390c6a13729135fdd2126c63bfb1c3e59e2b78aaeb3ddbfa06e"
+    },
+    {
+      "fichier": "Test/preuves_impression799/390_clients.xlsx",
+      "sha256": "7eab4f20530d2fc4a38df894514540d2ee495e32293c680fc9e02a80cd6ff6e0"
+    },
+    {
+      "fichier": "Test/preuves_impression799/390_clients.pdf",
+      "sha256": "502034e029912acc9ca1d29c563794668ce25be1472d30bc0c9de3e5a7a18a38"
+    },
+    {
+      "fichier": "Test/preuves_impression799/390_fournisseurs.xlsx",
+      "sha256": "29eb84b0b8070b3bd12b5558997f076ce53c9cd057ca5091044abbff2f8ff031"
+    },
+    {
+      "fichier": "Test/preuves_impression799/390_fournisseurs.pdf",
+      "sha256": "27901cfe47b90aa2c1d379a74d91e320a6256cbb178a470793efbc8c481a0a73"
+    }
+  ],
+  "correction": "Layout.module.css :conteneurs height:auto/overflow:visible/display:block en impression seulement ;navigation masquée.",
+  "verifications_pdf": "45 références,45comptes1111,45comptes5141,90montants100,00 et4500débit/crédit ;6pages aprèsfix au lieu1page/5références avantfix ;première/dernière pages rendues et examinées.",
+  "build": {
+    "code": 0,
+    "secondes": 11.01,
+    "avertissement": "Bundle>500kB"
+  },
+  "limites": "Moteur PDF Edge réel,aucuneimprimantephysique ;aucunPGutilisateur. Incidentrafraîchissement797 etLettrage769 nonattribués/nonrésolus. RH/paie/point6 différés,CM/cessionpartielles ;recettehumaine/conformité/productionnonvalidées."
+}

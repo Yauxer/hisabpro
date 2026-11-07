@@ -1,0 +1,11 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_21fj5e1w",
+  "nonce": "8c583912ef09405a89727f07846e9d40",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError('Locator expected to have count \\'1\\'\\nActual value: 0 \\nCall log:\\n  - Expect \"to_have_count\" get_by_role(\"dialog\").locator(\"li\").filter(has=get_by_role(\"dialog\").get_by_text(\"3421\", exact=True)) with timeout 5000ms\\n  - waiting for get_by_role(\"dialog\").locator(\"li\").filter(has=get_by_role(\"dialog\").get_by_text(\"3421\", exact=True))\\n    14 × locator resolved to 0 elements\\n       - unexpected value \"0\"\\n')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier."
+}

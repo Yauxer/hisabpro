@@ -1,0 +1,17 @@
+{
+  "fiches": [
+    "CR749-04",
+    "CR749-06"
+  ],
+  "propositions": {
+    "utilisations_inconnues": null,
+    "ancien_credit": null,
+    "type_a_qualifier": null,
+    "absence_non_exhaustive": null,
+    "absence_confirmee": "0.00"
+  },
+  "versions_precedentes_figees": true,
+  "inconnu_non_assimile_zero": true,
+  "absence_zero_seulement_confirmee_et_exhaustive": true,
+  "temoin_definitif333_et_journal_inchanges": true
+}

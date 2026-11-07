@@ -1,0 +1,11 @@
+{
+  "environnement": "Copie isolée restaurable. Code925 sur toutes les instances de ce laboratoire ;aucune migration925. Aucune manipulation de la base habituelle.",
+  "societe_A": "RECETTE SESSIONS925 A — FICTIVE",
+  "societe_B": "RECETTE SESSIONS925 B — FICTIVE",
+  "administrateur": "Admin fictif925 ;email admin.fictif925@example.test ;mot de passe initial AncienSecretFictif925!",
+  "nouveau_mot_de_passe": "NouveauSecretFictif925!",
+  "lecteur": "Lecteur fictif925 ;email lecteur.fictif925@example.test ;mot de passe LecteurSecretFictif925! ;compte propre puis invitation Consultation seule dansA.",
+  "ancien_navigateur": "Prérequis spécifique :session sans version dans un navigateur de recette ou banc synthétique isolé préparé par le technicien. Sans prérequis,casSES925-02 Bloqué ;aucun jeton réel à copier dans un document.",
+  "ecran": "Ouvrir Factures ou Clôture avant expiration. La connexion apparaît sur la route courante et reprend cet écran après succès.",
+  "controles": "Aucune facture,écriture,règlement ou solde créé/modifié par les opérations de session. Conserver les captures de connexion/refus et les IDs de société,mais aucun secret ou jeton."
+}

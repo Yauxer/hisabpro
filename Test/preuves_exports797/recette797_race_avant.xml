@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="52.380" timestamp="2026-10-24T23:07:13.453285+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_journal_export_attente797_isole" name="test_797_journal_export_attend_lecture_reelle[1440]" time="48.150"><failure message="AssertionError: Locator expected to be disabled&#10;Actual value: enabled &#10;Call log:&#10;  - Expect &quot;to_be_disabled&quot; get_by_role(&quot;button&quot;, name=&quot;Exporter CSV&quot;, exact=True) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;button&quot;, name=&quot;Exporter CSV&quot;, exact=True)&#10;    13 × locator resolved to &lt;button class=&quot;Journal_btnSec&quot;&gt;…&lt;/button&gt;&#10;       - unexpected value &quot;enabled&quot;&#10;&#10;Aria snapshot:&#10;- button &quot;Exporter CSV&quot;">application = {'api_url': 'http://127.0.0.1:54992', 'web_url': 'http://127.0.0.1:54993', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_8qlpdtzr'), 'nonce': '76c03c5408e84a41bfbaffeec32c7391', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette797_race_avant/test_797_journal_export_attend0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_797_journal_export_attend_lecture_reelle(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'export_attente797') as (api,page,sid,preuve):
+      e=ok(api.post('/api/ecritures',json={'date':'2025-01-01','journal':'BQ','reference':'ATTENTE797','libelle':'Capital fictif pour export retardé','est_validee':True,'lignes':[{'compte':'5141','debit':200000},{'compte':'1111','credit':200000}]}),201)
+      capture={}
+      def retenir(route):
+       if route.request.method=='GET' and not capture:
+        rep=route.fetch();assert rep.status==200;capture.update(route=route,reponse=rep)
+       else:route.continue_()
+&gt;     page.route('**/api/ecritures?**',retenir);page.goto(application['web_url']+'/journal');bouton=page.get_by_role('button',name='Exporter CSV',exact=True);expect(bouton).to_be_disabled();assert capture
+                                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to be disabled
+E     Actual value: enabled 
+E     Call log:
+E       - Expect "to_be_disabled" get_by_role("button", name="Exporter CSV", exact=True) with timeout 5000ms
+E       - waiting for get_by_role("button", name="Exporter CSV", exact=True)
+E         13 × locator resolved to &lt;button class="Journal_btnSec"&gt;…&lt;/button&gt;
+E            - unexpected value "enabled"
+E     
+E     Aria snapshot:
+E     - button "Exporter CSV"
+
+Test\test_e2e_journal_export_attente797_isole.py:20: AssertionError</failure></testcase></testsuite></testsuites>

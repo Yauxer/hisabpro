@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="42.328" timestamp="2026-10-26T19:38:40.391014+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_reseau859_isole" name="test_859_reseau_erreur_reprise_et_paiement_refresh[1440]" time="28.472"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: None&#10;Error: element(s) not found &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; get_by_role(&quot;alert&quot;).filter(has=get_by_text(&quot;Connexion au serveur&quot;)) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;alert&quot;).filter(has=get_by_text(&quot;Connexion au serveur&quot;))&#10;&#10;Aria snapshot:&#10;- complementary &quot;Navigation principale&quot;:&#10;  - text: HisabPro ATLAS RECETTE HISABPRO SARL — FICTIVE&#10;  - navigation:&#10;    - link &quot;Tableau de bord&quot;:&#10;      - /url: /dashboard&#10;    - button &quot;Facturation&quot;&#10;    - button &quot;Comptabilité&quot;&#10;    - link &quot;Journal&quot;:&#10;      - /url: /journal&#10;    - link &quot;Plan de comptes&quot;:&#10;      - /url: /plan-comptes&#10;    - link &quot;Déclaration TVA&quot;:&#10;      - /url: /declaration-tva&#10;    - link &quot;Résultat fiscal / IS&quot;:&#10;      - /url: /fiscalite-is&#10;    - link &quot;Liasse fiscale&quot;:&#10;      - /url: /liasse-fiscale&#10;    - link &quot;Grand livre&quot;:&#10;      - /url: /grand-livre&#10;    - link &quot;Rapprochement bancaire&quot;:&#10;      - /url: /rapprochement&#10;    - link &quot;Lettrage&quot;:&#10;      - /url: /lettrage&#10;    - link &quot;Balances&quot;:&#10;      - /url: /balances&#10;    - link &quot;Immobilisations&quot;:&#10;      - /url: /immobilisations&#10;    - link &quot;Clôture d'exercice&quot;:&#10;      - /url: /cloture&#10;    - link &quot;Livre d'inventaire&quot;:&#10;      - /url: /livre-inventaire&#10;    - button &quot;Paie / GRH&quot;&#10;  - link &quot;Paramètres&quot;:&#10;    - /url: /parametres&#10;  - button &quot;Déconnexion&quot;&#10;- text: Exercice&#10;- button &quot;Aucun exercice précédent&quot; [disabled]&#10;- combobox &quot;Exercice comptable&quot;:&#10;  - option &quot;2026 — Ouvert&quot;&#10;  - option &quot;2025 — Ouvert&quot; [selected]&#10;- button &quot;Exercice 2026&quot;&#10;- text: Ouvert&#10;- button &quot;ATLAS RECETTE HISABPRO SARL — FICTIVE&quot;&#10;- text: 01/01/2025 — 31/12/2025&#10;- main:&#10;  - heading &quot;Journal comptable&quot; [level=1]&#10;  - alert:&#10;    - paragraph: Failed to fetch&#10;    - button &quot;Réessayer&quot;">application = {'api_url': 'http://127.0.0.1:52008', 'web_url': 'http://127.0.0.1:52009', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_8cwutdrw'), 'nonce': '4f664413ee864b87a5269cbb145a4b56', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette859_reproduction/test_859_reseau_erreur_reprise0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_859_reseau_erreur_reprise_et_paiement_refresh(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'reseau859') as (api,page,sid,preuve):
+      b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201);t=next(t for t in DATA['tiers'] if t['code']=='F-CONTROLE');t=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'fournisseur','compte_fournisseur':'4411'}),201);e=ok(api.post('/api/ecritures',json={'date':'2025-01-01','date_piece':'2025-01-01','journal':'BQ','reference':'TEMOIN-859','libelle':'Témoin fictif reprise859','lignes':[{'compte':'5141','debit':100},{'compte':'1111','credit':100}]}),201);ok(api.post(f'/api/ecritures/{e["id"]}/valider'));f=facture843(api,t,'achat','2025-12-02',200,'02');valider843(api);avant=core(application,sid);aborts=[];post=[];page.on('request',lambda r:post.append(r.url) if r.method=='POST' and r.url.endswith('/api/reglements') else None)
+      pattern=re.compile(re.escape(application['api_url'])+r'/api/ecritures(?:\?.*)?$')
+      def couper(route):aborts.append({'methode':route.request.method,'chemin':'/api/ecritures'});route.abort('failed')
+&gt;     page.context.route(pattern,couper);page.goto(application['web_url']+'/journal');alerte=page.get_by_role('alert').filter(has=page.get_by_text('Connexion au serveur',exact=False));expect(alerte).to_be_visible();expect(alerte.get_by_role('button',name='Réessayer',exact=True)).to_be_visible();expect(page.get_by_role('button',name='Nouvelle écriture',exact=True)).to_have_count(0);assert aborts and core(application,sid)==avant and not post
+                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to be visible
+E     Actual value: None
+E     Error: element(s) not found 
+E     Call log:
+E       - Expect "to_be_visible" get_by_role("alert").filter(has=get_by_text("Connexion au serveur")) with timeout 5000ms
+E       - waiting for get_by_role("alert").filter(has=get_by_text("Connexion au serveur"))
+E     
+E     Aria snapshot:
+E     - complementary "Navigation principale":
+E       - text: HisabPro ATLAS RECETTE HISABPRO SARL — FICTIVE
+E       - navigation:
+E         - link "Tableau de bord":
+E           - /url: /dashboard
+E         - button "Facturation"
+E         - button "Comptabilité"
+E         - link "Journal":
+E           - /url: /journal
+E         - link "Plan de comptes":
+E           - /url: /plan-comptes
+E         - link "Déclaration TVA":
+E           - /url: /declaration-tva
+E         - link "Résultat fiscal / IS":
+E           - /url: /fiscalite-is
+E         - link "Liasse fiscale":
+E           - /url: /liasse-fiscale
+E         - link "Grand livre":
+E           - /url: /grand-livre
+E         - link "Rapprochement bancaire":
+E           - /url: /rapprochement
+E         - link "Lettrage":
+E           - /url: /lettrage
+E         - link "Balances":
+E           - /url: /balances
+E         - link "Immobilisations":
+E           - /url: /immobilisations
+E         - link "Clôture d'exercice":
+E           - /url: /cloture
+E         - link "Livre d'inventaire":
+E           - /url: /livre-inventaire
+E         - button "Paie / GRH"
+E       - link "Paramètres":
+E         - /url: /parametres
+E       - button "Déconnexion"
+E     - text: Exercice
+E     - button "Aucun exercice précédent" [disabled]
+E     - combobox "Exercice comptable":
+E       - option "2026 — Ouvert"
+E       - option "2025 — Ouvert" [selected]
+E     - button "Exercice 2026"
+E     - text: Ouvert
+E     - button "ATLAS RECETTE HISABPRO SARL — FICTIVE"
+E     - text: 01/01/2025 — 31/12/2025
+E     - main:
+E       - heading "Journal comptable" [level=1]
+E       - alert:
+E         - paragraph: Failed to fetch
+E         - button "Réessayer"
+
+Test\test_e2e_cahier_reseau859_isole.py:25: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_reseau859_isole" name="test_859_reseau_erreur_reprise_et_paiement_refresh[390]" time="11.806"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: None&#10;Error: element(s) not found &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; get_by_role(&quot;alert&quot;).filter(has=get_by_text(&quot;Connexion au serveur&quot;)) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;alert&quot;).filter(has=get_by_text(&quot;Connexion au serveur&quot;))&#10;&#10;Aria snapshot:&#10;- button &quot;Ouvrir la navigation&quot;&#10;- button &quot;Aucun exercice précédent&quot; [disabled]&#10;- combobox &quot;Exercice comptable&quot;:&#10;  - option &quot;2026 — Ouvert&quot;&#10;  - option &quot;2025 — Ouvert&quot; [selected]&#10;- button &quot;Exercice 2026&quot;&#10;- button &quot;ATLAS RECETTE HISABPRO SARL — FICTIVE&quot;&#10;- main:&#10;  - heading &quot;Journal comptable&quot; [level=1]&#10;  - alert:&#10;    - paragraph: Failed to fetch&#10;    - button &quot;Réessayer&quot;">application = {'api_url': 'http://127.0.0.1:52008', 'web_url': 'http://127.0.0.1:52009', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_8cwutdrw'), 'nonce': '4f664413ee864b87a5269cbb145a4b56', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette859_reproduction/test_859_reseau_erreur_reprise1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_859_reseau_erreur_reprise_et_paiement_refresh(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'reseau859') as (api,page,sid,preuve):
+      b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201);t=next(t for t in DATA['tiers'] if t['code']=='F-CONTROLE');t=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'fournisseur','compte_fournisseur':'4411'}),201);e=ok(api.post('/api/ecritures',json={'date':'2025-01-01','date_piece':'2025-01-01','journal':'BQ','reference':'TEMOIN-859','libelle':'Témoin fictif reprise859','lignes':[{'compte':'5141','debit':100},{'compte':'1111','credit':100}]}),201);ok(api.post(f'/api/ecritures/{e["id"]}/valider'));f=facture843(api,t,'achat','2025-12-02',200,'02');valider843(api);avant=core(application,sid);aborts=[];post=[];page.on('request',lambda r:post.append(r.url) if r.method=='POST' and r.url.endswith('/api/reglements') else None)
+      pattern=re.compile(re.escape(application['api_url'])+r'/api/ecritures(?:\?.*)?$')
+      def couper(route):aborts.append({'methode':route.request.method,'chemin':'/api/ecritures'});route.abort('failed')
+&gt;     page.context.route(pattern,couper);page.goto(application['web_url']+'/journal');alerte=page.get_by_role('alert').filter(has=page.get_by_text('Connexion au serveur',exact=False));expect(alerte).to_be_visible();expect(alerte.get_by_role('button',name='Réessayer',exact=True)).to_be_visible();expect(page.get_by_role('button',name='Nouvelle écriture',exact=True)).to_have_count(0);assert aborts and core(application,sid)==avant and not post
+                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to be visible
+E     Actual value: None
+E     Error: element(s) not found 
+E     Call log:
+E       - Expect "to_be_visible" get_by_role("alert").filter(has=get_by_text("Connexion au serveur")) with timeout 5000ms
+E       - waiting for get_by_role("alert").filter(has=get_by_text("Connexion au serveur"))
+E     
+E     Aria snapshot:
+E     - button "Ouvrir la navigation"
+E     - button "Aucun exercice précédent" [disabled]
+E     - combobox "Exercice comptable":
+E       - option "2026 — Ouvert"
+E       - option "2025 — Ouvert" [selected]
+E     - button "Exercice 2026"
+E     - button "ATLAS RECETTE HISABPRO SARL — FICTIVE"
+E     - main:
+E       - heading "Journal comptable" [level=1]
+E       - alert:
+E         - paragraph: Failed to fetch
+E         - button "Réessayer"
+
+Test\test_e2e_cahier_reseau859_isole.py:25: AssertionError</failure></testcase></testsuite></testsuites>

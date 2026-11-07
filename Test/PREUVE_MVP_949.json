@@ -1,0 +1,756 @@
+{
+  "date": "2026-10-29",
+  "nombre_distinct": 117,
+  "campagne_unique_verte": true,
+  "repartition": {
+    "API_SQL_PostgreSQL_natif_isole": 16,
+    "Edge_API_PostgreSQL_natif_isole": 2,
+    "unitaires": 99
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[False--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[False-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[False-Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[False--Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[False-abc]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[True--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[True-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[True-Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[True--Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[True-abc]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_vide_inconnu_et_zero_explicitement_prioritaire",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_zero_manuel_prioritaire_sur_auto_certaine",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_structure_ventilation_invalide_refusee[ventilations0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_structure_ventilation_invalide_refusee[ventilations1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b7_total480_ventilation479_refuse_confirmation",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_piece_historique_absente_reliquat_visible_sans_invention",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_e2e_archive_liasse_isole::test_archive_liasse_finalisation_exports_empreinte_et_immutabilite",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_zero_explicitement_saisi_reste_prioritaire",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    },
+    {
+      "id": "Test.test_e2e_cahier_etic805_isole::test_805_etic_documente_et_archive_nonforcee[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final"
+    }
+  ],
+  "selection": [
+    "Test/test_refus_etic_fec949_isole.py",
+    "Test/test_e2e_archive_liasse_isole.py",
+    "Test/test_patch119_etic_saisies_invalides.py",
+    "Test/test_e2e_cahier_etic805_isole.py::test_805_etic_documente_et_archive_nonforcee[1440]"
+  ],
+  "duree_xml_s": 273.75,
+  "code_sortie": 0,
+  "execution": "PYTHON_DOTENV_DISABLED=1 ;SECRET_KEY fictive,DATABASE_URL inerte port1 ;python .codex-tests/lancer_session.py etic949_final <selection> ;fixtures PG/serveurs nonce.",
+  "historique_non_additionne": [
+    "Cible initiale2échoués/7réussis,80.24s :testvide avait source certaine préremplie etdateNULLnonreproductibleavec triggersactuels. Prérequis corrigés sans supprimer protections,NEG036Partiel.",
+    "Reproductionbrouillon5échoués/9réussis,59.53s :invalides réellement acceptésHTTP200avantcorrection. Validationcorrigée avantpersistance,sans imposercomplétude dubrouillon. Répétitionsnonadditionnées."
+  ],
+  "preuves": {
+    "Test/preuves_mvp949/archive949_preuve.json": "2bf44a1b711fe80899bb070f738f55a4d53f16d167607751a1f5707646039a18",
+    "Test/preuves_mvp949/cahier773_etic805f_1440_preuve.json": "083071792929e170aa86e803c986a3271aa7302a3a00b3ad88fe4e3ce89ef0b0",
+    "Test/preuves_mvp949/etic949_479.json": "8cdbc8264caeb1e94d2ea2431d0b97d03dfe796a9e2c6214ef43b00fbc11e9ed",
+    "Test/preuves_mvp949/etic949_brouillons.xml": "2638768b602cba3cb074d4205a960b2277f00c98bb14f4f4eabec020dbab6f84",
+    "Test/preuves_mvp949/etic949_cible.xml": "d0bac14dbb77354f5cb65f9967ef276eeb316cc5552736db012690c7198e700e",
+    "Test/preuves_mvp949/etic949_final.xml": "688500ea2f4385cb128ff2f83a6b1bbc3d515ac747c6997f0e9ca933849da11b",
+    "Test/preuves_mvp949/etic949_historique.json": "75b027eea097804732243d851592e421bddfe87208cf27906c39d760c8f96654",
+    "Test/preuves_mvp949/etic949_zero.json": "1b18731ed1fca952e1116b05e5f8709c0450841c71417795474d18dfeb0347da"
+  },
+  "rattachement": "Test/QUALIFICATION_FICHES_949.json",
+  "fiches_qualifiees": 3,
+  "candidat": "Test/CANDIDAT_MVP_949.json",
+  "nombre_fichiers_candidat": 549,
+  "produit_identique_au_931": false,
+  "build": "Non relancé949 :frontend inchangé ;dernier public945214modules/6.55s,code0.",
+  "anciens_documents_preserves": 335,
+  "aucune_base_reelle": true,
+  "restauration": "Non rejouée ;preuves antérieures distinctes.",
+  "limites": "HP-NEG-036Partiel :référenceabsente et480nonqualifiés entre1440comptables/960documentés testés,dateprésenteconservée ;ancienne dateNULLnonreproduite,sansdésactivationdestriggers. Archivecapital-seul distincte du cahierannuel20/23. Aucun justificatif ou classementinventé,aucune écriturevalidée modifiée. Recettehumaine/production/réglementation nonvalidées.",
+  "produit_reference": "949",
+  "fichiers_produit_modifies": [
+    "hisabpro-backend/services/etic_service.py"
+  ],
+  "fiches_rattachees": 4,
+  "fiches_par_statut": {
+    "Réussi": 3,
+    "Partiel": 1
+  }
+}

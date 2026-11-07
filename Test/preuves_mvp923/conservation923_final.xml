@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="46" time="405.296" timestamp="2026-10-29T02:00:07.263869+01:00" hostname="Taiyou"><testcase classname="Test.test_factures_conservation923_isole" name="test_923_pdf_exact_logo_source_audit_rejeu_et_comptabilite" time="20.853" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_brouillon_proforma_achat_non_acceptes[params0]" time="0.451" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_brouillon_proforma_achat_non_acceptes[params1]" time="0.461" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_brouillon_proforma_achat_non_acceptes[params2]" time="0.468" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_societes_lecture_et_revocation" time="0.945" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_double_clic_concurrent_et_payload_non_substituable" time="0.796" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_gardes_sql_role_limite_et_aucune_substitution" time="0.577" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_absence_migration_n_empeche_pas_pdf_habituel" time="4.053" /><testcase classname="Test.test_e2e_factures_conservation923_isole" name="test_923_conserver_recharger_telecharger_et_operations_disponibles[1440]" time="25.433" /><testcase classname="Test.test_e2e_factures_conservation923_isole" name="test_923_conserver_recharger_telecharger_et_operations_disponibles[390]" time="8.584" /><testcase classname="Test.test_factures_conservation923_restauration_isole" name="test_923_restauration_native_copie_et_droits" time="37.490" /><testcase classname="Test.test_fact9_documents_pdf" name="test_pdf_facture_professionnel_genere_et_lisible" time="0.013" /><testcase classname="Test.test_fact9_documents_pdf" name="test_pdf_bl_double_exemplaire_produit_deux_pages_minimum" time="0.007" /><testcase classname="Test.test_fact9_documents_pdf" name="test_resume_tva_pdf_ne_confond_pas_zero_et_exoneration" time="0.000" /><testcase classname="Test.test_fact9_documents_pdf" name="test_routes_pdf_fact9_couvrent_tous_documents_commerciaux" time="0.001" /><testcase classname="Test.test_fact9_documents_pdf" name="test_facture_pdf_inclut_echeancier_et_resume_tva" time="0.001" /><testcase classname="Test.test_fact9_documents_pdf" name="test_bc_et_br_ne_sont_plus_marques_pdf_bientot_disponible" time="0.001" /><testcase classname="Test.test_fact9_documents_pdf" name="test_preparation_email_telecharge_dabord_le_pdf" time="0.000" /><testcase classname="Test.test_fact9_documents_pdf" name="test_avoirs_exposent_tiers_id_et_pdf" time="0.001" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_reel_sur_premiere_page_et_sources_intactes[commercial-PNG]" time="0.006" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_reel_sur_premiere_page_et_sources_intactes[commercial-JPEG]" time="0.006" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_reel_sur_premiere_page_et_sources_intactes[financier-PNG]" time="0.007" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_reel_sur_premiere_page_et_sources_intactes[financier-JPEG]" time="0.007" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_reel_sur_premiere_page_et_sources_intactes[liasse-PNG]" time="0.013" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_reel_sur_premiere_page_et_sources_intactes[liasse-JPEG]" time="0.013" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_reel_sur_premiere_page_et_sources_intactes[preparation-PNG]" time="0.030" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_reel_sur_premiere_page_et_sources_intactes[preparation-JPEG]" time="0.030" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_reel_sur_premiere_page_et_sources_intactes[inventaire-PNG]" time="0.011" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_reel_sur_premiere_page_et_sources_intactes[inventaire-JPEG]" time="0.010" /><testcase classname="Test.test_logos_exports_pdf" name="test_archive_ancienne_sans_logo_reste_sans_logo" time="0.011" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_historique_absent_ou_invalide_ne_bloque_pas_pdf[None]" time="0.003" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_historique_absent_ou_invalide_ne_bloque_pas_pdf[]" time="0.004" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_historique_absent_ou_invalide_ne_bloque_pas_pdf[https://example.com/logo.png]" time="0.004" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_historique_absent_ou_invalide_ne_bloque_pas_pdf[C:/secret.png]" time="0.004" /><testcase classname="Test.test_logos_exports_pdf" name="test_logo_historique_absent_ou_invalide_ne_bloque_pas_pdf[data:image/png;base64,aW52YWxpZA==]" time="0.033" /><testcase classname="Test.test_pdf_textes_litteraux" name="test_nom_societe_avec_balises_reste_litteral[financier]" time="0.005" /><testcase classname="Test.test_pdf_textes_litteraux" name="test_nom_societe_avec_balises_reste_litteral[inventaire]" time="0.012" /><testcase classname="Test.test_pdf_textes_litteraux" name="test_texte_ne_charge_pas_une_image_locale_fictive[raison_sociale]" time="0.009" /><testcase classname="Test.test_pdf_textes_litteraux" name="test_texte_ne_charge_pas_une_image_locale_fictive[adresse]" time="0.009" /><testcase classname="Test.test_pdf_textes_litteraux" name="test_texte_ne_charge_pas_une_image_locale_fictive[titre]" time="0.009" /><testcase classname="Test.test_pdf_textes_litteraux" name="test_texte_ne_charge_pas_une_image_locale_fictive[sous_titre]" time="0.010" /><testcase classname="Test.test_pdf_textes_litteraux" name="test_texte_ne_charge_pas_une_image_locale_fictive[label]" time="0.009" /><testcase classname="Test.test_e2e_cahier_pdf857_isole" name="test_857_pdf_identite_litterale_et_logo[1440]" time="25.173" /><testcase classname="Test.test_e2e_cahier_pdf857_isole" name="test_857_pdf_identite_litterale_et_logo[390]" time="7.955" /><testcase classname="Test.test_e2e_cahier_integrite839_isole" name="test_839_cycle_annuel_et_integrite[1440]" time="138.169" /><testcase classname="Test.test_e2e_cahier_integrite839_isole" name="test_839_cycle_annuel_et_integrite[390]" time="129.248"><failure message="playwright._impl._errors.TimeoutError: Locator.inner_text: Timeout 15000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;body&quot;)">application = {'api_url': 'http://127.0.0.1:52115', 'web_url': 'http://127.0.0.1:52116', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_wspf4o0o'), 'nonce': 'a31c409f7d3246f989ce0fe70749f1d3', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/conservation923_final/test_839_cycle_annuel_et_integ1')
+navigation_observee839 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_839_cycle_annuel_et_integrite(application,largeur,tmp_path,navigation_observee839):
+&gt;    with laboratoire(application,largeur,tmp_path,'integrite839') as (api,page,sid,preuve):
+
+Test\test_e2e_cahier_integrite839_isole.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:158: in __exit__
+    self.gen.throw(typ, value, traceback)
+Test\cahier_formulaires773_support.py:40: in laboratoire
+    preuve['erreur']=repr(e);print('DIAGNOSTIC',page.url,errors,serveur,page.locator('body').inner_text()[-4500:]);page.screenshot(path=str(tmp_path/f'cahier773_{nom}_echec.png'),full_page=True);raise
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\playwright\sync_api\_generated.py:19603: in inner_text
+    self._sync(self._impl_obj.inner_text(timeout=to_milliseconds(timeout)))
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_locator.py:502: in inner_text
+    return await self._frame.inner_text(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_frame.py:744: in inner_text
+    return await self._channel.send(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x00000187F1E02A50&gt;
+cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x00000187EABEE7A0&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        parsed_st = _attach_api_call_information(
+            getattr(task, "__pw_stack__", None) or _capture_stack_trace(),
+            is_internal,
+            title,
+        )
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Locator.inner_text: Timeout 15000ms exceeded.
+E           Call log:
+E             - waiting for locator("body")
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:632: TimeoutError</failure></testcase></testsuite></testsuites>

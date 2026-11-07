@@ -1,0 +1,18 @@
+{
+  "ancien_sha256": "8779ea1a7362dd36dc41ba20971f23d003751cbc00cd3da042d392ef760e4e2b",
+  "livre_sha256": "b2dfdcc3906fb8af31711f63664a93fc973cd2c36f9615a825adafb88d19f487",
+  "cles_financieres": [
+    "societe",
+    "tiers",
+    "articles",
+    "banque",
+    "operations",
+    "releve_bancaire",
+    "attendus",
+    "tva_mois",
+    "variante953"
+  ],
+  "empreinte_financiere_executee_et_livree": "625f92baa585ec35c133de210fbc65ea3892575775b1e50e8798deeb11f51d3a",
+  "identiques": true,
+  "correction_documentaire": "Journalattendu ettextesdelavariante synchronisés ;suppression desvariantesFAEdébits,aucuneentréeouoraclefinanciermodifié. DeuxE2Eutilisentl’étatinitialconservéenpreuve ;les testsunitaires suivants lisentl’étatdocumentairecorrigé."
+}

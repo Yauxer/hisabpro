@@ -1,0 +1,11 @@
+{
+  "fiche": "F755-14",
+  "largeur": 1440,
+  "vrais_fichiers_CSV": true,
+  "refus": {
+    "doublon": 422,
+    "nan": 422
+  },
+  "aucune_version_ni_ecriture_creee": true,
+  "ancienne_preparation_conservee": true
+}

@@ -1,0 +1,57 @@
+{
+  "contexte": "Société fictive séparée en MAD, exercice2026, mouvements et CSV du lot713. Aucune donnée réelle.",
+  "source_donnees": "DONNEES_MOUVEMENTS713.json",
+  "tables": [
+    {
+      "code": "B2",
+      "lignes": [
+        {
+          "ligne": 1,
+          "compte": "2340"
+        }
+      ]
+    },
+    {
+      "code": "B2bis",
+      "lignes": [
+        {
+          "ligne": 1,
+          "compte": "2834"
+        }
+      ]
+    },
+    {
+      "code": "B5",
+      "lignes": [
+        {
+          "ligne": 1,
+          "compte": "1511"
+        }
+      ]
+    }
+  ],
+  "attendus": {
+    "B2": {
+      "solde_source": "11000.00",
+      "somme_clotures_declarees": "11000.00",
+      "ecart": "0.00"
+    },
+    "B2bis": {
+      "solde_source": "4500.00",
+      "somme_clotures_declarees": "4500.00",
+      "ecart": "0.00"
+    },
+    "B5": {
+      "solde_source": "700.00",
+      "somme_clotures_declarees": "700.00",
+      "ecart": "0.00"
+    }
+  },
+  "variante": {
+    "B2_cloture_courante": "10999.99",
+    "B2_ancienne_cloture": "11000.00",
+    "B2_ancien_ecart": "0.00",
+    "B2_ecart_apres_nouveau_raccord": "-0.01",
+    "B2_ecart_non_rattache": null
+  }
+}

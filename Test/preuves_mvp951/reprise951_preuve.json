@@ -1,0 +1,15 @@
+{
+  "nonce": "02ac7139fc0049399c7fcc2594280ffc",
+  "aucune_base_reelle": true,
+  "erreur": null,
+  "pid_initial": 32784,
+  "pid_redemarre": 24284,
+  "brouillon_id": 1,
+  "numero_validation": "BQ-2026-0001",
+  "brouillon_conserve_apres_arret": true,
+  "validation_unique": true,
+  "debit_credit": "1000.00",
+  "audit_anterieur_preserve": true,
+  "redemarrage_meme_cible_et_role": true,
+  "nettoyage_du_nouveau_processus_confie_au_contexte": true
+}

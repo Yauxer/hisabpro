@@ -1,0 +1,12 @@
+{
+  "fiche": "TIERS759-04",
+  "identite_incomplete_conservee": true,
+  "somme_inconnue_conservee": null,
+  "versions_incompletes_reconsultables": true,
+  "reprise_complete": {
+    "comptabilise": "1400.00",
+    "soumis": "740.00",
+    "retenu": "37.00"
+  },
+  "temoin_definitif333_sources_et_journal_inchanges": true
+}

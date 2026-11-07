@@ -1,0 +1,11 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_0lt1hs9w",
+  "nonce": "a580bfa1438d44e8868d7031d4fd5da8",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError('{\"detail\":\"Validation non chronologique : la date comptable 2025-01-26 est antérieure à la dernière date validée 2025-02-01 du journal AE. Corrigez la date du brouillon avant de le valider.\"}')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier."
+}

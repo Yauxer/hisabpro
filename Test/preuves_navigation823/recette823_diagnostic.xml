@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="103.213" timestamp="2026-10-25T17:28:04.949677+01:00" hostname="Taiyou"><testcase classname="Test.diagnostic_navigation823" name="test_823_diagnostic_reseau_polices[1440]" time="63.708"><failure message="playwright._impl._errors.TimeoutError: Page.wait_for_function: Timeout 15000ms exceeded.">application = {'api_url': 'http://127.0.0.1:63508', 'web_url': 'http://127.0.0.1:63509', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_7rlw7qmo'), 'nonce': 'e5f472412f2d4008946ce3619ffd96aa', ...}, ...}
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette823_diagnostic/test_823_diagnostic_reseau_pol0')
+largeur = 1440
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_823_diagnostic_reseau_polices(application,tmp_path,largeur):
+     with laboratoire(application,largeur,tmp_path,'navigation823') as (api,page,sid,preuve):
+      cdp=page.context.new_cdp_session(page);cdp.send('Network.enable');pending={};failures=[];preuve['reseau823']={'en_attente':pending,'echecs':failures};preuve['navigations823']=[]
+      cdp.on('Network.requestWillBeSent',lambda p:pending.update({p['requestId']:{'url':p['request']['url'],'type':p.get('type'),'timestamp':p.get('timestamp')}}))
+      cdp.on('Network.loadingFinished',lambda p:pending.pop(p['requestId'],None))
+      def fail(p):
+       r=pending.pop(p['requestId'],None);failures.append({'request':r,'erreur':p.get('errorText'),'cancelled':p.get('canceled')})
+      cdp.on('Network.loadingFailed',fail)
+      try:
+       for route in ['/journal','/immobilisations','/factures','/lettrage','/grand-livre']*6:
+        page.goto(application['web_url']+route);expect(page.get_by_role('main')).to_be_visible();preuve['navigations823'].append(route)
+&gt;      page.wait_for_function("document.fonts.status === 'loaded'",timeout=15000)
+
+Test\diagnostic_navigation823.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+hisabpro-backend\.venv\Lib\site-packages\playwright\sync_api\_generated.py:12809: in wait_for_function
+    self._sync(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_page.py:1153: in wait_for_function
+    return await self._main_frame.wait_for_function(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_frame.py:941: in wait_for_function
+    await self._channel.send("waitForFunction", self._timeout, params)
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x0000023C2C6304D0&gt;
+cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x0000023C2FE99620&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        parsed_st = _attach_api_call_information(
+            getattr(task, "__pw_stack__", None) or _capture_stack_trace(),
+            is_internal,
+            title,
+        )
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Page.wait_for_function: Timeout 15000ms exceeded.
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:632: TimeoutError</failure></testcase><testcase classname="Test.diagnostic_navigation823" name="test_823_diagnostic_reseau_polices[390]" time="35.503"><failure message="playwright._impl._errors.TimeoutError: Page.wait_for_function: Timeout 15000ms exceeded.">application = {'api_url': 'http://127.0.0.1:63508', 'web_url': 'http://127.0.0.1:63509', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_7rlw7qmo'), 'nonce': 'e5f472412f2d4008946ce3619ffd96aa', ...}, ...}
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette823_diagnostic/test_823_diagnostic_reseau_pol1')
+largeur = 390
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_823_diagnostic_reseau_polices(application,tmp_path,largeur):
+     with laboratoire(application,largeur,tmp_path,'navigation823') as (api,page,sid,preuve):
+      cdp=page.context.new_cdp_session(page);cdp.send('Network.enable');pending={};failures=[];preuve['reseau823']={'en_attente':pending,'echecs':failures};preuve['navigations823']=[]
+      cdp.on('Network.requestWillBeSent',lambda p:pending.update({p['requestId']:{'url':p['request']['url'],'type':p.get('type'),'timestamp':p.get('timestamp')}}))
+      cdp.on('Network.loadingFinished',lambda p:pending.pop(p['requestId'],None))
+      def fail(p):
+       r=pending.pop(p['requestId'],None);failures.append({'request':r,'erreur':p.get('errorText'),'cancelled':p.get('canceled')})
+      cdp.on('Network.loadingFailed',fail)
+      try:
+       for route in ['/journal','/immobilisations','/factures','/lettrage','/grand-livre']*6:
+        page.goto(application['web_url']+route);expect(page.get_by_role('main')).to_be_visible();preuve['navigations823'].append(route)
+&gt;      page.wait_for_function("document.fonts.status === 'loaded'",timeout=15000)
+
+Test\diagnostic_navigation823.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+hisabpro-backend\.venv\Lib\site-packages\playwright\sync_api\_generated.py:12809: in wait_for_function
+    self._sync(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_page.py:1153: in wait_for_function
+    return await self._main_frame.wait_for_function(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_frame.py:941: in wait_for_function
+    await self._channel.send("waitForFunction", self._timeout, params)
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x0000023C2FA70750&gt;
+cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x0000023C2FC33740&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        parsed_st = _attach_api_call_information(
+            getattr(task, "__pw_stack__", None) or _capture_stack_trace(),
+            is_internal,
+            title,
+        )
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Page.wait_for_function: Timeout 15000ms exceeded.
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:632: TimeoutError</failure></testcase></testsuite></testsuites>

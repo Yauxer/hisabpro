@@ -1,0 +1,787 @@
+{
+  "campagnes_finales": [
+    {
+      "campagne": "recette835_corrige",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 78.55,
+      "code": 0,
+      "junit": "Test/preuves_cahier835/recette835_corrige.xml",
+      "sha256": "17f2d0d2ce6df7c164114c9e38824043e9fa11c57b12ffb9a4613cec3a1c8fe8"
+    },
+    {
+      "campagne": "recette835_connexes",
+      "cas": 16,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 59.16,
+      "code": 0,
+      "junit": "Test/preuves_cahier835/recette835_connexes.xml",
+      "sha256": "5576b8cdbb4aff089641badb72163319b33579e43597ec001c0447c25c93f229"
+    },
+    {
+      "campagne": "recette837_complet",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 69.36,
+      "code": 0,
+      "junit": "Test/preuves_cahier837/recette837_complet.xml",
+      "sha256": "17386685399e50d7ca113afd2950f68e8cd85ccd602c2350ab5ce284093d628f"
+    },
+    {
+      "campagne": "recette839_archive",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 638.28,
+      "code": 0,
+      "junit": "Test/preuves_cahier839/recette839_archive.xml",
+      "sha256": "89ca163db6b3801ae81ea9da132c407c269d75dacbc63b34af3b4acfcdb63b5d"
+    },
+    {
+      "campagne": "recette839_connexes",
+      "cas": 75,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 383.53,
+      "code": 0,
+      "junit": "Test/preuves_cahier839/recette839_connexes.xml",
+      "sha256": "1f2e4d385dabdf3112ec02b19bb174786bbd8ca2c464ff33f39efb1d8e41fb23"
+    },
+    {
+      "campagne": "recette841_restauration",
+      "cas": 1,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 123.97,
+      "code": 0,
+      "junit": "Test/preuves_cahier841/recette841_restauration.xml",
+      "sha256": "2235c1bb2f143755b9a2cca9cb9fab1105a79baadc6cb36ea13a236563ecefa5"
+    },
+    {
+      "campagne": "recette841_navigation",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 211.78,
+      "code": 0,
+      "junit": "Test/preuves_cahier841/recette841_navigation.xml",
+      "sha256": "8834ef84f80aecde4faaf4cd96c6e8db4fd5e3f2185ebea0310dbde8a7ee2dda"
+    }
+  ],
+  "total_tests_finaux": 100,
+  "restauration": {
+    "erreur": null,
+    "tp_bases_classes_avis_sources_et_rendus_restaures": true,
+    "identites_mouvements_tiers_sources_et_rendus_restaures": true,
+    "scenario_annuel3650_sources_justificatifs_logos_restaures": true,
+    "pieces_octets_traces_dossier_manifestes_logos_identiques": true,
+    "cibles_supprimees": true,
+    "tables": 83,
+    "fichiers": {
+      "1/ecriture/15/PV-FICTIF452_d469f8fc.pdf": [
+        1449,
+        "a0dbecf3445f2212606daedcb2255cb02686129b254566e740cf59618b145960"
+      ],
+      "2/balance_preparation_documents/27/885f8f29bdc84d73a6c554710077c545.pdf": [
+        1451,
+        "4a1d3a56447e445b8e9cc602566cfa92315578f6d1cf1bbb7fc895222a9d9a50"
+      ],
+      "2/balance_preparation_documents/42/8ff7641285424f7282d2b5215e232993.pdf": [
+        3239,
+        "82a3b99b0d38650c8e51f72bdd548b3d4e0cb8de784c99349c69ba84fa5b92a7"
+      ],
+      "2/balance_preparation_documents/43/e472f606176f4e50b42908011c193f22.pdf": [
+        4204,
+        "34808e63c4b3e3c62ce99d9a08d4db199aab34f7a43838c3eb78f303be1d32cf"
+      ],
+      "2/balance_preparation_documents/44/bad7894103ac4fc9a08d5ffa844df3af.pdf": [
+        3163,
+        "1697efc2c732cadc7e6092ce4b56f92af4cc31fdc5eccd3604731c5152e43129"
+      ],
+      "3/ecriture/16/preuve452_20a10e42.pdf": [
+        1449,
+        "a0dbecf3445f2212606daedcb2255cb02686129b254566e740cf59618b145960"
+      ],
+      "3/ecriture/16/preuve452_4b2c8106.pdf": [
+        1471,
+        "0119f116eaee508dbc975f7c2be5ec90dfa43dffbb8959408abec2d5eb3915e3"
+      ],
+      "3/ecriture/17/preuve452_34da9def.pdf": [
+        1449,
+        "a0dbecf3445f2212606daedcb2255cb02686129b254566e740cf59618b145960"
+      ]
+    },
+    "acl": {
+      "relations": {
+        "nombre": 1350,
+        "sha256": "e174eaa8a016a8580beb9eedb225001a759000b73ba77bcbb4e219ebf47305d5"
+      },
+      "colonnes": {
+        "nombre": 32,
+        "sha256": "9b989521801d2af245e4a14d37ebbce041dfcb73ca44caa0b5d7a6238e391af6"
+      },
+      "fonctions": {
+        "nombre": 190,
+        "sha256": "bc9ddf947c9aed5d542a86d370e3540d0266322dcea2e9d3d92bc3cd1f153baa"
+      },
+      "schemas": {
+        "nombre": 4,
+        "sha256": "2a1643e5ff70a95419fcf697212dd759787847418ef19b0181fa1ac3f7d8da72"
+      },
+      "defauts": {
+        "nombre": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "schema_donnees_acl_sequences_identiques": true,
+    "fec2025_octets_identiques": true,
+    "refus_fec_brouillon_identique": true,
+    "decision091_et_pv_restitues": true,
+    "reprise_ecriture_append_only": true,
+    "role_runtime": [
+      "hisabpro",
+      "hisabpro",
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "source_preservee": true,
+    "dump_sha256": "ce3756b3289a284ea848f73bb6909b898dd7568bd330da835c1edea3889d1e39",
+    "candidat_produit_conserve": true,
+    "nb_sources_produit": 462,
+    "nb_fichiers_restaures": 8,
+    "perimetre": "Banc104 sur PostgreSQL natif éphémère nonce ; restauration réelle pg_dump/pg_restore, données fictives. Pas restauration du PostgreSQL utilisateur. Pas qualification individuelle automatique des fiches EXP du cahier."
+  },
+  "navigation": [
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_un9_q7u5",
+      "nonce": "83443774f7484ebaa1372405c7fdd8f9",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 1440,
+      "cas": [],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "navigation841": {
+        "chargements": [
+          {
+            "tour": 1,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 1,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 1,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 1,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 1,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 1,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 1,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/livre-inventaire",
+            "statut": 200
+          }
+        ],
+        "nb": 56,
+        "tous_200": true,
+        "polices_chargees": true,
+        "temoin_comptable_conserve": true,
+        "retry": 0,
+        "timeout_navigation_ms": 15000,
+        "limite": "Lecture sur société fictive et témoin100MAD ;ne reproduit pas toutes les saisies du scénario annuel ni la cause de l’arrêt mobile historique."
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_un9_q7u5",
+      "nonce": "83443774f7484ebaa1372405c7fdd8f9",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 390,
+      "cas": [],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "navigation841": {
+        "chargements": [
+          {
+            "tour": 1,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 1,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 1,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 1,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 1,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 1,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 1,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 2,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 3,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 4,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 5,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 6,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 7,
+            "route": "/livre-inventaire",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/cloture",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/factures",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/avoirs",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/journal",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/lettrage",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/rapprochement",
+            "statut": 200
+          },
+          {
+            "tour": 8,
+            "route": "/livre-inventaire",
+            "statut": 200
+          }
+        ],
+        "nb": 56,
+        "tous_200": true,
+        "polices_chargees": true,
+        "temoin_comptable_conserve": true,
+        "retry": 0,
+        "timeout_navigation_ms": 15000,
+        "limite": "Lecture sur société fictive et témoin100MAD ;ne reproduit pas toutes les saisies du scénario annuel ni la cause de l’arrêt mobile historique."
+      }
+    }
+  ],
+  "candidat_sha256": "ad8ad5ce20d93375890c41e2da69d5ed9435b3dd71761ef08d714007ba451a24",
+  "build": {
+    "campagne": "build835",
+    "code": 0,
+    "produit_inchange_depuis": 835
+  },
+  "suivi_cahier": {
+    "Réussi": 158,
+    "Partiel": 5,
+    "Non qualifié par fiche": 99,
+    "Bloqué (source)": 10
+  },
+  "limites": "Incident initial navigation mobile839 conservé, cause indéterminée ;112navigations supplémentaires sans récidive ne démontrent pas une correction. Restauration native isolée du banc104, pas de PostgreSQL utilisateur. Recette humaine et production non validées. RH/paie/EDI différés."
+}

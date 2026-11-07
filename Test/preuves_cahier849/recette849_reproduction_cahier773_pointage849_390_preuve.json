@@ -1,0 +1,11 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_zaj3mwj1",
+  "nonce": "2858881a9c2549268d053c8b5e65a160",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError(\"assert 200 == 409\\n +  where 200 = <Response url='http://127.0.0.1:54062/api/rapprochement/3/rapprocher' request=<Request url='http://127.0.0.1:54062/api/rapprochement/3/rapprocher' method='POST'>>.status\\n +    where <Response url='http://127.0.0.1:54062/api/rapprochement/3/rapprocher' request=<Request url='http://127.0.0.1:54062/api/rapprochement/3/rapprocher' method='POST'>> = <playwright._impl._sync_base.EventInfo object at 0x0000017A9E8989D0>.value\")",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier."
+}

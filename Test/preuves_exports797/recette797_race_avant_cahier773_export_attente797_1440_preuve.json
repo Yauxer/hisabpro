@@ -1,0 +1,11 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_8qlpdtzr",
+  "nonce": "76c03c5408e84a41bfbaffeec32c7391",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError('Locator expected to be disabled\\nActual value: enabled \\nCall log:\\n  - Expect \"to_be_disabled\" get_by_role(\"button\", name=\"Exporter CSV\", exact=True) with timeout 5000ms\\n  - waiting for get_by_role(\"button\", name=\"Exporter CSV\", exact=True)\\n    13 × locator resolved to <button class=\"Journal_btnSec\">…</button>\\n       - unexpected value \"enabled\"\\n\\nAria snapshot:\\n- button \"Exporter CSV\"')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier."
+}

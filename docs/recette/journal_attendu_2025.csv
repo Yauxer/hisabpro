@@ -1,0 +1,119 @@
+﻿reference_recette;date;journal;libelle;compte;debit;credit;tiers
+CAP-01;2025-01-01;BQ;Apport en capital versé;5141;200000.00;0.00;
+CAP-01;2025-01-01;BQ;Apport en capital versé;1111;0.00;200000.00;
+IMMO-ACQ;2025-01-01;AC;Acquisition ordinateur de recette;2355;24000.00;0.00;
+IMMO-ACQ;2025-01-01;AC;Acquisition ordinateur de recette;34551;4800.00;0.00;
+IMMO-ACQ;2025-01-01;AC;Acquisition ordinateur de recette;4481;0.00;28800.00;F-IMMO
+IMMO-PAY;2025-01-01;BQ;Paiement acquisition (généré avec IMMO-ACQ);4481;28800.00;0.00;F-IMMO
+IMMO-PAY;2025-01-01;BQ;Paiement acquisition (généré avec IMMO-ACQ);5141;0.00;28800.00;
+AC-F01;2025-01-04;BQ;Acompte fournisseur marchandises;3411;6000.00;0.00;F-MARCH
+AC-F01;2025-01-04;BQ;Acompte fournisseur marchandises;5141;0.00;6000.00;
+AC-F01-IMP;2025-01-05;OD;Imputation acompte fournisseur sur ACH-01;4411;6000.00;0.00;F-MARCH
+AC-F01-IMP;2025-01-05;OD;Imputation acompte fournisseur sur ACH-01;3411;0.00;6000.00;F-MARCH
+ACH-01;2025-01-05;AC;Achat 100 marchandises à 100HT;6111;10000.00;0.00;
+ACH-01;2025-01-05;AC;Achat 100 marchandises à 100HT;34552;2000.00;0.00;
+ACH-01;2025-01-05;AC;Achat 100 marchandises à 100HT;4411;0.00;12000.00;F-MARCH
+ACH-01-PAY;2025-01-07;BQ;Solde fournisseur ACH-01;4411;6000.00;0.00;F-MARCH
+ACH-01-PAY;2025-01-07;BQ;Solde fournisseur ACH-01;5141;0.00;6000.00;
+ACH-02;2025-01-10;AC;Achat 100 marchandises à 120HT;6111;12000.00;0.00;
+ACH-02;2025-01-10;AC;Achat 100 marchandises à 120HT;34552;2400.00;0.00;
+ACH-02;2025-01-10;AC;Achat 100 marchandises à 120HT;4411;0.00;14400.00;F-MARCH
+VENTE-01;2025-01-20;VT;Vente 100 marchandises à 250HT via devis/BC/BL;3421;30000.00;0.00;C-MARCH
+VENTE-01;2025-01-20;VT;Vente 100 marchandises à 250HT via devis/BC/BL;7111;0.00;25000.00;
+VENTE-01;2025-01-20;VT;Vente 100 marchandises à 250HT via devis/BC/BL;4455;0.00;5000.00;
+VENTE-01-PAY;2025-01-25;BQ;Paiement client partiel;5141;10000.00;0.00;
+VENTE-01-PAY;2025-01-25;BQ;Paiement client partiel;3421;0.00;10000.00;C-MARCH
+CHQ-01;2025-01-26;AE;Chèque client 20000 en portefeuille;51111;20000.00;0.00;
+CHQ-01;2025-01-26;AE;Chèque client 20000 en portefeuille;3421;0.00;20000.00;C-MARCH
+TVA-01;2025-01-31;OD;Crédit TVA janvier 1 800;4455;5000.00;0.00;
+TVA-01;2025-01-31;OD;Crédit TVA janvier 1 800;3456;1800.00;0.00;
+TVA-01;2025-01-31;OD;Crédit TVA janvier 1 800;34551;0.00;4800.00;
+TVA-01;2025-01-31;OD;Crédit TVA janvier 1 800;34552;0.00;2000.00;
+CHQ-01-REM;2025-02-01;AE;Remise chèque en banque;51112;20000.00;0.00;
+CHQ-01-REM;2025-02-01;AE;Remise chèque en banque;51111;0.00;20000.00;
+CHQ-01-ENC;2025-02-05;BQ;Chèque encaissé;5141;20000.00;0.00;
+CHQ-01-ENC;2025-02-05;BQ;Chèque encaissé;51112;0.00;20000.00;
+ACH-SERVICE;2025-02-10;AC;Prestation fournisseur 12000HT;6125;12000.00;0.00;
+ACH-SERVICE;2025-02-10;AC;Prestation fournisseur 12000HT;34552;2400.00;0.00;
+ACH-SERVICE;2025-02-10;AC;Prestation fournisseur 12000HT;4411;0.00;14400.00;F-SERVICE
+AV-01;2025-02-10;AV;Retour 10 unités après règlement intégral VENTE-01;7111;2500.00;0.00;
+AV-01;2025-02-10;AV;Retour 10 unités après règlement intégral VENTE-01;4455;500.00;0.00;
+AV-01;2025-02-10;AV;Retour 10 unités après règlement intégral VENTE-01;3421;0.00;3000.00;C-MARCH
+ACH-SERVICE-PAY;2025-02-15;BQ;Règlement fournisseur services;4411;14400.00;0.00;F-SERVICE
+ACH-SERVICE-PAY;2025-02-15;BQ;Règlement fournisseur services;5141;0.00;14400.00;
+TVA-02;2025-02-28;OD;Augmentation crédit TVA février 2 900;3456;2900.00;0.00;
+TVA-02;2025-02-28;OD;Augmentation crédit TVA février 2 900;4455;0.00;500.00;
+TVA-02;2025-02-28;OD;Augmentation crédit TVA février 2 900;34552;0.00;2400.00;
+EFF-F01;2025-03-01;AE;Effet fournisseur 14400;4411;14400.00;0.00;F-MARCH
+EFF-F01;2025-03-01;AE;Effet fournisseur 14400;4415;0.00;14400.00;F-MARCH
+VENTE-02;2025-03-01;VT;Vente 50 marchandises à 300HT;3421;18000.00;0.00;C-MARCH
+VENTE-02;2025-03-01;VT;Vente 50 marchandises à 300HT;7111;0.00;15000.00;
+VENTE-02;2025-03-01;VT;Vente 50 marchandises à 300HT;4455;0.00;3000.00;
+VENTE-02-PAY;2025-03-05;BQ;Virement client après imputation crédit AV01;5141;5000.00;0.00;
+VENTE-02-PAY;2025-03-05;BQ;Virement client après imputation crédit AV01;3421;0.00;5000.00;C-MARCH
+EFF-F01-PAY;2025-03-20;BQ;Paiement effet fournisseur;4415;14400.00;0.00;F-MARCH
+EFF-F01-PAY;2025-03-20;BQ;Paiement effet fournisseur;5141;0.00;14400.00;
+TVA-03;2025-03-31;OD;Consommation crédit TVA mars 600;4455;3000.00;0.00;
+TVA-03;2025-03-31;OD;Consommation crédit TVA mars 600;34552;0.00;2400.00;
+TVA-03;2025-03-31;OD;Consommation crédit TVA mars 600;3456;0.00;600.00;
+EFF-C01;2025-04-01;AE;Effet client 10000;3425;10000.00;0.00;C-MARCH
+EFF-C01;2025-04-01;AE;Effet client 10000;3421;0.00;10000.00;C-MARCH
+EFF-C01-REM;2025-05-15;AE;Remise effet client;51132;10000.00;0.00;
+EFF-C01-REM;2025-05-15;AE;Remise effet client;3425;0.00;10000.00;C-MARCH
+EFF-C01-ENC;2025-05-16;BQ;Encaissement effet avec frais 10;5141;9990.00;0.00;
+EFF-C01-ENC;2025-05-16;BQ;Encaissement effet avec frais 10;61472;10.00;0.00;
+EFF-C01-ENC;2025-05-16;BQ;Encaissement effet avec frais 10;51132;0.00;10000.00;
+AC-C01;2025-06-01;BQ;Acompte client prestations 24000TTC;5141;24000.00;0.00;
+AC-C01;2025-06-01;BQ;Acompte client prestations 24000TTC;4421;0.00;24000.00;C-SERVICE
+AC-C01-IMP;2025-06-15;OD;Imputation acompte client;4421;24000.00;0.00;C-SERVICE
+AC-C01-IMP;2025-06-15;OD;Imputation acompte client;3421;0.00;24000.00;C-SERVICE
+VENTE-SERVICE;2025-06-15;VT;Prestation client 120000HT;3421;144000.00;0.00;C-SERVICE
+VENTE-SERVICE;2025-06-15;VT;Prestation client 120000HT;7124;0.00;120000.00;
+VENTE-SERVICE;2025-06-15;VT;Prestation client 120000HT;4455;0.00;24000.00;
+TVA-06;2025-06-30;OD;TVA nette juin 19 900;4455;24000.00;0.00;
+TVA-06;2025-06-30;OD;TVA nette juin 19 900;3456;0.00;4100.00;
+TVA-06;2025-06-30;OD;TVA nette juin 19 900;4456;0.00;19900.00;
+VENTE-SERVICE-PAY;2025-06-30;BQ;Solde client prestation;5141;120000.00;0.00;
+VENTE-SERVICE-PAY;2025-06-30;BQ;Solde client prestation;3421;0.00;120000.00;C-SERVICE
+TVA-06-PAY;2025-07-20;BQ;Paiement TVA juin 19900;4456;19900.00;0.00;
+TVA-06-PAY;2025-07-20;BQ;Paiement TVA juin 19900;5141;0.00;19900.00;
+INT-PPRF;2025-11-30;BQ;Intérêts bancaires selon attestation fictive;5141;800.00;0.00;
+INT-PPRF;2025-11-30;BQ;Intérêts bancaires selon attestation fictive;3453;200.00;0.00;
+INT-PPRF;2025-11-30;BQ;Intérêts bancaires selon attestation fictive;7381;0.00;1000.00;
+ASS-01;2025-12-01;BQ;Assurance 12000 couvrant décembre 2025 à novembre 2026;6134;12000.00;0.00;
+ASS-01;2025-12-01;BQ;Assurance 12000 couvrant décembre 2025 à novembre 2026;5141;0.00;12000.00;
+REF-002;2025-12-02;AC;Achat de contrôle référence littérale 002;6125;200.00;0.00;
+REF-002;2025-12-02;AC;Achat de contrôle référence littérale 002;34552;40.00;0.00;
+REF-002;2025-12-02;AC;Achat de contrôle référence littérale 002;4411;0.00;240.00;F-CONTROLE
+REF-02;2025-12-02;AC;Achat de contrôle référence littérale 02;6125;200.00;0.00;
+REF-02;2025-12-02;AC;Achat de contrôle référence littérale 02;34552;40.00;0.00;
+REF-02;2025-12-02;AC;Achat de contrôle référence littérale 02;4411;0.00;240.00;F-CONTROLE
+VENTE-IMPAYEE;2025-12-10;VT;Prestation 12000HT laissée impayée;3421;14400.00;0.00;C-IMPAYE
+VENTE-IMPAYEE;2025-12-10;VT;Prestation 12000HT laissée impayée;7124;0.00;12000.00;
+VENTE-IMPAYEE;2025-12-10;VT;Prestation 12000HT laissée impayée;4455;0.00;2400.00;
+CHQ-REJET;2025-12-12;AE;Chèque 2000 provisoire sur facture impayée;51111;2000.00;0.00;
+CHQ-REJET;2025-12-12;AE;Chèque 2000 provisoire sur facture impayée;3421;0.00;2000.00;C-IMPAYE
+CHQ-REJET-INV;2025-12-15;OD;Rejet documenté chèque sans frais;3421;2000.00;0.00;C-IMPAYE
+CHQ-REJET-INV;2025-12-15;OD;Rejet documenté chèque sans frais;51111;0.00;2000.00;
+AMENDE;2025-12-20;BQ;Amende fiscale documentée 500;6583;500.00;0.00;
+AMENDE;2025-12-20;BQ;Amende fiscale documentée 500;5141;0.00;500.00;
+AMORT-2025;2025-12-31;AM;Dotation annuelle ordinateur 4800;61935;4800.00;0.00;
+AMORT-2025;2025-12-31;AM;Dotation annuelle ordinateur 4800;28355;0.00;4800.00;
+CCA-2025;2025-12-31;OD;Charge constatée d'avance 11000;3491;11000.00;0.00;
+CCA-2025;2025-12-31;OD;Charge constatée d'avance 11000;6134;0.00;11000.00;
+DEPR-CLIENT;2025-12-31;OD;Dépréciation créance 2000;61964;2000.00;0.00;
+DEPR-CLIENT;2025-12-31;OD;Dépréciation créance 2000;3942;0.00;2000.00;
+FNP-2025;2025-12-31;OD;Facture non parvenue 3000;6125;3000.00;0.00;
+FNP-2025;2025-12-31;OD;Facture non parvenue 3000;4417;0.00;3000.00;
+FRAIS-BQ;2025-12-31;BQ;Frais bancaires 60 sans TVA selon avis;61473;60.00;0.00;
+FRAIS-BQ;2025-12-31;BQ;Frais bancaires 60 sans TVA selon avis;5141;0.00;60.00;
+IS-2025;2025-12-31;OD;IS attendu à constater une seule fois;6701;23420.25;0.00;
+IS-2025;2025-12-31;OD;IS attendu à constater une seule fois;4453;0.00;23420.25;
+PPRF-IMP;2025-12-31;OD;Imputation documentaire retenue 200;4453;200.00;0.00;
+PPRF-IMP;2025-12-31;OD;Imputation documentaire retenue 200;3453;0.00;200.00;
+PROV-RISQUE;2025-12-31;OD;Provision durable litige 1500;61955;1500.00;0.00;
+PROV-RISQUE;2025-12-31;OD;Provision durable litige 1500;1518;0.00;1500.00;
+STOCK-FIN;2025-12-31;OD;Stock final 60 unités à CMUP 110;3111;6600.00;0.00;
+STOCK-FIN;2025-12-31;OD;Stock final 60 unités à CMUP 110;6114;0.00;6600.00;
+TVA-12;2025-12-31;OD;TVA nette décembre 2 400;4455;2400.00;0.00;
+TVA-12;2025-12-31;OD;TVA nette décembre 2 400;4456;0.00;2400.00;

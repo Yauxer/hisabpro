@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="55.895" timestamp="2026-10-24T22:14:30.244221+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_factures_reponse_tardive795_isole" name="test_795_facture_creee_survit_get_ancien_puis_suppression_brouillon[1440]" time="51.852"><failure message="AssertionError: Locator expected to have count '1'&#10;Actual value: 0 &#10;Call log:&#10;  - Expect &quot;to_have_count&quot; locator(&quot;tbody tr&quot;).filter(has_text=&quot;Client Services Recette&quot;) with timeout 5000ms&#10;  - waiting for locator(&quot;tbody tr&quot;).filter(has_text=&quot;Client Services Recette&quot;)&#10;    14 × locator resolved to 0 elements&#10;       - unexpected value &quot;0&quot;">application = {'api_url': 'http://127.0.0.1:50783', 'web_url': 'http://127.0.0.1:50784', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_tvl57k36'), 'nonce': '1beb7fa1df3e493f8b4530138732fa20', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette795_race_avant/test_795_facture_creee_survit_0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_795_facture_creee_survit_get_ancien_puis_suppression_brouillon(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'race_facture795') as (api,page,sid,preuve):
+      t=next(t for t in DATA['tiers'] if t['code']=='C-SERVICE');tier=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'client','compte_client':'3421'}),201);a=next(a for a in DATA['articles'] if a['code']=='S-VTE');ok(api.post('/api/articles',json={'code':a['code'],'designation':a['designation'],'prix_vente_ht':a['prix_vente'],'tva':20,'is_stockable':False,'compte_vente':'7124'}),201)
+      capture={}
+      def retarder(route):
+       if route.request.method=='GET' and not capture.get('capturefaite'):
+        capture['capturefaite']=True;rep=route.fetch();assert rep.status==200;capture['route']=route;capture['reponse']=rep;capture['avant']=rep.json();assert capture['avant']==[]
+       else:route.continue_()
+      page.route('**/api/factures?**',retarder);page.goto(application['web_url']+'/factures');page.get_by_role('button',name='Nouvelle facture',exact=True).click();m=page.get_by_role('dialog',name='Nouvelle facture',exact=True);champ(m,'Date *').fill('2025-06-15');m.get_by_placeholder('Rechercher un',exact=False).fill(tier['nom']);m.get_by_text(tier['nom'],exact=True).click();m.get_by_placeholder('N° BC, bon de commande...').fill('RACE-FACTURE795');m.get_by_label('Échéance de la nouvelle facture',exact=True).fill('2025-06-30');m.get_by_placeholder('Description ou article...').fill(a['designation']);m.locator('li').filter(has_text=a['designation']).click();m.get_by_role('button',name='Enregistrer en brouillon',exact=False).click()
+      with page.expect_response(lambda r:r.url.endswith('/api/factures') and r.request.method=='POST') as r:m.get_by_role('button',name='Enregistrer le brouillon',exact=True).click()
+      f=ok(r.value,201);m.wait_for(state='hidden');apres=ok(api.get('/api/factures',params={'exercice':2025}));assert len(apres)==1 and apres[0]['id']==f['id'];preuve['race_facture795']={'get_reel_avant':capture['avant'],'get_sha256':hashlib.sha256(capture['reponse'].body()).hexdigest(),'post_reel201_id':f['id'],'api_reelle_apres_ids':[x['id'] for x in apres],'retard':'Transport GET réel retenu, données non modifiées ;POST etDELETE réels. Aucun calcul métier simulé.'}
+&gt;     capture['route'].fulfill(response=capture['reponse']);row=page.locator('tbody tr').filter(has_text=tier['nom']);expect(row).to_have_count(1);preuve['race_facture795']['creation_preservee_apres_get_tardif']=True
+                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to have count '1'
+E     Actual value: 0 
+E     Call log:
+E       - Expect "to_have_count" locator("tbody tr").filter(has_text="Client Services Recette") with timeout 5000ms
+E       - waiting for locator("tbody tr").filter(has_text="Client Services Recette")
+E         14 × locator resolved to 0 elements
+E            - unexpected value "0"
+
+Test\test_e2e_factures_reponse_tardive795_isole.py:23: AssertionError</failure></testcase></testsuite></testsuites>

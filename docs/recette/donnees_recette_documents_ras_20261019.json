@@ -1,0 +1,478 @@
+{
+  "version": "649-revision2-653-20261019",
+  "revision": {
+    "lot": 653,
+    "version": 2,
+    "cumul_mensuel_externe_suppose": null,
+    "raison": "Remplace le petit montant initial par une facture et une quote-part supérieures à5000MAD, sans supposer un cumul mensuel non renseigné. Les autres qualifications restent déclarées pour le laboratoire."
+  },
+  "perimetre": "Complément aux guides RAS573/593 et documents647 ; pas un cahier annuel de remplacement.",
+  "societe": {
+    "nom": "SOCIETE FICTIVE DOC649 SARL",
+    "devise": "MAD",
+    "forme_juridique": "SARL",
+    "regime_fiscal": "is",
+    "regime_tva": "encaissement",
+    "capital_social": 100000,
+    "prefixe_facture": "DOC649"
+  },
+  "identifiants_legaux": "ICE, IF, RC non renseignés. Conserver les avertissements ; aucune identité officielle fictivement utilisable.",
+  "administrateur": {
+    "email": "docs649@example.com",
+    "mot_de_passe": "DocumentsRecette649!"
+  },
+  "comptable": {
+    "email": "compta649@example.com",
+    "mot_de_passe": "DocumentsRecette649!"
+  },
+  "lecteur": {
+    "email": "lecture649@example.com",
+    "mot_de_passe": "DocumentsRecette649!"
+  },
+  "exercice": {
+    "annee": 2026,
+    "date_debut": "2026-01-01",
+    "date_fin": "2026-12-31"
+  },
+  "date_operation": "2026-10-19",
+  "fournisseur": "FOURNISSEUR FICTIF DOC649",
+  "article": "SERVICE DOC649",
+  "comptes": {
+    "capital": "1111",
+    "banque": "5141",
+    "achat": "6111",
+    "tva_achat": "34552",
+    "fournisseur": "4411",
+    "capture_choisie": "4457"
+  },
+  "references": {
+    "capital": "CAP-DOC649",
+    "fournisseur": "FOURN-DOC649",
+    "virement": "VIR-DOC649",
+    "ras": "RAS-DOC649",
+    "complement": "COMP-DOC649"
+  },
+  "facture": {
+    "date": "2026-10-19",
+    "type": "achat",
+    "reference": "FOURN-DOC649",
+    "lignes": [
+      {
+        "description": "SERVICE DOC649",
+        "quantite": 1,
+        "prix_unitaire": 10000,
+        "tva": 20
+      }
+    ],
+    "nature_tva_achat": "charge",
+    "tva_deductible_pct": 100
+  },
+  "simulation": {
+    "date_paiement": "2026-10-19",
+    "payeur": "pm_privee_assujettie",
+    "prestataire": "pp_assujettie",
+    "prestation_liste_b": true,
+    "exclusion": "aucune_apres_controle",
+    "attestation": "presentee",
+    "date_attestation": "2026-09-01",
+    "reference_attestation": "ATT-FICTIVE-DOC649",
+    "montant_paiement_ttc": "6000.00",
+    "tva_paiement": "1000.00"
+  },
+  "justification_quote_part": "VENTILATION FICTIVE DOC649 : 5000 HT + 1000 TVA = 6000 TTC",
+  "mois_preparation": "2026-11",
+  "motif_annulation": "ANNULATION FICTIVE DOC649 POUR RECETTE",
+  "document_fictif": "DOCUMENT_FICTIF_649.pdf",
+  "qualification": "Reprise du cas de laboratoire déjà documenté573 : faits explicitement supposés pour tester le logiciel, à ne pas utiliser comme attestation ou qualification fiscale réelle. Compte4457 choisi pour le jeu, aucune affectation obligatoire imposée.",
+  "oracle": {
+    "capital": "100000.00",
+    "ht": "10000.00",
+    "tva": "2000.00",
+    "ttc": "12000.00",
+    "quote_part_ttc": "6000.00",
+    "tva_quote_part": "1000.00",
+    "ras": "750.00",
+    "tresorerie": "5250.00",
+    "avant_annulation": {
+      "pieces": 4,
+      "lignes": 9,
+      "debit": "118000.00",
+      "credit": "118000.00",
+      "soldes_cents": {
+        "5141": 9475000,
+        "1111": -10000000,
+        "6111": 1000000,
+        "34552": 200000,
+        "4411": -600000,
+        "4457": -75000
+      },
+      "banque": "94750.00",
+      "fournisseur": "6000.00",
+      "compte_capture": "750.00",
+      "resultat_avant_impot": "-10000.00",
+      "actif": "96750.00",
+      "passif": "96750.00"
+    },
+    "apres_annulation": {
+      "pieces": 6,
+      "lignes": 13,
+      "debit": "124000.00",
+      "credit": "124000.00",
+      "soldes_cents": {
+        "5141": 10000000,
+        "1111": -10000000,
+        "6111": 1000000,
+        "34552": 200000,
+        "4411": -1200000,
+        "4457": 0
+      },
+      "banque": "100000.00",
+      "fournisseur": "12000.00",
+      "compte_capture": "0.00",
+      "resultat_avant_impot": "-10000.00",
+      "actif": "102000.00",
+      "passif": "102000.00"
+    },
+    "pieces": [
+      {
+        "phase": "Capital",
+        "journal": "BQ",
+        "lignes": [
+          {
+            "compte": "5141",
+            "debit_cents": 10000000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "1111",
+            "debit_cents": 0,
+            "credit_cents": 10000000
+          }
+        ]
+      },
+      {
+        "phase": "Achat",
+        "journal": "AC",
+        "lignes": [
+          {
+            "compte": "6111",
+            "debit_cents": 1000000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "34552",
+            "debit_cents": 200000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "4411",
+            "debit_cents": 0,
+            "credit_cents": 1200000
+          }
+        ]
+      },
+      {
+        "phase": "Règlement",
+        "journal": "BQ",
+        "lignes": [
+          {
+            "compte": "4411",
+            "debit_cents": 525000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "5141",
+            "debit_cents": 0,
+            "credit_cents": 525000
+          }
+        ]
+      },
+      {
+        "phase": "Capture RAS",
+        "journal": "OD",
+        "lignes": [
+          {
+            "compte": "4411",
+            "debit_cents": 75000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "4457",
+            "debit_cents": 0,
+            "credit_cents": 75000
+          }
+        ]
+      },
+      {
+        "phase": "Annulation règlement",
+        "journal": "BQ",
+        "lignes": [
+          {
+            "compte": "5141",
+            "debit_cents": 525000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "4411",
+            "debit_cents": 0,
+            "credit_cents": 525000
+          }
+        ]
+      },
+      {
+        "phase": "Annulation RAS",
+        "journal": "OD",
+        "lignes": [
+          {
+            "compte": "4457",
+            "debit_cents": 75000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "4411",
+            "debit_cents": 0,
+            "credit_cents": 75000
+          }
+        ]
+      }
+    ],
+    "ajout_document": {
+      "pieces": 0,
+      "lignes": 0,
+      "debit": "0.00",
+      "credit": "0.00"
+    }
+  },
+  "limites": [
+    {
+      "id": "RDO-L01",
+      "statut": "Bloqué",
+      "objet": "Déclaration/justificatifs officiels, imputation et reversement",
+      "action": "Obtenir les spécifications applicables ; cet ajout documentaire ne les réalise pas."
+    },
+    {
+      "id": "RDO-L02",
+      "statut": "Non testé",
+      "objet": "Recette humaine et mise en production",
+      "action": "Attendre le retour utilisateur ; aucun résultat humain ou déploiement prévalidé."
+    }
+  ],
+  "cas": [
+    {
+      "id": "RDO-001",
+      "module": "Préparation",
+      "objectif": "Créer le dossier fictif",
+      "prerequis": "Environnement de test isolé, migrations existantes dont083/099 appliquées par administrateur ; aucune base réelle.",
+      "donnees": "SOCIETE FICTIVE DOC649 SARL ; admin docs649@example.com / DocumentsRecette649! ; MAD ; SARL ; capital 100000 ; IS ; TVA encaissement ; exercice 2026 du 01/01 au 31/12 ; préfixeDOC649. ICE/IF/RC vides.",
+      "actions": "Créer le compte et la société. Dans Paramètres, renseigner les valeurs ci-dessus. Dans Exercices sélectionner2026 ouvert. Créer les utilisateurs compta649@example.com (Comptable) et lecture649@example.com (Consultation seule), même mot de passe. Créer FOURNISSEUR FICTIF DOC649 de type Fournisseur. Vérifier le plan et les comptes du jeu.",
+      "attendu": "Société/exercice et rôles sélectionnables ; avertissements d’identifiants conservés ; aucun mouvement financier créé par ce paramétrage.",
+      "ecritures": "Aucune écriture.",
+      "fiscal": "Aucun dépôt, versement ou crédit fiscal validé par ce cas. Montants de laboratoire ; voir périmètre.",
+      "controles": "Société de test et année 2026 visibles ; aucune identité légale inventée.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture Paramètres, exercice et rôles.",
+      "preuves": "",
+      "observations": "Recette humaine à effectuer ; utiliser exclusivement la société fictive."
+    },
+    {
+      "id": "RDO-002",
+      "module": "Préparation",
+      "objectif": "Comptabiliser capital et achat",
+      "prerequis": "RDO-001 ; comptes1111/5141/6111/34552/4411 disponibles.",
+      "donnees": "Capital 02/01/2026 : CAP-DOC649,100000. Achat 19/10/2026 : FOURN-DOC649, SERVICE DOC649, quantité 1, prix HT 10000, TVA 20%, charge et déduction 100%. Prorata laboratoire 100%.",
+      "actions": "Dans Déclaration TVA, régler Prorata annuel de déduction (%) à1000 et crédit d’ouverture à0, puis Enregistrer. Dans Journal créer une écriture BQ : débit5141=100000, crédit1111=100000 ; référenceCAP-DOC649 et libellé Capital fictif DOC649. Valider. Dans Factures choisir Achat, le fournisseur du jeu et 19/10/2026. Saisir la référence fournisseur et la ligne ci-dessus. Valider puis comptabiliser. Dans Journal contrôler et valider l’écriture d’achat.",
+      "attendu": "Achat 10000 HT+2000 TVA=12000 TTC ; numéro attribué DOC649-2026-001 à noter ; référence fournisseur FOURN-DOC649 conservée.",
+      "ecritures": "BQ : D 5141 = 100000 / C 1111 = 100000. AC : D 6111 = 10000 + D 34552 = 2000 / C 4411 = 12000.",
+      "fiscal": "Aucun dépôt, versement ou crédit fiscal validé par ce cas. Montants de laboratoire ; voir périmètre.",
+      "controles": "Deux pièces/cinq lignes ; D = C = 11200. Ne pas inventer un paiement à cette étape.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Facture, deux pièces du Journal et leurs références.",
+      "preuves": "",
+      "observations": "Recette humaine à effectuer ; utiliser exclusivement la société fictive."
+    },
+    {
+      "id": "RDO-003",
+      "module": "Préparation",
+      "objectif": "Préparer la capture partielle et son OD",
+      "prerequis": "RDO-002 ; faits de laboratoire explicitement supposés, ne représentent pas des pièces fiscales réelles.",
+      "donnees": "19/10/2026, virement VIR-DOC649=5250. Quote-part TTC 6000, TVA 1000. Payeur personne morale privée assujettie ; prestataire personne physique assujettie ; liste B oui ; aucune exclusion après contrôle ; attestation présentée01/09/2026, ATT-FICTIVE-DOC649. RAS-DOC649, compte 4457.",
+      "actions": "Depuis Règlements enregistrer5250 sur la facture, en cochant la comptabilisation. Ouvrir Consulter ou déclarer la RAS → RAS TVA guidée. Dans Assistant renseigner les faits ci-dessus et simuler. Renseigner VENTILATION FICTIVE DOC649 : 5000 HT + 1000 TVA = 6000 TTC, référenceRAS-DOC649 et compte 4457. Vérifier l’aperçu, confirmer les pièces supposées du jeu puis préparer la capture. Valider les écritures correspondantes dans Journal.",
+      "attendu": "Simulation du cas existant : 750 de retenue,5250 de trésorerie et mois prévu2026-11. Facture encore ouverte 6000. Quatre pièces/neuf lignes au total ; banque 94750.",
+      "ecritures": "BQ : D 4411 = 5250 / C 5141 = 5250. OD : D 4411 = 750 / C 4457 = 750. D = C = 118000 cumulés.",
+      "fiscal": "Aucun dépôt, versement ou crédit fiscal validé par ce cas. Montants de laboratoire ; voir périmètre.",
+      "controles": "Retenue 750 distincte du virement5250. Dossier et OD conservés ; aucun versement fiscal enregistré.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Aperçu, dossier RAS, deux écritures et reste6000.",
+      "preuves": "",
+      "observations": "Recette humaine à effectuer ; utiliser exclusivement la société fictive."
+    },
+    {
+      "id": "RDO-004",
+      "module": "Documents RAS",
+      "objectif": "Joindre et relire le premier document",
+      "prerequis": "RDO-003. Utiliser DOCUMENT_FICTIF_649.pdf fourni, marqué essai uniquement.",
+      "donnees": "Registre année 2026 ou préparation novembre 2026 ; capture RAS-DOC649 ; OD de capture créée en RDO-003.",
+      "actions": "Dans Déclaration TVA ouvrir le registre 2026 et la capture, puis Documents liés aux OD. Dans Capture · OD, cliquer Joindre un fichier et choisir le PDF fourni. Attendre son apparition sans F5. Cliquer Télécharger et ouvrir le document reçu.",
+      "attendu": "Un fichier apparaît avec suffixe attribué. Sa référence documentaire et sa date sont visibles. Le PDF conserve la mention fictive. La référence d’attestation du dossier n’est pas remplacée par ce fichier.",
+      "ecritures": "Aucune écriture nouvelle ;4 pièces/9 lignes et D = C = 118000 inchangés.",
+      "fiscal": "Aucun dépôt, versement ou crédit fiscal validé par ce cas. Montants de laboratoire ; voir périmètre.",
+      "controles": "Montants, OD et dossier099 d’origine inchangés. Fichier de la bonne société et bonne OD.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture avant/après et PDF téléchargé.",
+      "preuves": "",
+      "observations": "Recette humaine à effectuer ; utiliser exclusivement la société fictive."
+    },
+    {
+      "id": "RDO-005",
+      "module": "Documents RAS",
+      "objectif": "Conserver deux fichiers homonymes",
+      "prerequis": "RDO-004.",
+      "donnees": "DOCUMENT_FICTIF_649.pdf envoyé une seconde fois sur la même OD.",
+      "actions": "Cliquer à nouveau Joindre un fichier dans la même section et sélectionner le même PDF. Attendre l’envoi ; relire les deux noms puis télécharger chacun.",
+      "attendu": "Deux noms physiques distincts avec suffixes ; aucun écrasement. Deux compléments et deux fichiers sur l’OD de capture.",
+      "ecritures": "Aucune écriture ; invariants RDO-003 conservés.",
+      "fiscal": "Aucun dépôt, versement ou crédit fiscal validé par ce cas. Montants de laboratoire ; voir périmètre.",
+      "controles": "Deux fichiers, contenus égaux à l’original fictif ; aucun bouton de suppression dans cet écran RAS.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Liste des deux fichiers et deux téléchargements.",
+      "preuves": "",
+      "observations": "Recette humaine à effectuer ; utiliser exclusivement la société fictive."
+    },
+    {
+      "id": "RDO-006",
+      "module": "Documents RAS",
+      "objectif": "Ajouter une référence sans fichier",
+      "prerequis": "RDO-005. Administrateur ou comptable.",
+      "donnees": "RéférenceCOMP-DOC649 ; date19/10/2026 ; motif Complément documentaire fictif DOC649.",
+      "actions": "Ouvrir Journal → Justificatifs sur l’OD de capture. Ajouter la référence, sa date et le motif. Revenir au registre et cliquer Actualiser le registre, puis Documents liés aux OD.",
+      "attendu": "Trois compléments sur l’OD : deux fichiers et une référence sans fichier. COMP-DOC649 n’est pas présenté comme un fichier ou un versement.",
+      "ecritures": "Aucune nouvelle écriture. La priorité de référence FEC suit le fonctionnement existant du Journal.",
+      "fiscal": "Aucun dépôt, versement ou crédit fiscal validé par ce cas. Montants de laboratoire ; voir périmètre.",
+      "controles": "Référence sans fichier explicite, dates et référence d’origine conservées.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Historique Journal et section documentaire du registre.",
+      "preuves": "",
+      "observations": "Recette humaine à effectuer ; utiliser exclusivement la société fictive."
+    },
+    {
+      "id": "RDO-007",
+      "module": "Documents RAS",
+      "objectif": "Contrôler les trois exports actifs",
+      "prerequis": "RDO-006 ; logo de test facultatif dans Paramètres, jamais une marque réelle non autorisée.",
+      "donnees": "Registre 2026 et préparation2026-11 ; deux fichiers et COMP-DOC649.",
+      "actions": "Exporter CSV, Excel et PDF du registre. Ouvrir la préparation mensuelle novembre et exporter les mêmes formats. Lire Documents liés. Vérifier la phase Capture, l’OD, les dates et les deux noms. Si une vue ancienne est refusée après un ajout, utiliser son bouton Actualiser puis retélécharger.",
+      "attendu": "Trois lignes documentaires dans chaque export ; section/feuille distincte. Montants750 actifs,750 OD validée, aucun montant annulé. Logo présent dans PDF/Excel si configuré. Aucun fichier binaire embarqué.",
+      "ecritures": "Toujours4 pièces/9 lignes, D = C = 118000 ; aucun export ne crée de mouvement.",
+      "fiscal": "Aucun dépôt, versement ou crédit fiscal validé par ce cas. Montants de laboratoire ; voir périmètre.",
+      "controles": "Le hash décrit les données/métadonnées, pas les octets des documents ; aucun bordereau officiel supposé.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Six exports et contrôle des trois lignes documentaires.",
+      "preuves": "",
+      "observations": "Recette humaine à effectuer ; utiliser exclusivement la société fictive."
+    },
+    {
+      "id": "RDO-008",
+      "module": "Documents RAS",
+      "objectif": "Annuler et documenter la contrepassation",
+      "prerequis": "RDO-007 ; même règlement 5250, aucun lettrage effectué.",
+      "donnees": "Annulation 19/10/2026 ; motif ANNULATION FICTIVE DOC649 POUR RECETTE. PDF fictif fourni à joindre à l’OD de contrepassation.",
+      "actions": "Dans Règlements annuler VIR-DOC649 avec date/motif ci-dessus. Valider les nouvelles écritures dans Journal. Actualiser le registre et déplier Documents liés aux OD : noter la nouvelle OD de contrepassation. Joindre le PDF dans cette section distincte. Exporter à nouveau. Dans Comptabilité → Liasse fiscale, exercice 2026, contrôler Bilan et CPC ; exporter le FEC 2026 depuis Journal.",
+      "attendu": "Capture annulée, données et documents d’origine conservés ; trois compléments côté Capture et un côté Contrepassation. Reste facture 12000 ; banque 100000 ; compte 4457 soldé. Registre : 750 saisis/750 annulés,0 actif. Six pièces/treize lignes ; bilan 102000 ; résultat avant impôt −10000.",
+      "ecritures": "BQ inverse : D 5141 = 5250 / C 4411 = 5250. OD inverse : D 4457 = 750 / C 4411 = 750. Cumul D = C = 124000.",
+      "fiscal": "Aucun dépôt, versement ou crédit fiscal validé par ce cas. Montants de laboratoire ; voir périmètre.",
+      "controles": "Aucune suppression/remplacement des lignes initiales. FEC 13 lignes D = C = 124000 ; aucune déduction fiscale automatique due à l’annulation.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Deux contrepassations, documents par OD, soldes, FEC, bilan/CPC.",
+      "preuves": "",
+      "observations": "Recette humaine à effectuer ; utiliser exclusivement la société fictive."
+    },
+    {
+      "id": "RDO-009",
+      "module": "Contrôles",
+      "objectif": "Consulter avec le rôle lecture",
+      "prerequis": "RDO-008 et utilisateurlecture649 créé.",
+      "donnees": "lecture649@example.com / DocumentsRecette649!.",
+      "actions": "Se déconnecter puis se connecter en consultation seule. Ouvrir registre 2026 et préparationnovembre. Ouvrir la capture et les deux OD. Télécharger une pièce de chaque OD puis un export.",
+      "attendu": "Références et fichiers lisibles ; aucun bouton Joindre un fichier ni Supprimer ; montants et documents inchangés.",
+      "ecritures": "Aucune écriture.",
+      "fiscal": "Aucun dépôt, versement ou crédit fiscal validé par ce cas. Montants de laboratoire ; voir périmètre.",
+      "controles": "Ne pas confondre consultation avec permission d’écriture ; exporter ne qualifie pas les pièces.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Captures lecture et deux documents reçus.",
+      "preuves": "",
+      "observations": "Recette humaine à effectuer ; utiliser exclusivement la société fictive."
+    },
+    {
+      "id": "RDO-010",
+      "module": "Contrôles",
+      "objectif": "Vérifier la séparation des sociétés",
+      "prerequis": "RDO-009 ; revenir à l’administrateur. Société secondaire de test vide à créer.",
+      "donnees": "TEMOIN DOC649 SARL, aucun mouvement ni capture.",
+      "actions": "Depuis Paramètres créer la seconde société. La sélectionner dans l’en-tête. Ouvrir le registre 2026. Revenir à SOCIETE FICTIVE DOC649 SARL puis à son registre.",
+      "attendu": "Aucune capture/document de la première société dans le témoin. Au retour, les pièces du scénario sont retrouvées sans duplication.",
+      "ecritures": "Aucune écriture créée par le changement de société.",
+      "fiscal": "Aucun dépôt, versement ou crédit fiscal validé par ce cas. Montants de laboratoire ; voir périmètre.",
+      "controles": "Nom de société visible et aucune ancienne liste réaffichée dans le témoin.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Deux captures d’écran nom de société et registre.",
+      "preuves": "",
+      "observations": "Recette humaine à effectuer ; utiliser exclusivement la société fictive."
+    },
+    {
+      "id": "RDO-011",
+      "module": "Contrôles",
+      "objectif": "Refuser un règlement au sous-centime",
+      "prerequis": "RDO-010, première société active, administrateur.",
+      "donnees": "Montant0,005 MAD sur la facture encore ouverte 12000 ; référenceREFUS-DOC649.",
+      "actions": "Tenter d’enregistrer un règlement de 0,005. Lire le message, fermer le formulaire et vérifier facture, règlements et Journal. Ne pas remplacer la valeur pour forcer le passage.",
+      "attendu": "Montant refusé au centime. Aucun règlement, document ou mouvement créé ; soldes finaux RDO-008 conservés.",
+      "ecritures": "Aucune écriture ;6 pièces/13 lignes D = C = 124000.",
+      "fiscal": "Aucun dépôt, versement ou crédit fiscal validé par ce cas. Montants de laboratoire ; voir périmètre.",
+      "controles": "Pas d’arrondi implicite à0,01 ni modification de la facture.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Message de refus et contrôle du Journal.",
+      "preuves": "",
+      "observations": "Recette humaine à effectuer ; utiliser exclusivement la société fictive."
+    },
+    {
+      "id": "RDO-012",
+      "module": "Contrôles",
+      "objectif": "Afficher un refus de lecture sans faux vide",
+      "prerequis": "RDO-011 ; deux sessions distinctes en environnement de test.",
+      "donnees": "SessionA : compta649@example.com ; sessionB : administrateur docs649@example.com.",
+      "actions": "Dans A, ouvrir les fichiers de la capture et attendre leur chargement. Dans B, désactiver seulement le compte compta649 fictif. Dans A, cliquer Actualiser les pièces jointes ; constater le refus. Dans B, réactiver le compte. Reconnecter A et relire les documents.",
+      "attendu": "Refus explicite, jamais Aucune pièce jointe à la place d’une erreur. Après reconnexion, tous les fichiers sont retrouvés ; aucun faux PDF téléchargé.",
+      "ecritures": "Aucune écriture ni suppression documentaire.",
+      "fiscal": "Aucun dépôt, versement ou crédit fiscal validé par ce cas. Montants de laboratoire ; voir périmètre.",
+      "controles": "Ne pas désactiver un compte réel. Vérifier la conservation des trois fichiers et des quatre compléments.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Message, réactivation et liste retrouvée.",
+      "preuves": "",
+      "observations": "Recette humaine à effectuer ; utiliser exclusivement la société fictive."
+    }
+  ]
+}

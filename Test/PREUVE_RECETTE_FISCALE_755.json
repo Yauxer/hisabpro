@@ -1,0 +1,86 @@
+{
+  "lot": 755,
+  "tests_executes": {
+    "fiscal755_ui_final": {
+      "cas": 2,
+      "temps_secondes": 39.5,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "fiscal755_api_final": {
+      "cas": 4,
+      "temps_secondes": 31.0,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "fiscal755_restore": {
+      "cas": 1,
+      "temps_secondes": 67.48,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "fiscal755_commune": {
+      "cas": 10,
+      "temps_secondes": 127.38,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "session755_annuel": {
+      "cas": 2,
+      "temps_secondes": 36.57,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    }
+  },
+  "sources_figees": 1223,
+  "protections_inchangees": 117,
+  "documents": {
+    "word_xml_crc": true,
+    "pdf_pages": 16,
+    "xlsx_feuilles": 10,
+    "cas_humains_non_testes": 14,
+    "formules_office_executees": false,
+    "code_produit_inchange_755": 444,
+    "sources_figees": 1223,
+    "calcul_independant": true
+  },
+  "restauration": {
+    "schema": 104,
+    "tables": 83,
+    "fichiers": 6,
+    "sources_justificatifs_logos_restaures": true
+  },
+  "scenario": {
+    "inscription_logo_csv_six_formulaires_reels_ui": true,
+    "roles": [
+      "admin1440",
+      "comptable390"
+    ],
+    "versions": 7,
+    "benefice_fiscal": "120000.00",
+    "is": "24000.00",
+    "credits_disponibles": "350.00",
+    "acomptes": "20000.00",
+    "solde_is_propose": "3650.00",
+    "css_separee": "0.00"
+  },
+  "premiers_essais": {
+    "ui": "1réussi/1échec35,91s : domaine .test refusé pour utilisateur secondaire ; adresse fictive example.com corrigée dans le banc.",
+    "api": "3réussis/1échec32,53s : données de test partagées mutées par cas négatif ; deepcopy du payload corrigé, aucune règle produit assouplie."
+  },
+  "aucun_postgresql_reel": true,
+  "limites": [
+    "Aucun PostgreSQL réel ni donnée réelle utilisés",
+    "Recette humaine, Office natif, environnement cible et production non validés",
+    "Scénario Liasse seule, pas une liasse complète officiellement prête à déposer",
+    "Éligibilités et sources fictives explicites ; aucun fait réel déduit",
+    "CSS séparée, aucune échéance CSS ou restitution automatique inventée",
+    "Aucune liquidation, imputation ou paiement confirmé",
+    "RH/paie et point6 humain différés"
+  ]
+}

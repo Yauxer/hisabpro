@@ -1,0 +1,28 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_wvxa6uku",
+  "nonce": "a6349c1a54ad4282810fc2201370a1a9",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "dialogues": [
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    }
+  ],
+  "validation_journal923": {
+    "confirmation_avant_validation_conservee": true,
+    "aucune_alerte_apres_reponse": true,
+    "navigation_immediate_reussie": true,
+    "deux_ecritures_definitives_uniques": true,
+    "montants_conserves": true
+  }
+}

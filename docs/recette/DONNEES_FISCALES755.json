@@ -1,0 +1,471 @@
+{
+  "schema_version": 1,
+  "societe_fictive": "ATLAS CONSEIL RECETTE755 SARL",
+  "ville": "Casablanca",
+  "devise": "MAD",
+  "exercice": 2026,
+  "periode": {
+    "debut": "2026-01-01",
+    "fin": "2026-12-31"
+  },
+  "date_controle": "2027-03-15",
+  "date_controle_fictive": true,
+  "hypotheses": [
+    "Société IS droit commun, bénéfices sous300000 en2025 et sous100millions en2026, aucun régime spécifique",
+    "TVA20% sur prestations et honoraires fictifs",
+    "Client public et rémunération de conseil éligible déclarés ; autres clients privés hors nouvelle obligation RAS2026",
+    "Aucun déficit, retraitement ou autre crédit fiscal",
+    "CM sans exonération et entièrement au taux standard ; CSS sur dernier clos2025 de100000",
+    "Hypothèse explicite d’ouverture : résultat2025 en instance1181 puis PV AGO15/03/2026 en report1161 ; aucune écriture de clôture générée par ces fichiers"
+  ],
+  "balance_n": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "10000.00"
+    },
+    {
+      "compte": "1161",
+      "debit": "0.00",
+      "credit": "82500.00"
+    },
+    {
+      "compte": "3453",
+      "debit": "20350.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "4453",
+      "debit": "0.00",
+      "credit": "24000.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "192150.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "6136",
+      "debit": "21500.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "6701",
+      "debit": "24000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "7124",
+      "debit": "0.00",
+      "credit": "140000.00"
+    },
+    {
+      "compte": "7381",
+      "debit": "0.00",
+      "credit": "1500.00"
+    }
+  ],
+  "balance_n1": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "10000.00"
+    },
+    {
+      "compte": "3453",
+      "debit": "17600.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "4453",
+      "debit": "0.00",
+      "credit": "17500.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "92400.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "6701",
+      "debit": "17500.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "7124",
+      "debit": "0.00",
+      "credit": "100000.00"
+    }
+  ],
+  "ouverture_n": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "10000.00"
+    },
+    {
+      "compte": "3453",
+      "debit": "17600.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "4453",
+      "debit": "0.00",
+      "credit": "17500.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "92400.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "1181",
+      "debit": "0.00",
+      "credit": "82500.00"
+    }
+  ],
+  "operations_n": [
+    {
+      "id": "N-06",
+      "date": "2026-02-28",
+      "libelle": "Honoraires société fournisseur HT21500 TVA4300",
+      "debits": {
+        "6136": "21500.00",
+        "34552": "4300.00"
+      },
+      "credits": {
+        "4411": "25800.00"
+      }
+    },
+    {
+      "id": "N-07",
+      "date": "2026-03-10",
+      "libelle": "Paiement fournisseur personne morale",
+      "debits": {
+        "4411": "25800.00"
+      },
+      "credits": {
+        "5141": "25800.00"
+      }
+    },
+    {
+      "id": "N-AG",
+      "date": "2026-03-15",
+      "libelle": "PV fictif AGO : report à nouveau du résultat2025",
+      "debits": {
+        "1181": "82500.00"
+      },
+      "credits": {
+        "1161": "82500.00"
+      }
+    },
+    {
+      "id": "N-01",
+      "date": "2026-03-15",
+      "libelle": "Liquidation2025 :17500 imputés, excédent100 restant",
+      "debits": {
+        "4453": "17500.00"
+      },
+      "credits": {
+        "3453": "17500.00"
+      }
+    },
+    {
+      "id": "N-08",
+      "date": "2026-03-20",
+      "libelle": "Intérêts1500 brut, PPRF300 et cash1200",
+      "debits": {
+        "5141": "1200.00",
+        "3453": "300.00"
+      },
+      "credits": {
+        "7381": "1500.00"
+      }
+    },
+    {
+      "id": "N-AP1",
+      "date": "2026-03-31",
+      "libelle": "Versement effectif acompte1",
+      "debits": {
+        "3453": "4800.00"
+      },
+      "credits": {
+        "5141": "4800.00"
+      }
+    },
+    {
+      "id": "N-04",
+      "date": "2026-04-15",
+      "libelle": "Autres prestations privées HT136000 TVA27200",
+      "debits": {
+        "3421": "163200.00"
+      },
+      "credits": {
+        "7124": "136000.00",
+        "4455": "27200.00"
+      }
+    },
+    {
+      "id": "N-05",
+      "date": "2026-04-30",
+      "libelle": "Encaissement autres clients privés",
+      "debits": {
+        "5141": "163200.00"
+      },
+      "credits": {
+        "3421": "163200.00"
+      }
+    },
+    {
+      "id": "N-02",
+      "date": "2026-06-15",
+      "libelle": "Conseil à organisme public, HT4000 et TVA800",
+      "debits": {
+        "3421": "4800.00"
+      },
+      "credits": {
+        "7124": "4000.00",
+        "4455": "800.00"
+      }
+    },
+    {
+      "id": "N-03",
+      "date": "2026-06-20",
+      "libelle": "Client public :cash4600 et retenueIS200",
+      "debits": {
+        "5141": "4600.00",
+        "3453": "200.00"
+      },
+      "credits": {
+        "3421": "4800.00"
+      }
+    },
+    {
+      "id": "N-AP2",
+      "date": "2026-06-30",
+      "libelle": "Versement effectif acompte2",
+      "debits": {
+        "3453": "4950.00"
+      },
+      "credits": {
+        "5141": "4950.00"
+      }
+    },
+    {
+      "id": "N-09",
+      "date": "2026-07-15",
+      "libelle": "TVA Q2 soldée après imputation crédit TVA Q1",
+      "debits": {
+        "4455": "28000.00"
+      },
+      "credits": {
+        "34552": "4300.00",
+        "5141": "23700.00"
+      }
+    },
+    {
+      "id": "N-AP3",
+      "date": "2026-09-30",
+      "libelle": "Versement effectif acompte3",
+      "debits": {
+        "3453": "5000.00"
+      },
+      "credits": {
+        "5141": "5000.00"
+      }
+    },
+    {
+      "id": "N-AP4",
+      "date": "2026-12-31",
+      "libelle": "Versement effectif acompte4",
+      "debits": {
+        "3453": "5000.00"
+      },
+      "credits": {
+        "5141": "5000.00"
+      }
+    },
+    {
+      "id": "N-IS",
+      "date": "2026-12-31",
+      "libelle": "Provision IS principal, aucun paiement de solde",
+      "debits": {
+        "6701": "24000.00"
+      },
+      "credits": {
+        "4453": "24000.00"
+      }
+    }
+  ],
+  "operations_n1": [
+    {
+      "id": "N1-01",
+      "date": "2025-01-01",
+      "libelle": "Capital fictif",
+      "debits": {
+        "5141": "10000.00"
+      },
+      "credits": {
+        "1111": "10000.00"
+      }
+    },
+    {
+      "id": "N1-02",
+      "date": "2025-06-15",
+      "libelle": "Prestations2025 HT100000 TVA20000",
+      "debits": {
+        "3421": "120000.00"
+      },
+      "credits": {
+        "7124": "100000.00",
+        "4455": "20000.00"
+      }
+    },
+    {
+      "id": "N1-03",
+      "date": "2025-06-20",
+      "libelle": "Encaissement client2025",
+      "debits": {
+        "5141": "120000.00"
+      },
+      "credits": {
+        "3421": "120000.00"
+      }
+    },
+    {
+      "id": "N1-04",
+      "date": "2025-07-15",
+      "libelle": "TVA2025 réglée",
+      "debits": {
+        "4455": "20000.00"
+      },
+      "credits": {
+        "5141": "20000.00"
+      }
+    },
+    {
+      "id": "N1-05",
+      "date": "2025-12-31",
+      "libelle": "Acomptes2025 cumulés, détail à sourcer dans un vrai dossier",
+      "debits": {
+        "3453": "17600.00"
+      },
+      "credits": {
+        "5141": "17600.00"
+      }
+    },
+    {
+      "id": "N1-06",
+      "date": "2025-12-31",
+      "libelle": "Impôt2025 sur bénéfice100000 à17,5%",
+      "debits": {
+        "6701": "17500.00"
+      },
+      "credits": {
+        "4453": "17500.00"
+      }
+    }
+  ],
+  "acomptes": [
+    {
+      "numero": "1",
+      "date_mouvement": "2026-03-31",
+      "verse": "4800",
+      "credit_anterieur": "100",
+      "retenue": "100",
+      "reference_credit": "CR755-A",
+      "reference_source": "AP755-Q1"
+    },
+    {
+      "numero": "2",
+      "date_mouvement": "2026-06-30",
+      "verse": "4950",
+      "credit_anterieur": "0",
+      "retenue": "50",
+      "reference_credit": "CR755-B",
+      "reference_source": "AP755-Q2"
+    },
+    {
+      "numero": "3",
+      "date_mouvement": "2026-09-30",
+      "verse": "5000",
+      "credit_anterieur": "0",
+      "retenue": "0",
+      "reference_credit": "",
+      "reference_source": "AP755-Q3"
+    },
+    {
+      "numero": "4",
+      "date_mouvement": "2026-12-31",
+      "verse": "5000",
+      "credit_anterieur": "0",
+      "retenue": "0",
+      "reference_credit": "",
+      "reference_source": "AP755-Q4"
+    }
+  ],
+  "credits": [
+    {
+      "nature": "PPRF bancaire fictif755",
+      "type_credit": "PPRF — CGI159",
+      "exercice_rattachement": "2026",
+      "date_retenue": "2026-03-20",
+      "date_allocation": "",
+      "categorie_payeur": "",
+      "eligibilite_confirmee": "oui",
+      "montant": "300",
+      "deja_impute_acomptes": "100",
+      "autres_utilisations": "0",
+      "reference_source": "CR755-A"
+    },
+    {
+      "nature": "Conseil organisme public fictif755",
+      "type_credit": "Rémunérations de tiers — CGI157",
+      "exercice_rattachement": "2026",
+      "date_retenue": "2026-06-20",
+      "date_allocation": "2026-06-20",
+      "categorie_payeur": "Public ou filiale publique",
+      "eligibilite_confirmee": "oui",
+      "montant": "200",
+      "deja_impute_acomptes": "50",
+      "autres_utilisations": "0",
+      "reference_source": "CR755-B"
+    }
+  ],
+  "attendus": {
+    "debit_credit_n": "258000.00",
+    "debit_credit_n1": "127500.00",
+    "actif_passif_n": "212500.00",
+    "actif_passif_n1": "110000.00",
+    "resultat_net_n": "96000.00",
+    "resultat_net_n1": "82500.00",
+    "resultat_avant_is": "120000.00",
+    "benefice_fiscal": "120000.00",
+    "is_theorique": "24000.00",
+    "cm_base": "141500.00",
+    "cm_calculee": "353.75",
+    "cm_exigible": "3000.00",
+    "maximum_is_cm": "24000.00",
+    "credits_total": "500.00",
+    "credits_deja_utilises": "150.00",
+    "credits_disponibles": "350.00",
+    "acomptes_cash": "19750.00",
+    "ancien_impute": "100.00",
+    "acomptes_imputables": "20000.00",
+    "ancien_restant": "0.00",
+    "solde_is_propose": "3650.00",
+    "excedent_arithmetique": "0.00",
+    "css_proposee": "0.00",
+    "tva_collectee": "28000.00",
+    "tva_recuperable": "4300.00",
+    "tva_versee": "23700.00"
+  },
+  "statut_humain": "Non testé",
+  "limites": [
+    "Jeu exclusivement fictif, aucune donnée réelle",
+    "Import et préparation ne créent aucune écriture",
+    "Aucun paiement ou liquidation confirmé",
+    "Aucune liasse complète prête à déposer ni XML/EDI officiel",
+    "Calendrier CSS et éligibilité réelle à revoir sur pièces"
+  ]
+}

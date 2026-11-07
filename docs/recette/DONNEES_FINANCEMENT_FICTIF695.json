@@ -1,0 +1,217 @@
+{
+  "fictif": true,
+  "exercice": 2026,
+  "aucune_donnee_reelle": true,
+  "balance_n": [
+    [
+      "1111",
+      "0.00",
+      "10000.00"
+    ],
+    [
+      "1481",
+      "0.00",
+      "5000.00"
+    ],
+    [
+      "7111",
+      "0.00",
+      "2000.00"
+    ],
+    [
+      "2332",
+      "4000.00",
+      "0.00"
+    ],
+    [
+      "3421",
+      "5000.00",
+      "0.00"
+    ],
+    [
+      "5141",
+      "8000.00",
+      "0.00"
+    ]
+  ],
+  "balance_n1": [
+    [
+      "1111",
+      "0.00",
+      "6000.00"
+    ],
+    [
+      "3421",
+      "2000.00",
+      "0.00"
+    ],
+    [
+      "5141",
+      "4000.00",
+      "0.00"
+    ]
+  ],
+  "sources_flux": {
+    "n": "État fictif FIN695 N",
+    "n1": "État fictif FIN695 N-1"
+  },
+  "oracle": {
+    "debit_credit_n": "17000.00",
+    "debit_credit_n1": "6000.00",
+    "resultat_caf_n": "2000.00",
+    "resultat_caf_n1": "0.00",
+    "ressources_n": "11000.00",
+    "emplois_n": "4000.00",
+    "variation_fr": "7000.00",
+    "variation_bfg": "3000.00",
+    "variation_tresorerie": "4000.00",
+    "ecarts": "0.00",
+    "avec_distributions1000_ressources": "10000.00",
+    "avec_distributions1000_ecart": "-1000.00"
+  },
+  "statut_humain": "Non testé",
+  "flux": [
+    {
+      "code": "distributions_benefices",
+      "libelle": "Distributions de bénéfices",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "cessions_immobilisations_incorporelles",
+      "libelle": "Cessions d’immobilisations incorporelles",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "cessions_immobilisations_corporelles",
+      "libelle": "Cessions d’immobilisations corporelles",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "cessions_immobilisations_financieres",
+      "libelle": "Cessions d’immobilisations financières",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "cessions_immobilisations_non_ventilees",
+      "libelle": "Cessions non ventilées — à classer",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "recuperations_creances_immobilisees",
+      "libelle": "Récupérations de créances immobilisées",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "augmentations_capitaux_propres",
+      "libelle": "Augmentations de capital / apports",
+      "n": "4000.00",
+      "n1": "6000.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "subventions_investissement_recues",
+      "libelle": "Subventions d’investissement reçues",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "augmentations_dettes_financement",
+      "libelle": "Augmentations des dettes de financement",
+      "n": "5000.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "acquisitions_immobilisations_incorporelles",
+      "libelle": "Acquisitions d’immobilisations incorporelles",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "acquisitions_immobilisations_corporelles",
+      "libelle": "Acquisitions d’immobilisations corporelles",
+      "n": "4000.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "acquisitions_immobilisations_financieres",
+      "libelle": "Acquisitions d’immobilisations financières",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "augmentations_creances_immobilisees",
+      "libelle": "Augmentations des créances immobilisées",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "reductions_capitaux_propres",
+      "libelle": "Remboursements des capitaux propres",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "remboursements_dettes_financement",
+      "libelle": "Remboursements des dettes de financement",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    },
+    {
+      "code": "emplois_non_valeurs",
+      "libelle": "Emplois en non-valeurs",
+      "n": "0.00",
+      "n1": "0.00",
+      "justification_n": "État fictif FIN695 N",
+      "justification_n1": "État fictif FIN695 N-1"
+    }
+  ],
+  "fichiers": {
+    "BALANCE_FICTIVE_FINANCEMENT695_N.csv": {
+      "taille": 129,
+      "sha256": "9d59ddc36b1cb1927a73826b571c782d24a0288bab62b79284f3866089efdd14"
+    },
+    "BALANCE_FICTIVE_FINANCEMENT695_N1.csv": {
+      "taille": 74,
+      "sha256": "23870db4f5c4254cf1cb4bd4d850cd0fecdd840cbd53222d7e40c35bde7ca8ca"
+    },
+    "FLUX_FICTIFS_FINANCEMENT695.csv": {
+      "taille": 2143,
+      "sha256": "0315c698b0bd45b6206c044deaba0d29d4ae9002391e197011927953624035e9"
+    }
+  }
+}

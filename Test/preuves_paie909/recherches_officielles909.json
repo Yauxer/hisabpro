@@ -1,0 +1,19 @@
+[
+  {
+    "nom": "DGI717",
+    "url": "https://tax.gov.ma/wps/wcm/connect/dcbfed88-0f50-42c6-a723-264590cb960c/note_circulaire_717_tome1.pdf",
+    "status": 403,
+    "octets": 12763
+  },
+  {
+    "nom": "DGI737",
+    "url": "https://www.tax.gov.ma/wps/portal/DGI/Documentation-fiscale/Notes-circulaires",
+    "status": 403,
+    "octets": 12763
+  },
+  {
+    "nom": "MEFpublications",
+    "url": "https://www.finances.gov.ma/fr/Pages/publications.aspx",
+    "erreur": "ConnectTimeout"
+  }
+]

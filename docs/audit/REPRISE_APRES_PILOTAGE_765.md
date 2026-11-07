@@ -1,0 +1,11 @@
+# Reprise après765
+
+Lire AGENTS et tout CODEX_PROGRESS,état/processus avant toute reprise.765 termine uniquement la livraison du point dentrée de recette :guideWord,PDFde7pages,suivi20feuilles et272fiches verticales depuis7classeurs. Ne pas réappliquer759/761/763/765. Les scénarios et leurs oracles sont distincts ;262cas Non testé,10Bloqué ;aucune recette humaine ou production validée.
+
+42 tests de documents et oracles réussis en49.99s ; après ajustement final de la largeur du tableau Word/PDF,18ciblés revalidés en27.78s. Zéro échec/erreur/ignoré dans ces campagnes finales ; recouvrements non additionnés. Compilation des3Python modifiés OK. Word OOXML/CRC et liens,PDF7pages rendu,Excel20feuilles/272fiches verticales contrôlés sur les fichiers réels.262Non testé,10Bloqué,aucun succès humain prérempli. Produit/frontend/migrations et117protections inchangés.
+
+Deux premiers essais conservés :4réussis/1échec sur comparaison textuelle dune plageExcel unitaire, remplacée par ses bornes exactes ;puis15réussis/1échec sur le vrai défautXML du nouveauWord post-traité. Déclaration dencodage corrigée enUTF-8, assertions conservées.17ciblés avaient ensuite réussi avant ajout de la lecture verticale ;campagnes42puis18 exécutées sur les versions enrichies et finales.
+
+Prochaine action indépendante possible :ouvrir les fichiers dans Office natif et vérifier les liens/recalculs sur une copie. La recette humaine/point6 reste en attente de décision de lutilisateur. Le générateur refuse de remplacer les sorties ou de réinitialiser une source remplie. Une fois les réponses saisies,ne pas lancer une nouvelle génération dans ce dossier. Les résultats nont pas de synchronisation automatique avec les anciens classeurs.
+
+Suite développement toujours dépendante du paquet officiel décrit dans DEPENDANCES_OFFICIELLES_20261023_763.md :catalogue/modèle courant,cahier/annexes/XSD/exemples et période de validité,modèles151/TP/RAS applicables. Aucun nouvel accès ni document obtenu pendant765 ;ne pas refaire les mêmes recherches sans nouvel élément. Comparer les écarts après réception puis implémenter seulement les correspondances justifiées. Justificatifs réels FEC/ETIC restent à fournir etne sont pas réparés arbitrairement. RH/paie différées.

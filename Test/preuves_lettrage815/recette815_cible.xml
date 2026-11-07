@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="4" time="70.244" timestamp="2026-10-25T12:52:27.918912+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_lettrage815_isole" name="test_815_lettrage_annuel_quatre_tiers_persistant_et_impayes_ouverts[1440]" time="41.681"><failure message="AssertionError: assert {'REF-002', 'REF-02'} == {'002', '02'}&#10;  &#10;  Extra items in the left set:&#10;  'REF-02'&#10;  'REF-002'&#10;  Extra items in the right set:&#10;  '002'&#10;  '02'&#10;  Use -v to get more diff">application = {'api_url': 'http://127.0.0.1:54420', 'web_url': 'http://127.0.0.1:54421', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_5p16qdww'), 'nonce': '6d80e4e7829e4dc5ac1332fd8b1443ff', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette815_cible/test_815_lettrage_annuel_quatr0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_815_lettrage_annuel_quatre_tiers_persistant_et_impayes_ouverts(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'lettrage815') as (api,page,sid,preuve):
+      tiers=tiers_sources(api)
+      for o in sorted(DATA['operations'],key=lambda x:x['date']):
+       lignes=[{'compte':l['compte'],'debit':l['debit'],'credit':l['credit'],'libelle':o['description'],**({'tiers_id':tiers[l['tiers']]['id']} if l['tiers'] else {})} for l in o['lignes']];poster(api,o['date'],o['journal'],o['reference_recette'],o['description'],lignes)
+      avant=core(application,sid);assert len(avant)==50;etats=ok(api.get('/api/etats/liasse/2025'))['etats'];codes={};preuve['lettrage815']={'groupes':[]};page.goto(application['web_url']+'/lettrage')
+      for compte,cle in [('3421','C-MARCH'),('3421','C-SERVICE'),('4411','F-MARCH'),('4411','F-SERVICE')]:
+       nom=tiers[cle]['nom'];lignes=[l for l in lire(api,compte) if l['tiers']==nom];assert len(lignes)&gt;=2 and not any(l['code_lettrage'] for l in lignes)
+       debit=sum(D(str(l['debit'])) for l in lignes);credit=sum(D(str(l['credit'])) for l in lignes);assert debit==credit and debit&gt;0
+       choisir(page,compte,nom);boxes=page.locator('tbody input[type=checkbox]');expect(boxes).to_have_count(len(lignes))
+       for box in boxes.all():box.check()
+       expect(page.get_by_text('Sélection équilibrée',exact=True)).to_be_visible()
+       with page.expect_response(lambda r:r.url.endswith('/api/lettrage/comptable/lettrer') and r.request.method=='POST') as r:page.get_by_role('button',name=f'Lettrer {len(lignes)} lignes',exact=True).click()
+       lettre=ok(r.value);assert lettre['nb']==len(lignes) and set(lettre['ligne_ids'])=={l['ligne_id'] for l in lignes} and re.fullmatch('[A-Z]{3,10}',lettre['code'])
+       codes[cle]=lettre['code'];expect(page.get_by_text(f'{len(lignes)} lettrée(s)',exact=True)).to_be_visible();page.reload(wait_until='domcontentloaded');choisir(page,compte,nom);expect(page.get_by_text(f'{len(lignes)} lettrée(s)',exact=True)).to_be_visible();relues=[l for l in lire(api,compte) if l['tiers']==nom];assert all(l['code_lettrage']==lettre['code'] and l['date_lettrage'] for l in relues)
+       preuve['lettrage815']['groupes'].append({'tiers':cle,'compte':compte,'nb_lignes':len(lignes),'debit':str(debit),'credit':str(credit),'code':lettre['code'],'lignes':relues})
+      assert len(set(codes.values()))==4
+      for compte,cle,solde in [('3421','C-IMPAYE','14400'),('4411','F-CONTROLE','-480')]:
+       nom=tiers[cle]['nom'];choisir(page,compte,nom);ls=[l for l in lire(api,compte) if l['tiers']==nom];assert not any(l['code_lettrage'] for l in ls) and sum((D(str(l['debit']))-D(str(l['credit'])) for l in ls),D(0))==D(solde);expect(page.get_by_text(f'{len(ls)} non lettrée(s)',exact=True)).to_be_visible()
+&gt;      if cle=='F-CONTROLE':assert {l['reference'] for l in ls}=={'02','002'}
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E      AssertionError: assert {'REF-002', 'REF-02'} == {'002', '02'}
+E        
+E        Extra items in the left set:
+E        'REF-02'
+E        'REF-002'
+E        Extra items in the right set:
+E        '002'
+E        '02'
+E        Use -v to get more diff
+
+Test\test_e2e_cahier_lettrage815_isole.py:48: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_lettrage815_isole" name="test_815_lettrage_annuel_quatre_tiers_persistant_et_impayes_ouverts[390]" time="13.167"><failure message="AssertionError: assert {'REF-002', 'REF-02'} == {'002', '02'}&#10;  &#10;  Extra items in the left set:&#10;  'REF-02'&#10;  'REF-002'&#10;  Extra items in the right set:&#10;  '002'&#10;  '02'&#10;  Use -v to get more diff">application = {'api_url': 'http://127.0.0.1:54420', 'web_url': 'http://127.0.0.1:54421', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_5p16qdww'), 'nonce': '6d80e4e7829e4dc5ac1332fd8b1443ff', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette815_cible/test_815_lettrage_annuel_quatr1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_815_lettrage_annuel_quatre_tiers_persistant_et_impayes_ouverts(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'lettrage815') as (api,page,sid,preuve):
+      tiers=tiers_sources(api)
+      for o in sorted(DATA['operations'],key=lambda x:x['date']):
+       lignes=[{'compte':l['compte'],'debit':l['debit'],'credit':l['credit'],'libelle':o['description'],**({'tiers_id':tiers[l['tiers']]['id']} if l['tiers'] else {})} for l in o['lignes']];poster(api,o['date'],o['journal'],o['reference_recette'],o['description'],lignes)
+      avant=core(application,sid);assert len(avant)==50;etats=ok(api.get('/api/etats/liasse/2025'))['etats'];codes={};preuve['lettrage815']={'groupes':[]};page.goto(application['web_url']+'/lettrage')
+      for compte,cle in [('3421','C-MARCH'),('3421','C-SERVICE'),('4411','F-MARCH'),('4411','F-SERVICE')]:
+       nom=tiers[cle]['nom'];lignes=[l for l in lire(api,compte) if l['tiers']==nom];assert len(lignes)&gt;=2 and not any(l['code_lettrage'] for l in lignes)
+       debit=sum(D(str(l['debit'])) for l in lignes);credit=sum(D(str(l['credit'])) for l in lignes);assert debit==credit and debit&gt;0
+       choisir(page,compte,nom);boxes=page.locator('tbody input[type=checkbox]');expect(boxes).to_have_count(len(lignes))
+       for box in boxes.all():box.check()
+       expect(page.get_by_text('Sélection équilibrée',exact=True)).to_be_visible()
+       with page.expect_response(lambda r:r.url.endswith('/api/lettrage/comptable/lettrer') and r.request.method=='POST') as r:page.get_by_role('button',name=f'Lettrer {len(lignes)} lignes',exact=True).click()
+       lettre=ok(r.value);assert lettre['nb']==len(lignes) and set(lettre['ligne_ids'])=={l['ligne_id'] for l in lignes} and re.fullmatch('[A-Z]{3,10}',lettre['code'])
+       codes[cle]=lettre['code'];expect(page.get_by_text(f'{len(lignes)} lettrée(s)',exact=True)).to_be_visible();page.reload(wait_until='domcontentloaded');choisir(page,compte,nom);expect(page.get_by_text(f'{len(lignes)} lettrée(s)',exact=True)).to_be_visible();relues=[l for l in lire(api,compte) if l['tiers']==nom];assert all(l['code_lettrage']==lettre['code'] and l['date_lettrage'] for l in relues)
+       preuve['lettrage815']['groupes'].append({'tiers':cle,'compte':compte,'nb_lignes':len(lignes),'debit':str(debit),'credit':str(credit),'code':lettre['code'],'lignes':relues})
+      assert len(set(codes.values()))==4
+      for compte,cle,solde in [('3421','C-IMPAYE','14400'),('4411','F-CONTROLE','-480')]:
+       nom=tiers[cle]['nom'];choisir(page,compte,nom);ls=[l for l in lire(api,compte) if l['tiers']==nom];assert not any(l['code_lettrage'] for l in ls) and sum((D(str(l['debit']))-D(str(l['credit'])) for l in ls),D(0))==D(solde);expect(page.get_by_text(f'{len(ls)} non lettrée(s)',exact=True)).to_be_visible()
+&gt;      if cle=='F-CONTROLE':assert {l['reference'] for l in ls}=={'02','002'}
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E      AssertionError: assert {'REF-002', 'REF-02'} == {'002', '02'}
+E        
+E        Extra items in the left set:
+E        'REF-02'
+E        'REF-002'
+E        Extra items in the right set:
+E        '002'
+E        '02'
+E        Use -v to get more diff
+
+Test\test_e2e_cahier_lettrage815_isole.py:48: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_lettrage815_isole" name="test_815_refus_cross_auxiliaires_et_ecart_100_99[1440]" time="3.795"><failure message="KeyError: 'lignes'">application = {'api_url': 'http://127.0.0.1:54420', 'web_url': 'http://127.0.0.1:54421', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_5p16qdww'), 'nonce': '6d80e4e7829e4dc5ac1332fd8b1443ff', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette815_cible/test_815_refus_cross_auxiliair0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_815_refus_cross_auxiliaires_et_ecart_100_99(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'neg_lettrage815') as (api,page,sid,preuve):
+      tiers=tiers_sources(api);m=tiers['C-MARCH']['id'];s=tiers['C-SERVICE']['id'];ls=[]
+      for ref,compte,d,c,tid in [('DEBIT100','7124',100,0,m),('CREDIT100','5141',0,100,s),('CREDIT99','5141',0,99,m)]:
+&gt;      e=poster(api,'2025-01-01','VT' if d else 'BQ',ref,'Contrôle négatif fictif815',[{'compte':'3421','debit':d,'credit':c,'tiers_id':tid},{'compte':compte,'debit':c,'credit':d}]);ls.append(next(l['id'] for l in e['lignes'] if l['compte']=='3421'))
+                                                                                                                                                                                                                      ^^^^^^^^^^^
+E      KeyError: 'lignes'
+
+Test\test_e2e_cahier_lettrage815_isole.py:60: KeyError</failure></testcase><testcase classname="Test.test_e2e_cahier_lettrage815_isole" name="test_815_refus_cross_auxiliaires_et_ecart_100_99[390]" time="8.507"><failure message="KeyError: 'lignes'">application = {'api_url': 'http://127.0.0.1:54420', 'web_url': 'http://127.0.0.1:54421', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_5p16qdww'), 'nonce': '6d80e4e7829e4dc5ac1332fd8b1443ff', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette815_cible/test_815_refus_cross_auxiliair1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_815_refus_cross_auxiliaires_et_ecart_100_99(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'neg_lettrage815') as (api,page,sid,preuve):
+      tiers=tiers_sources(api);m=tiers['C-MARCH']['id'];s=tiers['C-SERVICE']['id'];ls=[]
+      for ref,compte,d,c,tid in [('DEBIT100','7124',100,0,m),('CREDIT100','5141',0,100,s),('CREDIT99','5141',0,99,m)]:
+&gt;      e=poster(api,'2025-01-01','VT' if d else 'BQ',ref,'Contrôle négatif fictif815',[{'compte':'3421','debit':d,'credit':c,'tiers_id':tid},{'compte':compte,'debit':c,'credit':d}]);ls.append(next(l['id'] for l in e['lignes'] if l['compte']=='3421'))
+                                                                                                                                                                                                                      ^^^^^^^^^^^
+E      KeyError: 'lignes'
+
+Test\test_e2e_cahier_lettrage815_isole.py:60: KeyError</failure></testcase></testsuite></testsuites>

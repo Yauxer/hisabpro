@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="55.871" timestamp="2026-10-25T13:48:13.287625+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_suivi819_isole" name="test_819_relance_et_complements_fournisseurs_persistants[1440]" time="38.463"><failure message="AssertionError: assert set() == {'002', '02'}&#10;  &#10;  Extra items in the right set:&#10;  '02'&#10;  '002'&#10;  Use -v to get more diff">application = {'api_url': 'http://127.0.0.1:59955', 'web_url': 'http://127.0.0.1:59956', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_dhcy_yc9'), 'nonce': 'bfa234bea5d6412f8cf232d1ee895ea8', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette819_final/test_819_relance_et_complement0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_819_relance_et_complements_fournisseurs_persistants(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'suivi819f') as (api,page,sid,preuve):
+      tiers={}
+      for t in DATA['tiers']:
+       if t['code'] in ['C-IMPAYE','F-CONTROLE']:tiers[t['code']]=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':t['type'],('compte_client' if t['type']=='client' else 'compte_fournisseur'):t['compte']}),201)
+      factures=[]
+      for type_,cle,ref,jour,echeance,pu,compte in [('achat','F-CONTROLE','02','2025-12-02','2025-12-31',200,'6125'),('achat','F-CONTROLE','002','2025-12-02','2025-12-31',200,'6125'),('vente','C-IMPAYE','VENTE-IMPAYEE','2025-12-10','2025-12-20',12000,'7124')]:
+       t=tiers[cle];f=ok(api.post('/api/factures',json={'type':type_,'date':jour,'tiers':t['nom'],'tiers_id':t['id'],'reference':ref,'date_echeance':echeance,'lignes':[{'description':'Service fictif du cahier','quantite':1,'prix_unitaire':pu,'tva':20,'compte_comptable':compte}]}),201);ok(api.post(f'/api/factures/{f["id"]}/valider'));ok(api.post(f'/api/factures/{f["id"]}/comptabiliser'));factures.append(f)
+      for e in ok(api.get('/api/ecritures',params={'exercice':2025})):ok(api.post(f'/api/ecritures/{e["id"]}/valider'))
+      avant=core(application,sid);assert len(avant)==3;impayee=factures[-1];assert relances(api)==[]
+      page.goto(application['web_url']+'/situation');page.get_by_role('button',name='Échéances &amp; impayés',exact=True).click();row=page.locator('tbody tr').filter(has_text=impayee['numero']);row.get_by_role('button',name='Relancer',exact=True).click();m=page.get_by_role('dialog')
+      m.get_by_label('Niveau de relance',exact=False).select_option('1');m.get_by_label('Canal',exact=False).select_option('email');m.get_by_label('Date de relance',exact=True).fill('2025-12-22');m.get_by_label('Date promise',exact=True).fill('2026-01-31');m.get_by_label('Prochaine relance',exact=True).fill('');m.get_by_label('Commentaire',exact=False).fill('Suivi fictif du laboratoire, sans envoi externe.')
+      with page.expect_response(lambda r:r.url.endswith('/api/recouvrement/relances') and r.request.method=='POST') as r:m.get_by_role('button',name='Enregistrer la relance',exact=True).click()
+      cree=ok(r.value,201);m.wait_for(state='hidden');assert cree['facture_id']==impayee['id'] and cree['date_relance']=='2025-12-22' and cree['date_promesse_reglement']=='2026-01-31' and cree['prochaine_relance'] is None and cree['niveau']==1 and cree['canal']=='email'
+      preuve['relance_creation819']=cree
+      page.reload(wait_until='domcontentloaded');page.get_by_role('button',name='Relances',exact=True).click();row=page.locator('tbody tr').filter(has_text=impayee['numero']);expect(row).to_contain_text('31/01/2026');expect(row).to_contain_text('Suivi fictif du laboratoire, sans envoi externe.');row.get_by_role('button',name='Modifier',exact=True).click();m=page.get_by_role('dialog');m.get_by_label('Date promise',exact=True).fill('2026-02-15');m.get_by_label('Commentaire',exact=False).fill('Promesse fictive modifiée')
+      with page.expect_response(lambda r:r.url.endswith('/api/recouvrement/relances/'+str(cree['id'])) and r.request.method=='PATCH') as r:m.get_by_role('button',name='Enregistrer',exact=True).click()
+      modifie=ok(r.value);m.wait_for(state='hidden');assert modifie['date_promesse_reglement']=='2026-02-15' and modifie['commentaire']=='Promesse fictive modifiée'
+      page.reload(wait_until='domcontentloaded');page.get_by_role('button',name='Relances',exact=True).click();row=page.locator('tbody tr').filter(has_text=impayee['numero']);expect(row).to_contain_text('15/02/2026');expect(row).to_contain_text('Promesse fictive modifiée')
+      with page.expect_response(lambda r:r.url.endswith('/api/recouvrement/relances/'+str(cree['id'])) and r.request.method=='PATCH') as r:row.get_by_role('button',name='Annuler la relance',exact=True).click()
+      annule=ok(r.value);assert annule['statut']=='annulee';page.reload(wait_until='domcontentloaded');page.get_by_role('button',name='Relances',exact=True).click();expect(page.locator('tbody tr').filter(has_text=impayee['numero'])).to_contain_text('Annulée');assert len(relances(api))==1 and relances(api)[0]['statut']=='annulee' and core(application,sid)==avant
+      preuve['relance819']={'cree':cree,'modifie':modifie,'annule':annule,'journal_inchange':True,'envoi_externe':False};preuve['cas'].append({'id':'HP-FAC-012','statut':'Réussi'})
+&gt;     page.goto(application['web_url']+'/delais-paiement');expect(page.get_by_role('heading',name='Délais de paiement',exact=True)).to_be_visible();r0=rapport(api);assert {r['reference_facture'] for r in r0['factures']}=={'02','002'}
+                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: assert set() == {'002', '02'}
+E       
+E       Extra items in the right set:
+E       '02'
+E       '002'
+E       Use -v to get more diff
+
+Test\test_e2e_cahier_suivi819_isole.py:41: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_suivi819_isole" name="test_819_relance_et_complements_fournisseurs_persistants[390]" time="14.379"><failure message="AssertionError: assert set() == {'002', '02'}&#10;  &#10;  Extra items in the right set:&#10;  '02'&#10;  '002'&#10;  Use -v to get more diff">application = {'api_url': 'http://127.0.0.1:59955', 'web_url': 'http://127.0.0.1:59956', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_dhcy_yc9'), 'nonce': 'bfa234bea5d6412f8cf232d1ee895ea8', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette819_final/test_819_relance_et_complement1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_819_relance_et_complements_fournisseurs_persistants(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'suivi819f') as (api,page,sid,preuve):
+      tiers={}
+      for t in DATA['tiers']:
+       if t['code'] in ['C-IMPAYE','F-CONTROLE']:tiers[t['code']]=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':t['type'],('compte_client' if t['type']=='client' else 'compte_fournisseur'):t['compte']}),201)
+      factures=[]
+      for type_,cle,ref,jour,echeance,pu,compte in [('achat','F-CONTROLE','02','2025-12-02','2025-12-31',200,'6125'),('achat','F-CONTROLE','002','2025-12-02','2025-12-31',200,'6125'),('vente','C-IMPAYE','VENTE-IMPAYEE','2025-12-10','2025-12-20',12000,'7124')]:
+       t=tiers[cle];f=ok(api.post('/api/factures',json={'type':type_,'date':jour,'tiers':t['nom'],'tiers_id':t['id'],'reference':ref,'date_echeance':echeance,'lignes':[{'description':'Service fictif du cahier','quantite':1,'prix_unitaire':pu,'tva':20,'compte_comptable':compte}]}),201);ok(api.post(f'/api/factures/{f["id"]}/valider'));ok(api.post(f'/api/factures/{f["id"]}/comptabiliser'));factures.append(f)
+      for e in ok(api.get('/api/ecritures',params={'exercice':2025})):ok(api.post(f'/api/ecritures/{e["id"]}/valider'))
+      avant=core(application,sid);assert len(avant)==3;impayee=factures[-1];assert relances(api)==[]
+      page.goto(application['web_url']+'/situation');page.get_by_role('button',name='Échéances &amp; impayés',exact=True).click();row=page.locator('tbody tr').filter(has_text=impayee['numero']);row.get_by_role('button',name='Relancer',exact=True).click();m=page.get_by_role('dialog')
+      m.get_by_label('Niveau de relance',exact=False).select_option('1');m.get_by_label('Canal',exact=False).select_option('email');m.get_by_label('Date de relance',exact=True).fill('2025-12-22');m.get_by_label('Date promise',exact=True).fill('2026-01-31');m.get_by_label('Prochaine relance',exact=True).fill('');m.get_by_label('Commentaire',exact=False).fill('Suivi fictif du laboratoire, sans envoi externe.')
+      with page.expect_response(lambda r:r.url.endswith('/api/recouvrement/relances') and r.request.method=='POST') as r:m.get_by_role('button',name='Enregistrer la relance',exact=True).click()
+      cree=ok(r.value,201);m.wait_for(state='hidden');assert cree['facture_id']==impayee['id'] and cree['date_relance']=='2025-12-22' and cree['date_promesse_reglement']=='2026-01-31' and cree['prochaine_relance'] is None and cree['niveau']==1 and cree['canal']=='email'
+      preuve['relance_creation819']=cree
+      page.reload(wait_until='domcontentloaded');page.get_by_role('button',name='Relances',exact=True).click();row=page.locator('tbody tr').filter(has_text=impayee['numero']);expect(row).to_contain_text('31/01/2026');expect(row).to_contain_text('Suivi fictif du laboratoire, sans envoi externe.');row.get_by_role('button',name='Modifier',exact=True).click();m=page.get_by_role('dialog');m.get_by_label('Date promise',exact=True).fill('2026-02-15');m.get_by_label('Commentaire',exact=False).fill('Promesse fictive modifiée')
+      with page.expect_response(lambda r:r.url.endswith('/api/recouvrement/relances/'+str(cree['id'])) and r.request.method=='PATCH') as r:m.get_by_role('button',name='Enregistrer',exact=True).click()
+      modifie=ok(r.value);m.wait_for(state='hidden');assert modifie['date_promesse_reglement']=='2026-02-15' and modifie['commentaire']=='Promesse fictive modifiée'
+      page.reload(wait_until='domcontentloaded');page.get_by_role('button',name='Relances',exact=True).click();row=page.locator('tbody tr').filter(has_text=impayee['numero']);expect(row).to_contain_text('15/02/2026');expect(row).to_contain_text('Promesse fictive modifiée')
+      with page.expect_response(lambda r:r.url.endswith('/api/recouvrement/relances/'+str(cree['id'])) and r.request.method=='PATCH') as r:row.get_by_role('button',name='Annuler la relance',exact=True).click()
+      annule=ok(r.value);assert annule['statut']=='annulee';page.reload(wait_until='domcontentloaded');page.get_by_role('button',name='Relances',exact=True).click();expect(page.locator('tbody tr').filter(has_text=impayee['numero'])).to_contain_text('Annulée');assert len(relances(api))==1 and relances(api)[0]['statut']=='annulee' and core(application,sid)==avant
+      preuve['relance819']={'cree':cree,'modifie':modifie,'annule':annule,'journal_inchange':True,'envoi_externe':False};preuve['cas'].append({'id':'HP-FAC-012','statut':'Réussi'})
+&gt;     page.goto(application['web_url']+'/delais-paiement');expect(page.get_by_role('heading',name='Délais de paiement',exact=True)).to_be_visible();r0=rapport(api);assert {r['reference_facture'] for r in r0['factures']}=={'02','002'}
+                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: assert set() == {'002', '02'}
+E       
+E       Extra items in the right set:
+E       '02'
+E       '002'
+E       Use -v to get more diff
+
+Test\test_e2e_cahier_suivi819_isole.py:41: AssertionError</failure></testcase></testsuite></testsuites>

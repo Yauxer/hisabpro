@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-29",
+  "nature": "Rattachement automatique ;ne renseigne pas la recette utilisateur",
+  "sources_humaines_sha256": {
+    "docs/recette/CAHIER_RECETTE_HISABPRO.xlsx": "a857310bf3a2cf78413f7fcb56d280592a215478507fcae985008cafe57cf837"
+  },
+  "fiches": [
+    {
+      "fiche": "HP-FIS-033",
+      "objectif_source": "Variante TVA encaissement",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Edge réel1440/390 etAPI/PostgreSQL natif isolé,oracle indépendant",
+      "portee": "Année complète enencaissement depuiscréationsociété,acomptes24000,chèques/effetsdatesréelles,avoir3000avecaccordexplicite,impayé14400,rejet2000,clôture/AN/snapshotIS,12PDFsTVA etrecouvrement2026 sansmodifier2025. Historiques sansdocument restent signalés.",
+      "tests_executés": [
+        "Test.test_e2e_encaissements953_isole::test_953_annee_encaissements_cloture_et_recouvrement_suivant[1440]",
+        "Test.test_e2e_encaissements953_isole::test_953_annee_encaissements_cloture_et_recouvrement_suivant[390]",
+        "Test.test_compensations_tva953_isole::test_953_compensation_partielle_datee_sans_doublon_et_originaux[vente-encaissement-100]",
+        "Test.test_compensations_tva953_isole::test_953_compensation_partielle_datee_sans_doublon_et_originaux[vente-debit-200]",
+        "Test.test_compensations_tva953_isole::test_953_compensation_partielle_datee_sans_doublon_et_originaux[achat-encaissement-100]",
+        "Test.test_compensations_tva953_isole::test_953_imputation_historique_sans_signature_signalee_non_inventee",
+        "Test.test_compensations_tva953_isole::test_953_annulation_effective_preserve_periode_anterieure",
+        "Test.test_compensations_tva953_isole::test_953_migration126_ancienne_table_rejeu_et_contrainte_sql",
+        "Test.test_oracle_encaissements953::test_953_oracle_mensuel_independant_des_encaissements"
+      ],
+      "limites": "Migration126 non appliquée surPostgreSQL utilisateur ;àvalider d’abord surcopie restaurable. Historiques sanssignature ouannulationeffective restentàqualifier ;pasdebackfill. Aucun dépôtDGI ni certification ni recettehumaine validés. Personnel/Paie921 distinct,point6humain conservé."
+    }
+  ],
+  "apres": {
+    "Réussi": 249,
+    "Partiel": 11,
+    "Bloqué (source)": 12
+  }
+}

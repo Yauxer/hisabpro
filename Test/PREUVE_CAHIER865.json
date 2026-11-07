@@ -1,0 +1,228 @@
+{
+  "resultats": [
+    {
+      "campagne": "recette865_reproduction",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 43.15,
+      "code": 1
+    },
+    {
+      "campagne": "recette865_corrige",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 33.89,
+      "code": 1
+    },
+    {
+      "campagne": "recette865_reprise",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 38.52,
+      "code": 0
+    },
+    {
+      "campagne": "recette865_connexes",
+      "cas": 4,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 56.4,
+      "code": 0
+    }
+  ],
+  "parcours": [
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_6i7oqqr8",
+      "nonce": "aa05d865394c4bb981b40bd7299f4093",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 1440,
+      "cas": [
+        {
+          "id": "HP-SEC-008",
+          "statut": "Réussi"
+        }
+      ],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "statuts865": {
+        "factures": [
+          "FA-2025-001",
+          "FA-2025-002",
+          "FA-2025-003"
+        ],
+        "partiel": {
+          "facture_id": 1,
+          "total_ttc": 1200.0,
+          "total_regle": 300.0,
+          "total_encaisse": 300.0,
+          "total_reglement_en_cours": 0.0,
+          "total_avoirs": 600.0,
+          "total_acomptes": 0.0,
+          "montant_ras": 0.0,
+          "montant_ras_estime": 0.0,
+          "montant_ras_impute": 0.0,
+          "ras_origine": "aucune",
+          "solde_restant": 300.0,
+          "credit_tiers": 0.0,
+          "est_solde": false,
+          "ras_anomalie": null,
+          "reglements": [
+            {
+              "id": 1,
+              "date": "2025-02-01",
+              "montant": 300.0,
+              "mode": "virement",
+              "reference": "PARTIEL-865",
+              "banque": "Banque Recette",
+              "statut": "complet"
+            }
+          ]
+        },
+        "effet": {
+          "facture_id": 2,
+          "total_ttc": 1200.0,
+          "total_regle": 1200.0,
+          "total_encaisse": 0,
+          "total_reglement_en_cours": 1200.0,
+          "total_avoirs": 0.0,
+          "total_acomptes": 0.0,
+          "montant_ras": 0.0,
+          "montant_ras_estime": 0.0,
+          "montant_ras_impute": 0.0,
+          "ras_origine": "aucune",
+          "solde_restant": 0.0,
+          "credit_tiers": 0.0,
+          "est_solde": true,
+          "ras_anomalie": null,
+          "reglements": [
+            {
+              "id": 2,
+              "date": "2025-02-01",
+              "montant": 1200.0,
+              "mode": "effet",
+              "reference": "EFFET-865",
+              "banque": "Banque Recette",
+              "statut": "portefeuille"
+            }
+          ]
+        },
+        "soldes": {
+          "5141": "1500.00",
+          "3421": "300.00",
+          "3425": "1200.00"
+        },
+        "portefeuille": 1200,
+        "etic_3421_auto": 300,
+        "aucun_encaissement_effet": true,
+        "journal_conserve": true,
+        "limite": "Trois factures fictives1200MAD, paiement partiel300, effet1200 non encaissé et avoir600 imputé. Statut commercial serveur conservé ;seule présentation désambiguïsée."
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_6i7oqqr8",
+      "nonce": "aa05d865394c4bb981b40bd7299f4093",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 390,
+      "cas": [
+        {
+          "id": "HP-SEC-008",
+          "statut": "Réussi"
+        }
+      ],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "statuts865": {
+        "factures": [
+          "FA-2025-001",
+          "FA-2025-002",
+          "FA-2025-003"
+        ],
+        "partiel": {
+          "facture_id": 4,
+          "total_ttc": 1200.0,
+          "total_regle": 300.0,
+          "total_encaisse": 300.0,
+          "total_reglement_en_cours": 0.0,
+          "total_avoirs": 600.0,
+          "total_acomptes": 0.0,
+          "montant_ras": 0.0,
+          "montant_ras_estime": 0.0,
+          "montant_ras_impute": 0.0,
+          "ras_origine": "aucune",
+          "solde_restant": 300.0,
+          "credit_tiers": 0.0,
+          "est_solde": false,
+          "ras_anomalie": null,
+          "reglements": [
+            {
+              "id": 4,
+              "date": "2025-02-01",
+              "montant": 300.0,
+              "mode": "virement",
+              "reference": "PARTIEL-865",
+              "banque": "Banque Recette",
+              "statut": "complet"
+            }
+          ]
+        },
+        "effet": {
+          "facture_id": 5,
+          "total_ttc": 1200.0,
+          "total_regle": 1200.0,
+          "total_encaisse": 0,
+          "total_reglement_en_cours": 1200.0,
+          "total_avoirs": 0.0,
+          "total_acomptes": 0.0,
+          "montant_ras": 0.0,
+          "montant_ras_estime": 0.0,
+          "montant_ras_impute": 0.0,
+          "ras_origine": "aucune",
+          "solde_restant": 0.0,
+          "credit_tiers": 0.0,
+          "est_solde": true,
+          "ras_anomalie": null,
+          "reglements": [
+            {
+              "id": 5,
+              "date": "2025-02-01",
+              "montant": 1200.0,
+              "mode": "effet",
+              "reference": "EFFET-865",
+              "banque": "Banque Recette",
+              "statut": "portefeuille"
+            }
+          ]
+        },
+        "soldes": {
+          "5141": "1500.00",
+          "3421": "300.00",
+          "3425": "1200.00"
+        },
+        "portefeuille": 1200,
+        "etic_3421_auto": 300,
+        "aucun_encaissement_effet": true,
+        "journal_conserve": true,
+        "limite": "Trois factures fictives1200MAD, paiement partiel300, effet1200 non encaissé et avoir600 imputé. Statut commercial serveur conservé ;seule présentation désambiguïsée."
+      }
+    }
+  ],
+  "limites": "Trois factures fictives1200MAD :variante de cohérence des statuts,pas reprise de toutes opérations annuelles. Le statut serveur payee demeure le solde commercial,le badge indique maintenant le règlement en cours. Le taux reste un taux commercial incluant avoirs/imputations ;pas une mesure de cash. Aucun calcul ni écritures historiques modifiés. RH/paie/EDI différés ;réserves841 maintenues.",
+  "build": {
+    "campagne": "build865",
+    "code": 0,
+    "secondes": 5.04
+  },
+  "tests_finaux": 6,
+  "nb_sources_candidat": 463
+}

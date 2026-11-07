@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="68.695" timestamp="2026-10-24T16:31:41.057713+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_cycle775_isole" name="test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier[1440]" time="65.898"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.&#10;Call log:&#10;  - waiting for get_by_role(&quot;dialog&quot;, name=&quot;Nouveau bon de commande&quot;, exact=True).locator(&quot;summary&quot;).filter(has_text=&quot;Notes de commande&quot;)">application = {'api_url': 'http://127.0.0.1:64874', 'web_url': 'http://127.0.0.1:64875', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_najdgg91'), 'nonce': '06110f4847974dcba201a3a404feec5e', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette775_conversion_avant/test_775_achats_acompte_lettra0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'cycle775') as (api,page,sid,preuve):
+&gt;     tiers,articles=referentiels(api,page,application,sid,preuve);cycle(api,page,application,sid,tiers,articles,preuve,tmp_path)
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_cycle775_isole.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\cahier_cycle775_support.py:85: in cycle
+    ouvrir_avance(m,'Notes de commande');champ(m,'Notes','textarea').fill('REC-BC01')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Test\cahier_formulaires773_support.py:22: in ouvrir_avance
+    def ouvrir_avance(modal,title):modal.locator('summary').filter(has_text=title).click()
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\playwright\sync_api\_generated.py:18032: in click
+    self._sync(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_locator.py:165: in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_frame.py:594: in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x0000026A761F9750&gt;
+cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x0000026A7786A980&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        parsed_st = _attach_api_call_information(
+            getattr(task, "__pw_stack__", None) or _capture_stack_trace(),
+            is_internal,
+            title,
+        )
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Locator.click: Timeout 15000ms exceeded.
+E           Call log:
+E             - waiting for get_by_role("dialog", name="Nouveau bon de commande", exact=True).locator("summary").filter(has_text="Notes de commande")
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:632: TimeoutError</failure></testcase></testsuite></testsuites>

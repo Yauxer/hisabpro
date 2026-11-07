@@ -1,0 +1,624 @@
+{
+  "version": "639-20261019",
+  "perimetre": "Annexe sociétés liées633/635 ; ne remplace pas le cahier annuel général.",
+  "administrateur": {
+    "email": "groupe639@example.com",
+    "mot_de_passe": "RecetteGroupe639!"
+  },
+  "lecteur": {
+    "email": "lecteur639@example.com",
+    "mot_de_passe": "RecetteLecture639!"
+  },
+  "societes": {
+    "A": {
+      "nom": "ATLAS SERVICES RECETTE639 SARL",
+      "prefixe": "ATLAS"
+    },
+    "B": {
+      "nom": "RIF CONSEIL RECETTE639 SARL",
+      "prefixe": "RIF"
+    }
+  },
+  "parametres": {
+    "exercice": 2026,
+    "debut": "2026-01-01",
+    "fin": "2026-12-31",
+    "devise": "MAD",
+    "forme_juridique": "SARL",
+    "regime_fiscal": "is",
+    "regime_tva": "encaissement",
+    "prorata_laboratoire": "100.00",
+    "capital_social": "10000.00",
+    "mentions": "ICE/IF/RC laissés vides volontairement dans ce laboratoire ; conserver les avertissements, jamais déposer ces documents."
+  },
+  "tiers": {
+    "client_A": "RIF CONSEIL RECETTE639 SARL",
+    "fournisseur_B": "ATLAS SERVICES RECETTE639 SARL",
+    "compte_client": "3421",
+    "compte_fournisseur": "4411"
+  },
+  "articles": {
+    "A": {
+      "code": "REC639-V",
+      "designation": "Prestation étude recette639",
+      "is_stockable": false,
+      "compte_vente": "71243"
+    },
+    "B": {
+      "code": "REC639-A",
+      "designation": "Étude achetée recette639",
+      "is_stockable": false,
+      "compte_achat": "6111"
+    }
+  },
+  "facture": {
+    "date": "2026-10-19",
+    "delai_paiement": 60,
+    "date_echeance": "2026-12-18",
+    "lignes": [
+      {
+        "description": "Lot A recette639",
+        "quantite": 2,
+        "prix_unitaire": "100.00",
+        "tva": "20.00"
+      },
+      {
+        "description": "Lot B recette639",
+        "quantite": 3,
+        "prix_unitaire": "100.00",
+        "tva": "20.00"
+      }
+    ],
+    "nature_tva_achat": "charge",
+    "tva_deductible_pct": "100.00",
+    "remises": "0",
+    "frais": "0",
+    "ras": "0"
+  },
+  "justification_liaison": "Relation commerciale fictive de recette639 vérifiée dans les deux sociétés.",
+  "logo": "images/LOGO_RECETTE_FICTIF.png",
+  "oracle": {
+    "ht": "500.00",
+    "tva": "100.00",
+    "ttc": "600.00",
+    "pieces": [
+      {
+        "societe": "A",
+        "reference": "CAP-A-639",
+        "date": "2026-01-02",
+        "journal": "BQ",
+        "lignes": [
+          {
+            "compte": "5141",
+            "debit_cents": 1000000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "1111",
+            "debit_cents": 0,
+            "credit_cents": 1000000
+          }
+        ]
+      },
+      {
+        "societe": "B",
+        "reference": "CAP-B-639",
+        "date": "2026-01-02",
+        "journal": "BQ",
+        "lignes": [
+          {
+            "compte": "5141",
+            "debit_cents": 1000000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "1111",
+            "debit_cents": 0,
+            "credit_cents": 1000000
+          }
+        ]
+      },
+      {
+        "societe": "A",
+        "reference": "ATLAS-2026-001",
+        "date": "2026-10-19",
+        "journal": "VT",
+        "lignes": [
+          {
+            "compte": "3421",
+            "debit_cents": 60000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "71243",
+            "debit_cents": 0,
+            "credit_cents": 50000
+          },
+          {
+            "compte": "4455",
+            "debit_cents": 0,
+            "credit_cents": 10000
+          }
+        ]
+      },
+      {
+        "societe": "B",
+        "reference": "ATLAS-2026-001",
+        "date": "2026-10-19",
+        "journal": "AC",
+        "lignes": [
+          {
+            "compte": "6111",
+            "debit_cents": 50000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "34552",
+            "debit_cents": 10000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "4411",
+            "debit_cents": 0,
+            "credit_cents": 60000
+          }
+        ]
+      },
+      {
+        "societe": "A",
+        "reference": "VIR-A-639",
+        "date": "2026-10-19",
+        "journal": "BQ",
+        "lignes": [
+          {
+            "compte": "5141",
+            "debit_cents": 60000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "3421",
+            "debit_cents": 0,
+            "credit_cents": 60000
+          }
+        ]
+      },
+      {
+        "societe": "B",
+        "reference": "VIR-B-639",
+        "date": "2026-10-19",
+        "journal": "BQ",
+        "lignes": [
+          {
+            "compte": "4411",
+            "debit_cents": 60000,
+            "credit_cents": 0
+          },
+          {
+            "compte": "5141",
+            "debit_cents": 0,
+            "credit_cents": 60000
+          }
+        ]
+      }
+    ],
+    "societes": {
+      "A": {
+        "pieces": 3,
+        "lignes": 7,
+        "debit": "11200.00",
+        "credit": "11200.00",
+        "soldes_cents": {
+          "5141": 1060000,
+          "1111": -1000000,
+          "3421": 0,
+          "71243": -50000,
+          "4455": -10000
+        },
+        "banque": "10600.00",
+        "resultat_avant_impot": "500.00",
+        "actif": "10600.00",
+        "passif": "10600.00",
+        "solde_tiers": "0.00"
+      },
+      "B": {
+        "pieces": 3,
+        "lignes": 7,
+        "debit": "11200.00",
+        "credit": "11200.00",
+        "soldes_cents": {
+          "5141": 940000,
+          "1111": -1000000,
+          "6111": 50000,
+          "34552": 10000,
+          "4411": 0
+        },
+        "banque": "9400.00",
+        "resultat_avant_impot": "-500.00",
+        "actif": "9500.00",
+        "passif": "9500.00",
+        "solde_tiers": "0.00"
+      }
+    },
+    "variation_prix_101": {
+      "ht": "502.00",
+      "tva": "100.40",
+      "ttc": "602.40"
+    }
+  },
+  "limites": [
+    {
+      "id": "LIM-639-01",
+      "statut": "Bloqué",
+      "objet": "Consolidation fiscale ou qualification réglementaire du groupe",
+      "action": "Hors de ce scénario ; nécessite dossier et textes applicables, aucun résultat déduit."
+    },
+    {
+      "id": "LIM-639-02",
+      "statut": "Bloqué",
+      "objet": "Synchronisation automatique des règlements/avoirs/livraisons",
+      "action": "Non développée ; traiter séparément dans chaque société et conserver les alertes."
+    }
+  ],
+  "cas": [
+    {
+      "id": "GRP-001",
+      "module": "Préparation",
+      "objectif": "Créer les deux sociétés depuis une installation isolée vierge",
+      "prerequis": "Technicien : installation102 préparée et sauvegarde de référence ; aucune base réelle.",
+      "donnees": "Admin groupe639@example.com / RecetteGroupe639! ; sociétés A et B : noms exacts dans le jeu de données.",
+      "actions": "Sur l’inscription, créer A avec cet administrateur. Se connecter. Dans le sélecteur de société, Nouvelle société : créer B. Revenir à A puis vérifier que le sélecteur donne accès aux deux.",
+      "attendu": "Deux sociétés distinctes, administrateur dans chacune, aucune facture ni écriture. Ne pas réutiliser un dossier existant.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-002",
+      "module": "Préparation",
+      "objectif": "Configurer calendriers, préfixes et hypothèses du laboratoire",
+      "prerequis": "GRP-001 réussi.",
+      "donnees": "2026 : 01/01→31/12 ; MAD ; SARL ; capital social 10000,00 chacune ; IS ; TVA encaissement ; prorata 100% ; préfixes ATLAS et RIF ; logo de recette fourni.",
+      "actions": "Dans chaque société : Paramètres → Fiche société, renseigner les valeurs et Préfixe Factures. Charger le logo fourni et enregistrer. Vérifier Exercices 2026 et ses périodes ouvertes. Déclaration TVA : sélectionner 2026, conserver Prorata annuel de déduction 100% et enregistrer.",
+      "attendu": "Réglages séparés. Le capital social déclaré ne crée pas à lui seul une écriture. Numéros définitifs attribués à la validation.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "20% et100% sont des hypothèses de laboratoire ; ne pas les assimiler à un droit fiscal réel.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "ICE/IF/RC restent volontairement vides ; conserver les avertissements, ne pas inventer de mentions légales ni déposer ces documents."
+    },
+    {
+      "id": "GRP-003",
+      "module": "Préparation",
+      "objectif": "Créer les tiers qui représentent chaque société",
+      "prerequis": "GRP-002 réussi.",
+      "donnees": "Chez A : client RIF CONSEIL RECETTE639 SARL, compte 3421. Chez B : fournisseur ATLAS SERVICES RECETTE639 SARL, compte 4411. Délai 60 jours, tiers actifs.",
+      "actions": "Dans A, Clients/Fournisseurs : créer le client. Basculer B : créer le fournisseur. Conserver les comptes collectifs et les codes auxiliaires générés. Revenir A.",
+      "attendu": "Deux tiers propres à leurs sociétés ; aucun identifiant technique réutilisé de l’autre côté.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-004",
+      "module": "Préparation",
+      "objectif": "Créer les articles non stockables",
+      "prerequis": "GRP-003 réussi.",
+      "donnees": "A : REC639-V, Prestation étude recette639, vente71243. B : REC639-A, Étude achetée recette639, achat6111. Prix 100, TVA 20%, non stockables.",
+      "actions": "Articles → Nouvel article dans chaque société : saisir code et désignation, désactiver le caractère stockable ; dans les comptes comptables, sélectionner le compte indiqué. Enregistrer puis relire les fiches.",
+      "attendu": "Les services sont disponibles sans stock initial ; aucune écriture de stock ou acquisition.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-005",
+      "module": "Préparation",
+      "objectif": "Enregistrer les deux apports bancaires",
+      "prerequis": "GRP-004 réussi.",
+      "donnees": "A : CAP-A-639 ; B : CAP-B-639 ; date 02/01/2026 ; montant10000,00 MAD chacune.",
+      "actions": "Dans chaque société, Journal → Nouvelle écriture : journalBQ, date 02/01/2026, référence et libellé Apport fictif de recette639. Saisir débit 5141=10000 et crédit 1111=10000, enregistrer puis valider.",
+      "attendu": "Une pièce définitive par société, deux lignes, débit=crédit 10000 ; banque 10000.",
+      "ecritures": "Dans chacune : D5141 Banque 10000 / C1111 Capital social 10000.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Pièces BQ et balances initiales des deux sociétés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-006",
+      "module": "Facturation liée",
+      "objectif": "Enregistrer la liaison commerciale explicite",
+      "prerequis": "GRP-005 réussi, société activeA.",
+      "donnees": "AcheteurB ; client chez A=RIF CONSEIL RECETTE639 SARL ; fournisseur chez B=ATLAS SERVICES RECETTE639 SARL ; justification du JSON.",
+      "actions": "Paramètres → Sociétés liées : choisir B, puis les deux tiers. Saisir la justification exacte, cocher la vérification et Enregistrer la liaison. Relire la ligne active.",
+      "attendu": "Liaison active A → B et historique de création ; aucune facture, mouvement ou écriture créée.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-007",
+      "module": "Facturation liée",
+      "objectif": "Créer le brouillon de vente",
+      "prerequis": "GRP-006 réussi.",
+      "donnees": "A ; date 19/10/2026 ; client B ; deux lignes articleREC639-V : Lot A recette639, qté2×100 ; Lot B recette639, qté3×100 ; TVA 20 ; remises/frais/RAS0 ; délai 60 jours.",
+      "actions": "Facturation → Factures → Nouvelle facture de vente. Renseigner le client et les deux lignes ; choisir Enregistrer le brouillon. Vérifier les totaux et l’échéance18/12/2026.",
+      "attendu": "Brouillon sans numéro définitif : HT 500,00, TVA 100,00, TTC 600,00 ; aucun Journal nouveau.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-008",
+      "module": "Facturation liée",
+      "objectif": "Valider et comptabiliser la vente chez A",
+      "prerequis": "GRP-007 réussi.",
+      "donnees": "Facture de600,00 MAD ; numéro attendu ATLAS-2026-001.",
+      "actions": "Dans la liste Factures, Valider définitivement le brouillon. Conserver les avertissements de mentions du laboratoire. Générer son écriture comptable, puis au Journal valider ce brouillon. Ouvrir le détail de la vente.",
+      "attendu": "Vente définitive et comptabilisée ; A possède deux pièces, banque 10000 et client débiteur600. B ne possède encore que son capital.",
+      "ecritures": "A : D3421=600 / C71243=500 / C4455=100 ; auxiliaire du client réel.",
+      "fiscal": "TVA facturée100 dans le Journal ; le régime encaissement ne constitue pas à lui seul une déclaration déposée.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-009",
+      "module": "Facturation liée",
+      "objectif": "Préparer l’achat et vérifier l’aperçu",
+      "prerequis": "GRP-008 réussi, détail de la vente dans A.",
+      "donnees": "Liaison A → B ; chaque ligne source vers REC639-A ; nature Charge ; pourcentage propre facture 100%.",
+      "actions": "Déplier Correspondance entre sociétés. Choisir B. Associer les deux lignes à REC639-A. Choisir Charge et saisir 100. Cliquer Vérifier le brouillon d’achat sans confirmer la création.",
+      "attendu": "Aperçu HT 500, TVA 100, TTC 600, date 19/10/2026 et exercice acheteur 2026 ; fournisseur A. B reste sans nouvelle pièce ni facture.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-010",
+      "module": "Facturation liée",
+      "objectif": "Créer le brouillon correspondant chez B",
+      "prerequis": "GRP-009 réussi, aperçu relu.",
+      "donnees": "Mêmes paramètres ; référence fournisseur ATLAS-2026-001.",
+      "actions": "Cocher la vérification de la société, articles, montants et TVA ; Créer le brouillon chez l’acheteur. Noter son identifiant et actualiser la correspondance.",
+      "attendu": "Un seul achat lié, non validé et non comptabilisé, aucun numéro interne ; référence ATLAS-2026-001. Aucune écriture créée chez B et aucune modification de la venteA.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-011",
+      "module": "Facturation liée",
+      "objectif": "Valider et comptabiliser l’achat chez B",
+      "prerequis": "GRP-010 réussi.",
+      "donnees": "Achat B 600,00 MAD, numéro interne attendu RIF-2026-001 ; référence fournisseur ATLAS-2026-001.",
+      "actions": "Fermer le détail, basculer B. Facturation → Factures → filtre Achats : ouvrir et vérifier le brouillon. Valider définitivement, générer son écriture puis la valider au Journal. Relire le panneau de correspondance.",
+      "attendu": "Deux pièces dans B ; achat et écriture propres à B, fournisseur créditeur600, banque 10000. Suivi : deux factures comptabilisées, aucun écart documentaire.",
+      "ecritures": "B : D6111=500 / D34552=100 / C4411=600 ; auxiliaire du fournisseur réel.",
+      "fiscal": "TVA récupérable100 selon les hypothèses100% du laboratoire ; aucune qualification fiscale réelle ou déclaration validée.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-012",
+      "module": "Règlements et lettrage",
+      "objectif": "Payer le fournisseur chez B sans régler silencieusementA",
+      "prerequis": "GRP-011 réussi.",
+      "donnees": "B ; factureRIF-2026-001 ;19/10/2026 ;600,00 ; Virement ; référence VIR-B-639 ; banque 5141.",
+      "actions": "Sur l’achat, Payer le fournisseur : saisir ces valeurs, choisir la comptabilisation et enregistrer. Valider l’écriture de règlement au Journal. Basculer A et consulter la vente sans y saisir de règlement.",
+      "attendu": "B : facture payée, dette0, banque 9400. A : vente encore impayée600 tant que son encaissement n’a pas été saisi.",
+      "ecritures": "B : D4411=600 / C5141=600. A : aucune nouvelle écriture.",
+      "fiscal": "Consulter les impacts du règlement dans chaque dossier, sans transférer automatiquement une déclaration TVA.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-013",
+      "module": "Règlements et lettrage",
+      "objectif": "Enregistrer l’encaissement réel dans le dossierA",
+      "prerequis": "GRP-012 réussi.",
+      "donnees": "A ; venteATLAS-2026-001 ;19/10/2026 ;600,00 ; Virement ; référence VIR-A-639 ; banque 5141.",
+      "actions": "Sur la vente, Encaisser le client : saisir ces valeurs, choisir la comptabilisation et enregistrer. Au Journal, valider l’écriture de règlement. Revenir dans chaque liste de factures et vérifier Payée.",
+      "attendu": "A : banque 10600, client 0. B : banque 9400, fournisseur 0. Trois pièces définitives par société.",
+      "ecritures": "A : D5141=600 / C3421=600. Le règlement B n’est pas créé une seconde fois.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-014",
+      "module": "Règlements et lettrage",
+      "objectif": "Lettrer les deux auxiliaires séparément",
+      "prerequis": "GRP-013 réussi, toutes les écritures validées.",
+      "donnees": "A : compte 3421 et client B ; B : compte 4411 et fournisseur A ; deux lignes équilibrées dans chaque sélection.",
+      "actions": "Lettrage dans A : choisir3421, client B, cocher la ligne facture 600 au débit et celle du règlement600 au crédit, Lettrer2 lignes. Noter le code généré d’au moins trois lettres. Répéter dans B sur4411 avec les sens opposés.",
+      "attendu": "Deux lettrages propres à leurs sociétés, solde0 chacun. Les lignes définitives gardent les mêmes comptes/montants/références.",
+      "ecritures": "Aucune écriture supplémentaire ; lettrage enregistré hors réécriture des lignes définitives.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-015",
+      "module": "Contrôles",
+      "objectif": "Comparer balances, FEC, CPC, bilans et PDF",
+      "prerequis": "GRP-014 réussi.",
+      "donnees": "Résultats attendus de la feuille Oracle : A banque 10600/résultat+500/bilan 10600 ; B banque 9400/TVA 100/résultat−500/bilan 9500 ; D=C11200 dans chaque Journal.",
+      "actions": "Dans chaque société : exporter le FEC2026, la balance et la facture PDF ; ouvrir Liasse fiscale pour bilan/CPC. Comparer compte par compte à l’oracle et aux14 lignes attendues. Relire les références et le logo de chaque PDF. Paramètres → Sociétés liées : déplier Factures de la liaison puis Actualiser les factures liées ; vérifier TTC 600, reste0 et encaissé/payé600 dans chacun des deux dossiers.",
+      "attendu": "Trois pièces et sept lignes par société, six pièces/quatorze lignes au total de contrôle. Aucun écart documentaire. PDFA=ATLAS, PDFB=RIF avec référenceATLAS ; aucun logo d’une société tierce.",
+      "ecritures": "Voir Journal attendu et soldes indépendants ; ne pas transformer le total de contrôle en consolidation fiscale.",
+      "fiscal": "Résultats avant impôt seulement ; pas d’IS/CM/CSS calculé, pas de déclaration ou archivage définitif.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "FEC/PDF/balances et captures CPC/bilan des deux sociétés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-016",
+      "module": "Négatifs",
+      "objectif": "Vérifier un compte de consultation seule",
+      "prerequis": "GRP-015 réussi ; administrateur prépare un lecteur dans A puis l’invite dans B en lecture.",
+      "donnees": "lecteur639@example.com / RecetteLecture639! ; rôleLecture dans les deux sociétés.",
+      "actions": "Paramètres → Utilisateurs : créer le lecteur dans A ; dans B, inviter son email avec rôleLecture. Se déconnecter et se connecter comme lecteur. Ouvrir Sociétés liées et les deux détails de facture.",
+      "attendu": "Suivi consultable, aucun formulaire d’association ou de création, aucune commande de retrait ou comptabilisation. Les pièces et soldes du scénario restent identiques.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-017",
+      "module": "Négatifs",
+      "objectif": "Vérifier qu’une vente ne crée pas un second achat",
+      "prerequis": "GRP-015 réussi ; se reconnecter administrateur.",
+      "donnees": "VenteATLAS-2026-001 déjà liée à RIF-2026-001.",
+      "actions": "Dans A, rouvrir le détail de la vente puis Correspondance entre sociétés. Actualiser, fermer et rouvrir le panneau. Vérifier qu’il affiche l’achat existant sans proposer une nouvelle création. DansB, compter les achats correspondants.",
+      "attendu": "Un seul achat ; aucun nouveau numéro, stock ou Journal. Les répétitions réseau avec même clé sont couvertes par les tests techniques635.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-018",
+      "module": "Négatifs",
+      "objectif": "Afficher un écart de brouillon sans modifier une vente définitive",
+      "prerequis": "Utiliser deux AUTRES sociétés VAR-A 639 et VAR-B 639 ; répéterGRP-001→010 avec préfixesVARA/VARB et tiers aux noms correspondants. Ne pas toucher au scénario principal.",
+      "donnees": "Dans le brouillonVAR-B, prix du Lot A=101 au lieu100 ; quantité2 inchangée ; Lot B 3×100 ; TVA 20%.",
+      "actions": "Dans VAR-B, modifier le brouillon d’achat et enregistrer. Rouvrir le détail puis Actualiser la correspondance. Basculer VAR-A et relire la vente d’origine.",
+      "attendu": "Achat modifié HT 502, TVA 100,40, TTC 602,40 ; alerte Écarts à vérifier sur les lignes. Vente d’origineHT500/TTC 600 intacte ; aucune écriture d’achat générée.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Variante isolée seulement ; aucune facture définitive n’est réécrite pour faire disparaître le contrôle."
+    },
+    {
+      "id": "GRP-019",
+      "module": "Contrôles",
+      "objectif": "Retirer la liaison en conservant les pièces",
+      "prerequis": "Scénario principal GRP-015 terminé, administrateur connectéA.",
+      "donnees": "Liaison A → B ; motif Fin de recette639 — liaison retirée.",
+      "actions": "Paramètres → Sociétés liées : Retirer la liaison, saisir ce motif, confirmer. Rouvrir les détails des factures et comparer FEC/Journal/balances aux exportsGRP-015.",
+      "attendu": "Liaison retirée avec historique, correspondance conservée, mêmes pièces et montants. Ce retrait ne supprime pas les factures ni les écritures et n’autorise pas une nouvelle copie de la même vente.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et référence des documents concernés.",
+      "preuves": "",
+      "observations": "Sociétés fictives uniquement ; résultat humain à renseigner."
+    },
+    {
+      "id": "GRP-020",
+      "module": "Technique",
+      "objectif": "Vérifier le paquet et le banc d’installation isolé",
+      "prerequis": "Technicien, copie de travail isolée ; aucun paramètre de base réelle.",
+      "donnees": "Test/verifier_zip_session.py avec le ZIP cumulatif fourni ; Test/recette_installation_vierge_102.py --rapport .codex-tests/recette639-installation.md.",
+      "actions": "Vérifier le manifeste embarqué du ZIP sans extraction. Lancer le CLI102 depuis la racine avec le Python du projet ; lire le rapport et vérifier que son cluster temporaire est supprimé. Ne jamais passer une URL de base ni lancer ces SQL sur le dossier réel pour cette recette.",
+      "attendu": "ZIP CRC/SHA/liste valides ;93SQL distincts et29rejeux,80tables, droits limités, cluster supprimé. Ce CLI ne migre pas l’installation active.",
+      "ecritures": "Aucune écriture créée par cette action.",
+      "fiscal": "Aucune liquidation ou déclaration fiscale dans ce cas.",
+      "controles": "Vérifier la société active, les montants et l’absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Sortie du vérificateur, rapport d’installation et résultat des tests techniques635/637.",
+      "preuves": "",
+      "observations": "Cas technique distinct des actions métier ; aucune validation humaine globale ou production déduite."
+    }
+  ]
+}

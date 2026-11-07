@@ -1,0 +1,82 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_v0inln0d",
+  "nonce": "b52eec918d774bf6bde03e0824709317",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "TimeoutError('Timeout 15000ms exceeded while waiting for event \"response\"')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "soumission783": {
+    "disabled": false,
+    "rect": {
+      "x": 188.796875,
+      "y": 1401.284912109375,
+      "width": 184.203125,
+      "height": 38,
+      "top": 1401.284912109375,
+      "right": 373,
+      "bottom": 1439.284912109375,
+      "left": 188.796875
+    },
+    "viewport": {
+      "width": 390,
+      "height": 1050
+    },
+    "focus": "text",
+    "clics": [
+      {
+        "type": "mousedown",
+        "target": "BUTTON",
+        "classe": "FormulaireEcriture_btnPrim",
+        "bouton": " Enregistrer l'écriture",
+        "y": 1008,
+        "rect": {
+          "x": 185.921875,
+          "y": 989.25,
+          "width": 187.078125,
+          "height": 38,
+          "top": 989.25,
+          "right": 373,
+          "bottom": 1027.25,
+          "left": 185.921875
+        }
+      },
+      {
+        "type": "mouseup",
+        "target": "SPAN",
+        "classe": "",
+        "bouton": null,
+        "y": 1008,
+        "rect": {
+          "x": 185.921875,
+          "y": 1027.25,
+          "width": 187.078125,
+          "height": 38,
+          "top": 1027.25,
+          "right": 373,
+          "bottom": 1065.25,
+          "left": 185.921875
+        }
+      },
+      {
+        "type": "click",
+        "target": "DIV",
+        "classe": "FormulaireEcriture_actions",
+        "bouton": null,
+        "y": 1008,
+        "rect": {
+          "x": 185.921875,
+          "y": 1027.25,
+          "width": 187.078125,
+          "height": 38,
+          "top": 1027.25,
+          "right": 373,
+          "bottom": 1065.25,
+          "left": 185.921875
+        }
+      }
+    ]
+  }
+}

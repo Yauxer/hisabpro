@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="54.413" timestamp="2026-10-25T21:03:19.896690+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_negatifs833_isole" name="test_833_identite_exercices_et_saisies_invalides[1440]" time="39.036"><failure message="AssertionError: {&quot;detail&quot;:&quot;Method Not Allowed&quot;}&#10;assert 405 in {409}">application = {'api_url': 'http://127.0.0.1:49237', 'web_url': 'http://127.0.0.1:49238', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_yk3_xzv_'), 'nonce': '3290b1a749de4d19a3f2e050cd59eb62', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette833_corrige/test_833_identite_exercices_et0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_833_identite_exercices_et_saisies_invalides(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'negatifs833') as (api,page,sid,preuve):
+      resultats={};preuve['negatifs833']=resultats;me=ok(api.get('/api/auth/me'));nb=comptes833(application);identite=ok(api.get('/api/societe/moi'));calendrier=ok(api.get('/api/exercices'));assert core(application,sid)==()
+      ctx=page.context.browser.new_context(viewport={'width':largeur,'height':1050});gp=ctx.new_page();gp.set_default_timeout(15000);erreurs,serveur=observer(gp,application['api_url'])
+      try:
+       gp.goto(application['web_url']+'/login');gp.get_by_role('button',name='Créer un compte',exact=True).click();champ(gp,'Votre nom').fill('Copie Faible');champ(gp,'Raison sociale').fill('Copie négative fictive');champ(gp,'Email').fill(me['email']);pwd=champ(gp,'Mot de passe');assert pwd.get_attribute('minlength')=='8';pwd.fill(DATA['societe']['password_test'])
+       with gp.expect_response(lambda r:r.url.endswith('/api/auth/register') and r.request.method=='POST') as r:gp.get_by_role('button',name='Créer mon compte',exact=True).click()
+       resultats['HP-NEG-001']=refus833(r.value,{400});expect(gp.get_by_text('Email déjà utilisé',exact=True)).to_be_visible();assert comptes833(application)==nb
+       champ(gp,'Email').fill(f'faible833-{sid}@hisabpro-recette.example');pwd.fill('court');assert not pwd.evaluate('e=&gt;e.checkValidity()');resultats['HP-NEG-002']=refus833(api.post('/api/auth/register',json={'nom':'Copie Faible','email':f'faible833-{sid}@hisabpro-recette.example','password':'court','raison_sociale':'Copie Faible'}),{400});assert '8' in str(resultats['HP-NEG-002']['corps']) and comptes833(application)==nb and not erreurs and not serveur
+      finally:ctx.close()
+      page.goto(application['web_url']+'/parametres');champ(page,'ICE').fill('12345678901234')
+      with page.expect_response(lambda r:r.url.endswith('/api/societe/moi') and r.request.method=='PATCH') as r:page.get_by_role('button',name='Enregistrer',exact=True).click()
+      resultats['HP-NEG-003']=refus833(r.value,{400,422});expect(page.locator('[class*="cardHeader"]').filter(has_text='Informations de la société')).to_contain_text('15');assert ok(api.get('/api/societe/moi'))==identite
+      page.goto(application['web_url']+'/cloture');page.get_by_role('button',name='Créer un exercice',exact=True).click();form=page.locator('form').filter(has=page.get_by_label('Année de clôture du nouvel exercice',exact=True))
+      for annee,debut,fin,cas in [('2026','2025-07-01','2026-06-30','HP-NEG-004'),('2028','2027-01-01','2028-01-31','HP-NEG-005')]:
+       form.get_by_label('Année de clôture du nouvel exercice',exact=True).fill(annee);form.get_by_label('Date de début du nouvel exercice',exact=True).fill(debut);form.get_by_label('Date de clôture du nouvel exercice',exact=True).fill(fin)
+       with page.expect_response(lambda r:r.url.endswith('/api/exercices') and r.request.method=='POST') as r:form.get_by_role('button',name='Créer cet exercice',exact=True).click()
+       resultats[cas]=refus833(r.value,{400,409});expect(page.get_by_role('alert').first).to_be_visible();assert ok(api.get('/api/exercices'))==calendrier
+&gt;     chevauche=refus833(api.put('/api/exercices/2026',json={'date_debut':'2025-07-01','date_fin':'2026-06-30'}),{409});assert 'chevauch' in str(chevauche['corps']).lower();resultats['HP-NEG-004']['controle_chevauchement']=chevauche;assert ok(api.get('/api/exercices'))==calendrier
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_negatifs833_isole.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [405 Method Not Allowed]&gt;, attendus = {409}
+
+    def refus833(r,attendus):
+&gt;    statut=r.status_code if hasattr(r,'status_code') else r.status;assert statut in attendus,(r.text if hasattr(r,'status_code') else r.text());return {'status':statut,'corps':r.json()}
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: {"detail":"Method Not Allowed"}
+E    assert 405 in {409}
+
+Test\test_e2e_cahier_negatifs833_isole.py:19: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_negatifs833_isole" name="test_833_identite_exercices_et_saisies_invalides[390]" time="11.873"><failure message="AssertionError: {&quot;detail&quot;:&quot;Method Not Allowed&quot;}&#10;assert 405 in {409}">application = {'api_url': 'http://127.0.0.1:49237', 'web_url': 'http://127.0.0.1:49238', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_yk3_xzv_'), 'nonce': '3290b1a749de4d19a3f2e050cd59eb62', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette833_corrige/test_833_identite_exercices_et1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_833_identite_exercices_et_saisies_invalides(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'negatifs833') as (api,page,sid,preuve):
+      resultats={};preuve['negatifs833']=resultats;me=ok(api.get('/api/auth/me'));nb=comptes833(application);identite=ok(api.get('/api/societe/moi'));calendrier=ok(api.get('/api/exercices'));assert core(application,sid)==()
+      ctx=page.context.browser.new_context(viewport={'width':largeur,'height':1050});gp=ctx.new_page();gp.set_default_timeout(15000);erreurs,serveur=observer(gp,application['api_url'])
+      try:
+       gp.goto(application['web_url']+'/login');gp.get_by_role('button',name='Créer un compte',exact=True).click();champ(gp,'Votre nom').fill('Copie Faible');champ(gp,'Raison sociale').fill('Copie négative fictive');champ(gp,'Email').fill(me['email']);pwd=champ(gp,'Mot de passe');assert pwd.get_attribute('minlength')=='8';pwd.fill(DATA['societe']['password_test'])
+       with gp.expect_response(lambda r:r.url.endswith('/api/auth/register') and r.request.method=='POST') as r:gp.get_by_role('button',name='Créer mon compte',exact=True).click()
+       resultats['HP-NEG-001']=refus833(r.value,{400});expect(gp.get_by_text('Email déjà utilisé',exact=True)).to_be_visible();assert comptes833(application)==nb
+       champ(gp,'Email').fill(f'faible833-{sid}@hisabpro-recette.example');pwd.fill('court');assert not pwd.evaluate('e=&gt;e.checkValidity()');resultats['HP-NEG-002']=refus833(api.post('/api/auth/register',json={'nom':'Copie Faible','email':f'faible833-{sid}@hisabpro-recette.example','password':'court','raison_sociale':'Copie Faible'}),{400});assert '8' in str(resultats['HP-NEG-002']['corps']) and comptes833(application)==nb and not erreurs and not serveur
+      finally:ctx.close()
+      page.goto(application['web_url']+'/parametres');champ(page,'ICE').fill('12345678901234')
+      with page.expect_response(lambda r:r.url.endswith('/api/societe/moi') and r.request.method=='PATCH') as r:page.get_by_role('button',name='Enregistrer',exact=True).click()
+      resultats['HP-NEG-003']=refus833(r.value,{400,422});expect(page.locator('[class*="cardHeader"]').filter(has_text='Informations de la société')).to_contain_text('15');assert ok(api.get('/api/societe/moi'))==identite
+      page.goto(application['web_url']+'/cloture');page.get_by_role('button',name='Créer un exercice',exact=True).click();form=page.locator('form').filter(has=page.get_by_label('Année de clôture du nouvel exercice',exact=True))
+      for annee,debut,fin,cas in [('2026','2025-07-01','2026-06-30','HP-NEG-004'),('2028','2027-01-01','2028-01-31','HP-NEG-005')]:
+       form.get_by_label('Année de clôture du nouvel exercice',exact=True).fill(annee);form.get_by_label('Date de début du nouvel exercice',exact=True).fill(debut);form.get_by_label('Date de clôture du nouvel exercice',exact=True).fill(fin)
+       with page.expect_response(lambda r:r.url.endswith('/api/exercices') and r.request.method=='POST') as r:form.get_by_role('button',name='Créer cet exercice',exact=True).click()
+       resultats[cas]=refus833(r.value,{400,409});expect(page.get_by_role('alert').first).to_be_visible();assert ok(api.get('/api/exercices'))==calendrier
+&gt;     chevauche=refus833(api.put('/api/exercices/2026',json={'date_debut':'2025-07-01','date_fin':'2026-06-30'}),{409});assert 'chevauch' in str(chevauche['corps']).lower();resultats['HP-NEG-004']['controle_chevauchement']=chevauche;assert ok(api.get('/api/exercices'))==calendrier
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_negatifs833_isole.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [405 Method Not Allowed]&gt;, attendus = {409}
+
+    def refus833(r,attendus):
+&gt;    statut=r.status_code if hasattr(r,'status_code') else r.status;assert statut in attendus,(r.text if hasattr(r,'status_code') else r.text());return {'status':statut,'corps':r.json()}
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: {"detail":"Method Not Allowed"}
+E    assert 405 in {409}
+
+Test\test_e2e_cahier_negatifs833_isole.py:19: AssertionError</failure></testcase></testsuite></testsuites>

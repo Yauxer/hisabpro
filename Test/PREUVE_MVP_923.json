@@ -1,0 +1,392 @@
+{
+  "date": "2026-10-29",
+  "nombre_distinct": 48,
+  "repartition": {
+    "API_SQL_restauration_PG_natif_isole": 9,
+    "Edge_API_PG_natif_isole": 8,
+    "unitaires_et_documents": 31
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_pdf_exact_logo_source_audit_rejeu_et_comptabilite",
+      "famille": "API_SQL_restauration_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_brouillon_proforma_achat_non_acceptes[params0]",
+      "famille": "API_SQL_restauration_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_brouillon_proforma_achat_non_acceptes[params1]",
+      "famille": "API_SQL_restauration_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_brouillon_proforma_achat_non_acceptes[params2]",
+      "famille": "API_SQL_restauration_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_societes_lecture_et_revocation",
+      "famille": "API_SQL_restauration_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_double_clic_concurrent_et_payload_non_substituable",
+      "famille": "API_SQL_restauration_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_gardes_sql_role_limite_et_aucune_substitution",
+      "famille": "API_SQL_restauration_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_absence_migration_n_empeche_pas_pdf_habituel",
+      "famille": "API_SQL_restauration_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_e2e_factures_conservation923_isole::test_923_conserver_recharger_telecharger_et_operations_disponibles[1440]",
+      "famille": "Edge_API_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_e2e_factures_conservation923_isole::test_923_conserver_recharger_telecharger_et_operations_disponibles[390]",
+      "famille": "Edge_API_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_factures_conservation923_restauration_isole::test_923_restauration_native_copie_et_droits",
+      "famille": "API_SQL_restauration_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_fact9_documents_pdf::test_pdf_facture_professionnel_genere_et_lisible",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_fact9_documents_pdf::test_pdf_bl_double_exemplaire_produit_deux_pages_minimum",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_fact9_documents_pdf::test_resume_tva_pdf_ne_confond_pas_zero_et_exoneration",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_fact9_documents_pdf::test_routes_pdf_fact9_couvrent_tous_documents_commerciaux",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_fact9_documents_pdf::test_facture_pdf_inclut_echeancier_et_resume_tva",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_fact9_documents_pdf::test_bc_et_br_ne_sont_plus_marques_pdf_bientot_disponible",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_fact9_documents_pdf::test_preparation_email_telecharge_dabord_le_pdf",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_fact9_documents_pdf::test_avoirs_exposent_tiers_id_et_pdf",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_reel_sur_premiere_page_et_sources_intactes[commercial-PNG]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_reel_sur_premiere_page_et_sources_intactes[commercial-JPEG]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_reel_sur_premiere_page_et_sources_intactes[financier-PNG]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_reel_sur_premiere_page_et_sources_intactes[financier-JPEG]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_reel_sur_premiere_page_et_sources_intactes[liasse-PNG]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_reel_sur_premiere_page_et_sources_intactes[liasse-JPEG]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_reel_sur_premiere_page_et_sources_intactes[preparation-PNG]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_reel_sur_premiere_page_et_sources_intactes[preparation-JPEG]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_reel_sur_premiere_page_et_sources_intactes[inventaire-PNG]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_reel_sur_premiere_page_et_sources_intactes[inventaire-JPEG]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_archive_ancienne_sans_logo_reste_sans_logo",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_historique_absent_ou_invalide_ne_bloque_pas_pdf[None]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_historique_absent_ou_invalide_ne_bloque_pas_pdf[]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_historique_absent_ou_invalide_ne_bloque_pas_pdf[https://example.com/logo.png]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_historique_absent_ou_invalide_ne_bloque_pas_pdf[C:/secret.png]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_logos_exports_pdf::test_logo_historique_absent_ou_invalide_ne_bloque_pas_pdf[data:image/png;base64,aW52YWxpZA==]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_pdf_textes_litteraux::test_nom_societe_avec_balises_reste_litteral[financier]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_pdf_textes_litteraux::test_nom_societe_avec_balises_reste_litteral[inventaire]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_pdf_textes_litteraux::test_texte_ne_charge_pas_une_image_locale_fictive[raison_sociale]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_pdf_textes_litteraux::test_texte_ne_charge_pas_une_image_locale_fictive[adresse]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_pdf_textes_litteraux::test_texte_ne_charge_pas_une_image_locale_fictive[titre]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_pdf_textes_litteraux::test_texte_ne_charge_pas_une_image_locale_fictive[sous_titre]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_pdf_textes_litteraux::test_texte_ne_charge_pas_une_image_locale_fictive[label]",
+      "famille": "unitaires_et_documents",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_e2e_cahier_pdf857_isole::test_857_pdf_identite_litterale_et_logo[1440]",
+      "famille": "Edge_API_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_e2e_cahier_pdf857_isole::test_857_pdf_identite_litterale_et_logo[390]",
+      "famille": "Edge_API_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_e2e_cahier_integrite839_isole::test_839_cycle_annuel_et_integrite[1440]",
+      "famille": "Edge_API_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_e2e_cahier_integrite839_isole::test_839_cycle_annuel_et_integrite[390]",
+      "famille": "Edge_API_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_e2e_journal_validation923_isole::test_923_validation_lot_message_et_navigation_immediate[1440]",
+      "famille": "Edge_API_PG_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_e2e_journal_validation923_isole::test_923_validation_lot_message_et_navigation_immediate[390]",
+      "famille": "Edge_API_PG_natif_isole",
+      "statut": "reussi"
+    }
+  ],
+  "campagnes": [
+    {
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "conservation923_cible",
+      "cas": 8,
+      "code": 1,
+      "selection_finale": false
+    },
+    {
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "conservation923_cible2",
+      "cas": 11,
+      "code": 1,
+      "selection_finale": false
+    },
+    {
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "conservation923_diagnostic",
+      "cas": 1,
+      "code": 1,
+      "selection_finale": false
+    },
+    {
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "conservation923_final",
+      "cas": 46,
+      "code": 1,
+      "selection_finale": false
+    },
+    {
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "conservation923_final2",
+      "cas": 48,
+      "code": 0,
+      "selection_finale": true
+    },
+    {
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "conservation923_navigation",
+      "cas": 3,
+      "code": 0,
+      "selection_finale": false
+    },
+    {
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "conservation923_reprise",
+      "cas": 31,
+      "code": 0,
+      "selection_finale": false
+    },
+    {
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "conservation923_restauration",
+      "cas": 1,
+      "code": 0,
+      "selection_finale": false
+    }
+  ],
+  "selection_finale": [
+    "conservation923_final2"
+  ],
+  "frontend": {
+    "code": 0,
+    "modules": 214,
+    "secondes_vite": 7.21
+  },
+  "compilation": [
+    "hisabpro-backend/routers/factures.py",
+    "hisabpro-backend/services/factures_conservation_service.py",
+    "Test/cahier_formulaires773_support.py",
+    "Test/generer_recette_conservation923.py",
+    "Test/test_e2e_factures_conservation923_isole.py",
+    "Test/test_e2e_journal_validation923_isole.py",
+    "Test/test_factures_conservation923_isole.py",
+    "Test/test_factures_conservation923_restauration_isole.py"
+  ],
+  "restauration": {
+    "tables": 84,
+    "schema_donnees_sequences_acl_identiques": true,
+    "pdf_octets_identiques": true,
+    "metadata_identiques": true,
+    "role_limite": true,
+    "source_inchangee": true,
+    "cible_nonce_supprimee": true,
+    "aucune_base_reelle": true,
+    "archive_sha256": "c0505ffb76e46516de0932811b6021b5d1b4da49d8e76e27803c29143f4daaf5"
+  },
+  "chronologie": "Reprise31réussis. Cible1 :7réussis/1échec de requête de test :jointure du parent manquante pour lignes sans societe_id. Cible2 :10réussis/1échec de représentation datetime/JSON dans le test de restauration. Deux corrections du harnais,aucune règle produit affaiblie ;restauration ciblée1réussie puis finale complète. Le parcours final suit la facture soldée du cas FAC013. Première finale :45réussis/1échec sur annuel390. Diagnostic390 reproduit1échec :alerte de succès Journal après navigation,dialogue sur page détachée. Correction UI minimale :message dans la page,confirmation préalable conservée,bouton occupé et contexte protégés. Tests de navigation réelle ajoutés,puis finale2 sur produit refigé. Aucun doublon de campagnes additionné.",
+  "candidat": {
+    "sources": 549,
+    "chemin": "Test/CANDIDAT_MVP_923.json"
+  },
+  "limites": [
+    "Aucune base réelle",
+    "Copie interne vente validée seulement,pas archive légale certifiée ou document fournisseur original",
+    "Migration125 et recette sur copie de la cible à effectuer",
+    "Réserves de cession/délais/justificatifs historiques et production restent ouvertes"
+  ],
+  "documents": {
+    "cas_humains": 8,
+    "statuts": "Tous Non testé",
+    "liens_valides": 12,
+    "anciens_cahiers_non_modifies": true,
+    "qualification_automatique": {
+      "Réussi": 181,
+      "Partiel": 6,
+      "Non qualifié par fiche": 76,
+      "Bloqué (source)": 9
+    }
+  },
+  "preuves": {
+    "Test/preuves_mvp923/cahier773_conservation923_1440_preuve.json": "4be8164361e86970ef910c51c759c6026e1a56f3af0db811b429c9ac03e07cd5",
+    "Test/preuves_mvp923/cahier773_conservation923_390_preuve.json": "2dcd34c06f5a266ee9ccf46930a3bf51110ab7f1c8e676738e572b576773f737",
+    "Test/preuves_mvp923/chaine.json": "ce1822eea02bae97391bc807d65e1d8b9c17f6e09f2e98fde8b23232849a4e34",
+    "Test/preuves_mvp923/conservation923_cible.xml": "d7352ba0ee0e9525af2e11384b77084bdce70e297b843b9c177d53e68fc615bc",
+    "Test/preuves_mvp923/conservation923_cible2.xml": "8b93e85f7fe89c1928aecf6852112dddecc38c0ed2f903b52f2025f5f3706598",
+    "Test/preuves_mvp923/conservation923_diagnostic.xml": "82acc7275ea0a42976479e7768345eddf8c1ce4b5d61119f06c0912a9b5fa59a",
+    "Test/preuves_mvp923/conservation923_final.xml": "a68fda18614f58eaed2b2585312109a694828e9db728a9cf90dc3d3003dc4062",
+    "Test/preuves_mvp923/conservation923_final2.xml": "7e153bc28180764ec3665dd8d9b0fbe0cdabf9e2de1481aefe1d81ca8aa824c7",
+    "Test/preuves_mvp923/conservation923_navigation.xml": "d041a1ef574ce5ecbccf749333546a3614aa9db406d064b0899ce90d10619f8b",
+    "Test/preuves_mvp923/conservation923_reprise.xml": "eaaec50f71b0b6f131c56601ef4749eed573c08456095cee8c21d1a8e12fa7ef",
+    "Test/preuves_mvp923/conservation923_restauration.xml": "86376bd2bef4f7979a2b79176598d0127634968b82ba7538fdf6880dca043d42",
+    "Test/preuves_mvp923/diagnostic_dialogue.json": "0cbead59cf13fe89fba5f5427afd6444ff1f441c09621b270415bd3d2fd1bcff",
+    "Test/preuves_mvp923/restauration.json": "b9819a48b38b9522439ee695b57026901ba4ae9aef7b3a6f8ae7679a3fdde92c"
+  }
+}

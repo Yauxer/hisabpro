@@ -1,0 +1,74 @@
+{
+  "section": {
+    "code": "B7",
+    "groupe": "B",
+    "titre": "Tableau des dettes",
+    "mode": "assiste",
+    "type_saisie": "ventilation",
+    "automatique": {
+      "colonnes": [
+        "compte",
+        "intitule",
+        "montant"
+      ],
+      "lignes": [
+        {
+          "compte": "4411",
+          "intitule": "Fournisseurs",
+          "montant": 480.0,
+          "echeance_auto_total": 480.0,
+          "echeance_auto_ecart": 0.0,
+          "echeance_auto_non_qualifie": 0.0,
+          "echeance_auto_nb_factures": 1,
+          "echeance_auto_nb_factures_historiques": 0,
+          "echeance_auto_anomalies_sources": [],
+          "echeance_auto_diagnostic": {
+            "plus_un_an": 0.0,
+            "moins_un_an": 0.0,
+            "echues": 480.0
+          },
+          "echeance_auto": {
+            "plus_un_an": 0.0,
+            "moins_un_an": 0.0,
+            "echues": 480.0
+          },
+          "echeance_auto_source": "factures et échéanciers à la date de clôture"
+        }
+      ],
+      "avertissement": "Les échéances des factures fournisseurs sont préremplies automatiquement lorsqu'elles recoupent exactement le solde comptable ; les autres ventilations restent extra-comptables."
+    },
+    "contenu": {
+      "confirme": false,
+      "autres_analyses_neant": true,
+      "ventilations": {
+        "4411": {
+          "plus_un_an": 0,
+          "moins_un_an": 0,
+          "echues": 479
+        }
+      }
+    },
+    "complete": false,
+    "ventilation": [
+      {
+        "compte": "4411",
+        "intitule": "Fournisseurs",
+        "total": 480.0,
+        "plus_un_an": 0.0,
+        "moins_un_an": 0.0,
+        "echues": 479.0,
+        "devises": 0.0,
+        "etat_organismes_publics": 0.0,
+        "entreprises_liees": 0.0,
+        "effets": 0.0
+      }
+    ],
+    "erreurs_ventilation": [
+      "4411 : la ventilation par échéance doit totaliser 480.00 MAD."
+    ],
+    "updated_at": "2026-10-29T20:24:17.818969"
+  },
+  "confirmation_refusee": 422,
+  "finalisation_refusee": 409,
+  "ecritures_inchangees": true
+}

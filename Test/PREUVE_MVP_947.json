@@ -1,0 +1,375 @@
+{
+  "date": "2026-10-29",
+  "nombre_distinct": 53,
+  "campagne_unique_verte": true,
+  "repartition": {
+    "API_SQL_PostgreSQL_natif_isole": 29,
+    "Edge_API_PostgreSQL_natif_isole": 4,
+    "unitaires": 20
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_deficit_documente_12000_sans_double_consommation",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_reprise_taxee_deduction_seulement_apres_justification",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[029]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[030]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[031]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[032]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[033]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_e2e_variantes_fiscales947_isole::test_947_variante_documentee_interface_et_rechargement[1440-deficit]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_e2e_variantes_fiscales947_isole::test_947_variante_documentee_interface_et_rechargement[1440-deduction]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_e2e_variantes_fiscales947_isole::test_947_variante_documentee_interface_et_rechargement[390-deficit]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_e2e_variantes_fiscales947_isole::test_947_variante_documentee_interface_et_rechargement[390-deduction]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_sources_deficits_refusees_pendant_calcul_fige[cloture-ajouter]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_sources_deficits_refusees_pendant_calcul_fige[cloture-modifier]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_sources_deficits_refusees_pendant_calcul_fige[cloture-supprimer]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_sources_deficits_refusees_pendant_calcul_fige[confirmation-ajouter]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_sources_deficits_refusees_pendant_calcul_fige[confirmation-modifier]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_sources_deficits_refusees_pendant_calcul_fige[confirmation-supprimer]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_mutation_deficit_en_cours_refuse_calcul_puis_reprise[cloture]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_mutation_deficit_en_cours_refuse_calcul_puis_reprise[confirmation]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_imputations_deux_exercices_ne_consomment_pas_le_meme_solde",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_stock_deficits_isole_par_societe_et_echec_libere_verrou",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_deficit_calcule_et_annulation_imputation_restent_possibles",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_parametres_refuses_pendant_cloture_apres_lecture_du_calcul",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_parametres_en_cours_refusent_cloture_puis_reprise",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_retraitements_refuses_pendant_cloture[ajouter]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_retraitements_refuses_pendant_cloture[modifier]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_retraitements_refuses_pendant_cloture[supprimer]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_confirmation_et_mutation_ne_se_croisent_pas[confirmation-parametres]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_confirmation_et_mutation_ne_se_croisent_pas[parametres-confirmation]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_confirmation_et_mutation_ne_se_croisent_pas[confirmation-confirmation]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_parametres_autres_perimetres_disponibles",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_reference_et_paiement_restent_completables_apres_cloture",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_echec_parametrage_libere_verrou_et_preserve_donnees",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_deficit_ordinaire_est_eligible_jusqua_quatrieme_exercice_inclus",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_fraction_amortissements_ne_subit_pas_limite_de_quatre_exercices",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_un_deficit_nest_pas_imputable_sur_son_exercice_dorigine",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_proposition_priorise_ordinaire_proche_expiration_puis_amortissements",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_imputations_anterieures_reduisent_les_soldes_disponibles",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_confirmation_courante_est_comparee_a_la_proposition_sans_reduire_le_solde_avant_exercice",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_ventilation_deficit_genere_plafonne_fraction_amortissements_au_deficit",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_detection_amortissements_exclut_les_provisions",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_sql_022_cree_millesimes_imputations_trigger_et_permissions",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_router_et_frontend_exposent_le_suivi_par_millesime",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_bareme_droit_commun_2026_cible_20_35",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_bareme_transition_2025_droit_commun",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_categories_speciales_2026",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_maintien_seuil_100m_transition_force_taux_haut",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_calcul_resultat_fiscal_deficit_et_is",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_deficit_fiscal_genere_si_resultat_negatif",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_exercice_futur_utilise_taux_cible_mais_est_marque_provisoire",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_sql_cree_tables_et_contraintes",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_router_exclut_brouillons_et_clotures_et_delegue_retraitements",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_frontend_expose_resultat_fiscal_et_is",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final"
+    }
+  ],
+  "selection": [
+    "Test/test_variantes_fiscales947_isole.py",
+    "Test/test_e2e_variantes_fiscales947_isole.py",
+    "Test/test_deficits_multiexercices_concurrents_isole.py",
+    "Test/test_fiscalite_concurrence_cloture_isole.py",
+    "Test/test_patch08_3_deficits_fiscaux.py",
+    "Test/test_patch08_1_fiscalite_is.py"
+  ],
+  "duree_xml_s": 210.84,
+  "code_sortie": 0,
+  "execution": "PYTHON_DOTENV_DISABLED=1 ;SECRET_KEY fictive,DATABASE_URL inerte port1 ;python .codex-tests/lancer_session.py fiscal947_final <selection> ;fixtures PG/serveurs nonce.",
+  "historique_non_additionne": [
+    "Cible :3échoués/4réussis,57.80s :support de copie non trié chronologiquement et assertion de candidat provisoire,métier correct.",
+    "Cible2 :3échoués/8réussis,121.76s :71955absent du standard. Prérequis personnalisé ajouté parAPIadministrateur,aucun référentiel global modifié.",
+    "Cible déduction :3réussis/95.64s. Ensuite catégorie dédiée reprises_provisions_taxees dans la finale. Répétitions non additionnées."
+  ],
+  "preuves": {
+    "Test/preuves_mvp947/fiscal947_cible.xml": "c86e1e0e478c8986490d7c5de8f6d540649de01cf1a0a5030e47cdb1291df5a8",
+    "Test/preuves_mvp947/fiscal947_cible2.xml": "8d2fa1294775321cebeeb8955e5897b5adc4b74b2c47ce83eabe7b16bb6d8406",
+    "Test/preuves_mvp947/fiscal947_deduction.json": "93ae7e1df49eda250a06ef61ba11dbacdd08c31148178044ab289338481ed528",
+    "Test/preuves_mvp947/fiscal947_deduction.xml": "78e62169ec6d66b9f845c039a5e3a1a578d88a0375b47a4fbe59372a2aa677a4",
+    "Test/preuves_mvp947/fiscal947_deduction_1440.json": "5083831d9608cc2a7b31f55f278105507550ec6b75fa520e3876a7d97fc882c2",
+    "Test/preuves_mvp947/fiscal947_deduction_390.json": "d9e9de51bbf3914ab8dd4349a93fe466ea8e606e4790045738791cbef971473e",
+    "Test/preuves_mvp947/fiscal947_deficit.json": "1d296ae34e5d2918bb69756dddfd84b19cef00d3415bb1b30f3a34959020c870",
+    "Test/preuves_mvp947/fiscal947_deficit_1440.json": "c28673531d47ad0c52525313bf403360283d35792ea4a6e406fc7b0f28c83a8f",
+    "Test/preuves_mvp947/fiscal947_deficit_390.json": "e7f5ab7f685f8e495ab93b70a129654f62ab0c87f1dbf5f6cc2ced8bdff3de9a",
+    "Test/preuves_mvp947/fiscal947_final.xml": "b2b6e753e2283517525ab5b54eb3f52cb68ed1810b5ccf8587335adefb8b114e",
+    "Test/preuves_mvp947/fiscal947_neg029.json": "4e559ed819418f665d8e6318c6198c801b764da4c347438a5f6075b7096a5959",
+    "Test/preuves_mvp947/fiscal947_neg030.json": "a52643b97a6c74657e5039704386e0ba535c9c7345bb1b62a8fd114313eae6f5",
+    "Test/preuves_mvp947/fiscal947_neg031.json": "36f0f9727330939a0944511b866da09afc27e10b3c80a021b3403283950ffe31",
+    "Test/preuves_mvp947/fiscal947_neg032.json": "7ca4240425937c45c5172e995cadf5e7e28cdf8da5d96308b5f7036854f40f5e",
+    "Test/preuves_mvp947/fiscal947_neg033.json": "5dd3960d375fa6776504f3486ff00c1015f7eadf3f47e70161dc83e4f827473a"
+  },
+  "rattachement": "Test/QUALIFICATION_FICHES_947.json",
+  "fiches_qualifiees": 7,
+  "candidat": "Test/CANDIDAT_MVP_947.json",
+  "nombre_fichiers_candidat": 549,
+  "produit_identique_au_931": false,
+  "build": "Non relancé947,produit inchangé945 ;dernier réel public945214modules/6.55s,code0.",
+  "anciens_documents_preserves": 334,
+  "aucune_base_reelle": true,
+  "restauration": "Non rejouée ;preuves antérieures distinctes.",
+  "limites": "Copies fictives avantIS,48opérations reconstituées pour variantes,pas de restauration de tous registres/pièces. Refus isolés sur synthèse des seuls comptes6/7. 71955est une subdivision personnalisée explicite,ni compte obligatoire ni ajout global. SimulationsISsansnouvelle liquidationconfirmée ;éligibilité fiscale,régime etréférences antérieures à qualifier sur pièces réelles parresponsable. Aucun statut humain rempli,aucune certification ni production validées.",
+  "produit_identique_au_945": true,
+  "produit_reference": "945"
+}

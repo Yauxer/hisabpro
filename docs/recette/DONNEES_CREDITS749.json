@@ -1,0 +1,48 @@
+{
+  "societe_fictive": "Crédits recette749",
+  "devise": "MAD",
+  "exercice": 2026,
+  "profil": {
+    "regime": "Société IS hors exonération totale",
+    "periode_confirmee": "oui",
+    "exhaustivite": "oui",
+    "absence_credits": "non",
+    "reference": "NOTE-CR749"
+  },
+  "justificatifs": [
+    {
+      "reference": "CR749-A",
+      "type": "PPRF — CGI159",
+      "date": "2026-03-20",
+      "exercice": "2026",
+      "montant": "300",
+      "deja_impute": "100",
+      "autres_utilisations": "25",
+      "reliquat": "175"
+    },
+    {
+      "reference": "CR749-B",
+      "type": "Rémunérations de tiers — CGI157",
+      "date": "2026-06-20",
+      "date_allocation": "2026-06-20",
+      "categorie_payeur": "Public ou filiale publique",
+      "exercice": "2026",
+      "montant": "200",
+      "deja_impute": "50",
+      "autres_utilisations": "0",
+      "reliquat": "150"
+    }
+  ],
+  "attendus": {
+    "montant_total": "500.00",
+    "deja_impute_acomptes": "150.00",
+    "autres_utilisations": "25.00",
+    "disponible_arithmetique": "325.00",
+    "credits_proposes": "325.00",
+    "ecart_contexte_initial": "-100.00",
+    "exclusion_ligne1": "150.00",
+    "solde_final": null
+  },
+  "statut_humain": "Non testé",
+  "limite": "Données exclusivement fictives,aucune qualification réelle/liquidation/imputation confirmée."
+}

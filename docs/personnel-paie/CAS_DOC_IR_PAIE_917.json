@@ -1,0 +1,50 @@
+[
+  [
+    "PA-DOC01",
+    "Télécharger le PDF avec logo",
+    "Copie isolée et contrôle915 complet ; société avec logoPNG.",
+    "Aucun champ supplémentaire ; ouvrir le contrôle au RNI83881.0200.",
+    "Ouvrir Consulter le contrôle puis Télécharger le contrôle IR en PDF. Lire toutes les pages et les douze sources. Consulter l’historique Personnel avec un compte habilité à l’audit.",
+    "PDF privé lisible avec logo, RNI exact, base83890.00 et IR5967.0000. IDs/empreintes conservés. Événement CONTROLE_IR_EXPORTE associé au dossier, sans recopier les montants dans son motif."
+  ],
+  [
+    "PA-DOC02",
+    "Comparer le classeur aux résultats et au PDF",
+    "PA-DOC01 ; même contrôle.",
+    "Aucune nouvelle donnée ; télécharger le formatExcel.",
+    "Ouvrir Identite, IR annuel, Frais annuels, Tranches, Sources mensuelles, Regles et anomalies et Logo société. Comparer chaque montant et les douze périodes. Vérifier les références commençant par= dans un jeu distinct.",
+    "Les valeurs exactes sont du texte, sans conversion flottante, formule ou lien externe actif ajouté par HisabPro. Douze sources, mêmes empreintes et un logo. Aucune mensualisation ou donnée CNSS/bancaire personnelle exportée."
+  ],
+  [
+    "PA-DOC03",
+    "Tester JPEG et absence de logo",
+    "Société du jeu avec JPEG ; seconde société fictive neuve sans logo et avec son propre contrôle.",
+    "Importer un JPEG dans Paramètres société ; aucune URL externe. Dans la seconde société, ne pas importer de logo.",
+    "TéléchargerPDF etExcel dans chaque société. Comparer l’identité et les images.",
+    "JPEG présent dans les deux formats. Sans logo, documents utilisables, aucune image d’une autre société. Identité et logo sont ceux de la société actuelle, explicitement distingués du salarié conservé dans le snapshot."
+  ],
+  [
+    "PA-DOC04",
+    "Relire un ancien contrôle sans recalcul",
+    "Contrôle915 complet conservé ; ajout de variable fictive réalisé ensuite sur la copie.",
+    "Ajouter et faire approuver100.00 sur novembre, référence APRES-SNAPSHOT-FICTIF917.",
+    "Tenter un nouveau contrôleIR sur l’ancienne source, puis rouvrir et exporter le contrôle précédemment conservé.",
+    "Nouvelle création refusée car source périmée. Ancien document toujours consultable, mêmes RNI/IR/empreintes ; portée historique explicite. Aucun recalcul ni écriture comptable."
+  ],
+  [
+    "PA-DOC05",
+    "Conserver les inconnues dans les documents",
+    "Source annuelle complète ; nouveau contrôleIR avec famille inconnue.",
+    "Personnes à charge Inconnu ; référence famille vide. Confirmer uniquement source, cadre et périmètre arithmétique.",
+    "Conserver ce contrôle puis téléchargerPDF etExcel. Lire les valeurs de famille, IR final, retenue mensuelle et net.",
+    "Famille et IR final À compléter, IR avant réduction7167.0000. Pas de zéro implicite ; retenue et net Non calculés, versement Non déterminé."
+  ],
+  [
+    "PA-DOC06",
+    "Protéger les téléchargements et vérifier la restauration",
+    "Deux sociétés fictives et comptePersonnel seul ; administrateur habilité ; sauvegarde de copie restaurable.",
+    "Identifiant du contrôle de la sociétéA ; utilisateurB ; retrait de lire_remuneration à l’utilisateurA.",
+    "Essayer l’export depuisB, révoquer le droit deA et Actualiser. Vérifier390px et1440px. Faire restaurer la copie dans une seconde cible et comparer documents, logo, empreintes et événements.",
+    "Accès étranger refusé, révocation effective et boutons retirés aprèsActualiser. Pas de montant stocké dans le navigateur. Après restauration, mêmes sections et montants, logo et événements. La sauvegarde d’exploitation reste à valider séparément."
+  ]
+]

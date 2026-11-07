@@ -1,0 +1,9 @@
+# Sources de la préparation interne tiers759
+
+Le texte déjà obtenu et vérifié dans757 est réutilisé : CGI2026 DGI, article151, pages imprimées283–284, indices PDF281–282. [Notice CRI](https://casainvest.ma/fr/node/719), [PDF intégral](https://casainvest.ma/sites/default/files/2026-02/Code%20impo%CC%82ts%202026.pdf), SHA256 fe03c94471aefd23a9be9de11da5bff0593b45a72c2f90939eeaae7298b413e1. Notice ouverte le23octobre2026 et empreinte du binaire local vérifiée à nouveau. L’audit640 et le contrat757 sont conservés.
+
+Le texte distingue les identités des bénéficiaires, les catégories comptabilisées et les éléments soumis/retenus, avec états particuliers CPU/autoentrepreneurs et locations. Le formulaire759 est une préparation interne, sans taux calculé, classement comptable automatique ou fichier administratif généré. Les valeurs de test1400/740/37 sont fournies et calculées indépendamment ; elles ne prescrivent pas un taux fiscal.
+
+Les limites de saisie, références uniques, liens vers bénéficiaire, sens de correction et contrôle retenu<=soumis sont des invariants documentaires du produit, pas de nouvelles obligations fiscales affirmées. Les identités incomplètes sont conservables, sans ajouter de champs obligatoires aux fiches tiers existantes. Date comptable et événement fiscal restent séparés. Les catégories particulières et faits manquants restent visibles à qualifier.
+
+Le modèle administratif151/annexes applicable n’a pas été obtenu : aucune certification, obligation de dépôt ou conformité officielle validée. La revue déclarée et les sommes des pièces ne constituent pas un rapprochement automatique au CPC/Journal. L’exemple est indépendant des21500 de charges755. Aucun historique réel, taux ou schéma officiel n’est inventé. Aucune migration nouvelle ou donnée réelle modifiée.

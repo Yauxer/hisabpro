@@ -1,0 +1,47 @@
+.page {display:flex;flex-direction:column;height:100%;min-height:0;background:var(--bg-secondary)}
+.entete {display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 24px;background:var(--bg-primary);border-bottom:1px solid var(--border-light)}
+.entete h1 {font-size:19px;font-weight:650}.entete p {font-size:12px;color:var(--text-secondary);margin-top:4px}
+.onglets {display:flex;flex-wrap:wrap;gap:4px;padding:0 20px;background:var(--bg-primary);border-bottom:1px solid var(--border-light)}
+.onglets a,.onglets button {padding:12px 10px;font-size:12px;border:0;border-bottom:2px solid transparent;color:var(--text-secondary);background:transparent;cursor:pointer}
+.onglets .actif {color:var(--blue);border-color:var(--blue);font-weight:600}
+.contenu {flex:1;min-height:0;overflow-y:auto;padding:20px 24px;display:flex;flex-direction:column;gap:18px;overflow-wrap:anywhere}
+.contenu h2 {font-size:15px}.contenu h3 {font-size:12px;color:var(--text-secondary);margin-bottom:8px}
+.barre,.actions,.filtres,.recherche,.titreFiche,.pagination {display:flex;align-items:end;gap:10px;flex-wrap:wrap}
+.barre {justify-content:space-between}.actions {align-items:center}.filtres {align-items:center}.filtres>p {flex:1;min-width:200px}
+.recherche {flex:1;min-width:210px}.recherche .champ {flex:1}.titreFiche {align-items:center;justify-content:space-between;margin-bottom:20px}
+.titreFiche h2 {font-size:20px}.titreFiche p {color:var(--text-secondary);font-size:12px;margin-top:4px}
+.primaire,.secondaire {display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 13px;font-size:12px;border:1px solid var(--border-medium);border-radius:var(--radius-md);background:var(--bg-primary);color:var(--text-primary);line-height:1.4}
+.primaire {background:var(--blue);border-color:var(--blue);color:white;font-weight:550}.primaire:hover {background:var(--blue-dark)}
+.secondaire:hover {background:var(--bg-secondary)}.primaire:disabled,.secondaire:disabled {opacity:.5;cursor:not-allowed}
+.page :is(button,a,input,select,textarea):focus-visible {outline:2px solid var(--blue);outline-offset:2px}
+.carte {border:1px solid var(--border-light);border-radius:var(--radius-lg);background:var(--bg-primary);padding:18px;flex-shrink:0;min-width:0}
+.tableau {overflow-x:auto;max-width:100%}.tableau table {width:100%;border-collapse:collapse;font-size:12px;table-layout:auto}
+.tableau th {font-size:11px;color:var(--text-secondary);font-weight:550;text-align:left;background:var(--bg-secondary)}
+.tableau td,.tableau th {padding:12px;border-bottom:1px solid var(--border-light);vertical-align:top;overflow-wrap:anywhere}
+.tableau td small {display:block;margin-top:4px;color:var(--text-secondary)}.tableau td .secondaire {margin-top:8px}
+.lien {color:var(--blue);font-size:12px}.lien:hover {text-decoration:underline}
+.badge {display:inline-block;padding:4px 9px;border-radius:var(--radius-sm);font-size:11px;background:var(--amber-light);color:var(--amber);white-space:nowrap}
+.vert {background:var(--green-light);color:var(--green)}
+.pagination {justify-content:flex-end;align-items:center;padding-top:15px;font-size:12px}.pagination span {margin-right:auto;color:var(--text-secondary)}
+.champ {display:flex;flex-direction:column;gap:6px;min-width:0;font-size:12px;color:var(--text-secondary)}
+.champ input,.champ select,.champ textarea {padding:9px 10px;border:1px solid var(--border-medium);border-radius:var(--radius-md);background:var(--bg-primary);color:var(--text-primary);width:100%;min-width:0}
+.champ textarea {min-height:74px;resize:vertical}.formulaire {display:flex;flex-direction:column;gap:15px}.formulaire fieldset {border:0;min-width:0;display:flex;flex-direction:column;gap:16px}
+.formulaire .actions {justify-content:flex-end;border-top:1px solid var(--border-light);padding-top:16px}
+.grille {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.formulaire .grille {grid-template-columns:repeat(2,minmax(0,1fr))}
+.grille>div {min-width:0}.grille p {font-size:13px}.grille small {font-size:11px;color:var(--text-secondary)}
+.montant {font-size:20px!important;font-weight:600;font-variant-numeric:tabular-nums}
+.coche {display:flex;align-items:flex-start;gap:9px;font-size:12px;color:var(--text-primary);line-height:1.6}.coche input {width:16px!important;height:16px;flex:0 0 16px;margin-top:3px}
+.erreur {padding:12px 15px;border:1px solid var(--red);background:var(--red-light);color:var(--red);border-radius:var(--radius-md);font-size:12px}
+.notice {padding:10px 14px;background:var(--bg-primary);color:var(--text-secondary);border:1px solid var(--border-light);border-left:3px solid var(--blue);border-radius:var(--radius-md);font-size:12px;line-height:1.6}.notice h2 {margin-bottom:8px}
+.discret {font-size:12px;color:var(--text-secondary);line-height:1.6}.carte>.discret {margin-top:20px}.vide {text-align:center;padding:28px;font-size:12px;color:var(--text-secondary)}
+.resume {font-size:12px;line-height:1.6}.resume small {display:block;color:var(--text-secondary)}
+.donnees {border:1px solid var(--border-light);border-radius:var(--radius-md);padding:12px}
+.donnees summary {cursor:pointer;font-size:12px;color:var(--blue)}.donnees[open] summary {margin-bottom:16px}.donnees>.discret {margin-top:10px}
+.historique {list-style:none;margin-top:15px}.historique li {border-left:2px solid var(--border-light);padding:0 0 20px 15px;font-size:12px}.historique p {margin:5px 0}.historique small {color:var(--text-secondary)}
+@media(max-width:1100px){.grille {grid-template-columns:repeat(2,minmax(0,1fr))}.barre>.actions {width:100%}}
+@media(max-width:700px){.entete {padding:14px;align-items:flex-start;flex-wrap:wrap}.entete h1 {font-size:18px}.contenu {padding:14px}.onglets {padding:0 8px}.onglets a,.onglets button {padding:10px 6px}.grille,.formulaire .grille {grid-template-columns:1fr}.carte {padding:12px}.barre {align-items:stretch}.barre>.champ,.barre>.recherche {width:100%}.tableau table {min-width:570px}.actions .primaire,.actions .secondaire {white-space:normal}.pagination {gap:6px}}
+
+/* Lot 972 : bouton principal à sa taille, pagination masquée quand une seule page. */
+.contenu>.primaire,.contenu>.secondaire {align-self:flex-start}
+.pagination:has(button:first-of-type:disabled):has(button:last-of-type:disabled) button {display:none}
+[role=alert].notice {background:var(--amber-light);color:var(--amber);border-left-color:var(--amber)}

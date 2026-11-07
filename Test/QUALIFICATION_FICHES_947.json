@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-29",
+  "nature": "Rattachement automatique ;ne renseigne pas la recette utilisateur",
+  "sources_humaines_sha256": {
+    "docs/recette/CAHIER_RECETTE_HISABPRO.xlsx": "a857310bf3a2cf78413f7fcb56d280592a215478507fcae985008cafe57cf837"
+  },
+  "fiches": [
+    {
+      "fiche": "HP-FIS-031",
+      "objectif_source": "Variante déficit antérieur documenté",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API etUI1440/390,registre SQL réel",
+      "portee": "Variante de reprise,48opérations avantIS :10000ordinaire+2000amortissement2024documentés,proposition/confirmation12000 ;121830imposables,IS21320.25,crédit200,solde simulé21120.25 ;une consommation aprèsrechargement,sans écriture nouvelle. Éligibilité et références antérieures à qualifier humainement.",
+      "tests_executés": [
+        "Test.test_variantes_fiscales947_isole::test_947_deficit_documente_12000_sans_double_consommation",
+        "Test.test_e2e_variantes_fiscales947_isole::test_947_variante_documentee_interface_et_rechargement[1440-deficit]",
+        "Test.test_e2e_variantes_fiscales947_isole::test_947_variante_documentee_interface_et_rechargement[390-deficit]"
+      ],
+      "limites": "Copies fictives avantIS,48opérations reconstituées pour variantes,pas de restauration de tous registres/pièces. Refus isolés sur synthèse des seuls comptes6/7. 71955est une subdivision personnalisée explicite,ni compte obligatoire ni ajout global. SimulationsISsansnouvelle liquidationconfirmée ;éligibilité fiscale,régime etréférences antérieures à qualifier sur pièces réelles parresponsable. Aucun statut humain rempli,aucune certification ni production validées."
+    },
+    {
+      "fiche": "HP-FIS-032",
+      "objectif_source": "Variante déduction documentée",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API etUI1440/390,précondition plan personnalisée explicite",
+      "portee": "Copie48opérations,71955personnalisé sous7195parAPIadmin,puisD1518/C719551000 :base134830sans déduction ;déductionjustifiée1000ramène133830,IS23420.25. Anciennes écritures préservées,aucune liquidation confirmée. Compte71955non présenté comme standarduniversel.",
+      "tests_executés": [
+        "Test.test_variantes_fiscales947_isole::test_947_reprise_taxee_deduction_seulement_apres_justification",
+        "Test.test_e2e_variantes_fiscales947_isole::test_947_variante_documentee_interface_et_rechargement[1440-deduction]",
+        "Test.test_e2e_variantes_fiscales947_isole::test_947_variante_documentee_interface_et_rechargement[390-deduction]"
+      ],
+      "limites": "Copies fictives avantIS,48opérations reconstituées pour variantes,pas de restauration de tous registres/pièces. Refus isolés sur synthèse des seuls comptes6/7. 71955est une subdivision personnalisée explicite,ni compte obligatoire ni ajout global. SimulationsISsansnouvelle liquidationconfirmée ;éligibilité fiscale,régime etréférences antérieures à qualifier sur pièces réelles parresponsable. Aucun statut humain rempli,aucune certification ni production validées."
+    },
+    {
+      "fiche": "HP-NEG-029",
+      "objectif_source": "Provision fiscale non confirmée",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle sur note fiscale fictive dédiée",
+      "portee": "Provision1500etdépréciation2000détectées dans candidat3500agrégé ;montantfiscalNone,impactFalse ;seuleamende500réintégrée. Lecture ne qualifie pas arbitrairement. Note de résultat129830dérivée des comptes6/7dujeu ;pas une clôture du dossier complet. Gestes UI négatifs non rejoués.",
+      "tests_executés": [
+        "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[029]"
+      ],
+      "limites": "Copies fictives avantIS,48opérations reconstituées pour variantes,pas de restauration de tous registres/pièces. Refus isolés sur synthèse des seuls comptes6/7. 71955est une subdivision personnalisée explicite,ni compte obligatoire ni ajout global. SimulationsISsansnouvelle liquidationconfirmée ;éligibilité fiscale,régime etréférences antérieures à qualifier sur pièces réelles parresponsable. Aucun statut humain rempli,aucune certification ni production validées."
+    },
+    {
+      "fiche": "HP-NEG-030",
+      "objectif_source": "Crédit IS déjà imputé excessif",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle sur note fiscale fictive dédiée",
+      "portee": "Crédit200/déjàimputé201 :API422,ni crédit négatif ni données modifiées. Note de résultat129830dérivée des comptes6/7dujeu ;pas une clôture du dossier complet. Gestes UI négatifs non rejoués.",
+      "tests_executés": [
+        "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[030]"
+      ],
+      "limites": "Copies fictives avantIS,48opérations reconstituées pour variantes,pas de restauration de tous registres/pièces. Refus isolés sur synthèse des seuls comptes6/7. 71955est une subdivision personnalisée explicite,ni compte obligatoire ni ajout global. SimulationsISsansnouvelle liquidationconfirmée ;éligibilité fiscale,régime etréférences antérieures à qualifier sur pièces réelles parresponsable. Aucun statut humain rempli,aucune certification ni production validées."
+    },
+    {
+      "fiche": "HP-NEG-031",
+      "objectif_source": "Référence fiscale forcée sans preuve",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle sur note fiscale fictive dédiée",
+      "portee": "Référence annuelle forcée20000sansjustification :API422,paramètres préservés. Note de résultat129830dérivée des comptes6/7dujeu ;pas une clôture du dossier complet. Gestes UI négatifs non rejoués.",
+      "tests_executés": [
+        "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[031]"
+      ],
+      "limites": "Copies fictives avantIS,48opérations reconstituées pour variantes,pas de restauration de tous registres/pièces. Refus isolés sur synthèse des seuls comptes6/7. 71955est une subdivision personnalisée explicite,ni compte obligatoire ni ajout global. SimulationsISsansnouvelle liquidationconfirmée ;éligibilité fiscale,régime etréférences antérieures à qualifier sur pièces réelles parresponsable. Aucun statut humain rempli,aucune certification ni production validées."
+    },
+    {
+      "fiche": "HP-NEG-032",
+      "objectif_source": "Liquidation avant clôture",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle sur note fiscale fictive dédiée",
+      "portee": "Exercice2025ouvert,simulation lisible :confirmation409,aucun snapshot final ni écriture. Note de résultat129830dérivée des comptes6/7dujeu ;pas une clôture du dossier complet. Gestes UI négatifs non rejoués.",
+      "tests_executés": [
+        "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[032]"
+      ],
+      "limites": "Copies fictives avantIS,48opérations reconstituées pour variantes,pas de restauration de tous registres/pièces. Refus isolés sur synthèse des seuls comptes6/7. 71955est une subdivision personnalisée explicite,ni compte obligatoire ni ajout global. SimulationsISsansnouvelle liquidationconfirmée ;éligibilité fiscale,régime etréférences antérieures à qualifier sur pièces réelles parresponsable. Aucun statut humain rempli,aucune certification ni production validées."
+    },
+    {
+      "fiche": "HP-NEG-033",
+      "objectif_source": "IS comptabilisé incohérent",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle sur note fiscale fictive dédiée",
+      "portee": "IScalculé23420.25contrechargecomptabilisée1 :clôture409pour incohérence,calcul etécritures inchangés ;aucun ajustement pour accepter1. Note de résultat129830dérivée des comptes6/7dujeu ;pas une clôture du dossier complet. Gestes UI négatifs non rejoués.",
+      "tests_executés": [
+        "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[033]"
+      ],
+      "limites": "Copies fictives avantIS,48opérations reconstituées pour variantes,pas de restauration de tous registres/pièces. Refus isolés sur synthèse des seuls comptes6/7. 71955est une subdivision personnalisée explicite,ni compte obligatoire ni ajout global. SimulationsISsansnouvelle liquidationconfirmée ;éligibilité fiscale,régime etréférences antérieures à qualifier sur pièces réelles parresponsable. Aucun statut humain rempli,aucune certification ni production validées."
+    }
+  ],
+  "apres": {
+    "Réussi": 243,
+    "Partiel": 7,
+    "Bloqué (source)": 10,
+    "Non qualifié par fiche": 12
+  }
+}

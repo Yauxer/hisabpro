@@ -1,0 +1,48 @@
+{
+  "societe_fictive": "Catalogue recette737",
+  "devise": "MAD",
+  "exercice": 2026,
+  "tiers": [
+    {
+      "nom": "Client fictif737",
+      "type": "client"
+    },
+    {
+      "nom": "Fournisseur fictif737",
+      "type": "fournisseur"
+    }
+  ],
+  "articles": [
+    {
+      "code": "ALPHA737",
+      "designation": "Alpha fictif737",
+      "is_stockable": false,
+      "prix_vente_ht": "100",
+      "prix_achat_ht": "80",
+      "tva_declaree": "20",
+      "frais_emballage": "0",
+      "frais_transport": "0"
+    },
+    {
+      "code": "BETA737",
+      "designation": "Beta fictif737",
+      "is_stockable": false,
+      "prix_vente_ht": "100",
+      "prix_achat_ht": "80",
+      "tva_declaree": "20",
+      "frais_emballage": "0",
+      "frais_transport": "0"
+    }
+  ],
+  "recherche_vide": "INEXISTANT737",
+  "description_libre": "Prestation libre fictive737",
+  "attendus": {
+    "vente_selection_ttc": "120.00",
+    "achat_selection_ttc": "96.00",
+    "libre_ttc": "120.00",
+    "ecritures_creees": 0,
+    "mouvements_stock_crees": 0
+  },
+  "statut_humain": "Non testé",
+  "limite": "Taux fictif de test sans qualification fiscale réelle."
+}

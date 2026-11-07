@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="23.434" timestamp="2026-10-28T02:37:19.328514+01:00" hostname="Taiyou"><testcase classname="Test.test_personnel879_donnees_isole" name="test_879_rejeter_preparation_compte_desactive_sans_transfert_auteur" time="21.350"><failure message="AssertionError: {&quot;detail&quot;:&quot;Dossier ou demande en conflit. Rechargez avant de réessayer.&quot;}&#10;assert 409 == 200&#10; +  where 409 = &lt;Response [409 Conflict]&gt;.status_code">equipe = {'a': &lt;httpx.Client object at 0x0000026AF939E390&gt;, 'b': &lt;httpx.Client object at 0x0000026AF94EB590&gt;, 'l': &lt;httpx.Client object at 0x0000026AF94EDF90&gt;, 'uid': 4, ...}
+
+    def test_879_rejeter_preparation_compte_desactive_sans_transfert_auteur(equipe):
+        eq=equipe;a,b=eq['a'],eq['b']
+        e=ok(b.post(W,json=creation(matricule='INACTIF879')),201);i=e['demande']['id']
+        soumettre(b,i,0)
+        ok(a.patch(f'/api/utilisateurs/{eq["bid"]}',json={'actif':False}))
+        assert a.post(f'{W}/demandes/{i}/approuver',json=decision(0)).status_code==409
+&gt;       r=a.post(f'{W}/demandes/{i}/rejeter',json=decision(0));assert r.status_code==200,r.text
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: {"detail":"Dossier ou demande en conflit. Rechargez avant de réessayer."}
+E       assert 409 == 200
+E        +  where 409 = &lt;Response [409 Conflict]&gt;.status_code
+
+Test\test_personnel879_donnees_isole.py:53: AssertionError</failure></testcase></testsuite></testsuites>

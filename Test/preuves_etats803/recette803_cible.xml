@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="388.949" timestamp="2026-10-25T02:24:50.417284+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_etats803_isole" name="test_803_etats_livre_inventaire_fec_annuel_cloture[1440]" time="201.513"><failure message="KeyError: 'XI'">application = {'api_url': 'http://127.0.0.1:58562', 'web_url': 'http://127.0.0.1:58563', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_ixo8_mek'), 'nonce': 'fe9914a426db488d95aa4abb77e4b3ee', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette803_cible/test_803_etats_livre_inventair0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_803_etats_livre_inventaire_fec_annuel_cloture(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'etats803') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve);cloturer_cahier(api,page,application,sid,preuve)
+    
+&gt;     verifier_etats(api,page,application,sid,preuve,tmp_path)
+
+Test\test_e2e_cahier_etats803_isole.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+api = &lt;httpx.Client object at 0x000002055BCC21D0&gt;
+page = &lt;Page url='http://127.0.0.1:58563/fiscalite-is'&gt;
+app = {'api_url': 'http://127.0.0.1:58562', 'web_url': 'http://127.0.0.1:58563', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_ixo8_mek'), 'nonce': 'fe9914a426db488d95aa4abb77e4b3ee', ...}, ...}
+sid = 8
+preuve = {'cible_isolee': 'C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_ixo8_mek', 'nonce': 'fe9914a426db488d95aa4abb77e4b3ee', 'source_sha256': 'b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7', 'largeur': 1440, ...}
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette803_cible/test_803_etats_livre_inventair0')
+
+    def verifier_etats(api,page,app,sid,preuve,tmp_path):
+     avant=core(app,sid);fige=ok(api.get('/api/fiscalite/is/2025'))['liquidation']['snapshot'];data=ok(api.get('/api/etats/liasse/2025'));e=data['etats'];b=e['bilan'];esg={r['code']:r for r in e['esg']['lignes']};cpc=e['cpc'];preuve['etats803']={'bilan':b,'cpc':cpc,'esg':e['esg'],'financement':e['tableau_financement'],'controles_liasse':data['controles']}
+     assert D(str(b['actif']['total']['net']))==D('337010')==D(str(b['passif']['total'])) and b['equilibre']
+     imm=next(l for l in b['actif']['immobilise'] if l['code']=='23');assert [D(str(imm[k])) for k in ['brut','amort_prov','net']]==[D('24000'),D('4800'),D('19200')]
+&gt;    assert D(str(cpc['resultat_net']))==D('106409.75') and D(str(cpc['XI']))==D('129830')
+                                                                  ^^^^^^^^^
+E    KeyError: 'XI'
+
+Test\cahier_etats803_support.py:31: KeyError</failure></testcase><testcase classname="Test.test_e2e_cahier_etats803_isole" name="test_803_etats_livre_inventaire_fec_annuel_cloture[390]" time="174.023"><failure message="KeyError: 'XI'">application = {'api_url': 'http://127.0.0.1:58562', 'web_url': 'http://127.0.0.1:58563', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_ixo8_mek'), 'nonce': 'fe9914a426db488d95aa4abb77e4b3ee', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette803_cible/test_803_etats_livre_inventair1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_803_etats_livre_inventaire_fec_annuel_cloture(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'etats803r') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve);cloturer_cahier(api,page,application,sid,preuve)
+    
+&gt;     verifier_etats(api,page,application,sid,preuve,tmp_path)
+
+Test\test_e2e_cahier_etats803_isole.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+api = &lt;httpx.Client object at 0x0000020560BF1950&gt;
+page = &lt;Page url='http://127.0.0.1:58563/fiscalite-is'&gt;
+app = {'api_url': 'http://127.0.0.1:58562', 'web_url': 'http://127.0.0.1:58563', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_ixo8_mek'), 'nonce': 'fe9914a426db488d95aa4abb77e4b3ee', ...}, ...}
+sid = 9
+preuve = {'cible_isolee': 'C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_ixo8_mek', 'nonce': 'fe9914a426db488d95aa4abb77e4b3ee', 'source_sha256': 'b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7', 'largeur': 390, ...}
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette803_cible/test_803_etats_livre_inventair1')
+
+    def verifier_etats(api,page,app,sid,preuve,tmp_path):
+     avant=core(app,sid);fige=ok(api.get('/api/fiscalite/is/2025'))['liquidation']['snapshot'];data=ok(api.get('/api/etats/liasse/2025'));e=data['etats'];b=e['bilan'];esg={r['code']:r for r in e['esg']['lignes']};cpc=e['cpc'];preuve['etats803']={'bilan':b,'cpc':cpc,'esg':e['esg'],'financement':e['tableau_financement'],'controles_liasse':data['controles']}
+     assert D(str(b['actif']['total']['net']))==D('337010')==D(str(b['passif']['total'])) and b['equilibre']
+     imm=next(l for l in b['actif']['immobilise'] if l['code']=='23');assert [D(str(imm[k])) for k in ['brut','amort_prov','net']]==[D('24000'),D('4800'),D('19200')]
+&gt;    cl=next(l for l in b['actif']['circulant'] if l['code']=='342');assert [D(str(cl[k])) for k in ['brut','amort_prov','net']]==[D('14400'),D('2000'),D('12400')]
+                                                                  ^^^^^^^^^
+E    KeyError: 'XI'
+
+Test\cahier_etats803_support.py:31: KeyError</failure></testcase></testsuite></testsuites>

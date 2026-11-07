@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="13" time="96.395" timestamp="2026-10-29T23:27:24.017346+01:00" hostname="Taiyou"><testcase classname="Test.test_compensations_tva953_isole" name="test_953_compensation_partielle_datee_sans_doublon_et_originaux[vente-encaissement-100]" time="46.580" /><testcase classname="Test.test_compensations_tva953_isole" name="test_953_compensation_partielle_datee_sans_doublon_et_originaux[vente-debit-200]" time="2.208" /><testcase classname="Test.test_compensations_tva953_isole" name="test_953_compensation_partielle_datee_sans_doublon_et_originaux[achat-encaissement-100]" time="2.070"><failure message="AssertionError: {&quot;detail&quot;:&quot;Le N° de facture fournisseur est obligatoire avant validation.&quot;}">application = {'api_url': 'http://127.0.0.1:51158', 'web_url': 'http://127.0.0.1:51159', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_63bqy1px'), 'nonce': '42843d1094fb4c3f9ca3cd058c7523b0', ...}, ...}
+nature = 'achat', regime = 'encaissement', attendu = '100'
+
+    @pytest.mark.parametrize('nature,regime,attendu', [('vente','encaissement','100'),('vente','debit','200'),('achat','encaissement','100')])
+    def test_953_compensation_partielle_datee_sans_doublon_et_originaux(application, nature, regime, attendu):
+        with closing(client(application)[0]) as api:
+&gt;           sid, _, fs, a = jeu(api, application, nature, regime); avant = core(application, sid)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_compensations_tva953_isole.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_compensations_tva953_isole.py:26: in jeu
+    ok(api.post(f'/api/factures/{f["id"]}/valider'))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [422 Unprocessable Entity]&gt;, status = 200
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":"Le N° de facture fournisseur est obligatoire avant validation."}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase><testcase classname="Test.test_compensations_tva953_isole" name="test_953_imputation_historique_sans_signature_signalee_non_inventee" time="1.994" /><testcase classname="Test.test_compensations_tva953_isole" name="test_953_accord_incomplet_ou_date_incoherente_refuse_sans_mutation[changement0]" time="1.896" /><testcase classname="Test.test_compensations_tva953_isole" name="test_953_accord_incomplet_ou_date_incoherente_refuse_sans_mutation[changement1]" time="1.710" /><testcase classname="Test.test_compensations_tva953_isole" name="test_953_accord_incomplet_ou_date_incoherente_refuse_sans_mutation[changement2]" time="2.137" /><testcase classname="Test.test_compensations_tva953_isole" name="test_953_accord_incomplet_ou_date_incoherente_refuse_sans_mutation[changement3]" time="2.540" /><testcase classname="Test.test_compensations_tva953_isole" name="test_953_accord_incomplet_ou_date_incoherente_refuse_sans_mutation[changement4]" time="1.841" /><testcase classname="Test.test_compensations_tva953_isole" name="test_953_accord_incomplet_ou_date_incoherente_refuse_sans_mutation[changement5]" time="2.378" /><testcase classname="Test.test_compensations_tva953_isole" name="test_953_annulation_effective_preserve_periode_anterieure" time="1.997" /><testcase classname="Test.test_compensations_tva953_isole" name="test_953_compensation_inter_societes_refusee" time="3.719" /><testcase classname="Test.test_compensations_tva953_isole" name="test_953_migration126_ancienne_table_rejeu_et_contrainte_sql" time="20.151" /></testsuite></testsuites>

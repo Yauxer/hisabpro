@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="24.215" timestamp="2026-10-28T09:05:42.577854+01:00" hostname="Taiyou"><testcase classname="Test.test_personnel883_regimes_isole" name="test_883_regimes_inconnus_pas_de_valeur_inventee" time="22.305" /></testsuite></testsuites>

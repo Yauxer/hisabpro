@@ -1,0 +1,166 @@
+{
+  "fec": {
+    "exercice": 2025,
+    "conforme_export": false,
+    "nb_ecritures": 3,
+    "nb_ecritures_validees": 3,
+    "nb_ecritures_brouillon": 0,
+    "nb_lignes": 8,
+    "total_debit": 1440.0,
+    "total_credit": 1440.0,
+    "equilibre": true,
+    "ecart": 0.0,
+    "nb_bloquants": 1,
+    "nb_avertissements": 1,
+    "bloquants": [
+      {
+        "code": "REFERENCE_PIECE_MANQUANTE",
+        "message": "Référence de pièce justificative manquante. Ajoutez-la depuis le Journal ; la validation de l'écriture reste inchangée.",
+        "ecriture_id": 18,
+        "journal": "OD",
+        "numero_ecriture": "OD-2025-0001"
+      }
+    ],
+    "avertissements": [
+      {
+        "code": "EXERCICE_NON_CLOTURE",
+        "message": "L'exercice n'est pas clôturé : l'export est un état courant et non l'archive définitive de clôture."
+      }
+    ],
+    "controle_auxiliaires": {
+      "3421": {
+        "collectif_debit": 1440.0,
+        "collectif_credit": 0.0,
+        "auxiliaires_debit": 1440.0,
+        "auxiliaires_credit": 0.0,
+        "conforme": true
+      },
+      "4411": {
+        "collectif_debit": 0.0,
+        "collectif_credit": 0.0,
+        "auxiliaires_debit": 0.0,
+        "auxiliaires_credit": 0.0,
+        "conforme": true
+      }
+    },
+    "exercice_cloture": false
+  },
+  "section": {
+    "code": "B6",
+    "groupe": "B",
+    "titre": "Tableau des créances",
+    "mode": "assiste",
+    "type_saisie": "ventilation",
+    "automatique": {
+      "colonnes": [
+        "compte",
+        "intitule",
+        "montant"
+      ],
+      "lignes": [
+        {
+          "compte": "3421",
+          "intitule": "Clients",
+          "montant": 1440.0,
+          "echeance_auto_total": 960.0,
+          "echeance_auto_ecart": 480.0,
+          "echeance_auto_non_qualifie": 0.0,
+          "echeance_auto_nb_factures": 2,
+          "echeance_auto_nb_factures_historiques": 0,
+          "echeance_auto_anomalies_sources": [],
+          "echeance_auto_diagnostic": {
+            "plus_un_an": 0.0,
+            "moins_un_an": 0.0,
+            "echues": 960.0
+          },
+          "echeance_auto_partiel": {
+            "plus_un_an": 0.0,
+            "moins_un_an": 0.0,
+            "echues": 960.0
+          },
+          "echeance_auto_reliquat": 480.0,
+          "echeance_auto_source": "partie certaine issue des factures et échéanciers à la date de clôture",
+          "echeance_auto_compta_diagnostic": {
+            "total": 1440.0,
+            "sources": [
+              {
+                "source": "facture",
+                "montant": 960.0,
+                "nb_lignes": 2
+              },
+              {
+                "source": "manuel",
+                "montant": 480.0,
+                "nb_lignes": 1
+              }
+            ],
+            "mouvements": [
+              {
+                "numero": "VT-2025-0001",
+                "date": "2025-12-01",
+                "journal": "VT",
+                "libelle": "Facture FA-2025-001 Tiers FICTIF949",
+                "reference": "FA-2025-001",
+                "source": "facture",
+                "debit": 480.0,
+                "credit": 0.0,
+                "impact_solde": 480.0
+              },
+              {
+                "numero": "VT-2025-0002",
+                "date": "2025-12-01",
+                "journal": "VT",
+                "libelle": "Facture FA-2025-002 Tiers FICTIF949",
+                "reference": "FA-2025-002",
+                "source": "facture",
+                "debit": 480.0,
+                "credit": 0.0,
+                "impact_solde": 480.0
+              },
+              {
+                "numero": "OD-2025-0001",
+                "date": "2025-12-02",
+                "journal": "OD",
+                "libelle": "Ancienne opération FICTIVE949 sans pièce, sources ambiguës",
+                "reference": null,
+                "source": "manuel",
+                "debit": 480.0,
+                "credit": 0.0,
+                "impact_solde": 480.0
+              }
+            ]
+          }
+        }
+      ],
+      "avertissement": "Les échéances des factures clients sont préremplies automatiquement lorsqu'elles recoupent exactement le solde comptable ; les autres ventilations restent extra-comptables."
+    },
+    "contenu": {},
+    "complete": false,
+    "ventilation": [
+      {
+        "compte": "3421",
+        "intitule": "Clients",
+        "total": 1440.0,
+        "plus_un_an": 0.0,
+        "moins_un_an": 0.0,
+        "echues": 960.0,
+        "devises": null,
+        "etat_organismes_publics": null,
+        "entreprises_liees": null,
+        "effets": null
+      }
+    ],
+    "erreurs_ventilation": [
+      "3421 : la ventilation par échéance doit totaliser 1440.00 MAD.",
+      "3421 : renseignez montant en devises ou confirmez que les autres analyses sont néant.",
+      "3421 : renseignez Etat / organismes publics ou confirmez que les autres analyses sont néant.",
+      "3421 : renseignez entreprises liées ou confirmez que les autres analyses sont néant.",
+      "3421 : renseignez montant représenté par effets ou confirmez que les autres analyses sont néant."
+    ],
+    "updated_at": null
+  },
+  "source_definitive_sans_reference_preservee": true,
+  "reliquat_non_reclasse": "480.00",
+  "date_piece_conservee": "2025-12-02",
+  "limite": "Ancienne date pièce NULL non reproduite ;triggers de création préservés,aucune protection désactivée."
+}

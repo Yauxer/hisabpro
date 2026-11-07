@@ -1,0 +1,14 @@
+{
+  "donnees_reelles": false,
+  "tables": 99,
+  "schema_donnees_sequences_acl_identiques": true,
+  "predicat_index_altere_detecte": true,
+  "role_runtime_limite": true,
+  "snapshot_et_empreinte_restitues": true,
+  "source_inchangee": true,
+  "cible_nonce_supprimee": true,
+  "archive_sha256": "25f18cb051277929db915f182f2c9419399f559a0d60cb0acf08ef5031390f2f",
+  "documents_regeneres_depuis_snapshots": true,
+  "logo_restitue": true,
+  "deux_evenements_export_restitues": true
+}

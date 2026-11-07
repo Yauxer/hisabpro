@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="59" time="208.755" timestamp="2026-10-28T16:57:31.738163+01:00" hostname="Taiyou"><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_bases_distinctes_oracle_exact_sans_rni_ou_net_fictif" time="0.002" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_plafond_mensuel_groupe_et_par_operation[operation-0.00]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_plafond_mensuel_groupe_et_par_operation[mensuel-300.00]" time="0.002" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_frais_portent_sur_fraction_imposable[SOUMIS-800.01-800.01]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_frais_portent_sur_fraction_imposable[EXONERE-0.00-0.00]" time="0.002" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_inconnues_obsolescence_cumuls_restent_bloquants[mutation0]" time="0.002" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_inconnues_obsolescence_cumuls_restent_bloquants[mutation1]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_inconnues_obsolescence_cumuls_restent_bloquants[mutation2]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_inconnues_obsolescence_cumuls_restent_bloquants[mutation3]" time="0.002" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_inconnues_obsolescence_cumuls_restent_bloquants[mutation4]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_versions_multiples_non_ambigues_et_pas_de_deduction_par_defaut" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_vrai_zero_et_absence_de_cotisation_distincts" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_base_frais_inconnue_preserve_brut_connu" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_bases_incoherentes_et_conditions_non_confirmees[mutation0]" time="0.002" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_bases_incoherentes_et_conditions_non_confirmees[mutation1]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_bases_incoherentes_et_conditions_non_confirmees[mutation2]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_bases_incoherentes_et_conditions_non_confirmees[mutation3]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_bases_incoherentes_et_conditions_non_confirmees[mutation4]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_deduction_superieure_revenu_pas_de_zero_de_secours" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_montants_non_finis_negatifs_flottants_refuses[NaN]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_montants_non_finis_negatifs_flottants_refuses[Infinity]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_montants_non_finis_negatifs_flottants_refuses[-Infinity]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_montants_non_finis_negatifs_flottants_refuses[True]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_montants_non_finis_negatifs_flottants_refuses[False]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_montants_non_finis_negatifs_flottants_refuses[1.25]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_montants_non_finis_negatifs_flottants_refuses[-1]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_montants_non_finis_negatifs_flottants_refuses[0.001]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_montants_non_finis_negatifs_flottants_refuses[valeur8]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_montants_non_finis_negatifs_flottants_refuses[valeur9]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_selection_et_confirmations_strictes" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_deductibilite_partielle_non_transformee_en_deduction_totale" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_profil_personnel_chemins_fermes[GET--True]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_profil_personnel_chemins_fermes[GET-/options-True]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_profil_personnel_chemins_fermes[GET-/12-True]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_profil_personnel_chemins_fermes[POST--True]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_profil_personnel_chemins_fermes[POST-/12-False]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_profil_personnel_chemins_fermes[GET-/12/autre-False]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_profil_personnel_chemins_fermes[GET--autre-False]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_profil_personnel_chemins_fermes[DELETE-/12-False]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_profil_personnel_chemins_fermes[GET-//options-False]" time="0.001" /><testcase classname="Test.test_paie909_bases_unitaire" name="test_909_profil_personnel_chemins_fermes[PUT--False]" time="0.001" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_bases_exactes_sources_historique_et_absence_ecriture" time="31.306" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_inconnus_et_limites_deduction_explicites[mutation0]" time="4.414" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_inconnus_et_limites_deduction_explicites[mutation1]" time="4.381" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_inconnus_et_limites_deduction_explicites[mutation2]" time="4.305" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_inconnus_et_limites_deduction_explicites[mutation3]" time="4.491" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_inconnus_et_limites_deduction_explicites[mutation4]" time="4.219" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_ancien_parametrage_non_qualifie_sans_deduction_automatique" time="4.267" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_source_changee_et_snapshot_fiscal_initial_intact" time="4.759" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_qualification_sociale_changee_dans_mois_bloquante" time="3.679" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_concurrence_et_conflit_idempotence" time="5.047" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_droits_profil_selection_immutabilite_et_rejeu" time="5.752"><failure message="AssertionError: assert '23505' == '23503'&#10;  &#10;  - 23503&#10;  ?     ^&#10;  + 23505&#10;  ?     ^">application = {'api_url': 'http://127.0.0.1:62443', 'web_url': 'http://127.0.0.1:62444', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_5ix5ykyp'), 'nonce': '1d0344fa296e46d4bf524ba83dfe7b75', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x0000021A85B5E310&gt;, 'b': &lt;httpx.Client object at 0x0000021A912929D0&gt;, 'l': &lt;httpx.Client object at 0x0000021A9126E110&gt;, 'uid': 35, ...}
+
+    def test_909_droits_profil_selection_immutabilite_et_rejeu(application,equipe):
+        eq=equipe;eid,_,_,s,_=preparer(eq);r=calcul_fiscal(eq,eid,s);assert eq['l'].get(F).status_code==403
+        d=demande(eid,s);d['declarations'][0]['employe_id']+=10000;assert eq['a'].post(F,json=d).status_code==400
+        with closing(client(application)[0]) as autre:
+            identite=ok(autre.get('/api/auth/me'));uid=identite['id']
+            for cap in CAPS:grant(autre,uid,cap)
+            activer(autre);assert autre.get(f'{F}/{r["id"]}').status_code==404 and autre.post(F,json=demande(eid,s)).status_code==404
+            sql="INSERT INTO paie_preparations_fiscales(societe_id,social_id,numero,cle_idempotence,demande_sha256,contenu,empreinte,auteur_id,motif) VALUES(:s,:i,1,:k,:h,CAST(:c AS jsonb),:h,:u,'FICTIF909')"
+            with pytest.raises(DBAPIError) as erreur:
+                with application['engine'].begin() as db:db.execute(text(sql),{'s':identite['societe_id'],'i':s['id'],'k':str(uuid4()),'h':'a'*64,'c':json.dumps(r['contenu']),'u':uid})
+&gt;           assert erreur.value.orig.pgcode=='23503'
+E           AssertionError: assert '23505' == '23503'
+E             
+E             - 23503
+E             ?     ^
+E             + 23505
+E             ?     ^
+
+Test\test_paie909_bases_isole.py:121: AssertionError</failure></testcase><testcase classname="Test.test_paie909_bases_isole" name="test_909_erreur_http_sans_reecho_sensible[NaN]" time="3.473" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_erreur_http_sans_reecho_sensible[Infinity]" time="3.622" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_erreur_http_sans_reecho_sensible[True]" time="3.796" /><testcase classname="Test.test_paie909_bases_isole" name="test_909_installation_manquante_explicite_et_table_preservee" time="8.805" /><testcase classname="Test.test_e2e_paie909_bases_isole" name="test_909_bases_fiscales_connectees_inconnus_historique_et_retrait_acces_edge[1440]" time="35.096" /><testcase classname="Test.test_e2e_paie909_bases_isole" name="test_909_bases_fiscales_connectees_inconnus_historique_et_retrait_acces_edge[390]" time="13.200" /><testcase classname="Test.test_paie909_restauration_isole" name="test_909_restauration_native_bases_fiscales_et_sources" time="58.339"><failure message="AssertionError: assert ('708.00' == '354.00'&#10;  &#10;  - 354.00&#10;  + 708.00)">application = {'api_url': 'http://127.0.0.1:56802', 'web_url': 'http://127.0.0.1:56803', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_3eq91ijl'), 'nonce': 'd9905db35a544206b5db3d43b7c20a01', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x0000021A9164EFD0&gt;, 'b': &lt;httpx.Client object at 0x0000021A916F61D0&gt;, 'l': &lt;httpx.Client object at 0x0000021A916F9110&gt;, 'uid': 5, ...}
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000021A9168BA50&gt;
+
+    def test_909_restauration_native_bases_fiscales_et_sources(application,equipe,monkeypatch):
+        eq=equipe;eid,_,_,s,_=preparer(eq);r=calcul_fiscal(eq,eid,s);lectures=[];original=recette.lire_ir
+        def verifier(db,user,ident):
+            fiscal=lire(db,user,r['id']);assert fiscal['contenu']==r['contenu'] and fiscal['empreinte']==r['empreinte']
+            assert fiscal['contenu']['totaux']['revenu_avant_frais_autres_deductions']=='9240.11'
+            assert fiscal['contenu']['totaux']['revenu_net_imposable'] is None
+            lectures.append(True);return original(db,user,ident)
+        monkeypatch.setattr(recette,'lire_ir',verifier)
+        # Le scénario907 attribue sa propre habilitation dédiée ; clôturer celle du montage909 par l'API.
+        with application['engine'].connect() as db:
+            h=db.scalar(text("SELECT id FROM personnel_habilitations WHERE societe_id=:s AND utilisateur_id=:u AND capacite='personnel.valider_regles_paie' AND revoquee_at IS NULL"),{'s':eq['sid'],'u':eq['bid']})
+        ok(eq['a'].post(f'/api/employes/securite/habilitations/{h}/revoquer',json={'motif':'Fin du montage fictif909 avant scénario de restauration'}))
+        preuve907=R/'.codex-tests/paie907_restauration_preuve.json';ancienne=preuve907.read_bytes() if preuve907.exists() else None
+        try:
+&gt;           recette.test_907_restauration_native_qualifications_et_snapshots(application,equipe)
+
+Test\test_paie909_restauration_isole.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+application = {'api_url': 'http://127.0.0.1:56802', 'web_url': 'http://127.0.0.1:56803', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_3eq91ijl'), 'nonce': 'd9905db35a544206b5db3d43b7c20a01', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x0000021A9164EFD0&gt;, 'b': &lt;httpx.Client object at 0x0000021A916F61D0&gt;, 'l': &lt;httpx.Client object at 0x0000021A916F9110&gt;, 'uid': 5, ...}
+
+    def test_907_restauration_native_qualifications_et_snapshots(application,equipe):
+        app=application;eq=equipe;s=app['cluster'];assert verifier_cible_isolee(s['url'],s['directory'],s['nonce'])
+        eid,rid,q,v,b2=preparer(eq);branche=v['branche_id'];calcul=calculer(eq,eid,q);ir=ok(eq['a'].post(F,json=demande()),201)
+        with Session(app['personnel_runtime']) as db: social=lire_social(db,{'id':eq['uid'],'societe_id':eq['sid'],'role':'admin'},branche)
+        vr=creer_rubrique(eq,'QUALIF_REST907',frais_professionnels=preuve('EXCLUS'))
+        vb=creer_branche(eq,'QUALIF_REST907','REGIME_REST907',deductibilite_ir=preuve())
+        grant(eq['a'],eq['bid'],'personnel.valider_regles_paie')
+        for api,v in [(E,vr),(S,vb)]:ok(eq['b'].post(f'{api}/versions/{v["id"]}/approuver',json=dec(verification_reglementaire_confirmee=True)))
+        with Session(app['personnel_runtime']) as db:
+            user={'id':eq['uid'],'societe_id':eq['sid'],'role':'admin'}
+            qr=lire_rubrique(db,user,vr['rubrique_id']);qb=lire_social(db,user,vb['branche_id'])
+        avant=empreintes_tables(app['engine']);installer(app);assert empreintes_tables(app['engine'])==avant
+        structure=schema(app['engine']);droits=catalogue_acl(app['engine'])
+        archive=sauvegarder(s['url'],s['directory']/'paie907.dump',s['bin'],inclure_droits=True)
+        with cluster_isole() as cible:
+            assert verifier_cible_isolee(cible['url'],cible['directory'],cible['nonce']) and cible['nonce']!=s['nonce']
+            restored=create_engine(cible['url']);runtime=None
+            try:
+                with restored.begin() as db:db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+                restaurer_isole(cible['url'],archive,cible['bin'],cible['directory'],cible['nonce'],inclure_droits=True)
+                verifier_schema(schema(restored),structure)
+                assert empreintes_tables(restored)==avant and catalogue_acl(restored)==droits
+                # Preuve négative :une vraie modification de prédicat doit être
+                # détectée,même après normalisation ;cible nonce uniquement.
+                with restored.connect() as db:definition=db.scalar(text("SELECT pg_get_indexdef('public.uq_paie_variable_annuelle'::regclass)"))
+                try:
+                    with restored.begin() as db:
+                        db.execute(text('DROP INDEX public.uq_paie_variable_annuelle'))
+                        db.execute(text("CREATE UNIQUE INDEX uq_paie_variable_annuelle ON public.paie_variables(societe_id,employe_id,annee,rubrique_id) WHERE periodicite='mensuelle' AND statut IN ('BROUILLON','SOUMIS','APPROUVE')"))
+                    with pytest.raises(AssertionError,match='index'):verifier_schema(schema(restored),structure)
+                finally:
+                    with restored.begin() as db:
+                        db.execute(text('DROP INDEX public.uq_paie_variable_annuelle'))
+                        with db.connection.driver_connection.cursor() as cur:cur.execute(definition)
+                verifier_schema(schema(restored),structure)
+                runtime=create_engine(make_url(cible['url']).set(username='hisabpro'))
+                user={'id':eq['uid'],'societe_id':eq['sid'],'role':'admin'}
+                with Session(runtime) as db:
+                    assert db.scalar(text('SELECT current_user'))=='hisabpro'
+                    assert not db.scalar(text("SELECT rolsuper OR rolcreatedb OR rolcreaterole OR rolbypassrls FROM pg_roles WHERE rolname=current_user"))
+                    r=lire(db,user,q['id']);assert r['contenu']==q['contenu'] and r['empreinte']==q['empreinte']
+                    assert lire_social(db,user,branche)==social
+                    assert lire_rubrique(db,user,vr['rubrique_id'])==qr
+                    assert lire_social(db,user,vb['branche_id'])==qb
+                    assert qr['versions'][0]['contenu']['frais_professionnels']['traitement']=='EXCLUS'
+                    assert qb['versions'][0]['contenu']['deductibilite_ir']['traitement']=='DEDUCTIBLE'
+                    controle=lire_ir(db,user,ir['id']);assert controle['contenu']==ir['contenu'] and controle['empreinte']==ir['empreinte']
+                    assert controle['contenu']['ir_annuel_arithmetique']=='45400.0000' and controle['contenu']['ir_a_declarer'] is None
+                    calc=lire_calcul(db,user,calcul['id']);assert calc['contenu']==calcul['contenu'] and calc['empreinte']==calcul['empreinte']
+&gt;                   assert calc['contenu']['totaux']['cotisations_salariales']=='354.00' and calc['contenu']['totaux']['net_a_payer'] is None
+E                   AssertionError: assert ('708.00' == '354.00'
+E                     
+E                     - 354.00
+E                     + 708.00)
+
+Test\test_paie907_restauration_isole.py:76: AssertionError</failure></testcase></testsuite></testsuites>

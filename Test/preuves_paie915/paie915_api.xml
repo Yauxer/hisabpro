@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="6" time="87.542" timestamp="2026-10-28T22:26:25.283276+01:00" hostname="Taiyou"><testcase classname="Test.test_paie915_ir_source_isole" name="test_915_chaine_douze_mois_rni_arrondi_ir_et_famille" time="41.295"><failure message="KeyError: 'montant_a_declarer'">application = {'api_url': 'http://127.0.0.1:55125', 'web_url': 'http://127.0.0.1:55126', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_352e47c4'), 'nonce': 'c6cc70307afe4cd389b61f91323b4d34', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x0000016D92526810&gt;, 'b': &lt;httpx.Client object at 0x0000016D92919A50&gt;, 'l': &lt;httpx.Client object at 0x0000016D92B009D0&gt;, 'uid': 5, ...}
+
+    def test_915_chaine_douze_mois_rni_arrondi_ir_et_famille(application,equipe):
+        eq=equipe;eid,rid,source=source_annuelle(eq);avant=comptabilite(application,eq['sid']);d=demande(source['id']);r=ok(eq['a'].post(S,json=d),201);c=r['contenu']
+        assert c['source_frais_annuels']['rni_avant_arrondis']=='83881.0200'
+        assert c['source_frais_annuels']['base_annuelle_utilisee']=='83890.00'
+        assert c['ir_avant_reduction']=='7167.0000' and c['reduction_appliquee']=='1200.0000' and c['ir_annuel_arithmetique']=='5967.0000'
+&gt;       assert c['net_a_payer'] is None and c['retenue_mensuelle'] is None and c['montant_a_declarer'] is None
+                                                                               ^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'montant_a_declarer'
+
+Test\test_paie915_ir_source_isole.py:41: KeyError</failure></testcase><testcase classname="Test.test_paie915_ir_source_isole" name="test_915_source_incomplete_obsolete_et_snapshot_preserve" time="4.559"><failure message="AssertionError: {&quot;detail&quot;:&quot;Ce matricule existe déjà dans cette société.&quot;}&#10;assert 409 == 201&#10; +  where 409 = &lt;Response [409 Conflict]&gt;.status_code">equipe = {'a': &lt;httpx.Client object at 0x0000016D92695910&gt;, 'b': &lt;httpx.Client object at 0x0000016D92B5CC90&gt;, 'l': &lt;httpx.Client object at 0x0000016D92B3DC10&gt;, 'uid': 8, ...}
+
+    def test_915_source_incomplete_obsolete_et_snapshot_preserve(equipe):
+        eq=equipe;eid,_,_,_,p=mois_unique(eq);part=ok(eq['a'].post(F,json=frais_demande(eid,[p])),201)
+        assert eq['a'].post(S,json=demande(part['id'])).status_code==409
+&gt;       eid,rid,source=source_annuelle(eq);d=demande(source['id']);r=ok(eq['a'].post(S,json=d),201)
+                       ^^^^^^^^^^^^^^^^^^^
+
+Test\test_paie915_ir_source_isole.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_paie915_ir_source_isole.py:32: in source_annuelle
+    eid,rid,ps=annee_prete(eq);source=ok(eq['a'].post(F,json=frais_demande(eid,ps)),201)
+               ^^^^^^^^^^^^^^^
+Test\test_paie913_frais_annuels_isole.py:40: in annee_prete
+    eid,rid,q,s,p=mois_unique(eq);preparations=[p]
+                  ^^^^^^^^^^^^^^^
+Test\test_paie913_frais_annuels_isole.py:35: in mois_unique
+    eid,rid,q,s,bs=preparer(eq);p=calcul_fiscal(eq,eid,s)
+                   ^^^^^^^^^^^^
+Test\test_paie909_bases_isole.py:38: in preparer
+    eid,_=salarie(eq,m='P909');grant(eq.get('admin',eq['a']),eq['bid'],'personnel.valider_regles_paie')
+          ^^^^^^^^^^^^^^^^^^^^
+Test\test_paie893_campagnes_isole.py:30: in salarie
+    e=ok(eq['a'].post(W,json=creation(m,nom='Salariée FICTIVE893',date_embauche=entree)),201);eid=e['employe_id'];soumettre(eq['a'],e['demande']['id'],0);approuver(eq,e['demande']['id'],0)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [409 Conflict]&gt;, status = 201
+
+    def ok(r,status=200):
+&gt;       assert r.status_code==status,r.text
+E       AssertionError: {"detail":"Ce matricule existe déjà dans cette société."}
+E       assert 409 == 201
+E        +  where 409 = &lt;Response [409 Conflict]&gt;.status_code
+
+Test\test_multi_societes_runtime_isole.py:49: AssertionError</failure></testcase><testcase classname="Test.test_paie915_ir_source_isole" name="test_915_concurrence_et_cle_manuelle_distincte" time="9.976" /><testcase classname="Test.test_paie915_ir_source_isole" name="test_915_societes_profil_et_garde_native" time="13.828" /><testcase classname="Test.test_paie915_ir_source_isole" name="test_915_aucun_rni_ni_taux_falsifiable" time="3.560"><failure message="assert (422 == 422 and 'input' not in '{&quot;detail&quot;:[...orbidden&quot;}]}'&#10; +  where 422 = &lt;Response [422 Unprocessable Entity]&gt;.status_code&#10;  &#10;  'input' is contained here:&#10;    g&quot;:&quot;Extra inputs are not permitted&quot;,&quot;type&quot;:&quot;extra_forbidden&quot;}]}&#10;  ?           +++++)">equipe = {'a': &lt;httpx.Client object at 0x0000016D92C8C310&gt;, 'b': &lt;httpx.Client object at 0x0000016D92B5B490&gt;, 'l': &lt;httpx.Client object at 0x0000016D92A653D0&gt;, 'uid': 19, ...}
+
+    def test_915_aucun_rni_ni_taux_falsifiable(equipe):
+        for kw in [{'revenu_net_imposable_annuel':'NaN'},{'taux':0},{'frais_annuels_id':True},{'annee':2025}]:
+&gt;           r=equipe['a'].post(S,json=demande(**kw));assert r.status_code==422 and 'input' not in r.text
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           assert (422 == 422 and 'input' not in '{"detail":[...orbidden"}]}'
+E            +  where 422 = &lt;Response [422 Unprocessable Entity]&gt;.status_code
+E             
+E             'input' is contained here:
+E               g":"Extra inputs are not permitted","type":"extra_forbidden"}]}
+E             ?           +++++)
+
+Test\test_paie915_ir_source_isole.py:91: AssertionError</failure></testcase><testcase classname="Test.test_paie915_ir_source_isole" name="test_915_migration_absente_preserve_ir_manuel" time="9.775"><failure message="AssertionError: assert {'acomptes': ...082d34'}, ...} == {'acomptes': ...c6b74f'}, ...}&#10;  &#10;  Omitting 98 identical items, use -vv to show&#10;  Differing items:&#10;  {'audit_actions': {'nombre': 441, 'sha256': '42508b926381aa02888846ba76be3fd9a516fe1a3f250a60b1c5de55c8082d34'}} != {'audit_actions': {'nombre': 440, 'sha256': '26eafbb97e27ab669859ec7e7bb65020c04dc91a53db848f4ad930fd8cc6b74f'}}&#10;  Use -v to get more diff">application = {'api_url': 'http://127.0.0.1:55125', 'web_url': 'http://127.0.0.1:55126', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_352e47c4'), 'nonce': 'c6cc70307afe4cd389b61f91323b4d34', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x0000016D927A01D0&gt;, 'b': &lt;httpx.Client object at 0x0000016D92469910&gt;, 'l': &lt;httpx.Client object at 0x0000016D92B2E610&gt;, 'uid': 22, ...}
+
+    def test_915_migration_absente_preserve_ir_manuel(application,equipe):
+        a=application;c=a['cluster'];assert verifier_cible_isolee(c['url'],c['directory'],c['nonce']);avant=empreintes_tables(a['engine'])
+        try:
+            with a['engine'].begin() as db:db.execute(text('ALTER TABLE paie_ir_sources_annuelles RENAME TO paie_ir_sources_annuelles_test915'))
+            assert equipe['a'].post(S,json=demande()).status_code==503
+            assert equipe['a'].get(I).status_code==200
+        finally:
+            with a['engine'].begin() as db:db.execute(text('ALTER TABLE paie_ir_sources_annuelles_test915 RENAME TO paie_ir_sources_annuelles'))
+&gt;       assert empreintes_tables(a['engine'])==avant
+E       AssertionError: assert {'acomptes': ...082d34'}, ...} == {'acomptes': ...c6b74f'}, ...}
+E         
+E         Omitting 98 identical items, use -vv to show
+E         Differing items:
+E         {'audit_actions': {'nombre': 441, 'sha256': '42508b926381aa02888846ba76be3fd9a516fe1a3f250a60b1c5de55c8082d34'}} != {'audit_actions': {'nombre': 440, 'sha256': '26eafbb97e27ab669859ec7e7bb65020c04dc91a53db848f4ad930fd8cc6b74f'}}
+E         Use -v to get more diff
+
+Test\test_paie915_ir_source_isole.py:102: AssertionError</failure></testcase></testsuite></testsuites>

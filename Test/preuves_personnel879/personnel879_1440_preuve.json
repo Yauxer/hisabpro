@@ -1,0 +1,15 @@
+{
+  "largeur": 1440,
+  "erreur": null,
+  "donnees_reelles": false,
+  "creation_ui": true,
+  "soumission_ui": true,
+  "approbation_independante_ui": true,
+  "contrat_salaire_futur_ui": true,
+  "sidebar_neuf_rubriques": true,
+  "masque_apres_revocation": true,
+  "sortie_ui": true,
+  "coordonnees_cnss_confirmees": true,
+  "sans_ecriture": true,
+  "debordement_global": false
+}

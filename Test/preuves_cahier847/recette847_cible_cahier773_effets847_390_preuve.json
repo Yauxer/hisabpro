@@ -1,0 +1,69 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_udkxnkeh",
+  "nonce": "8630b189362648968cff5f9c42d21fb5",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [
+    {
+      "id": "HP-NEG-017",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-018",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-019",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-020",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "rejet847": {
+    "statut": 400,
+    "commande_absente": true,
+    "aucune_mutation": true
+  },
+  "echeance847": {
+    "date": "2025-05-14",
+    "echeance": "2025-05-15",
+    "statut": 400,
+    "aucune_mutation": true
+  },
+  "frais847": {
+    "montant": 10000,
+    "frais_refuses": 10001,
+    "statut": 422,
+    "UI_refus": true,
+    "aucune_mutation": true
+  },
+  "dates847": {
+    "tentatives": [
+      {
+        "date": "2026-10-27",
+        "motif": "future",
+        "statut": 400
+      },
+      {
+        "date": "2025-03-31",
+        "motif": "précéder",
+        "statut": 400
+      }
+    ],
+    "aucune_mutation": true
+  },
+  "positif847": {
+    "brut": 10000,
+    "frais": 10,
+    "net_banque": 9990,
+    "contrepartie": "51132",
+    "une_seule_ecriture": true,
+    "originaux_conserves": true
+  }
+}

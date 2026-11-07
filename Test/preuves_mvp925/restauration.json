@@ -1,0 +1,11 @@
+{
+  "tables": 84,
+  "schema_donnees_sequences_acl_identiques": true,
+  "pdf_octets_identiques": true,
+  "metadata_identiques": true,
+  "role_limite": true,
+  "source_inchangee": true,
+  "cible_nonce_supprimee": true,
+  "aucune_base_reelle": true,
+  "archive_sha256": "f56c7e27de880217f3be1713513e9e1c39eeb8fb3f1fcf1b5b8e530a244c93cf"
+}

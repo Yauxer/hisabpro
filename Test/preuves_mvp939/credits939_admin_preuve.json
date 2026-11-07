@@ -1,0 +1,17 @@
+{
+  "role": "admin",
+  "largeur": 1440,
+  "exports_individuels_reels": {
+    "pdf": {
+      "sha256": "80ce1a013bd304d17b89c87a2793171392d31af3cee899893c9f587fcb81bd40",
+      "montant325_et_logo_verifies": true
+    },
+    "xlsx": {
+      "sha256": "a10d4df2d9eba61c474bafdb5f4d5e654c90baa701749b14bd8e190fa7b8166a",
+      "montant325_et_logo_verifies": true
+    }
+  },
+  "ZIP_credits325_verifie": true,
+  "brouillon_non_confondu_snapshot": true,
+  "hors_preparations_inchange": true
+}

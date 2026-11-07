@@ -1,0 +1,9 @@
+{
+  "largeur": 390,
+  "deux_profils_personnel": true,
+  "approbation_ui": true,
+  "aucun_chargement_comptable": true,
+  "role_local_falsifie_sans_effet": true,
+  "debordement": false,
+  "donnees_reelles": false
+}

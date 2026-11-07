@@ -1,0 +1,13 @@
+# Résultats — Cycle acomptes751 et proposition IS/CM753,lot941
+
+**114tests distincts réussis**,aucun échec ni ignoré,dans une finale unique en236.43s XML,code0 :{'unitaires': 48, 'API_SQL_PostgreSQL_natif_isole': 48, 'Edge_API_PostgreSQL_natif_isole': 18}. 16fiches rattachées individuellement ;les répétitions ne sont pas additionnées. [Preuve](../../Test/PREUVE_MVP_941.json),[correspondances](../../Test/QUALIFICATION_FICHES_941.json).
+
+Acomptes :1000cash déclaré+100excédent antérieur+150retenues=1250proposés. PDF/Excel/ZIP téléchargés réellement pouradmin1440,comptable390 et lecteur390,logos/montants vérifiés malgré brouillons non conservés. Références de crédit inversées :total150inchangé mais rapprochements faux,proposition indisponible. Référence annuelle inconnue :calendrier indisponible,1250des mouvements connus préservés sans inventer de référence. Néant non confirmé avec crédits déjà utilisés :pas de zéro automatique. Sources crédits modifiées :ancien contrôle figé,puis qualification explicite. RevueIS/CM :maximum3000−crédits disponibles325−acomptes1250=1425proposés selon ce jeu. Ordre non revu ou excédent annuel inconnu conservés en versions incomplètes,sans solde inventé. NaN et excédent0.01quand restant0 refusés ;après B12taux10,l’ancienne proposition reste figée et la nouvelle est indisponible avant CM réactualisée. CSSabsente puis qualifiée sur bénéfice100000 donne0séparément,sans modifier l’IShistorique. Versions précédentes et témoins définitifs333 préservés,aucune écriture créée par ces préparations. Aucun double usage effectif de crédit ou paiement confirmé.
+
+Restauration :Non rejouée ;preuves antérieures distinctes.
+
+Suivi par fiche :{'Réussi': 235, 'Partiel': 6, 'Non qualifié par fiche': 22, 'Bloqué (source)': 9} (total272). Les16cas humains restent Non testé,et331anciens documents de recette sont conservés octet pour octet. Les méthodes UI/API/SQL sont indiquées par fiche ;un succès technique ne remplit pas la recette humaine.
+
+Produit549empreintes identique931 :aucun frontend,backend,migration ou calcul fiscal modifié. Dernier build réel931214modules/5,55s,non relancé dans ce lot. Jeux751/753 :acomptes proposés1250 et solde proposé1425,distincts du dossier75520000/3650. Aucune imputation,liquidation,paiement ou dépôt confirmé ;CSS séparée,pas de total globalIS+CSS. VariantesAPI précisées par fiche,statuts humains inchangés. Réserves de cession et production restent ouvertes.
+
+[Documents humains et guide](QUALIFICATION_CYCLE_IS_941.md) · [Suivi](SUIVI_AUTOMATISATION_CAHIER_941.xlsx) · [Décision](DECISION_FACTURATION_COMPTABILITE_941.md).

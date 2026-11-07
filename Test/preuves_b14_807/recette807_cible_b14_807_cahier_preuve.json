@@ -1,0 +1,65 @@
+{
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "erreur": null,
+  "b14": {
+    "code": "B14",
+    "groupe": "B",
+    "titre": "Détail de la taxe sur la valeur ajoutée",
+    "mode": "assiste",
+    "type_saisie": "notes",
+    "automatique": {
+      "colonnes": [
+        "nature",
+        "solde_debut",
+        "operations",
+        "declarations",
+        "solde_fin"
+      ],
+      "lignes": [
+        {
+          "nature": "A. TVA facturée / collectée",
+          "solde_debut": 0.0,
+          "operations": 33900.0,
+          "declarations": 33900.0,
+          "solde_fin": 0.0
+        },
+        {
+          "nature": "B. TVA récupérable",
+          "solde_debut": 0.0,
+          "operations": 11680.0,
+          "declarations": 11600.0,
+          "solde_fin": 80.0
+        },
+        {
+          "nature": "• sur charges",
+          "solde_debut": 0.0,
+          "operations": 6880.0,
+          "declarations": 6800.0,
+          "solde_fin": 80.0
+        },
+        {
+          "nature": "• sur immobilisations",
+          "solde_debut": 0.0,
+          "operations": 4800.0,
+          "declarations": 4800.0,
+          "solde_fin": 0.0
+        },
+        {
+          "nature": "C. TVA due ou crédit de TVA (A - B)",
+          "solde_debut": 0.0,
+          "operations": 22220.0,
+          "declarations": 22300.0,
+          "solde_fin": -80.0
+        }
+      ],
+      "avertissement": "La colonne « déclarations » est reconstituée à partir du journal TVA (TV) et des liquidations OD équilibrées exclusivement en comptes TVA avec contrepartie 4456 ou 3456. Ces mouvements comptables ne prouvent pas un dépôt fiscal : vérifiez-les avec les déclarations effectivement déposées. Le solde A - B porte sur 4455/34551/34552, distinct de la dette déjà liquidée en 4456 ou du crédit reporté en 3456."
+    },
+    "contenu": {},
+    "complete": false,
+    "ventilation": [],
+    "erreurs_ventilation": [],
+    "updated_at": null
+  },
+  "journal_inchange": true,
+  "nombre_operations": 50
+}

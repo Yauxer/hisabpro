@@ -1,0 +1,1970 @@
+{
+  "date": "2026-10-29",
+  "campagnes_finales": [
+    {
+      "lot": "943",
+      "nombre": 7,
+      "preuve": "Test/PREUVE_MVP_943.json",
+      "candidat_sha256": "2d0329044a1b38aeed0f22089f23fe727ad4d494b20166234fc345700338d170",
+      "code_sortie": 0
+    },
+    {
+      "lot": "945",
+      "nombre": 47,
+      "preuve": "Test/PREUVE_MVP_945.json",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c",
+      "code_sortie": 0
+    },
+    {
+      "lot": "947",
+      "nombre": 53,
+      "preuve": "Test/PREUVE_MVP_947.json",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c",
+      "code_sortie": 0
+    },
+    {
+      "lot": "949",
+      "nombre": 117,
+      "preuve": "Test/PREUVE_MVP_949.json",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a",
+      "code_sortie": 0
+    },
+    {
+      "lot": "951",
+      "nombre": 16,
+      "preuve": "Test/PREUVE_MVP_951.json",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a",
+      "code_sortie": 0
+    }
+  ],
+  "executions_finales": 240,
+  "cas_distincts": 239,
+  "repetitions_finales_non_additionnees": 1,
+  "candidats_distincts": 3,
+  "cas_sur_candidat_applicatif_final": 133,
+  "validation_globale_de_tous_cas_sur_candidat_final": false,
+  "resultats_distincts": [
+    {
+      "id": "Test.test_e2e_qualification_liasse943_isole::test_943_exports_annuels_fideles_et_finalisation_non_forcee[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "liasse943_final",
+      "lot": "943",
+      "candidat_sha256": "2d0329044a1b38aeed0f22089f23fe727ad4d494b20166234fc345700338d170"
+    },
+    {
+      "id": "Test.test_e2e_qualification_liasse943_isole::test_943_exports_annuels_fideles_et_finalisation_non_forcee[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "liasse943_final",
+      "lot": "943",
+      "candidat_sha256": "2d0329044a1b38aeed0f22089f23fe727ad4d494b20166234fc345700338d170"
+    },
+    {
+      "id": "Test.test_e2e_archive_liasse_isole::test_archive_liasse_finalisation_exports_empreinte_et_immutabilite",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch120_liasse_exports_ventilations::test_pdf_conserve_ventilation_et_diagnostics_avec_caracteres_speciaux[B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "liasse943_final",
+      "lot": "943",
+      "candidat_sha256": "2d0329044a1b38aeed0f22089f23fe727ad4d494b20166234fc345700338d170"
+    },
+    {
+      "id": "Test.test_patch120_liasse_exports_ventilations::test_pdf_conserve_ventilation_et_diagnostics_avec_caracteres_speciaux[B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "liasse943_final",
+      "lot": "943",
+      "candidat_sha256": "2d0329044a1b38aeed0f22089f23fe727ad4d494b20166234fc345700338d170"
+    },
+    {
+      "id": "Test.test_patch120_liasse_exports_ventilations::test_export_excel_reel_preserve_zero_inconnus_et_diagnostics",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "liasse943_final",
+      "lot": "943",
+      "candidat_sha256": "2d0329044a1b38aeed0f22089f23fe727ad4d494b20166234fc345700338d170"
+    },
+    {
+      "id": "Test.test_patch131_liasse_pdf_identite::test_raison_sociale_reste_litterale_dans_le_titre_et_le_pied_de_page",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "liasse943_final",
+      "lot": "943",
+      "candidat_sha256": "2d0329044a1b38aeed0f22089f23fe727ad4d494b20166234fc345700338d170"
+    },
+    {
+      "id": "Test.test_e2e_tva_acomptes945_isole::test_945_date_effective_interface_droits_et_tva[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_e2e_tva_acomptes945_isole::test_945_date_effective_interface_droits_et_tva[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_e2e_tva_acomptes945_isole::test_945_date_effective_interface_droits_et_tva[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_acompte_en_attente_puis_encaisse_dans_le_bon_mois[cheque]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_acompte_en_attente_puis_encaisse_dans_le_bon_mois[effet]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_acompte_rejete_sans_encaissement_non_taxable",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_virement_immediat_conserve_tva_acompte",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_date_historique_inconnue_signalee_sans_reparation[cheque-0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_date_historique_inconnue_signalee_sans_reparation[virement-4000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_imputations_partielles_multiples_et_annulation[client-debit-8000-7000-6000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_imputations_partielles_multiples_et_annulation[client-encaissement-4000-4000-4000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_imputations_partielles_multiples_et_annulation[fournisseur-encaissement-0-1000-2000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_encaissement_apres_facturation_debit_sans_double_tva",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_variante_encaissement_impaye_et_acompte_du_cahier",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_paiement_fournisseur_historique_sans_date_signale",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_e2e_tva_isole::test_factures_paiements_partiels_periodes_et_parametres_tva_ui",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_e2e_tva_isole::test_lecture_consulte_et_imprime_sans_modifier_parametres_tva",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch02b_tva_service::test_acompte_ttc_20",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch02b_tva_service::test_avoir_diminue_facture",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch02b_tva_service::test_prorata_80_pourcent",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch02b_tva_service::test_credit_anterieur_absorbe_tva_due",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch02b_tva_service::test_credit_genere_sur_periode",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_catalogue_tva_est_date_et_2026_est_limite_aux_taux_generiques_10_20",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_tva_2026_refuse_zero_taxable_et_anciens_taux",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_zero_pourcent_exige_une_qualification_fiscale",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_transport_accessoire_suit_les_taux_des_lignes_sur_facture_mixte",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_emballage_perdu_suit_les_lignes_et_consigne_est_hors_tva",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_escompte_ne_reduit_pas_une_consigne_remboursable",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_migration_protege_qualifications_et_backfill_lignes_validees",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_correctif_serialisation_bl_renvoie_id_et_ligne_bl_id",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_avoirs_rrr_utilisent_les_comptes_cgnc_dedies_et_pas_le_stock",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_frontend_utilise_catalogue_date_et_modes_transport_emballage",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_lettrage_reutilise_moteur_tva_unique",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_acomptes_utilisent_qualification_et_validation_tva_datee",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_immobilisations_acquisition_et_cession_utilisent_moteur_tva_central",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_moteur_declaration_ignore_acomptes_et_immos_sans_tva",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_frontend_acomptes_et_immobilisations_sont_date_aware",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_migration_conform1_verrouille_aussi_acomptes_immos_et_lignes_par_date",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_migration_couvre_cycles_acomptes_avoirs",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_acompte_annulation_imputation_et_inter_exercices",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_avoirs_rrr_prix_credit_reel",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_situation_facture_prend_credit_et_imputations_actives",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_frontend_acomptes_expose_historique_et_cycle_effets",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_frontend_avoir_ne_preselectionne_plus_tout_et_expose_vrais_calculs",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_frontend_avoirs_expose_credit_imputation_remboursement",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_python_compile",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_e2e_cahier_tva_echeances795_isole::test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2",
+      "lot": "945",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_deficit_documente_12000_sans_double_consommation",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_reprise_taxee_deduction_seulement_apres_justification",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[029]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[030]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[031]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[032]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_variantes_fiscales947_isole::test_947_refus_fiscaux_exacts_sans_mutation[033]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_e2e_variantes_fiscales947_isole::test_947_variante_documentee_interface_et_rechargement[1440-deficit]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_e2e_variantes_fiscales947_isole::test_947_variante_documentee_interface_et_rechargement[1440-deduction]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_e2e_variantes_fiscales947_isole::test_947_variante_documentee_interface_et_rechargement[390-deficit]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_e2e_variantes_fiscales947_isole::test_947_variante_documentee_interface_et_rechargement[390-deduction]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_sources_deficits_refusees_pendant_calcul_fige[cloture-ajouter]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_sources_deficits_refusees_pendant_calcul_fige[cloture-modifier]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_sources_deficits_refusees_pendant_calcul_fige[cloture-supprimer]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_sources_deficits_refusees_pendant_calcul_fige[confirmation-ajouter]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_sources_deficits_refusees_pendant_calcul_fige[confirmation-modifier]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_sources_deficits_refusees_pendant_calcul_fige[confirmation-supprimer]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_mutation_deficit_en_cours_refuse_calcul_puis_reprise[cloture]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_mutation_deficit_en_cours_refuse_calcul_puis_reprise[confirmation]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_imputations_deux_exercices_ne_consomment_pas_le_meme_solde",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_stock_deficits_isole_par_societe_et_echec_libere_verrou",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_deficits_multiexercices_concurrents_isole::test_deficit_calcule_et_annulation_imputation_restent_possibles",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_parametres_refuses_pendant_cloture_apres_lecture_du_calcul",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_parametres_en_cours_refusent_cloture_puis_reprise",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_retraitements_refuses_pendant_cloture[ajouter]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_retraitements_refuses_pendant_cloture[modifier]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_retraitements_refuses_pendant_cloture[supprimer]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_confirmation_et_mutation_ne_se_croisent_pas[confirmation-parametres]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_confirmation_et_mutation_ne_se_croisent_pas[parametres-confirmation]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_confirmation_et_mutation_ne_se_croisent_pas[confirmation-confirmation]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_parametres_autres_perimetres_disponibles",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_reference_et_paiement_restent_completables_apres_cloture",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_fiscalite_concurrence_cloture_isole::test_echec_parametrage_libere_verrou_et_preserve_donnees",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_deficit_ordinaire_est_eligible_jusqua_quatrieme_exercice_inclus",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_fraction_amortissements_ne_subit_pas_limite_de_quatre_exercices",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_un_deficit_nest_pas_imputable_sur_son_exercice_dorigine",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_proposition_priorise_ordinaire_proche_expiration_puis_amortissements",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_imputations_anterieures_reduisent_les_soldes_disponibles",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_confirmation_courante_est_comparee_a_la_proposition_sans_reduire_le_solde_avant_exercice",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_ventilation_deficit_genere_plafonne_fraction_amortissements_au_deficit",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_detection_amortissements_exclut_les_provisions",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_sql_022_cree_millesimes_imputations_trigger_et_permissions",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_3_deficits_fiscaux::test_router_et_frontend_exposent_le_suivi_par_millesime",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_bareme_droit_commun_2026_cible_20_35",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_bareme_transition_2025_droit_commun",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_categories_speciales_2026",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_maintien_seuil_100m_transition_force_taux_haut",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_calcul_resultat_fiscal_deficit_et_is",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_deficit_fiscal_genere_si_resultat_negatif",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_exercice_futur_utilise_taux_cible_mais_est_marque_provisoire",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_sql_cree_tables_et_contraintes",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_router_exclut_brouillons_et_clotures_et_delegue_retraitements",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_patch08_1_fiscalite_is::test_frontend_expose_resultat_fiscal_et_is",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "fiscal947_final",
+      "lot": "947",
+      "candidat_sha256": "81487f2a2b0ff7a8cc38666a63cdaf41f6d7dcfc7e6918ff9927727395bab56c"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[False--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[False-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[False-Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[False--Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[False-abc]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[True--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[True-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[True-Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[True--Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_montant_invalide_refuse_sans_mutation[True-abc]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b6_vide_inconnu_et_zero_explicitement_prioritaire",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_zero_manuel_prioritaire_sur_auto_certaine",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_structure_ventilation_invalide_refusee[ventilations0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_structure_ventilation_invalide_refusee[ventilations1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_b7_total480_ventilation479_refuse_confirmation",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_refus_etic_fec949_isole::test_949_piece_historique_absente_reliquat_visible_sans_invention",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[NaN-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[Infinity-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-Infinity-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[-1-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[abc-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[True-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-plus_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-plus_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-moins_un_an-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-moins_un_an-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-echues-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-echues-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-devises-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-devises-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-etat_organismes_publics-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-etat_organismes_publics-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-entreprises_liees-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-entreprises_liees-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-effets-B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_valeur_invalide_ne_disparait_pas_derriere_auto_ou_neant[False-effets-B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_patch119_etic_saisies_invalides::test_zero_explicitement_saisi_reste_prioritaire",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_e2e_cahier_etic805_isole::test_805_etic_documente_et_archive_nonforcee[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "etic949_final",
+      "lot": "949",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_reprise_backend951_isole::test_951_redemarrage_backend_brouillon_puis_validation_unique",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_installation_vierge_104::test_104_installation_rejeu_acl_et_aucune_base_reelle",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_installation_vierge_104::test_104_cli_refuse_url_externe_avant_cluster",
+      "famille": "CLI_refus_cible_externe",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_pdf_exact_logo_source_audit_rejeu_et_comptabilite",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_brouillon_proforma_achat_non_acceptes[params0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_brouillon_proforma_achat_non_acceptes[params1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_brouillon_proforma_achat_non_acceptes[params2]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_societes_lecture_et_revocation",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_double_clic_concurrent_et_payload_non_substituable",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_gardes_sql_role_limite_et_aucune_substitution",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_absence_migration_n_empeche_pas_pdf_habituel",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_factures_conservation923_restauration_isole::test_923_restauration_native_copie_et_droits",
+      "famille": "restauration_PostgreSQL_native_isolee",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_sauvegarde_pieces_documents_isole::test_dump_restore_db_et_pieces_bl_homonymes_permissions_reelles",
+      "famille": "restauration_PostgreSQL_native_isolee",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_fact11_production_hardening::test_production_refuse_secrets_db_par_defaut_en_prod",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_fact11_production_hardening::test_pieces_jointes_sont_bornees_au_tenant_et_protegees_du_path_traversal",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    },
+    {
+      "id": "Test.test_fact11_production_hardening::test_audit_applicatif_est_append_only_et_journalise_toutes_les_mutations_http",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "ops951_final",
+      "lot": "951",
+      "candidat_sha256": "135a2dbc15eefce1ad1ec564b39cd34fdaa56625b2726600ea396f1d6eb6267a"
+    }
+  ],
+  "suivi_apres": {
+    "Réussi": 248,
+    "Partiel": 12,
+    "Bloqué (source)": 12,
+    "Non qualifié par fiche": 0
+  },
+  "aucune_base_reelle": true,
+  "recette_humaine_validee": false,
+  "production_validee": false,
+  "limites": "Cinq finales sur trois candidats :ne pas annoncer239cas sur le seul candidatfinal. Réserves et statuts humains conservés ;Personnel/Paie921distinct."
+}

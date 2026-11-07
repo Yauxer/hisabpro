@@ -1,0 +1,43 @@
+{
+  "societe_fictive": "Proposition recette753",
+  "devise": "MAD",
+  "exercice": 2026,
+  "profil": {
+    "b12_verifie": "oui",
+    "cm_verifiee": "oui",
+    "exhaustivite_verifiee": "oui",
+    "excedent_verifie": "oui",
+    "ordre_examine": "oui",
+    "excedent_annuel": "0"
+  },
+  "sources": {
+    "resultat_net": "6400",
+    "is_comptabilise": "1600",
+    "ri": "500",
+    "deductions": "200",
+    "deficit": "1000",
+    "taux_is": "20",
+    "benefice": "7300",
+    "is_theorique": "1460",
+    "cm": "3000",
+    "credits_total": "500",
+    "deja_utilises": "150",
+    "autres_utilisations": "25",
+    "credits_disponibles": "325",
+    "cash": "1000",
+    "excedent_anterieur_impute": "100",
+    "acomptes": "1250"
+  },
+  "attendus": {
+    "maximum_is_cm": "3000.00",
+    "credits_appliques": "325.00",
+    "acomptes_appliques": "1250.00",
+    "solde_is_propose": "1425.00",
+    "excedent_arithmetique": "0.00",
+    "sans_css": null,
+    "css_qualifiee100000": "0.00",
+    "total_global_is_css": null
+  },
+  "statut_humain": "Non testé",
+  "limite": "Simulation fictive, aucune éligibilité réelle, imputation ou liquidation confirmée."
+}

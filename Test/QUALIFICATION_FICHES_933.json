@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-29",
+  "nature": "Rattachement de couverture automatique ;ne renseigne pas la recette utilisateur",
+  "source_humaine": "docs/recette/CAHIER_RECETTE_FISCALE_755.xlsx",
+  "source_humaine_sha256": "9595c7dc9bbb7b0ea4b2e0be20950f520820ce3a2a7d8fc0c264ea86af12d6bb",
+  "fiches": [
+    {
+      "fiche": "F755-01",
+      "objectif_source": "Créer le compte/société fictive puis enregistrer LOGO_FICTIF755.png selon étape 1.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "Inscription réelle et enregistrement du logo par administrateur1440 et comptable390 ;sociétés fictives.",
+      "tests_executés": [
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[admin-1440]",
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[comptable-390]"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-02",
+      "objectif_source": "Importer les deux CSV, contrôler puis conserver selon étape 2.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "Deux vrais CSV N/N-1 importés,contrôlés et version1 conservée ;aucune écriture générée.",
+      "tests_executés": [
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[admin-1440]",
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[comptable-390]"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-03",
+      "objectif_source": "Saisir B12 avec hors 67=0, déductions 0, déficit 0 et taux 20 ; conserver.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "B12 saisi depuis les données755 ;bénéfice déclaré120000,IS théorique24000 selon hypothèse20%.",
+      "tests_executés": [
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[admin-1440]",
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[comptable-390]"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-04",
+      "objectif_source": "Saisir la qualification CM normale, exclusions/réduction 0 et exonérations non.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "Qualification CM normale conservée ;base141500,calcul353.75,CM exigible proposée3000 selon scénario.",
+      "tests_executés": [
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[admin-1440]",
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[comptable-390]"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-05",
+      "objectif_source": "Saisir CSS2026 sur dernier clos 2025 et bénéfice fiscal 100000 justifié.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "CSS séparée,référence2025 bénéfice100000 ;proposition0,aucune globalisation IS/CSS.",
+      "tests_executés": [
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[admin-1440]",
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[comptable-390]"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-06",
+      "objectif_source": "Saisir profil crédits et deux attestations 300/200, déjà utilisées 100/50, autres 0.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "Crédits300+200,utilisations100+50 ;disponible350,références755exactes conservées.",
+      "tests_executés": [
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[admin-1440]",
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[comptable-390]"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-07",
+      "objectif_source": "Saisir profil référence 20000 et quatre mouvements 4800/4950/5000/5000 avec affectations exactes.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "Acomptes cash19750+excédent100+retenues150=20000 ;quatre échéances couvertes déclarées.",
+      "tests_executés": [
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[admin-1440]",
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[comptable-390]"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-08",
+      "objectif_source": "Saisir revue annuelle, cinq confirmations et excédent annuel 0 ; conserver.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "Revue annuelle,confirmations et excédent annuel0 conservés ;solde3650proposé,pas confirmé.",
+      "tests_executés": [
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[admin-1440]",
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[comptable-390]"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-09",
+      "objectif_source": "Télécharger ZIP/PDF/Excel, contrôler logo, montants, manifeste et anciens snapshots ; joindre le PDF fictif si souhaité.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "ZIP depuis les parcours positifs ;PDF/Excel individuels par interface lecteur,3650et logos relus ;pièce fictive jointe et manifeste/octet vérifiés par API. Ancienne version intacte.",
+      "tests_executés": [
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[admin-1440]",
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[comptable-390]",
+        "Test.test_qualification_fiscale933_isole::test_933_piece_fictive_et_exports_manifestes_logo_sources_figees",
+        "Test.test_qualification_fiscale933_isole::test_933_lecteur_consulte_et_telecharge_le_dossier_annuel755[1440]",
+        "Test.test_qualification_fiscale933_isole::test_933_lecteur_consulte_et_telecharge_le_dossier_annuel755[390]"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-10",
+      "objectif_source": "Refaire avec comptable sur 390 px puis consulter avec un lecteur préparé par l’admin.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Comptable390 puis lecteur1440/390 ;consultation/export permis,champs métier désactivés,conservation absente,POST direct403 ;sélecteur de consultation légitimement actif.",
+      "tests_executés": [
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[admin-1440]",
+        "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[comptable-390]",
+        "Test.test_qualification_fiscale933_isole::test_933_lecteur_consulte_et_telecharge_le_dossier_annuel755[1440]",
+        "Test.test_qualification_fiscale933_isole::test_933_lecteur_consulte_et_telecharge_le_dossier_annuel755[390]"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-11",
+      "objectif_source": "Sur copie de travail, changer le payeur de CR755-B en Banque ou assurance avec allocation 20/06 ; conserver puis actualiser AP et revue.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle",
+      "portee": "Même dossier755 :payeur banque/allocation20juin rend le crédit indisponible ;revue et dépendances reprises ;ancienne version conservée. Le geste de formulaire négatif n’est pas rejoué933.",
+      "tests_executés": [
+        "Test.test_recette_fiscale755_isole::test_755_payeur_avant_juillet_revue_et_dependances_reprises"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-12",
+      "objectif_source": "Sur copie, inverser seulement les références de crédits des deux affectations ; conserver.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle",
+      "portee": "Deux références de retenues inversées :total150inchangé mais rapprochements faux,acomptes/solde indisponibles ;ancienne proposition3650figée et témoin comptable préservé.",
+      "tests_executés": [
+        "Test.test_qualification_fiscale933_isole::test_933_affectations_inversees_references_exactes_et_ancienne_version"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-13",
+      "objectif_source": "Changer B12 et conserver ; consulter l’ancienne proposition puis tenter une nouvelle avant actualisation CM.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle",
+      "portee": "B12+1000fictif :ancienne proposition3650figée,sources modifiées,nouvelle indisponible avant CM actualisée,puis3850proposé après reprise ;aucun compte modifié.",
+      "tests_executés": [
+        "Test.test_qualification_fiscale933_isole::test_933_b12_change_cm_requise_avant_nouvelle_proposition"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    },
+    {
+      "fiche": "F755-14",
+      "objectif_source": "Dans une copie des CSV, dupliquer 1111 puis tester un montant NaN ; tenter les deux imports.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Vrais CSV avec doublon1111 puis NaN importés à1440/390 :prévisualisation422,aucun bouton de conservation,aucune nouvelle version ni écriture ;ancienne préparation intacte.",
+      "tests_executés": [
+        "Test.test_qualification_fiscale933_isole::test_933_csv_doublon_et_nan_refuses_dans_le_vrai_import[1440]",
+        "Test.test_qualification_fiscale933_isole::test_933_csv_doublon_et_nan_refuses_dans_le_vrai_import[390]"
+      ],
+      "limites": "Préparation interne selon hypothèses fictives755 ;aucune recette humaine,liquidation,paiement,dépôt ou conformité réglementaire confirmés."
+    }
+  ],
+  "avant": {
+    "Réussi": 181,
+    "Partiel": 6,
+    "Non qualifié par fiche": 76,
+    "Bloqué (source)": 9
+  },
+  "apres": {
+    "Réussi": 195,
+    "Partiel": 6,
+    "Non qualifié par fiche": 62,
+    "Bloqué (source)": 9
+  }
+}

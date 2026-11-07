@@ -1,0 +1,329 @@
+{
+  "date": "2026-10-29",
+  "nombre_distinct": 44,
+  "campagne_unique_verte": true,
+  "repartition": {
+    "Edge_API_PostgreSQL_natif_isole": 3,
+    "API_SQL_PostgreSQL_natif_isole": 33,
+    "unitaires": 8
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_e2e_encaissements953_isole::test_953_annee_encaissements_cloture_et_recouvrement_suivant[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_e2e_encaissements953_isole::test_953_annee_encaissements_cloture_et_recouvrement_suivant[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_e2e_cahier_tva_echeances795_isole::test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_compensation_partielle_datee_sans_doublon_et_originaux[vente-encaissement-100]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_compensation_partielle_datee_sans_doublon_et_originaux[vente-debit-200]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_compensation_partielle_datee_sans_doublon_et_originaux[achat-encaissement-100]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_imputation_historique_sans_signature_signalee_non_inventee",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_accord_incomplet_ou_date_incoherente_refuse_sans_mutation[changement0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_accord_incomplet_ou_date_incoherente_refuse_sans_mutation[changement1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_accord_incomplet_ou_date_incoherente_refuse_sans_mutation[changement2]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_accord_incomplet_ou_date_incoherente_refuse_sans_mutation[changement3]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_accord_incomplet_ou_date_incoherente_refuse_sans_mutation[changement4]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_accord_incomplet_ou_date_incoherente_refuse_sans_mutation[changement5]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_annulation_effective_preserve_periode_anterieure",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_compensation_inter_societes_refusee",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_compensations_tva953_isole::test_953_migration126_ancienne_table_rejeu_et_contrainte_sql",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_acompte_en_attente_puis_encaisse_dans_le_bon_mois[cheque]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_acompte_en_attente_puis_encaisse_dans_le_bon_mois[effet]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_acompte_rejete_sans_encaissement_non_taxable",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_virement_immediat_conserve_tva_acompte",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_date_historique_inconnue_signalee_sans_reparation[cheque-0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_date_historique_inconnue_signalee_sans_reparation[virement-4000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_imputations_partielles_multiples_et_annulation[client-debit-8000-7000-6000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_imputations_partielles_multiples_et_annulation[client-encaissement-4000-4000-4000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_imputations_partielles_multiples_et_annulation[fournisseur-encaissement-0-1000-2000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_encaissement_apres_facturation_debit_sans_double_tva",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_variante_encaissement_impaye_et_acompte_du_cahier",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_paiement_fournisseur_historique_sans_date_signale",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_avoirs_report795::test_795_report_nets_signes_avoirs[1800--500-2400-0-4700]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_avoirs_report795::test_795_report_nets_signes_avoirs[4700-3000-2400-0-4100]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_avoirs_report795::test_795_report_nets_signes_avoirs[50-100--200-250-0]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_avoirs_report795::test_795_report_nets_signes_avoirs[100--500--200-0-400]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_tva_avoirs_report795::test_795_report_nets_signes_avoirs[0-0--80-80-0]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_oracle_encaissements953::test_953_oracle_mensuel_independant_des_encaissements",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_oracle_encaissements953::test_953_oracle_journal_bilan_et_tva_non_exigible",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_oracle_encaissements953::test_953_jeu_debit_original_conserve_et_contextes_restaures",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_concurrence_avoirs_runtime_postgres::test_avoir_concurrent_unique_coherent_et_origines_conservees[double_comptabilisation-vente]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_concurrence_avoirs_runtime_postgres::test_avoir_concurrent_unique_coherent_et_origines_conservees[double_comptabilisation-achat]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_concurrence_avoirs_runtime_postgres::test_avoir_concurrent_unique_coherent_et_origines_conservees[double_annulation-vente]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_concurrence_avoirs_runtime_postgres::test_avoir_concurrent_unique_coherent_et_origines_conservees[double_annulation-achat]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_concurrence_avoirs_runtime_postgres::test_avoir_concurrent_unique_coherent_et_origines_conservees[consommation_puis_annulation-vente]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_concurrence_avoirs_runtime_postgres::test_avoir_concurrent_unique_coherent_et_origines_conservees[consommation_puis_annulation-achat]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_concurrence_avoirs_runtime_postgres::test_avoir_concurrent_unique_coherent_et_origines_conservees[annulation_puis_consommation-vente]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    },
+    {
+      "id": "Test.test_concurrence_avoirs_runtime_postgres::test_avoir_concurrent_unique_coherent_et_origines_conservees[annulation_puis_consommation-achat]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "enc953_final"
+    }
+  ],
+  "selection": [
+    "Test/test_e2e_encaissements953_isole.py",
+    "Test/test_e2e_cahier_tva_echeances795_isole.py::test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css[1440]",
+    "Test/test_compensations_tva953_isole.py",
+    "Test/test_tva_acomptes945_isole.py",
+    "Test/test_tva_imputations945_isole.py",
+    "Test/test_tva_avoirs_report795.py",
+    "Test/test_oracle_encaissements953.py",
+    "Test/test_concurrence_avoirs_runtime_postgres.py"
+  ],
+  "duree_xml_s": 904.09,
+  "code_sortie": 0,
+  "execution": "PYTHON_DOTENV_DISABLED=1 ;SECRET_KEY fictive,DATABASE_URL inerte port1 ;python .codex-tests/lancer_session.py enc953_final <selection> ;fixtures PG/serveurs nonce.",
+  "historique_non_additionne": [
+    "Avant correction :1échec E2E170.91s,TVAmars833.33 vs1333.33. Oracle3réussis/1.11s.",
+    "APIcible :12réussis/1échec97.06s,référence fournisseur manquante dans fixture ;corrigée,achatciblé1réussi/42.29s.",
+    "E2Ecible aprèscorrectif :1échec266.99s sursélecteur absentécranTVA,aprèsclôture et12impressions ;navigation de recette corrigée. Ces tentatives ne sont pas additionnées àla finale.",
+    "Après les deuxE2Eréussis,les doublons documentaires JSON(journalattendu ettextesdevariante) ontété synchronisés ;copie exacte exécutée conservée,empreinte canonique des9clés financières identique àlivraison. Aucune entrée ni oracle financier modifiés."
+  ],
+  "preuves": {
+    "Test/preuves_mvp953/build_frontend_preuve.json": "6a86bc4758cdcb41c434767798524a9e7e05bf9b681789f7efb7f6e836078e52",
+    "Test/preuves_mvp953/cahier773_encaissements953_1440_preuve.json": "c75d3dba21c39df190daded399fde0d86284ca822103ad30af597a9b88b86bc5",
+    "Test/preuves_mvp953/cahier773_encaissements953_390_preuve.json": "7f9b26e732b0c204db1881b70a229338df54f48ebca44a2dc065817e5046a7ed",
+    "Test/preuves_mvp953/cahier773_tva_echeances795_1440_preuve.json": "ea47c29a44dbe046c37b6ee58154359fa821aa95de8e646f6a8650eb8ba830bb",
+    "Test/preuves_mvp953/enc953_achat.xml": "47abbfcbc52c725d1468222dc74e6f9b7a6de548f9ce4d13fe6492c738b5ed88",
+    "Test/preuves_mvp953/enc953_api.xml": "311a5f75322104bc9c3523744cf8feb1966816074eca649227fb99889822c0b0",
+    "Test/preuves_mvp953/enc953_avant.xml": "ff11980634a76febd3bd94a4401eb49efa9b2aa126c71c734e1cea7875ea0036",
+    "Test/preuves_mvp953/enc953_cible.xml": "361a6895f17b0c5a22d1676dbdc2f9ead1121e444d7ad4d05791adaf39d66ea7",
+    "Test/preuves_mvp953/enc953_coherence_donnees.json": "889031bca890bdfcc1f825069dd7a9ffcb57393c10fe892716462c6213091661",
+    "Test/preuves_mvp953/enc953_donnees_executees.json": "8779ea1a7362dd36dc41ba20971f23d003751cbc00cd3da042d392ef760e4e2b",
+    "Test/preuves_mvp953/enc953_final.xml": "ef68075e5ea0a09c6b6b47bdd5dc8bf8cda6150c7a203b4b87c00e93ded5aaad",
+    "Test/preuves_mvp953/enc953_oracle.xml": "f138885a18264036839d039fb680e0624ac593de1c2e77d7b0c4a007d6f8f9ec"
+  },
+  "rattachement": "Test/QUALIFICATION_FICHES_953.json",
+  "fiches_qualifiees": 1,
+  "candidat": "Test/CANDIDAT_MVP_953.json",
+  "nombre_fichiers_candidat": 550,
+  "fichiers_produit_modifies": [
+    "hisabpro-backend/avoirs.py",
+    "hisabpro-backend/models.py",
+    "hisabpro-backend/routers/tva.py",
+    "hisabpro-backend/schemas.py",
+    "src/pages/Avoirs.jsx"
+  ],
+  "fichiers_produit_ajoutes": [
+    "hisabpro-backend/126_avoirs_compensations_tva.sql"
+  ],
+  "produit_identique_au_951": false,
+  "build": "Build isolé953 :214modules/10.29s,code0 ;aucun.envlu.",
+  "anciens_documents_preserves": 339,
+  "aucune_base_reelle": true,
+  "restauration": "Non rejouée ;preuves antérieures distinctes.",
+  "limites": "Migration126 non appliquée surPostgreSQL utilisateur ;àvalider d’abord surcopie restaurable. Historiques sanssignature ouannulationeffective restentàqualifier ;pasdebackfill. Aucun dépôtDGI ni certification ni recettehumaine validés. Personnel/Paie921 distinct,point6humain conservé."
+}

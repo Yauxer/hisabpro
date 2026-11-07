@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="65.790" timestamp="2026-10-25T17:23:50.168645+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_suivi821_isole" name="test_821_cors_expose_nom_sans_ouvrir_origines" time="46.097" /></testsuite></testsuites>

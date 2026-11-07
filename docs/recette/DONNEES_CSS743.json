@@ -1,0 +1,61 @@
+{
+  "societe_fictive": "CM recette741",
+  "devise": "MAD",
+  "annee_css": 2026,
+  "reference_fiscale": {
+    "exercice": 2025,
+    "resultat_avant_is": "2000000",
+    "reintegrations": "0",
+    "deductions": "0",
+    "deficit_impute": "0",
+    "benefice_net_fiscal": "2000000",
+    "source": "NOTE-CSS2025-743"
+  },
+  "qualification": {
+    "regime": "Société relevant de l’IS",
+    "dernier_clos_confirme": "oui",
+    "exoneration_permanente": "non"
+  },
+  "attendus": {
+    "css": "30000.00",
+    "taux_proportionnel": "1.500",
+    "css_declaree_contexte": "0.00",
+    "ecart": "30000.00",
+    "date_echeance": null,
+    "solde_is": null
+  },
+  "seuils": [
+    {
+      "base": "999999.99",
+      "taux": "0",
+      "css": "0.00"
+    },
+    {
+      "base": "1000000",
+      "taux": "1.5",
+      "css": "15000.00"
+    },
+    {
+      "base": "2000000",
+      "taux": "1.5",
+      "css": "30000.00"
+    },
+    {
+      "base": "5000000",
+      "taux": "2.5",
+      "css": "125000.00"
+    },
+    {
+      "base": "10000000",
+      "taux": "3.5",
+      "css": "350000.00"
+    },
+    {
+      "base": "40000000",
+      "taux": "5",
+      "css": "2000000.00"
+    }
+  ],
+  "statut_humain": "Non testé",
+  "limite": "Données exclusivement fictives,aucune qualification réelle/liquidation/paiement confirmé."
+}

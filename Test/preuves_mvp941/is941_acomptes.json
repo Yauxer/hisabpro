@@ -1,0 +1,22 @@
+{
+  "fiches": [
+    "AP751-03",
+    "AP751-06",
+    "AP751-07"
+  ],
+  "variantes": {
+    "references_inversees": {
+      "acomptes_proposes": null,
+      "calendrier_disponible": true
+    },
+    "annuelle_inconnue": {
+      "acomptes_proposes": "1250.00",
+      "calendrier_disponible": false
+    },
+    "neant_non_confirme": {
+      "acomptes_proposes": null,
+      "calendrier_disponible": true
+    }
+  },
+  "sources_versions_temoins_definitifs_inchanges": true
+}

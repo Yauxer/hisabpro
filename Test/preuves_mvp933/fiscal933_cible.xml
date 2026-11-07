@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="7" time="54.557" timestamp="2026-10-29T13:48:24.066597+01:00" hostname="Taiyou"><testcase classname="Test.test_qualification_fiscale933_isole" name="test_933_affectations_inversees_references_exactes_et_ancienne_version" time="20.883" /><testcase classname="Test.test_qualification_fiscale933_isole" name="test_933_b12_change_cm_requise_avant_nouvelle_proposition" time="0.860" /><testcase classname="Test.test_qualification_fiscale933_isole" name="test_933_piece_fictive_et_exports_manifestes_logo_sources_figees" time="1.429" /><testcase classname="Test.test_qualification_fiscale933_isole" name="test_933_lecteur_consulte_et_telecharge_le_dossier_annuel755[1440]" time="8.787"><failure message="AssertionError: Locator expected to be disabled&#10;Actual value: enabled &#10;Call log:&#10;  - Expect &quot;to_be_disabled&quot; locator(&quot;section&quot;).filter(has=get_by_role(&quot;heading&quot;, name=&quot;Préparer depuis des balances externes&quot;, exact=True)).get_by_role(&quot;region&quot;, name=&quot;Proposition IS CM de la préparation&quot;, exact=True).locator(&quot;input,select,textarea&quot;).first with timeout 5000ms&#10;  - waiting for locator(&quot;section&quot;).filter(has=get_by_role(&quot;heading&quot;, name=&quot;Préparer depuis des balances externes&quot;, exact=True)).get_by_role(&quot;region&quot;, name=&quot;Proposition IS CM de la préparation&quot;, exact=True).locator(&quot;input,select,textarea&quot;).first&#10;    14 × locator resolved to &lt;select aria-label=&quot;Revue fiscale à documenter&quot;&gt;…&lt;/select&gt;&#10;       - unexpected value &quot;enabled&quot;&#10;&#10;Aria snapshot:&#10;- combobox &quot;Revue fiscale à documenter&quot;:&#10;  - option &quot;LIQ-N · Revue de la proposition annuelle IS/CM&quot; [selected]">application = {'api_url': 'http://127.0.0.1:56645', 'web_url': 'http://127.0.0.1:56646', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_gae0pq5v'), 'nonce': '4c33461c62ef439ebd36d26c4870fb6b', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/fiscal933_cible/test_933_lecteur_consulte_et_t0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_933_lecteur_consulte_et_telecharge_le_dossier_annuel755(application,largeur,tmp_path,navigations_completes823):
+     with closing(client(application)[0]) as api,sync_playwright() as p:
+      v=dossier(api);email=f'lecteur933-{v["id"]}@hisabpro-recette.example';password='LectureFictive933!';ok(api.post('/api/utilisateurs',json={'nom':'Lecteur FICTIF933','email':email,'mot_de_passe':password,'role':'lecture'}),201)
+      browser=p.chromium.launch(executable_path=chromium_executable(),headless=True)
+      try:
+       page=browser.new_page(viewport={'width':largeur,'height':1100},accept_downloads=True);page.set_default_timeout(15000);errors,server=observer(page,application['api_url']);connexion(page,application['web_url'],email,password)
+       page.goto(application['web_url']+'/cloture');page.get_by_label('Exercice actif',exact=True).select_option('2026');avant=donnees_metier(application);panel,_=ouvrir(page,application,v,True)
+       panel.get_by_text(SUMMARY,exact=True).click();detail=panel.get_by_role('region',name=REGION,exact=True);expect(detail).to_contain_text('3.650,00 MAD');expect(detail.get_by_role('button',name=SAVE,exact=True)).to_have_count(0)
+&gt;      for control in detail.locator('input,select,textarea').all():expect(control).to_be_disabled()
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E      AssertionError: Locator expected to be disabled
+E      Actual value: enabled 
+E      Call log:
+E        - Expect "to_be_disabled" locator("section").filter(has=get_by_role("heading", name="Préparer depuis des balances externes", exact=True)).get_by_role("region", name="Proposition IS CM de la préparation", exact=True).locator("input,select,textarea").first with timeout 5000ms
+E        - waiting for locator("section").filter(has=get_by_role("heading", name="Préparer depuis des balances externes", exact=True)).get_by_role("region", name="Proposition IS CM de la préparation", exact=True).locator("input,select,textarea").first
+E          14 × locator resolved to &lt;select aria-label="Revue fiscale à documenter"&gt;…&lt;/select&gt;
+E             - unexpected value "enabled"
+E      
+E      Aria snapshot:
+E      - combobox "Revue fiscale à documenter":
+E        - option "LIQ-N · Revue de la proposition annuelle IS/CM" [selected]
+
+Test\test_qualification_fiscale933_isole.py:72: AssertionError</failure></testcase><testcase classname="Test.test_qualification_fiscale933_isole" name="test_933_lecteur_consulte_et_telecharge_le_dossier_annuel755[390]" time="9.006"><failure message="AssertionError: Locator expected to be disabled&#10;Actual value: enabled &#10;Call log:&#10;  - Expect &quot;to_be_disabled&quot; locator(&quot;section&quot;).filter(has=get_by_role(&quot;heading&quot;, name=&quot;Préparer depuis des balances externes&quot;, exact=True)).get_by_role(&quot;region&quot;, name=&quot;Proposition IS CM de la préparation&quot;, exact=True).locator(&quot;input,select,textarea&quot;).first with timeout 5000ms&#10;  - waiting for locator(&quot;section&quot;).filter(has=get_by_role(&quot;heading&quot;, name=&quot;Préparer depuis des balances externes&quot;, exact=True)).get_by_role(&quot;region&quot;, name=&quot;Proposition IS CM de la préparation&quot;, exact=True).locator(&quot;input,select,textarea&quot;).first&#10;    14 × locator resolved to &lt;select aria-label=&quot;Revue fiscale à documenter&quot;&gt;…&lt;/select&gt;&#10;       - unexpected value &quot;enabled&quot;&#10;&#10;Aria snapshot:&#10;- combobox &quot;Revue fiscale à documenter&quot;:&#10;  - option &quot;LIQ-N · Revue de la proposition annuelle IS/CM&quot; [selected]">application = {'api_url': 'http://127.0.0.1:56645', 'web_url': 'http://127.0.0.1:56646', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_gae0pq5v'), 'nonce': '4c33461c62ef439ebd36d26c4870fb6b', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/fiscal933_cible/test_933_lecteur_consulte_et_t1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_933_lecteur_consulte_et_telecharge_le_dossier_annuel755(application,largeur,tmp_path,navigations_completes823):
+     with closing(client(application)[0]) as api,sync_playwright() as p:
+      v=dossier(api);email=f'lecteur933-{v["id"]}@hisabpro-recette.example';password='LectureFictive933!';ok(api.post('/api/utilisateurs',json={'nom':'Lecteur FICTIF933','email':email,'mot_de_passe':password,'role':'lecture'}),201)
+      browser=p.chromium.launch(executable_path=chromium_executable(),headless=True)
+      try:
+       page=browser.new_page(viewport={'width':largeur,'height':1100},accept_downloads=True);page.set_default_timeout(15000);errors,server=observer(page,application['api_url']);connexion(page,application['web_url'],email,password)
+       page.goto(application['web_url']+'/cloture');page.get_by_label('Exercice actif',exact=True).select_option('2026');avant=donnees_metier(application);panel,_=ouvrir(page,application,v,True)
+       panel.get_by_text(SUMMARY,exact=True).click();detail=panel.get_by_role('region',name=REGION,exact=True);expect(detail).to_contain_text('3.650,00 MAD');expect(detail.get_by_role('button',name=SAVE,exact=True)).to_have_count(0)
+&gt;      for control in detail.locator('input,select,textarea').all():expect(control).to_be_disabled()
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E      AssertionError: Locator expected to be disabled
+E      Actual value: enabled 
+E      Call log:
+E        - Expect "to_be_disabled" locator("section").filter(has=get_by_role("heading", name="Préparer depuis des balances externes", exact=True)).get_by_role("region", name="Proposition IS CM de la préparation", exact=True).locator("input,select,textarea").first with timeout 5000ms
+E        - waiting for locator("section").filter(has=get_by_role("heading", name="Préparer depuis des balances externes", exact=True)).get_by_role("region", name="Proposition IS CM de la préparation", exact=True).locator("input,select,textarea").first
+E          14 × locator resolved to &lt;select aria-label="Revue fiscale à documenter"&gt;…&lt;/select&gt;
+E             - unexpected value "enabled"
+E      
+E      Aria snapshot:
+E      - combobox "Revue fiscale à documenter":
+E        - option "LIQ-N · Revue de la proposition annuelle IS/CM" [selected]
+
+Test\test_qualification_fiscale933_isole.py:72: AssertionError</failure></testcase><testcase classname="Test.test_qualification_fiscale933_isole" name="test_933_csv_doublon_et_nan_refuses_dans_le_vrai_import[1440]" time="4.088" /><testcase classname="Test.test_qualification_fiscale933_isole" name="test_933_csv_doublon_et_nan_refuses_dans_le_vrai_import[390]" time="7.229" /></testsuite></testsuites>

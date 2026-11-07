@@ -1,0 +1,17 @@
+{
+  "role": "admin",
+  "largeur": 1440,
+  "formulaire_reel": true,
+  "totaux": {
+    "comptabilise": "1400.00",
+    "soumis": "740.00",
+    "retenu": "37.00"
+  },
+  "export": {
+    "fichiers": 16,
+    "pdf_pages": 36,
+    "excel_feuilles": 51,
+    "logo": true
+  },
+  "aucune_ecriture": true
+}

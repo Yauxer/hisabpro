@@ -1,0 +1,684 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_gbqfhkr_",
+  "nonce": "1c5a892873794411bb221b5bc424c5bc",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "TimeoutError('Page.screenshot: Timeout 15000ms exceeded.\\nCall log:\\n  - taking page screenshot\\n  - waiting for fonts to load...\\n')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "navigation817": {
+    "en_attente": {
+      "1922842825232": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922842829136": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922842832976": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922842836752": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922842856976": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922842948752": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922842985104": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922842992080": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922842996240": {
+        "url": "http://127.0.0.1:52011/api/immobilisations?inclure_sorties=true",
+        "type": "fetch"
+      },
+      "1922843000016": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922844101904": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922844105808": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922844207248": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922844210768": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922844234192": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922844238224": {
+        "url": "http://127.0.0.1:52011/api/avoirs?exercice=2025",
+        "type": "fetch"
+      },
+      "1922844241872": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922844242640": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922844262672": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922844334672": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922844338192": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922844342032": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922844362896": {
+        "url": "http://127.0.0.1:52011/api/lettrage/comptable?exercice=2025&compte=3421",
+        "type": "fetch"
+      },
+      "1922844366736": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922844371088": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922844376592": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922844495184": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922844499088": {
+        "url": "http://127.0.0.1:52011/api/ecritures/reporting/grand-livre?exercice=2025&date_from=2025-01-01&date_to=2025-12-31",
+        "type": "fetch"
+      },
+      "1922844502928": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922844506704": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922844526928": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922844530384": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922844533904": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922842945104": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922842854992": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922842418192": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922844617872": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922844621648": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922844726864": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922844730384": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922844737424": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922844758032": {
+        "url": "http://127.0.0.1:52011/api/immobilisations?inclure_sorties=true",
+        "type": "fetch"
+      },
+      "1922844761872": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922844765648": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922844769424": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922844870736": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922844874256": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922844882384": {
+        "url": "http://127.0.0.1:52011/api/avoirs?exercice=2025",
+        "type": "fetch"
+      },
+      "1922844921552": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922844922320": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922844926096": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922845034512": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922845038032": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922845041872": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922845046288": {
+        "url": "http://127.0.0.1:52011/api/lettrage/comptable?exercice=2025&compte=3421",
+        "type": "fetch"
+      },
+      "1922845066704": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922845070352": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922845074576": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922845194704": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922845198288": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922845205648": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922845209616": {
+        "url": "http://127.0.0.1:52011/api/ecritures/reporting/grand-livre?exercice=2025&date_from=2025-01-01&date_to=2025-12-31",
+        "type": "fetch"
+      },
+      "1922845210512": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922845230736": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922845234512": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922845305936": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922845309456": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922845330256": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922845338512": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922845394000": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922845502992": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922845506512": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922845514768": {
+        "url": "http://127.0.0.1:52011/api/immobilisations?inclure_sorties=true",
+        "type": "fetch"
+      },
+      "1922845518608": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922845522384": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922845559056": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922845683664": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922845687184": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922845707984": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922845711888": {
+        "url": "http://127.0.0.1:52011/api/avoirs?exercice=2025",
+        "type": "fetch"
+      },
+      "1922845855568": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922845859088": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922845863440": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922845936272": {
+        "url": "http://127.0.0.1:52011/api/lettrage/comptable?exercice=2025&compte=3421",
+        "type": "fetch"
+      },
+      "1922845940112": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922845943888": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922845947664": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922846104720": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922846108240": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922846188304": {
+        "url": "http://127.0.0.1:52011/api/ecritures/reporting/grand-livre?exercice=2025&date_from=2025-01-01&date_to=2025-12-31",
+        "type": "fetch"
+      },
+      "1922846191440": {
+        "url": "http://127.0.0.1:52011/api/plan-comptable?inclure_inactifs=true",
+        "type": "fetch"
+      },
+      "1922846191888": {
+        "url": "http://127.0.0.1:52011/api/employes?inclure_archives=true",
+        "type": "fetch"
+      },
+      "1922846228688": {
+        "url": "http://127.0.0.1:52011/api/employes/cotisations?annee=2025&mois=10",
+        "type": "fetch"
+      },
+      "1922846232656": {
+        "url": "http://127.0.0.1:52011/api/employes/conges",
+        "type": "fetch"
+      },
+      "1922846236752": {
+        "url": "http://127.0.0.1:52011/api/employes/referentiel?annee=2025",
+        "type": "fetch"
+      },
+      "1922846240592": {
+        "url": "http://127.0.0.1:52011/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "1922846264400": {
+        "url": "http://127.0.0.1:52011/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "1922846329872": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922846333904": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922846349264": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922846335760": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922846298064": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922845341968": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922846612112": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922846614864": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922846619152": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922846639376": {
+        "url": "http://127.0.0.1:52011/api/avoirs?exercice=2025",
+        "type": "fetch"
+      },
+      "1922846754512": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922846758032": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922846987408": {
+        "url": "http://127.0.0.1:52011/api/ecritures/reporting/grand-livre?exercice=2025&date_from=2025-01-01&date_to=2025-12-31",
+        "type": "fetch"
+      },
+      "1922847035088": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922847038608": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922847130064": {
+        "url": "http://127.0.0.1:52011/api/ecritures/reporting/grand-livre?exercice=2025&date_from=2025-01-01&date_to=2025-12-31",
+        "type": "fetch"
+      },
+      "1922847130832": {
+        "url": "http://127.0.0.1:52011/api/plan-comptable?inclure_inactifs=true",
+        "type": "fetch"
+      },
+      "1922847199632": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922847203152": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922847373840": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922847410192": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922847413776": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922847416720": {
+        "url": "http://127.0.0.1:52011/api/immobilisations?inclure_sorties=true",
+        "type": "fetch"
+      },
+      "1922847419792": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922847423376": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922847443600": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922847517392": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922847520912": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922847561360": {
+        "url": "http://127.0.0.1:52011/api/avoirs?exercice=2025",
+        "type": "fetch"
+      },
+      "1922847564176": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922847567248": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922847570512": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922847701392": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922847721360": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922847725136": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922847728464": {
+        "url": "http://127.0.0.1:52011/api/lettrage/comptable?exercice=2025&compte=3421",
+        "type": "fetch"
+      },
+      "1922847731536": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922847734608": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922847770640": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922847861328": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922847864848": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922848056656": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922848062032": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922848243536": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922848246352": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922848250064": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922848254480": {
+        "url": "http://127.0.0.1:52011/api/immobilisations?inclure_sorties=true",
+        "type": "fetch"
+      },
+      "1922848295056": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922848050704": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922847815696": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922847266256": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922847165968": {
+        "url": "http://127.0.0.1:52011/api/avoirs?exercice=2025",
+        "type": "fetch"
+      },
+      "1922846740624": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922848424720": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922848428496": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      },
+      "1922848464336": {
+        "url": "http://127.0.0.1:52012/vendor/inter/inter-07.woff2",
+        "type": "font"
+      },
+      "1922848467088": {
+        "url": "http://127.0.0.1:52012/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "font"
+      },
+      "1922848469584": {
+        "url": "http://127.0.0.1:52011/api/societes/mes-societes",
+        "type": "fetch"
+      },
+      "1922848489872": {
+        "url": "http://127.0.0.1:52011/api/lettrage/comptable?exercice=2025&compte=3421",
+        "type": "fetch"
+      },
+      "1922848493008": {
+        "url": "http://127.0.0.1:52011/api/societe/modules",
+        "type": "fetch"
+      },
+      "1922848496784": {
+        "url": "http://127.0.0.1:52011/api/societe/moi",
+        "type": "fetch"
+      },
+      "1922848500560": {
+        "url": "http://127.0.0.1:52011/api/exercices",
+        "type": "fetch"
+      }
+    },
+    "echecs_reseau": []
+  },
+  "navigations_terminees": [
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre"
+  ]
+}

@@ -1,0 +1,12 @@
+"""Anciennes captures/registre et préparation593 sur un PostgreSQL nonce commun."""
+import importlib
+from test_ras_tva_capture_isole import (
+    application, application098, application097, application093, application092,
+    application091, application090, application089, application087, migration,
+)
+
+for prefixe,module in [('precedent','test_consolidation_ras_tva585_isole'),
+    ('preparation','test_ras_tva_preparation_isole'),('mensuel','test_e2e_ras_tva_preparation_isole'),
+    ('declaration','test_e2e_tva_isole')]:
+    for nom,fonction in vars(importlib.import_module(module)).items():
+        if nom.startswith('test_') and callable(fonction):globals()[f'test_{prefixe}_{nom[5:]}']=fonction

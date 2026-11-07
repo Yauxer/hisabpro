@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="15" skipped="0" tests="64" time="76.550" timestamp="2026-10-27T22:51:51.263037+01:00" hostname="Taiyou"><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_textuel[None-None]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_textuel[-None]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_textuel[ \t\n -None]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_textuel[ 002\t-002]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_textuel[02-02]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_textuel[2-2]" time="0.003" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_textuel[ab  cd-ab  cd]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_textuel[Ab-Ab]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_textuel[\xa002\xa0-\xa002\xa0]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_pas_de_coercition[2]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_pas_de_coercition[True]" time="0.003" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_pas_de_coercition[False]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_matricule_pas_de_coercition[1.2]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[True]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[False]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[1.25]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[inf]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[nan]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[None]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[NaN]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[sNaN]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[Infinity]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[-Infinity]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[-1]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[1.001]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[source12]" time="0.004" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[10000000000000000]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[1e1000]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[1e-1000]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_non_exact_refuse[non-montant]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_exact_et_serialisation[0-0.00_0]" time="0.003" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_exact_et_serialisation[0-0.00_1]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_exact_et_serialisation[0.01-0.01]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_exact_et_serialisation[12345.67-12345.67]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_exact_et_serialisation[source4-9000.10]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_montant_exact_et_serialisation[9999999999999999.99-9999999999999999.99]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_contrat_valeur_strict[champs0]" time="0.003" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_contrat_valeur_strict[champs1]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_contrat_valeur_strict[champs2]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_contrat_valeur_strict[champs3]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_contrat_valeur_strict[champs4]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_contrat_valeur_strict[champs5]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_contrat_valeur_strict[champs6]" time="0.002" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_contrat_valeur_strict[champs7]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_contrat_valeur_strict[champs8]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_unitaire" name="test_875_contrat_valeur_strict[champs9]" time="0.001" /><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_preflight_vierge_historique_et_droits" time="27.300" /><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_diagnostic_collisions_inconnus_et_pas_de_fuite" time="2.536"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+
+    def test_875_diagnostic_collisions_inconnus_et_pas_de_fuite(application):
+        app=application
+        from test_paie_grh_postgres import dossier
+        with closing(client(app)[0]) as api,closing(client(app)[0]) as autre:
+            secret=ok(autre.post('/api/employes',json=dossier(matricule='AUTRE-SOCIETE-PRIVE')),201)
+            ids=[]
+            for m in ['002','002','02','2',None,'X']:
+                ids.append(ok(api.post('/api/employes',json=dossier(matricule=m,date_embauche=None)),201)['id'])
+            me=ok(api.get('/api/auth/me'));sid=me['societe_id']
+&gt;           exec_owner(app,"UPDATE employes SET matricule=E' 002\t' WHERE id=:e",{'e':ids[1]})
+
+Test\test_personnel_dossiers875_isole.py:103: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_matricule_normalise_sql_et_python_identiques" time="0.013" /><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_matricules_source_ambigu_pas_de_reparation" time="1.237" /><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_versions_exactes_futures_sans_recriture_et_rejeu" time="2.316"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+
+    def test_875_versions_exactes_futures_sans_recriture_et_rejeu(application):
+        app=application
+        with closing(client(app)[0]) as api:
+&gt;           p=preparer(app,api);avant=originaux(app,p['s']);c=contrat(app,p)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:139: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_historique_pas_de_suppression_ou_truncate[personnel_contrats_versions]" time="2.096"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+table = 'personnel_contrats_versions'
+
+    @pytest.mark.parametrize('table',['personnel_contrats_versions','personnel_remunerations_versions','personnel_demandes','personnel_evenements','personnel_dossiers'])
+    def test_875_historique_pas_de_suppression_ou_truncate(application,table):
+        app=application
+        with closing(client(app)[0]) as api:
+&gt;           p=preparer(app,api);c=contrat(app,p);remuneration(app,p,c)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_historique_pas_de_suppression_ou_truncate[personnel_remunerations_versions]" time="2.142"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+table = 'personnel_remunerations_versions'
+
+    @pytest.mark.parametrize('table',['personnel_contrats_versions','personnel_remunerations_versions','personnel_demandes','personnel_evenements','personnel_dossiers'])
+    def test_875_historique_pas_de_suppression_ou_truncate(application,table):
+        app=application
+        with closing(client(app)[0]) as api:
+&gt;           p=preparer(app,api);c=contrat(app,p);remuneration(app,p,c)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_historique_pas_de_suppression_ou_truncate[personnel_demandes]" time="2.118"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+table = 'personnel_demandes'
+
+    @pytest.mark.parametrize('table',['personnel_contrats_versions','personnel_remunerations_versions','personnel_demandes','personnel_evenements','personnel_dossiers'])
+    def test_875_historique_pas_de_suppression_ou_truncate(application,table):
+        app=application
+        with closing(client(app)[0]) as api:
+&gt;           p=preparer(app,api);c=contrat(app,p);remuneration(app,p,c)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_historique_pas_de_suppression_ou_truncate[personnel_evenements]" time="2.204"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+table = 'personnel_evenements'
+
+    @pytest.mark.parametrize('table',['personnel_contrats_versions','personnel_remunerations_versions','personnel_demandes','personnel_evenements','personnel_dossiers'])
+    def test_875_historique_pas_de_suppression_ou_truncate(application,table):
+        app=application
+        with closing(client(app)[0]) as api:
+&gt;           p=preparer(app,api);c=contrat(app,p);remuneration(app,p,c)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_historique_pas_de_suppression_ou_truncate[personnel_dossiers]" time="2.145"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+table = 'personnel_dossiers'
+
+    @pytest.mark.parametrize('table',['personnel_contrats_versions','personnel_remunerations_versions','personnel_demandes','personnel_evenements','personnel_dossiers'])
+    def test_875_historique_pas_de_suppression_ou_truncate(application,table):
+        app=application
+        with closing(client(app)[0]) as api:
+&gt;           p=preparer(app,api);c=contrat(app,p);remuneration(app,p,c)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_sql_montants_invalides[NaN]" time="2.144"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+montant = 'NaN'
+
+    @pytest.mark.parametrize('montant',['NaN','Infinity','-Infinity','-0.01','10000000000000000'])
+    def test_875_sql_montants_invalides(application,montant):
+        app=application
+        with closing(client(app)[0]) as api:
+&gt;           p=preparer(app,api);c=contrat(app,p)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:171: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_sql_montants_invalides[Infinity]" time="2.781"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+montant = 'Infinity'
+
+    @pytest.mark.parametrize('montant',['NaN','Infinity','-Infinity','-0.01','10000000000000000'])
+    def test_875_sql_montants_invalides(application,montant):
+        app=application
+        with closing(client(app)[0]) as api:
+&gt;           p=preparer(app,api);c=contrat(app,p)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:171: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_sql_montants_invalides[-Infinity]" time="2.720"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+montant = '-Infinity'
+
+    @pytest.mark.parametrize('montant',['NaN','Infinity','-Infinity','-0.01','10000000000000000'])
+    def test_875_sql_montants_invalides(application,montant):
+        app=application
+        with closing(client(app)[0]) as api:
+&gt;           p=preparer(app,api);c=contrat(app,p)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:171: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_sql_montants_invalides[-0.01]" time="2.565"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+montant = '-0.01'
+
+    @pytest.mark.parametrize('montant',['NaN','Infinity','-Infinity','-0.01','10000000000000000'])
+    def test_875_sql_montants_invalides(application,montant):
+        app=application
+        with closing(client(app)[0]) as api:
+&gt;           p=preparer(app,api);c=contrat(app,p)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:171: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_sql_montants_invalides[10000000000000000]" time="2.362"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+montant = '10000000000000000'
+
+    @pytest.mark.parametrize('montant',['NaN','Infinity','-Infinity','-0.01','10000000000000000'])
+    def test_875_sql_montants_invalides(application,montant):
+        app=application
+        with closing(client(app)[0]) as api:
+&gt;           p=preparer(app,api);c=contrat(app,p)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:171: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_grants_runtime_lecture_seule_et_approbation_independante" time="2.009"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+
+    def test_875_grants_runtime_lecture_seule_et_approbation_independante(application):
+        app=application
+        with closing(client(app)[0]) as api:
+&gt;           p=preparer(app,api);c=contrat(app,p)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:178: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_cle_composite_et_date_approbation_coherentes" time="2.922"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+
+    def test_875_cle_composite_et_date_approbation_coherentes(application):
+        app=application
+        with closing(client(app)[0]) as api,closing(client(app)[0]) as autre:
+&gt;           p=preparer(app,api);b=preparer(app,autre);c=contrat(app,p)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:192: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase><testcase classname="Test.test_personnel_dossiers875_isole" name="test_875_meme_matricule_autre_societe_et_concurrence" time="8.017"><failure message="sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.">application = {'api_url': 'http://127.0.0.1:61435', 'web_url': 'http://127.0.0.1:61436', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_cf2d16mo'), 'nonce': 'f2321a66746d4455a21f4eaed83a2fd9', ...}, ...}
+
+    def test_875_meme_matricule_autre_societe_et_concurrence(application):
+        app=application
+        with closing(client(app)[0]) as api,closing(client(app)[0]) as autre:
+&gt;           p=preparer(app,api);b=preparer(app,autre)
+              ^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_dossiers875_isole.py:203: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_dossiers875_isole.py:55: in preparer
+    exec_owner(app,"INSERT INTO personnel_dossiers(employe_id,societe_id,matricule_cle,origine,cree_par) VALUES(:e,:s,:m,'historique_a_confirmer',:u)",p)
+Test\test_personnel_dossiers875_isole.py:41: in exec_owner
+    with app['engine'].begin() as db:return db.execute(text(sql),params or {}).scalar()
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:1544: in scalar
+    return self._only_one_row(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\result.py:749: in _only_one_row
+    row: Optional[_InterimRowType[Any]] = onerow(hard_close=True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:2132: in _fetchone_impl
+    return self.cursor_strategy.fetchone(self, self.cursor, hard_close)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:999: in fetchone
+    return self._non_result(result, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1049: in _non_result
+    result._metadata._we_dont_return_rows(err)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.engine.cursor._NoResultMetaData object at 0x00000167554E1FE0&gt;
+err = None
+
+    def _we_dont_return_rows(self, err=None):
+&gt;       raise exc.ResourceClosedError(
+            "This result object does not return rows. "
+            "It has been closed automatically."
+        ) from err
+E       sqlalchemy.exc.ResourceClosedError: This result object does not return rows. It has been closed automatically.
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\cursor.py:1341: ResourceClosedError</failure></testcase></testsuite></testsuites>

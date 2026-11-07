@@ -1,0 +1,50 @@
+[
+  [
+    "PA-QIR01",
+    "Vérifier l’absence de qualification historique",
+    "Copie restaurable ; Personnel actif/protégé ; identité et rémunération habilitées.",
+    "Migration119 après113–118, anciennes versions issues des cahiers889/907.",
+    "Consulter une ancienne rubrique puis une ancienne branche. Lire Frais professionnels et Déductibilité IR. Comparer les anciens snapshots du brut/social.",
+    "Qualification non renseignée affichée À vérifier ; aucune déduction ni inclusion présumée. Anciens snapshots et références inchangés."
+  ],
+  [
+    "PA-QIR02",
+    "Proposer la qualification de base des frais",
+    "PA-QIR01 ; préparateur habilité proposer.",
+    "Tous les champs rubrique du jeu ; code FRAIS_FICTIF907, début2026-01-01, frais Exclue / À vérifier, motif Création fictive907.",
+    "Catalogue > Créer une rubrique. Remplir les trois conditions IR/CNSS/AMO. Définir la qualification Frais professionnels. Enregistrer puis Consulter FRAIS_FICTIF907.",
+    "Proposition visible immédiatement ; Exclue / À vérifier et conditions conservées séparément du traitement IR. Aucun taux de frais appliqué. Auto-approbation indisponible."
+  ],
+  [
+    "PA-QIR03",
+    "Proposer la déductibilité de la part salariale",
+    "PA-QIR01 ; préparateur.",
+    "Tous les champs branche du jeu ; DEDUCTION_FICTIVE907, REGIME_FICTIF907, début2026-01-01 ; déductibilité Non déductible / À vérifier.",
+    "Charges sociales > Référentiel > Créer une branche. Définir Déductibilité IR. Enregistrer, consulter et comparer aux paramètres sociaux.",
+    "Part salariale seule concernée ; règle fiscale distincte des taux sociaux et de leur qualification. Aucun montant déduit. Une règle inconnue n’est pas transformée en zéro."
+  ],
+  [
+    "PA-QIR04",
+    "Approuver indépendamment et conserver la date",
+    "PA-QIR02/03 ; autre décideur habilité approuver.",
+    "Motif Contrôle indépendant fictif907, référence CTRL-FICTIF907 ; confirmation d’indépendance. Nouvelle version début2027-01-01, motif Révision fictive907.",
+    "Le décideur approuve les deux propositions À vérifier. Le préparateur propose ensuite une nouvelle version datée2027. Comparer les filtres31/12/2026 et01/01/2027 après approbation indépendante.",
+    "Dates et acteurs conservés, anciennes versions inchangées. Le statut À vérifier n’est pas une validation réglementaire. Les snapshots existants ne sont pas recalculés."
+  ],
+  [
+    "PA-QIR05",
+    "Refuser une qualification validée sans preuve",
+    "Copie isolée ; ne pas saisir de fausse preuve officielle.",
+    "Nouvelle proposition, qualification Validée après contrôle humain ; laisser au moins la référence, l’article, l’URL, l’empreinte ou la consultation vides.",
+    "Vérifier que les champs deviennent obligatoires et empêchent l’enregistrement incomplet. Tester une URL non officielle ; annuler. Avec une véritable preuve applicable seulement, le décideur habilité doit confirmer son contrôle ; un décideur sans capacité dédiée ne doit pas approuver.",
+    "Preuve incomplète refusée. La validation fiscale seule impose la capacité dédiée même si la règle sociale reste À vérifier. L’application ne certifie pas le contenu de la preuve déclarée."
+  ],
+  [
+    "PA-QIR06",
+    "Vérifier isolation et absence d’effet comptable",
+    "Deux sociétés fictives et administrateur d’habilitations ; journal relevé avant recette.",
+    "Identifiants des deux propositions ; motif Fin accès fictif907.",
+    "Changer de société et constater l’absence des propositions. Révoquer rémunération et Actualiser. Vérifier ordinateur et mobile. Comparer journal, paiements et snapshots avant/après.",
+    "Données masquées après révocation et isolées par société. Affichage vertical lisible. Aucun calcul de frais, RNI, retenue mensuelle, net, bulletin, paiement ou écriture généré."
+  ]
+]

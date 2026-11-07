@@ -1,0 +1,117 @@
+{
+  "date_utc": "2026-10-28T14:49:38.917523+00:00",
+  "produit": "901 inchangé",
+  "sources_produit_verifiees": 519,
+  "anciens_SQL_inchanges": 115,
+  "archives_anterieures": {
+    "HisabPro_889_Paie_Catalogue_Rubriques.zip": {
+      "sha256": "003b4e2727f2dd6f2c3184b9fe20606ee4b54fa60ba318dce701ff64997c2c4f",
+      "fichiers": 41,
+      "CRC": "OK"
+    },
+    "HisabPro_Session_20261027_28_Personnel_Paie_871_889.zip": {
+      "sha256": "c14c9d4332a0e984ee75487a3ff5af4f4860b74179fa70d81fbb8ead54cf6deb",
+      "fichiers": 261,
+      "CRC": "OK"
+    },
+    "HisabPro_891_Paie_Variables_Mensuelles.zip": {
+      "sha256": "e3216af28256b36ac705994ee6177d289dd693bb93b97fa5cfde0d53554343a0",
+      "fichiers": 35,
+      "CRC": "OK"
+    },
+    "HisabPro_Session_20261027_28_Personnel_Paie_871_891.zip": {
+      "sha256": "e62e627946d9c9d013e29c1c63883ffe0229f15ad81f1c722257cb5f3b9cacfe",
+      "fichiers": 285,
+      "CRC": "OK"
+    },
+    "HisabPro_Session_20261028_Paie_889_891.zip": {
+      "sha256": "7b74b6c20a01610abcaab37a5aa5cb185d93771d38a011d82e044d9dbfcaabf5",
+      "fichiers": 65,
+      "CRC": "OK"
+    },
+    "HisabPro_893_Paie_Campagnes_Simulation_Brut.zip": {
+      "sha256": "4661081274256b6a4531eb25a29a644f37ecb2d623583f6c43b1caa2aed04e24",
+      "fichiers": 47,
+      "CRC": "OK"
+    },
+    "HisabPro_Session_20261027_28_Personnel_Paie_871_893.zip": {
+      "sha256": "82d580846d0817a219f8bf40561126f4c3dfea7ea82ba04688f0c948941b3b7c",
+      "fichiers": 315,
+      "CRC": "OK"
+    },
+    "HisabPro_Session_20261028_Paie_889_893.zip": {
+      "sha256": "a64db2f597fa1d8818b55b1a1d4f31c2202c80b6340c2b73f45956847bed331e",
+      "fichiers": 95,
+      "CRC": "OK"
+    },
+    "HisabPro_895_Bilan_Reprise_Session_Paie.zip": {
+      "sha256": "89db89326f6fdde738688b74250e5307558ca2c425e7d3079bdd42a97ac5bea5",
+      "fichiers": 6,
+      "CRC": "OK"
+    },
+    "HisabPro_Session_20261027_28_Personnel_Paie_871_895.zip": {
+      "sha256": "0404a0efc8d1aa1215743799b836ea2ba4ac2a19a4b58a2a055c47ca522ecb22",
+      "fichiers": 317,
+      "CRC": "OK"
+    },
+    "HisabPro_Session_20261028_Paie_889_895.zip": {
+      "sha256": "a3db5bcfaba0bae948e50d00596d364e7c23051673b5997e95db380c2523c2b0",
+      "fichiers": 97,
+      "CRC": "OK"
+    },
+    "HisabPro_897_Paie_Referentiel_Social.zip": {
+      "sha256": "a90a124429271c8f277df9b7d4e54001b1245a53e5bce5656bd4687ac6f584f1",
+      "fichiers": 47,
+      "CRC": "OK"
+    },
+    "HisabPro_Session_20261027_28_Personnel_Paie_871_897.zip": {
+      "sha256": "aceca6059e1fdbf8279abf231aa09d23e96cfb3196f92420b2496792c43743f5",
+      "fichiers": 344,
+      "CRC": "OK"
+    },
+    "HisabPro_899_Paie_Calcul_Social_Connecte.zip": {
+      "sha256": "990a25eb6521e80ff77da0a955d7b2ed376b44d90a2318f2a71a3ad5bb7f7bea",
+      "fichiers": 46,
+      "CRC": "OK"
+    },
+    "HisabPro_Session_20261027_28_Personnel_Paie_871_899.zip": {
+      "sha256": "0f3a46ee4f59eea0832644a85f4a1511eb93f288c3d80b63e6b137cd40469e27",
+      "fichiers": 369,
+      "CRC": "OK"
+    },
+    "HisabPro_Session_20261028_Paie_897_899.zip": {
+      "sha256": "162362cf9563eb62cad008ab5b95fed897a0c105611c106a7a10cf201c6202d1",
+      "fichiers": 73,
+      "CRC": "OK"
+    },
+    "HisabPro_901_Paie_Controle_IR_Annuel.zip": {
+      "sha256": "f58e491eeb3e9cea9ee1667047ba6ad894c5e4e777d5b4f0de739853fcb2994c",
+      "fichiers": 53,
+      "CRC": "OK"
+    },
+    "HisabPro_Session_20261027_28_Personnel_Paie_871_901.zip": {
+      "sha256": "3009a32239949b4e17f9cef6c2f3d727835a62beaeb94397b1e315928efd6ee1",
+      "fichiers": 395,
+      "CRC": "OK"
+    },
+    "HisabPro_Session_20261028_Paie_897_901.zip": {
+      "sha256": "7e88fcc664e2c8f003eafb94e70f1128ae0f88df4746ae2eea8fe1ba6803578d",
+      "fichiers": 99,
+      "CRC": "OK"
+    }
+  },
+  "archives_anterieures_nombre": 19,
+  "cahiers": {
+    "cas": 105,
+    "statuts": {
+      "Non testé": 105
+    },
+    "liens_locaux_valides": 60,
+    "preuve_sha256": "771efa62bd21d6bb0b08dc628587a417e5de234f626b2456b2239a37eb36fb6a"
+  },
+  "compilation_903": "Test/verifier_cahiers_paie903.py OK",
+  "tests_produit_reexecutes_903": false,
+  "derniere_qualification": "Test/PREUVE_PAIE_901.json,327 cas ;pas d’addition aux230/277 antérieurs",
+  "source_env_cles_base_reelle_utilises": false,
+  "archives_903": "Vérifiées séparément après création par CRC/listing/octets/manifeste/SHA/diff exact."
+}

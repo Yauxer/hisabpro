@@ -1,0 +1,101 @@
+{
+  "lot": 699,
+  "societe_fictive": true,
+  "exercice": 2026,
+  "devise_comptable": "MAD",
+  "balances_preexistantes": [
+    "BALANCE_FICTIVE_FINANCEMENT695_N.csv",
+    "BALANCE_FICTIVE_FINANCEMENT695_N1.csv"
+  ],
+  "tables": [
+    {
+      "code": "A2",
+      "statut": "neant_declare",
+      "justification": "Revue fictive699 : aucune dérogation déclarée",
+      "lignes": []
+    },
+    {
+      "code": "A3",
+      "statut": "neant_declare",
+      "justification": "Revue fictive699 : aucun changement de méthode déclaré",
+      "lignes": []
+    },
+    {
+      "code": "B10",
+      "statut": "documente",
+      "justification": "Contrat fictif699, sans qualification réglementaire présumée",
+      "lignes": [
+        {
+          "bien": "Machine en crédit-bail fictif699",
+          "date_contrat": "2025-12-15",
+          "duree": "48 mois",
+          "valeur_estimee": "10000.00",
+          "redevances_exercice": "1200.00",
+          "redevances_restantes": "6400.00",
+          "reference_source": "Contrat A fictif699"
+        }
+      ]
+    },
+    {
+      "code": "C1",
+      "statut": "documente",
+      "justification": "Registre fictif699 des associés",
+      "lignes": [
+        {
+          "associe": "Associé unique fictif699",
+          "identifiant": "Identifiant de recette uniquement",
+          "titres": "100",
+          "nominal": "100.00",
+          "capital": "10000.00",
+          "pourcentage": "100",
+          "reference_source": "Registre A fictif699"
+        }
+      ]
+    },
+    {
+      "code": "C2",
+      "statut": "neant_declare",
+      "justification": "PV fictif699 : aucune affectation durant cet exercice",
+      "lignes": []
+    },
+    {
+      "code": "C4",
+      "statut": "documente",
+      "justification": "État fictif699 des contre-valeurs comptabilisées en MAD",
+      "lignes": [
+        {
+          "devise": "EUR",
+          "achats": "0.00",
+          "ventes": "2000.00",
+          "creances": null,
+          "dettes": null,
+          "observation": "Contre-valeurs en MAD sourcées ; aucun cours de change présumé",
+          "reference_source": "État A fictif699"
+        }
+      ]
+    }
+  ],
+  "oracle_independant": {
+    "titres": 100,
+    "nominal_centimes": 10000,
+    "capital_centimes": 1000000,
+    "pourcentage": "100",
+    "capital_balance_n_centimes": 1000000,
+    "ventes_c4_centimes": 200000,
+    "produits_balance_n_centimes": 200000,
+    "creances_c4_connues": false,
+    "dettes_c4_connues": false,
+    "aucune_conversion_automatique": true,
+    "ecritures_creees": 0,
+    "impot_calcule": false,
+    "cas_humains": [
+      "Non testé",
+      "Non testé",
+      "Non testé",
+      "Non testé",
+      "Non testé",
+      "Non testé"
+    ]
+  },
+  "note": "Jeu humain cohérent avec les soldes du lot695 ; les stress-tests de précision66.666666666667% sont distincts et ne décrivent pas ce capital fictif."
+}

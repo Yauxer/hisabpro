@@ -1,0 +1,28 @@
+vite v5.4.21 building for production...
+transforming...
+✓ 214 modules transformed.
+node.exe : [plugin:vite:reporter] [plugin vite:reporter] 
+Au caractère Ligne:2 : 1
++ & node Test/build_frontend_isole.mjs > .codex-tests/tva945_build_publ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([plugin:vite:re...vite:reporter] :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(!) C:/Users/Y_N_e/hisabpro - GPT/node_modules/xlsx/xlsx.mjs is dynamically imported by C:/Users/Y_N_e/hisabpro - 
+GPT/src/pages/RapprochementBancaire.jsx, C:/Users/Y_N_e/hisabpro - GPT/src/services/exportBalances.js but also 
+statically imported by C:/Users/Y_N_e/hisabpro - GPT/src/components/ImportBalanceLiasse.jsx, C:/Users/Y_N_e/hisabpro - 
+GPT/src/pages/LiasseFiscale.jsx, dynamic import will not move module into another chunk.
+
+rendering chunks...
+computing gzip size...
+.codex-tests/build-frontend-u45900/dist/index.html                     0.60 kB │ gzip:   0.35 kB
+.codex-tests/build-frontend-u45900/dist/assets/index-B5d31ydX.css    313.99 kB │ gzip:  48.09 kB
+.codex-tests/build-frontend-u45900/dist/assets/index-tHYZkPrF.js   2,137.04 kB │ gzip: 574.01 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: 
+https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 6.55s
+Build isolé terminé ; preuve dans .codex-tests/build_frontend_preuve.json

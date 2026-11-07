@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="69.722" timestamp="2026-10-25T20:27:56.175448+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_echeancier827_isole" name="test_827_echeancier_contractuel_paiement_et_etic[1440]" time="48.291"><failure message="AssertionError: Locator expected to have count '2'&#10;Actual value: 0 &#10;Call log:&#10;  - Expect &quot;to_have_count&quot; get_by_role(&quot;dialog&quot;, name=&quot;Nouvelle facture&quot;, exact=True).locator(&quot;[class*=\&quot;echeancierRow\&quot;]&quot;).filter(has=get_by_role(&quot;dialog&quot;, name=&quot;Nouvelle facture&quot;, exact=True).locator(&quot;input[type=date]&quot;)) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;dialog&quot;, name=&quot;Nouvelle facture&quot;, exact=True).locator(&quot;[class*=\&quot;echeancierRow\&quot;]&quot;).filter(has=get_by_role(&quot;dialog&quot;, name=&quot;Nouvelle facture&quot;, exact=True).locator(&quot;input[type=date]&quot;))&#10;    14 × locator resolved to 0 elements&#10;       - unexpected value &quot;0&quot;">application = {'api_url': 'http://127.0.0.1:54905', 'web_url': 'http://127.0.0.1:54906', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_blwzpo0v'), 'nonce': '48fd609cf4ea4490a7ff87c4d6fe5b30', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette827_cible/test_827_echeancier_contractue0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_827_echeancier_contractuel_paiement_et_etic(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'echeancier827') as (api,page,sid,preuve):
+      t=next(t for t in DATA['tiers'] if t['code']=='C-SERVICE');tiers=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'client','compte_client':'3421'}),201)
+      a=next(a for a in DATA['articles'] if a['code']=='S-VTE');article=ok(api.post('/api/articles',json={'code':a['code'],'designation':a['designation'],'is_stockable':False,'stock_actuel':0,'prix_vente_ht':1000,'tva':20,'compte_vente':'7124'}),201)
+      b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      page.goto(application['web_url']+'/factures');page.get_by_role('button',name='Nouvelle facture',exact=True).click();m=page.get_by_role('dialog',name='Nouvelle facture',exact=True);champ(m,'Date *').fill('2025-04-01');m.get_by_placeholder('Rechercher un',exact=False).fill(tiers['nom']);m.get_by_text(tiers['nom'],exact=True).click();m.get_by_placeholder('N° BC, bon de commande...').fill('VAR-ECHEANCIER-827');m.get_by_placeholder('Description ou article...').fill(article['designation']);m.locator('li').filter(has_text=article['designation']).click();ed=m.locator('.hp-invoice-line-editor');ed.locator('input[type=number]').nth(0).fill('1');ed.locator('input[type=number]').nth(1).fill('1000')
+&gt;     m.get_by_role('button',name='Échéancier',exact=True).click();m.get_by_role('button',name='50 / 50',exact=True).click();rows=m.locator('[class*="echeancierRow"]').filter(has=m.locator('input[type=date]'));expect(rows).to_have_count(2)
+                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to have count '2'
+E     Actual value: 0 
+E     Call log:
+E       - Expect "to_have_count" get_by_role("dialog", name="Nouvelle facture", exact=True).locator("[class*=\"echeancierRow\"]").filter(has=get_by_role("dialog", name="Nouvelle facture", exact=True).locator("input[type=date]")) with timeout 5000ms
+E       - waiting for get_by_role("dialog", name="Nouvelle facture", exact=True).locator("[class*=\"echeancierRow\"]").filter(has=get_by_role("dialog", name="Nouvelle facture", exact=True).locator("input[type=date]"))
+E         14 × locator resolved to 0 elements
+E            - unexpected value "0"
+
+Test\test_e2e_cahier_echeancier827_isole.py:23: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_echeancier827_isole" name="test_827_echeancier_contractuel_paiement_et_etic[390]" time="16.409"><failure message="AssertionError: Locator expected to have count '2'&#10;Actual value: 0 &#10;Call log:&#10;  - Expect &quot;to_have_count&quot; get_by_role(&quot;dialog&quot;, name=&quot;Nouvelle facture&quot;, exact=True).locator(&quot;[class*=\&quot;echeancierRow\&quot;]&quot;).filter(has=get_by_role(&quot;dialog&quot;, name=&quot;Nouvelle facture&quot;, exact=True).locator(&quot;input[type=date]&quot;)) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;dialog&quot;, name=&quot;Nouvelle facture&quot;, exact=True).locator(&quot;[class*=\&quot;echeancierRow\&quot;]&quot;).filter(has=get_by_role(&quot;dialog&quot;, name=&quot;Nouvelle facture&quot;, exact=True).locator(&quot;input[type=date]&quot;))&#10;    14 × locator resolved to 0 elements&#10;       - unexpected value &quot;0&quot;">application = {'api_url': 'http://127.0.0.1:54905', 'web_url': 'http://127.0.0.1:54906', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_blwzpo0v'), 'nonce': '48fd609cf4ea4490a7ff87c4d6fe5b30', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette827_cible/test_827_echeancier_contractue1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_827_echeancier_contractuel_paiement_et_etic(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'echeancier827') as (api,page,sid,preuve):
+      t=next(t for t in DATA['tiers'] if t['code']=='C-SERVICE');tiers=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'client','compte_client':'3421'}),201)
+      a=next(a for a in DATA['articles'] if a['code']=='S-VTE');article=ok(api.post('/api/articles',json={'code':a['code'],'designation':a['designation'],'is_stockable':False,'stock_actuel':0,'prix_vente_ht':1000,'tva':20,'compte_vente':'7124'}),201)
+      b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      page.goto(application['web_url']+'/factures');page.get_by_role('button',name='Nouvelle facture',exact=True).click();m=page.get_by_role('dialog',name='Nouvelle facture',exact=True);champ(m,'Date *').fill('2025-04-01');m.get_by_placeholder('Rechercher un',exact=False).fill(tiers['nom']);m.get_by_text(tiers['nom'],exact=True).click();m.get_by_placeholder('N° BC, bon de commande...').fill('VAR-ECHEANCIER-827');m.get_by_placeholder('Description ou article...').fill(article['designation']);m.locator('li').filter(has_text=article['designation']).click();ed=m.locator('.hp-invoice-line-editor');ed.locator('input[type=number]').nth(0).fill('1');ed.locator('input[type=number]').nth(1).fill('1000')
+&gt;     m.get_by_role('button',name='Échéancier',exact=True).click();m.get_by_role('button',name='50 / 50',exact=True).click();rows=m.locator('[class*="echeancierRow"]').filter(has=m.locator('input[type=date]'));expect(rows).to_have_count(2)
+                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to have count '2'
+E     Actual value: 0 
+E     Call log:
+E       - Expect "to_have_count" get_by_role("dialog", name="Nouvelle facture", exact=True).locator("[class*=\"echeancierRow\"]").filter(has=get_by_role("dialog", name="Nouvelle facture", exact=True).locator("input[type=date]")) with timeout 5000ms
+E       - waiting for get_by_role("dialog", name="Nouvelle facture", exact=True).locator("[class*=\"echeancierRow\"]").filter(has=get_by_role("dialog", name="Nouvelle facture", exact=True).locator("input[type=date]"))
+E         14 × locator resolved to 0 elements
+E            - unexpected value "0"
+
+Test\test_e2e_cahier_echeancier827_isole.py:23: AssertionError</failure></testcase></testsuite></testsuites>

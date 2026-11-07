@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="58.942" timestamp="2026-10-26T18:51:02.916241+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_stock851_isole" name="test_851_physique_negatif_service_sans_stock[1440]" time="38.699"><failure message="AssertionError: Locator expected to be disabled&#10;Actual value: enabled &#10;Call log:&#10;  - Expect &quot;to_be_disabled&quot; get_by_role(&quot;button&quot;, name=&quot;Valider l’inventaire&quot;, exact=True) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;button&quot;, name=&quot;Valider l’inventaire&quot;, exact=True)&#10;    14 × locator resolved to &lt;button class=&quot;Inventaire_btnPrim&quot;&gt;…&lt;/button&gt;&#10;       - unexpected value &quot;enabled&quot;&#10;&#10;Aria snapshot:&#10;- button &quot;Valider l’inventaire&quot;">application = {'api_url': 'http://127.0.0.1:55169', 'web_url': 'http://127.0.0.1:55170', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_0d4npvbt'), 'nonce': 'f738af45d3fa4519816a125e7b77829a', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette851_cible/test_851_physique_negatif_serv0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_851_physique_negatif_service_sans_stock(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'stock851') as (api,page,sid,preuve):
+      e=ok(api.post('/api/ecritures',json={'date':'2025-01-01','date_piece':'2025-01-01','journal':'BQ','reference':'TEMOIN-851','libelle':'Témoin fictif invariant851','lignes':[{'compte':'5141','debit':100},{'compte':'1111','credit':100}]}),201);ok(api.post(f'/api/ecritures/{e["id"]}/valider'))
+      a=ok(api.post('/api/articles',json={'code':'M-01','designation':'Marchandise fictive851','is_stockable':True,'stock_actuel':0,'cmup':110,'prix_achat_ht':110,'prix_vente_ht':250,'tva':20,'compte_vente':'7111','compte_achat':'6111'}),201);ok(api.patch(f'/api/articles/{a["id"]}/stock',json={'stock_actuel':60,'date':'2025-01-01','reference':'PRECONDITION-851','note':'Stock fictif60avantcomptage2025.'}));s=ok(api.post('/api/articles',json={'code':'S-VTE','designation':'Service fictif851','is_stockable':False,'stock_actuel':0,'prix_vente_ht':1000,'tva':20,'compte_vente':'7124'}),201);avant=photo(application,sid);journal=core(application,sid)
+&gt;     page.goto(application['web_url']+'/inventaire');page.locator('input[type=date]').fill('2025-12-31');page.get_by_placeholder('Référence inventaire',exact=True).fill('NEG-025');row=page.locator('tbody tr').filter(has_text=a['designation']);row.locator('input[type=number]').fill('-1');expect(page.get_by_role('button',name='Valider l’inventaire',exact=True)).to_be_disabled();expect(page.locator('tbody tr').filter(has_text=s['designation'])).to_have_count(0)
+                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to be disabled
+E     Actual value: enabled 
+E     Call log:
+E       - Expect "to_be_disabled" get_by_role("button", name="Valider l’inventaire", exact=True) with timeout 5000ms
+E       - waiting for get_by_role("button", name="Valider l’inventaire", exact=True)
+E         14 × locator resolved to &lt;button class="Inventaire_btnPrim"&gt;…&lt;/button&gt;
+E            - unexpected value "enabled"
+E     
+E     Aria snapshot:
+E     - button "Valider l’inventaire"
+
+Test\test_e2e_cahier_stock851_isole.py:18: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_stock851_isole" name="test_851_physique_negatif_service_sans_stock[390]" time="12.561"><failure message="AssertionError: Locator expected to be disabled&#10;Actual value: enabled &#10;Call log:&#10;  - Expect &quot;to_be_disabled&quot; get_by_role(&quot;button&quot;, name=&quot;Valider l’inventaire&quot;, exact=True) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;button&quot;, name=&quot;Valider l’inventaire&quot;, exact=True)&#10;    14 × locator resolved to &lt;button class=&quot;Inventaire_btnPrim&quot;&gt;…&lt;/button&gt;&#10;       - unexpected value &quot;enabled&quot;&#10;&#10;Aria snapshot:&#10;- button &quot;Valider l’inventaire&quot;">application = {'api_url': 'http://127.0.0.1:55169', 'web_url': 'http://127.0.0.1:55170', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_0d4npvbt'), 'nonce': 'f738af45d3fa4519816a125e7b77829a', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette851_cible/test_851_physique_negatif_serv1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_851_physique_negatif_service_sans_stock(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'stock851') as (api,page,sid,preuve):
+      e=ok(api.post('/api/ecritures',json={'date':'2025-01-01','date_piece':'2025-01-01','journal':'BQ','reference':'TEMOIN-851','libelle':'Témoin fictif invariant851','lignes':[{'compte':'5141','debit':100},{'compte':'1111','credit':100}]}),201);ok(api.post(f'/api/ecritures/{e["id"]}/valider'))
+      a=ok(api.post('/api/articles',json={'code':'M-01','designation':'Marchandise fictive851','is_stockable':True,'stock_actuel':0,'cmup':110,'prix_achat_ht':110,'prix_vente_ht':250,'tva':20,'compte_vente':'7111','compte_achat':'6111'}),201);ok(api.patch(f'/api/articles/{a["id"]}/stock',json={'stock_actuel':60,'date':'2025-01-01','reference':'PRECONDITION-851','note':'Stock fictif60avantcomptage2025.'}));s=ok(api.post('/api/articles',json={'code':'S-VTE','designation':'Service fictif851','is_stockable':False,'stock_actuel':0,'prix_vente_ht':1000,'tva':20,'compte_vente':'7124'}),201);avant=photo(application,sid);journal=core(application,sid)
+&gt;     page.goto(application['web_url']+'/inventaire');page.locator('input[type=date]').fill('2025-12-31');page.get_by_placeholder('Référence inventaire',exact=True).fill('NEG-025');row=page.locator('tbody tr').filter(has_text=a['designation']);row.locator('input[type=number]').fill('-1');expect(page.get_by_role('button',name='Valider l’inventaire',exact=True)).to_be_disabled();expect(page.locator('tbody tr').filter(has_text=s['designation'])).to_have_count(0)
+                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to be disabled
+E     Actual value: enabled 
+E     Call log:
+E       - Expect "to_be_disabled" get_by_role("button", name="Valider l’inventaire", exact=True) with timeout 5000ms
+E       - waiting for get_by_role("button", name="Valider l’inventaire", exact=True)
+E         14 × locator resolved to &lt;button class="Inventaire_btnPrim"&gt;…&lt;/button&gt;
+E            - unexpected value "enabled"
+E     
+E     Aria snapshot:
+E     - button "Valider l’inventaire"
+
+Test\test_e2e_cahier_stock851_isole.py:18: AssertionError</failure></testcase></testsuite></testsuites>

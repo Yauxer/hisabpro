@@ -1,0 +1,1015 @@
+{
+  "nonce": "161f69db8a3741d2a50928028f88c0ac",
+  "reprise": 97,
+  "retraitement": {
+    "id": 5,
+    "niveau": "manuel",
+    "type": "deduction",
+    "type_suggere": "deduction",
+    "categorie": "reprises_provisions_taxees",
+    "libelle": "REC-REPRISE : taxation antérieure FICTIVE explicitement justifiée",
+    "montant": 1000.0,
+    "montant_detecte": 1000.0,
+    "compte_source": "71955",
+    "reference": "REC-REPRISE",
+    "commentaire": "Variante HP-FIS-032 ; aucune déduction automatique d’une reprise probable.",
+    "automatique": false,
+    "impacte_calcul": true
+  },
+  "avant_justification": {
+    "exercice": 2025,
+    "societe": {
+      "raison_sociale": "Copie FICTIVE947 — variante2025",
+      "identifiant_fiscal": null,
+      "ice": null,
+      "regime_fiscal": "is"
+    },
+    "categories_is": {
+      "droit_commun": "Régime de droit commun",
+      "industrielle": "Société industrielle",
+      "cfc_zai": "CFC / Zone d'accélération industrielle",
+      "convention_investissement": "Convention d'investissement ≥ 1,5 Md MAD",
+      "avantage_20_transition": "Ancien taux plafonné à 20 % (transition 2023–2026)",
+      "financier_40": "Établissement de crédit / BAM / CDG / assurance-réassurance",
+      "exonere": "Exonération totale d'IS"
+    },
+    "categories_retraitement": {
+      "amendes_penalites": "Amendes, pénalités et majorations",
+      "liberalites": "Libéralités",
+      "cadeaux_publicitaires": "Cadeaux publicitaires",
+      "dons": "Dons",
+      "charges_non_justifiees": "Charges non justifiées",
+      "paiements_especes": "Paiements en espèces au-delà des limites",
+      "amortissement_vehicule": "Amortissement / location de véhicule de tourisme",
+      "amortissements_non_deductibles": "Amortissements non déductibles",
+      "provisions_non_deductibles": "Provisions à contrôler",
+      "interets_comptes_courants_associes": "Intérêts de comptes courants d'associés",
+      "produits_participation_abattement": "Produits de participation — abattement de 100%",
+      "reprises_provisions_taxees": "Reprises de provisions antérieurement taxées",
+      "produits_exoneres": "Produits exonérés / non imposables",
+      "charges_liees_produits_exoneres": "Charges liées à des produits exonérés",
+      "autre": "Autre retraitement"
+    },
+    "parametres": {
+      "categorie_is": "droit_commun",
+      "justification_regime": null,
+      "maintien_taux_35_transition": false,
+      "deficit_reportable_disponible": 0.0,
+      "taux_is_force": null,
+      "justification_taux_force": null,
+      "cm_base_exclue": 0.0,
+      "cm_justification_base_exclue": null,
+      "cm_base_taux_reduit_015": 0.0,
+      "cm_justification_taux_reduit": null,
+      "cm_exoneration_totale": false,
+      "cm_justification_exoneration": null,
+      "cm_minimum_3000_exonere": false,
+      "cm_justification_minimum_exonere": null,
+      "acomptes_reference_forcee": null,
+      "acomptes_justification_reference_forcee": null,
+      "css_benefice_reference_forcee": null,
+      "css_justification_reference_forcee": null,
+      "css_exoneration_permanente": false,
+      "css_justification_exoneration": null
+    },
+    "source_comptable": {
+      "resultat_comptable_avant_is": 130830.0,
+      "produits_comptables": 171500.0,
+      "charges_hors_is": 40670.0,
+      "is_deja_comptabilise": 0.0,
+      "impot_courant_comptabilise": 0.0,
+      "nb_ecritures_validees": 49,
+      "nb_brouillons_exclus": 0
+    },
+    "retraitements": [
+      {
+        "id": 3,
+        "niveau": "manuel",
+        "type": "reintegration",
+        "type_suggere": "reintegration",
+        "categorie": "provisions_non_deductibles",
+        "libelle": "REC-LIT01 non admise selon hypothèse explicite du cahier",
+        "montant": 1500.0,
+        "montant_detecte": 1500.0,
+        "compte_source": "61955",
+        "reference": "REC-LIT01",
+        "commentaire": null,
+        "automatique": false,
+        "impacte_calcul": true
+      },
+      {
+        "id": 4,
+        "niveau": "manuel",
+        "type": "reintegration",
+        "type_suggere": "reintegration",
+        "categorie": "provisions_non_deductibles",
+        "libelle": "REC-DEP01 non admise selon hypothèse explicite du cahier",
+        "montant": 2000.0,
+        "montant_detecte": 2000.0,
+        "compte_source": "61964",
+        "reference": "REC-DEP01",
+        "commentaire": null,
+        "automatique": false,
+        "impacte_calcul": true
+      },
+      {
+        "id": "auto:amendes_penalites",
+        "niveau": "automatique",
+        "type": "reintegration",
+        "type_suggere": "reintegration",
+        "categorie": "amendes_penalites",
+        "libelle": "Amendes, pénalités et majorations non déductibles détectées",
+        "montant": 500.0,
+        "montant_detecte": 500.0,
+        "compte_source": "6583*",
+        "reference": "CGI 2026 art. 11-I",
+        "commentaire": "Réintégration automatique des charges enregistrées dans la famille 6583.",
+        "automatique": true,
+        "impacte_calcul": true
+      }
+    ],
+    "retraitements_a_confirmer": [
+      {
+        "id": "check:provisions",
+        "niveau": "a_confirmer",
+        "type": "reintegration",
+        "type_suggere": "reintegration",
+        "categorie": "provisions_non_deductibles",
+        "libelle": "Dotations aux provisions : contrôler les conditions fiscales",
+        "montant": null,
+        "montant_detecte": 3500.0,
+        "compte_source": "61955, 61964",
+        "reference": "CGI 2026 art. 10-I-F-2°",
+        "commentaire": "Une provision n'est pas automatiquement non déductible : sa nature, son évaluation et, pour certaines créances douteuses, les diligences requises doivent être vérifiées.",
+        "questions": [
+          "Risque/charge nettement précisé(e) et probable ?",
+          "Montant évalué de façon suffisamment précise ?",
+          "Conditions particulières respectées (ex. créance douteuse) ?"
+        ],
+        "automatique": false,
+        "impacte_calcul": false
+      },
+      {
+        "id": "check:reprises_provisions",
+        "niveau": "a_confirmer",
+        "type": "deduction",
+        "type_suggere": "deduction",
+        "categorie": "reprises_provisions_taxees",
+        "libelle": "Reprises sur provisions : vérifier si elles ont déjà été taxées antérieurement",
+        "montant": null,
+        "montant_detecte": 1000.0,
+        "compte_source": "71955",
+        "reference": "CGI 2026 — cohérence des provisions et reprises",
+        "commentaire": "Seule la part correspondant à une provision antérieurement réintégrée peut justifier une déduction extra-comptable.",
+        "questions": [
+          "La provision d'origine avait-elle été réintégrée fiscalement ?",
+          "Quel montant de la reprise correspond exactement à cette provision ?"
+        ],
+        "automatique": false,
+        "impacte_calcul": false
+      }
+    ],
+    "checklist_fiscale": [
+      {
+        "code": "paiements_especes",
+        "libelle": "Paiements en espèces",
+        "reference": "CGI 2026 art. 11-II",
+        "regle": "Contrôler les dépenses réglées hors moyens admis au-delà de 5 000 MAD/jour/fournisseur et 50 000 MAD/mois/fournisseur.",
+        "automatisable": false
+      },
+      {
+        "code": "pieces_justificatives",
+        "libelle": "Factures et pièces probantes",
+        "reference": "CGI 2026 art. 11-III",
+        "regle": "Vérifier la régularité des factures/pièces et les mentions exigées ; une référence HisabPro ne remplace pas la pièce elle-même.",
+        "automatisable": false
+      },
+      {
+        "code": "vehicules",
+        "libelle": "Véhicules de tourisme",
+        "reference": "CGI 2026 art. 10-I-F-1°-b",
+        "regle": "Plafond fiscal de 400 000 MAD TTC par véhicule pour les véhicules concernés, avec règles spécifiques de location/crédit-bail.",
+        "automatisable": false
+      },
+      {
+        "code": "charges_produits_exoneres",
+        "libelle": "Charges rattachées à des produits exonérés",
+        "reference": "CGI / régime fiscal applicable",
+        "regle": "Vérifier les règles de rattachement propres aux exonérations ou régimes particuliers de la société.",
+        "automatisable": false
+      }
+    ],
+    "synthese_retraitements": {
+      "nb_automatiques": 1,
+      "nb_a_confirmer": 2,
+      "nb_manuels": 2,
+      "total_automatique_reintegrations": 500.0,
+      "total_automatique_deductions": 0.0
+    },
+    "deficits": {
+      "inventaire": [],
+      "disponible_ordinaire": 0.0,
+      "disponible_amortissements": 0.0,
+      "disponible_total": 0.0,
+      "ordinaire_expire": 0.0,
+      "proposition": [],
+      "total_propose": 0.0,
+      "total_confirme": 0.0,
+      "confirmation_a_jour": false,
+      "legacy_non_millesime": 0.0,
+      "amortissements_comptabilises": 4800.0,
+      "amortissements_reintegres": 0.0,
+      "amortissements_deductibles": 4800.0,
+      "deficit_genere_propose": {
+        "montant_total": 0.0,
+        "part_ordinaire": 0.0,
+        "part_amortissements": 0.0
+      }
+    },
+    "calcul": {
+      "resultat_comptable_avant_is": 130830.0,
+      "reintegrations": 4000.0,
+      "deductions": 0.0,
+      "resultat_fiscal_avant_deficit": 134830.0,
+      "deficit_reportable_disponible": 0.0,
+      "deficit_impute": 0.0,
+      "deficit_reportable_restant": 0.0,
+      "deficit_fiscal_genere": 0.0,
+      "benefice_fiscal_imposable": 134830.0,
+      "taux_is": 17.5,
+      "libelle_taux": "Régime de droit commun",
+      "source_taux": "CGI art. 247-XXXVII-A — droit commun",
+      "taux_provisoire": false,
+      "is_theorique": 23595.25
+    },
+    "cotisation_minimale": {
+      "base_comptable_brute": 170500.0,
+      "details": [
+        {
+          "code": "chiffre_affaires",
+          "libelle": "Chiffre d'affaires",
+          "montant": 169500.0,
+          "prefixes": [
+            "711",
+            "712"
+          ]
+        },
+        {
+          "code": "autres_produits_exploitation",
+          "libelle": "Autres produits d'exploitation",
+          "montant": 0.0,
+          "prefixes": [
+            "718"
+          ]
+        },
+        {
+          "code": "subventions_exploitation",
+          "libelle": "Subventions d'exploitation",
+          "montant": 0.0,
+          "prefixes": [
+            "716"
+          ]
+        },
+        {
+          "code": "produits_financiers",
+          "libelle": "Produits financiers",
+          "montant": 1000.0,
+          "prefixes": [
+            "732",
+            "733",
+            "738"
+          ]
+        },
+        {
+          "code": "subventions_dons_non_courants",
+          "libelle": "Subventions et dons non courants",
+          "montant": 0.0,
+          "prefixes": [
+            "756",
+            "7586"
+          ]
+        }
+      ],
+      "base_exclue": 0.0,
+      "base_apres_exclusion": 170500.0,
+      "base_taux_reduit_015": 0.0,
+      "base_taux_standard_025": 170500.0,
+      "taux_standard": 0.25,
+      "taux_reduit": 0.15,
+      "cm_part_standard": 426.25,
+      "cm_part_reduite": 0.0,
+      "cm_calculee": 426.25,
+      "minimum_3000": 3000.0,
+      "exoneration_totale": false,
+      "minimum_3000_exonere": false,
+      "cm_exigible": 3000.0,
+      "motif_calcul": "minimum_3000",
+      "is_theorique": 23595.25,
+      "impot_du_avant_acomptes": 23595.25,
+      "nature_impot_du": "IS",
+      "produits_taux_reduit_015": [
+        "produits pétroliers",
+        "gaz",
+        "beurre",
+        "huile",
+        "sucre",
+        "farine",
+        "eau",
+        "électricité",
+        "médicaments"
+      ]
+    },
+    "acomptes": {
+      "reference": {
+        "disponible": false,
+        "non_applicable": true,
+        "montant_annuel": 0.0,
+        "source": "premier_exercice",
+        "libelle_source": "Premier exercice — aucun exercice de référence antérieur",
+        "exercice_reference": 2024,
+        "benefice_reference": null,
+        "taux_reference": null,
+        "provisoire": false
+      },
+      "acomptes": [
+        {
+          "numero": 1,
+          "date_echeance": "2025-03-31",
+          "montant_du": 0.0,
+          "credit_n_1_impute": 0.0,
+          "credit_ras_impute": 0.0,
+          "montant_net_a_verser": 0.0,
+          "montant_verse": 0.0,
+          "date_versement": null,
+          "reference_paiement": null,
+          "dispense": false,
+          "reference_dispense": null,
+          "commentaire": null,
+          "statut": "non_applicable",
+          "reste_a_couvrir": 0.0
+        },
+        {
+          "numero": 2,
+          "date_echeance": "2025-06-30",
+          "montant_du": 0.0,
+          "credit_n_1_impute": 0.0,
+          "credit_ras_impute": 0.0,
+          "montant_net_a_verser": 0.0,
+          "montant_verse": 0.0,
+          "date_versement": null,
+          "reference_paiement": null,
+          "dispense": false,
+          "reference_dispense": null,
+          "commentaire": null,
+          "statut": "non_applicable",
+          "reste_a_couvrir": 0.0
+        },
+        {
+          "numero": 3,
+          "date_echeance": "2025-09-30",
+          "montant_du": 0.0,
+          "credit_n_1_impute": 0.0,
+          "credit_ras_impute": 0.0,
+          "montant_net_a_verser": 0.0,
+          "montant_verse": 0.0,
+          "date_versement": null,
+          "reference_paiement": null,
+          "dispense": false,
+          "reference_dispense": null,
+          "commentaire": null,
+          "statut": "non_applicable",
+          "reste_a_couvrir": 0.0
+        },
+        {
+          "numero": 4,
+          "date_echeance": "2025-12-31",
+          "montant_du": 0.0,
+          "credit_n_1_impute": 0.0,
+          "credit_ras_impute": 0.0,
+          "montant_net_a_verser": 0.0,
+          "montant_verse": 0.0,
+          "date_versement": null,
+          "reference_paiement": null,
+          "dispense": false,
+          "reference_dispense": null,
+          "commentaire": null,
+          "statut": "non_applicable",
+          "reste_a_couvrir": 0.0
+        }
+      ],
+      "total_du": 0.0,
+      "total_verse": 0.0,
+      "credit_n_1_initial": 0.0,
+      "credit_n_1_impute": 0.0,
+      "credit_n_1_restant_apres_acomptes": 0.0,
+      "credit_ras_initial": 0.0,
+      "credit_ras_impute": 0.0,
+      "credit_ras_restant_apres_acomptes": 0.0,
+      "total_imputable": 0.0
+    },
+    "credits_is": {
+      "types": {
+        "pprf": "Retenue à la source sur produits de placements à revenu fixe (PPRF)",
+        "retenue_tiers": "Retenue à la source sur rémunérations allouées à des tiers",
+        "autre": "Autre crédit / retenue imputable documenté"
+      },
+      "lignes": [
+        {
+          "id": 2,
+          "type": "pprf",
+          "montant": 200.0,
+          "montant_deja_impute_acomptes": 0.0,
+          "date_retenue": "2025-11-30",
+          "reference": "INT-PPRF",
+          "commentaire": "Crédit FICTIF du cahier, pas de retenue réelle.",
+          "libelle_type": "Retenue à la source sur produits de placements à revenu fixe (PPRF)",
+          "solde_liquidation": 200.0
+        }
+      ],
+      "par_type": {
+        "pprf": 200.0,
+        "retenue_tiers": 0.0,
+        "autre": 0.0
+      },
+      "total_montant": 200.0,
+      "total_deja_impute_acomptes": 0.0,
+      "total_disponible_liquidation": 200.0
+    },
+    "contribution_solidarite": {
+      "applicable": true,
+      "disponible": false,
+      "annee": 2025,
+      "exercice_reference": 2024,
+      "base": 0.0,
+      "taux": 0.0,
+      "montant_du": 0.0,
+      "source": "indisponible",
+      "libelle_source": "Liquidation fiscale 2024 non confirmée",
+      "date_echeance": "2025-03-31",
+      "exoneree_permanente": false,
+      "paiement": null,
+      "montant_verse": 0.0,
+      "reste_a_payer": 0.0,
+      "excedent_verse": 0.0,
+      "statut": "reference_manquante"
+    },
+    "comptabilisation_is": {
+      "attendu": 23595.25,
+      "nature_impot": "IS",
+      "compte_charge_attendu": "6701",
+      "montant_compte_attendu": 0.0,
+      "montant_autre_compte_courant": 0.0,
+      "comptabilise": 0.0,
+      "absente": true,
+      "coherente": false
+    },
+    "liquidation": {
+      "is_theorique": 23595.25,
+      "cm_exigible": 3000.0,
+      "impot_du_avant_acomptes": 23595.25,
+      "nature_impot_du": "IS",
+      "credits_is_disponibles_liquidation": 200.0,
+      "credits_is_appliques": 200.0,
+      "credits_is_appliques_detail": {
+        "pprf": 200.0,
+        "retenue_tiers": 0.0,
+        "autre": 0.0
+      },
+      "excedent_credits_is": 0.0,
+      "acomptes_verses": 0.0,
+      "credit_n_1_impute_sur_acomptes": 0.0,
+      "credits_ras_deja_imputes_sur_acomptes": 0.0,
+      "acomptes_et_credit_imputables": 0.0,
+      "acomptes_appliques_liquidation": 0.0,
+      "solde_a_payer": 23395.25,
+      "excedent_acomptes": 0.0,
+      "excedent_total": 0.0,
+      "nature_solde": "a_payer",
+      "confirmee": false,
+      "snapshot": null
+    },
+    "alertes": [
+      "200.00 MAD de retenues/crédits IS restent disponibles à la liquidation. HisabPro les impute avant les acomptes dans l'ordre PPRF, retenues sur rémunérations à des tiers, puis autres crédits documentés.",
+      "CSS 2025 : liquidation fiscale 2024 indisponible. Confirmez l'exercice précédent ou saisissez un bénéfice net fiscal de référence justifié.",
+      "Impôt sur les résultats non encore comptabilisé : 23595.25 MAD attendus au compte 6701. La clôture HisabPro le comptabilisera automatiquement."
+    ],
+    "source_legale": {
+      "resultat_fiscal": "CGI 2026 — articles 8 à 12",
+      "charges_deductibles": "CGI 2026 — article 10",
+      "charges_non_deductibles": "CGI 2026 — article 11",
+      "produits_participation": "CGI 2026 — article 6-I-C-1°",
+      "deficit_reportable": "CGI 2026 — article 12",
+      "taux_is": "CGI — article 19 et article 247-XXXVII-A (transition 2023-2026)",
+      "cotisation_minimale": "CGI 2026 — article 144",
+      "acomptes_liquidation": "CGI 2026 — article 170 ; article 247-XXXVII-B pour la transition 2023-2026",
+      "credits_retenues_is": "CGI / doctrine DGI — imputation des retenues PPRF et rémunérations allouées à des tiers sur l'IS",
+      "contribution_solidarite": "CGI 2026 — articles 267 à 273 ; LF 2026 — prorogation 2026-2028"
+    }
+  },
+  "apres": {
+    "exercice": 2025,
+    "societe": {
+      "raison_sociale": "Copie FICTIVE947 — variante2025",
+      "identifiant_fiscal": null,
+      "ice": null,
+      "regime_fiscal": "is"
+    },
+    "categories_is": {
+      "droit_commun": "Régime de droit commun",
+      "industrielle": "Société industrielle",
+      "cfc_zai": "CFC / Zone d'accélération industrielle",
+      "convention_investissement": "Convention d'investissement ≥ 1,5 Md MAD",
+      "avantage_20_transition": "Ancien taux plafonné à 20 % (transition 2023–2026)",
+      "financier_40": "Établissement de crédit / BAM / CDG / assurance-réassurance",
+      "exonere": "Exonération totale d'IS"
+    },
+    "categories_retraitement": {
+      "amendes_penalites": "Amendes, pénalités et majorations",
+      "liberalites": "Libéralités",
+      "cadeaux_publicitaires": "Cadeaux publicitaires",
+      "dons": "Dons",
+      "charges_non_justifiees": "Charges non justifiées",
+      "paiements_especes": "Paiements en espèces au-delà des limites",
+      "amortissement_vehicule": "Amortissement / location de véhicule de tourisme",
+      "amortissements_non_deductibles": "Amortissements non déductibles",
+      "provisions_non_deductibles": "Provisions à contrôler",
+      "interets_comptes_courants_associes": "Intérêts de comptes courants d'associés",
+      "produits_participation_abattement": "Produits de participation — abattement de 100%",
+      "reprises_provisions_taxees": "Reprises de provisions antérieurement taxées",
+      "produits_exoneres": "Produits exonérés / non imposables",
+      "charges_liees_produits_exoneres": "Charges liées à des produits exonérés",
+      "autre": "Autre retraitement"
+    },
+    "parametres": {
+      "categorie_is": "droit_commun",
+      "justification_regime": null,
+      "maintien_taux_35_transition": false,
+      "deficit_reportable_disponible": 0.0,
+      "taux_is_force": null,
+      "justification_taux_force": null,
+      "cm_base_exclue": 0.0,
+      "cm_justification_base_exclue": null,
+      "cm_base_taux_reduit_015": 0.0,
+      "cm_justification_taux_reduit": null,
+      "cm_exoneration_totale": false,
+      "cm_justification_exoneration": null,
+      "cm_minimum_3000_exonere": false,
+      "cm_justification_minimum_exonere": null,
+      "acomptes_reference_forcee": null,
+      "acomptes_justification_reference_forcee": null,
+      "css_benefice_reference_forcee": null,
+      "css_justification_reference_forcee": null,
+      "css_exoneration_permanente": false,
+      "css_justification_exoneration": null
+    },
+    "source_comptable": {
+      "resultat_comptable_avant_is": 130830.0,
+      "produits_comptables": 171500.0,
+      "charges_hors_is": 40670.0,
+      "is_deja_comptabilise": 0.0,
+      "impot_courant_comptabilise": 0.0,
+      "nb_ecritures_validees": 49,
+      "nb_brouillons_exclus": 0
+    },
+    "retraitements": [
+      {
+        "id": 3,
+        "niveau": "manuel",
+        "type": "reintegration",
+        "type_suggere": "reintegration",
+        "categorie": "provisions_non_deductibles",
+        "libelle": "REC-LIT01 non admise selon hypothèse explicite du cahier",
+        "montant": 1500.0,
+        "montant_detecte": 1500.0,
+        "compte_source": "61955",
+        "reference": "REC-LIT01",
+        "commentaire": null,
+        "automatique": false,
+        "impacte_calcul": true
+      },
+      {
+        "id": 4,
+        "niveau": "manuel",
+        "type": "reintegration",
+        "type_suggere": "reintegration",
+        "categorie": "provisions_non_deductibles",
+        "libelle": "REC-DEP01 non admise selon hypothèse explicite du cahier",
+        "montant": 2000.0,
+        "montant_detecte": 2000.0,
+        "compte_source": "61964",
+        "reference": "REC-DEP01",
+        "commentaire": null,
+        "automatique": false,
+        "impacte_calcul": true
+      },
+      {
+        "id": 5,
+        "niveau": "manuel",
+        "type": "deduction",
+        "type_suggere": "deduction",
+        "categorie": "reprises_provisions_taxees",
+        "libelle": "REC-REPRISE : taxation antérieure FICTIVE explicitement justifiée",
+        "montant": 1000.0,
+        "montant_detecte": 1000.0,
+        "compte_source": "71955",
+        "reference": "REC-REPRISE",
+        "commentaire": "Variante HP-FIS-032 ; aucune déduction automatique d’une reprise probable.",
+        "automatique": false,
+        "impacte_calcul": true
+      },
+      {
+        "id": "auto:amendes_penalites",
+        "niveau": "automatique",
+        "type": "reintegration",
+        "type_suggere": "reintegration",
+        "categorie": "amendes_penalites",
+        "libelle": "Amendes, pénalités et majorations non déductibles détectées",
+        "montant": 500.0,
+        "montant_detecte": 500.0,
+        "compte_source": "6583*",
+        "reference": "CGI 2026 art. 11-I",
+        "commentaire": "Réintégration automatique des charges enregistrées dans la famille 6583.",
+        "automatique": true,
+        "impacte_calcul": true
+      }
+    ],
+    "retraitements_a_confirmer": [
+      {
+        "id": "check:provisions",
+        "niveau": "a_confirmer",
+        "type": "reintegration",
+        "type_suggere": "reintegration",
+        "categorie": "provisions_non_deductibles",
+        "libelle": "Dotations aux provisions : contrôler les conditions fiscales",
+        "montant": null,
+        "montant_detecte": 3500.0,
+        "compte_source": "61955, 61964",
+        "reference": "CGI 2026 art. 10-I-F-2°",
+        "commentaire": "Une provision n'est pas automatiquement non déductible : sa nature, son évaluation et, pour certaines créances douteuses, les diligences requises doivent être vérifiées.",
+        "questions": [
+          "Risque/charge nettement précisé(e) et probable ?",
+          "Montant évalué de façon suffisamment précise ?",
+          "Conditions particulières respectées (ex. créance douteuse) ?"
+        ],
+        "automatique": false,
+        "impacte_calcul": false
+      },
+      {
+        "id": "check:reprises_provisions",
+        "niveau": "a_confirmer",
+        "type": "deduction",
+        "type_suggere": "deduction",
+        "categorie": "reprises_provisions_taxees",
+        "libelle": "Reprises sur provisions : vérifier si elles ont déjà été taxées antérieurement",
+        "montant": null,
+        "montant_detecte": 1000.0,
+        "compte_source": "71955",
+        "reference": "CGI 2026 — cohérence des provisions et reprises",
+        "commentaire": "Seule la part correspondant à une provision antérieurement réintégrée peut justifier une déduction extra-comptable.",
+        "questions": [
+          "La provision d'origine avait-elle été réintégrée fiscalement ?",
+          "Quel montant de la reprise correspond exactement à cette provision ?"
+        ],
+        "automatique": false,
+        "impacte_calcul": false
+      }
+    ],
+    "checklist_fiscale": [
+      {
+        "code": "paiements_especes",
+        "libelle": "Paiements en espèces",
+        "reference": "CGI 2026 art. 11-II",
+        "regle": "Contrôler les dépenses réglées hors moyens admis au-delà de 5 000 MAD/jour/fournisseur et 50 000 MAD/mois/fournisseur.",
+        "automatisable": false
+      },
+      {
+        "code": "pieces_justificatives",
+        "libelle": "Factures et pièces probantes",
+        "reference": "CGI 2026 art. 11-III",
+        "regle": "Vérifier la régularité des factures/pièces et les mentions exigées ; une référence HisabPro ne remplace pas la pièce elle-même.",
+        "automatisable": false
+      },
+      {
+        "code": "vehicules",
+        "libelle": "Véhicules de tourisme",
+        "reference": "CGI 2026 art. 10-I-F-1°-b",
+        "regle": "Plafond fiscal de 400 000 MAD TTC par véhicule pour les véhicules concernés, avec règles spécifiques de location/crédit-bail.",
+        "automatisable": false
+      },
+      {
+        "code": "charges_produits_exoneres",
+        "libelle": "Charges rattachées à des produits exonérés",
+        "reference": "CGI / régime fiscal applicable",
+        "regle": "Vérifier les règles de rattachement propres aux exonérations ou régimes particuliers de la société.",
+        "automatisable": false
+      }
+    ],
+    "synthese_retraitements": {
+      "nb_automatiques": 1,
+      "nb_a_confirmer": 2,
+      "nb_manuels": 3,
+      "total_automatique_reintegrations": 500.0,
+      "total_automatique_deductions": 0.0
+    },
+    "deficits": {
+      "inventaire": [],
+      "disponible_ordinaire": 0.0,
+      "disponible_amortissements": 0.0,
+      "disponible_total": 0.0,
+      "ordinaire_expire": 0.0,
+      "proposition": [],
+      "total_propose": 0.0,
+      "total_confirme": 0.0,
+      "confirmation_a_jour": false,
+      "legacy_non_millesime": 0.0,
+      "amortissements_comptabilises": 4800.0,
+      "amortissements_reintegres": 0.0,
+      "amortissements_deductibles": 4800.0,
+      "deficit_genere_propose": {
+        "montant_total": 0.0,
+        "part_ordinaire": 0.0,
+        "part_amortissements": 0.0
+      }
+    },
+    "calcul": {
+      "resultat_comptable_avant_is": 130830.0,
+      "reintegrations": 4000.0,
+      "deductions": 1000.0,
+      "resultat_fiscal_avant_deficit": 133830.0,
+      "deficit_reportable_disponible": 0.0,
+      "deficit_impute": 0.0,
+      "deficit_reportable_restant": 0.0,
+      "deficit_fiscal_genere": 0.0,
+      "benefice_fiscal_imposable": 133830.0,
+      "taux_is": 17.5,
+      "libelle_taux": "Régime de droit commun",
+      "source_taux": "CGI art. 247-XXXVII-A — droit commun",
+      "taux_provisoire": false,
+      "is_theorique": 23420.25
+    },
+    "cotisation_minimale": {
+      "base_comptable_brute": 170500.0,
+      "details": [
+        {
+          "code": "chiffre_affaires",
+          "libelle": "Chiffre d'affaires",
+          "montant": 169500.0,
+          "prefixes": [
+            "711",
+            "712"
+          ]
+        },
+        {
+          "code": "autres_produits_exploitation",
+          "libelle": "Autres produits d'exploitation",
+          "montant": 0.0,
+          "prefixes": [
+            "718"
+          ]
+        },
+        {
+          "code": "subventions_exploitation",
+          "libelle": "Subventions d'exploitation",
+          "montant": 0.0,
+          "prefixes": [
+            "716"
+          ]
+        },
+        {
+          "code": "produits_financiers",
+          "libelle": "Produits financiers",
+          "montant": 1000.0,
+          "prefixes": [
+            "732",
+            "733",
+            "738"
+          ]
+        },
+        {
+          "code": "subventions_dons_non_courants",
+          "libelle": "Subventions et dons non courants",
+          "montant": 0.0,
+          "prefixes": [
+            "756",
+            "7586"
+          ]
+        }
+      ],
+      "base_exclue": 0.0,
+      "base_apres_exclusion": 170500.0,
+      "base_taux_reduit_015": 0.0,
+      "base_taux_standard_025": 170500.0,
+      "taux_standard": 0.25,
+      "taux_reduit": 0.15,
+      "cm_part_standard": 426.25,
+      "cm_part_reduite": 0.0,
+      "cm_calculee": 426.25,
+      "minimum_3000": 3000.0,
+      "exoneration_totale": false,
+      "minimum_3000_exonere": false,
+      "cm_exigible": 3000.0,
+      "motif_calcul": "minimum_3000",
+      "is_theorique": 23420.25,
+      "impot_du_avant_acomptes": 23420.25,
+      "nature_impot_du": "IS",
+      "produits_taux_reduit_015": [
+        "produits pétroliers",
+        "gaz",
+        "beurre",
+        "huile",
+        "sucre",
+        "farine",
+        "eau",
+        "électricité",
+        "médicaments"
+      ]
+    },
+    "acomptes": {
+      "reference": {
+        "disponible": false,
+        "non_applicable": true,
+        "montant_annuel": 0.0,
+        "source": "premier_exercice",
+        "libelle_source": "Premier exercice — aucun exercice de référence antérieur",
+        "exercice_reference": 2024,
+        "benefice_reference": null,
+        "taux_reference": null,
+        "provisoire": false
+      },
+      "acomptes": [
+        {
+          "numero": 1,
+          "date_echeance": "2025-03-31",
+          "montant_du": 0.0,
+          "credit_n_1_impute": 0.0,
+          "credit_ras_impute": 0.0,
+          "montant_net_a_verser": 0.0,
+          "montant_verse": 0.0,
+          "date_versement": null,
+          "reference_paiement": null,
+          "dispense": false,
+          "reference_dispense": null,
+          "commentaire": null,
+          "statut": "non_applicable",
+          "reste_a_couvrir": 0.0
+        },
+        {
+          "numero": 2,
+          "date_echeance": "2025-06-30",
+          "montant_du": 0.0,
+          "credit_n_1_impute": 0.0,
+          "credit_ras_impute": 0.0,
+          "montant_net_a_verser": 0.0,
+          "montant_verse": 0.0,
+          "date_versement": null,
+          "reference_paiement": null,
+          "dispense": false,
+          "reference_dispense": null,
+          "commentaire": null,
+          "statut": "non_applicable",
+          "reste_a_couvrir": 0.0
+        },
+        {
+          "numero": 3,
+          "date_echeance": "2025-09-30",
+          "montant_du": 0.0,
+          "credit_n_1_impute": 0.0,
+          "credit_ras_impute": 0.0,
+          "montant_net_a_verser": 0.0,
+          "montant_verse": 0.0,
+          "date_versement": null,
+          "reference_paiement": null,
+          "dispense": false,
+          "reference_dispense": null,
+          "commentaire": null,
+          "statut": "non_applicable",
+          "reste_a_couvrir": 0.0
+        },
+        {
+          "numero": 4,
+          "date_echeance": "2025-12-31",
+          "montant_du": 0.0,
+          "credit_n_1_impute": 0.0,
+          "credit_ras_impute": 0.0,
+          "montant_net_a_verser": 0.0,
+          "montant_verse": 0.0,
+          "date_versement": null,
+          "reference_paiement": null,
+          "dispense": false,
+          "reference_dispense": null,
+          "commentaire": null,
+          "statut": "non_applicable",
+          "reste_a_couvrir": 0.0
+        }
+      ],
+      "total_du": 0.0,
+      "total_verse": 0.0,
+      "credit_n_1_initial": 0.0,
+      "credit_n_1_impute": 0.0,
+      "credit_n_1_restant_apres_acomptes": 0.0,
+      "credit_ras_initial": 0.0,
+      "credit_ras_impute": 0.0,
+      "credit_ras_restant_apres_acomptes": 0.0,
+      "total_imputable": 0.0
+    },
+    "credits_is": {
+      "types": {
+        "pprf": "Retenue à la source sur produits de placements à revenu fixe (PPRF)",
+        "retenue_tiers": "Retenue à la source sur rémunérations allouées à des tiers",
+        "autre": "Autre crédit / retenue imputable documenté"
+      },
+      "lignes": [
+        {
+          "id": 2,
+          "type": "pprf",
+          "montant": 200.0,
+          "montant_deja_impute_acomptes": 0.0,
+          "date_retenue": "2025-11-30",
+          "reference": "INT-PPRF",
+          "commentaire": "Crédit FICTIF du cahier, pas de retenue réelle.",
+          "libelle_type": "Retenue à la source sur produits de placements à revenu fixe (PPRF)",
+          "solde_liquidation": 200.0
+        }
+      ],
+      "par_type": {
+        "pprf": 200.0,
+        "retenue_tiers": 0.0,
+        "autre": 0.0
+      },
+      "total_montant": 200.0,
+      "total_deja_impute_acomptes": 0.0,
+      "total_disponible_liquidation": 200.0
+    },
+    "contribution_solidarite": {
+      "applicable": true,
+      "disponible": false,
+      "annee": 2025,
+      "exercice_reference": 2024,
+      "base": 0.0,
+      "taux": 0.0,
+      "montant_du": 0.0,
+      "source": "indisponible",
+      "libelle_source": "Liquidation fiscale 2024 non confirmée",
+      "date_echeance": "2025-03-31",
+      "exoneree_permanente": false,
+      "paiement": null,
+      "montant_verse": 0.0,
+      "reste_a_payer": 0.0,
+      "excedent_verse": 0.0,
+      "statut": "reference_manquante"
+    },
+    "comptabilisation_is": {
+      "attendu": 23420.25,
+      "nature_impot": "IS",
+      "compte_charge_attendu": "6701",
+      "montant_compte_attendu": 0.0,
+      "montant_autre_compte_courant": 0.0,
+      "comptabilise": 0.0,
+      "absente": true,
+      "coherente": false
+    },
+    "liquidation": {
+      "is_theorique": 23420.25,
+      "cm_exigible": 3000.0,
+      "impot_du_avant_acomptes": 23420.25,
+      "nature_impot_du": "IS",
+      "credits_is_disponibles_liquidation": 200.0,
+      "credits_is_appliques": 200.0,
+      "credits_is_appliques_detail": {
+        "pprf": 200.0,
+        "retenue_tiers": 0.0,
+        "autre": 0.0
+      },
+      "excedent_credits_is": 0.0,
+      "acomptes_verses": 0.0,
+      "credit_n_1_impute_sur_acomptes": 0.0,
+      "credits_ras_deja_imputes_sur_acomptes": 0.0,
+      "acomptes_et_credit_imputables": 0.0,
+      "acomptes_appliques_liquidation": 0.0,
+      "solde_a_payer": 23220.25,
+      "excedent_acomptes": 0.0,
+      "excedent_total": 0.0,
+      "nature_solde": "a_payer",
+      "confirmee": false,
+      "snapshot": null
+    },
+    "alertes": [
+      "200.00 MAD de retenues/crédits IS restent disponibles à la liquidation. HisabPro les impute avant les acomptes dans l'ordre PPRF, retenues sur rémunérations à des tiers, puis autres crédits documentés.",
+      "CSS 2025 : liquidation fiscale 2024 indisponible. Confirmez l'exercice précédent ou saisissez un bénéfice net fiscal de référence justifié.",
+      "Impôt sur les résultats non encore comptabilisé : 23420.25 MAD attendus au compte 6701. La clôture HisabPro le comptabilisera automatiquement."
+    ],
+    "source_legale": {
+      "resultat_fiscal": "CGI 2026 — articles 8 à 12",
+      "charges_deductibles": "CGI 2026 — article 10",
+      "charges_non_deductibles": "CGI 2026 — article 11",
+      "produits_participation": "CGI 2026 — article 6-I-C-1°",
+      "deficit_reportable": "CGI 2026 — article 12",
+      "taux_is": "CGI — article 19 et article 247-XXXVII-A (transition 2023-2026)",
+      "cotisation_minimale": "CGI 2026 — article 144",
+      "acomptes_liquidation": "CGI 2026 — article 170 ; article 247-XXXVII-B pour la transition 2023-2026",
+      "credits_retenues_is": "CGI / doctrine DGI — imputation des retenues PPRF et rémunérations allouées à des tiers sur l'IS",
+      "contribution_solidarite": "CGI 2026 — articles 267 à 273 ; LF 2026 — prorogation 2026-2028"
+    }
+  },
+  "originaux_preserves": true
+}

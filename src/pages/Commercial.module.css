@@ -1,0 +1,291 @@
+.page { display: flex; flex-direction: column; height: 100%; }
+.topbar { background: var(--bg-primary); border-bottom: 0.5px solid var(--border-light); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; gap: 16px; }
+.pageTitle { font-size: 15px; font-weight: 500; margin: 0 0 2px 0; }
+.content { flex: 1; overflow: hidden; padding: 16px 24px; display: flex; flex-direction: column; gap: 12px; }
+
+.pipelineIndicateur { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+
+/* Onglet */
+.ongletContent { display: flex; flex-direction: column; gap: 12px; flex: 1; min-height: 0; }
+.ongletTopbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; flex-shrink: 0; }
+
+/* Boutons */
+.btnPrim { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 7px 14px; border-radius: var(--radius-md); background: var(--blue); color: #fff; border: none; cursor: pointer; transition: background 0.15s; }
+.btnPrim:hover:not(:disabled) { background: var(--blue-dark); }
+.btnPrim:disabled { opacity: 0.5; cursor: not-allowed; }
+.btnSec { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 7px 12px; border-radius: var(--radius-md); background: var(--bg-primary); border: 0.5px solid var(--border-medium); color: var(--text-secondary); cursor: pointer; }
+.btnSec:hover { background: var(--bg-secondary); }
+.btnAction { width: 28px; height: 28px; border-radius: var(--radius-sm); border: none; background: var(--bg-secondary); color: var(--text-secondary); font-size: 14px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.12s; }
+.btnAction:hover { background: var(--blue-light); color: var(--blue); }
+.btnActionPrim { display: flex; align-items: center; gap: 4px; font-size: 11px; padding: 4px 10px; border-radius: var(--radius-sm); background: var(--blue-light); color: var(--blue); border: 0.5px solid #B5D4F4; cursor: pointer; font-weight: 500; white-space: nowrap; }
+.btnActionPrim:hover { background: #D0E8FA; }
+.btnTrash { width: 28px; height: 28px; border-radius: var(--radius-sm); background: none; border: none; color: transparent; font-size: 13px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+tr:hover .btnTrash { color: var(--text-tertiary); }
+.btnTrash:hover { background: var(--red-light) !important; color: var(--red) !important; }
+.btnAjout { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--blue); background: var(--blue-light); border: 0.5px solid #B5D4F4; padding: 6px 12px; border-radius: var(--radius-md); cursor: pointer; }
+.btnAjout:hover { background: #D0E8FA; }
+.btnSuppr { width: 28px; height: 28px; border-radius: var(--radius-sm); background: none; border: none; color: var(--text-tertiary); font-size: 14px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.btnSuppr:hover:not(:disabled) { background: var(--red-light); color: var(--red); }
+.btnSuppr:disabled { opacity: 0.2; cursor: not-allowed; }
+
+/* Card + table */
+.card { background: var(--bg-primary); border: 0.5px solid var(--border-light); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; flex: 1; min-height: 0; }
+.tableWrapper { flex:1; min-width:0; min-height:0; overflow:auto; overscroll-behavior:contain; scrollbar-gutter:stable; -webkit-overflow-scrolling:touch; }
+.table { width: 100%; border-collapse: collapse; }
+.table th { font-size: 11px; color: var(--text-tertiary); font-weight: 400; text-align: left; padding: 9px 14px; border-bottom: 0.5px solid var(--border-light); position: sticky; top: 0; background: var(--bg-primary); }
+.table td { font-size: 12px; padding: 9px 14px; border-bottom: 0.5px solid var(--border-light); color: var(--text-primary); vertical-align: middle; }
+.table tr:last-child td { border-bottom: none; }
+.table tr:hover td { background: var(--bg-secondary); }
+.numDoc { font-family: 'Courier New', monospace; font-size: 11px; font-weight: 600; }
+.tdDate { color: var(--text-tertiary); font-size: 11px; }
+.vide { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--text-tertiary); font-size: 13px; padding: 48px; }
+.vide i { font-size: 28px; }
+
+/* Recherche */
+.recherche { display: flex; align-items: center; gap: 8px; background: var(--bg-primary); border: 0.5px solid var(--border-medium); border-radius: var(--radius-md); padding: 0 10px; color: var(--text-tertiary); flex: 1; max-width: 320px; }
+.recherche i { font-size: 15px; flex-shrink: 0; }
+.inputRecherche { flex: 1; border: none; background: transparent; font-size: 13px; color: var(--text-primary); padding: 8px 0; }
+.inputRecherche:focus { outline: none; }
+
+/* Formulaire */
+.formContenu { display: flex; flex-direction: column; gap: 16px; }
+.formGrid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.formGrid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.formGrid4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; }
+.formGroup { display: flex; flex-direction: column; gap: 4px; }
+.label { font-size: 11px; color: var(--text-secondary); font-weight: 500; }
+.input { padding: 9px 12px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-primary); font-size: 13px; font-family: var(--font); width: 100%; box-sizing: border-box; }
+.input:focus { border-color: var(--blue); outline: none; box-shadow: 0 0 0 2px rgba(24,95,165,0.1); }
+.textarea { padding: 9px 12px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-primary); font-size: 13px; font-family: var(--font); width: 100%; box-sizing: border-box; resize: vertical; }
+.textarea:focus { border-color: var(--blue); outline: none; }
+.typeToggle { display: flex; gap: 5px; }
+.typeBtn { font-size: 12px; padding: 7px 14px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; gap: 5px; }
+.typeBtnActif { background: var(--blue) !important; color: #fff !important; border-color: var(--blue) !important; font-weight: 500; }
+.formActions { display: flex; gap: 10px; justify-content: flex-end; padding-top: 4px; }
+.erreur { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--red); background: var(--red-light); padding: 10px 14px; border-radius: var(--radius-md); }
+.sourceInfo { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--blue); background: var(--blue-light); border: 0.5px solid #B5D4F4; padding: 10px 14px; border-radius: var(--radius-md); }
+
+/* Totaux */
+.totaux { background: var(--bg-secondary); border-radius: var(--radius-md); padding: 12px 16px; display: flex; flex-direction: column; gap: 6px; }
+.totauxLigne { display: flex; justify-content: space-between; font-size: 12px; color: var(--text-secondary); }
+.totauxTTC { font-size: 14px; font-weight: 600; color: var(--text-primary); padding-top: 6px; border-top: 0.5px solid var(--border-medium); }
+
+/* Lignes */
+.lignesHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.lignesTitle { font-size: 13px; font-weight: 500; }
+.lignesColHeaders { display: grid; gap: 6px; font-size: 10px; color: var(--text-tertiary); padding: 0 2px; margin-bottom: 4px; }
+.ligneRow { display: grid; gap: 6px; align-items: center; margin-bottom: 4px; }
+.inputSm { padding: 7px 8px; border-radius: var(--radius-sm); border: 0.5px solid var(--border-light); background: var(--bg-primary); color: var(--text-primary); font-size: 12px; font-family: var(--font); width: 100%; box-sizing: border-box; }
+.inputSm:focus { border-color: var(--blue); outline: none; }
+.num { text-align: right; }
+
+/* ═══ Tableaux de lignes en édition (devis, BC, BL) ═══ */
+.tableLignes, .lignesTable {
+  width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 4px 0 8px 0;
+}
+.tableLignes th, .lignesTable th {
+  text-align: left; padding: 6px 8px;
+  font-size: 10px; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase;
+  color: var(--text-tertiary); border-bottom: 1px solid var(--border-medium);
+}
+.tableLignes td, .lignesTable td {
+  padding: 5px 8px; border-bottom: 0.5px solid var(--border-light);
+}
+.rowPair td { background: var(--bg-secondary); }
+
+.inputLigne {
+  width: 100%; padding: 6px 8px; border-radius: var(--radius-sm);
+  border: 0.5px solid var(--border-light); background: var(--bg-primary);
+  color: var(--text-primary); font-size: 12.5px; font-family: var(--font);
+  box-sizing: border-box;
+}
+.inputLigne:focus { border-color: var(--blue); outline: none; }
+.inputLigne:disabled { background: var(--bg-secondary); color: var(--text-secondary); cursor: not-allowed; }
+
+/* FACT.2 — lecture immédiate du cycle sur les bons de commande */
+.progressMeta { display: flex; justify-content: space-between; gap: 8px; font-size: 10px; color: var(--text-secondary); white-space: nowrap; }
+.progressTrack { height: 4px; margin-top: 5px; border-radius: 99px; background: var(--bg-secondary); overflow: hidden; }
+.progressTrack > span { display: block; height: 100%; border-radius: inherit; background: var(--blue); transition: width .2s ease; }
+.progressNote { margin-top: 4px; font-size: 10px; color: var(--text-tertiary); }
+.fieldHint { margin-top: 3px; font-size: 10px; color: var(--text-tertiary); }
+
+/* FACT.3 — suivi ligne par ligne et facturation partielle */
+.cycleLineTable { border: 0.5px solid var(--border-light); border-radius: var(--radius-md); overflow: hidden; }
+.cycleLineHead, .cycleLineRow {
+  display: grid; grid-template-columns: minmax(220px, 2fr) repeat(5, minmax(80px, 0.7fr));
+  gap: 8px; align-items: center; padding: 9px 12px;
+}
+.cycleLineHead { background: var(--bg-secondary); color: var(--text-tertiary); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .02em; }
+.cycleLineRow { font-size: 12px; border-top: 0.5px solid var(--border-light); }
+.cycleLineRow > span:not(:first-child), .cycleLineHead > span:not(:first-child) { text-align: right; }
+.cycleLineRow strong { display: block; font-weight: 500; }
+.cycleLineRow small { display: block; margin-top: 2px; font-size: 10px; color: var(--text-tertiary); }
+.resteActif { color: #9A6700; font-weight: 600; }
+.cycleSummary { display: flex; gap: 18px; flex-wrap: wrap; padding: 10px 12px; border-radius: var(--radius-md); background: var(--bg-secondary); font-size: 11px; color: var(--text-secondary); }
+.cycleSummary strong { color: var(--text-primary); }
+.facturationHead, .facturationRow { grid-template-columns: minmax(220px, 2fr) repeat(4, minmax(90px, .75fr)); }
+.quantiteInput { width: 86px; max-width: 100%; padding: 5px 7px; border: 0.5px solid var(--border-medium); border-radius: var(--radius-sm); background: var(--bg-primary); color: var(--text-primary); text-align: right; font-size: 12px; box-sizing: border-box; }
+.quantiteInput:focus { outline: none; border-color: var(--blue); }
+.helperText { margin: 0; font-size: 11px; line-height: 1.45; color: var(--text-tertiary); }
+
+@media (max-width: 980px) {
+  /* Ligne BL/BC : passage en fiches plutôt que de faire glisser la modale. */
+  .cycleLineTable { overflow-x: visible; }
+  .cycleLineHead { display: none; }
+  .cycleLineRow, .facturationRow {
+    min-width: 0; grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px 12px; align-items: start;
+  }
+  .cycleLineRow > span { min-width: 0; overflow-wrap: anywhere; }
+  .cycleLineRow > span:first-child { grid-column: 1 / -1; }
+  .cycleLineRow > span:not(:first-child) { text-align: left; }
+  .cycleLineRow > span[data-label]::before {
+    content: attr(data-label); display: block; margin-bottom: 3px;
+    font-size: 10px; color: var(--text-tertiary); font-weight: 500;
+  }
+  .quantiteInput { width: 100%; }
+}
+
+/* FORM.2.1 — actions du cycle commercial : une seule hiérarchie de couleur */
+.rowActions { display: flex; align-items: center; justify-content: flex-end; gap: 4px; white-space: nowrap; }
+.transformGroup { display: flex; align-items: center; gap: 5px; margin-left: 3px; padding-left: 7px; border-left: 1px solid var(--border-light); }
+.btnTransformPrimary, .btnTransformSecondary {
+  min-height: 28px; display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+  padding: 4px 9px; border-radius: 7px; font-size: 10.5px; font-weight: 650;
+  white-space: nowrap; cursor: pointer; transition: background .12s ease, border-color .12s ease, color .12s ease, box-shadow .12s ease;
+}
+.btnTransformPrimary { background: var(--blue); color: #fff; border: 1px solid var(--blue); }
+.btnTransformPrimary:hover:not(:disabled) { background: var(--blue-dark); border-color: var(--blue-dark); box-shadow: 0 2px 7px rgba(24,95,165,.16); }
+.btnTransformSecondary { background: var(--bg-primary); color: var(--blue); border: 1px solid #B5D4F4; }
+.btnTransformSecondary:hover:not(:disabled) { background: var(--blue-light); border-color: var(--blue); }
+.btnTransformPrimary:disabled, .btnTransformSecondary:disabled { opacity: .45; cursor: not-allowed; box-shadow: none; }
+.btnStatusSuccess { color: var(--green) !important; }
+.btnStatusDanger { color: var(--red) !important; }
+.actionMuted { color: var(--text-tertiary) !important; }
+@media (max-width: 1180px) {
+  .btnTransformPrimary, .btnTransformSecondary { padding-inline: 7px; }
+  .transformGroup { padding-left: 5px; }
+}
+
+/* FORM.2.2 — un document déjà transformé devient un état, plus une action. */
+.transformDone {
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 9px;
+  border-radius: 7px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 10.5px;
+  font-weight: 650;
+  white-space: nowrap;
+  cursor: default;
+  user-select: none;
+}
+.transformDone i { color: var(--green); }
+
+/* 065 — modèles devis / commandes / réception : pas de défilement latéral
+   du formulaire, les grilles de saisie se réorganisent. */
+.formContenu, .formGroup, .formGrid2, .formGrid3, .formGrid4, .ligneRow, .lignesTable { min-width: 0; max-width: 100%; }
+.formGrid2, .formGrid3, .formGrid4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.lignesColHeaders, .ligneRow { min-width: 0; }
+.lignesColHeaders > *, .ligneRow > * { min-width: 0; }
+.ligneRow :is(input,select) { min-width: 0; max-width: 100%; }
+.champLigneMobile { display: flex; flex-direction: column; min-width: 0; }
+.champLigneMobile > span { display: none; }
+.tableLignes, .lignesTable { table-layout: fixed; width: 100%; min-width: 0; }
+.tableLignes td, .lignesTable td { min-width: 0; overflow-wrap: anywhere; }
+.tableLignes :is(input,select,textarea), .lignesTable :is(input,select,textarea) { min-width: 0; max-width: 100%; }
+@media (max-width: 760px) {
+  .lignesColHeaders { display: none; }
+  .ligneRow, .ligneAvecTVA { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; border: 1px solid var(--border-light); border-radius: 9px; padding: 10px; gap: 8px; margin-bottom: 10px; position: relative; }
+  .ligneRow > :first-child { grid-column: 1 / -1; padding-right: 32px; }
+  .champLigneMobile > span { display: block; color: var(--text-secondary); font-size: 10px; font-weight: 600; margin-bottom: 4px; }
+  .ligneAvecTVA > :nth-child(4)::before { content: 'TVA'; display: block; font-size: 10px; font-weight: 600; color: var(--text-secondary); margin-bottom: 4px; }
+  .ligneRow > :nth-last-child(2) { grid-column: 1 / -1; display: flex !important; flex-direction: column; align-items: stretch !important; }
+  .ligneRow > :nth-last-child(2)::before { content: 'Total HT'; display: block; text-align: left; font-size: 10px; color: var(--text-secondary); font-weight: 600; }
+  .ligneRow > :last-child { position: absolute; right: 6px; top: 6px; }
+  .tableLignes thead, .lignesTable thead { display: none; }
+  .tableLignes, .lignesTable, .tableLignes tbody, .lignesTable tbody { display: block; }
+  .tableLignes tbody tr, .lignesTable tbody tr { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; padding: 10px; margin-bottom: 9px; border: 1px solid var(--border-light); border-radius: 9px; position: relative; }
+  .tableLignes tbody td, .lignesTable tbody td { display: block; border: 0; padding: 2px !important; min-width: 0; }
+  .tableLignes tbody td:first-child, .lignesTable tbody td:first-child { grid-column: 1 / -1; }
+  .tableLignes tbody td[data-label]::before, .lignesTable tbody td[data-label]::before {
+    content: attr(data-label); display: block; color: var(--text-secondary);
+    font-size: 10px; font-weight: 600; margin-bottom: 3px;
+  }
+  .tableLignes tbody td:last-child, .lignesTable tbody td:last-child { grid-column: 1 / -1; }
+}
+@media (max-width: 620px) { .formGrid2, .formGrid3, .formGrid4 { grid-template-columns: minmax(0, 1fr); } }
+
+
+/* 067 — devis et commandes : la modale peut être étroite même sur grand écran. */
+@container (max-width: 760px) {
+  .lignesColHeaders { display: none; }
+  .ligneRow, .ligneAvecTVA {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    border: 1px solid var(--border-light); border-radius: 9px;
+    padding: 10px; gap: 8px; margin-bottom: 10px; position: relative;
+  }
+  .ligneRow > :first-child { grid-column: 1 / -1; padding-right: 32px; }
+  .champLigneMobile > span { display: block; color: var(--text-secondary); font-size: 11px; font-weight: 600; margin-bottom: 4px; }
+  .ligneAvecTVA > :nth-child(4)::before { content: 'TVA'; display: block; font-size: 11px; font-weight: 600; color: var(--text-secondary); margin-bottom: 4px; }
+  .ligneRow > :nth-last-child(2) { grid-column: 1 / -1; display: flex !important; flex-direction: column; align-items: stretch !important; }
+  .ligneRow > :nth-last-child(2)::before { content: 'Total HT'; display: block; text-align: left; font-size: 11px; color: var(--text-secondary); font-weight: 600; }
+  .ligneRow > :last-child { position: absolute; right: 6px; top: 6px; }
+}
+@container (max-width: 420px) {
+  .ligneRow, .ligneAvecTVA { grid-template-columns: minmax(0, 1fr) !important; }
+}
+
+
+/* 071 — consultation du BL, sans défilement horizontal dans la modale. */
+.blDetail { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.blDetailTrigger {
+  font: 600 11px 'Courier New', monospace; color: var(--blue);
+  background: transparent; border: 0; padding: 3px 0; cursor: pointer;
+  text-align: left; text-decoration: underline; text-underline-offset: 3px;
+}
+.blDetailTrigger:hover { color: var(--blue-dark); }
+.blDetailTrigger:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 3px; }
+.blDetailIntro { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--text-secondary); }
+.blDetailSection { min-width: 0; border: 1px solid var(--border-light); border-radius: 10px; padding: 14px; }
+.blDetailSection h3 { margin: 0 0 12px; font-size: 12px; font-weight: 650; color: var(--text-primary); }
+.blDetailFields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0; }
+.blDetailFields > div, .blDetailLine > div { min-width: 0; overflow-wrap: anywhere; }
+.blDetailFields dt, .blDetailLabel { display: block; font-size: 10px; color: var(--text-tertiary); margin-bottom: 4px; }
+.blDetailFields dd { font-size: 12px; margin: 0; font-weight: 600; color: var(--text-primary); }
+.blDetailLines { display: flex; flex-direction: column; min-width: 0; gap: 8px; }
+.blDetailLine {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px; align-items: start; padding: 12px;
+  border: 1px solid var(--border-light); border-radius: 8px;
+  font-size: 12px; min-width: 0;
+}
+.stockDiagnostic { border: 1px solid var(--border-light); border-radius: 8px; background: var(--bg-secondary); padding: 12px; display: flex; flex-direction: column; gap: 8px; font-size: 12px; min-width: 0; }
+.stockDiagnosticHeader { display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.stockDiagnostic p, .stockDiagnostic ul { margin: 0; }
+.stockDiagnostic ul { padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.stockDiagnostic li { display: flex; flex-direction: column; gap: 3px; padding: 8px; border-radius: 6px; background: var(--bg-primary); overflow-wrap: anywhere; }
+.stockDiagnostic small, .stockDiagnostic p { color: var(--text-secondary); line-height: 1.5; }
+.stockDiagnostic .stockDiagnosticWarning { background: #FAEEDA; color: #854F0B; }
+.clientDocuments { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.clientDocuments strong { font-size: 13px; overflow-wrap: anywhere; }
+.clientDocuments p { margin: 0; color: var(--text-secondary); font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
+.blDetailDescription { grid-column: 1 / -1; }
+.blDetailDescription strong { display: block; font-size: 12px; overflow-wrap: anywhere; }
+.blDetailNotes { font-size: 12px; margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.blDetailNotice {
+  margin: 0; border-radius: 8px; padding: 10px 12px;
+  background: var(--bg-secondary); color: var(--text-secondary);
+  font-size: 11px; line-height: 1.6; overflow-wrap: anywhere;
+}
+@media (max-width: 620px) {
+  .blDetailFields { grid-template-columns: minmax(0, 1fr); }
+  .blDetailLine { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 390px) {
+  .blDetailLine { grid-template-columns: minmax(0, 1fr); }
+}

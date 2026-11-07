@@ -1,0 +1,360 @@
+{
+  "date": "2026-10-29",
+  "nombre_distinct": 47,
+  "campagne_unique_verte": true,
+  "repartition": {
+    "Edge_API_PostgreSQL_natif_isole": 6,
+    "API_SQL_PostgreSQL_natif_isole": 12,
+    "unitaires": 29
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_e2e_tva_acomptes945_isole::test_945_date_effective_interface_droits_et_tva[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_e2e_tva_acomptes945_isole::test_945_date_effective_interface_droits_et_tva[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_e2e_tva_acomptes945_isole::test_945_date_effective_interface_droits_et_tva[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_acompte_en_attente_puis_encaisse_dans_le_bon_mois[cheque]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_acompte_en_attente_puis_encaisse_dans_le_bon_mois[effet]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_acompte_rejete_sans_encaissement_non_taxable",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_virement_immediat_conserve_tva_acompte",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_date_historique_inconnue_signalee_sans_reparation[cheque-0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_tva_acomptes945_isole::test_945_date_historique_inconnue_signalee_sans_reparation[virement-4000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_imputations_partielles_multiples_et_annulation[client-debit-8000-7000-6000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_imputations_partielles_multiples_et_annulation[client-encaissement-4000-4000-4000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_imputations_partielles_multiples_et_annulation[fournisseur-encaissement-0-1000-2000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_encaissement_apres_facturation_debit_sans_double_tva",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_variante_encaissement_impaye_et_acompte_du_cahier",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_tva_imputations945_isole::test_945_paiement_fournisseur_historique_sans_date_signale",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_e2e_tva_isole::test_factures_paiements_partiels_periodes_et_parametres_tva_ui",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_e2e_tva_isole::test_lecture_consulte_et_imprime_sans_modifier_parametres_tva",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_patch02b_tva_service::test_acompte_ttc_20",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_patch02b_tva_service::test_avoir_diminue_facture",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_patch02b_tva_service::test_prorata_80_pourcent",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_patch02b_tva_service::test_credit_anterieur_absorbe_tva_due",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_patch02b_tva_service::test_credit_genere_sur_periode",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_catalogue_tva_est_date_et_2026_est_limite_aux_taux_generiques_10_20",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_tva_2026_refuse_zero_taxable_et_anciens_taux",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_zero_pourcent_exige_une_qualification_fiscale",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_transport_accessoire_suit_les_taux_des_lignes_sur_facture_mixte",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_emballage_perdu_suit_les_lignes_et_consigne_est_hors_tva",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_escompte_ne_reduit_pas_une_consigne_remboursable",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_migration_protege_qualifications_et_backfill_lignes_validees",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_correctif_serialisation_bl_renvoie_id_et_ligne_bl_id",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_avoirs_rrr_utilisent_les_comptes_cgnc_dedies_et_pas_le_stock",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_frontend_utilise_catalogue_date_et_modes_transport_emballage",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_lettrage_reutilise_moteur_tva_unique",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_acomptes_utilisent_qualification_et_validation_tva_datee",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_immobilisations_acquisition_et_cession_utilisent_moteur_tva_central",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_moteur_declaration_ignore_acomptes_et_immos_sans_tva",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_frontend_acomptes_et_immobilisations_sont_date_aware",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_conform1_tva_frais::test_migration_conform1_verrouille_aussi_acomptes_immos_et_lignes_par_date",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_migration_couvre_cycles_acomptes_avoirs",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_acompte_annulation_imputation_et_inter_exercices",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_avoirs_rrr_prix_credit_reel",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_situation_facture_prend_credit_et_imputations_actives",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_frontend_acomptes_expose_historique_et_cycle_effets",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_frontend_avoir_ne_preselectionne_plus_tout_et_expose_vrais_calculs",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_frontend_avoirs_expose_credit_imputation_remboursement",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_factG_acomptes_avoirs::test_factg_python_compile",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    },
+    {
+      "id": "Test.test_e2e_cahier_tva_echeances795_isole::test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tva945_final2"
+    }
+  ],
+  "selection": [
+    "Test/test_e2e_tva_acomptes945_isole.py",
+    "Test/test_tva_acomptes945_isole.py",
+    "Test/test_tva_imputations945_isole.py",
+    "Test/test_e2e_tva_isole.py",
+    "Test/test_patch02b_tva_service.py",
+    "Test/test_conform1_tva_frais.py",
+    "Test/test_factG_acomptes_avoirs.py",
+    "Test/test_e2e_cahier_tva_echeances795_isole.py::test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css[1440]"
+  ],
+  "duree_xml_s": 419.39,
+  "code_sortie": 0,
+  "execution": "PYTHON_DOTENV_DISABLED=1 ;SECRET_KEY fictive,DATABASE_URL inerte port1 ;python .codex-tests/lancer_session.py tva945_final2 <selection> ;fixtures PG/serveurs nonce.",
+  "historique_non_additionne": [
+    "Reproduction statut/date :3échoués/1réussi,45.08s,code1 ;cible corrigée4réussis/43.80s.",
+    "Imputations :3échoués,41.73s :2anomalies métier et1GET de test sans exercice ;cible2 corrigée8réussis/84.53s.",
+    "Interface1 :3échoués/6réussis,84.47s :double entrée du clientHTTP avant navigateur ;corrigée via closing.",
+    "Interface2 :2échoués/1réussi,62.86s :dateUI05/07/25 et non05/07/2025 ;ISOtransmis correctement.",
+    "Finale1 :44réussis/1échoué,174.56s :ancien test de structure de cession attendait un ancien nom de variable. Remplacé par contrôle runtime du montant et du refus de taux ;aucun codeimmo modifié.",
+    "Builds réels :214modules/9.69s puis script public214modules/6.55s,code0 ;répétitions et durée purebuild non additionnées aux caspytest."
+  ],
+  "preuves": {
+    "Test/preuves_mvp945/build_frontend_preuve.json": "1d3519548b16aa0d5eb32b5fc0f88bde38239d52096ee27b514415a98f0a7930",
+    "Test/preuves_mvp945/cahier773_tva_echeances795_1440_preuve.json": "1f9948d1e0861a6265617216cec0930ea3a359b3a8911f7a1650efd9b72c61c5",
+    "Test/preuves_mvp945/tva945_cheque.json": "8dae747dc73903ae39dee451e63ccf13992dff9b47c1da291c6c278c9dc4348a",
+    "Test/preuves_mvp945/tva945_cible.xml": "baed91c4ed9729e2140727098e01cc1f571b6dd5bde8c295677f177936eac78d",
+    "Test/preuves_mvp945/tva945_cible2.xml": "a027c5391a16614bdee413d3126f2fb67fd068abebbe3b655aba326c7ad623f7",
+    "Test/preuves_mvp945/tva945_effet.json": "8dae747dc73903ae39dee451e63ccf13992dff9b47c1da291c6c278c9dc4348a",
+    "Test/preuves_mvp945/tva945_final.xml": "c8602415d3015046fdda790f8fe5befe13f7e27f91eb1e4147562348ddbd2c33",
+    "Test/preuves_mvp945/tva945_final2.xml": "6d0d2a67279339139500c62b264ee7426c4613b328175876f7993e33767fc3b4",
+    "Test/preuves_mvp945/tva945_imputations_reproduction.xml": "78e5ef04debf22748cea88184315ff20e8e2199b70fe12892206be9e0fa313bf",
+    "Test/preuves_mvp945/tva945_interface.xml": "46bf80fc00b287adbada680728c87f74a1747a936d7f0996da8747268a7428bf",
+    "Test/preuves_mvp945/tva945_interface2.xml": "47dcd02ff85ea0fd9f45e437987800f9e5af66fc3abde2d696d2b9c5970d690a",
+    "Test/preuves_mvp945/tva945_reproduction.xml": "0978f39a6ba13bfff79f3f9a8e337d133111c146acd03f9989539782e17d73ac",
+    "Test/preuves_mvp945/tva945_ui_admin.json": "3beef22dccdececb945d21a3176a39145d3fe107a6600381533f95668b621ece",
+    "Test/preuves_mvp945/tva945_ui_comptable.json": "282121231558f1d7d7f7427f049e72b3f534caebeed2b63ca71ac4b2cb4c26fe",
+    "Test/preuves_mvp945/tva945_ui_lecture.json": "da189f547ec8bb8c23e4f8f03431b9462af0abc5b8f3b91c7775ddd92271da34",
+    "Test/preuves_mvp945/build_vite945.txt": "a1b4f4625732700ed8da191d483477750dce8c379530ff5425d449a5d002d7e3"
+  },
+  "rattachement": "Test/QUALIFICATION_FICHES_945.json",
+  "fiches_qualifiees": 0,
+  "candidat": "Test/CANDIDAT_MVP_945.json",
+  "nombre_fichiers_candidat": 549,
+  "produit_identique_au_931": false,
+  "build": {
+    "commande": "node Test/build_frontend_isole.mjs",
+    "modules": 214,
+    "secondes_vite": 6.55,
+    "code_sortie": 0,
+    "lecture_env_projet": false,
+    "avertissement": "Taille du bundle Vite ;aucune erreur de compilation."
+  },
+  "anciens_documents_preserves": 333,
+  "aucune_base_reelle": true,
+  "restauration": "Non rejouée :aucun SQL ou modèle modifié. Les sauvegardes/restaurations antérieures ne sont pas déclarées rejouées945.",
+  "limites": "Déclarations de contrôle sans gel de dépôt ;pas de donnée réelle ni nouvelleODTVAautomatique. Sources historiques inconnues signalées,sans réparation. Rejets après encaissement sur périodes déjà déclarées et ventilation comptable inter-périodes restent à qualifier. HP-FIS-033Partiel :copieTVAciblée,sans reprise complète des50opérations annuelles au régime encaissement ;statut humain Non testé. Anciennes qualifications restent des preuves historiques,pas une réexécution globale sur945.",
+  "produit_reference": "945",
+  "fiches_rattachees": 1,
+  "fiches_par_statut": {
+    "Partiel": 1
+  },
+  "fichiers_produit_modifies": [
+    "hisabpro-backend/routers/tva.py",
+    "hisabpro-backend/services/tva_service.py",
+    "src/pages/Acomptes.jsx"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "societe_fictive": "Acomptes recette751",
+  "devise": "MAD",
+  "exercice": 2026,
+  "profil": {
+    "regime": "Société relevant de l’IS",
+    "mode": "Quatre acomptes — exercice de douze mois",
+    "reference_annuelle": "20000",
+    "exercice_reference": "2025",
+    "reference_qualifiee": "oui",
+    "dernier_clos_confirme": "oui",
+    "excedent_anterieur_disponible": "100",
+    "origine_excedent": "2025",
+    "excedent_qualifie": "oui",
+    "exhaustivite": "oui",
+    "absence_mouvements": "non",
+    "date_controle": "2026-10-23"
+  },
+  "mouvements": [
+    {
+      "numero": "1",
+      "reference": "AP751-A",
+      "date": "2026-03-31",
+      "verse": "1000",
+      "credit_anterieur": "100",
+      "retenue": "100",
+      "reference_credit": "CR749-A"
+    },
+    {
+      "numero": "2",
+      "reference": "AP751-B",
+      "date": "2026-06-30",
+      "verse": "0",
+      "credit_anterieur": "0",
+      "retenue": "50",
+      "reference_credit": "CR749-B"
+    }
+  ],
+  "attendus": {
+    "versements": "1000.00",
+    "excedent_anterieur_impute": "100.00",
+    "retenues_affectees": "150.00",
+    "total_propose": "1250.00",
+    "excedent_restant": "0.00",
+    "du_unitaire": "5000.00",
+    "restes": "3800/4950/5000/5000",
+    "solde_final": null
+  },
+  "statut_humain": "Non testé",
+  "limite": "Données exclusivement fictives,aucun paiement/affectation/liquidation confirmé."
+}

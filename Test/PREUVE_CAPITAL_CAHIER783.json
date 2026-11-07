@@ -1,0 +1,290 @@
+{
+  "resultats": [
+    {
+      "campagne": "recette783_cible",
+      "cas": 2,
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 55.44,
+      "code": 1
+    },
+    {
+      "campagne": "recette783_diagnostic",
+      "cas": 1,
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 51.23,
+      "code": 1
+    },
+    {
+      "campagne": "recette783_clics",
+      "cas": 1,
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 49.9,
+      "code": 1
+    },
+    {
+      "campagne": "recette783_final",
+      "cas": 2,
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 55.03,
+      "code": 1
+    },
+    {
+      "campagne": "recette783_blur_final",
+      "cas": 6,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 98.43,
+      "code": 0
+    }
+  ],
+  "parcours": [
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_ewoj2orl",
+      "nonce": "8eea8ed5bf5342988c4c28ad50f8b2e6",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 1440,
+      "cas": [
+        {
+          "id": "HP-CPT-001",
+          "statut": "Réussi"
+        }
+      ],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "soumission783": {
+        "disabled": false,
+        "rect": {
+          "x": 1060.796875,
+          "y": 879.25,
+          "width": 184.203125,
+          "height": 38,
+          "top": 879.25,
+          "right": 1245,
+          "bottom": 917.25,
+          "left": 1060.796875
+        },
+        "viewport": {
+          "width": 1440,
+          "height": 1050
+        },
+        "focus": "text",
+        "clics": [
+          {
+            "type": "mousedown",
+            "target": "BUTTON",
+            "classe": "FormulaireEcriture_btnPrim",
+            "bouton": " Enregistrer l'écriture",
+            "y": 898,
+            "rect": {
+              "x": 1057.921875,
+              "y": 879.25,
+              "width": 187.078125,
+              "height": 38,
+              "top": 879.25,
+              "right": 1245,
+              "bottom": 917.25,
+              "left": 1057.921875
+            }
+          },
+          {
+            "type": "mouseup",
+            "target": "BUTTON",
+            "classe": "FormulaireEcriture_btnPrim",
+            "bouton": " Enregistrer l'écriture",
+            "y": 898,
+            "rect": {
+              "x": 1057.921875,
+              "y": 879.25,
+              "width": 187.078125,
+              "height": 38,
+              "top": 879.25,
+              "right": 1245,
+              "bottom": 917.25,
+              "left": 1057.921875
+            }
+          },
+          {
+            "type": "click",
+            "target": "BUTTON",
+            "classe": "FormulaireEcriture_btnPrim",
+            "bouton": " Enregistrer l'écriture",
+            "y": 898,
+            "rect": {
+              "x": 1057.921875,
+              "y": 879.25,
+              "width": 187.078125,
+              "height": 38,
+              "top": 879.25,
+              "right": 1245,
+              "bottom": 917.25,
+              "left": 1057.921875
+            }
+          }
+        ]
+      },
+      "operations": [
+        {
+          "reference": "CAP-01",
+          "id": 1,
+          "date": "2025-01-01",
+          "journal": "BQ",
+          "lignes": {
+            "5141": [
+              "200000.00",
+              "0.00"
+            ],
+            "1111": [
+              "0.00",
+              "200000.00"
+            ]
+          }
+        }
+      ],
+      "capital783": {
+        "ecritures": 1,
+        "lignes": 2,
+        "debit_credit": "200000.00",
+        "bilan": 200000,
+        "resultat": 0,
+        "date_piece_reference": true,
+        "libelles_plan_UI_journal_FEC_identiques": true,
+        "limite": "Société vierge indépendante ;ne pas assimiler àun raccord au sous-parcours marchandises. FECréduit2lignes,non FECannuel complet."
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_ewoj2orl",
+      "nonce": "8eea8ed5bf5342988c4c28ad50f8b2e6",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 390,
+      "cas": [
+        {
+          "id": "HP-CPT-001",
+          "statut": "Réussi"
+        }
+      ],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "soumission783": {
+        "disabled": false,
+        "rect": {
+          "x": 188.796875,
+          "y": 1401.25,
+          "width": 184.203125,
+          "height": 38,
+          "top": 1401.25,
+          "right": 373,
+          "bottom": 1439.25,
+          "left": 188.796875
+        },
+        "viewport": {
+          "width": 390,
+          "height": 1050
+        },
+        "focus": "text",
+        "clics": [
+          {
+            "type": "mousedown",
+            "target": "BUTTON",
+            "classe": "FormulaireEcriture_btnPrim",
+            "bouton": " Enregistrer l'écriture",
+            "y": 1008,
+            "rect": {
+              "x": 188.796875,
+              "y": 989.25,
+              "width": 184.203125,
+              "height": 38,
+              "top": 989.25,
+              "right": 373,
+              "bottom": 1027.25,
+              "left": 188.796875
+            }
+          },
+          {
+            "type": "mouseup",
+            "target": "BUTTON",
+            "classe": "FormulaireEcriture_btnPrim",
+            "bouton": " Enregistrer l'écriture",
+            "y": 1008,
+            "rect": {
+              "x": 188.796875,
+              "y": 989.25,
+              "width": 184.203125,
+              "height": 38,
+              "top": 989.25,
+              "right": 373,
+              "bottom": 1027.25,
+              "left": 188.796875
+            }
+          },
+          {
+            "type": "click",
+            "target": "BUTTON",
+            "classe": "FormulaireEcriture_btnPrim",
+            "bouton": " Enregistrer l'écriture",
+            "y": 1008,
+            "rect": {
+              "x": 188.796875,
+              "y": 989.25,
+              "width": 184.203125,
+              "height": 38,
+              "top": 989.25,
+              "right": 373,
+              "bottom": 1027.25,
+              "left": 188.796875
+            }
+          }
+        ]
+      },
+      "operations": [
+        {
+          "reference": "CAP-01",
+          "id": 2,
+          "date": "2025-01-01",
+          "journal": "BQ",
+          "lignes": {
+            "5141": [
+              "200000.00",
+              "0.00"
+            ],
+            "1111": [
+              "0.00",
+              "200000.00"
+            ]
+          }
+        }
+      ],
+      "capital783": {
+        "ecritures": 1,
+        "lignes": 2,
+        "debit_credit": "200000.00",
+        "bilan": 200000,
+        "resultat": 0,
+        "date_piece_reference": true,
+        "libelles_plan_UI_journal_FEC_identiques": true,
+        "limite": "Société vierge indépendante ;ne pas assimiler àun raccord au sous-parcours marchandises. FECréduit2lignes,non FECannuel complet."
+      }
+    }
+  ],
+  "build": {
+    "code": 0,
+    "secondes": 5.01,
+    "avertissement": "Bundle >500kB"
+  },
+  "cas": "HP-CPT-001",
+  "statut": "Réussi",
+  "correction": "ChampCompte ferme son autocomplete au blur ;évite apparition tardive de2libellés/tips et déplacement38px au mousedown. EssaiCSS nonconcluant retiré.",
+  "limites": "CAP-01dansune société vierge indépendante,non ajouté rétroactivement au sous-parcours validé ;FEC2lignes réduit,non dossierannuelcomplet. AucunPG réel,RH/paie/point6 différés,incident Lettrage769 ouvert."
+}

@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-29",
+  "nature": "Rattachement automatique ;ne renseigne pas la recette utilisateur",
+  "sources_humaines_sha256": {
+    "docs/recette/CAHIER_RECETTE_HISABPRO.xlsx": "a857310bf3a2cf78413f7fcb56d280592a215478507fcae985008cafe57cf837"
+  },
+  "fiches": [
+    {
+      "fiche": "HP-LIA-001",
+      "objectif_source": "Finaliser dossier fiscal existant 09A",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Bloqué (source)",
+      "methode": "Parcours annuel UI/API et contrôle des sources",
+      "portee": "Cahier annuel20/23 :bouton indisponible,POST409et aucune archive ;sources manquantes conservées. Le test capital-seul complet vérifie seulement le mécanisme,il ne clôt cette fiche annuelle.",
+      "tests_executés": [
+        "Test.test_e2e_qualification_liasse943_isole::test_943_exports_annuels_fideles_et_finalisation_non_forcee[1440]",
+        "Test.test_e2e_qualification_liasse943_isole::test_943_exports_annuels_fideles_et_finalisation_non_forcee[390]"
+      ],
+      "limites": "HP-LIA-001 Bloqué(source) :ETIC20/23,échéances80/11000non qualifiées,méthodeB13et confirmationB14 non renseignées. Le refus409est un test réussi,la finalisation annuelle ne l’est pas. L’archive capital-seul23/23est distincte. Aucune conformité officielle,EDI,dépôt ni recette humaine validés ;aucune donnée réelle."
+    },
+    {
+      "fiche": "HP-LIA-002",
+      "objectif_source": "PDF et Excel de liasse",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Téléchargements UI réels,lecturePDF/Excel et comparaisonAPI",
+      "portee": "Cahier annuel1440/390 :tous états,identité/logo,immobilisations,notesB6/B7/B12,zéro/Àcompléter,références02/002etcaractères spéciaux. Export provisoire conserve les blocages et ne modifie ni écritures ni snapshot fiscal.",
+      "tests_executés": [
+        "Test.test_e2e_qualification_liasse943_isole::test_943_exports_annuels_fideles_et_finalisation_non_forcee[1440]",
+        "Test.test_e2e_qualification_liasse943_isole::test_943_exports_annuels_fideles_et_finalisation_non_forcee[390]",
+        "Test.test_patch120_liasse_exports_ventilations::test_pdf_conserve_ventilation_et_diagnostics_avec_caracteres_speciaux[B6]",
+        "Test.test_patch120_liasse_exports_ventilations::test_pdf_conserve_ventilation_et_diagnostics_avec_caracteres_speciaux[B7]",
+        "Test.test_patch120_liasse_exports_ventilations::test_export_excel_reel_preserve_zero_inconnus_et_diagnostics",
+        "Test.test_patch131_liasse_pdf_identite::test_raison_sociale_reste_litterale_dans_le_titre_et_le_pied_de_page"
+      ],
+      "limites": "HP-LIA-001 Bloqué(source) :ETIC20/23,échéances80/11000non qualifiées,méthodeB13et confirmationB14 non renseignées. Le refus409est un test réussi,la finalisation annuelle ne l’est pas. L’archive capital-seul23/23est distincte. Aucune conformité officielle,EDI,dépôt ni recette humaine validés ;aucune donnée réelle."
+    }
+  ],
+  "apres": {
+    "Réussi": 236,
+    "Partiel": 6,
+    "Non qualifié par fiche": 20,
+    "Bloqué (source)": 10
+  }
+}

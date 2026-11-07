@@ -1,0 +1,1588 @@
+{
+  "tests_distincts_planifies": 312,
+  "tests_distincts_reussis": 312,
+  "application_inchangee": true,
+  "initial": {
+    "reussis": 308,
+    "echecs": 1,
+    "non_executes": 3
+  },
+  "reprise": {
+    "reussis": 5,
+    "dont_rejeu_deja_reussi": 1
+  },
+  "campagne_complete_rejouee": false,
+  "limite": "Fusion de résultats par identité réelle de fonction/paramètres ;308passages initiaux conservés,4cas supplémentaires qualifiés après correction documentaire et1rejeu nonadditionné. Le XML initial reste en échec.",
+  "historique": [
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test090_creation_seconde_societe_et_switch_api",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test090_invitation_changement_role_desactivation_et_suppression_secondaire",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test090_creation_switch_et_plan_dans_edge",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_partiels_solde_validation_idempotence_et_annulation[presentee-525.00-75.00-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_partiels_solde_validation_idempotence_et_annulation[presentee-525.00-75.00-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_partiels_solde_validation_idempotence_et_annulation[absente-500.00-100.00-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_partiels_solde_validation_idempotence_et_annulation[absente-500.00-100.00-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_refus_sans_piece_ni_capture[modif0-422]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_refus_sans_piece_ni_capture[modif1-422]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_refus_sans_piece_ni_capture[modif2-422]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_refus_sans_piece_ni_capture[modif3-422]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_refus_sans_piece_ni_capture[modif4-409]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_refus_sans_piece_ni_capture[modif5-422]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_refus_sans_piece_ni_capture[modif6-422]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_refus_sans_piece_ni_capture[modif7-422]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_cumul_ne_depasse_pas_facture[1250.00-200.00-1100.00]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_cumul_ne_depasse_pas_facture[600.00-201.00-449.25]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_autres_paiements_non_qualifies_et_ras_ht_refuses",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_apercu_perime_confirmation_droits_et_societes",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_deux_post_concurrents_un_dossier",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_dossier_sql_immuable_et_acl",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_erreur_trace_annule_toute_la_transaction",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_periode_fermee_apres_apercu_refuse_capture",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_capture_libre_existante_non_requalifiee",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_sql_refuse_dossier_incoherent[societe]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_sql_refuse_dossier_incoherent[net]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_sql_refuse_dossier_incoherent[tva_absente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_sql_refuse_dossier_incoherent[simulation_absente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_sql_refuse_dossier_incoherent[confirmation_texte]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_571_declaration_tva_ne_fabrique_pas_un_solde_sur_le_seul_cash",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_573_rejeu_semantique_preserve_ancienne_representation[600-100]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_capture_573_rejeu_semantique_preserve_ancienne_representation[6E+2-1E+2]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_interface_573_partiels_guides_refresh_dossier_et_garde_declaration[vente-1440-admin]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_interface_573_partiels_guides_refresh_dossier_et_garde_declaration[achat-390-comptable]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_interface_573_partiels_guides_refresh_dossier_et_garde_declaration[vente-390-comptable]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_interface_573_partiels_guides_refresh_dossier_et_garde_declaration[achat-1440-admin]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_interface_573_apercu_retarde_ignore_apres_changement",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_interface_573_lecture_dossier_sans_formulaire_de_capture",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_capture_partielle_reglements_annulation_idempotence[vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_capture_partielle_reglements_annulation_idempotence[achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_schema_capture_refuse_montants_non_admissibles[True]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_schema_capture_refuse_montants_non_admissibles[False]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_schema_capture_refuse_montants_non_admissibles[NaN]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_schema_capture_refuse_montants_non_admissibles[Infinity]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_schema_capture_refuse_montants_non_admissibles[-Infinity]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_schema_capture_refuse_montants_non_admissibles[0]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_schema_capture_refuse_montants_non_admissibles[-1]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_schema_capture_refuse_montants_non_admissibles[1e1000000]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_schema_capture_refuse_montants_non_admissibles[0.001]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_schema_capture_refuse_montants_non_admissibles[1e16]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_capture_concurrente_solde_et_permissions",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_libre_capture_controles_reels_et_centimes",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_simulation_api_ras_tva_simule_sans_modifier_aucune_table_metier",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_simulation_assistant_ras_tva_navigateur_trois_roles_sans_ecriture[admin-1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_simulation_assistant_ras_tva_navigateur_trois_roles_sans_ecriture[comptable-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_simulation_assistant_ras_tva_navigateur_trois_roles_sans_ecriture[lecture-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_ancien_parcours_capture_lettrage[vente-1365]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_ancien_parcours_capture_lettrage[vente-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_ancien_parcours_capture_lettrage[achat-1365]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_precedent_ancien_parcours_capture_lettrage[achat-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_taux_577_taux_ht_non_nul_jamais_arrondi_a_zero[0]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_taux_577_taux_ht_non_nul_jamais_arrondi_a_zero[1e-08]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_taux_577_taux_ht_non_nul_jamais_arrondi_a_zero[0.0001]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_taux_577_taux_ht_non_nul_jamais_arrondi_a_zero[0.001]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_taux_577_taux_ht_non_nul_jamais_arrondi_a_zero[10]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_registre_579_totaux_par_nature_et_etat_sans_compensation_ni_mutation",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_registre_579_exports_logo_valeurs_et_garde_empreinte[PNG]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_registre_579_exports_logo_valeurs_et_garde_empreinte[JPEG]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_registre_579_references_formules_restent_du_texte",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_registre_579_lecture_exporte_et_anonyme_refuse",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_registre_579_une_seule_connexion_pour_auth_et_registre",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_registre_579_lecture_ro_rr_coherente_pendant_validation_et_changement_identite",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_interface_579_registre_visible_exports_logos_trois_roles[admin-1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_interface_579_registre_visible_exports_logos_trois_roles[comptable-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_interface_579_registre_visible_exports_logos_trois_roles[lecture-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_precedent_interface_579_export_perime_demande_actualisation",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_empreinte_585_empreinte_donnees_identique_dans_exports_et_json",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_cockpit_583_navigation_bilan_cpc_etic_conservee",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_cockpit_583_liasse_registre_export_et_lecture_sans_mutation[admin-1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_cockpit_583_liasse_registre_export_et_lecture_sans_mutation[comptable-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_cockpit_583_liasse_registre_export_et_lecture_sans_mutation[lecture-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_cockpit_583_changement_exercice_recharge_sans_anciennes_captures",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_cockpit_583_changement_societe_ne_conserve_pas_les_captures",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_precedent_cockpit_589_exercice_decale_selection_annee_civile_explicite",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_preparation_593_totaux_exports_logo_identite_empreinte_et_isolation",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_preparation_593_decembre_janvier_postgres_horloge_controlee",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_preparation_593_lecture_seule_anonyme_et_connexion_unique",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_mensuel_593_trois_roles_mobile_exports_et_absence_mutation[admin-1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_mensuel_593_trois_roles_mobile_exports_et_absence_mutation[comptable-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_mensuel_593_trois_roles_mobile_exports_et_absence_mutation[lecture-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_mensuel_593_changement_periode_et_export_perime",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_mensuel_593_recalcul_tva_garde_la_preparation_ouverte",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_mensuel_593_libelle_credit_suit_annee_civile_en_exercice_decale",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_mensuel_593_calendrier_retarde_ne_declenche_jamais_annee_zero",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_declaration_factures_paiements_partiels_periodes_et_parametres_tva_ui",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_0_declaration_lecture_consulte_et_imprime_sans_modifier_parametres_tva",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_0_finalisation_concurrente_un_numero_un_stock_et_comptabilisation[brouillon-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_0_finalisation_concurrente_un_numero_un_stock_et_comptabilisation[brouillon-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_0_finalisation_concurrente_un_numero_un_stock_et_comptabilisation[proforma-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_0_finalisation_concurrente_un_numero_un_stock_et_comptabilisation[proforma-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_1_double_comptabilisation_une_piece_validee_et_fec[facture-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_1_double_comptabilisation_une_piece_validee_et_fec[facture-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_1_double_comptabilisation_une_piece_validee_et_fec[avoir-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_1_double_comptabilisation_une_piece_validee_et_fec[avoir-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_2_facture_validation_reglements_et_lettrage_ui_reels[vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_2_facture_validation_reglements_et_lettrage_ui_reels[achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_3_edition_qualification_tva_achat[1365]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_3_edition_qualification_tva_achat[390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_4_proforma_creation_liste_pdf_conversion_et_facture_ordinaire[vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_4_proforma_creation_liste_pdf_conversion_et_facture_ordinaire[achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_5_factures_commandes_documents_selon_role[lecture-390-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_5_factures_commandes_documents_selon_role[lecture-390-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_5_factures_commandes_documents_selon_role[lecture-1440-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_5_factures_commandes_documents_selon_role[lecture-1440-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_5_factures_commandes_documents_selon_role[comptable-1440-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_5_factures_commandes_documents_selon_role[comptable-1440-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_oracle_120_240_paiement240_solde120_lettrage[vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_oracle_120_240_paiement240_solde120_lettrage[achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[total]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[doublon]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[surreglement]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[centime_en_trop]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[autre_tiers]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[autre_societe]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[sens]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[brouillon]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[proforma]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[date]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[periode]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[historique]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[cheque]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[effet]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[nan]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[inf]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[negatif]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[zero]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[booleen]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[fraction]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_refus_atomique_sans_mutation[reference]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_idempotence_concurrente_et_refus_reemploi_modifie",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_concurrence_operations_distinctes_pas_de_surreglement",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_role_lecture_refuse_ventilation",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_ventilation_respecte_imputations_existantes[acompte-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_ventilation_respecte_imputations_existantes[acompte-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_ventilation_respecte_imputations_existantes[avoir-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_ventilation_respecte_imputations_existantes[avoir-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_ventilation_respecte_imputations_existantes[ras-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_ventilation_respecte_imputations_existantes[ras-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_6_centimes_exactes_et_rejeu_apres_annulation_refuse",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_7_creation_acompte_montants_finis_rejet_api[montant-nan]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_7_creation_acompte_montants_finis_rejet_api[montant-inf]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_7_creation_acompte_montants_finis_rejet_api[montant-True]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_7_creation_acompte_montants_finis_rejet_api[taux_tva-nan]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_7_creation_acompte_montants_finis_rejet_api[taux_tva-inf]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_7_creation_acompte_montants_finis_rejet_api[taux_tva-True]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_7_imputation_acompte_montant_fini_rejet_api[nan]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_7_imputation_acompte_montant_fini_rejet_api[inf]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_7_imputation_acompte_montant_fini_rejet_api[True]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_7_acompte_facture_imputation_reglement_et_lettrage_ui",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_8_acompte_fournisseur_facture_solde_lettrage_permissions[1365]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_8_acompte_fournisseur_facture_solde_lettrage_permissions[390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_facture_suppression_puis_regeneration_sans_touch_reglements[vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_facture_suppression_puis_regeneration_sans_touch_reglements[achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_ras_historique_comptabilisee_separement_reste_intacte[vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_ras_historique_comptabilisee_separement_reste_intacte[achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_meme_reference_de_deux_fournisseurs_respecte_auxiliaire[0]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_meme_reference_de_deux_fournisseurs_respecte_auxiliaire[1]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_reference_fournisseur_ne_change_pas_origine_de_la_piece[AM-]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_reference_fournisseur_ne_change_pas_origine_de_la_piece[ACQ-]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_reference_fournisseurs_sans_auxiliaire_ambigue_refuse_sans_choix_arbitraire",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_reference_facture_renommee_ou_vide_retrouve_origine_auditee[RENOMMEE-SANS-LIEN-FICTIVE536-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_reference_facture_renommee_ou_vide_retrouve_origine_auditee[RENOMMEE-SANS-LIEN-FICTIVE536-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_reference_facture_renommee_ou_vide_retrouve_origine_auditee[-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_reference_facture_renommee_ou_vide_retrouve_origine_auditee[-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_reference_renommee_vers_autre_facture_ne_libere_pas_la_mauvaise[vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_reference_renommee_vers_autre_facture_ne_libere_pas_la_mauvaise[achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_date_source_modifiee_refuse_sans_reaffectation_implicite[vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_1_compat635_9_date_source_modifiee_refuse_sans_reaffectation_implicite[achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_2_587_guides_lettrage_etats_et_is_sans_credit_implicite[vente-1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_2_587_guides_lettrage_etats_et_is_sans_credit_implicite[achat-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_3_647_absence_document_est_explicitement_vide_sans_qualifier_attestation",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_3_647_references_fichiers_et_annulation_separes_sans_modifier_od",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_3_647_documents_changent_empreinte_et_exports_sans_presumer_versement",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_3_647_documents_autre_societe_et_lecture_seule",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_3_647_metadonnees_documents_meme_snapshot_ro_rr_connexion_unique",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_4_647_documents_od_et_contrepassation_roles_mobile_et_export[admin-1440-registre]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_4_647_documents_od_et_contrepassation_roles_mobile_et_export[comptable-390-preparation]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_4_647_documents_od_et_contrepassation_roles_mobile_et_export[lecture-390-registre]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_4_647_documents_od_et_contrepassation_roles_mobile_et_export[lecture-1440-preparation]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_5_647_documents_multipages_sans_troncature_et_sans_modifier_entree",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_5_647_reference_sans_fichier_ou_date_ne_devient_pas_une_piece_presumee",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_6_649_capital_achat_ras_documents_annulation_oracle_independant",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_7_649_oracle_chiffres_independants_et_tous_statuts_humains_vierges",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_7_649_excel_statuts_formules_resultats_et_journal_attendu",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_7_649_word_pdf_complets_lisibles_et_document_fictif_distinct",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_7_649_oracle_ne_reutilise_pas_de_calcul_metier",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_7_653_cas_principal_au_dessus_des_petites_prestations_sans_cumul_invente",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_7_653_consignes_humaines_correspondent_aux_lignes_de_l_oracle",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementCreate-0.005]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementCreate-0.001]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementCreate-1.001]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementCreate-12.345]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementCreate-v4]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementCreate-1e-3]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementCreate-0.300000000001]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementUpdate-0.005]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementUpdate-0.001]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementUpdate-1.001]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementUpdate-12.345]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementUpdate-v4]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementUpdate-1e-3]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_refuse_sous_centime_sans_arrondir[ReglementUpdate-0.300000000001]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_centimes_exacts_et_patch_notes_preserves[0.01]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_centimes_exacts_et_patch_notes_preserves[0.10]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_centimes_exacts_et_patch_notes_preserves[400.25]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_centimes_exacts_et_patch_notes_preserves[v3]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_centimes_exacts_et_patch_notes_preserves[100.000]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_centimes_exacts_et_patch_notes_preserves[1e2]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_8_642_reglement_centimes_exacts_et_patch_notes_preserves[0.30000000000000004]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_9_645_liste_refusee_signalee_au_lieu_de_faux_vide",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_9_645_telechargement_tardif_ne_declenche_pas_de_document_autre_jeton",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_9_645_liste_tardive_autre_jeton_ecartee[1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_0_651_9_645_liste_tardive_autre_jeton_ecartee[390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_annulation_native_inverse_exacte_origines_definitives_et_rejeu[vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_annulation_native_inverse_exacte_origines_definitives_et_rejeu[achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_refus_et_rollback_integral[absent]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_refus_et_rollback_integral[autre_societe]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_refus_et_rollback_integral[partiel]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_refus_et_rollback_integral[origine_absente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_refus_et_rollback_integral[periode]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_refus_et_rollback_integral[numero_incomplet]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_refus_et_rollback_integral[tiers_absent]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_annulation_concurrente_unique_et_lecture_sans_mutation",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_edge_confirmation_lot_complet_et_refresh[1365-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_edge_confirmation_lot_complet_et_refresh[1365-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_edge_confirmation_lot_complet_et_refresh[390-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_edge_confirmation_lot_complet_et_refresh[390-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_permission_lecture_et_uuid_invalide_sans_mutation",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_annulation_lot_contrepassation_capture_ras_et_origines_conservees[vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_annulation_lot_contrepassation_capture_ras_et_origines_conservees[achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_lot_historique_montant_invalide_lisible_et_annulation_refusee[nan]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_lot_historique_montant_invalide_lisible_et_annulation_refusee[inf]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_lot_historique_montant_invalide_lisible_et_annulation_refusee[-inf]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_lot_historique_montant_invalide_lisible_et_annulation_refusee[zero]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_1_lot_historique_montant_invalide_lisible_et_annulation_refusee[negatif]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_2_preview_tardive_ne_confirme_ni_annule_dans_nouveau_contexte[1365-exercice]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_2_preview_tardive_ne_confirme_ni_annule_dans_nouveau_contexte[1365-jeton]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_2_preview_tardive_ne_confirme_ni_annule_dans_nouveau_contexte[390-exercice]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_2_preview_tardive_ne_confirme_ni_annule_dans_nouveau_contexte[390-jeton]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_4_ventilation_puis_complement_et_lettrage[1365-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_4_ventilation_puis_complement_et_lettrage[1365-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_4_ventilation_puis_complement_et_lettrage[390-vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_4_ventilation_puis_complement_et_lettrage[390-achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_5_655_refus_futur_date_choisie_motif_et_originaux[1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_5_655_refus_futur_date_choisie_motif_et_originaux[390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_6_reglement_edition_montant_date_mode_commentaire_et_blocage[vente]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_6_reglement_edition_montant_date_mode_commentaire_et_blocage[achat]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_0_661_7_capture_absente_migration_affichee_sans_post_ni_ddl",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_factures_separees_par_cycle[vente-1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_factures_separees_par_cycle[achat-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_refus_natif_et_reprise[1440-devis]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_refus_natif_et_reprise[1440-commandes]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_refus_natif_et_reprise[1440-livraisons]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_refus_natif_et_reprise[1440-factures]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_refus_natif_et_reprise[1440-receptions_client]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_refus_natif_et_reprise[390-devis]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_refus_natif_et_reprise[390-commandes]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_refus_natif_et_reprise[390-livraisons]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_refus_natif_et_reprise[390-factures]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_refus_natif_et_reprise[390-receptions_client]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_vide_reel_relecture[devis]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_vide_reel_relecture[commandes]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_vide_reel_relecture[livraisons]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_vide_reel_relecture[factures]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_vide_reel_relecture[receptions_client]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_ancien_exercice_ignore[devis]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_ancien_exercice_ignore[commandes]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_ancien_exercice_ignore[livraisons]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_ancien_exercice_ignore[factures]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_ancien_exercice_ignore[receptions_client]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_factures_toutes_les_pages_et_cycles",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_1_673_reception_client_factures_indisponibles_signalees",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_2_663_erreur_native_pas_de_fausse_liste_vide_et_reprise[1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_2_663_erreur_native_pas_de_fausse_liste_vide_et_reprise[390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_2_663_liste_reellement_vide_reste_distincte[1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_2_663_liste_reellement_vide_reste_distincte[390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_3_665_commandes_selon_role_ras_lisible_et403[lecture-vente-1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_3_665_commandes_selon_role_ras_lisible_et403[lecture-achat-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_3_665_commandes_selon_role_ras_lisible_et403[comptable-achat-1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_3_665_commandes_selon_role_ras_lisible_et403[comptable-vente-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_4_667_refus_natif_reprise_et_vide_distinct[1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_4_667_refus_natif_reprise_et_vide_distinct[390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_4_667_vrai_vide_et_actualisation[1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_4_667_vrai_vide_et_actualisation[390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_4_667_reponse_tardive_ecartee[1440-exercice]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_4_667_reponse_tardive_ecartee[1440-jeton]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_4_667_reponse_tardive_ecartee[390-exercice]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_4_667_reponse_tardive_ecartee[390-jeton]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_5_669_entree_claire_roles_et_bc_puis_br[admin-1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_5_669_entree_claire_roles_et_bc_puis_br[comptable-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_5_669_entree_claire_roles_et_bc_puis_br[lecture-1440]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_5_669_entree_claire_roles_et_bc_puis_br[lecture-390]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_6_oracle_annuel_independant_equilibre_et_resultats",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_6_annee_connectee_stock_paiements_lettrage_tva_immo_cloture_an",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_7_oracle_degressif_bascule_lineaire_independant",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_7_edge_cinq_dotations_degressives_et_acquisition_definitive_conservee[reseau-normal]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_7_edge_cinq_dotations_degressives_et_acquisition_definitive_conservee[reseau-ralenti]",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_8_671_word_pdf_courants_et_suivi_humain_vierge",
+      "statut": "reussi",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "Test/test_recette_candidate675_isole.py::test_675_8_671_checklist_73_distincte_matrice_70_et_interco_justifie",
+      "statut": "echec",
+      "origine": "recette769_metier"
+    },
+    {
+      "id": "test_guide_actualisation671::test_671_word_pdf_courants_et_suivi_humain_vierge",
+      "statut": "reussi",
+      "origine": "recette769_reprise_metier"
+    },
+    {
+      "id": "test_guide_actualisation671::test_671_checklist_73_distincte_matrice_70_et_interco_justifie",
+      "statut": "reussi",
+      "origine": "recette769_reprise_metier"
+    },
+    {
+      "id": "test_guide_actualisation671::test_671_totaux_annulation_et_liens_des_jeux_complementaires",
+      "statut": "reussi",
+      "origine": "recette769_reprise_metier"
+    },
+    {
+      "id": "test_installation_vierge_102::test_installation102_preserve100_rejoue_et_verifie_droits",
+      "statut": "reussi",
+      "origine": "recette769_reprise_metier"
+    },
+    {
+      "id": "test_installation_vierge_102::test_cli102_refuse_url_externe_avant_creation_cluster",
+      "statut": "reussi",
+      "origine": "recette769_reprise_metier"
+    }
+  ]
+}

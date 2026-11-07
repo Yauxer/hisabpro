@@ -1,0 +1,75 @@
+{
+  "contexte": "Société fictive735 MAD2026 ; montants fiscaux documentaires, aucune éligibilité déduite.",
+  "n": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "5141",
+      "debit": "16400",
+      "credit": "0"
+    },
+    {
+      "compte": "7111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "6132",
+      "debit": "3000",
+      "credit": "0"
+    },
+    {
+      "compte": "7581",
+      "debit": "0",
+      "credit": "1000"
+    },
+    {
+      "compte": "6701",
+      "debit": "1600",
+      "credit": "0"
+    }
+  ],
+  "cm": "3000",
+  "css": "0",
+  "credits": [
+    [
+      "Crédit A fictif",
+      "CERT-A735",
+      "300",
+      "100"
+    ],
+    [
+      "Crédit B fictif",
+      "CERT-B735",
+      "200",
+      "50"
+    ],
+    [
+      "Crédit C fictif",
+      "CERT-C735",
+      "100",
+      "0"
+    ]
+  ],
+  "acompte": {
+    "reference": "QUITTANCE735",
+    "verse": "1000",
+    "credit_anterieur": "100",
+    "credits_deja_imputes": "150"
+  },
+  "attendus": {
+    "credits_total": "600.00",
+    "credits_deja_imputes": "150.00",
+    "credits_restants": "450.00",
+    "ecart_imputations": "0.00",
+    "variante_ecart": "-0.01",
+    "is_memoire_initial": "1460.00",
+    "is_memoire_apres_revue": "730.00"
+  },
+  "impot_du": null,
+  "solde_final": null,
+  "impacts": "Aucune écriture ou liquidation créée ; aucun paiement ni droit fiscal confirmé."
+}

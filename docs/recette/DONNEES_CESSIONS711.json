@@ -1,0 +1,36 @@
+{
+  "contexte": "Société fictive séparée en MAD, exercice2026 ; registre et pièces fictifs distincts des balances.",
+  "tables": [
+    {
+      "code": "B3",
+      "statut": "documente",
+      "justification": "Registre fictif711 et pièces de sortie",
+      "lignes": [
+        {
+          "designation": "Machine Atlas fictive",
+          "date_sortie": "2026-06-30",
+          "type_sortie": "cession",
+          "valeur_entree": "10000",
+          "vna": "6000",
+          "prix_cession": "5000",
+          "reference_source": "Acte fictif711 A"
+        },
+        {
+          "designation": "Matériel Rif fictif",
+          "date_sortie": "2026-09-15",
+          "type_sortie": "retrait",
+          "valeur_entree": "3000",
+          "vna": "0",
+          "prix_cession": "0",
+          "reference_source": "PV fictif711 B"
+        }
+      ]
+    }
+  ],
+  "attendus": {
+    "ligne1": "-1000.00",
+    "ligne2": "0.00",
+    "total": "-1000.00",
+    "apres_modification_prix5999_99": "-0.01"
+  }
+}

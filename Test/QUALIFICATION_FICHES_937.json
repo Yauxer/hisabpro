@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-29",
+  "nature": "Rattachement automatique ;ne renseigne pas la recette utilisateur",
+  "source_humaine": "docs/recette/MODE_EMPLOI_TP761.xlsx",
+  "source_humaine_sha256": "5a1f9a339b7d6db19cd119905725bc79f91eee5532f1df1113489321c2ad7436",
+  "fiches": [
+    {
+      "fiche": "TP761-01",
+      "objectif_source": "Ouvrir une préparation fictive MAD et les rubriques TP-P/TP-E.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "Préparation fictive MAD et rubriquesTP-P/TP-E ouvertes ;admin1440,comptable390,lecteur390.",
+      "tests_executés": [
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[admin-1440]",
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[comptable-390]",
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[lecture-390]"
+      ],
+      "limites": "Classes et bases pédagogiques explicitement déclarées,aucune activité réelle classée automatiquement. Brut simulé7200,avis déclarés7400,écart−200 ;aucun montant dû,imposition,paiement ou dépôt confirmé. Fiches05–06 variantes par API et calcul indépendant ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TP761-02",
+      "objectif_source": "Saisir exactement profil et deux établissements, confirmer puis conserver.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Profil et deux établissements saisis/conservés ;42000de VL,7200brut,7400avis,−200écart ;aucun dû confirmé.",
+      "tests_executés": [
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[admin-1440]",
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[comptable-390]",
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[lecture-390]",
+        "Test.test_taxe_professionnelle761_isole::test_761_versions_rejeu_sources_hors_journal"
+      ],
+      "limites": "Classes et bases pédagogiques explicitement déclarées,aucune activité réelle classée automatiquement. Brut simulé7200,avis déclarés7400,écart−200 ;aucun montant dû,imposition,paiement ou dépôt confirmé. Fiches05–06 variantes par API et calcul indépendant ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TP761-03",
+      "objectif_source": "Sur copie, vider la VL puis retirer la revue de base ; conserver des versions séparées.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Revue de base absente dans UI,puis rétablie ;API conserveVL inconnue et base non revue en versions distinctes,brut indisponible et anciennes versions inchangées.",
+      "tests_executés": [
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_nan_refuse_base_incomplete_puis_reprise_sans_f5[NaN]",
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_nan_refuse_base_incomplete_puis_reprise_sans_f5[Infinity]",
+        "Test.test_qualification_tp937_isole::test_937_variantes_base_classe_avis_conservees_sans_du_ni_ecriture"
+      ],
+      "limites": "Classes et bases pédagogiques explicitement déclarées,aucune activité réelle classée automatiquement. Brut simulé7200,avis déclarés7400,écart−200 ;aucun montant dû,imposition,paiement ou dépôt confirmé. Fiches05–06 variantes par API et calcul indépendant ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TP761-04",
+      "objectif_source": "Saisir NaN et Infinity dans la VL et tenter de conserver ; corriger ensuite30000.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "NaN/Infinity réellement saisis,POST422 sans mutation et valeurs invalides conservées pour correction,puis30000 et revue repris sans F5.",
+      "tests_executés": [
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_nan_refuse_base_incomplete_puis_reprise_sans_f5[NaN]",
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_nan_refuse_base_incomplete_puis_reprise_sans_f5[Infinity]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-NaN]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-Infinity]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-True]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative--1]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-0.001]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-10000000000000]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-1e9999]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[montant_avis-NaN]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[montant_avis--1]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[classe-C4]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[classe-True]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[base_revue-automatique]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[regime-Exon\\xe9r\\xe9 automatiquement]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[etablissement_ref-]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[reference_source-]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[inconnu-0]"
+      ],
+      "limites": "Classes et bases pédagogiques explicitement déclarées,aucune activité réelle classée automatiquement. Brut simulé7200,avis déclarés7400,écart−200 ;aucun montant dû,imposition,paiement ou dépôt confirmé. Fiches05–06 variantes par API et calcul indépendant ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TP761-05",
+      "objectif_source": "Sur copie, dupliquer l’identifiant établissement puis partager la référence d’avis entre deux lignes.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle et oracle indépendant",
+      "portee": "Identifiant d’établissement dupliqué rejeté422 ;référence d’avis partagée conservée mais avis/comparaison indisponibles,sources anciennes préservées ;gestesUI non rejoués937.",
+      "tests_executés": [
+        "Test.test_taxe_professionnelle761_isole::test_761_api_structures[omission]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_structures[profil_double]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_structures[etablissement_double]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_structures[annee_invalide]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_structures[annee_bool]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_structures[du_injecte]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_structures[neant_contradictoire]",
+        "Test.test_taxe_professionnelle761_isole::test_761_api_structures[51etablissements]",
+        "Test.test_qualification_tp937_isole::test_937_variantes_base_classe_avis_conservees_sans_du_ni_ecriture",
+        "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[avis_partage]"
+      ],
+      "limites": "Classes et bases pédagogiques explicitement déclarées,aucune activité réelle classée automatiquement. Brut simulé7200,avis déclarés7400,écart−200 ;aucun montant dû,imposition,paiement ou dépôt confirmé. Fiches05–06 variantes par API et calcul indépendant ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TP761-06",
+      "objectif_source": "Sur copie, testerA C3/VL100 puis C3/VL0,05 ; consulter l’ancien état.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle et oracle indépendant",
+      "portee": "C3/VL100→brut total1210 ;C3/VL0.05→0.005exact/0.01arrondi,total1200.01 ;versions anciennes figées,aucun dû/minimum confirmé ;gestesUI non rejoués937.",
+      "tests_executés": [
+        "Test.test_qualification_tp937_isole::test_937_variantes_base_classe_avis_conservees_sans_du_ni_ecriture",
+        "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[petit]",
+        "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[arrondi]"
+      ],
+      "limites": "Classes et bases pédagogiques explicitement déclarées,aucune activité réelle classée automatiquement. Brut simulé7200,avis déclarés7400,écart−200 ;aucun montant dû,imposition,paiement ou dépôt confirmé. Fiches05–06 variantes par API et calcul indépendant ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TP761-07",
+      "objectif_source": "Tester lecture, comptable390px et accès d’une autre société.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Lecteur et comptable390,commandes selon rôle ;autre société404,lecture autorisée et écriture403,empreinte/concurrence/devise contrôlées.",
+      "tests_executés": [
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[admin-1440]",
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[comptable-390]",
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[lecture-390]",
+        "Test.test_taxe_professionnelle761_isole::test_761_roles_societes_concurrence"
+      ],
+      "limites": "Classes et bases pédagogiques explicitement déclarées,aucune activité réelle classée automatiquement. Brut simulé7200,avis déclarés7400,écart−200 ;aucun montant dû,imposition,paiement ou dépôt confirmé. Fiches05–06 variantes par API et calcul indépendant ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TP761-08",
+      "objectif_source": "Télécharger ZIP et vérifier PDF/Excel/JSON/manifeste/logo ; joindre pièce fictive puis consulter l’ancienne version.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface,API et restauration native",
+      "portee": "ZIP/PDF/Excel/JSON/manifeste et logo vérifiés ;pièce fictive et anciennes versions retrouvées par restauration froide83tables,sans écriture.",
+      "tests_executés": [
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[admin-1440]",
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[comptable-390]",
+        "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[lecture-390]",
+        "Test.test_taxe_professionnelle761_isole::test_761_exports_sources_logo_texte",
+        "Test.test_restauration_tp761_isole::test_761_restaurer_cm_qualifiee_et_tous_complements",
+        "Test.test_taxe_professionnelle761_isole::test_761_versions_rejeu_sources_hors_journal"
+      ],
+      "limites": "Classes et bases pédagogiques explicitement déclarées,aucune activité réelle classée automatiquement. Brut simulé7200,avis déclarés7400,écart−200 ;aucun montant dû,imposition,paiement ou dépôt confirmé. Fiches05–06 variantes par API et calcul indépendant ;gestes humains à faire. Réserves de cession et production inchangées."
+    }
+  ],
+  "apres": {
+    "Réussi": 211,
+    "Partiel": 6,
+    "Non qualifié par fiche": 46,
+    "Bloqué (source)": 9
+  }
+}

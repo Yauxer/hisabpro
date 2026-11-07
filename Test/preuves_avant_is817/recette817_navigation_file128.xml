@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="95.681" timestamp="2026-10-25T13:21:23.250639+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_avant_is817_isole" name="test_817_navigation_locale_repetee_diagnostic[1]" time="57.555"><failure message="playwright._impl._errors.TimeoutError: Page.screenshot: Timeout 15000ms exceeded.&#10;Call log:&#10;  - taking page screenshot&#10;  - waiting for fonts to load...">application = {'api_url': 'http://127.0.0.1:57513', 'web_url': 'http://127.0.0.1:57514', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_zkuejc5p'), 'nonce': '188b9ea767b04bb4a7fef83bf9cf1c67', ...}, ...}
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette817_navigation_file128/test_817_navigation_locale_rep0')
+serie = 1
+
+    @pytest.mark.parametrize('serie',[1,2])
+    def test_817_navigation_locale_repetee_diagnostic(application,tmp_path,serie):
+&gt;    with laboratoire(application,1440,tmp_path,'navigation817_'+str(serie)) as (api,page,sid,preuve):
+
+Test\test_e2e_cahier_avant_is817_isole.py:83: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:144: in __exit__
+    next(self.gen)
+Test\cahier_formulaires773_support.py:38: in laboratoire
+    page.screenshot(path=str(ROOT/f'.codex-tests/cahier773_{nom}_{largeur}.png'),full_page=True)
+hisabpro-backend\.venv\Lib\site-packages\playwright\sync_api\_generated.py:10909: in screenshot
+    self._sync(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_page.py:830: in screenshot
+    encoded_binary = await self._channel.send(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x00000297BC2EA310&gt;
+cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x00000297BE97C360&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        parsed_st = _attach_api_call_information(
+            getattr(task, "__pw_stack__", None) or _capture_stack_trace(),
+            is_internal,
+            title,
+        )
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Page.screenshot: Timeout 15000ms exceeded.
+E           Call log:
+E             - taking page screenshot
+E             - waiting for fonts to load...
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:632: TimeoutError</failure></testcase><testcase classname="Test.test_e2e_cahier_avant_is817_isole" name="test_817_navigation_locale_repetee_diagnostic[2]" time="34.228"><failure message="playwright._impl._errors.TimeoutError: Page.screenshot: Timeout 15000ms exceeded.&#10;Call log:&#10;  - taking page screenshot&#10;  - waiting for fonts to load...">application = {'api_url': 'http://127.0.0.1:57513', 'web_url': 'http://127.0.0.1:57514', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_zkuejc5p'), 'nonce': '188b9ea767b04bb4a7fef83bf9cf1c67', ...}, ...}
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette817_navigation_file128/test_817_navigation_locale_rep1')
+serie = 2
+
+    @pytest.mark.parametrize('serie',[1,2])
+    def test_817_navigation_locale_repetee_diagnostic(application,tmp_path,serie):
+&gt;    with laboratoire(application,1440,tmp_path,'navigation817_'+str(serie)) as (api,page,sid,preuve):
+
+Test\test_e2e_cahier_avant_is817_isole.py:83: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:144: in __exit__
+    next(self.gen)
+Test\cahier_formulaires773_support.py:38: in laboratoire
+    page.screenshot(path=str(ROOT/f'.codex-tests/cahier773_{nom}_{largeur}.png'),full_page=True)
+hisabpro-backend\.venv\Lib\site-packages\playwright\sync_api\_generated.py:10909: in screenshot
+    self._sync(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_page.py:830: in screenshot
+    encoded_binary = await self._channel.send(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x00000297BE686FD0&gt;
+cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x00000297BEB92CA0&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        parsed_st = _attach_api_call_information(
+            getattr(task, "__pw_stack__", None) or _capture_stack_trace(),
+            is_internal,
+            title,
+        )
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Page.screenshot: Timeout 15000ms exceeded.
+E           Call log:
+E             - taking page screenshot
+E             - waiting for fonts to load...
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:632: TimeoutError</failure></testcase></testsuite></testsuites>

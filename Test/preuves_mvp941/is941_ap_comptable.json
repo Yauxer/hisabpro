@@ -1,0 +1,17 @@
+{
+  "role": "comptable",
+  "largeur": 390,
+  "acomptes_proposes": "1250.00",
+  "exports_individuels": {
+    "pdf": {
+      "sha256": "0c120947fc115fa919a0129a2b02dded61ec925ad3f998692c48fabb9cf0a9ad",
+      "montant_et_logo_verifies": true
+    },
+    "xlsx": {
+      "sha256": "366f5cd646b0fd0ddc6bdfd00e051d30dd988e5d0b13ffa809f1574ee440b850",
+      "montant_et_logo_verifies": true
+    }
+  },
+  "ZIP_snapshot_verifie": true,
+  "sources_hors_preparations_inchangees": true
+}

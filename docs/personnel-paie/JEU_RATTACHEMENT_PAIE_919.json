@@ -1,0 +1,27 @@
+{
+  "societe": "RECETTE PERSONNEL919 — société fictive sur copie isolée",
+  "installation": "Code919 et migration123 après114 ; prérequis du workflowPersonnel et des campagnes déjà installés. Aucun taux ou salarié créé automatiquement.",
+  "menu": "02 · Éléments de paie → Variables mensuelles",
+  "preparation": "Suivre le guide891 pour créer et faire approuver une ficheRATT919, un contratCDI à partir du2026-01-01 et une rémunération mensuelle9000.10. Catalogue : rubriqueRATTACHEMENT_FICTIF919,GAIN,MONTANT,mensuelle, applicable2026-01-01, avec justificatif ATTESTATION_FICTIVE. Reprendre les paramètres de recette891 ; ne pas qualifier ces hypothèses comme règles légales.",
+  "periode_traitement": "2026-11-01",
+  "date_effet": "2026-11-15",
+  "montant": "800.01",
+  "justificatif_variable": "ATTESTATION_FICTIVE : PIECE-FICTIVE919",
+  "source_variable": "SOURCE-FICTIVE919",
+  "motif": "Rattachement documentaire entièrement FICTIF919",
+  "reference_debut": "2025-01-01",
+  "reference_fin": "2025-12-31",
+  "reference_justification": "PRIME-ANNUELLE-FICTIVE919",
+  "versement_date": "2026-12-05",
+  "versement_reference": "VERSEMENT-DECLARE-FICTIF919",
+  "decision": "Second acteur indépendant ; motif Approbation fictive919 ; référence CTRL-FICTIF919 ; confirmer indépendance et contrôle des justificatifs.",
+  "attendu": "Variable approuvée800.01 ; période2026-11, effet2026-11-15, référence2025-01-01au2025-12-31, versement déclaré2026-12-05. Brut purement arithmétique9000.10+800.01=9800.11, sans nouveau traitementIR/social/régularisation ou paiement confirmé.",
+  "periodes_exactes": [
+    {
+      "periode": "2026-11-01",
+      "date_effet_variable": "2026-11-15",
+      "reference_variable": "SOURCE-FICTIVE919"
+    }
+  ],
+  "attention": "La présence de dates et références ne confirme ni un paiement bancaire ni une méthode fiscale. Les champs restent facultatifs quand les faits ne sont pas connus."
+}

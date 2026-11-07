@@ -1,0 +1,29 @@
+{
+  "rni": "6990.08",
+  "equivalence_ir": "497.0240",
+  "fractions_exactes": {
+    "ir_apres_reduction": {
+      "numerateur": "62128",
+      "denominateur": "125"
+    },
+    "ir_avant_reduction": {
+      "numerateur": "74628",
+      "denominateur": "125"
+    },
+    "reduction_appliquee": {
+      "numerateur": "100",
+      "denominateur": "1"
+    }
+  },
+  "source": {
+    "id": 1,
+    "numero": 1,
+    "brut_id": 1,
+    "empreinte": "d8dd95926e6fd3cac3c5d2af31bbb5adaf108272d206a6dc5a977c1d60604ef5",
+    "social_id": 1,
+    "brut_empreinte": "779a39c38485aa28cc652e4d52e052bfb0a5ce436a7d4595ad48499b136aa85f",
+    "social_empreinte": "0e0b36ccc2729546e531fdc122c91cc5bc351b7591ee1ad56baf6e68ea0fd1f3"
+  },
+  "aucune_retenue_a_operer": true,
+  "aucune_base_reelle": true
+}

@@ -1,0 +1,11 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_blwzpo0v",
+  "nonce": "48fd609cf4ea4490a7ff87c4d6fe5b30",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError('Locator expected to have count \\'2\\'\\nActual value: 0 \\nCall log:\\n  - Expect \"to_have_count\" get_by_role(\"dialog\", name=\"Nouvelle facture\", exact=True).locator(\"[class*=\\\\\"echeancierRow\\\\\"]\").filter(has=get_by_role(\"dialog\", name=\"Nouvelle facture\", exact=True).locator(\"input[type=date]\")) with timeout 5000ms\\n  - waiting for get_by_role(\"dialog\", name=\"Nouvelle facture\", exact=True).locator(\"[class*=\\\\\"echeancierRow\\\\\"]\").filter(has=get_by_role(\"dialog\", name=\"Nouvelle facture\", exact=True).locator(\"input[type=date]\"))\\n    14 × locator resolved to 0 elements\\n       - unexpected value \"0\"\\n')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier."
+}

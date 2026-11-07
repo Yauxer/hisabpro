@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="3" time="41.194" timestamp="2026-10-29T19:30:59.588146+01:00" hostname="Taiyou"><testcase classname="Test.test_tva_imputations945_isole" name="test_945_imputations_partielles_multiples_et_annulation[client-debit-8000-7000-6000]" time="30.081"><failure message="AssertionError: assert Decimal('8000.0') == 7000&#10; +  where Decimal('8000.0') = montant({'periode': {'type': 'mensuelle', 'date_debut': '2025-06-01', 'date_fin': '2025-06-30'}, 'regime_tva': 'debit', 'param...0.0}, 'collectee': {'total': 8000.0, 'base_total': 40000.0, 'par_taux': {'20': {'base': 40000.0, 'tva': 8000.0}}}, ...}, 'collectee')&#10; +    where {'periode': {'type': 'mensuelle', 'date_debut': '2025-06-01', 'date_fin': '2025-06-30'}, 'regime_tva': 'debit', 'param...0.0}, 'collectee': {'total': 8000.0, 'base_total': 40000.0, 'par_taux': {'20': {'base': 40000.0, 'tva': 8000.0}}}, ...} = declaration(&lt;httpx.Client object at 0x000001DCBF61BCD0&gt;, 6)">application = {'api_url': 'http://127.0.0.1:58613', 'web_url': 'http://127.0.0.1:58614', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_ey77gb1n'), 'nonce': '663739b0c44a4875b5afa4e878c21f7e', ...}, ...}
+nature = 'client', regime = 'debit', avant = 8000, un = 7000, deux = 6000
+
+    @pytest.mark.parametrize('nature,regime,avant,un,deux', [
+        ('client', 'debit', 8000, 7000, 6000),
+        ('client', 'encaissement', 4000, 4000, 4000),
+        ('fournisseur', 'encaissement', 0, 1000, 2000),
+    ])
+    def test_945_imputations_partielles_multiples_et_annulation(application, nature, regime, avant, un, deux):
+        with closing(client(application)[0]) as api:
+            sid, tiers, banque = dossier(api, application, regime, nature)
+            ac = acompte(api, tiers, banque, mode='virement', nature=nature)
+            type_facture = 'vente' if nature == 'client' else 'achat'
+            f1 = facture(api, tiers, type_facture)
+            f2 = facture(api, tiers, type_facture, '2025-06-16', ref='F2-FICTIF945')
+            cle = 'collectee' if nature == 'client' else 'recuperable'
+            assert montant(declaration(api, 6), cle) == avant
+            imputer(api, ac, f1)
+&gt;           assert montant(declaration(api, 6), cle) == un
+E           AssertionError: assert Decimal('8000.0') == 7000
+E            +  where Decimal('8000.0') = montant({'periode': {'type': 'mensuelle', 'date_debut': '2025-06-01', 'date_fin': '2025-06-30'}, 'regime_tva': 'debit', 'param...0.0}, 'collectee': {'total': 8000.0, 'base_total': 40000.0, 'par_taux': {'20': {'base': 40000.0, 'tva': 8000.0}}}, ...}, 'collectee')
+E            +    where {'periode': {'type': 'mensuelle', 'date_debut': '2025-06-01', 'date_fin': '2025-06-30'}, 'regime_tva': 'debit', 'param...0.0}, 'collectee': {'total': 8000.0, 'base_total': 40000.0, 'par_taux': {'20': {'base': 40000.0, 'tva': 8000.0}}}, ...} = declaration(&lt;httpx.Client object at 0x000001DCBF61BCD0&gt;, 6)
+
+Test\test_tva_imputations945_isole.py:40: AssertionError</failure></testcase><testcase classname="Test.test_tva_imputations945_isole" name="test_945_imputations_partielles_multiples_et_annulation[client-encaissement-4000-4000-4000]" time="1.406"><failure message="AssertionError: {&quot;detail&quot;:[{&quot;type&quot;:&quot;missing&quot;,&quot;loc&quot;:[&quot;query&quot;,&quot;exercice&quot;],&quot;msg&quot;:&quot;Field required&quot;,&quot;input&quot;:null}]}">application = {'api_url': 'http://127.0.0.1:58613', 'web_url': 'http://127.0.0.1:58614', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_ey77gb1n'), 'nonce': '663739b0c44a4875b5afa4e878c21f7e', ...}, ...}
+nature = 'client', regime = 'encaissement', avant = 4000, un = 4000, deux = 4000
+
+    @pytest.mark.parametrize('nature,regime,avant,un,deux', [
+        ('client', 'debit', 8000, 7000, 6000),
+        ('client', 'encaissement', 4000, 4000, 4000),
+        ('fournisseur', 'encaissement', 0, 1000, 2000),
+    ])
+    def test_945_imputations_partielles_multiples_et_annulation(application, nature, regime, avant, un, deux):
+        with closing(client(application)[0]) as api:
+            sid, tiers, banque = dossier(api, application, regime, nature)
+            ac = acompte(api, tiers, banque, mode='virement', nature=nature)
+            type_facture = 'vente' if nature == 'client' else 'achat'
+            f1 = facture(api, tiers, type_facture)
+            f2 = facture(api, tiers, type_facture, '2025-06-16', ref='F2-FICTIF945')
+            cle = 'collectee' if nature == 'client' else 'recuperable'
+            assert montant(declaration(api, 6), cle) == avant
+            imputer(api, ac, f1)
+            assert montant(declaration(api, 6), cle) == un
+            imputer(api, ac, f2)
+            assert montant(declaration(api, 6), cle) == deux
+&gt;           ac2 = next(a for a in ok(api.get('/api/acomptes')) if a['id'] == ac['id'])
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_tva_imputations945_isole.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [422 Unprocessable Entity]&gt;, status = 200
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":[{"type":"missing","loc":["query","exercice"],"msg":"Field required","input":null}]}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase><testcase classname="Test.test_tva_imputations945_isole" name="test_945_imputations_partielles_multiples_et_annulation[fournisseur-encaissement-0-1000-2000]" time="6.512"><failure message="AssertionError: assert Decimal('0.0') == 1000&#10; +  where Decimal('0.0') = montant({'periode': {'type': 'mensuelle', 'date_debut': '2025-06-01', 'date_fin': '2025-06-30'}, 'regime_tva': 'encaissement',..._ouverture': 0.0, 'prorata_deduction_pct': 100.0}, 'collectee': {'total': 0.0, 'base_total': 0.0, 'par_taux': {}}, ...}, 'recuperable')&#10; +    where {'periode': {'type': 'mensuelle', 'date_debut': '2025-06-01', 'date_fin': '2025-06-30'}, 'regime_tva': 'encaissement',..._ouverture': 0.0, 'prorata_deduction_pct': 100.0}, 'collectee': {'total': 0.0, 'base_total': 0.0, 'par_taux': {}}, ...} = declaration(&lt;httpx.Client object at 0x000001DCC10B7010&gt;, 6)">application = {'api_url': 'http://127.0.0.1:58613', 'web_url': 'http://127.0.0.1:58614', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_ey77gb1n'), 'nonce': '663739b0c44a4875b5afa4e878c21f7e', ...}, ...}
+nature = 'fournisseur', regime = 'encaissement', avant = 0, un = 1000
+deux = 2000
+
+    @pytest.mark.parametrize('nature,regime,avant,un,deux', [
+        ('client', 'debit', 8000, 7000, 6000),
+        ('client', 'encaissement', 4000, 4000, 4000),
+        ('fournisseur', 'encaissement', 0, 1000, 2000),
+    ])
+    def test_945_imputations_partielles_multiples_et_annulation(application, nature, regime, avant, un, deux):
+        with closing(client(application)[0]) as api:
+            sid, tiers, banque = dossier(api, application, regime, nature)
+            ac = acompte(api, tiers, banque, mode='virement', nature=nature)
+            type_facture = 'vente' if nature == 'client' else 'achat'
+            f1 = facture(api, tiers, type_facture)
+            f2 = facture(api, tiers, type_facture, '2025-06-16', ref='F2-FICTIF945')
+            cle = 'collectee' if nature == 'client' else 'recuperable'
+            assert montant(declaration(api, 6), cle) == avant
+            imputer(api, ac, f1)
+&gt;           assert montant(declaration(api, 6), cle) == un
+E           AssertionError: assert Decimal('0.0') == 1000
+E            +  where Decimal('0.0') = montant({'periode': {'type': 'mensuelle', 'date_debut': '2025-06-01', 'date_fin': '2025-06-30'}, 'regime_tva': 'encaissement',..._ouverture': 0.0, 'prorata_deduction_pct': 100.0}, 'collectee': {'total': 0.0, 'base_total': 0.0, 'par_taux': {}}, ...}, 'recuperable')
+E            +    where {'periode': {'type': 'mensuelle', 'date_debut': '2025-06-01', 'date_fin': '2025-06-30'}, 'regime_tva': 'encaissement',..._ouverture': 0.0, 'prorata_deduction_pct': 100.0}, 'collectee': {'total': 0.0, 'base_total': 0.0, 'par_taux': {}}, ...} = declaration(&lt;httpx.Client object at 0x000001DCC10B7010&gt;, 6)
+
+Test\test_tva_imputations945_isole.py:40: AssertionError</failure></testcase></testsuite></testsuites>

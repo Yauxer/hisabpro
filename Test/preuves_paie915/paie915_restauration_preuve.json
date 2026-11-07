@@ -1,0 +1,14 @@
+{
+  "donnees_reelles": false,
+  "tables": 99,
+  "schema_donnees_sequences_acl_identiques": true,
+  "predicat_index_altere_detecte": true,
+  "role_runtime_limite": true,
+  "snapshot_et_empreinte_restitues": true,
+  "source_inchangee": true,
+  "cible_nonce_supprimee": true,
+  "archive_sha256": "8215a1b6af6c68b9360700b5f288c555106a07e09d802e16afd40dbf3efe0cb4",
+  "ir_source_restitue": true,
+  "rni_quatre_decimales_restitue": true,
+  "lien_annuel_restitue": true
+}

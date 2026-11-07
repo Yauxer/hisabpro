@@ -1,0 +1,17 @@
+{
+  "role": "lecture",
+  "largeur": 390,
+  "acomptes_proposes": "1250.00",
+  "exports_individuels": {
+    "pdf": {
+      "sha256": "eb9af96ba2553435746f060607d3f5abaa8f7eebfdcf53ba0b77a2b2e523b73e",
+      "montant_et_logo_verifies": true
+    },
+    "xlsx": {
+      "sha256": "b29f558510e74302fe83224e3b24352a69fb37b2083e882e8146c28c6c3638a8",
+      "montant_et_logo_verifies": true
+    }
+  },
+  "ZIP_snapshot_verifie": true,
+  "sources_hors_preparations_inchangees": true
+}

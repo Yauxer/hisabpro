@@ -1,0 +1,85 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_u5e1al0j",
+  "nonce": "c747d504e76046a184611d795f78e281",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-NEG-046",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-047",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-048",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-049",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-050",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "negatifs811": [
+    {
+      "id": "HP-NEG-046",
+      "fichier": "docs\\recette\\negatifs\\balance_desequilibree.csv",
+      "sha256": "c5cd711a96f363294e0bd2b82908dfcd416bb51ba3aba11ad1a6c1ca76b08ee0",
+      "statut_http": 422,
+      "diagnostic": "Balance N déséquilibrée : débit 100.00, crédit 99.00, écart 1.00 MAD.",
+      "zero_persistance": true,
+      "capture": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette811_cible\\test_811_cinq_imports_invalide0\\HP-NEG-046_1440.png",
+      "capture_sha256": "8d7ec2411ccdef6458a9481fae5c86490523823982bf695634f1ec0d78406b22"
+    },
+    {
+      "id": "HP-NEG-047",
+      "fichier": "docs\\recette\\negatifs\\balance_compte_inconnu.csv",
+      "sha256": "0e0125fb5e5cd3e467dc77fde4e228b8d8ca7509afda4a0f516fa32d5146ef7a",
+      "statut_http": 422,
+      "diagnostic": "Balance N, ligne 3 (7999999999) : compte absent du plan de la société ; le créer explicitement avant import.",
+      "zero_persistance": true,
+      "capture": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette811_cible\\test_811_cinq_imports_invalide0\\HP-NEG-047_1440.png",
+      "capture_sha256": "0f90accb55b02980e6236ee3f3cfa1ae0777298c28b73e02e3190ac5886fe2b6"
+    },
+    {
+      "id": "HP-NEG-048",
+      "fichier": "docs\\recette\\negatifs\\balance_compte_double.csv",
+      "sha256": "bc130443a360fe7fb2ac2aeacfeb787e63ebcd68314da8efb3f9c1bc3ee08e70",
+      "statut_http": 422,
+      "diagnostic": "Balance N, ligne 3 (5141) : compte en doublon ; fournir une balance agrégée par compte.",
+      "zero_persistance": true,
+      "capture": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette811_cible\\test_811_cinq_imports_invalide0\\HP-NEG-048_1440.png",
+      "capture_sha256": "8a378ed0d835b73a43c7d2faafb304035b368fadca0d0964483e4d77c2b2b975"
+    },
+    {
+      "id": "HP-NEG-049",
+      "fichier": "docs\\recette\\negatifs\\balance_montant_nan.csv",
+      "sha256": "ade4ce6de4f9bb30204fcfade38c0c2374a7a425aaba283661ee1d78e077f300",
+      "statut_http": 422,
+      "diagnostic": "Balance N, ligne 2 (5141) débit : montant positif ou nul, fini, à deux décimales requis.",
+      "zero_persistance": true,
+      "capture": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette811_cible\\test_811_cinq_imports_invalide0\\HP-NEG-049_1440.png",
+      "capture_sha256": "9118f58f47e0e0078bd5357c781f12a5ed697ea750940d7021a2d84ee2a74af8"
+    },
+    {
+      "id": "HP-NEG-050",
+      "fichier": "docs\\recette\\negatifs\\balance_resultat_et_gestion.csv",
+      "sha256": "6df40aa6ef6d5def018c1905659ed5b7251a3775c7cf28f4bbb06e76ebe51cce",
+      "statut_http": 422,
+      "diagnostic": "Balance N : résultat 119 et classes 6/7 simultanés ; fournir la balance avant clôture technique ou clarifier l'affectation antérieure.",
+      "zero_persistance": true,
+      "capture": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette811_cible\\test_811_cinq_imports_invalide0\\HP-NEG-050_1440.png",
+      "capture_sha256": "265935a95273a62b64ab9bdea038fbcb24f98d01b56bd05788a6c23558c4069d"
+    }
+  ],
+  "correction_valide_apres_5_refus": true
+}

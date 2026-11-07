@@ -1,0 +1,108 @@
+.page { display: flex; flex-direction: column; height: 100%; }
+.topbar { background: var(--bg-primary); border-bottom: 0.5px solid var(--border-light); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.pageTitle { font-size: 15px; font-weight: 500; }
+
+.btnPrim { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 7px 14px; border-radius: var(--radius-md); background: var(--blue); color: #fff; border: none; cursor: pointer; transition: background 0.15s; }
+.btnPrim:hover:not(:disabled) { background: var(--blue-dark); }
+.btnPrim:disabled { background: var(--border-medium); cursor: not-allowed; }
+.btnSec { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 7px 12px; border-radius: var(--radius-md); background: var(--bg-primary); border: 0.5px solid var(--border-medium); color: var(--text-secondary); cursor: pointer; transition: background 0.12s; }
+.btnSec:hover { background: var(--bg-secondary); }
+.btnIcone { width: 28px; height: 28px; border-radius: var(--radius-sm); background: transparent; border: none; color: var(--text-tertiary); font-size: 16px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.btnIcone:hover { background: var(--bg-secondary); color: var(--text-primary); }
+
+.content { flex: 1; min-width: 0; min-height: 0; overflow: hidden; padding: 16px 24px; display: flex; flex-direction: column; gap: 12px; }
+
+.kpiGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; flex-shrink: 0; }
+.kpiCard { background: var(--bg-primary); border: 0.5px solid var(--border-light); border-radius: var(--radius-lg); padding: 14px 16px; }
+.kpiLabel { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text-secondary); margin-bottom: 8px; }
+.kpiLabel i { font-size: 14px; }
+.kpiValeur { font-size: 20px; font-weight: 500; color: var(--text-primary); }
+.kpiSub { font-size: 11px; color: var(--text-tertiary); font-weight: 400; }
+
+.filtres { display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; }
+.recherche { display: flex; align-items: center; gap: 8px; background: var(--bg-primary); border: 0.5px solid var(--border-medium); border-radius: var(--radius-md); padding: 0 10px; color: var(--text-tertiary); }
+.recherche i { font-size: 15px; flex-shrink: 0; }
+.inputRecherche { flex: 1; border: none; background: transparent; font-size: 13px; color: var(--text-primary); padding: 8px 0; }
+.inputRecherche::placeholder { color: var(--text-tertiary); }
+.inputRecherche:focus { outline: none; }
+.filtresBarre { display: flex; gap: 6px; flex-wrap: wrap; }
+.filtreBtn { font-size: 12px; padding: 5px 10px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-secondary); cursor: pointer; transition: all 0.12s; }
+.filtreBtn:hover { background: var(--bg-secondary); }
+.filtreBtnActif { background: var(--blue-light) !important; color: var(--blue) !important; border-color: #B5D4F4 !important; font-weight: 500; }
+.clearBtn { display: flex; align-items: center; font-size: 11px; padding: 4px 7px; border-radius: var(--radius-sm); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-tertiary); cursor: pointer; }
+.clearBtn:hover { background: var(--red-light); color: var(--red); }
+
+.fullWidth { flex: 1; min-height: 0; }
+.twoCols { display: grid; grid-template-columns: 1fr 420px; gap: 16px; flex: 1; min-height: 0; }
+
+.card { background: var(--bg-primary); border: 0.5px solid var(--border-light); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; height: 100%; }
+.cardHeader { padding: 12px 16px; border-bottom: 0.5px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.cardTitle { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; }
+.tableWrapper { flex:1; min-width:0; min-height:0; overflow:auto; overscroll-behavior:contain; scrollbar-gutter:stable; -webkit-overflow-scrolling:touch; }
+.table { width: 100%; border-collapse: collapse; }
+.table th { font-size: 11px; color: var(--text-tertiary); font-weight: 400; text-align: left; padding: 9px 14px; border-bottom: 0.5px solid var(--border-light); position: sticky; top: 0; background: var(--bg-primary); }
+.table td { font-size: 12px; padding: 9px 14px; border-bottom: 0.5px solid var(--border-light); color: var(--text-primary); vertical-align: middle; }
+.table tr:last-child td { border-bottom: none; }
+.table tr:hover td { background: var(--bg-secondary); cursor: pointer; }
+.rowSelected td { background: var(--blue-light) !important; }
+.tdMono { font-family: 'Courier New', monospace; font-size: 11px; }
+.badge { font-size: 10px; font-weight: 500; padding: 2px 8px; border-radius: 100px; }
+.btnTrash { width: 24px; height: 24px; border-radius: var(--radius-sm); background: none; border: none; color: transparent; font-size: 13px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+tr:hover .btnTrash { color: var(--text-tertiary); }
+.btnTrash:hover { background: var(--red-light) !important; color: var(--red) !important; }
+.vide { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--text-tertiary); font-size: 13px; padding: 48px; text-align: center; }
+.vide i { font-size: 28px; }
+
+/* Formulaire */
+.formCard { background: var(--bg-primary); border: 0.5px solid var(--border-light); border-radius: var(--radius-lg); display: flex; flex-direction: column; overflow: hidden; height: 100%; }
+.formHeader { padding: 14px 16px; border-bottom: 0.5px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+/* Le formulaire vit dans une modale : c'est le corps de la modale qui gère
+   le padding et le défilement. Ici on ne garde que l'empilement des champs. */
+.formBody { display: flex; flex-direction: column; gap: 10px; }
+.formRow { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.formGroup { display: flex; flex-direction: column; gap: 4px; }
+.label { font-size: 11px; color: var(--text-secondary); }
+.sectionTitle { font-size: 10px; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.06em; padding: 6px 0 2px; border-bottom: 0.5px solid var(--border-light); margin-top: 4px; }
+.input { padding: 7px 10px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-primary); font-size: 13px; font-family: var(--font); width: 100%; }
+.input:focus { border-color: var(--blue); outline: none; }
+.typeToggle { display: flex; gap: 5px; }
+.typeBtn { font-size: 12px; padding: 6px 12px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-secondary); cursor: pointer; transition: all 0.12s; }
+.typeBtnActif { background: var(--blue) !important; color: #fff !important; border-color: var(--blue) !important; font-weight: 500; }
+.checkGroup { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-secondary); }
+.erreur { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--red); background: var(--red-light); padding: 8px 12px; border-radius: var(--radius-md); }
+.formFooter { padding: 16px 0 0 0; margin-top: 6px; border-top: 0.5px solid var(--border-light); display: flex; gap: 8px; justify-content: flex-end; flex-shrink: 0; }
+
+/* Détail */
+.detailGrid { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.detailLigne { display: flex; justify-content: space-between; align-items: center; font-size: 12px; padding: 6px 0; border-bottom: 0.5px solid var(--border-light); }
+.detailLabel { color: var(--text-tertiary); }
+.detailVal { color: var(--text-primary); font-weight: 500; }
+
+.inputError { border-color: var(--red) !important; background: var(--red-light); }
+.fieldError { font-size: 10.5px; color: var(--red); line-height: 1.3; }
+.fieldHint { font-size: 10.5px; color: var(--text-tertiary); line-height: 1.3; }
+
+/* 065 — formulaire de tiers accessible en toute largeur. */
+.formBody, .formRow, .formGroup { min-width: 0; max-width: 100%; }
+.formRow { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.formFooter { flex-wrap: wrap; }
+@media (max-width: 620px) { .formRow { grid-template-columns: minmax(0,1fr); } }
+
+
+/* 068 — fiche tiers lisible dans une modale sans réduire la liste. */
+.detailSheet { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.detailIntro { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; color: var(--text-secondary); font-size: 12px; }
+.detailSection { min-width: 0; padding: 14px 16px; border: 1px solid var(--border-light); border-radius: var(--radius-lg); background: var(--bg-primary); }
+.detailSectionTitle { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; font-size: 13px; font-weight: 600; color: var(--text-primary); }
+.detailSectionTitle i { color: var(--blue); font-size: 16px; }
+.detailFields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 20px; margin: 0; }
+.detailField { min-width: 0; }
+.detailField dt { color: var(--text-secondary); font-size: 11px; margin-bottom: 4px; }
+.detailField dd { margin: 0; color: var(--text-primary); font-size: 13px; font-weight: 500; overflow-wrap: anywhere; }
+.detailEmpty { margin: 0; color: var(--text-tertiary); font-size: 12px; }
+.detailActions { display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 8px; padding-top: 4px; }
+@media (max-width: 560px) {
+  .detailSection { padding: 12px; }
+  .detailFields { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .detailActions > button { flex: 1 1 auto; justify-content: center; }
+}

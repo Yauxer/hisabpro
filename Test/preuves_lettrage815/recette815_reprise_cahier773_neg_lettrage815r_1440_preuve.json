@@ -1,0 +1,28 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_5j_sxm0b",
+  "nonce": "f5fa6c1af22d41b398c94deea41336f9",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-NEG-021",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-022",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "negatifs815": {
+    "cross_aux400": "Le lettrage doit concerner un seul client/fournisseur (même sous-compte ou même tiers).",
+    "ecart400": "Sélection non équilibrée : débit 100.00 / crédit 99.00",
+    "zero_lettrage": true,
+    "journal_inchange": true,
+    "capture_cross": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette815_reprise\\test_815_refus_cross_auxiliair0\\cross_aux815_1440.png",
+    "capture_cross_sha256": "63a51d14d9a528638d5463d5fafd19738d82b7cf1e44f264bbea44d97593bf6a"
+  }
+}

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="77.702" timestamp="2026-10-25T20:29:47.690739+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_echeancier827_isole" name="test_827_echeancier_contractuel_paiement_et_etic[1440]" time="49.744"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: None&#10;Error: element(s) not found &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; get_by_text(&quot;30/04/2025&quot;, exact=True).first with timeout 5000ms&#10;  - waiting for get_by_text(&quot;30/04/2025&quot;, exact=True).first&#10;&#10;Aria snapshot:&#10;- complementary &quot;Navigation principale&quot;:&#10;  - text: HisabPro ATLAS RECETTE HISABPRO SARL — FICTIVE&#10;  - navigation:&#10;    - link &quot;Tableau de bord&quot;:&#10;      - /url: /dashboard&#10;    - button &quot;Facturation&quot;&#10;    - link &quot;Cycle commercial&quot;:&#10;      - /url: /commercial&#10;    - link &quot;Situation financière&quot;:&#10;      - /url: /situation&#10;    - link &quot;Factures&quot;:&#10;      - /url: /factures&#10;    - link &quot;Avoirs&quot;:&#10;      - /url: /avoirs&#10;    - link &quot;Acomptes&quot;:&#10;      - /url: /acomptes&#10;    - link &quot;Effets &amp; Chèques&quot;:&#10;      - /url: /effets&#10;    - link &quot;Délais de paiement&quot;:&#10;      - /url: /delais-paiement&#10;    - link &quot;Clients / Fournisseurs&quot;:&#10;      - /url: /tiers&#10;    - link &quot;Articles&quot;:&#10;      - /url: /articles&#10;    - link &quot;Inventaire &amp; stock&quot;:&#10;      - /url: /inventaire&#10;    - button &quot;Comptabilité&quot;&#10;    - button &quot;Paie / GRH&quot;&#10;  - link &quot;Paramètres&quot;:&#10;    - /url: /parametres&#10;  - button &quot;Déconnexion&quot;&#10;- text: Exercice&#10;- button &quot;Aucun exercice précédent&quot; [disabled]&#10;- combobox &quot;Exercice comptable&quot;:&#10;  - option &quot;2026 — Ouvert&quot;&#10;  - option &quot;2025 — Ouvert&quot; [selected]&#10;- button &quot;Exercice 2026&quot;&#10;- text: Ouvert&#10;- button &quot;ATLAS RECETTE HISABPRO SARL — FICTIVE&quot;&#10;- text: 01/01/2025 — 31/12/2025&#10;- main:&#10;  - heading &quot;Factures&quot; [level=1]&#10;  - text: 1 facture en retard de paiement&#10;  - button &quot;Exporter CSV&quot;&#10;  - button &quot;Nouvelle facture&quot;&#10;  - dialog &quot;Facture FA-2025-001&quot;:&#10;    - text: Facture FA-2025-001&#10;    - button &quot;Fermer&quot;&#10;    - text: Type Vente Date 01/04/25 Tiers&#10;    - strong: Client Services Recette&#10;    - text: Réf. VAR-ECHEANCIER-827 Validation Validée Paiement Part. payée Comptabilité Comptabilisée Échéance 30/04/25 (543j retard) Échéancier de paiement 1 échéance ouverte 1&#10;    - strong: 30/04/25&#10;    - text: Échéance 1/2&#10;    - strong: 600,00 MAD&#10;    - text: 0,00 MAD restant Réglée 2&#10;    - strong: 31/05/25&#10;    - text: Échéance 2/2&#10;    - strong: 600,00 MAD&#10;    - text: 600,00 MAD restant 512 j retard&#10;    - list &quot;Lignes de la facture&quot;:&#10;      - listitem:&#10;        - text: Description&#10;        - strong: Prestation de recette&#10;        - text: Quantité 1 Prix unitaire HT 1.000,00 MAD TVA 20% Montant HT&#10;        - strong: 1.000,00 MAD&#10;    - text: Total HT 1.000,00 MAD Total TVA 200,00 MAD Total TTC 1.200,00 MAD&#10;    - group: Correspondance entre sociétés&#10;    - text: Règlements enregistrés 2025-04-30 — virement VAR-ECHEANCIER-PAY-827 600,00 MAD Solde restant 600,00 MAD Utilisez l'icône dans la liste pour enregistrer un règlement&#10;    - button &quot;Créer un avoir&quot;&#10;    - button &quot;Télécharger PDF&quot;&#10;    - button &quot;Préparer e-mail&quot;&#10;  - paragraph: Indicateurs de facturation sur la période sélectionnée, factures validées hors proformas et annulations, nets des avoirs datés sur cette période. HT après remises, avant escompte. Coûts moyens indicatifs ; ne remplace pas le CA comptable.&#10;  - text: Facturation nette HT 1.000,00 MAD Ventes nettes TTC ▼ détail 1.200,00 MAD Achats nets TTC 0,00 MAD En attente 0 factures En retard 1 facture&#10;  - searchbox &quot;Rechercher une facture par numéro ou tiers&quot;&#10;  - button &quot;Tous&quot; [pressed]&#10;  - button &quot;Ventes&quot;&#10;  - button &quot;Achats&quot;&#10;  - button &quot;Tous statuts&quot; [pressed]&#10;  - button &quot;Payées&quot;&#10;  - button &quot;Part. payées&quot;&#10;  - button &quot;En attente&quot;&#10;  - button &quot;En retard&quot;&#10;  - text: Du&#10;  - textbox &quot;Date de début des factures et indicateurs&quot;&#10;  - text: au&#10;  - textbox &quot;Date de fin des factures et indicateurs&quot;&#10;  - status: 1 facture&#10;  - table:&#10;    - rowgroup:&#10;      - row &quot;N° Facture Type Date Tiers Articles HT TVA TTC Statut Échéance&quot;:&#10;        - columnheader &quot;N° Facture&quot;&#10;        - columnheader &quot;Type&quot;&#10;        - columnheader &quot;Date&quot;&#10;        - columnheader &quot;Tiers&quot;&#10;        - columnheader &quot;Articles&quot;&#10;        - columnheader &quot;HT&quot;&#10;        - columnheader &quot;TVA&quot;&#10;        - columnheader &quot;TTC&quot;&#10;        - columnheader &quot;Statut&quot;&#10;        - columnheader &quot;Échéance&quot;&#10;        - columnheader&#10;    - rowgroup:&#10;      - row &quot;FA-2025-001 Vente 01/04/25 Client Services Recette 1×Prestation de recette 1.000,00 200,00 1.200,00 Validée Part. payée Compta 30/04/25 (543j retard) Suppression impossible (validée)&quot;:&#10;        - cell &quot;FA-2025-001&quot;&#10;        - cell &quot;Vente&quot;&#10;        - cell &quot;01/04/25&quot;&#10;        - cell &quot;Client Services Recette&quot;:&#10;          - strong: Client Services Recette&#10;        - cell &quot;1×Prestation de recette&quot;&#10;        - cell &quot;1.000,00&quot;&#10;        - cell &quot;200,00&quot;&#10;        - cell &quot;1.200,00&quot;&#10;        - cell &quot;Validée Part. payée Compta&quot;&#10;        - cell &quot;30/04/25 (543j retard)&quot;&#10;        - cell &quot;Suppression impossible (validée)&quot;:&#10;          - button &quot;Créer bon de livraison&quot;&#10;          - button &quot;Encaisser le client&quot;&#10;          - button &quot;Dupliquer la facture&quot;&#10;          - button &quot;Suppression impossible (validée)&quot; [disabled]">application = {'api_url': 'http://127.0.0.1:62726', 'web_url': 'http://127.0.0.1:62727', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_j8hx7lwn'), 'nonce': '9a5fd95300404198ad6d118e49f0b4c9', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette827_reprise/test_827_echeancier_contractue0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_827_echeancier_contractuel_paiement_et_etic(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'echeancier827') as (api,page,sid,preuve):
+      t=next(t for t in DATA['tiers'] if t['code']=='C-SERVICE');tiers=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'client','compte_client':'3421'}),201)
+      a=next(a for a in DATA['articles'] if a['code']=='S-VTE');article=ok(api.post('/api/articles',json={'code':a['code'],'designation':a['designation'],'is_stockable':False,'stock_actuel':0,'prix_vente_ht':1000,'tva':20,'compte_vente':'7124'}),201)
+      b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      page.goto(application['web_url']+'/factures');page.get_by_role('button',name='Nouvelle facture',exact=True).click();m=page.get_by_role('dialog',name='Nouvelle facture',exact=True);champ(m,'Date *').fill('2025-04-01');m.get_by_placeholder('Rechercher un',exact=False).fill(tiers['nom']);m.get_by_text(tiers['nom'],exact=True).click();m.get_by_placeholder('N° BC, bon de commande...').fill('VAR-ECHEANCIER-827');m.get_by_placeholder('Description ou article...').fill(article['designation']);m.locator('li').filter(has_text=article['designation']).click();ed=m.locator('.hp-invoice-line-editor');ed.locator('input[type=number]').nth(0).fill('1');ed.locator('input[type=number]').nth(1).fill('1000')
+      m.get_by_role('button',name='Échéancier',exact=True).click();m.get_by_role('button',name='50 / 50',exact=True).click();rows=m.locator('[class*="echeancierRows"] &gt; div');expect(rows).to_have_count(2)
+      for i,jour in enumerate(['2025-04-30','2025-05-31']):rows.nth(i).locator('input[type=date]').fill(jour);expect(rows.nth(i).locator('input[type=number]')).to_have_value('50')
+      m.get_by_role('button',name='Enregistrer en brouillon',exact=False).click()
+      with page.expect_response(lambda r:r.url.endswith('/api/factures') and r.request.method=='POST') as r:m.get_by_role('button',name='Enregistrer le brouillon',exact=True).click()
+      f=ok(r.value,201);fid=f['id'];m.wait_for(state='hidden');assert D(str(f['total_ttc']))==1200
+      initial=echeancier(api,fid,'2025-04-01');assert initial['personnalise'] and [(e['date_echeance'],D(str(e['montant']))) for e in initial['echeances']]==[('2025-04-30',D(600)),('2025-05-31',D(600))]
+      f,_=officialiser(page,application,f,tiers);valider_journal(page,application,1);payer(page,application,f,tiers,600,'2025-04-30','VAR-ECHEANCIER-PAY-827',banque);valider_journal(page,application,1)
+      es=ok(api.get('/api/ecritures',params={'exercice':2025}));assert len(es)==2 and all(e['est_validee'] for e in es)
+      for journal,jour,attendu in [('VT','2025-04-01',{'3421':(1200,0),'7124':(0,1000),'4455':(0,200)}),('BQ','2025-04-30',{'5141':(600,0),'3421':(0,600)})]:
+       e=next(e for e in es if e['journal']==journal);assert e['date']==jour and {l['compte']:(D(str(l['debit'])),D(str(l['credit']))) for l in e['lignes']}=={k:tuple(map(D,v)) for k,v in attendu.items()}
+      avant=core(application,sid);controle={}
+      for jour,retard in [('2025-05-30',0),('2025-05-31',0),('2025-06-01',1)]:
+       s=echeancier(api,fid,jour);controle[jour]=s;assert D(str(s['reste_du']))==600 and s['nb_ouvertes']==1 and s['echeances'][0]['reste_du']==0 and s['echeances'][1]['reste_du']==600 and s['prochaine_echeance']['date_echeance']=='2025-05-31' and s['echeances'][1]['jours_retard']==retard
+      f=next(f for f in ok(api.get('/api/factures',params={'exercice':2025})) if f['id']==fid);assert f['statut']=='partiellement_payee'
+&gt;     page.goto(application['web_url']+'/factures');page.locator('tbody tr').filter(has_text=f['numero']).click();expect(page.get_by_text('Échéancier de paiement',exact=True)).to_be_visible();expect(page.get_by_text('30/04/2025',exact=True).first).to_be_visible();expect(page.get_by_text('31/05/2025',exact=True).first).to_be_visible();expect(page.get_by_text('Réglée',exact=True)).to_be_visible();page.reload();page.locator('tbody tr').filter(has_text=f['numero']).click();expect(page.get_by_text('Échéancier de paiement',exact=True)).to_be_visible()
+                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to be visible
+E     Actual value: None
+E     Error: element(s) not found 
+E     Call log:
+E       - Expect "to_be_visible" get_by_text("30/04/2025", exact=True).first with timeout 5000ms
+E       - waiting for get_by_text("30/04/2025", exact=True).first
+E     
+E     Aria snapshot:
+E     - complementary "Navigation principale":
+E       - text: HisabPro ATLAS RECETTE HISABPRO SARL — FICTIVE
+E       - navigation:
+E         - link "Tableau de bord":
+E           - /url: /dashboard
+E         - button "Facturation"
+E         - link "Cycle commercial":
+E           - /url: /commercial
+E         - link "Situation financière":
+E           - /url: /situation
+E         - link "Factures":
+E           - /url: /factures
+E         - link "Avoirs":
+E           - /url: /avoirs
+E         - link "Acomptes":
+E           - /url: /acomptes
+E         - link "Effets &amp; Chèques":
+E           - /url: /effets
+E         - link "Délais de paiement":
+E           - /url: /delais-paiement
+E         - link "Clients / Fournisseurs":
+E           - /url: /tiers
+E         - link "Articles":
+E           - /url: /articles
+E         - link "Inventaire &amp; stock":
+E           - /url: /inventaire
+E         - button "Comptabilité"
+E         - button "Paie / GRH"
+E       - link "Paramètres":
+E         - /url: /parametres
+E       - button "Déconnexion"
+E     - text: Exercice
+E     - button "Aucun exercice précédent" [disabled]
+E     - combobox "Exercice comptable":
+E       - option "2026 — Ouvert"
+E       - option "2025 — Ouvert" [selected]
+E     - button "Exercice 2026"
+E     - text: Ouvert
+E     - button "ATLAS RECETTE HISABPRO SARL — FICTIVE"
+E     - text: 01/01/2025 — 31/12/2025
+E     - main:
+E       - heading "Factures" [level=1]
+E       - text: 1 facture en retard de paiement
+E       - button "Exporter CSV"
+E       - button "Nouvelle facture"
+E       - dialog "Facture FA-2025-001":
+E         - text: Facture FA-2025-001
+E         - button "Fermer"
+E         - text: Type Vente Date 01/04/25 Tiers
+E         - strong: Client Services Recette
+E         - text: Réf. VAR-ECHEANCIER-827 Validation Validée Paiement Part. payée Comptabilité Comptabilisée Échéance 30/04/25 (543j retard) Échéancier de paiement 1 échéance ouverte 1
+E         - strong: 30/04/25
+E         - text: Échéance 1/2
+E         - strong: 600,00 MAD
+E         - text: 0,00 MAD restant Réglée 2
+E         - strong: 31/05/25
+E         - text: Échéance 2/2
+E         - strong: 600,00 MAD
+E         - text: 600,00 MAD restant 512 j retard
+E         - list "Lignes de la facture":
+E           - listitem:
+E             - text: Description
+E             - strong: Prestation de recette
+E             - text: Quantité 1 Prix unitaire HT 1.000,00 MAD TVA 20% Montant HT
+E             - strong: 1.000,00 MAD
+E         - text: Total HT 1.000,00 MAD Total TVA 200,00 MAD Total TTC 1.200,00 MAD
+E         - group: Correspondance entre sociétés
+E         - text: Règlements enregistrés 2025-04-30 — virement VAR-ECHEANCIER-PAY-827 600,00 MAD Solde restant 600,00 MAD Utilisez l'icône dans la liste pour enregistrer un règlement
+E         - button "Créer un avoir"
+E         - button "Télécharger PDF"
+E         - button "Préparer e-mail"
+E       - paragraph: Indicateurs de facturation sur la période sélectionnée, factures validées hors proformas et annulations, nets des avoirs datés sur cette période. HT après remises, avant escompte. Coûts moyens indicatifs ; ne remplace pas le CA comptable.
+E       - text: Facturation nette HT 1.000,00 MAD Ventes nettes TTC ▼ détail 1.200,00 MAD Achats nets TTC 0,00 MAD En attente 0 factures En retard 1 facture
+E       - searchbox "Rechercher une facture par numéro ou tiers"
+E       - button "Tous" [pressed]
+E       - button "Ventes"
+E       - button "Achats"
+E       - button "Tous statuts" [pressed]
+E       - button "Payées"
+E       - button "Part. payées"
+E       - button "En attente"
+E       - button "En retard"
+E       - text: Du
+E       - textbox "Date de début des factures et indicateurs"
+E       - text: au
+E       - textbox "Date de fin des factures et indicateurs"
+E       - status: 1 facture
+E       - table:
+E         - rowgroup:
+E           - row "N° Facture Type Date Tiers Articles HT TVA TTC Statut Échéance":
+E             - columnheader "N° Facture"
+E             - columnheader "Type"
+E             - columnheader "Date"
+E             - columnheader "Tiers"
+E             - columnheader "Articles"
+E             - columnheader "HT"
+E             - columnheader "TVA"
+E             - columnheader "TTC"
+E             - columnheader "Statut"
+E             - columnheader "Échéance"
+E             - columnheader
+E         - rowgroup:
+E           - row "FA-2025-001 Vente 01/04/25 Client Services Recette 1×Prestation de recette 1.000,00 200,00 1.200,00 Validée Part. payée Compta 30/04/25 (543j retard) Suppression impossible (validée)":
+E             - cell "FA-2025-001"
+E             - cell "Vente"
+E             - cell "01/04/25"
+E             - cell "Client Services Recette":
+E               - strong: Client Services Recette
+E             - cell "1×Prestation de recette"
+E             - cell "1.000,00"
+E             - cell "200,00"
+E             - cell "1.200,00"
+E             - cell "Validée Part. payée Compta"
+E             - cell "30/04/25 (543j retard)"
+E             - cell "Suppression impossible (validée)":
+E               - button "Créer bon de livraison"
+E               - button "Encaisser le client"
+E               - button "Dupliquer la facture"
+E               - button "Suppression impossible (validée)" [disabled]
+
+Test\test_e2e_cahier_echeancier827_isole.py:37: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_echeancier827_isole" name="test_827_echeancier_contractuel_paiement_et_etic[390]" time="23.476"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: None&#10;Error: element(s) not found &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; get_by_text(&quot;30/04/2025&quot;, exact=True).first with timeout 5000ms&#10;  - waiting for get_by_text(&quot;30/04/2025&quot;, exact=True).first&#10;&#10;Aria snapshot:&#10;- button &quot;Ouvrir la navigation&quot;&#10;- button &quot;Aucun exercice précédent&quot; [disabled]&#10;- combobox &quot;Exercice comptable&quot;:&#10;  - option &quot;2026 — Ouvert&quot;&#10;  - option &quot;2025 — Ouvert&quot; [selected]&#10;- button &quot;Exercice 2026&quot;&#10;- button &quot;ATLAS RECETTE HISABPRO SARL — FICTIVE&quot;&#10;- main:&#10;  - heading &quot;Factures&quot; [level=1]&#10;  - text: 1 facture en retard de paiement&#10;  - button &quot;Exporter CSV&quot;&#10;  - button &quot;Nouvelle facture&quot;&#10;  - dialog &quot;Facture FA-2025-001&quot;:&#10;    - text: Facture FA-2025-001&#10;    - button &quot;Fermer&quot;&#10;    - text: Type Vente Date 01/04/25 Tiers&#10;    - strong: Client Services Recette&#10;    - text: Réf. VAR-ECHEANCIER-827 Validation Validée Paiement Part. payée Comptabilité Comptabilisée Échéance 30/04/25 (543j retard) Échéancier de paiement 1 échéance ouverte 1&#10;    - strong: 30/04/25&#10;    - text: Échéance 1/2&#10;    - strong: 600,00 MAD&#10;    - text: 0,00 MAD restant Réglée 2&#10;    - strong: 31/05/25&#10;    - text: Échéance 2/2&#10;    - strong: 600,00 MAD&#10;    - text: 600,00 MAD restant 512 j retard&#10;    - list &quot;Lignes de la facture&quot;:&#10;      - listitem:&#10;        - text: Description&#10;        - strong: Prestation de recette&#10;        - text: Quantité 1 Prix unitaire HT 1.000,00 MAD TVA 20% Montant HT&#10;        - strong: 1.000,00 MAD&#10;    - text: Total HT 1.000,00 MAD Total TVA 200,00 MAD Total TTC 1.200,00 MAD&#10;    - group: Correspondance entre sociétés&#10;    - text: Règlements enregistrés 2025-04-30 — virement VAR-ECHEANCIER-PAY-827 600,00 MAD Solde restant 600,00 MAD Utilisez l'icône dans la liste pour enregistrer un règlement&#10;    - button &quot;Créer un avoir&quot;&#10;    - button &quot;Télécharger PDF&quot;&#10;    - button &quot;Préparer e-mail&quot;&#10;  - paragraph: Indicateurs de facturation sur la période sélectionnée, factures validées hors proformas et annulations, nets des avoirs datés sur cette période. HT après remises, avant escompte. Coûts moyens indicatifs ; ne remplace pas le CA comptable.&#10;  - text: Facturation nette HT 1.000,00 MAD Ventes nettes TTC ▼ détail 1.200,00 MAD Achats nets TTC 0,00 MAD En attente 0 factures En retard 1 facture&#10;  - searchbox &quot;Rechercher une facture par numéro ou tiers&quot;&#10;  - button &quot;Tous&quot; [pressed]&#10;  - button &quot;Ventes&quot;&#10;  - button &quot;Achats&quot;&#10;  - button &quot;Tous statuts&quot; [pressed]&#10;  - button &quot;Payées&quot;&#10;  - button &quot;Part. payées&quot;&#10;  - button &quot;En attente&quot;&#10;  - button &quot;En retard&quot;&#10;  - text: Du&#10;  - textbox &quot;Date de début des factures et indicateurs&quot;&#10;  - text: au&#10;  - textbox &quot;Date de fin des factures et indicateurs&quot;&#10;  - status: 1 facture&#10;  - table:&#10;    - rowgroup:&#10;      - row &quot;N° Facture Type Date Tiers Articles HT TVA TTC Statut Échéance&quot;:&#10;        - columnheader &quot;N° Facture&quot;&#10;        - columnheader &quot;Type&quot;&#10;        - columnheader &quot;Date&quot;&#10;        - columnheader &quot;Tiers&quot;&#10;        - columnheader &quot;Articles&quot;&#10;        - columnheader &quot;HT&quot;&#10;        - columnheader &quot;TVA&quot;&#10;        - columnheader &quot;TTC&quot;&#10;        - columnheader &quot;Statut&quot;&#10;        - columnheader &quot;Échéance&quot;&#10;        - columnheader&#10;    - rowgroup:&#10;      - row &quot;FA-2025-001 Vente 01/04/25 Client Services Recette 1×Prestation de recette 1.000,00 200,00 1.200,00 Validée Part. payée Compta 30/04/25 (543j retard) Suppression impossible (validée)&quot;:&#10;        - cell &quot;FA-2025-001&quot;&#10;        - cell &quot;Vente&quot;&#10;        - cell &quot;01/04/25&quot;&#10;        - cell &quot;Client Services Recette&quot;:&#10;          - strong: Client Services Recette&#10;        - cell &quot;1×Prestation de recette&quot;&#10;        - cell &quot;1.000,00&quot;&#10;        - cell &quot;200,00&quot;&#10;        - cell &quot;1.200,00&quot;&#10;        - cell &quot;Validée Part. payée Compta&quot;&#10;        - cell &quot;30/04/25 (543j retard)&quot;&#10;        - cell &quot;Suppression impossible (validée)&quot;:&#10;          - button &quot;Créer bon de livraison&quot;&#10;          - button &quot;Encaisser le client&quot;&#10;          - button &quot;Dupliquer la facture&quot;&#10;          - button &quot;Suppression impossible (validée)&quot; [disabled]">application = {'api_url': 'http://127.0.0.1:62726', 'web_url': 'http://127.0.0.1:62727', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_j8hx7lwn'), 'nonce': '9a5fd95300404198ad6d118e49f0b4c9', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette827_reprise/test_827_echeancier_contractue1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_827_echeancier_contractuel_paiement_et_etic(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'echeancier827') as (api,page,sid,preuve):
+      t=next(t for t in DATA['tiers'] if t['code']=='C-SERVICE');tiers=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'client','compte_client':'3421'}),201)
+      a=next(a for a in DATA['articles'] if a['code']=='S-VTE');article=ok(api.post('/api/articles',json={'code':a['code'],'designation':a['designation'],'is_stockable':False,'stock_actuel':0,'prix_vente_ht':1000,'tva':20,'compte_vente':'7124'}),201)
+      b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      page.goto(application['web_url']+'/factures');page.get_by_role('button',name='Nouvelle facture',exact=True).click();m=page.get_by_role('dialog',name='Nouvelle facture',exact=True);champ(m,'Date *').fill('2025-04-01');m.get_by_placeholder('Rechercher un',exact=False).fill(tiers['nom']);m.get_by_text(tiers['nom'],exact=True).click();m.get_by_placeholder('N° BC, bon de commande...').fill('VAR-ECHEANCIER-827');m.get_by_placeholder('Description ou article...').fill(article['designation']);m.locator('li').filter(has_text=article['designation']).click();ed=m.locator('.hp-invoice-line-editor');ed.locator('input[type=number]').nth(0).fill('1');ed.locator('input[type=number]').nth(1).fill('1000')
+      m.get_by_role('button',name='Échéancier',exact=True).click();m.get_by_role('button',name='50 / 50',exact=True).click();rows=m.locator('[class*="echeancierRows"] &gt; div');expect(rows).to_have_count(2)
+      for i,jour in enumerate(['2025-04-30','2025-05-31']):rows.nth(i).locator('input[type=date]').fill(jour);expect(rows.nth(i).locator('input[type=number]')).to_have_value('50')
+      m.get_by_role('button',name='Enregistrer en brouillon',exact=False).click()
+      with page.expect_response(lambda r:r.url.endswith('/api/factures') and r.request.method=='POST') as r:m.get_by_role('button',name='Enregistrer le brouillon',exact=True).click()
+      f=ok(r.value,201);fid=f['id'];m.wait_for(state='hidden');assert D(str(f['total_ttc']))==1200
+      initial=echeancier(api,fid,'2025-04-01');assert initial['personnalise'] and [(e['date_echeance'],D(str(e['montant']))) for e in initial['echeances']]==[('2025-04-30',D(600)),('2025-05-31',D(600))]
+      f,_=officialiser(page,application,f,tiers);valider_journal(page,application,1);payer(page,application,f,tiers,600,'2025-04-30','VAR-ECHEANCIER-PAY-827',banque);valider_journal(page,application,1)
+      es=ok(api.get('/api/ecritures',params={'exercice':2025}));assert len(es)==2 and all(e['est_validee'] for e in es)
+      for journal,jour,attendu in [('VT','2025-04-01',{'3421':(1200,0),'7124':(0,1000),'4455':(0,200)}),('BQ','2025-04-30',{'5141':(600,0),'3421':(0,600)})]:
+       e=next(e for e in es if e['journal']==journal);assert e['date']==jour and {l['compte']:(D(str(l['debit'])),D(str(l['credit']))) for l in e['lignes']}=={k:tuple(map(D,v)) for k,v in attendu.items()}
+      avant=core(application,sid);controle={}
+      for jour,retard in [('2025-05-30',0),('2025-05-31',0),('2025-06-01',1)]:
+       s=echeancier(api,fid,jour);controle[jour]=s;assert D(str(s['reste_du']))==600 and s['nb_ouvertes']==1 and s['echeances'][0]['reste_du']==0 and s['echeances'][1]['reste_du']==600 and s['prochaine_echeance']['date_echeance']=='2025-05-31' and s['echeances'][1]['jours_retard']==retard
+      f=next(f for f in ok(api.get('/api/factures',params={'exercice':2025})) if f['id']==fid);assert f['statut']=='partiellement_payee'
+&gt;     page.goto(application['web_url']+'/factures');page.locator('tbody tr').filter(has_text=f['numero']).click();expect(page.get_by_text('Échéancier de paiement',exact=True)).to_be_visible();expect(page.get_by_text('30/04/2025',exact=True).first).to_be_visible();expect(page.get_by_text('31/05/2025',exact=True).first).to_be_visible();expect(page.get_by_text('Réglée',exact=True)).to_be_visible();page.reload();page.locator('tbody tr').filter(has_text=f['numero']).click();expect(page.get_by_text('Échéancier de paiement',exact=True)).to_be_visible()
+                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to be visible
+E     Actual value: None
+E     Error: element(s) not found 
+E     Call log:
+E       - Expect "to_be_visible" get_by_text("30/04/2025", exact=True).first with timeout 5000ms
+E       - waiting for get_by_text("30/04/2025", exact=True).first
+E     
+E     Aria snapshot:
+E     - button "Ouvrir la navigation"
+E     - button "Aucun exercice précédent" [disabled]
+E     - combobox "Exercice comptable":
+E       - option "2026 — Ouvert"
+E       - option "2025 — Ouvert" [selected]
+E     - button "Exercice 2026"
+E     - button "ATLAS RECETTE HISABPRO SARL — FICTIVE"
+E     - main:
+E       - heading "Factures" [level=1]
+E       - text: 1 facture en retard de paiement
+E       - button "Exporter CSV"
+E       - button "Nouvelle facture"
+E       - dialog "Facture FA-2025-001":
+E         - text: Facture FA-2025-001
+E         - button "Fermer"
+E         - text: Type Vente Date 01/04/25 Tiers
+E         - strong: Client Services Recette
+E         - text: Réf. VAR-ECHEANCIER-827 Validation Validée Paiement Part. payée Comptabilité Comptabilisée Échéance 30/04/25 (543j retard) Échéancier de paiement 1 échéance ouverte 1
+E         - strong: 30/04/25
+E         - text: Échéance 1/2
+E         - strong: 600,00 MAD
+E         - text: 0,00 MAD restant Réglée 2
+E         - strong: 31/05/25
+E         - text: Échéance 2/2
+E         - strong: 600,00 MAD
+E         - text: 600,00 MAD restant 512 j retard
+E         - list "Lignes de la facture":
+E           - listitem:
+E             - text: Description
+E             - strong: Prestation de recette
+E             - text: Quantité 1 Prix unitaire HT 1.000,00 MAD TVA 20% Montant HT
+E             - strong: 1.000,00 MAD
+E         - text: Total HT 1.000,00 MAD Total TVA 200,00 MAD Total TTC 1.200,00 MAD
+E         - group: Correspondance entre sociétés
+E         - text: Règlements enregistrés 2025-04-30 — virement VAR-ECHEANCIER-PAY-827 600,00 MAD Solde restant 600,00 MAD Utilisez l'icône dans la liste pour enregistrer un règlement
+E         - button "Créer un avoir"
+E         - button "Télécharger PDF"
+E         - button "Préparer e-mail"
+E       - paragraph: Indicateurs de facturation sur la période sélectionnée, factures validées hors proformas et annulations, nets des avoirs datés sur cette période. HT après remises, avant escompte. Coûts moyens indicatifs ; ne remplace pas le CA comptable.
+E       - text: Facturation nette HT 1.000,00 MAD Ventes nettes TTC ▼ détail 1.200,00 MAD Achats nets TTC 0,00 MAD En attente 0 factures En retard 1 facture
+E       - searchbox "Rechercher une facture par numéro ou tiers"
+E       - button "Tous" [pressed]
+E       - button "Ventes"
+E       - button "Achats"
+E       - button "Tous statuts" [pressed]
+E       - button "Payées"
+E       - button "Part. payées"
+E       - button "En attente"
+E       - button "En retard"
+E       - text: Du
+E       - textbox "Date de début des factures et indicateurs"
+E       - text: au
+E       - textbox "Date de fin des factures et indicateurs"
+E       - status: 1 facture
+E       - table:
+E         - rowgroup:
+E           - row "N° Facture Type Date Tiers Articles HT TVA TTC Statut Échéance":
+E             - columnheader "N° Facture"
+E             - columnheader "Type"
+E             - columnheader "Date"
+E             - columnheader "Tiers"
+E             - columnheader "Articles"
+E             - columnheader "HT"
+E             - columnheader "TVA"
+E             - columnheader "TTC"
+E             - columnheader "Statut"
+E             - columnheader "Échéance"
+E             - columnheader
+E         - rowgroup:
+E           - row "FA-2025-001 Vente 01/04/25 Client Services Recette 1×Prestation de recette 1.000,00 200,00 1.200,00 Validée Part. payée Compta 30/04/25 (543j retard) Suppression impossible (validée)":
+E             - cell "FA-2025-001"
+E             - cell "Vente"
+E             - cell "01/04/25"
+E             - cell "Client Services Recette":
+E               - strong: Client Services Recette
+E             - cell "1×Prestation de recette"
+E             - cell "1.000,00"
+E             - cell "200,00"
+E             - cell "1.200,00"
+E             - cell "Validée Part. payée Compta"
+E             - cell "30/04/25 (543j retard)"
+E             - cell "Suppression impossible (validée)":
+E               - button "Créer bon de livraison"
+E               - button "Encaisser le client"
+E               - button "Dupliquer la facture"
+E               - button "Suppression impossible (validée)" [disabled]
+
+Test\test_e2e_cahier_echeancier827_isole.py:37: AssertionError</failure></testcase></testsuite></testsuites>

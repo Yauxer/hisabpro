@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="56.509" timestamp="2026-10-24T22:33:15.480112+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_acomptes_saisie795_isole" name="test_795_acompte1_enregistre_conserve_saisie_acompte2[1440]" time="52.337"><failure message="AssertionError: Locator expected to have Value '2000'&#10;Actual value:  &#10;Call log:&#10;  - Expect &quot;to_have_value&quot; locator(&quot;tr&quot;).filter(has=get_by_placeholder(&quot;Réf. paiement&quot;, exact=True)).nth(1).get_by_placeholder(&quot;Montant&quot;, exact=True) with timeout 5000ms&#10;  - waiting for locator(&quot;tr&quot;).filter(has=get_by_placeholder(&quot;Réf. paiement&quot;, exact=True)).nth(1).get_by_placeholder(&quot;Montant&quot;, exact=True)&#10;    14 × locator resolved to &lt;input min=&quot;0&quot; value=&quot;&quot; step=&quot;0.01&quot; type=&quot;number&quot; placeholder=&quot;Montant&quot;/&gt;&#10;       - unexpected value &quot;&quot;&#10;&#10;Aria snapshot:&#10;- spinbutton &quot;Montant&quot;">application = {'api_url': 'http://127.0.0.1:53945', 'web_url': 'http://127.0.0.1:53946', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg__v4r9a2e'), 'nonce': 'aa2faf72c29c4f8185b90474dc561038', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette795_acompte_avant_dom/test_795_acompte1_enregistre_c0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_795_acompte1_enregistre_conserve_saisie_acompte2(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'saisie_acompte795') as (api,page,sid,preuve):
+      ok(api.put('/api/fiscalite/is/2026/parametres',json={'acomptes_reference_forcee':'26766','acomptes_justification_reference_forcee':'Référence synthétique du contrôle de saisie, société temporaire uniquement.'}));page.goto(application['web_url']+'/cloture');page.get_by_label('Exercice actif',exact=True).select_option('2026');page.goto(application['web_url']+'/fiscalite-is');rows=page.locator('tr').filter(has=page.get_by_placeholder('Réf. paiement',exact=True));expect(rows).to_have_count(4)
+      for idx,montant,date_,ref in [(0,'6691.50','2026-03-31','AP1-SAISIE795'),(1,'2000','2026-06-30','AP2-SAISIE795')]:
+       row=rows.nth(idx);row.get_by_placeholder('Montant',exact=True).fill(montant);row.locator('input[type="date"]').fill(date_);row.get_by_placeholder('Réf. paiement',exact=True).fill(ref)
+      with page.expect_response(lambda r:r.url.endswith('/api/fiscalite/is/2026') and r.request.method=='GET') as lecture:
+       with page.expect_response(lambda r:r.url.endswith('/api/fiscalite/is/2026/acomptes/1') and r.request.method=='PUT') as ecriture:rows.nth(0).get_by_role('button',name='Enregistrer',exact=True).click()
+      ok(ecriture.value);ok(lecture.value);expect(rows.nth(0).get_by_placeholder('Montant',exact=True)).to_have_attribute('value','6691.5')
+      preuve['saisie_acompte795']={'reference_forcee':'26766.00','raison':'Repère technique isolé, aucun lien avec la vraie société ni aucune écriture comptable.','apres_enregistrement1':{'montant2':rows.nth(1).get_by_placeholder('Montant',exact=True).input_value(),'date2':rows.nth(1).locator('input[type="date"]').input_value(),'reference2':rows.nth(1).get_by_placeholder('Réf. paiement',exact=True).input_value()}}
+&gt;     expect(rows.nth(1).get_by_placeholder('Montant',exact=True)).to_have_value('2000');expect(rows.nth(1).locator('input[type="date"]')).to_have_value('2026-06-30');expect(rows.nth(1).get_by_placeholder('Réf. paiement',exact=True)).to_have_value('AP2-SAISIE795')
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to have Value '2000'
+E     Actual value:  
+E     Call log:
+E       - Expect "to_have_value" locator("tr").filter(has=get_by_placeholder("Réf. paiement", exact=True)).nth(1).get_by_placeholder("Montant", exact=True) with timeout 5000ms
+E       - waiting for locator("tr").filter(has=get_by_placeholder("Réf. paiement", exact=True)).nth(1).get_by_placeholder("Montant", exact=True)
+E         14 × locator resolved to &lt;input min="0" value="" step="0.01" type="number" placeholder="Montant"/&gt;
+E            - unexpected value ""
+E     
+E     Aria snapshot:
+E     - spinbutton "Montant"
+
+Test\test_e2e_acomptes_saisie795_isole.py:23: AssertionError</failure></testcase></testsuite></testsuites>

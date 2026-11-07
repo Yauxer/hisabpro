@@ -1,0 +1,2289 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="13" failures="1" skipped="0" tests="33" time="26.817" timestamp="2026-10-28T12:13:05.183909+01:00" hostname="Taiyou"><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_sources_non_officielles_refusees[http://www.finances.gov.ma/a]" time="0.002" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_sources_non_officielles_refusees[https://finances.gov.ma.evil.example/x]" time="0.001" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_sources_non_officielles_refusees[https://127.0.0.1/]" time="0.002" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_sources_non_officielles_refusees[https://user@www.finances.gov.ma/]" time="0.002" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_sources_non_officielles_refusees[https://www.finances.gov.ma:8443/x]" time="0.001" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_sources_non_officielles_refusees[javascript:alert(1)]" time="0.001" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_contenus_ambigus_ou_formules_libres_refuses[mutation0]" time="0.002" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_contenus_ambigus_ou_formules_libres_refuses[mutation1]" time="0.001" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_contenus_ambigus_ou_formules_libres_refuses[mutation2]" time="0.001" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_contenus_ambigus_ou_formules_libres_refuses[mutation3]" time="0.001" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_contenus_ambigus_ou_formules_libres_refuses[mutation4]" time="0.001" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_contenus_ambigus_ou_formules_libres_refuses[mutation5]" time="0.001" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_whitelist_exacte[GET-/api/employes/personnel/elements/autre]" time="0.003" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_whitelist_exacte[GET-/api/employes/personnel/elements/1/autre]" time="0.002" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_whitelist_exacte[POST-/api/employes/personnel/elements/1]" time="0.001" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_whitelist_exacte[PUT-/api/employes/personnel/elements/1]" time="0.001" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_whitelist_exacte[POST-/api/employes/personnel/elements/versions/1/approuver/autre]" time="0.001" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_whitelist_exacte[DELETE-/api/employes/personnel/elements]" time="0.001" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_inconnues_ne_deviennent_pas_soumises_ou_exonerees" time="0.002" /><testcase classname="Test.test_paie889_catalogue_unitaire" name="test_889_plafond_exact_separe_et_serie_sans_arrondi_implicite" time="0.001"><failure message="TypeError: dict() got multiple values for keyword argument 'traitement'">def test_889_plafond_exact_separe_et_serie_sans_arrondi_implicite():
+&gt;       c=contenu();c['regles']['IR']=regle(traitement='PLAFOND_MONTANT',plafond='0.01',unite='operation')
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_paie889_catalogue_unitaire.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+kw = {'traitement': 'PLAFOND_MONTANT', 'plafond': '0.01', 'unite': 'operation'}
+
+&gt;   def regle(**kw):return dict(traitement='A_VERIFIER',conditions='Hypothèse fictive de test',**kw)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   TypeError: dict() got multiple values for keyword argument 'traitement'
+
+Test\test_paie889_catalogue_unitaire.py:11: TypeError</failure></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_catalogue_vide_versionnement_et_absence_ecriture" time="21.354"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_ventilation_ir_cnss_separee_sans_inventer_cumul" time="0.001"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_montants_invalides_refuses[nan]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_montants_invalides_refuses[infini]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_montants_invalides_refuses[negatif]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_montants_invalides_refuses[precision]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_montants_invalides_refuses[booleen]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_montants_invalides_refuses[float]" time="0.001"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_validation_reglementaire_explicite_et_preuves" time="0.002"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_doublon_incompatibilites_et_mapping_inconnus" time="0.002"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_isolation_droits_personnel_seul_et_sql_immuable" time="0.001"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_concurrence_une_seule_decision_et_rejet_trace" time="0.001"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_periode_expiree_ne_reactive_pas_version_precedente" time="0.003"><error message="failed on setup with &quot;RuntimeError: Compilation UI complète échouée : X [ERROR] Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;&#10;    src/pages/PaieElements.jsx:18:300:&#10;      18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;&#10;         │                                                                     ^&#10;         ╵                                                                     }&#10;&#10;C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143&#10;      throw reject;&#10;      ^&#10;&#10;Error: Build failed with 1 error:&#10;src/pages/PaieElements.jsx:18:300: ERROR: Expected &quot;}&quot; but found &quot;&gt;&quot;&#10;    at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52&#10;    at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)&#10;    at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16&#10;    at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)&#10;    at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)&#10;    at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)&#10;    at Socket.emit (node:events:509:28)&#10;    at addChunk (node:internal/streams/readable:563:12) {&#10;  errors: [&#10;    {&#10;      detail: undefined,&#10;      id: '',&#10;      location: {&#10;        column: 300,&#10;        file: 'src/pages/PaieElements.jsx',&#10;        length: 1,&#10;        line: 18,&#10;        lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur=&quot;lg&quot;&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,&#10;        namespace: '',&#10;        suggestion: '}'&#10;      },&#10;      notes: [],&#10;      pluginName: '',&#10;      text: 'Expected &quot;}&quot; but found &quot;&gt;&quot;'&#10;    }&#10;  ],&#10;  warnings: []&#10;}&#10;&#10;Node.js v24.17.0&quot;">@pytest.fixture(scope='module')
+    def application():
+        executions = []
+        def preparer(engine, cluster):
+            def garde():
+                assert verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+            garde()
+            with engine.begin() as db:
+                db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB '
+                                'NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+            for fichier in (*candidats(), *(BACK / n for n in (*COMPLEMENTS, *EXTENSIONS))):
+                garde()
+                tables_vides(engine, cluster)
+                raw = engine.raw_connection()
+                try:
+                    raw.autocommit = True
+                    with raw.cursor() as cursor:
+                        cursor.execute(fichier.read_text(encoding='utf-8'))
+                finally:
+                    raw.close()
+                tables_vides(engine, cluster)
+                executions.append((fichier.name, hashlib.sha256(fichier.read_bytes()).hexdigest()))
+            assert len(executions) == 78 and len(set(n for n, _ in executions)) == 78
+            catalogue(engine)
+&gt;       with application_isolee(preparer_runtime=preparer) as app:
+
+Test\test_e2e_runtime_consolide_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:137: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+preparer_runtime = &lt;function application.&lt;locals&gt;.preparer at 0x0000028DD7F93CE0&gt;
+
+    @contextmanager
+    def application_isolee(*, preparer_runtime=None):
+        import models
+        from database import Base
+    
+        node = shutil.which("node")
+        if not node or not (ROOT / "node_modules/esbuild").is_dir():
+            raise RuntimeError("Node/esbuild locaux requis pour la recette E2E.")
+        espace = (ROOT / ".codex-tests").resolve()
+        espace.mkdir(exist_ok=True)
+        with cluster_isole() as cluster, DossierE2E(prefix="hisabpro_e2e_", dir=espace) as temp:
+            temp = Path(temp).resolve()
+            assert temp.is_relative_to(espace) and temp.name.startswith("hisabpro_e2e_")
+            verifier_cible_isolee(cluster["url"], cluster["directory"], cluster["nonce"])
+            engine = create_engine(cluster["url"])
+            processus, journaux = [], []
+            web_server = web_thread = None
+            try:
+                # La garde précède strictement tout DDL et toute création serveur.
+                Base.metadata.create_all(engine)
+                with engine.connect() as connection:
+                    raw = connection.connection.driver_connection
+                    with raw.cursor() as cursor:
+                        cursor.execute((BACK / "036_production_hardening.sql").read_text(encoding="utf-8"))
+                    raw.commit()
+                with Session(engine) as db:
+                    # Référentiel volontairement limité et synthétique ; pas de
+                    # prétention de recette exhaustive du plan CGNC.
+                    db.add_all([models.CompteCGNCReference(numero=n, libelle=label, classe=int(n[0]), type_compte="SP")
+                                for n, label in [("1111", "Capital social"), ("5141", "Banques"),
+                                                 ("3421", "Clients"), ("4411", "Fournisseurs")]])
+                    db.commit()
+                    assert db.query(models.Societe).count() == 0
+                connexion_url = cluster['url']
+                if preparer_runtime is not None:
+                    # Extension de recette uniquement : jamais d'URL externe ni
+                    # de rôle arbitraire. Le préparateur reçoit le seul bac créé.
+                    verifier_cible_isolee(cluster['url'], cluster['directory'], cluster['nonce'])
+                    preparer_runtime(engine, cluster)
+                    connexion_url = make_url(cluster['url']).set(username='hisabpro').render_as_string(hide_password=False)
+                    runtime = create_engine(connexion_url)
+                    try:
+                        with runtime.connect() as db:
+                            role = db.execute(text('SELECT current_user,session_user,rolcanlogin,rolsuper,rolcreatedb,'
+                                'rolcreaterole,rolreplication,rolbypassrls FROM pg_roles WHERE rolname=current_user')).one()
+                            assert tuple(role) == ('hisabpro','hisabpro',True,False,False,False,False,False)
+                            assert not db.scalar(text("SELECT pg_has_role(current_user,'hisabpro_recette','MEMBER')"))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_class WHERE relowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                            assert not db.scalar(text('SELECT count(*) FROM pg_proc WHERE proowner=(SELECT oid FROM pg_roles WHERE rolname=current_user)'))
+                    finally:
+                        runtime.dispose()
+                api_port, web_port = port_loopback_libre(), port_loopback_libre()
+                while web_port == api_port:
+                    web_port = port_loopback_libre()
+                api_url, web_url = f"http://127.0.0.1:{api_port}", f"http://127.0.0.1:{web_port}"
+                env = os.environ.copy()
+                env.update(DATABASE_URL=connexion_url, APP_ENV="test", HISABPRO_CREATE_TABLES="false",
+                           SECRET_KEY="secret-prive-synthetique-e2e-" + cluster["nonce"], ALGORITHM="HS256",
+                           CORS_ORIGINS=web_url, PYTHON_DOTENV_DISABLED="1", PYTHONUTF8="1",
+                           VITE_API_URL=api_url, BROWSER="none", HISABPRO_UPLOAD_DIR=str(temp / "uploads"))
+                options = {"creationflags": subprocess.CREATE_NO_WINDOW} if os.name == "nt" else {"start_new_session": True}
+                api_log = temp / "api.log"
+                api_out = api_log.open("w", encoding="utf-8")
+                journaux.append(api_out)
+                # La seule différence autorisée pour l'API est le nom du rôle.
+                assert make_url(env['DATABASE_URL']).set(username='hisabpro_recette') == make_url(cluster['url'])
+                verifier_cible_isolee(cluster['url'], cluster["directory"], cluster["nonce"])
+                api_process = subprocess.Popen([sys.executable, "-X", "utf8", "-m", "uvicorn", "main:app",
+                                                "--host", "127.0.0.1", "--port", str(api_port), "--log-level", "warning"],
+                                               cwd=BACK, env=env, stdout=api_out, stderr=subprocess.STDOUT, **options)
+                processus.append(api_process)
+                attendre_http(api_url + "/api/health", api_process, api_log)
+                web_dir = temp / "web"
+                web_dir.mkdir()
+                # Le serveur de recette doit servir les mêmes assets statiques que
+                # Vite : les polices locales ne passent pas par le bundle esbuild.
+                shutil.copytree(ROOT / "public", web_dir, dirs_exist_ok=True)
+                script = temp / "build_ui.cjs"
+                script.write_text("""
+    const esbuild=require(require.resolve('esbuild',{paths:[process.cwd()]}));
+    esbuild.buildSync({entryPoints:['src/main.jsx'],bundle:true,format:'esm',jsx:'automatic',
+     outfile:process.argv[2],loader:{'.png':'file','.jpg':'file','.svg':'file','.woff':'file','.woff2':'file'},
+     define:{'import.meta.env':JSON.stringify({VITE_API_URL:process.argv[3],DEV:false,PROD:true,MODE:'test'}),
+             'process.env.NODE_ENV':JSON.stringify('production')}});
+    """, encoding="utf-8")
+                web_log = temp / "web.log"
+                web_out = web_log.open("w", encoding="utf-8")
+                journaux.append(web_out)
+                build = subprocess.run([node, str(script), str(web_dir / "app.js"), api_url], cwd=ROOT,
+                                       env=env, stdout=web_out, stderr=subprocess.STDOUT, timeout=45,
+                                       creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+                if build.returncode:
+                    web_out.flush()
+&gt;                   raise RuntimeError("Compilation UI complète échouée : " + web_log.read_text(encoding="utf-8", errors="replace")[-4000:])
+E                   RuntimeError: Compilation UI complète échouée : X [ERROR] Expected "}" but found "&gt;"
+E                   
+E                       src/pages/PaieElements.jsx:18:300:
+E                         18 │ ...er()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;
+E                            │                                                                     ^
+E                            ╵                                                                     }
+E                   
+E                   C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:2143
+E                         throw reject;
+E                         ^
+E                   
+E                   Error: Build failed with 1 error:
+E                   src/pages/PaieElements.jsx:18:300: ERROR: Expected "}" but found "&gt;"
+E                       at failureErrorWithLog (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:1472:15)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:945:25
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:897:52
+E                       at buildResponseToResult (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:943:7)
+E                       at C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:970:16
+E                       at responseCallbacks.&lt;computed&gt; (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:622:9)
+E                       at handleIncomingPacket (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:677:12)
+E                       at Socket.readFromStdout (C:\Users\Y_N_e\hisabpro - GPT\node_modules\esbuild\lib\main.js:600:7)
+E                       at Socket.emit (node:events:509:28)
+E                       at addChunk (node:internal/streams/readable:563:12) {
+E                     errors: [
+E                       {
+E                         detail: undefined,
+E                         id: '',
+E                         location: {
+E                           column: 300,
+E                           file: 'src/pages/PaieElements.jsx',
+E                           length: 1,
+E                           line: 18,
+E                           lineText: `  return &lt;Modal titre={titre} onFermer={()=&gt;{if(!occupe)onFermer()}} largeur="lg"&gt;&lt;form className={s.formulaire} aria-label={titre} onSubmit={async e=&gt;{e.preventDefault();if(occupe)return;setOccupe(true);setErreur('');try{await onEnvoyer()}catch(err){setErreur(err.message)}finally{setOccupe(false)}}&gt;`,
+E                           namespace: '',
+E                           suggestion: '}'
+E                         },
+E                         notes: [],
+E                         pluginName: '',
+E                         text: 'Expected "}" but found "&gt;"'
+E                       }
+E                     ],
+E                     warnings: []
+E                   }
+E                   
+E                   Node.js v24.17.0
+
+Test\e2e_isole_support.py:185: RuntimeError</error></testcase></testsuite></testsuites>

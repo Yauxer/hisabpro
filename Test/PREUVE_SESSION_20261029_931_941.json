@@ -1,0 +1,2713 @@
+{
+  "date": "2026-10-29",
+  "debut_execution_utc": "12:08:49",
+  "lots": {
+    "931": {
+      "cas": 34,
+      "preuve": "Test/PREUVE_MVP_931.json",
+      "sha256": "012ddb7a6bb4f8a3438dc87850db1bb332967919108b0d8e07befce61aa7b660"
+    },
+    "933": {
+      "cas": 13,
+      "preuve": "Test/PREUVE_MVP_933.json",
+      "sha256": "cc132fb9c3e2a7f720238c3ee2e8fff45344b3f3903e3b50f06e543d40f4b38c"
+    },
+    "935": {
+      "cas": 68,
+      "preuve": "Test/PREUVE_MVP_935.json",
+      "sha256": "a58e8353102f27ccb26c1e2e9be2664def181b83ac8492da9da27d248a8232f5"
+    },
+    "937": {
+      "cas": 64,
+      "preuve": "Test/PREUVE_MVP_937.json",
+      "sha256": "e3740e7d7304e3ed76e427e22a6f73f99c482c3964cafa09909726177a53c9a8"
+    },
+    "939": {
+      "cas": 70,
+      "preuve": "Test/PREUVE_MVP_939.json",
+      "sha256": "142ea0d9e0114b42b86982426a1d83984427b1696cec70d84a9421ace8541f3e"
+    },
+    "941": {
+      "cas": 114,
+      "preuve": "Test/PREUVE_MVP_941.json",
+      "sha256": "34386553b8cab1667b32c58ca19a3b793a2b16999481564d129ff248e608f4aa"
+    }
+  },
+  "nombre_distinct": 363,
+  "repartition": {
+    "Edge_API_PostgreSQL_natif_isole": 80,
+    "API_SQL_PostgreSQL_natif_isole": 160,
+    "unitaires": 121,
+    "restauration_PostgreSQL_native_isolee": 2
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_registre_et_plan_indisponibles_ne_deviennent_pas_vides[lecture-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_registre_et_plan_indisponibles_ne_deviennent_pas_vides[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_registre_et_plan_indisponibles_ne_deviennent_pas_vides[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_registre_et_plan_indisponibles_ne_deviennent_pas_vides[admin-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_registre_reellement_vide_affiche_zero_apres_lecture[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_registre_reellement_vide_affiche_zero_apres_lecture[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_modification_enregistree_mais_rafraichissement_indisponible[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_modification_enregistree_mais_rafraichissement_indisponible[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_droits929_isole::test_929_registre_et_reconciliation_respectent_role[lecture-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_droits929_isole::test_929_registre_et_reconciliation_respectent_role[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_droits929_isole::test_929_registre_et_reconciliation_respectent_role[comptable-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_droits929_isole::test_929_registre_et_reconciliation_respectent_role[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_droits929_isole::test_929_registre_et_reconciliation_respectent_role[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_droits929_isole::test_929_registre_et_reconciliation_respectent_role[admin-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_apercu927_isole::test_927_consulter_calcul_avant_sortie_sans_ancien_apercu_reutilise[cession-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_apercu927_isole::test_927_consulter_calcul_avant_sortie_sans_ancien_apercu_reutilise[cession-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_apercu927_isole::test_927_consulter_calcul_avant_sortie_sans_ancien_apercu_reutilise[rebut-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_apercu927_isole::test_927_consulter_calcul_avant_sortie_sans_ancien_apercu_reutilise[rebut-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_apercu_sans_mutation_et_montants_identiques_enregistrement[lineaire-4813.33-19186.67-813.33-13.33]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_apercu_sans_mutation_et_montants_identiques_enregistrement[degressif-10080.00-13920.00-6080.00-480.00]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_lecture_seule_sql_meme_avec_dependance_et_aucun_exercice_cree",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_changement_demande_ou_dotation_rend_apercu_perime",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_incoherence_dotation_refusee_avant_toute_ecriture",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_roles_societes_dates_et_montants_non_finis",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_bien_non_amortissable_et_rebut",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_isole::test_acquisition_plan_acheve_dotations_centimes_et_journal_ui",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_sortie_isole::test_sortie_ui_oracle_validation_refus_et_originaux_immuables[cession]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_sortie_isole::test_sortie_ui_oracle_validation_refus_et_originaux_immuables[rebut]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_cession_differee_isole::test_cession_differee_encaissement_et_validations_browser",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_degressif_isole::test_oracle_degressif_bascule_lineaire_independant",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_degressif_isole::test_edge_cinq_dotations_degressives_et_acquisition_definitive_conservee[reseau-normal]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_degressif_isole::test_edge_cinq_dotations_degressives_et_acquisition_definitive_conservee[reseau-ralenti]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_cahier_integrite839_isole::test_839_cycle_annuel_et_integrite[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_e2e_cahier_integrite839_isole::test_839_cycle_annuel_et_integrite[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final",
+      "lot": "931"
+    },
+    {
+      "id": "Test.test_recette_fiscale755_isole::test_755_api_csv_sources_solde_et_exports_sans_ecriture",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_recette_fiscale755_isole::test_755_csv_errone_sans_nouvelle_preparation[doublon]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_recette_fiscale755_isole::test_755_csv_errone_sans_nouvelle_preparation[nonfini]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_recette_fiscale755_isole::test_755_payeur_avant_juillet_revue_et_dependances_reprises",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_affectations_inversees_references_exactes_et_ancienne_version",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_b12_change_cm_requise_avant_nouvelle_proposition",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_piece_fictive_et_exports_manifestes_logo_sources_figees",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_lecteur_consulte_et_telecharge_le_dossier_annuel755[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_lecteur_consulte_et_telecharge_le_dossier_annuel755[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_csv_doublon_et_nan_refuses_dans_le_vrai_import[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_csv_doublon_et_nan_refuses_dans_le_vrai_import[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2",
+      "lot": "933"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[normal]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[inconnu]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[zero]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[neant]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[neant_seul]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[exhaustivite]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[identite]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[sansif_avec_tp]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[regime_cpu]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[regime_ae]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[location]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[date_hors_periode]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[date_evenement_hors_periode]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[date_evenement_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[sens_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[categorie_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[source_non_revue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[absence_retenue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[identification_partagee]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[negatif_net]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_oracle_inconnus_corrections_et_completude[grand]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise-Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise-0.001]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise-10000000000000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise-1e9999]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[soumis-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[retenu-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[retenu-601]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[beneficiaire_ref-B-INCONNU]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[date_comptabilisation-2026-02-30]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[date_evenement-20260710]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[sens-Autre]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[categorie-Salaire]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[evenement-Date facture]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[reference_source-]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[source_revue-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[inconnu-0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[omission]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[profil_double]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[benef_double]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[source_double]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[correction_sans_origine]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[correction_meme_origine]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[allocation_avec_origine]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[absence_contradictoire]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[sans_benef_ref]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[regime_inconnu]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[neant_contradictoire]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[montant_absence]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[date_absence]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[declaration_injectee]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_versions_rejeu_source_figee_sans_journal",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_roles_societes_hash_concurrence",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_remunerations_tiers759_isole::test_759_exports_sources_logo_sans_ecriture",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_e2e_remunerations_tiers759_isole::test_759_nan_refuse_identite_incomplete_puis_reprise_sans_f5[NaN]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_e2e_remunerations_tiers759_isole::test_759_nan_refuse_identite_incomplete_puis_reprise_sans_f5[Infinity]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_e2e_remunerations_tiers759_isole::test_759_get_reel_tardif_ignore[version]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_e2e_remunerations_tiers759_isole::test_759_get_reel_tardif_ignore[fermeture]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_e2e_remunerations_tiers759_isole::test_759_get_reel_tardif_ignore[jeton]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_e2e_remunerations_tiers759_isole::test_759_post_reel_tardif_ne_remplace_pas_selection",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_qualification_tiers935_isole::test_935_conserver_identite_et_somme_inconnues_sans_zero_ni_ecriture",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_restauration_tiers759_isole::test_759_restaurer_cm_qualifiee_et_tous_complements",
+      "famille": "restauration_PostgreSQL_native_isolee",
+      "statut": "reussi",
+      "campagne": "tiers935_final",
+      "lot": "935"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[normal]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[c1]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[c3]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[base_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[classe_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[base_non_revue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[classe_non_revue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[periode_non_revue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[referentiel]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[exhaustivite]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[profil_partiel]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[annee_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[annee2025]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[annee2027]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[janvier]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[particulier]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[sans_local]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[avis_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[avis_non_rattache]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[avis_ref_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[avis_partage]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[zero]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[petit]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[arrondi]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[grand]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[periode_balance_distincte]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-0.001]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-10000000000000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-1e9999]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[montant_avis-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[montant_avis--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[classe-C4]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[classe-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[base_revue-automatique]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[regime-Exon\\xe9r\\xe9 automatiquement]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[etablissement_ref-]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[reference_source-]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[inconnu-0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[omission]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[profil_double]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[etablissement_double]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[annee_invalide]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[annee_bool]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[du_injecte]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[neant_contradictoire]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[51etablissements]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_versions_rejeu_sources_hors_journal",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_roles_societes_concurrence",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_exports_sources_logo_texte",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_nan_refuse_base_incomplete_puis_reprise_sans_f5[NaN]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_nan_refuse_base_incomplete_puis_reprise_sans_f5[Infinity]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_get_reel_tardif_ignore[version]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_get_reel_tardif_ignore[fermeture]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_get_reel_tardif_ignore[jeton]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_post_reel_tardif_ne_remplace_pas_selection",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_qualification_tp937_isole::test_937_variantes_base_classe_avis_conservees_sans_du_ni_ecriture",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_restauration_tp761_isole::test_761_restaurer_cm_qualifiee_et_tous_complements",
+      "famille": "restauration_PostgreSQL_native_isolee",
+      "statut": "reussi",
+      "campagne": "tp937_final",
+      "lot": "937"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[normal]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[sukuk]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[location]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[inconnu]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[autre]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[date_hors_periode]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[ancien_credit]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[periode]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[exhaustivite]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[profil]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[exclu]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[tous_utilises]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[absence]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[neant_seul]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[ancien]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[futur]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[grand]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[location_avant]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[allocation_inconnue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[banque_avant]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[banque_apres]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[prive_avant]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[prive_apres]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[payeur_inconnu]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[allocation_apres_retenue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_versions_rejeu_lecture_sans_recalcul",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-0.001]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-1e9999]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-10000000000000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[autres_utilisations-201]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[deja_impute_acomptes-300]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[exercice_rattachement-2027]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[exercice_rattachement-2026.0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[date_retenue-2026-02-30]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[date_retenue-20260320]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[date_allocation-2026-02-30]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[categorie_payeur-Particulier]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[eligibilite_confirmee-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[type_credit-TVA]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[reference_source-]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[inconnu-0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[omission]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[doublon_table]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[doublon_source]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[deux_profils]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[absence_contradictoire]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[solde_injecte]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[neant_seul]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[absence_confirmee]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_contexte_change_comparaison_et_versions_figees",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_droits_societes_devise_hash_concurrence",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_exports_logo_formules_sources_manifestes",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_nan_refuse_puis_part_exclue_sans_f5",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_contexte_change_actualisation_explicite_interface",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_get_reel_tardif_ignore[version]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_get_reel_tardif_ignore[fermeture]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_get_reel_tardif_ignore[jeton]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_post_reel_tardif_ne_remplace_pas_selection",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_date_allocation_payeur_et_entree_en_vigueur_interface[location_avant-Indisponible]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_date_allocation_payeur_et_entree_en_vigueur_interface[location_apres-325,00 MAD]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_date_allocation_payeur_et_entree_en_vigueur_interface[banque_avant-Indisponible]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_qualification_credits939_isole::test_939_versions_inconnues_et_absence_confirmee_sans_imputation",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2",
+      "lot": "939"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[normal]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[verse_partiel]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[reference_inconnue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[reference_nulle]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[ref_non_qualifiee]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[court]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[regime]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[inconnu]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[date_ancienne]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[date_future]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[sans_credits]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[references_inversees]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[excedent_inconnu]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[origine2014]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[absence]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[neant_seul]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[ancien]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[futur]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[arrondi]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[decale]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[minimum]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_oracles_calendrier_rapprochement_et_inconnus[minimum_mauvais_numero]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_versions_rejeu_lecture_sans_recalcul",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse-Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse-0.001]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse-1e9999]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[verse-10000000000000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[credit_anterieur-101]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[date_mouvement-2026-02-30]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[numero-5]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[rattachement_confirme-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[reference_source-]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_rejets_sans_mutation[inconnu-0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[omission]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[doublon_source]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[deux_profils]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[absence_contradictoire]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[solde_injecte]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[date_controle]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_structures_et_sources[minimum_reference]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_credits_change_comparaison_et_versions_figees",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_droits_societes_devise_hash_concurrence",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_acomptes751_isole::test_751_exports_logo_formules_sources_manifestes",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_acomptes751_isole::test_751_acomptes_droits_exports_brouillon_mobile[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_acomptes751_isole::test_751_acomptes_droits_exports_brouillon_mobile[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_acomptes751_isole::test_751_acomptes_droits_exports_brouillon_mobile[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_acomptes751_isole::test_751_nan_refuse_puis_reference_credit_corrigee_sans_f5",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_acomptes751_isole::test_751_credits_changes_actualisation_explicite_interface",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_acomptes751_isole::test_751_get_reel_tardif_ignore[version]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_acomptes751_isole::test_751_get_reel_tardif_ignore[fermeture]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_acomptes751_isole::test_751_get_reel_tardif_ignore[jeton]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_acomptes751_isole::test_751_post_reel_tardif_ne_remplace_pas_selection",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[normal]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[css_zero]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[css_30000]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[b12_absent]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[cm_absent]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[cr_absent]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[ap_absent]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[b12_revue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[cm_revue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[exhaustivite]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[excedent_revue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[ordre]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[direct_inconnu]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[cm_desynchronisee]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[ap_desynchronise]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[cm_incoherente]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[cr_incoherents]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[ap_incoherents]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[ancien_incoherent]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[nonfini_source]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[booleen_source]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[futur]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[acomptes_excedentaires]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[credits_excedentaires]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[excedent_annuel]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_oracles_coherence_sans_double_utilisation[cm_exoneree]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_versions_rejeu_lecture_sans_recalcul",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-0.001]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-1e9999]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-10000000000000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[excedent_annuel-0.01]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[ordre_examine-probable]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[b12_verifie-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[reference_source-]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_rejets_sans_mutation[inconnu-0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_structures_et_aucune_confirmation[omission]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_structures_et_aucune_confirmation[doublon_table]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_structures_et_aucune_confirmation[deux_revues]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_structures_et_aucune_confirmation[confirmation_injectee]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_structures_et_aucune_confirmation[neant]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_sources_synchronisees_ancien_calcul_fige_et_revue_explicitement_reprise",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_css_separee_n_actualise_pas_is_historique",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_droits_societes_devise_hash_concurrence",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_balance_liquidation753_isole::test_753_exports_logo_formules_sources_manifestes",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_liquidation753_isole::test_753_proposition_droits_exports_brouillon_mobile[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_liquidation753_isole::test_753_nan_refuse_puis_revue_incomplete_et_reprise_sans_f5",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_liquidation753_isole::test_753_b12_change_cm_actualisee_avant_nouvelle_proposition_interface",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_liquidation753_isole::test_753_get_reel_tardif_ignore[version]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_liquidation753_isole::test_753_get_reel_tardif_ignore[fermeture]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_liquidation753_isole::test_753_get_reel_tardif_ignore[jeton]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_e2e_balance_liquidation753_isole::test_753_post_reel_tardif_ne_remplace_pas_selection",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_qualification_cycle_is941_isole::test_941_acomptes_references_inversees_annuelle_inconnue_neant_sans_zero",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    },
+    {
+      "id": "Test.test_qualification_cycle_is941_isole::test_941_revue_ordre_non_et_excedent_inconnu_conserves_sans_solde",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "is941_final",
+      "lot": "941"
+    }
+  ],
+  "nature": "Six campagnes finales vertes séparées ;ce total ne représente pas une commande globale unique. Répétitions et essais intermédiaires exclus.",
+  "candidat_commun": "Test/CANDIDAT_MVP_941.json",
+  "fichiers_produit": 549,
+  "nouvelles_fiches_rattachees": 54,
+  "statistiques_fiches": {
+    "Réussi": 235,
+    "Partiel": 6,
+    "Non qualifié par fiche": 22,
+    "Bloqué (source)": 9
+  },
+  "non_rattachees": [
+    {
+      "fiche": "HP-FIS-031",
+      "domaine": "Fiscalité",
+      "objectif": "Variante déficit antérieur documenté"
+    },
+    {
+      "fiche": "HP-FIS-032",
+      "domaine": "Fiscalité",
+      "objectif": "Variante déduction documentée"
+    },
+    {
+      "fiche": "HP-FIS-033",
+      "domaine": "Fiscalité",
+      "objectif": "Variante TVA encaissement"
+    },
+    {
+      "fiche": "HP-LIA-001",
+      "domaine": "Liasse exports",
+      "objectif": "Finaliser dossier fiscal existant 09A"
+    },
+    {
+      "fiche": "HP-LIA-002",
+      "domaine": "Liasse exports",
+      "objectif": "PDF et Excel de liasse"
+    },
+    {
+      "fiche": "HP-EXP-001",
+      "domaine": "Exploitation",
+      "objectif": "Préparer un environnement vierge isolé"
+    },
+    {
+      "fiche": "HP-EXP-002",
+      "domaine": "Exploitation",
+      "objectif": "Migrations effectives"
+    },
+    {
+      "fiche": "HP-EXP-003",
+      "domaine": "Exploitation",
+      "objectif": "Sauvegarde intégrale"
+    },
+    {
+      "fiche": "HP-EXP-004",
+      "domaine": "Exploitation",
+      "objectif": "Restauration sur base vierge dédiée"
+    },
+    {
+      "fiche": "HP-EXP-005",
+      "domaine": "Exploitation",
+      "objectif": "Reprise après incident"
+    },
+    {
+      "fiche": "HP-EXP-006",
+      "domaine": "Exploitation",
+      "objectif": "Sécurité déploiement"
+    },
+    {
+      "fiche": "HP-EXP-007",
+      "domaine": "Exploitation",
+      "objectif": "Recette automatisée reproductible"
+    },
+    {
+      "fiche": "HP-EXP-008",
+      "domaine": "Exploitation",
+      "objectif": "Validation réglementaire finale"
+    },
+    {
+      "fiche": "HP-NEG-029",
+      "domaine": "Scénarios négatifs",
+      "objectif": "Provision fiscale non confirmée"
+    },
+    {
+      "fiche": "HP-NEG-030",
+      "domaine": "Scénarios négatifs",
+      "objectif": "Crédit IS déjà imputé excessif"
+    },
+    {
+      "fiche": "HP-NEG-031",
+      "domaine": "Scénarios négatifs",
+      "objectif": "Référence fiscale forcée sans preuve"
+    },
+    {
+      "fiche": "HP-NEG-032",
+      "domaine": "Scénarios négatifs",
+      "objectif": "Liquidation avant clôture"
+    },
+    {
+      "fiche": "HP-NEG-033",
+      "domaine": "Scénarios négatifs",
+      "objectif": "IS comptabilisé incohérent"
+    },
+    {
+      "fiche": "HP-NEG-034",
+      "domaine": "Scénarios négatifs",
+      "objectif": "ETIC montants invalides"
+    },
+    {
+      "fiche": "HP-NEG-035",
+      "domaine": "Scénarios négatifs",
+      "objectif": "ETIC ventilation incohérente"
+    },
+    {
+      "fiche": "HP-NEG-036",
+      "domaine": "Scénarios négatifs",
+      "objectif": "Pièce manquante historique"
+    },
+    {
+      "fiche": "HP-NEG-041",
+      "domaine": "Scénarios négatifs",
+      "objectif": "Archive immuable"
+    }
+  ],
+  "restaurations": "Deux campagnes de restauration native83tables des bancs759/761,source préservée et cibles nettoyées ;pas de restauration de la cible réelle ou du périmètre paie.",
+  "aucune_instance_ou_donnee_habituelle_utilisee": true,
+  "dernier_build_reel": "931 :214modules,5.55s,code0 ;frontend inchangé ensuite.",
+  "recette_humaine": "Non prévalidée ;anciens documents et statuts conservés.",
+  "production": "Non déclarée prête ;réserves métier et configuration cible restantes."
+}

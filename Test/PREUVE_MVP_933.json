@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-29",
+  "nombre_distinct": 13,
+  "campagne_unique_verte": true,
+  "repartition": {
+    "API_SQL_PostgreSQL_natif_isole": 7,
+    "Edge_API_PostgreSQL_natif_isole": 6
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_recette_fiscale755_isole::test_755_api_csv_sources_solde_et_exports_sans_ecriture",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    },
+    {
+      "id": "Test.test_recette_fiscale755_isole::test_755_csv_errone_sans_nouvelle_preparation[doublon]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    },
+    {
+      "id": "Test.test_recette_fiscale755_isole::test_755_csv_errone_sans_nouvelle_preparation[nonfini]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    },
+    {
+      "id": "Test.test_recette_fiscale755_isole::test_755_payeur_avant_juillet_revue_et_dependances_reprises",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    },
+    {
+      "id": "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    },
+    {
+      "id": "Test.test_e2e_recette_fiscale755_isole::test_755_inscription_logo_csv_b12_cm_css_credits_acomptes_solde_exports[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_affectations_inversees_references_exactes_et_ancienne_version",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_b12_change_cm_requise_avant_nouvelle_proposition",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_piece_fictive_et_exports_manifestes_logo_sources_figees",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_lecteur_consulte_et_telecharge_le_dossier_annuel755[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_lecteur_consulte_et_telecharge_le_dossier_annuel755[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_csv_doublon_et_nan_refuses_dans_le_vrai_import[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    },
+    {
+      "id": "Test.test_qualification_fiscale933_isole::test_933_csv_doublon_et_nan_refuses_dans_le_vrai_import[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "fiscal933_final2"
+    }
+  ],
+  "selection": [
+    "Test/test_recette_fiscale755_isole.py",
+    "Test/test_e2e_recette_fiscale755_isole.py",
+    "Test/test_qualification_fiscale933_isole.py"
+  ],
+  "execution": "PYTHON_DOTENV_DISABLED=1 ;SECRET_KEY fictive,DATABASE_URL inerte port1 ;python .codex-tests/lancer_session.py fiscal933_final2 <selection>. PostgreSQL et serveurs nonce fournis par fixtures.",
+  "duree_xml_s": 113.31,
+  "code_sortie": 0,
+  "historique_non_additionne": [
+    "Reprise6réussis/69.01s",
+    "Cible5réussis/2échecs assertions lecteur trop larges (sélecteur de consultation actif),54.85s,code1 ;test corrigé sans produit",
+    "Cible2 7réussis/47.68s",
+    "Finale1 13réussis/110.92s avant extension PDF/Excel individuels ;finale2 seule qualifie le dernier test"
+  ],
+  "preuves": {
+    "Test/preuves_mvp933/fiscal755_admin_preuve.json": "d103602970515fef319e626382ce920c817cf0ba8903952a8f4970dba851fa87",
+    "Test/preuves_mvp933/fiscal755_comptable_preuve.json": "9e22e7eb6d2726e34e1ecc6a5d635fb937aaf0352e37392490174a52dd4b516a",
+    "Test/preuves_mvp933/fiscal933_cible.xml": "ebe640e3599769f6ef97cce8e29aa8c830d1ddadbc98ffaf2bec0b2f5c728c2b",
+    "Test/preuves_mvp933/fiscal933_cible2.xml": "af9be794499a77d2b39abbc400b6368b4f810aabc42ad115810b14ba780eff17",
+    "Test/preuves_mvp933/fiscal933_csv_1440.json": "ae801b35a11b13a4caddf636776f16f084e6563741293791ffbf2075e206e3ab",
+    "Test/preuves_mvp933/fiscal933_csv_390.json": "662e47520f02eda61c9ba44c55d12a47f00c52a8a1a2a2c3598a7549aeff4cd6",
+    "Test/preuves_mvp933/fiscal933_final.xml": "ac8a31f60276d2f24e3cfac9830c18cdd80d10565d72564096967bfbc521a416",
+    "Test/preuves_mvp933/fiscal933_final2.xml": "2620ccaec2a8e5b6d2cc2830b100cc20c1c15c92e137ff2092742a4c25a85077",
+    "Test/preuves_mvp933/fiscal933_lecteur_1440.json": "96af470395a6a043d03a947e0c68564fce9a5c82d2b61c4173571cea58657656",
+    "Test/preuves_mvp933/fiscal933_lecteur_390.json": "fe4f0012ee5e8ea1bdfcebf6308dfb8e962e676e31ecaf514af225f981c8865d",
+    "Test/preuves_mvp933/fiscal933_piece.json": "cd91039f8d426f1cbc988961999786017edb347093e1811ac8fe6b7d946c4b65",
+    "Test/preuves_mvp933/fiscal933_references.json": "febfae93027a9339e332c422334b001517f5766c7818a69e7a112f1cfa392496",
+    "Test/preuves_mvp933/fiscal933_reprise.xml": "a9df716e9bf826141b07c3e12b7de44cc14d5378cbd5bf042f279e6ea0151ac6",
+    "Test/preuves_mvp933/fiscal933_sources.json": "6a7f2603a48d4258492c118273723b82f4a586b023de08c5af3414d773e912a1"
+  },
+  "rattachement": "Test/QUALIFICATION_FICHES_933.json",
+  "fiches_qualifiees": 14,
+  "candidat": "Test/CANDIDAT_MVP_933.json",
+  "nombre_fichiers_candidat": 549,
+  "produit_strictement_identique_au_931": true,
+  "build": "Non relancé933,frontend inchangé ;dernier réellement exécuté931 :214modules/5.55s,code0.",
+  "anciens_documents_recette_preserves": 327,
+  "aucune_base_reelle": true,
+  "restauration": "Non rejouée933 ;preuves antérieures distinctes.",
+  "limites": "14cas humains755 toujours Non testé ;préparation interne uniquement. Aucune liquidation,paiement,dépôt ou conformité réglementaire confirmés. 62fiches restent non rattachées individuellement ;IMM004 demeure Partiel."
+}

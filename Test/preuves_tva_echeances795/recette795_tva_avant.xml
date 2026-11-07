@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="5" time="0.533" timestamp="2026-10-24T22:17:23.856961+02:00" hostname="Taiyou"><testcase classname="Test.test_tva_avoirs_report795" name="test_795_report_nets_signes_avoirs[1800--500-2400-0-4700]" time="0.002"><failure message="AssertionError: assert {'tva_due': D...al('4200.00')} == {'tva_due': D...cimal('4700')}&#10;  &#10;  Omitting 1 identical items, use -vv to show&#10;  Differing items:&#10;  {'credit_fin': Decimal('4200.00')} != {'credit_fin': Decimal('4700')}&#10;  Use -v to get more diff">credit = '1800', collectee = '-500', recuperable = '2400', due = '0'
+report = '4700'
+
+    @pytest.mark.parametrize('credit,collectee,recuperable,due,report',[
+     ('1800','-500','2400','0','4700'),
+     ('4700','3000','2400','0','4100'),
+     ('50','100','-200','250','0'),
+     ('100','-500','-200','0','400'),
+     ('0','0','-80','80','0'),
+    ])
+    def test_795_report_nets_signes_avoirs(credit,collectee,recuperable,due,report):
+&gt;    r=appliquer_credit_periode(D(credit),D(collectee),D(recuperable));assert r=={'tva_due':D(due),'credit_fin':D(report)}
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: assert {'tva_due': D...al('4200.00')} == {'tva_due': D...cimal('4700')}
+E      
+E      Omitting 1 identical items, use -vv to show
+E      Differing items:
+E      {'credit_fin': Decimal('4200.00')} != {'credit_fin': Decimal('4700')}
+E      Use -v to get more diff
+
+Test\test_tva_avoirs_report795.py:14: AssertionError</failure></testcase><testcase classname="Test.test_tva_avoirs_report795" name="test_795_report_nets_signes_avoirs[4700-3000-2400-0-4100]" time="0.001" /><testcase classname="Test.test_tva_avoirs_report795" name="test_795_report_nets_signes_avoirs[50-100--200-250-0]" time="0.001"><failure message="AssertionError: assert {'tva_due': D...cimal('0.00')} == {'tva_due': D... Decimal('0')}&#10;  &#10;  Omitting 1 identical items, use -vv to show&#10;  Differing items:&#10;  {'tva_due': Decimal('50.00')} != {'tva_due': Decimal('250')}&#10;  Use -v to get more diff">credit = '50', collectee = '100', recuperable = '-200', due = '250'
+report = '0'
+
+    @pytest.mark.parametrize('credit,collectee,recuperable,due,report',[
+     ('1800','-500','2400','0','4700'),
+     ('4700','3000','2400','0','4100'),
+     ('50','100','-200','250','0'),
+     ('100','-500','-200','0','400'),
+     ('0','0','-80','80','0'),
+    ])
+    def test_795_report_nets_signes_avoirs(credit,collectee,recuperable,due,report):
+&gt;    r=appliquer_credit_periode(D(credit),D(collectee),D(recuperable));assert r=={'tva_due':D(due),'credit_fin':D(report)}
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: assert {'tva_due': D...cimal('0.00')} == {'tva_due': D... Decimal('0')}
+E      
+E      Omitting 1 identical items, use -vv to show
+E      Differing items:
+E      {'tva_due': Decimal('50.00')} != {'tva_due': Decimal('250')}
+E      Use -v to get more diff
+
+Test\test_tva_avoirs_report795.py:14: AssertionError</failure></testcase><testcase classname="Test.test_tva_avoirs_report795" name="test_795_report_nets_signes_avoirs[100--500--200-0-400]" time="0.001"><failure message="AssertionError: assert {'tva_due': D...mal('100.00')} == {'tva_due': D...ecimal('400')}&#10;  &#10;  Omitting 1 identical items, use -vv to show&#10;  Differing items:&#10;  {'credit_fin': Decimal('100.00')} != {'credit_fin': Decimal('400')}&#10;  Use -v to get more diff">credit = '100', collectee = '-500', recuperable = '-200', due = '0'
+report = '400'
+
+    @pytest.mark.parametrize('credit,collectee,recuperable,due,report',[
+     ('1800','-500','2400','0','4700'),
+     ('4700','3000','2400','0','4100'),
+     ('50','100','-200','250','0'),
+     ('100','-500','-200','0','400'),
+     ('0','0','-80','80','0'),
+    ])
+    def test_795_report_nets_signes_avoirs(credit,collectee,recuperable,due,report):
+&gt;    r=appliquer_credit_periode(D(credit),D(collectee),D(recuperable));assert r=={'tva_due':D(due),'credit_fin':D(report)}
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: assert {'tva_due': D...mal('100.00')} == {'tva_due': D...ecimal('400')}
+E      
+E      Omitting 1 identical items, use -vv to show
+E      Differing items:
+E      {'credit_fin': Decimal('100.00')} != {'credit_fin': Decimal('400')}
+E      Use -v to get more diff
+
+Test\test_tva_avoirs_report795.py:14: AssertionError</failure></testcase><testcase classname="Test.test_tva_avoirs_report795" name="test_795_report_nets_signes_avoirs[0-0--80-80-0]" time="0.002"><failure message="AssertionError: assert {'tva_due': D...cimal('0.00')} == {'tva_due': D... Decimal('0')}&#10;  &#10;  Omitting 1 identical items, use -vv to show&#10;  Differing items:&#10;  {'tva_due': Decimal('0.00')} != {'tva_due': Decimal('80')}&#10;  Use -v to get more diff">credit = '0', collectee = '0', recuperable = '-80', due = '80', report = '0'
+
+    @pytest.mark.parametrize('credit,collectee,recuperable,due,report',[
+     ('1800','-500','2400','0','4700'),
+     ('4700','3000','2400','0','4100'),
+     ('50','100','-200','250','0'),
+     ('100','-500','-200','0','400'),
+     ('0','0','-80','80','0'),
+    ])
+    def test_795_report_nets_signes_avoirs(credit,collectee,recuperable,due,report):
+&gt;    r=appliquer_credit_periode(D(credit),D(collectee),D(recuperable));assert r=={'tva_due':D(due),'credit_fin':D(report)}
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: assert {'tva_due': D...cimal('0.00')} == {'tva_due': D... Decimal('0')}
+E      
+E      Omitting 1 identical items, use -vv to show
+E      Differing items:
+E      {'tva_due': Decimal('0.00')} != {'tva_due': Decimal('80')}
+E      Use -v to get more diff
+
+Test\test_tva_avoirs_report795.py:14: AssertionError</failure></testcase></testsuite></testsuites>

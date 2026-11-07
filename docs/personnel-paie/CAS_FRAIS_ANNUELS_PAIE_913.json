@@ -1,0 +1,50 @@
+[
+  [
+    "PA-FRAIS01",
+    "Préparer les douze mois et choisir les versions",
+    "Copie isolée restaurable ; jeu909 avec règles et preuves entièrement fictives, acteurs distincts et droits requis.",
+    "P909, base9000.10 et gain800.01 par mois. Utiliser les périodes, dates et références de la feuille Periodes.",
+    "Pour chacun des douze mois, créer puis faire approuver la variable, simuler le brut, le social et les bases comme dans le guide909. Ouvrir Cumuls et frais annuels, créer un contrôle, choisir P909 et Charger les préparations. Cliquer Choisir les mois à version unique, puis inspecter chaque choix.",
+    "Douze sources réelles de test. Un mois comportant plusieurs versions reste à choisir explicitement. Aucun identifiant inventé ni addition de versions."
+  ],
+  [
+    "PA-FRAIS02",
+    "Calculer le contrôle annuel complet",
+    "PA-FRAIS01 ; exhaustivité et cadre général vérifiés dans le jeu fictif.",
+    "Référence ANNEE-FICTIVE913 ; autres déductions0.00, référence AUCUNE-AUTRE-FICTIVE913 ; motif Contrôle annuel FICTIF913. Confirmer cadre général, revenus, autres déductions et périmètre arithmétique.",
+    "Calculer et conserver. Déplier Périodes et sources conservées. Comparer les douze identifiants, versions et empreintes aux préparations sélectionnées.",
+    "Cumul du brut imposable111601.32, base des frais108001.20, cotisations déductibles720.00, taux25%, frais27000.3000 et RNI arithmétique83881.0200. Aucun versement ou retenue mensuelle déterminé."
+  ],
+  [
+    "PA-FRAIS03",
+    "Garder un cumul partiel sans extrapolation",
+    "Premier contrôle complet conservé ; créer de nouveaux contrôles.",
+    "Essai1 : mêmes choix sauf janvier laissé Non choisi. Essai2 : novembre seul. Autres champs identiques au cas02.",
+    "Enregistrer séparément les deux contrôles. Lire le nombre de mois et les anomalies. Ne pas remplacer les mois absents par des zéros.",
+    "Onze puis une période, frais annuels et RNI inconnus. Le cumul de novembre reste9300.11 ; aucun facteur douze appliqué."
+  ],
+  [
+    "PA-FRAIS04",
+    "Distinguer autres déductions inconnues et zéro",
+    "Douze préparations choisies, cadre général et revenus confirmés.",
+    "Autres déductions laissées vides, confirmation correspondante non cochée. Référence annuelle et motif identiques au cas02.",
+    "Calculer. Lire les frais et le RNI, puis consulter à nouveau le premier contrôle complet.",
+    "Frais27000.3000 connus mais RNI À compléter. Zéro n’est pas présumé. Le premier contrôle, ses sources et son empreinte restent inchangés."
+  ],
+  [
+    "PA-FRAIS05",
+    "Refuser une source devenue périmée",
+    "Ancien contrôle conservé, préparateur et décideur indépendants.",
+    "Nouvelle variable ponctuelle100.00 sur GAIN_FICTIF909, novembre2026, date2026-11-15, référence EXTRA-ANNUEL-FICTIF913, justificatif ATTESTATION_FICTIVE=PIECE-FICTIVE913.",
+    "Créer, soumettre et faire approuver la variable. Tenter un nouveau contrôle annuel avec les anciennes préparations. Refaire le brut, le social et les bases pour recalculer.",
+    "Ancienne source refusée pour un nouveau calcul ; contrôle historique consultable. Les nouvelles versions doivent être sélectionnées explicitement, sans réécrire les anciens snapshots."
+  ],
+  [
+    "PA-FRAIS06",
+    "Vérifier les droits et la séparation de la paie",
+    "Deux sociétés fictives, administrateur des habilitations ; journal relevé avant recette.",
+    "Identifiants des contrôles et motif Fin accès fictif913.",
+    "Changer de société, puis révoquer rémunération et Actualiser. Vérifier ordinateur et mobile, liens de sources, onglets Bases fiscales et Contrôle annuel IR. Comparer les soldes comptables avant et après.",
+    "Données isolées puis masquées après révocation. Lecture verticale et sources conservées. Aucun bulletin, paiement, écriture ou paie définitive ; production non validée."
+  ]
+]

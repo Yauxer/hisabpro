@@ -1,0 +1,315 @@
+{
+  "resultats": [
+    {
+      "campagne": "recette785_cible",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 75.85,
+      "code": 1
+    },
+    {
+      "campagne": "recette785_exact",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 67.85,
+      "code": 1
+    },
+    {
+      "campagne": "recette785_decimal",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 69.34,
+      "code": 1
+    },
+    {
+      "campagne": "recette785_plan",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 73.32,
+      "code": 1
+    },
+    {
+      "campagne": "recette785_connexes",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 77.28,
+      "code": 0
+    },
+    {
+      "campagne": "recette785_final",
+      "cas": 4,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 138.0,
+      "code": 0
+    }
+  ],
+  "parcours": [
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_owpabn8a",
+      "nonce": "6d5e0362c63e4bb597e1ef03212bad50",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 1440,
+      "cas": [
+        {
+          "id": "HP-IMM-001",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-IMM-002",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-IMM-003",
+          "statut": "Réussi"
+        }
+      ],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier. Fournisseur F-IMMO et banque préparés par API, formulaires déjà vérifiés 773/771.",
+      "operations": [
+        {
+          "reference": "CAP-01",
+          "id": 1,
+          "date": "2025-01-01",
+          "journal": "BQ",
+          "lignes": {
+            "5141": [
+              "200000.00",
+              "0.00"
+            ],
+            "1111": [
+              "0.00",
+              "200000.00"
+            ]
+          }
+        },
+        {
+          "reference": "IMMO-ACQ",
+          "id": 2,
+          "date": "2025-01-01",
+          "journal": "AC",
+          "lignes": {
+            "2355": [
+              "24000.00",
+              "0.00"
+            ],
+            "34551": [
+              "4800.00",
+              "0.00"
+            ],
+            "4481": [
+              "0.00",
+              "28800.00"
+            ]
+          }
+        },
+        {
+          "reference": "IMMO-PAY",
+          "id": 3,
+          "date": "2025-01-01",
+          "journal": "BQ",
+          "lignes": {
+            "4481": [
+              "28800.00",
+              "0.00"
+            ],
+            "5141": [
+              "0.00",
+              "28800.00"
+            ]
+          }
+        },
+        {
+          "reference": "AMORT-2025",
+          "id": 4,
+          "date": "2025-12-31",
+          "journal": "AM",
+          "lignes": {
+            "61935": [
+              "4800.00",
+              "0.00"
+            ],
+            "28355": [
+              "0.00",
+              "4800.00"
+            ]
+          }
+        }
+      ],
+      "registre_date_du_jour": {
+        "cumul": "8720.00",
+        "net": "15280.00",
+        "date_explicitement_affichee": true
+      },
+      "immobilisation785": {
+        "ecritures": 4,
+        "lignes": 9,
+        "debit_credit": "262400.00",
+        "brut": "24000.00",
+        "amortissement": "4800.00",
+        "net": "19200.00",
+        "bilan": "195200.00",
+        "resultat": "-4800.00",
+        "anti_double_409": true,
+        "tiers_auxiliaire_4481": true,
+        "detail_bilan": {
+          "type": "detail",
+          "numero": "235",
+          "label": "Mobilier, matériel de bureau et aménagements divers",
+          "valeurs": [
+            24000.0,
+            null,
+            null,
+            null
+          ],
+          "niveau": 1
+        },
+        "limite": "Sous-parcours capital et immobilisation dans une nouvelle société ; pas le scénario annuel complet."
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_owpabn8a",
+      "nonce": "6d5e0362c63e4bb597e1ef03212bad50",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 390,
+      "cas": [
+        {
+          "id": "HP-IMM-001",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-IMM-002",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-IMM-003",
+          "statut": "Réussi"
+        }
+      ],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier. Fournisseur F-IMMO et banque préparés par API, formulaires déjà vérifiés 773/771.",
+      "operations": [
+        {
+          "reference": "CAP-01",
+          "id": 5,
+          "date": "2025-01-01",
+          "journal": "BQ",
+          "lignes": {
+            "5141": [
+              "200000.00",
+              "0.00"
+            ],
+            "1111": [
+              "0.00",
+              "200000.00"
+            ]
+          }
+        },
+        {
+          "reference": "IMMO-ACQ",
+          "id": 6,
+          "date": "2025-01-01",
+          "journal": "AC",
+          "lignes": {
+            "2355": [
+              "24000.00",
+              "0.00"
+            ],
+            "34551": [
+              "4800.00",
+              "0.00"
+            ],
+            "4481": [
+              "0.00",
+              "28800.00"
+            ]
+          }
+        },
+        {
+          "reference": "IMMO-PAY",
+          "id": 7,
+          "date": "2025-01-01",
+          "journal": "BQ",
+          "lignes": {
+            "4481": [
+              "28800.00",
+              "0.00"
+            ],
+            "5141": [
+              "0.00",
+              "28800.00"
+            ]
+          }
+        },
+        {
+          "reference": "AMORT-2025",
+          "id": 8,
+          "date": "2025-12-31",
+          "journal": "AM",
+          "lignes": {
+            "61935": [
+              "4800.00",
+              "0.00"
+            ],
+            "28355": [
+              "0.00",
+              "4800.00"
+            ]
+          }
+        }
+      ],
+      "registre_date_du_jour": {
+        "cumul": "8720.00",
+        "net": "15280.00",
+        "date_explicitement_affichee": true
+      },
+      "immobilisation785": {
+        "ecritures": 4,
+        "lignes": 9,
+        "debit_credit": "262400.00",
+        "brut": "24000.00",
+        "amortissement": "4800.00",
+        "net": "19200.00",
+        "bilan": "195200.00",
+        "resultat": "-4800.00",
+        "anti_double_409": true,
+        "tiers_auxiliaire_4481": true,
+        "detail_bilan": {
+          "type": "detail",
+          "numero": "235",
+          "label": "Mobilier, matériel de bureau et aménagements divers",
+          "valeurs": [
+            24000.0,
+            null,
+            null,
+            null
+          ],
+          "niveau": 1
+        },
+        "limite": "Sous-parcours capital et immobilisation dans une nouvelle société ; pas le scénario annuel complet."
+      }
+    }
+  ],
+  "cas_qualifies": [
+    "HP-IMM-001",
+    "HP-IMM-002",
+    "HP-IMM-003"
+  ],
+  "modification_produit": "Date des valeurs théoriques affichée au registre ; aucun calcul modifié",
+  "limites": "Sous-parcours capital/immobilisation dans deux sociétés fictives indépendantes, pas les50opérations annuelles. Fournisseur et banque préparés par API. Aucun PostgreSQL réel, aucun statut humain modifié."
+}

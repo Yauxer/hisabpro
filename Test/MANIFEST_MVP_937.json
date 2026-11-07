@@ -1,0 +1,1041 @@
+{
+  "lot": "937",
+  "nature": "Différentiel uniquement ;arborescence exacte",
+  "variantes": [
+    {
+      "nom": "HisabPro_937_Qualification_Preparation_TP.zip",
+      "fichiers": {
+        "CODEX_PROGRESS.md": {
+          "sha256": "515cdc80071e36079155659ac5fd0941a4025cf2c737278c52a68d6ddec91c9b",
+          "octets": 7946203
+        },
+        "Test/CANDIDAT_MVP_937.json": {
+          "sha256": "2e67c3c8262a868f1ca0458d7d4af9fd33ef21cc4eadcc05d5d02635b27d68ff",
+          "octets": 65870
+        },
+        "Test/PREUVE_MVP_937.json": {
+          "sha256": "e3740e7d7304e3ed76e427e22a6f73f99c482c3964cafa09909726177a53c9a8",
+          "octets": 17691
+        },
+        "Test/QUALIFICATION_FICHES_937.json": {
+          "sha256": "869fd258ed51ae2c07b7e2031a443e18d01f520aedb7cfcd9de7f7e7610ffc58",
+          "octets": 12811
+        },
+        "Test/preuves_mvp937/restauration761_preuve.json": {
+          "sha256": "19a4aa88ca7eb9bbdd149e998f812824362aab90388b0ec695e391d137cc53ae",
+          "octets": 2775
+        },
+        "Test/preuves_mvp937/tp761_admin_preuve.json": {
+          "sha256": "015f4fe6d458b67258fe71a3ff41682a6019e2770cecc25fd6402395345275b6",
+          "octets": 411
+        },
+        "Test/preuves_mvp937/tp761_comptable_preuve.json": {
+          "sha256": "e63698f15c460c84b86944bf928ed4b4a07be8d9fd1868a6f0a7a4ca9fc285e1",
+          "octets": 414
+        },
+        "Test/preuves_mvp937/tp761_lecture_preuve.json": {
+          "sha256": "225a4597b99fcc3d06f05cf46ee870b2fd8b9e5038e66f5bc07e15d09b4f01a8",
+          "octets": 412
+        },
+        "Test/preuves_mvp937/tp937_cible.xml": {
+          "sha256": "e3c84fe200e49e74942ebbc88ea86a2d14d88b4e961ce827668a51942576a0b5",
+          "octets": 830
+        },
+        "Test/preuves_mvp937/tp937_final.xml": {
+          "sha256": "f4fceebf440c6ebfaf020a4266e98dcc5c52e5a900e6430e0bc30d1c602a811c",
+          "octets": 9148
+        },
+        "Test/preuves_mvp937/tp937_reprise.xml": {
+          "sha256": "672cc3956b07b9b2d92ad33200a24e40e75e2b7c569311bde37d2770dffe482f",
+          "octets": 8708
+        },
+        "Test/preuves_mvp937/tp937_variantes.json": {
+          "sha256": "3015a95f63566c07e430032a1b3f4094996ab1416e7739ae87aab8f9c968aa64",
+          "octets": 1293
+        },
+        "Test/test_e2e_taxe_professionnelle761_isole.py": {
+          "sha256": "13ce4065cc8d6253e8de7131c43f5cdd427a94abc7545d9e071630c55fcff760",
+          "octets": 11532
+        },
+        "Test/test_qualification_tp937_isole.py": {
+          "sha256": "da9ee1d14ac9000684e4fdfd0a45c1307887e16ac3a613e04d7f5a7b9c468420",
+          "octets": 2458
+        },
+        "docs/audit/MATRICE_COUVERTURE_HISABPRO.md": {
+          "sha256": "6dc7f8672f37837fc194629c144fadf96c57cdb276649ee3fabce339467f59a6",
+          "octets": 298131
+        },
+        "docs/recette/DECISION_FACTURATION_COMPTABILITE_937.md": {
+          "sha256": "591fb5984317c1c82cce183cd7ec1bbaee2771ac1bf8088a1eda912eb6295ae8",
+          "octets": 1552
+        },
+        "docs/recette/QUALIFICATION_TP_937.md": {
+          "sha256": "06b6d74d1eff247cc99e847395b78e122489cbb876970f9883459cb400af8943",
+          "octets": 1887
+        },
+        "docs/recette/RESULTATS_MVP_937.md": {
+          "sha256": "65ab2d7c52059abb71e0d69565d60dabb8682ce315253113c2df5432087ea999",
+          "octets": 2810
+        },
+        "docs/recette/SUIVI_AUTOMATISATION_CAHIER_937.xlsx": {
+          "sha256": "5dc4a25862934ebb83a5111a69921960836e01427f6a52db70da8cadd71eeb55",
+          "octets": 74959
+        },
+        "docs/recette/preuves/937_tp_admin_1440.png": {
+          "sha256": "005bce98240e49c5733299880afd580118737b301b712a9fde47d3186bc27985",
+          "octets": 186238
+        },
+        "docs/recette/preuves/937_tp_comptable_390.png": {
+          "sha256": "911e885bc5821c0dbfb330bccef5d30fc0be5d001673ee7cf521452273114e4a",
+          "octets": 90364
+        },
+        "docs/recette/preuves/937_tp_lecture_390.png": {
+          "sha256": "8de117e2b3e211e9dd4410fbb019c7a540973876e4b9bd10f2da7afee3c8a5aa",
+          "octets": 92021
+        }
+      }
+    },
+    {
+      "nom": "HisabPro_Cumul_MVP_923_937.zip",
+      "fichiers": {
+        "CODEX_PROGRESS.md": {
+          "sha256": "515cdc80071e36079155659ac5fd0941a4025cf2c737278c52a68d6ddec91c9b",
+          "octets": 7946203
+        },
+        "Test/CANDIDAT_MVP_923.json": {
+          "sha256": "0e687e2ab4839175480b8d15a4d2b12cdb9bd29a40a97d0adbb99142fef78d06",
+          "octets": 65575
+        },
+        "Test/CANDIDAT_MVP_925.json": {
+          "sha256": "ed1e0a232386ee2b6cd6905adf1a9f312b32ee8be7e9f4e6b5a6c1e60e57ed83",
+          "octets": 65574
+        },
+        "Test/CANDIDAT_MVP_927.json": {
+          "sha256": "a65e88a337e826cf072d4cae3a7ae8a723b514e35b561aa22542179d5b2518d6",
+          "octets": 65595
+        },
+        "Test/CANDIDAT_MVP_929.json": {
+          "sha256": "e62253ee8d6df8494f16a3b8751b9f3fc8c5bb23bd111fee552f84df0bda4b7a",
+          "octets": 65572
+        },
+        "Test/CANDIDAT_MVP_931.json": {
+          "sha256": "4b448e89d9a7b2f996fe130e171e0cfde8f40b8cb89ba9362a932cdfdaac2aff",
+          "octets": 65595
+        },
+        "Test/CANDIDAT_MVP_933.json": {
+          "sha256": "3bd4e52b41c387a03e01eef67d68a0c5dfb42604285c884f7b8ec95c0c71532e",
+          "octets": 65626
+        },
+        "Test/CANDIDAT_MVP_935.json": {
+          "sha256": "ccbcbba371bf4d76f795db00e8449cfef704283cf5bd5adb92abf6ed1abf7ad8",
+          "octets": 65779
+        },
+        "Test/CANDIDAT_MVP_937.json": {
+          "sha256": "2e67c3c8262a868f1ca0458d7d4af9fd33ef21cc4eadcc05d5d02635b27d68ff",
+          "octets": 65870
+        },
+        "Test/PREUVE_MVP_923.json": {
+          "sha256": "110b42c8e4de31902e2086c740a0695826bcd055671e1cb78126442753165d4e",
+          "octets": 15415
+        },
+        "Test/PREUVE_MVP_925.json": {
+          "sha256": "d40fd1ef1be7ac324fee070f8c471555922c0fe6acd23411ab572b34ef9c4efd",
+          "octets": 69970
+        },
+        "Test/PREUVE_MVP_927.json": {
+          "sha256": "9a971d4e141ca7b5507829a2d11154104d743d5a46765608cfe666e4aed37fda",
+          "octets": 18603
+        },
+        "Test/PREUVE_MVP_929.json": {
+          "sha256": "fdd552d53eef4ecc1b10fef4cc44ed4fa5c23435c7e93b8ed0b6b07439a127a6",
+          "octets": 21647
+        },
+        "Test/PREUVE_MVP_931.json": {
+          "sha256": "012ddb7a6bb4f8a3438dc87850db1bb332967919108b0d8e07befce61aa7b660",
+          "octets": 13484
+        },
+        "Test/PREUVE_MVP_933.json": {
+          "sha256": "cc132fb9c3e2a7f720238c3ee2e8fff45344b3f3903e3b50f06e543d40f4b38c",
+          "octets": 6725
+        },
+        "Test/PREUVE_MVP_935.json": {
+          "sha256": "a58e8353102f27ccb26c1e2e9be2664def181b83ac8492da9da27d248a8232f5",
+          "octets": 19033
+        },
+        "Test/PREUVE_MVP_937.json": {
+          "sha256": "e3740e7d7304e3ed76e427e22a6f73f99c482c3964cafa09909726177a53c9a8",
+          "octets": 17691
+        },
+        "Test/QUALIFICATION_FICHES_933.json": {
+          "sha256": "b1847cbc89c6720be093f5bc24e09fe534c7e64c77e865518ac544f8073acd40",
+          "octets": 13429
+        },
+        "Test/QUALIFICATION_FICHES_935.json": {
+          "sha256": "4e320cc0848f62a65d7dc58e62e437b63d71ce06bc26a017f0e48bc2916ce599",
+          "octets": 13131
+        },
+        "Test/QUALIFICATION_FICHES_937.json": {
+          "sha256": "869fd258ed51ae2c07b7e2031a443e18d01f520aedb7cfcd9de7f7e7610ffc58",
+          "octets": 12811
+        },
+        "Test/cahier_formulaires773_support.py": {
+          "sha256": "411aef29c2e7fdc826e199f8c4ae0d10eb7d3f74e198ee8ab81ce99c1c6a5c02",
+          "octets": 8757
+        },
+        "Test/generer_recette_apercu927.py": {
+          "sha256": "eade7e4eae288e8affa4ad96b1be2281de85b27c415749c45f5b9798c7ec05b1",
+          "octets": 11629
+        },
+        "Test/generer_recette_conservation923.py": {
+          "sha256": "49dcc327ebfd3b56f34b3de881a329ec567c6bbe6e7ad6edb0fb42ad845440e9",
+          "octets": 12381
+        },
+        "Test/generer_recette_droits929.py": {
+          "sha256": "0f763c2ce4644755b8df9ee2e19badc2f536cfc3de1fc08f1c225e8778983ffa",
+          "octets": 9248
+        },
+        "Test/generer_recette_lecture931.py": {
+          "sha256": "a924b9d32b9399d68f05e58e6967d37f33803b2555ccf296e61576932c09bbf2",
+          "octets": 3926
+        },
+        "Test/generer_recette_sessions925.py": {
+          "sha256": "262cabc21ed08e81c257106d118d3fee12bcb6317433f36feaaf42971f652eec",
+          "octets": 8141
+        },
+        "Test/preuves_mvp923/cahier773_conservation923_1440_preuve.json": {
+          "sha256": "4be8164361e86970ef910c51c759c6026e1a56f3af0db811b429c9ac03e07cd5",
+          "octets": 1012
+        },
+        "Test/preuves_mvp923/cahier773_conservation923_390_preuve.json": {
+          "sha256": "2dcd34c06f5a266ee9ccf46930a3bf51110ab7f1c8e676738e572b576773f737",
+          "octets": 1011
+        },
+        "Test/preuves_mvp923/chaine.json": {
+          "sha256": "ce1822eea02bae97391bc807d65e1d8b9c17f6e09f2e98fde8b23232849a4e34",
+          "octets": 1060
+        },
+        "Test/preuves_mvp923/conservation923_cible.xml": {
+          "sha256": "d7352ba0ee0e9525af2e11384b77084bdce70e297b843b9c177d53e68fc615bc",
+          "octets": 12164
+        },
+        "Test/preuves_mvp923/conservation923_cible2.xml": {
+          "sha256": "8b93e85f7fe89c1928aecf6852112dddecc38c0ed2f903b52f2025f5f3706598",
+          "octets": 4543
+        },
+        "Test/preuves_mvp923/conservation923_diagnostic.xml": {
+          "sha256": "82acc7275ea0a42976479e7768345eddf8c1ce4b5d61119f06c0912a9b5fa59a",
+          "octets": 5136
+        },
+        "Test/preuves_mvp923/conservation923_final.xml": {
+          "sha256": "a68fda18614f58eaed2b2585312109a694828e9db728a9cf90dc3d3003dc4062",
+          "octets": 9829
+        },
+        "Test/preuves_mvp923/conservation923_final2.xml": {
+          "sha256": "7e153bc28180764ec3665dd8d9b0fbe0cdabf9e2de1481aefe1d81ca8aa824c7",
+          "octets": 6835
+        },
+        "Test/preuves_mvp923/conservation923_navigation.xml": {
+          "sha256": "d041a1ef574ce5ecbccf749333546a3614aa9db406d064b0899ce90d10619f8b",
+          "octets": 666
+        },
+        "Test/preuves_mvp923/conservation923_reprise.xml": {
+          "sha256": "eaaec50f71b0b6f131c56601ef4749eed573c08456095cee8c21d1a8e12fa7ef",
+          "octets": 4451
+        },
+        "Test/preuves_mvp923/conservation923_restauration.xml": {
+          "sha256": "86376bd2bef4f7979a2b79176598d0127634968b82ba7538fdf6880dca043d42",
+          "octets": 387
+        },
+        "Test/preuves_mvp923/diagnostic_dialogue.json": {
+          "sha256": "0cbead59cf13fe89fba5f5427afd6444ff1f441c09621b270415bd3d2fd1bcff",
+          "octets": 798
+        },
+        "Test/preuves_mvp923/restauration.json": {
+          "sha256": "b9819a48b38b9522439ee695b57026901ba4ae9aef7b3a6f8ae7679a3fdde92c",
+          "octets": 345
+        },
+        "Test/preuves_mvp925/cahier773_conservation923_1440_preuve.json": {
+          "sha256": "3b79ac8afbf6d51980b73cd4950fad0e21e1da6498b1c924bf184574674d7b1f",
+          "octets": 1012
+        },
+        "Test/preuves_mvp925/cahier773_conservation923_390_preuve.json": {
+          "sha256": "5aa9a0ca8412bd79246a7190f9eda7eac61f739b49de4c5b9b9ef5d18b4dda43",
+          "octets": 1011
+        },
+        "Test/preuves_mvp925/cahier773_integrite839_1440_preuve.json": {
+          "sha256": "10be68ee7b3f37b97d6952ad1c5d2636599bf9c694872dfbd2a5ea856b244013",
+          "octets": 141184
+        },
+        "Test/preuves_mvp925/cahier773_integrite839_390_preuve.json": {
+          "sha256": "b039a17d6564e52b306834f5742e50e78648bfd929cf3d216ee9780c53a47be7",
+          "octets": 141435
+        },
+        "Test/preuves_mvp925/cahier773_journal_validation923_1440_preuve.json": {
+          "sha256": "d826e95f1f8958eaedd84e552c21a3f6f1e6a97bdf2ba1ea6622827b66a1e628",
+          "octets": 1112
+        },
+        "Test/preuves_mvp925/cahier773_journal_validation923_390_preuve.json": {
+          "sha256": "f14505a64961775cccbbc8acb29eaeea2ac35bfff4024e963efae4a653639224",
+          "octets": 1111
+        },
+        "Test/preuves_mvp925/cahier773_jwt925_1440_preuve.json": {
+          "sha256": "6442eaf58b77143808aa1138b4c8aeeb4a4ac95629d6ff2af6a5acd8eb908258",
+          "octets": 778
+        },
+        "Test/preuves_mvp925/cahier773_jwt925_390_preuve.json": {
+          "sha256": "d8c7b35b2bf0e5674d8ff3b351d0a6ce70e5e617d42d4ac9e280cac0e015e61a",
+          "octets": 777
+        },
+        "Test/preuves_mvp925/cahier773_securite835_1440_preuve.json": {
+          "sha256": "5f8251c56626c110496ae90be3bfc6144edc9178e306d74e1488a266e5af5dce",
+          "octets": 1792
+        },
+        "Test/preuves_mvp925/cahier773_securite835_390_preuve.json": {
+          "sha256": "f065f5414ef0ed17288131026a4e031b665337866884da08fb801cf682db5203",
+          "octets": 1798
+        },
+        "Test/preuves_mvp925/chaine.json": {
+          "sha256": "34e53483a976a5f8960a03e44552532a1d1e2e33c44f974d1bf729f28f2182cb",
+          "octets": 210
+        },
+        "Test/preuves_mvp925/jwt925_cible.xml": {
+          "sha256": "bf8e4b8047b89df2f1e59abd613b45dcd0bda0cf82ef320475f99476069ea403",
+          "octets": 28944
+        },
+        "Test/preuves_mvp925/jwt925_cible2.xml": {
+          "sha256": "858ded78719593a69dd2c278b014a4ca1dc6c51b7cd8ba552f8aa29f0d7984ea",
+          "octets": 22322
+        },
+        "Test/preuves_mvp925/jwt925_final.xml": {
+          "sha256": "6c9903b91e42e560edf0b9b60e54071adbc6916ac06b36c7052de1ee3a0d212f",
+          "octets": 60517
+        },
+        "Test/preuves_mvp925/jwt925_postfix.xml": {
+          "sha256": "db5fbb7cf3149dbcc41e2b8b76225b25f7eb95194a73a2f12d60d85e95c6301c",
+          "octets": 536
+        },
+        "Test/preuves_mvp925/jwt925_reprise.xml": {
+          "sha256": "7161d11151b220cff9b2603c6449d5efaa181da5fd5c422ff25e8dbb8f4f841e",
+          "octets": 20972
+        },
+        "Test/preuves_mvp925/restauration.json": {
+          "sha256": "cb54303c17ec62a78508c9e4f19550c3b2d49a404be1f9833923b5ff3d76dd2d",
+          "octets": 345
+        },
+        "Test/preuves_mvp927/cahier773_apercu927_cession_1440_preuve.json": {
+          "sha256": "d1522012d48eff61a5a916a6acf9b8031cfef0cc676f5fb3d3b09c622baabee7",
+          "octets": 1136
+        },
+        "Test/preuves_mvp927/cahier773_apercu927_cession_390_preuve.json": {
+          "sha256": "702c39bdce18f9cbadd1e03cd539dbb560fcb2ff3caa4fb7171c090e2602a84d",
+          "octets": 1135
+        },
+        "Test/preuves_mvp927/cahier773_apercu927_rebut_1440_preuve.json": {
+          "sha256": "e6d38a4da3dc8b6818802b6788dba96d69288d2f8ae6e1d4217078b8e0f2e94c",
+          "octets": 1147
+        },
+        "Test/preuves_mvp927/cahier773_apercu927_rebut_390_preuve.json": {
+          "sha256": "a315d986f84fa13524096300c92cc9bf7ce8f248570322fc5f21edc3ed5a6a01",
+          "octets": 1146
+        },
+        "Test/preuves_mvp927/chaine927.json": {
+          "sha256": "21e3a09c22d0bcc5d0616408f7b6af2e200d665790cdd8f60d105cdaa537ebe9",
+          "octets": 2009
+        },
+        "Test/preuves_mvp927/immo927_cible.xml": {
+          "sha256": "1baa2a1b5642405df6ce766193caf305722f649a9d996a1fe46b4c35d1b74cb8",
+          "octets": 1347
+        },
+        "Test/preuves_mvp927/immo927_final.xml": {
+          "sha256": "7a496f6805fc2b01160021e6ee093c91c9b8c79a58ee5accd7b249e89a5fabb6",
+          "octets": 10100
+        },
+        "Test/preuves_mvp927/immo927_parcours.xml": {
+          "sha256": "7bb9deee2ac8df6c49462724c8f0eb5ba2ea13eb3f5c14a7bc09d8055079e07f",
+          "octets": 2031
+        },
+        "Test/preuves_mvp927/immo927_reprise.xml": {
+          "sha256": "130488ce0f25e5df5e953f747d12e20b8ae1676b13e61f78c01b9d4400d44f7b",
+          "octets": 2152
+        },
+        "Test/preuves_mvp929/cahier773_droits929_admin_1440_preuve.json": {
+          "sha256": "54908f87a05d28b510a4d5fc0021ce94dc859a143181169164e3abdd96dcf541",
+          "octets": 1138
+        },
+        "Test/preuves_mvp929/cahier773_droits929_admin_390_preuve.json": {
+          "sha256": "7182bb7f64809370ed24ef5c39479b78470a24742f447d07aa0921a07abca03a",
+          "octets": 1137
+        },
+        "Test/preuves_mvp929/cahier773_droits929_comptable_1440_preuve.json": {
+          "sha256": "00ce7046b7bb5940ba840e879f2b8faefea9bf996eb6b82620fa5415ce380a4c",
+          "octets": 989
+        },
+        "Test/preuves_mvp929/cahier773_droits929_comptable_390_preuve.json": {
+          "sha256": "da6748f7f2394cba83e0e5449455c99a3f84fbc020faca5cc6a8b96290c82d5b",
+          "octets": 988
+        },
+        "Test/preuves_mvp929/cahier773_droits929_lecture_1440_preuve.json": {
+          "sha256": "fc17b6b271bd30cb49af3ceefbfb6ff7fe8315e8c3ea36557d88d82e1db4dd4e",
+          "octets": 1170
+        },
+        "Test/preuves_mvp929/cahier773_droits929_lecture_390_preuve.json": {
+          "sha256": "41dd18b1e283b584da0262a6147bc69db4275cf610e7679468bc05dd6252a3b4",
+          "octets": 1169
+        },
+        "Test/preuves_mvp929/droits929_cible.xml": {
+          "sha256": "3fc63b0d5581d7ca599aa9fc693aa433cb59044891295068d730b57a82452b63",
+          "octets": 1178
+        },
+        "Test/preuves_mvp929/droits929_cible2.xml": {
+          "sha256": "594a877988b0cfe4ba0bf53d152971a733d9d1e3fe089943cfdc0b862e6075f7",
+          "octets": 1178
+        },
+        "Test/preuves_mvp929/droits929_final.xml": {
+          "sha256": "a39aa06f4455ff36066ffad748d40a10a5f506e0a10c8a27479da26d6d736db5",
+          "octets": 11178
+        },
+        "Test/preuves_mvp929/droits929_reproduction.xml": {
+          "sha256": "65fcd0d36840446a19344ba226905426e5a43251e086e078b2f5847708e51399",
+          "octets": 5453
+        },
+        "Test/preuves_mvp931/cahier773_erreurs931_admin_1440_preuve.json": {
+          "sha256": "124bcd90659e06e0bd4674e4b74b40325e54eda58a50fb7414f5f34721d7ba34",
+          "octets": 935
+        },
+        "Test/preuves_mvp931/cahier773_erreurs931_admin_390_preuve.json": {
+          "sha256": "363eb6e7c45c5735237ea19651d39e6f0765879239486dad6345a436aceecc90",
+          "octets": 934
+        },
+        "Test/preuves_mvp931/cahier773_erreurs931_lecture_1440_preuve.json": {
+          "sha256": "8ac2a001382325bc8ccd2718d926c1ef2df83a96e6a63b28da15c573049132ed",
+          "octets": 937
+        },
+        "Test/preuves_mvp931/cahier773_erreurs931_lecture_390_preuve.json": {
+          "sha256": "76c94ed078416471dcf6581d481e41a50ddd21c5cd89362e582435f7313803e9",
+          "octets": 936
+        },
+        "Test/preuves_mvp931/cahier773_rafraichissement931_1440_preuve.json": {
+          "sha256": "e77ef63167b98f0dfd1aa3eab3c5e35dfe07eb4de9dd9d2a5884bca80e84834c",
+          "octets": 902
+        },
+        "Test/preuves_mvp931/cahier773_rafraichissement931_390_preuve.json": {
+          "sha256": "5fd66a9f819139339fa033f4506e33bbd9095100752bec1cc9545791be75c713",
+          "octets": 901
+        },
+        "Test/preuves_mvp931/cahier773_vide931_1440_preuve.json": {
+          "sha256": "49036b730980e666aea8e25c1ec5a89fae57c2082441065cbc0baa628abc7fd6",
+          "octets": 620
+        },
+        "Test/preuves_mvp931/cahier773_vide931_390_preuve.json": {
+          "sha256": "0a08a91cd4e7d10346651ab53f7c087829c74e7ba5fa3b48cf3ba1d10d244b8f",
+          "octets": 619
+        },
+        "Test/preuves_mvp931/lecture931_cible.xml": {
+          "sha256": "0c50282e81727ea023cf64097e56e862a66a168c110f0f3d4b6c1dd05280b2ec",
+          "octets": 1229
+        },
+        "Test/preuves_mvp931/lecture931_cible2.xml": {
+          "sha256": "f69308e69f49403aaf047ece49e94f1dee44765d2ff4f23f80fa8454d9b22cdd",
+          "octets": 7207
+        },
+        "Test/preuves_mvp931/lecture931_cible3.xml": {
+          "sha256": "32e54f86098ccfb5611ea0d9148f5a80566684ec4b2ded3f8765af45a29b1f98",
+          "octets": 7207
+        },
+        "Test/preuves_mvp931/lecture931_cible4.xml": {
+          "sha256": "7407f7760bcab750bea23f9b36926f2559e1827ce24c0ed9d1c95a0be67b27ff",
+          "octets": 1560
+        },
+        "Test/preuves_mvp931/lecture931_final.xml": {
+          "sha256": "93cb1f1645c412c4704a1c4c64668a40cd237f1d4a084179a9a4ad63a7a8fdf9",
+          "octets": 5651
+        },
+        "Test/preuves_mvp931/lecture931_reproduction.xml": {
+          "sha256": "8ea485561dd43ca971a040f8a8b8bb892478865471230cc214ebfd376a128438",
+          "octets": 9465
+        },
+        "Test/preuves_mvp933/fiscal755_admin_preuve.json": {
+          "sha256": "d103602970515fef319e626382ce920c817cf0ba8903952a8f4970dba851fa87",
+          "octets": 1705
+        },
+        "Test/preuves_mvp933/fiscal755_comptable_preuve.json": {
+          "sha256": "9e22e7eb6d2726e34e1ecc6a5d635fb937aaf0352e37392490174a52dd4b516a",
+          "octets": 1708
+        },
+        "Test/preuves_mvp933/fiscal933_cible.xml": {
+          "sha256": "ebe640e3599769f6ef97cce8e29aa8c830d1ddadbc98ffaf2bec0b2f5c728c2b",
+          "octets": 9350
+        },
+        "Test/preuves_mvp933/fiscal933_cible2.xml": {
+          "sha256": "af9be794499a77d2b39abbc400b6368b4f810aabc42ad115810b14ba780eff17",
+          "octets": 1289
+        },
+        "Test/preuves_mvp933/fiscal933_csv_1440.json": {
+          "sha256": "ae801b35a11b13a4caddf636776f16f084e6563741293791ffbf2075e206e3ab",
+          "octets": 222
+        },
+        "Test/preuves_mvp933/fiscal933_csv_390.json": {
+          "sha256": "662e47520f02eda61c9ba44c55d12a47f00c52a8a1a2a2c3598a7549aeff4cd6",
+          "octets": 221
+        },
+        "Test/preuves_mvp933/fiscal933_final.xml": {
+          "sha256": "ac8a31f60276d2f24e3cfac9830c18cdd80d10565d72564096967bfbc521a416",
+          "octets": 2173
+        },
+        "Test/preuves_mvp933/fiscal933_final2.xml": {
+          "sha256": "2620ccaec2a8e5b6d2cc2830b100cc20c1c15c92e137ff2092742a4c25a85077",
+          "octets": 2173
+        },
+        "Test/preuves_mvp933/fiscal933_lecteur_1440.json": {
+          "sha256": "96af470395a6a043d03a947e0c68564fce9a5c82d2b61c4173571cea58657656",
+          "octets": 1863
+        },
+        "Test/preuves_mvp933/fiscal933_lecteur_390.json": {
+          "sha256": "fe4f0012ee5e8ea1bdfcebf6308dfb8e962e676e31ecaf514af225f981c8865d",
+          "octets": 1862
+        },
+        "Test/preuves_mvp933/fiscal933_piece.json": {
+          "sha256": "cd91039f8d426f1cbc988961999786017edb347093e1811ac8fe6b7d946c4b65",
+          "octets": 1503
+        },
+        "Test/preuves_mvp933/fiscal933_references.json": {
+          "sha256": "febfae93027a9339e332c422334b001517f5766c7818a69e7a112f1cfa392496",
+          "octets": 235
+        },
+        "Test/preuves_mvp933/fiscal933_reprise.xml": {
+          "sha256": "a9df716e9bf826141b07c3e12b7de44cc14d5378cbd5bf042f279e6ea0151ac6",
+          "octets": 1125
+        },
+        "Test/preuves_mvp933/fiscal933_sources.json": {
+          "sha256": "6a7f2603a48d4258492c118273723b82f4a586b023de08c5af3414d773e912a1",
+          "octets": 307
+        },
+        "Test/preuves_mvp935/restauration759_preuve.json": {
+          "sha256": "0a986937c0ce44480eabc0d6feefb8c87e080b37b1ed95b3fd8b9184795c87f2",
+          "octets": 2536
+        },
+        "Test/preuves_mvp935/tiers759_admin_preuve.json": {
+          "sha256": "79ed13a64d6646a807eb64b1d892c98269129c30d19b729dfb5b039469fc8738",
+          "octets": 309
+        },
+        "Test/preuves_mvp935/tiers759_comptable_preuve.json": {
+          "sha256": "da85ff9a9e5d8372a10c7a85d68c32b9aa008b0ff3bb81b1c305b1efc66b104a",
+          "octets": 312
+        },
+        "Test/preuves_mvp935/tiers759_lecture_preuve.json": {
+          "sha256": "0d8bc699b71f299a283714c5fd96b04a2f3b84f2dcf925e1c6b4ce2ef5faa635",
+          "octets": 310
+        },
+        "Test/preuves_mvp935/tiers935_cible.xml": {
+          "sha256": "73797190bda4d5c974b01f437a2b8fc5ff6e7ecad5cb0a461f168c4f823b6d71",
+          "octets": 844
+        },
+        "Test/preuves_mvp935/tiers935_final.xml": {
+          "sha256": "0b5612908849492e419d1e88c73998b8eb69c08fcb3303894cbc0ddba4cfc71a",
+          "octets": 9843
+        },
+        "Test/preuves_mvp935/tiers935_inconnus.json": {
+          "sha256": "803ad8b9fbaaa80adb3b29b9b7d8e59291efbbf6579a2d4de728da2f9d9756a7",
+          "octets": 329
+        },
+        "Test/preuves_mvp935/tiers935_reprise.xml": {
+          "sha256": "581356316fcd1076564031d5c522f4613e760b7a73ae6a2ded460b12fdecfd22",
+          "octets": 9392
+        },
+        "Test/preuves_mvp937/restauration761_preuve.json": {
+          "sha256": "19a4aa88ca7eb9bbdd149e998f812824362aab90388b0ec695e391d137cc53ae",
+          "octets": 2775
+        },
+        "Test/preuves_mvp937/tp761_admin_preuve.json": {
+          "sha256": "015f4fe6d458b67258fe71a3ff41682a6019e2770cecc25fd6402395345275b6",
+          "octets": 411
+        },
+        "Test/preuves_mvp937/tp761_comptable_preuve.json": {
+          "sha256": "e63698f15c460c84b86944bf928ed4b4a07be8d9fd1868a6f0a7a4ca9fc285e1",
+          "octets": 414
+        },
+        "Test/preuves_mvp937/tp761_lecture_preuve.json": {
+          "sha256": "225a4597b99fcc3d06f05cf46ee870b2fd8b9e5038e66f5bc07e15d09b4f01a8",
+          "octets": 412
+        },
+        "Test/preuves_mvp937/tp937_cible.xml": {
+          "sha256": "e3c84fe200e49e74942ebbc88ea86a2d14d88b4e961ce827668a51942576a0b5",
+          "octets": 830
+        },
+        "Test/preuves_mvp937/tp937_final.xml": {
+          "sha256": "f4fceebf440c6ebfaf020a4266e98dcc5c52e5a900e6430e0bc30d1c602a811c",
+          "octets": 9148
+        },
+        "Test/preuves_mvp937/tp937_reprise.xml": {
+          "sha256": "672cc3956b07b9b2d92ad33200a24e40e75e2b7c569311bde37d2770dffe482f",
+          "octets": 8708
+        },
+        "Test/preuves_mvp937/tp937_variantes.json": {
+          "sha256": "3015a95f63566c07e430032a1b3f4094996ab1416e7739ae87aab8f9c968aa64",
+          "octets": 1293
+        },
+        "Test/test_e2e_cahier_securite835_isole.py": {
+          "sha256": "6afab705ed4c6fbfa8b700303169bbbb58b4a416e1803967215bc9d73f88311b",
+          "octets": 9167
+        },
+        "Test/test_e2e_factures_conservation923_isole.py": {
+          "sha256": "a45ccf3faa8326893a86ae4bd787cc9519ac09d42502b92fcba50aa713184f33",
+          "octets": 4170
+        },
+        "Test/test_e2e_immobilisations_apercu927_isole.py": {
+          "sha256": "d2e290468372e96b0bee941bd15b8006cee18fec1594a840c60cc0fbd1482e69",
+          "octets": 4169
+        },
+        "Test/test_e2e_immobilisations_droits929_isole.py": {
+          "sha256": "fe26f14d0c42e8fdce9ad279d2b50e28e8349a8408df10eeb9bbd6c7bfd057a5",
+          "octets": 8465
+        },
+        "Test/test_e2e_immobilisations_erreurs931_isole.py": {
+          "sha256": "267c2b31c23896f7e15bfe1fafda6d252073c8166893c504f13ea5450a5cf361",
+          "octets": 9542
+        },
+        "Test/test_e2e_journal_validation923_isole.py": {
+          "sha256": "55a569b243c3dd32606c4b52c0270e41f30a0be196bc3872a394bc210321009d",
+          "octets": 3186
+        },
+        "Test/test_e2e_jwt_anciens925_isole.py": {
+          "sha256": "ad4c4f0b0b079b49574e4a07f82c620f86cf644863766c77491df8b464f03fb5",
+          "octets": 2618
+        },
+        "Test/test_e2e_remunerations_tiers759_isole.py": {
+          "sha256": "06b63b610e05b3884d065201587cd64507611d978ad878ca33ff4059c29599a1",
+          "octets": 11707
+        },
+        "Test/test_e2e_taxe_professionnelle761_isole.py": {
+          "sha256": "13ce4065cc8d6253e8de7131c43f5cdd427a94abc7545d9e071630c55fcff760",
+          "octets": 11532
+        },
+        "Test/test_factures_conservation923_isole.py": {
+          "sha256": "42471218d16696e284a63bf38b7b9288629b8f840065cbafb087beec8b16a945",
+          "octets": 8100
+        },
+        "Test/test_factures_conservation923_restauration_isole.py": {
+          "sha256": "b996f367118ea0ac59e80693e23d94f9e74685bd34129cf9e4681ea708d3dba7",
+          "octets": 2993
+        },
+        "Test/test_immobilisations_apercu927_isole.py": {
+          "sha256": "1329db145b6b79d8618f653881243da492c088ba5f1b124a60fbc2ccc6b9dcc7",
+          "octets": 9277
+        },
+        "Test/test_jwt_anciens925_isole.py": {
+          "sha256": "454bcd3b55b1fad37e83c9ae895809ad016b5e73a1f104d4dc54ef4910194c7a",
+          "octets": 5245
+        },
+        "Test/test_qualification_fiscale933_isole.py": {
+          "sha256": "253f2d81e8032d51d4935a20c6e9727815b73f3893a211afab668e8ba05e0013",
+          "octets": 10994
+        },
+        "Test/test_qualification_tiers935_isole.py": {
+          "sha256": "392cfa49f6611e4c235f367d11d902532aa64ffd06607201faa61e648d77f286",
+          "octets": 1630
+        },
+        "Test/test_qualification_tp937_isole.py": {
+          "sha256": "da9ee1d14ac9000684e4fdfd0a45c1307887e16ac3a613e04d7f5a7b9c468420",
+          "octets": 2458
+        },
+        "Test/test_session132_admin_acces_invites.py": {
+          "sha256": "9034c07bb83bdb360d0ac6a8d4fd6e577b7de0d4ebc5407885d162af3b28db8f",
+          "octets": 11332
+        },
+        "Test/test_session132_admin_postgres.py": {
+          "sha256": "73be727d91db8b03e34e441fae921fa670d2af5c72d45d83e8e245a7094b3359",
+          "octets": 10179
+        },
+        "Test/test_session132_admin_sessions.py": {
+          "sha256": "ba67b58ab5578190f86cac37b290812894194685becd44ddc60222196d2b163d",
+          "octets": 3735
+        },
+        "docs/audit/MATRICE_COUVERTURE_HISABPRO.md": {
+          "sha256": "6dc7f8672f37837fc194629c144fadf96c57cdb276649ee3fabce339467f59a6",
+          "octets": 298131
+        },
+        "docs/recette/APERCU_SORTIES_IMMOBILISATIONS_927.md": {
+          "sha256": "3c9c01b35a4a64684fbdf25873e1705f5e20c05e281b54273dbec62bbcf017d3",
+          "octets": 2842
+        },
+        "docs/recette/CONSERVATION_FACTURES_923.md": {
+          "sha256": "019cb22812886f771074a1839dc1639180b03b48b8340be034387f04d657bba5",
+          "octets": 4420
+        },
+        "docs/recette/DECISION_FACTURATION_COMPTABILITE_923.md": {
+          "sha256": "332ae3c2fc82b004f237b948af182de83410932c6e7e932d128fb6c96b7daa52",
+          "octets": 1742
+        },
+        "docs/recette/DECISION_FACTURATION_COMPTABILITE_925.md": {
+          "sha256": "e447547752303098a98c3c8d9d388e1f53958bcc9c77f4d47bf73d15762c8118",
+          "octets": 2243
+        },
+        "docs/recette/DECISION_FACTURATION_COMPTABILITE_927.md": {
+          "sha256": "d0a35c08a0304923b1b2b3c7382f11da1a2d12de152da9cdae95b64f093d2889",
+          "octets": 2293
+        },
+        "docs/recette/DECISION_FACTURATION_COMPTABILITE_929.md": {
+          "sha256": "c28f7e78d78073b2ddc9c8377209ec82bb46a8bf57b1fbca907ece750e9a8825",
+          "octets": 2256
+        },
+        "docs/recette/DECISION_FACTURATION_COMPTABILITE_931.md": {
+          "sha256": "5676b16fd47ecf1dfbbdd9ca29de4346fffac678ad0b9ed4070b1aed1b0306e0",
+          "octets": 2080
+        },
+        "docs/recette/DECISION_FACTURATION_COMPTABILITE_933.md": {
+          "sha256": "10c83dba3b1e6a885aa4077047349268bd4c5bcb6d0740656e7fa08702ccaa71",
+          "octets": 1940
+        },
+        "docs/recette/DECISION_FACTURATION_COMPTABILITE_935.md": {
+          "sha256": "230a17775a21944d059f94b8545369f003135bed2272fedbdc18f5de730487c6",
+          "octets": 1498
+        },
+        "docs/recette/DECISION_FACTURATION_COMPTABILITE_937.md": {
+          "sha256": "591fb5984317c1c82cce183cd7ec1bbaee2771ac1bf8088a1eda912eb6295ae8",
+          "octets": 1552
+        },
+        "docs/recette/DROITS_IMMOBILISATIONS_929.md": {
+          "sha256": "eb1476acdab5503279bb49fb248085ecc7149baf90fff37b2c9e74a0d20d8077",
+          "octets": 2352
+        },
+        "docs/recette/JEU_APERCU_SORTIES_927.json": {
+          "sha256": "a651642be1e49c02587eefc55227971c2c3761283087a85bd620ac905a633c86",
+          "octets": 2862
+        },
+        "docs/recette/JEU_CONSERVATION_FACTURES_923.json": {
+          "sha256": "2d42f58665c76e0cc659a91ab5eda3d0f7d8dfb74a4a036729fe0afa5f76b879",
+          "octets": 3259
+        },
+        "docs/recette/JEU_DROITS_IMMOBILISATIONS_929.json": {
+          "sha256": "db98a1c1ce2d2bab452b031adbfe91a57d9859d2d4fdb74777ce6614adcb8bb0",
+          "octets": 2214
+        },
+        "docs/recette/JEU_LECTURE_IMMOBILISATIONS_931.json": {
+          "sha256": "2ba85593d23c2e2e08b44617a64fc64d2c48905bd9ad431661ee86feaea35c1f",
+          "octets": 8430
+        },
+        "docs/recette/JEU_SESSIONS_925.json": {
+          "sha256": "c6eee04f61f28541692b06260a16ffb35593d1372d4554aa5e3d7a8f3b0330cd",
+          "octets": 1211
+        },
+        "docs/recette/LECTURE_IMMOBILISATIONS_931.md": {
+          "sha256": "7c69403830c5bcf1b68372046107e6477a9603424d5653c058ba77fa216a843e",
+          "octets": 2566
+        },
+        "docs/recette/QUALIFICATION_FISCALE_933.md": {
+          "sha256": "4a17cb96e9cffab0468b66f8e4040f7a1b7ddfcc270502b4729a12e007d26072",
+          "octets": 2696
+        },
+        "docs/recette/QUALIFICATION_TIERS_935.md": {
+          "sha256": "3b4d863db94aad47e9ba5215dc0ecc7a5f4df413bb1a956a06bf50c2f5ca0a00",
+          "octets": 2093
+        },
+        "docs/recette/QUALIFICATION_TP_937.md": {
+          "sha256": "06b6d74d1eff247cc99e847395b78e122489cbb876970f9883459cb400af8943",
+          "octets": 1887
+        },
+        "docs/recette/RECETTE_APERCU_SORTIES_927.pdf": {
+          "sha256": "e6efd370148d44d3030dba4d3c0cebd6a2fa7b55e11102b84a8cb8e484c8e9db",
+          "octets": 52000
+        },
+        "docs/recette/RECETTE_CONSERVATION_FACTURES_923.pdf": {
+          "sha256": "430236f091c81a6dacd996c8879486be5763be35bdf8c3fa27f2d810f7c1942e",
+          "octets": 53440
+        },
+        "docs/recette/RECETTE_DROITS_IMMOBILISATIONS_929.pdf": {
+          "sha256": "77de7227ae18a57251da8a50e6771e34044389812a6e0c1fd8d16964d9345ed3",
+          "octets": 47560
+        },
+        "docs/recette/RECETTE_LECTURE_IMMOBILISATIONS_931.pdf": {
+          "sha256": "ccaa82e6e4f04ff95f8a6d63a80c22bcaa1626ad5049b9617070411d50e44795",
+          "octets": 49546
+        },
+        "docs/recette/RECETTE_SESSIONS_925.pdf": {
+          "sha256": "f276469e10d70530175d3722d4d97da124587b836be518ccf25812fcafae7441",
+          "octets": 47276
+        },
+        "docs/recette/RESULTATS_MVP_923.md": {
+          "sha256": "62fc1503190047336a41939128fff6147d48d1f8fe527f1cd7198e48b1e06e6d",
+          "octets": 2863
+        },
+        "docs/recette/RESULTATS_MVP_925.md": {
+          "sha256": "aed5806c08db3af994970e12bbf47d8ec103279ce416da28c41f8ee35ca969ba",
+          "octets": 2924
+        },
+        "docs/recette/RESULTATS_MVP_927.md": {
+          "sha256": "a8942ac0faf00bae141500c5fe37624b94be3ba72f934639ad1b1a6dce7c2828",
+          "octets": 2915
+        },
+        "docs/recette/RESULTATS_MVP_929.md": {
+          "sha256": "d82960898571bc4a95fd3ffc27681272337675716a9b90d37c9d06bb36253cbc",
+          "octets": 3034
+        },
+        "docs/recette/RESULTATS_MVP_931.md": {
+          "sha256": "13d44c6d06ac95fb78f5a0648cf54c73da4a241f512027939012829f13bd2398",
+          "octets": 3463
+        },
+        "docs/recette/RESULTATS_MVP_933.md": {
+          "sha256": "baf948bd33b5f7f0628940b3ce108b161f1451494e5fd594db90d92728a3973e",
+          "octets": 2937
+        },
+        "docs/recette/RESULTATS_MVP_935.md": {
+          "sha256": "4cc2b43446cc2eb4fe8c431f2ffe57e44d7a5b962761bc03cce6435e6b651b6c",
+          "octets": 2772
+        },
+        "docs/recette/RESULTATS_MVP_937.md": {
+          "sha256": "65ab2d7c52059abb71e0d69565d60dabb8682ce315253113c2df5432087ea999",
+          "octets": 2810
+        },
+        "docs/recette/SESSIONS_ANCIENNES_925.md": {
+          "sha256": "099f59fdd3e2401ae6c74ce3b647f668ee21b0dd943801bba8d2e6eb72be379f",
+          "octets": 2948
+        },
+        "docs/recette/SUIVI_APERCU_SORTIES_927.xlsx": {
+          "sha256": "a33d7f00c99f3fb00042dac2bc11042e8025656026755ad3f2b2c099c699ac54",
+          "octets": 11071
+        },
+        "docs/recette/SUIVI_AUTOMATISATION_CAHIER_923.xlsx": {
+          "sha256": "f996853c8813e903cd9129f59a488b0314c99e10f7e08a8f06dace66f303f2f9",
+          "octets": 61116
+        },
+        "docs/recette/SUIVI_AUTOMATISATION_CAHIER_925.xlsx": {
+          "sha256": "84d1b4fc00fee356bf34840dd8a4f290305f0f490e075254568b964bce86648b",
+          "octets": 62136
+        },
+        "docs/recette/SUIVI_AUTOMATISATION_CAHIER_927.xlsx": {
+          "sha256": "1625ab2ea423fa80c7130eeb3fd587947f8c6a0752a13a32fc8a4e02782a3492",
+          "octets": 63302
+        },
+        "docs/recette/SUIVI_AUTOMATISATION_CAHIER_929.xlsx": {
+          "sha256": "827b8f615c3878cfea072df4e884aa1435b04f6f8f29a39b75df909429e67dfb",
+          "octets": 64491
+        },
+        "docs/recette/SUIVI_AUTOMATISATION_CAHIER_931.xlsx": {
+          "sha256": "f69ca80bb30c1f0326fceff1210e94ea19c9ff5ec50d26e8b60daa4472a6982f",
+          "octets": 65778
+        },
+        "docs/recette/SUIVI_AUTOMATISATION_CAHIER_933.xlsx": {
+          "sha256": "bd93be37131c590158784c7c64ebab507ad83d77846c14ba16671527587fbc9c",
+          "octets": 69304
+        },
+        "docs/recette/SUIVI_AUTOMATISATION_CAHIER_935.xlsx": {
+          "sha256": "5a78b524e72acdaa439cbe2d690af5ffb8e8866cae7ab9d5f57a1d61bf5e0814",
+          "octets": 72261
+        },
+        "docs/recette/SUIVI_AUTOMATISATION_CAHIER_937.xlsx": {
+          "sha256": "5dc4a25862934ebb83a5111a69921960836e01427f6a52db70da8cadd71eeb55",
+          "octets": 74959
+        },
+        "docs/recette/SUIVI_CONSERVATION_FACTURES_923.xlsx": {
+          "sha256": "96bf40142e739973e2282cd34e8b9ed9616b435a69d72aca55deab1622e1098b",
+          "octets": 13190
+        },
+        "docs/recette/SUIVI_DROITS_IMMOBILISATIONS_929.xlsx": {
+          "sha256": "b77bca3a7bd900495e619458ba70fead27b2079f1bb903daf4ec20c439dfaa6f",
+          "octets": 9679
+        },
+        "docs/recette/SUIVI_LECTURE_IMMOBILISATIONS_931.xlsx": {
+          "sha256": "ac42f5e0d8b27452c33d75a959a058dda1357e57c2616141916743002f6e367d",
+          "octets": 10511
+        },
+        "docs/recette/SUIVI_SESSIONS_925.xlsx": {
+          "sha256": "29068af9cbc615e827a83a41a0f6c8d5a225638a44ccf365cf3769358f42caf9",
+          "octets": 9297
+        },
+        "docs/recette/preuves/923_1440_copie.png": {
+          "sha256": "1543a688e96490b946264fa492c428298c279669a949fc86db055c4731d19cab",
+          "octets": 204363
+        },
+        "docs/recette/preuves/923_1440_validation.png": {
+          "sha256": "11be8dd55e82c1a5249e3443d82df7b5ed434f573a36460087f0a9ff763514d7",
+          "octets": 117123
+        },
+        "docs/recette/preuves/923_390_copie.png": {
+          "sha256": "229f8a8b6079186eeb2dd18a6d0319cb1af57f7379c550569821873b9a50d987",
+          "octets": 76475
+        },
+        "docs/recette/preuves/923_390_validation.png": {
+          "sha256": "ed3cf75a664d0d9a1f21ec94236863078aaf267f2aea87b2bd9c708df60dd602",
+          "octets": 69691
+        },
+        "docs/recette/preuves/925_1440_reconnexion.png": {
+          "sha256": "4eb75e9cc693f6d9add7dd9b8152949d19a0b12b2638a10469492cdc442ba1ab",
+          "octets": 94778
+        },
+        "docs/recette/preuves/925_390_reconnexion.png": {
+          "sha256": "c45cbb668b6aca8c3aa863883f7d0baca246d2db767c110b94d04a4be25f219a",
+          "octets": 56812
+        },
+        "docs/recette/preuves/927_1440_cession_apercu.png": {
+          "sha256": "a1f68dfbc9177bc7c0b789876719ef35196cf66b661f90b0764eab323932e844",
+          "octets": 190761
+        },
+        "docs/recette/preuves/927_1440_rebut_apercu.png": {
+          "sha256": "a7c93eb5f7c5c954cb7745ee606ef27bb8aa327cd5ae4ebd178bc28277897882",
+          "octets": 182291
+        },
+        "docs/recette/preuves/927_390_cession_apercu.png": {
+          "sha256": "c37a485cd04d3d42bc1838fe2023383195377628c257bca051e8e32b42085725",
+          "octets": 90074
+        },
+        "docs/recette/preuves/927_390_rebut_apercu.png": {
+          "sha256": "a88ecce2b2dc1181526f475f940c77edec2bdc0babb1a6c4f7b7ff426df33985",
+          "octets": 80618
+        },
+        "docs/recette/preuves/929_1440_admin_diagnostic.png": {
+          "sha256": "c83043c3de73470319ecab88e473579a2626a94cc8cc0f5677d8c0cac4d093bf",
+          "octets": 185671
+        },
+        "docs/recette/preuves/929_1440_comptable_diagnostic.png": {
+          "sha256": "a4fce115a09021ce169f54e4557e158d82498f3ad228fcbdbb208b26a7297c7d",
+          "octets": 184502
+        },
+        "docs/recette/preuves/929_1440_lecture_diagnostic.png": {
+          "sha256": "4dfb8b39fffd88f8b3bb7e15fde026c02d2a41e37be4371392576167a9d691c7",
+          "octets": 184909
+        },
+        "docs/recette/preuves/929_390_admin_diagnostic.png": {
+          "sha256": "f7f5d4d98e5b8076ef9c1e4619fc769dfc2c12aeed5019a067359e930fce927e",
+          "octets": 62434
+        },
+        "docs/recette/preuves/929_390_comptable_diagnostic.png": {
+          "sha256": "817bbc15c458977f9705467251e121b1486ef642acb63b73c679cb8f99b8636b",
+          "octets": 60600
+        },
+        "docs/recette/preuves/929_390_lecture_diagnostic.png": {
+          "sha256": "d59d852802bea6e5d30d003850f1e3933f41978e3fad3ea291ac3f67ae086b52",
+          "octets": 61439
+        },
+        "docs/recette/preuves/931_1440_admin_plan_indisponible.png": {
+          "sha256": "774d75c914fa437b18ab5aff1427d49cbdefe1391ef372b4f13a99e1d4798a71",
+          "octets": 115294
+        },
+        "docs/recette/preuves/931_1440_admin_registre_indisponible.png": {
+          "sha256": "7ac4e283ac5fdf70d329aafd7e546b0a7c4c81d52dc9aa11c7571af2e1478d0b",
+          "octets": 80606
+        },
+        "docs/recette/preuves/931_1440_lecture_plan_indisponible.png": {
+          "sha256": "32d137b372887e29f09f1f43edca031ae3aa4ffbdcc4aa6409bd6b3748e5e9e1",
+          "octets": 125291
+        },
+        "docs/recette/preuves/931_1440_lecture_registre_indisponible.png": {
+          "sha256": "cf2827182b74c1a21fd5c30d0d7206d2e9aa7a72f14543981ad6ae2cd48da411",
+          "octets": 90651
+        },
+        "docs/recette/preuves/931_390_admin_plan_indisponible.png": {
+          "sha256": "215f44b15ae6e3ad018a89ef890a8a69b82a64b2129e7237a79ba1ac520d432a",
+          "octets": 62617
+        },
+        "docs/recette/preuves/931_390_admin_registre_indisponible.png": {
+          "sha256": "467726b42d7fbed1c57b178603673a41cba0e8e806c588824213510f5986b611",
+          "octets": 38742
+        },
+        "docs/recette/preuves/931_390_lecture_plan_indisponible.png": {
+          "sha256": "dd34d9084bd49914a77d47bcba5e4e43fabe1ab78cea631ba72396cbe6f87afc",
+          "octets": 68880
+        },
+        "docs/recette/preuves/931_390_lecture_registre_indisponible.png": {
+          "sha256": "2963d30eda4fab3c7d99c395cddcb7cde95803202eaf047d632aad7a5cd1863e",
+          "octets": 45032
+        },
+        "docs/recette/preuves/933_1440_csv_invalide.png": {
+          "sha256": "973980ed114395baff5af1a494176536cf0b2e66268c4142293a26a7f375e690",
+          "octets": 179158
+        },
+        "docs/recette/preuves/933_1440_lecteur_preparation755.png": {
+          "sha256": "3635c59cc8f923bfad2e8445029d11b33946417c312a0db4648082757ef30194",
+          "octets": 159491
+        },
+        "docs/recette/preuves/933_390_csv_invalide.png": {
+          "sha256": "685902623c0c331702e35267a706274925f920b27cf8bd0334ae3dd0bbd2a031",
+          "octets": 74995
+        },
+        "docs/recette/preuves/933_390_lecteur_preparation755.png": {
+          "sha256": "632870d3e327a9187ec81a3bb806990861bfd1dd19a877a0c1881ba7dea1b4ff",
+          "octets": 69986
+        },
+        "docs/recette/preuves/933_annuel_admin_1440.png": {
+          "sha256": "82d31b23b7c751ddb32cf322d2af2a836af54479daf4abcb94f79fe8d1be58b3",
+          "octets": 217199
+        },
+        "docs/recette/preuves/933_annuel_comptable_390.png": {
+          "sha256": "9f37e1a6ed979edea7f907e3901cd8bb1b30d2328cdab76630d90b077b20bbad",
+          "octets": 107076
+        },
+        "docs/recette/preuves/935_tiers_admin_1440.png": {
+          "sha256": "98185ffac0793e60e032b0284d884aa639a75543a9f447bef282096faba48c36",
+          "octets": 179136
+        },
+        "docs/recette/preuves/935_tiers_comptable_390.png": {
+          "sha256": "87cec9059f630778b37cba18b760c46c9e25c13223e8aefb937e0d4f449fc295",
+          "octets": 97682
+        },
+        "docs/recette/preuves/935_tiers_lecture_390.png": {
+          "sha256": "da63c211923a070a483a26169ff2431655682d83b3eb890fbd8cb829636f9dea",
+          "octets": 97069
+        },
+        "docs/recette/preuves/937_tp_admin_1440.png": {
+          "sha256": "005bce98240e49c5733299880afd580118737b301b712a9fde47d3186bc27985",
+          "octets": 186238
+        },
+        "docs/recette/preuves/937_tp_comptable_390.png": {
+          "sha256": "911e885bc5821c0dbfb330bccef5d30fc0be5d001673ee7cf521452273114e4a",
+          "octets": 90364
+        },
+        "docs/recette/preuves/937_tp_lecture_390.png": {
+          "sha256": "8de117e2b3e211e9dd4410fbb019c7a540973876e4b9bd10f2da7afee3c8a5aa",
+          "octets": 92021
+        },
+        "hisabpro-backend/125_factures_copies_conservees.sql": {
+          "sha256": "575f47c65e126667803eef71e85695c19d386d25a4631fe0538ca856eeefedb7",
+          "octets": 3005
+        },
+        "hisabpro-backend/auth.py": {
+          "sha256": "680878a7d6e1b7285855d5d40a3da78946bbb8c7a0bfa16cf4c10f0daec80a60",
+          "octets": 8531
+        },
+        "hisabpro-backend/routers/factures.py": {
+          "sha256": "8b430777211155d59a1ea3db42589f2e7d6984bf3a717971a6020f1fddb5cef2",
+          "octets": 104639
+        },
+        "hisabpro-backend/routers/immobilisations.py": {
+          "sha256": "0e862fe6735c486f6aaedec8c5e1792bcf315fea60d042e5f9951f5dee4e66dd",
+          "octets": 59977
+        },
+        "hisabpro-backend/schemas.py": {
+          "sha256": "d2c379eb0dd4ed6261e31abc77d9ab629b1a4db7a5e708c31ce0d6d2136c5e65",
+          "octets": 69175
+        },
+        "hisabpro-backend/services/factures_conservation_service.py": {
+          "sha256": "e02ddfef999a89d3309abcee43c3163f4b80c0d325ffb15f4eca0019e0c7eacd",
+          "octets": 4776
+        },
+        "src/components/FactureConservation.jsx": {
+          "sha256": "b189980742130281632e9a138bc6a7827336e3e9aa9085885c95b5709f9eb2d8",
+          "octets": 3258
+        },
+        "src/pages/Factures.jsx": {
+          "sha256": "8207a07211b89da11b6b36ffe914f354d7cad250d56ffc0222aed4829597762c",
+          "octets": 213342
+        },
+        "src/pages/Immobilisations.jsx": {
+          "sha256": "b18bd3c5c844f6e8790009f90956a4f6efcce974981fb0441aa367a8eddd6490",
+          "octets": 71005
+        },
+        "src/pages/Immobilisations.module.css": {
+          "sha256": "c753b8e42400951b903a71cc59de587ba77bb3fd6a11e7304e0190182909ac3a",
+          "octets": 11652
+        },
+        "src/pages/Journal.jsx": {
+          "sha256": "0a57a726867deb0152e2cbc4f394a45ea0b66b6e99ae42e84cf3ca600e984588",
+          "octets": 52216
+        },
+        "src/services/api.js": {
+          "sha256": "1cfb471df5f2ae5860892568aaaeccefd206e987efb1955ee2273f3398fc8ef7",
+          "octets": 40701
+        }
+      }
+    }
+  ],
+  "auto_reference": "Le manifeste ne se contient pas lui-même."
+}

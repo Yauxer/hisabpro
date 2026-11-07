@@ -1,0 +1,79 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_lf29oz7j",
+  "nonce": "47e698053d8f48bb9ca59e97d848a348",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [
+    {
+      "id": "HP-NEG-009",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "references869": {
+    "sources": [
+      {
+        "id": 4,
+        "reference": "002",
+        "ttc": 240.0
+      },
+      {
+        "id": 3,
+        "reference": "02",
+        "ttc": 240.0
+      }
+    ],
+    "fec": {
+      "groupes": {
+        "02": {
+          "nombre_lignes": 3,
+          "numero_ecriture": [
+            "AC-2025-0001"
+          ],
+          "debit": "240",
+          "credit": "240"
+        },
+        "002": {
+          "nombre_lignes": 3,
+          "numero_ecriture": [
+            "AC-2025-0002"
+          ],
+          "debit": "240",
+          "credit": "240"
+        }
+      },
+      "lignes": 6,
+      "debit": "480",
+      "credit": "480",
+      "sha256": "06f1dc446e8be0c508ef9eb56f95c38b3755ee6a5db4b65f6eb9d718b5184efd"
+    },
+    "etic_B7_4411": {
+      "compte": "4411",
+      "intitule": "Fournisseurs",
+      "montant": 480.0,
+      "echeance_auto_total": 480.0,
+      "echeance_auto_ecart": 0.0,
+      "echeance_auto_non_qualifie": 0.0,
+      "echeance_auto_nb_factures": 2,
+      "echeance_auto_nb_factures_historiques": 0,
+      "echeance_auto_anomalies_sources": [],
+      "echeance_auto_diagnostic": {
+        "plus_un_an": 0.0,
+        "moins_un_an": 0.0,
+        "echues": 480.0
+      },
+      "echeance_auto": {
+        "plus_un_an": 0.0,
+        "moins_un_an": 0.0,
+        "echues": 480.0
+      },
+      "echeance_auto_source": "factures et échéanciers à la date de clôture"
+    },
+    "aucune_mutation_http": true,
+    "journal_et_factures_conserves": true,
+    "limite": "Préconditions par API,lecture Journal,téléchargement FEC et ETIC dans Edge réel. Deux factures avec liens techniques d’origine ;aucun tiers/identifiant historique effacé ni réparation automatique."
+  }
+}

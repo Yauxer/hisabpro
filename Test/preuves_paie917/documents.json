@@ -1,0 +1,181 @@
+{
+  "controle": "Documentaire uniquement ; aucune recette humaine ou conformité validée",
+  "cas": 141,
+  "statuts": {
+    "Non testé": 141
+  },
+  "classeur_pdf": [
+    {
+      "excel": "SUIVI_RECETTE_PERSONNEL_887.xlsx",
+      "pdf": "CAHIER_RECETTE_PERSONNEL_HISABPRO_887.pdf",
+      "cas": 59,
+      "pages": 29,
+      "statuts": {
+        "Non testé": 59
+      },
+      "excel_sha256": "960779c88d659ef624dc8f7dc52bfec9dd3a29cb0bdccabd960f6db1b1b661e8",
+      "pdf_sha256": "487a8c452b8378bf650b806b9f28b57e8c7a1ad706604076fcf514a462be066e"
+    },
+    {
+      "excel": "SUIVI_CATALOGUE_PAIE_889.xlsx",
+      "pdf": "RECETTE_CATALOGUE_PAIE_889.pdf",
+      "cas": 12,
+      "pages": 6,
+      "statuts": {
+        "Non testé": 12
+      },
+      "excel_sha256": "7b610330495f9725608d76e16e0b5a13616e95c6195b9edf6b77cf412f6d3d5f",
+      "pdf_sha256": "f18f1d5a7add517c086075612635fc438218177a29ea06d54b88f54c61e78817"
+    },
+    {
+      "excel": "SUIVI_VARIABLES_PAIE_891.xlsx",
+      "pdf": "RECETTE_VARIABLES_PAIE_891.pdf",
+      "cas": 10,
+      "pages": 5,
+      "statuts": {
+        "Non testé": 10
+      },
+      "excel_sha256": "e74d9ecca4dd957fd3f459fbc9fd414d0ebdcdc9efedf1a5fa2a99d1a2779fdd",
+      "pdf_sha256": "0ce1924ffdd225b70cf33de3e00510a77eafb5f79d9884be748a2fc6c4aa7b0f"
+    },
+    {
+      "excel": "SUIVI_CAMPAGNES_PAIE_893.xlsx",
+      "pdf": "RECETTE_CAMPAGNES_PAIE_893.pdf",
+      "cas": 6,
+      "pages": 4,
+      "statuts": {
+        "Non testé": 6
+      },
+      "excel_sha256": "70c9496b2e18662cf72d9acd7ad019b961524c56c33955b87176bf17e73d39cc",
+      "pdf_sha256": "62f7057eca5b52dedab7582fc31376eb590c42b08eb4b7b3c66453557358e505"
+    },
+    {
+      "excel": "SUIVI_SOCIAL_PAIE_897.xlsx",
+      "pdf": "RECETTE_SOCIAL_PAIE_897.pdf",
+      "cas": 6,
+      "pages": 4,
+      "statuts": {
+        "Non testé": 6
+      },
+      "excel_sha256": "f1b6a4e79a1ad30e7a8ec76fc461fd0684236365652351aeaacab2c1ee8d0832",
+      "pdf_sha256": "973d85e1aec7190ef9ef0892b647b57707862bb4e0d86f5063e8551f4e0d5a41"
+    },
+    {
+      "excel": "SUIVI_CALCUL_SOCIAL_PAIE_899.xlsx",
+      "pdf": "RECETTE_CALCUL_SOCIAL_PAIE_899.pdf",
+      "cas": 6,
+      "pages": 6,
+      "statuts": {
+        "Non testé": 6
+      },
+      "excel_sha256": "1800774f6dfcde6dd5754b220f2bcf0eb2cd3a79d7d47fb65d949f8815fbda1d",
+      "pdf_sha256": "04f3bf63f92433fb79cec1ceb5885766cd2ba40c7cdeb38e5649c33875ad673c"
+    },
+    {
+      "excel": "SUIVI_IR_ANNUEL_PAIE_901.xlsx",
+      "pdf": "RECETTE_IR_ANNUEL_PAIE_901.pdf",
+      "cas": 6,
+      "pages": 4,
+      "statuts": {
+        "Non testé": 6
+      },
+      "excel_sha256": "2d2c60c5f02aa46d147c6b71c0e7f005c26a43f4852f4df39a217d4ae20b2499",
+      "pdf_sha256": "f33ecbd3585b8efc396da64dd7521c5fb65024ac68c274ca6f503da74fbed1bb"
+    },
+    {
+      "excel": "SUIVI_QUALIFICATIONS_IR_PAIE_907.xlsx",
+      "pdf": "RECETTE_QUALIFICATIONS_IR_PAIE_907.pdf",
+      "cas": 6,
+      "pages": 5,
+      "statuts": {
+        "Non testé": 6
+      },
+      "excel_sha256": "1322ae6ba2795c2811787b7f1f17c3a4924e661c4ba6562fa812ab07b523c1cf",
+      "pdf_sha256": "b2efedc72009f790ece681a64fbd74c3771fdf54a7cb2fe7cb2edc0bb31966f0"
+    },
+    {
+      "excel": "SUIVI_BASES_FISCALES_PAIE_909.xlsx",
+      "pdf": "RECETTE_BASES_FISCALES_PAIE_909.pdf",
+      "cas": 6,
+      "pages": 4,
+      "statuts": {
+        "Non testé": 6
+      },
+      "excel_sha256": "6365ca0ee9647861d04680eab3fcc6afb57441b6d252765dea0dbc3a534e36ef",
+      "pdf_sha256": "94e26a268d62ab92c38b142ddaa9d65beb69783df85c033303f8fdc77b019069"
+    },
+    {
+      "excel": "SUIVI_ARRONDI_ANNUEL_PAIE_911.xlsx",
+      "pdf": "RECETTE_ARRONDI_ANNUEL_PAIE_911.pdf",
+      "cas": 6,
+      "pages": 4,
+      "statuts": {
+        "Non testé": 6
+      },
+      "excel_sha256": "ac125e4b9a9a8b4b57f1c5c33b08b2c9ea57078f602b3cd8090bb3c8d3a955f9",
+      "pdf_sha256": "9f61f3e0831a4a824734943706d4315c8edb5f7c390e8ea2a3094663dacf81bd"
+    },
+    {
+      "excel": "SUIVI_FRAIS_ANNUELS_PAIE_913.xlsx",
+      "pdf": "RECETTE_FRAIS_ANNUELS_PAIE_913.pdf",
+      "cas": 6,
+      "pages": 5,
+      "statuts": {
+        "Non testé": 6
+      },
+      "excel_sha256": "b1358c16d77781509cfcb8ed5d0b08034e4b017ac4f82e70310840b0e7bf7c8a",
+      "pdf_sha256": "44df1c4d05680967287913bf04b2a815a748feeebcc2c1e5dc5167f2fee38b2d"
+    },
+    {
+      "excel": "SUIVI_IR_SOURCE_PAIE_915.xlsx",
+      "pdf": "RECETTE_IR_SOURCE_PAIE_915.pdf",
+      "cas": 6,
+      "pages": 5,
+      "statuts": {
+        "Non testé": 6
+      },
+      "excel_sha256": "fe0d6d4630ad00adc9455de18908c81095237d67faa8410bea9d4aab99e8308d",
+      "pdf_sha256": "f84baf2aaef35c9b03156be2567600d9e52f223be16b0f757ac01a7da61c142e"
+    },
+    {
+      "excel": "SUIVI_DOC_IR_PAIE_917.xlsx",
+      "pdf": "RECETTE_DOC_IR_PAIE_917.pdf",
+      "cas": 6,
+      "pages": 5,
+      "statuts": {
+        "Non testé": 6
+      },
+      "excel_sha256": "f294ea4f2ed34151801dc6ced236fe1b18bb8bed23dd841e2701202c74a3f95a",
+      "pdf_sha256": "7f13788a5566d01e4f3fa6d14f0c10bc108edd94a04cd1d7152204012cc0edbb"
+    }
+  ],
+  "liens_locaux_valides": 123,
+  "guides_verifies": [
+    "MODE_EMPLOI_PERSONNEL_PAIE.md",
+    "REFERENTIEL_SOCIAL_897.md",
+    "SIMULATIONS_SOCIALES_899.md",
+    "CONTROLE_IR_ANNUEL_901.md",
+    "SOURCES_IR_ANNUEL_901.md",
+    "RESULTATS_PAIE_897.md",
+    "RESULTATS_PAIE_899.md",
+    "RESULTATS_PAIE_901.md",
+    "INSTALLATION_COPIE_PAIE_116_118.md",
+    "REPRISE_IR_MENSUEL_3C2_903.md",
+    "BILAN_SESSION_PAIE_897_903.md",
+    "QUALIFICATIONS_FISCALES_907.md",
+    "SOURCES_FISCALES_907.md",
+    "BASES_FISCALES_CONNECTEES_909.md",
+    "REPRISE_PAIE_APRES_BASES_909.md",
+    "BILAN_SESSION_PAIE_907_909.md",
+    "RESULTATS_PAIE_909.md",
+    "ARRONDI_BASE_ANNUELLE_911.md",
+    "CUMULS_FRAIS_ANNUELS_913.md",
+    "IR_ANNUEL_SOURCE_915.md",
+    "INSTALLATION_COPIE_PAIE_119_122.md",
+    "DOCUMENTS_IR_ANNUEL_917.md",
+    "REPRISE_PAIE_MENSUELLE_917.md",
+    "RESULTATS_PAIE_917.md"
+  ],
+  "fichiers_excel_modifies": false,
+  "reseau_ou_base_utilises": false
+}

@@ -1,0 +1,13 @@
+{
+  "donnees_reelles": false,
+  "tables": 96,
+  "schema_donnees_sequences_acl_identiques": true,
+  "predicat_index_altere_detecte": true,
+  "role_runtime_limite": true,
+  "snapshot_et_empreinte_restitues": true,
+  "source_inchangee": true,
+  "cible_nonce_supprimee": true,
+  "archive_sha256": "b12002d3c1ac76830ea6e9dc9668f23d27ce6df081adf42e2c4972996abecc07",
+  "nouveau_snapshot_fiscal_restitue": true,
+  "lecture_fiscale_runtime_limite": true
+}

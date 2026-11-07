@@ -1,0 +1,2480 @@
+{
+  "date": "2026-10-28",
+  "lot": "Qualifications fiscales907",
+  "nombre_distinct": 372,
+  "repartition": {
+    "navigateur_Edge_API_PG_isole": 24,
+    "API_SQL_restauration_PostgreSQL_natif_isole": 109,
+    "unitaires_source": 239
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_e2e_paie889_catalogue_isole::test_889_catalogue_deux_personnels_edge[1440]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie889_catalogue_isole::test_889_catalogue_deux_personnels_edge[390]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie891_variables_isole::test_891_variable_saisie_et_decision_personnel_edge[1440]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie891_variables_isole::test_891_variable_saisie_et_decision_personnel_edge[390]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie893_campagnes_isole::test_893_campagne_brut_anomalie_recalcul_et_historique_edge[1440]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie893_campagnes_isole::test_893_campagne_brut_anomalie_recalcul_et_historique_edge[390]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie897_social_isole::test_897_saisie_sociale_versions_conflit_et_acces_edge[1440]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie897_social_isole::test_897_saisie_sociale_versions_conflit_et_acces_edge[390]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie899_social_isole::test_899_brut_vers_social_sources_et_historique_edge[1440]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie899_social_isole::test_899_brut_vers_social_sources_et_historique_edge[390]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie901_ir_annuel_isole::test_901_controle_annuel_exact_inconnus_et_historique_edge[1440]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie901_ir_annuel_isole::test_901_controle_annuel_exact_inconnus_et_historique_edge[390]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_personnel879_isole::test_879_creation_conditions_validation_et_masque_edge[1440]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_personnel879_isole::test_879_creation_conditions_validation_et_masque_edge[390]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_personnel879_isole::test_879_options_scope_minimal_et_permissions",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_personnel879_isole::test_879_administrer_acces_activation_reprise_et_rejet_ui[1440]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_personnel879_isole::test_879_administrer_acces_activation_reprise_et_rejet_ui[390]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_personnel879_isole::test_879_reseau_interrompu_reessai_et_navigations",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_personnel879_isole::test_879_conflit_revision_visible_sans_ecraser_dossier",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_personnel879_isole::test_879_changement_societe_ne_reprend_pas_donnees_ou_brouillon",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_personnel881_isole::test_881_deux_profils_personnel_sans_comptabilite_edge[1440]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_personnel881_isole::test_881_deux_profils_personnel_sans_comptabilite_edge[390]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_personnel881_isole::test_881_contexte_interrompu_reprise_reelle_edge",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_catalogue_vide_versionnement_et_absence_ecriture",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_ventilation_ir_cnss_separee_sans_inventer_cumul",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_montants_invalides_refuses[nan]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_montants_invalides_refuses[infini]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_montants_invalides_refuses[negatif]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_montants_invalides_refuses[precision]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_montants_invalides_refuses[booleen]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_montants_invalides_refuses[float]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_validation_reglementaire_explicite_et_preuves",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_doublon_incompatibilites_et_mapping_inconnus",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_isolation_droits_personnel_seul_et_sql_immuable",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_concurrence_une_seule_decision_et_rejet_trace",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_periode_expiree_ne_reactive_pas_version_precedente",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_isole::test_889_refus_requalification_passee_et_migration_rejouee_avec_donnees",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_sources_non_officielles_refusees[http://www.finances.gov.ma/a]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_sources_non_officielles_refusees[https://finances.gov.ma.evil.example/x]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_sources_non_officielles_refusees[https://127.0.0.1/]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_sources_non_officielles_refusees[https://user@www.finances.gov.ma/]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_sources_non_officielles_refusees[https://www.finances.gov.ma:8443/x]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_sources_non_officielles_refusees[javascript:alert(1)]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_contenus_ambigus_ou_formules_libres_refuses[mutation0]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_contenus_ambigus_ou_formules_libres_refuses[mutation1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_contenus_ambigus_ou_formules_libres_refuses[mutation2]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_contenus_ambigus_ou_formules_libres_refuses[mutation3]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_contenus_ambigus_ou_formules_libres_refuses[mutation4]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_contenus_ambigus_ou_formules_libres_refuses[mutation5]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_whitelist_exacte[GET-/api/employes/personnel/elements/autre]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_whitelist_exacte[GET-/api/employes/personnel/elements/1/autre]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_whitelist_exacte[POST-/api/employes/personnel/elements/1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_whitelist_exacte[PUT-/api/employes/personnel/elements/1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_whitelist_exacte[POST-/api/employes/personnel/elements/versions/1/approuver/autre]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_whitelist_exacte[DELETE-/api/employes/personnel/elements]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_inconnues_ne_deviennent_pas_soumises_ou_exonerees",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie889_catalogue_unitaire::test_889_plafond_exact_separe_et_serie_sans_arrondi_implicite",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_variable_exacte_sources_approbation_et_absence_ecriture",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_quantite_taux_arrondi_documente_et_references_manquantes",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_erreurs_refusees_sans_reecho[nan]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_erreurs_refusees_sans_reecho[infini]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_erreurs_refusees_sans_reecho[booleen]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_erreurs_refusees_sans_reecho[float]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_erreurs_refusees_sans_reecho[precision]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_erreurs_refusees_sans_reecho[negatif]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_erreurs_refusees_sans_reecho[mois]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_erreurs_refusees_sans_reecho[premier]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_erreurs_refusees_sans_reecho[id_booleen]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_doublons_recurrences_annulation_et_incompatibilites",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_salaire_manquant_et_sources_changees_ne_sont_pas_supposes",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_societes_capacites_et_options_personnel_seul",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_decisions_concurrentes_une_seule_application",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_beneficiaire_ne_valide_pas_sa_variable",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_isole::test_891_preparateur_inactif_rejet_trace_et_migration_rejouee",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_arrondi_ligne_independant_et_decimal_exact",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_quantites_taux_non_exacts_refuses[True]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_quantites_taux_non_exacts_refuses[0.1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_quantites_taux_non_exacts_refuses[NaN]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_quantites_taux_non_exacts_refuses[Infinity]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_quantites_taux_non_exacts_refuses[-1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_quantites_taux_non_exacts_refuses[0.0000001]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_quantites_taux_non_exacts_refuses[1000000000000]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement0]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement2]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement3]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement4]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement5]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement6]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_chemins_variables_non_elargis[POST-/api/employes/personnel/elements/variables/1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_chemins_variables_non_elargis[GET-/api/employes/personnel/elements/variables/options-extra]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_chemins_variables_non_elargis[POST-/api/employes/personnel/elements/variables/1/approuver/autre]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie891_variables_unitaire::test_891_chemins_variables_non_elargis[DELETE-/api/employes/personnel/elements/variables/1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_isole::test_893_brut_exact_et_inconnues_sociales_sans_ecriture",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_isole::test_893_anomalie_individuelle_ne_devient_pas_zero_ou_total_complet",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_isole::test_893_variables_en_attente_recalcul_et_snapshot_stable",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_isole::test_893_modifications_intramensuelles_et_retenues_non_supposees",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_isole::test_893_source_rubrique_future_ne_reecrit_pas_variable",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_isole::test_893_horaire_et_entree_intramensuelle_sont_explicites",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_isole::test_893_concurrence_meme_cle_une_seule_simulation",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_isole::test_893_societes_droits_et_rejeu_migration",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_canonique_exact_sans_float_ni_date_ambigue",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_entrees_imprecises_ou_validation_forcee_refusees[kw0]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_entrees_imprecises_ou_validation_forcee_refusees[kw1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_entrees_imprecises_ou_validation_forcee_refusees[kw2]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_entrees_imprecises_ou_validation_forcee_refusees[kw3]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_entrees_imprecises_ou_validation_forcee_refusees[kw4]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_entrees_imprecises_ou_validation_forcee_refusees[kw5]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_entrees_imprecises_ou_validation_forcee_refusees[kw6]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_entrees_imprecises_ou_validation_forcee_refusees[kw7]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_entrees_imprecises_ou_validation_forcee_refusees[kw8]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_entrees_imprecises_ou_validation_forcee_refusees[kw9]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_chemins_futurs_ou_validations_definitives_fermes[POST-/api/employes/personnel/traitement/simulations/autre]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_chemins_futurs_ou_validations_definitives_fermes[GET-/api/employes/personnel/traitement/options-extra]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_chemins_futurs_ou_validations_definitives_fermes[DELETE-/api/employes/personnel/traitement/simulations/1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie893_campagnes_unitaire::test_893_chemins_futurs_ou_validations_definitives_fermes[POST-/api/employes/personnel/traitement/campagnes/1/approuver]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_concurrence_isole::test_897_concurrence_deux_branches_api",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_concurrence_isole::test_897_concurrence_deux_branches_sql_runtime",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_concurrence_isole::test_897_sql_qualification_refuse_capacite_absente_puis_revoquee",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_restauration_isole::test_897_restauration_native_social_et_campagne",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_isole::test_897_dates_versions_immutables_et_absence_ecriture",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_isole::test_897_double_comptage_ipe_meme_regime_bloque_sql_et_api",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_isole::test_897_intervalles_pas_seulement_date_debut_et_relais",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_isole::test_897_qualification_source_habilitation_et_confirmation",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_isole::test_897_isolation_profil_personnel_et_immutabilite",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_isole::test_897_concurrence_double_decision_et_doublon",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_isole::test_897_expiration_rejet_et_rejeu_avec_donnees",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_taux_invalide_rejete[NaN]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_taux_invalide_rejete[Infinity]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_taux_invalide_rejete[-Infinity]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_taux_invalide_rejete[-0.01]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_taux_invalide_rejete[100.000001]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_taux_invalide_rejete[0.0000001]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_taux_invalide_rejete[True]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_taux_invalide_rejete[False]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_taux_invalide_rejete[1.25]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_taux_invalide_rejete[valeur9]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_taux_invalide_rejete[valeur10]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_pourcentage_exact_sans_float[0]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_pourcentage_exact_sans_float[100]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_pourcentage_exact_sans_float[0.000001]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_pourcentage_exact_sans_float[2.26]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw0]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw2]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw3]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw4]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw5]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw6]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw7]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw8]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw9]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw10]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw11]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw12]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw13]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw14]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw15]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw16]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw17]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw18]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw19]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw20]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw21]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_incoherence_ou_source_invalide[kw22]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_qualification_incomplete_bloquee[source_reference]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_qualification_incomplete_bloquee[texte_reference]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_qualification_incomplete_bloquee[article]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_qualification_incomplete_bloquee[url_source]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_qualification_incomplete_bloquee[empreinte_preuve]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_qualification_incomplete_bloquee[date_consultation]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_qualification_incomplete_bloquee[taux_salarial]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_qualification_incomplete_bloquee[taux_patronal]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_convention_forfait_et_non_applicabilite_explicites",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie897_social_unitaire::test_897_inconnu_reste_inconnu_sans_defaut_reglementaire",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_restauration_isole::test_899_restauration_native_social_calcul_et_campagne",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_social_connecte_exact_sources_et_absence_ecriture",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_sources_changees_brut_ancien_intact_et_nouveau_recalcul",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_faits_manquants_ou_base_globale_pas_de_zero[mutation0]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_faits_manquants_ou_base_globale_pas_de_zero[mutation1]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_faits_manquants_ou_base_globale_pas_de_zero[mutation2]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_faits_manquants_ou_base_globale_pas_de_zero[mutation3]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_regime_vide_branche_inconnue_et_periode_changee",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_idempotence_concurrence_et_selection_exacte",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_isolation_droits_profil_et_immutabilite",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_changement_taux_futur_preserve_anciennes_simulations",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_rubrique_non_qualifiee_bloque_son_assiette_seulement",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_plafond_exoneration_mensuelle_sur_toutes_variables",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_isole::test_899_forfait_et_non_applicabilite_documentes",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_oracle_assiettes_et_deux_branches",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_frontiere_plafond_et_arrondi_par_ligne[0.00-0.00]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_frontiere_plafond_et_arrondi_par_ligne[4999.99-50.00]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_frontiere_plafond_et_arrondi_par_ligne[5000.00-50.00]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_frontiere_plafond_et_arrondi_par_ligne[5000.01-50.00]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_plafond_mensuel_exoneration_n_est_pas_multiplie_par_variable",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_inconnue_cnss_ne_devient_ni_zero_ni_assiette_amo",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_cumul_absent_pas_de_division_implicite[annuel]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_cumul_absent_pas_de_division_implicite[journalier]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_plusieurs_versions_meme_plafond_mensuel_bloque",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_parametre_inconnu_ne_donne_pas_zero[kw0-APPLICABILITE_INCONNUE]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_parametre_inconnu_ne_donne_pas_zero[kw1-BRANCHE_OBSOLETE]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_parametre_inconnu_ne_donne_pas_zero[kw2-PLAFOND_INCONNU]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_parametre_inconnu_ne_donne_pas_zero[kw3-MODE_INCONNU]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_parametre_inconnu_ne_donne_pas_zero[kw4-ASSIETTE_INCONNUE]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_parametre_inconnu_ne_donne_pas_zero[kw5-TAUX_INCONNU]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_zero_explicite_non_applicabilite_et_forfait_distincts",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_base_invalide_rejetee[NaN]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_base_invalide_rejetee[Infinity]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_base_invalide_rejetee[-1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_base_invalide_rejetee[0.001]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_base_invalide_rejetee[True]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_base_invalide_rejetee[12.3]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_demande_ambigue_ou_definitive_rejetee[kw0]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_demande_ambigue_ou_definitive_rejetee[kw1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_demande_ambigue_ou_definitive_rejetee[kw2]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_demande_ambigue_ou_definitive_rejetee[kw3]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_demande_ambigue_ou_definitive_rejetee[kw4]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_demande_ambigue_ou_definitive_rejetee[kw5]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_demande_ambigue_ou_definitive_rejetee[kw6]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie899_social_moteur_unitaire::test_899_salarie_double_refuse_et_montants_sans_float",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_isole::test_901_ir_annuel_exact_reference_historique_et_comptabilite",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_isole::test_901_inconnues_visibles_en_http[kw0]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_isole::test_901_inconnues_visibles_en_http[kw1]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_isole::test_901_inconnues_visibles_en_http[kw2]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_isole::test_901_refus_api_sans_reecho_sensible[kw0]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_isole::test_901_refus_api_sans_reecho_sensible[kw1]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_isole::test_901_refus_api_sans_reecho_sensible[kw2]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_isole::test_901_idempotence_concurrente",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_isole::test_901_isolation_profil_habilitations_immutabilite_et_rejeu",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[0.00-0.0000]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[40000.00-0.0000]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[40000.01-0.0010]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[60000.00-2000.0000]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[60000.01-2000.0020]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[80000.00-6000.0000]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[80000.01-6000.0030]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[100000.00-12000.0000]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[100000.01-12000.0034]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[180000.00-39200.0000]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[180000.01-39200.0037]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[200000.00-46600.0000]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_bornes_sans_trou_ni_arrondi_de_liquidation[1000000.00-342600.0000]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_reduction_familiale_sans_credit_fictif_et_copie_sources",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_information_inconnue_pas_de_zero_ou_de_repli[kw0]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_information_inconnue_pas_de_zero_ou_de_repli[kw1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_information_inconnue_pas_de_zero_ou_de_repli[kw2]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_information_inconnue_pas_de_zero_ou_de_repli[kw3]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_information_inconnue_pas_de_zero_ou_de_repli[kw4]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_information_inconnue_pas_de_zero_ou_de_repli[kw5]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw0]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw2]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw3]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw4]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw5]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw6]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw7]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw8]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw9]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw10]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw11]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw12]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw13]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw14]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw15]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw16]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_ir_annuel_unitaire::test_901_entree_ambigue_non_finie_ou_annee_non_qualifiee_refusee[kw17]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie901_restauration_isole::test_901_restauration_native_ir_social_et_campagne",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_oracle_mensuel_complet[0-601.56-8903.64]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_oracle_mensuel_complet[2-501.56-9003.64]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_oracle_mensuel_complet[6-301.56-9203.64]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_aucune_charge_famille_deduite_du_mariage_ni_des_enfants",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_reference_incomplete_bloquee_sans_taux_silencieux",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_referentiel_incoherent_refuse[doublon]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_referentiel_incoherent_refuse[nan]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_referentiel_incoherent_refuse[negatif]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_referentiel_incoherent_refuse[discontinu]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_referentiel_incoherent_refuse[ouvert]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_referentiel_incoherent_refuse[sans_bareme]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_referentiel_incoherent_refuse[sans_deduction]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_dossier_non_fini_ou_negatif_refuse[NaN]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_dossier_non_fini_ou_negatif_refuse[Infinity]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_dossier_non_fini_ou_negatif_refuse[-inf]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_dossier_non_fini_ou_negatif_refuse[True]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_dossier_non_fini_ou_negatif_refuse[False]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_dossier_non_fini_ou_negatif_refuse[-1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_dossier_non_fini_ou_negatif_refuse[1e+20]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_dossier_non_fini_ou_negatif_refuse[valeur7]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_dossier_non_fini_ou_negatif_refuse[None]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_dossier_invalide_refuse[nom-  ]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_dossier_invalide_refuse[nom-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_dossier_invalide_refuse[numero_cnss-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_dossier_invalide_refuse[nb_enfants-True]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_dossier_invalide_refuse[nb_enfants--1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_dossier_invalide_refuse[personnes_charge_ir-7]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_dossier_invalide_refuse[personnes_charge_ir-1.5]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_dossier_invalide_refuse[situation_familiale-inconnue]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_dates_sortie_avant_entree_refusees",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_zero_et_dossier_optionnel_autorises",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_historique_invalide_bloque_simulation[NaN]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_historique_invalide_bloque_simulation[Infinity]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_historique_invalide_bloque_simulation[-1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie_grh_service::test_salaire_historique_invalide_bloque_simulation[1e300]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[GET-/api/employes/personnel-extra]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[GET-/api/employes/personnel/1/historique-extra]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[POST-/api/employes/personnel/contexte]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[GET-/api/employes/securite/acces-extra]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[PUT-/api/employes/personnel/1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[DELETE-/api/employes/personnel/1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[PATCH-/api/auth/me]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[POST-/api/societes/switcher/1/autre]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[GET-/api/employes/personnel//options]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[GET-/api/futur-module]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[POST-/api/employes/personnel/demandes/1/approuver/autre]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_contexte_request_absent_refuse_personnel",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_roles_existants_non_restreints_par_cette_garde[admin]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_roles_existants_non_restreints_par_cette_garde[comptable]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_roles_existants_non_restreints_par_cette_garde[lecture]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel887_banque_isole::test_887_banque_chiffree_sans_ecriture_avec_controle_independant",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel887_banque_isole::test_887_effet_futur_immutabilite_masques_et_isolation",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel887_banque_isole::test_887_erreurs_validation_sans_reecho_de_coordonnees[masque]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel887_banque_isole::test_887_erreurs_validation_sans_reecho_de_coordonnees[texte_trop_long]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel887_banque_isole::test_887_erreurs_validation_sans_reecho_de_coordonnees[identifiant_booleen]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel887_banque_isole::test_887_erreurs_validation_sans_reecho_de_coordonnees[date_nombre]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel887_banque_isole::test_887_coordonnees_pas_dans_notes_ni_pieces_etrangeres",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel887_banque_isole::test_887_approbations_concurrentes_une_seule_decision",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_personnel887_banque_isole::test_887_rejet_auteur_desactive_et_date_apres_sortie",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie905_annee_sociale_isole::test_905_douze_mois_reels_fictifs_totaux_et_historique",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_qualification_incomplete_refusee[source_reference]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_qualification_incomplete_refusee[texte_reference]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_qualification_incomplete_refusee[article]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_qualification_incomplete_refusee[url_source]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_qualification_incomplete_refusee[empreinte_preuve]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_qualification_incomplete_refusee[date_consultation]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_preuve_invalide_rejetee[kw0]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_preuve_invalide_rejetee[kw1]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_preuve_invalide_rejetee[kw2]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_preuve_invalide_rejetee[kw3]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_preuve_invalide_rejetee[kw4]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_preuve_invalide_rejetee[kw5]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_preuve_invalide_rejetee[kw6]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_preuve_invalide_rejetee[kw7]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_preuve_invalide_rejetee[kw8]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_preuve_invalide_rejetee[kw9]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_preuve_invalide_rejetee[kw10]",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_unitaire::test_907_anciens_contenus_inconnus_sans_deduction_automatique",
+      "famille": "unitaires_source",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_qualification_independante_habilitation_et_attestation[/api/employes/personnel/elements-creer-frais_professionnels-INCLUS]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_qualification_independante_habilitation_et_attestation[/api/employes/personnel/social-creer-deductibilite_ir-DEDUCTIBLE]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_garde_sql_directe_sans_habilitation_ni_attestation[/api/employes/personnel/elements-creer-frais_professionnels-EXCLUS-paie_rubrique_versions]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_garde_sql_directe_sans_habilitation_ni_attestation[/api/employes/personnel/social-creer-deductibilite_ir-NON_DEDUCTIBLE-paie_branche_sociale_versions]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_versions_historiques_isolation_et_rejeu[/api/employes/personnel/elements-creer-frais_professionnels-contenu-EXCLUS]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_versions_historiques_isolation_et_rejeu[/api/employes/personnel/social-creer-deductibilite_ir-contenu-NON_DEDUCTIBLE]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif0-frais_professionnels-paie_rubrique_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif0-deductibilite_ir-paie_branche_sociale_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif1-frais_professionnels-paie_rubrique_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif1-deductibilite_ir-paie_branche_sociale_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif2-frais_professionnels-paie_rubrique_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif2-deductibilite_ir-paie_branche_sociale_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif3-frais_professionnels-paie_rubrique_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif3-deductibilite_ir-paie_branche_sociale_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif4-frais_professionnels-paie_rubrique_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif4-deductibilite_ir-paie_branche_sociale_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif5-frais_professionnels-paie_rubrique_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif5-deductibilite_ir-paie_branche_sociale_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif6-frais_professionnels-paie_rubrique_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif6-deductibilite_ir-paie_branche_sociale_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif7-frais_professionnels-paie_rubrique_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_insertion_sql_preuve_invalide_refusee[modif7-deductibilite_ir-paie_branche_sociale_versions-creer]",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_qualification_ir_isole::test_907_installation_manquante_refus_explicite_sans_casser_anciennes_saisies",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie907_qualification_ir_isole::test_907_formulaires_fiscaux_catalogue_et_social_edge[1440]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_e2e_paie907_qualification_ir_isole::test_907_formulaires_fiscaux_catalogue_et_social_edge[390]",
+      "famille": "navigateur_Edge_API_PG_isole",
+      "statut": "reussi",
+      "campagne": "paie907_final"
+    },
+    {
+      "id": "Test.test_paie907_restauration_isole::test_907_restauration_native_qualifications_et_snapshots",
+      "famille": "API_SQL_restauration_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "paie907_restauration_corrigee"
+    }
+  ],
+  "campagnes": [
+    {
+      "echecs": 10,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "paie907_cible",
+      "cas": 34,
+      "code": 1,
+      "selection_finale": false
+    },
+    {
+      "echecs": 6,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "paie907_cible2",
+      "cas": 36,
+      "code": 1,
+      "selection_finale": false
+    },
+    {
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "paie907_cible3",
+      "cas": 44,
+      "code": 1,
+      "selection_finale": false
+    },
+    {
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "paie907_final",
+      "cas": 372,
+      "code": 1,
+      "selection_finale": true
+    },
+    {
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "paie907_reprise",
+      "cas": 1,
+      "code": 0,
+      "selection_finale": false
+    },
+    {
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "campagne": "paie907_restauration_corrigee",
+      "cas": 1,
+      "code": 0,
+      "selection_finale": true
+    }
+  ],
+  "selection_finale": [
+    "paie907_final",
+    "paie907_restauration_corrigee"
+  ],
+  "chronologie": "Ciblée24/10échecs de montage, puis30/6comparaisons UTF-8, puis43/1variable locale dans le test de restauration. Tous les refus SQL et deux Edge passent dans ciblée3. Restauration corrigée réellement rejouée. La campagne complète avait collecté la version du test avant sa correction : son éventuel échec est couvert exclusivement par le rejeu natif corrigé. Aucune addition de cas recouvrants et aucun produit changé pendant la campagne.",
+  "echecs_resolution": {
+    "Test.test_paie907_restauration_isole::test_907_restauration_native_qualifications_et_snapshots": {
+      "campagne": "paie907_final",
+      "resolution": "paie907_restauration_corrigee"
+    }
+  },
+  "frontend": {
+    "code": 0,
+    "modules": 209,
+    "secondes_vite": 8.1,
+    "avertissements": "xlsx/chunks existants"
+  },
+  "compilation": {
+    "fichiers": [
+      "hisabpro-backend/services/paie_catalogue_schemas.py",
+      "hisabpro-backend/services/paie_catalogue_service.py",
+      "hisabpro-backend/services/paie_qualification_ir_service.py",
+      "hisabpro-backend/services/paie_social_schemas.py",
+      "hisabpro-backend/services/paie_social_service.py",
+      "Test/generer_recette_paie907.py",
+      "Test/test_e2e_paie907_qualification_ir_isole.py",
+      "Test/test_paie907_qualification_ir_isole.py",
+      "Test/test_paie907_qualification_ir_unitaire.py",
+      "Test/test_paie907_restauration_isole.py",
+      "Test/verifier_cahiers_paie903.py"
+    ],
+    "resultat": "OK"
+  },
+  "candidat": {
+    "chemin": "Test/CANDIDAT_PAIE_907.json",
+    "sources": 522,
+    "sha256": "0ed7b480bc7d4b9babd507d6966dcc553bc0bc2225cc9c4b10829b618502b8c4"
+  },
+  "restauration": {
+    "donnees_reelles": false,
+    "tables": 95,
+    "schema_donnees_sequences_acl_identiques": true,
+    "predicat_index_altere_detecte": true,
+    "role_runtime_limite": true,
+    "snapshot_et_empreinte_restitues": true,
+    "source_inchangee": true,
+    "cible_nonce_supprimee": true,
+    "archive_sha256": "2d65a765a0a711b3c8360d5239eaec83c6903dc4e0b16d052029b764df842d4b"
+  },
+  "documents": {
+    "controle": "Documentaire uniquement ; aucune recette humaine ou conformité validée",
+    "cas": 111,
+    "statuts": {
+      "Non testé": 111
+    },
+    "classeur_pdf": [
+      {
+        "excel": "SUIVI_RECETTE_PERSONNEL_887.xlsx",
+        "pdf": "CAHIER_RECETTE_PERSONNEL_HISABPRO_887.pdf",
+        "cas": 59,
+        "pages": 29,
+        "statuts": {
+          "Non testé": 59
+        },
+        "excel_sha256": "960779c88d659ef624dc8f7dc52bfec9dd3a29cb0bdccabd960f6db1b1b661e8",
+        "pdf_sha256": "487a8c452b8378bf650b806b9f28b57e8c7a1ad706604076fcf514a462be066e"
+      },
+      {
+        "excel": "SUIVI_CATALOGUE_PAIE_889.xlsx",
+        "pdf": "RECETTE_CATALOGUE_PAIE_889.pdf",
+        "cas": 12,
+        "pages": 6,
+        "statuts": {
+          "Non testé": 12
+        },
+        "excel_sha256": "7b610330495f9725608d76e16e0b5a13616e95c6195b9edf6b77cf412f6d3d5f",
+        "pdf_sha256": "f18f1d5a7add517c086075612635fc438218177a29ea06d54b88f54c61e78817"
+      },
+      {
+        "excel": "SUIVI_VARIABLES_PAIE_891.xlsx",
+        "pdf": "RECETTE_VARIABLES_PAIE_891.pdf",
+        "cas": 10,
+        "pages": 5,
+        "statuts": {
+          "Non testé": 10
+        },
+        "excel_sha256": "e74d9ecca4dd957fd3f459fbc9fd414d0ebdcdc9efedf1a5fa2a99d1a2779fdd",
+        "pdf_sha256": "0ce1924ffdd225b70cf33de3e00510a77eafb5f79d9884be748a2fc6c4aa7b0f"
+      },
+      {
+        "excel": "SUIVI_CAMPAGNES_PAIE_893.xlsx",
+        "pdf": "RECETTE_CAMPAGNES_PAIE_893.pdf",
+        "cas": 6,
+        "pages": 4,
+        "statuts": {
+          "Non testé": 6
+        },
+        "excel_sha256": "70c9496b2e18662cf72d9acd7ad019b961524c56c33955b87176bf17e73d39cc",
+        "pdf_sha256": "62f7057eca5b52dedab7582fc31376eb590c42b08eb4b7b3c66453557358e505"
+      },
+      {
+        "excel": "SUIVI_SOCIAL_PAIE_897.xlsx",
+        "pdf": "RECETTE_SOCIAL_PAIE_897.pdf",
+        "cas": 6,
+        "pages": 4,
+        "statuts": {
+          "Non testé": 6
+        },
+        "excel_sha256": "f1b6a4e79a1ad30e7a8ec76fc461fd0684236365652351aeaacab2c1ee8d0832",
+        "pdf_sha256": "973d85e1aec7190ef9ef0892b647b57707862bb4e0d86f5063e8551f4e0d5a41"
+      },
+      {
+        "excel": "SUIVI_CALCUL_SOCIAL_PAIE_899.xlsx",
+        "pdf": "RECETTE_CALCUL_SOCIAL_PAIE_899.pdf",
+        "cas": 6,
+        "pages": 6,
+        "statuts": {
+          "Non testé": 6
+        },
+        "excel_sha256": "1800774f6dfcde6dd5754b220f2bcf0eb2cd3a79d7d47fb65d949f8815fbda1d",
+        "pdf_sha256": "04f3bf63f92433fb79cec1ceb5885766cd2ba40c7cdeb38e5649c33875ad673c"
+      },
+      {
+        "excel": "SUIVI_IR_ANNUEL_PAIE_901.xlsx",
+        "pdf": "RECETTE_IR_ANNUEL_PAIE_901.pdf",
+        "cas": 6,
+        "pages": 4,
+        "statuts": {
+          "Non testé": 6
+        },
+        "excel_sha256": "2d2c60c5f02aa46d147c6b71c0e7f005c26a43f4852f4df39a217d4ae20b2499",
+        "pdf_sha256": "f33ecbd3585b8efc396da64dd7521c5fb65024ac68c274ca6f503da74fbed1bb"
+      },
+      {
+        "excel": "SUIVI_QUALIFICATIONS_IR_PAIE_907.xlsx",
+        "pdf": "RECETTE_QUALIFICATIONS_IR_PAIE_907.pdf",
+        "cas": 6,
+        "pages": 5,
+        "statuts": {
+          "Non testé": 6
+        },
+        "excel_sha256": "1322ae6ba2795c2811787b7f1f17c3a4924e661c4ba6562fa812ab07b523c1cf",
+        "pdf_sha256": "b2efedc72009f790ece681a64fbd74c3771fdf54a7cb2fe7cb2edc0bb31966f0"
+      }
+    ],
+    "liens_locaux_valides": 67,
+    "guides_verifies": [
+      "MODE_EMPLOI_PERSONNEL_PAIE.md",
+      "REFERENTIEL_SOCIAL_897.md",
+      "SIMULATIONS_SOCIALES_899.md",
+      "CONTROLE_IR_ANNUEL_901.md",
+      "SOURCES_IR_ANNUEL_901.md",
+      "RESULTATS_PAIE_897.md",
+      "RESULTATS_PAIE_899.md",
+      "RESULTATS_PAIE_901.md",
+      "INSTALLATION_COPIE_PAIE_116_118.md",
+      "REPRISE_IR_MENSUEL_3C2_903.md",
+      "BILAN_SESSION_PAIE_897_903.md",
+      "QUALIFICATIONS_FISCALES_907.md",
+      "SOURCES_FISCALES_907.md"
+    ],
+    "fichiers_excel_modifies": false,
+    "reseau_ou_base_utilises": false
+  },
+  "preuves": {
+    "Test/preuves_paie907/paie907_cible.xml": "0d2b17d0f4a7801536e2c0bce54f4371787014de2ca8f68d6c3e9e9e367b4a44",
+    "Test/preuves_paie907/paie907_cible2.xml": "0ebf5a11d9b2331d44fc0c4bffa37d4437d045fef5b005ef9acfeff518b1e4ab",
+    "Test/preuves_paie907/paie907_cible3.xml": "e231f909bd9eac60298ace56c2b4d27e67ae03706c7ab6133025fc7cac3ad80c",
+    "Test/preuves_paie907/paie907_documents.json": "605e8535824e1769c980063bb28fadb40802aa7c2ca401f647167ea59dc8875f",
+    "Test/preuves_paie907/paie907_final.xml": "3a96f199c7e2b26e88811083c92dc421053a7071c5cf438cc2a77df7ce0aa1ac",
+    "Test/preuves_paie907/paie907_reprise.xml": "f7a2ffce1f664c7793fc5f3f4078091ae30a2e60379b6f1b67e9a11b971a03ae",
+    "Test/preuves_paie907/paie907_restauration_corrigee.xml": "03527946a7030f7562fab9d7fc587849a40b9e817a76f4c87a2afc65209ceae0",
+    "Test/preuves_paie907/paie907_restauration_preuve.json": "8270a97dc3b5b45207261dcca40c7b6ec433d6b2be625bcd76a7580cae367d09"
+  },
+  "limites": [
+    "Aucune base réelle ;119 à installer sur copie",
+    "Qualifications de paramétrage, aucun nouveau taux ou déduction automatique",
+    "Retenue mensuelle, net, bulletins et paie définitive non livrés",
+    "111cas de recette humaine Non testé ; production non validée"
+  ]
+}

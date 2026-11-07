@@ -1,0 +1,624 @@
+{
+  "resultats": [
+    {
+      "campagne": "recette781_cible",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 77.29,
+      "code": 0
+    },
+    {
+      "campagne": "recette781_connexes",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 29.06,
+      "code": 0
+    }
+  ],
+  "preuves": [
+    {
+      "cible": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_wo85lpx9",
+      "cas": "HP-ADM-003",
+      "variation": "Pour tester absence2025,laisserpremierexercice àvaleur inscription2026 jusqu’àlacréationUI2025,puisappliquer premierexercice2025 ;aucunexercice supprimé.",
+      "erreur": null,
+      "statut": "Réussi",
+      "periodes2025_2026": 24,
+      "doublon_refuse409": true
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_wo85lpx9",
+      "nonce": "b139499302a24d75b53e0f92040a50b7",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 1440,
+      "cas": [
+        {
+          "id": "HP-ADM-006",
+          "statut": "Réussi",
+          "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+        },
+        {
+          "id": "HP-ADM-007",
+          "statut": "Réussi",
+          "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+        },
+        {
+          "id": "HP-ADM-008",
+          "statut": "Réussi",
+          "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+        },
+        {
+          "id": "HP-ADM-009",
+          "statut": "Réussi",
+          "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+        },
+        {
+          "id": "HP-ADM-010",
+          "statut": "Réussi",
+          "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+        },
+        {
+          "id": "HP-ADM-011",
+          "statut": "Réussi",
+          "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+        },
+        {
+          "id": "HP-ADM-012",
+          "statut": "Réussi",
+          "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+        },
+        {
+          "id": "HP-ADM-013",
+          "statut": "Réussi",
+          "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+        },
+        {
+          "id": "HP-ADM-014",
+          "statut": "Réussi",
+          "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+        },
+        {
+          "id": "HP-ADM-015",
+          "statut": "Réussi",
+          "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+        },
+        {
+          "id": "HP-PAY-001",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-FAC-002",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-PAY-002",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-PAY-003",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-FAC-003",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-FAC-001",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-FAC-004",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-PAY-004",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-PAY-005",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-PAY-006",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-PAY-007",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-FAC-006",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-FAC-007",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-PAY-010",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-STK-001",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-ADM-013",
+          "statut": "Réussi",
+          "controle": "Création article773 +stock réel777 +comptabilisation finale3111/6114 viaformulaire inventaire779"
+        },
+        {
+          "id": "HP-ADM-016",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-ADM-017",
+          "statut": "Réussi"
+        }
+      ],
+      "tiers": {
+        "C-MARCH": {
+          "id": 3,
+          "compte": "3421",
+          "auxiliaire": "C00000003"
+        },
+        "C-SERVICE": {
+          "id": 4,
+          "compte": "3421",
+          "auxiliaire": "C00000004"
+        },
+        "C-IMPAYE": {
+          "id": 5,
+          "compte": "3421",
+          "auxiliaire": "C00000005"
+        },
+        "F-MARCH": {
+          "id": 6,
+          "compte": "4411",
+          "auxiliaire": "F00000006"
+        },
+        "F-SERVICE": {
+          "id": 7,
+          "compte": "4411",
+          "auxiliaire": "F00000007"
+        },
+        "F-CONTROLE": {
+          "id": 8,
+          "compte": "4411",
+          "auxiliaire": "F00000008"
+        },
+        "F-IMMO": {
+          "id": 9,
+          "compte": "4481",
+          "auxiliaire": "F00000009"
+        }
+      },
+      "articles": {
+        "M-01": {
+          "id": 1,
+          "stockable": true,
+          "stock": 0.0,
+          "tva": 20.0,
+          "compte_achat": "6111",
+          "compte_vente": "7111"
+        },
+        "S-VTE": {
+          "id": 2,
+          "stockable": false,
+          "stock": 0.0,
+          "tva": 20.0,
+          "compte_achat": null,
+          "compte_vente": "7124"
+        },
+        "S-ACH": {
+          "id": 3,
+          "stockable": false,
+          "stock": 0.0,
+          "tva": 20.0,
+          "compte_achat": "6125",
+          "compte_vente": null
+        }
+      },
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "limite_cycle": "Sous-parcours :capital etimmobilisation du début du cahier non rejoués ;solde banque contrôlé comme variation des seules opérations exécutées,non comme solde annuel. Banque préparée parAPI,formulaire validé771.",
+      "operations": [
+        {
+          "reference": "AC-F01",
+          "id": 1,
+          "date": "2025-01-04",
+          "journal": "BQ",
+          "lignes": {
+            "3411": [
+              "6000.00",
+              "0.00"
+            ],
+            "5141": [
+              "0.00",
+              "6000.00"
+            ]
+          }
+        },
+        {
+          "reference": "ACH-01",
+          "id": 2,
+          "date": "2025-01-05",
+          "journal": "AC",
+          "lignes": {
+            "6111": [
+              "10000.00",
+              "0.00"
+            ],
+            "34552": [
+              "2000.00",
+              "0.00"
+            ],
+            "4411": [
+              "0.00",
+              "12000.00"
+            ]
+          }
+        },
+        {
+          "reference": "AC-F01-IMP",
+          "id": 3,
+          "date": "2025-01-05",
+          "journal": "OD",
+          "lignes": {
+            "4411": [
+              "6000.00",
+              "0.00"
+            ],
+            "3411": [
+              "0.00",
+              "6000.00"
+            ]
+          }
+        },
+        {
+          "reference": "ACH-01-PAY",
+          "id": 4,
+          "date": "2025-01-07",
+          "journal": "BQ",
+          "lignes": {
+            "4411": [
+              "6000.00",
+              "0.00"
+            ],
+            "5141": [
+              "0.00",
+              "6000.00"
+            ]
+          }
+        },
+        {
+          "reference": "ACH-02",
+          "id": 5,
+          "date": "2025-01-10",
+          "journal": "AC",
+          "lignes": {
+            "6111": [
+              "12000.00",
+              "0.00"
+            ],
+            "34552": [
+              "2400.00",
+              "0.00"
+            ],
+            "4411": [
+              "0.00",
+              "14400.00"
+            ]
+          }
+        },
+        {
+          "reference": "VENTE-01",
+          "id": 6,
+          "date": "2025-01-20",
+          "journal": "VT",
+          "lignes": {
+            "3421": [
+              "30000.00",
+              "0.00"
+            ],
+            "4455": [
+              "0.00",
+              "5000.00"
+            ],
+            "7111": [
+              "0.00",
+              "25000.00"
+            ]
+          }
+        },
+        {
+          "reference": "VENTE-01-PAY",
+          "id": 7,
+          "date": "2025-01-25",
+          "journal": "BQ",
+          "lignes": {
+            "5141": [
+              "10000.00",
+              "0.00"
+            ],
+            "3421": [
+              "0.00",
+              "10000.00"
+            ]
+          }
+        },
+        {
+          "reference": "CHQ-01",
+          "id": 8,
+          "date": "2025-01-26",
+          "journal": "AE",
+          "lignes": {
+            "51111": [
+              "20000.00",
+              "0.00"
+            ],
+            "3421": [
+              "0.00",
+              "20000.00"
+            ]
+          }
+        },
+        {
+          "reference": "CHQ-01-REM",
+          "id": 9,
+          "date": "2025-02-01",
+          "journal": "AE",
+          "lignes": {
+            "51112": [
+              "20000.00",
+              "0.00"
+            ],
+            "51111": [
+              "0.00",
+              "20000.00"
+            ]
+          }
+        },
+        {
+          "reference": "CHQ-01-ENC",
+          "id": 10,
+          "date": "2025-02-05",
+          "journal": "BQ",
+          "lignes": {
+            "5141": [
+              "20000.00",
+              "0.00"
+            ],
+            "51112": [
+              "0.00",
+              "20000.00"
+            ]
+          }
+        },
+        {
+          "reference": "AV-01",
+          "id": 11,
+          "date": "2025-02-10",
+          "journal": "AV",
+          "lignes": {
+            "7111": [
+              "2500.00",
+              "0.00"
+            ],
+            "4455": [
+              "500.00",
+              "0.00"
+            ],
+            "3421": [
+              "0.00",
+              "3000.00"
+            ]
+          }
+        },
+        {
+          "reference": "VENTE-02",
+          "id": 12,
+          "date": "2025-03-01",
+          "journal": "VT",
+          "lignes": {
+            "3421": [
+              "18000.00",
+              "0.00"
+            ],
+            "4455": [
+              "0.00",
+              "3000.00"
+            ],
+            "7111": [
+              "0.00",
+              "15000.00"
+            ]
+          }
+        },
+        {
+          "reference": "VENTE-02-PAY",
+          "id": 13,
+          "date": "2025-03-05",
+          "journal": "BQ",
+          "lignes": {
+            "5141": [
+              "5000.00",
+              "0.00"
+            ],
+            "3421": [
+              "0.00",
+              "5000.00"
+            ]
+          }
+        },
+        {
+          "reference": "STOCK-FIN",
+          "id": 14,
+          "date": "2025-12-31",
+          "journal": "OD",
+          "lignes": {
+            "3111": [
+              "6600.00",
+              "0.00"
+            ],
+            "6114": [
+              "0.00",
+              "6600.00"
+            ]
+          }
+        }
+      ],
+      "requetes_echouees": [
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:53373/api/avoirs",
+          "erreur": "net::ERR_ABORTED"
+        }
+      ],
+      "lettrage_fournisseur": "AAA",
+      "cycle": {
+        "factures": [
+          1,
+          2,
+          3
+        ],
+        "devis": 1,
+        "bc": 1,
+        "bl": 1,
+        "ecritures": 7,
+        "lignes": 17,
+        "total_debit_credit": "84400.00",
+        "stock": 100,
+        "cmup": 110,
+        "reste_vente": 20000
+      },
+      "suite777": {
+        "ecritures": 13,
+        "lignes": 31,
+        "debit_credit": "170400.00",
+        "stock": 60,
+        "cmup": 110,
+        "reste_vente2": 10000,
+        "avoir": 1,
+        "facture2": 4,
+        "prefixe_valide_inchange": true,
+        "imputation_credit_sans_nouvelle_ecriture": true
+      },
+      "inventaire779": {
+        "inventaire": 1,
+        "ecriture_stock": 14,
+        "valeur_physique_comptable": 6600,
+        "stock": 60,
+        "cmup": 110,
+        "ecritures": 14,
+        "lignes": 33,
+        "debit_credit": "177000.00",
+        "bilan_provisoire": 44000,
+        "resultat_provisoire": 22100,
+        "anti_doublon": true,
+        "prefixe_valide_inchange": true,
+        "limite": "États du sous-parcours marchandises uniquement ;capital,immobilisation,services,provisions,fiscalité etautresopérations annuelles non rejoués."
+      },
+      "roles781": [
+        {
+          "email": "comptable@hisabpro-recette.example",
+          "role": "comptable",
+          "connexion_UI": true,
+          "administration_refusee403": true,
+          "saisie_api": "201puis204draftfictif"
+        },
+        {
+          "email": "lecture@hisabpro-recette.example",
+          "role": "lecture",
+          "connexion_UI": true,
+          "administration_refusee403": true,
+          "saisie_api": "403"
+        }
+      ],
+      "societeB781": {
+        "id": 10,
+        "aucun_acces_tiers_factures_articles_soldes_A": true,
+        "pdf_facture_et_piece_A_refuses404": true,
+        "selecteurs_cloisonnes": true,
+        "14ecritures_A_inchangees": true
+      }
+    }
+  ],
+  "cas_qualifies": [
+    "HP-ADM-003",
+    "HP-ADM-016",
+    "HP-ADM-017"
+  ],
+  "source_application_inchangee": true,
+  "limites": [
+    "Branche2025absent provoquée sanssuppression d’exercice,encomplétant lepremierexercice aprèslacréationUI ;préparation2026inutile car déjàprésent.",
+    "Contrôle écritureducomptable :brouillon temporairefictif1MAD,201puis204 parfluxnormal,aucune modification des14écrituresvalidées.",
+    "AucunPG réel,RH/paie/point6 différés,recette humaine etproduction nonvalidées,incident Lettrage769 ouvert."
+  ]
+}

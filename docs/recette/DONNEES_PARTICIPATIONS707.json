@@ -1,0 +1,69 @@
+{
+  "contexte": "Société fictive en MAD, exercice2026, données de recette uniquement",
+  "n": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "10000.00"
+    },
+    {
+      "compte": "2510",
+      "debit": "4000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2411",
+      "debit": "2000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "4000.00",
+      "credit": "0.00"
+    }
+  ],
+  "n1": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "10000.00"
+    },
+    {
+      "compte": "2510",
+      "debit": "3000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2411",
+      "debit": "1000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "6000.00",
+      "credit": "0.00"
+    }
+  ],
+  "attendus_n": {
+    "participations": "4000.00",
+    "autres_financieres": "2000.00",
+    "financieres_brut": "6000.00",
+    "debit_credit": "10000.00",
+    "actif_passif": "10000.00",
+    "ecart_financieres_brut": "0.00"
+  },
+  "attendus_n1": {
+    "participations": "3000.00",
+    "autres_financieres": "1000.00",
+    "financieres_brut": "4000.00",
+    "debit_credit": "10000.00",
+    "actif_passif": "10000.00",
+    "ecart_financieres_brut": "0.00"
+  },
+  "inconnus": [
+    "Émetteur",
+    "Capital émetteur",
+    "Quote-part",
+    "Produits reçus"
+  ]
+}

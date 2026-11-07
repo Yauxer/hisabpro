@@ -1,0 +1,17 @@
+{
+  "role": "lecture",
+  "largeur": 390,
+  "exports_individuels_reels": {
+    "pdf": {
+      "sha256": "011878511dbc8312fb4e028f1c48d9de6cd6a182153c224c8d6a76f2adc9aef8",
+      "montant325_et_logo_verifies": true
+    },
+    "xlsx": {
+      "sha256": "0af0bb2d3311e689c46edce734edfd2da76edf60fed188c4e6d66953d45f17df",
+      "montant325_et_logo_verifies": true
+    }
+  },
+  "ZIP_credits325_verifie": true,
+  "brouillon_non_confondu_snapshot": true,
+  "hors_preparations_inchange": true
+}

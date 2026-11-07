@@ -1,0 +1,5130 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_gh7qgpg4",
+  "nonce": "a99953b0ff99422a975a6959fb4c3534",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [
+    {
+      "id": "HP-ADM-006",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-007",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-008",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-009",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-010",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-011",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-012",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-013",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-014",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-015",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-IMM-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-IMM-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-015",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-008",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-016",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-009",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-017",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-012",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-013",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-014",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-015",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-008",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-016",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-017",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-018",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-009",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-018",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-019",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-STK-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-IMM-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-019",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CPT-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CPT-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-020",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-025",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-026",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {
+    "C-MARCH": {
+      "id": 10,
+      "compte": "3421",
+      "auxiliaire": "C00000010"
+    },
+    "C-SERVICE": {
+      "id": 11,
+      "compte": "3421",
+      "auxiliaire": "C00000011"
+    },
+    "C-IMPAYE": {
+      "id": 12,
+      "compte": "3421",
+      "auxiliaire": "C00000012"
+    },
+    "F-MARCH": {
+      "id": 13,
+      "compte": "4411",
+      "auxiliaire": "F00000013"
+    },
+    "F-SERVICE": {
+      "id": 14,
+      "compte": "4411",
+      "auxiliaire": "F00000014"
+    },
+    "F-CONTROLE": {
+      "id": 15,
+      "compte": "4411",
+      "auxiliaire": "F00000015"
+    },
+    "F-IMMO": {
+      "id": 16,
+      "compte": "4481",
+      "auxiliaire": "F00000016"
+    }
+  },
+  "articles": {
+    "M-01": {
+      "id": 4,
+      "stockable": true,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": "6111",
+      "compte_vente": "7111"
+    },
+    "S-VTE": {
+      "id": 5,
+      "stockable": false,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": null,
+      "compte_vente": "7124"
+    },
+    "S-ACH": {
+      "id": 6,
+      "stockable": false,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": "6125",
+      "compte_vente": null
+    }
+  },
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "navigation817": {
+    "en_attente": {
+      "2808631712016": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808633027856": {
+        "url": "http://127.0.0.1:63881/api/acomptes?exercice=2025",
+        "type": "fetch"
+      },
+      "2808633031824": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808633765392": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "2808634234512": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808635192144": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808636656400": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808637103568": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808637962960": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "2808638790864": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808639227408": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808640992848": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808641966928": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808642423120": {
+        "url": "http://127.0.0.1:63881/api/reglements?exercice=2025",
+        "type": "fetch"
+      },
+      "2808642427024": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808642391760": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808642350032": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "2808642763024": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808643164048": {
+        "url": "http://127.0.0.1:63881/api/reglements?exercice=2025",
+        "type": "fetch"
+      },
+      "2808643162896": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808643159248": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808643209104": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "2808644486672": {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "type": "fetch"
+      },
+      "2808644441296": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808644833360": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808645805840": {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "type": "fetch"
+      },
+      "2808645809808": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808646207632": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808647162000": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808648111248": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808648839056": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808649817808": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808650541776": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808627927824": {
+        "url": "http://127.0.0.1:63881/api/reglements?exercice=2025",
+        "type": "fetch"
+      },
+      "2808627926480": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808627903056": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808627898640": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "2808627308560": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808622302736": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808620954064": {
+        "url": "http://127.0.0.1:63881/api/reglements?exercice=2025",
+        "type": "fetch"
+      },
+      "2808620761808": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808620776784": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808620770704": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "2808619200720": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808616654096": {
+        "url": "http://127.0.0.1:63881/api/reglements?exercice=2025",
+        "type": "fetch"
+      },
+      "2808616503248": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808616513680": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808616508432": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "2808614633744": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808619204112": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808609809488": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808603313936": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "2808599837392": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808595482448": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808591668240": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808586204432": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808581614352": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808578480656": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808575490384": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808614700944": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "2808604104912": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808585018192": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "2808600891472": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808578164368": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "2808626830864": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808621917840": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808590928080": {
+        "url": "http://127.0.0.1:63881/api/reglements?exercice=2025",
+        "type": "fetch"
+      },
+      "2808590939920": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808590931536": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808590931984": {
+        "url": "http://127.0.0.1:63881/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "fetch"
+      },
+      "2808578737104": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808586648656": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808593263696": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808596694224": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808601145744": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808597916880": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808603563216": {
+        "url": "http://127.0.0.1:63881/api/immobilisations/2/tableau",
+        "type": "fetch"
+      },
+      "2808603252496": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808600604880": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808591770384": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808613438672": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808616124752": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808619281616": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808622982544": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808576097424": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808575069648": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      },
+      "2808620795664": {
+        "url": "http://127.0.0.1:63881/api/ecritures?exercice=2025",
+        "type": "fetch"
+      }
+    },
+    "echecs_reseau": [
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://127.0.0.1:63881/api/avoirs?exercice=2025",
+        "erreur": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  "operations": [
+    {
+      "reference": "CAP-01",
+      "id": 53,
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "200000.00",
+          "0.00"
+        ],
+        "1111": [
+          "0.00",
+          "200000.00"
+        ]
+      }
+    },
+    {
+      "reference": "IMMO-ACQ",
+      "id": 54,
+      "date": "2025-01-01",
+      "journal": "AC",
+      "lignes": {
+        "2355": [
+          "24000.00",
+          "0.00"
+        ],
+        "34551": [
+          "4800.00",
+          "0.00"
+        ],
+        "4481": [
+          "0.00",
+          "28800.00"
+        ]
+      }
+    },
+    {
+      "reference": "IMMO-PAY",
+      "id": 55,
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "lignes": {
+        "4481": [
+          "28800.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "28800.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-F01",
+      "id": 56,
+      "date": "2025-01-04",
+      "journal": "BQ",
+      "lignes": {
+        "3411": [
+          "6000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-01",
+      "id": 57,
+      "date": "2025-01-05",
+      "journal": "AC",
+      "lignes": {
+        "6111": [
+          "10000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2000.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-F01-IMP",
+      "id": 58,
+      "date": "2025-01-05",
+      "journal": "OD",
+      "lignes": {
+        "4411": [
+          "6000.00",
+          "0.00"
+        ],
+        "3411": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-01-PAY",
+      "id": 59,
+      "date": "2025-01-07",
+      "journal": "BQ",
+      "lignes": {
+        "4411": [
+          "6000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-02",
+      "id": 60,
+      "date": "2025-01-10",
+      "journal": "AC",
+      "lignes": {
+        "6111": [
+          "12000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2400.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-01",
+      "id": 61,
+      "date": "2025-01-20",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "30000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "5000.00"
+        ],
+        "7111": [
+          "0.00",
+          "25000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-01-PAY",
+      "id": 62,
+      "date": "2025-01-25",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "10000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01",
+      "id": 63,
+      "date": "2025-01-26",
+      "journal": "AE",
+      "lignes": {
+        "51111": [
+          "20000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-01",
+      "id": 64,
+      "date": "2025-01-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "5000.00",
+          "0.00"
+        ],
+        "3456": [
+          "1800.00",
+          "0.00"
+        ],
+        "34551": [
+          "0.00",
+          "4800.00"
+        ],
+        "34552": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01-REM",
+      "id": 65,
+      "date": "2025-02-01",
+      "journal": "AE",
+      "lignes": {
+        "51112": [
+          "20000.00",
+          "0.00"
+        ],
+        "51111": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01-ENC",
+      "id": 66,
+      "date": "2025-02-05",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "20000.00",
+          "0.00"
+        ],
+        "51112": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-SERVICE",
+      "id": 67,
+      "date": "2025-02-10",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "12000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2400.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "AV-01",
+      "id": 68,
+      "date": "2025-02-10",
+      "journal": "AV",
+      "lignes": {
+        "7111": [
+          "2500.00",
+          "0.00"
+        ],
+        "4455": [
+          "500.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "3000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-SERVICE-PAY",
+      "id": 69,
+      "date": "2025-02-15",
+      "journal": "BQ",
+      "lignes": {
+        "4411": [
+          "14400.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-02",
+      "id": 70,
+      "date": "2025-02-28",
+      "journal": "OD",
+      "lignes": {
+        "3456": [
+          "2900.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "500.00"
+        ],
+        "34552": [
+          "0.00",
+          "2400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-02",
+      "id": 71,
+      "date": "2025-03-01",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "18000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "3000.00"
+        ],
+        "7111": [
+          "0.00",
+          "15000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-F01",
+      "id": 72,
+      "date": "2025-03-01",
+      "journal": "AE",
+      "lignes": {
+        "4411": [
+          "14400.00",
+          "0.00"
+        ],
+        "4415": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-02-PAY",
+      "id": 73,
+      "date": "2025-03-05",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "5000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "5000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-F01-PAY",
+      "id": 74,
+      "date": "2025-03-20",
+      "journal": "BQ",
+      "lignes": {
+        "4415": [
+          "14400.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-03",
+      "id": 75,
+      "date": "2025-03-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "3000.00",
+          "0.00"
+        ],
+        "34552": [
+          "0.00",
+          "2400.00"
+        ],
+        "3456": [
+          "0.00",
+          "600.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01",
+      "id": 76,
+      "date": "2025-04-01",
+      "journal": "AE",
+      "lignes": {
+        "3425": [
+          "10000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01-REM",
+      "id": 77,
+      "date": "2025-05-15",
+      "journal": "AE",
+      "lignes": {
+        "51132": [
+          "10000.00",
+          "0.00"
+        ],
+        "3425": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01-ENC",
+      "id": 78,
+      "date": "2025-05-16",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "9990.00",
+          "0.00"
+        ],
+        "61472": [
+          "10.00",
+          "0.00"
+        ],
+        "51132": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-C01",
+      "id": 79,
+      "date": "2025-06-01",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "24000.00",
+          "0.00"
+        ],
+        "4421": [
+          "0.00",
+          "24000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-SERVICE",
+      "id": 80,
+      "date": "2025-06-15",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "144000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "24000.00"
+        ],
+        "7124": [
+          "0.00",
+          "120000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-C01-IMP",
+      "id": 81,
+      "date": "2025-06-15",
+      "journal": "OD",
+      "lignes": {
+        "4421": [
+          "24000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "24000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-SERVICE-PAY",
+      "id": 82,
+      "date": "2025-06-30",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "120000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "120000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-06",
+      "id": 83,
+      "date": "2025-06-30",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "24000.00",
+          "0.00"
+        ],
+        "3456": [
+          "0.00",
+          "4100.00"
+        ],
+        "4456": [
+          "0.00",
+          "19900.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-06-PAY",
+      "id": 84,
+      "date": "2025-07-20",
+      "journal": "BQ",
+      "lignes": {
+        "4456": [
+          "19900.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "19900.00"
+        ]
+      }
+    },
+    {
+      "reference": "INT-PPRF",
+      "id": 85,
+      "date": "2025-11-30",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "800.00",
+          "0.00"
+        ],
+        "3453": [
+          "200.00",
+          "0.00"
+        ],
+        "7381": [
+          "0.00",
+          "1000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ASS-01",
+      "id": 86,
+      "date": "2025-12-01",
+      "journal": "BQ",
+      "lignes": {
+        "6134": [
+          "12000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "REF-02",
+      "id": 87,
+      "date": "2025-12-02",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "200.00",
+          "0.00"
+        ],
+        "34552": [
+          "40.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "240.00"
+        ]
+      }
+    },
+    {
+      "reference": "REF-002",
+      "id": 88,
+      "date": "2025-12-02",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "200.00",
+          "0.00"
+        ],
+        "34552": [
+          "40.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "240.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-IMPAYEE",
+      "id": 89,
+      "date": "2025-12-10",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "14400.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "2400.00"
+        ],
+        "7124": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-REJET",
+      "id": 90,
+      "date": "2025-12-12",
+      "journal": "AE",
+      "lignes": {
+        "51111": [
+          "2000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-REJET-INV",
+      "id": 91,
+      "date": "2025-12-15",
+      "journal": "OD",
+      "lignes": {
+        "3421": [
+          "2000.00",
+          "0.00"
+        ],
+        "51111": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AMENDE",
+      "id": 92,
+      "date": "2025-12-20",
+      "journal": "BQ",
+      "lignes": {
+        "6583": [
+          "500.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "500.00"
+        ]
+      }
+    },
+    {
+      "reference": "FRAIS-BQ",
+      "id": 93,
+      "date": "2025-12-31",
+      "journal": "BQ",
+      "lignes": {
+        "61473": [
+          "60.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "60.00"
+        ]
+      }
+    },
+    {
+      "reference": "STOCK-FIN",
+      "id": 94,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "3111": [
+          "6600.00",
+          "0.00"
+        ],
+        "6114": [
+          "0.00",
+          "6600.00"
+        ]
+      }
+    },
+    {
+      "reference": "AMORT-2025",
+      "id": 95,
+      "date": "2025-12-31",
+      "journal": "AM",
+      "lignes": {
+        "61935": [
+          "4800.00",
+          "0.00"
+        ],
+        "28355": [
+          "0.00",
+          "4800.00"
+        ]
+      }
+    },
+    {
+      "reference": "CCA-2025",
+      "id": 96,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "3491": [
+          "11000.00",
+          "0.00"
+        ],
+        "6134": [
+          "0.00",
+          "11000.00"
+        ]
+      }
+    },
+    {
+      "reference": "FNP-2025",
+      "id": 98,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "6125": [
+          "3000.00",
+          "0.00"
+        ],
+        "4417": [
+          "0.00",
+          "3000.00"
+        ]
+      }
+    },
+    {
+      "reference": "PROV-RISQUE",
+      "id": 100,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "61955": [
+          "1500.00",
+          "0.00"
+        ],
+        "1518": [
+          "0.00",
+          "1500.00"
+        ]
+      }
+    },
+    {
+      "reference": "DEPR-CLIENT",
+      "id": 101,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "61964": [
+          "2000.00",
+          "0.00"
+        ],
+        "3942": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-12",
+      "id": 102,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "2400.00",
+          "0.00"
+        ],
+        "4456": [
+          "0.00",
+          "2400.00"
+        ]
+      }
+    },
+    {
+      "reference": "IS-2025",
+      "id": 103,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "6701": [
+          "23420.25",
+          "0.00"
+        ],
+        "4453": [
+          "0.00",
+          "23420.25"
+        ]
+      }
+    },
+    {
+      "reference": "PPRF-IMP",
+      "id": 104,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "4453": [
+          "200.00",
+          "0.00"
+        ],
+        "3453": [
+          "0.00",
+          "200.00"
+        ]
+      }
+    }
+  ],
+  "limite_cycle": "Capital etacquisition présents danscette société ;autres opérations annuelles encoreàintercaler chronologiquement.",
+  "requetes_echouees": [
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:63881/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    }
+  ],
+  "lettrage_fournisseur": "AAA",
+  "cycle": {
+    "factures": [
+      10,
+      11,
+      12
+    ],
+    "devis": 2,
+    "bc": 2,
+    "bl": 2,
+    "ecritures": 10,
+    "lignes": 24,
+    "total_debit_credit": "342000.00",
+    "stock": 100,
+    "cmup": 110,
+    "reste_vente": 20000
+  },
+  "suite777": {
+    "ecritures": 21,
+    "lignes": 52,
+    "debit_credit": "480900.00",
+    "stock": 60,
+    "cmup": 110,
+    "reste_vente2": 10000,
+    "avoir": 2,
+    "facture2": 14,
+    "prefixe_valide_inchange": true,
+    "imputation_credit_sans_nouvelle_ecriture": true
+  },
+  "semestre789": {
+    "ecritures": 31,
+    "lignes": 76,
+    "debit_credit": "864300.00",
+    "soldes": {
+      "1111": "-200000.00",
+      "2355": "24000.00",
+      "4456": "-19900.00",
+      "5141": "319390.00",
+      "6111": "22000.00",
+      "6125": "12000.00",
+      "61472": "10.00",
+      "7111": "-37500.00",
+      "7124": "-120000.00"
+    },
+    "references": [
+      "CAP-01",
+      "IMMO-ACQ",
+      "IMMO-PAY",
+      "AC-F01",
+      "ACH-01",
+      "AC-F01-IMP",
+      "ACH-01-PAY",
+      "ACH-02",
+      "VENTE-01",
+      "VENTE-01-PAY",
+      "CHQ-01",
+      "TVA-01",
+      "CHQ-01-REM",
+      "CHQ-01-ENC",
+      "ACH-SERVICE",
+      "AV-01",
+      "ACH-SERVICE-PAY",
+      "TVA-02",
+      "VENTE-02",
+      "EFF-F01",
+      "VENTE-02-PAY",
+      "EFF-F01-PAY",
+      "TVA-03",
+      "EFF-C01",
+      "EFF-C01-REM",
+      "EFF-C01-ENC",
+      "AC-C01",
+      "VENTE-SERVICE",
+      "AC-C01-IMP",
+      "VENTE-SERVICE-PAY",
+      "TVA-06"
+    ],
+    "stock": 60,
+    "cmup": 110,
+    "frais_effet": "10.00",
+    "ordre_chronologique": true,
+    "limite": "Arrêt30/06/2025 ;les écritures TVA sont saisies manuellement conformément aux fichesFIS015/016/017/018, pas des déclarations automatiques. Pas de clôture ni de dotation annuelle anticipée."
+  },
+  "ajustements791": [
+    {
+      "reference": "CCA-2025",
+      "id": 5,
+      "ecriture": 96,
+      "contrepassation2026": 97
+    },
+    {
+      "reference": "FNP-2025",
+      "id": 6,
+      "ecriture": 98,
+      "contrepassation2026": 99
+    },
+    {
+      "reference": "PROV-RISQUE",
+      "id": 7,
+      "ecriture": 100,
+      "contrepassation2026": null
+    },
+    {
+      "reference": "DEPR-CLIENT",
+      "id": 8,
+      "ecriture": 101,
+      "contrepassation2026": null
+    }
+  ],
+  "fichiers817": [
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette823_annuel\\test_823_avant_is_connecte_nav1\\avant_is_generale.xlsx",
+      "sha256": "057fa022e4a23f046b2d6cd3fa619d22b1029983936e8e681ef9116cdfdda136"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette823_annuel\\test_823_avant_is_connecte_nav1\\avant_is_generale.pdf",
+      "sha256": "6a35e151da7082ca8c08417df81f395991ca4fa612d4425cef41c0a7dff8309e"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette823_annuel\\test_823_avant_is_connecte_nav1\\avant_is_clients.xlsx",
+      "sha256": "56a65202bec0bbbbea7b93a68cc247689e2384cab25557f2bb1bab114a445dd3"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette823_annuel\\test_823_avant_is_connecte_nav1\\avant_is_clients.pdf",
+      "sha256": "4be159b81e515d7449d2a5a090ce20871b20bf03433b947a1e926660a48ba0e9"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette823_annuel\\test_823_avant_is_connecte_nav1\\avant_is_fournisseurs.xlsx",
+      "sha256": "b5847a64bb23237e1311ab5bcbe76c6a7ff56e78e4d0077f317dc3f39d2092d9"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette823_annuel\\test_823_avant_is_connecte_nav1\\avant_is_fournisseurs.pdf",
+      "sha256": "d01dcfb4639b2ad2c01767cc40306b85930a91fa523484cd3a9f0923b6c52528"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette823_annuel\\test_823_avant_is_connecte_nav1\\avant_is_grand_livre.csv",
+      "sha256": "153428d99f4d79f788261a2b51344c8eb18b9776241c5994c1d566df7c15d6b1"
+    }
+  ],
+  "avant_is817": {
+    "balance": {
+      "exercice": 2025,
+      "date_from": "2025-01-01",
+      "date_to": "2025-12-31",
+      "nb_ecritures": 48,
+      "nb_ecritures_anterieures": 0,
+      "comptes": [
+        {
+          "compte": "1111",
+          "libelle": "Capital social",
+          "solde_initial": 0.0,
+          "debit": 0.0,
+          "credit": 200000.0,
+          "solde_final": -200000.0
+        },
+        {
+          "compte": "1518",
+          "libelle": "Autres provisions pour risques",
+          "solde_initial": 0.0,
+          "debit": 0.0,
+          "credit": 1500.0,
+          "solde_final": -1500.0
+        },
+        {
+          "compte": "2355",
+          "libelle": "Matériel informatique",
+          "solde_initial": 0.0,
+          "debit": 24000.0,
+          "credit": 0.0,
+          "solde_final": 24000.0
+        },
+        {
+          "compte": "28355",
+          "libelle": "Amortissements du matériel informatique",
+          "solde_initial": 0.0,
+          "debit": 0.0,
+          "credit": 4800.0,
+          "solde_final": -4800.0
+        },
+        {
+          "compte": "3111",
+          "libelle": "Marchandises (groupe A)",
+          "solde_initial": 0.0,
+          "debit": 6600.0,
+          "credit": 0.0,
+          "solde_final": 6600.0
+        },
+        {
+          "compte": "3411",
+          "libelle": "Fournisseurs - avances et acomptes versés sur commandes d'exploitation",
+          "solde_initial": 0.0,
+          "debit": 6000.0,
+          "credit": 6000.0,
+          "solde_final": 0.0
+        },
+        {
+          "compte": "3421",
+          "libelle": "Clients",
+          "solde_initial": 0.0,
+          "debit": 208400.0,
+          "credit": 194000.0,
+          "solde_final": 14400.0
+        },
+        {
+          "compte": "3425",
+          "libelle": "Clients - effets à recevoir",
+          "solde_initial": 0.0,
+          "debit": 10000.0,
+          "credit": 10000.0,
+          "solde_final": 0.0
+        },
+        {
+          "compte": "3453",
+          "libelle": "Acomptes sur impôts sur les résultats",
+          "solde_initial": 0.0,
+          "debit": 200.0,
+          "credit": 0.0,
+          "solde_final": 200.0
+        },
+        {
+          "compte": "34551",
+          "libelle": "État - TVA récupérable sur immobilisations",
+          "solde_initial": 0.0,
+          "debit": 4800.0,
+          "credit": 4800.0,
+          "solde_final": 0.0
+        },
+        {
+          "compte": "34552",
+          "libelle": "État - TVA récupérable sur charges",
+          "solde_initial": 0.0,
+          "debit": 6880.0,
+          "credit": 6800.0,
+          "solde_final": 80.0
+        },
+        {
+          "compte": "3456",
+          "libelle": "État - crédit de TVA (suivant déclaration)",
+          "solde_initial": 0.0,
+          "debit": 4700.0,
+          "credit": 4700.0,
+          "solde_final": 0.0
+        },
+        {
+          "compte": "3491",
+          "libelle": "Charges constatées d'avance",
+          "solde_initial": 0.0,
+          "debit": 11000.0,
+          "credit": 0.0,
+          "solde_final": 11000.0
+        },
+        {
+          "compte": "3942",
+          "libelle": "Provisions pour dépréciation des clients et comptes rattachés",
+          "solde_initial": 0.0,
+          "debit": 0.0,
+          "credit": 2000.0,
+          "solde_final": -2000.0
+        },
+        {
+          "compte": "4411",
+          "libelle": "Fournisseurs",
+          "solde_initial": 0.0,
+          "debit": 40800.0,
+          "credit": 41280.0,
+          "solde_final": -480.0
+        },
+        {
+          "compte": "4415",
+          "libelle": "Fournisseurs - effets à payer",
+          "solde_initial": 0.0,
+          "debit": 14400.0,
+          "credit": 14400.0,
+          "solde_final": 0.0
+        },
+        {
+          "compte": "4417",
+          "libelle": "Fournisseurs - factures non parvenues",
+          "solde_initial": 0.0,
+          "debit": 0.0,
+          "credit": 3000.0,
+          "solde_final": -3000.0
+        },
+        {
+          "compte": "4421",
+          "libelle": "Clients - avances et acomptes reçus sur commandes en cours",
+          "solde_initial": 0.0,
+          "debit": 24000.0,
+          "credit": 24000.0,
+          "solde_final": 0.0
+        },
+        {
+          "compte": "4455",
+          "libelle": "État - TVA facturée",
+          "solde_initial": 0.0,
+          "debit": 34900.0,
+          "credit": 34900.0,
+          "solde_final": 0.0
+        },
+        {
+          "compte": "4456",
+          "libelle": "État - TVA due (suivant déclarations)",
+          "solde_initial": 0.0,
+          "debit": 19900.0,
+          "credit": 22300.0,
+          "solde_final": -2400.0
+        },
+        {
+          "compte": "4481",
+          "libelle": "Dettes sur acquisitions d'immobilisations",
+          "solde_initial": 0.0,
+          "debit": 28800.0,
+          "credit": 28800.0,
+          "solde_final": 0.0
+        },
+        {
+          "compte": "51111",
+          "libelle": "Chèques en portefeuille",
+          "solde_initial": 0.0,
+          "debit": 22000.0,
+          "credit": 22000.0,
+          "solde_final": 0.0
+        },
+        {
+          "compte": "51112",
+          "libelle": "Chèques à l'encaissement",
+          "solde_initial": 0.0,
+          "debit": 20000.0,
+          "credit": 20000.0,
+          "solde_final": 0.0
+        },
+        {
+          "compte": "51132",
+          "libelle": "Effets à l'encaissement",
+          "solde_initial": 0.0,
+          "debit": 10000.0,
+          "credit": 10000.0,
+          "solde_final": 0.0
+        },
+        {
+          "compte": "5141",
+          "libelle": "Banques (solde débiteur)",
+          "solde_initial": 0.0,
+          "debit": 389790.0,
+          "credit": 102060.0,
+          "solde_final": 287730.0
+        },
+        {
+          "compte": "6111",
+          "libelle": "Achats de marchandises (groupe A)",
+          "solde_initial": 0.0,
+          "debit": 22000.0,
+          "credit": 0.0,
+          "solde_final": 22000.0
+        },
+        {
+          "compte": "6114",
+          "libelle": "Variation de stocks de marchandises",
+          "solde_initial": 0.0,
+          "debit": 0.0,
+          "credit": 6600.0,
+          "solde_final": -6600.0
+        },
+        {
+          "compte": "6125",
+          "libelle": "Achats non stockés de matières et fournitures",
+          "solde_initial": 0.0,
+          "debit": 15400.0,
+          "credit": 0.0,
+          "solde_final": 15400.0
+        },
+        {
+          "compte": "6134",
+          "libelle": "Primes d'assurances",
+          "solde_initial": 0.0,
+          "debit": 12000.0,
+          "credit": 11000.0,
+          "solde_final": 1000.0
+        },
+        {
+          "compte": "61472",
+          "libelle": "Frais sur effets de commerce",
+          "solde_initial": 0.0,
+          "debit": 10.0,
+          "credit": 0.0,
+          "solde_final": 10.0
+        },
+        {
+          "compte": "61473",
+          "libelle": "Frais et commissions sur services bancaires",
+          "solde_initial": 0.0,
+          "debit": 60.0,
+          "credit": 0.0,
+          "solde_final": 60.0
+        },
+        {
+          "compte": "61935",
+          "libelle": "DEA des mobiliers, matériels de bureau et aménagements divers",
+          "solde_initial": 0.0,
+          "debit": 4800.0,
+          "credit": 0.0,
+          "solde_final": 4800.0
+        },
+        {
+          "compte": "61955",
+          "libelle": "DEP pour risques et charges durables",
+          "solde_initial": 0.0,
+          "debit": 1500.0,
+          "credit": 0.0,
+          "solde_final": 1500.0
+        },
+        {
+          "compte": "61964",
+          "libelle": "DEP pour dépréciation des créances de l'actif circulant",
+          "solde_initial": 0.0,
+          "debit": 2000.0,
+          "credit": 0.0,
+          "solde_final": 2000.0
+        },
+        {
+          "compte": "6583",
+          "libelle": "Pénalités et amendes fiscales ou pénales",
+          "solde_initial": 0.0,
+          "debit": 500.0,
+          "credit": 0.0,
+          "solde_final": 500.0
+        },
+        {
+          "compte": "7111",
+          "libelle": "Ventes de marchandises au Maroc",
+          "solde_initial": 0.0,
+          "debit": 2500.0,
+          "credit": 40000.0,
+          "solde_final": -37500.0
+        },
+        {
+          "compte": "7124",
+          "libelle": "Ventes de services produits au Maroc",
+          "solde_initial": 0.0,
+          "debit": 0.0,
+          "credit": 132000.0,
+          "solde_final": -132000.0
+        },
+        {
+          "compte": "7381",
+          "libelle": "Intérêts et produits assimilés",
+          "solde_initial": 0.0,
+          "debit": 0.0,
+          "credit": 1000.0,
+          "solde_final": -1000.0
+        }
+      ],
+      "auxiliaire": {
+        "3421": [
+          {
+            "tiers_id": 12,
+            "tiers": "Client Impayé Recette",
+            "compte_auxiliaire": "C00000012",
+            "identifie": true,
+            "solde_initial": 0.0,
+            "debit": 16400.0,
+            "credit": 2000.0,
+            "solde_final": 14400.0
+          },
+          {
+            "tiers_id": 10,
+            "tiers": "Client Marchandises Recette",
+            "compte_auxiliaire": "C00000010",
+            "identifie": true,
+            "solde_initial": 0.0,
+            "debit": 48000.0,
+            "credit": 48000.0,
+            "solde_final": 0.0
+          },
+          {
+            "tiers_id": 11,
+            "tiers": "Client Services Recette",
+            "compte_auxiliaire": "C00000011",
+            "identifie": true,
+            "solde_initial": 0.0,
+            "debit": 144000.0,
+            "credit": 144000.0,
+            "solde_final": 0.0
+          }
+        ],
+        "4411": [
+          {
+            "tiers_id": 15,
+            "tiers": "Fournisseur Contrôle Références Recette",
+            "compte_auxiliaire": "F00000015",
+            "identifie": true,
+            "solde_initial": 0.0,
+            "debit": 0.0,
+            "credit": 480.0,
+            "solde_final": -480.0
+          },
+          {
+            "tiers_id": 13,
+            "tiers": "Fournisseur Marchandises Recette",
+            "compte_auxiliaire": "F00000013",
+            "identifie": true,
+            "solde_initial": 0.0,
+            "debit": 26400.0,
+            "credit": 26400.0,
+            "solde_final": 0.0
+          },
+          {
+            "tiers_id": 14,
+            "tiers": "Fournisseur Services Recette",
+            "compte_auxiliaire": "F00000014",
+            "identifie": true,
+            "solde_initial": 0.0,
+            "debit": 14400.0,
+            "credit": 14400.0,
+            "solde_final": 0.0
+          }
+        ]
+      },
+      "controle": {
+        "mouvement_debit": 947940.0,
+        "mouvement_credit": 947940.0,
+        "ecart_mouvements": 0.0,
+        "ecart_ouverture": 0.0,
+        "ecart_final": 0.0
+      }
+    },
+    "grand_livre": {
+      "exercice": 2025,
+      "date_from": "2025-01-01",
+      "date_to": "2025-12-31",
+      "nb_ecritures": 48,
+      "comptes": [
+        {
+          "compte": "1111",
+          "solde_initial": 0.0,
+          "total_debit": 0.0,
+          "total_credit": 200000.0,
+          "solde": -200000.0,
+          "solde_final": -200000.0,
+          "mouvements": [
+            {
+              "ecriture_id": 53,
+              "ligne_id": 124,
+              "numero_ecriture": "BQ-2025-0001",
+              "date": "2025-01-01",
+              "journal": "BQ",
+              "reference": "CAP-01",
+              "libelle": "Apport associé Recette",
+              "ligne_libelle": "Capital social",
+              "debit": 0.0,
+              "credit": 200000.0,
+              "solde_cumule": -200000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "1518",
+          "solde_initial": 0.0,
+          "total_debit": 0.0,
+          "total_credit": 1500.0,
+          "solde": -1500.0,
+          "solde_final": -1500.0,
+          "mouvements": [
+            {
+              "ecriture_id": 100,
+              "ligne_id": 236,
+              "numero_ecriture": "OD-2025-0011",
+              "date": "2025-12-31",
+              "journal": "OD",
+              "reference": "INV-PROVISION_RISQUE-2025-7",
+              "libelle": "Litige REC-LIT01 probable, conditions fiscales non satisfaites",
+              "ligne_libelle": "Provision pour risques et charges",
+              "debit": 0.0,
+              "credit": 1500.0,
+              "solde_cumule": -1500.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "2355",
+          "solde_initial": 0.0,
+          "total_debit": 24000.0,
+          "total_credit": 0.0,
+          "solde": 24000.0,
+          "solde_final": 24000.0,
+          "mouvements": [
+            {
+              "ecriture_id": 54,
+              "ligne_id": 125,
+              "numero_ecriture": "AC-2025-0001",
+              "date": "2025-01-01",
+              "journal": "AC",
+              "reference": "ACQ-2025-2",
+              "libelle": "Acquisition immobilisation — Ordinateur de recette",
+              "ligne_libelle": "Acquisition Ordinateur de recette",
+              "debit": 24000.0,
+              "credit": 0.0,
+              "solde_cumule": 24000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "28355",
+          "solde_initial": 0.0,
+          "total_debit": 0.0,
+          "total_credit": 4800.0,
+          "solde": -4800.0,
+          "solde_final": -4800.0,
+          "mouvements": [
+            {
+              "ecriture_id": 95,
+              "ligne_id": 226,
+              "numero_ecriture": "AM-2025-0001",
+              "date": "2025-12-31",
+              "journal": "AM",
+              "reference": "AM-2025-2",
+              "libelle": "Dotation aux amortissements — Ordinateur de recette 2025",
+              "ligne_libelle": "Amort. cumulé — Ordinateur de recette",
+              "debit": 0.0,
+              "credit": 4800.0,
+              "solde_cumule": -4800.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "3111",
+          "solde_initial": 0.0,
+          "total_debit": 6600.0,
+          "total_credit": 0.0,
+          "solde": 6600.0,
+          "solde_final": 6600.0,
+          "mouvements": [
+            {
+              "ecriture_id": 94,
+              "ligne_id": 223,
+              "numero_ecriture": "OD-2025-0008",
+              "date": "2025-12-31",
+              "journal": "OD",
+              "reference": "STOCK-CLOTURE-2025",
+              "libelle": "Régularisation du stock final 2025",
+              "ligne_libelle": "Stock final",
+              "debit": 6600.0,
+              "credit": 0.0,
+              "solde_cumule": 6600.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "3411",
+          "solde_initial": 0.0,
+          "total_debit": 6000.0,
+          "total_credit": 6000.0,
+          "solde": 0.0,
+          "solde_final": 0.0,
+          "mouvements": [
+            {
+              "ecriture_id": 56,
+              "ligne_id": 130,
+              "numero_ecriture": "BQ-2025-0003",
+              "date": "2025-01-04",
+              "journal": "BQ",
+              "reference": "AC-2025-001",
+              "libelle": "Acompte fournisseur versé — AC-2025-001 Fournisseur Marchandises Recette",
+              "ligne_libelle": "Fournisseur Marchandises Recette — avances et acomptes versés",
+              "debit": 6000.0,
+              "credit": 0.0,
+              "solde_cumule": 6000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 13,
+              "tiers": "Fournisseur Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 58,
+              "ligne_id": 136,
+              "numero_ecriture": "OD-2025-0001",
+              "date": "2025-01-05",
+              "journal": "OD",
+              "reference": "AC-2025-001",
+              "libelle": "Imputation acompte AC-2025-001 sur FA-2025-001",
+              "ligne_libelle": "Fournisseur Marchandises Recette — avances et acomptes versés",
+              "debit": 0.0,
+              "credit": 6000.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 13,
+              "tiers": "Fournisseur Marchandises Recette",
+              "tiers_identifie": true
+            }
+          ]
+        },
+        {
+          "compte": "3421",
+          "solde_initial": 0.0,
+          "total_debit": 208400.0,
+          "total_credit": 194000.0,
+          "solde": 14400.0,
+          "solde_final": 14400.0,
+          "mouvements": [
+            {
+              "ecriture_id": 61,
+              "ligne_id": 142,
+              "numero_ecriture": "VT-2025-0001",
+              "date": "2025-01-20",
+              "journal": "VT",
+              "reference": "FA-2025-003",
+              "libelle": "Facture FA-2025-003 Client Marchandises Recette",
+              "ligne_libelle": "Client Marchandises Recette",
+              "debit": 30000.0,
+              "credit": 0.0,
+              "solde_cumule": 30000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 10,
+              "tiers": "Client Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 62,
+              "ligne_id": 146,
+              "numero_ecriture": "BQ-2025-0005",
+              "date": "2025-01-25",
+              "journal": "BQ",
+              "reference": "PAY-V01",
+              "libelle": "Règlement Client Marchandises Recette PAY-V01",
+              "ligne_libelle": "Client Marchandises Recette",
+              "debit": 0.0,
+              "credit": 10000.0,
+              "solde_cumule": 20000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 10,
+              "tiers": "Client Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 63,
+              "ligne_id": 148,
+              "numero_ecriture": "AE-2025-0001",
+              "date": "2025-01-26",
+              "journal": "AE",
+              "reference": "CHQ-01",
+              "libelle": "Réception chèque — Client Marchandises Recette",
+              "ligne_libelle": "Client Marchandises Recette",
+              "debit": 0.0,
+              "credit": 20000.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 10,
+              "tiers": "Client Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 68,
+              "ligne_id": 162,
+              "numero_ecriture": "AV-2025-0001",
+              "date": "2025-02-10",
+              "journal": "AV",
+              "reference": "AV-2025-001",
+              "libelle": "Avoir AV-2025-001 Client Marchandises Recette",
+              "ligne_libelle": "Client Marchandises Recette",
+              "debit": 0.0,
+              "credit": 3000.0,
+              "solde_cumule": -3000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 10,
+              "tiers": "Client Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 71,
+              "ligne_id": 168,
+              "numero_ecriture": "VT-2025-0002",
+              "date": "2025-03-01",
+              "journal": "VT",
+              "reference": "FA-2025-005",
+              "libelle": "Facture FA-2025-005 Client Marchandises Recette",
+              "ligne_libelle": "Client Marchandises Recette",
+              "debit": 18000.0,
+              "credit": 0.0,
+              "solde_cumule": 15000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 10,
+              "tiers": "Client Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 73,
+              "ligne_id": 174,
+              "numero_ecriture": "BQ-2025-0008",
+              "date": "2025-03-05",
+              "journal": "BQ",
+              "reference": "PAY-V02",
+              "libelle": "Règlement Client Marchandises Recette PAY-V02",
+              "ligne_libelle": "Client Marchandises Recette",
+              "debit": 0.0,
+              "credit": 5000.0,
+              "solde_cumule": 10000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 10,
+              "tiers": "Client Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 76,
+              "ligne_id": 181,
+              "numero_ecriture": "AE-2025-0004",
+              "date": "2025-04-01",
+              "journal": "AE",
+              "reference": "EFF-C01",
+              "libelle": "Acceptation effet — Client Marchandises Recette",
+              "ligne_libelle": "Client Marchandises Recette",
+              "debit": 0.0,
+              "credit": 10000.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 10,
+              "tiers": "Client Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 80,
+              "ligne_id": 189,
+              "numero_ecriture": "VT-2025-0003",
+              "date": "2025-06-15",
+              "journal": "VT",
+              "reference": "FA-2025-006",
+              "libelle": "Facture FA-2025-006 Client Services Recette",
+              "ligne_libelle": "Client Services Recette",
+              "debit": 144000.0,
+              "credit": 0.0,
+              "solde_cumule": 144000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 11,
+              "tiers": "Client Services Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 81,
+              "ligne_id": 193,
+              "numero_ecriture": "OD-2025-0005",
+              "date": "2025-06-15",
+              "journal": "OD",
+              "reference": "AC-2025-002",
+              "libelle": "Imputation acompte AC-2025-002 sur FA-2025-006",
+              "ligne_libelle": "Client Services Recette",
+              "debit": 0.0,
+              "credit": 24000.0,
+              "solde_cumule": 120000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 11,
+              "tiers": "Client Services Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 82,
+              "ligne_id": 195,
+              "numero_ecriture": "BQ-2025-0012",
+              "date": "2025-06-30",
+              "journal": "BQ",
+              "reference": "VENTE-SERVICE-PAY",
+              "libelle": "Règlement Client Services Recette VENTE-SERVICE-PAY",
+              "ligne_libelle": "Client Services Recette",
+              "debit": 0.0,
+              "credit": 120000.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 11,
+              "tiers": "Client Services Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 89,
+              "ligne_id": 212,
+              "numero_ecriture": "VT-2025-0004",
+              "date": "2025-12-10",
+              "journal": "VT",
+              "reference": "FA-2025-009",
+              "libelle": "Facture FA-2025-009 Client Impayé Recette",
+              "ligne_libelle": "Client Impayé Recette",
+              "debit": 14400.0,
+              "credit": 0.0,
+              "solde_cumule": 14400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 12,
+              "tiers": "Client Impayé Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 90,
+              "ligne_id": 216,
+              "numero_ecriture": "AE-2025-0006",
+              "date": "2025-12-12",
+              "journal": "AE",
+              "reference": "CHQ-REJET",
+              "libelle": "Réception chèque — Client Impayé Recette",
+              "ligne_libelle": "Client Impayé Recette",
+              "debit": 0.0,
+              "credit": 2000.0,
+              "solde_cumule": 12400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 12,
+              "tiers": "Client Impayé Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 91,
+              "ligne_id": 217,
+              "numero_ecriture": "OD-2025-0007",
+              "date": "2025-12-15",
+              "journal": "OD",
+              "reference": "CHQ-REJET",
+              "libelle": "Impayé cheque — Client Impayé Recette",
+              "ligne_libelle": "Client Impayé Recette — impayé",
+              "debit": 2000.0,
+              "credit": 0.0,
+              "solde_cumule": 14400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 12,
+              "tiers": "Client Impayé Recette",
+              "tiers_identifie": true
+            }
+          ]
+        },
+        {
+          "compte": "3425",
+          "solde_initial": 0.0,
+          "total_debit": 10000.0,
+          "total_credit": 10000.0,
+          "solde": 0.0,
+          "solde_final": 0.0,
+          "mouvements": [
+            {
+              "ecriture_id": 76,
+              "ligne_id": 180,
+              "numero_ecriture": "AE-2025-0004",
+              "date": "2025-04-01",
+              "journal": "AE",
+              "reference": "EFF-C01",
+              "libelle": "Acceptation effet — Client Marchandises Recette",
+              "ligne_libelle": "Effet à recevoir EFF-C01",
+              "debit": 10000.0,
+              "credit": 0.0,
+              "solde_cumule": 10000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 10,
+              "tiers": "Client Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 77,
+              "ligne_id": 183,
+              "numero_ecriture": "AE-2025-0005",
+              "date": "2025-05-15",
+              "journal": "AE",
+              "reference": "EFF-C01",
+              "libelle": "Remise à l'encaissement effet — Client Marchandises Recette",
+              "ligne_libelle": "Effet à recevoir",
+              "debit": 0.0,
+              "credit": 10000.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 10,
+              "tiers": "Client Marchandises Recette",
+              "tiers_identifie": true
+            }
+          ]
+        },
+        {
+          "compte": "3453",
+          "solde_initial": 0.0,
+          "total_debit": 200.0,
+          "total_credit": 0.0,
+          "solde": 200.0,
+          "solde_final": 200.0,
+          "mouvements": [
+            {
+              "ecriture_id": 85,
+              "ligne_id": 202,
+              "numero_ecriture": "BQ-2025-0014",
+              "date": "2025-11-30",
+              "journal": "BQ",
+              "reference": "INT-PPRF",
+              "libelle": "Intérêts bancaires selon attestation fictive",
+              "ligne_libelle": "Acomptes sur impôts sur les résultats",
+              "debit": 200.0,
+              "credit": 0.0,
+              "solde_cumule": 200.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "34551",
+          "solde_initial": 0.0,
+          "total_debit": 4800.0,
+          "total_credit": 4800.0,
+          "solde": 0.0,
+          "solde_final": 0.0,
+          "mouvements": [
+            {
+              "ecriture_id": 54,
+              "ligne_id": 126,
+              "numero_ecriture": "AC-2025-0001",
+              "date": "2025-01-01",
+              "journal": "AC",
+              "reference": "ACQ-2025-2",
+              "libelle": "Acquisition immobilisation — Ordinateur de recette",
+              "ligne_libelle": "TVA récupérable sur immobilisation — Ordinateur de recette",
+              "debit": 4800.0,
+              "credit": 0.0,
+              "solde_cumule": 4800.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 64,
+              "ligne_id": 151,
+              "numero_ecriture": "OD-2025-0002",
+              "date": "2025-01-31",
+              "journal": "OD",
+              "reference": "TVA-01",
+              "libelle": "Crédit TVA janvier 1 800",
+              "ligne_libelle": "État - TVA récupérable sur immobilisations",
+              "debit": 0.0,
+              "credit": 4800.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "34552",
+          "solde_initial": 0.0,
+          "total_debit": 6880.0,
+          "total_credit": 6800.0,
+          "solde": 80.0,
+          "solde_final": 80.0,
+          "mouvements": [
+            {
+              "ecriture_id": 57,
+              "ligne_id": 133,
+              "numero_ecriture": "AC-2025-0002",
+              "date": "2025-01-05",
+              "journal": "AC",
+              "reference": "ACH-01",
+              "libelle": "Facture d'achat FA-2025-001 Fournisseur Marchandises Recette",
+              "ligne_libelle": "État — TVA récupérable sur charges",
+              "debit": 2000.0,
+              "credit": 0.0,
+              "solde_cumule": 2000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 60,
+              "ligne_id": 140,
+              "numero_ecriture": "AC-2025-0003",
+              "date": "2025-01-10",
+              "journal": "AC",
+              "reference": "ACH-02",
+              "libelle": "Facture d'achat FA-2025-002 Fournisseur Marchandises Recette",
+              "ligne_libelle": "État — TVA récupérable sur charges",
+              "debit": 2400.0,
+              "credit": 0.0,
+              "solde_cumule": 4400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 64,
+              "ligne_id": 152,
+              "numero_ecriture": "OD-2025-0002",
+              "date": "2025-01-31",
+              "journal": "OD",
+              "reference": "TVA-01",
+              "libelle": "Crédit TVA janvier 1 800",
+              "ligne_libelle": "État - TVA récupérable sur charges",
+              "debit": 0.0,
+              "credit": 2000.0,
+              "solde_cumule": 2400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 67,
+              "ligne_id": 158,
+              "numero_ecriture": "AC-2025-0004",
+              "date": "2025-02-10",
+              "journal": "AC",
+              "reference": "ACH-SERVICE",
+              "libelle": "Facture d'achat FA-2025-004 Fournisseur Services Recette",
+              "ligne_libelle": "État — TVA récupérable sur charges",
+              "debit": 2400.0,
+              "credit": 0.0,
+              "solde_cumule": 4800.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 70,
+              "ligne_id": 167,
+              "numero_ecriture": "OD-2025-0003",
+              "date": "2025-02-28",
+              "journal": "OD",
+              "reference": "TVA-02",
+              "libelle": "Augmentation crédit TVA février 2 900",
+              "ligne_libelle": "État - TVA récupérable sur charges",
+              "debit": 0.0,
+              "credit": 2400.0,
+              "solde_cumule": 2400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 75,
+              "ligne_id": 178,
+              "numero_ecriture": "OD-2025-0004",
+              "date": "2025-03-31",
+              "journal": "OD",
+              "reference": "TVA-03",
+              "libelle": "Consommation crédit TVA mars 600",
+              "ligne_libelle": "État - TVA récupérable sur charges",
+              "debit": 0.0,
+              "credit": 2400.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 87,
+              "ligne_id": 207,
+              "numero_ecriture": "AC-2025-0005",
+              "date": "2025-12-02",
+              "journal": "AC",
+              "reference": "02",
+              "libelle": "Facture d'achat FA-2025-007 Fournisseur Contrôle Références Recette",
+              "ligne_libelle": "État — TVA récupérable sur charges",
+              "debit": 40.0,
+              "credit": 0.0,
+              "solde_cumule": 40.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 88,
+              "ligne_id": 210,
+              "numero_ecriture": "AC-2025-0006",
+              "date": "2025-12-02",
+              "journal": "AC",
+              "reference": "002",
+              "libelle": "Facture d'achat FA-2025-008 Fournisseur Contrôle Références Recette",
+              "ligne_libelle": "État — TVA récupérable sur charges",
+              "debit": 40.0,
+              "credit": 0.0,
+              "solde_cumule": 80.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "3456",
+          "solde_initial": 0.0,
+          "total_debit": 4700.0,
+          "total_credit": 4700.0,
+          "solde": 0.0,
+          "solde_final": 0.0,
+          "mouvements": [
+            {
+              "ecriture_id": 64,
+              "ligne_id": 150,
+              "numero_ecriture": "OD-2025-0002",
+              "date": "2025-01-31",
+              "journal": "OD",
+              "reference": "TVA-01",
+              "libelle": "Crédit TVA janvier 1 800",
+              "ligne_libelle": "État - crédit de TVA (suivant déclaration)",
+              "debit": 1800.0,
+              "credit": 0.0,
+              "solde_cumule": 1800.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 70,
+              "ligne_id": 165,
+              "numero_ecriture": "OD-2025-0003",
+              "date": "2025-02-28",
+              "journal": "OD",
+              "reference": "TVA-02",
+              "libelle": "Augmentation crédit TVA février 2 900",
+              "ligne_libelle": "État - crédit de TVA (suivant déclaration)",
+              "debit": 2900.0,
+              "credit": 0.0,
+              "solde_cumule": 4700.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 75,
+              "ligne_id": 179,
+              "numero_ecriture": "OD-2025-0004",
+              "date": "2025-03-31",
+              "journal": "OD",
+              "reference": "TVA-03",
+              "libelle": "Consommation crédit TVA mars 600",
+              "ligne_libelle": "État - crédit de TVA (suivant déclaration)",
+              "debit": 0.0,
+              "credit": 600.0,
+              "solde_cumule": 4100.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 83,
+              "ligne_id": 197,
+              "numero_ecriture": "OD-2025-0006",
+              "date": "2025-06-30",
+              "journal": "OD",
+              "reference": "TVA-06",
+              "libelle": "TVA nette juin 19 900",
+              "ligne_libelle": "État - crédit de TVA (suivant déclaration)",
+              "debit": 0.0,
+              "credit": 4100.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "3491",
+          "solde_initial": 0.0,
+          "total_debit": 11000.0,
+          "total_credit": 0.0,
+          "solde": 11000.0,
+          "solde_final": 11000.0,
+          "mouvements": [
+            {
+              "ecriture_id": 96,
+              "ligne_id": 227,
+              "numero_ecriture": "OD-2025-0009",
+              "date": "2025-12-31",
+              "journal": "OD",
+              "reference": "INV-CCA-2025-5",
+              "libelle": "Assurance ASS-01,11 mois 2026",
+              "ligne_libelle": "Charge constatée d'avance (CCA)",
+              "debit": 11000.0,
+              "credit": 0.0,
+              "solde_cumule": 11000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "3942",
+          "solde_initial": 0.0,
+          "total_debit": 0.0,
+          "total_credit": 2000.0,
+          "solde": -2000.0,
+          "solde_final": -2000.0,
+          "mouvements": [
+            {
+              "ecriture_id": 101,
+              "ligne_id": 238,
+              "numero_ecriture": "OD-2025-0012",
+              "date": "2025-12-31",
+              "journal": "OD",
+              "reference": "INV-DEPRECIATION_CLIENT-2025-8",
+              "libelle": "Dépréciation VENTE-IMPAYEE selon REC-DEP01",
+              "ligne_libelle": "Dépréciation d'une créance client",
+              "debit": 0.0,
+              "credit": 2000.0,
+              "solde_cumule": -2000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "4411",
+          "solde_initial": 0.0,
+          "total_debit": 40800.0,
+          "total_credit": 41280.0,
+          "solde": -480.0,
+          "solde_final": -480.0,
+          "mouvements": [
+            {
+              "ecriture_id": 57,
+              "ligne_id": 134,
+              "numero_ecriture": "AC-2025-0002",
+              "date": "2025-01-05",
+              "journal": "AC",
+              "reference": "ACH-01",
+              "libelle": "Facture d'achat FA-2025-001 Fournisseur Marchandises Recette",
+              "ligne_libelle": "Fournisseur Marchandises Recette",
+              "debit": 0.0,
+              "credit": 12000.0,
+              "solde_cumule": -12000.0,
+              "code_lettrage": "AAA",
+              "date_lettrage": "2026-10-25T16:43:26.550675",
+              "tiers_id": 13,
+              "tiers": "Fournisseur Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 58,
+              "ligne_id": 135,
+              "numero_ecriture": "OD-2025-0001",
+              "date": "2025-01-05",
+              "journal": "OD",
+              "reference": "AC-2025-001",
+              "libelle": "Imputation acompte AC-2025-001 sur FA-2025-001",
+              "ligne_libelle": "Fournisseur Marchandises Recette",
+              "debit": 6000.0,
+              "credit": 0.0,
+              "solde_cumule": -6000.0,
+              "code_lettrage": "AAA",
+              "date_lettrage": "2026-10-25T16:43:26.550675",
+              "tiers_id": 13,
+              "tiers": "Fournisseur Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 59,
+              "ligne_id": 137,
+              "numero_ecriture": "BQ-2025-0004",
+              "date": "2025-01-07",
+              "journal": "BQ",
+              "reference": "PAY-ACH01",
+              "libelle": "Règlement Fournisseur Marchandises Recette PAY-ACH01",
+              "ligne_libelle": "Fournisseur Marchandises Recette",
+              "debit": 6000.0,
+              "credit": 0.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": "AAA",
+              "date_lettrage": "2026-10-25T16:43:26.550675",
+              "tiers_id": 13,
+              "tiers": "Fournisseur Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 60,
+              "ligne_id": 141,
+              "numero_ecriture": "AC-2025-0003",
+              "date": "2025-01-10",
+              "journal": "AC",
+              "reference": "ACH-02",
+              "libelle": "Facture d'achat FA-2025-002 Fournisseur Marchandises Recette",
+              "ligne_libelle": "Fournisseur Marchandises Recette",
+              "debit": 0.0,
+              "credit": 14400.0,
+              "solde_cumule": -14400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 13,
+              "tiers": "Fournisseur Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 67,
+              "ligne_id": 159,
+              "numero_ecriture": "AC-2025-0004",
+              "date": "2025-02-10",
+              "journal": "AC",
+              "reference": "ACH-SERVICE",
+              "libelle": "Facture d'achat FA-2025-004 Fournisseur Services Recette",
+              "ligne_libelle": "Fournisseur Services Recette",
+              "debit": 0.0,
+              "credit": 14400.0,
+              "solde_cumule": -28800.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 14,
+              "tiers": "Fournisseur Services Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 69,
+              "ligne_id": 163,
+              "numero_ecriture": "BQ-2025-0007",
+              "date": "2025-02-15",
+              "journal": "BQ",
+              "reference": "ACH-SERVICE-PAY",
+              "libelle": "Règlement Fournisseur Services Recette ACH-SERVICE-PAY",
+              "ligne_libelle": "Fournisseur Services Recette",
+              "debit": 14400.0,
+              "credit": 0.0,
+              "solde_cumule": -14400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 14,
+              "tiers": "Fournisseur Services Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 72,
+              "ligne_id": 171,
+              "numero_ecriture": "AE-2025-0003",
+              "date": "2025-03-01",
+              "journal": "AE",
+              "reference": "EFF-F01",
+              "libelle": "Effet à payer — Fournisseur Marchandises Recette",
+              "ligne_libelle": "Fournisseur Marchandises Recette",
+              "debit": 14400.0,
+              "credit": 0.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 13,
+              "tiers": "Fournisseur Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 87,
+              "ligne_id": 208,
+              "numero_ecriture": "AC-2025-0005",
+              "date": "2025-12-02",
+              "journal": "AC",
+              "reference": "02",
+              "libelle": "Facture d'achat FA-2025-007 Fournisseur Contrôle Références Recette",
+              "ligne_libelle": "Fournisseur Contrôle Références Recette",
+              "debit": 0.0,
+              "credit": 240.0,
+              "solde_cumule": -240.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 15,
+              "tiers": "Fournisseur Contrôle Références Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 88,
+              "ligne_id": 211,
+              "numero_ecriture": "AC-2025-0006",
+              "date": "2025-12-02",
+              "journal": "AC",
+              "reference": "002",
+              "libelle": "Facture d'achat FA-2025-008 Fournisseur Contrôle Références Recette",
+              "ligne_libelle": "Fournisseur Contrôle Références Recette",
+              "debit": 0.0,
+              "credit": 240.0,
+              "solde_cumule": -480.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 15,
+              "tiers": "Fournisseur Contrôle Références Recette",
+              "tiers_identifie": true
+            }
+          ]
+        },
+        {
+          "compte": "4415",
+          "solde_initial": 0.0,
+          "total_debit": 14400.0,
+          "total_credit": 14400.0,
+          "solde": 0.0,
+          "solde_final": 0.0,
+          "mouvements": [
+            {
+              "ecriture_id": 72,
+              "ligne_id": 172,
+              "numero_ecriture": "AE-2025-0003",
+              "date": "2025-03-01",
+              "journal": "AE",
+              "reference": "EFF-F01",
+              "libelle": "Effet à payer — Fournisseur Marchandises Recette",
+              "ligne_libelle": "Effet à payer EFF-F01",
+              "debit": 0.0,
+              "credit": 14400.0,
+              "solde_cumule": -14400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 13,
+              "tiers": "Fournisseur Marchandises Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 74,
+              "ligne_id": 175,
+              "numero_ecriture": "BQ-2025-0009",
+              "date": "2025-03-20",
+              "journal": "BQ",
+              "reference": "EFF-F01",
+              "libelle": "Paiement effet — Fournisseur Marchandises Recette",
+              "ligne_libelle": "Effet à payer",
+              "debit": 14400.0,
+              "credit": 0.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 13,
+              "tiers": "Fournisseur Marchandises Recette",
+              "tiers_identifie": true
+            }
+          ]
+        },
+        {
+          "compte": "4417",
+          "solde_initial": 0.0,
+          "total_debit": 0.0,
+          "total_credit": 3000.0,
+          "solde": -3000.0,
+          "solde_final": -3000.0,
+          "mouvements": [
+            {
+              "ecriture_id": 98,
+              "ligne_id": 232,
+              "numero_ecriture": "OD-2025-0010",
+              "date": "2025-12-31",
+              "journal": "OD",
+              "reference": "INV-FNP-2025-6",
+              "libelle": "Service livré décembre, contrat FNP-01",
+              "ligne_libelle": "Fournisseur - facture non parvenue (FNP)",
+              "debit": 0.0,
+              "credit": 3000.0,
+              "solde_cumule": -3000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "4421",
+          "solde_initial": 0.0,
+          "total_debit": 24000.0,
+          "total_credit": 24000.0,
+          "solde": 0.0,
+          "solde_final": 0.0,
+          "mouvements": [
+            {
+              "ecriture_id": 79,
+              "ligne_id": 188,
+              "numero_ecriture": "BQ-2025-0011",
+              "date": "2025-06-01",
+              "journal": "BQ",
+              "reference": "AC-2025-002",
+              "libelle": "Acompte client reçu — AC-2025-002 Client Services Recette",
+              "ligne_libelle": "Client Services Recette — avances et acomptes reçus",
+              "debit": 0.0,
+              "credit": 24000.0,
+              "solde_cumule": -24000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 11,
+              "tiers": "Client Services Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 81,
+              "ligne_id": 192,
+              "numero_ecriture": "OD-2025-0005",
+              "date": "2025-06-15",
+              "journal": "OD",
+              "reference": "AC-2025-002",
+              "libelle": "Imputation acompte AC-2025-002 sur FA-2025-006",
+              "ligne_libelle": "Client Services Recette — avances et acomptes reçus",
+              "debit": 24000.0,
+              "credit": 0.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 11,
+              "tiers": "Client Services Recette",
+              "tiers_identifie": true
+            }
+          ]
+        },
+        {
+          "compte": "4455",
+          "solde_initial": 0.0,
+          "total_debit": 34900.0,
+          "total_credit": 34900.0,
+          "solde": 0.0,
+          "solde_final": 0.0,
+          "mouvements": [
+            {
+              "ecriture_id": 61,
+              "ligne_id": 143,
+              "numero_ecriture": "VT-2025-0001",
+              "date": "2025-01-20",
+              "journal": "VT",
+              "reference": "FA-2025-003",
+              "libelle": "Facture FA-2025-003 Client Marchandises Recette",
+              "ligne_libelle": "État — TVA facturée",
+              "debit": 0.0,
+              "credit": 5000.0,
+              "solde_cumule": -5000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 64,
+              "ligne_id": 149,
+              "numero_ecriture": "OD-2025-0002",
+              "date": "2025-01-31",
+              "journal": "OD",
+              "reference": "TVA-01",
+              "libelle": "Crédit TVA janvier 1 800",
+              "ligne_libelle": "État - TVA facturée",
+              "debit": 5000.0,
+              "credit": 0.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 68,
+              "ligne_id": 161,
+              "numero_ecriture": "AV-2025-0001",
+              "date": "2025-02-10",
+              "journal": "AV",
+              "reference": "AV-2025-001",
+              "libelle": "Avoir AV-2025-001 Client Marchandises Recette",
+              "ligne_libelle": "État — TVA facturée (avoir)",
+              "debit": 500.0,
+              "credit": 0.0,
+              "solde_cumule": 500.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 70,
+              "ligne_id": 166,
+              "numero_ecriture": "OD-2025-0003",
+              "date": "2025-02-28",
+              "journal": "OD",
+              "reference": "TVA-02",
+              "libelle": "Augmentation crédit TVA février 2 900",
+              "ligne_libelle": "État - TVA facturée",
+              "debit": 0.0,
+              "credit": 500.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 71,
+              "ligne_id": 169,
+              "numero_ecriture": "VT-2025-0002",
+              "date": "2025-03-01",
+              "journal": "VT",
+              "reference": "FA-2025-005",
+              "libelle": "Facture FA-2025-005 Client Marchandises Recette",
+              "ligne_libelle": "État — TVA facturée",
+              "debit": 0.0,
+              "credit": 3000.0,
+              "solde_cumule": -3000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 75,
+              "ligne_id": 177,
+              "numero_ecriture": "OD-2025-0004",
+              "date": "2025-03-31",
+              "journal": "OD",
+              "reference": "TVA-03",
+              "libelle": "Consommation crédit TVA mars 600",
+              "ligne_libelle": "État - TVA facturée",
+              "debit": 3000.0,
+              "credit": 0.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 80,
+              "ligne_id": 190,
+              "numero_ecriture": "VT-2025-0003",
+              "date": "2025-06-15",
+              "journal": "VT",
+              "reference": "FA-2025-006",
+              "libelle": "Facture FA-2025-006 Client Services Recette",
+              "ligne_libelle": "État — TVA facturée",
+              "debit": 0.0,
+              "credit": 24000.0,
+              "solde_cumule": -24000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 83,
+              "ligne_id": 196,
+              "numero_ecriture": "OD-2025-0006",
+              "date": "2025-06-30",
+              "journal": "OD",
+              "reference": "TVA-06",
+              "libelle": "TVA nette juin 19 900",
+              "ligne_libelle": "État - TVA facturée",
+              "debit": 24000.0,
+              "credit": 0.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 89,
+              "ligne_id": 213,
+              "numero_ecriture": "VT-2025-0004",
+              "date": "2025-12-10",
+              "journal": "VT",
+              "reference": "FA-2025-009",
+              "libelle": "Facture FA-2025-009 Client Impayé Recette",
+              "ligne_libelle": "État — TVA facturée",
+              "debit": 0.0,
+              "credit": 2400.0,
+              "solde_cumule": -2400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 102,
+              "ligne_id": 239,
+              "numero_ecriture": "OD-2025-0013",
+              "date": "2025-12-31",
+              "journal": "OD",
+              "reference": "TVA-12",
+              "libelle": "TVA nette décembre 2 400",
+              "ligne_libelle": "État - TVA facturée",
+              "debit": 2400.0,
+              "credit": 0.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "4456",
+          "solde_initial": 0.0,
+          "total_debit": 19900.0,
+          "total_credit": 22300.0,
+          "solde": -2400.0,
+          "solde_final": -2400.0,
+          "mouvements": [
+            {
+              "ecriture_id": 83,
+              "ligne_id": 198,
+              "numero_ecriture": "OD-2025-0006",
+              "date": "2025-06-30",
+              "journal": "OD",
+              "reference": "TVA-06",
+              "libelle": "TVA nette juin 19 900",
+              "ligne_libelle": "État - TVA due (suivant déclarations)",
+              "debit": 0.0,
+              "credit": 19900.0,
+              "solde_cumule": -19900.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 84,
+              "ligne_id": 199,
+              "numero_ecriture": "BQ-2025-0013",
+              "date": "2025-07-20",
+              "journal": "BQ",
+              "reference": "TVA-06-PAY",
+              "libelle": "Paiement TVA juin 19900",
+              "ligne_libelle": "État - TVA due (suivant déclarations)",
+              "debit": 19900.0,
+              "credit": 0.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 102,
+              "ligne_id": 240,
+              "numero_ecriture": "OD-2025-0013",
+              "date": "2025-12-31",
+              "journal": "OD",
+              "reference": "TVA-12",
+              "libelle": "TVA nette décembre 2 400",
+              "ligne_libelle": "État - TVA due (suivant déclarations)",
+              "debit": 0.0,
+              "credit": 2400.0,
+              "solde_cumule": -2400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "4481",
+          "solde_initial": 0.0,
+          "total_debit": 28800.0,
+          "total_credit": 28800.0,
+          "solde": 0.0,
+          "solde_final": 0.0,
+          "mouvements": [
+            {
+              "ecriture_id": 54,
+              "ligne_id": 127,
+              "numero_ecriture": "AC-2025-0001",
+              "date": "2025-01-01",
+              "journal": "AC",
+              "reference": "ACQ-2025-2",
+              "libelle": "Acquisition immobilisation — Ordinateur de recette",
+              "ligne_libelle": "Dette acquisition immobilisation — Fournisseur Informatique Recette",
+              "debit": 0.0,
+              "credit": 28800.0,
+              "solde_cumule": -28800.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 16,
+              "tiers": "Fournisseur Informatique Recette",
+              "tiers_identifie": true
+            },
+            {
+              "ecriture_id": 55,
+              "ligne_id": 128,
+              "numero_ecriture": "BQ-2025-0002",
+              "date": "2025-01-01",
+              "journal": "BQ",
+              "reference": "PAY-IMMO-2",
+              "libelle": "Paiement immobilisation — Ordinateur de recette",
+              "ligne_libelle": "Règlement dette immobilisation — Ordinateur de recette",
+              "debit": 28800.0,
+              "credit": 0.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": 16,
+              "tiers": "Fournisseur Informatique Recette",
+              "tiers_identifie": true
+            }
+          ]
+        },
+        {
+          "compte": "51111",
+          "solde_initial": 0.0,
+          "total_debit": 22000.0,
+          "total_credit": 22000.0,
+          "solde": 0.0,
+          "solde_final": 0.0,
+          "mouvements": [
+            {
+              "ecriture_id": 63,
+              "ligne_id": 147,
+              "numero_ecriture": "AE-2025-0001",
+              "date": "2025-01-26",
+              "journal": "AE",
+              "reference": "CHQ-01",
+              "libelle": "Réception chèque — Client Marchandises Recette",
+              "ligne_libelle": "Chèque en portefeuille CHQ-01",
+              "debit": 20000.0,
+              "credit": 0.0,
+              "solde_cumule": 20000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 65,
+              "ligne_id": 154,
+              "numero_ecriture": "AE-2025-0002",
+              "date": "2025-02-01",
+              "journal": "AE",
+              "reference": "CHQ-01",
+              "libelle": "Remise à l'encaissement cheque — Client Marchandises Recette",
+              "ligne_libelle": "Chèque en portefeuille",
+              "debit": 0.0,
+              "credit": 20000.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 90,
+              "ligne_id": 215,
+              "numero_ecriture": "AE-2025-0006",
+              "date": "2025-12-12",
+              "journal": "AE",
+              "reference": "CHQ-REJET",
+              "libelle": "Réception chèque — Client Impayé Recette",
+              "ligne_libelle": "Chèque en portefeuille CHQ-REJET",
+              "debit": 2000.0,
+              "credit": 0.0,
+              "solde_cumule": 2000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 91,
+              "ligne_id": 218,
+              "numero_ecriture": "OD-2025-0007",
+              "date": "2025-12-15",
+              "journal": "OD",
+              "reference": "CHQ-REJET",
+              "libelle": "Impayé cheque — Client Impayé Recette",
+              "ligne_libelle": "Valeur impayée",
+              "debit": 0.0,
+              "credit": 2000.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "51112",
+          "solde_initial": 0.0,
+          "total_debit": 20000.0,
+          "total_credit": 20000.0,
+          "solde": 0.0,
+          "solde_final": 0.0,
+          "mouvements": [
+            {
+              "ecriture_id": 65,
+              "ligne_id": 153,
+              "numero_ecriture": "AE-2025-0002",
+              "date": "2025-02-01",
+              "journal": "AE",
+              "reference": "CHQ-01",
+              "libelle": "Remise à l'encaissement cheque — Client Marchandises Recette",
+              "ligne_libelle": "Chèque à l'encaissement",
+              "debit": 20000.0,
+              "credit": 0.0,
+              "solde_cumule": 20000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 66,
+              "ligne_id": 156,
+              "numero_ecriture": "BQ-2025-0006",
+              "date": "2025-02-05",
+              "journal": "BQ",
+              "reference": "CHQ-01",
+              "libelle": "Encaissement cheque — Client Marchandises Recette",
+              "ligne_libelle": "Valeurs à l'encaissement",
+              "debit": 0.0,
+              "credit": 20000.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "51132",
+          "solde_initial": 0.0,
+          "total_debit": 10000.0,
+          "total_credit": 10000.0,
+          "solde": 0.0,
+          "solde_final": 0.0,
+          "mouvements": [
+            {
+              "ecriture_id": 77,
+              "ligne_id": 182,
+              "numero_ecriture": "AE-2025-0005",
+              "date": "2025-05-15",
+              "journal": "AE",
+              "reference": "EFF-C01",
+              "libelle": "Remise à l'encaissement effet — Client Marchandises Recette",
+              "ligne_libelle": "Effet à l'encaissement",
+              "debit": 10000.0,
+              "credit": 0.0,
+              "solde_cumule": 10000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 78,
+              "ligne_id": 186,
+              "numero_ecriture": "BQ-2025-0010",
+              "date": "2025-05-16",
+              "journal": "BQ",
+              "reference": "EFF-C01",
+              "libelle": "Encaissement effet — Client Marchandises Recette",
+              "ligne_libelle": "Valeurs à l'encaissement",
+              "debit": 0.0,
+              "credit": 10000.0,
+              "solde_cumule": 0.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "5141",
+          "solde_initial": 0.0,
+          "total_debit": 389790.0,
+          "total_credit": 102060.0,
+          "solde": 287730.0,
+          "solde_final": 287730.0,
+          "mouvements": [
+            {
+              "ecriture_id": 53,
+              "ligne_id": 123,
+              "numero_ecriture": "BQ-2025-0001",
+              "date": "2025-01-01",
+              "journal": "BQ",
+              "reference": "CAP-01",
+              "libelle": "Apport associé Recette",
+              "ligne_libelle": "Banques (solde débiteur)",
+              "debit": 200000.0,
+              "credit": 0.0,
+              "solde_cumule": 200000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 55,
+              "ligne_id": 129,
+              "numero_ecriture": "BQ-2025-0002",
+              "date": "2025-01-01",
+              "journal": "BQ",
+              "reference": "PAY-IMMO-2",
+              "libelle": "Paiement immobilisation — Ordinateur de recette",
+              "ligne_libelle": "Paiement immobilisation — Ordinateur de recette",
+              "debit": 0.0,
+              "credit": 28800.0,
+              "solde_cumule": 171200.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 56,
+              "ligne_id": 131,
+              "numero_ecriture": "BQ-2025-0003",
+              "date": "2025-01-04",
+              "journal": "BQ",
+              "reference": "AC-2025-001",
+              "libelle": "Acompte fournisseur versé — AC-2025-001 Fournisseur Marchandises Recette",
+              "ligne_libelle": "Trésorerie",
+              "debit": 0.0,
+              "credit": 6000.0,
+              "solde_cumule": 165200.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 59,
+              "ligne_id": 138,
+              "numero_ecriture": "BQ-2025-0004",
+              "date": "2025-01-07",
+              "journal": "BQ",
+              "reference": "PAY-ACH01",
+              "libelle": "Règlement Fournisseur Marchandises Recette PAY-ACH01",
+              "ligne_libelle": "Virement émis PAY-ACH01",
+              "debit": 0.0,
+              "credit": 6000.0,
+              "solde_cumule": 159200.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 62,
+              "ligne_id": 145,
+              "numero_ecriture": "BQ-2025-0005",
+              "date": "2025-01-25",
+              "journal": "BQ",
+              "reference": "PAY-V01",
+              "libelle": "Règlement Client Marchandises Recette PAY-V01",
+              "ligne_libelle": "Virement reçu PAY-V01",
+              "debit": 10000.0,
+              "credit": 0.0,
+              "solde_cumule": 169200.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 66,
+              "ligne_id": 155,
+              "numero_ecriture": "BQ-2025-0006",
+              "date": "2025-02-05",
+              "journal": "BQ",
+              "reference": "CHQ-01",
+              "libelle": "Encaissement cheque — Client Marchandises Recette",
+              "ligne_libelle": "Chèque encaissé CHQ-01",
+              "debit": 20000.0,
+              "credit": 0.0,
+              "solde_cumule": 189200.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 69,
+              "ligne_id": 164,
+              "numero_ecriture": "BQ-2025-0007",
+              "date": "2025-02-15",
+              "journal": "BQ",
+              "reference": "ACH-SERVICE-PAY",
+              "libelle": "Règlement Fournisseur Services Recette ACH-SERVICE-PAY",
+              "ligne_libelle": "Virement émis ACH-SERVICE-PAY",
+              "debit": 0.0,
+              "credit": 14400.0,
+              "solde_cumule": 174800.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 73,
+              "ligne_id": 173,
+              "numero_ecriture": "BQ-2025-0008",
+              "date": "2025-03-05",
+              "journal": "BQ",
+              "reference": "PAY-V02",
+              "libelle": "Règlement Client Marchandises Recette PAY-V02",
+              "ligne_libelle": "Virement reçu PAY-V02",
+              "debit": 5000.0,
+              "credit": 0.0,
+              "solde_cumule": 179800.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 74,
+              "ligne_id": 176,
+              "numero_ecriture": "BQ-2025-0009",
+              "date": "2025-03-20",
+              "journal": "BQ",
+              "reference": "EFF-F01",
+              "libelle": "Paiement effet — Fournisseur Marchandises Recette",
+              "ligne_libelle": "Effet payé EFF-F01",
+              "debit": 0.0,
+              "credit": 14400.0,
+              "solde_cumule": 165400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 78,
+              "ligne_id": 184,
+              "numero_ecriture": "BQ-2025-0010",
+              "date": "2025-05-16",
+              "journal": "BQ",
+              "reference": "EFF-C01",
+              "libelle": "Encaissement effet — Client Marchandises Recette",
+              "ligne_libelle": "Effet encaissé EFF-C01",
+              "debit": 9990.0,
+              "credit": 0.0,
+              "solde_cumule": 175390.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 79,
+              "ligne_id": 187,
+              "numero_ecriture": "BQ-2025-0011",
+              "date": "2025-06-01",
+              "journal": "BQ",
+              "reference": "AC-2025-002",
+              "libelle": "Acompte client reçu — AC-2025-002 Client Services Recette",
+              "ligne_libelle": "Trésorerie",
+              "debit": 24000.0,
+              "credit": 0.0,
+              "solde_cumule": 199390.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 82,
+              "ligne_id": 194,
+              "numero_ecriture": "BQ-2025-0012",
+              "date": "2025-06-30",
+              "journal": "BQ",
+              "reference": "VENTE-SERVICE-PAY",
+              "libelle": "Règlement Client Services Recette VENTE-SERVICE-PAY",
+              "ligne_libelle": "Virement reçu VENTE-SERVICE-PAY",
+              "debit": 120000.0,
+              "credit": 0.0,
+              "solde_cumule": 319390.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 84,
+              "ligne_id": 200,
+              "numero_ecriture": "BQ-2025-0013",
+              "date": "2025-07-20",
+              "journal": "BQ",
+              "reference": "TVA-06-PAY",
+              "libelle": "Paiement TVA juin 19900",
+              "ligne_libelle": "Banques (solde débiteur)",
+              "debit": 0.0,
+              "credit": 19900.0,
+              "solde_cumule": 299490.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 85,
+              "ligne_id": 201,
+              "numero_ecriture": "BQ-2025-0014",
+              "date": "2025-11-30",
+              "journal": "BQ",
+              "reference": "INT-PPRF",
+              "libelle": "Intérêts bancaires selon attestation fictive",
+              "ligne_libelle": "Banques (solde débiteur)",
+              "debit": 800.0,
+              "credit": 0.0,
+              "solde_cumule": 300290.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 86,
+              "ligne_id": 205,
+              "numero_ecriture": "BQ-2025-0015",
+              "date": "2025-12-01",
+              "journal": "BQ",
+              "reference": "ASS-01",
+              "libelle": "Assurance 12000 couvrant décembre 2025 à novembre 2026",
+              "ligne_libelle": "Banques (solde débiteur)",
+              "debit": 0.0,
+              "credit": 12000.0,
+              "solde_cumule": 288290.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 92,
+              "ligne_id": 220,
+              "numero_ecriture": "BQ-2025-0016",
+              "date": "2025-12-20",
+              "journal": "BQ",
+              "reference": "AMENDE",
+              "libelle": "Amende fiscale documentée 500",
+              "ligne_libelle": "Banques (solde débiteur)",
+              "debit": 0.0,
+              "credit": 500.0,
+              "solde_cumule": 287790.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 93,
+              "ligne_id": 222,
+              "numero_ecriture": "BQ-2025-0017",
+              "date": "2025-12-31",
+              "journal": "BQ",
+              "reference": "FRAIS-BQ",
+              "libelle": "Frais bancaires 60 sans TVA selon avis",
+              "ligne_libelle": "Banques (solde débiteur)",
+              "debit": 0.0,
+              "credit": 60.0,
+              "solde_cumule": 287730.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "6111",
+          "solde_initial": 0.0,
+          "total_debit": 22000.0,
+          "total_credit": 0.0,
+          "solde": 22000.0,
+          "solde_final": 22000.0,
+          "mouvements": [
+            {
+              "ecriture_id": 57,
+              "ligne_id": 132,
+              "numero_ecriture": "AC-2025-0002",
+              "date": "2025-01-05",
+              "journal": "AC",
+              "reference": "ACH-01",
+              "libelle": "Facture d'achat FA-2025-001 Fournisseur Marchandises Recette",
+              "ligne_libelle": "Achats",
+              "debit": 10000.0,
+              "credit": 0.0,
+              "solde_cumule": 10000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 60,
+              "ligne_id": 139,
+              "numero_ecriture": "AC-2025-0003",
+              "date": "2025-01-10",
+              "journal": "AC",
+              "reference": "ACH-02",
+              "libelle": "Facture d'achat FA-2025-002 Fournisseur Marchandises Recette",
+              "ligne_libelle": "Achats",
+              "debit": 12000.0,
+              "credit": 0.0,
+              "solde_cumule": 22000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "6114",
+          "solde_initial": 0.0,
+          "total_debit": 0.0,
+          "total_credit": 6600.0,
+          "solde": -6600.0,
+          "solde_final": -6600.0,
+          "mouvements": [
+            {
+              "ecriture_id": 94,
+              "ligne_id": 224,
+              "numero_ecriture": "OD-2025-0008",
+              "date": "2025-12-31",
+              "journal": "OD",
+              "reference": "STOCK-CLOTURE-2025",
+              "libelle": "Régularisation du stock final 2025",
+              "ligne_libelle": "Variation de stock",
+              "debit": 0.0,
+              "credit": 6600.0,
+              "solde_cumule": -6600.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "6125",
+          "solde_initial": 0.0,
+          "total_debit": 15400.0,
+          "total_credit": 0.0,
+          "solde": 15400.0,
+          "solde_final": 15400.0,
+          "mouvements": [
+            {
+              "ecriture_id": 67,
+              "ligne_id": 157,
+              "numero_ecriture": "AC-2025-0004",
+              "date": "2025-02-10",
+              "journal": "AC",
+              "reference": "ACH-SERVICE",
+              "libelle": "Facture d'achat FA-2025-004 Fournisseur Services Recette",
+              "ligne_libelle": "Achats",
+              "debit": 12000.0,
+              "credit": 0.0,
+              "solde_cumule": 12000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 87,
+              "ligne_id": 206,
+              "numero_ecriture": "AC-2025-0005",
+              "date": "2025-12-02",
+              "journal": "AC",
+              "reference": "02",
+              "libelle": "Facture d'achat FA-2025-007 Fournisseur Contrôle Références Recette",
+              "ligne_libelle": "Achats",
+              "debit": 200.0,
+              "credit": 0.0,
+              "solde_cumule": 12200.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 88,
+              "ligne_id": 209,
+              "numero_ecriture": "AC-2025-0006",
+              "date": "2025-12-02",
+              "journal": "AC",
+              "reference": "002",
+              "libelle": "Facture d'achat FA-2025-008 Fournisseur Contrôle Références Recette",
+              "ligne_libelle": "Achats",
+              "debit": 200.0,
+              "credit": 0.0,
+              "solde_cumule": 12400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 98,
+              "ligne_id": 231,
+              "numero_ecriture": "OD-2025-0010",
+              "date": "2025-12-31",
+              "journal": "OD",
+              "reference": "INV-FNP-2025-6",
+              "libelle": "Service livré décembre, contrat FNP-01",
+              "ligne_libelle": "Fournisseur - facture non parvenue (FNP)",
+              "debit": 3000.0,
+              "credit": 0.0,
+              "solde_cumule": 15400.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "6134",
+          "solde_initial": 0.0,
+          "total_debit": 12000.0,
+          "total_credit": 11000.0,
+          "solde": 1000.0,
+          "solde_final": 1000.0,
+          "mouvements": [
+            {
+              "ecriture_id": 86,
+              "ligne_id": 204,
+              "numero_ecriture": "BQ-2025-0015",
+              "date": "2025-12-01",
+              "journal": "BQ",
+              "reference": "ASS-01",
+              "libelle": "Assurance 12000 couvrant décembre 2025 à novembre 2026",
+              "ligne_libelle": "Primes d'assurances",
+              "debit": 12000.0,
+              "credit": 0.0,
+              "solde_cumule": 12000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 96,
+              "ligne_id": 228,
+              "numero_ecriture": "OD-2025-0009",
+              "date": "2025-12-31",
+              "journal": "OD",
+              "reference": "INV-CCA-2025-5",
+              "libelle": "Assurance ASS-01,11 mois 2026",
+              "ligne_libelle": "Charge constatée d'avance (CCA)",
+              "debit": 0.0,
+              "credit": 11000.0,
+              "solde_cumule": 1000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "61472",
+          "solde_initial": 0.0,
+          "total_debit": 10.0,
+          "total_credit": 0.0,
+          "solde": 10.0,
+          "solde_final": 10.0,
+          "mouvements": [
+            {
+              "ecriture_id": 78,
+              "ligne_id": 185,
+              "numero_ecriture": "BQ-2025-0010",
+              "date": "2025-05-16",
+              "journal": "BQ",
+              "reference": "EFF-C01",
+              "libelle": "Encaissement effet — Client Marchandises Recette",
+              "ligne_libelle": "Frais sur effets de commerce",
+              "debit": 10.0,
+              "credit": 0.0,
+              "solde_cumule": 10.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "61473",
+          "solde_initial": 0.0,
+          "total_debit": 60.0,
+          "total_credit": 0.0,
+          "solde": 60.0,
+          "solde_final": 60.0,
+          "mouvements": [
+            {
+              "ecriture_id": 93,
+              "ligne_id": 221,
+              "numero_ecriture": "BQ-2025-0017",
+              "date": "2025-12-31",
+              "journal": "BQ",
+              "reference": "FRAIS-BQ",
+              "libelle": "Frais bancaires 60 sans TVA selon avis",
+              "ligne_libelle": "Frais et commissions sur services bancaires",
+              "debit": 60.0,
+              "credit": 0.0,
+              "solde_cumule": 60.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "61935",
+          "solde_initial": 0.0,
+          "total_debit": 4800.0,
+          "total_credit": 0.0,
+          "solde": 4800.0,
+          "solde_final": 4800.0,
+          "mouvements": [
+            {
+              "ecriture_id": 95,
+              "ligne_id": 225,
+              "numero_ecriture": "AM-2025-0001",
+              "date": "2025-12-31",
+              "journal": "AM",
+              "reference": "AM-2025-2",
+              "libelle": "Dotation aux amortissements — Ordinateur de recette 2025",
+              "ligne_libelle": "Dotation amort. — Ordinateur de recette",
+              "debit": 4800.0,
+              "credit": 0.0,
+              "solde_cumule": 4800.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "61955",
+          "solde_initial": 0.0,
+          "total_debit": 1500.0,
+          "total_credit": 0.0,
+          "solde": 1500.0,
+          "solde_final": 1500.0,
+          "mouvements": [
+            {
+              "ecriture_id": 100,
+              "ligne_id": 235,
+              "numero_ecriture": "OD-2025-0011",
+              "date": "2025-12-31",
+              "journal": "OD",
+              "reference": "INV-PROVISION_RISQUE-2025-7",
+              "libelle": "Litige REC-LIT01 probable, conditions fiscales non satisfaites",
+              "ligne_libelle": "Provision pour risques et charges",
+              "debit": 1500.0,
+              "credit": 0.0,
+              "solde_cumule": 1500.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "61964",
+          "solde_initial": 0.0,
+          "total_debit": 2000.0,
+          "total_credit": 0.0,
+          "solde": 2000.0,
+          "solde_final": 2000.0,
+          "mouvements": [
+            {
+              "ecriture_id": 101,
+              "ligne_id": 237,
+              "numero_ecriture": "OD-2025-0012",
+              "date": "2025-12-31",
+              "journal": "OD",
+              "reference": "INV-DEPRECIATION_CLIENT-2025-8",
+              "libelle": "Dépréciation VENTE-IMPAYEE selon REC-DEP01",
+              "ligne_libelle": "Dépréciation d'une créance client",
+              "debit": 2000.0,
+              "credit": 0.0,
+              "solde_cumule": 2000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "6583",
+          "solde_initial": 0.0,
+          "total_debit": 500.0,
+          "total_credit": 0.0,
+          "solde": 500.0,
+          "solde_final": 500.0,
+          "mouvements": [
+            {
+              "ecriture_id": 92,
+              "ligne_id": 219,
+              "numero_ecriture": "BQ-2025-0016",
+              "date": "2025-12-20",
+              "journal": "BQ",
+              "reference": "AMENDE",
+              "libelle": "Amende fiscale documentée 500",
+              "ligne_libelle": "Pénalités et amendes fiscales ou pénales",
+              "debit": 500.0,
+              "credit": 0.0,
+              "solde_cumule": 500.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "7111",
+          "solde_initial": 0.0,
+          "total_debit": 2500.0,
+          "total_credit": 40000.0,
+          "solde": -37500.0,
+          "solde_final": -37500.0,
+          "mouvements": [
+            {
+              "ecriture_id": 61,
+              "ligne_id": 144,
+              "numero_ecriture": "VT-2025-0001",
+              "date": "2025-01-20",
+              "journal": "VT",
+              "reference": "FA-2025-003",
+              "libelle": "Facture FA-2025-003 Client Marchandises Recette",
+              "ligne_libelle": "Ventes",
+              "debit": 0.0,
+              "credit": 25000.0,
+              "solde_cumule": -25000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 68,
+              "ligne_id": 160,
+              "numero_ecriture": "AV-2025-0001",
+              "date": "2025-02-10",
+              "journal": "AV",
+              "reference": "AV-2025-001",
+              "libelle": "Avoir AV-2025-001 Client Marchandises Recette",
+              "ligne_libelle": "Avoir sur ventes",
+              "debit": 2500.0,
+              "credit": 0.0,
+              "solde_cumule": -22500.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 71,
+              "ligne_id": 170,
+              "numero_ecriture": "VT-2025-0002",
+              "date": "2025-03-01",
+              "journal": "VT",
+              "reference": "FA-2025-005",
+              "libelle": "Facture FA-2025-005 Client Marchandises Recette",
+              "ligne_libelle": "Ventes",
+              "debit": 0.0,
+              "credit": 15000.0,
+              "solde_cumule": -37500.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "7124",
+          "solde_initial": 0.0,
+          "total_debit": 0.0,
+          "total_credit": 132000.0,
+          "solde": -132000.0,
+          "solde_final": -132000.0,
+          "mouvements": [
+            {
+              "ecriture_id": 80,
+              "ligne_id": 191,
+              "numero_ecriture": "VT-2025-0003",
+              "date": "2025-06-15",
+              "journal": "VT",
+              "reference": "FA-2025-006",
+              "libelle": "Facture FA-2025-006 Client Services Recette",
+              "ligne_libelle": "Ventes",
+              "debit": 0.0,
+              "credit": 120000.0,
+              "solde_cumule": -120000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            },
+            {
+              "ecriture_id": 89,
+              "ligne_id": 214,
+              "numero_ecriture": "VT-2025-0004",
+              "date": "2025-12-10",
+              "journal": "VT",
+              "reference": "FA-2025-009",
+              "libelle": "Facture FA-2025-009 Client Impayé Recette",
+              "ligne_libelle": "Ventes",
+              "debit": 0.0,
+              "credit": 12000.0,
+              "solde_cumule": -132000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        },
+        {
+          "compte": "7381",
+          "solde_initial": 0.0,
+          "total_debit": 0.0,
+          "total_credit": 1000.0,
+          "solde": -1000.0,
+          "solde_final": -1000.0,
+          "mouvements": [
+            {
+              "ecriture_id": 85,
+              "ligne_id": 203,
+              "numero_ecriture": "BQ-2025-0014",
+              "date": "2025-11-30",
+              "journal": "BQ",
+              "reference": "INT-PPRF",
+              "libelle": "Intérêts bancaires selon attestation fictive",
+              "ligne_libelle": "Intérêts et produits assimilés",
+              "debit": 0.0,
+              "credit": 1000.0,
+              "solde_cumule": -1000.0,
+              "code_lettrage": null,
+              "date_lettrage": null,
+              "tiers_id": null,
+              "tiers": null,
+              "tiers_identifie": null
+            }
+          ]
+        }
+      ]
+    },
+    "ecritures2025": 48,
+    "lignes": 114,
+    "debit_credit": "947940",
+    "resultat_avant_is": "129830",
+    "credit3453": "200",
+    "journal_inchange_pendant_exports": true,
+    "source_sha256": "e397fd3d69626be01ce337974c76dd7af1a781f41512a4d8a768591410ef906a"
+  },
+  "controle_cloture791": {
+    "exercice": 2025,
+    "date_debut": "2025-01-01",
+    "date_fin": "2025-12-31",
+    "date_fin_atteinte": true,
+    "est_clos": false,
+    "date_cloture": null,
+    "nb_ecritures": 50,
+    "total_charges": 64090.25,
+    "total_produits": 170500.0,
+    "resultat_net": 106409.75,
+    "type_resultat": "bénéfice",
+    "compte_resultat": "1191",
+    "equilibre": true,
+    "ecart": 0.0,
+    "apercu_a_nouveaux": [
+      {
+        "compte": "1111",
+        "debit": 0.0,
+        "credit": 200000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1518",
+        "debit": 0.0,
+        "credit": 1500.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "2355",
+        "debit": 24000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "28355",
+        "debit": 0.0,
+        "credit": 4800.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3111",
+        "debit": 6600.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3421",
+        "debit": 14400.0,
+        "credit": 0.0,
+        "tiers_id": 12,
+        "nature_auxiliaire": "client",
+        "compte_auxiliaire_snapshot": "C00000012",
+        "libelle_auxiliaire_snapshot": "Client Impayé Recette"
+      },
+      {
+        "compte": "34552",
+        "debit": 80.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3491",
+        "debit": 11000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3942",
+        "debit": 0.0,
+        "credit": 2000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4411",
+        "debit": 0.0,
+        "credit": 480.0,
+        "tiers_id": 15,
+        "nature_auxiliaire": "fournisseur",
+        "compte_auxiliaire_snapshot": "F00000015",
+        "libelle_auxiliaire_snapshot": "Fournisseur Contrôle Références Recette"
+      },
+      {
+        "compte": "4417",
+        "debit": 0.0,
+        "credit": 3000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4453",
+        "debit": 0.0,
+        "credit": 23220.25,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4456",
+        "debit": 0.0,
+        "credit": 2400.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "5141",
+        "debit": 287730.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1191",
+        "debit": 0.0,
+        "credit": 106409.75,
+        "resultat": true
+      }
+    ],
+    "total_an_debit": 343810.0,
+    "total_an_credit": 343810.0,
+    "dotations_manquantes": [],
+    "nb_dotations_manquantes": 0,
+    "total_dotations_manquantes": 0.0,
+    "nb_ecritures_brouillon": 0,
+    "ecritures_brouillon": [],
+    "nb_ajustements_inventaire": 4,
+    "stock_cloture": {
+      "exercice": 2025,
+      "date_fin": "2025-12-31",
+      "nb_articles": 1,
+      "inventaire_requis": true,
+      "inventaire_valide": true,
+      "inventaire_id": 2,
+      "inventaire_reference": "STOCK-FIN",
+      "valeur_physique_brute": 6600.0,
+      "valeur_comptable_brute": 6600.0,
+      "depreciations": 0.0,
+      "valeur_comptable_nette": 6600.0,
+      "ecart_brut": 0.0,
+      "valorisation_complete": true,
+      "diagnostics": [],
+      "stock_rapproche": true,
+      "ecriture_stock_id": 94,
+      "ecriture_stock_validee": true,
+      "lignes": [
+        {
+          "article_id": 4,
+          "code": "M-01",
+          "designation": "Marchandise de recette",
+          "quantite": 60.0,
+          "cmup": 110.0,
+          "valeur": 6600.0,
+          "nombres_diagnostics": {},
+          "compte_stock": "3111",
+          "compte_variation": "6114"
+        }
+      ]
+    },
+    "immobilisations_rapprochement": {
+      "brut_module": 24000.0,
+      "brut_comptable": 24000.0,
+      "ecart_brut": 0.0,
+      "amortissements_module": 4800.0,
+      "amortissements_comptables": 4800.0,
+      "ecart_amortissements": 0.0,
+      "vnc_module": 19200.0,
+      "vnc_comptable": 19200.0,
+      "ecart_vnc": 0.0,
+      "rapproche": true,
+      "details_comptes": [
+        {
+          "nature": "brut",
+          "compte": "2355",
+          "module": 24000.0,
+          "comptable": 24000.0,
+          "ecart": 0.0
+        },
+        {
+          "nature": "amortissement",
+          "compte": "28355",
+          "module": 4800.0,
+          "comptable": 4800.0,
+          "ecart": 0.0
+        }
+      ]
+    },
+    "nb_documents_non_comptabilises": 0,
+    "documents_non_comptabilises": [],
+    "affectation_resultat": null,
+    "resultat_anterieur_a_reclasser": null,
+    "fiscalite_is": {
+      "applicable": true,
+      "attendu": 22807.75,
+      "comptabilise": 23420.25,
+      "compte_charge_attendu": "6701",
+      "nature_impot": "IS",
+      "absente": false,
+      "coherente": false,
+      "a_comptabiliser": 0.0,
+      "resultat_comptable_avant_is": 129830.0,
+      "resultat_net_apres_is": null,
+      "deficits_a_confirmer": false
+    },
+    "fec_controle": {
+      "conforme": true,
+      "nb_bloquants": 0,
+      "nb_avertissements": 1,
+      "bloquants": []
+    }
+  },
+  "annuel791": {
+    "ecritures2025": 50,
+    "lignes2025": 118,
+    "debit_credit": "971560.25",
+    "contrepassations2026_brouillon": 2,
+    "lignes2026": 4,
+    "resultats": {
+      "banque": "287730.00",
+      "stock_valeur": "6600.00",
+      "total_actif_net": "337010.0",
+      "total_passif_net": "337010.0",
+      "resultat_net": "106409.75",
+      "caf": "112709.75"
+    },
+    "soldes": {
+      "1111": "-200000.00",
+      "1518": "-1500.00",
+      "2355": "24000.00",
+      "28355": "-4800.00",
+      "3111": "6600.00",
+      "3421": "14400.00",
+      "34552": "80.00",
+      "3491": "11000.00",
+      "3942": "-2000.00",
+      "4411": "-480.00",
+      "4417": "-3000.00",
+      "4453": "-23220.25",
+      "4456": "-2400.00",
+      "5141": "287730.00",
+      "6111": "22000.00",
+      "6114": "-6600.00",
+      "6125": "15400.00",
+      "6134": "1000.00",
+      "61472": "10.00",
+      "61473": "60.00",
+      "61935": "4800.00",
+      "61955": "1500.00",
+      "61964": "2000.00",
+      "6583": "500.00",
+      "6701": "23420.25",
+      "7111": "-37500.00",
+      "7124": "-132000.00",
+      "7381": "-1000.00"
+    },
+    "stock": 60,
+    "cmup": 110,
+    "originaux_semestre_inchanges": true,
+    "limite": "États annuels et flux produits testés, pas clôture définitive, déclarations fiscales ni recette humaine ;contrôles réels non contournés."
+  }
+}

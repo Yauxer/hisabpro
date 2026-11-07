@@ -1,0 +1,57 @@
+{
+  "lot": 749,
+  "tests_executes": {
+    "reprise749": {
+      "cas": 45,
+      "temps_secondes": 75.14,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "credits749_effets": {
+      "cas": 57,
+      "temps_secondes": 52.42,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "credits749_effets_ui": {
+      "cas": 13,
+      "temps_secondes": 126.71,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "credits749_effets_commune": {
+      "cas": 298,
+      "temps_secondes": 529.06,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "session749_annuel": {
+      "cas": 2,
+      "temps_secondes": 42.02,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    }
+  },
+  "source_figees": 1206,
+  "protections_inchangees": 117,
+  "guide": {
+    "pdf_pages": 9,
+    "excel_feuilles": 5,
+    "humains_non_testes": 8
+  },
+  "aucun_postgresql_reel": true,
+  "liquidation_confirmee": false,
+  "imputation_confirmee": false,
+  "limites": [
+    "Qualifications déclarées à vérifier humainement",
+    "Autres types ou anciens millésimes à qualifier",
+    "Acomptes et liquidation externe à poursuivre",
+    "Recette Office/cible/production non validée",
+    "RH/paie et point6 différés"
+  ]
+}

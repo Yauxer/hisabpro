@@ -1,0 +1,164 @@
+.page { display: flex; flex-direction: column; height: 100%; }
+.topbar {
+  background: var(--bg-primary); border-bottom: 0.5px solid var(--border-light);
+  padding: 14px 24px; display: flex; align-items: center; justify-content: space-between;
+  flex-shrink: 0;
+}
+.pageTitle { font-size: 15px; font-weight: 500; }
+.topbarRight { display: flex; gap: 10px; }
+
+.btnSec {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; padding: 7px 12px; border-radius: var(--radius-md);
+  background: var(--bg-primary); border: 0.5px solid var(--border-medium);
+  color: var(--text-secondary); transition: background 0.12s; cursor: pointer;
+}
+.btnSec:hover { background: var(--bg-secondary); }
+
+.btnIcone {
+  width: 28px; height: 28px; border-radius: var(--radius-sm);
+  background: transparent; border: none; color: var(--text-tertiary); font-size: 16px;
+  display: flex; align-items: center; justify-content: center;
+}
+.btnIcone:hover { background: var(--bg-secondary); color: var(--text-primary); }
+
+.content {
+  flex: 1; overflow: hidden; padding: 16px 24px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+
+.recherche {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--bg-primary); border: 0.5px solid var(--border-medium);
+  border-radius: var(--radius-md); padding: 0 10px;
+  color: var(--text-tertiary); flex-shrink: 0;
+}
+.recherche i { font-size: 15px; }
+.inputRecherche {
+  flex: 1; border: none; background: transparent;
+  font-size: 13px; color: var(--text-primary); padding: 8px 0;
+}
+.inputRecherche::placeholder { color: var(--text-tertiary); }
+.inputRecherche:focus { outline: none; }
+.clearBtn {
+  font-size: 11px; padding: 4px 7px; border-radius: var(--radius-sm);
+  border: 0.5px solid var(--border-medium); background: var(--bg-primary);
+  color: var(--text-tertiary); cursor: pointer; display: flex; align-items: center;
+}
+.clearBtn:hover { background: var(--red-light); color: var(--red); }
+
+.fullWidth { flex: 1; min-height: 0; }
+.twoCols { display: grid; grid-template-columns: minmax(360px, .8fr) minmax(600px, 1.2fr); gap: 16px; flex: 1; min-height: 0; }
+
+.card {
+  background: var(--bg-primary); border: 0.5px solid var(--border-light);
+  border-radius: var(--radius-lg); overflow: hidden;
+  display: flex; flex-direction: column; height: 100%;
+}
+.cardHeader {
+  padding: 12px 16px; border-bottom: 0.5px solid var(--border-light);
+  display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
+}
+.cardTitle {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 500; color: var(--text-primary);
+}
+.tableWrapper { flex:1; min-width:0; min-height:0; overflow:auto; overscroll-behavior:contain; scrollbar-gutter:stable; -webkit-overflow-scrolling:touch; }
+
+.table { width: 100%; border-collapse: collapse; }
+.table th {
+  font-size: 11px; color: var(--text-tertiary); font-weight: 400;
+  text-align: left; padding: 9px 14px; border-bottom: 0.5px solid var(--border-light);
+  position: sticky; top: 0; background: var(--bg-primary);
+}
+.table td {
+  font-size: 12px; padding: 8px 14px;
+  border-bottom: 0.5px solid var(--border-light);
+  color: var(--text-primary); vertical-align: middle;
+}
+.table tr:last-child td { border-bottom: none; }
+.table tr:hover td { background: var(--bg-secondary); cursor: pointer; }
+.rowSelected td { background: var(--blue-light) !important; }
+
+.tdDate { color: var(--text-secondary) !important; white-space: nowrap; }
+
+.cptBadge {
+  font-size: 11px; font-family: 'Courier New', monospace; font-weight: 600;
+  padding: 2px 7px; border-radius: 4px;
+  background: var(--blue-light); color: var(--blue);
+  white-space: nowrap;
+}
+
+.vide {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 10px; color: var(--text-tertiary); font-size: 13px; padding: 48px;
+}
+.vide i { font-size: 28px; }
+
+/* ── Solde récap ────────────────── */
+.soldeRecap {
+  display: flex; align-items: center; gap: 0;
+  background: var(--bg-secondary); border-bottom: 0.5px solid var(--border-light);
+  flex-shrink: 0;
+}
+.soldeItem { flex: 1; padding: 12px 16px; display: flex; flex-direction: column; gap: 3px; }
+.soldeLabel { font-size: 10px; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; }
+.soldeDebit  { font-size: 13px; font-weight: 600; color: var(--green); }
+.soldeCredit { font-size: 13px; font-weight: 600; color: var(--red); }
+.soldeFinal  { font-size: 14px; font-weight: 700; }
+.soldeSep { width: 0.5px; height: 40px; background: var(--border-medium); }
+
+/* GRAND-LIVRE-FINAL */
+.subtitle { margin-top:2px; font-size:10px; color:var(--text-tertiary); }
+.dateFilters { display:flex; align-items:center; gap:6px; }
+.dateFilters label { font-size:10px; color:var(--text-tertiary); }
+.dateFilters input { padding:6px 8px; border-radius:var(--radius-md); border:0.5px solid var(--border-medium); background:var(--bg-primary); color:var(--text-primary); font-size:11px; }
+.btnSec:disabled { opacity:.5; cursor:not-allowed; }
+.errorBox { flex-shrink:0; padding:8px 10px; border-radius:6px; background:#FCEBEB; border:1px solid #F5BEBE; color:#A32D2D; font-size:11px; }
+.loading { flex:1; display:flex; align-items:center; justify-content:center; gap:8px; color:var(--text-tertiary); font-size:13px; }
+.tableComptes { min-width:900px; }
+.tableDetail { min-width:1280px; }
+.numberCell { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+.mono { font-family:'Courier New', monospace; font-size:11px; white-space:nowrap; }
+.journalBadge { display:inline-flex; min-width:28px; justify-content:center; padding:1px 5px; border-radius:4px; background:var(--bg-secondary); font-size:10px; font-weight:600; }
+.secondaryText { margin-top:2px; font-size:10px; color:var(--text-tertiary); }
+.badgeWarning { display:inline-flex; margin-left:6px; padding:1px 5px; border-radius:10px; background:#FFF1D6; color:#854F0B; font-size:9px; font-weight:600; }
+
+@media (max-width: 1180px) {
+  .twoCols { grid-template-columns: 1fr; }
+  .topbar { align-items:flex-start; gap:12px; }
+  .topbarRight { flex-wrap:wrap; justify-content:flex-end; }
+}
+
+/* Patch 087 — les tableaux HTML conservaient une largeur intrinsèque et les
+   colonnes de montants étaient coupées par le conteneur. Chaque ligne est une
+   grille à largeur contrainte, puis une fiche à deux colonnes sur mobile. */
+.apercuAnContenu { width: 100%; min-width: 0; padding: 0 14px 12px; box-sizing: border-box; }
+.apercuAnTable { width: 100%; min-width: 0; max-width: 100%; font-size: 12px; }
+.apercuAnRow {
+  display: grid;
+  grid-template-columns: minmax(0, 13%) minmax(0, 43%) minmax(0, 22%) minmax(0, 22%);
+  width: 100%; min-width: 0; border-top: .5px solid var(--border-light);
+}
+.apercuAnRow > [role="cell"], .apercuAnRow > [role="columnheader"] {
+  min-width: 0; padding: 7px 5px; overflow-wrap: anywhere; vertical-align: top;
+}
+.apercuAnHeader { background: var(--bg-secondary); color: var(--text-tertiary); font-weight: 600; }
+.apercuAnHeader > :nth-child(n+3), .apercuAnDebit, .apercuAnCredit {
+  text-align: right; font-variant-numeric: tabular-nums;
+}
+.apercuAnCompte { font-family: monospace; }
+.apercuAnLibelle { color: var(--text-secondary); }
+.apercuAnTotal { font-weight: 700; background: var(--bg-secondary); }
+.apercuAnMontantLabel { display: none; }
+@media (max-width: 640px) {
+  .apercuAnContenu { padding: 0 8px 10px; }
+  .apercuAnTable { font-size: 11px; }
+  .apercuAnHeader { display: none; }
+  .apercuAnRow { grid-template-columns: minmax(0, 72px) minmax(0, 1fr); row-gap: 2px; padding: 7px 0; }
+  .apercuAnRow > [role="cell"] { padding: 3px 5px; }
+  .apercuAnDebit, .apercuAnCredit { text-align: left; overflow-wrap: anywhere; }
+  .apercuAnMontantLabel { display: block; font-size: 10px; color: var(--text-tertiary); font-weight: 400; }
+  .apercuAnTotal .apercuAnLibelle { display: block; }
+}

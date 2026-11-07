@@ -1,0 +1,27 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_k0zc021u",
+  "nonce": "0c5e32c58b494e5497a08d4961aa88fa",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-FAC-013",
+      "statut": "Réussi",
+      "portee": "Conservation interne de facture vente ; pas certification légale ni pièce fournisseur d’origine."
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "conservation923": {
+    "id": 1,
+    "facture_id": 1,
+    "sha256": "4bdf1221371ecedb69654ef3c031f41421f0390c21fa9a8816aebb3d3b8a293c",
+    "logo": true,
+    "retour_apres_rechargement": true,
+    "octets_identiques": true,
+    "journal_et_facture_inchanges": true,
+    "aucun_statut_archive_definitive": true
+  }
+}

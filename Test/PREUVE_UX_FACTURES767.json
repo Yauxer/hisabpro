@@ -1,0 +1,59 @@
+{
+  "lot": 767,
+  "tests_executes": {
+    "ux767_cibles": {
+      "cas": 4,
+      "temps_secondes": 54.14,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "ux767_final": {
+      "cas": 14,
+      "temps_secondes": 136.94,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "ux767_livraison": {
+      "cas": 14,
+      "temps_secondes": 144.1,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    }
+  },
+  "tests_distincts_finaux": 14,
+  "campagnes_non_additionnees": true,
+  "build": {
+    "code": 0,
+    "temps_secondes": 7.92,
+    "avertissements": "Taille du bundle et importxlsx mixte préexistants"
+  },
+  "parcours_ux": [
+    {
+      "largeur": 1440,
+      "filtres_combines_et_reinitialisation": true,
+      "focus_et_clavier": true,
+      "mutations_api": 0,
+      "donnees_comptables_inchangees": true
+    },
+    {
+      "largeur": 390,
+      "filtres_combines_et_reinitialisation": true,
+      "focus_et_clavier": true,
+      "mutations_api": 0,
+      "donnees_comptables_inchangees": true
+    }
+  ],
+  "captures": {
+    "docs/recette/PREUVE_UX_FACTURES_767_MOBILE.png": "35620c6d28f0d4f5b1b5bcc763e2d2866a5356ca886171c6cf6115ae635db645",
+    "docs/recette/PREUVE_UX_FACTURES_767_BUREAU.png": "4fe2c8b0885e5b73cc2d99cde3f70501167f6f14f1d67ee58857ea8234302813"
+  },
+  "verifications_visuelles": "Bureau1440/mobile390,état vide hors tableau etbouton entier",
+  "protections_inchangees": 117,
+  "backend_migrations_inchanges": true,
+  "postgresql_reel_utilise": false,
+  "recette_utilisateur_globale_validee": false,
+  "RH_paie_point6": "différés"
+}

@@ -1,0 +1,17 @@
+# HisabPro — justificatif vérifié, exports comptables partiels
+
+Le scénario annuel fictif de 50 opérations a été rejoué dans Edge sur ordinateur et mobile avec PostgreSQL natif temporaire protégé par nonce. Aucune base utilisateur ni donnée comptable réelle utilisées.
+
+Correction produit : le bouton Exporter CSV du Journal restait actif pendant le chargement et pouvait produire un fichier contenant uniquement l'entête. Le bouton est maintenant désactivé pendant le chargement, en cas d'erreur ou de sélection vide. Un test retient une vraie réponse GET sans modifier ses données : les deux variantes 1440/390 vérifient la désactivation puis le téléchargement réel des deux lignes après réception. Le parcours annuel a ensuite produit les 145 lignes attendues après clôture, avec débit égal au crédit, solde bancaire 287 730 MAD et références 02/002 distinctes. Le build Vite réussit en 6,67 s ;avertissement connu du bundle supérieur à 500 kB.
+
+La fiche HP-CPT-005 est réussie automatiquement : depuis Journal → CAP-01 → Justificatifs, le PDF du cahier a été joint, rechargé et téléchargé avec des octets identiques à l'original. La trace documentaire, son auteur, sa référenceCAP-01 et sa date01/01/2025 sont contrôlés. Le nom unique du serveur protège les homonymes. La suppression n'est pas proposée sur cette écriture définitive. Aucune nouvelle écriture ne résulte de ce complément documentaire.
+
+La fiche HP-CPT-006 reste PARTIELLE. L'impression PDF du Journal sur mobile ne contient pas le tableau attendu : le test retrouve la navigation et l'en-tête, sans CAP-01. Le journal imprimé n'est donc pas validé. Le grand livre et les balances de ce nouveau parcours n'ont pas été atteints. Les huit tests connexes de balances et justificatifs ont réussi séparément ;ils ne remplacent pas le parcours annuel complet.
+
+Les échecs sont conservés dans les JUnit. Deux erreurs du montage de test ont été corrigées : le nom unique du fichier devait être relu depuis le serveur et l'initialisation du compteur d'impression devait utiliser une fonction englobante pour éviter son invocation par Playwright. Le contrôle du transport attend un signal explicite de réception avant d'asserter la désactivation. La reproduction avant correction exécutait une variante 1440, avec une variante 390 désélectionnée ;les deux variantes ont réellement réussi après correction.
+
+Un passage bureau a aussi échoué sur le rafraîchissement des écritures à valider après REF-002. Sa cause n'est pas établie et cet incident reste ouvert, sans correction spéculative ni modification d'écritures. Le dernier passage séparé est consigné dans les résultats bruts. Un test interrompu ou échoué n'est pas déclaré réussi.
+
+Le suivi contient 88 fiches réussies,3 partielles,171 non qualifiées individuellement et10 bloquées dans la source. Les réponses humaines et anciens cahiers sont conservés. La recette humaine, la conformité réglementaire et la mise en production ne sont pas validées. RH/paie et point6 restent différés. Cession, CM et incident Lettrage769 conservent leurs limites.
+
+Prochaine reprise : diagnostiquer le rendu d'impression du Journal et son conteneur dans le navigateur, corriger la cause puis rejouer HP-CPT-006. Analyser séparément l'incident de rafraîchissement. Ensuite poursuivre livre d'inventaire, états de synthèse, FEC, notes ETIC et archivage annuel sans inventer d'information extra-comptable. La limite de session est 21:27 UTC.

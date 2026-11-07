@@ -1,0 +1,24 @@
+{
+  "societe": "RECETTE ECHEANCES 687 SARL",
+  "exercice": 2026,
+  "devise": "MAD",
+  "compte": "3421",
+  "solde": "8000.00",
+  "plus_un_an": "2000.00",
+  "echues": "1000.00",
+  "moins_un_an": null,
+  "reliquat_non_qualifie": "5000.00",
+  "ecritures_creees": 0,
+  "source": {
+    "fichier": "ETAT_CREANCES_FICTIF691.pdf",
+    "taille": 2112,
+    "sha256": "73f8fd3c52c1d8709133d053ab16d50df5c47229abcfacf7e65eb00a8e902eaa"
+  },
+  "cas_humains_non_testes": [
+    "PJD691-01",
+    "PJD691-02",
+    "PJD691-03",
+    "PJD691-04",
+    "PJD691-05"
+  ]
+}

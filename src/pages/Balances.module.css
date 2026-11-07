@@ -1,0 +1,77 @@
+.page { display:flex; flex-direction:column; min-width:0; min-height:100%; }
+.topbar { background: var(--bg-primary); border-bottom: 0.5px solid var(--border-light); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.pageTitle { font-size: 15px; font-weight: 500; margin: 0; }
+.content { flex: 1; overflow-x: hidden; padding: 16px 24px; display: flex; flex-direction: column; gap: 14px;  }
+
+.onglets { display: flex; gap: 6px; flex-wrap: wrap; }
+.ongletBtn { padding: 7px 14px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-secondary); font-size: 12px; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.15s; }
+.ongletBtn:hover { background: var(--bg-secondary); }
+.ongletBtnActif { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+.card { background: var(--bg-primary); border: 0.5px solid var(--border-light); border-radius: var(--radius-lg); overflow: hidden; }
+.cardHeader { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-bottom: 0.5px solid var(--border-light); }
+.cardTitle { font-size: 13px; font-weight: 500; }
+
+.entete { display: flex; gap: 24px; flex-wrap: wrap; padding: '8px 0'; margin-bottom: 12px; font-size: 12px; color: var(--text-secondary); background: var(--bg-secondary); border-radius: var(--radius-md); padding: 10px 14px; }
+.entete > div { display: flex; gap: 6px; }
+
+.filtreBtn { padding: 5px 12px; border-radius: 100px; border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-secondary); font-size: 11px; cursor: pointer; }
+.filtreBtnActif { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+.tableWrapper { width:100%; min-width:0; overflow-x:auto; overscroll-behavior-inline:contain; scrollbar-gutter:stable; }
+.table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.table th { padding: 8px 10px; text-align: left; font-size: 11px; font-weight: 500; border-bottom: 1px solid rgba(255,255,255,0.2); }
+.table td { padding: 7px 10px; border-bottom: 0.5px solid var(--border-light); vertical-align: middle; }
+.table tr:last-child td { border-bottom: none; }
+
+.theadBleu th { background: #154360; color: #fff; }
+.theadBrun th { background: #6E2C00; color: #fff; }
+.theadRouge th { background: #922B21; color: #fff; }
+.theadVert th  { background: #1E8449; color: #fff; }
+
+.rowPair { background: #F8FAFC; }
+.rowClasse { background: #D6EAF8; }
+.rowClasse td { font-size: 11px; font-weight: 600; color: #154360; padding: 6px 10px; }
+.rowTotal { background: #EBF5FB; }
+.rowTotal td { font-weight: 600; font-size: 12px; padding: 8px 10px; border-top: 1px solid #AED6F1; }
+.rowGrandTotal { background: #154360; }
+.rowGrandTotal td { color: #fff; font-weight: 700; font-size: 13px; padding: 10px 10px; }
+
+.compteBadge { font-family: monospace; background: var(--bg-secondary); padding: 1px 6px; border-radius: 4px; font-size: 11px; color: var(--blue); }
+
+.sectionTitre { color: #fff; font-size: 12px; font-weight: 600; padding: 8px 12px; border-radius: 6px 6px 0 0; }
+
+.kpiCard { background: var(--bg-primary); border: 0.5px solid var(--border-light); border-radius: var(--radius-lg); padding: 14px 18px; }
+.kpiLabel { font-size: 11px; color: var(--text-tertiary); display: flex; align-items: center; gap: 5px; margin-bottom: 4px; }
+.kpiValeur { font-size: 20px; font-weight: 700; }
+
+.inputDate { padding: 6px 10px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-primary); font-size: 12px; }
+
+.vide { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: var(--text-tertiary); font-size: 12px; padding: 48px; }
+.vide i { font-size: 28px; }
+
+/* BALANCE-FINAL — états larges scrollables sans écraser les colonnes. */
+.tableLarge { min-width: 1080px; }
+.tableXLarge { min-width: 1180px; }
+.balanceToolbar { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px; flex-wrap:wrap; }
+.exportBtn { display:flex; align-items:center; gap:6px; padding:6px 12px; border-radius:6px; border:0.5px solid var(--border-medium); background:var(--bg-primary); color:var(--text-secondary); cursor:pointer; font-size:12px; }
+.warningBox { display:flex; align-items:flex-start; gap:7px; margin-bottom:10px; padding:8px 10px; border-radius:6px; background:#FFF7E6; border:1px solid #F0D39A; color:#854F0B; font-size:11px; line-height:1.4; }
+.badgeWarning { display:inline-flex; margin-left:7px; padding:1px 5px; border-radius:10px; background:#FFF1D6; color:#854F0B; font-size:9px; font-weight:600; vertical-align:middle; }
+
+/* 079 — Balance résultat : charges et produits empilés sur toute la largeur.
+   Conserver les montants visibles sans défilement horizontal. */
+.resultatKpis { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-bottom:16px; }
+.resultatKpis > * { min-width:0; }
+.resultatGrille { display:grid; grid-template-columns:minmax(0,1fr); gap:18px; min-width:0; }
+.resultatPanneau { min-width:0; max-width:100%; }
+.resultatTable { width:100%; table-layout:fixed; }
+.resultatTable th:first-child, .resultatTable td:first-child { width:76px; }
+.resultatTable th:last-child, .resultatTable td:last-child { width:118px; text-align:right; overflow-wrap:anywhere; }
+.resultatTable th:nth-child(2), .resultatTable td:nth-child(2) { overflow-wrap:anywhere; word-break:normal; }
+@media (max-width:650px) {
+  .resultatKpis { grid-template-columns:minmax(0,1fr); }
+  .resultatTable th:first-child, .resultatTable td:first-child { width:68px; }
+  .resultatTable th:last-child, .resultatTable td:last-child { width:104px; }
+}
+.exportsActions { display:flex; justify-content:flex-end; flex-wrap:wrap; gap:8px; margin:0 0 10px; }
+.exportBtn:disabled { opacity:.45; cursor:not-allowed; }

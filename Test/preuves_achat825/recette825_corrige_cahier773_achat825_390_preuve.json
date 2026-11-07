@@ -1,0 +1,11 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_srs_2x7b",
+  "nonce": "f29bd1f62efe41379257b27166e424f4",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "TimeoutError('Locator.fill: Timeout 15000ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"dialog\").get_by_placeholder(\"N° porté sur la facture du fournisseur\")\\n')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier."
+}

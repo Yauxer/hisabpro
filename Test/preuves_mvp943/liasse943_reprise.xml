@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="4.278" timestamp="2026-10-29T19:01:07.072376+01:00" hostname="Taiyou"><testcase classname="" name="Test.test_e2e_archive_liasse_isole" time="0.000"><error message="collection failure">Test\test_e2e_archive_liasse_isole.py:24: in &lt;module&gt;
+    from test_e2e_facturation_isole import application
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_e2e_facturation_isole.py:19: in &lt;module&gt;
+    from test_session132_operations_postgres import MIGRATIONS
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_session132_operations_postgres.py:21: in &lt;module&gt;
+    from services.exercices_service import ensure_exercice
+hisabpro-backend\services\exercices_service.py:21: in &lt;module&gt;
+    def _statuts_periodes_par_defaut(exercice: models.ExerciceComptable, periodes: list[dict]):
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'types.SimpleNamespace' object has no attribute 'ExerciceComptable'</error></testcase></testsuite></testsuites>

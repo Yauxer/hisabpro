@@ -1,0 +1,50 @@
+[
+  [
+    "PA-RAT01",
+    "Conserver les trois dimensions de dates",
+    "Copie isolée, migration123 ; fiche et rubrique du jeu approuvées.",
+    "Toutes les valeurs du jeu : traitement2026-11, effet15/11/2026, référence01/01/2025au31/12/2025, versement déclaré05/12/2026 ; montant800.01.",
+    "Créer une variable. Déplier Période de référence et versement déclaré (facultatif), remplir les cinq nouveaux champs. Enregistrer puis consulter le détail.",
+    "Les dates restent différentes et les références sont conservées ; aucun rattachement automatique au mois de traitement ni paiement confirmé."
+  ],
+  [
+    "PA-RAT02",
+    "Soumettre et contrôler indépendamment",
+    "PA-RAT01 ; second acteur habilité, indépendant du préparateur et bénéficiaire.",
+    "Motif Approbation fictive919, référence CTRL-FICTIF919 ; cocher indépendance et justificatifs après examen.",
+    "Soumettre la variable. Le second acteur ouvre le détail, compare dates et références, puis approuve. Le préparateur Actualise et consulte de nouveau.",
+    "Même rattachement dans la variable approuvée et historique ; aucune auto-approbation ou édition de données approuvées."
+  ],
+  [
+    "PA-RAT03",
+    "Propager les faits sans modifier le brut",
+    "PA-RAT02 ; salaire9000.10 en vigueur sur tout novembre2026.",
+    "Campagne pédagogique de novembre2026 pourRATT919, mois complet confirmé uniquement dans le jeu fictif.",
+    "Simuler le brut selon le guide893. Vérifier le montant et la variable source ; relire le rattachement par la variable.",
+    "Brut9800.11 ; dates conservées dans le snapshot technique, preuves textuelles absentes de cette synthèse. Aucun prorata ouIR pour le rappel déduit de ces dates."
+  ],
+  [
+    "PA-RAT04",
+    "Refuser les renseignements incomplets",
+    "Nouvelle variable sur autre période ou après annulation d’un brouillon erroné.",
+    "Début2025-01-01 avec fin vide, puis fin2024-12-31 ; date de versement2026-12-05 sans référence.",
+    "Tenter successivement chaque saisie. Corriger les champs dans le formulaire et vérifier le message.",
+    "Enregistrement refusé pour paire incomplète ou période inversée ; aucune date de substitution ni donnée comptable créée."
+  ],
+  [
+    "PA-RAT05",
+    "Préserver l’historique sans dates inventées",
+    "Variable ancienne ou nouvelle saisie en laissant le panneau facultatif vide.",
+    "Aucun rattachement renseigné ; source et justificatifs normaux du guide891.",
+    "Créer, soumettre et approuver normalement. Consulter la variable et une ancienne simulation.",
+    "Ancien parcours fonctionnel ; dates Non renseignée, aucune copie automatique de la date d’effet. Anciennes simulations et empreintes inchangées."
+  ],
+  [
+    "PA-RAT06",
+    "Vérifier droits, mobile et restauration",
+    "Deux sociétés fictives ; lecteur de rémunération sans droit audit/approbation ; responsable de sauvegarde.",
+    "Même variable, références PRlME/VERSEMENT du jeu ; vues390pxet1440px.",
+    "Lire avec le lecteur puis depuis l’autre société ; révoquer le droit et Actualiser. Faire restaurer la copie dans une seconde cible et relire la variable et son snapshot.",
+    "Justifications masquées au lecteur non habilité, aucune fuite inter-société, accès retiré après révocation. Métadonnées, empreintes et garde123 restitués. Recette utilisateur à renseigner avec preuves."
+  ]
+]

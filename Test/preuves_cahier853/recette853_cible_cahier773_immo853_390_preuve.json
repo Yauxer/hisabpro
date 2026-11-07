@@ -1,0 +1,148 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_uwg0gfm0",
+  "nonce": "e9ed8ffe13794819ba6fc8c60af7cf3b",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [
+    {
+      "id": "HP-IMM-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-IMM-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-IMM-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-027",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-028",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "operations": [
+    {
+      "reference": "CAP-01",
+      "id": 6,
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "200000.00",
+          "0.00"
+        ],
+        "1111": [
+          "0.00",
+          "200000.00"
+        ]
+      }
+    },
+    {
+      "reference": "IMMO-ACQ",
+      "id": 7,
+      "date": "2025-01-01",
+      "journal": "AC",
+      "lignes": {
+        "2355": [
+          "24000.00",
+          "0.00"
+        ],
+        "34551": [
+          "4800.00",
+          "0.00"
+        ],
+        "4481": [
+          "0.00",
+          "28800.00"
+        ]
+      }
+    },
+    {
+      "reference": "IMMO-PAY",
+      "id": 8,
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "lignes": {
+        "4481": [
+          "28800.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "28800.00"
+        ]
+      }
+    },
+    {
+      "reference": "AMORT-2025",
+      "id": 9,
+      "date": "2025-12-31",
+      "journal": "AM",
+      "lignes": {
+        "61935": [
+          "4800.00",
+          "0.00"
+        ],
+        "28355": [
+          "0.00",
+          "4800.00"
+        ]
+      }
+    }
+  ],
+  "registre_date_du_jour": {
+    "cumul": "8746.67",
+    "net": "15253.33",
+    "date_explicitement_affichee": true
+  },
+  "immobilisation785": {
+    "ecritures": 4,
+    "lignes": 9,
+    "debit_credit": "262400.00",
+    "brut": "24000.00",
+    "amortissement": "4800.00",
+    "net": "19200.00",
+    "bilan": "195200.00",
+    "resultat": "-4800.00",
+    "anti_double_409": true,
+    "tiers_auxiliaire_4481": true,
+    "detail_bilan": {
+      "type": "detail",
+      "numero": "235",
+      "label": "Mobilier, matériel de bureau et aménagements divers",
+      "valeurs": [
+        24000.0,
+        null,
+        null,
+        null
+      ],
+      "niveau": 1
+    },
+    "limite": "Sous-parcours capital et immobilisation dans une nouvelle société ; pas le scénario annuel complet."
+  },
+  "dotation853": {
+    "unitaire_refuse": 409,
+    "lot_nb_nouvelles": 0,
+    "cloture_nb_nouvelles": 0,
+    "montant_unique": 4800,
+    "nb_ecritures_dotation": 1,
+    "journal_registre_conserves": true
+  },
+  "residuelle853": {
+    "cout": 1000,
+    "residuelle_refusee": 1001,
+    "UI_statut": 400,
+    "API_statut": 400,
+    "aucune_mutation": true,
+    "creation_valide_1000_residuelle0": true
+  }
+}

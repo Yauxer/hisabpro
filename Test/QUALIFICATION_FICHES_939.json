@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-29",
+  "nature": "Rattachement automatique ;ne renseigne pas la recette utilisateur",
+  "source_humaine": "docs/recette/MODE_EMPLOI_CREDITS_IS_749.xlsx",
+  "source_humaine_sha256": "ae65de37039afe7e67c6c2ec65ce212a9481dc7593e887297a9c2c3cec2461bf",
+  "fiches": [
+    {
+      "fiche": "CR749-01",
+      "objectif_source": "Suivre les six étapes de saisie du profil et des deux justificatifs ci-dessus.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "Profil et deux justificatifs saisis/conservés ;500total,150déjà imputés,25autres,325proposés selon scénario749.",
+      "tests_executés": [
+        "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[admin-1440]",
+        "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[comptable-390]",
+        "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[lecture-390]"
+      ],
+      "limites": "Propositions de crédits selon déclarations du jeu749,aucune imputation/liquidation/paiement/dépôt confirmé. Oracle325 distinct des350du jeu annuel755. Fiches04–06 certaines variantes par API ;gestes humains à effectuer. Réserves métier/production inchangées."
+    },
+    {
+      "fiche": "CR749-02",
+      "objectif_source": "Modifier le montant de la ligne 1 sans conserver puis télécharger le dossier ZIP.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Brouillon non conservé ne remplace pas le contrôle325 ;ZIP exporte le snapshot,versions/rejeu sans recalcul historique.",
+      "tests_executés": [
+        "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[admin-1440]",
+        "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[comptable-390]",
+        "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[lecture-390]",
+        "Test.test_balance_credits749_isole::test_749_versions_rejeu_lecture_sans_recalcul"
+      ],
+      "limites": "Propositions de crédits selon déclarations du jeu749,aucune imputation/liquidation/paiement/dépôt confirmé. Oracle325 distinct des350du jeu annuel755. Fiches04–06 certaines variantes par API ;gestes humains à effectuer. Réserves métier/production inchangées."
+    },
+    {
+      "fiche": "CR749-03",
+      "objectif_source": "Marquer l’éligibilité de la ligne 1 non puis conserver.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et oracle indépendant",
+      "portee": "Éligibilité de première ligne mise non et conservée :part exclue,disponible150,sans imputation réelle.",
+      "tests_executés": [
+        "Test.test_e2e_balance_credits749_isole::test_749_nan_refuse_puis_part_exclue_sans_f5",
+        "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[exclu]"
+      ],
+      "limites": "Propositions de crédits selon déclarations du jeu749,aucune imputation/liquidation/paiement/dépôt confirmé. Oracle325 distinct des350du jeu annuel755. Fiches04–06 certaines variantes par API ;gestes humains à effectuer. Réserves métier/production inchangées."
+    },
+    {
+      "fiche": "CR749-04",
+      "objectif_source": "Depuis une version de base, laisser autres utilisations de la ligne 1 vide ; conserver. Refaire avec exercice 2025 ou type Autre. Pour le type Location : date de retenue 01/07/2026, allocation 30/06/2026, payeur public ; conserver, puis corriger allocation au 01/07/2026 et conserver.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Versions utilisations inconnues/crédit2025/typeAutre indisponibles ;location allocation30juin puis1juillet et payeur testés par interface. Aucune qualification réelle de justificatif.",
+      "tests_executés": [
+        "Test.test_qualification_credits939_isole::test_939_versions_inconnues_et_absence_confirmee_sans_imputation",
+        "Test.test_e2e_balance_credits749_isole::test_749_date_allocation_payeur_et_entree_en_vigueur_interface[location_avant-Indisponible]",
+        "Test.test_e2e_balance_credits749_isole::test_749_date_allocation_payeur_et_entree_en_vigueur_interface[location_apres-325,00 MAD]",
+        "Test.test_e2e_balance_credits749_isole::test_749_date_allocation_payeur_et_entree_en_vigueur_interface[banque_avant-Indisponible]"
+      ],
+      "limites": "Propositions de crédits selon déclarations du jeu749,aucune imputation/liquidation/paiement/dépôt confirmé. Oracle325 distinct des350du jeu annuel755. Fiches04–06 certaines variantes par API ;gestes humains à effectuer. Réserves métier/production inchangées."
+    },
+    {
+      "fiche": "CR749-05",
+      "objectif_source": "Saisir NaN puis autres utilisations 201 sur la ligne 1, ou dupliquer la référence CR749-A sur la seconde ligne ; tenter de conserver après chaque cas.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "NaN réellement refusé par formulaire ;utilisations201 et référence dupliquée rejetées422 par API,sans nouvelle version ou écriture. Gestes négatifsAPI restent à refaire humainement.",
+      "tests_executés": [
+        "Test.test_e2e_balance_credits749_isole::test_749_nan_refuse_puis_part_exclue_sans_f5",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-NaN]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-Infinity]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-True]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant--1]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-0]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-0.001]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-1e9999]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-10000000000000]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[autres_utilisations-201]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[deja_impute_acomptes-300]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[exercice_rattachement-2027]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[exercice_rattachement-2026.0]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[date_retenue-2026-02-30]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[date_retenue-20260320]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[date_allocation-2026-02-30]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[categorie_payeur-Particulier]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[eligibilite_confirmee-True]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[type_credit-TVA]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[reference_source-]",
+        "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[inconnu-0]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[omission]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[doublon_table]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[doublon_source]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[deux_profils]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[absence_contradictoire]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[solde_injecte]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[neant_seul]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[absence_confirmee]"
+      ],
+      "limites": "Propositions de crédits selon déclarations du jeu749,aucune imputation/liquidation/paiement/dépôt confirmé. Oracle325 distinct des350du jeu annuel755. Fiches04–06 certaines variantes par API ;gestes humains à effectuer. Réserves métier/production inchangées."
+    },
+    {
+      "fiche": "CR749-06",
+      "objectif_source": "Confirmer absence oui dans le profil ; retirer explicitement toutes les lignes ; déclarer CR-LIGNES néant avec justification ; conserver. Comparer au même néant sans profil exhaustif confirmé.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle",
+      "portee": "Absence oui,lignes retirées et néant documenté :proposition0seulement avec exhaustivité confirmée ;non exhaustif reste indisponible,anciennes versions préservées. GestesUI non rejoués939.",
+      "tests_executés": [
+        "Test.test_qualification_credits939_isole::test_939_versions_inconnues_et_absence_confirmee_sans_imputation",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[omission]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[doublon_table]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[doublon_source]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[deux_profils]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[absence_contradictoire]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[solde_injecte]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[neant_seul]",
+        "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[absence_confirmee]"
+      ],
+      "limites": "Propositions de crédits selon déclarations du jeu749,aucune imputation/liquidation/paiement/dépôt confirmé. Oracle325 distinct des350du jeu annuel755. Fiches04–06 certaines variantes par API ;gestes humains à effectuer. Réserves métier/production inchangées."
+    },
+    {
+      "fiche": "CR749-07",
+      "objectif_source": "Avec les rôles comptable puis lecture, consulter la préparation sur écran 390 px ; télécharger PDF/Excel/ZIP.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Comptable et lecteur390 :consultation etPDF/Excel/ZIP réels325+logo,écriture interdite au lecteur,autre société404 et données préservées.",
+      "tests_executés": [
+        "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[admin-1440]",
+        "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[comptable-390]",
+        "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[lecture-390]",
+        "Test.test_balance_credits749_isole::test_749_droits_societes_devise_hash_concurrence"
+      ],
+      "limites": "Propositions de crédits selon déclarations du jeu749,aucune imputation/liquidation/paiement/dépôt confirmé. Oracle325 distinct des350du jeu annuel755. Fiches04–06 certaines variantes par API ;gestes humains à effectuer. Réserves métier/production inchangées."
+    },
+    {
+      "fiche": "CR749-08",
+      "objectif_source": "Avec le contexte 735 initial 600/150, conserver les crédits ; modifier son premier crédit 300 en 200 dans une nouvelle version ; relire les crédits puis conserver une nouvelle qualification.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Contexte735initial600/150 puis premier crédit300→200 :ancienne comparaison−100figée,nouvelle qualification explicite ramène l’écart0,sources historiques inchangées.",
+      "tests_executés": [
+        "Test.test_e2e_balance_credits749_isole::test_749_contexte_change_actualisation_explicite_interface",
+        "Test.test_balance_credits749_isole::test_749_contexte_change_comparaison_et_versions_figees"
+      ],
+      "limites": "Propositions de crédits selon déclarations du jeu749,aucune imputation/liquidation/paiement/dépôt confirmé. Oracle325 distinct des350du jeu annuel755. Fiches04–06 certaines variantes par API ;gestes humains à effectuer. Réserves métier/production inchangées."
+    }
+  ],
+  "apres": {
+    "Réussi": 219,
+    "Partiel": 6,
+    "Non qualifié par fiche": 38,
+    "Bloqué (source)": 9
+  }
+}

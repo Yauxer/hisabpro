@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="68.911" timestamp="2026-10-28T13:29:14.055649+01:00" hostname="Taiyou"><testcase classname="Test.test_paie893_restauration_isole" name="test_893_restauration_native_catalogue_variables_et_campagne" time="64.978"><failure message="AssertionError: Schéma différent :index ;première différence :(['paie_variables', 'uq_paie_variable_annuelle', &quot;CREATE UNIQUE INDEX uq_paie_variable_annuelle ON public.paie_variables USING btree (societe_id, employe_id, annee, rubrique_id) WHERE (((periodicite)::text = 'annuelle'::text) AND ((statut)::text = ANY (ARRAY[('BROUILLON'::character varying)::text, ('SOUMIS'::character varying)::text, ('APPROUVE'::character varying)::text])))&quot;], ['paie_variables', 'uq_paie_variable_annuelle', &quot;CREATE UNIQUE INDEX uq_paie_variable_annuelle ON public.paie_variables USING btree (societe_id, employe_id, annee, rubrique_id) WHERE (((periodicite)::text = 'annuelle'::text) AND ((statut)::text = ANY ((ARRAY['BROUILLON'::character varying, 'SOUMIS'::character varying, 'APPROUVE'::character varying])::text[])))&quot;])">application = {'api_url': 'http://127.0.0.1:56645', 'web_url': 'http://127.0.0.1:56646', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_2ull3at4'), 'nonce': 'bbd15154250944d09e27f633f6a159d9', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000001A4000117D0&gt;, 'b': &lt;httpx.Client object at 0x000001A400048610&gt;, 'l': &lt;httpx.Client object at 0x000001A40004BD10&gt;, 'uid': 5, ...}
+
+    def test_893_restauration_native_catalogue_variables_et_campagne(application,equipe):
+        app=application;eq=equipe;s=app['cluster'];assert verifier_cible_isolee(s['url'],s['directory'],s['nonce'])
+        eid,_=salarie(eq);rid=rubrique(eq);gain(eq,eid,rid);q=simuler(eq,[eid])
+        avant=empreintes_tables(app['engine']);structure=schema(app['engine']);droits=catalogue_acl(app['engine'])
+        archive=sauvegarder(s['url'],s['directory']/'paie893.dump',s['bin'],inclure_droits=True)
+        with cluster_isole() as cible:
+            assert verifier_cible_isolee(cible['url'],cible['directory'],cible['nonce']) and cible['nonce']!=s['nonce']
+            restored=create_engine(cible['url']);runtime=None
+            try:
+                with restored.begin() as db:db.execute(text('CREATE ROLE hisabpro LOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOREPLICATION NOBYPASSRLS'))
+                restaurer_isole(cible['url'],archive,cible['bin'],cible['directory'],cible['nonce'],inclure_droits=True)
+&gt;               verifier_schema(schema(restored),structure)
+
+Test\test_paie893_restauration_isole.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+observe = {'colonnes': [['acomptes', 1, 'id', 'integer', True, "nextval('acomptes_id_seq'::regclass)"], ['acomptes', 2, 'societe...isions_affectation_resultat FOR EACH ROW EXECUTE FUNCTION hisabpro_guard_decision_affectation_immutable()'], ...], ...}
+attendu = {'colonnes': [['acomptes', 1, 'id', 'integer', True, "nextval('acomptes_id_seq'::regclass)"], ['acomptes', 2, 'societe...isions_affectation_resultat FOR EACH ROW EXECUTE FUNCTION hisabpro_guard_decision_affectation_immutable()'], ...], ...}
+
+    def verifier_schema(observe, attendu):
+        for nom, rows in attendu.items():
+            if nom == 'checks_reparses':
+                continue  # Diagnostic de sérialisation, pas définition du contrôle.
+            if observe[nom] != rows:
+                difference = next(((a,b) for a,b in zip(observe[nom],rows) if a != b),
+                                  ('longueur', (len(observe[nom]),len(rows))))
+&gt;               raise AssertionError(f'Schéma différent :{nom} ;première différence :{difference}')
+E               AssertionError: Schéma différent :index ;première différence :(['paie_variables', 'uq_paie_variable_annuelle', "CREATE UNIQUE INDEX uq_paie_variable_annuelle ON public.paie_variables USING btree (societe_id, employe_id, annee, rubrique_id) WHERE (((periodicite)::text = 'annuelle'::text) AND ((statut)::text = ANY (ARRAY[('BROUILLON'::character varying)::text, ('SOUMIS'::character varying)::text, ('APPROUVE'::character varying)::text])))"], ['paie_variables', 'uq_paie_variable_annuelle', "CREATE UNIQUE INDEX uq_paie_variable_annuelle ON public.paie_variables USING btree (societe_id, employe_id, annee, rubrique_id) WHERE (((periodicite)::text = 'annuelle'::text) AND ((statut)::text = ANY ((ARRAY['BROUILLON'::character varying, 'SOUMIS'::character varying, 'APPROUVE'::character varying])::text[])))"])
+
+Test\recette_restauration_consolidee_084.py:108: AssertionError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,17 @@
+{
+  "role": "admin",
+  "largeur": 1440,
+  "acomptes_proposes": "1250.00",
+  "exports_individuels": {
+    "pdf": {
+      "sha256": "b4c0a5f411192e69857b6f90304913064eff8573ec7e819575561355b716182e",
+      "montant_et_logo_verifies": true
+    },
+    "xlsx": {
+      "sha256": "7df803423fc6c2fdcb2b24fc39314658b817bac374cbedc075b6de23e76e5c3b",
+      "montant_et_logo_verifies": true
+    }
+  },
+  "ZIP_snapshot_verifie": true,
+  "sources_hors_preparations_inchangees": true
+}

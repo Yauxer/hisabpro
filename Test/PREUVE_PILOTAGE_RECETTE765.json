@@ -1,0 +1,72 @@
+{
+  "lot": 765,
+  "tests_executes": {
+    "pilotage765_verification": {
+      "cas": 17,
+      "temps_secondes": 13.65,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "pilotage765_complet": {
+      "cas": 42,
+      "temps_secondes": 49.99,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "pilotage765_mise_en_page": {
+      "cas": 18,
+      "temps_secondes": 27.78,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    }
+  },
+  "tests_distincts_du_lot": 42,
+  "campagnes_non_additionnees": true,
+  "documents": {
+    "pdf_pages": 7,
+    "word_xml_crc_liens": true,
+    "excel_feuilles": 20,
+    "cas_existants": 272,
+    "non_testes": 262,
+    "bloques": 10,
+    "nouveaux_cas": 0,
+    "fiches_verticales": 272,
+    "controles_directs_artefacts": 8,
+    "office_natif_execute": false,
+    "aucune_connexion_db": true,
+    "fichiers": {
+      "PILOTAGE_RECETTE_HORS_RH_765.md": "910aecbeb5e2e25bb5a3c7848b47e5dc1bb8dfa1ee2ca8d195a30ae4d5fafd2e",
+      "PILOTAGE_RECETTE_HORS_RH_765.docx": "88f35f36d60904f9e32191e923270f18287fa1061919b342b87501a2635dccf8",
+      "PILOTAGE_RECETTE_HORS_RH_765.pdf": "c826f3d13730818c330e32d3830205be0e08dabd8d234162e4b3df8afc439ba4",
+      "PILOTAGE_RECETTE_HORS_RH_765.xlsx": "143c053ac05541230525d7529f2badd082d5eb6acfad1a298c1a9708b5772a24",
+      "PILOTAGE_RECETTE_HORS_RH_765.json": "435812220fdf9c8ee10a55a32383428d077f7ba60de7b9b85d22acd8e1bdd941"
+    }
+  },
+  "echecs_initiaux": "Deux premiers essais conservés :4réussis/1échec sur comparaison textuelle dune plageExcel unitaire, remplacée par ses bornes exactes ;puis15réussis/1échec sur le vrai défautXML du nouveauWord post-traité. Déclaration dencodage corrigée enUTF-8, assertions conservées.17ciblés avaient ensuite réussi avant ajout de la lecture verticale ;campagnes42puis18 exécutées sur les versions enrichies et finales.",
+  "correction_TP761": {
+    "cellules_modifiees": [
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9"
+    ],
+    "changement": "guide759 devient guide761",
+    "autres_valeurs_inchangees": true
+  },
+  "sources_comptables_et_fiscales_reinterpretees": false,
+  "produit_frontend_migrations_inchanges": true,
+  "protections_inchangees": 117,
+  "build_frontend_reexecute": false,
+  "postgresql_reel_utilise": false,
+  "tests_postgresql_reexecutes": false,
+  "recette_humaine_executee": false,
+  "office_natif_execute": false,
+  "RH_paie_point6": "différés"
+}

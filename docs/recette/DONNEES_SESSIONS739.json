@@ -1,0 +1,12 @@
+{
+  "societe_fictive": "Session recette739",
+  "devise": "MAD",
+  "exercice": 2026,
+  "email_exemple": "session739@example.com",
+  "secret_fictif": "RecetteSession739!",
+  "secret_incorrect": "SecretIncorrect739!",
+  "ecritures_attendues": 0,
+  "paiements_attendus": 0,
+  "statut_humain": "Non testé",
+  "limite": "Identifiants exclusivement fictifs, jamais pour un dossier réel."
+}

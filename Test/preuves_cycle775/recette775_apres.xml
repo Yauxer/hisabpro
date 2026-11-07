@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="55.860" timestamp="2026-10-24T16:34:12.163419+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_cycle775_isole" name="test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier[1440]" time="53.400"><failure message="playwright._impl._errors.Error: 'id'">application = {'api_url': 'http://127.0.0.1:60399', 'web_url': 'http://127.0.0.1:60400', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_3e7syqk9'), 'nonce': 'b3099096310a48cfb447856d0092cc10', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette775_apres/test_775_achats_acompte_lettra0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'cycle775') as (api,page,sid,preuve):
+&gt;     tiers,articles=referentiels(api,page,application,sid,preuve);cycle(api,page,application,sid,tiers,articles,preuve,tmp_path)
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_cycle775_isole.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\cahier_cycle775_support.py:98: in cycle
+    vente=ok(r.value);m.wait_for(state='hidden');avant=identifiants(app,sid);vente,row=officialiser(page,app,vente,c);nouvelle_ecriture(app,sid,avant,'VENTE-01',preuve);stock(app,a['id'],100,110);valider_journal(page,app,1);preuve['cas'].append({'id':'HP-FAC-004','statut':'Réussi'})
+                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Test\cahier_cycle775_support.py:49: in officialiser
+    with page.expect_response(lambda r:r.url.endswith(f'/api/factures/{f["id"]}/valider')) as r:row.get_by_title('Valider définitivement',exact=True).click()
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_sync_base.py:85: in __exit__
+    self._event.value
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._sync_base.EventInfo object at 0x000001B584B6A950&gt;
+
+    @property
+    def value(self) -&gt; T:
+        while not self._future.done():
+            self._sync_base._dispatcher_fiber.switch()
+        asyncio._set_running_loop(self._sync_base._loop)
+        exception = self._future.exception()
+        if exception:
+&gt;           raise exception
+E           playwright._impl._errors.Error: 'id'
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_sync_base.py:59: Error</failure></testcase></testsuite></testsuites>

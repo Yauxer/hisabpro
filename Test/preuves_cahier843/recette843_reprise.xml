@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="54.935" timestamp="2026-10-26T00:40:46.157759+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_plafonds843_isole" name="test_843_surpaiement_et_acompte_epuise[1440]" time="39.026"><failure message="AssertionError: assert (1 == 1 and {(11, Decimal...al('240.00'))} == {('4411', 240...141', 0, 240)}&#10; +  where 1 = len([(5, datetime.date(2025, 12, 3), datetime.date(2025, 12, 3), &lt;JournalEnum.BQ: 'BQ'&gt;, 'PAY-02-EXACT', 'Règlement Fournisseur Contrôle Références Recette PAY-02-EXACT', ...)])&#10;  &#10;  Extra items in the left set:&#10;  (12, Decimal('0.00'), Decimal('240.00'))&#10;  (11, Decimal('240.00'), Decimal('0.00'))&#10;  Extra items in the right set:&#10;  ('5141', 0, 240)&#10;  ('4411', 240, 0)&#10;  Use -v to get more diff)">application = {'api_url': 'http://127.0.0.1:65410', 'web_url': 'http://127.0.0.1:65411', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_x0v5fm25'), 'nonce': 'd75cf4b0e0b54d4a87e89e1f948fc839', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette843_reprise/test_843_surpaiement_et_acompt0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_843_surpaiement_et_acompte_epuise(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'plafonds843') as (api,page,sid,preuve):
+      ts={}
+      for code in ['F-CONTROLE','C-SERVICE']:
+       t=next(t for t in DATA['tiers'] if t['code']==code);ts[code]=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':t['type'],('compte_client' if t['type']=='client' else 'compte_fournisseur'):t['compte']}),201)
+      b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201);t=ts['C-SERVICE'];ac=ok(api.post('/api/acomptes',json={'type':'client','tiers':t['nom'],'tiers_id':t['id'],'date':'2025-06-01','montant':24000,'taux_tva':20,'mode':'virement','compte_bancaire_id':banque['id'],'reference':'AC-C01'}),201)
+      v=facture843(api,t,'vente','2025-06-15',120000,'VENTE-SERVICE');assert ok(api.post(f'/api/acomptes/{ac["id"]}/imputer',json={'facture_id':v['id'],'montant':24000,'date_imputation':'2025-06-15'}))['montant_disponible']==0
+      f=facture843(api,ts['F-CONTROLE'],'achat','2025-12-02',200,'02');valider843(api);avant=etat843(api,application,sid,f['id']);assert avant['situation']['solde_restant']==240
+      page.goto(application['web_url']+'/factures');row=page.locator('tbody tr').filter(has_text=ts['F-CONTROLE']['nom']);row.get_by_title('Payer le fournisseur',exact=True).click();m=page.get_by_role('dialog');champ(m,'Montant *').fill('241');champ(m,'Date *').fill('2025-12-03');m.get_by_role('button',name='Enregistrer',exact=True).click();expect(m.get_by_text('Le montant dépasse le solde restant',exact=False)).to_be_visible();assert etat843(api,application,sid,f['id'])==avant
+      r=api.post('/api/reglements',json={'facture_id':f['id'],'tiers_id':ts['F-CONTROLE']['id'],'tiers':ts['F-CONTROLE']['nom'],'date':'2025-12-03','montant':241,'mode':'virement','banque':b['banque'],'reference':'REFUS-241'});assert r.status_code in {400,409,422} and ('solde' in r.text.lower() or 'reste' in r.text.lower());assert etat843(api,application,sid,f['id'])==avant
+      preuve['surpaiement843']={'solde':240,'tentative':241,'ui_refus':True,'api_statut':r.status_code,'detail':r.json(),'aucune_mutation':True}
+      # Contrôle positif de frontière : le montant exact reste payable via le même formulaire.
+      champ(m,'Montant *').fill('240');champ(m,'Banque','select').select_option(b['banque']);m.get_by_placeholder('N° chèque, virement...').fill('PAY-02-EXACT')
+      with page.expect_response(lambda r:r.url.endswith('/api/reglements') and r.request.method=='POST') as rr:m.get_by_role('button',name='Enregistrer',exact=True).click()
+&gt;     ok(rr.value,201);m.wait_for(state='hidden');assert ok(api.get(f'/api/factures/{f["id"]}/reglements'))['solde_restant']==0;valider843(api);apres=core(application,sid);nouvelles=[e for e in apres if e[0] not in {e[0] for e in avant['journal']}];assert len(nouvelles)==1 and {(l[0],l[2],l[3]) for l in nouvelles[0][8]}=={('4411',240,0),('5141',0,240)};preuve['surpaiement843']['montant_exact_accepte']=240;preuve['surpaiement843']['ecriture_exacte_4411_5141']=True
+                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: assert (1 == 1 and {(11, Decimal...al('240.00'))} == {('4411', 240...141', 0, 240)}
+E      +  where 1 = len([(5, datetime.date(2025, 12, 3), datetime.date(2025, 12, 3), &lt;JournalEnum.BQ: 'BQ'&gt;, 'PAY-02-EXACT', 'Règlement Fournisseur Contrôle Références Recette PAY-02-EXACT', ...)])
+E       
+E       Extra items in the left set:
+E       (12, Decimal('0.00'), Decimal('240.00'))
+E       (11, Decimal('240.00'), Decimal('0.00'))
+E       Extra items in the right set:
+E       ('5141', 0, 240)
+E       ('4411', 240, 0)
+E       Use -v to get more diff)
+
+Test\test_e2e_cahier_plafonds843_isole.py:37: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_plafonds843_isole" name="test_843_surpaiement_et_acompte_epuise[390]" time="12.243"><failure message="AssertionError: assert (1 == 1 and {(23, Decimal...al('240.00'))} == {('4411', 240...141', 0, 240)}&#10; +  where 1 = len([(10, datetime.date(2025, 12, 3), datetime.date(2025, 12, 3), &lt;JournalEnum.BQ: 'BQ'&gt;, 'PAY-02-EXACT', 'Règlement Fournisseur Contrôle Références Recette PAY-02-EXACT', ...)])&#10;  &#10;  Extra items in the left set:&#10;  (24, Decimal('0.00'), Decimal('240.00'))&#10;  (23, Decimal('240.00'), Decimal('0.00'))&#10;  Extra items in the right set:&#10;  ('5141', 0, 240)&#10;  ('4411', 240, 0)&#10;  Use -v to get more diff)">application = {'api_url': 'http://127.0.0.1:65410', 'web_url': 'http://127.0.0.1:65411', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_x0v5fm25'), 'nonce': 'd75cf4b0e0b54d4a87e89e1f948fc839', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette843_reprise/test_843_surpaiement_et_acompt1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_843_surpaiement_et_acompte_epuise(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'plafonds843') as (api,page,sid,preuve):
+      ts={}
+      for code in ['F-CONTROLE','C-SERVICE']:
+       t=next(t for t in DATA['tiers'] if t['code']==code);ts[code]=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':t['type'],('compte_client' if t['type']=='client' else 'compte_fournisseur'):t['compte']}),201)
+      b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201);t=ts['C-SERVICE'];ac=ok(api.post('/api/acomptes',json={'type':'client','tiers':t['nom'],'tiers_id':t['id'],'date':'2025-06-01','montant':24000,'taux_tva':20,'mode':'virement','compte_bancaire_id':banque['id'],'reference':'AC-C01'}),201)
+      v=facture843(api,t,'vente','2025-06-15',120000,'VENTE-SERVICE');assert ok(api.post(f'/api/acomptes/{ac["id"]}/imputer',json={'facture_id':v['id'],'montant':24000,'date_imputation':'2025-06-15'}))['montant_disponible']==0
+      f=facture843(api,ts['F-CONTROLE'],'achat','2025-12-02',200,'02');valider843(api);avant=etat843(api,application,sid,f['id']);assert avant['situation']['solde_restant']==240
+      page.goto(application['web_url']+'/factures');row=page.locator('tbody tr').filter(has_text=ts['F-CONTROLE']['nom']);row.get_by_title('Payer le fournisseur',exact=True).click();m=page.get_by_role('dialog');champ(m,'Montant *').fill('241');champ(m,'Date *').fill('2025-12-03');m.get_by_role('button',name='Enregistrer',exact=True).click();expect(m.get_by_text('Le montant dépasse le solde restant',exact=False)).to_be_visible();assert etat843(api,application,sid,f['id'])==avant
+      r=api.post('/api/reglements',json={'facture_id':f['id'],'tiers_id':ts['F-CONTROLE']['id'],'tiers':ts['F-CONTROLE']['nom'],'date':'2025-12-03','montant':241,'mode':'virement','banque':b['banque'],'reference':'REFUS-241'});assert r.status_code in {400,409,422} and ('solde' in r.text.lower() or 'reste' in r.text.lower());assert etat843(api,application,sid,f['id'])==avant
+      preuve['surpaiement843']={'solde':240,'tentative':241,'ui_refus':True,'api_statut':r.status_code,'detail':r.json(),'aucune_mutation':True}
+      # Contrôle positif de frontière : le montant exact reste payable via le même formulaire.
+      champ(m,'Montant *').fill('240');champ(m,'Banque','select').select_option(b['banque']);m.get_by_placeholder('N° chèque, virement...').fill('PAY-02-EXACT')
+      with page.expect_response(lambda r:r.url.endswith('/api/reglements') and r.request.method=='POST') as rr:m.get_by_role('button',name='Enregistrer',exact=True).click()
+&gt;     ok(rr.value,201);m.wait_for(state='hidden');assert ok(api.get(f'/api/factures/{f["id"]}/reglements'))['solde_restant']==0;valider843(api);apres=core(application,sid);nouvelles=[e for e in apres if e[0] not in {e[0] for e in avant['journal']}];assert len(nouvelles)==1 and {(l[0],l[2],l[3]) for l in nouvelles[0][8]}=={('4411',240,0),('5141',0,240)};preuve['surpaiement843']['montant_exact_accepte']=240;preuve['surpaiement843']['ecriture_exacte_4411_5141']=True
+                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: assert (1 == 1 and {(23, Decimal...al('240.00'))} == {('4411', 240...141', 0, 240)}
+E      +  where 1 = len([(10, datetime.date(2025, 12, 3), datetime.date(2025, 12, 3), &lt;JournalEnum.BQ: 'BQ'&gt;, 'PAY-02-EXACT', 'Règlement Fournisseur Contrôle Références Recette PAY-02-EXACT', ...)])
+E       
+E       Extra items in the left set:
+E       (24, Decimal('0.00'), Decimal('240.00'))
+E       (23, Decimal('240.00'), Decimal('0.00'))
+E       Extra items in the right set:
+E       ('5141', 0, 240)
+E       ('4411', 240, 0)
+E       Use -v to get more diff)
+
+Test\test_e2e_cahier_plafonds843_isole.py:37: AssertionError</failure></testcase></testsuite></testsuites>

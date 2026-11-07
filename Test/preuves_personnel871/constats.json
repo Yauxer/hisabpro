@@ -1,0 +1,30 @@
+{
+  "nature": "Caractérisation existant, pas validation master",
+  "constats": [
+    {
+      "id": "C01",
+      "doublons_matricule_meme_societe_acceptes": [
+        201,
+        201
+      ],
+      "creation_active_sans_approbation": true,
+      "PUT_salaire_immediat": 200,
+      "ecritures_creees": 0,
+      "ecart_master": "Unicité, activation et salaire à date d’effet à construire."
+    },
+    {
+      "id": "C02",
+      "lecture_liste": 200,
+      "montant_salaire_retourne_sans_masque": true,
+      "numero_cnss_retourne_sans_masque": true,
+      "creation_refusee_lecture": 403,
+      "ecart_master": "Lecture financière/documentaire à habiliter et projections API à masquer."
+    },
+    {
+      "id": "C03",
+      "reglement_sans_facture_refuse": 422,
+      "ecritures_creees": 0,
+      "consequence": "Adapter trésorerie hors facturation ; aucune fausse facture salariale."
+    }
+  ]
+}

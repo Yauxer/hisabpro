@@ -1,0 +1,10 @@
+{
+  "largeur": 1440,
+  "erreur": null,
+  "donnees_reelles": false,
+  "masque_serveur_et_interface": true,
+  "lecture_seule": true,
+  "revocation_sans_reconnexion": true,
+  "detail_ouvert_purge": true,
+  "donnees_et_journal_conserves": true
+}

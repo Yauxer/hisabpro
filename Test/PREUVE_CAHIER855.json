@@ -1,0 +1,290 @@
+{
+  "resultats": [
+    {
+      "campagne": "recette855_connexes",
+      "cas": 5,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 0.71,
+      "code": 0
+    },
+    {
+      "campagne": "recette855_cible",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 30.32,
+      "code": 1
+    },
+    {
+      "campagne": "recette855_reprise",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 31.35,
+      "code": 1
+    },
+    {
+      "campagne": "recette855_schema",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 43.41,
+      "code": 1
+    },
+    {
+      "campagne": "recette855_final",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 34.69,
+      "code": 0
+    }
+  ],
+  "parcours": [
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_f6bed52q",
+      "nonce": "7036a9efa2744a948497b5d64dcbda2b",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 1440,
+      "cas": [
+        {
+          "id": "HP-ADM-004",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-SEC-006",
+          "statut": "Réussi"
+        }
+      ],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "plan855": {
+        "comptes_scenario": [
+          "1111",
+          "1518",
+          "2355",
+          "28355",
+          "3111",
+          "3411",
+          "3421",
+          "3425",
+          "3453",
+          "34551",
+          "34552",
+          "3456",
+          "3491",
+          "3942",
+          "4411",
+          "4415",
+          "4417",
+          "4421",
+          "4453",
+          "4455",
+          "4456",
+          "4481",
+          "51111",
+          "51112",
+          "51132",
+          "5141",
+          "6111",
+          "6114",
+          "6125",
+          "6134",
+          "61472",
+          "61473",
+          "61935",
+          "61955",
+          "61964",
+          "6583",
+          "6701",
+          "7111",
+          "7124",
+          "7381"
+        ],
+        "subdivisions": [
+          "51111",
+          "51112",
+          "51132"
+        ],
+        "journaux": [
+          "AC",
+          "AE",
+          "AM",
+          "AN",
+          "AV",
+          "BQ",
+          "CA",
+          "EN",
+          "OD",
+          "PR",
+          "SA",
+          "TV",
+          "VT"
+        ],
+        "CL_reserve_systeme": true,
+        "CL_manuel_refuse": 422,
+        "suppression5141_refusee": 409,
+        "mesures": [
+          {
+            "tour": 1,
+            "compte": "3421",
+            "libelle": "Clients",
+            "secondes_observees": 0.256,
+            "appel_plan_selection": 0
+          },
+          {
+            "tour": 1,
+            "compte": "2355",
+            "libelle": "Matériel informatique",
+            "secondes_observees": 0.066,
+            "appel_plan_selection": 0
+          },
+          {
+            "tour": 2,
+            "compte": "3421",
+            "libelle": "Clients",
+            "secondes_observees": 0.228,
+            "appel_plan_selection": 0
+          },
+          {
+            "tour": 2,
+            "compte": "2355",
+            "libelle": "Matériel informatique",
+            "secondes_observees": 0.067,
+            "appel_plan_selection": 0
+          }
+        ],
+        "plan_journal_conserves": true,
+        "limite": "Durées observées en laboratoire,sans seuil de performance production ;cache attesté par absence de nouvelle requête pendant sélections et réouverture."
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_f6bed52q",
+      "nonce": "7036a9efa2744a948497b5d64dcbda2b",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 390,
+      "cas": [
+        {
+          "id": "HP-ADM-004",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-SEC-006",
+          "statut": "Réussi"
+        }
+      ],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "plan855": {
+        "comptes_scenario": [
+          "1111",
+          "1518",
+          "2355",
+          "28355",
+          "3111",
+          "3411",
+          "3421",
+          "3425",
+          "3453",
+          "34551",
+          "34552",
+          "3456",
+          "3491",
+          "3942",
+          "4411",
+          "4415",
+          "4417",
+          "4421",
+          "4453",
+          "4455",
+          "4456",
+          "4481",
+          "51111",
+          "51112",
+          "51132",
+          "5141",
+          "6111",
+          "6114",
+          "6125",
+          "6134",
+          "61472",
+          "61473",
+          "61935",
+          "61955",
+          "61964",
+          "6583",
+          "6701",
+          "7111",
+          "7124",
+          "7381"
+        ],
+        "subdivisions": [
+          "51111",
+          "51112",
+          "51132"
+        ],
+        "journaux": [
+          "AC",
+          "AE",
+          "AM",
+          "AN",
+          "AV",
+          "BQ",
+          "CA",
+          "EN",
+          "OD",
+          "PR",
+          "SA",
+          "TV",
+          "VT"
+        ],
+        "CL_reserve_systeme": true,
+        "CL_manuel_refuse": 422,
+        "suppression5141_refusee": 409,
+        "mesures": [
+          {
+            "tour": 1,
+            "compte": "3421",
+            "libelle": "Clients",
+            "secondes_observees": 0.237,
+            "appel_plan_selection": 0
+          },
+          {
+            "tour": 1,
+            "compte": "2355",
+            "libelle": "Matériel informatique",
+            "secondes_observees": 0.069,
+            "appel_plan_selection": 0
+          },
+          {
+            "tour": 2,
+            "compte": "3421",
+            "libelle": "Clients",
+            "secondes_observees": 0.226,
+            "appel_plan_selection": 0
+          },
+          {
+            "tour": 2,
+            "compte": "2355",
+            "libelle": "Matériel informatique",
+            "secondes_observees": 0.06,
+            "appel_plan_selection": 0
+          }
+        ],
+        "plan_journal_conserves": true,
+        "limite": "Durées observées en laboratoire,sans seuil de performance production ;cache attesté par absence de nouvelle requête pendant sélections et réouverture."
+      }
+    }
+  ],
+  "limites": "Pas de nouveau référentiel officiel ou règle comptable affirmée :contrôle des comptes existants du scénario. CL volontairement horssaisie manuelle. Durées observées sans seuil de performance production ;absence d’appels mesurée pendant sélection seulement. Produit/migrations etcandidate849 inchangés. Réserves841 etrecettehumaine/production nonvalidées conservées ;RH/paie/EDI différés."
+}

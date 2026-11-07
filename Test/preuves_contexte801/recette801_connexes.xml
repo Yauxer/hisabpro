@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="4" failures="0" skipped="0" tests="4" time="5.929" timestamp="2026-10-25T02:07:46.359313+01:00" hostname="Taiyou"><testcase classname="" name="Test.test_e2e_journal_lecture_isole" time="0.000"><error message="collection failure">Test\test_e2e_journal_lecture_isole.py:6: in &lt;module&gt;
+    from test_justificatifs_modeles_runtime_isole import (
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_justificatifs_modeles_runtime_isole.py:16: in &lt;module&gt;
+    from test_e2e_runtime_session_isole import (
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_e2e_runtime_session_isole.py:2: in &lt;module&gt;
+    from test_multi_societes_runtime_isole import (
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_multi_societes_runtime_isole.py:16: in &lt;module&gt;
+    from test_complements_structure_postgres import refuser
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_complements_structure_postgres.py:14: in &lt;module&gt;
+    from routers.ecritures import AuxiliaireHistoriqueIn, ajouter_auxiliaire_historique
+hisabpro-backend\routers\ecritures.py:12: in &lt;module&gt;
+    from routers.cloture import exercice_est_clos
+hisabpro-backend\routers\cloture.py:33: in &lt;module&gt;
+    from services.exercices_service import (
+hisabpro-backend\services\exercices_service.py:21: in &lt;module&gt;
+    def _statuts_periodes_par_defaut(exercice: models.ExerciceComptable, periodes: list[dict]):
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'types.SimpleNamespace' object has no attribute 'ExerciceComptable'</error></testcase><testcase classname="" name="Test.test_e2e_modeles_journal_lettrage_isole" time="0.000"><error message="collection failure">Test\test_e2e_modeles_journal_lettrage_isole.py:14: in &lt;module&gt;
+    from test_justificatifs_modeles_runtime_isole import (
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_justificatifs_modeles_runtime_isole.py:16: in &lt;module&gt;
+    from test_e2e_runtime_session_isole import (
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_e2e_runtime_session_isole.py:2: in &lt;module&gt;
+    from test_multi_societes_runtime_isole import (
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_multi_societes_runtime_isole.py:16: in &lt;module&gt;
+    from test_complements_structure_postgres import refuser
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_complements_structure_postgres.py:14: in &lt;module&gt;
+    from routers.ecritures import AuxiliaireHistoriqueIn, ajouter_auxiliaire_historique
+hisabpro-backend\routers\ecritures.py:12: in &lt;module&gt;
+    from routers.cloture import exercice_est_clos
+hisabpro-backend\routers\cloture.py:33: in &lt;module&gt;
+    from services.exercices_service import (
+hisabpro-backend\services\exercices_service.py:21: in &lt;module&gt;
+    def _statuts_periodes_par_defaut(exercice: models.ExerciceComptable, periodes: list[dict]):
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'types.SimpleNamespace' object has no attribute 'ExerciceComptable'</error></testcase><testcase classname="" name="Test.test_journal_mutations_validation_isole" time="0.000"><error message="collection failure">Test\test_journal_mutations_validation_isole.py:6: in &lt;module&gt;
+    from test_reconciliations_concurrentes_isole import (
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_reconciliations_concurrentes_isole.py:7: in &lt;module&gt;
+    from test_registre_immobilisations_cloture_isole import (
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_registre_immobilisations_cloture_isole.py:7: in &lt;module&gt;
+    from test_immobilisations_mutations_concurrentes_isole import (
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_immobilisations_mutations_concurrentes_isole.py:8: in &lt;module&gt;
+    from routers.immobilisations import _get_immo
+hisabpro-backend\routers\immobilisations.py:28: in &lt;module&gt;
+    from services.exercices_service import (
+hisabpro-backend\services\exercices_service.py:21: in &lt;module&gt;
+    def _statuts_periodes_par_defaut(exercice: models.ExerciceComptable, periodes: list[dict]):
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'types.SimpleNamespace' object has no attribute 'ExerciceComptable'</error></testcase><testcase classname="" name="Test.test_e2e_cahier_exports797_isole" time="0.000"><error message="collection failure">Test\test_e2e_cahier_exports797_isole.py:3: in &lt;module&gt;
+    from cahier_formulaires773_support import laboratoire,referentiels,DATA,ok
+Test\cahier_formulaires773_support.py:12: in &lt;module&gt;
+    from test_e2e_facturation_isole import champ
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_e2e_facturation_isole.py:19: in &lt;module&gt;
+    from test_session132_operations_postgres import MIGRATIONS
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+hisabpro-backend\.venv\Lib\site-packages\_pytest\assertion\rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+Test\test_session132_operations_postgres.py:21: in &lt;module&gt;
+    from services.exercices_service import ensure_exercice
+hisabpro-backend\services\exercices_service.py:21: in &lt;module&gt;
+    def _statuts_periodes_par_defaut(exercice: models.ExerciceComptable, periodes: list[dict]):
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: 'types.SimpleNamespace' object has no attribute 'ExerciceComptable'</error></testcase></testsuite></testsuites>

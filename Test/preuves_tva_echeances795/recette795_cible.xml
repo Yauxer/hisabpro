@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="300.514" timestamp="2026-10-24T22:05:50.034785+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_tva_echeances795_isole" name="test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css[1440]" time="111.689"><failure message="AssertionError: Locator expected to have count '1'&#10;Actual value: 0 &#10;Call log:&#10;  - Expect &quot;to_have_count&quot; locator(&quot;tbody tr&quot;).filter(has_text=&quot;Client Marchandises Recette&quot;).filter(has=locator(&quot;button[title=\&quot;Valider définitivement\&quot;]&quot;)) with timeout 5000ms&#10;  - waiting for locator(&quot;tbody tr&quot;).filter(has_text=&quot;Client Marchandises Recette&quot;).filter(has=locator(&quot;button[title=\&quot;Valider définitivement\&quot;]&quot;))&#10;    14 × locator resolved to 0 elements&#10;       - unexpected value &quot;0&quot;">application = {'api_url': 'http://127.0.0.1:62048', 'web_url': 'http://127.0.0.1:62049', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_2wqhmzop'), 'nonce': '6377d797b602486d921a9bfd37a8438b', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette795_cible/test_795_cahier_tva12_impressi0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'tva_echeances795') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+&gt;     capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve);cloturer_cahier(api,page,application,sid,preuve);tva_mensuelle(api,page,application,sid,preuve,tmp_path);echeances_2026(api,page,application,sid,preuve)
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_tva_echeances795_isole.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\cahier_semestre789_support.py:60: in semestre
+    suite(api,page,app,sid,tiers,articles,preuve,intercaler=intercaler)
+Test\cahier_suite777_support.py:38: in suite
+    v2=ok(r.value,201);assert v2['total_ttc']==18000;m.wait_for(state='hidden');v2,row=officialiser(page,app,v2,c);nouvelle_ecriture(app,sid,avant,'VENTE-02',preuve);stock(app,a['id'],60,110);valider_journal(page,app,1);preuve['cas'].append({'id':'HP-FAC-007','statut':'Réussi'})
+                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+page = &lt;Page url='http://127.0.0.1:62049/factures'&gt;
+app = {'api_url': 'http://127.0.0.1:62048', 'web_url': 'http://127.0.0.1:62049', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_2wqhmzop'), 'nonce': '6377d797b602486d921a9bfd37a8438b', ...}, ...}
+f = {'id': 5, 'numero': None, 'type': 'vente', 'date': '2025-03-01', ...}
+tiers = {'id': 3, 'type': 'client', 'nom': 'Client Marchandises Recette', 'code_aux_client': 'C00000003', ...}
+
+    def officialiser(page,app,f,tiers):
+     row=page.locator('tbody tr').filter(has_text=tiers['nom']).filter(has=page.locator('button[title="Valider définitivement"]'))
+     # Si plusieurs brouillons, l'identifiant visible évite toute sélection arbitraire.
+&gt;    expect(row).to_have_count(1)
+E    AssertionError: Locator expected to have count '1'
+E    Actual value: 0 
+E    Call log:
+E      - Expect "to_have_count" locator("tbody tr").filter(has_text="Client Marchandises Recette").filter(has=locator("button[title=\"Valider définitivement\"]")) with timeout 5000ms
+E      - waiting for locator("tbody tr").filter(has_text="Client Marchandises Recette").filter(has=locator("button[title=\"Valider définitivement\"]"))
+E        14 × locator resolved to 0 elements
+E           - unexpected value "0"
+
+Test\cahier_cycle775_support.py:48: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_tva_echeances795_isole" name="test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css[390]" time="184.666"><failure message="AssertionError: (2, 'credit_fin', 4200.0, '4700.00')">application = {'api_url': 'http://127.0.0.1:62048', 'web_url': 'http://127.0.0.1:62049', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_2wqhmzop'), 'nonce': '6377d797b602486d921a9bfd37a8438b', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette795_cible/test_795_cahier_tva12_impressi1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'tva_echeances795') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+&gt;     capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve);cloturer_cahier(api,page,application,sid,preuve);tva_mensuelle(api,page,application,sid,preuve,tmp_path);echeances_2026(api,page,application,sid,preuve)
+                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_tva_echeances795_isole.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\cahier_tva_echeances795_support.py:25: in tva_mensuelle
+    choisir_mois(page,mois,verifier);page.get_by_role('button',name='Détail par taux',exact=True).click();expect(page.get_by_text('Détail par taux de TVA',exact=True)).to_be_visible();page.get_by_role('button',name='Préparation DGI',exact=True).click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Test\test_e2e_tva_isole.py:160: in choisir_mois
+    verifier(declaration.value.json())
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+data = {'periode': {'type': 'mensuelle', 'date_debut': '2025-02-01', 'date_fin': '2025-02-28'}, 'regime_tva': 'debit', 'param...0.0}, 'collectee': {'total': -500.0, 'base_total': -2500.0, 'par_taux': {'20': {'base': -2500.0, 'tva': -500.0}}}, ...}
+
+    def verifier(data):
+&gt;    for reel,cible in [(data['collectee']['total'],'collectee'),(data['recuperable']['total'],'recuperable'),(data['credit_tva_anterieur'],'credit_ouverture'),(data['credit_tva'],'credit_fin'),(data['tva_due'],'due')]:assert D(str(reel))==D(attendu[cible]),(mois,cible,reel,attendu[cible])
+                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: (2, 'credit_fin', 4200.0, '4700.00')
+
+Test\cahier_tva_echeances795_support.py:23: AssertionError</failure></testcase></testsuite></testsuites>

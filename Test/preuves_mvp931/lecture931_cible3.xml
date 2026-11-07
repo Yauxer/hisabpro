@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="8" time="67.458" timestamp="2026-10-29T13:24:05.631853+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_immobilisations_erreurs931_isole" name="test_931_registre_et_plan_indisponibles_ne_deviennent_pas_vides[lecture-1440]" time="28.867" /><testcase classname="Test.test_e2e_immobilisations_erreurs931_isole" name="test_931_registre_et_plan_indisponibles_ne_deviennent_pas_vides[lecture-390]" time="6.086" /><testcase classname="Test.test_e2e_immobilisations_erreurs931_isole" name="test_931_registre_et_plan_indisponibles_ne_deviennent_pas_vides[admin-1440]" time="5.690" /><testcase classname="Test.test_e2e_immobilisations_erreurs931_isole" name="test_931_registre_et_plan_indisponibles_ne_deviennent_pas_vides[admin-390]" time="5.497" /><testcase classname="Test.test_e2e_immobilisations_erreurs931_isole" name="test_931_registre_reellement_vide_affiche_zero_apres_lecture[1440]" time="3.684" /><testcase classname="Test.test_e2e_immobilisations_erreurs931_isole" name="test_931_registre_reellement_vide_affiche_zero_apres_lecture[390]" time="3.524" /><testcase classname="Test.test_e2e_immobilisations_erreurs931_isole" name="test_931_modification_enregistree_mais_rafraichissement_indisponible[1440]" time="3.852"><failure message="AssertionError: {&quot;detail&quot;:&quot;Le plan d'amortissement est verrouillé car des dotations ont déjà été comptabilisées&quot;}">application = {'api_url': 'http://127.0.0.1:54058', 'web_url': 'http://127.0.0.1:54059', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_s1akyaf3'), 'nonce': 'b7e984e6c4674bfe95d640e6836a5508', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/lecture931_cible3/test_931_modification_enregist0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_931_modification_enregistree_mais_rafraichissement_indisponible(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'rafraichissement931') as (api,page,sid,preuve):
+      i=preparer(api);page.goto(application['web_url']+'/immobilisations');expect(page.locator('tbody tr').filter(has_text=i['designation'])).to_have_count(1);avant=photo(application,sid)
+      page.get_by_title('Modifier',exact=True).click();m=page.locator('[class*="modalOverlay"]').filter(has=page.get_by_placeholder('Ex: Serveur Dell PowerEdge',exact=True));m.get_by_placeholder('Ex: Serveur Dell PowerEdge',exact=True).fill('Bien RENOMME FICTIF931')
+      registre=lambda u:u.split('?')[0]==application['api_url']+'/api/immobilisations'
+      def couper(route):route.abort('internetdisconnected')
+      page.route(registre,couper);mutations=[]
+      page.on('request',lambda r:mutations.append(r.method) if r.url.split('?')[0]==application['api_url']+f'/api/immobilisations/{i["id"]}' and r.method not in ['GET','OPTIONS'] else None)
+      with page.expect_response(lambda r:r.url.endswith(f'/api/immobilisations/{i["id"]}') and r.request.method=='PATCH') as rr:m.get_by_role('button',name='Modifier',exact=True).click()
+&gt;     ok(rr.value);m.wait_for(state='hidden');alerte=page.get_by_role('alert').filter(has_text='Impossible de charger le registre');expect(alerte).to_be_visible()
+      ^^^^^^^^^^^^
+
+Test\test_e2e_immobilisations_erreurs931_isole.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response url='http://127.0.0.1:54058/api/immobilisations/5' request=&lt;Request url='http://127.0.0.1:54058/api/immobilisations/5' method='PATCH'&gt;&gt;
+status = 200
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":"Le plan d'amortissement est verrouillé car des dotations ont déjà été comptabilisées"}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase><testcase classname="Test.test_e2e_immobilisations_erreurs931_isole" name="test_931_modification_enregistree_mais_rafraichissement_indisponible[390]" time="7.720"><failure message="AssertionError: {&quot;detail&quot;:&quot;Le plan d'amortissement est verrouillé car des dotations ont déjà été comptabilisées&quot;}">application = {'api_url': 'http://127.0.0.1:54058', 'web_url': 'http://127.0.0.1:54059', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_s1akyaf3'), 'nonce': 'b7e984e6c4674bfe95d640e6836a5508', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/lecture931_cible3/test_931_modification_enregist1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_931_modification_enregistree_mais_rafraichissement_indisponible(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'rafraichissement931') as (api,page,sid,preuve):
+      i=preparer(api);page.goto(application['web_url']+'/immobilisations');expect(page.locator('tbody tr').filter(has_text=i['designation'])).to_have_count(1);avant=photo(application,sid)
+      page.get_by_title('Modifier',exact=True).click();m=page.locator('[class*="modalOverlay"]').filter(has=page.get_by_placeholder('Ex: Serveur Dell PowerEdge',exact=True));m.get_by_placeholder('Ex: Serveur Dell PowerEdge',exact=True).fill('Bien RENOMME FICTIF931')
+      registre=lambda u:u.split('?')[0]==application['api_url']+'/api/immobilisations'
+      def couper(route):route.abort('internetdisconnected')
+      page.route(registre,couper);mutations=[]
+      page.on('request',lambda r:mutations.append(r.method) if r.url.split('?')[0]==application['api_url']+f'/api/immobilisations/{i["id"]}' and r.method not in ['GET','OPTIONS'] else None)
+      with page.expect_response(lambda r:r.url.endswith(f'/api/immobilisations/{i["id"]}') and r.request.method=='PATCH') as rr:m.get_by_role('button',name='Modifier',exact=True).click()
+&gt;     ok(rr.value);m.wait_for(state='hidden');alerte=page.get_by_role('alert').filter(has_text='Impossible de charger le registre');expect(alerte).to_be_visible()
+      ^^^^^^^^^^^^
+
+Test\test_e2e_immobilisations_erreurs931_isole.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response url='http://127.0.0.1:54058/api/immobilisations/6' request=&lt;Request url='http://127.0.0.1:54058/api/immobilisations/6' method='PATCH'&gt;&gt;
+status = 200
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":"Le plan d'amortissement est verrouillé car des dotations ont déjà été comptabilisées"}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase></testsuite></testsuites>

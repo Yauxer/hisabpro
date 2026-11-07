@@ -1,0 +1,152 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font: 'Inter', sans-serif;
+
+  --bg-primary:    #ffffff;
+  --bg-secondary:  #f7f7f6;
+  --bg-tertiary:   #f0efed;
+
+  --text-primary:   #1a1a18;
+  --text-secondary: #5a5955;
+  --text-tertiary:  #9a9890;
+
+  --border-light:  rgba(0,0,0,0.08);
+  --border-medium: rgba(0,0,0,0.14);
+
+  --blue:       #185FA5;
+  --blue-light: #E6F1FB;
+  --blue-dark:  #0C447C;
+
+  --green:       #3B6D11;
+  --green-light: #EAF3DE;
+
+  --red:       #A32D2D;
+  --red-light: #FCEBEB;
+
+  --amber:       #854F0B;
+  --amber-light: #FAEEDA;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  --sidebar-width: 220px;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 14px;
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, select, textarea {
+  font-family: var(--font);
+  font-size: 13px;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Scrollbar discrète */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-medium); border-radius: 4px; }
+
+/* Lot UX 967 : libellé visible des boutons d'action (le title garde l'explication complète). */
+.libelle-action {
+  display: inline-block;
+  margin-left: 4px;
+  max-width: 16ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: inherit;
+  line-height: 1.2;
+}
+
+/* Lot UX 967 : notifications non bloquantes. */
+.notifications-pile {
+  position: fixed; right: 16px; bottom: 16px; z-index: 2000;
+  display: flex; flex-direction: column; gap: 8px; max-width: min(420px, calc(100vw - 32px));
+  /* Ne bloque jamais les boutons situés dessous : seule la croix reste cliquable. */
+  pointer-events: none;
+}
+.notification {
+  display: flex; align-items: flex-start; gap: 8px; padding: 10px 12px;
+  background: var(--bg-primary, #fff); color: var(--text-primary, #222);
+  border: 0.5px solid var(--border-medium, #ccc); border-left: 4px solid; border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .12); font-size: 13px; line-height: 1.4;
+}
+.notification-texte { flex: 1; white-space: pre-line; overflow-wrap: anywhere; }
+.notification-fermer {
+  pointer-events: auto;
+  border: none; background: none; cursor: pointer; font-size: 18px; line-height: 1;
+  color: var(--text-secondary, #666); min-width: 28px; min-height: 28px;
+}
+@media (max-width: 600px) {
+  /* Sur mobile, en haut : les barres d'action des formulaires sont en bas. */
+  .notifications-pile { left: 8px; right: 8px; top: 8px; bottom: auto; max-width: none; }
+}
+
+/* Lot UX 967 : navigation interne de la page TVA (aucune section masquée). */
+.tva-sous-navigation {
+  position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 6px;
+  padding: 8px 0; margin-bottom: 10px; background: var(--bg-secondary, var(--bg-primary, #fff));
+}
+.tva-sous-navigation a {
+  padding: 5px 10px; border: 0.5px solid var(--border-medium, #ccc); border-radius: 999px;
+  font-size: 12px; color: var(--text-primary, #222); text-decoration: none; background: var(--bg-primary, #fff);
+}
+.tva-sous-navigation a:hover { border-color: var(--blue, #185FA5); color: var(--blue, #185FA5); }
+
+/* Lot UX 967 : bloc « À faire » du tableau de bord. */
+.a-faire { border: 0.5px solid var(--border-medium, #ccc); border-radius: 10px; padding: 12px 14px; background: var(--bg-primary, #fff); margin-bottom: 12px; }
+.a-faire-titre { font-size: 14px; margin: 0 0 8px; display: flex; align-items: center; gap: 6px; }
+.a-faire-vide { margin: 0; font-size: 13px; color: var(--text-secondary, #666); }
+.a-faire-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.a-faire-element { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 8px; text-decoration: none; color: var(--text-primary, #222); background: var(--bg-secondary, #f6f6f6); font-size: 13px; min-height: 36px; }
+.a-faire-element:hover { outline: 1px solid var(--border-medium, #ccc); }
+.a-faire-element span { flex: 1; }
+.a-faire-fleche { color: var(--text-tertiary, #999); }
+
+/* Lot 968 : texte réservé aux lecteurs d'écran, impression du bulletin de paie. */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media print {
+  body.impression-bulletin [data-form-page] > header,
+  body.impression-bulletin [data-form-page] > nav,
+  body.impression-bulletin .no-print,
+  body.impression-bulletin [data-form-page] > div > *:not(.bulletin-imprimable) { display: none !important; }
+  body.impression-bulletin .bulletin-imprimable { border: 0; padding: 0; }
+}
+
+/* Lot 973 : états vides guidés. */
+.etat-vide { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; padding: 40px 24px; background: var(--bg-primary); border: 1px dashed var(--border-medium); border-radius: var(--radius-lg, 12px); }
+.etat-vide-icone { font-size: 34px; color: var(--blue); background: var(--blue-light, #e8f0fb); width: 64px; height: 64px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 6px; }
+.etat-vide-titre { font-size: 16px; font-weight: 650; color: var(--text-primary); }
+.etat-vide-texte { font-size: 13px; color: var(--text-secondary); max-width: 520px; line-height: 1.6; }
+.etat-vide-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 8px; }
+.etat-vide-bouton { padding: 9px 16px; font-size: 13px; font-weight: 550; color: #fff; background: var(--blue); border: 1px solid var(--blue); border-radius: var(--radius-md, 8px); cursor: pointer; }
+.etat-vide-bouton:hover { background: var(--blue-dark, var(--blue)); }
+.etat-vide-lien { padding: 9px 4px; font-size: 13px; color: var(--blue); }
+.etat-vide-bouton-secondaire { color: var(--text-primary); background: var(--bg-primary); border-color: var(--border-medium); }
+.etat-vide-bouton-secondaire:hover { background: var(--bg-secondary); }

@@ -1,0 +1,9 @@
+.card { background: var(--bg-primary, white); border: .5px solid var(--border-light); border-radius: 12px; padding: 18px; min-width: 0; font-size: 12px; line-height: 1.5; }
+.card h2 { font-size: 14px; margin: 0; }
+.card p { margin: 8px 0; color: var(--text-secondary); }
+.card button { border: .5px solid var(--border-medium); background: var(--bg-secondary); color: var(--text-primary); border-radius: 7px; padding: 7px 10px; cursor: pointer; font: inherit; }
+.card button:disabled { opacity: .5; cursor: default; }
+.entete { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.totaux { font-weight: 600; }
+.ligne { border-top: .5px solid var(--border-light); padding: 12px 0; overflow-wrap: anywhere; }
+.card .alerte { color: var(--red, #A33); }

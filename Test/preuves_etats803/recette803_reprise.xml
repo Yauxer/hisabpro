@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="257.048" timestamp="2026-10-25T02:30:35.947411+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_etats803_isole" name="test_803_etats_livre_inventaire_fec_annuel_cloture[1440]" time="83.947"><failure message="playwright._impl._errors.TimeoutError: Locator.inner_text: Timeout 15000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;body&quot;)">application = {'api_url': 'http://127.0.0.1:60935', 'web_url': 'http://127.0.0.1:60936', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_552rkjaw'), 'nonce': '9270f71aa9a04395af94b5d7c06ace87', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette803_reprise/test_803_etats_livre_inventair0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_803_etats_livre_inventaire_fec_annuel_cloture(application,largeur,tmp_path):
+&gt;    with laboratoire(application,largeur,tmp_path,'etats803r') as (api,page,sid,preuve):
+
+Test\test_e2e_cahier_etats803_isole.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:158: in __exit__
+    self.gen.throw(typ, value, traceback)
+Test\cahier_formulaires773_support.py:40: in laboratoire
+    preuve['erreur']=repr(e);print('DIAGNOSTIC',page.url,errors,serveur,page.locator('body').inner_text()[-4500:]);page.screenshot(path=str(tmp_path/f'cahier773_{nom}_echec.png'),full_page=True);raise
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\playwright\sync_api\_generated.py:19603: in inner_text
+    self._sync(self._impl_obj.inner_text(timeout=to_milliseconds(timeout)))
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_locator.py:502: in inner_text
+    return await self._frame.inner_text(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_frame.py:744: in inner_text
+    return await self._channel.send(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x0000015E507AD3D0&gt;
+cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x0000015E515AB100&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        parsed_st = _attach_api_call_information(
+            getattr(task, "__pw_stack__", None) or _capture_stack_trace(),
+            is_internal,
+            title,
+        )
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Locator.inner_text: Timeout 15000ms exceeded.
+E           Call log:
+E             - waiting for locator("body")
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:632: TimeoutError</failure></testcase><testcase classname="Test.test_e2e_cahier_etats803_isole" name="test_803_etats_livre_inventaire_fec_annuel_cloture[390]" time="169.113"><failure message="AssertionError">application = {'api_url': 'http://127.0.0.1:60935', 'web_url': 'http://127.0.0.1:60936', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_552rkjaw'), 'nonce': '9270f71aa9a04395af94b5d7c06ace87', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette803_reprise/test_803_etats_livre_inventair1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_803_etats_livre_inventaire_fec_annuel_cloture(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'etats803r') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve);cloturer_cahier(api,page,application,sid,preuve)
+    
+&gt;     verifier_etats(api,page,application,sid,preuve,tmp_path)
+
+Test\test_e2e_cahier_etats803_isole.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+api = &lt;httpx.Client object at 0x0000015E51151F50&gt;
+page = &lt;Page url='http://127.0.0.1:60936/liasse-fiscale'&gt;
+app = {'api_url': 'http://127.0.0.1:60935', 'web_url': 'http://127.0.0.1:60936', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_552rkjaw'), 'nonce': '9270f71aa9a04395af94b5d7c06ace87', ...}, ...}
+sid = 9
+preuve = {'cible_isolee': 'C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_552rkjaw', 'nonce': '9270f71aa9a04395af94b5d7c06ace87', 'source_sha256': 'b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7', 'largeur': 390, ...}
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette803_reprise/test_803_etats_livre_inventair1')
+
+    def verifier_etats(api,page,app,sid,preuve,tmp_path):
+     avant=core(app,sid);fige=ok(api.get('/api/fiscalite/is/2025'))['liquidation']['snapshot'];data=ok(api.get('/api/etats/liasse/2025'));e=data['etats'];b=e['bilan'];esg={r['code']:r for r in e['esg']['lignes']};cpc=e['cpc'];preuve['etats803']={'bilan':b,'cpc':cpc,'esg':e['esg'],'financement':e['tableau_financement'],'controles_liasse':data['controles']}
+     assert D(str(b['actif']['total']['net']))==D('337010')==D(str(b['passif']['total'])) and b['equilibre']
+     imm=next(l for l in b['actif']['immobilise'] if l['code']=='23');assert [D(str(imm[k])) for k in ['brut','amort_prov','net']]==[D('24000'),D('4800'),D('19200')]
+     cl=next(l for l in b['actif']['circulant'] if l['code']=='342');assert [D(str(cl[k])) for k in ['brut','amort_prov','net']]==[D('14400'),D('2000'),D('12400')]
+     st=next(l for l in b['actif']['circulant'] if l['code']=='31');assert D(str(st['brut']))==D('6600')
+     avant_is=next(r['montant'] for r in cpc['lignes'] if r['code']=='XI')
+     assert D(str(cpc['resultat_net']))==D('106409.75') and D(str(avant_is))==D('129830')
+     attendus={'I':'22100','II':'132000','IV':'137630','V':'137630','VI':'129330','VII':'1000','IX':'-500','X':'106409.75','CAF':'112709.75'}
+     for code,val in attendus.items():assert D(str(esg[code]['montant']))==D(val),(code,esg[code])
+     page.goto(app['web_url']+'/liasse-fiscale');expect(page.get_by_text('T1 à T25 : numérotation interne HisabPro',exact=False)).to_be_visible();page.get_by_role('button',name='T1 · Bilan',exact=True).click()
+     ligne=page.get_by_role('row').filter(has=page.get_by_role('cell',name=re.compile('^Immobilisations corporelles$',re.I)));expect(ligne).to_have_count(1);cellules=ligne.locator('td').all_text_contents();assert [nombre(v) for v in cellules[2:5]]==[D('24000'),D('4800'),D('19200')],cellules
+     for label,vals in [('Stocks',['6600','0','6600']),('Clients et comptes rattachés',['14400','2000','12400'])]:
+      ligne=page.get_by_role('row').filter(has=page.get_by_role('cell',name=label,exact=True));expect(ligne).to_have_count(1);assert [nombre(v) for v in ligne.locator('td').all_text_contents()[2:5]]==list(map(D,vals))
+     page.get_by_role('button',name='T2 · CPC',exact=True).click();ligne=page.get_by_role('row').filter(has=page.get_by_role('cell',name='XI',exact=True));expect(ligne).to_have_count(1);assert nombre(ligne.locator('td').nth(2).inner_text())==D('129830')
+     page.get_by_role('button',name='ESG',exact=True).click()
+     for code,val in attendus.items():
+      ligne=page.get_by_role('row').filter(has=page.get_by_role('cell',name=code,exact=True));expect(ligne).to_have_count(1);assert nombre(ligne.locator('td').nth(2).inner_text())==D(val)
+     excel=telecharger(page,'Excel',tmp_path,'liasse803.xlsx');wb=load_workbook(excel,data_only=True);assert {'T1 Bilan Actif','T1 Bilan Passif','T2 CPC','ESG','Financement'} &lt;= set(wb.sheetnames)
+     er={r[0]:r for r in wb['ESG'].values if r[0] in attendus}
+     for code,val in attendus.items():assert D(str(er[code][2]))==D(val)
+     assert any(r[0]=='XV' and D(str(r[2]))==D('106409.75') for r in wb['T2 CPC'].values)
+&gt;    pdf=telecharger(page,'PDF',tmp_path,'liasse803.pdf');texte='\n'.join(p.extract_text() or '' for p in PdfReader(pdf).pages);compact=re.sub(r'\s','',texte).replace('.','');assert all(m in compact for m in ['337010,00','106409,75','112709,75','24000,00','4800,00']);enregistrer(preuve,excel,'Liasse Excel');enregistrer(preuve,pdf,'Liasse PDF');preuve['cas'].append({'id':'HP-ETA-001','statut':'Réussi'})
+                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError
+
+Test\cahier_etats803_support.py:49: AssertionError</failure></testcase></testsuite></testsuites>

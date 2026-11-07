@@ -1,0 +1,18 @@
+{
+  "role": "admin",
+  "largeur": 1440,
+  "solde_propose": "1425.00",
+  "exports_individuels": {
+    "pdf": {
+      "sha256": "5d076e073c148d0e013c369431cf87a5e13790a64424450fa54faa144e20f4b3",
+      "montant_et_logo_verifies": true
+    },
+    "xlsx": {
+      "sha256": "5a202ec097e586c002d167bf2db6df80736b884301f58b254df50c88daf75910",
+      "montant_et_logo_verifies": true
+    }
+  },
+  "ZIP_snapshot_verifie": true,
+  "aucune_liquidation_ou_paiement_confirme": true,
+  "sources_hors_preparations_inchangees": true
+}

@@ -1,0 +1,112 @@
+{
+  "societe_fictive": "CM recette741",
+  "devise": "MAD",
+  "exercice": 2026,
+  "petit": {
+    "balance": [
+      {
+        "compte": "1111",
+        "debit": "0",
+        "credit": "10000"
+      },
+      {
+        "compte": "5141",
+        "debit": "16400",
+        "credit": "0"
+      },
+      {
+        "compte": "7111",
+        "debit": "0",
+        "credit": "10000"
+      },
+      {
+        "compte": "6132",
+        "debit": "3000",
+        "credit": "0"
+      },
+      {
+        "compte": "7581",
+        "debit": "0",
+        "credit": "1000"
+      },
+      {
+        "compte": "6701",
+        "debit": "1600",
+        "credit": "0"
+      }
+    ],
+    "b12": {
+      "reintegrations": "500",
+      "deductions": "200",
+      "deficit": "1000",
+      "taux_declare": "20"
+    },
+    "cm": {
+      "base": "10000",
+      "exclue": "0",
+      "reduite": "0",
+      "exoneration_totale": "non",
+      "minimum_exonere": "non"
+    },
+    "attendus": {
+      "equilibre": "21000.00",
+      "net": "6400.00",
+      "avant_impots": "8000.00",
+      "benefice": "7300.00",
+      "is_theorique": "1460.00",
+      "proportionnelle": "25.00",
+      "cm": "3000.00",
+      "maximum": "3000.00"
+    }
+  },
+  "grand": {
+    "base": "2000000",
+    "exclue": "200000",
+    "reduite": "500000",
+    "exoneration_totale": "non",
+    "minimum_exonere": "non",
+    "attendus": {
+      "equilibre": "2011000.00",
+      "base_standard": "1300000.00",
+      "cm_standard": "3250.00",
+      "cm_reduite": "750.00",
+      "cm": "4000.00",
+      "is_theorique": null,
+      "maximum": null
+    },
+    "balance": [
+      {
+        "compte": "1111",
+        "debit": "0",
+        "credit": "10000"
+      },
+      {
+        "compte": "5141",
+        "debit": "2006400",
+        "credit": "0"
+      },
+      {
+        "compte": "7111",
+        "debit": "0",
+        "credit": "2000000"
+      },
+      {
+        "compte": "6132",
+        "debit": "3000",
+        "credit": "0"
+      },
+      {
+        "compte": "7581",
+        "debit": "0",
+        "credit": "1000"
+      },
+      {
+        "compte": "6701",
+        "debit": "1600",
+        "credit": "0"
+      }
+    ]
+  },
+  "statut_humain": "Non testé",
+  "limite": "Qualifications et exonérations exclusivement fictives,aucune liquidation confirmée."
+}

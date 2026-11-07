@@ -1,0 +1,19 @@
+# HisabPro — rapprochement bancaire du cahier annuel
+
+Les quatre fiches HP-BNQ-001 à 004 et le cas négatif HP-NEG-024 sont exécutés dans Edge réel, sur ordinateur et mobile, avec PostgreSQL natif temporaire. Les fichiers de relevé XLSX et CSV d’origine sont conservés intacts. Quarante-neuf opérations du journal source sont créées et validées par API ; les frais bancaires de 60 MAD sont ensuite saisis et validés dans le formulaire du Journal, conformément à l’avis fictif sans TVA. Le compte 61473 est débité de 60, le 5141 crédité de 60, avec date comptable et date de justificatif au 31/12/2025. Ce scénario ne généralise pas l’absence de TVA à tous les frais bancaires.
+
+Le fichier négatif fourni, comportant simultanément débit et crédit de 1 000, est refusé à la prévisualisation. Le diagnostic indique la ligne 2 et l’exigence d’une seule colonne positive. Aucune opération n’est enregistrée et le journal reste intact. Le même panneau accepte ensuite le relevé XLSX valide de 17 mouvements.
+
+Chaque mouvement importé est comparé au fichier original et à sa ligne 5141 : même date, référence et montant, avec crédit du relevé correspondant à une entrée en banque et débit à une sortie. Les écritures de transfert des effets n’ajoutent pas de mouvement bancaire. Les soldes 0 au départ et 287 730 MAD à la fin sont saisis et réellement sauvegardés. Les contrôles d’équilibre comptable et de cohérence des mouvements sont visibles.
+
+La première tentative de test attendait à tort 17 propositions automatiques. L’algorithme existant impose une égalité complète entre référence comptable et libellé du relevé. Les fichiers du cahier portent référence + descriptif : aucune proposition automatique n’est donc produite. Cette prudence est conservée. Une phrase dans la fenêtre explique les critères et indique de procéder au pointage manuel pour ces libellés. Aucun rapprochement approximatif n’est ajouté et aucune pièce n’est modifiée pour forcer une correspondance.
+
+Les 17 associations certaines sont effectuées manuellement dans l’interface, après filtrage des opérations non rapprochées. Les couples exacts sont vérifiés par API, puis après rechargement. Le XLSX est réimporté, puis le CSV équivalent : chaque fois, zéro mouvement est créé et les 17 doublons sont ignorés. Tous les liens et soldes restent identiques. Les 50 écritures du journal et les fichiers source sont inchangés.
+
+Les deux parcours finaux réussissent, ainsi que 21 tests connexes des propositions, incluant les contextes retardés et les refus de confirmation obsolète. Les deux échecs de l’attente initiale sont conservés. Le build Vite réussit ; les avertissements existants sur la taille du bundle et l’import mixte XLSX restent signalés. Aucun backend ni migration n’est modifié dans ce lot ; la seule évolution produit est l’explication dans la fenêtre des propositions.
+
+Le suivi passe à 127 fiches réussies, 4 partielles, 131 non qualifiées individuellement et 10 bloquées par les sources. Les 70 statuts fonctionnels restent inchangés. Aucun PostgreSQL utilisateur ni donnée comptable réelle n’est utilisé. B6 et B13 restent à compléter sur pièces ou méthode ; RH/paie et point 6 sont différés. La recette humaine et la conformité réglementaire restent à valider.
+
+Pour vérifier : Rapprochement bancaire → compte 5141 → période annuelle 2025 → Import Excel / CSV. Contrôler les mouvements puis saisir les deux soldes. Filtrer Non rapprochées et choisir chaque contrepartie justifiée. Recharger, puis réimporter le même fichier ; le compteur doit indiquer zéro création et les doublons ignorés. Le bouton Proposer les rapprochements expose maintenant la règle de correspondance exacte.
+
+Prochaine étape : lettrage des deux clients et des deux fournisseurs soldés du cahier, maintien des impayés 14 400/480 et tests négatifs d’équilibre et de mélange d’auxiliaires.

@@ -1,0 +1,41 @@
+{
+  "resultats": [
+    {
+      "campagne": "recette771_banque_avant",
+      "tests": 1,
+      "echecs": 1,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 37.76,
+      "code": 1
+    },
+    {
+      "campagne": "recette771_banque_apres",
+      "tests": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 40.13,
+      "code": 0
+    },
+    {
+      "campagne": "recette771_connexes",
+      "tests": 3,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 74.14,
+      "code": 0
+    }
+  ],
+  "build": {
+    "code": 0,
+    "secondes": 12,
+    "avertissement": "Bundle >500kB"
+  },
+  "cas_cahier": "HP-ADM-005",
+  "statut_automatique": "Réussi",
+  "portee": "Création,nom libre au clavier,vide bloqué,réouverture/modification,preset et retour libre,RIB zéros conservés,aucune écriture générée ;1440/390.",
+  "limite": "Base native éphémère du fixture E2E,installation utilisateur non testée ;aucune recette humaine/production validée. Incident Lettrage769 indépendant toujours ouvert.",
+  "source_sha256": "22d92f256ba00c979bcc95d8fb1cffdb7a98ef8448f0538ecb4ee5d000c3f88c"
+}

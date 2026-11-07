@@ -1,0 +1,12 @@
+{
+  "portee": "Recette du calcul existant, aucune qualification fiscale nouvelle ni donnée réelle",
+  "prix_ht": "60000.00",
+  "tva": "12000.00",
+  "ttc": "72000.00",
+  "duree": 5,
+  "coefficient": "2.00",
+  "taux": "0.40",
+  "dotations": ["24000.00", "14400.00", "8640.00", "6480.00", "6480.00"],
+  "cumul": ["24000.00", "38400.00", "47040.00", "53520.00", "60000.00"],
+  "vnc": ["36000.00", "21600.00", "12960.00", "6480.00", "0.00"]
+}

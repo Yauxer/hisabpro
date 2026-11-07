@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="91.846" timestamp="2026-10-25T02:48:47.819073+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_journal_impression799_isole" name="test_799_journal_impression_exhaustive_45_pieces_90_lignes[1440]" time="54.939"><failure message="AssertionError: {'pieces': 45, 'lignes': 90, 'total_debit': '4500.00', 'total_credit': '4500.00', ...}&#10;assert {'PRINT799-04...PRINT799-044'} == {'PRINT799-00...799-005', ...}&#10;  &#10;  Extra items in the right set:&#10;  'PRINT799-031'&#10;  'PRINT799-012'&#10;  'PRINT799-008'&#10;  'PRINT799-015'&#10;  'PRINT799-026'...&#10;  &#10;  ...Full output truncated (36 lines hidden), use '-vv' to show">application = {'api_url': 'http://127.0.0.1:57706', 'web_url': 'http://127.0.0.1:57707', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_rjver32k'), 'nonce': 'f4b637e16497458aa373222f54d242f7', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette799_avant/test_799_journal_impression_ex0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_799_journal_impression_exhaustive_45_pieces_90_lignes(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'impression799') as (api,page,sid,preuve):
+      refs={f'PRINT799-{i:03}' for i in range(45)}
+      for ref in sorted(refs):
+       ok(api.post('/api/ecritures',json={'date':'2025-01-02','journal':'BQ','reference':ref,'libelle':f'Pièce fictive impression {ref}','est_validee':True,'lignes':[{'compte':'5141','debit':100},{'compte':'1111','credit':100}]}),201)
+      avant=core(application,sid);assert len(avant)==45
+      page.goto(application['web_url']+'/journal');expect(page.get_by_role('button',name='Exporter CSV',exact=True)).to_be_enabled();expect(page.get_by_text('PRINT799-000',exact=True)).to_be_visible()
+      page.emulate_media(media='print')
+      preuve['impression799']={'pieces':45,'lignes':90,'total_debit':'4500.00','total_credit':'4500.00','geometrie':page.locator('main').evaluate('(el)=&gt;({height:getComputedStyle(el).height,overflow:getComputedStyle(el).overflow,scrollHeight:el.scrollHeight,clientHeight:el.clientHeight})')}
+      chemin=tmp_path/f'journal799_{largeur}.pdf';page.pdf(path=str(chemin),prefer_css_page_size=True,print_background=True)
+      pdf=PdfReader(chemin);texte='\n'.join(p.extract_text() or '' for p in pdf.pages);retrouvees=set(re.findall(r'PRINT799-\d{3}',texte))
+      preuve['impression799'].update(pdf=str(chemin),sha256=hashlib.sha256(chemin.read_bytes()).hexdigest(),pages=len(pdf.pages),references_retrouvees=sorted(retrouvees),manquantes=sorted(refs-retrouvees))
+&gt;     assert retrouvees==refs,preuve['impression799'];assert len(pdf.pages)&gt;=2
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: {'pieces': 45, 'lignes': 90, 'total_debit': '4500.00', 'total_credit': '4500.00', ...}
+E     assert {'PRINT799-04...PRINT799-044'} == {'PRINT799-00...799-005', ...}
+E       
+E       Extra items in the right set:
+E       'PRINT799-031'
+E       'PRINT799-012'
+E       'PRINT799-008'
+E       'PRINT799-015'
+E       'PRINT799-026'...
+E       
+E       ...Full output truncated (36 lines hidden), use '-vv' to show
+
+Test\test_e2e_journal_impression799_isole.py:26: AssertionError</failure></testcase><testcase classname="Test.test_e2e_journal_impression799_isole" name="test_799_journal_impression_exhaustive_45_pieces_90_lignes[390]" time="15.183"><failure message="AssertionError: {'pieces': 45, 'lignes': 90, 'total_debit': '4500.00', 'total_credit': '4500.00', ...}&#10;assert {'PRINT799-04...PRINT799-044'} == {'PRINT799-00...799-005', ...}&#10;  &#10;  Extra items in the right set:&#10;  'PRINT799-031'&#10;  'PRINT799-012'&#10;  'PRINT799-008'&#10;  'PRINT799-015'&#10;  'PRINT799-026'...&#10;  &#10;  ...Full output truncated (36 lines hidden), use '-vv' to show">application = {'api_url': 'http://127.0.0.1:57706', 'web_url': 'http://127.0.0.1:57707', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_rjver32k'), 'nonce': 'f4b637e16497458aa373222f54d242f7', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette799_avant/test_799_journal_impression_ex1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_799_journal_impression_exhaustive_45_pieces_90_lignes(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'impression799') as (api,page,sid,preuve):
+      refs={f'PRINT799-{i:03}' for i in range(45)}
+      for ref in sorted(refs):
+       ok(api.post('/api/ecritures',json={'date':'2025-01-02','journal':'BQ','reference':ref,'libelle':f'Pièce fictive impression {ref}','est_validee':True,'lignes':[{'compte':'5141','debit':100},{'compte':'1111','credit':100}]}),201)
+      avant=core(application,sid);assert len(avant)==45
+      page.goto(application['web_url']+'/journal');expect(page.get_by_role('button',name='Exporter CSV',exact=True)).to_be_enabled();expect(page.get_by_text('PRINT799-000',exact=True)).to_be_visible()
+      page.emulate_media(media='print')
+      preuve['impression799']={'pieces':45,'lignes':90,'total_debit':'4500.00','total_credit':'4500.00','geometrie':page.locator('main').evaluate('(el)=&gt;({height:getComputedStyle(el).height,overflow:getComputedStyle(el).overflow,scrollHeight:el.scrollHeight,clientHeight:el.clientHeight})')}
+      chemin=tmp_path/f'journal799_{largeur}.pdf';page.pdf(path=str(chemin),prefer_css_page_size=True,print_background=True)
+      pdf=PdfReader(chemin);texte='\n'.join(p.extract_text() or '' for p in pdf.pages);retrouvees=set(re.findall(r'PRINT799-\d{3}',texte))
+      preuve['impression799'].update(pdf=str(chemin),sha256=hashlib.sha256(chemin.read_bytes()).hexdigest(),pages=len(pdf.pages),references_retrouvees=sorted(retrouvees),manquantes=sorted(refs-retrouvees))
+&gt;     assert retrouvees==refs,preuve['impression799'];assert len(pdf.pages)&gt;=2
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: {'pieces': 45, 'lignes': 90, 'total_debit': '4500.00', 'total_credit': '4500.00', ...}
+E     assert {'PRINT799-04...PRINT799-044'} == {'PRINT799-00...799-005', ...}
+E       
+E       Extra items in the right set:
+E       'PRINT799-031'
+E       'PRINT799-012'
+E       'PRINT799-008'
+E       'PRINT799-015'
+E       'PRINT799-026'...
+E       
+E       ...Full output truncated (36 lines hidden), use '-vv' to show
+
+Test\test_e2e_journal_impression799_isole.py:26: AssertionError</failure></testcase></testsuite></testsuites>

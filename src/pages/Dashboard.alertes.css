@@ -1,0 +1,19 @@
+/* À ajouter à Dashboard.module.css */
+.alertesZone {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.alerte {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 500;
+  animation: slideDown 0.2s ease;
+}
+.alerte i { font-size: 18px; flex-shrink: 0; }
+.alerte_danger  { background: #FCEBEB; color: #A32D2D; border: 1px solid #F5BEBE; }
+.alerte_warning { background: #FEF3C7; color: #92400E; border: 1px solid #FCD34D; }

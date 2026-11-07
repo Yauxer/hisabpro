@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="10" skipped="0" tests="34" time="103.115" timestamp="2026-10-28T16:19:07.479705+01:00" hostname="Taiyou"><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_qualification_incomplete_refusee[source_reference]" time="0.005" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_qualification_incomplete_refusee[texte_reference]" time="0.002" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_qualification_incomplete_refusee[article]" time="0.002" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_qualification_incomplete_refusee[url_source]" time="0.001" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_qualification_incomplete_refusee[empreinte_preuve]" time="0.002" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_qualification_incomplete_refusee[date_consultation]" time="0.001" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_preuve_invalide_rejetee[kw0]" time="0.002" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_preuve_invalide_rejetee[kw1]" time="0.001" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_preuve_invalide_rejetee[kw2]" time="0.001" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_preuve_invalide_rejetee[kw3]" time="0.001" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_preuve_invalide_rejetee[kw4]" time="0.002" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_preuve_invalide_rejetee[kw5]" time="0.002" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_preuve_invalide_rejetee[kw6]" time="0.002" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_preuve_invalide_rejetee[kw7]" time="0.002" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_preuve_invalide_rejetee[kw8]" time="0.002" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_preuve_invalide_rejetee[kw9]" time="0.002" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_preuve_invalide_rejetee[kw10]" time="0.002" /><testcase classname="Test.test_paie907_qualification_ir_unitaire" name="test_907_anciens_contenus_inconnus_sans_deduction_automatique" time="0.003" /><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_qualification_independante_habilitation_et_attestation[/api/employes/personnel/elements-creer-frais_professionnels-INCLUS]" time="31.111" /><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_qualification_independante_habilitation_et_attestation[/api/employes/personnel/social-creer-deductibilite_ir-DEDUCTIBLE]" time="4.044" /><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_garde_sql_directe_sans_habilitation_ni_attestation[/api/employes/personnel/elements-creer-frais_professionnels-EXCLUS-paie_rubrique_versions]" time="3.973" /><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_garde_sql_directe_sans_habilitation_ni_attestation[/api/employes/personnel/social-creer-deductibilite_ir-NON_DEDUCTIBLE-paie_branche_sociale_versions]" time="3.807" /><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_versions_historiques_isolation_et_rejeu[/api/employes/personnel/elements-creer-frais_professionnels-contenu-EXCLUS]" time="5.375" /><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_versions_historiques_isolation_et_rejeu[/api/employes/personnel/social-creer-deductibilite_ir-contenu-NON_DEDUCTIBLE]" time="5.451" /><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_insertion_sql_preuve_invalide_refusee[modif0-frais_professionnels-paie_rubrique_versions-creer]" time="4.034"><failure message="KeyError: 'contenu'">application = {'api_url': 'http://127.0.0.1:60316', 'web_url': 'http://127.0.0.1:60317', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_mx1qp26l'), 'nonce': '7ab212e47f7a4155b4efe3eb03fe0a7b', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000001F8907C8D10&gt;, 'b': &lt;httpx.Client object at 0x000001F890C74090&gt;, 'l': &lt;httpx.Client object at 0x000001F890CA9590&gt;, 'uid': 25, ...}
+champ = 'frais_professionnels', table = 'paie_rubrique_versions'
+creer = &lt;function creer at 0x000001F890263060&gt;
+modif = {'url_source': 'https://finances.gov.ma.attacker.invalid/'}
+
+    @pytest.mark.parametrize('champ,table,creer', [('frais_professionnels','paie_rubrique_versions',rubrique),('deductibilite_ir','paie_branche_sociale_versions',branche)])
+    @pytest.mark.parametrize('modif',[{'url_source':'https://finances.gov.ma.attacker.invalid/'},{'date_consultation':'infinity'},{'empreinte_preuve':None},{'conditions':''},{'traitement':'A_VERIFIER'}])
+    def test_907_insertion_sql_preuve_invalide_refusee(application,equipe,champ,table,creer,modif):
+&gt;       v=creer(equipe);c=v['contenu'];c[champ]={**preuve('INCLUS' if champ=='frais_professionnels' else 'DEDUCTIBLE'),**modif}
+                          ^^^^^^^^^^^^
+E       KeyError: 'contenu'
+
+Test\test_paie907_qualification_ir_isole.py:79: KeyError</failure></testcase><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_insertion_sql_preuve_invalide_refusee[modif0-deductibilite_ir-paie_branche_sociale_versions-creer]" time="4.165"><failure message="KeyError: 'contenu'">application = {'api_url': 'http://127.0.0.1:60316', 'web_url': 'http://127.0.0.1:60317', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_mx1qp26l'), 'nonce': '7ab212e47f7a4155b4efe3eb03fe0a7b', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000001F8907BC1D0&gt;, 'b': &lt;httpx.Client object at 0x000001F890C61050&gt;, 'l': &lt;httpx.Client object at 0x000001F890C8A890&gt;, 'uid': 28, ...}
+champ = 'deductibilite_ir', table = 'paie_branche_sociale_versions'
+creer = &lt;function creer at 0x000001F89026E7A0&gt;
+modif = {'url_source': 'https://finances.gov.ma.attacker.invalid/'}
+
+    @pytest.mark.parametrize('champ,table,creer', [('frais_professionnels','paie_rubrique_versions',rubrique),('deductibilite_ir','paie_branche_sociale_versions',branche)])
+    @pytest.mark.parametrize('modif',[{'url_source':'https://finances.gov.ma.attacker.invalid/'},{'date_consultation':'infinity'},{'empreinte_preuve':None},{'conditions':''},{'traitement':'A_VERIFIER'}])
+    def test_907_insertion_sql_preuve_invalide_refusee(application,equipe,champ,table,creer,modif):
+&gt;       v=creer(equipe);c=v['contenu'];c[champ]={**preuve('INCLUS' if champ=='frais_professionnels' else 'DEDUCTIBLE'),**modif}
+                          ^^^^^^^^^^^^
+E       KeyError: 'contenu'
+
+Test\test_paie907_qualification_ir_isole.py:79: KeyError</failure></testcase><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_insertion_sql_preuve_invalide_refusee[modif1-frais_professionnels-paie_rubrique_versions-creer]" time="4.123"><failure message="KeyError: 'contenu'">application = {'api_url': 'http://127.0.0.1:60316', 'web_url': 'http://127.0.0.1:60317', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_mx1qp26l'), 'nonce': '7ab212e47f7a4155b4efe3eb03fe0a7b', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000001F8906F2710&gt;, 'b': &lt;httpx.Client object at 0x000001F890C637D0&gt;, 'l': &lt;httpx.Client object at 0x000001F890C91CD0&gt;, 'uid': 31, ...}
+champ = 'frais_professionnels', table = 'paie_rubrique_versions'
+creer = &lt;function creer at 0x000001F890263060&gt;
+modif = {'date_consultation': 'infinity'}
+
+    @pytest.mark.parametrize('champ,table,creer', [('frais_professionnels','paie_rubrique_versions',rubrique),('deductibilite_ir','paie_branche_sociale_versions',branche)])
+    @pytest.mark.parametrize('modif',[{'url_source':'https://finances.gov.ma.attacker.invalid/'},{'date_consultation':'infinity'},{'empreinte_preuve':None},{'conditions':''},{'traitement':'A_VERIFIER'}])
+    def test_907_insertion_sql_preuve_invalide_refusee(application,equipe,champ,table,creer,modif):
+&gt;       v=creer(equipe);c=v['contenu'];c[champ]={**preuve('INCLUS' if champ=='frais_professionnels' else 'DEDUCTIBLE'),**modif}
+                          ^^^^^^^^^^^^
+E       KeyError: 'contenu'
+
+Test\test_paie907_qualification_ir_isole.py:79: KeyError</failure></testcase><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_insertion_sql_preuve_invalide_refusee[modif1-deductibilite_ir-paie_branche_sociale_versions-creer]" time="3.547"><failure message="KeyError: 'contenu'">application = {'api_url': 'http://127.0.0.1:60316', 'web_url': 'http://127.0.0.1:60317', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_mx1qp26l'), 'nonce': '7ab212e47f7a4155b4efe3eb03fe0a7b', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000001F890C62A10&gt;, 'b': &lt;httpx.Client object at 0x000001F890C7FCD0&gt;, 'l': &lt;httpx.Client object at 0x000001F890CAAD50&gt;, 'uid': 34, ...}
+champ = 'deductibilite_ir', table = 'paie_branche_sociale_versions'
+creer = &lt;function creer at 0x000001F89026E7A0&gt;
+modif = {'date_consultation': 'infinity'}
+
+    @pytest.mark.parametrize('champ,table,creer', [('frais_professionnels','paie_rubrique_versions',rubrique),('deductibilite_ir','paie_branche_sociale_versions',branche)])
+    @pytest.mark.parametrize('modif',[{'url_source':'https://finances.gov.ma.attacker.invalid/'},{'date_consultation':'infinity'},{'empreinte_preuve':None},{'conditions':''},{'traitement':'A_VERIFIER'}])
+    def test_907_insertion_sql_preuve_invalide_refusee(application,equipe,champ,table,creer,modif):
+&gt;       v=creer(equipe);c=v['contenu'];c[champ]={**preuve('INCLUS' if champ=='frais_professionnels' else 'DEDUCTIBLE'),**modif}
+                          ^^^^^^^^^^^^
+E       KeyError: 'contenu'
+
+Test\test_paie907_qualification_ir_isole.py:79: KeyError</failure></testcase><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_insertion_sql_preuve_invalide_refusee[modif2-frais_professionnels-paie_rubrique_versions-creer]" time="3.893"><failure message="KeyError: 'contenu'">application = {'api_url': 'http://127.0.0.1:60316', 'web_url': 'http://127.0.0.1:60317', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_mx1qp26l'), 'nonce': '7ab212e47f7a4155b4efe3eb03fe0a7b', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000001F890BECF50&gt;, 'b': &lt;httpx.Client object at 0x000001F89329E550&gt;, 'l': &lt;httpx.Client object at 0x000001F890B76E50&gt;, 'uid': 37, ...}
+champ = 'frais_professionnels', table = 'paie_rubrique_versions'
+creer = &lt;function creer at 0x000001F890263060&gt;
+modif = {'empreinte_preuve': None}
+
+    @pytest.mark.parametrize('champ,table,creer', [('frais_professionnels','paie_rubrique_versions',rubrique),('deductibilite_ir','paie_branche_sociale_versions',branche)])
+    @pytest.mark.parametrize('modif',[{'url_source':'https://finances.gov.ma.attacker.invalid/'},{'date_consultation':'infinity'},{'empreinte_preuve':None},{'conditions':''},{'traitement':'A_VERIFIER'}])
+    def test_907_insertion_sql_preuve_invalide_refusee(application,equipe,champ,table,creer,modif):
+&gt;       v=creer(equipe);c=v['contenu'];c[champ]={**preuve('INCLUS' if champ=='frais_professionnels' else 'DEDUCTIBLE'),**modif}
+                          ^^^^^^^^^^^^
+E       KeyError: 'contenu'
+
+Test\test_paie907_qualification_ir_isole.py:79: KeyError</failure></testcase><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_insertion_sql_preuve_invalide_refusee[modif2-deductibilite_ir-paie_branche_sociale_versions-creer]" time="3.978"><failure message="KeyError: 'contenu'">application = {'api_url': 'http://127.0.0.1:60316', 'web_url': 'http://127.0.0.1:60317', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_mx1qp26l'), 'nonce': '7ab212e47f7a4155b4efe3eb03fe0a7b', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000001F890BED890&gt;, 'b': &lt;httpx.Client object at 0x000001F890CA8390&gt;, 'l': &lt;httpx.Client object at 0x000001F890C67310&gt;, 'uid': 40, ...}
+champ = 'deductibilite_ir', table = 'paie_branche_sociale_versions'
+creer = &lt;function creer at 0x000001F89026E7A0&gt;
+modif = {'empreinte_preuve': None}
+
+    @pytest.mark.parametrize('champ,table,creer', [('frais_professionnels','paie_rubrique_versions',rubrique),('deductibilite_ir','paie_branche_sociale_versions',branche)])
+    @pytest.mark.parametrize('modif',[{'url_source':'https://finances.gov.ma.attacker.invalid/'},{'date_consultation':'infinity'},{'empreinte_preuve':None},{'conditions':''},{'traitement':'A_VERIFIER'}])
+    def test_907_insertion_sql_preuve_invalide_refusee(application,equipe,champ,table,creer,modif):
+&gt;       v=creer(equipe);c=v['contenu'];c[champ]={**preuve('INCLUS' if champ=='frais_professionnels' else 'DEDUCTIBLE'),**modif}
+                          ^^^^^^^^^^^^
+E       KeyError: 'contenu'
+
+Test\test_paie907_qualification_ir_isole.py:79: KeyError</failure></testcase><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_insertion_sql_preuve_invalide_refusee[modif3-frais_professionnels-paie_rubrique_versions-creer]" time="4.250"><failure message="KeyError: 'contenu'">application = {'api_url': 'http://127.0.0.1:60316', 'web_url': 'http://127.0.0.1:60317', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_mx1qp26l'), 'nonce': '7ab212e47f7a4155b4efe3eb03fe0a7b', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000001F89329A110&gt;, 'b': &lt;httpx.Client object at 0x000001F890C7D250&gt;, 'l': &lt;httpx.Client object at 0x000001F8906FDDD0&gt;, 'uid': 43, ...}
+champ = 'frais_professionnels', table = 'paie_rubrique_versions'
+creer = &lt;function creer at 0x000001F890263060&gt;, modif = {'conditions': ''}
+
+    @pytest.mark.parametrize('champ,table,creer', [('frais_professionnels','paie_rubrique_versions',rubrique),('deductibilite_ir','paie_branche_sociale_versions',branche)])
+    @pytest.mark.parametrize('modif',[{'url_source':'https://finances.gov.ma.attacker.invalid/'},{'date_consultation':'infinity'},{'empreinte_preuve':None},{'conditions':''},{'traitement':'A_VERIFIER'}])
+    def test_907_insertion_sql_preuve_invalide_refusee(application,equipe,champ,table,creer,modif):
+&gt;       v=creer(equipe);c=v['contenu'];c[champ]={**preuve('INCLUS' if champ=='frais_professionnels' else 'DEDUCTIBLE'),**modif}
+                          ^^^^^^^^^^^^
+E       KeyError: 'contenu'
+
+Test\test_paie907_qualification_ir_isole.py:79: KeyError</failure></testcase><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_insertion_sql_preuve_invalide_refusee[modif3-deductibilite_ir-paie_branche_sociale_versions-creer]" time="3.997"><failure message="KeyError: 'contenu'">application = {'api_url': 'http://127.0.0.1:60316', 'web_url': 'http://127.0.0.1:60317', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_mx1qp26l'), 'nonce': '7ab212e47f7a4155b4efe3eb03fe0a7b', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000001F8907C1F90&gt;, 'b': &lt;httpx.Client object at 0x000001F890C70510&gt;, 'l': &lt;httpx.Client object at 0x000001F890CA8D90&gt;, 'uid': 46, ...}
+champ = 'deductibilite_ir', table = 'paie_branche_sociale_versions'
+creer = &lt;function creer at 0x000001F89026E7A0&gt;, modif = {'conditions': ''}
+
+    @pytest.mark.parametrize('champ,table,creer', [('frais_professionnels','paie_rubrique_versions',rubrique),('deductibilite_ir','paie_branche_sociale_versions',branche)])
+    @pytest.mark.parametrize('modif',[{'url_source':'https://finances.gov.ma.attacker.invalid/'},{'date_consultation':'infinity'},{'empreinte_preuve':None},{'conditions':''},{'traitement':'A_VERIFIER'}])
+    def test_907_insertion_sql_preuve_invalide_refusee(application,equipe,champ,table,creer,modif):
+&gt;       v=creer(equipe);c=v['contenu'];c[champ]={**preuve('INCLUS' if champ=='frais_professionnels' else 'DEDUCTIBLE'),**modif}
+                          ^^^^^^^^^^^^
+E       KeyError: 'contenu'
+
+Test\test_paie907_qualification_ir_isole.py:79: KeyError</failure></testcase><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_insertion_sql_preuve_invalide_refusee[modif4-frais_professionnels-paie_rubrique_versions-creer]" time="4.139"><failure message="KeyError: 'contenu'">application = {'api_url': 'http://127.0.0.1:60316', 'web_url': 'http://127.0.0.1:60317', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_mx1qp26l'), 'nonce': '7ab212e47f7a4155b4efe3eb03fe0a7b', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000001F890C73810&gt;, 'b': &lt;httpx.Client object at 0x000001F8932B2D90&gt;, 'l': &lt;httpx.Client object at 0x000001F890C7C8D0&gt;, 'uid': 49, ...}
+champ = 'frais_professionnels', table = 'paie_rubrique_versions'
+creer = &lt;function creer at 0x000001F890263060&gt;
+modif = {'traitement': 'A_VERIFIER'}
+
+    @pytest.mark.parametrize('champ,table,creer', [('frais_professionnels','paie_rubrique_versions',rubrique),('deductibilite_ir','paie_branche_sociale_versions',branche)])
+    @pytest.mark.parametrize('modif',[{'url_source':'https://finances.gov.ma.attacker.invalid/'},{'date_consultation':'infinity'},{'empreinte_preuve':None},{'conditions':''},{'traitement':'A_VERIFIER'}])
+    def test_907_insertion_sql_preuve_invalide_refusee(application,equipe,champ,table,creer,modif):
+&gt;       v=creer(equipe);c=v['contenu'];c[champ]={**preuve('INCLUS' if champ=='frais_professionnels' else 'DEDUCTIBLE'),**modif}
+                          ^^^^^^^^^^^^
+E       KeyError: 'contenu'
+
+Test\test_paie907_qualification_ir_isole.py:79: KeyError</failure></testcase><testcase classname="Test.test_paie907_qualification_ir_isole" name="test_907_insertion_sql_preuve_invalide_refusee[modif4-deductibilite_ir-paie_branche_sociale_versions-creer]" time="9.095"><failure message="KeyError: 'contenu'">application = {'api_url': 'http://127.0.0.1:60316', 'web_url': 'http://127.0.0.1:60317', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_mx1qp26l'), 'nonce': '7ab212e47f7a4155b4efe3eb03fe0a7b', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000001F890C73E90&gt;, 'b': &lt;httpx.Client object at 0x000001F8932B1C90&gt;, 'l': &lt;httpx.Client object at 0x000001F890C64710&gt;, 'uid': 52, ...}
+champ = 'deductibilite_ir', table = 'paie_branche_sociale_versions'
+creer = &lt;function creer at 0x000001F89026E7A0&gt;
+modif = {'traitement': 'A_VERIFIER'}
+
+    @pytest.mark.parametrize('champ,table,creer', [('frais_professionnels','paie_rubrique_versions',rubrique),('deductibilite_ir','paie_branche_sociale_versions',branche)])
+    @pytest.mark.parametrize('modif',[{'url_source':'https://finances.gov.ma.attacker.invalid/'},{'date_consultation':'infinity'},{'empreinte_preuve':None},{'conditions':''},{'traitement':'A_VERIFIER'}])
+    def test_907_insertion_sql_preuve_invalide_refusee(application,equipe,champ,table,creer,modif):
+&gt;       v=creer(equipe);c=v['contenu'];c[champ]={**preuve('INCLUS' if champ=='frais_professionnels' else 'DEDUCTIBLE'),**modif}
+                          ^^^^^^^^^^^^
+E       KeyError: 'contenu'
+
+Test\test_paie907_qualification_ir_isole.py:79: KeyError</failure></testcase></testsuite></testsuites>

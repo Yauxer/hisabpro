@@ -1,0 +1,160 @@
+{
+  "societe": "RECETTE ECHEANCES 687 SARL",
+  "devise": "MAD",
+  "exercice": 2026,
+  "lignes": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "6000.00"
+    },
+    {
+      "compte": "3421",
+      "debit": "8000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "4411",
+      "debit": "0.00",
+      "credit": "3000.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "1000.00",
+      "credit": "0.00"
+    }
+  ],
+  "oracle": {
+    "debit": "9000.00",
+    "credit": "9000.00",
+    "actif": "9000.00",
+    "passif": "9000.00",
+    "cpc": "0.00",
+    "v2_B6_ventile": "3000.00",
+    "v2_B6_reliquat": "5000.00",
+    "v3_B7_ventile": "3000.00",
+    "v3_B7_reliquat": "0.00",
+    "ecritures_creees": 0
+  },
+  "cas": [
+    [
+      "BAL687-01",
+      "Créer la préparation de base",
+      "Base isolée fictive, administrateur et application fournis par le technicien ; cas précédents terminés.",
+      "RECETTE ECHEANCES 687 SARL ; MAD ; exercice2026 ouvert, du01/01 au31/12 ; BALANCE_FICTIVE_ECHEANCES687.csv.",
+      "Créer cette société distincte et vérifier les quatre comptes du CSV dans son plan. Comptabilité → Liasse fiscale → Importer N / N-1 : joindre le CSV en Balance N, sans N-1 ; Contrôler et préparer puis Conserver une nouvelle version. Relever version1 et empreinte.",
+      "4 comptes ; D=C 9000 MAD ; actif/passif 9000 ; CPC 0 ; N-1 indisponible. Version 1 créée sans écriture.",
+      "Aucune écriture ; le Journal de cette société reste vide.",
+      "Aucune liquidation, déclaration ou preuve de dépôt créée.",
+      "Comparer les montants et les versions ; conserver la capture/export indiqué.",
+      "Non testé",
+      "",
+      "",
+      "Capture d’écran et fichiers exportés lorsqu’indiqués.",
+      "",
+      ""
+    ],
+    [
+      "BAL687-02",
+      "Vérifier les inconnus initiaux",
+      "Base isolée fictive, administrateur et application fournis par le technicien ; cas précédents terminés.",
+      "Version1 ; créance3421=8000 ; dette4411=3000.",
+      "Ouvrir Compléter les échéances documentaires des balances. Choisir B6 ·3421 puis B7 ·4411 dans Compte à documenter. Examiner les sept champs.",
+      "Champs vides/Inconnu ; reliquats 8000 et 3000. Aucun classement automatique en échues ; aucun tiers ni calendrier supposé.",
+      "Aucune écriture ; le Journal de cette société reste vide.",
+      "Aucune liquidation, déclaration ou preuve de dépôt créée.",
+      "Comparer les montants et les versions ; conserver la capture/export indiqué.",
+      "Non testé",
+      "",
+      "",
+      "Capture d’écran et fichiers exportés lorsqu’indiqués.",
+      "",
+      ""
+    ],
+    [
+      "BAL687-03",
+      "Conserver la partie certaine des créances",
+      "Base isolée fictive, administrateur et application fournis par le technicien ; cas précédents terminés.",
+      "B6/3421 : Plus d’un an2000 ; Échues1000 ; justification ETAT CLIENTS FICTIF687 ; autres champs laissés vides.",
+      "Sélectionner B6 ·3421, saisir les deux montants et la justification. Confirmer les données documentaires puis Conserver les compléments dans une nouvelle version. Ouvrir à nouveau le panneau après sélection automatique de version2.",
+      "Version2 liée à version1 par empreinte. Total8000, ventilé3000, reliquat5000. Moins d’un an et analyses complémentaires restent inconnus. Bilan/CPC et sources inchangés.",
+      "Aucune écriture ; le Journal de cette société reste vide.",
+      "Aucune liquidation, déclaration ou preuve de dépôt créée.",
+      "Comparer les montants et les versions ; conserver la capture/export indiqué.",
+      "Non testé",
+      "",
+      "",
+      "Capture d’écran et fichiers exportés lorsqu’indiqués.",
+      "",
+      ""
+    ],
+    [
+      "BAL687-04",
+      "Ajouter les échéances des dettes",
+      "Base isolée fictive, administrateur et application fournis par le technicien ; cas précédents terminés.",
+      "B7/4411 : Plus d’un an1000 ; Moins d’un an1000 ; Échues1000 ; État/organismes publics0 ; justification ETAT FOURNISSEURS FICTIF687.",
+      "Depuis version2, ouvrir le panneau et choisir B7 ·4411. Saisir les quatre montants indiqués sans remplir les autres analyses ; confirmer puis conserver une nouvelle version.",
+      "Version 3 ; B7 ventilé 3000/reliquat 0, analyse État=0 explicite ; devises/entreprises liées/effets inconnus. B6 conserve 2000/1000 et reliquat 5000.",
+      "Aucune écriture ; le Journal de cette société reste vide.",
+      "Aucune liquidation, déclaration ou preuve de dépôt créée.",
+      "Comparer les montants et les versions ; conserver la capture/export indiqué.",
+      "Non testé",
+      "",
+      "",
+      "Capture d’écran et fichiers exportés lorsqu’indiqués.",
+      "",
+      ""
+    ],
+    [
+      "BAL687-05",
+      "Refuser un dépassement sans perdre la saisie",
+      "Base isolée fictive, administrateur et application fournis par le technicien ; cas précédents terminés.",
+      "Depuis version3, B6/3421 : remplacer Échues1000par7000 ; conserver Plus d’un an2000.",
+      "Saisir7000, confirmer puis tenter de conserver. Lire l’alerte. Revenir à1000sans enregistrer une nouvelle version.",
+      "Rejet : 9000 ventilés dépasseraient le solde 8000. Les champs restent visibles pour correction ; version 3 et le Journal sont inchangés.",
+      "Aucune écriture ; le Journal de cette société reste vide.",
+      "Aucune liquidation, déclaration ou preuve de dépôt créée.",
+      "Comparer les montants et les versions ; conserver la capture/export indiqué.",
+      "Non testé",
+      "",
+      "",
+      "Capture d’écran et fichiers exportés lorsqu’indiqués.",
+      "",
+      ""
+    ],
+    [
+      "BAL687-06",
+      "Exporter et vérifier la version3",
+      "Base isolée fictive, administrateur et application fournis par le technicien ; cas précédents terminés.",
+      "Version3 ; logo fictif si fourni par le technicien.",
+      "Fermer le panneau si nécessaire, puis Exporter la préparation Excel et PDF. Ouvrir les fichiers. Comparer les rubriques, sources, version/empreinte, échéances, reliquats, justification et analyses complémentaires.",
+      "PDF/XLSX cohérents : B6 reliquat 5000, B7 reliquat 0, champs inconnus identifiés. Parent version 2 et son empreinte présents. Aucun document présenté comme ETIC officielle complète ou prêt à déposer. Logo actuel si configuré.",
+      "Aucune écriture ; le Journal de cette société reste vide.",
+      "Aucune liquidation, déclaration ou preuve de dépôt créée.",
+      "Comparer les montants et les versions ; conserver la capture/export indiqué.",
+      "Non testé",
+      "",
+      "",
+      "Capture d’écran et fichiers exportés lorsqu’indiqués.",
+      "",
+      ""
+    ],
+    [
+      "BAL687-07",
+      "Préserver les anciennes versions et le rôle Lecture",
+      "Base isolée fictive, administrateur et application fournis par le technicien ; cas précédents terminés.",
+      "Compte fictif lecture687@example.com, rôleLecture, mot de passe de laboratoire Recette687!2026.",
+      "En administrateur, rouvrir version 1 et vérifier ses champs inconnus, puis version 2 avec B7 encore inconnu. Créer le lecteur indiqué depuis Administration → Utilisateurs. Se connecter avec ce lecteur, choisir version 3, ouvrir le panneau et télécharger les exports.",
+      "Anciennes versions inchangées. Lecture peut consulter/exporter ; champs désactivés et aucune commande de conservation. Bilan 9000/CPC 0 et Journal vide. Recette humaine toujours à renseigner dans ce classeur.",
+      "Aucune écriture ; le Journal de cette société reste vide.",
+      "Aucune liquidation, déclaration ou preuve de dépôt créée.",
+      "Comparer les montants et les versions ; conserver la capture/export indiqué.",
+      "Non testé",
+      "",
+      "",
+      "Capture d’écran et fichiers exportés lorsqu’indiqués.",
+      "",
+      ""
+    ]
+  ]
+}

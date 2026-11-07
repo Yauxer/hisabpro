@@ -1,0 +1,63 @@
+{
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "erreur": "AssertionError(\"{'nature': 'A. TVA facturée / collectée', 'solde_debut': 0.0, 'operations': 0.0, 'declarations': 0.0, ...}\\nassert [Decimal('0.0...ecimal('0.0')] == [Decimal('339... Decimal('0')]\\n  \\n  At index 0 diff: Decimal('0.0') != Decimal('33900')\\n  Use -v to get more diff\")",
+  "b14": {
+    "code": "B14",
+    "groupe": "B",
+    "titre": "Détail de la taxe sur la valeur ajoutée",
+    "mode": "assiste",
+    "type_saisie": "notes",
+    "automatique": {
+      "colonnes": [
+        "nature",
+        "solde_debut",
+        "operations",
+        "declarations",
+        "solde_fin"
+      ],
+      "lignes": [
+        {
+          "nature": "A. TVA facturée / collectée",
+          "solde_debut": 0.0,
+          "operations": 0.0,
+          "declarations": 0.0,
+          "solde_fin": 0.0
+        },
+        {
+          "nature": "B. TVA récupérable",
+          "solde_debut": 0.0,
+          "operations": 80.0,
+          "declarations": 0.0,
+          "solde_fin": 80.0
+        },
+        {
+          "nature": "• sur charges",
+          "solde_debut": 0.0,
+          "operations": 80.0,
+          "declarations": 0.0,
+          "solde_fin": 80.0
+        },
+        {
+          "nature": "• sur immobilisations",
+          "solde_debut": 0.0,
+          "operations": 0.0,
+          "declarations": 0.0,
+          "solde_fin": 0.0
+        },
+        {
+          "nature": "C. TVA due ou crédit de TVA (A - B)",
+          "solde_debut": 0.0,
+          "operations": -80.0,
+          "declarations": 0.0,
+          "solde_fin": -80.0
+        }
+      ],
+      "avertissement": "La colonne « déclarations » est reconstituée à partir des mouvements comptables du journal TVA (TV). Vérifiez-la avec les déclarations effectivement déposées."
+    },
+    "contenu": {},
+    "complete": false,
+    "ventilation": [],
+    "erreurs_ventilation": [],
+    "updated_at": null
+  }
+}

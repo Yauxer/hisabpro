@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="8" time="30.120" timestamp="2026-10-29T01:54:11.469092+01:00" hostname="Taiyou"><testcase classname="Test.test_factures_conservation923_isole" name="test_923_pdf_exact_logo_source_audit_rejeu_et_comptabilite" time="19.968"><failure message="sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column &quot;societe_id&quot; does not exist&#10;LINE 1: ... row_to_json(t)::text FROM lignes_facture t WHERE societe_id...&#10;                                                             ^&#10;&#10;[SQL: SELECT row_to_json(t)::text FROM lignes_facture t WHERE societe_id=%(s)s ORDER BY id]&#10;[parameters: {'s': 8}]&#10;(Background on this error at: https://sqlalche.me/e/20/f405)">self = &lt;sqlalchemy.engine.base.Connection object at 0x000001DFF9780810&gt;
+dialect = &lt;sqlalchemy.dialects.postgresql.psycopg2.PGDialect_psycopg2 object at 0x000001DFF6669910&gt;
+context = &lt;sqlalchemy.dialects.postgresql.psycopg2.PGExecutionContext_psycopg2 object at 0x000001DFF97802D0&gt;
+statement = &lt;sqlalchemy.dialects.postgresql.base.PGCompiler object at 0x000001DFF9780910&gt;
+parameters = [{'s': 8}]
+
+    def _exec_single_context(
+        self,
+        dialect: Dialect,
+        context: ExecutionContext,
+        statement: Union[str, Compiled],
+        parameters: Optional[_AnyMultiExecuteParams],
+    ) -&gt; CursorResult[Any]:
+        """continue the _execute_context() method for a single DBAPI
+        cursor.execute() or cursor.executemany() call.
+    
+        """
+        if dialect.bind_typing is BindTyping.SETINPUTSIZES:
+            generic_setinputsizes = context._prepare_set_input_sizes()
+    
+            if generic_setinputsizes:
+                try:
+                    dialect.do_set_input_sizes(
+                        context.cursor, generic_setinputsizes, context
+                    )
+                except BaseException as e:
+                    self._handle_dbapi_exception(
+                        e, str(statement), parameters, None, context
+                    )
+    
+        cursor, str_statement, parameters = (
+            context.cursor,
+            context.statement,
+            context.parameters,
+        )
+    
+        effective_parameters: Optional[_AnyExecuteParams]
+    
+        if not context.executemany:
+            effective_parameters = parameters[0]
+        else:
+            effective_parameters = parameters
+    
+        if self._has_events or self.engine._has_events:
+            for fn in self.dispatch.before_cursor_execute:
+                str_statement, effective_parameters = fn(
+                    self,
+                    cursor,
+                    str_statement,
+                    effective_parameters,
+                    context,
+                    context.executemany,
+                )
+    
+        if self._echo:
+            self._log_info(str_statement)
+    
+            stats = context._get_cache_stats()
+    
+            if not self.engine.hide_parameters:
+                self._log_info(
+                    "[%s] %r",
+                    stats,
+                    sql_util._repr_params(
+                        effective_parameters,
+                        batches=10,
+                        ismulti=context.executemany,
+                    ),
+                )
+            else:
+                self._log_info(
+                    "[%s] [SQL parameters hidden due to hide_parameters=True]",
+                    stats,
+                )
+    
+        evt_handled: bool = False
+        try:
+            if context.execute_style is ExecuteStyle.EXECUTEMANY:
+                effective_parameters = cast(
+                    "_CoreMultiExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_executemany:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_executemany(
+                        cursor,
+                        str_statement,
+                        effective_parameters,
+                        context,
+                    )
+            elif not effective_parameters and context.no_parameters:
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute_no_params:
+                        if fn(cursor, str_statement, context):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_execute_no_params(
+                        cursor, str_statement, context
+                    )
+            else:
+                effective_parameters = cast(
+                    "_CoreSingleExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+&gt;                   self.dialect.do_execute(
+                        cursor, str_statement, effective_parameters, context
+                    )
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1967: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.dialects.postgresql.psycopg2.PGDialect_psycopg2 object at 0x000001DFF6669910&gt;
+cursor = &lt;cursor object at 0x000001DFF97AECE0; closed: -1&gt;
+statement = 'SELECT row_to_json(t)::text FROM lignes_facture t WHERE societe_id=%(s)s ORDER BY id'
+parameters = {'s': 8}
+context = &lt;sqlalchemy.dialects.postgresql.psycopg2.PGExecutionContext_psycopg2 object at 0x000001DFF97802D0&gt;
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+&gt;       cursor.execute(statement, parameters)
+E       psycopg2.errors.UndefinedColumn: column "societe_id" does not exist
+E       LINE 1: ... row_to_json(t)::text FROM lignes_facture t WHERE societe_id...
+E                                                                    ^
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py:941: UndefinedColumn
+
+The above exception was the direct cause of the following exception:
+
+application = {'api_url': 'http://127.0.0.1:53636', 'web_url': 'http://127.0.0.1:53637', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_ydduhwjv'), 'nonce': '1668836498d148308aaca133ffd2003c', ...}, ...}
+
+    def test_923_pdf_exact_logo_source_audit_rejeu_et_comptabilite(application):
+     with closing(client(application)[0]) as api:
+&gt;     ok(api.patch('/api/societe/moi',json={'logo_url':image_data()}));f=creer_facture(api);u=ok(api.get('/api/auth/me'));avant=comptabilite(application,u['societe_id']);assert ok(api.get(path(f)))=={'copie':None,'disponible':True}
+                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_factures_conservation923_isole.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_factures_conservation923_isole.py:37: in comptabilite
+    with app['engine'].connect() as db:return {t:list(db.scalars(text(f'SELECT row_to_json(t)::text FROM {t} t WHERE societe_id=:s ORDER BY id'),{'s':sid})) for t in ['factures','lignes_facture','ecritures','lignes_ecriture','reglements']}
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Test\test_factures_conservation923_isole.py:37: in &lt;dictcomp&gt;
+    with app['engine'].connect() as db:return {t:list(db.scalars(text(f'SELECT row_to_json(t)::text FROM {t} t WHERE societe_id=:s ORDER BY id'),{'s':sid})) for t in ['factures','lignes_facture','ecritures','lignes_ecriture','reglements']}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1352: in scalars
+    return self.execute(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1418: in execute
+    return meth(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\sql\elements.py:515: in _execute_on_connection
+    return connection._execute_clauseelement(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1640: in _execute_clauseelement
+    ret = self._execute_context(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1846: in _execute_context
+    return self._exec_single_context(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1986: in _exec_single_context
+    self._handle_dbapi_exception(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:2355: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1967: in _exec_single_context
+    self.dialect.do_execute(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.dialects.postgresql.psycopg2.PGDialect_psycopg2 object at 0x000001DFF6669910&gt;
+cursor = &lt;cursor object at 0x000001DFF97AECE0; closed: -1&gt;
+statement = 'SELECT row_to_json(t)::text FROM lignes_facture t WHERE societe_id=%(s)s ORDER BY id'
+parameters = {'s': 8}
+context = &lt;sqlalchemy.dialects.postgresql.psycopg2.PGExecutionContext_psycopg2 object at 0x000001DFF97802D0&gt;
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+&gt;       cursor.execute(statement, parameters)
+E       sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column "societe_id" does not exist
+E       LINE 1: ... row_to_json(t)::text FROM lignes_facture t WHERE societe_id...
+E                                                                    ^
+E       
+E       [SQL: SELECT row_to_json(t)::text FROM lignes_facture t WHERE societe_id=%(s)s ORDER BY id]
+E       [parameters: {'s': 8}]
+E       (Background on this error at: https://sqlalche.me/e/20/f405)
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py:941: ProgrammingError</failure></testcase><testcase classname="Test.test_factures_conservation923_isole" name="test_923_brouillon_proforma_achat_non_acceptes[params0]" time="0.445" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_brouillon_proforma_achat_non_acceptes[params1]" time="0.462" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_brouillon_proforma_achat_non_acceptes[params2]" time="0.471" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_societes_lecture_et_revocation" time="0.956" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_double_clic_concurrent_et_payload_non_substituable" time="0.743" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_gardes_sql_role_limite_et_aucune_substitution" time="0.533" /><testcase classname="Test.test_factures_conservation923_isole" name="test_923_absence_migration_n_empeche_pas_pdf_habituel" time="4.100" /></testsuite></testsuites>

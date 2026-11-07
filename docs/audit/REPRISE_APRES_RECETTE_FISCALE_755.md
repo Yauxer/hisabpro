@@ -1,0 +1,11 @@
+# Reprise après755
+
+749,751,753,755 terminés et ZIPs vérifiés : ne pas réappliquer. Lire AGENTS et tout CODEX_PROGRESS, journal état, processus et archives. Le dépôt est sans .git ; utiliser baselines immuables et empreintes. Aucun PostgreSQL réel ni données réelles utilisés. Les processus historiques non possédés ont été conservés.
+
+État : crédits qualifiés749 (dates d’allocation/payeur), acomptes751 (rapprochements par référence), proposition conditionnelle753 (sources cohérentes et CSS distincte), puis recette annuelle755 depuis inscription/logo/CSV et six formulaires réels jusqu’au solde3650 et exports. Seven versions, admin1440/comptable390 ; restauration104/83tables/six fichiers. Données/cahier/Excel sous docs/recette ;38nouveauxcas humains Non testé. 1223sources/scripts figés à755 et117protections conservées. Aucun fichier produit modifié dans755 ; build753 toujours applicable. Aucun droit à report/restitution, dépôt ou paiement réel confirmé.
+
+Prochaine tâche indépendante : analyser LIA-09F, rémunérations allouées aux tiers. Vérifier implémentations déjà présentes (RAS factures, bénéficiaires/attestations, annexes liasse) et référentiel officiel applicable avant de coder. Une préparation interne sourcée et explicitement distincte d’un dépôt est envisageable ; ne pas déduire bénéficiaires/adresses/natures ni taux depuis simples comptes. Si schéma officiel ou sources manquent, documenter le blocage et poursuivre une tâche indépendante. Ne pas réécrire les données historiques.
+
+Restent : référentiel DGI exhaustif09B et EDI09C avec spécifications officielles,09F/09G selon preuves, exhaustivité dossier09H, cohérence et recette humaine globale/environnement cible. Définir le périmètre exact avant de reclasser une ligne de matrice ;70statuts restent16terminés47partiels3absents4bloqués. Réserves FEC/ETIC historiques visibles. RH/paie et point6 humain différés ; ne pas les reprendre sans demande. Office natif, PostgreSQL cible, conformité réglementaire et production non validés automatiquement.
+
+Campagnes finales755 : commune10,annuelle2,UI2/API4/restauration1 recouvrantes. Les deux premières erreurs de banc (.test et payload partagé) sont corrigées, conservées au rapport et entièrement rejouées ; aucune règle produit assouplie. Garder les anciens ZIPs et preuves inchangés. Ne pas exécuter d’anciens finaliseurs.

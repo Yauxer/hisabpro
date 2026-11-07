@@ -1,0 +1,24 @@
+{
+  "societes_fictives": [
+    "Pièces A747",
+    "Pièces B747"
+  ],
+  "devise": "MAD",
+  "exercice": 2026,
+  "roles_meme_utilisateur": {
+    "A": "admin",
+    "B": "lecture"
+  },
+  "fichier": "JUSTIFICATIF_FICTIF747.pdf",
+  "reference": "RECETTE-FICTIVE747",
+  "taille": 1509,
+  "sha256": "f7f82980ad02897535e7dcafea9ed5f9f1c6f126596aabb157b73636b6383472",
+  "attendus": {
+    "envoi_courant": "une pièce dansA",
+    "ancien_refus": "sessionB conservée",
+    "ancien_succes": "pièceA préservée,sansrejeu ni restitutionB",
+    "ecritures_creees": 0
+  },
+  "statut_humain": "Non testé",
+  "limite": "Fichier et sociétés exclusivement fictifs,bac isolé,responsable pour latence."
+}

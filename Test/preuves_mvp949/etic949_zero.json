@@ -1,0 +1,106 @@
+{
+  "vide": {
+    "code": "B6",
+    "groupe": "B",
+    "titre": "Tableau des créances",
+    "mode": "assiste",
+    "type_saisie": "ventilation",
+    "automatique": {
+      "colonnes": [
+        "compte",
+        "intitule",
+        "montant"
+      ],
+      "lignes": [
+        {
+          "compte": "3421",
+          "intitule": "Clients",
+          "montant": 480.0
+        }
+      ],
+      "avertissement": "Les échéances des factures clients sont préremplies automatiquement lorsqu'elles recoupent exactement le solde comptable ; les autres ventilations restent extra-comptables."
+    },
+    "contenu": {
+      "confirme": false,
+      "autres_analyses_neant": true,
+      "ventilations": {
+        "3421": {
+          "plus_un_an": 0,
+          "moins_un_an": 0,
+          "echues": ""
+        }
+      }
+    },
+    "complete": false,
+    "ventilation": [
+      {
+        "compte": "3421",
+        "intitule": "Clients",
+        "total": 480.0,
+        "plus_un_an": 0.0,
+        "moins_un_an": 0.0,
+        "echues": null,
+        "devises": 0.0,
+        "etat_organismes_publics": 0.0,
+        "entreprises_liees": 0.0,
+        "effets": 0.0
+      }
+    ],
+    "erreurs_ventilation": [
+      "3421 : renseignez la ventilation échues et non recouvrées."
+    ],
+    "updated_at": "2026-10-29T20:24:12.425602"
+  },
+  "zero": {
+    "code": "B6",
+    "groupe": "B",
+    "titre": "Tableau des créances",
+    "mode": "assiste",
+    "type_saisie": "ventilation",
+    "automatique": {
+      "colonnes": [
+        "compte",
+        "intitule",
+        "montant"
+      ],
+      "lignes": [
+        {
+          "compte": "3421",
+          "intitule": "Clients",
+          "montant": 480.0
+        }
+      ],
+      "avertissement": "Les échéances des factures clients sont préremplies automatiquement lorsqu'elles recoupent exactement le solde comptable ; les autres ventilations restent extra-comptables."
+    },
+    "contenu": {
+      "confirme": false,
+      "autres_analyses_neant": true,
+      "ventilations": {
+        "3421": {
+          "plus_un_an": 0,
+          "moins_un_an": 480,
+          "echues": 0
+        }
+      },
+      "notes": "Ventilation manuelle FICTIVE de recette : zéro explicite, sans qualification de données réelles."
+    },
+    "complete": false,
+    "ventilation": [
+      {
+        "compte": "3421",
+        "intitule": "Clients",
+        "total": 480.0,
+        "plus_un_an": 0.0,
+        "moins_un_an": 480.0,
+        "echues": 0.0,
+        "devises": 0.0,
+        "etat_organismes_publics": 0.0,
+        "entreprises_liees": 0.0,
+        "effets": 0.0
+      }
+    ],
+    "erreurs_ventilation": [],
+    "updated_at": "2026-10-29T20:24:12.542712"
+  },
+  "ecritures_inchangees": true
+}

@@ -1,0 +1,430 @@
+{
+  "date": "2026-10-29",
+  "nombre_distinct": 64,
+  "campagne_unique_verte": true,
+  "repartition": {
+    "unitaires": 26,
+    "API_SQL_PostgreSQL_natif_isole": 28,
+    "Edge_API_PostgreSQL_natif_isole": 9,
+    "restauration_PostgreSQL_native_isolee": 1
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[normal]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[c1]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[c3]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[base_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[classe_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[base_non_revue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[classe_non_revue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[periode_non_revue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[referentiel]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[exhaustivite]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[profil_partiel]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[annee_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[annee2025]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[annee2027]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[janvier]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[particulier]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[sans_local]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[avis_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[avis_non_rattache]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[avis_ref_vide]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[avis_partage]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[zero]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[petit]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[arrondi]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[grand]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_oracles_qualification_et_absence_de_du[periode_balance_distincte]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-0.001]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-10000000000000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[valeur_locative-1e9999]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[montant_avis-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[montant_avis--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[classe-C4]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[classe-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[base_revue-automatique]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[regime-Exon\\xe9r\\xe9 automatiquement]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[etablissement_ref-]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[reference_source-]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_rejets_sans_mutation[inconnu-0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[omission]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[profil_double]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[etablissement_double]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[annee_invalide]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[annee_bool]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[du_injecte]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[neant_contradictoire]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_api_structures[51etablissements]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_versions_rejeu_sources_hors_journal",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_roles_societes_concurrence",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_taxe_professionnelle761_isole::test_761_exports_sources_logo_texte",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_formulaire_natif_roles_versions_exports[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_nan_refuse_base_incomplete_puis_reprise_sans_f5[NaN]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_nan_refuse_base_incomplete_puis_reprise_sans_f5[Infinity]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_get_reel_tardif_ignore[version]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_get_reel_tardif_ignore[fermeture]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_get_reel_tardif_ignore[jeton]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_e2e_taxe_professionnelle761_isole::test_761_post_reel_tardif_ne_remplace_pas_selection",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_qualification_tp937_isole::test_937_variantes_base_classe_avis_conservees_sans_du_ni_ecriture",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    },
+    {
+      "id": "Test.test_restauration_tp761_isole::test_761_restaurer_cm_qualifiee_et_tous_complements",
+      "famille": "restauration_PostgreSQL_native_isolee",
+      "statut": "reussi",
+      "campagne": "tp937_final"
+    }
+  ],
+  "selection": [
+    "Test/test_taxe_professionnelle761_isole.py",
+    "Test/test_e2e_taxe_professionnelle761_isole.py",
+    "Test/test_qualification_tp937_isole.py",
+    "Test/test_restauration_tp761_isole.py"
+  ],
+  "duree_xml_s": 203.36,
+  "code_sortie": 0,
+  "execution": "PYTHON_DOTENV_DISABLED=1 ;SECRET_KEY fictive,DATABASE_URL inerte port1 ;python .codex-tests/lancer_session.py tp937_final <selection> ;fixtures PG/serveurs nonce.",
+  "historique_non_additionne": [
+    "Reprise61réussis/110.97s,code0,tests761 existants",
+    "Cible4réussis/120.35s,code0 :deux non finisUI,versionsAPI et restauration ;répétitions non additionnées"
+  ],
+  "preuves": {
+    "Test/preuves_mvp937/restauration761_preuve.json": "19a4aa88ca7eb9bbdd149e998f812824362aab90388b0ec695e391d137cc53ae",
+    "Test/preuves_mvp937/tp761_admin_preuve.json": "015f4fe6d458b67258fe71a3ff41682a6019e2770cecc25fd6402395345275b6",
+    "Test/preuves_mvp937/tp761_comptable_preuve.json": "e63698f15c460c84b86944bf928ed4b4a07be8d9fd1868a6f0a7a4ca9fc285e1",
+    "Test/preuves_mvp937/tp761_lecture_preuve.json": "225a4597b99fcc3d06f05cf46ee870b2fd8b9e5038e66f5bc07e15d09b4f01a8",
+    "Test/preuves_mvp937/tp937_cible.xml": "e3c84fe200e49e74942ebbc88ea86a2d14d88b4e961ce827668a51942576a0b5",
+    "Test/preuves_mvp937/tp937_final.xml": "f4fceebf440c6ebfaf020a4266e98dcc5c52e5a900e6430e0bc30d1c602a811c",
+    "Test/preuves_mvp937/tp937_reprise.xml": "672cc3956b07b9b2d92ad33200a24e40e75e2b7c569311bde37d2770dffe482f",
+    "Test/preuves_mvp937/tp937_variantes.json": "3015a95f63566c07e430032a1b3f4094996ab1416e7739ae87aab8f9c968aa64"
+  },
+  "rattachement": "Test/QUALIFICATION_FICHES_937.json",
+  "fiches_qualifiees": 8,
+  "candidat": "Test/CANDIDAT_MVP_937.json",
+  "nombre_fichiers_candidat": 549,
+  "produit_identique_au_931": true,
+  "build": "Non relancé,frontend inchangé ;dernier réel931 :214modules/5.55s,code0.",
+  "anciens_documents_preserves": 329,
+  "aucune_base_reelle": true,
+  "restauration": "Restauration froide native du banc761 :83tables,données/schéma/ACL/séquences identiques,pièces/logos/versions relus,source préservée,cibles nonce supprimées. Ne qualifie pas la restauration de votre cible complète ou de la paie.",
+  "limites": "Classes et bases pédagogiques explicitement déclarées,aucune activité réelle classée automatiquement. Brut simulé7200,avis déclarés7400,écart−200 ;aucun montant dû,imposition,paiement ou dépôt confirmé. Fiches05–06 variantes par API et calcul indépendant ;gestes humains à faire. Réserves de cession et production inchangées."
+}

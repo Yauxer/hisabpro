@@ -1,0 +1,527 @@
+{
+  "version": 1,
+  "publication": "2026-10-20",
+  "statut_humain": "À effectuer — aucune réussite préremplie",
+  "environnement": "Base de recette isolée uniquement, aucune société réelle.",
+  "societes": {
+    "BAL": "RECETTE BALANCES 683 SARL",
+    "RAS": "RECETTE RAS 683 SARL"
+  },
+  "comptes_recette": {
+    "administrateur": "admin683@example.com",
+    "lecteur": "lecture683@example.com",
+    "mot_de_passe_fictif": "RecetteHisab683!2026"
+  },
+  "exercice": {
+    "annee": 2026,
+    "date_debut": "2026-01-01",
+    "date_fin": "2026-12-31",
+    "statut": "ouvert"
+  },
+  "balance_n": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "44700.00"
+    },
+    {
+      "compte": "2311",
+      "debit": "1000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2321",
+      "debit": "2000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2331",
+      "debit": "3000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2340",
+      "debit": "4000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2351",
+      "debit": "5000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2380",
+      "debit": "6000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "28321",
+      "debit": "0.00",
+      "credit": "300.00"
+    },
+    {
+      "compte": "3111",
+      "debit": "7000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "3421",
+      "debit": "8000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "14000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "6111",
+      "debit": "1000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "7111",
+      "debit": "0.00",
+      "credit": "6000.00"
+    }
+  ],
+  "balance_n1": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "22350.00"
+    },
+    {
+      "compte": "2311",
+      "debit": "500.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2321",
+      "debit": "1000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2331",
+      "debit": "1500.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2340",
+      "debit": "2000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2351",
+      "debit": "2500.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2380",
+      "debit": "3000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "28321",
+      "debit": "0.00",
+      "credit": "150.00"
+    },
+    {
+      "compte": "3111",
+      "debit": "3500.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "3421",
+      "debit": "4000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "7000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "6111",
+      "debit": "500.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "7111",
+      "debit": "0.00",
+      "credit": "3000.00"
+    }
+  ],
+  "fichiers": {
+    "n": "BALANCE_FICTIVE_N_683.csv",
+    "n1": "BALANCE_FICTIVE_N1_683.csv",
+    "logo": "LOGO_FICTIF_683.png"
+  },
+  "oracle_balances": {
+    "comptes": 13,
+    "total_debit": "51000.00",
+    "total_credit": "51000.00",
+    "brut": "50000.00",
+    "amortissements": "300.00",
+    "actif_net": "49700.00",
+    "passif": "49700.00",
+    "cpc": "5000.00",
+    "n1_actif_net": "24850.00",
+    "n1_cpc": "2500.00",
+    "immobilisations_corporelles_brut": "21000.00",
+    "immobilisations_corporelles_net": "20700.00"
+  },
+  "ras": {
+    "date_operation": "2026-10-19",
+    "fournisseur": "FOURNISSEUR FICTIF RR683",
+    "article": "SERVICE FICTIF RR683",
+    "prix_ht": "10000.00",
+    "tva_pct": "20",
+    "ttc": "12000.00",
+    "capital": "100000.00",
+    "references": {
+      "capital": "CAP-RR683",
+      "facture": "FOURN-RR683",
+      "cash": "VIR-RR683",
+      "capture": "RAS-RR683",
+      "versement": "VERSEMENT-RR683"
+    },
+    "simulation": {
+      "date_paiement": "2026-10-19",
+      "payeur": "pm_privee_assujettie",
+      "prestataire": "pp_assujettie",
+      "prestation_liste_b": true,
+      "exclusion": "aucune_apres_controle",
+      "attestation": "presentee",
+      "date_attestation": "2026-09-01",
+      "reference_attestation": "ATTESTATION-FICTIVE-RR683",
+      "montant_paiement_ttc": "6000.00",
+      "tva_paiement": "1000.00"
+    },
+    "justification_quote_part": "VENTILATION FICTIVE RR683 : 5000 HT + 1000 TVA = 6000 TTC",
+    "compte_capture_choisi": "4457",
+    "cash": "5250.00",
+    "retenue": "750.00"
+  },
+  "oracle_ras": {
+    "avant_versement": {
+      "pieces": 4,
+      "lignes": 9,
+      "debit": "118000.00",
+      "credit": "118000.00",
+      "banque": "94750.00",
+      "fournisseur_crediteur": "6000.00",
+      "compte4457_crediteur": "750.00",
+      "cpc": "-10000.00",
+      "bilan": "96750.00"
+    },
+    "apres_versement": {
+      "pieces": 5,
+      "lignes": 11,
+      "debit": "118750.00",
+      "credit": "118750.00",
+      "banque": "94000.00",
+      "fournisseur_crediteur": "6000.00",
+      "compte4457": "0.00",
+      "cpc": "-10000.00",
+      "bilan": "96000.00"
+    },
+    "rapprochement_partiel": {
+      "rapproche": "300.00",
+      "capacite_documentaire": "450.00"
+    },
+    "rapprochement_complet": {
+      "rapproche": "750.00",
+      "capacite_documentaire": "0.00"
+    },
+    "retrait_du_second": {
+      "rapproche": "300.00",
+      "capacite_documentaire": "450.00"
+    },
+    "impact_de_chaque_lien_ou_retrait": {
+      "pieces": 0,
+      "lignes": 0,
+      "debit": "0.00",
+      "credit": "0.00"
+    }
+  },
+  "limites": [
+    "Qualifications RAS supposées du laboratoire, aucun dossier réel qualifié.",
+    "Compte4457 explicitement choisi dans le jeu, pas imposé réglementairement.",
+    "Liasse seule complète, ETIC/fiscalité/annexes et formats officiels toujours partiels ou bloqués.",
+    "Le rapprochement n’est ni preuve de versement DGI ni crédit imputable ; aucune déclaration automatique déverrouillée.",
+    "Installation103 réelle, recette humaine et production non validées. RH/paie différées."
+  ],
+  "cas": [
+    {
+      "id": "BAL683-01",
+      "module": "Balances",
+      "objectif": "Créer la société de balances",
+      "prerequis": "Administrateur et base vierge isolée fournis par le technicien. Application et migration103 préparées sur cette seule cible.",
+      "donnees": "RECETTE BALANCES 683 SARL ; MAD ; exercice2026 du01/01 au31/12.",
+      "actions": "Créer une nouvelle société depuis le sélecteur. Vérifier son plan et l’exercice2026 ouvert. Choisir cette société. Les ICE/IF manquants restent signalés ; ne pas inventer de références réelles.",
+      "attendu": "Société distincte, comptes du CSV présents dans son plan, aucune écriture au Journal.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "BAL683-02",
+      "module": "Balances",
+      "objectif": "Importer N et N-1",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "BALANCE_FICTIVE_N_683.csv et BALANCE_FICTIVE_N1_683.csv,13comptes chacun.",
+      "actions": "Comptabilité → Liasse fiscale → Préparer depuis des balances externes → Importer N / N-1. Joindre les deux CSV fournis, puis Contrôler et préparer.",
+      "attendu": "Débit=crédit51000MAD ; actif/passif49700 ; CPC5000 ; N-1 actif24850 et CPC2500. Aucune archive fiscale ni écriture créée.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "BAL683-03",
+      "module": "Balances",
+      "objectif": "Conserver et rouvrir la version",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "Préparation contrôlée du cas02.",
+      "actions": "Cliquer Conserver une nouvelle version. Relever version1 et son empreinte. Recharger la page, ouvrir Importer N / N-1 puis sélectionner version1 dans Préparations conservées, sans joindre les CSV à nouveau.",
+      "attendu": "Même version, même empreinte et mêmes totaux. Les fichiers sources normalisés ont été conservés.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "BAL683-04",
+      "module": "Balances",
+      "objectif": "Vérifier le détail des immobilisations",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "Corps : brut21000, amortissements300, net20700 ; N-1 net10350.",
+      "actions": "Dans version1, cliquer Consulter le bilan et les comptes sources. Choisir Actif. Rechercher visuellement les sous-postes231/232/233/234/235/238. Sur mobile, faire défiler horizontalement le tableau pour lire les colonnes de droite.",
+      "attendu": "Bruts1000/2000/3000/4000/5000/6000. Les amortissements et nets non ventilés restent Indisponible. Total général brut50000/amortissements300/net49700 ; N-1 net24850. Ne pas additionner les sous-postes une seconde fois.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "BAL683-05",
+      "module": "Balances",
+      "objectif": "Consulter les comptes sources N/N-1",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "Compte28321 : crédit300 enN,150 enN-1.",
+      "actions": "Dans Comptes sources normalisés, sélectionner N et rechercher28321. Vérifier une seule ligne. Passer à N-1 et rechercher28321 à nouveau. Rechercher9999999999, puis effacer le filtre.",
+      "attendu": "Crédit300 puis150, aucun compte pour9999999999 ; effacement retrouve13comptes. Aucun intitulé historique inventé depuis le plan courant.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "BAL683-06",
+      "module": "Balances",
+      "objectif": "Exporter la version contrôlée",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "Version1 et empreinte relevée au cas03 ; fichier LOGO_FICTIF_683.png fourni.",
+      "actions": "Dans les paramètres de la société fictive, importer LOGO_FICTIF_683.png, simple rectangle bleu de test. Revenir à la version1 de préparation. Cliquer Exporter la préparation Excel puis Exporter la préparation PDF. Ouvrir les documents et comparer version/empreinte, bilans, CPC et balances sources.",
+      "attendu": "Exercice2026/version1/même empreinte. PDF et Excel montrent le détail et les comptes. Le motif bleu est présent. Le logo/identité actuels sont hors empreinte ; aucune ancienne version n’est réécrite.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "BAL683-07",
+      "module": "Balances",
+      "objectif": "Vérifier N-1 absent et préservation de version1",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "Réimporter uniquement BALANCE_FICTIVE_N_683.csv.",
+      "actions": "Actualiser la page puis importer seulement N, contrôler et conserver version2. Consulter le détail et sélectionner N-1. Revenir ensuite à version1 et réexporter son PDF.",
+      "attendu": "Version2 : N-1 indisponible, jamais supposé nul. Version1 conserve sa sourceN-1, son empreinte et ses chiffres ; son export porte toujoursv1.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "RRP683-01",
+      "module": "Rapprochements RAS",
+      "objectif": "Préparer les quatre pièces sources du jeu",
+      "prerequis": "Société de recette distincte des balances. Qualifications supposées du laboratoire et données JSON complètes ; ne pas utiliser ces faits pour qualifier une opération réelle.",
+      "donnees": "Nouvelle société RECETTE RAS 683 SARL ; capital100000 ; facture12000TTC ; cash5250 ; capture750 ; date19/10/2026.",
+      "actions": "Créer la société RAS distincte enMAD, exercice2026 ouvert, TVA encaissement, prorata du laboratoire100%. Saisir auJournalBQ CAP-RR683 : débit5141=100000, crédit1111=100000, puis valider. Créer le fournisseur FOURNISSEUR FICTIF RR683. Créer une facture achat du19/10/2026 référenceFOURN-RR683, service quantité1 prixHT10000 TVA20%, charge déductible100% du laboratoire. Valider la facture, comptabiliser et valider son écriture. Enregistrer un virement5250 référenceVIR-RR683 comptabilisé, puis valider sa pièce. Dans le règlement, utiliser l’assistant TVA117-V-b : payeur personne morale privée assujettie, prestataire personne physique assujettie, listeB oui, aucune exclusion après contrôle dans ce seul jeu, attestation présentée du01/09/2026 référenceATTESTATION-FICTIVE-RR683 ; quote-part6000TTC dont1000TVA ; justification VENTILATION FICTIVE RR683 : 5000 HT + 1000 TVA = 6000 TTC. Choisir4457, référenceRAS-RR683, confirmer et valider l’OD750.",
+      "attendu": "4pièces validées/9lignes ; débit=crédit118000 ; banque94750 ; fournisseur créditeur6000 ; compte4457 créditeur750 ; résultat−10000 ; bilan96750.",
+      "ecritures": "Capital : D5141/C1111=100000. Achat : D6111=10000,D34552=2000,C4411=12000. Cash : D4411/C5141=5250. Capture : D4411/C4457=750.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "RRP683-02",
+      "module": "Rapprochements RAS",
+      "objectif": "Saisir la pièce de versement à rapprocher",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "RéférenceVERSEMENT-RR683, date19/10/2026, débit4457=750, crédit5141=750.",
+      "actions": "Dans Journal, créer la pièceBQ VERSEMENT-RR683 avec les deux lignes indiquées, puis la valider. Consulter ses montants avant toute création de rapprochement.",
+      "attendu": "5pièces validées/11lignes ; débit=crédit118750 ; banque94000 ;4457soldé ; fournisseur6000 ; CPC−10000 ; bilan96000.",
+      "ecritures": "Une nouvelle pièce de750 au débit et au crédit. Aucune date de paiement fiscal n’est déduite de sa date comptable.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "RRP683-03",
+      "module": "Rapprochements RAS",
+      "objectif": "Rapprocher une première part300",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "Capture750 ; pièce validéeVERSEMENT-RR683 ; montant300.",
+      "actions": "Déclaration TVA → Registre des retenues TVA2026 → capture sur achat → Rapprochement comptable d’un versement. Chercher VERSEMENT-RR683, sélectionner la pièce, saisir300, confirmer le rapprochement documentaire puis enregistrer.",
+      "attendu": "Lien actif300, capacité documentaire450 ; acteur et empreinte visibles. Journal inchangé à5pièces/11lignes et118750MAD.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "RRP683-04",
+      "module": "Rapprochements RAS",
+      "objectif": "Compléter par450",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "Même capture et même pièce ; montant450.",
+      "actions": "Sélectionner à nouveau la pièce disponible, saisir450, confirmer et enregistrer. Actualiser les rapprochements.",
+      "attendu": "Deux liens actifs300+450=750 ; capacité documentaire0. Aucun double paiement ni écriture supplémentaire.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "RRP683-05",
+      "module": "Rapprochements RAS",
+      "objectif": "Retirer le lien450",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "Motif : ERREUR DOCUMENTAIRE FICTIVE RR683.",
+      "actions": "Sur le lien450, cliquer Retirer le rapprochement, saisir exactement le motif, puis Confirmer le retrait documentaire. Relire la trace après actualisation.",
+      "attendu": "Lien300 actif et lien450 retiré conservés. Montant rapproché300, capacité documentaire450. Le versement comptabilisé reste750 :450n’est pas un reste fiscal à payer.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "RRP683-06",
+      "module": "Rapprochements RAS",
+      "objectif": "Refuser un dépassement",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "Après retrait, capacité450 ; tentative500 sur la même pièce.",
+      "actions": "Choisir la pièceVERSEMENT-RR683, saisir500, confirmer puis enregistrer. Lire l’alerte et actualiser les rapprochements.",
+      "attendu": "Rejet explicite ; montant rapproché toujours300, capacité450 et deux traces. Aucun changement de pièce, lien ou retrait.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "RRP683-07",
+      "module": "Rapprochements RAS",
+      "objectif": "Vérifier le lecteur et le PDF",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "Compte Lecture lecture683@example.com, mot de passe fictif RecetteHisab683!2026 ; LOGO_FICTIF_683.png.",
+      "actions": "Dans la société RAS, importer le logo de test dans les paramètres puis créer le compte Lecture indiqué depuis Administration → Utilisateurs. Se déconnecter et se reconnecter avec ce compte. Ouvrir la capture et les rapprochements. Vérifier l’absence de commandes de création/retrait. Télécharger PDF des rapprochements documentaires et l’ouvrir.",
+      "attendu": "Lecture et PDF autorisés ; liens actif300/retiré450 et motif conservés, empreintes et références exactes. Logo actuel si configuré. Le PDF interne ne vaut pas reçu fiscal.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    },
+    {
+      "id": "RRP683-08",
+      "module": "Rapprochements RAS",
+      "objectif": "Vérifier le cloisonnement et le sens des soldes",
+      "prerequis": "Cas précédent terminé sur base fictive isolée.",
+      "donnees": "Société BAL du cas01, ne contenant aucune capture RAS de la société RAS.",
+      "actions": "Revenir au compte administrateur, sélectionner RECETTE BALANCES 683 SARL et ouvrir son registre TVA2026. Vérifier l’absence de captureRR683. Revenir ensuite à la société RAS et retrouver les deux traces.",
+      "attendu": "Aucune capture ni pièce de l’autre société visible. Retour : mêmes liens et écritures. Déclaration/imputation/versement DGI toujours distincts de cette preuve documentaire.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune validation fiscale automatique ; hypothèses du laboratoire seulement.",
+      "controles": "Comparer aux montants de l’oracle et conserver la preuve.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuve_attendue": "Capture de l’écran et export lorsqu’il est indiqué.",
+      "preuves": "",
+      "observations": ""
+    }
+  ]
+}

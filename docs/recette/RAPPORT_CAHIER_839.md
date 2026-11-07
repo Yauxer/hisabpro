@@ -1,0 +1,21 @@
+# HisabPro — cycle annuel final et intégrité comptable
+
+La campagne repart d'une société fictive neuve et utilise les formulaires réels dans Edge aux largeurs1440 et390, avec API et PostgreSQL natif isolé. Les50opérations du jeu source sont produites par les modules : capital, achats et ventes, cycle devis/commande/livraison/facture, avoir, règlements partiels et complets, chèques et effets, acompte, banque, stock, immobilisation, inventaire et régularisations. Les calculs attendus viennent du jeu chiffré antérieur ; aucun résultat attendu n'est injecté pour faire passer une écriture automatique.
+
+Le lettrage est effectué sur les écritures réellement générées par les factures, avoirs, acomptes et règlements : fournisseur marchandises dans le cycle initial, puis clients marchandises/services et fournisseur services. Les codes comportent au moins trois lettres, les groupes sont équilibrés et relus après rechargement ; les montants du journal restent identiques.
+
+Les protections sont exercées sur les documents réellement créés. VENTE-01 ne peut pas être comptabilisée deux fois409 ; son prix250 ne peut plus devenir251 après validation. Une écriture définitive refuse édition et suppression423. Janvier2025 est fermé puis rouvert par le formulaire administrateur ; la tentative du15janvier est refusée423 et les deux transitions sont auditées avec acteur et motif. Une clôture2027 prématurée est refusée409 sans changement des comptes.
+
+Après inventaire et contrôles de clôture, le résultat net du scénario atteint106409,75MAD, le bilan337010MAD et le report d'ouverture2026 est unique, équilibré à343810MAD. Les écritures d'origine restent conservées. Création, édition, suppression et réouverture de période2025 sont refusées après clôture. Une seconde clôture ne crée aucun autre à-nouveau.
+
+Les exports réels et leurs contenus sont contrôlés : bilan, CPC, ESG, livre d'inventaire et FEC. Les immobilisations sont détaillées à24000MAD brut,4800MAD amortis et19200MAD net ; le stock final vaut6600MAD. Le FEC contient145lignes équilibrées à1646060MAD par colonne débit/crédit, avec comptes auxiliaires et références littérales02 et002 distinctes. Les opérations de lecture et d'export ne modifient ni les écritures ni le snapshot fiscal du scénario.
+
+Le livre d'inventaire est archivé depuis son écran. Version, auteur, date et empreinte SHA-256 sont contrôlés ; l'empreinte est recalculée depuis le snapshot canonique. Le PDF archivé contient les montants attendus. Une écriture fictive séparée de1MAD est créée dans l'exercice ouvert2026. Les écritures2025 et l'archive2025 restent identiques ; un deuxième archivage est refusé409. Ce test ne modifie aucune donnée réelle.
+
+Les résultats exacts, durées, essais initiaux et limites sont joints dans PREUVE_CAHIER839.json et les journaux JUnit. Les tests connexes exercent les requêtes concurrentes de factures/règlements, les verrous du Journal, les périodes et les permissions PostgreSQL. La version du produit est inchangée depuis le correctif de calendrier835 ; aucun nouveau build n'est nécessaire ni revendiqué.
+
+La première passe conserve un échec de navigation mobile après45opérations : attente de chargement Clôture15000ms expirée. La passe complète avec archivage ajoute une trace des requêtes en attente, sans retry et sans délai augmenté. Aucun correctif produit de navigation n’est revendiqué. Les réussites finales ne suppriment pas cet incident ; sa cause reste indéterminée si la trace ne récidive pas.
+
+Le suivi automatique atteint158fiches réussies,5partielles,99nonqualifiées individuellement et10bloquées par les sources. Les70statuts fonctionnels globaux sont conservés. Développement du parcours principal présent et tests de cette campagne validés ne signifient pas recette utilisateur ni production validée. La cession et son prorata, l'archivage individuel des factures et les justificatifs historiques restent à traiter selon leurs preuves. Les obligations déclaratives et RH/paie sont séparées du périmètre strict traité ici.
+
+La suite est une vérification de sauvegarde/restauration isolée et un document de décision limité à facturation/comptabilité : preuves acquises, réserves, vérifications sur environnement cible et recette humaine. Aucune connexion au PostgreSQL réel de l'utilisateur n'est effectuée.

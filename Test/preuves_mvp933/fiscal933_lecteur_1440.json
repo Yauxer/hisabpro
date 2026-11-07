@@ -1,0 +1,69 @@
+{
+  "fiche": "F755-10",
+  "largeur": 1440,
+  "lecture_et_export_reels": true,
+  "creation_absente": true,
+  "mutation_API_refusee": 403,
+  "export": {
+    "fichiers": 15,
+    "pages_pdf": 29,
+    "feuilles_excel": [
+      "Logo société",
+      "Dossier",
+      "Bilan actif",
+      "Bilan passif",
+      "CPC N",
+      "ESG N",
+      "CPC N-1",
+      "ESG N-1",
+      "Balance source N",
+      "Balance source N-1",
+      "Origine B12",
+      "Déclaration B12 N",
+      "Contrôle B12 N",
+      "Sources B12 N",
+      "Origine proposition IS",
+      "Proposition IS CM",
+      "Revue proposition IS",
+      "Sources proposition IS",
+      "Répartition simulation IS",
+      "Alertes proposition IS",
+      "Origine acomptes IS",
+      "Contrôle acomptes IS",
+      "AP-PROFIL",
+      "AP-LIGNES",
+      "Rapprochement retenues IS",
+      "Échéancier acomptes IS",
+      "Alertes acomptes IS",
+      "Origine crédits IS",
+      "Contrôle crédits IS",
+      "CR-PROFIL",
+      "CR-LIGNES",
+      "Qualification crédits IS",
+      "Alertes crédits IS",
+      "Origine CSS",
+      "Calcul CSS",
+      "Qualification CSS",
+      "Alertes CSS",
+      "Origine CM",
+      "Calcul CM",
+      "Sources CM",
+      "Qualification CM",
+      "Alertes CM"
+    ],
+    "solde": "3650.00",
+    "logos_pdf_xlsx": true,
+    "sha256_zip": "618c0b507a30e8a42639e22644f665fe847cc308582976d6a42cd1998f57c9b8"
+  },
+  "exports_individuels_reels": {
+    "pdf": {
+      "sha256": "70c9117fbc19dd9a00ce064cd1b74b8290d928fcda6196665cd6b2fc64a45b6f",
+      "montant3650_et_logo_verifies": true
+    },
+    "xlsx": {
+      "sha256": "a35ac45932181721e1e3256e1d65337ecf1f26933dc704934f963ee0ea2fa897",
+      "montant3650_et_logo_verifies": true
+    }
+  },
+  "sources_et_temoin_comptable_definitif_inchanges": true
+}

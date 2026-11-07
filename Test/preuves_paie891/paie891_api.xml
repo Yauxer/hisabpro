@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="6" skipped="0" tests="30" time="96.356" timestamp="2026-10-28T12:43:10.572251+01:00" hostname="Taiyou"><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_arrondi_ligne_independant_et_decimal_exact" time="0.002" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_quantites_taux_non_exacts_refuses[True]" time="0.003" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_quantites_taux_non_exacts_refuses[0.1]" time="0.001" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_quantites_taux_non_exacts_refuses[NaN]" time="0.002" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_quantites_taux_non_exacts_refuses[Infinity]" time="0.001" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_quantites_taux_non_exacts_refuses[-1]" time="0.001" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_quantites_taux_non_exacts_refuses[0.0000001]" time="0.002" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_quantites_taux_non_exacts_refuses[1000000000000]" time="0.002" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement0]" time="0.002" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement1]" time="0.003" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement2]" time="0.002" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement3]" time="0.002" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement4]" time="0.002" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement5]" time="0.002" /><testcase classname="Test.test_paie891_variables_unitaire" name="test_891_combinaisons_ambigues_ou_hors_bornes_refusees[changement6]" time="0.001" /><testcase classname="Test.test_paie891_variables_isole" name="test_891_variable_exacte_sources_approbation_et_absence_ecriture" time="31.793"><failure message="AssertionError: Internal Server Error&#10;assert 500 == 201&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">application = {'api_url': 'http://127.0.0.1:62295', 'web_url': 'http://127.0.0.1:62296', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_h_rosdad'), 'nonce': '080a3dbf7f7e4d03a8635f7f8ffcd602', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x0000015DBDB76510&gt;, 'b': &lt;httpx.Client object at 0x0000015DBDD1F350&gt;, 'l': &lt;httpx.Client object at 0x0000015DBDD0E2D0&gt;, 'uid': 5, ...}
+
+    def test_891_variable_exacte_sources_approbation_et_absence_ecriture(application,equipe):
+        eq=equipe;eid,cid=avec_salaire(eq);rid=rubrique(eq);avant=comptabilite(application,eq['sid'])
+&gt;       var=envoyer(eq,eid,rid);i=var['id'];assert var['montant']=='800.01'
+            ^^^^^^^^^^^^^^^^^^^
+
+Test\test_paie891_variables_isole.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_paie891_variables_isole.py:34: in envoyer
+    def envoyer(eq,eid,rid,**kw):return ok(eq['a'].post(V,json=entree(eid,rid,**kw)),201)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [500 Internal Server Error]&gt;, status = 201
+
+    def ok(r,status=200):
+&gt;       assert r.status_code==status,r.text
+E       AssertionError: Internal Server Error
+E       assert 500 == 201
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+Test\test_multi_societes_runtime_isole.py:49: AssertionError</failure></testcase><testcase classname="Test.test_paie891_variables_isole" name="test_891_quantite_taux_arrondi_documente_et_references_manquantes" time="3.682"><failure message="AssertionError: Internal Server Error&#10;assert 500 == 201&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">equipe = {'a': &lt;httpx.Client object at 0x0000015DBDC0C6D0&gt;, 'b': &lt;httpx.Client object at 0x0000015DBDC3FF90&gt;, 'l': &lt;httpx.Client object at 0x0000015DBDD33510&gt;, 'uid': 8, ...}
+
+    def test_891_quantite_taux_arrondi_documente_et_references_manquantes(equipe):
+        eq=equipe;eid,_=avec_salaire(eq);rid=rubrique(eq,formule='QUANTITE_TAUX')
+        body=entree(eid,rid,mode='QUANTITE_TAUX',montant=None,quantite='3',taux='0.335')
+        body['justificatifs']={};assert eq['a'].post(V,json=body).status_code==400
+        body['justificatifs']={'ATTESTATION_FICTIVE':'SOURCE-FICTIVE891'}
+&gt;       q=ok(eq['a'].post(V,json=body),201);assert q['montant']=='1.01'
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_paie891_variables_isole.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [500 Internal Server Error]&gt;, status = 201
+
+    def ok(r,status=200):
+&gt;       assert r.status_code==status,r.text
+E       AssertionError: Internal Server Error
+E       assert 500 == 201
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+Test\test_multi_societes_runtime_isole.py:49: AssertionError</failure></testcase><testcase classname="Test.test_paie891_variables_isole" name="test_891_erreurs_refusees_sans_reecho[nan]" time="3.657" /><testcase classname="Test.test_paie891_variables_isole" name="test_891_erreurs_refusees_sans_reecho[infini]" time="3.713" /><testcase classname="Test.test_paie891_variables_isole" name="test_891_erreurs_refusees_sans_reecho[booleen]" time="3.662" /><testcase classname="Test.test_paie891_variables_isole" name="test_891_erreurs_refusees_sans_reecho[float]" time="4.050" /><testcase classname="Test.test_paie891_variables_isole" name="test_891_erreurs_refusees_sans_reecho[precision]" time="4.282" /><testcase classname="Test.test_paie891_variables_isole" name="test_891_erreurs_refusees_sans_reecho[negatif]" time="4.119" /><testcase classname="Test.test_paie891_variables_isole" name="test_891_erreurs_refusees_sans_reecho[mois]" time="4.011" /><testcase classname="Test.test_paie891_variables_isole" name="test_891_erreurs_refusees_sans_reecho[premier]" time="3.883" /><testcase classname="Test.test_paie891_variables_isole" name="test_891_erreurs_refusees_sans_reecho[id_booleen]" time="3.889" /><testcase classname="Test.test_paie891_variables_isole" name="test_891_doublons_recurrences_annulation_et_incompatibilites" time="3.930"><failure message="AssertionError: Internal Server Error&#10;assert 500 == 201&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">equipe = {'a': &lt;httpx.Client object at 0x0000015DBDB77350&gt;, 'b': &lt;httpx.Client object at 0x0000015DBDE69BD0&gt;, 'l': &lt;httpx.Client object at 0x0000015DBDD0F510&gt;, 'uid': 38, ...}
+
+    def test_891_doublons_recurrences_annulation_et_incompatibilites(equipe):
+&gt;       eq=equipe;eid,_=avec_salaire(eq);rid=rubrique(eq);a=envoyer(eq,eid,rid)
+                                                            ^^^^^^^^^^^^^^^^^^^
+
+Test\test_paie891_variables_isole.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_paie891_variables_isole.py:34: in envoyer
+    def envoyer(eq,eid,rid,**kw):return ok(eq['a'].post(V,json=entree(eid,rid,**kw)),201)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [500 Internal Server Error]&gt;, status = 201
+
+    def ok(r,status=200):
+&gt;       assert r.status_code==status,r.text
+E       AssertionError: Internal Server Error
+E       assert 500 == 201
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+Test\test_multi_societes_runtime_isole.py:49: AssertionError</failure></testcase><testcase classname="Test.test_paie891_variables_isole" name="test_891_salaire_manquant_et_sources_changees_ne_sont_pas_supposes" time="4.084"><failure message="AssertionError: Internal Server Error&#10;assert 500 == 201&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">equipe = {'a': &lt;httpx.Client object at 0x0000015DBDEFAB90&gt;, 'b': &lt;httpx.Client object at 0x0000015DBDD297D0&gt;, 'l': &lt;httpx.Client object at 0x0000015DBDE2D590&gt;, 'uid': 41, ...}
+
+    def test_891_salaire_manquant_et_sources_changees_ne_sont_pas_supposes(equipe):
+        eq=equipe;rid=rubrique(eq);incomplet=actif(eq)
+        assert eq['a'].post(V,json=entree(incomplet,rid)).status_code==409
+&gt;       eid,cid=avec_salaire(eq,m='AUTRE891');v=envoyer(eq,eid,rid);submit(eq,v['id'])
+                                                ^^^^^^^^^^^^^^^^^^^
+
+Test\test_paie891_variables_isole.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_paie891_variables_isole.py:34: in envoyer
+    def envoyer(eq,eid,rid,**kw):return ok(eq['a'].post(V,json=entree(eid,rid,**kw)),201)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [500 Internal Server Error]&gt;, status = 201
+
+    def ok(r,status=200):
+&gt;       assert r.status_code==status,r.text
+E       AssertionError: Internal Server Error
+E       assert 500 == 201
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+Test\test_multi_societes_runtime_isole.py:49: AssertionError</failure></testcase><testcase classname="Test.test_paie891_variables_isole" name="test_891_societes_capacites_et_options_personnel_seul" time="3.844"><failure message="AssertionError: Internal Server Error&#10;assert 500 == 201&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">application = {'api_url': 'http://127.0.0.1:62295', 'web_url': 'http://127.0.0.1:62296', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_h_rosdad'), 'nonce': '080a3dbf7f7e4d03a8635f7f8ffcd602', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x0000015DBDE34090&gt;, 'b': &lt;httpx.Client object at 0x0000015DBDE37C90&gt;, 'l': &lt;httpx.Client object at 0x0000015DBDE2D990&gt;, 'uid': 44, ...}
+
+    def test_891_societes_capacites_et_options_personnel_seul(application,equipe):
+&gt;       eq=equipe;eid,_=avec_salaire(eq);rid=rubrique(eq);v=envoyer(eq,eid,rid)
+                                                            ^^^^^^^^^^^^^^^^^^^
+
+Test\test_paie891_variables_isole.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_paie891_variables_isole.py:34: in envoyer
+    def envoyer(eq,eid,rid,**kw):return ok(eq['a'].post(V,json=entree(eid,rid,**kw)),201)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [500 Internal Server Error]&gt;, status = 201
+
+    def ok(r,status=200):
+&gt;       assert r.status_code==status,r.text
+E       AssertionError: Internal Server Error
+E       assert 500 == 201
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+Test\test_multi_societes_runtime_isole.py:49: AssertionError</failure></testcase><testcase classname="Test.test_paie891_variables_isole" name="test_891_decisions_concurrentes_une_seule_application" time="8.706"><failure message="AssertionError: Internal Server Error&#10;assert 500 == 201&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">application = {'api_url': 'http://127.0.0.1:62295', 'web_url': 'http://127.0.0.1:62296', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_h_rosdad'), 'nonce': '080a3dbf7f7e4d03a8635f7f8ffcd602', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x0000015DBDE34550&gt;, 'b': &lt;httpx.Client object at 0x0000015DBDE2C5D0&gt;, 'l': &lt;httpx.Client object at 0x0000015DBDE6ADD0&gt;, 'uid': 47, ...}
+
+    def test_891_decisions_concurrentes_une_seule_application(application,equipe):
+&gt;       eq=equipe;eid,_=avec_salaire(eq);rid=rubrique(eq);v=envoyer(eq,eid,rid);submit(eq,v['id'])
+                                                            ^^^^^^^^^^^^^^^^^^^
+
+Test\test_paie891_variables_isole.py:103: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_paie891_variables_isole.py:34: in envoyer
+    def envoyer(eq,eid,rid,**kw):return ok(eq['a'].post(V,json=entree(eid,rid,**kw)),201)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [500 Internal Server Error]&gt;, status = 201
+
+    def ok(r,status=200):
+&gt;       assert r.status_code==status,r.text
+E       AssertionError: Internal Server Error
+E       assert 500 == 201
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+Test\test_multi_societes_runtime_isole.py:49: AssertionError</failure></testcase></testsuite></testsuites>

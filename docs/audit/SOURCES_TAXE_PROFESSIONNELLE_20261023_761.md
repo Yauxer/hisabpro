@@ -1,0 +1,15 @@
+# Sources et portée exacte — TP761
+
+Lectures23octobre2026, ciblées sur un domaine encore absent dans la matrice. Les références de759/757 ne sont pas réauditées.
+
+- [Guide de fiscalité des collectivités territoriales DGCT, version19/12/2024](https://www.collectivites-territoriales.gov.ma/sites/default/files/pnct/2025-05/Fiscalit%C3%A9%20des%20CTs%20VF%2019%2012%202024.pdf) : extraits officiels indexés effectivement lus, page imprimée120, barème de l’article9-I C3=10%,C2=20%,C1=30%, et distinction du droit minimum limité aux redevables visés10-I-2-b. Le tableau n’est pas copié d’une source commerciale.
+- [Loi07-20, traduction française au BO7014 du19août2021, publiée sur DGCT](https://www.collectivites-territoriales.gov.ma/sites/default/files/2025-06/Loi%20n%2007-20%20version_Fr.pdf) : extrait primaire indexé lu, article10-II modifié, franchise d’émission200. Ce seuil n’est pas appliqué automatiquement par le module.
+- [Notice DGCT14-25](https://pnct.ltc.ma/fr/principales-dispositions-de-la-loi-ndeg14-25-en-date-du-6-juin-2025-modifiant-et-completant-la-loi) et [notice07-20](https://pnct.ltc.ma/fr/principales-dispositions-de-la-loi-ndeg0720-en-date-du-31-decembre-2020-modifiant-et-completant-la) : pages officielles ouvertes. Leurs résumés ne valent pas validation exhaustive de l’assiette, des exonérations ou de toutes situations2026.
+
+Limites réelles d’accès : guideDGCT2024 et loi47-06 intégrale sur ancien domaine en timeout ; deux requêtes Python15s en ConnectTimeout sans fichier créé. PDFFEC en timeout. Lien14-25 du nouveau portail404 ; liens47-06 corrigée et07-20 cachemiss. Aucune lecture intégrale, copie binaire ou empreinte SHA de ces documents n’est revendiquée. Un échec d’accès ne prouve pas l’absence d’une publication officielle.
+
+Périmètre codé : simulation brute arithmétique surVL/classe/année explicitement fournies et revues, sans prétendre valider l’assiette réglementaire ou la classification réelle d’une activité. Les taux normaux lus sont utilisés seulement comme simulation interne, pas comme liquidation universelle2026. Les qualifications, base complète et situation de janvier restent humaines, avec autres régimes à qualifier. Aucun classement depuis le compte, loyer, coût ou valeur nette d’immobilisation.
+
+Aucun plancher3%, plafonnement, hôtel, exonération, réduction, prorata, droit minimum ou franchise d’émission n’est automatiquement calculé. L’absence de local ou un tableau néant ne devient pas une taxe nulle. Le brut n’est jamais un montant dû ou un paiement confirmé. HALF_UP au centime par établissement est une convention documentaire explicite ; exact conservé, aucun arrondi légal affirmé.
+
+Le cas pédagogique A classeC2/VL30000 etB classeC3/VL12000 donne7200brut. Avis fournis7400, écart−200 conservé sans correction automatique ; ce n’est pas une qualification fiscale réelle des établissements. Modèle administratif applicable et dépôt non intégrés ; aucun lien bancaire, écriture ou données réelles modifié. La prochaine obtention documentaire utile porte sur les textes consolidés/modèles applicables, sans répéter les mêmes accès en échec.

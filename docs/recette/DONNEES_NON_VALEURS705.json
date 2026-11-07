@@ -1,0 +1,61 @@
+{
+  "contexte": "Société fictive de recette isolée, MAD, exercice2026",
+  "n": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "10000.00"
+    },
+    {
+      "compte": "2111",
+      "debit": "4000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "28111",
+      "debit": "0.00",
+      "credit": "1000.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "7000.00",
+      "credit": "0.00"
+    }
+  ],
+  "n1": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "10000.00"
+    },
+    {
+      "compte": "2111",
+      "debit": "3000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "28111",
+      "debit": "0.00",
+      "credit": "500.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "7500.00",
+      "credit": "0.00"
+    }
+  ],
+  "attendus_n": {
+    "brut": "4000.00",
+    "amortissements": "1000.00",
+    "net": "3000.00",
+    "debit_credit": "11000.00",
+    "actif_passif": "10000.00"
+  },
+  "attendus_n1": {
+    "brut": "3000.00",
+    "amortissements": "500.00",
+    "net": "2500.00",
+    "debit_credit": "10500.00",
+    "actif_passif": "10000.00"
+  }
+}

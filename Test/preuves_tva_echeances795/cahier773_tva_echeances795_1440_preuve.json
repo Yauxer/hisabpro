@@ -1,0 +1,3234 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_0nuzumoi",
+  "nonce": "d2bf95c264274ba598297a134f5696ee",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-ADM-006",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-007",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-008",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-009",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-010",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-011",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-012",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-013",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-014",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-015",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-IMM-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-IMM-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-015",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-008",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-016",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-009",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-017",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-012",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-013",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-014",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-015",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-008",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-016",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-017",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-018",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-009",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-018",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-019",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-STK-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-IMM-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-019",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CPT-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-020",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-025",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-026",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-021",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-022",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-023",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-024",
+      "statut": "Partiel",
+      "limite": "Base/calcul/minimum etexonération du scénario testés ;variation nonexonérée observée avantparamétrage, pas surune copie dédiée."
+    },
+    {
+      "id": "HP-CLO-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-027",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-008",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-009",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-012",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-013",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-014",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-028",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-029",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-030",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {
+    "C-MARCH": {
+      "id": 3,
+      "compte": "3421",
+      "auxiliaire": "C00000003"
+    },
+    "C-SERVICE": {
+      "id": 4,
+      "compte": "3421",
+      "auxiliaire": "C00000004"
+    },
+    "C-IMPAYE": {
+      "id": 5,
+      "compte": "3421",
+      "auxiliaire": "C00000005"
+    },
+    "F-MARCH": {
+      "id": 6,
+      "compte": "4411",
+      "auxiliaire": "F00000006"
+    },
+    "F-SERVICE": {
+      "id": 7,
+      "compte": "4411",
+      "auxiliaire": "F00000007"
+    },
+    "F-CONTROLE": {
+      "id": 8,
+      "compte": "4411",
+      "auxiliaire": "F00000008"
+    },
+    "F-IMMO": {
+      "id": 9,
+      "compte": "4481",
+      "auxiliaire": "F00000009"
+    }
+  },
+  "articles": {
+    "M-01": {
+      "id": 1,
+      "stockable": true,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": "6111",
+      "compte_vente": "7111"
+    },
+    "S-VTE": {
+      "id": 2,
+      "stockable": false,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": null,
+      "compte_vente": "7124"
+    },
+    "S-ACH": {
+      "id": 3,
+      "stockable": false,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": "6125",
+      "compte_vente": null
+    }
+  },
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "operations": [
+    {
+      "reference": "CAP-01",
+      "id": 1,
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "200000.00",
+          "0.00"
+        ],
+        "1111": [
+          "0.00",
+          "200000.00"
+        ]
+      }
+    },
+    {
+      "reference": "IMMO-ACQ",
+      "id": 2,
+      "date": "2025-01-01",
+      "journal": "AC",
+      "lignes": {
+        "2355": [
+          "24000.00",
+          "0.00"
+        ],
+        "34551": [
+          "4800.00",
+          "0.00"
+        ],
+        "4481": [
+          "0.00",
+          "28800.00"
+        ]
+      }
+    },
+    {
+      "reference": "IMMO-PAY",
+      "id": 3,
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "lignes": {
+        "4481": [
+          "28800.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "28800.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-F01",
+      "id": 4,
+      "date": "2025-01-04",
+      "journal": "BQ",
+      "lignes": {
+        "3411": [
+          "6000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-01",
+      "id": 5,
+      "date": "2025-01-05",
+      "journal": "AC",
+      "lignes": {
+        "6111": [
+          "10000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2000.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-F01-IMP",
+      "id": 6,
+      "date": "2025-01-05",
+      "journal": "OD",
+      "lignes": {
+        "4411": [
+          "6000.00",
+          "0.00"
+        ],
+        "3411": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-01-PAY",
+      "id": 7,
+      "date": "2025-01-07",
+      "journal": "BQ",
+      "lignes": {
+        "4411": [
+          "6000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-02",
+      "id": 8,
+      "date": "2025-01-10",
+      "journal": "AC",
+      "lignes": {
+        "6111": [
+          "12000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2400.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-01",
+      "id": 9,
+      "date": "2025-01-20",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "30000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "5000.00"
+        ],
+        "7111": [
+          "0.00",
+          "25000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-01-PAY",
+      "id": 10,
+      "date": "2025-01-25",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "10000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01",
+      "id": 11,
+      "date": "2025-01-26",
+      "journal": "AE",
+      "lignes": {
+        "51111": [
+          "20000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-01",
+      "id": 12,
+      "date": "2025-01-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "5000.00",
+          "0.00"
+        ],
+        "3456": [
+          "1800.00",
+          "0.00"
+        ],
+        "34551": [
+          "0.00",
+          "4800.00"
+        ],
+        "34552": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01-REM",
+      "id": 13,
+      "date": "2025-02-01",
+      "journal": "AE",
+      "lignes": {
+        "51112": [
+          "20000.00",
+          "0.00"
+        ],
+        "51111": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01-ENC",
+      "id": 14,
+      "date": "2025-02-05",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "20000.00",
+          "0.00"
+        ],
+        "51112": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-SERVICE",
+      "id": 15,
+      "date": "2025-02-10",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "12000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2400.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "AV-01",
+      "id": 16,
+      "date": "2025-02-10",
+      "journal": "AV",
+      "lignes": {
+        "7111": [
+          "2500.00",
+          "0.00"
+        ],
+        "4455": [
+          "500.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "3000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-SERVICE-PAY",
+      "id": 17,
+      "date": "2025-02-15",
+      "journal": "BQ",
+      "lignes": {
+        "4411": [
+          "14400.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-02",
+      "id": 18,
+      "date": "2025-02-28",
+      "journal": "OD",
+      "lignes": {
+        "3456": [
+          "2900.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "500.00"
+        ],
+        "34552": [
+          "0.00",
+          "2400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-02",
+      "id": 19,
+      "date": "2025-03-01",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "18000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "3000.00"
+        ],
+        "7111": [
+          "0.00",
+          "15000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-F01",
+      "id": 20,
+      "date": "2025-03-01",
+      "journal": "AE",
+      "lignes": {
+        "4411": [
+          "14400.00",
+          "0.00"
+        ],
+        "4415": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-02-PAY",
+      "id": 21,
+      "date": "2025-03-05",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "5000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "5000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-F01-PAY",
+      "id": 22,
+      "date": "2025-03-20",
+      "journal": "BQ",
+      "lignes": {
+        "4415": [
+          "14400.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-03",
+      "id": 23,
+      "date": "2025-03-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "3000.00",
+          "0.00"
+        ],
+        "34552": [
+          "0.00",
+          "2400.00"
+        ],
+        "3456": [
+          "0.00",
+          "600.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01",
+      "id": 24,
+      "date": "2025-04-01",
+      "journal": "AE",
+      "lignes": {
+        "3425": [
+          "10000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01-REM",
+      "id": 25,
+      "date": "2025-05-15",
+      "journal": "AE",
+      "lignes": {
+        "51132": [
+          "10000.00",
+          "0.00"
+        ],
+        "3425": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01-ENC",
+      "id": 26,
+      "date": "2025-05-16",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "9990.00",
+          "0.00"
+        ],
+        "61472": [
+          "10.00",
+          "0.00"
+        ],
+        "51132": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-C01",
+      "id": 27,
+      "date": "2025-06-01",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "24000.00",
+          "0.00"
+        ],
+        "4421": [
+          "0.00",
+          "24000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-SERVICE",
+      "id": 28,
+      "date": "2025-06-15",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "144000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "24000.00"
+        ],
+        "7124": [
+          "0.00",
+          "120000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-C01-IMP",
+      "id": 29,
+      "date": "2025-06-15",
+      "journal": "OD",
+      "lignes": {
+        "4421": [
+          "24000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "24000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-SERVICE-PAY",
+      "id": 30,
+      "date": "2025-06-30",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "120000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "120000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-06",
+      "id": 31,
+      "date": "2025-06-30",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "24000.00",
+          "0.00"
+        ],
+        "3456": [
+          "0.00",
+          "4100.00"
+        ],
+        "4456": [
+          "0.00",
+          "19900.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-06-PAY",
+      "id": 32,
+      "date": "2025-07-20",
+      "journal": "BQ",
+      "lignes": {
+        "4456": [
+          "19900.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "19900.00"
+        ]
+      }
+    },
+    {
+      "reference": "INT-PPRF",
+      "id": 33,
+      "date": "2025-11-30",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "800.00",
+          "0.00"
+        ],
+        "3453": [
+          "200.00",
+          "0.00"
+        ],
+        "7381": [
+          "0.00",
+          "1000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ASS-01",
+      "id": 34,
+      "date": "2025-12-01",
+      "journal": "BQ",
+      "lignes": {
+        "6134": [
+          "12000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "REF-02",
+      "id": 35,
+      "date": "2025-12-02",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "200.00",
+          "0.00"
+        ],
+        "34552": [
+          "40.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "240.00"
+        ]
+      }
+    },
+    {
+      "reference": "REF-002",
+      "id": 36,
+      "date": "2025-12-02",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "200.00",
+          "0.00"
+        ],
+        "34552": [
+          "40.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "240.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-IMPAYEE",
+      "id": 37,
+      "date": "2025-12-10",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "14400.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "2400.00"
+        ],
+        "7124": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-REJET",
+      "id": 38,
+      "date": "2025-12-12",
+      "journal": "AE",
+      "lignes": {
+        "51111": [
+          "2000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-REJET-INV",
+      "id": 39,
+      "date": "2025-12-15",
+      "journal": "OD",
+      "lignes": {
+        "3421": [
+          "2000.00",
+          "0.00"
+        ],
+        "51111": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AMENDE",
+      "id": 40,
+      "date": "2025-12-20",
+      "journal": "BQ",
+      "lignes": {
+        "6583": [
+          "500.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "500.00"
+        ]
+      }
+    },
+    {
+      "reference": "FRAIS-BQ",
+      "id": 41,
+      "date": "2025-12-31",
+      "journal": "BQ",
+      "lignes": {
+        "61473": [
+          "60.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "60.00"
+        ]
+      }
+    },
+    {
+      "reference": "STOCK-FIN",
+      "id": 42,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "3111": [
+          "6600.00",
+          "0.00"
+        ],
+        "6114": [
+          "0.00",
+          "6600.00"
+        ]
+      }
+    },
+    {
+      "reference": "AMORT-2025",
+      "id": 43,
+      "date": "2025-12-31",
+      "journal": "AM",
+      "lignes": {
+        "61935": [
+          "4800.00",
+          "0.00"
+        ],
+        "28355": [
+          "0.00",
+          "4800.00"
+        ]
+      }
+    },
+    {
+      "reference": "CCA-2025",
+      "id": 44,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "3491": [
+          "11000.00",
+          "0.00"
+        ],
+        "6134": [
+          "0.00",
+          "11000.00"
+        ]
+      }
+    },
+    {
+      "reference": "FNP-2025",
+      "id": 46,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "6125": [
+          "3000.00",
+          "0.00"
+        ],
+        "4417": [
+          "0.00",
+          "3000.00"
+        ]
+      }
+    },
+    {
+      "reference": "PROV-RISQUE",
+      "id": 48,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "61955": [
+          "1500.00",
+          "0.00"
+        ],
+        "1518": [
+          "0.00",
+          "1500.00"
+        ]
+      }
+    },
+    {
+      "reference": "DEPR-CLIENT",
+      "id": 49,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "61964": [
+          "2000.00",
+          "0.00"
+        ],
+        "3942": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-12",
+      "id": 50,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "2400.00",
+          "0.00"
+        ],
+        "4456": [
+          "0.00",
+          "2400.00"
+        ]
+      }
+    },
+    {
+      "reference": "IS-2025",
+      "id": 51,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "6701": [
+          "23420.25",
+          "0.00"
+        ],
+        "4453": [
+          "0.00",
+          "23420.25"
+        ]
+      }
+    },
+    {
+      "reference": "PPRF-IMP",
+      "id": 52,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "4453": [
+          "200.00",
+          "0.00"
+        ],
+        "3453": [
+          "0.00",
+          "200.00"
+        ]
+      }
+    }
+  ],
+  "limite_cycle": "Capital etacquisition présents danscette société ;autres opérations annuelles encoreàintercaler chronologiquement.",
+  "requetes_echouees": [
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:55446/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    }
+  ],
+  "lettrage_fournisseur": "AAA",
+  "cycle": {
+    "factures": [
+      1,
+      2,
+      3
+    ],
+    "devis": 1,
+    "bc": 1,
+    "bl": 1,
+    "ecritures": 10,
+    "lignes": 24,
+    "total_debit_credit": "342000.00",
+    "stock": 100,
+    "cmup": 110,
+    "reste_vente": 20000
+  },
+  "suite777": {
+    "ecritures": 21,
+    "lignes": 52,
+    "debit_credit": "480900.00",
+    "stock": 60,
+    "cmup": 110,
+    "reste_vente2": 10000,
+    "avoir": 1,
+    "facture2": 5,
+    "prefixe_valide_inchange": true,
+    "imputation_credit_sans_nouvelle_ecriture": true
+  },
+  "semestre789": {
+    "ecritures": 31,
+    "lignes": 76,
+    "debit_credit": "864300.00",
+    "soldes": {
+      "1111": "-200000.00",
+      "2355": "24000.00",
+      "4456": "-19900.00",
+      "5141": "319390.00",
+      "6111": "22000.00",
+      "6125": "12000.00",
+      "61472": "10.00",
+      "7111": "-37500.00",
+      "7124": "-120000.00"
+    },
+    "references": [
+      "CAP-01",
+      "IMMO-ACQ",
+      "IMMO-PAY",
+      "AC-F01",
+      "ACH-01",
+      "AC-F01-IMP",
+      "ACH-01-PAY",
+      "ACH-02",
+      "VENTE-01",
+      "VENTE-01-PAY",
+      "CHQ-01",
+      "TVA-01",
+      "CHQ-01-REM",
+      "CHQ-01-ENC",
+      "ACH-SERVICE",
+      "AV-01",
+      "ACH-SERVICE-PAY",
+      "TVA-02",
+      "VENTE-02",
+      "EFF-F01",
+      "VENTE-02-PAY",
+      "EFF-F01-PAY",
+      "TVA-03",
+      "EFF-C01",
+      "EFF-C01-REM",
+      "EFF-C01-ENC",
+      "AC-C01",
+      "VENTE-SERVICE",
+      "AC-C01-IMP",
+      "VENTE-SERVICE-PAY",
+      "TVA-06"
+    ],
+    "stock": 60,
+    "cmup": 110,
+    "frais_effet": "10.00",
+    "ordre_chronologique": true,
+    "limite": "Arrêt30/06/2025 ;les écritures TVA sont saisies manuellement conformément aux fichesFIS015/016/017/018, pas des déclarations automatiques. Pas de clôture ni de dotation annuelle anticipée."
+  },
+  "ajustements791": [
+    {
+      "reference": "CCA-2025",
+      "id": 1,
+      "ecriture": 44,
+      "contrepassation2026": 45
+    },
+    {
+      "reference": "FNP-2025",
+      "id": 2,
+      "ecriture": 46,
+      "contrepassation2026": 47
+    },
+    {
+      "reference": "PROV-RISQUE",
+      "id": 3,
+      "ecriture": 48,
+      "contrepassation2026": null
+    },
+    {
+      "reference": "DEPR-CLIENT",
+      "id": 4,
+      "ecriture": 49,
+      "contrepassation2026": null
+    }
+  ],
+  "controle_cloture791": {
+    "exercice": 2025,
+    "date_debut": "2025-01-01",
+    "date_fin": "2025-12-31",
+    "date_fin_atteinte": true,
+    "est_clos": false,
+    "date_cloture": null,
+    "nb_ecritures": 50,
+    "total_charges": 64090.25,
+    "total_produits": 170500.0,
+    "resultat_net": 106409.75,
+    "type_resultat": "bénéfice",
+    "compte_resultat": "1191",
+    "equilibre": true,
+    "ecart": 0.0,
+    "apercu_a_nouveaux": [
+      {
+        "compte": "1111",
+        "debit": 0.0,
+        "credit": 200000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1518",
+        "debit": 0.0,
+        "credit": 1500.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "2355",
+        "debit": 24000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "28355",
+        "debit": 0.0,
+        "credit": 4800.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3111",
+        "debit": 6600.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3421",
+        "debit": 14400.0,
+        "credit": 0.0,
+        "tiers_id": 5,
+        "nature_auxiliaire": "client",
+        "compte_auxiliaire_snapshot": "C00000005",
+        "libelle_auxiliaire_snapshot": "Client Impayé Recette"
+      },
+      {
+        "compte": "34552",
+        "debit": 80.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3491",
+        "debit": 11000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3942",
+        "debit": 0.0,
+        "credit": 2000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4411",
+        "debit": 0.0,
+        "credit": 480.0,
+        "tiers_id": 8,
+        "nature_auxiliaire": "fournisseur",
+        "compte_auxiliaire_snapshot": "F00000008",
+        "libelle_auxiliaire_snapshot": "Fournisseur Contrôle Références Recette"
+      },
+      {
+        "compte": "4417",
+        "debit": 0.0,
+        "credit": 3000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4453",
+        "debit": 0.0,
+        "credit": 23220.25,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4456",
+        "debit": 0.0,
+        "credit": 2400.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "5141",
+        "debit": 287730.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1191",
+        "debit": 0.0,
+        "credit": 106409.75,
+        "resultat": true
+      }
+    ],
+    "total_an_debit": 343810.0,
+    "total_an_credit": 343810.0,
+    "dotations_manquantes": [],
+    "nb_dotations_manquantes": 0,
+    "total_dotations_manquantes": 0.0,
+    "nb_ecritures_brouillon": 0,
+    "ecritures_brouillon": [],
+    "nb_ajustements_inventaire": 4,
+    "stock_cloture": {
+      "exercice": 2025,
+      "date_fin": "2025-12-31",
+      "nb_articles": 1,
+      "inventaire_requis": true,
+      "inventaire_valide": true,
+      "inventaire_id": 1,
+      "inventaire_reference": "STOCK-FIN",
+      "valeur_physique_brute": 6600.0,
+      "valeur_comptable_brute": 6600.0,
+      "depreciations": 0.0,
+      "valeur_comptable_nette": 6600.0,
+      "ecart_brut": 0.0,
+      "valorisation_complete": true,
+      "diagnostics": [],
+      "stock_rapproche": true,
+      "ecriture_stock_id": 42,
+      "ecriture_stock_validee": true,
+      "lignes": [
+        {
+          "article_id": 1,
+          "code": "M-01",
+          "designation": "Marchandise de recette",
+          "quantite": 60.0,
+          "cmup": 110.0,
+          "valeur": 6600.0,
+          "nombres_diagnostics": {},
+          "compte_stock": "3111",
+          "compte_variation": "6114"
+        }
+      ]
+    },
+    "immobilisations_rapprochement": {
+      "brut_module": 24000.0,
+      "brut_comptable": 24000.0,
+      "ecart_brut": 0.0,
+      "amortissements_module": 4800.0,
+      "amortissements_comptables": 4800.0,
+      "ecart_amortissements": 0.0,
+      "vnc_module": 19200.0,
+      "vnc_comptable": 19200.0,
+      "ecart_vnc": 0.0,
+      "rapproche": true,
+      "details_comptes": [
+        {
+          "nature": "brut",
+          "compte": "2355",
+          "module": 24000.0,
+          "comptable": 24000.0,
+          "ecart": 0.0
+        },
+        {
+          "nature": "amortissement",
+          "compte": "28355",
+          "module": 4800.0,
+          "comptable": 4800.0,
+          "ecart": 0.0
+        }
+      ]
+    },
+    "nb_documents_non_comptabilises": 0,
+    "documents_non_comptabilises": [],
+    "affectation_resultat": null,
+    "resultat_anterieur_a_reclasser": null,
+    "fiscalite_is": {
+      "applicable": true,
+      "attendu": 22807.75,
+      "comptabilise": 23420.25,
+      "compte_charge_attendu": "6701",
+      "nature_impot": "IS",
+      "absente": false,
+      "coherente": false,
+      "a_comptabiliser": 0.0,
+      "resultat_comptable_avant_is": 129830.0,
+      "resultat_net_apres_is": null,
+      "deficits_a_confirmer": false
+    },
+    "fec_controle": {
+      "conforme": true,
+      "nb_bloquants": 0,
+      "nb_avertissements": 1,
+      "bloquants": []
+    }
+  },
+  "annuel791": {
+    "ecritures2025": 50,
+    "lignes2025": 118,
+    "debit_credit": "971560.25",
+    "contrepassations2026_brouillon": 2,
+    "lignes2026": 4,
+    "resultats": {
+      "banque": "287730.00",
+      "stock_valeur": "6600.00",
+      "total_actif_net": "337010.0",
+      "total_passif_net": "337010.0",
+      "resultat_net": "106409.75",
+      "caf": "112709.75"
+    },
+    "soldes": {
+      "1111": "-200000.00",
+      "1518": "-1500.00",
+      "2355": "24000.00",
+      "28355": "-4800.00",
+      "3111": "6600.00",
+      "3421": "14400.00",
+      "34552": "80.00",
+      "3491": "11000.00",
+      "3942": "-2000.00",
+      "4411": "-480.00",
+      "4417": "-3000.00",
+      "4453": "-23220.25",
+      "4456": "-2400.00",
+      "5141": "287730.00",
+      "6111": "22000.00",
+      "6114": "-6600.00",
+      "6125": "15400.00",
+      "6134": "1000.00",
+      "61472": "10.00",
+      "61473": "60.00",
+      "61935": "4800.00",
+      "61955": "1500.00",
+      "61964": "2000.00",
+      "6583": "500.00",
+      "6701": "23420.25",
+      "7111": "-37500.00",
+      "7124": "-132000.00",
+      "7381": "-1000.00"
+    },
+    "stock": 60,
+    "cmup": 110,
+    "originaux_semestre_inchanges": true,
+    "limite": "États annuels et flux produits testés, pas clôture définitive, déclarations fiscales ni recette humaine ;contrôles réels non contournés."
+  },
+  "controle_avant_cloture793": {
+    "exercice": 2025,
+    "date_debut": "2025-01-01",
+    "date_fin": "2025-12-31",
+    "date_fin_atteinte": true,
+    "est_clos": false,
+    "date_cloture": null,
+    "nb_ecritures": 50,
+    "total_charges": 64090.25,
+    "total_produits": 170500.0,
+    "resultat_net": 106409.75,
+    "type_resultat": "bénéfice",
+    "compte_resultat": "1191",
+    "equilibre": true,
+    "ecart": 0.0,
+    "apercu_a_nouveaux": [
+      {
+        "compte": "1111",
+        "debit": 0.0,
+        "credit": 200000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1518",
+        "debit": 0.0,
+        "credit": 1500.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "2355",
+        "debit": 24000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "28355",
+        "debit": 0.0,
+        "credit": 4800.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3111",
+        "debit": 6600.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3421",
+        "debit": 14400.0,
+        "credit": 0.0,
+        "tiers_id": 5,
+        "nature_auxiliaire": "client",
+        "compte_auxiliaire_snapshot": "C00000005",
+        "libelle_auxiliaire_snapshot": "Client Impayé Recette"
+      },
+      {
+        "compte": "34552",
+        "debit": 80.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3491",
+        "debit": 11000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3942",
+        "debit": 0.0,
+        "credit": 2000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4411",
+        "debit": 0.0,
+        "credit": 480.0,
+        "tiers_id": 8,
+        "nature_auxiliaire": "fournisseur",
+        "compte_auxiliaire_snapshot": "F00000008",
+        "libelle_auxiliaire_snapshot": "Fournisseur Contrôle Références Recette"
+      },
+      {
+        "compte": "4417",
+        "debit": 0.0,
+        "credit": 3000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4453",
+        "debit": 0.0,
+        "credit": 23220.25,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4456",
+        "debit": 0.0,
+        "credit": 2400.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "5141",
+        "debit": 287730.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1191",
+        "debit": 0.0,
+        "credit": 106409.75,
+        "resultat": true
+      }
+    ],
+    "total_an_debit": 343810.0,
+    "total_an_credit": 343810.0,
+    "dotations_manquantes": [],
+    "nb_dotations_manquantes": 0,
+    "total_dotations_manquantes": 0.0,
+    "nb_ecritures_brouillon": 0,
+    "ecritures_brouillon": [],
+    "nb_ajustements_inventaire": 4,
+    "stock_cloture": {
+      "exercice": 2025,
+      "date_fin": "2025-12-31",
+      "nb_articles": 1,
+      "inventaire_requis": true,
+      "inventaire_valide": true,
+      "inventaire_id": 1,
+      "inventaire_reference": "STOCK-FIN",
+      "valeur_physique_brute": 6600.0,
+      "valeur_comptable_brute": 6600.0,
+      "depreciations": 0.0,
+      "valeur_comptable_nette": 6600.0,
+      "ecart_brut": 0.0,
+      "valorisation_complete": true,
+      "diagnostics": [],
+      "stock_rapproche": true,
+      "ecriture_stock_id": 42,
+      "ecriture_stock_validee": true,
+      "lignes": [
+        {
+          "article_id": 1,
+          "code": "M-01",
+          "designation": "Marchandise de recette",
+          "quantite": 60.0,
+          "cmup": 110.0,
+          "valeur": 6600.0,
+          "nombres_diagnostics": {},
+          "compte_stock": "3111",
+          "compte_variation": "6114"
+        }
+      ]
+    },
+    "immobilisations_rapprochement": {
+      "brut_module": 24000.0,
+      "brut_comptable": 24000.0,
+      "ecart_brut": 0.0,
+      "amortissements_module": 4800.0,
+      "amortissements_comptables": 4800.0,
+      "ecart_amortissements": 0.0,
+      "vnc_module": 19200.0,
+      "vnc_comptable": 19200.0,
+      "ecart_vnc": 0.0,
+      "rapproche": true,
+      "details_comptes": [
+        {
+          "nature": "brut",
+          "compte": "2355",
+          "module": 24000.0,
+          "comptable": 24000.0,
+          "ecart": 0.0
+        },
+        {
+          "nature": "amortissement",
+          "compte": "28355",
+          "module": 4800.0,
+          "comptable": 4800.0,
+          "ecart": 0.0
+        }
+      ]
+    },
+    "nb_documents_non_comptabilises": 0,
+    "documents_non_comptabilises": [],
+    "affectation_resultat": null,
+    "resultat_anterieur_a_reclasser": null,
+    "fiscalite_is": {
+      "applicable": true,
+      "attendu": 23420.25,
+      "comptabilise": 23420.25,
+      "compte_charge_attendu": "6701",
+      "nature_impot": "IS",
+      "absente": false,
+      "coherente": true,
+      "a_comptabiliser": 0.0,
+      "resultat_comptable_avant_is": 129830.0,
+      "resultat_net_apres_is": 106409.75,
+      "deficits_a_confirmer": false
+    },
+    "fec_controle": {
+      "conforme": true,
+      "nb_bloquants": 0,
+      "nb_avertissements": 1,
+      "bloquants": []
+    }
+  },
+  "cloture793": {
+    "resultat_net": "106409.75",
+    "reintegrations": "4000.00",
+    "benefice_fiscal": "133830.00",
+    "is": "23420.25",
+    "credit": "200.00",
+    "solde": "23220.25",
+    "an2026_id": 54,
+    "total_an": "343810.00",
+    "soldes_an": {
+      "1111": "-200000.00",
+      "1191": "-106409.75",
+      "1518": "-1500.00",
+      "2355": "24000.00",
+      "28355": "-4800.00",
+      "3111": "6600.00",
+      "3421": "14400.00",
+      "34552": "80.00",
+      "3491": "11000.00",
+      "3942": "-2000.00",
+      "4411": "-480.00",
+      "4417": "-3000.00",
+      "4453": "-23220.25",
+      "4456": "-2400.00",
+      "5141": "287730.00"
+    },
+    "contrepassations2026_validees": 2,
+    "cinquante_originaux2025_inchanges": true,
+    "ecriture_sur_clos_refusee": 423,
+    "liquidation_figee": true,
+    "cm_scenario": "0.00",
+    "cm_avant_parametrage": "3000.00",
+    "css_reference_manquante_visible": true,
+    "limite": "Hypothèses fiscales explicites du jeu fictif, pas validation réglementaire ;CMsanscopiecontrôle dédiée restePartiel. DéclarationsTVA/exportsannuels etrecettehumaine restentàqualifier."
+  },
+  "tva795": [
+    {
+      "mois": 1,
+      "attendu": {
+        "mois": "01",
+        "credit_ouverture": "0.00",
+        "collectee": "5000.00",
+        "recuperable": "6800.00",
+        "credit_fin": "1800.00",
+        "due": "0.00"
+      },
+      "reel": {
+        "periode": {
+          "type": "mensuelle",
+          "date_debut": "2025-01-01",
+          "date_fin": "2025-01-31"
+        },
+        "regime_tva": "debit",
+        "parametres": {
+          "credit_ouverture": 0.0,
+          "prorata_deduction_pct": 100.0
+        },
+        "collectee": {
+          "total": 5000.0,
+          "base_total": 25000.0,
+          "par_taux": {
+            "20": {
+              "base": 25000.0,
+              "tva": 5000.0
+            }
+          }
+        },
+        "recuperable": {
+          "total": 6800.0,
+          "base_total": 34000.0,
+          "par_taux": {
+            "20": {
+              "base": 34000.0,
+              "tva": 6800.0
+            }
+          }
+        },
+        "recuperable_charges": {
+          "total": 2000.0,
+          "base_total": 10000.0,
+          "par_taux": {
+            "20": {
+              "base": 10000.0,
+              "tva": 2000.0
+            }
+          }
+        },
+        "recuperable_immobilisations": {
+          "total": 4800.0,
+          "base_total": 24000.0,
+          "par_taux": {
+            "20": {
+              "base": 24000.0,
+              "tva": 4800.0
+            }
+          }
+        },
+        "credit_tva_anterieur": 0.0,
+        "tva_due_avant_credit": 0.0,
+        "tva_due": 0.0,
+        "credit_tva": 1800.0,
+        "details_ventes": [
+          {
+            "facture_id": 3,
+            "facture_numero": "FA-2025-003",
+            "tiers": "Client Marchandises Recette",
+            "date_facture": "2025-01-20",
+            "regime": "debit",
+            "origine": "facture_reglements_avoirs",
+            "ventilation": {
+              "20": {
+                "base": 25000.0,
+                "tva": 5000.0
+              }
+            }
+          }
+        ],
+        "details_achats": [
+          {
+            "facture_id": 1,
+            "facture_numero": "FA-2025-001",
+            "tiers": "Fournisseur Marchandises Recette",
+            "date_facture": "2025-01-05",
+            "origine": "facture_reglements_avoirs",
+            "nature_tva_achat": "charge",
+            "tva_deductible_pct": 100.0,
+            "prorata_pct": 100.0,
+            "ventilation": {
+              "20": {
+                "base": 10000.0,
+                "tva": 2000.0
+              }
+            }
+          },
+          {
+            "facture_id": null,
+            "facture_numero": null,
+            "tiers": "Fournisseur Informatique Recette",
+            "date_facture": "2025-01-01",
+            "origine": "immobilisation_directe",
+            "nature_tva_achat": "immobilisation",
+            "immobilisation_id": 1,
+            "designation": "Ordinateur de recette",
+            "date_paiement": "2025-01-01",
+            "tva_deductible_pct": 100.0,
+            "prorata_pct": 100.0,
+            "ventilation": {
+              "20": {
+                "base": 24000.0,
+                "tva": 4800.0
+              }
+            }
+          }
+        ],
+        "alertes": [],
+        "limitations": [
+          "retenue_tva_article_117",
+          "controle_automatique_exclusions_article_106",
+          "gel_declaration_deposee",
+          "regularisations_immobilisations_article_104"
+        ],
+        "statut_conformite": "moteur_02b_a_controler_avant_depot"
+      },
+      "pdf_temporaire": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette795_reprise\\test_795_cahier_tva12_impressi0\\TVA_2025_01_1440.pdf",
+      "pdf_sha256": "5461aa3a8a99aeb3d76975a9ac8bbabf69c50f780badf01aa32f76ae0fda4ddd",
+      "pdf_pages": 3,
+      "impression": "PDF rendu par moteur Edge ;aucune imprimante physique ni dépôtDGI."
+    },
+    {
+      "mois": 2,
+      "attendu": {
+        "mois": "02",
+        "credit_ouverture": "1800.00",
+        "collectee": "-500.00",
+        "recuperable": "2400.00",
+        "credit_fin": "4700.00",
+        "due": "0.00"
+      },
+      "reel": {
+        "periode": {
+          "type": "mensuelle",
+          "date_debut": "2025-02-01",
+          "date_fin": "2025-02-28"
+        },
+        "regime_tva": "debit",
+        "parametres": {
+          "credit_ouverture": 0.0,
+          "prorata_deduction_pct": 100.0
+        },
+        "collectee": {
+          "total": -500.0,
+          "base_total": -2500.0,
+          "par_taux": {
+            "20": {
+              "base": -2500.0,
+              "tva": -500.0
+            }
+          }
+        },
+        "recuperable": {
+          "total": 2400.0,
+          "base_total": 12000.0,
+          "par_taux": {
+            "20": {
+              "base": 12000.0,
+              "tva": 2400.0
+            }
+          }
+        },
+        "recuperable_charges": {
+          "total": 2400.0,
+          "base_total": 12000.0,
+          "par_taux": {
+            "20": {
+              "base": 12000.0,
+              "tva": 2400.0
+            }
+          }
+        },
+        "recuperable_immobilisations": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "credit_tva_anterieur": 1800.0,
+        "tva_due_avant_credit": 0.0,
+        "tva_due": 0.0,
+        "credit_tva": 4700.0,
+        "details_ventes": [
+          {
+            "facture_id": 3,
+            "facture_numero": "FA-2025-003",
+            "tiers": "Client Marchandises Recette",
+            "date_facture": "2025-01-20",
+            "regime": "debit",
+            "origine": "facture_reglements_avoirs",
+            "ventilation": {
+              "20": {
+                "base": -2500.0,
+                "tva": -500.0
+              }
+            }
+          }
+        ],
+        "details_achats": [
+          {
+            "facture_id": 4,
+            "facture_numero": "FA-2025-004",
+            "tiers": "Fournisseur Services Recette",
+            "date_facture": "2025-02-10",
+            "origine": "facture_reglements_avoirs",
+            "nature_tva_achat": "charge",
+            "tva_deductible_pct": 100.0,
+            "prorata_pct": 100.0,
+            "ventilation": {
+              "20": {
+                "base": 12000.0,
+                "tva": 2400.0
+              }
+            }
+          }
+        ],
+        "alertes": [],
+        "limitations": [
+          "retenue_tva_article_117",
+          "controle_automatique_exclusions_article_106",
+          "gel_declaration_deposee",
+          "regularisations_immobilisations_article_104"
+        ],
+        "statut_conformite": "moteur_02b_a_controler_avant_depot"
+      },
+      "pdf_temporaire": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette795_reprise\\test_795_cahier_tva12_impressi0\\TVA_2025_02_1440.pdf",
+      "pdf_sha256": "c146a283e1ee397a5e759c64387a85a61959fa8c00d91a8b72b8ca83e437d11d",
+      "pdf_pages": 3,
+      "impression": "PDF rendu par moteur Edge ;aucune imprimante physique ni dépôtDGI."
+    },
+    {
+      "mois": 3,
+      "attendu": {
+        "mois": "03",
+        "credit_ouverture": "4700.00",
+        "collectee": "3000.00",
+        "recuperable": "2400.00",
+        "credit_fin": "4100.00",
+        "due": "0.00"
+      },
+      "reel": {
+        "periode": {
+          "type": "mensuelle",
+          "date_debut": "2025-03-01",
+          "date_fin": "2025-03-31"
+        },
+        "regime_tva": "debit",
+        "parametres": {
+          "credit_ouverture": 0.0,
+          "prorata_deduction_pct": 100.0
+        },
+        "collectee": {
+          "total": 3000.0,
+          "base_total": 15000.0,
+          "par_taux": {
+            "20": {
+              "base": 15000.0,
+              "tva": 3000.0
+            }
+          }
+        },
+        "recuperable": {
+          "total": 2400.0,
+          "base_total": 12000.0,
+          "par_taux": {
+            "20": {
+              "base": 12000.0,
+              "tva": 2400.0
+            }
+          }
+        },
+        "recuperable_charges": {
+          "total": 2400.0,
+          "base_total": 12000.0,
+          "par_taux": {
+            "20": {
+              "base": 12000.0,
+              "tva": 2400.0
+            }
+          }
+        },
+        "recuperable_immobilisations": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "credit_tva_anterieur": 4700.0,
+        "tva_due_avant_credit": 600.0,
+        "tva_due": 0.0,
+        "credit_tva": 4100.0,
+        "details_ventes": [
+          {
+            "facture_id": 5,
+            "facture_numero": "FA-2025-005",
+            "tiers": "Client Marchandises Recette",
+            "date_facture": "2025-03-01",
+            "regime": "debit",
+            "origine": "facture_reglements_avoirs",
+            "ventilation": {
+              "20": {
+                "base": 15000.0,
+                "tva": 3000.0
+              }
+            }
+          }
+        ],
+        "details_achats": [
+          {
+            "facture_id": 2,
+            "facture_numero": "FA-2025-002",
+            "tiers": "Fournisseur Marchandises Recette",
+            "date_facture": "2025-01-10",
+            "origine": "facture_reglements_avoirs",
+            "nature_tva_achat": "charge",
+            "tva_deductible_pct": 100.0,
+            "prorata_pct": 100.0,
+            "ventilation": {
+              "20": {
+                "base": 12000.0,
+                "tva": 2400.0
+              }
+            }
+          }
+        ],
+        "alertes": [],
+        "limitations": [
+          "retenue_tva_article_117",
+          "controle_automatique_exclusions_article_106",
+          "gel_declaration_deposee",
+          "regularisations_immobilisations_article_104"
+        ],
+        "statut_conformite": "moteur_02b_a_controler_avant_depot"
+      },
+      "pdf_temporaire": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette795_reprise\\test_795_cahier_tva12_impressi0\\TVA_2025_03_1440.pdf",
+      "pdf_sha256": "c6a4ea63af87d1baeb525f3bf4a8f55cb2ed19a8406849fcb304104c991c83ba",
+      "pdf_pages": 3,
+      "impression": "PDF rendu par moteur Edge ;aucune imprimante physique ni dépôtDGI."
+    },
+    {
+      "mois": 4,
+      "attendu": {
+        "mois": "04",
+        "credit_ouverture": "4100.00",
+        "collectee": "0.00",
+        "recuperable": "0.00",
+        "credit_fin": "4100.00",
+        "due": "0.00"
+      },
+      "reel": {
+        "periode": {
+          "type": "mensuelle",
+          "date_debut": "2025-04-01",
+          "date_fin": "2025-04-30"
+        },
+        "regime_tva": "debit",
+        "parametres": {
+          "credit_ouverture": 0.0,
+          "prorata_deduction_pct": 100.0
+        },
+        "collectee": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_charges": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_immobilisations": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "credit_tva_anterieur": 4100.0,
+        "tva_due_avant_credit": 0.0,
+        "tva_due": 0.0,
+        "credit_tva": 4100.0,
+        "details_ventes": [],
+        "details_achats": [],
+        "alertes": [],
+        "limitations": [
+          "retenue_tva_article_117",
+          "controle_automatique_exclusions_article_106",
+          "gel_declaration_deposee",
+          "regularisations_immobilisations_article_104"
+        ],
+        "statut_conformite": "moteur_02b_a_controler_avant_depot"
+      },
+      "pdf_temporaire": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette795_reprise\\test_795_cahier_tva12_impressi0\\TVA_2025_04_1440.pdf",
+      "pdf_sha256": "6b9322146dfb9a6485b8246dca022694bab8271c34b77c6854b70e7f6b9b896c",
+      "pdf_pages": 3,
+      "impression": "PDF rendu par moteur Edge ;aucune imprimante physique ni dépôtDGI."
+    },
+    {
+      "mois": 5,
+      "attendu": {
+        "mois": "05",
+        "credit_ouverture": "4100.00",
+        "collectee": "0.00",
+        "recuperable": "0.00",
+        "credit_fin": "4100.00",
+        "due": "0.00"
+      },
+      "reel": {
+        "periode": {
+          "type": "mensuelle",
+          "date_debut": "2025-05-01",
+          "date_fin": "2025-05-31"
+        },
+        "regime_tva": "debit",
+        "parametres": {
+          "credit_ouverture": 0.0,
+          "prorata_deduction_pct": 100.0
+        },
+        "collectee": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_charges": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_immobilisations": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "credit_tva_anterieur": 4100.0,
+        "tva_due_avant_credit": 0.0,
+        "tva_due": 0.0,
+        "credit_tva": 4100.0,
+        "details_ventes": [],
+        "details_achats": [],
+        "alertes": [],
+        "limitations": [
+          "retenue_tva_article_117",
+          "controle_automatique_exclusions_article_106",
+          "gel_declaration_deposee",
+          "regularisations_immobilisations_article_104"
+        ],
+        "statut_conformite": "moteur_02b_a_controler_avant_depot"
+      },
+      "pdf_temporaire": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette795_reprise\\test_795_cahier_tva12_impressi0\\TVA_2025_05_1440.pdf",
+      "pdf_sha256": "2e8c4e26f206116a19112ca9cf9b0b99c95a9515ac89b2f38e7bdf9990cb381b",
+      "pdf_pages": 3,
+      "impression": "PDF rendu par moteur Edge ;aucune imprimante physique ni dépôtDGI."
+    },
+    {
+      "mois": 6,
+      "attendu": {
+        "mois": "06",
+        "credit_ouverture": "4100.00",
+        "collectee": "24000.00",
+        "recuperable": "0.00",
+        "credit_fin": "0.00",
+        "due": "19900.00"
+      },
+      "reel": {
+        "periode": {
+          "type": "mensuelle",
+          "date_debut": "2025-06-01",
+          "date_fin": "2025-06-30"
+        },
+        "regime_tva": "debit",
+        "parametres": {
+          "credit_ouverture": 0.0,
+          "prorata_deduction_pct": 100.0
+        },
+        "collectee": {
+          "total": 24000.0,
+          "base_total": 120000.0,
+          "par_taux": {
+            "20": {
+              "base": 120000.0,
+              "tva": 24000.0
+            }
+          }
+        },
+        "recuperable": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_charges": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_immobilisations": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "credit_tva_anterieur": 4100.0,
+        "tva_due_avant_credit": 24000.0,
+        "tva_due": 19900.0,
+        "credit_tva": 0.0,
+        "details_ventes": [
+          {
+            "facture_id": 6,
+            "facture_numero": "FA-2025-006",
+            "tiers": "Client Services Recette",
+            "date_facture": "2025-06-15",
+            "regime": "debit",
+            "origine": "facture_reglements_avoirs",
+            "ventilation": {
+              "20": {
+                "base": 100000.0,
+                "tva": 20000.0
+              }
+            }
+          },
+          {
+            "facture_id": null,
+            "facture_numero": null,
+            "tiers": null,
+            "origine": "acomptes_clients",
+            "regime": "encaissement",
+            "ventilation": {
+              "20": {
+                "base": 20000.0,
+                "tva": 4000.0
+              }
+            }
+          }
+        ],
+        "details_achats": [],
+        "alertes": [],
+        "limitations": [
+          "retenue_tva_article_117",
+          "controle_automatique_exclusions_article_106",
+          "gel_declaration_deposee",
+          "regularisations_immobilisations_article_104"
+        ],
+        "statut_conformite": "moteur_02b_a_controler_avant_depot"
+      },
+      "pdf_temporaire": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette795_reprise\\test_795_cahier_tva12_impressi0\\TVA_2025_06_1440.pdf",
+      "pdf_sha256": "9e7aedcc548d2ea23440b222aae67c68b4020c612a90f0ab024b75e676dc1da0",
+      "pdf_pages": 3,
+      "impression": "PDF rendu par moteur Edge ;aucune imprimante physique ni dépôtDGI."
+    },
+    {
+      "mois": 7,
+      "attendu": {
+        "mois": "07",
+        "credit_ouverture": "0.00",
+        "collectee": "0.00",
+        "recuperable": "0.00",
+        "credit_fin": "0.00",
+        "due": "0.00"
+      },
+      "reel": {
+        "periode": {
+          "type": "mensuelle",
+          "date_debut": "2025-07-01",
+          "date_fin": "2025-07-31"
+        },
+        "regime_tva": "debit",
+        "parametres": {
+          "credit_ouverture": 0.0,
+          "prorata_deduction_pct": 100.0
+        },
+        "collectee": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_charges": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_immobilisations": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "credit_tva_anterieur": 0.0,
+        "tva_due_avant_credit": 0.0,
+        "tva_due": 0.0,
+        "credit_tva": 0.0,
+        "details_ventes": [],
+        "details_achats": [],
+        "alertes": [],
+        "limitations": [
+          "retenue_tva_article_117",
+          "controle_automatique_exclusions_article_106",
+          "gel_declaration_deposee",
+          "regularisations_immobilisations_article_104"
+        ],
+        "statut_conformite": "moteur_02b_a_controler_avant_depot"
+      },
+      "pdf_temporaire": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette795_reprise\\test_795_cahier_tva12_impressi0\\TVA_2025_07_1440.pdf",
+      "pdf_sha256": "1beef5097d424b3dbd402e37e4194f77dd180eae0a862cc974533b7908e537b6",
+      "pdf_pages": 3,
+      "impression": "PDF rendu par moteur Edge ;aucune imprimante physique ni dépôtDGI."
+    },
+    {
+      "mois": 8,
+      "attendu": {
+        "mois": "08",
+        "credit_ouverture": "0.00",
+        "collectee": "0.00",
+        "recuperable": "0.00",
+        "credit_fin": "0.00",
+        "due": "0.00"
+      },
+      "reel": {
+        "periode": {
+          "type": "mensuelle",
+          "date_debut": "2025-08-01",
+          "date_fin": "2025-08-31"
+        },
+        "regime_tva": "debit",
+        "parametres": {
+          "credit_ouverture": 0.0,
+          "prorata_deduction_pct": 100.0
+        },
+        "collectee": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_charges": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_immobilisations": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "credit_tva_anterieur": 0.0,
+        "tva_due_avant_credit": 0.0,
+        "tva_due": 0.0,
+        "credit_tva": 0.0,
+        "details_ventes": [],
+        "details_achats": [],
+        "alertes": [],
+        "limitations": [
+          "retenue_tva_article_117",
+          "controle_automatique_exclusions_article_106",
+          "gel_declaration_deposee",
+          "regularisations_immobilisations_article_104"
+        ],
+        "statut_conformite": "moteur_02b_a_controler_avant_depot"
+      },
+      "pdf_temporaire": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette795_reprise\\test_795_cahier_tva12_impressi0\\TVA_2025_08_1440.pdf",
+      "pdf_sha256": "2e6a165b023603474fdd3da85eb14fe67ce706ad181baa6d18773398b962e1b7",
+      "pdf_pages": 3,
+      "impression": "PDF rendu par moteur Edge ;aucune imprimante physique ni dépôtDGI."
+    },
+    {
+      "mois": 9,
+      "attendu": {
+        "mois": "09",
+        "credit_ouverture": "0.00",
+        "collectee": "0.00",
+        "recuperable": "0.00",
+        "credit_fin": "0.00",
+        "due": "0.00"
+      },
+      "reel": {
+        "periode": {
+          "type": "mensuelle",
+          "date_debut": "2025-09-01",
+          "date_fin": "2025-09-30"
+        },
+        "regime_tva": "debit",
+        "parametres": {
+          "credit_ouverture": 0.0,
+          "prorata_deduction_pct": 100.0
+        },
+        "collectee": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_charges": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_immobilisations": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "credit_tva_anterieur": 0.0,
+        "tva_due_avant_credit": 0.0,
+        "tva_due": 0.0,
+        "credit_tva": 0.0,
+        "details_ventes": [],
+        "details_achats": [],
+        "alertes": [],
+        "limitations": [
+          "retenue_tva_article_117",
+          "controle_automatique_exclusions_article_106",
+          "gel_declaration_deposee",
+          "regularisations_immobilisations_article_104"
+        ],
+        "statut_conformite": "moteur_02b_a_controler_avant_depot"
+      },
+      "pdf_temporaire": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette795_reprise\\test_795_cahier_tva12_impressi0\\TVA_2025_09_1440.pdf",
+      "pdf_sha256": "8981813c08af704ce9d1366a08de7eca13ef9a96fd34134773b866906f4cd46e",
+      "pdf_pages": 3,
+      "impression": "PDF rendu par moteur Edge ;aucune imprimante physique ni dépôtDGI."
+    },
+    {
+      "mois": 10,
+      "attendu": {
+        "mois": "10",
+        "credit_ouverture": "0.00",
+        "collectee": "0.00",
+        "recuperable": "0.00",
+        "credit_fin": "0.00",
+        "due": "0.00"
+      },
+      "reel": {
+        "periode": {
+          "type": "mensuelle",
+          "date_debut": "2025-10-01",
+          "date_fin": "2025-10-31"
+        },
+        "regime_tva": "debit",
+        "parametres": {
+          "credit_ouverture": 0.0,
+          "prorata_deduction_pct": 100.0
+        },
+        "collectee": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_charges": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_immobilisations": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "credit_tva_anterieur": 0.0,
+        "tva_due_avant_credit": 0.0,
+        "tva_due": 0.0,
+        "credit_tva": 0.0,
+        "details_ventes": [],
+        "details_achats": [],
+        "alertes": [],
+        "limitations": [
+          "retenue_tva_article_117",
+          "controle_automatique_exclusions_article_106",
+          "gel_declaration_deposee",
+          "regularisations_immobilisations_article_104"
+        ],
+        "statut_conformite": "moteur_02b_a_controler_avant_depot"
+      },
+      "pdf_temporaire": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette795_reprise\\test_795_cahier_tva12_impressi0\\TVA_2025_10_1440.pdf",
+      "pdf_sha256": "9110c9afbb5f27e7f27e8c85b29fec6b5fda422a90f2add8a8e6b549902735d7",
+      "pdf_pages": 3,
+      "impression": "PDF rendu par moteur Edge ;aucune imprimante physique ni dépôtDGI."
+    },
+    {
+      "mois": 11,
+      "attendu": {
+        "mois": "11",
+        "credit_ouverture": "0.00",
+        "collectee": "0.00",
+        "recuperable": "0.00",
+        "credit_fin": "0.00",
+        "due": "0.00"
+      },
+      "reel": {
+        "periode": {
+          "type": "mensuelle",
+          "date_debut": "2025-11-01",
+          "date_fin": "2025-11-30"
+        },
+        "regime_tva": "debit",
+        "parametres": {
+          "credit_ouverture": 0.0,
+          "prorata_deduction_pct": 100.0
+        },
+        "collectee": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_charges": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_immobilisations": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "credit_tva_anterieur": 0.0,
+        "tva_due_avant_credit": 0.0,
+        "tva_due": 0.0,
+        "credit_tva": 0.0,
+        "details_ventes": [],
+        "details_achats": [],
+        "alertes": [],
+        "limitations": [
+          "retenue_tva_article_117",
+          "controle_automatique_exclusions_article_106",
+          "gel_declaration_deposee",
+          "regularisations_immobilisations_article_104"
+        ],
+        "statut_conformite": "moteur_02b_a_controler_avant_depot"
+      },
+      "pdf_temporaire": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette795_reprise\\test_795_cahier_tva12_impressi0\\TVA_2025_11_1440.pdf",
+      "pdf_sha256": "d8b1009d371bd4b20c68d38c85dc68b1e6642cd3e02b7e64ef9dd9b47f3866e9",
+      "pdf_pages": 3,
+      "impression": "PDF rendu par moteur Edge ;aucune imprimante physique ni dépôtDGI."
+    },
+    {
+      "mois": 12,
+      "attendu": {
+        "mois": "12",
+        "credit_ouverture": "0.00",
+        "collectee": "2400.00",
+        "recuperable": "0.00",
+        "credit_fin": "0.00",
+        "due": "2400.00"
+      },
+      "reel": {
+        "periode": {
+          "type": "mensuelle",
+          "date_debut": "2025-12-01",
+          "date_fin": "2025-12-31"
+        },
+        "regime_tva": "debit",
+        "parametres": {
+          "credit_ouverture": 0.0,
+          "prorata_deduction_pct": 100.0
+        },
+        "collectee": {
+          "total": 2400.0,
+          "base_total": 12000.0,
+          "par_taux": {
+            "20": {
+              "base": 12000.0,
+              "tva": 2400.0
+            }
+          }
+        },
+        "recuperable": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_charges": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "recuperable_immobilisations": {
+          "total": 0.0,
+          "base_total": 0.0,
+          "par_taux": {}
+        },
+        "credit_tva_anterieur": 0.0,
+        "tva_due_avant_credit": 2400.0,
+        "tva_due": 2400.0,
+        "credit_tva": 0.0,
+        "details_ventes": [
+          {
+            "facture_id": 9,
+            "facture_numero": "FA-2025-009",
+            "tiers": "Client Impayé Recette",
+            "date_facture": "2025-12-10",
+            "regime": "debit",
+            "origine": "facture_reglements_avoirs",
+            "ventilation": {
+              "20": {
+                "base": 12000.0,
+                "tva": 2400.0
+              }
+            }
+          }
+        ],
+        "details_achats": [],
+        "alertes": [],
+        "limitations": [
+          "retenue_tva_article_117",
+          "controle_automatique_exclusions_article_106",
+          "gel_declaration_deposee",
+          "regularisations_immobilisations_article_104"
+        ],
+        "statut_conformite": "moteur_02b_a_controler_avant_depot"
+      },
+      "pdf_temporaire": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette795_reprise\\test_795_cahier_tva12_impressi0\\TVA_2025_12_1440.pdf",
+      "pdf_sha256": "c6d352b5c0338ac77fba90077fb2d0f80a4a345fc542742733573ab4c81685fd",
+      "pdf_pages": 3,
+      "impression": "PDF rendu par moteur Edge ;aucune imprimante physique ni dépôtDGI."
+    }
+  ],
+  "paiements2026_795": [
+    {
+      "reference": "TVA-12-PAY",
+      "date": "2026-01-20",
+      "debit": "4456",
+      "credit": "5141",
+      "montant": "2400.00",
+      "id": 55
+    },
+    {
+      "reference": "IS-2025-PAY",
+      "date": "2026-03-31",
+      "debit": "4453",
+      "credit": "5141",
+      "montant": "23220.25",
+      "id": 56
+    },
+    {
+      "reference": "AP1-2026",
+      "date": "2026-03-31",
+      "debit": "3453",
+      "credit": "5141",
+      "montant": "6691.50",
+      "id": 57
+    },
+    {
+      "reference": "AP2-2026",
+      "date": "2026-06-30",
+      "debit": "3453",
+      "credit": "5141",
+      "montant": "2000.00",
+      "id": 58
+    }
+  ],
+  "echeances795": {
+    "date_controle": "2026-10-24",
+    "banque_apres_soldes2025": "262109.75",
+    "banque_apres_acomptes2026": "253418.25",
+    "reference_acomptes": {
+      "disponible": true,
+      "non_applicable": false,
+      "montant_annuel": 26766.0,
+      "source": "transition_2023_2026",
+      "libelle_source": "Bénéfice fiscal 2025 × taux IS applicable à 2026",
+      "exercice_reference": 2025,
+      "benefice_reference": 133830.0,
+      "taux_reference": 20.0,
+      "provisoire": false
+    },
+    "acomptes": [
+      {
+        "numero": 1,
+        "date_echeance": "2026-03-31",
+        "montant_du": 6691.5,
+        "credit_n_1_impute": 0.0,
+        "credit_ras_impute": 0.0,
+        "montant_net_a_verser": 6691.5,
+        "montant_verse": 6691.5,
+        "date_versement": "2026-03-31",
+        "reference_paiement": "AP1-2026",
+        "dispense": false,
+        "reference_dispense": null,
+        "commentaire": null,
+        "statut": "solde",
+        "reste_a_couvrir": 0.0
+      },
+      {
+        "numero": 2,
+        "date_echeance": "2026-06-30",
+        "montant_du": 6691.5,
+        "credit_n_1_impute": 0.0,
+        "credit_ras_impute": 0.0,
+        "montant_net_a_verser": 6691.5,
+        "montant_verse": 2000.0,
+        "date_versement": "2026-06-30",
+        "reference_paiement": "AP2-2026",
+        "dispense": false,
+        "reference_dispense": null,
+        "commentaire": null,
+        "statut": "partiel_en_retard",
+        "reste_a_couvrir": 4691.5
+      },
+      {
+        "numero": 3,
+        "date_echeance": "2026-09-30",
+        "montant_du": 6691.5,
+        "credit_n_1_impute": 0.0,
+        "credit_ras_impute": 0.0,
+        "montant_net_a_verser": 6691.5,
+        "montant_verse": 0.0,
+        "date_versement": null,
+        "reference_paiement": null,
+        "dispense": false,
+        "reference_dispense": null,
+        "commentaire": null,
+        "statut": "en_retard",
+        "reste_a_couvrir": 6691.5
+      },
+      {
+        "numero": 4,
+        "date_echeance": "2026-12-31",
+        "montant_du": 6691.5,
+        "credit_n_1_impute": 0.0,
+        "credit_ras_impute": 0.0,
+        "montant_net_a_verser": 6691.5,
+        "montant_verse": 0.0,
+        "date_versement": null,
+        "reference_paiement": null,
+        "dispense": false,
+        "reference_dispense": null,
+        "commentaire": null,
+        "statut": "a_venir",
+        "reste_a_couvrir": 6691.5
+      }
+    ],
+    "css": {
+      "applicable": true,
+      "disponible": true,
+      "annee": 2026,
+      "exercice_reference": 2025,
+      "base": 133830.0,
+      "taux": 0.0,
+      "montant_du": 0.0,
+      "source": "liquidation_n_1",
+      "libelle_source": "Bénéfice net fiscal confirmé de l'exercice 2025",
+      "date_echeance": "2026-03-31",
+      "exoneree_permanente": false,
+      "sous_seuil": true,
+      "paiement": null,
+      "montant_verse": 0.0,
+      "reste_a_payer": 0.0,
+      "excedent_verse": 0.0,
+      "statut": "non_due"
+    },
+    "metadonnees_fiscales_sans_double_ecriture": true,
+    "cloture_et_snapshot2025_inchanges": true,
+    "limite": "Montants du jeu fictif,statuts adaptés àdatecourante ;CSSmoteur0neprouvepasabsenceobligationdéclarative. Pasdedépôt niPGutilisateur."
+  }
+}

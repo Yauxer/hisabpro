@@ -1,0 +1,37 @@
+.panel { margin-bottom: 16px; border: .5px solid var(--border-light); border-radius: 10px; background: var(--bg-primary); color: var(--text-primary); font-size: 12px; }
+.panel > summary { cursor: pointer; font-weight: 600; padding: 14px 16px; }
+.contenu { padding: 0 16px 16px; min-width: 0; }
+.note { line-height: 1.55; color: var(--text-secondary); }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 12px 0; }
+.actions button { cursor: pointer; padding: 8px 12px; border: .5px solid var(--border-medium); border-radius: 7px; font: inherit; color: var(--text-primary); background: var(--bg-primary); }
+.actions button:disabled { cursor: default; opacity: .55; }
+.actions label { display: grid; gap: 6px; min-width: 0; }
+.actions input { max-width: 100%; padding: 7px 10px; border: .5px solid var(--border-medium); border-radius: 7px; font: inherit; color: var(--text-primary); background: var(--bg-primary); }
+.totaux { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.carte, .ligne { border: .5px solid var(--border-light); border-radius: 8px; padding: 12px; min-width: 0; }
+.carte { background: var(--bg-secondary); }
+.carte dl { display: grid; gap: 10px; }
+.carte dl > div { display: flex; justify-content: space-between; gap: 10px; align-items: start; }
+.carte dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.carte small { display: block; font-size: 10px; }
+.liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.entete { display: flex; gap: 10px; flex-wrap: wrap; justify-content: space-between; }
+.entete span { color: var(--text-secondary); }
+.ligne p { overflow-wrap: anywhere; line-height: 1.5; }
+.ligne summary { cursor: pointer; color: var(--blue); }
+.montants { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.montants dt { font-size: 11px; color: var(--text-secondary); }
+.montants dd { margin: 6px 0 0; font-weight: 600; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.erreur { color: var(--red); overflow-wrap: anywhere; }
+.documents { margin-top: 12px; }
+.rapprochements { padding-left: 18px; overflow-wrap: anywhere; }
+.rapprochements li { margin-bottom: 14px; }
+.formRapprochement { display: grid; gap: 10px; min-width: 0; }
+.formRapprochement label { display: grid; gap: 6px; min-width: 0; }
+.formRapprochement input, .formRapprochement select { box-sizing: border-box; max-width: 100%; width: 100%; padding: 8px; border: .5px solid var(--border-medium); border-radius: 7px; background: var(--bg-primary); color: var(--text-primary); }
+.formRapprochement label.confirmation { display: flex; align-items: flex-start; gap: 8px; }
+.formRapprochement .confirmation input { width: auto; }
+.empreinte { font-size: 10px; overflow-wrap: anywhere; }
+.documentsOd { border-top: .5px solid var(--border-light); margin-top: 12px; padding-top: 12px; min-width: 0; }
+.documentsOd ul { padding-left: 18px; overflow-wrap: anywhere; line-height: 1.6; }
+@media (max-width: 650px) { .totaux { grid-template-columns: minmax(0, 1fr); } .montants { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

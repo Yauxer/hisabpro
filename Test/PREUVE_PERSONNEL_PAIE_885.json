@@ -1,0 +1,306 @@
+{
+  "date": "2026-10-28",
+  "nombre_distinct": 45,
+  "repartition": {
+    "unitaires_source_outillage": 29,
+    "API_SQL_PostgreSQL_natif_isole": 16
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_personnel885_crypto::test_885_chiffrement_aleatoire_et_restitution_exacte",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_crypto::test_885_substitution_de_portee_refusee[banque-rh-portee0]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_crypto::test_885_substitution_de_portee_refusee[piece-rh-portee1]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_crypto::test_885_substitution_de_portee_refusee[piece-rh-portee2]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_crypto::test_885_substitution_de_portee_refusee[piece-rh-portee3]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_crypto::test_885_corruption_et_perte_de_cle_sans_fuite",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_crypto::test_885_rotation_nouvelles_ecritures_et_restauration_anciennes",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_crypto::test_885_configuration_invalide_refusee[configuration0]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_crypto::test_885_configuration_invalide_refusee[configuration1]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_crypto::test_885_configuration_invalide_refusee[configuration2]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_crypto::test_885_chemin_interne_et_absence_configuration_refuses",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_crypto::test_885_fichier_externe_valide_et_doublon_json_refuse",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_cles_ops::test_885_initialisation_rotation_atomique_sauvegardes_et_anciennes_cles",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_cles_ops::test_885_sauvegarde_existante_interdit_activation",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_coffre_isole::test_885_configuration_explicite_avant_collecte_et_droits",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_coffre_isole::test_885_depot_prive_restitution_exacte_masques_isolation_et_immutabilite",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_coffre_isole::test_885_types_et_taille_bornes[vide]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_coffre_isole::test_885_types_et_taille_bornes[type_refuse]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_coffre_isole::test_885_types_et_taille_bornes[trop_grand]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_coffre_isole::test_885_rotation_active_restauration_cle_et_indisponibilite_sans_fuite",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel885_coffre_isole::test_885_profil_personnel_depot_et_substitution_chiffree_refusee",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel883_regimes_isole::test_883_regimes_proposes_decides_dates_et_conservation",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel883_regimes_isole::test_883_date_entree_pas_de_coercition[donnees0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel883_regimes_isole::test_883_date_entree_pas_de_coercition[donnees1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel883_regimes_isole::test_883_regime_incorrect_refuse[]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel883_regimes_isole::test_883_regime_incorrect_refuse[XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel883_regimes_isole::test_883_regime_incorrect_refuse[42]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel883_regimes_isole::test_883_regimes_inconnus_pas_de_valeur_inventee",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel883_regimes_isole::test_883_contrat_expire_ne_presume_pas_regime_du_nouveau",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel883_regimes_isole::test_883_nouveau_contrat_ne_strande_pas_salaire_futur_approuve",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[GET-/api/employes/personnel-extra]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[GET-/api/employes/personnel/1/historique-extra]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[POST-/api/employes/personnel/contexte]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[GET-/api/employes/securite/acces-extra]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[PUT-/api/employes/personnel/1]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[DELETE-/api/employes/personnel/1]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[PATCH-/api/auth/me]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[POST-/api/societes/switcher/1/autre]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[GET-/api/employes/personnel//options]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[GET-/api/futur-module]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_chemins_proches_ou_futurs_refuses[POST-/api/employes/personnel/demandes/1/approuver/autre]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_contexte_request_absent_refuse_personnel",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_roles_existants_non_restreints_par_cette_garde[admin]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_roles_existants_non_restreints_par_cette_garde[comptable]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    },
+    {
+      "id": "Test.test_personnel881_profil_unitaire::test_881_roles_existants_non_restreints_par_cette_garde[lecture]",
+      "famille": "unitaires_source_outillage",
+      "statut": "reussi"
+    }
+  ],
+  "campagnes": [
+    {
+      "campagne": "personnel885_cible",
+      "cas": 17,
+      "echecs": 0,
+      "erreurs": 2,
+      "ignores": 0,
+      "code": 1,
+      "selection_finale": false
+    },
+    {
+      "campagne": "personnel885_final",
+      "cas": 45,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "code": 0,
+      "selection_finale": true
+    },
+    {
+      "campagne": "personnel885_flux",
+      "cas": 18,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "code": 0,
+      "selection_finale": false
+    },
+    {
+      "campagne": "personnel885_reprise",
+      "cas": 1,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "code": 0,
+      "selection_finale": false
+    }
+  ],
+  "compilation": {
+    "fichiers": [
+      "hisabpro-backend/routers/personnel_coffre.py",
+      "hisabpro-backend/routers/personnel_workflow.py",
+      "hisabpro-backend/services/personnel_coffre_crypto.py",
+      "hisabpro-backend/services/personnel_coffre_service.py",
+      "hisabpro-backend/services/personnel_profil_service.py",
+      "ops/personnel_coffre_cles.py",
+      "Test/test_personnel885_cles_ops.py",
+      "Test/test_personnel885_coffre_isole.py",
+      "Test/test_personnel885_crypto.py"
+    ],
+    "resultat": "OK"
+  },
+  "frontend": "inchangé ;aucun build885",
+  "candidat": {
+    "chemin": "Test\\CANDIDAT_PERSONNEL_PAIE_885.json",
+    "sources": 485,
+    "sha256": "4be12c853781efa357ad41c71693e067cab8b4bca747a8c0a124f49bbc855f59"
+  },
+  "fichiers_preuves": {
+    "Test/preuves_personnel885/personnel885_cible.xml": "49d05660782d0889b7bd6fd1407467dd6842fc621443d80488ca208a9669ac5d",
+    "Test/preuves_personnel885/personnel885_final.xml": "06af77f73898b829810441942a5940b55f5832e24ea11932d89b1447a22bf0ac",
+    "Test/preuves_personnel885/personnel885_flux.xml": "fdb3067d6e91281579fd5a22298444faa48a5bf77da552889eb4e57494432cc7",
+    "Test/preuves_personnel885/personnel885_reprise.xml": "7200daf06188221aa22e4c0921da891b55e6ea2dbfae9a89e63579a623d49152"
+  },
+  "limites": [
+    "Aucun PostgreSQL réel ni clé réelle",
+    "API livrée ;interface etbancaire à suivre887",
+    "Rotation des nouvelles écritures,anciens objets non réchiffrés",
+    "Restauration clés/objets isolée ;pas de restauration complète de base885",
+    "ACL,hébergement,conservation etrecette humaine à renseigner/vérifier avant production"
+  ]
+}

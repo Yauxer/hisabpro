@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="53.628" timestamp="2026-10-24T15:42:23.776298+02:00" hostname="Taiyou"><testcase classname="Test.test_cahier_journal769_isole" name="test_769_cinquante_operations_cahier_balance_bilan_cpc_caf" time="50.750" /></testsuite></testsuites>

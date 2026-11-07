@@ -1,0 +1,98 @@
+{
+  "lot": 757,
+  "fonctionnalite_developpee": false,
+  "format_dgi": false,
+  "sources_sha256": {
+    "hisabpro-backend/models.py": "b78be3fc2d24ce7671448e31fe0e7d97ae34ee91032a2314f30793970e4cd65a",
+    "hisabpro-backend/services/ras_reglement_service.py": "335823c159f0ed9262a6b5d8c07288d1b992ad42f11698984d3faf9a39a8ece6",
+    "hisabpro-backend/services/ras_paiement_service.py": "e89aa7a467d7ff9d474e222426a86d0fb7db4b1058599bee39a875e19266295e",
+    "hisabpro-backend/services/balance_credits_is_service.py": "aadb5afba9711443ad3ca0595ea3fd88ae8e81edf448fb4c94e2054ff6e751fa",
+    "docs/audit/SOURCES_ANNEXE151_20261019.md": "b93ea2420e929e709f6213be690535c86baaf8a799639ed324593f55cf5d85b5"
+  },
+  "correspondances": [
+    {
+      "domaine": "Identité",
+      "donnee": "Nom ou raison sociale",
+      "source": "Tiers.nom",
+      "limite": "existant, à confirmer pour le bénéficiaire et la période"
+    },
+    {
+      "domaine": "Identité",
+      "donnee": "Adresse",
+      "source": "Tiers.adresse",
+      "limite": "existant, peut être vide ou avoir changé"
+    },
+    {
+      "domaine": "Identité",
+      "donnee": "Identification fiscale",
+      "source": "Tiers.identifiant_fiscal",
+      "limite": "existant, ne prouve pas le régime ni une identification TP"
+    },
+    {
+      "domaine": "Identité",
+      "donnee": "Activité/profession",
+      "source": "aucun champ dédié Tiers",
+      "limite": "à compléter explicitement"
+    },
+    {
+      "domaine": "Identité",
+      "donnee": "Identification taxe professionnelle",
+      "source": "aucun champ dédié Tiers",
+      "limite": "à compléter selon le cas ; pas RC/ICE substitué"
+    },
+    {
+      "domaine": "Identité",
+      "donnee": "CNSS du bénéficiaire",
+      "source": "aucun champ dédié Tiers",
+      "limite": "à qualifier sur pièce ; ne pas utiliser CNSS société ou salarié"
+    },
+    {
+      "domaine": "Régime",
+      "donnee": "CPU / autoentrepreneur / autre",
+      "source": "Tiers.categorie_fiscale",
+      "limite": "autoentrepreneur présent, CPU non distingué ; catégorie ne prouve pas le régime applicable"
+    },
+    {
+      "domaine": "Comptabilité",
+      "donnee": "Rattachement tiers",
+      "source": "LigneEcriture.tiers_id",
+      "limite": "existant ; lien exact, historique manquant reste à qualifier"
+    },
+    {
+      "domaine": "Comptabilité",
+      "donnee": "Auxiliaire figé",
+      "source": "LigneEcriture.libelle_auxiliaire_snapshot",
+      "limite": "existant ; identité fiscale complète non figée ici"
+    },
+    {
+      "domaine": "Comptabilité",
+      "donnee": "Montants comptabilisés par catégorie",
+      "source": "Ecriture/LigneEcriture",
+      "limite": "montants présents ; catégorie151 non déterminable par compte seul"
+    },
+    {
+      "domaine": "RAS",
+      "donnee": "Capture et annulation",
+      "source": "services/ras_reglement_service.py",
+      "limite": "registre existant SQL séparé du metadata ; ne pas le recréer"
+    },
+    {
+      "domaine": "RAS",
+      "donnee": "Estimation de facture",
+      "source": "Facture.ras_taux",
+      "limite": "n’est ni une retenue effective ni une annexe151 complète"
+    },
+    {
+      "domaine": "RAS",
+      "donnee": "Date fiscale et montant soumis",
+      "source": "qualification documentaire explicite",
+      "limite": "ne pas remplacer par date facture, échéance ou écriture bancaire"
+    },
+    {
+      "domaine": "Annexe",
+      "donnee": "Locations et CPU/AE",
+      "source": "modèles administratifs applicables",
+      "limite": "états particuliers à obtenir ; ne pas réutiliser article154 non-résidents"
+    }
+  ]
+}

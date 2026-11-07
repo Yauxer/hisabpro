@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="303.470" timestamp="2026-10-29T19:06:17.631334+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_qualification_liasse943_isole" name="test_943_exports_annuels_fideles_et_finalisation_non_forcee[1440]" time="299.676"><failure message="StopIteration">application = {'api_url': 'http://127.0.0.1:64239', 'web_url': 'http://127.0.0.1:64240', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_w32el2sx'), 'nonce': '39fc5d1568084b86bfacd3e34296a601', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/liasse943_cible/test_943_exports_annuels_fidel0')
+
+    @pytest.mark.parametrize('largeur', [1440, 390])
+    def test_943_exports_annuels_fideles_et_finalisation_non_forcee(application, largeur, tmp_path):
+        with laboratoire(application, largeur, tmp_path, 'liasse943') as (api, page, sid, preuve):
+            tiers, articles = referentiels(api, page, application, sid, preuve)
+            b = DATA['banque']
+            banque = ok(api.post('/api/banques', json={
+                'banque': b['banque'], 'rib': b['rib'], 'compte_comptable': '5141', 'devise': 'MAD',
+            }), 201)
+            capital(page, application, sid, preuve)
+            immo = acquisition(api, page, application, sid, tiers['F-IMMO'], preuve)
+            semestre(api, page, application, sid, tiers, articles, banque, preuve, tmp_path)
+            annuel(api, page, application, sid, tiers, articles, banque, immo, preuve)
+            cloturer_cahier(api, page, application, sid, preuve)
+            echeances_2026(api, page, application, sid, preuve)
+            completer_etic(api, page, application, sid, preuve, tmp_path)
+    
+            # Seule l'identité de la société fictive change après les saisies du cahier.
+            nom = 'ATLAS &lt;RECETTE&gt; &amp; associés FICTIFS 943'
+            ok(api.patch('/api/societe/moi', json={'raison_sociale': nom, 'logo_url': image_data('PNG')}))
+            avant = core(application, sid)
+            snapshot = ok(api.get('/api/fiscalite/is/2025'))['liquidation']['snapshot']
+            data = ok(api.get('/api/etats/liasse/2025'))
+            page.reload(wait_until='domcontentloaded')
+            expect(page.get_by_role('button', name='Finaliser', exact=True)).to_be_disabled()
+            assert not data['controles']['pret_a_finaliser']
+            assert data['etic']['progression']['completes'] == 20
+            assert data['etic']['progression']['total'] == 23
+            refus = api.post('/api/etats/liasse/2025/finaliser')
+            assert refus.status_code == 409, refus.text
+            assert data['archive'] is None
+    
+            excel = telecharger(page, 'Excel', tmp_path, 'liasse943.xlsx')
+            pdf = telecharger(page, 'PDF', tmp_path, 'liasse943.pdf')
+            w = load_workbook(excel, data_only=True)
+            assert {'Synthese', 'T1 Bilan Actif', 'T1 Bilan Passif', 'T2 CPC', 'ESG',
+                    'Financement', 'Fiscal', 'ETIC'} &lt;= set(w.sheetnames)
+            synthese = list(w['Synthese'].values)
+            for label, val in [('Raison sociale', nom), ('IF', data['societe']['identifiant_fiscal']),
+                               ('ICE', data['societe']['ice'])]:
+                assert any(r[0] == label and r[1] == val for r in synthese), (label, val)
+            assert any('numérotation interne' in str(v).lower() for r in synthese for v in r)
+            assert any('BLOQUANT' in r for r in synthese)
+    
+            actif = list(w['T1 Bilan Actif'].values)
+&gt;           immo_row = next(r for r in actif if r[0] == '23')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           StopIteration
+
+Test\test_e2e_qualification_liasse943_isole.py:67: StopIteration</failure></testcase></testsuite></testsuites>

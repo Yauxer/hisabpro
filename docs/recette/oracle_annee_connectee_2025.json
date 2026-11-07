@@ -1,0 +1,52 @@
+{
+  "titre": "Oracle indépendant — parcours annuel connecté réduit",
+  "version": "2026-10-08",
+  "avertissement": "Société et opérations entièrement fictives, uniquement PostgreSQL éphémère. Ce parcours ne remplace pas les 218 cas du cahier ni une validation réglementaire.",
+  "profil": {
+    "forme_juridique": "SARL",
+    "regime_fiscal": "is",
+    "regime_tva": "encaissement",
+    "devise": "MAD",
+    "exercice_debut": 2020,
+    "constitution_fictive": "2020-01-01",
+    "debut_exploitation_fictif": "2020-01-01",
+    "concession_service_public": false,
+    "hypothese_cm": "Laboratoire droit commun hors période de démarrage, sans exonération CM ni exonération du minimum. Dates consignées ici et dans justification_regime ; aucun champ dédié de société ne les mémorise ni ne les qualifie automatiquement.",
+    "parametres_is": {
+      "categorie_is": "droit_commun",
+      "justification_regime": "LABORATOIRE FICTIF : SARL constituée et exploitée depuis le 01/01/2020, non concessionnaire. Hypothèse explicite hors démarrage, sans exonération CM ni du minimum ; pas une validation CGI.",
+      "cm_exoneration_totale": false,
+      "cm_minimum_3000_exonere": false,
+      "cm_base_exclue": "0.00",
+      "cm_base_taux_reduit_015": "0.00"
+    }
+  },
+  "exercice": 2025,
+  "ecritures_avant_impot": [
+    {"reference": "CAP-ANNUEL", "date": "2025-01-01", "lignes": [["5141", "20000.00", "0.00"], ["1111", "0.00", "20000.00"]]},
+    {"reference": "IMMO-ANNUEL", "date": "2025-01-01", "lignes": [["2355", "1200.00", "0.00"], ["34551", "240.00", "0.00"], ["4481", "0.00", "1440.00"]]},
+    {"reference": "ACH-ANNUEL", "date": "2025-03-01", "lignes": [["6111", "1000.00", "0.00"], ["34552", "200.00", "0.00"], ["4411", "0.00", "1200.00"]]},
+    {"reference": "VENTE-ANNUEL", "date": "2025-03-02", "lignes": [["3421", "960.00", "0.00"], ["7111", "0.00", "800.00"], ["4455", "0.00", "160.00"]]},
+    {"reference": "CLI-PARTIEL", "date": "2025-03-03", "lignes": [["5141", "360.00", "0.00"], ["3421", "0.00", "360.00"]]},
+    {"reference": "FOU-PARTIEL", "date": "2025-03-04", "lignes": [["4411", "600.00", "0.00"], ["5141", "0.00", "600.00"]]},
+    {"reference": "CLI-SOLDE", "date": "2025-06-03", "lignes": [["5141", "600.00", "0.00"], ["3421", "0.00", "600.00"]]},
+    {"reference": "FOU-SOLDE", "date": "2025-06-04", "lignes": [["4411", "600.00", "0.00"], ["5141", "0.00", "600.00"]]},
+    {"reference": "DOT-ANNUEL", "date": "2025-12-31", "lignes": [["61935", "400.00", "0.00"], ["28355", "0.00", "400.00"]]},
+    {"reference": "STOCK-ANNUEL", "date": "2025-12-31", "lignes": [["3111", "600.00", "0.00"], ["6114", "0.00", "600.00"]]}
+  ],
+  "totaux_journal_avant_impot": {"nb_ecritures": 10, "nb_lignes": 23, "debit": "26760.00", "credit": "26760.00"},
+  "soldes_avant_impot": {"1111": "-20000.00", "2355": "1200.00", "28355": "-400.00", "3111": "600.00", "3421": "0.00", "34551": "240.00", "34552": "200.00", "4411": "0.00", "4455": "-160.00", "4481": "-1440.00", "5141": "19760.00", "6111": "1000.00", "6114": "-600.00", "61935": "400.00", "7111": "-800.00"},
+  "stock": {"achat_quantite": "10", "vente_quantite": "4", "stock_final": "6", "cmup": "100.00", "valeur_finale": "600.00"},
+  "immobilisation": {"prix_ht": "1200.00", "tva": "240.00", "ttc": "1440.00", "date_acquisition": "2025-01-01", "date_mise_en_service": "2025-01-01", "date_paiement": null, "duree_ans": 3, "dotation_2025": "400.00", "vnc_2025": "800.00"},
+  "tva": {
+    "mars": {"collectee": "60.00", "recuperable": "100.00", "due": "0.00", "credit": "40.00"},
+    "juin": {"collectee": "100.00", "recuperable": "100.00", "due": "0.00", "credit": "40.00", "credit_anterieur": "40.00"},
+    "annuelle": {"collectee": "160.00", "recuperable": "200.00", "due": "0.00", "credit": "40.00"},
+    "immobilisation_non_payee": "240.00 non déduits dans la déclaration ; restent au débit du 34551 dans le journal. Alerte acquisition non payée attendue. Aucune exonération inventée."
+  },
+  "resultat_avant_impot": "0.00",
+  "impot_laboratoire": {"base_cm": "800.00", "taux_standard_pct_parametre_livre": "0.25", "cm_proportionnelle": "2.00", "minimum_parametre_livre": "3000.00", "is_theorique": "0.00", "impot_attendu": "3000.00", "nature": "CM", "resultat_net": "-3000.00", "limite": "Oracle d'intégration du profil explicite utilisant les paramètres existants ; qualification d'un dossier réel et conformité CGI non validées par ce test."},
+  "soldes_a_nouveaux_2026": {"1111": "-20000.00", "1199": "3000.00", "2355": "1200.00", "28355": "-400.00", "3111": "600.00", "34551": "240.00", "34552": "200.00", "4453": "-3000.00", "4455": "-160.00", "4481": "-1440.00", "5141": "19760.00"},
+  "totaux_a_nouveaux": {"debit": "25000.00", "credit": "25000.00"},
+  "sources_existing": ["hisabpro-backend/services/fiscalite_cm_service.py", "hisabpro-backend/routers/tva.py", "docs/recette/REGISTRE_LIMITES_RECETTE.md", "docs/recette/CAHIER_RECETTE_HISABPRO.pdf"]
+}

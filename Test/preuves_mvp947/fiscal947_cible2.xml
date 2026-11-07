@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="11" time="121.320" timestamp="2026-10-29T20:01:53.912437+01:00" hostname="Taiyou"><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_deficit_documente_12000_sans_double_consommation" time="34.644" /><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_reprise_taxee_deduction_seulement_apres_justification" time="4.658"><failure message="AssertionError: {&quot;detail&quot;:&quot;Compte(s) absent(s) ou désactivé(s) dans le plan de la société : 71955&quot;}">application = {'api_url': 'http://127.0.0.1:61261', 'web_url': 'http://127.0.0.1:61262', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_ibfh_r0p'), 'nonce': '965f06fa855148eeae10012c9e6f8083', ...}, ...}
+
+    def test_947_reprise_taxee_deduction_seulement_apres_justification(application):
+        with closing(client(application)[0]) as api:
+            sid = copie(api, application)
+            initial = core(application, sid)
+&gt;           e = reprise_provision(api)
+                ^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_variantes_fiscales947_isole.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\fiscal947_support.py:105: in reprise_provision
+    return ecriture(api, 'REC-REPRISE', [{'compte': '1518', 'debit': 1000},
+Test\fiscal947_support.py:26: in ecriture
+    e = ok(api.post('/api/ecritures', json=body), 201)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [400 Bad Request]&gt;, status = 201
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":"Compte(s) absent(s) ou désactivé(s) dans le plan de la société : 71955"}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_refus_fiscaux_exacts_sans_mutation[029]" time="1.281" /><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_refus_fiscaux_exacts_sans_mutation[030]" time="1.101" /><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_refus_fiscaux_exacts_sans_mutation[031]" time="1.104" /><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_refus_fiscaux_exacts_sans_mutation[032]" time="1.100" /><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_refus_fiscaux_exacts_sans_mutation[033]" time="6.740" /><testcase classname="Test.test_e2e_variantes_fiscales947_isole" name="test_947_variante_documentee_interface_et_rechargement[1440-deficit]" time="40.956" /><testcase classname="Test.test_e2e_variantes_fiscales947_isole" name="test_947_variante_documentee_interface_et_rechargement[1440-deduction]" time="5.396"><failure message="AssertionError: {&quot;detail&quot;:&quot;Compte(s) absent(s) ou désactivé(s) dans le plan de la société : 71955&quot;}">application = {'api_url': 'http://127.0.0.1:61295', 'web_url': 'http://127.0.0.1:61296', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_gw95osbl'), 'nonce': 'dd4c4a845f06416e9bd8baf12a9af2ce', ...}, ...}
+variante = 'deduction', largeur = 1440
+
+    @pytest.mark.parametrize('variante', ['deficit', 'deduction'])
+    @pytest.mark.parametrize('largeur', [1440, 390])
+    def test_947_variante_documentee_interface_et_rechargement(application, variante, largeur):
+        api, email, password = client(application)
+        with closing(api), sync_playwright() as p:
+            sid = copie(api, application, reprise=variante == 'deficit')
+            if variante == 'deduction':
+&gt;               reprise_provision(api)
+
+Test\test_e2e_variantes_fiscales947_isole.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\fiscal947_support.py:105: in reprise_provision
+    return ecriture(api, 'REC-REPRISE', [{'compte': '1518', 'debit': 1000},
+Test\fiscal947_support.py:26: in ecriture
+    e = ok(api.post('/api/ecritures', json=body), 201)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [400 Bad Request]&gt;, status = 201
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":"Compte(s) absent(s) ou désactivé(s) dans le plan de la société : 71955"}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase><testcase classname="Test.test_e2e_variantes_fiscales947_isole" name="test_947_variante_documentee_interface_et_rechargement[390-deficit]" time="8.925" /><testcase classname="Test.test_e2e_variantes_fiscales947_isole" name="test_947_variante_documentee_interface_et_rechargement[390-deduction]" time="11.109"><failure message="AssertionError: {&quot;detail&quot;:&quot;Compte(s) absent(s) ou désactivé(s) dans le plan de la société : 71955&quot;}">application = {'api_url': 'http://127.0.0.1:61295', 'web_url': 'http://127.0.0.1:61296', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_gw95osbl'), 'nonce': 'dd4c4a845f06416e9bd8baf12a9af2ce', ...}, ...}
+variante = 'deduction', largeur = 390
+
+    @pytest.mark.parametrize('variante', ['deficit', 'deduction'])
+    @pytest.mark.parametrize('largeur', [1440, 390])
+    def test_947_variante_documentee_interface_et_rechargement(application, variante, largeur):
+        api, email, password = client(application)
+        with closing(api), sync_playwright() as p:
+            sid = copie(api, application, reprise=variante == 'deficit')
+            if variante == 'deduction':
+&gt;               reprise_provision(api)
+
+Test\test_e2e_variantes_fiscales947_isole.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\fiscal947_support.py:105: in reprise_provision
+    return ecriture(api, 'REC-REPRISE', [{'compte': '1518', 'debit': 1000},
+Test\fiscal947_support.py:26: in ecriture
+    e = ok(api.post('/api/ecritures', json=body), 201)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [400 Bad Request]&gt;, status = 201
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":"Compte(s) absent(s) ou désactivé(s) dans le plan de la société : 71955"}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,415 @@
+{
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "operations": [
+    {
+      "reference": "CAP-01",
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "id": 1,
+      "numero": "BQ-2025-0001"
+    },
+    {
+      "reference": "IMMO-ACQ",
+      "date": "2025-01-01",
+      "journal": "AC",
+      "id": 2,
+      "numero": "AC-2025-0001"
+    },
+    {
+      "reference": "IMMO-PAY",
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "id": 3,
+      "numero": "BQ-2025-0002"
+    },
+    {
+      "reference": "AC-F01",
+      "date": "2025-01-04",
+      "journal": "BQ",
+      "id": 4,
+      "numero": "BQ-2025-0003"
+    },
+    {
+      "reference": "ACH-01",
+      "date": "2025-01-05",
+      "journal": "AC",
+      "id": 5,
+      "numero": "AC-2025-0002"
+    },
+    {
+      "reference": "AC-F01-IMP",
+      "date": "2025-01-05",
+      "journal": "OD",
+      "id": 6,
+      "numero": "OD-2025-0001"
+    },
+    {
+      "reference": "ACH-01-PAY",
+      "date": "2025-01-07",
+      "journal": "BQ",
+      "id": 7,
+      "numero": "BQ-2025-0004"
+    },
+    {
+      "reference": "ACH-02",
+      "date": "2025-01-10",
+      "journal": "AC",
+      "id": 8,
+      "numero": "AC-2025-0003"
+    },
+    {
+      "reference": "VENTE-01",
+      "date": "2025-01-20",
+      "journal": "VT",
+      "id": 9,
+      "numero": "VT-2025-0001"
+    },
+    {
+      "reference": "VENTE-01-PAY",
+      "date": "2025-01-25",
+      "journal": "BQ",
+      "id": 10,
+      "numero": "BQ-2025-0005"
+    },
+    {
+      "reference": "CHQ-01",
+      "date": "2025-01-26",
+      "journal": "AE",
+      "id": 11,
+      "numero": "AE-2025-0001"
+    },
+    {
+      "reference": "TVA-01",
+      "date": "2025-01-31",
+      "journal": "OD",
+      "id": 12,
+      "numero": "OD-2025-0002"
+    },
+    {
+      "reference": "CHQ-01-REM",
+      "date": "2025-02-01",
+      "journal": "AE",
+      "id": 13,
+      "numero": "AE-2025-0002"
+    },
+    {
+      "reference": "CHQ-01-ENC",
+      "date": "2025-02-05",
+      "journal": "BQ",
+      "id": 14,
+      "numero": "BQ-2025-0006"
+    },
+    {
+      "reference": "ACH-SERVICE",
+      "date": "2025-02-10",
+      "journal": "AC",
+      "id": 15,
+      "numero": "AC-2025-0004"
+    },
+    {
+      "reference": "AV-01",
+      "date": "2025-02-10",
+      "journal": "AV",
+      "id": 16,
+      "numero": "AV-2025-0001"
+    },
+    {
+      "reference": "ACH-SERVICE-PAY",
+      "date": "2025-02-15",
+      "journal": "BQ",
+      "id": 17,
+      "numero": "BQ-2025-0007"
+    },
+    {
+      "reference": "TVA-02",
+      "date": "2025-02-28",
+      "journal": "OD",
+      "id": 18,
+      "numero": "OD-2025-0003"
+    },
+    {
+      "reference": "VENTE-02",
+      "date": "2025-03-01",
+      "journal": "VT",
+      "id": 19,
+      "numero": "VT-2025-0002"
+    },
+    {
+      "reference": "EFF-F01",
+      "date": "2025-03-01",
+      "journal": "AE",
+      "id": 20,
+      "numero": "AE-2025-0003"
+    },
+    {
+      "reference": "VENTE-02-PAY",
+      "date": "2025-03-05",
+      "journal": "BQ",
+      "id": 21,
+      "numero": "BQ-2025-0008"
+    },
+    {
+      "reference": "EFF-F01-PAY",
+      "date": "2025-03-20",
+      "journal": "BQ",
+      "id": 22,
+      "numero": "BQ-2025-0009"
+    },
+    {
+      "reference": "TVA-03",
+      "date": "2025-03-31",
+      "journal": "OD",
+      "id": 23,
+      "numero": "OD-2025-0004"
+    },
+    {
+      "reference": "EFF-C01",
+      "date": "2025-04-01",
+      "journal": "AE",
+      "id": 24,
+      "numero": "AE-2025-0004"
+    },
+    {
+      "reference": "EFF-C01-REM",
+      "date": "2025-05-15",
+      "journal": "AE",
+      "id": 25,
+      "numero": "AE-2025-0005"
+    },
+    {
+      "reference": "EFF-C01-ENC",
+      "date": "2025-05-16",
+      "journal": "BQ",
+      "id": 26,
+      "numero": "BQ-2025-0010"
+    },
+    {
+      "reference": "AC-C01",
+      "date": "2025-06-01",
+      "journal": "BQ",
+      "id": 27,
+      "numero": "BQ-2025-0011"
+    },
+    {
+      "reference": "VENTE-SERVICE",
+      "date": "2025-06-15",
+      "journal": "VT",
+      "id": 28,
+      "numero": "VT-2025-0003"
+    },
+    {
+      "reference": "AC-C01-IMP",
+      "date": "2025-06-15",
+      "journal": "OD",
+      "id": 29,
+      "numero": "OD-2025-0005"
+    },
+    {
+      "reference": "VENTE-SERVICE-PAY",
+      "date": "2025-06-30",
+      "journal": "BQ",
+      "id": 30,
+      "numero": "BQ-2025-0012"
+    },
+    {
+      "reference": "TVA-06",
+      "date": "2025-06-30",
+      "journal": "OD",
+      "id": 31,
+      "numero": "OD-2025-0006"
+    },
+    {
+      "reference": "TVA-06-PAY",
+      "date": "2025-07-20",
+      "journal": "BQ",
+      "id": 32,
+      "numero": "BQ-2025-0013"
+    },
+    {
+      "reference": "INT-PPRF",
+      "date": "2025-11-30",
+      "journal": "BQ",
+      "id": 33,
+      "numero": "BQ-2025-0014"
+    },
+    {
+      "reference": "ASS-01",
+      "date": "2025-12-01",
+      "journal": "BQ",
+      "id": 34,
+      "numero": "BQ-2025-0015"
+    },
+    {
+      "reference": "REF-02",
+      "date": "2025-12-02",
+      "journal": "AC",
+      "id": 35,
+      "numero": "AC-2025-0005"
+    },
+    {
+      "reference": "REF-002",
+      "date": "2025-12-02",
+      "journal": "AC",
+      "id": 36,
+      "numero": "AC-2025-0006"
+    },
+    {
+      "reference": "VENTE-IMPAYEE",
+      "date": "2025-12-10",
+      "journal": "VT",
+      "id": 37,
+      "numero": "VT-2025-0004"
+    },
+    {
+      "reference": "CHQ-REJET",
+      "date": "2025-12-12",
+      "journal": "AE",
+      "id": 38,
+      "numero": "AE-2025-0006"
+    },
+    {
+      "reference": "CHQ-REJET-INV",
+      "date": "2025-12-15",
+      "journal": "OD",
+      "id": 39,
+      "numero": "OD-2025-0007"
+    },
+    {
+      "reference": "AMENDE",
+      "date": "2025-12-20",
+      "journal": "BQ",
+      "id": 40,
+      "numero": "BQ-2025-0016"
+    },
+    {
+      "reference": "FRAIS-BQ",
+      "date": "2025-12-31",
+      "journal": "BQ",
+      "id": 41,
+      "numero": "BQ-2025-0017"
+    },
+    {
+      "reference": "STOCK-FIN",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "id": 42,
+      "numero": "OD-2025-0008"
+    },
+    {
+      "reference": "AMORT-2025",
+      "date": "2025-12-31",
+      "journal": "AM",
+      "id": 43,
+      "numero": "AM-2025-0001"
+    },
+    {
+      "reference": "CCA-2025",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "id": 44,
+      "numero": "OD-2025-0009"
+    },
+    {
+      "reference": "FNP-2025",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "id": 45,
+      "numero": "OD-2025-0010"
+    },
+    {
+      "reference": "PROV-RISQUE",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "id": 46,
+      "numero": "OD-2025-0011"
+    },
+    {
+      "reference": "DEPR-CLIENT",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "id": 47,
+      "numero": "OD-2025-0012"
+    },
+    {
+      "reference": "TVA-12",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "id": 48,
+      "numero": "OD-2025-0013"
+    },
+    {
+      "reference": "IS-2025",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "id": 49,
+      "numero": "OD-2025-0014"
+    },
+    {
+      "reference": "PPRF-IMP",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "id": 50,
+      "numero": "OD-2025-0015"
+    }
+  ],
+  "erreur": null,
+  "portee": "Saisie et validation par API du journal attendu uniquement ;pas de création des documents commerciaux,stocks physiques ou registres fiscaux.",
+  "ordre": "Opérations triées par date,ordre source conservé à date égale,afin de respecter la chronologie de validation des journaux.",
+  "immobilisations_bilan": {
+    "brut": 24000.0,
+    "amort_prov": 4800.0,
+    "net": 19200.0
+  },
+  "detail_materiel_informatique": {
+    "type": "detail",
+    "numero": "235",
+    "label": "Mobilier, matériel de bureau et aménagements divers",
+    "valeurs": [
+      24000.0,
+      null,
+      null,
+      null
+    ],
+    "niveau": 1
+  },
+  "soldes": {
+    "1111": "-200000.00",
+    "1518": "-1500.00",
+    "2355": "24000.00",
+    "28355": "-4800.00",
+    "3111": "6600.00",
+    "3421": "14400.00",
+    "34552": "80.00",
+    "3491": "11000.00",
+    "3942": "-2000.00",
+    "4411": "-480.00",
+    "4417": "-3000.00",
+    "4453": "-23220.25",
+    "4456": "-2400.00",
+    "5141": "287730.00",
+    "6111": "22000.00",
+    "6114": "-6600.00",
+    "6125": "15400.00",
+    "6134": "1000.00",
+    "61472": "10.00",
+    "61473": "60.00",
+    "61935": "4800.00",
+    "61955": "1500.00",
+    "61964": "2000.00",
+    "6583": "500.00",
+    "6701": "23420.25",
+    "7111": "-37500.00",
+    "7124": "-132000.00",
+    "7381": "-1000.00"
+  },
+  "resultats": {
+    "banque": "287730.00",
+    "stock_valeur": "6600.00",
+    "total_actif_net": "337010.0",
+    "total_passif_net": "337010.0",
+    "resultat_net": "106409.75",
+    "caf": "112709.75"
+  },
+  "ecritures": 50,
+  "lignes": 118
+}

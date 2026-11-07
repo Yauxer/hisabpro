@@ -1,0 +1,145 @@
+{
+  "contexte": "Société fictive729 MAD2026, source N2 explicitement conservée en2024.",
+  "n": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "2111",
+      "debit": "2000",
+      "credit": "0"
+    },
+    {
+      "compte": "28111",
+      "debit": "0",
+      "credit": "500"
+    },
+    {
+      "compte": "5141",
+      "debit": "14500",
+      "credit": "0"
+    },
+    {
+      "compte": "7111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "6132",
+      "debit": "3000",
+      "credit": "0"
+    },
+    {
+      "compte": "7581",
+      "debit": "0",
+      "credit": "1000"
+    },
+    {
+      "compte": "6701",
+      "debit": "1600",
+      "credit": "0"
+    },
+    {
+      "compte": "6171",
+      "debit": "400",
+      "credit": "0"
+    }
+  ],
+  "n1": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "2111",
+      "debit": "1000",
+      "credit": "0"
+    },
+    {
+      "compte": "28111",
+      "debit": "0",
+      "credit": "200"
+    },
+    {
+      "compte": "5141",
+      "debit": "12200",
+      "credit": "0"
+    },
+    {
+      "compte": "7111",
+      "debit": "0",
+      "credit": "5000"
+    },
+    {
+      "compte": "6132",
+      "debit": "2000",
+      "credit": "0"
+    }
+  ],
+  "n2": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "5141",
+      "debit": "11000",
+      "credit": "0"
+    },
+    {
+      "compte": "7111",
+      "debit": "0",
+      "credit": "2000"
+    },
+    {
+      "compte": "6132",
+      "debit": "1000",
+      "credit": "0"
+    }
+  ],
+  "technique": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "5141",
+      "debit": "11000",
+      "credit": "0"
+    },
+    {
+      "compte": "1191",
+      "debit": "0",
+      "credit": "1000"
+    }
+  ],
+  "declarations": [
+    {
+      "code": "SOURCE-N2",
+      "exercice": "2024",
+      "reference_source": "BALANCE FICTIVE729 N-2 explicitement choisie"
+    }
+  ],
+  "attendus": {
+    "situation_n": "14500.00",
+    "net_n": "6000.00",
+    "situation_n1": "12200.00",
+    "net_n1": "3000.00",
+    "situation_n2": "11000.00",
+    "ca_n2": "2000.00",
+    "avant_impots_n2": "1000.00",
+    "impots_n2": "0.00",
+    "net_n2": "1000.00"
+  },
+  "inconnus": [
+    "Sans rattachement explicite N2 reste inconnu",
+    "Après solde119, activité N2 inconnue",
+    "Effectif moyen, distributions et données par titre inconnus"
+  ],
+  "impacts": "Aucune écriture, salarié, liquidation ou pièce réelle créée ou déplacée."
+}

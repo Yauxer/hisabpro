@@ -1,0 +1,21 @@
+"""Données fictives de préparation tiers ; pas de calcul fiscal implicite."""
+from uuid import uuid4
+from fiscal755_support import (application,application103,application102,application101,application100,application099,application098,application097,application093,application092,application091,application090,application089,application087,migration,client,ok,BASE,donnees_metier,creer,verifier as verifier755,R)
+BLOC='remunerations_tiers_documentaires'
+def url(v):return BASE+f'/{v["id"]}/remunerations-tiers'
+def body(v):
+ return {'cle':str(uuid4()),'empreinte_parent':v['empreinte_sha256'],'tables':[
+  {'code':'T151-P','statut':'documente','justification':'Revue du dossier entièrement fictif759','lignes':[{'nature':'Prestataires fictifs2026','periode_confirmee':'oui','exhaustivite':'oui','absence':'non','reference_source':'NOTE759'}]},
+  {'code':'T151-B','statut':'documente','justification':'Identités fournies dans le jeu de recette uniquement','lignes':[
+   {'nature':'OMEGA CONSEIL FICTIF759','beneficiaire_ref':'B759-A','adresse':'Adresse fictive A, Casablanca','activite':'Conseil fictif','identifiant_fiscal':'IF-FICTIF759-A','identification_tp':'','cnss':'CNSS-FICTIF759-A','regime':'Personne morale IS','identite_revue':'oui','reference_source':'FICHE759-A'},
+   {'nature':'PRESTATAIRE FICTIF759 B','beneficiaire_ref':'B759-B','adresse':'Adresse fictive B, Rabat','activite':'Intermédiation fictive','identifiant_fiscal':'','identification_tp':'TP-FICTIF759-B','cnss':'CNSS-FICTIF759-B','regime':'Personne physique RNR ou RNS','identite_revue':'oui','reference_source':'FICHE759-B'}]},
+  {'code':'T151-M','statut':'documente','justification':'Trois pièces fictives et montants explicitement fournis, aucun taux calculé','lignes':[
+   {'nature':'Honoraires fictifs','beneficiaire_ref':'B759-A','categorie':'Honoraires','sens':'Allocation','date_comptabilisation':'2026-06-20','comptabilise':'1000','evenement':'Versement','date_evenement':'2026-07-10','soumis':'600','retenu':'30','reference_origine':'','source_revue':'oui','reference_source':'M759-A'},
+   {'nature':'Commission fictive','beneficiaire_ref':'B759-B','categorie':'Commissions, courtages et rémunérations similaires','sens':'Allocation','date_comptabilisation':'2026-07-01','comptabilise':'500','evenement':'Mise à disposition','date_evenement':'2026-07-12','soumis':'200','retenu':'10','reference_origine':'','source_revue':'oui','reference_source':'M759-B'},
+   {'nature':'Correction fictive documentée','beneficiaire_ref':'B759-A','categorie':'Honoraires','sens':'Correction documentée','date_comptabilisation':'2026-08-01','comptabilise':'100','evenement':'Inscription en compte','date_evenement':'2026-08-01','soumis':'60','retenu':'3','reference_origine':'M759-A','source_revue':'oui','reference_source':'M759-C'}]}]}
+def controles(v):return v['contenu'][BLOC]['controle_tiers']
+def verifier(v):
+ c=controles(v);assert c['montants']=={'comptabilise':'1400.00','soumis':'740.00','retenu':'37.00'}
+ assert c['revue_documentaire_declaree'] and len(c['regroupements'])==2 and not c['pret_a_deposer'] and not c['declaration_officielle'] and not c['ecritures_generees']
+ assert c['regroupements'][0]['montants']=={'comptabilise':'900.00','soumis':'540.00','retenu':'27.00'}
+ verifier755(v)

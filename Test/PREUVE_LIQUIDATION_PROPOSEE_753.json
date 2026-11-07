@@ -1,0 +1,51 @@
+{
+  "lot": 753,
+  "tests_executes": {
+    "liquidation753_api": {
+      "cas": 48,
+      "temps_secondes": 42.94,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "liquidation753_ui": {
+      "cas": 10,
+      "temps_secondes": 120.5,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "liquidation753_commune": {
+      "cas": 212,
+      "temps_secondes": 329.32,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "session753_annuel": {
+      "cas": 2,
+      "temps_secondes": 37.36,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    }
+  },
+  "source_figees": 1218,
+  "protections_inchangees": 117,
+  "guide": {
+    "pdf_pages": 10,
+    "excel_feuilles": 5,
+    "humains_non_testes": 8
+  },
+  "aucun_postgresql_reel": true,
+  "liquidation_confirmee": false,
+  "imputation_confirmee": false,
+  "paiement_confirme": false,
+  "limites": [
+    "Qualifications déclarées à vérifier humainement",
+    "Ordre de simulation et qualifications à vérifier sur pièces",
+    "Aucune liquidation ou restitution réelle confirmée",
+    "Recette Office/cible/production non validée",
+    "RH/paie et point6 différés"
+  ]
+}

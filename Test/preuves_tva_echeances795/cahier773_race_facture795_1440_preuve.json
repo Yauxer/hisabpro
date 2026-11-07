@@ -1,0 +1,22 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg__85cs75v",
+  "nonce": "e914aceca96f49b9b842259409e7a4f4",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "race_facture795": {
+    "get_reel_avant": [],
+    "get_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "post_reel201_id": 1,
+    "api_reelle_apres_ids": [
+      1
+    ],
+    "retard": "Transport GET réel retenu, données non modifiées ;POST etDELETE réels. Aucun calcul métier simulé.",
+    "creation_preservee_apres_get_tardif": true,
+    "suppression_brouillon_ui204": true
+  }
+}

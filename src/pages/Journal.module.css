@@ -1,0 +1,441 @@
+.page { display: flex; flex-direction: column; height: 100%; }
+
+.topbar {
+  background: var(--bg-primary);
+  border-bottom: 0.5px solid var(--border-light);
+  padding: 14px 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.pageTitle { font-size: 15px; font-weight: 500; }
+
+.topbarRight { display: flex; align-items: center; gap: 10px; }
+
+.btnPrim {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 500;
+  padding: 7px 14px;
+  border-radius: var(--radius-md);
+  background: var(--blue); color: #fff; border: none;
+  transition: background 0.15s;
+}
+.btnPrim:hover { background: var(--blue-dark); }
+.btnPrimBloque {
+  background: var(--bg-tertiary, #e9e8e5);
+  color: var(--text-tertiary);
+  border: 0.5px solid var(--border-medium);
+  cursor: not-allowed;
+}
+.btnPrimBloque:hover {
+  background: var(--bg-tertiary, #e9e8e5);
+  color: var(--text-tertiary);
+}
+
+.btnSec {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; padding: 7px 12px;
+  border-radius: var(--radius-md);
+  background: var(--bg-primary);
+  border: 0.5px solid var(--border-medium);
+  color: var(--text-secondary);
+  transition: background 0.12s;
+}
+.btnSec:hover { background: var(--bg-secondary); }
+
+.content {
+  flex: 1; overflow: hidden;
+  padding: 16px 24px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+
+/* ── Filtres ─────────────────────────── */
+.filtres {
+  display: flex; flex-direction: column; gap: 8px;
+  flex-shrink: 0;
+}
+
+.recherche {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--bg-primary);
+  border: 0.5px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 0 10px;
+  color: var(--text-tertiary);
+}
+
+.recherche i { font-size: 15px; flex-shrink: 0; }
+
+.inputRecherche {
+  flex: 1; border: none; background: transparent;
+  font-size: 13px; color: var(--text-primary);
+  padding: 8px 0;
+}
+.inputRecherche::placeholder { color: var(--text-tertiary); }
+.inputRecherche:focus { outline: none; }
+
+.filtresBarre {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+}
+
+.filtreBtn {
+  font-size: 12px; padding: 5px 10px;
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--border-medium);
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+  white-space: nowrap;
+}
+.filtreBtn:hover { background: var(--bg-secondary); }
+.filtreBtnActif {
+  background: var(--blue-light) !important;
+  color: var(--blue) !important;
+  border-color: #B5D4F4 !important;
+  font-weight: 500;
+}
+
+.inputDate {
+  font-size: 12px; padding: 5px 10px;
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--border-medium);
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+}
+
+.clearBtn {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 11px; padding: 5px 8px;
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--border-medium);
+  background: var(--bg-primary);
+  color: var(--text-tertiary);
+  cursor: pointer;
+}
+.clearBtn:hover { background: var(--red-light); color: var(--red); }
+
+/* ── Layout ─────────────────────────── */
+.fullWidth { flex: 1; min-height: 0; }
+.twoCols {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 16px;
+  flex: 1; min-height: 0;
+}
+
+/* ── Card table ─────────────────────── */
+.card {
+  background: var(--bg-primary);
+  border: 0.5px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  display: flex; flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+.cardHeader {
+  padding: 12px 16px;
+  border-bottom: 0.5px solid var(--border-light);
+  display: flex; align-items: center; justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.cardTitle { font-size: 13px; font-weight: 500; color: var(--text-primary); }
+
+.totauxHeader {
+  display: flex; gap: 16px;
+  font-size: 12px; color: var(--text-secondary);
+}
+.totauxHeader strong { color: var(--text-primary); }
+
+.tableWrapper { flex:1; min-width:0; min-height:0; overflow:auto; overscroll-behavior:contain; scrollbar-gutter:stable; -webkit-overflow-scrolling:touch; }
+
+.table { width: 100%; border-collapse: collapse; }
+
+.table th {
+  font-size: 11px; color: var(--text-tertiary); font-weight: 400;
+  text-align: left; padding: 9px 12px;
+  border-bottom: 0.5px solid var(--border-light);
+  position: sticky; top: 0; background: var(--bg-primary);
+  white-space: nowrap;
+}
+
+.table td {
+  font-size: 12px; padding: 7px 12px;
+  border-bottom: 0.5px solid var(--border-light);
+  color: var(--text-primary); vertical-align: middle;
+}
+
+.table tr:last-child td { border-bottom: none; }
+
+/* Ligne d'en-tête d'écriture : date + journal + libellé */
+.rowEntete td {
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-medium);
+}
+.rowEntete:first-child td { border-top: none; }
+.rowEntete:hover td { background: var(--bg-primary) !important; }
+
+.rowPremiereLigne td { border-top: 0.5px solid var(--border-light); }
+.rowPremiereLigne:first-child td { border-top: none; }
+.rowLigne td { background: var(--bg-secondary); }
+.rowLigne:hover td { background: var(--bg-tertiary) !important; }
+.rowPremiereLigne:hover td { background: var(--bg-secondary) !important; }
+
+.tdDate { color: var(--text-secondary) !important; white-space: nowrap; }
+.tdDebit  { color: var(--green) !important; font-weight: 500; font-variant-numeric: tabular-nums; }
+.tdCredit { color: var(--red)   !important; font-weight: 500; font-variant-numeric: tabular-nums; }
+
+.badge {
+  font-size: 10px; font-weight: 500;
+  padding: 2px 7px; border-radius: 100px;
+  white-space: nowrap;
+}
+
+.compteBadge {
+  font-size: 11px; font-family: 'Courier New', monospace;
+  padding: 2px 7px; border-radius: 4px;
+  background: var(--blue-light); color: var(--blue);
+}
+
+.libelleCell { display: flex; flex-direction: column; gap: 1px; }
+.libPrincipal { font-size: 12px; font-weight: 500; color: var(--text-primary); }
+.libLigne     { font-size: 11px; color: var(--text-secondary); }
+
+.btnTrash {
+  width: 24px; height: 24px;
+  border-radius: var(--radius-sm);
+  background: none; border: none;
+  color: transparent; font-size: 13px;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.12s, color 0.12s;
+}
+tr:hover .btnTrash { color: var(--text-tertiary); }
+.btnTrash:hover { background: var(--red-light) !important; color: var(--red) !important; }
+
+.vide {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 10px; color: var(--text-tertiary); font-size: 13px;
+  padding: 48px;
+}
+.vide i { font-size: 32px; }
+
+/* ═══ Journal au format « à plat » : une ligne = un mouvement comptable ═══ */
+
+.tableJournal {
+  width: 100%; border-collapse: collapse;
+  font-size: 12px; font-variant-numeric: tabular-nums;
+}
+.tableJournal thead th {
+  position: sticky; top: 0; z-index: 2;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-medium);
+  padding: 7px 6px; text-align: left;
+  font-size: 10px; font-weight: 600; letter-spacing: 0.02em;
+  text-transform: uppercase; color: var(--text-tertiary);
+  white-space: nowrap;
+}
+/* Les colonnes communes à l'écriture sont centrées : leur titre aussi */
+.tableJournal thead th:nth-child(2),
+.tableJournal thead th:nth-child(3),
+.tableJournal thead th:nth-child(8),
+.tableJournal thead th:nth-child(9),
+.tableJournal thead th:nth-child(10) { text-align: center; }
+.thNum    { width: 52px; text-align: right !important; }
+.thMontant{ width: 112px; text-align: right !important; }
+
+.tableJournal td { padding: 5px 8px; vertical-align: top; }
+
+/* Lignes de mouvement.
+   Les cellules fusionnées (rowSpan) ne doivent pas recevoir le filet interne :
+   seules les lignes de détail sont séparées entre elles. */
+.rowMvt td:not(.tdFusion) { border-bottom: 0.5px dashed var(--border-light); }
+.rowMvtFin td:not(.tdFusion) { border-bottom: none; }
+.rowMvt:hover td { background: var(--bg-secondary); }
+
+/* Filet marqué au début de chaque écriture : le regroupement reste lisible
+   même si le tableau est à plat. */
+.rowMvtDebut td { border-top: 1px solid var(--border-medium); }
+
+/* Cellules communes à l'écriture : centrées verticalement, séparées
+   par un filet vertical léger pour matérialiser la fusion. */
+.tdFusion {
+  vertical-align: middle !important;
+  text-align: center;
+  border-right: 0.5px solid var(--border-light);
+  border-left: 0.5px solid var(--border-light);
+  background: var(--bg-primary);
+}
+.rowMvt:hover .tdFusion { background: var(--bg-secondary); }
+
+.tdNumLigne {
+  text-align: right; color: var(--text-tertiary);
+  font-size: 10.5px; padding-top: 6px !important;
+}
+.tdDate     { white-space: nowrap; color: var(--text-secondary); font-size: 11.5px; }
+/* Dans les cellules fusionnées, on centre plutôt que d'aligner à droite */
+.tdFusion.tdMvt, .tdFusion.tdPiece { text-align: center; }
+.tdFusion.tdActions { text-align: center; }
+.tdMontant  { text-align: right; white-space: nowrap; font-weight: 500; }
+.tdDebit    { color: #1F5FA8; }
+.tdCredit   { color: #2E7D32; }
+.tdLettrage { text-align: center; font-size: 10.5px; color: var(--text-tertiary); }
+.tdMvt      { text-align: center; font-size: 10px; color: var(--text-secondary); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: nowrap; }
+.tdPiece {
+  font-size: 10.5px; color: var(--text-tertiary);
+  max-width: 118px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+/* Libellé sur deux niveaux : mouvement + intitulé officiel du compte */
+.tdLibelle  { max-width: 420px; }
+.libTexte   { display: block; color: var(--text-primary); }
+.libCompte {
+  display: block; font-size: 10.5px; color: var(--text-tertiary);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.tdActions { text-align: right; }
+.actionsGroupe { display: flex; gap: 2px; align-items: center; justify-content: flex-end; }
+.rowMvt .actionsGroupe { opacity: 0; transition: opacity 0.12s; }
+.rowMvt:hover .actionsGroupe, .rowMvt:focus-within .actionsGroupe { opacity: 1; }
+
+/* Bandeau de groupe */
+.rowGroupe td {
+  background: var(--bg-tertiary, var(--bg-secondary));
+  border-top: 2px solid var(--border-medium);
+  border-bottom: 0.5px solid var(--border-medium);
+  padding: 6px 8px; font-size: 11.5px; font-weight: 600;
+  color: var(--text-secondary);
+}
+.grpCount { margin-left: 8px; font-weight: 400; font-size: 10.5px; color: var(--text-tertiary); }
+
+/* Totaux généraux */
+.rowTotalGeneral td {
+  border-top: 2px solid var(--border-medium);
+  background: var(--bg-secondary);
+  padding: 8px; font-size: 12px; font-weight: 700;
+}
+
+/* Bouton d'action discret dans les lignes du journal */
+.btnAction {
+  background: none; border: none; cursor: pointer;
+  color: var(--text-tertiary); font-size: 14px; padding: 3px 5px;
+  border-radius: var(--radius-sm);
+}
+.btnAction:hover { color: var(--blue); background: var(--bg-tertiary, var(--bg-secondary)); }
+
+/* ── Patch 07A : piste d'audit ───────────────────────────────────────────── */
+.auditOverlay {
+  position: fixed; inset: 0; z-index: 1200;
+  background: rgba(20, 24, 32, 0.42);
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+}
+.auditModal {
+  width: min(760px, 94vw); max-height: 82vh;
+  background: var(--bg-primary); border: 1px solid var(--border-medium);
+  border-radius: 12px; box-shadow: 0 24px 70px rgba(0,0,0,.22);
+  display: flex; flex-direction: column; overflow: hidden;
+}
+.auditHeader {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;
+  padding: 16px 18px 12px; border-bottom: 1px solid var(--border-light);
+}
+.auditHeader strong { font-size: 14px; }
+.auditSubtitle { margin-top: 4px; color: var(--text-tertiary); font-size: 11px; }
+.auditClose {
+  border: 0; background: transparent; color: var(--text-secondary); cursor: pointer;
+  width: 30px; height: 30px; border-radius: 6px;
+}
+.auditClose:hover { background: var(--bg-secondary); }
+.auditNotice {
+  margin: 12px 18px 0; padding: 9px 11px; border-radius: 7px;
+  background: #eef6ff; color: #245a85; font-size: 11px; line-height: 1.4;
+}
+.auditBody { padding: 14px 18px 18px; overflow-y: auto; }
+.auditEmpty { padding: 34px; text-align: center; color: var(--text-tertiary); font-size: 12px; }
+.auditEvent { position: relative; display: flex; gap: 12px; padding: 0 0 16px; }
+.auditEvent:not(:last-child)::before {
+  content: ''; position: absolute; left: 5px; top: 12px; bottom: 0;
+  width: 1px; background: var(--border-light);
+}
+.auditDot {
+  width: 11px; height: 11px; margin-top: 4px; flex: 0 0 11px;
+  border-radius: 50%; background: var(--blue); position: relative; z-index: 1;
+  box-shadow: 0 0 0 3px var(--bg-primary);
+}
+.auditEventMain { flex: 1; min-width: 0; }
+.auditEventTop { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; }
+.auditEventTop span { color: var(--text-tertiary); white-space: nowrap; font-size: 10px; }
+.auditSummary { margin-top: 4px; font-size: 11px; color: var(--text-secondary); line-height: 1.45; }
+.auditMeta { margin-top: 4px; font-size: 10px; color: var(--text-tertiary); }
+.auditMotif {
+  margin-top: 6px; padding: 7px 9px; border-left: 3px solid #b26a00;
+  background: #fff7e8; color: #6d4600; border-radius: 4px; font-size: 11px;
+}
+
+/* ── Patch 054 : édition papier exhaustive / transparence Avis n°24 ─────── */
+.printMeta { display: none; }
+
+@media print {
+  @page { size: A4 landscape; margin: 10mm; }
+
+  .page {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+  .topbarRight,
+  .filtres,
+  .actionsGroupe,
+  .auditOverlay { display: none !important; }
+
+  .topbar {
+    padding: 0 0 5mm !important;
+    border-bottom: 0 !important;
+  }
+  .pageTitle { font-size: 16pt !important; }
+  .printMeta {
+    display: flex !important;
+    flex-direction: column;
+    gap: 1mm;
+    margin-bottom: 4mm;
+    font-size: 8pt;
+    color: #111;
+  }
+  .content,
+  .fullWidth,
+  .card,
+  .tableWrapper {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+  .cardHeader { padding: 0 0 3mm !important; }
+  .tableJournal {
+    width: 100% !important;
+    table-layout: auto;
+    font-size: 7pt !important;
+  }
+  .tableJournal thead { display: table-header-group; }
+  .tableJournal thead th {
+    position: static !important;
+    font-size: 6.5pt !important;
+    background: #f4f4f4 !important;
+    color: #111 !important;
+  }
+  .tableJournal td { padding: 1.2mm 1mm !important; }
+  .rowMvt .actionsGroupe { display: none !important; }
+  .tableJournal th:last-child,
+  .tableJournal td:last-child { display: none !important; }
+  .rowMvt,
+  .rowGroupe,
+  .rowTotalGeneral { break-inside: avoid; page-break-inside: avoid; }
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="12" time="75.937" timestamp="2026-10-26T18:51:35.084619+01:00" hostname="Taiyou"><testcase classname="Test.test_patch069_stock_services" name="test_069_livraison_stock_physique_seulement[False-0-0]" time="0.023" /><testcase classname="Test.test_patch069_stock_services" name="test_069_livraison_stock_physique_seulement[True-0--1]" time="0.020" /><testcase classname="Test.test_patch069_stock_services" name="test_069_livraison_stock_physique_seulement[True-3-1]" time="0.072" /><testcase classname="Test.test_patch069_stock_services" name="test_069_validation_facture_stock_physique_seulement[False-0-0]" time="0.012" /><testcase classname="Test.test_patch069_stock_services" name="test_069_validation_facture_stock_physique_seulement[True-0--1]" time="0.012" /><testcase classname="Test.test_patch069_stock_services" name="test_069_validation_facture_stock_physique_seulement[True-5-1]" time="0.064" /><testcase classname="Test.test_patch069_stock_services" name="test_069_avertissement_devis_article_stockable_uniquement" time="0.071" /><testcase classname="Test.test_patch069_stock_services" name="test_069_alertes_et_parcours_commerciaux_respectent_nature_article" time="0.002" /><testcase classname="Test.test_e2e_inventaire_nombres_isole" name="test_inventaire_inconnu_visible_refuse_sans_mutation_et_csv[1365]" time="18.131" /><testcase classname="Test.test_e2e_inventaire_nombres_isole" name="test_inventaire_inconnu_visible_refuse_sans_mutation_et_csv[390]" time="5.259" /><testcase classname="Test.test_e2e_inventaire_nombres_isole" name="test_inventaire_connu_perte40_snapshot160_et_ecriture_validee[1365]" time="3.773" /><testcase classname="Test.test_e2e_inventaire_nombres_isole" name="test_inventaire_connu_perte40_snapshot160_et_ecriture_validee[390]" time="46.297"><failure message="playwright._impl._errors.TimeoutError: Locator.inner_text: Timeout 20000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;body&quot;)">application = {'api_url': 'http://127.0.0.1:52345', 'web_url': 'http://127.0.0.1:52346', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_2x1il9mk'), 'nonce': 'e8581e903ad640418fbf9727d4bfc4d1', ...}, ...}
+largeur = 390
+
+    @pytest.mark.parametrize('largeur', [1365, 390])
+    def test_inventaire_connu_perte40_snapshot160_et_ecriture_validee(application, largeur):
+        c = application['cluster']; verifier_cible_isolee(c['url'], c['directory'], c['nonce'])
+        suffix = uuid.uuid4().hex[:8]
+        year = date.today().year
+        with httpx.Client(base_url=application['api_url'], timeout=30) as api:
+            email, password, sid = inscrire(api, suffix)
+            nom = 'Marchandise connue ' + suffix
+            aid = creer_article(api, 'CONNU-' + suffix, nom, cmup=20)
+            zero = creer_article(api, 'ZERO-' + suffix, 'Zéro connu ' + suffix)
+            with Session(application['engine']) as db:
+                a = db.get(models.Article, aid); a.stock_actuel = 10; a.cmup = 20; db.commit()
+            assert ok(api.get('/api/inventaire/valorisation'))['total_valeur'] == 200
+            playwright = pytest.importorskip('playwright.sync_api')
+            executable = chromium_executable()
+            if not executable:
+                pytest.skip('Edge/Chromium requis')
+            with playwright.sync_playwright() as p:
+                browser = p.chromium.launch(executable_path=executable, headless=True)
+                page = browser.new_page(viewport={'width': largeur, 'height': 1000})
+                page.set_default_timeout(20000)
+                errors, server_errors = observer(page, application['api_url'])
+                page.on('dialog', lambda d: d.accept())
+                try:
+                    connexion(page, application['web_url'], email, password)
+                    page.goto(application['web_url'] + '/inventaire')
+                    page.locator('tbody tr').filter(has_text=nom).locator('input[type="number"]').fill('8')
+                    with page.expect_response(lambda r: '/api/inventaire/simuler' in r.url) as simulation:
+                        page.get_by_role('button', name='Vérifier', exact=True).click()
+                    apercu = simulation.value.json()
+                    assert simulation.value.status == 200 and apercu['total_perte'] == 40 and apercu['valeur_stock_compte'] == 160, apercu
+                    with page.expect_response(lambda r: '/api/inventaire/valider' in r.url) as validation:
+                        page.get_by_role('button', name='Valider l’inventaire', exact=True).click()
+                    inv = validation.value.json()
+                    assert validation.value.status == 200 and inv['total_perte'] == 40 and inv['total_valeur'] == 160, inv
+                    assert inv['nb_articles'] == 2 and inv['nb_regularises'] == 1
+                    with Session(application['engine']) as db:
+                        assert db.get(models.Article, aid).stock_actuel == 8
+                        assert db.get(models.Article, zero).stock_actuel == 0
+                        snapshot = db.get(models.InventaireStock, inv['inventaire_id'])
+                        assert snapshot.total_valeur == Decimal('160') and snapshot.total_perte == Decimal('40')
+                        assert len(snapshot.lignes) == 2
+                        assert db.query(models.MouvementStock).filter_by(societe_id=sid).count() == 1
+                    page.get_by_role('button', name='Rapprochement comptable', exact=True).click()
+                    with page.expect_response(lambda r: '/api/inventaire/comptabiliser-stock' in r.url) as compta:
+                        page.get_by_role('button', name='Générer l’écriture de stock', exact=True).click()
+                    assert compta.value.status == 200, compta.value.text()
+                    eid = compta.value.json()['ecriture_id']
+                    with Session(application['engine']) as db:
+                        ec = db.get(models.Ecriture, eid)
+                        assert not ec.est_validee
+                        assert {l.compte: (l.debit, l.credit) for l in ec.lignes} == {'3111': (160, 0), '6114': (0, 160)}
+                    page.goto(application['web_url'] + '/journal')
+                    # Attendre la donnée chargée avant la validation du lot.
+                    playwright.expect(page.get_by_role('button', name='Valider', exact=True)).to_have_count(1)
+                    with page.expect_response(lambda r: '/api/ecritures/valider-lot' in r.url) as lot:
+                        page.get_by_role('button', name='Valider les brouillons', exact=True).click()
+                    assert lot.value.status == 200 and lot.value.json()['nb_validees'] == 1
+                    stable = photo(application, sid)
+                    page.goto(application['web_url'] + '/inventaire')
+                    page.get_by_role('button', name='Rapprochement comptable', exact=True).click()
+                    playwright.expect(page.locator('body')).to_contain_text('Stock rapproché')
+                    etat = ok(api.get('/api/inventaire/stock/cloture', params={'exercice': year}))
+                    assert etat['stock_rapproche'] and etat['ecriture_stock_validee']
+                    assert etat['valeur_physique_brute'] == etat['valeur_comptable_brute'] == 160
+                    assert etat['ecart_brut'] == 0
+                    assert photo(application, sid) == stable
+                    assert not errors and not server_errors, (errors, server_errors)
+                except Exception:
+&gt;                   print('Inventaire positif:', page.url, page.locator('body').inner_text()[:10000])
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_inventaire_nombres_isole.py:258: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+hisabpro-backend\.venv\Lib\site-packages\playwright\sync_api\_generated.py:19603: in inner_text
+    self._sync(self._impl_obj.inner_text(timeout=to_milliseconds(timeout)))
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_locator.py:502: in inner_text
+    return await self._frame.inner_text(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_frame.py:744: in inner_text
+    return await self._channel.send(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x000001A863B221D0&gt;
+cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x000001A863A9BBA0&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        parsed_st = _attach_api_call_information(
+            getattr(task, "__pw_stack__", None) or _capture_stack_trace(),
+            is_internal,
+            title,
+        )
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Locator.inner_text: Timeout 20000ms exceeded.
+E           Call log:
+E             - waiting for locator("body")
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:632: TimeoutError</failure></testcase></testsuite></testsuites>

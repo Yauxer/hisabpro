@@ -1,0 +1,18 @@
+﻿Date;Libellé;Débit;Crédit
+2025-01-01;CAP-01 — Apport en capital versé;0.00;200000.00
+2025-01-01;IMMO-PAY — Paiement acquisition (généré avec IMMO-ACQ);28800.00;0.00
+2025-01-04;AC-F01 — Acompte fournisseur marchandises;6000.00;0.00
+2025-01-07;ACH-01-PAY — Solde fournisseur ACH-01;6000.00;0.00
+2025-01-25;VENTE-01-PAY — Paiement client partiel;0.00;10000.00
+2025-02-05;CHQ-01-ENC — Chèque encaissé;0.00;20000.00
+2025-02-15;ACH-SERVICE-PAY — Règlement fournisseur services;14400.00;0.00
+2025-03-05;VENTE-02-PAY — Virement client après imputation crédit AV01;0.00;5000.00
+2025-03-20;EFF-F01-PAY — Paiement effet fournisseur;14400.00;0.00
+2025-05-16;EFF-C01-ENC — Encaissement effet avec frais 10;0.00;9990.00
+2025-06-01;AC-C01 — Acompte client prestations 24000TTC;0.00;24000.00
+2025-06-30;VENTE-SERVICE-PAY — Solde client prestation;0.00;120000.00
+2025-07-20;TVA-06-PAY — Paiement TVA juin 19900;19900.00;0.00
+2025-11-30;INT-PPRF — Intérêts bancaires selon attestation fictive;0.00;800.00
+2025-12-01;ASS-01 — Assurance 12000 couvrant décembre 2025 à novembre 2026;12000.00;0.00
+2025-12-20;AMENDE — Amende fiscale documentée 500;500.00;0.00
+2025-12-31;FRAIS-BQ — Frais bancaires 60 sans TVA selon avis;60.00;0.00

@@ -1,0 +1,71 @@
+{
+  "societe": "DOSSIER PEDAGOGIQUE TP761",
+  "exercice": 2026,
+  "tables": [
+    {
+      "code": "TP-P",
+      "statut": "documente",
+      "justification": "Profil et millésime fictifs revus, aucun droit réel attesté",
+      "lignes": [
+        {
+          "nature": "Simulation pédagogique TP2026",
+          "annee_tp": "2026",
+          "periode_revue": "oui",
+          "exhaustivite": "oui",
+          "referentiel_revu": "oui",
+          "reference_source": "NOTE761"
+        }
+      ]
+    },
+    {
+      "code": "TP-E",
+      "statut": "documente",
+      "justification": "Bases et classes choisies uniquement pour vérifier le calcul, pas une qualification réelle",
+      "lignes": [
+        {
+          "nature": "Local fictif A",
+          "etablissement_ref": "E761-A",
+          "commune": "Casablanca fictif",
+          "adresse": "Adresse pédagogique A",
+          "activite": "Activité fictive A sans classement réel",
+          "classe": "C2",
+          "valeur_locative": "30000",
+          "base_revue": "oui",
+          "classe_revue": "oui",
+          "regime": "Établissement avec local — hors régime particulier, exonération et réduction",
+          "situation_janvier_revue": "oui",
+          "montant_avis": "6200",
+          "reference_avis": "AVIS761-A",
+          "avis_rattache": "oui",
+          "reference_source": "BASE-CLASSE761-A"
+        },
+        {
+          "nature": "Local fictif B",
+          "etablissement_ref": "E761-B",
+          "commune": "Rabat fictif",
+          "adresse": "Adresse pédagogique B",
+          "activite": "Activité fictive B sans classement réel",
+          "classe": "C3",
+          "valeur_locative": "12000",
+          "base_revue": "oui",
+          "classe_revue": "oui",
+          "regime": "Établissement avec local — hors régime particulier, exonération et réduction",
+          "situation_janvier_revue": "oui",
+          "montant_avis": "1200",
+          "reference_avis": "AVIS761-B",
+          "avis_rattache": "oui",
+          "reference_source": "BASE-CLASSE761-B"
+        }
+      ]
+    }
+  ],
+  "attendus": {
+    "valeur_locative": "42000.00",
+    "brut": "7200.00",
+    "avis": "7400.00",
+    "ecart": "-200.00"
+  },
+  "imposition_confirmee": false,
+  "fictif": true,
+  "statut_humain": "Non testé"
+}

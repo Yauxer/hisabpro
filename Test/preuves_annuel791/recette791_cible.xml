@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="276.207" timestamp="2026-10-24T21:35:56.450153+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_annuel791_isole" name="test_791_cinquante_operations_formulaires_balance_etats_annuels[1440]" time="152.226"><failure message="KeyError: 'reference_fournisseur'">application = {'api_url': 'http://127.0.0.1:50106', 'web_url': 'http://127.0.0.1:50107', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_emco7zky'), 'nonce': 'c21c083a6b044c94afc927153b62bcd2', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette791_cible/test_791_cinquante_operations_0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_791_cinquante_operations_formulaires_balance_etats_annuels(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'annuel791') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+&gt;     capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve)
+                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_annuel791_isole.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\cahier_annuel791_support.py:52: in annuel
+    refs=[f['reference_fournisseur'] for f in ok(api.get('/api/factures',params={'exercice':2025})) if f['tiers_id']==tiers['F-CONTROLE']['id']];assert sorted(refs)==['002','02']
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+.0 = &lt;list_iterator object at 0x00000205AB7400D0&gt;
+
+&gt;   refs=[f['reference_fournisseur'] for f in ok(api.get('/api/factures',params={'exercice':2025})) if f['tiers_id']==tiers['F-CONTROLE']['id']];assert sorted(refs)==['002','02']
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   KeyError: 'reference_fournisseur'
+
+Test\cahier_annuel791_support.py:52: KeyError</failure></testcase><testcase classname="Test.test_e2e_cahier_annuel791_isole" name="test_791_cinquante_operations_formulaires_balance_etats_annuels[390]" time="120.166"><failure message="KeyError: 'reference_fournisseur'">application = {'api_url': 'http://127.0.0.1:50106', 'web_url': 'http://127.0.0.1:50107', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_emco7zky'), 'nonce': 'c21c083a6b044c94afc927153b62bcd2', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette791_cible/test_791_cinquante_operations_1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_791_cinquante_operations_formulaires_balance_etats_annuels(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'annuel791') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+&gt;     capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve)
+                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_annuel791_isole.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\cahier_annuel791_support.py:52: in annuel
+    refs=[f['reference_fournisseur'] for f in ok(api.get('/api/factures',params={'exercice':2025})) if f['tiers_id']==tiers['F-CONTROLE']['id']];assert sorted(refs)==['002','02']
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+.0 = &lt;list_iterator object at 0x000002059D4F62C0&gt;
+
+&gt;   refs=[f['reference_fournisseur'] for f in ok(api.get('/api/factures',params={'exercice':2025})) if f['tiers_id']==tiers['F-CONTROLE']['id']];assert sorted(refs)==['002','02']
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   KeyError: 'reference_fournisseur'
+
+Test\cahier_annuel791_support.py:52: KeyError</failure></testcase></testsuite></testsuites>

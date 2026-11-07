@@ -1,0 +1,17 @@
+.card { min-width: 0; margin: 16px 0; padding: 16px; border: .5px solid var(--border-medium); border-radius: 10px; background: var(--bg-primary); font-size: 13px; }
+.card summary { font-size: 15px; font-weight: 600; cursor: pointer; }
+.card p { overflow-wrap: anywhere; line-height: 1.5; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 12px 0; }
+.actions button { padding: 8px 12px; border: .5px solid var(--border-medium); border-radius: 7px; background: var(--bg-secondary); color: var(--text-primary); font: inherit; cursor: pointer; }
+.actions button:disabled { opacity: .5; cursor: default; }
+.champs { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,220px),1fr)); gap: 10px; }
+.champ, .champs label { display: grid; gap: 6px; margin: 10px 0; min-width: 0; }
+.card select, .card textarea, .champs input { box-sizing: border-box; width: 100%; min-width: 0; max-width: 100%; padding: 8px; border: .5px solid var(--border-medium); border-radius: 6px; background: var(--bg-primary); color: var(--text-primary); font: inherit; }
+.card textarea { min-height: 65px; resize: vertical; }
+.chiffres { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,180px),1fr)); gap: 10px; }
+.chiffres div { border-radius: 6px; padding: 10px; background: var(--bg-secondary); }
+.chiffres dd { margin: 5px 0 0; font-weight: 600; }
+.resultat, .reprise { border-top: .5px solid var(--border-medium); padding-top: 10px; margin-top: 12px; }
+.confirmation { display: flex; gap: 8px; align-items: flex-start; }
+.confirmation input { flex: 0 0 auto; }
+.erreur { color: var(--red); }

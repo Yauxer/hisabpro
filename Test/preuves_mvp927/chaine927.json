@@ -1,0 +1,59 @@
+{
+  "apercu": {
+    "mode": "APERCU_SORTIE_NON_COMPTABILISE",
+    "immo_id": 1,
+    "date_sortie": "2026-01-01",
+    "type_sortie": "cession",
+    "methode": "lineaire",
+    "convention": "Convention interne linéaire 30/360, bornes inclusives : le jour de sortie compte.",
+    "valeur_brute": 24000.0,
+    "cumul_amortissement": 4813.33,
+    "vnc": 19186.67,
+    "prix_cession_ht": 20000.0,
+    "tva_cession": 4000.0,
+    "ttc_cession": 24000.0,
+    "resultat_cession": 813.33,
+    "dotations": [
+      {
+        "annee": 2025,
+        "debut_periode": "2025-01-01",
+        "fin_periode": "2025-12-31",
+        "dotation": 4800.0,
+        "cumul": 4800.0,
+        "etat": "déjà comptabilisée",
+        "ecriture_ids": [
+          2
+        ]
+      },
+      {
+        "annee": 2026,
+        "debut_periode": "2026-01-01",
+        "fin_periode": "2026-01-01",
+        "dotation": 13.33,
+        "cumul": 4813.33,
+        "etat": "à comptabiliser",
+        "ecriture_ids": []
+      }
+    ],
+    "debut_reprise": null,
+    "empreinte_apercu": "8b55ec516bb619f77743f1ba97725fee26f6467244dec5229414bc96dfa6dccd",
+    "avertissement": "Aperçu selon les paramètres et l’historique actuels, sans écriture comptable. La convention et la qualification/régularisation de TVA restent à contrôler ; cet aperçu ne valide pas la conformité fiscale. Les contrôles sont rejoués lors de l’enregistrement."
+  },
+  "sortie": {
+    "message": "Cession comptabilisée",
+    "type_sortie": "cession",
+    "date_sortie": "2026-01-01",
+    "cumul_amortissement": 4813.33,
+    "vnc": 19186.67,
+    "prix_cession_ht": 20000.0,
+    "tva_cession": 4000.0,
+    "ttc_cession": 24000.0,
+    "resultat_cession": 813.33,
+    "ecriture_sortie_id": 4,
+    "ecriture_cession_id": 5,
+    "ecriture_encaissement_id": null
+  },
+  "comptabilite_et_calendrier_inchanges_par_apercu": true,
+  "trois_ecritures_nouvelles_sans_encaissement": true,
+  "aucune_base_reelle": true
+}

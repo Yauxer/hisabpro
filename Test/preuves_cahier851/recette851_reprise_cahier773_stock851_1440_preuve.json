@@ -1,0 +1,70 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_cq6n4tu7",
+  "nonce": "5a87365b59fd4ef18e6e86101c2a1ca4",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-NEG-025",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-026",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "inventaire851": {
+    "quantite_refusee": -1,
+    "UI_validation_refusee": true,
+    "refus": [
+      {
+        "route": "/api/inventaire/simuler",
+        "statut": 400,
+        "detail": {
+          "detail": "Quantité négative interdite pour l'article 1."
+        }
+      },
+      {
+        "route": "/api/inventaire/valider",
+        "statut": 409,
+        "detail": {
+          "detail": "Quantité négative interdite pour l'article 1."
+        }
+      }
+    ],
+    "aucune_mutation": true
+  },
+  "service851": {
+    "stock_refuse": 10,
+    "stock_reel": 0,
+    "champ_absent_UI": true,
+    "refus": [
+      {
+        "route": "/api/articles/2",
+        "statut": 409,
+        "detail": {
+          "detail": "Le stock actuel ne se modifie pas dans la fiche article. Utilisez l'ajustement de stock traçable."
+        }
+      },
+      {
+        "route": "/api/articles/2/stock",
+        "statut": 409,
+        "detail": {
+          "detail": "L'article Service fictif851 n'est pas stockable."
+        }
+      }
+    ],
+    "aucun_mouvement": true,
+    "aucune_mutation": true
+  },
+  "positif851": {
+    "comptage": 60,
+    "nb_articles": 1,
+    "nb_regularises": 0,
+    "journal_et_stock_conserves": true
+  }
+}

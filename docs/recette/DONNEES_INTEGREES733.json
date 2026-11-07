@@ -1,0 +1,259 @@
+{
+  "societe_fictive": "Atlas Recette733 SARL — simulation documentaire MAD",
+  "exercice": 2026,
+  "n": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "1161",
+      "debit": "0",
+      "credit": "3000"
+    },
+    {
+      "compte": "2111",
+      "debit": "2000",
+      "credit": "0"
+    },
+    {
+      "compte": "28111",
+      "debit": "0",
+      "credit": "500"
+    },
+    {
+      "compte": "5141",
+      "debit": "17820",
+      "credit": "0"
+    },
+    {
+      "compte": "7111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "6132",
+      "debit": "3000",
+      "credit": "0"
+    },
+    {
+      "compte": "7581",
+      "debit": "0",
+      "credit": "1000"
+    },
+    {
+      "compte": "6701",
+      "debit": "1580",
+      "credit": "0"
+    },
+    {
+      "compte": "6171",
+      "debit": "400",
+      "credit": "0"
+    },
+    {
+      "compte": "4455",
+      "debit": "0",
+      "credit": "1000"
+    },
+    {
+      "compte": "34552",
+      "debit": "500",
+      "credit": "0"
+    },
+    {
+      "compte": "34551",
+      "debit": "200",
+      "credit": "0"
+    }
+  ],
+  "n1": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "1161",
+      "debit": "0",
+      "credit": "1000"
+    },
+    {
+      "compte": "2111",
+      "debit": "1000",
+      "credit": "0"
+    },
+    {
+      "compte": "28111",
+      "debit": "0",
+      "credit": "200"
+    },
+    {
+      "compte": "5141",
+      "debit": "13350",
+      "credit": "0"
+    },
+    {
+      "compte": "7111",
+      "debit": "0",
+      "credit": "5000"
+    },
+    {
+      "compte": "6132",
+      "debit": "2000",
+      "credit": "0"
+    },
+    {
+      "compte": "4455",
+      "debit": "0",
+      "credit": "300"
+    },
+    {
+      "compte": "34552",
+      "debit": "100",
+      "credit": "0"
+    },
+    {
+      "compte": "34551",
+      "debit": "50",
+      "credit": "0"
+    }
+  ],
+  "n2": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "5141",
+      "debit": "11000",
+      "credit": "0"
+    },
+    {
+      "compte": "7111",
+      "debit": "0",
+      "credit": "2000"
+    },
+    {
+      "compte": "6132",
+      "debit": "1000",
+      "credit": "0"
+    }
+  ],
+  "b12": {
+    "nature": "Passage intégré733 N",
+    "reintegrations": "500",
+    "deductions": "200",
+    "deficit_disponible": "0",
+    "taux_is": "20",
+    "regime_avantages": "Hypothèse documentaire fictive, régime à justifier",
+    "reference_source": "SOURCE INTEGREE733 B12"
+  },
+  "b13": [
+    {
+      "code": "B13-N",
+      "nature": "Courant intégré733 N",
+      "reintegrations": "500",
+      "deductions": "200",
+      "impot_theorique": "1380",
+      "regime_avantages": "Hypothèse courante fictive",
+      "reference_source": "SOURCE INTEGREE733 B13 N"
+    },
+    {
+      "code": "B13-N1",
+      "nature": "Courant partiel intégré733 N1",
+      "reintegrations": "0",
+      "deductions": "0",
+      "impot_theorique": null,
+      "regime_avantages": "Impôt théorique N1 non fourni",
+      "reference_source": "SOURCE INTEGREE733 B13 N1"
+    }
+  ],
+  "b14": [
+    {
+      "nature": "4455",
+      "solde_debut": "300",
+      "operations": "2000",
+      "declarations": "1300",
+      "references_declarations": "DECL FICTIVE733 4455",
+      "reference_source": "SOURCE INTEGREE733 B14 4455"
+    },
+    {
+      "nature": "34552",
+      "solde_debut": "100",
+      "operations": "800",
+      "declarations": "400",
+      "references_declarations": "DECL FICTIVE733 34552",
+      "reference_source": "SOURCE INTEGREE733 B14 34552"
+    },
+    {
+      "nature": "34551",
+      "solde_debut": "50",
+      "operations": "300",
+      "declarations": "150",
+      "references_declarations": "DECL FICTIVE733 34551",
+      "reference_source": "SOURCE INTEGREE733 B14 34551"
+    }
+  ],
+  "extra": [
+    {
+      "code": "C3-N",
+      "nature": "Synthèse intégrée733 C3-N",
+      "effectif_moyen": "3.50",
+      "benefices_distribues": "2000",
+      "resultat_par_titre": "60.20",
+      "distribution_par_titre": "20",
+      "affectations_justifiees": "PV FICTIF2027 pour2026,100titres ; décision à qualifier",
+      "reference_source": "SOURCE INTEGREE733 EXTRA C3-N"
+    },
+    {
+      "code": "C3-N1",
+      "nature": "Synthèse intégrée733 C3-N1",
+      "effectif_moyen": "3",
+      "benefices_distribues": "1000",
+      "resultat_par_titre": "30",
+      "distribution_par_titre": "10",
+      "affectations_justifiees": "PV FICTIF2026 pour2025,100titres ;1000payés en2026",
+      "reference_source": "SOURCE INTEGREE733 EXTRA C3-N1"
+    },
+    {
+      "code": "C3-N2",
+      "nature": "Synthèse intégrée733 C3-N2",
+      "effectif_moyen": "2",
+      "benefices_distribues": "0",
+      "resultat_par_titre": "10",
+      "distribution_par_titre": "0",
+      "affectations_justifiees": "PV FICTIF2025 pour2024,100titres ; bénéfice1000reporté",
+      "reference_source": "SOURCE INTEGREE733 EXTRA C3-N2"
+    }
+  ],
+  "reference_n2": "SOURCE INTEGREE733 N2",
+  "attendus": {
+    "net_n": "6020.00",
+    "net_n1": "3000.00",
+    "net_n2": "1000.00",
+    "situation_n": "17520.00",
+    "situation_n1": "13200.00",
+    "situation_n2": "11000.00",
+    "avant_impots_n": "7600.00",
+    "fiscal_avant_deficit": "7900.00",
+    "benefice_fiscal": "7900.00",
+    "is_theorique": "1580.00",
+    "courant_n": "6600.00",
+    "base_courante": "6900.00",
+    "courant_apres_declare": "5220.00",
+    "tva_collectee_fin": "1000.00",
+    "tva_charges_fin": "500.00",
+    "tva_immo_fin": "200.00",
+    "tva_recuperable_fin": "700.00",
+    "tva_nette_documentaire": "300.00"
+  },
+  "limites": [
+    "CM/CSS/crédits/acomptes/solde inconnus, aucune liquidation ou dépôt confirmé",
+    "B13 N1 impôt théorique non fourni reste inconnu",
+    "Effectifs et titres explicitement déclarés, aucun scénario de paie",
+    "Import de balances indépendant du Journal, de la clôture et de l’archivage annuel"
+  ]
+}

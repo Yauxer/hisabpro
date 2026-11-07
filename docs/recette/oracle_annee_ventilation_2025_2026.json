@@ -1,0 +1,19 @@
+{
+  "titre": "Variante annuelle fictive — paiements ventilés et soldes inter-exercices",
+  "limite": "Oracle d'intégration des paramètres déjà livrés, pas validation fiscale ou recette des218cas. Bases jetables seulement. Aucun relevé bancaire regroupé supposé.",
+  "exercice": 2025,
+  "capital": "1000.00",
+  "factures_par_sens": [{"ht":"100.00","tva":"20.00","ttc":"120.00"},{"ht":"200.00","tva":"40.00","ttc":"240.00"}],
+  "paiement_par_sens_2025": "240.00",
+  "ventilations": ["120.00","120.00"],
+  "reste_par_sens": "120.00",
+  "journal_avant_impot": {"ecritures":9,"lignes":22,"debit":"2200.00","credit":"2200.00"},
+  "tva_2025": {"collectee":"40.00","recuperable":"40.00","due":"0.00","credit":"0.00"},
+  "soldes_avant_impot": {"1111":"-1000.00","3421":"120.00","34552":"60.00","4411":"-120.00","4455":"-60.00","5141":"1000.00","6111":"300.00","7111":"-300.00"},
+  "impot_laboratoire": {"base_cm":"300.00","taux_pct_existant":"0.25","proportionnelle":"0.75","minimum_existant":"3000.00","charge":"3000.00","resultat_avant":"0.00","resultat_net":"-3000.00"},
+  "soldes_an_2026": {"1111":"-1000.00","1199":"3000.00","3421":"120.00","34552":"60.00","4411":"-120.00","4453":"-3000.00","4455":"-60.00","5141":"1000.00"},
+  "total_an": "4180.00",
+  "reglements_2026_par_sens": "120.00",
+  "soldes_2026_apres_reglements": {"1111":"-1000.00","1199":"3000.00","3421":"0.00","34552":"60.00","4411":"0.00","4453":"-3000.00","4455":"-60.00","5141":"1000.00"},
+  "total_soldes_2026": "4060.00"
+}

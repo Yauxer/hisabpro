@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="6" skipped="0" tests="13" time="87.964" timestamp="2026-10-28T12:09:07.723768+01:00" hostname="Taiyou"><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_catalogue_vide_versionnement_et_absence_ecriture" time="31.874"><failure message="AssertionError: assert 500 == 403&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code&#10; +    where &lt;Response [500 Internal Server Error]&gt; = post('/api/employes/personnel/elements/versions/1/approuver', json={'motif': 'Contrôle fictif889', 'independance_confirmee': True, 'reference_controle': 'CTRL-FICTIF889'})&#10; +      where post = &lt;httpx.Client object at 0x00000205222F8410&gt;.post&#10; +      and   {'motif': 'Contrôle fictif889', 'independance_confirmee': True, 'reference_controle': 'CTRL-FICTIF889'} = dec()">application = {'api_url': 'http://127.0.0.1:53747', 'web_url': 'http://127.0.0.1:53748', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_gd3qa92v'), 'nonce': 'f40c4a66c5b74ad38a9c79fa1428ee14', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x00000205222F8410&gt;, 'b': &lt;httpx.Client object at 0x0000020522469C90&gt;, 'l': &lt;httpx.Client object at 0x0000020522474BD0&gt;, 'uid': 5, ...}
+
+    def test_889_catalogue_vide_versionnement_et_absence_ecriture(application,equipe):
+        eq=equipe;a=eq['a'];b=eq['b'];avant=comptabilite(application,eq['sid']);v=creer(eq);rid=v['rubrique_id']
+        q=ok(a.get(E));assert q['elements'][0]['id']==rid and q['elements'][0]['courante_id'] is None
+&gt;       assert a.post(f'{E}/versions/{v["id"]}/approuver',json=dec()).status_code==403
+E       AssertionError: assert 500 == 403
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+E        +    where &lt;Response [500 Internal Server Error]&gt; = post('/api/employes/personnel/elements/versions/1/approuver', json={'motif': 'Contrôle fictif889', 'independance_confirmee': True, 'reference_controle': 'CTRL-FICTIF889'})
+E        +      where post = &lt;httpx.Client object at 0x00000205222F8410&gt;.post
+E        +      and   {'motif': 'Contrôle fictif889', 'independance_confirmee': True, 'reference_controle': 'CTRL-FICTIF889'} = dec()
+
+Test\test_paie889_catalogue_isole.py:46: AssertionError</failure></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_ventilation_ir_cnss_separee_sans_inventer_cumul" time="3.857"><failure message="AssertionError: Internal Server Error&#10;assert 500 == 200&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">equipe = {'a': &lt;httpx.Client object at 0x0000020522499450&gt;, 'b': &lt;httpx.Client object at 0x000002052246AF90&gt;, 'l': &lt;httpx.Client object at 0x000002052246B790&gt;, 'uid': 8, ...}
+
+    def test_889_ventilation_ir_cnss_separee_sans_inventer_cumul(equipe):
+        eq=equipe;v=creer(eq)
+        for montant,ir,cnss in [('0.00','0.00','0.00'),('300.00','0.00','0.00'),('500.00','0.00','200.00'),('800.01','300.01','500.01')]:
+&gt;           q=ok(eq['a'].post(f'{E}/versions/{v["id"]}/apercu',json={'montant':montant}))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_paie889_catalogue_isole.py:62: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [500 Internal Server Error]&gt;, status = 200
+
+    def ok(r,status=200):
+&gt;       assert r.status_code==status,r.text
+E       AssertionError: Internal Server Error
+E       assert 500 == 200
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+Test\test_multi_societes_runtime_isole.py:49: AssertionError</failure></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_montants_invalides_refuses[nan]" time="3.889" /><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_montants_invalides_refuses[infini]" time="3.208" /><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_montants_invalides_refuses[negatif]" time="3.317" /><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_montants_invalides_refuses[precision]" time="3.432" /><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_montants_invalides_refuses[booleen]" time="3.377" /><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_montants_invalides_refuses[float]" time="3.476" /><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_validation_reglementaire_explicite_et_preuves" time="4.004"><failure message="AssertionError: assert 500 == 400&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code&#10; +    where &lt;Response [500 Internal Server Error]&gt; = post('/api/employes/personnel/elements/versions/9/approuver', json={'motif': 'Contrôle fictif889', 'independance_confirmee': True, 'reference_controle': 'CTRL-FICTIF889'})&#10; +      where post = &lt;httpx.Client object at 0x0000020522483690&gt;.post&#10; +      and   {'motif': 'Contrôle fictif889', 'independance_confirmee': True, 'reference_controle': 'CTRL-FICTIF889'} = dec()">equipe = {'a': &lt;httpx.Client object at 0x00000205224B0F50&gt;, 'b': &lt;httpx.Client object at 0x0000020522483690&gt;, 'l': &lt;httpx.Client object at 0x0000020522575E90&gt;, 'uid': 29, ...}
+
+    def test_889_validation_reglementaire_explicite_et_preuves(equipe):
+        eq=equipe;c=contenu();c['regles']['IR']['statut_reglementaire']='VALIDE'
+        body={'code':'REGLE_FICTIVE','contenu':c,'motif':'Test fictif889'}
+        assert eq['a'].post(E,json=body).status_code==422
+        c['regles']['IR'].update(texte_reference='RÉFÉRENCE FICTIVE,ne valide aucune exonération',article='Article FICTIF',url_source='https://www.finances.gov.ma/Publication/dgi/2025/CGI-2026-FR.pdf',empreinte_preuve='a'*64)
+        v=ok(eq['a'].post(E,json=body),201)
+&gt;       assert eq['b'].post(f'{E}/versions/{v["id"]}/approuver',json=dec()).status_code==400
+E       AssertionError: assert 500 == 400
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+E        +    where &lt;Response [500 Internal Server Error]&gt; = post('/api/employes/personnel/elements/versions/9/approuver', json={'motif': 'Contrôle fictif889', 'independance_confirmee': True, 'reference_controle': 'CTRL-FICTIF889'})
+E        +      where post = &lt;httpx.Client object at 0x0000020522483690&gt;.post
+E        +      and   {'motif': 'Contrôle fictif889', 'independance_confirmee': True, 'reference_controle': 'CTRL-FICTIF889'} = dec()
+
+Test\test_paie889_catalogue_isole.py:81: AssertionError</failure></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_doublon_incompatibilites_et_mapping_inconnus" time="3.985" /><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_isolation_droits_personnel_seul_et_sql_immuable" time="6.480"><failure message="AssertionError: assert (404 == 403)&#10; +  where 404 = &lt;Response [404 Not Found]&gt;.status_code&#10; +    where &lt;Response [404 Not Found]&gt; = get(('/api/employes/personnel/elements' + '/1/autre'))&#10; +      where get = &lt;httpx.Client object at 0x00000205225711D0&gt;.get">application = {'api_url': 'http://127.0.0.1:53747', 'web_url': 'http://127.0.0.1:53748', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_gd3qa92v'), 'nonce': 'f40c4a66c5b74ad38a9c79fa1428ee14', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x0000020522474410&gt;, 'b': &lt;httpx.Client object at 0x000002052249EF10&gt;, 'l': &lt;httpx.Client object at 0x0000020522468650&gt;, 'uid': 35, ...}
+
+    def test_889_isolation_droits_personnel_seul_et_sql_immuable(application,equipe):
+        eq=equipe;v=creer(eq);rid=v['rubrique_id']
+        assert eq['l'].get(E).status_code==403
+        with closing(client(application)[0]) as autre:
+            uid=ok(autre.get('/api/auth/me'))['id']
+            for cap in CAPS:grant(autre,uid,cap)
+            activer(autre)
+            assert autre.get(f'{E}/{rid}').status_code==404
+            assert autre.post(f'{E}/versions/{v["id"]}/apercu',json={'montant':'100.00'}).status_code==404
+            assert autre.post(f'{E}/versions/{v["id"]}/approuver',json=dec()).status_code==404
+        p,u,_,_=role_client(application,eq['a'],'personnel')
+        with closing(p):
+            for cap in CAPS:grant(eq['a'],u['id'],cap)
+            assert p.get(E).status_code==200 and p.get('/api/factures').status_code==403
+&gt;           assert p.get(E+'/1/autre').status_code==403 and p.post(E+'/1',json={}).status_code==403
+E           AssertionError: assert (404 == 403)
+E            +  where 404 = &lt;Response [404 Not Found]&gt;.status_code
+E            +    where &lt;Response [404 Not Found]&gt; = get(('/api/employes/personnel/elements' + '/1/autre'))
+E            +      where get = &lt;httpx.Client object at 0x00000205225711D0&gt;.get
+
+Test\test_paie889_catalogue_isole.py:107: AssertionError</failure></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_concurrence_une_seule_decision_et_rejet_trace" time="4.093"><failure message="assert [500, 500] == [200, 409]&#10;  &#10;  At index 0 diff: 500 != 200&#10;  Use -v to get more diff">application = {'api_url': 'http://127.0.0.1:53747', 'web_url': 'http://127.0.0.1:53748', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_gd3qa92v'), 'nonce': 'f40c4a66c5b74ad38a9c79fa1428ee14', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x0000020522572D50&gt;, 'b': &lt;httpx.Client object at 0x000002052249F050&gt;, 'l': &lt;httpx.Client object at 0x000002052257B890&gt;, 'uid': 40, ...}
+
+    def test_889_concurrence_une_seule_decision_et_rejet_trace(application,equipe):
+        eq=equipe;v=creer(eq)
+        def approuver(_):
+            with httpx.Client(base_url=application['api_url'],headers=dict(eq['b'].headers),timeout=30) as c:return c.post(f'{E}/versions/{v["id"]}/approuver',json=dec()).status_code
+        with ThreadPoolExecutor(max_workers=2) as pool:r=list(pool.map(approuver,range(2)))
+&gt;       assert sorted(r)==[200,409]
+E       assert [500, 500] == [200, 409]
+E         
+E         At index 0 diff: 500 != 200
+E         Use -v to get more diff
+
+Test\test_paie889_catalogue_isole.py:117: AssertionError</failure></testcase><testcase classname="Test.test_paie889_catalogue_isole" name="test_889_periode_expiree_ne_reactive_pas_version_precedente" time="8.693"><failure message="AssertionError: Internal Server Error&#10;assert 500 == 200&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">equipe = {'a': &lt;httpx.Client object at 0x0000020522481590&gt;, 'b': &lt;httpx.Client object at 0x0000020522677310&gt;, 'l': &lt;httpx.Client object at 0x0000020522675150&gt;, 'uid': 43, ...}
+
+    def test_889_periode_expiree_ne_reactive_pas_version_precedente(equipe):
+&gt;       eq=equipe;v=creer(eq,date_fin='2026-12-31');ok(eq['b'].post(f'{E}/versions/{v["id"]}/approuver',json=dec()))
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_paie889_catalogue_isole.py:122: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [500 Internal Server Error]&gt;, status = 200
+
+    def ok(r,status=200):
+&gt;       assert r.status_code==status,r.text
+E       AssertionError: Internal Server Error
+E       assert 500 == 200
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+Test\test_multi_societes_runtime_isole.py:49: AssertionError</failure></testcase></testsuite></testsuites>

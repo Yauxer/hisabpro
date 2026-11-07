@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="14" time="58.999" timestamp="2026-10-29T20:21:18.098024+01:00" hostname="Taiyou"><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[False--1]" time="31.231"><failure message="AssertionError: {&quot;message&quot;:&quot;Section B6 enregistrée&quot;,&quot;code&quot;:&quot;B6&quot;,&quot;updated_at&quot;:&quot;2026-10-29T20:21:51.974166&quot;}&#10;assert (200 == 422)&#10; +  where 200 = &lt;Response [200 OK]&gt;.status_code">application = {'api_url': 'http://127.0.0.1:59993', 'web_url': 'http://127.0.0.1:59994', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_0vmisik_'), 'nonce': 'b2b06f0e96bb4b5a9e5ee7149d9209c3', ...}, ...}
+valeur = -1, confirme = False
+
+    @pytest.mark.parametrize('valeur', [-1, 'NaN', 'Infinity', '-Infinity', 'abc'])
+    @pytest.mark.parametrize('confirme', [False, True])
+    def test_949_b6_montant_invalide_refuse_sans_mutation(application, valeur, confirme):
+        with closing(client(application)[0]) as api:
+            sid, _ = dossier(api, application)
+            avant = core(application, sid)
+            initial = section(api, 'B6')
+            body = {'confirme': confirme, 'autres_analyses_neant': True,
+                'ventilations': {'3421': {'plus_un_an': 0, 'moins_un_an': 0, 'echues': valeur}}}
+            r = api.put('/api/etats/etic/2025/B6', json={'contenu': body})
+&gt;           assert r.status_code == 422 and 'montant fini' in r.text, r.text
+E           AssertionError: {"message":"Section B6 enregistrée","code":"B6","updated_at":"2026-10-29T20:21:51.974166"}
+E           assert (200 == 422)
+E            +  where 200 = &lt;Response [200 OK]&gt;.status_code
+
+Test\test_refus_etic_fec949_isole.py:57: AssertionError</failure></testcase><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[False-NaN]" time="1.176"><failure message="AssertionError: {&quot;message&quot;:&quot;Section B6 enregistrée&quot;,&quot;code&quot;:&quot;B6&quot;,&quot;updated_at&quot;:&quot;2026-10-29T20:21:53.869721&quot;}&#10;assert (200 == 422)&#10; +  where 200 = &lt;Response [200 OK]&gt;.status_code">application = {'api_url': 'http://127.0.0.1:59993', 'web_url': 'http://127.0.0.1:59994', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_0vmisik_'), 'nonce': 'b2b06f0e96bb4b5a9e5ee7149d9209c3', ...}, ...}
+valeur = 'NaN', confirme = False
+
+    @pytest.mark.parametrize('valeur', [-1, 'NaN', 'Infinity', '-Infinity', 'abc'])
+    @pytest.mark.parametrize('confirme', [False, True])
+    def test_949_b6_montant_invalide_refuse_sans_mutation(application, valeur, confirme):
+        with closing(client(application)[0]) as api:
+            sid, _ = dossier(api, application)
+            avant = core(application, sid)
+            initial = section(api, 'B6')
+            body = {'confirme': confirme, 'autres_analyses_neant': True,
+                'ventilations': {'3421': {'plus_un_an': 0, 'moins_un_an': 0, 'echues': valeur}}}
+            r = api.put('/api/etats/etic/2025/B6', json={'contenu': body})
+&gt;           assert r.status_code == 422 and 'montant fini' in r.text, r.text
+E           AssertionError: {"message":"Section B6 enregistrée","code":"B6","updated_at":"2026-10-29T20:21:53.869721"}
+E           assert (200 == 422)
+E            +  where 200 = &lt;Response [200 OK]&gt;.status_code
+
+Test\test_refus_etic_fec949_isole.py:57: AssertionError</failure></testcase><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[False-Infinity]" time="1.234"><failure message="AssertionError: {&quot;message&quot;:&quot;Section B6 enregistrée&quot;,&quot;code&quot;:&quot;B6&quot;,&quot;updated_at&quot;:&quot;2026-10-29T20:21:55.117666&quot;}&#10;assert (200 == 422)&#10; +  where 200 = &lt;Response [200 OK]&gt;.status_code">application = {'api_url': 'http://127.0.0.1:59993', 'web_url': 'http://127.0.0.1:59994', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_0vmisik_'), 'nonce': 'b2b06f0e96bb4b5a9e5ee7149d9209c3', ...}, ...}
+valeur = 'Infinity', confirme = False
+
+    @pytest.mark.parametrize('valeur', [-1, 'NaN', 'Infinity', '-Infinity', 'abc'])
+    @pytest.mark.parametrize('confirme', [False, True])
+    def test_949_b6_montant_invalide_refuse_sans_mutation(application, valeur, confirme):
+        with closing(client(application)[0]) as api:
+            sid, _ = dossier(api, application)
+            avant = core(application, sid)
+            initial = section(api, 'B6')
+            body = {'confirme': confirme, 'autres_analyses_neant': True,
+                'ventilations': {'3421': {'plus_un_an': 0, 'moins_un_an': 0, 'echues': valeur}}}
+            r = api.put('/api/etats/etic/2025/B6', json={'contenu': body})
+&gt;           assert r.status_code == 422 and 'montant fini' in r.text, r.text
+E           AssertionError: {"message":"Section B6 enregistrée","code":"B6","updated_at":"2026-10-29T20:21:55.117666"}
+E           assert (200 == 422)
+E            +  where 200 = &lt;Response [200 OK]&gt;.status_code
+
+Test\test_refus_etic_fec949_isole.py:57: AssertionError</failure></testcase><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[False--Infinity]" time="1.232"><failure message="AssertionError: {&quot;message&quot;:&quot;Section B6 enregistrée&quot;,&quot;code&quot;:&quot;B6&quot;,&quot;updated_at&quot;:&quot;2026-10-29T20:21:56.361989&quot;}&#10;assert (200 == 422)&#10; +  where 200 = &lt;Response [200 OK]&gt;.status_code">application = {'api_url': 'http://127.0.0.1:59993', 'web_url': 'http://127.0.0.1:59994', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_0vmisik_'), 'nonce': 'b2b06f0e96bb4b5a9e5ee7149d9209c3', ...}, ...}
+valeur = '-Infinity', confirme = False
+
+    @pytest.mark.parametrize('valeur', [-1, 'NaN', 'Infinity', '-Infinity', 'abc'])
+    @pytest.mark.parametrize('confirme', [False, True])
+    def test_949_b6_montant_invalide_refuse_sans_mutation(application, valeur, confirme):
+        with closing(client(application)[0]) as api:
+            sid, _ = dossier(api, application)
+            avant = core(application, sid)
+            initial = section(api, 'B6')
+            body = {'confirme': confirme, 'autres_analyses_neant': True,
+                'ventilations': {'3421': {'plus_un_an': 0, 'moins_un_an': 0, 'echues': valeur}}}
+            r = api.put('/api/etats/etic/2025/B6', json={'contenu': body})
+&gt;           assert r.status_code == 422 and 'montant fini' in r.text, r.text
+E           AssertionError: {"message":"Section B6 enregistrée","code":"B6","updated_at":"2026-10-29T20:21:56.361989"}
+E           assert (200 == 422)
+E            +  where 200 = &lt;Response [200 OK]&gt;.status_code
+
+Test\test_refus_etic_fec949_isole.py:57: AssertionError</failure></testcase><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[False-abc]" time="1.208"><failure message="AssertionError: {&quot;message&quot;:&quot;Section B6 enregistrée&quot;,&quot;code&quot;:&quot;B6&quot;,&quot;updated_at&quot;:&quot;2026-10-29T20:21:57.581832&quot;}&#10;assert (200 == 422)&#10; +  where 200 = &lt;Response [200 OK]&gt;.status_code">application = {'api_url': 'http://127.0.0.1:59993', 'web_url': 'http://127.0.0.1:59994', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_0vmisik_'), 'nonce': 'b2b06f0e96bb4b5a9e5ee7149d9209c3', ...}, ...}
+valeur = 'abc', confirme = False
+
+    @pytest.mark.parametrize('valeur', [-1, 'NaN', 'Infinity', '-Infinity', 'abc'])
+    @pytest.mark.parametrize('confirme', [False, True])
+    def test_949_b6_montant_invalide_refuse_sans_mutation(application, valeur, confirme):
+        with closing(client(application)[0]) as api:
+            sid, _ = dossier(api, application)
+            avant = core(application, sid)
+            initial = section(api, 'B6')
+            body = {'confirme': confirme, 'autres_analyses_neant': True,
+                'ventilations': {'3421': {'plus_un_an': 0, 'moins_un_an': 0, 'echues': valeur}}}
+            r = api.put('/api/etats/etic/2025/B6', json={'contenu': body})
+&gt;           assert r.status_code == 422 and 'montant fini' in r.text, r.text
+E           AssertionError: {"message":"Section B6 enregistrée","code":"B6","updated_at":"2026-10-29T20:21:57.581832"}
+E           assert (200 == 422)
+E            +  where 200 = &lt;Response [200 OK]&gt;.status_code
+
+Test\test_refus_etic_fec949_isole.py:57: AssertionError</failure></testcase><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[True--1]" time="1.402" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[True-NaN]" time="1.475" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[True-Infinity]" time="1.373" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[True--Infinity]" time="1.335" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[True-abc]" time="1.499" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_vide_inconnu_et_zero_explicitement_prioritaire" time="1.431" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_zero_manuel_prioritaire_sur_auto_certaine" time="1.574" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b7_total480_ventilation479_refuse_confirmation" time="1.778" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_piece_historique_absente_reliquat_visible_sans_invention" time="7.613" /></testsuite></testsuites>

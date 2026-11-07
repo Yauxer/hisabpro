@@ -1,0 +1,19 @@
+{
+  "societe": "RECETTE PERSONNEL879 — FICTIF, copie isolée restaurable",
+  "menu": "05 · Fiscalité salariale → Bases fiscales",
+  "installation": "120 après113–119 ; module Personnel actif/protégé ; droits identité/rémunération/proposer",
+  "sources": "Un salarié P909, contrat mensuel approuvé, rémunération9000.10 applicable tout novembre2026 ; variable ponctuelle800.01 approuvée ; brut9800.11 et social complets",
+  "rubrique_fictive": "GAIN_FICTIF909, Gain, Ponctuelle, Montant exact, début2026-01-01, fin vide, compte vide, justificatif ATTESTATION_FICTIVE, aucune incompatibilité",
+  "regles_rubrique": "IR : plafond500.00/par opération ; CNSS : plafond300.00/par opération ; AMO : soumis. Conditions Hypothèse FICTIVE909 sans portée légale. IR qualifié seulement dans le jeu de test isolé ; frais Exclue / qualifiée dans ce même jeu.",
+  "branches_fictives": "Régime REGIME_FISC909. B1_FICTIF909 : CNSS, salarial1%, patronal2%, plafond6000.00/mensuel, composantB1, déductibilité intégrale fictive. B2_FICTIF909 : AMO, salarial3%, patronal4%, sans plafond, composantB2, non déductible fictivement. Organisme Organisme fictif, début2026-01-01, conditions Hypothèse FICTIVE909 sans portée légale.",
+  "qualification_test": "Pour la recette isolée exclusivement, le technicien peut constituer les états synthétiques qualifiés comme les fixtures test_paie909_bases_isole.py : texte/article/référence FICTIF909, URL https://www.finances.gov.ma/, SHA a répété64fois, consultation2026-01-01 ; approbateur distinct habilité valider_regles_paie. Ces références fictives ne justifient aucune véritable règle et sont interdites pour une paie réelle.",
+  "sources_reelles": "En exploitation, utiliser uniquement des preuves véritables de l’éligibilité du salarié et de chaque règle, contrôlées par le décideur. Ne pas copier les taux ou preuves fictifs du cahier.",
+  "declarations_sociales": "BaseCNSS9000.10 etbaseAMO9000.10 ; conditions confirmées, référenceCTRL-FICTIF909 ; motif Social FICTIF909 ; conserverIDsocial après calcul354.00 salarial/512.00 patronal.",
+  "part_base_imposable": "9000.10",
+  "part_base_frais": "9000.10",
+  "reference_controle": "CTRL-FICTIF909",
+  "motif": "Préparation FICTIVE909",
+  "confirmations": "Conditions fiscales ; déductibilité intégrale des cotisations éligibles ; compréhension du résultat intermédiaire. Uniquement si justifiées dans le scénario.",
+  "attendus": "Gain imposable300.01 ; brut imposable9300.11 ; basefrais9000.10 ; déductible60.00 ; non déductible294.00 ; revenu avantfrais9240.11. Frais déduits/RNI/IR/net non déterminés.",
+  "attention": "Aucun montant du scénario n’est une règle réglementaire. Aucun prélèvement, bulletin, paiement ou écriture. Période des variables distincte d’une date réelle de paiement."
+}

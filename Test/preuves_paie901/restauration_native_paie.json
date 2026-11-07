@@ -1,0 +1,11 @@
+{
+  "donnees_reelles": false,
+  "tables": 95,
+  "schema_donnees_sequences_acl_identiques": true,
+  "predicat_index_altere_detecte": true,
+  "role_runtime_limite": true,
+  "snapshot_et_empreinte_restitues": true,
+  "source_inchangee": true,
+  "cible_nonce_supprimee": true,
+  "archive_sha256": "1e4c409469588d19a0e5ad1500cf4842d970d92c5903375b5a401ad644139569"
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="9" time="83.979" timestamp="2026-10-29T19:35:44.154631+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_tva_acomptes945_isole" name="test_945_date_effective_interface_droits_et_tva[admin-1440]" time="31.123"><failure message="RuntimeError: Cannot open a client instance more than once.">application = {'api_url': 'http://127.0.0.1:50943', 'web_url': 'http://127.0.0.1:50944', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_do703z9j'), 'nonce': '2bc61228c0184bb3bd87aab90aafb785', ...}, ...}
+role = 'admin', largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/tva945_interface/test_945_date_effective_interf0')
+
+    @pytest.mark.parametrize('role,largeur', [('admin', 1440), ('comptable', 390), ('lecture', 390)])
+    def test_945_date_effective_interface_droits_et_tva(application, role, largeur, tmp_path):
+        api, email, password = client(application)
+&gt;       with api, sync_playwright() as p:
+
+Test\test_e2e_tva_acomptes945_isole.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;httpx.Client object at 0x0000020DE24DBCD0&gt;
+
+    def __enter__(self: T) -&gt; T:
+        if self._state != ClientState.UNOPENED:
+            msg = {
+                ClientState.OPENED: "Cannot open a client instance more than once.",
+                ClientState.CLOSED: (
+                    "Cannot reopen a client instance, once it has been closed."
+                ),
+            }[self._state]
+&gt;           raise RuntimeError(msg)
+E           RuntimeError: Cannot open a client instance more than once.
+
+hisabpro-backend\.venv\Lib\site-packages\httpx\_client.py:1283: RuntimeError</failure></testcase><testcase classname="Test.test_e2e_tva_acomptes945_isole" name="test_945_date_effective_interface_droits_et_tva[comptable-390]" time="0.933"><failure message="RuntimeError: Cannot open a client instance more than once.">application = {'api_url': 'http://127.0.0.1:50943', 'web_url': 'http://127.0.0.1:50944', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_do703z9j'), 'nonce': '2bc61228c0184bb3bd87aab90aafb785', ...}, ...}
+role = 'comptable', largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/tva945_interface/test_945_date_effective_interf1')
+
+    @pytest.mark.parametrize('role,largeur', [('admin', 1440), ('comptable', 390), ('lecture', 390)])
+    def test_945_date_effective_interface_droits_et_tva(application, role, largeur, tmp_path):
+        api, email, password = client(application)
+&gt;       with api, sync_playwright() as p:
+
+Test\test_e2e_tva_acomptes945_isole.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;httpx.Client object at 0x0000020DDF9B4C50&gt;
+
+    def __enter__(self: T) -&gt; T:
+        if self._state != ClientState.UNOPENED:
+            msg = {
+                ClientState.OPENED: "Cannot open a client instance more than once.",
+                ClientState.CLOSED: (
+                    "Cannot reopen a client instance, once it has been closed."
+                ),
+            }[self._state]
+&gt;           raise RuntimeError(msg)
+E           RuntimeError: Cannot open a client instance more than once.
+
+hisabpro-backend\.venv\Lib\site-packages\httpx\_client.py:1283: RuntimeError</failure></testcase><testcase classname="Test.test_e2e_tva_acomptes945_isole" name="test_945_date_effective_interface_droits_et_tva[lecture-390]" time="6.128"><failure message="RuntimeError: Cannot open a client instance more than once.">application = {'api_url': 'http://127.0.0.1:50943', 'web_url': 'http://127.0.0.1:50944', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_do703z9j'), 'nonce': '2bc61228c0184bb3bd87aab90aafb785', ...}, ...}
+role = 'lecture', largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/tva945_interface/test_945_date_effective_interf2')
+
+    @pytest.mark.parametrize('role,largeur', [('admin', 1440), ('comptable', 390), ('lecture', 390)])
+    def test_945_date_effective_interface_droits_et_tva(application, role, largeur, tmp_path):
+        api, email, password = client(application)
+&gt;       with api, sync_playwright() as p:
+
+Test\test_e2e_tva_acomptes945_isole.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;httpx.Client object at 0x0000020DE2827C10&gt;
+
+    def __enter__(self: T) -&gt; T:
+        if self._state != ClientState.UNOPENED:
+            msg = {
+                ClientState.OPENED: "Cannot open a client instance more than once.",
+                ClientState.CLOSED: (
+                    "Cannot reopen a client instance, once it has been closed."
+                ),
+            }[self._state]
+&gt;           raise RuntimeError(msg)
+E           RuntimeError: Cannot open a client instance more than once.
+
+hisabpro-backend\.venv\Lib\site-packages\httpx\_client.py:1283: RuntimeError</failure></testcase><testcase classname="Test.test_tva_acomptes945_isole" name="test_945_acompte_en_attente_puis_encaisse_dans_le_bon_mois[cheque]" time="31.043" /><testcase classname="Test.test_tva_acomptes945_isole" name="test_945_acompte_en_attente_puis_encaisse_dans_le_bon_mois[effet]" time="1.162" /><testcase classname="Test.test_tva_acomptes945_isole" name="test_945_acompte_rejete_sans_encaissement_non_taxable" time="1.029" /><testcase classname="Test.test_tva_acomptes945_isole" name="test_945_virement_immediat_conserve_tva_acompte" time="1.052" /><testcase classname="Test.test_tva_acomptes945_isole" name="test_945_date_historique_inconnue_signalee_sans_reparation[cheque-0]" time="1.049" /><testcase classname="Test.test_tva_acomptes945_isole" name="test_945_date_historique_inconnue_signalee_sans_reparation[virement-4000]" time="6.134" /></testsuite></testsuites>

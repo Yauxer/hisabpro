@@ -1,0 +1,3001 @@
+{
+  "titre": "Jeu de recette fictif :variante annuelle TVA sur encaissements953",
+  "version": "953 — complément du cahier principal,aucune recette humaine prévalidée",
+  "societe": {
+    "raison_sociale": "ATLAS RECETTE HISABPRO SARL — FICTIVE",
+    "forme_juridique": "SARL",
+    "ville": "Casablanca",
+    "adresse": "1 rue du Scénario, adresse fictive",
+    "capital_social": "200000.00",
+    "devise": "MAD",
+    "identifiant_fiscal": "99000001",
+    "ice": "009900000000001",
+    "rc": "RECETTE-2025",
+    "patente": "99000002",
+    "exercice_debut": 2025,
+    "regime_fiscal": "is",
+    "regime_tva": "encaissement",
+    "periodicite_tva": "mensuelle",
+    "email": "admin@hisabpro-recette.example",
+    "password_test": "Recette!Atlas2025",
+    "nom_admin": "Administrateur Recette",
+    "avertissement": "Identité, identifiants et justificatifs entièrement fictifs, réservés à une base isolée. Aucune preuve d'attribution par une administration ; aucun dépôt réel.",
+    "date_constitution_fictive": "2025-01-01",
+    "date_debut_exploitation_fictive": "2025-01-01",
+    "concession_service_public": "Non, hypothèse explicite du scénario"
+  },
+  "tiers": [
+    {
+      "code": "C-MARCH",
+      "nom": "Client Marchandises Recette",
+      "type": "client",
+      "compte": "3421",
+      "auxiliaire": "Attribué automatiquement par HisabPro ; consigner le code réel."
+    },
+    {
+      "code": "C-SERVICE",
+      "nom": "Client Services Recette",
+      "type": "client",
+      "compte": "3421",
+      "auxiliaire": "Attribué automatiquement par HisabPro ; consigner le code réel."
+    },
+    {
+      "code": "C-IMPAYE",
+      "nom": "Client Impayé Recette",
+      "type": "client",
+      "compte": "3421",
+      "auxiliaire": "Attribué automatiquement par HisabPro ; consigner le code réel."
+    },
+    {
+      "code": "F-MARCH",
+      "nom": "Fournisseur Marchandises Recette",
+      "type": "fournisseur",
+      "compte": "4411",
+      "auxiliaire": "Attribué automatiquement par HisabPro ; consigner le code réel."
+    },
+    {
+      "code": "F-SERVICE",
+      "nom": "Fournisseur Services Recette",
+      "type": "fournisseur",
+      "compte": "4411",
+      "auxiliaire": "Attribué automatiquement par HisabPro ; consigner le code réel."
+    },
+    {
+      "code": "F-CONTROLE",
+      "nom": "Fournisseur Contrôle Références Recette",
+      "type": "fournisseur",
+      "compte": "4411",
+      "auxiliaire": "Attribué automatiquement par HisabPro ; consigner le code réel."
+    },
+    {
+      "code": "F-IMMO",
+      "nom": "Fournisseur Informatique Recette",
+      "type": "fournisseur",
+      "compte": "4481",
+      "auxiliaire": "Attribué automatiquement par HisabPro ; consigner le code réel."
+    }
+  ],
+  "articles": [
+    {
+      "code": "M-01",
+      "designation": "Marchandise de recette",
+      "type": "produit",
+      "stock_initial": 0,
+      "prix_achat": 100,
+      "prix_vente": 250,
+      "tva": 20,
+      "compte_achat": "6111",
+      "compte_vente": "7111",
+      "compte_stock": "3111",
+      "compte_variation": "6114"
+    },
+    {
+      "code": "S-VTE",
+      "designation": "Prestation de recette",
+      "type": "service",
+      "stock_initial": 0,
+      "prix_vente": 120000,
+      "tva": 20,
+      "compte_vente": "7124"
+    },
+    {
+      "code": "S-ACH",
+      "designation": "Fourniture/service non stocké recette",
+      "type": "service",
+      "stock_initial": 0,
+      "prix_achat": 12000,
+      "tva": 20,
+      "compte_achat": "6125"
+    }
+  ],
+  "banque": {
+    "banque": "Banque Recette",
+    "compte_comptable": "5141",
+    "rib": "000000000000000000000001",
+    "rib_fictif": true,
+    "solde_initial": "0.00",
+    "solde_final": "287730.00"
+  },
+  "operations": [
+    {
+      "reference_recette": "CAP-01",
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "description": "Apport en capital versé",
+      "lignes": [
+        {
+          "compte": "5141",
+          "debit": "200000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "1111",
+          "debit": "0.00",
+          "credit": "200000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Comptabilité",
+      "actions": "Journal → Nouvelle écriture ; date et date de pièce 01/01/2025, journal BQ, référence CAP-01, libellé Apport associé Recette. Saisir les deux lignes ci-contre ; enregistrer le brouillon puis le valider.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "IMMO-ACQ",
+      "date": "2025-01-01",
+      "journal": "AC",
+      "description": "Acquisition ordinateur de recette",
+      "lignes": [
+        {
+          "compte": "2355",
+          "debit": "24000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "34551",
+          "debit": "4800.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "4481",
+          "debit": "0.00",
+          "credit": "28800.00",
+          "tiers": "F-IMMO"
+        }
+      ],
+      "domaine": "Immobilisations",
+      "actions": "Immobilisations → Nouvelle immobilisation. Référence IMMO-01, Matériel informatique, fournisseur F-IMMO, acquisition et mise en service 01/01/2025, prix HT 24 000, TVA 20 %, récupérable 100 %, linéaire 5 ans, valeur résiduelle 0 ; comptes 2355/28355/61935/34551/4481. Cocher acquisition payée le 01/01/2025 sur 5141. Enregistrer ; valider les écritures générées au Journal.",
+      "impact_fiscal": "TVA sur immobilisation documentée 4 800 ; coût amortissable 24 000."
+    },
+    {
+      "reference_recette": "IMMO-PAY",
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "description": "Paiement acquisition (généré avec IMMO-ACQ)",
+      "lignes": [
+        {
+          "compte": "4481",
+          "debit": "28800.00",
+          "credit": "0.00",
+          "tiers": "F-IMMO"
+        },
+        {
+          "compte": "5141",
+          "debit": "0.00",
+          "credit": "28800.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Immobilisations",
+      "actions": "Consulter le paiement créé par IMMO-ACQ ; ne pas saisir une deuxième acquisition ou un deuxième règlement. Valider cette écriture au Journal si elle est en brouillon.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "AC-F01",
+      "date": "2025-01-04",
+      "journal": "BQ",
+      "description": "Acompte fournisseur marchandises",
+      "lignes": [
+        {
+          "compte": "3411",
+          "debit": "6000.00",
+          "credit": "0.00",
+          "tiers": "F-MARCH"
+        },
+        {
+          "compte": "5141",
+          "debit": "0.00",
+          "credit": "6000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Acomptes → Nouveau → Fournisseur F-MARCH ; date 04/01/2025 ; montant 6 000 ; virement Banque Recette ; référence AC-F01 ; comptabilisation cochée. Aucun droit à déduction TVA avant facture justificative.",
+      "impact_fiscal": "Aucune TVA déduite avant rattachement à la facture."
+    },
+    {
+      "reference_recette": "ACH-01",
+      "date": "2025-01-05",
+      "journal": "AC",
+      "description": "Achat 100 marchandises à 100HT",
+      "lignes": [
+        {
+          "compte": "6111",
+          "debit": "10000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "34552",
+          "debit": "2000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "4411",
+          "debit": "0.00",
+          "credit": "12000.00",
+          "tiers": "F-MARCH"
+        }
+      ],
+      "domaine": "Facturation",
+      "actions": "Factures → Nouvelle facture achat ; F-MARCH ; date 05/01/2025 ; référence fournisseur ACH-01 ; échéance 07/01/2025 ; article M-01, quantité 100, PU100HT, TVA 20 %, aucune remise/frais/RAS. Valider définitivement puis Comptabiliser ; ouvrir le Journal et valider l'écriture. Ce lot est reçu directement par cette facture : ne pas créer un BR supplémentaire.",
+      "impact_fiscal": "TVA facturée 2 000 ; déduction après paiements/acomptes justifiés."
+    },
+    {
+      "reference_recette": "AC-F01-IMP",
+      "date": "2025-01-05",
+      "journal": "OD",
+      "description": "Imputation acompte fournisseur sur ACH-01",
+      "lignes": [
+        {
+          "compte": "4411",
+          "debit": "6000.00",
+          "credit": "0.00",
+          "tiers": "F-MARCH"
+        },
+        {
+          "compte": "3411",
+          "debit": "0.00",
+          "credit": "6000.00",
+          "tiers": "F-MARCH"
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Acomptes → AC-F01 → Imputer ; sélectionner ACH-01, montant 6 000, date 05/01/2025, comptabilisation cochée. Valider l'écriture générée ; reste ACH-01=6 000.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "ACH-01-PAY",
+      "date": "2025-01-07",
+      "journal": "BQ",
+      "description": "Solde fournisseur ACH-01",
+      "lignes": [
+        {
+          "compte": "4411",
+          "debit": "6000.00",
+          "credit": "0.00",
+          "tiers": "F-MARCH"
+        },
+        {
+          "compte": "5141",
+          "debit": "0.00",
+          "credit": "6000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Factures → ACH-01 → Payer ; virement 6 000 le 07/01/2025, Banque Recette, référence PAY-ACH01 ; valider l'écriture générée. Facture soldée 12 000 incluant l'acompte.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "ACH-02",
+      "date": "2025-01-10",
+      "journal": "AC",
+      "description": "Achat 100 marchandises à 120HT",
+      "lignes": [
+        {
+          "compte": "6111",
+          "debit": "12000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "34552",
+          "debit": "2400.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "4411",
+          "debit": "0.00",
+          "credit": "14400.00",
+          "tiers": "F-MARCH"
+        }
+      ],
+      "domaine": "Facturation",
+      "actions": "Factures → Achat ; F-MARCH ; date 10/01/2025 ; référence ACH-02 ; échéance 20/03/2025 ; M-01 quantité 100 PU120 TVA 20 %. Valider, comptabiliser, valider l'écriture. Stock attendu 200 unités, CMUP 110.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "VENTE-01",
+      "date": "2025-01-20",
+      "journal": "VT",
+      "description": "Vente 100 marchandises à 250HT via devis/BC/BL",
+      "lignes": [
+        {
+          "compte": "3421",
+          "debit": "30000.00",
+          "credit": "0.00",
+          "tiers": "C-MARCH"
+        },
+        {
+          "compte": "7111",
+          "debit": "0.00",
+          "credit": "25000.00",
+          "tiers": null
+        },
+        {
+          "compte": "4455",
+          "debit": "0.00",
+          "credit": "5000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Facturation",
+      "actions": "Après le devis et BC REC-DV01/REC-BC01, créer BL100 unités le 20/01/2025, puis facture depuis ce BL. Date 20/01/2025, échéance 26/01/2025, quantité 100 PU250 TVA 20 %, aucune remise/frais/RAS. Dans Factures valider puis Comptabiliser ; au Journal valider. Stock 100 ; le BL et sa facture ne doivent sortir que 100 unités au total.",
+      "impact_fiscal": "TVA collectée au débit 5 000."
+    },
+    {
+      "reference_recette": "VENTE-01-PAY",
+      "date": "2025-01-25",
+      "journal": "BQ",
+      "description": "Paiement client partiel",
+      "lignes": [
+        {
+          "compte": "5141",
+          "debit": "10000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3421",
+          "debit": "0.00",
+          "credit": "10000.00",
+          "tiers": "C-MARCH"
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Factures → VENTE-01 → Encaisser ; virement 10 000,25/01/2025, référence PAY-V01 ; valider l'écriture générée. Reste 20 000.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "CHQ-01",
+      "date": "2025-01-26",
+      "journal": "AE",
+      "description": "Chèque client 20000 en portefeuille",
+      "lignes": [
+        {
+          "compte": "51111",
+          "debit": "20000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3421",
+          "debit": "0.00",
+          "credit": "20000.00",
+          "tiers": "C-MARCH"
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Factures → VENTE-01 → Encaisser ; Chèque 20 000, date 26/01/2025, numéro CHQ-01, Banque Recette. Effets & Chèques : statut En portefeuille ; valider l'écriture générée.",
+      "impact_fiscal": "Au régime débit, pas de seconde TVA à l'encaissement."
+    },
+    {
+      "reference_recette": "CHQ-01-REM",
+      "date": "2025-02-01",
+      "journal": "AE",
+      "description": "Remise chèque en banque",
+      "lignes": [
+        {
+          "compte": "51112",
+          "debit": "20000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "51111",
+          "debit": "0.00",
+          "credit": "20000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Effets & Chèques → CHQ-01 → Remettre ; dans la modale saisir Date réelle de l'opération 01/02/2025, frais 0 ; confirmer puis valider l'écriture au Journal. La date de remise diffère de la date de réception et de celle d'encaissement.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "CHQ-01-ENC",
+      "date": "2025-02-05",
+      "journal": "BQ",
+      "description": "Chèque encaissé",
+      "lignes": [
+        {
+          "compte": "5141",
+          "debit": "20000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "51112",
+          "debit": "0.00",
+          "credit": "20000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Effets & Chèques → CHQ-01 → Confirmer l'encaissement ; date effective 05/02/2025, frais 0 ; valider l'écriture. Banque+20 000 ; comptes 51111/51112 soldés.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "ACH-SERVICE",
+      "date": "2025-02-10",
+      "journal": "AC",
+      "description": "Prestation fournisseur 12000HT",
+      "lignes": [
+        {
+          "compte": "6125",
+          "debit": "12000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "34552",
+          "debit": "2400.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "4411",
+          "debit": "0.00",
+          "credit": "14400.00",
+          "tiers": "F-SERVICE"
+        }
+      ],
+      "domaine": "Facturation",
+      "actions": "Factures → Achat ; F-SERVICE ;10/02/2025 ; référence ACH-SERVICE ; échéance 15/02/2025 ; article S-ACH quantité 1 PU12 000 TVA 20 %, compte achat 6125 confirmé. Valider, comptabiliser, valider l'écriture.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "AV-01",
+      "date": "2025-02-10",
+      "journal": "AV",
+      "description": "Retour 10 unités après règlement intégral VENTE-01",
+      "lignes": [
+        {
+          "compte": "7111",
+          "debit": "2500.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "4455",
+          "debit": "500.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3421",
+          "debit": "0.00",
+          "credit": "3000.00",
+          "tiers": "C-MARCH"
+        }
+      ],
+      "domaine": "Facturation",
+      "actions": "Factures → VENTE-01 → Créer un avoir ;10/02/2025 ; nature Retour, quantité 10 PU250, TVA 20 %, retour stock coché. Valider/comptabiliser l'avoir, puis valider l'écriture AV au Journal. Crédit disponible 3 000 ; stock 110 unités, CMUP 110. Aucun remboursement dans ce parcours.",
+      "impact_fiscal": "Réduction TVA facturée 500 et ventes 2 500."
+    },
+    {
+      "reference_recette": "ACH-SERVICE-PAY",
+      "date": "2025-02-15",
+      "journal": "BQ",
+      "description": "Règlement fournisseur services",
+      "lignes": [
+        {
+          "compte": "4411",
+          "debit": "14400.00",
+          "credit": "0.00",
+          "tiers": "F-SERVICE"
+        },
+        {
+          "compte": "5141",
+          "debit": "0.00",
+          "credit": "14400.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Factures → ACH-SERVICE → Payer 14 400 le 15/02/2025, virement, référence PAY-SERVICE ; valider l'écriture. TVA déductible 2 400 en février.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "VENTE-02",
+      "date": "2025-03-01",
+      "journal": "VT",
+      "description": "Vente 50 marchandises à 300HT",
+      "lignes": [
+        {
+          "compte": "3421",
+          "debit": "18000.00",
+          "credit": "0.00",
+          "tiers": "C-MARCH"
+        },
+        {
+          "compte": "7111",
+          "debit": "0.00",
+          "credit": "15000.00",
+          "tiers": null
+        },
+        {
+          "compte": "4455",
+          "debit": "0.00",
+          "credit": "3000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Facturation",
+      "actions": "Factures → Vente ; C-MARCH ;01/03/2025 ; référence VENTE-02 ; échéance 15/05/2025 ; M-01 quantité 50 PU300 TVA 20 %. Valider/comptabiliser et valider au Journal. Stock 60 unités.",
+      "impact_fiscal": "TVA collectée 3 000 ; application du crédit d'avoir n'ajoute aucune TVA."
+    },
+    {
+      "reference_recette": "EFF-F01",
+      "date": "2025-03-01",
+      "journal": "AE",
+      "description": "Effet fournisseur 14400",
+      "lignes": [
+        {
+          "compte": "4411",
+          "debit": "14400.00",
+          "credit": "0.00",
+          "tiers": "F-MARCH"
+        },
+        {
+          "compte": "4415",
+          "debit": "0.00",
+          "credit": "14400.00",
+          "tiers": "F-MARCH"
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Factures → ACH-02 → Payer ; Effet 14 400,01/03/2025, échéance 20/03/2025, référence EFF-F01. Valider l'écriture ; dette transférée 4415, aucune sortie banque avant paiement.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "VENTE-02-PAY",
+      "date": "2025-03-05",
+      "journal": "BQ",
+      "description": "Virement client après imputation crédit AV01",
+      "lignes": [
+        {
+          "compte": "5141",
+          "debit": "5000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3421",
+          "debit": "0.00",
+          "credit": "5000.00",
+          "tiers": "C-MARCH"
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "D'abord Avoirs → AV-01 → Imputer crédit 3 000 sur VENTE-02 le 01/03/2025 : aucune nouvelle écriture si même compte/tiers ; l'avoir avait déjà réduit 3421. Puis Factures → VENTE-02 → Encaisser 5 000 le 05/03/2025 ; reste 10 000 ; valider l'écriture.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "EFF-F01-PAY",
+      "date": "2025-03-20",
+      "journal": "BQ",
+      "description": "Paiement effet fournisseur",
+      "lignes": [
+        {
+          "compte": "4415",
+          "debit": "14400.00",
+          "credit": "0.00",
+          "tiers": "F-MARCH"
+        },
+        {
+          "compte": "5141",
+          "debit": "0.00",
+          "credit": "14400.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Effets & Chèques → EFF-F01 → Confirmer paiement ; date effective 20/03/2025 ; valider l'écriture. Dette 4415 soldée ; TVA ACH-02 récupérable 2 400 en mars.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "EFF-C01",
+      "date": "2025-04-01",
+      "journal": "AE",
+      "description": "Effet client 10000",
+      "lignes": [
+        {
+          "compte": "3425",
+          "debit": "10000.00",
+          "credit": "0.00",
+          "tiers": "C-MARCH"
+        },
+        {
+          "compte": "3421",
+          "debit": "0.00",
+          "credit": "10000.00",
+          "tiers": "C-MARCH"
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Factures → VENTE-02 → Encaisser ; Effet 10 000,01/04/2025, échéance 15/05/2025, référence EFF-C01 ; valider l'écriture. Contrôler 3425, pas de banque.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "EFF-C01-REM",
+      "date": "2025-05-15",
+      "journal": "AE",
+      "description": "Remise effet client",
+      "lignes": [
+        {
+          "compte": "51132",
+          "debit": "10000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3425",
+          "debit": "0.00",
+          "credit": "10000.00",
+          "tiers": "C-MARCH"
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Effets & Chèques → EFF-C01 → Remettre ; dans la modale saisir Date réelle de l'opération 15/05/2025, frais 0 ; confirmer puis valider l'écriture ; vérifier le compte 51132 effectivement utilisé par le produit.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "EFF-C01-ENC",
+      "date": "2025-05-16",
+      "journal": "BQ",
+      "description": "Encaissement effet avec frais 10",
+      "lignes": [
+        {
+          "compte": "5141",
+          "debit": "9990.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "61472",
+          "debit": "10.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "51132",
+          "debit": "0.00",
+          "credit": "10000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Effets & Chèques → EFF-C01 → Confirmer encaissement ; date 16/05/2025, frais 10 ; valider l'écriture. Banque 9 990, frais 10, créance commerciale soldée.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "AC-C01",
+      "date": "2025-06-01",
+      "journal": "BQ",
+      "description": "Acompte client prestations 24000TTC",
+      "lignes": [
+        {
+          "compte": "5141",
+          "debit": "24000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "4421",
+          "debit": "0.00",
+          "credit": "24000.00",
+          "tiers": "C-SERVICE"
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Acomptes → Client C-SERVICE,01/06/2025,24 000 TTC, virement, référence AC-C01, TVA applicable 20 %, comptabiliser. Valider au Journal.",
+      "impact_fiscal": "Acompte 20 000HT+4 000TVA ; pas de double taxation après facture finale."
+    },
+    {
+      "reference_recette": "VENTE-SERVICE",
+      "date": "2025-06-15",
+      "journal": "VT",
+      "description": "Prestation client 120000HT",
+      "lignes": [
+        {
+          "compte": "3421",
+          "debit": "144000.00",
+          "credit": "0.00",
+          "tiers": "C-SERVICE"
+        },
+        {
+          "compte": "7124",
+          "debit": "0.00",
+          "credit": "120000.00",
+          "tiers": null
+        },
+        {
+          "compte": "4455",
+          "debit": "0.00",
+          "credit": "24000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Facturation",
+      "actions": "Factures → Vente ; C-SERVICE personne morale privée ;15/06/2025 ; référence VENTE-SERVICE ; échéance 30/06/2025 ; S-VTE quantité 1 PU120 000 TVA 20 %, compte 7124, RAS0. Valider/comptabiliser puis valider au Journal.",
+      "impact_fiscal": "TVA totale de l'opération 24 000, acompte compris."
+    },
+    {
+      "reference_recette": "AC-C01-IMP",
+      "date": "2025-06-15",
+      "journal": "OD",
+      "description": "Imputation acompte client",
+      "lignes": [
+        {
+          "compte": "4421",
+          "debit": "24000.00",
+          "credit": "0.00",
+          "tiers": "C-SERVICE"
+        },
+        {
+          "compte": "3421",
+          "debit": "0.00",
+          "credit": "24000.00",
+          "tiers": "C-SERVICE"
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Acomptes → AC-C01 → Imputer sur VENTE-SERVICE,24 000,15/06/2025, comptabilisation cochée ; valider l'écriture. Reste 120 000.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "VENTE-SERVICE-PAY",
+      "date": "2025-06-30",
+      "journal": "BQ",
+      "description": "Solde client prestation",
+      "lignes": [
+        {
+          "compte": "5141",
+          "debit": "120000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3421",
+          "debit": "0.00",
+          "credit": "120000.00",
+          "tiers": "C-SERVICE"
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Factures → VENTE-SERVICE → Encaisser 120 000 le 30/06/2025, virement, référence PAY-VS ; valider l'écriture ; facture soldée.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "TVA-06-PAY",
+      "date": "2025-07-20",
+      "journal": "BQ",
+      "description": "Paiement TVA juin 19900",
+      "lignes": [
+        {
+          "compte": "4456",
+          "debit": "19900.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "5141",
+          "debit": "0.00",
+          "credit": "19900.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Fiscalité",
+      "actions": "Après préparation et comptabilisation TVA de janvier à juin selon la feuille TVA, Journal → BQ 20/07/2025, référence TVA-06-PAY ; saisir D4456=19 900 C5141=19 900 ; valider. La déclaration ne génère pas ce paiement à elle seule.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "INT-PPRF",
+      "date": "2025-11-30",
+      "journal": "BQ",
+      "description": "Intérêts bancaires selon attestation fictive",
+      "lignes": [
+        {
+          "compte": "5141",
+          "debit": "800.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3453",
+          "debit": "200.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "7381",
+          "debit": "0.00",
+          "credit": "1000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Fiscalité",
+      "actions": "Journal → BQ 30/11/2025 référence INT-PPRF ; avis banque fictif : intérêts bruts 1 000, retenue 200, net 800 ; saisir les trois lignes puis valider. Ces montants viennent du justificatif du jeu de recette, aucun taux n'est extrapolé à un dossier réel.",
+      "impact_fiscal": "Produit financier 1 000 ; crédit IS documentaire 200 à enregistrer séparément dans Fiscalité IS."
+    },
+    {
+      "reference_recette": "ASS-01",
+      "date": "2025-12-01",
+      "journal": "BQ",
+      "description": "Assurance 12000 couvrant décembre 2025 à novembre 2026",
+      "lignes": [
+        {
+          "compte": "6134",
+          "debit": "12000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "5141",
+          "debit": "0.00",
+          "credit": "12000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Comptabilité",
+      "actions": "Journal → BQ 01/12/2025 référence ASS-01 ; contrat fictif couvrant 01/12/2025–30/11/2026, prime 12 000, aucune TVA sur cet avis. Saisir D6134 C5141 puis valider.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "REF-02",
+      "date": "2025-12-02",
+      "journal": "AC",
+      "description": "Achat de contrôle référence littérale 02",
+      "lignes": [
+        {
+          "compte": "6125",
+          "debit": "200.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "34552",
+          "debit": "40.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "4411",
+          "debit": "0.00",
+          "credit": "240.00",
+          "tiers": "F-CONTROLE"
+        }
+      ],
+      "domaine": "Facturation",
+      "actions": "Factures → Achat F-CONTROLE ; date 02/12/2025, référence fournisseur exactement 02, échéance 31/12/2025 ; S-ACH quantité 1 PU200 TVA 20 %. Valider/comptabiliser, valider au Journal. Ne pas payer. Les deux pièces ont même tiers/date/TTC mais des références distinctes.",
+      "impact_fiscal": "TVA comptabilisée 40 par facture ; non récupérée tant que non payée dans ce scénario."
+    },
+    {
+      "reference_recette": "REF-002",
+      "date": "2025-12-02",
+      "journal": "AC",
+      "description": "Achat de contrôle référence littérale 002",
+      "lignes": [
+        {
+          "compte": "6125",
+          "debit": "200.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "34552",
+          "debit": "40.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "4411",
+          "debit": "0.00",
+          "credit": "240.00",
+          "tiers": "F-CONTROLE"
+        }
+      ],
+      "domaine": "Facturation",
+      "actions": "Factures → Achat F-CONTROLE ; date 02/12/2025, référence fournisseur exactement 002, échéance 31/12/2025 ; S-ACH quantité 1 PU200 TVA 20 %. Valider/comptabiliser, valider au Journal. Ne pas payer. Les deux pièces ont même tiers/date/TTC mais des références distinctes.",
+      "impact_fiscal": "TVA comptabilisée 40 par facture ; non récupérée tant que non payée dans ce scénario."
+    },
+    {
+      "reference_recette": "VENTE-IMPAYEE",
+      "date": "2025-12-10",
+      "journal": "VT",
+      "description": "Prestation 12000HT laissée impayée",
+      "lignes": [
+        {
+          "compte": "3421",
+          "debit": "14400.00",
+          "credit": "0.00",
+          "tiers": "C-IMPAYE"
+        },
+        {
+          "compte": "7124",
+          "debit": "0.00",
+          "credit": "12000.00",
+          "tiers": null
+        },
+        {
+          "compte": "4455",
+          "debit": "0.00",
+          "credit": "2400.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Facturation",
+      "actions": "Factures → Vente C-IMPAYE ;10/12/2025 ; référence VENTE-IMPAYEE ; échéance 20/12/2025 ; S-VTE quantité 1 PU12 000 TVA 20 % RAS0 ; valider/comptabiliser, valider au Journal.",
+      "impact_fiscal": "Régime débit : TVA 2 400 due même sans encaissement ; variante encaissement sur copie séparée."
+    },
+    {
+      "reference_recette": "CHQ-REJET",
+      "date": "2025-12-12",
+      "journal": "AE",
+      "description": "Chèque 2000 provisoire sur facture impayée",
+      "lignes": [
+        {
+          "compte": "51111",
+          "debit": "2000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3421",
+          "debit": "0.00",
+          "credit": "2000.00",
+          "tiers": "C-IMPAYE"
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Factures → VENTE-IMPAYEE → Encaisser ; chèque 2 000,12/12/2025, numéro CHQ-REJET. Valider au Journal ; puis utiliser le cas suivant de rejet.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "CHQ-REJET-INV",
+      "date": "2025-12-15",
+      "journal": "OD",
+      "description": "Rejet documenté chèque sans frais",
+      "lignes": [
+        {
+          "compte": "3421",
+          "debit": "2000.00",
+          "credit": "0.00",
+          "tiers": "C-IMPAYE"
+        },
+        {
+          "compte": "51111",
+          "debit": "0.00",
+          "credit": "2000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Paiements",
+      "actions": "Effets & Chèques → CHQ-REJET → Rejeter ; dans la modale saisir Date réelle de l'opération 15/12/2025, motif Provision insuffisante, frais 0 ; confirmer. Valider l'écriture ; solde facture 14 400, banque inchangée.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "AMENDE",
+      "date": "2025-12-20",
+      "journal": "BQ",
+      "description": "Amende fiscale documentée 500",
+      "lignes": [
+        {
+          "compte": "6583",
+          "debit": "500.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "5141",
+          "debit": "0.00",
+          "credit": "500.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Fiscalité",
+      "actions": "Journal → BQ 20/12/2025 référence AMENDE ; D6583=500 C5141=500 ; valider. Contrôler dans Fiscalité IS que la réintégration automatique 500 existe ; ne pas la saisir une deuxième fois.",
+      "impact_fiscal": "Réintégration automatique 500 ; aucune TVA."
+    },
+    {
+      "reference_recette": "FRAIS-BQ",
+      "date": "2025-12-31",
+      "journal": "BQ",
+      "description": "Frais bancaires 60 sans TVA selon avis",
+      "lignes": [
+        {
+          "compte": "61473",
+          "debit": "60.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "5141",
+          "debit": "0.00",
+          "credit": "60.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Banques",
+      "actions": "Depuis l'avis fictif, constater Journal → BQ 31/12/2025 référence FRAIS-BQ, D61473=60 C5141=60 ; valider. Rapprocher la ligne débit 60 seulement au cas de rapprochement, après import du relevé. Le scénario avis ne comporte aucune TVA ; ne pas appliquer une exclusion générale à tous les frais réels.",
+      "impact_fiscal": "Sans incidence fiscale directe."
+    },
+    {
+      "reference_recette": "STOCK-FIN",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "description": "Stock final 60 unités à CMUP 110",
+      "lignes": [
+        {
+          "compte": "3111",
+          "debit": "6600.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "6114",
+          "debit": "0.00",
+          "credit": "6600.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Stocks",
+      "actions": "Inventaire & stock → Inventaire physique au 31/12/2025 ; M-01 quantité physique 60, CMUP 110, stock théorique 60 ; valider. Onglet Rapprochement → Comptabilisation du stock final ; vérifier exercice 2025, date 31/12/2025, comptes 3111/6114 et montant 6 600 ; générer puis valider l'écriture au Journal. Ne pas générer deux fois la variation.",
+      "impact_fiscal": "Achats revendus 22 000−6 600=15 400."
+    },
+    {
+      "reference_recette": "AMORT-2025",
+      "date": "2025-12-31",
+      "journal": "AM",
+      "description": "Dotation annuelle ordinateur 4800",
+      "lignes": [
+        {
+          "compte": "61935",
+          "debit": "4800.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "28355",
+          "debit": "0.00",
+          "credit": "4800.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Immobilisations",
+      "actions": "Immobilisations → IMMO-01 → plan annuel 2025 → Générer l'écriture ; valider au Journal. Contrôler dotation 4 800, brut 24 000, VNC19 200. Ne pas relancer la génération si la dotation existe.",
+      "impact_fiscal": "Durée de test 5 ans, linéaire ; hypothèse fiscale déductible documentée du scénario."
+    },
+    {
+      "reference_recette": "CCA-2025",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "description": "Charge constatée d'avance 11000",
+      "lignes": [
+        {
+          "compte": "3491",
+          "debit": "11000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "6134",
+          "debit": "0.00",
+          "credit": "11000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Inventaire clôture",
+      "actions": "Clôture → Ajouter un ajustement → CCA ; montant 11 000 ; charge 6134 ; contrepartie 3491 ; libellé Assurance ASS-01,11 mois 2026 ; enregistrer puis valider au Journal. Conserver la contrepassation prévue 2026 en brouillon jusqu'à vérification.",
+      "impact_fiscal": "Charge assurance de l'exercice 1 000, pas 12 000."
+    },
+    {
+      "reference_recette": "FNP-2025",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "description": "Facture non parvenue 3000",
+      "lignes": [
+        {
+          "compte": "6125",
+          "debit": "3000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "4417",
+          "debit": "0.00",
+          "credit": "3000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Inventaire clôture",
+      "actions": "Clôture → Ajustement FNP ; montant 3 000HT ; charge 6125 ; contrepartie 4417 ; libellé Service livré décembre, contrat FNP-01 ; enregistrer/valider. Aucune TVA forcée par l'assistant.",
+      "impact_fiscal": "Charge 2025=3 000 ; TVA à traiter avec la vraie facture 2026."
+    },
+    {
+      "reference_recette": "PROV-RISQUE",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "description": "Provision durable litige 1500",
+      "lignes": [
+        {
+          "compte": "61955",
+          "debit": "1500.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "1518",
+          "debit": "0.00",
+          "credit": "1500.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Inventaire clôture",
+      "actions": "Clôture → Provision risques et charges ; montant 1 500 ; dotation 61955 ; contrepartie 1518 ; note Litige REC-LIT01 probable mais conditions fiscales non satisfaites dans ce cas fictif ; enregistrer/valider.",
+      "impact_fiscal": "Réintégration manuelle 1 500, seulement après confirmation du cas fictif ; aucune déduction automatique."
+    },
+    {
+      "reference_recette": "DEPR-CLIENT",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "description": "Dépréciation créance 2000",
+      "lignes": [
+        {
+          "compte": "61964",
+          "debit": "2000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3942",
+          "debit": "0.00",
+          "credit": "2000.00",
+          "tiers": null
+        }
+      ],
+      "domaine": "Inventaire clôture",
+      "actions": "Clôture → Dépréciation client ; montant 2 000 ; dotation 61964 ; contrepartie 3942 ; libellé Dépréciation VENTE-IMPAYEE selon justificatif REC-DEP01 ; enregistrer/valider. La créance brute reste 14 400.",
+      "impact_fiscal": "Scénario : dépréciation comptable justifiée mais conditions fiscales non satisfaites ; réintégration 2 000 confirmée manuellement."
+    },
+    {
+      "reference_recette": "TVA-01",
+      "date": "2025-01-31",
+      "journal": "OD",
+      "description": "Préparation manuelle TVA encaissements TVA-01",
+      "lignes": [
+        {
+          "compte": "4455",
+          "debit": "1666.67",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3456",
+          "debit": "5133.33",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "34551",
+          "debit": "0.00",
+          "credit": "4800.00",
+          "tiers": null
+        },
+        {
+          "compte": "34552",
+          "debit": "0.00",
+          "credit": "2000.00",
+          "tiers": null
+        }
+      ]
+    },
+    {
+      "reference_recette": "TVA-02",
+      "date": "2025-02-28",
+      "journal": "OD",
+      "description": "Préparation manuelle TVA encaissements TVA-02",
+      "lignes": [
+        {
+          "compte": "4455",
+          "debit": "2833.33",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "34552",
+          "debit": "0.00",
+          "credit": "2400.00",
+          "tiers": null
+        },
+        {
+          "compte": "3456",
+          "debit": "0.00",
+          "credit": "433.33",
+          "tiers": null
+        }
+      ]
+    },
+    {
+      "reference_recette": "TVA-03",
+      "date": "2025-03-31",
+      "journal": "OD",
+      "description": "Préparation manuelle TVA encaissements TVA-03",
+      "lignes": [
+        {
+          "compte": "4455",
+          "debit": "1333.33",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3456",
+          "debit": "1066.67",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "34552",
+          "debit": "0.00",
+          "credit": "2400.00",
+          "tiers": null
+        }
+      ]
+    },
+    {
+      "reference_recette": "TVA-06",
+      "date": "2025-06-30",
+      "journal": "OD",
+      "description": "TVA nette juin 19 900",
+      "lignes": [
+        {
+          "compte": "4455",
+          "debit": "24000.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3456",
+          "debit": "0.00",
+          "credit": "4100.00",
+          "tiers": null
+        },
+        {
+          "compte": "4456",
+          "debit": "0.00",
+          "credit": "19900.00",
+          "tiers": null
+        }
+      ]
+    },
+    {
+      "reference_recette": "IS-2025",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "description": "IS attendu à constater une seule fois",
+      "lignes": [
+        {
+          "compte": "6701",
+          "debit": "23420.25",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "4453",
+          "debit": "0.00",
+          "credit": "23420.25",
+          "tiers": null
+        }
+      ]
+    },
+    {
+      "reference_recette": "PPRF-IMP",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "description": "Imputation documentaire retenue 200",
+      "lignes": [
+        {
+          "compte": "4453",
+          "debit": "200.00",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3453",
+          "debit": "0.00",
+          "credit": "200.00",
+          "tiers": null
+        }
+      ]
+    },
+    {
+      "reference_recette": "TVA-05",
+      "date": "2025-05-31",
+      "journal": "OD",
+      "description": "Préparation manuelle TVA encaissements mai :1666,67",
+      "lignes": [
+        {
+          "compte": "4455",
+          "debit": "1666.67",
+          "credit": "0.00",
+          "tiers": null
+        },
+        {
+          "compte": "3456",
+          "debit": "0.00",
+          "credit": "1666.67",
+          "tiers": null
+        }
+      ]
+    }
+  ],
+  "journal_attendu": [
+    {
+      "reference_recette": "CAP-01",
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "libelle": "Apport en capital versé",
+      "compte": "5141",
+      "debit": "200000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "CAP-01",
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "libelle": "Apport en capital versé",
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "200000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "IMMO-ACQ",
+      "date": "2025-01-01",
+      "journal": "AC",
+      "libelle": "Acquisition ordinateur de recette",
+      "compte": "2355",
+      "debit": "24000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "IMMO-ACQ",
+      "date": "2025-01-01",
+      "journal": "AC",
+      "libelle": "Acquisition ordinateur de recette",
+      "compte": "34551",
+      "debit": "4800.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "IMMO-ACQ",
+      "date": "2025-01-01",
+      "journal": "AC",
+      "libelle": "Acquisition ordinateur de recette",
+      "compte": "4481",
+      "debit": "0.00",
+      "credit": "28800.00",
+      "tiers": "F-IMMO"
+    },
+    {
+      "reference_recette": "IMMO-PAY",
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "libelle": "Paiement acquisition (généré avec IMMO-ACQ)",
+      "compte": "4481",
+      "debit": "28800.00",
+      "credit": "0.00",
+      "tiers": "F-IMMO"
+    },
+    {
+      "reference_recette": "IMMO-PAY",
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "libelle": "Paiement acquisition (généré avec IMMO-ACQ)",
+      "compte": "5141",
+      "debit": "0.00",
+      "credit": "28800.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "AC-F01",
+      "date": "2025-01-04",
+      "journal": "BQ",
+      "libelle": "Acompte fournisseur marchandises",
+      "compte": "3411",
+      "debit": "6000.00",
+      "credit": "0.00",
+      "tiers": "F-MARCH"
+    },
+    {
+      "reference_recette": "AC-F01",
+      "date": "2025-01-04",
+      "journal": "BQ",
+      "libelle": "Acompte fournisseur marchandises",
+      "compte": "5141",
+      "debit": "0.00",
+      "credit": "6000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "ACH-01",
+      "date": "2025-01-05",
+      "journal": "AC",
+      "libelle": "Achat 100 marchandises à 100HT",
+      "compte": "6111",
+      "debit": "10000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "ACH-01",
+      "date": "2025-01-05",
+      "journal": "AC",
+      "libelle": "Achat 100 marchandises à 100HT",
+      "compte": "34552",
+      "debit": "2000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "ACH-01",
+      "date": "2025-01-05",
+      "journal": "AC",
+      "libelle": "Achat 100 marchandises à 100HT",
+      "compte": "4411",
+      "debit": "0.00",
+      "credit": "12000.00",
+      "tiers": "F-MARCH"
+    },
+    {
+      "reference_recette": "AC-F01-IMP",
+      "date": "2025-01-05",
+      "journal": "OD",
+      "libelle": "Imputation acompte fournisseur sur ACH-01",
+      "compte": "4411",
+      "debit": "6000.00",
+      "credit": "0.00",
+      "tiers": "F-MARCH"
+    },
+    {
+      "reference_recette": "AC-F01-IMP",
+      "date": "2025-01-05",
+      "journal": "OD",
+      "libelle": "Imputation acompte fournisseur sur ACH-01",
+      "compte": "3411",
+      "debit": "0.00",
+      "credit": "6000.00",
+      "tiers": "F-MARCH"
+    },
+    {
+      "reference_recette": "ACH-01-PAY",
+      "date": "2025-01-07",
+      "journal": "BQ",
+      "libelle": "Solde fournisseur ACH-01",
+      "compte": "4411",
+      "debit": "6000.00",
+      "credit": "0.00",
+      "tiers": "F-MARCH"
+    },
+    {
+      "reference_recette": "ACH-01-PAY",
+      "date": "2025-01-07",
+      "journal": "BQ",
+      "libelle": "Solde fournisseur ACH-01",
+      "compte": "5141",
+      "debit": "0.00",
+      "credit": "6000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "ACH-02",
+      "date": "2025-01-10",
+      "journal": "AC",
+      "libelle": "Achat 100 marchandises à 120HT",
+      "compte": "6111",
+      "debit": "12000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "ACH-02",
+      "date": "2025-01-10",
+      "journal": "AC",
+      "libelle": "Achat 100 marchandises à 120HT",
+      "compte": "34552",
+      "debit": "2400.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "ACH-02",
+      "date": "2025-01-10",
+      "journal": "AC",
+      "libelle": "Achat 100 marchandises à 120HT",
+      "compte": "4411",
+      "debit": "0.00",
+      "credit": "14400.00",
+      "tiers": "F-MARCH"
+    },
+    {
+      "reference_recette": "VENTE-01",
+      "date": "2025-01-20",
+      "journal": "VT",
+      "libelle": "Vente 100 marchandises à 250HT via devis/BC/BL",
+      "compte": "3421",
+      "debit": "30000.00",
+      "credit": "0.00",
+      "tiers": "C-MARCH"
+    },
+    {
+      "reference_recette": "VENTE-01",
+      "date": "2025-01-20",
+      "journal": "VT",
+      "libelle": "Vente 100 marchandises à 250HT via devis/BC/BL",
+      "compte": "7111",
+      "debit": "0.00",
+      "credit": "25000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "VENTE-01",
+      "date": "2025-01-20",
+      "journal": "VT",
+      "libelle": "Vente 100 marchandises à 250HT via devis/BC/BL",
+      "compte": "4455",
+      "debit": "0.00",
+      "credit": "5000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "VENTE-01-PAY",
+      "date": "2025-01-25",
+      "journal": "BQ",
+      "libelle": "Paiement client partiel",
+      "compte": "5141",
+      "debit": "10000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "VENTE-01-PAY",
+      "date": "2025-01-25",
+      "journal": "BQ",
+      "libelle": "Paiement client partiel",
+      "compte": "3421",
+      "debit": "0.00",
+      "credit": "10000.00",
+      "tiers": "C-MARCH"
+    },
+    {
+      "reference_recette": "CHQ-01",
+      "date": "2025-01-26",
+      "journal": "AE",
+      "libelle": "Chèque client 20000 en portefeuille",
+      "compte": "51111",
+      "debit": "20000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "CHQ-01",
+      "date": "2025-01-26",
+      "journal": "AE",
+      "libelle": "Chèque client 20000 en portefeuille",
+      "compte": "3421",
+      "debit": "0.00",
+      "credit": "20000.00",
+      "tiers": "C-MARCH"
+    },
+    {
+      "reference_recette": "TVA-01",
+      "date": "2025-01-31",
+      "journal": "OD",
+      "libelle": "Préparation manuelle TVA encaissements TVA-01",
+      "compte": "4455",
+      "debit": "1666.67",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-01",
+      "date": "2025-01-31",
+      "journal": "OD",
+      "libelle": "Préparation manuelle TVA encaissements TVA-01",
+      "compte": "3456",
+      "debit": "5133.33",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-01",
+      "date": "2025-01-31",
+      "journal": "OD",
+      "libelle": "Préparation manuelle TVA encaissements TVA-01",
+      "compte": "34551",
+      "debit": "0.00",
+      "credit": "4800.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-01",
+      "date": "2025-01-31",
+      "journal": "OD",
+      "libelle": "Préparation manuelle TVA encaissements TVA-01",
+      "compte": "34552",
+      "debit": "0.00",
+      "credit": "2000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "CHQ-01-REM",
+      "date": "2025-02-01",
+      "journal": "AE",
+      "libelle": "Remise chèque en banque",
+      "compte": "51112",
+      "debit": "20000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "CHQ-01-REM",
+      "date": "2025-02-01",
+      "journal": "AE",
+      "libelle": "Remise chèque en banque",
+      "compte": "51111",
+      "debit": "0.00",
+      "credit": "20000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "CHQ-01-ENC",
+      "date": "2025-02-05",
+      "journal": "BQ",
+      "libelle": "Chèque encaissé",
+      "compte": "5141",
+      "debit": "20000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "CHQ-01-ENC",
+      "date": "2025-02-05",
+      "journal": "BQ",
+      "libelle": "Chèque encaissé",
+      "compte": "51112",
+      "debit": "0.00",
+      "credit": "20000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "ACH-SERVICE",
+      "date": "2025-02-10",
+      "journal": "AC",
+      "libelle": "Prestation fournisseur 12000HT",
+      "compte": "6125",
+      "debit": "12000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "ACH-SERVICE",
+      "date": "2025-02-10",
+      "journal": "AC",
+      "libelle": "Prestation fournisseur 12000HT",
+      "compte": "34552",
+      "debit": "2400.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "ACH-SERVICE",
+      "date": "2025-02-10",
+      "journal": "AC",
+      "libelle": "Prestation fournisseur 12000HT",
+      "compte": "4411",
+      "debit": "0.00",
+      "credit": "14400.00",
+      "tiers": "F-SERVICE"
+    },
+    {
+      "reference_recette": "AV-01",
+      "date": "2025-02-10",
+      "journal": "AV",
+      "libelle": "Retour 10 unités après règlement intégral VENTE-01",
+      "compte": "7111",
+      "debit": "2500.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "AV-01",
+      "date": "2025-02-10",
+      "journal": "AV",
+      "libelle": "Retour 10 unités après règlement intégral VENTE-01",
+      "compte": "4455",
+      "debit": "500.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "AV-01",
+      "date": "2025-02-10",
+      "journal": "AV",
+      "libelle": "Retour 10 unités après règlement intégral VENTE-01",
+      "compte": "3421",
+      "debit": "0.00",
+      "credit": "3000.00",
+      "tiers": "C-MARCH"
+    },
+    {
+      "reference_recette": "ACH-SERVICE-PAY",
+      "date": "2025-02-15",
+      "journal": "BQ",
+      "libelle": "Règlement fournisseur services",
+      "compte": "4411",
+      "debit": "14400.00",
+      "credit": "0.00",
+      "tiers": "F-SERVICE"
+    },
+    {
+      "reference_recette": "ACH-SERVICE-PAY",
+      "date": "2025-02-15",
+      "journal": "BQ",
+      "libelle": "Règlement fournisseur services",
+      "compte": "5141",
+      "debit": "0.00",
+      "credit": "14400.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-02",
+      "date": "2025-02-28",
+      "journal": "OD",
+      "libelle": "Préparation manuelle TVA encaissements TVA-02",
+      "compte": "4455",
+      "debit": "2833.33",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-02",
+      "date": "2025-02-28",
+      "journal": "OD",
+      "libelle": "Préparation manuelle TVA encaissements TVA-02",
+      "compte": "34552",
+      "debit": "0.00",
+      "credit": "2400.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-02",
+      "date": "2025-02-28",
+      "journal": "OD",
+      "libelle": "Préparation manuelle TVA encaissements TVA-02",
+      "compte": "3456",
+      "debit": "0.00",
+      "credit": "433.33",
+      "tiers": null
+    },
+    {
+      "reference_recette": "VENTE-02",
+      "date": "2025-03-01",
+      "journal": "VT",
+      "libelle": "Vente 50 marchandises à 300HT",
+      "compte": "3421",
+      "debit": "18000.00",
+      "credit": "0.00",
+      "tiers": "C-MARCH"
+    },
+    {
+      "reference_recette": "VENTE-02",
+      "date": "2025-03-01",
+      "journal": "VT",
+      "libelle": "Vente 50 marchandises à 300HT",
+      "compte": "7111",
+      "debit": "0.00",
+      "credit": "15000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "VENTE-02",
+      "date": "2025-03-01",
+      "journal": "VT",
+      "libelle": "Vente 50 marchandises à 300HT",
+      "compte": "4455",
+      "debit": "0.00",
+      "credit": "3000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "EFF-F01",
+      "date": "2025-03-01",
+      "journal": "AE",
+      "libelle": "Effet fournisseur 14400",
+      "compte": "4411",
+      "debit": "14400.00",
+      "credit": "0.00",
+      "tiers": "F-MARCH"
+    },
+    {
+      "reference_recette": "EFF-F01",
+      "date": "2025-03-01",
+      "journal": "AE",
+      "libelle": "Effet fournisseur 14400",
+      "compte": "4415",
+      "debit": "0.00",
+      "credit": "14400.00",
+      "tiers": "F-MARCH"
+    },
+    {
+      "reference_recette": "VENTE-02-PAY",
+      "date": "2025-03-05",
+      "journal": "BQ",
+      "libelle": "Virement client après imputation crédit AV01",
+      "compte": "5141",
+      "debit": "5000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "VENTE-02-PAY",
+      "date": "2025-03-05",
+      "journal": "BQ",
+      "libelle": "Virement client après imputation crédit AV01",
+      "compte": "3421",
+      "debit": "0.00",
+      "credit": "5000.00",
+      "tiers": "C-MARCH"
+    },
+    {
+      "reference_recette": "EFF-F01-PAY",
+      "date": "2025-03-20",
+      "journal": "BQ",
+      "libelle": "Paiement effet fournisseur",
+      "compte": "4415",
+      "debit": "14400.00",
+      "credit": "0.00",
+      "tiers": "F-MARCH"
+    },
+    {
+      "reference_recette": "EFF-F01-PAY",
+      "date": "2025-03-20",
+      "journal": "BQ",
+      "libelle": "Paiement effet fournisseur",
+      "compte": "5141",
+      "debit": "0.00",
+      "credit": "14400.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-03",
+      "date": "2025-03-31",
+      "journal": "OD",
+      "libelle": "Préparation manuelle TVA encaissements TVA-03",
+      "compte": "4455",
+      "debit": "1333.33",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-03",
+      "date": "2025-03-31",
+      "journal": "OD",
+      "libelle": "Préparation manuelle TVA encaissements TVA-03",
+      "compte": "3456",
+      "debit": "1066.67",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-03",
+      "date": "2025-03-31",
+      "journal": "OD",
+      "libelle": "Préparation manuelle TVA encaissements TVA-03",
+      "compte": "34552",
+      "debit": "0.00",
+      "credit": "2400.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "EFF-C01",
+      "date": "2025-04-01",
+      "journal": "AE",
+      "libelle": "Effet client 10000",
+      "compte": "3425",
+      "debit": "10000.00",
+      "credit": "0.00",
+      "tiers": "C-MARCH"
+    },
+    {
+      "reference_recette": "EFF-C01",
+      "date": "2025-04-01",
+      "journal": "AE",
+      "libelle": "Effet client 10000",
+      "compte": "3421",
+      "debit": "0.00",
+      "credit": "10000.00",
+      "tiers": "C-MARCH"
+    },
+    {
+      "reference_recette": "EFF-C01-REM",
+      "date": "2025-05-15",
+      "journal": "AE",
+      "libelle": "Remise effet client",
+      "compte": "51132",
+      "debit": "10000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "EFF-C01-REM",
+      "date": "2025-05-15",
+      "journal": "AE",
+      "libelle": "Remise effet client",
+      "compte": "3425",
+      "debit": "0.00",
+      "credit": "10000.00",
+      "tiers": "C-MARCH"
+    },
+    {
+      "reference_recette": "EFF-C01-ENC",
+      "date": "2025-05-16",
+      "journal": "BQ",
+      "libelle": "Encaissement effet avec frais 10",
+      "compte": "5141",
+      "debit": "9990.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "EFF-C01-ENC",
+      "date": "2025-05-16",
+      "journal": "BQ",
+      "libelle": "Encaissement effet avec frais 10",
+      "compte": "61472",
+      "debit": "10.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "EFF-C01-ENC",
+      "date": "2025-05-16",
+      "journal": "BQ",
+      "libelle": "Encaissement effet avec frais 10",
+      "compte": "51132",
+      "debit": "0.00",
+      "credit": "10000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-05",
+      "date": "2025-05-31",
+      "journal": "OD",
+      "libelle": "Préparation manuelle TVA encaissements mai :1666,67",
+      "compte": "4455",
+      "debit": "1666.67",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-05",
+      "date": "2025-05-31",
+      "journal": "OD",
+      "libelle": "Préparation manuelle TVA encaissements mai :1666,67",
+      "compte": "3456",
+      "debit": "0.00",
+      "credit": "1666.67",
+      "tiers": null
+    },
+    {
+      "reference_recette": "AC-C01",
+      "date": "2025-06-01",
+      "journal": "BQ",
+      "libelle": "Acompte client prestations 24000TTC",
+      "compte": "5141",
+      "debit": "24000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "AC-C01",
+      "date": "2025-06-01",
+      "journal": "BQ",
+      "libelle": "Acompte client prestations 24000TTC",
+      "compte": "4421",
+      "debit": "0.00",
+      "credit": "24000.00",
+      "tiers": "C-SERVICE"
+    },
+    {
+      "reference_recette": "VENTE-SERVICE",
+      "date": "2025-06-15",
+      "journal": "VT",
+      "libelle": "Prestation client 120000HT",
+      "compte": "3421",
+      "debit": "144000.00",
+      "credit": "0.00",
+      "tiers": "C-SERVICE"
+    },
+    {
+      "reference_recette": "VENTE-SERVICE",
+      "date": "2025-06-15",
+      "journal": "VT",
+      "libelle": "Prestation client 120000HT",
+      "compte": "7124",
+      "debit": "0.00",
+      "credit": "120000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "VENTE-SERVICE",
+      "date": "2025-06-15",
+      "journal": "VT",
+      "libelle": "Prestation client 120000HT",
+      "compte": "4455",
+      "debit": "0.00",
+      "credit": "24000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "AC-C01-IMP",
+      "date": "2025-06-15",
+      "journal": "OD",
+      "libelle": "Imputation acompte client",
+      "compte": "4421",
+      "debit": "24000.00",
+      "credit": "0.00",
+      "tiers": "C-SERVICE"
+    },
+    {
+      "reference_recette": "AC-C01-IMP",
+      "date": "2025-06-15",
+      "journal": "OD",
+      "libelle": "Imputation acompte client",
+      "compte": "3421",
+      "debit": "0.00",
+      "credit": "24000.00",
+      "tiers": "C-SERVICE"
+    },
+    {
+      "reference_recette": "VENTE-SERVICE-PAY",
+      "date": "2025-06-30",
+      "journal": "BQ",
+      "libelle": "Solde client prestation",
+      "compte": "5141",
+      "debit": "120000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "VENTE-SERVICE-PAY",
+      "date": "2025-06-30",
+      "journal": "BQ",
+      "libelle": "Solde client prestation",
+      "compte": "3421",
+      "debit": "0.00",
+      "credit": "120000.00",
+      "tiers": "C-SERVICE"
+    },
+    {
+      "reference_recette": "TVA-06",
+      "date": "2025-06-30",
+      "journal": "OD",
+      "libelle": "TVA nette juin 19 900",
+      "compte": "4455",
+      "debit": "24000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-06",
+      "date": "2025-06-30",
+      "journal": "OD",
+      "libelle": "TVA nette juin 19 900",
+      "compte": "3456",
+      "debit": "0.00",
+      "credit": "4100.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-06",
+      "date": "2025-06-30",
+      "journal": "OD",
+      "libelle": "TVA nette juin 19 900",
+      "compte": "4456",
+      "debit": "0.00",
+      "credit": "19900.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-06-PAY",
+      "date": "2025-07-20",
+      "journal": "BQ",
+      "libelle": "Paiement TVA juin 19900",
+      "compte": "4456",
+      "debit": "19900.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "TVA-06-PAY",
+      "date": "2025-07-20",
+      "journal": "BQ",
+      "libelle": "Paiement TVA juin 19900",
+      "compte": "5141",
+      "debit": "0.00",
+      "credit": "19900.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "INT-PPRF",
+      "date": "2025-11-30",
+      "journal": "BQ",
+      "libelle": "Intérêts bancaires selon attestation fictive",
+      "compte": "5141",
+      "debit": "800.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "INT-PPRF",
+      "date": "2025-11-30",
+      "journal": "BQ",
+      "libelle": "Intérêts bancaires selon attestation fictive",
+      "compte": "3453",
+      "debit": "200.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "INT-PPRF",
+      "date": "2025-11-30",
+      "journal": "BQ",
+      "libelle": "Intérêts bancaires selon attestation fictive",
+      "compte": "7381",
+      "debit": "0.00",
+      "credit": "1000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "ASS-01",
+      "date": "2025-12-01",
+      "journal": "BQ",
+      "libelle": "Assurance 12000 couvrant décembre 2025 à novembre 2026",
+      "compte": "6134",
+      "debit": "12000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "ASS-01",
+      "date": "2025-12-01",
+      "journal": "BQ",
+      "libelle": "Assurance 12000 couvrant décembre 2025 à novembre 2026",
+      "compte": "5141",
+      "debit": "0.00",
+      "credit": "12000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "REF-02",
+      "date": "2025-12-02",
+      "journal": "AC",
+      "libelle": "Achat de contrôle référence littérale 02",
+      "compte": "6125",
+      "debit": "200.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "REF-02",
+      "date": "2025-12-02",
+      "journal": "AC",
+      "libelle": "Achat de contrôle référence littérale 02",
+      "compte": "34552",
+      "debit": "40.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "REF-02",
+      "date": "2025-12-02",
+      "journal": "AC",
+      "libelle": "Achat de contrôle référence littérale 02",
+      "compte": "4411",
+      "debit": "0.00",
+      "credit": "240.00",
+      "tiers": "F-CONTROLE"
+    },
+    {
+      "reference_recette": "REF-002",
+      "date": "2025-12-02",
+      "journal": "AC",
+      "libelle": "Achat de contrôle référence littérale 002",
+      "compte": "6125",
+      "debit": "200.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "REF-002",
+      "date": "2025-12-02",
+      "journal": "AC",
+      "libelle": "Achat de contrôle référence littérale 002",
+      "compte": "34552",
+      "debit": "40.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "REF-002",
+      "date": "2025-12-02",
+      "journal": "AC",
+      "libelle": "Achat de contrôle référence littérale 002",
+      "compte": "4411",
+      "debit": "0.00",
+      "credit": "240.00",
+      "tiers": "F-CONTROLE"
+    },
+    {
+      "reference_recette": "VENTE-IMPAYEE",
+      "date": "2025-12-10",
+      "journal": "VT",
+      "libelle": "Prestation 12000HT laissée impayée",
+      "compte": "3421",
+      "debit": "14400.00",
+      "credit": "0.00",
+      "tiers": "C-IMPAYE"
+    },
+    {
+      "reference_recette": "VENTE-IMPAYEE",
+      "date": "2025-12-10",
+      "journal": "VT",
+      "libelle": "Prestation 12000HT laissée impayée",
+      "compte": "7124",
+      "debit": "0.00",
+      "credit": "12000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "VENTE-IMPAYEE",
+      "date": "2025-12-10",
+      "journal": "VT",
+      "libelle": "Prestation 12000HT laissée impayée",
+      "compte": "4455",
+      "debit": "0.00",
+      "credit": "2400.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "CHQ-REJET",
+      "date": "2025-12-12",
+      "journal": "AE",
+      "libelle": "Chèque 2000 provisoire sur facture impayée",
+      "compte": "51111",
+      "debit": "2000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "CHQ-REJET",
+      "date": "2025-12-12",
+      "journal": "AE",
+      "libelle": "Chèque 2000 provisoire sur facture impayée",
+      "compte": "3421",
+      "debit": "0.00",
+      "credit": "2000.00",
+      "tiers": "C-IMPAYE"
+    },
+    {
+      "reference_recette": "CHQ-REJET-INV",
+      "date": "2025-12-15",
+      "journal": "OD",
+      "libelle": "Rejet documenté chèque sans frais",
+      "compte": "3421",
+      "debit": "2000.00",
+      "credit": "0.00",
+      "tiers": "C-IMPAYE"
+    },
+    {
+      "reference_recette": "CHQ-REJET-INV",
+      "date": "2025-12-15",
+      "journal": "OD",
+      "libelle": "Rejet documenté chèque sans frais",
+      "compte": "51111",
+      "debit": "0.00",
+      "credit": "2000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "AMENDE",
+      "date": "2025-12-20",
+      "journal": "BQ",
+      "libelle": "Amende fiscale documentée 500",
+      "compte": "6583",
+      "debit": "500.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "AMENDE",
+      "date": "2025-12-20",
+      "journal": "BQ",
+      "libelle": "Amende fiscale documentée 500",
+      "compte": "5141",
+      "debit": "0.00",
+      "credit": "500.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "FRAIS-BQ",
+      "date": "2025-12-31",
+      "journal": "BQ",
+      "libelle": "Frais bancaires 60 sans TVA selon avis",
+      "compte": "61473",
+      "debit": "60.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "FRAIS-BQ",
+      "date": "2025-12-31",
+      "journal": "BQ",
+      "libelle": "Frais bancaires 60 sans TVA selon avis",
+      "compte": "5141",
+      "debit": "0.00",
+      "credit": "60.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "STOCK-FIN",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "Stock final 60 unités à CMUP 110",
+      "compte": "3111",
+      "debit": "6600.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "STOCK-FIN",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "Stock final 60 unités à CMUP 110",
+      "compte": "6114",
+      "debit": "0.00",
+      "credit": "6600.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "AMORT-2025",
+      "date": "2025-12-31",
+      "journal": "AM",
+      "libelle": "Dotation annuelle ordinateur 4800",
+      "compte": "61935",
+      "debit": "4800.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "AMORT-2025",
+      "date": "2025-12-31",
+      "journal": "AM",
+      "libelle": "Dotation annuelle ordinateur 4800",
+      "compte": "28355",
+      "debit": "0.00",
+      "credit": "4800.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "CCA-2025",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "Charge constatée d'avance 11000",
+      "compte": "3491",
+      "debit": "11000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "CCA-2025",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "Charge constatée d'avance 11000",
+      "compte": "6134",
+      "debit": "0.00",
+      "credit": "11000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "FNP-2025",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "Facture non parvenue 3000",
+      "compte": "6125",
+      "debit": "3000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "FNP-2025",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "Facture non parvenue 3000",
+      "compte": "4417",
+      "debit": "0.00",
+      "credit": "3000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "PROV-RISQUE",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "Provision durable litige 1500",
+      "compte": "61955",
+      "debit": "1500.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "PROV-RISQUE",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "Provision durable litige 1500",
+      "compte": "1518",
+      "debit": "0.00",
+      "credit": "1500.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "DEPR-CLIENT",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "Dépréciation créance 2000",
+      "compte": "61964",
+      "debit": "2000.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "DEPR-CLIENT",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "Dépréciation créance 2000",
+      "compte": "3942",
+      "debit": "0.00",
+      "credit": "2000.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "IS-2025",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "IS attendu à constater une seule fois",
+      "compte": "6701",
+      "debit": "23420.25",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "IS-2025",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "IS attendu à constater une seule fois",
+      "compte": "4453",
+      "debit": "0.00",
+      "credit": "23420.25",
+      "tiers": null
+    },
+    {
+      "reference_recette": "PPRF-IMP",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "Imputation documentaire retenue 200",
+      "compte": "4453",
+      "debit": "200.00",
+      "credit": "0.00",
+      "tiers": null
+    },
+    {
+      "reference_recette": "PPRF-IMP",
+      "date": "2025-12-31",
+      "journal": "OD",
+      "libelle": "Imputation documentaire retenue 200",
+      "compte": "3453",
+      "debit": "0.00",
+      "credit": "200.00",
+      "tiers": null
+    }
+  ],
+  "releve_bancaire": [
+    {
+      "Date": "2025-01-01",
+      "Libellé": "CAP-01 — Apport en capital versé",
+      "Débit": "0.00",
+      "Crédit": "200000.00"
+    },
+    {
+      "Date": "2025-01-01",
+      "Libellé": "IMMO-PAY — Paiement acquisition (généré avec IMMO-ACQ)",
+      "Débit": "28800.00",
+      "Crédit": "0.00"
+    },
+    {
+      "Date": "2025-01-04",
+      "Libellé": "AC-F01 — Acompte fournisseur marchandises",
+      "Débit": "6000.00",
+      "Crédit": "0.00"
+    },
+    {
+      "Date": "2025-01-07",
+      "Libellé": "ACH-01-PAY — Solde fournisseur ACH-01",
+      "Débit": "6000.00",
+      "Crédit": "0.00"
+    },
+    {
+      "Date": "2025-01-25",
+      "Libellé": "VENTE-01-PAY — Paiement client partiel",
+      "Débit": "0.00",
+      "Crédit": "10000.00"
+    },
+    {
+      "Date": "2025-02-05",
+      "Libellé": "CHQ-01-ENC — Chèque encaissé",
+      "Débit": "0.00",
+      "Crédit": "20000.00"
+    },
+    {
+      "Date": "2025-02-15",
+      "Libellé": "ACH-SERVICE-PAY — Règlement fournisseur services",
+      "Débit": "14400.00",
+      "Crédit": "0.00"
+    },
+    {
+      "Date": "2025-03-05",
+      "Libellé": "VENTE-02-PAY — Virement client après imputation crédit AV01",
+      "Débit": "0.00",
+      "Crédit": "5000.00"
+    },
+    {
+      "Date": "2025-03-20",
+      "Libellé": "EFF-F01-PAY — Paiement effet fournisseur",
+      "Débit": "14400.00",
+      "Crédit": "0.00"
+    },
+    {
+      "Date": "2025-05-16",
+      "Libellé": "EFF-C01-ENC — Encaissement effet avec frais 10",
+      "Débit": "0.00",
+      "Crédit": "9990.00"
+    },
+    {
+      "Date": "2025-06-01",
+      "Libellé": "AC-C01 — Acompte client prestations 24000TTC",
+      "Débit": "0.00",
+      "Crédit": "24000.00"
+    },
+    {
+      "Date": "2025-06-30",
+      "Libellé": "VENTE-SERVICE-PAY — Solde client prestation",
+      "Débit": "0.00",
+      "Crédit": "120000.00"
+    },
+    {
+      "Date": "2025-07-20",
+      "Libellé": "TVA-06-PAY — Paiement TVA juin 19900",
+      "Débit": "19900.00",
+      "Crédit": "0.00"
+    },
+    {
+      "Date": "2025-11-30",
+      "Libellé": "INT-PPRF — Intérêts bancaires selon attestation fictive",
+      "Débit": "0.00",
+      "Crédit": "800.00"
+    },
+    {
+      "Date": "2025-12-01",
+      "Libellé": "ASS-01 — Assurance 12000 couvrant décembre 2025 à novembre 2026",
+      "Débit": "12000.00",
+      "Crédit": "0.00"
+    },
+    {
+      "Date": "2025-12-20",
+      "Libellé": "AMENDE — Amende fiscale documentée 500",
+      "Débit": "500.00",
+      "Crédit": "0.00"
+    },
+    {
+      "Date": "2025-12-31",
+      "Libellé": "FRAIS-BQ — Frais bancaires 60 sans TVA selon avis",
+      "Débit": "60.00",
+      "Crédit": "0.00"
+    }
+  ],
+  "attendus": {
+    "produits": "170500.00",
+    "charges_hors_is": "40670.00",
+    "resultat_avant_is": "129830.00",
+    "reintegrations": "4000.00",
+    "deductions": "0.00",
+    "deficits_imputes": "0.00",
+    "benefice_fiscal": "133830.00",
+    "taux_is": "17.50",
+    "is_theorique": "23420.25",
+    "credit_is": "200.00",
+    "acomptes_2025": "0.00",
+    "solde_is": "23220.25",
+    "resultat_net": "106409.75",
+    "stock_quantite": "60",
+    "stock_cmup": "110",
+    "stock_valeur": "6600.00",
+    "banque": "287730.00",
+    "creances_clients_brutes": "14400.00",
+    "fournisseurs": "480.00",
+    "tva_collectee_annuelle": "31500.00",
+    "tva_recuperable_annuelle": "11600.00",
+    "tva_nette_annuelle": "19900.00",
+    "tva_payee_N": "19900.00",
+    "tva_due_fin_N": "0.00",
+    "marge_brute": "22100.00",
+    "production": "132000.00",
+    "valeur_ajoutee": "137630.00",
+    "resultat_exploitation": "129330.00",
+    "resultat_financier": "1000.00",
+    "resultat_non_courant": "-500.00",
+    "caf": "112709.75",
+    "cm_base": "170500.00",
+    "cm_calculee_sans_exoneration": "426.25",
+    "cm_minimum_sans_exoneration": "3000.00",
+    "total_actif_net": "337010.00",
+    "dettes_et_provisions": "30600.25",
+    "total_passif_net": "337010.00"
+  },
+  "variantes_independantes": [],
+  "references_officielles": [
+    {
+      "id": "IS",
+      "titre": "MEF/DGI — dispositif fiscal 2025, tableau de transition IS de droit commun",
+      "url": "https://www.finances.gov.ma/Publication/dgi/2025/secteur-transport-incitations-fiscales2025.pdf",
+      "verification": "Tableau consulté : bénéfice ≤ 300 000 MAD, 17,5 % en 2025 et 20 % en 2026. Le scénario ne relève pas d'un régime sectoriel privilégié."
+    },
+    {
+      "id": "TVA",
+      "titre": "MEF/DGI — CGI 2026, article 99",
+      "url": "https://www.finances.gov.ma/Publication/dgi/2025/CGI-2026-FR.pdf",
+      "verification": "Extrait indexé officiel consulté : taux normal 20 %. Les articles complets restent à vérifier selon la qualification de chaque opération ; aucune exonération n'est déduite d'un nom d'article."
+    },
+    {
+      "id": "CM_ACOMPTES",
+      "titre": "MEF/DGI — note circulaire 733 (2023), transition 2023–2026",
+      "url": "https://www.finances.gov.ma/Publication/dgi/2023/NoteCirculaireN733-2023.pdf",
+      "verification": "Exemples officiels consultés : CM au taux de 0,25 % ; acomptes 25 % de la référence annuelle ajustée au taux de l'exercice pendant la transition. L'exonération de démarrage est également documentée par le CGI complet, référence CM_CGI ; les faits du dossier restent à justifier."
+    },
+    {
+      "id": "RAS_IS",
+      "titre": "MEF/DGI — tableau des mesures fiscales de la LF 2023",
+      "url": "https://www.finances.gov.ma/Publication/dgi/2023/tableau-mesures-lf2023.pdf",
+      "verification": "RAS de 5 % pour rémunérations concernées versées aux personnes morales par les organismes publics ; ne pas appliquer ce taux aux ventes de marchandises. Variante distincte du parcours principal."
+    },
+    {
+      "id": "RAS_TVA",
+      "titre": "MEF/DGI — rappel officiel des retenues TVA, 23 août 2024",
+      "url": "https://www.finances.gov.ma/fr/pages/detail-actualite.aspx?fiche=6947",
+      "verification": "Retenues TVA 75 % / 100 % selon opérations et justificatifs ; le moteur actuel ne les automatise pas. Le scénario correspondant reste bloqué pour une déclaration complète."
+    },
+    {
+      "id": "CSS",
+      "titre": "MEF — Al Maliya, dispositions LF 2026, page 50",
+      "url": "https://www.finances.gov.ma/Maliya%20tawassol/SLF2026-Fr.pdf",
+      "verification": "Prorogation 2026–2028 ; seuil un million MAD et taux 1,5 %, 2,5 %, 3,5 %, 5 %. La référence N-1 ne doit jamais être inventée."
+    },
+    {
+      "id": "COMPTABILITE",
+      "titre": "MEF — normes du CNC",
+      "url": "https://www.finances.gov.ma/fr/Nos-metiers/Pages/cnc-normes.aspx",
+      "verification": "Portail de référence CGNC/Avis n°24. Le cahier décrit des comportements à recetter, sans certification ni homologation."
+    },
+    {
+      "id": "CM_CGI",
+      "titre": "DGI — CGI 2026, reproduction institutionnelle CRI Casablanca, article 144, pages imprimées 268–270",
+      "url": "https://casainvest.ma/sites/default/files/2026-02/Code%20impo%CC%82ts%202026.pdf",
+      "verification": "PDF complet effectivement téléchargé et lu. Article 144-I-C : hors concessionnaires de service public, exonération pendant 36 mois d'exploitation, limitée à 60 mois depuis constitution. Article 144-I-D : taux normal 0,25 %, minimum IS 3 000. La qualification d'un dossier réel exige les dates et justificatifs. Le lien DGI direct n'a pas été accessible pendant cette vérification."
+    },
+    {
+      "id": "TVA_FAIT_GENERATEUR",
+      "titre": "DGI — CGI 2026, reproduction institutionnelle CRI, article 95, page imprimée 175",
+      "url": "https://casainvest.ma/sites/default/files/2026-02/Code%20impo%CC%82ts%202026.pdf",
+      "verification": "Texte complet lu : encaissement comme fait générateur ; en option débit, facturation ou inscription comptable de la créance. Une FAE ne peut donc pas être réputée sans TVA du seul fait que sa facture arrive en N+1. Sa qualification est isolée dans une variante bloquée, exclue des totaux principaux."
+    }
+  ],
+  "tva_mois": [
+    {
+      "mois": "01",
+      "credit_ouverture": "0.00",
+      "collectee": "1666.67",
+      "recuperable": "6800.00",
+      "credit_fin": "5133.33",
+      "due": "0.00"
+    },
+    {
+      "mois": "02",
+      "credit_ouverture": "5133.33",
+      "collectee": "2833.33",
+      "recuperable": "2400.00",
+      "credit_fin": "4700.00",
+      "due": "0.00"
+    },
+    {
+      "mois": "03",
+      "credit_ouverture": "4700.00",
+      "collectee": "1333.33",
+      "recuperable": "2400.00",
+      "credit_fin": "5766.67",
+      "due": "0.00"
+    },
+    {
+      "mois": "04",
+      "credit_ouverture": "5766.67",
+      "collectee": "0.00",
+      "recuperable": "0.00",
+      "credit_fin": "5766.67",
+      "due": "0.00"
+    },
+    {
+      "mois": "05",
+      "credit_ouverture": "5766.67",
+      "collectee": "1666.67",
+      "recuperable": "0.00",
+      "credit_fin": "4100.00",
+      "due": "0.00"
+    },
+    {
+      "mois": "06",
+      "credit_ouverture": "4100.00",
+      "collectee": "24000.00",
+      "recuperable": "0.00",
+      "credit_fin": "0.00",
+      "due": "19900.00"
+    },
+    {
+      "mois": "07",
+      "credit_ouverture": "0.00",
+      "collectee": "0.00",
+      "recuperable": "0.00",
+      "credit_fin": "0.00",
+      "due": "0.00"
+    },
+    {
+      "mois": "08",
+      "credit_ouverture": "0.00",
+      "collectee": "0.00",
+      "recuperable": "0.00",
+      "credit_fin": "0.00",
+      "due": "0.00"
+    },
+    {
+      "mois": "09",
+      "credit_ouverture": "0.00",
+      "collectee": "0.00",
+      "recuperable": "0.00",
+      "credit_fin": "0.00",
+      "due": "0.00"
+    },
+    {
+      "mois": "10",
+      "credit_ouverture": "0.00",
+      "collectee": "0.00",
+      "recuperable": "0.00",
+      "credit_fin": "0.00",
+      "due": "0.00"
+    },
+    {
+      "mois": "11",
+      "credit_ouverture": "0.00",
+      "collectee": "0.00",
+      "recuperable": "0.00",
+      "credit_fin": "0.00",
+      "due": "0.00"
+    },
+    {
+      "mois": "12",
+      "credit_ouverture": "0.00",
+      "collectee": "0.00",
+      "recuperable": "0.00",
+      "credit_fin": "0.00",
+      "due": "0.00"
+    }
+  ],
+  "cas_recette": [
+    {
+      "ordre": 47,
+      "id": "HP-FIS-001",
+      "module": "Fiscalité",
+      "objectif": "Intérêts bancaires selon attestation fictive",
+      "prerequis": "Base de recette isolée ; suivre les cas dans l'ordre.",
+      "donnees": "Repère INT-PPRF ; date comptable/date de pièce 2025-11-30 ; journal BQ. 5141 D 800,00 MAD; 3453 D 200,00 MAD; 7381 C 1 000,00 MAD",
+      "actions": "Journal → BQ 30/11/2025 référence INT-PPRF ; avis banque fictif : intérêts bruts 1 000, retenue 200, net 800 ; saisir les trois lignes puis valider. Ces montants viennent du justificatif du jeu de recette, aucun taux n'est extrapolé à un dossier réel.",
+      "attendu": "Écriture conforme : 5141 D 800,00 MAD; 3453 D 200,00 MAD; 7381 C 1 000,00 MAD. Une seule génération, montants égaux au centime ; pièce/source et tiers conservés.",
+      "ecritures": "5141 D 800,00 MAD; 3453 D 200,00 MAD; 7381 C 1 000,00 MAD",
+      "fiscal": "Produit financier 1 000 ; crédit IS documentaire 200 à enregistrer séparément dans Fiscalité IS.",
+      "controles": "Comparer total débit/crédit, date, journal, référence justificative, tiers/auxiliaire ; vérifier statut validé au Journal. La validation commerciale et la validation comptable sont deux opérations distinctes quand le produit les expose.",
+      "statut": "Non testé",
+      "observations": "Numéros internes attribués par le logiciel : les recopier dans la preuve. Ne jamais forcer un ID technique pour égaler le repère du cahier.",
+      "preuve": "Capture du résultat et référence de la pièce.",
+      "resultat_reel": "",
+      "anomalies": "",
+      "preuve_reelle": ""
+    },
+    {
+      "ordre": 48,
+      "id": "HP-CPT-002",
+      "module": "Comptabilité",
+      "objectif": "Assurance 12000 couvrant décembre 2025 à novembre 2026",
+      "prerequis": "Base de recette isolée ; suivre les cas dans l'ordre.",
+      "donnees": "Repère ASS-01 ; date comptable/date de pièce 2025-12-01 ; journal BQ. 6134 D 12 000,00 MAD; 5141 C 12 000,00 MAD",
+      "actions": "Journal → BQ 01/12/2025 référence ASS-01 ; contrat fictif couvrant 01/12/2025–30/11/2026, prime 12 000, aucune TVA sur cet avis. Saisir D6134 C5141 puis valider.",
+      "attendu": "Écriture conforme : 6134 D 12 000,00 MAD; 5141 C 12 000,00 MAD. Une seule génération, montants égaux au centime ; pièce/source et tiers conservés.",
+      "ecritures": "6134 D 12 000,00 MAD; 5141 C 12 000,00 MAD",
+      "fiscal": "Sans incidence fiscale directe.",
+      "controles": "Comparer total débit/crédit, date, journal, référence justificative, tiers/auxiliaire ; vérifier statut validé au Journal. La validation commerciale et la validation comptable sont deux opérations distinctes quand le produit les expose.",
+      "statut": "Non testé",
+      "observations": "Numéros internes attribués par le logiciel : les recopier dans la preuve. Ne jamais forcer un ID technique pour égaler le repère du cahier.",
+      "preuve": "Capture du résultat et référence de la pièce.",
+      "resultat_reel": "",
+      "anomalies": "",
+      "preuve_reelle": ""
+    },
+    {
+      "ordre": 54,
+      "id": "HP-FIS-002",
+      "module": "Fiscalité",
+      "objectif": "Amende fiscale documentée 500",
+      "prerequis": "Base de recette isolée ; suivre les cas dans l'ordre.",
+      "donnees": "Repère AMENDE ; date comptable/date de pièce 2025-12-20 ; journal BQ. 6583 D 500,00 MAD; 5141 C 500,00 MAD",
+      "actions": "Journal → BQ 20/12/2025 référence AMENDE ; D6583=500 C5141=500 ; valider. Contrôler dans Fiscalité IS que la réintégration automatique 500 existe ; ne pas la saisir une deuxième fois.",
+      "attendu": "Écriture conforme : 6583 D 500,00 MAD; 5141 C 500,00 MAD. Une seule génération, montants égaux au centime ; pièce/source et tiers conservés.",
+      "ecritures": "6583 D 500,00 MAD; 5141 C 500,00 MAD",
+      "fiscal": "Réintégration automatique 500 ; aucune TVA.",
+      "controles": "Comparer total débit/crédit, date, journal, référence justificative, tiers/auxiliaire ; vérifier statut validé au Journal. La validation commerciale et la validation comptable sont deux opérations distinctes quand le produit les expose.",
+      "statut": "Non testé",
+      "observations": "Numéros internes attribués par le logiciel : les recopier dans la preuve. Ne jamais forcer un ID technique pour égaler le repère du cahier.",
+      "preuve": "Capture du résultat et référence de la pièce.",
+      "resultat_reel": "",
+      "anomalies": "",
+      "preuve_reelle": ""
+    },
+    {
+      "ordre": 79,
+      "id": "HP-FIS-020",
+      "module": "Fiscalité",
+      "objectif": "Paiement TVA juin 19900",
+      "prerequis": "Base de recette isolée ; suivre les cas dans l'ordre.",
+      "donnees": "BQ 20/07/2025 ; référence TVA-06-PAY ;19 900.",
+      "actions": "Après préparation et comptabilisation TVA de janvier à juin selon la feuille TVA, Journal → BQ 20/07/2025, référence TVA-06-PAY ; saisir D4456=19 900 C5141=19 900 ; valider. La déclaration ne génère pas ce paiement à elle seule.",
+      "attendu": "Banque 287 730 après toutes les opérations du parcours ; TVA restant due au 31/12=2 400.",
+      "ecritures": "4456 D 19 900,00 MAD; 5141 C 19 900,00 MAD",
+      "fiscal": "Sans incidence fiscale directe.",
+      "controles": "Vérifier écran, sauvegarde puis rechargement ; consigner toute différence.",
+      "statut": "Non testé",
+      "observations": "",
+      "preuve": "Capture du résultat et référence de la pièce.",
+      "resultat_reel": "",
+      "anomalies": "",
+      "preuve_reelle": ""
+    },
+    {
+      "ordre": 90,
+      "id": "HP-FIS-025",
+      "module": "Fiscalité",
+      "objectif": "IS attendu à constater une seule fois",
+      "prerequis": "Base de recette isolée ; suivre les cas dans l'ordre.",
+      "donnees": "6701 D 23 420,25 MAD; 4453 C 23 420,25 MAD",
+      "actions": "Journal → OD 31/12/2025, référence IS-2025, datepièce 31/12/2025 ; saisir les lignes, enregistrer et valider. Contrôler la situation IS ; ne pas ajouter un second impôt si une écriture équivalente existe.",
+      "attendu": "Charge IS 23 420,25 une seule fois ; dette IS nette 23 220,25, compte 3453 soldé, résultat net 106 409,75.",
+      "ecritures": "6701 D 23 420,25 MAD; 4453 C 23 420,25 MAD",
+      "fiscal": "La charge IS ne diminue pas le bénéfice fiscal : ajout dans le passage résultat net → fiscal, sans doubler les réintégrations hors IS.",
+      "controles": "Vérifier écran, sauvegarde puis rechargement ; consigner toute différence.",
+      "statut": "Non testé",
+      "observations": "",
+      "preuve": "Capture du résultat et référence de la pièce.",
+      "resultat_reel": "",
+      "anomalies": "",
+      "preuve_reelle": ""
+    },
+    {
+      "ordre": 91,
+      "id": "HP-FIS-026",
+      "module": "Fiscalité",
+      "objectif": "Imputation documentaire retenue 200",
+      "prerequis": "Base de recette isolée ; suivre les cas dans l'ordre.",
+      "donnees": "4453 D 200,00 MAD; 3453 C 200,00 MAD",
+      "actions": "Journal → OD 31/12/2025, référence PPRF-IMP, datepièce 31/12/2025 ; saisir les lignes, enregistrer et valider. Contrôler la situation IS ; ne pas ajouter un second impôt si une écriture équivalente existe.",
+      "attendu": "Charge IS 23 420,25 une seule fois ; dette IS nette 23 220,25, compte 3453 soldé, résultat net 106 409,75.",
+      "ecritures": "4453 D 200,00 MAD; 3453 C 200,00 MAD",
+      "fiscal": "La charge IS ne diminue pas le bénéfice fiscal : ajout dans le passage résultat net → fiscal, sans doubler les réintégrations hors IS.",
+      "controles": "Vérifier écran, sauvegarde puis rechargement ; consigner toute différence.",
+      "statut": "Non testé",
+      "observations": "",
+      "preuve": "Capture du résultat et référence de la pièce.",
+      "resultat_reel": "",
+      "anomalies": "",
+      "preuve_reelle": ""
+    },
+    {
+      "ordre": 152,
+      "id": "HP-FIS-033",
+      "module": "Fiscalité",
+      "objectif": "Variante TVA encaissement",
+      "prerequis": "Nouvelle copie indépendante ; règles/option de régime documentées.",
+      "donnees": "Données intégrales de ceJSON,TVAencaissements dèscréation ;accordREC-COMP01 explicitement signé01/03/2025,imputation3000 ;recouvrement14400au15/01/2026.",
+      "actions": "Suivre TVA_ENCAISSEMENTS_953.md etJEU_RECETTE_ENCAISSEMENTS_953.xlsx.",
+      "attendu": "TVA2025collectée31500,récupérable11600,due19900 ;décembre0 ;janvier2026aprèsrecouvrement2400.",
+      "ecritures": "50opérations2025/118lignes,TVA05remplaceTVA12 ;règlement2026D5141/C342114400,sansmodifier2025.",
+      "fiscal": "TVAencaissée2025=31500,TVAnette19900,payéejuillet ;factureimpayéedécembre nonexigible,2400enjanvier2026aprèsrèglement.",
+      "controles": "Vérifier écran, sauvegarde puis rechargement ; consigner toute différence.",
+      "statut": "Non testé",
+      "observations": "",
+      "preuve": "Capture du résultat et référence de la pièce.",
+      "resultat_reel": "",
+      "anomalies": "",
+      "preuve_reelle": ""
+    }
+  ],
+  "variante953": {
+    "source": "jeu_donnees_recette.json conservé",
+    "hypotheses": [
+      "Régime encaissement dès création, aucun changement des factures définitives.",
+      "Imputation AV-01 sur VENTE-02 :compensation acceptée le01/03/2025, document fictif REC-COMP01 à saisir explicitement si support disponible.",
+      "Chèque CHQ-01 encaissé le05/02, effet EFF-C01 encaissé le16/05, CHQ-REJET jamais encaissé.",
+      "Acompte24000 TTC encaissé le01/06, imputé le15/06 ;solde120000 TTC encaissé le30/06.",
+      "Aucune TVA due décembre ;4455 conserve2400 sur facture impayée,4456 soldé."
+    ],
+    "calculs": [
+      "Janvier10000/6=1666,67 ;février(27000/6)-1666,67=2833,33.",
+      "Mars(5000+3000)/6=1333,33 ;mai18000/6-1333,33=1666,67.",
+      "Juin24000/6+120000/6=24000 ;déduction du crédit4100 :19900."
+    ],
+    "fin2025": {
+      "4455_credit": "2400.00",
+      "4456": "0.00",
+      "banque": "287730.00",
+      "total_bilan": "337010.00",
+      "resultat_net": "106409.75"
+    },
+    "reprise2026": {
+      "date": "2026-01-15",
+      "montant_ttc": "14400.00",
+      "tva_janvier": "2400.00",
+      "decembre2025_inchange": "0.00"
+    }
+  }
+}

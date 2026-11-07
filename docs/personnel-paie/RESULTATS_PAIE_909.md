@@ -1,0 +1,11 @@
+# Résultats — bases fiscales connectées909
+
+**388cas distincts réussis dans la campagne finale**, sans échec, erreur ou cas ignoré : {'unitaires_source': 280, 'API_SQL_restauration_PostgreSQL_natif_isole': 100, 'navigateur_Edge_API_PG_isole': 8}. Les ciblées recouvrantes ne sont pas additionnées. La première ciblée avait deux erreurs de montage conservées dans [la preuve](../../Test/PREUVE_PAIE_909.json) ; elles ont été corrigées avant la finale. Cette campagne est une non-régression ciblée du produit909, distincte des372cas exécutés sur907.
+
+Brut imposable, base des frais, parts salariales déductibles et non déductibles et revenu avant frais sont préparés depuis les sources. Oracle fictif :9300.11 /9000.10 /60.00 /294.00 /9240.11. RNI définitif, frais réellement déduits, IR et net restent inconnus. Plafonds par opération/mensuels distincts, qualifications inconnues/obsolètes, déduction intégrale non confirmée, sélection incomplète, bases incohérentes et sources périmées restent visibles ou bloquants.
+
+API/SQL natif : isolation société etFK23503 réellement vérifiée, profil Personnel fermé, droits, concurrence/idempotence, immutabilité propriétaire/runtime, installation manquante503 et migration120 rejouée sans modifier les anciennes données. Edge1440/390 :04social→05bases, saisie exacte, preuves/source accessibles, inconnue distincte de zéro, ancien résultat stable, retrait d'accès, contrôle annuel séparé et comptabilité inchangée. Défilement vers le résultat et lecture mobile inspectés.
+
+Build :{'code': 0, 'modules': 210, 'secondes_vite': 6.4, 'avertissements': 'xlsx/chunks existants'}. Compilation :12fichiersPython ;candidat528empreintes. Restauration native :96tables,schéma/données/séquences/ACL identiques,prédicat d'index altéré réellement détecté,lecture des bases sousrôlelimité,source intacte etseconde cible nonce supprimée.
+
+[Guide](BASES_FISCALES_CONNECTEES_909.md), [recettePDF](RECETTE_BASES_FISCALES_PAIE_909.pdf), [suiviExcel](SUIVI_BASES_FISCALES_PAIE_909.xlsx), [reprise exacte](REPRISE_PAIE_APRES_BASES_909.md). Le cahier humain compte117cas, tous Non testé ;aucune recette utilisateur ou production validée. Les trois recherches complémentaires officielles ont donnéDGI403/DGI403/timeoutMEF ;le CGI complet a été obtenu séparément depuis leCRI, voirles sources907. Aucun nouveau taux n'est inventé.

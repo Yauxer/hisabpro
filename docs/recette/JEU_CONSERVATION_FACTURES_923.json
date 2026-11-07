@@ -1,0 +1,58 @@
+{
+  "installation": "Copie isolée et restaurable, code923, migration125 appliquée après les prérequis de l’installation existante. Société de recette vierge ; jamais la base habituelle.",
+  "societe": {
+    "raison_sociale": "ATLAS RECETTE HISABPRO SARL — FICTIVE",
+    "forme_juridique": "SARL",
+    "ville": "Casablanca",
+    "adresse": "1 rue du Scénario, adresse fictive",
+    "capital_social": "200000.00",
+    "devise": "MAD",
+    "identifiant_fiscal": "99000001",
+    "ice": "009900000000001",
+    "rc": "RECETTE-2025",
+    "patente": "99000002",
+    "exercice_debut": 2025,
+    "regime_fiscal": "is",
+    "regime_tva": "debit",
+    "periodicite_tva": "mensuelle",
+    "email": "admin@hisabpro-recette.example",
+    "password_test": "Recette!Atlas2025",
+    "nom_admin": "Administrateur Recette",
+    "avertissement": "Identité, identifiants et justificatifs entièrement fictifs, réservés à une base isolée. Aucune preuve d'attribution par une administration ; aucun dépôt réel.",
+    "date_constitution_fictive": "2025-01-01",
+    "date_debut_exploitation_fictive": "2025-01-01",
+    "concession_service_public": "Non, hypothèse explicite du scénario"
+  },
+  "article": {
+    "code": "S-VTE",
+    "designation": "Prestation de recette",
+    "type": "service",
+    "stock_initial": 0,
+    "prix_vente": 120000,
+    "tva": 20,
+    "compte_vente": "7124"
+  },
+  "client": {
+    "code": "C-SERVICE",
+    "nom": "Client Services Recette",
+    "type": "client",
+    "compte": "3421",
+    "auxiliaire": "Attribué automatiquement par HisabPro ; consigner le code réel."
+  },
+  "banque": {
+    "banque": "Banque Recette",
+    "compte_comptable": "5141",
+    "rib": "000000000000000000000001",
+    "rib_fictif": true,
+    "solde_initial": "0.00",
+    "solde_final": "287730.00"
+  },
+  "exercice": "2025-01-01 au2025-12-31, ouvert ; ne pas utiliser l’exercice2026 par défaut.",
+  "facture": "Vente,20/01/2025,client C-SERVICE,référence CONSERVATION-FICTIVE923,article S-VTE du jeu,description Prestation fictive923,quantité1,prixHT1000.00,TVA20%,aucune remise/transport/emballage/RAS.",
+  "comptabilite": "Créer l’article S-VTE avec son compte de vente fourni dans ce jeu, puis le sélectionner dans la facture. Vente : D3421=1200,Ccompte_vente_article=1000,C4455=200. Validation définitive dans le Journal séparée de la validation de facture.",
+  "reglement": "Virement1200.00 au21/01/2025,banque du jeu,compte5141,référence SOLDE-COPIE-FICTIF923. Écriture D5141=1200,C3421=1200 ; aucun deuxième règlement.",
+  "motif": "Conservation FICTIVE923 <copie> & partenaire",
+  "logo": "Utiliser un logo de recette PNG/JPEG dans Paramètres avant validation de facture. La modification ultérieure du logo courant ne réécrit pas cette copie.",
+  "attendu": "FactureHT1000,TVA200,TTC1200,solde0. Après conservation :PDF figé,IDauteur,date,motif,taille,empreinte64caractères ; mêmes octets après rechargement et changement de paramètres.",
+  "attention": "Copie interne seulement ; pas de signature ou certification légale, aucun statut commercial supplémentaire et aucune écriture nouvelle. L’empreinte est relevée après capture ; ne pas en inventer une."
+}

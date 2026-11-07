@@ -1,0 +1,51 @@
+{
+  "lot": 751,
+  "tests_executes": {
+    "acomptes751_api": {
+      "cas": 46,
+      "temps_secondes": 46.8,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "acomptes751_ui_final": {
+      "cas": 10,
+      "temps_secondes": 113.64,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "acomptes751_commune": {
+      "cas": 155,
+      "temps_secondes": 274.95,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "session751_annuel": {
+      "cas": 2,
+      "temps_secondes": 37.72,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    }
+  },
+  "source_figees": 1212,
+  "protections_inchangees": 117,
+  "guide": {
+    "pdf_pages": 10,
+    "excel_feuilles": 5,
+    "humains_non_testes": 8
+  },
+  "aucun_postgresql_reel": true,
+  "liquidation_confirmee": false,
+  "imputation_confirmee": false,
+  "paiement_confirme": false,
+  "limites": [
+    "Qualifications déclarées à vérifier humainement",
+    "Calendriers spécifiques/excédents anciens à qualifier",
+    "Liquidation externe à poursuivre",
+    "Recette Office/cible/production non validée",
+    "RH/paie et point6 différés"
+  ]
+}

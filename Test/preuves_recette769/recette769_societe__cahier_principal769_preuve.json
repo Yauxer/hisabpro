@@ -1,0 +1,25 @@
+{
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "parcours_reel_UI": true,
+  "largeur": 1440,
+  "variation_source": "Adresse email de laboratoire unique ; autres valeurs société identiques au cahier",
+  "cas": [
+    {
+      "id": "HP-ADM-001",
+      "etapes": "Création société et administrateur via interface,connexion immédiate",
+      "statut_automatise": "Réussi"
+    },
+    {
+      "id": "HP-ADM-002",
+      "etapes": "Identité et paramètres exacts saisis,sauvegardés,rechargés et comparés àAPI",
+      "statut_automatise": "Réussi"
+    },
+    {
+      "id": "HP-ADM-003",
+      "etapes": "Exercices2025/2026 présents avec12mois exacts,sélection2025 ; branche création conditionnelle nonrequise",
+      "statut_automatise": "Partiel",
+      "limite": "Préparer exercice suivant ettest de refus surpériode clôturée couverts par autres scénarios,nonjoués dansce cas"
+    }
+  ],
+  "erreur": null
+}

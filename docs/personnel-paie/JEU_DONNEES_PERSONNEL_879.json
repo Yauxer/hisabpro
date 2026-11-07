@@ -1,0 +1,73 @@
+{
+  "societe": "RECETTE PERSONNEL879 — FICTIF",
+  "ville": "Casablanca",
+  "devise": "MAD",
+  "usage": "Copie isolée uniquement ;données fictives non déclarables.",
+  "salaries": [
+    {
+      "matricule": "P001",
+      "nom": "Salma FICTIVE",
+      "poste": "Poste fictif",
+      "email": "personnel879.p1@example.com",
+      "telephone": "TEL-FICTIF-P001",
+      "numero_cnss": "FICTIF-NON-DECLARABLE-P001",
+      "situation_familiale": "marie",
+      "nb_enfants": 2,
+      "personnes_charge_ir": 2,
+      "beneficiaire_sans_compte_confirme": true,
+      "reference_beneficiaire": "ATTEST-P001",
+      "contrat": "CDI",
+      "date_debut": "2026-01-01",
+      "date_effet": "2026-01-01",
+      "salaire_base": "9000.10",
+      "periodicite": "mensuelle"
+    },
+    {
+      "matricule": "P002",
+      "nom": "Omar FICTIF",
+      "poste": "Poste fictif",
+      "email": "personnel879.p2@example.com",
+      "telephone": "TEL-FICTIF-P002",
+      "numero_cnss": "FICTIF-NON-DECLARABLE-P002",
+      "situation_familiale": "celiba",
+      "nb_enfants": 0,
+      "personnes_charge_ir": 0,
+      "beneficiaire_sans_compte_confirme": true,
+      "reference_beneficiaire": "ATTEST-P002",
+      "contrat": "CDI",
+      "date_debut": "2026-01-01",
+      "date_effet": "2026-01-01",
+      "salaire_base": "8000.00",
+      "periodicite": "mensuelle"
+    },
+    {
+      "matricule": "P003",
+      "nom": "Nadia FICTIVE",
+      "poste": "Poste fictif",
+      "email": "personnel879.p3@example.com",
+      "telephone": "TEL-FICTIF-P003",
+      "numero_cnss": "FICTIF-NON-DECLARABLE-P003",
+      "situation_familiale": "divorce",
+      "nb_enfants": 1,
+      "personnes_charge_ir": 1,
+      "beneficiaire_sans_compte_confirme": true,
+      "reference_beneficiaire": "ATTEST-P003",
+      "contrat": "CDI",
+      "date_debut": "2026-01-01",
+      "date_effet": "2026-01-01",
+      "salaire_base": "6000.00",
+      "periodicite": "mensuelle"
+    }
+  ],
+  "hausse_p001": {
+    "date_effet": "2027-01-01",
+    "montant": "9876.54",
+    "reference": "AVENANT-P001-2027"
+  },
+  "sortie_p001": "2027-06-30",
+  "calculs_independants": {
+    "somme_bases_initiales": "23000.10",
+    "somme_bases_apres_hausse": "23876.54"
+  },
+  "paie_definitive_autorisee": false
+}

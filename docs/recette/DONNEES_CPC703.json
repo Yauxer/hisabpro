@@ -1,0 +1,88 @@
+{
+  "contexte": "Recette entièrement fictive, aucune comptabilité réelle",
+  "devise": "MAD",
+  "exercice": 2026,
+  "n": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "1000.00"
+    },
+    {
+      "compte": "7111",
+      "debit": "0.00",
+      "credit": "2000.30"
+    },
+    {
+      "compte": "6193",
+      "debit": "0.00",
+      "credit": "200.01"
+    },
+    {
+      "compte": "6132",
+      "debit": "1200.10",
+      "credit": "0.00"
+    },
+    {
+      "compte": "7119",
+      "debit": "100.02",
+      "credit": "0.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "1900.19",
+      "credit": "0.00"
+    }
+  ],
+  "n1": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "6000.00"
+    },
+    {
+      "compte": "3421",
+      "debit": "2000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "4000.00",
+      "credit": "0.00"
+    }
+  ],
+  "technique": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "1000.00"
+    },
+    {
+      "compte": "1191",
+      "debit": "0.00",
+      "credit": "900.19"
+    },
+    {
+      "compte": "5141",
+      "debit": "1900.19",
+      "credit": "0.00"
+    }
+  ],
+  "attendus_n": {
+    "debit_credit": "3200.31",
+    "charges": "1000.09",
+    "produits": "1900.28",
+    "resultat": "900.19",
+    "actif_passif": "1900.19",
+    "ecart_charges": "0.00",
+    "ecart_produits": "0.00",
+    "ecart_resultat": "0.00"
+  },
+  "attendus_n1": {
+    "debit_credit": "6000.00",
+    "charges": "0.00",
+    "produits": "0.00",
+    "resultat": "0.00"
+  },
+  "technique_attendu": "Détail N indisponible, aucun résultat nul fabriqué ; CPC technique sans classes6/7."
+}

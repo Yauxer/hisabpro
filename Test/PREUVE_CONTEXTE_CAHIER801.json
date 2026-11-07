@@ -1,0 +1,228 @@
+{
+  "resultats": [
+    {
+      "campagne": "recette801_avant",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 76.99,
+      "code": 1
+    },
+    {
+      "campagne": "recette801_cible",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 80.81,
+      "code": 0
+    },
+    {
+      "campagne": "recette801_connexes",
+      "cas": 4,
+      "echecs": 0,
+      "erreurs": 4,
+      "ignores": 0,
+      "secondes": 5.93,
+      "code": 2
+    },
+    {
+      "campagne": "recette801_statiques",
+      "cas": 26,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 1.4,
+      "code": 0
+    },
+    {
+      "campagne": "recette801_runtime",
+      "cas": 12,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 510.17,
+      "code": 0
+    }
+  ],
+  "lectures": [
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_kx9u2srz",
+      "nonce": "ecae5d4b38e44343a9ca77cf1628bfd7",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 1440,
+      "cas": [],
+      "tiers": {},
+      "articles": {},
+      "erreur": "AssertionError('Locator expected to have count \\'1\\'\\nActual value: 0 \\nCall log:\\n  - Expect \"to_have_count\" locator(\"tr\").filter(has=get_by_text(\"RACE-801\", exact=True)) with timeout 5000ms\\n  - waiting for locator(\"tr\").filter(has=get_by_text(\"RACE-801\", exact=True))\\n    14 × locator resolved to 0 elements\\n       - unexpected value \"0\"\\n')",
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "race801": {
+        "get_avant": [],
+        "get_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "post201_id": 1,
+        "api_apres_ids": [
+          1
+        ],
+        "transport": "Réponse GET réelle retenue sans modifier les données ;POST etvalidation réels."
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_kx9u2srz",
+      "nonce": "ecae5d4b38e44343a9ca77cf1628bfd7",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 390,
+      "cas": [],
+      "tiers": {},
+      "articles": {},
+      "erreur": "AssertionError('Locator expected to have count \\'1\\'\\nActual value: 0 \\nCall log:\\n  - Expect \"to_have_count\" locator(\"tr\").filter(has=get_by_text(\"RACE-801\", exact=True)) with timeout 5000ms\\n  - waiting for locator(\"tr\").filter(has=get_by_text(\"RACE-801\", exact=True))\\n    14 × locator resolved to 0 elements\\n       - unexpected value \"0\"\\n')",
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "race801": {
+        "get_avant": [],
+        "get_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "post201_id": 2,
+        "api_apres_ids": [
+          2
+        ],
+        "transport": "Réponse GET réelle retenue sans modifier les données ;POST etvalidation réels."
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_zyhq67fq",
+      "nonce": "d93a52983120425ebc3fe5894a0dcc84",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 1440,
+      "cas": [],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "race801": {
+        "get_avant": [],
+        "get_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "post201_id": 1,
+        "api_apres_ids": [
+          1
+        ],
+        "transport": "Réponse GET réelle retenue sans modifier les données ;POST etvalidation réels.",
+        "creation_preservee_apres_get_ancien": true,
+        "numero_officiel_affiche": "BQ-2025-0001",
+        "validation_reelle_et_montants_preserves": true
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_zyhq67fq",
+      "nonce": "d93a52983120425ebc3fe5894a0dcc84",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 390,
+      "cas": [],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "race801": {
+        "get_avant": [],
+        "get_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "post201_id": 2,
+        "api_apres_ids": [
+          2
+        ],
+        "transport": "Réponse GET réelle retenue sans modifier les données ;POST etvalidation réels.",
+        "creation_preservee_apres_get_ancien": true,
+        "numero_officiel_affiche": "BQ-2025-0001",
+        "validation_reelle_et_montants_preserves": true
+      }
+    }
+  ],
+  "exports_nonregression": [
+    {
+      "fichier": "Test/preuves_contexte801/1440_CAP-01_telecharge.pdf",
+      "sha256": "6d35910c651376162e27e3b7b870e1cd4ed422007cd6b6d0a9ba657a2e5cdf0a"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/1440_journal.csv",
+      "sha256": "81e6937255ae827e3ee7627ab2482211618408d16c30a9d8c00cceec21b535e8"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/1440_journal_imprime.pdf",
+      "sha256": "4df89e90d2e65c99499d82b7e8100e850ef4d6117747a69f2a25ea92ffefe48e"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/1440_grand_livre.csv",
+      "sha256": "70c3716bcc9ee20c5608f73fbe48277ac22f568d5771dca099b6edb2af61e242"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/1440_generale.xlsx",
+      "sha256": "b8341f6647f2c209e98f8ffa3d21faf56acfd69406abff593d142a4a44cd8bae"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/1440_generale.pdf",
+      "sha256": "8e8c5b88fde44aa30ccd01011f15f2ea72f7bed57e43f61189435c55c2d17229"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/1440_clients.xlsx",
+      "sha256": "e1fdfa5bc35c4974c887d2dbcb6229bc6924bd6eb0cdedc913e045270b1d94f9"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/1440_clients.pdf",
+      "sha256": "44bb47471744d6820f43b45ea2a81d3b667df6c8294483605a47338845d9d38f"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/1440_fournisseurs.xlsx",
+      "sha256": "6f03277ae81f7d6e58ce89d670a3c6365b69af5cd96acf60c20b5ac1e9cf36b1"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/1440_fournisseurs.pdf",
+      "sha256": "4d518a2233f5d1f73b62cf2dfe992f99e35a7af98bcf54647f617cb5b028fcc7"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/390_CAP-01_telecharge.pdf",
+      "sha256": "6d35910c651376162e27e3b7b870e1cd4ed422007cd6b6d0a9ba657a2e5cdf0a"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/390_journal.csv",
+      "sha256": "fa653124ef8d0eb9f31db2e12eb518470ea5b07982b56edc91c1748d32a45ad6"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/390_journal_imprime.pdf",
+      "sha256": "96e8469ad48af6df4b2e65adc51c804e0a241d76f23e759d3a3b2c390d93c7c8"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/390_grand_livre.csv",
+      "sha256": "5ab77ccae6006e7cc550b3b2f1cd235f0f13b8cfe86d4731fb516faec0055df6"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/390_generale.xlsx",
+      "sha256": "b8341f6647f2c209e98f8ffa3d21faf56acfd69406abff593d142a4a44cd8bae"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/390_generale.pdf",
+      "sha256": "41d1d6e229a7a83f27ce0c4f54c776c4a5008aea261f00c1327e81589c4d2e5d"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/390_clients.xlsx",
+      "sha256": "7eab4f20530d2fc4a38df894514540d2ee495e32293c680fc9e02a80cd6ff6e0"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/390_clients.pdf",
+      "sha256": "6091f1aff63e228a2a79ac20daf69f3debe7822dff0b6704150c87589ff72bb7"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/390_fournisseurs.xlsx",
+      "sha256": "29eb84b0b8070b3bd12b5558997f076ce53c9cd057ca5091044abbff2f8ff031"
+    },
+    {
+      "fichier": "Test/preuves_contexte801/390_fournisseurs.pdf",
+      "sha256": "9e6ee2dec265f425c94709e9bade2efeb20c5750dc458d79a44e76c54f3dc5c6"
+    }
+  ],
+  "correction": "EcrituresContext :versiondeslectures,clé société/exercice,lecturefraîche aprèscréation/modification/validation/lot/contrepassation/suppression ;aucuncalculmodifié.",
+  "tests_anciens": "Assertionstatique07c2maplocal remplacéeparvérificationréelleUIdunuméroserveur. Autrescontrôlesdufichier conservés.",
+  "collection_initiale": "4erreurs :Test054posemodels=SimpleNamespaceàimport ;aucunE2Edecegroupeexécuté. Groupespurs etruntimeensuiteexécutésdansprocessusséparés.",
+  "build": {
+    "code": 0,
+    "secondes": 11.67,
+    "avertissement": "Bundle>500kB"
+  },
+  "limites": "DéfautGETancien reproduit etfixé ;ancienincident797compatiblemaiscausehistoriquepasattribuéeavec certitude. Lettrage769 restevisible. AucunPGutilisateurniécritureréelle ;RH/paie/point6différés,CM/cessionpartielles,recettehumaine/conformité/productionnonvalidées."
+}

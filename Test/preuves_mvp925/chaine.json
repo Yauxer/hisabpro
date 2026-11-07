@@ -1,0 +1,8 @@
+{
+  "ancien_jwt_signe": 401,
+  "lectures_ecriture_pdf_refuses": true,
+  "jeton_versionne_actif": 200,
+  "comptabilite_inchangee": true,
+  "cle_synthetique_seulement": true,
+  "aucune_base_reelle": true
+}

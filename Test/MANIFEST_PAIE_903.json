@@ -1,0 +1,2079 @@
+{
+  "version": 1,
+  "lot": "903",
+  "nature": "Différentiel,arborescence exacte ;jamais projet complet",
+  "precedent": {
+    "zip": "HisabPro_Session_20261027_28_Personnel_Paie_871_901.zip",
+    "sha256": "3009a32239949b4e17f9cef6c2f3d727835a62beaeb94397b1e315928efd6ee1"
+  },
+  "variantes": [
+    {
+      "nom": "HisabPro_903_Bilan_Reprise_Paie.zip",
+      "fichiers": {
+        "CODEX_PROGRESS.md": {
+          "sha256": "2a147a4097fa5137d62d716e4df2700aaa52116380733d566ee9126334ca0b39",
+          "octets": 7441861
+        },
+        "Test/PREUVE_CAHIERS_PAIE_903.json": {
+          "sha256": "771efa62bd21d6bb0b08dc628587a417e5de234f626b2456b2239a37eb36fb6a",
+          "octets": 3395
+        },
+        "Test/PREUVE_SESSION_PAIE_903.json": {
+          "sha256": "e4aa75b26897339603b615cfc84f65b987321bd82b47f22e26913f88f9cc17ad",
+          "octets": 4484
+        },
+        "Test/verifier_cahiers_paie903.py": {
+          "sha256": "f91e91fbed0cd6d0094b445d54509e80f3dabb4bde5c0bb43476f09314879593",
+          "octets": 4501
+        },
+        "docs/audit/MATRICE_COUVERTURE_HISABPRO.md": {
+          "sha256": "0a3cda9498b9f8db24149dde1dce3b2693bfdf35e9659f11502945f2faac397f",
+          "octets": 278946
+        },
+        "docs/personnel-paie/BILAN_SESSION_PAIE_897_903.md": {
+          "sha256": "cf4c05514d643b7d81f5b1b4ad79d0d463ddb19ba6d955c034e6d3cbc624e5c3",
+          "octets": 5836
+        },
+        "docs/personnel-paie/INSTALLATION_COPIE_PAIE_116_118.md": {
+          "sha256": "dc5c29aab0a04661a0fe6dcf8aa940c6417f6d6309d8cc2d127ca34906a21df4",
+          "octets": 4908
+        },
+        "docs/personnel-paie/MODE_EMPLOI_PERSONNEL_PAIE.md": {
+          "sha256": "3f69c9818e28b0b7c1d27562442fe0a157fbbf84d8327cabdbd8b32b974fb78e",
+          "octets": 3790
+        },
+        "docs/personnel-paie/REPRISE_IR_MENSUEL_3C2_903.md": {
+          "sha256": "3c65aae9938eb0310980253be7f4989fb2b950d933f3a4355a7dcb7810758eab",
+          "octets": 4790
+        }
+      }
+    },
+    {
+      "nom": "HisabPro_Session_20261027_28_Personnel_Paie_871_903.zip",
+      "fichiers": {
+        "CODEX_PROGRESS.md": {
+          "sha256": "2a147a4097fa5137d62d716e4df2700aaa52116380733d566ee9126334ca0b39",
+          "octets": 7441861
+        },
+        "Test/CANDIDAT_PAIE_889.json": {
+          "sha256": "7b218fed3dffc2a90984b8104d0c250058c6de4e7c24426bcd913506298cfa33",
+          "octets": 58447
+        },
+        "Test/CANDIDAT_PAIE_891.json": {
+          "sha256": "0fcce78cbfddd60a4a118d9a7bcb46850623b246589b54990016c2e31803d8a1",
+          "octets": 59045
+        },
+        "Test/CANDIDAT_PAIE_893.json": {
+          "sha256": "840358240bbaec5fc02e4f952c902bd0e8b398e8d6b5ada6a158ad93634a0cd1",
+          "octets": 59650
+        },
+        "Test/CANDIDAT_PAIE_897.json": {
+          "sha256": "936704cbaf13aedf56affeca5d925dc7f20fd17314e6f8654b8bcd0615fa91ad",
+          "octets": 60248
+        },
+        "Test/CANDIDAT_PAIE_899.json": {
+          "sha256": "d7be83dd06e16f0a7f084915c1610579213550482416181f1d4cc48711e2896a",
+          "octets": 61016
+        },
+        "Test/CANDIDAT_PAIE_901.json": {
+          "sha256": "8f4de9fa794efcc533e5ed2fd8ab018c32b93c8b206344e45bcdd59df2193bb5",
+          "octets": 61751
+        },
+        "Test/CANDIDAT_PERSONNEL_PAIE_873.json": {
+          "sha256": "a08ccd072931abc78518714ba409ba89201e2fc95f0906fc9f035fa3aefe134b",
+          "octets": 56076
+        },
+        "Test/CANDIDAT_PERSONNEL_PAIE_875.json": {
+          "sha256": "882875c28306587706c5468b95333f48741458d594628a52c74f1aa94635c043",
+          "octets": 56125
+        },
+        "Test/CANDIDAT_PERSONNEL_PAIE_877.json": {
+          "sha256": "08a8c764a6ac09ddd53e2b2de25cc6de943df193b61e685722d2ec21831ddcc8",
+          "octets": 56792
+        },
+        "Test/CANDIDAT_PERSONNEL_PAIE_879.json": {
+          "sha256": "92d09765f01bae3dfa4120ebac4e4cfc604609753943a501a9ae508c50241e77",
+          "octets": 56537
+        },
+        "Test/CANDIDAT_PERSONNEL_PAIE_881.json": {
+          "sha256": "9b7e168aa841acf53a42e6af1452dcc989ea8d96e682fb32273cad41cfad3b68",
+          "octets": 56883
+        },
+        "Test/CANDIDAT_PERSONNEL_PAIE_883.json": {
+          "sha256": "6b3d1496bad25842d2bcbbd8e5b55b1c6babea527a5c0f9841a0b8c330a3c1a8",
+          "octets": 57024
+        },
+        "Test/CANDIDAT_PERSONNEL_PAIE_885.json": {
+          "sha256": "4be12c853781efa357ad41c71693e067cab8b4bca747a8c0a124f49bbc855f59",
+          "octets": 57612
+        },
+        "Test/CANDIDAT_PERSONNEL_PAIE_887.json": {
+          "sha256": "b833dffe7418d3c9c332625595b73714282c5b75def9fe2b48b0ffb1590b7ad7",
+          "octets": 57859
+        },
+        "Test/ETAT_PERSONNEL_INTERFACE_879.json": {
+          "sha256": "fb091549dc6d92a49f3eb7a128304a4b8824255bba7a3358d3ee9e91156bbb19",
+          "octets": 57411
+        },
+        "Test/MANIFEST_PERSONNEL_INTERFACE_879_INTERMEDIAIRE.json": {
+          "sha256": "6effb0334b5259024ae9be87802c81084e7480c171ee028e8aae39fb9caf7d64",
+          "octets": 21977
+        },
+        "Test/PREUVE_CAHIERS_PAIE_903.json": {
+          "sha256": "771efa62bd21d6bb0b08dc628587a417e5de234f626b2456b2239a37eb36fb6a",
+          "octets": 3395
+        },
+        "Test/PREUVE_PAIE_889.json": {
+          "sha256": "4643729d9c3c84bd0f2806fac6a9b5611a75c19a160f50a0d26a2b768b532ff4",
+          "octets": 39109
+        },
+        "Test/PREUVE_PAIE_891.json": {
+          "sha256": "d6d9962f9afb2655a5b7267d795afb344ba945c4b8c62a0160d9b575f4ca643c",
+          "octets": 27753
+        },
+        "Test/PREUVE_PAIE_893.json": {
+          "sha256": "62ac0390e46c30a59a86707ba126cb9f152142f1bdec5562b8ebf54a196b716e",
+          "octets": 45448
+        },
+        "Test/PREUVE_PAIE_897.json": {
+          "sha256": "e895a7e59649f1ba7ccded633d42821b3bd148eaf3fa5681afc7733c1012bb47",
+          "octets": 57825
+        },
+        "Test/PREUVE_PAIE_899.json": {
+          "sha256": "8df2cfa71d675350452e957d952870af085b7ddbae0b742d631d6d34ef67d10b",
+          "octets": 68076
+        },
+        "Test/PREUVE_PAIE_901.json": {
+          "sha256": "b162a52ca92f442a61dfe39cd0f7e3d27eb36b42a7f3c2a4342293f8bf7765fa",
+          "octets": 80228
+        },
+        "Test/PREUVE_PERSONNEL_PAIE_873.json": {
+          "sha256": "ec8986d5ea14e8ffa26203aff81afa8158d5ad3bc9c6854f8bd1175dad9ce303",
+          "octets": 45869
+        },
+        "Test/PREUVE_PERSONNEL_PAIE_875.json": {
+          "sha256": "6a7577c42f843549cce22dce3c8bcdb5ba87dcbc279566366ad909f9e6fff43f",
+          "octets": 57811
+        },
+        "Test/PREUVE_PERSONNEL_PAIE_877.json": {
+          "sha256": "7d7bae823042da31a25fe5b7c9cae1f3094165f36de021ac80ff5069854082ef",
+          "octets": 70620
+        },
+        "Test/PREUVE_PERSONNEL_PAIE_879.json": {
+          "sha256": "62e069db3f32e6e89f569a3609570702590ace4086cef5e58b81634002731037",
+          "octets": 72689
+        },
+        "Test/PREUVE_PERSONNEL_PAIE_881.json": {
+          "sha256": "1ed2cef2fa4f8e9fb6c5decd240de03e0ceb1c58dcb911071593daeed72795fc",
+          "octets": 107105
+        },
+        "Test/PREUVE_PERSONNEL_PAIE_883.json": {
+          "sha256": "0aa08d79e4caf643f626dbd831b2dc065ac07dbf16145b9476e8b0605b1e013d",
+          "octets": 106384
+        },
+        "Test/PREUVE_PERSONNEL_PAIE_885.json": {
+          "sha256": "60ee89170d4c8c1fa506bce4d5d3a3248d43b9378f70471f20914639e726ae34",
+          "octets": 11947
+        },
+        "Test/PREUVE_PERSONNEL_PAIE_887.json": {
+          "sha256": "6d915a6890616f6bc076ce2c1544fa257c3d68322a1926233eddf6db0f4fd638",
+          "octets": 116175
+        },
+        "Test/PREUVE_PERSONNEL_PAIE_LOT0_871.json": {
+          "sha256": "effb72c583d8b88d7acfa026625f2decd77785f251367d2dc4077c5b5b695faa",
+          "octets": 4381
+        },
+        "Test/PREUVE_SESSION_PAIE_903.json": {
+          "sha256": "e4aa75b26897339603b615cfc84f65b987321bd82b47f22e26913f88f9cc17ad",
+          "octets": 4484
+        },
+        "Test/audit_personnel_paie871.py": {
+          "sha256": "9dc1170c7ce3373fb0249b83f0e38ea23e23289dc963bb3429d2be68429d487b",
+          "octets": 7666
+        },
+        "Test/generer_recette_paie889.py": {
+          "sha256": "31045be5ecab9a4c64187be7c360553801011357859f8f850c46edc188e62be0",
+          "octets": 12877
+        },
+        "Test/generer_recette_paie891.py": {
+          "sha256": "c99faf6004ac38a0977aa1b82d7007da4f664df8244045c5e798655877bbf89f",
+          "octets": 6636
+        },
+        "Test/generer_recette_paie893.py": {
+          "sha256": "b4516cb06b03e5057c0f22614e16580e769c45d036100e7f5a834d5ea61d6504",
+          "octets": 10100
+        },
+        "Test/generer_recette_paie897.py": {
+          "sha256": "a22847dd427b2493c93b552abb9b03793490b79913d5871d87d398ec27627d5f",
+          "octets": 9818
+        },
+        "Test/generer_recette_paie899.py": {
+          "sha256": "9d5e37601aa33aff2a39fd81b21f457ec0bea96385d843271d803cfcd7e85d1f",
+          "octets": 15070
+        },
+        "Test/generer_recette_paie901.py": {
+          "sha256": "a2e0e740e38546a579c16c0ba47977777a8b1e10f6945c4f9b27dec5d35bb311",
+          "octets": 11428
+        },
+        "Test/generer_recette_personnel879.py": {
+          "sha256": "c90be2090475a3d1d706f6ae20d2a282fb0a0544b08640dde6030d2d811e94a5",
+          "octets": 28121
+        },
+        "Test/generer_recette_personnel881.py": {
+          "sha256": "7f38f9d97a002cf875d6067504fef8454b1f2bc75e43b62612364ccee5fa3e99",
+          "octets": 8266
+        },
+        "Test/generer_recette_personnel883.py": {
+          "sha256": "9f823582c87acbe17bc518428c0f60d86a5148162fa71fbae85a4557e1bfd706",
+          "octets": 15907
+        },
+        "Test/generer_recette_personnel887.py": {
+          "sha256": "0b3b6168506674ecf11ea2518a4751ca12844f6bd6f9f2c6242f448b655b5c07",
+          "octets": 13273
+        },
+        "Test/preuves_paie889/paie889_api.xml": {
+          "sha256": "f98c8e4796d73cdb7629a74d2d7513863dde2e19bbad28acdc7bd0ddb41254f6",
+          "octets": 11947
+        },
+        "Test/preuves_paie889/paie889_catalogue_final.xml": {
+          "sha256": "1dba8066fbabae1c2884e0d84c1b148988f16aae6f4375937681d2775882bbc5",
+          "octets": 4913
+        },
+        "Test/preuves_paie889/paie889_corrige.xml": {
+          "sha256": "fb1e4e0122853cb7cfb7668f68ccac51c22719a3656111d4ef8b4afc5e6f11d9",
+          "octets": 190922
+        },
+        "Test/preuves_paie889/paie889_final.xml": {
+          "sha256": "d7cdba1664e47ac263b592d76fa9103eb3d85a58192f5c9063f1e161b0e2adf3",
+          "octets": 24667
+        },
+        "Test/preuves_paie889/paie889_profil_reprise.xml": {
+          "sha256": "9709b71f8db5ab8e5ea79bf5a106a9f5a3f7a35af58aa60f543a635b36b3ebdc",
+          "octets": 2608
+        },
+        "Test/preuves_paie889/paie889_qualification.xml": {
+          "sha256": "6d220cf3385dc4eb5534d6504f7bab8720da628163fbf4c61da14b9c5a9c2902",
+          "octets": 7536
+        },
+        "Test/preuves_paie889/paie889_reprise.xml": {
+          "sha256": "9e3cec1745055d5cf98fb4b8869ece780e902f90ed3301ecb65bae5e43e606b7",
+          "octets": 389
+        },
+        "Test/preuves_paie889/paie889_ui.xml": {
+          "sha256": "bea9a22babf38b15ee590a876d95c3ed343fc74d3d2cb90d9693c5008db87717",
+          "octets": 500
+        },
+        "Test/preuves_paie891/paie891_api.xml": {
+          "sha256": "8ae76e852e8b13e6424654217de8edb1815c09dd5ca58de55327fce347d60766",
+          "octets": 13787
+        },
+        "Test/preuves_paie891/paie891_corrige.xml": {
+          "sha256": "69cd7496b537459c2a1fbe1d4b20602adaaa921dd50f63e95f18bf53eff4161c",
+          "octets": 4302
+        },
+        "Test/preuves_paie891/paie891_qualification.xml": {
+          "sha256": "067003ca08a44ceed40806b8751b9eead77731326106c23b19925ab9db87fe23",
+          "octets": 27946
+        },
+        "Test/preuves_paie891/paie891_ui.xml": {
+          "sha256": "a7510d2b73c16aea42a600863a520343da539ef5b5029ea2712e0f142df68712",
+          "octets": 14381
+        },
+        "Test/preuves_paie891/paie891_ui_corrige.xml": {
+          "sha256": "dc004d7fea184c0828d84a4b42c9406fed39051f9eff61044007c36124c61745",
+          "octets": 524
+        },
+        "Test/preuves_paie893/paie893_api.xml": {
+          "sha256": "b264c69cd383b80c771963d44025f42254314d012ca15f488931108c3bf4f39b",
+          "octets": 2899
+        },
+        "Test/preuves_paie893/paie893_final.xml": {
+          "sha256": "4fcc9528951e853edc2419d27b03e6ef994d5e58906a462798d596fcebe584e4",
+          "octets": 23948
+        },
+        "Test/preuves_paie893/paie893_restauration.xml": {
+          "sha256": "78f761faeff783c6a9429c9f19efd4b6cb88e079c591bee757995fba7dd28d55",
+          "octets": 4858
+        },
+        "Test/preuves_paie893/paie893_restauration_coffre.xml": {
+          "sha256": "bb6514890d10ae21cc101b68723230d1d1658dde8af00f725b85afd9f0b891d4",
+          "octets": 388
+        },
+        "Test/preuves_paie893/paie893_restauration_corrige.xml": {
+          "sha256": "b2232b3dc88c9d027dec7a793da7b61dc783ed77190bb20b97ac89510ba7523d",
+          "octets": 386
+        },
+        "Test/preuves_paie893/paie893_ui.xml": {
+          "sha256": "ccf2a8023e9e559012b0462f0bfd80708d877ae35b2f59a7146d6a6dc911f9bd",
+          "octets": 2903
+        },
+        "Test/preuves_paie893/restauration_coffre85.json": {
+          "sha256": "3a156243fc36657371d30cd7dee0356b164c83eb5f507d0ccbe168b0a063624d",
+          "octets": 417
+        },
+        "Test/preuves_paie893/restauration_native_paie.json": {
+          "sha256": "f970b6ca8e46e32882d0ae35325ee2bb7b089284731b70658470d12fcb8f899b",
+          "octets": 371
+        },
+        "Test/preuves_paie897/paie897_cible.xml": {
+          "sha256": "6593589aeca89563a64190c8217a9bb1975f2ea06f7c79ffe099369d521bfc31",
+          "octets": 9105
+        },
+        "Test/preuves_paie897/paie897_concurrence.xml": {
+          "sha256": "102018cd0e9469971cb77fcf1596461c0f53f0771559ca3a6abbe95099df7920",
+          "octets": 635
+        },
+        "Test/preuves_paie897/paie897_edge.xml": {
+          "sha256": "8a8082e2d27f08e8c3c98c768645b22b776e5f902ea491c8a0a3fb919b602cab",
+          "octets": 524
+        },
+        "Test/preuves_paie897/paie897_final.xml": {
+          "sha256": "ca9ffb4946a4f536cf7eb53f6acfca0c413e81d7d4668188976caeb022389eb8",
+          "octets": 31229
+        },
+        "Test/preuves_paie897/paie897_reprise.xml": {
+          "sha256": "2a241e69e64fbb2c9333829f2c6069c22cc0f533c45d473d1196d4cee3665715",
+          "octets": 378
+        },
+        "Test/preuves_paie897/restauration_native_paie.json": {
+          "sha256": "35da383634bc71208e923ffb72d2b61c18402afd1c894f3b29823a9f4209d99d",
+          "octets": 371
+        },
+        "Test/preuves_paie899/paie899_cible.xml": {
+          "sha256": "76d8af68df71e0e8c8f459379e7cdf0a5be5224c1f705f9975bee56f213d2e45",
+          "octets": 6064
+        },
+        "Test/preuves_paie899/paie899_edge.xml": {
+          "sha256": "fea5d13c797061e27baa49a05c43589ea40e7adb5e6c57055d41395f42254578",
+          "octets": 520
+        },
+        "Test/preuves_paie899/paie899_final.xml": {
+          "sha256": "cab2af0af3935917d4fa14ccf9f5954e330e676008c4d76bf0746491e88ba82b",
+          "octets": 38114
+        },
+        "Test/preuves_paie899/restauration_native_paie.json": {
+          "sha256": "3db8b919ae4c20d66a852c908f4f24db55b483f58370c4a5ad7b3ae7cc3006f9",
+          "octets": 371
+        },
+        "Test/preuves_paie901/paie901_cible.xml": {
+          "sha256": "df0ae2e9f1d0b9b5350d460fae337119506e76c71b10f8f4d03d742d986f2d04",
+          "octets": 7065
+        },
+        "Test/preuves_paie901/paie901_edge.xml": {
+          "sha256": "e8680a3205e5dc0438374f8c3d6890a0a32cfdfe91ca05b7c429094b01fb7dea",
+          "octets": 538
+        },
+        "Test/preuves_paie901/paie901_final.xml": {
+          "sha256": "e5347fbfa77ce127c94dd9f5645201b2e88e3a2c89e97f761b8bc18fd1344487",
+          "octets": 45364
+        },
+        "Test/preuves_paie901/restauration_native_paie.json": {
+          "sha256": "c8e719bb6d48a5693461e1ca52f96b533c0ff49a14f97bb364143b572fc8297e",
+          "octets": 371
+        },
+        "Test/preuves_personnel871/constats.json": {
+          "sha256": "85d0ac56aed04887089cea96f9dc9810a77e7a9aa57442158a5a64a2b247c614",
+          "octets": 934
+        },
+        "Test/preuves_personnel871/personnel871_api_pg.xml": {
+          "sha256": "702d5b0c4b7affacd6a59e009028f036d43e236c9561ddfc831040cbe50e4e9e",
+          "octets": 18263
+        },
+        "Test/preuves_personnel871/personnel871_constats.xml": {
+          "sha256": "5cf8e8e5a837dcdac7603ae11498988c7c2636d332ec4ee87770578cba74e0a8",
+          "octets": 653
+        },
+        "Test/preuves_personnel871/personnel871_dependances.xml": {
+          "sha256": "6ed3666ad44732e306663949cba004d69e446a372b23f7af96622ec349c824fc",
+          "octets": 4319
+        },
+        "Test/preuves_personnel871/personnel871_navigateur.xml": {
+          "sha256": "ea16cc29ba19881c42208948219d7a88fe19e42c27fb8dc5f99c5dab8862329d",
+          "octets": 1197
+        },
+        "Test/preuves_personnel871/personnel871_unitaires.xml": {
+          "sha256": "9162e9127d7c84e5cfb67cd73c64f347db1ebc85e908c28e4bb2633b1649c715",
+          "octets": 9089
+        },
+        "Test/preuves_personnel873/personnel873_cible.xml": {
+          "sha256": "4598b795663b512fe00ec63765df231e490e632865f5d0a15d6750f4c39f23c1",
+          "octets": 9143
+        },
+        "Test/preuves_personnel873/personnel873_connexes.xml": {
+          "sha256": "8c95a695c91256aebf84a4ab1a7cf87306ac0ea6b7541885c4a187f65551b73d",
+          "octets": 21017
+        },
+        "Test/preuves_personnel873/personnel873_deploiement.xml": {
+          "sha256": "7aa087e7f17f38e2be0550755e94b0b3524553b7b6b55bac4476524c04708be9",
+          "octets": 709
+        },
+        "Test/preuves_personnel873/personnel873_edge_1440_preuve.json": {
+          "sha256": "bf7404120627a2fe8041e30394e0087296865d74fd30874db492de26edeaed3c",
+          "octets": 250
+        },
+        "Test/preuves_personnel873/personnel873_edge_390_preuve.json": {
+          "sha256": "65422e299f1a39a26422f4f7eb9d2015121a0aedab61c9cdae6d9aeab63acfa8",
+          "octets": 249
+        },
+        "Test/preuves_personnel873/personnel873_edge_details.xml": {
+          "sha256": "27ea2f170da6af402f44e336edf54ba0ba85361304a97fc7c6cb31cf1d28468d",
+          "octets": 9157
+        },
+        "Test/preuves_personnel873/personnel873_edge_reproduction.xml": {
+          "sha256": "cbf42402cfab8debfeec420854f724e365c6c690e4b443fb3ea801e6adb6d931",
+          "octets": 30951
+        },
+        "Test/preuves_personnel873/personnel873_final.xml": {
+          "sha256": "64f4a611c7c4a5205716bc47b8d1bb23a22767639ff5fa96d99a8b960c0c7622",
+          "octets": 4140
+        },
+        "Test/preuves_personnel873/personnel873_metadonnees.xml": {
+          "sha256": "db4a176e96f7a598dcfc6b415458488bedbe8bfe7e0a44e3ca60bf99732f24e7",
+          "octets": 563
+        },
+        "Test/preuves_personnel873/personnel873_reprise.xml": {
+          "sha256": "975eaf044444f0d20b79938d6a00545d594d6e01c09ec43442f16568d3fe9ae3",
+          "octets": 3571
+        },
+        "Test/preuves_personnel873/personnel873_scanner.xml": {
+          "sha256": "96c0d25b6fb6b8e5091966c70894e20fb174aa5caef8b0078b96a71d4599f965",
+          "octets": 3178
+        },
+        "Test/preuves_personnel873/personnel873_ui_historiques.xml": {
+          "sha256": "4945488d67c732dbacbc6f3c1770c417823ab594d483b21dd2e93d6099a192fe",
+          "octets": 1197
+        },
+        "Test/preuves_personnel873/personnel873_utilisateurs.xml": {
+          "sha256": "08d77012af9c21587471afe224bf1c06ccade5528555ee8baa49b2fff290829e",
+          "octets": 532
+        },
+        "Test/preuves_personnel875/personnel875_cible.xml": {
+          "sha256": "5a544cb9ef66b10654638cd8c6b4a9cf789575302fb3eaf1feae2643061503f0",
+          "octets": 51755
+        },
+        "Test/preuves_personnel875/personnel875_connexes.xml": {
+          "sha256": "eb0c31803b98764ffc17c3d937e5110e72ba630ca2181894ce0af523f9204daa",
+          "octets": 18728
+        },
+        "Test/preuves_personnel875/personnel875_diagnostic.xml": {
+          "sha256": "88b2d2c1af1c76de1b38ff5e11fc2c4e4ff84f0ac152431c3bb48eb8091e46d7",
+          "octets": 522
+        },
+        "Test/preuves_personnel875/personnel875_edge_1440_preuve.json": {
+          "sha256": "bf7404120627a2fe8041e30394e0087296865d74fd30874db492de26edeaed3c",
+          "octets": 250
+        },
+        "Test/preuves_personnel875/personnel875_edge_390_preuve.json": {
+          "sha256": "65422e299f1a39a26422f4f7eb9d2015121a0aedab61c9cdae6d9aeab63acfa8",
+          "octets": 249
+        },
+        "Test/preuves_personnel875/personnel875_final.xml": {
+          "sha256": "27b07ca1492de4dcf37ed9f55b1414f28e1f031e6abed83a7a777fa84c6b966e",
+          "octets": 9365
+        },
+        "Test/preuves_personnel875/personnel875_qualification.xml": {
+          "sha256": "59d125c35ed84c4e70fdd7f83b98ca22025a26bcedea96d6dfde519505d7f69c",
+          "octets": 10169
+        },
+        "Test/preuves_personnel875/personnel875_reprise.xml": {
+          "sha256": "6ea4c6b0d2f2437af79654784c1484ef04f4b968186b55396ec7788c2ea3ed30",
+          "octets": 543
+        },
+        "Test/preuves_personnel877/personnel877_cible.xml": {
+          "sha256": "c26239a7fd7daa08dc3350e72a43a3d18e5bcd0b63bde98a82396b8ca4db1afe",
+          "octets": 5686
+        },
+        "Test/preuves_personnel877/personnel877_connexes.xml": {
+          "sha256": "c1cdbbe3dc7947f91b85c639241fa48880bb5db7760ac4121d844187339f2020",
+          "octets": 28652
+        },
+        "Test/preuves_personnel877/personnel877_conservation.xml": {
+          "sha256": "e29c3dbe9bf484c2796b0d2ee4bd20fd938a054561ae9bbeefe376c54cffc792",
+          "octets": 10472
+        },
+        "Test/preuves_personnel877/personnel877_conservation_final.xml": {
+          "sha256": "d1d4f63887bc3a74f078b8146153d84c7fd67daf1faeebaf5796f1bbf2ca2d1d",
+          "octets": 375
+        },
+        "Test/preuves_personnel877/personnel877_edge_1440_preuve.json": {
+          "sha256": "bf7404120627a2fe8041e30394e0087296865d74fd30874db492de26edeaed3c",
+          "octets": 250
+        },
+        "Test/preuves_personnel877/personnel877_edge_390_preuve.json": {
+          "sha256": "65422e299f1a39a26422f4f7eb9d2015121a0aedab61c9cdae6d9aeab63acfa8",
+          "octets": 249
+        },
+        "Test/preuves_personnel877/personnel877_final.xml": {
+          "sha256": "08182c538e65746dc9beb447bc260f2677dfbb13973a3af176c21fa603c262fe",
+          "octets": 6825
+        },
+        "Test/preuves_personnel877/personnel877_qualification.xml": {
+          "sha256": "3e63837a2f239e7af2c933e65f68223f707eb15aaf106dddcb41fd1b2020fe0c",
+          "octets": 6694
+        },
+        "Test/preuves_personnel877/personnel877_reprise.xml": {
+          "sha256": "bbee72b6bd8479b4ee893281fc92e3b486b9464f48ef9e02208ef9e1d5ceb9f4",
+          "octets": 513
+        },
+        "Test/preuves_personnel877/personnel877_unitaires.xml": {
+          "sha256": "ae57bb7df911a82db97635437dcaa88b73327d46dd127f08126b8a51acafa923",
+          "octets": 4173
+        },
+        "Test/preuves_personnel879/personnel879_1440_preuve.json": {
+          "sha256": "23e1962fb4d51a90a250b05db11536df0b38f49f51f863cba1b0587e8c8f5fe7",
+          "octets": 389
+        },
+        "Test/preuves_personnel879/personnel879_390_preuve.json": {
+          "sha256": "f13e511ea220e16441b21a8fbfba959bac9b92b7a77711959831905bad1db281",
+          "octets": 388
+        },
+        "Test/preuves_personnel879/personnel879_admin.xml": {
+          "sha256": "97f1c8607ff092479186ea60498adb8e8c513037731b88e6c86e12ef9074f44e",
+          "octets": 526
+        },
+        "Test/preuves_personnel879/personnel879_base.xml": {
+          "sha256": "a2508de868e1708bc699c67c4f749d69e0c1e2b544de97baadb41cb358eb8361",
+          "octets": 643
+        },
+        "Test/preuves_personnel879/personnel879_donnees.xml": {
+          "sha256": "0a60d2738042bd42c55df3b37526011c8bd2fcbc42a68a3534c71f740f8488e7",
+          "octets": 1493
+        },
+        "Test/preuves_personnel879/personnel879_final.xml": {
+          "sha256": "ab0f3fce6a161bb9b9414c57a5d4d3029368fd29f578251379d25cf6b42aaf37",
+          "octets": 2326
+        },
+        "Test/preuves_personnel879/personnel879_inactif_apres.xml": {
+          "sha256": "02b055340815275430c3a9bb24d0ba77fa127fbae5e954ca6fa5a611df9b10f4",
+          "octets": 393
+        },
+        "Test/preuves_personnel879/personnel879_inactif_avant.xml": {
+          "sha256": "fe20625e6fc730df04e3e41819fda541162e6f1317c90e128818c1693d67e02a",
+          "octets": 1680
+        },
+        "Test/preuves_personnel879/personnel879_integration.xml": {
+          "sha256": "ee306445e690daf0354cc19562c6f1de6ee5bc9b7d8f5c4b99c0d2f78bd42d3e",
+          "octets": 644
+        },
+        "Test/preuves_personnel879/personnel879_nonreg.xml": {
+          "sha256": "30970ede82c62a64ca26de3775382214cd8c33365be928d5fce69784d499aeb0",
+          "octets": 35231
+        },
+        "Test/preuves_personnel879/personnel879_premier.xml": {
+          "sha256": "55877040910e2cda2dff64d833981e7a500f15479293e4dfe485c52834c00c0f",
+          "octets": 5870
+        },
+        "Test/preuves_personnel879/personnel879_reprise.xml": {
+          "sha256": "f49718a79e9141e68f27c819e3778c41fe05aefcd4ee7d86bc79595b2b93030d",
+          "octets": 535
+        },
+        "Test/preuves_personnel879/personnel879_selecteurs.xml": {
+          "sha256": "29b8beb5fd38d5d62a04310a0597524cccbc79b729d286b0e30a11642bf431b8",
+          "octets": 382
+        },
+        "Test/preuves_personnel881/personnel881_1440_preuve.json": {
+          "sha256": "468981c5bdee9a24362250f157c5069b8669fda3e505a3861787debf2c411fed",
+          "octets": 221
+        },
+        "Test/preuves_personnel881/personnel881_390_preuve.json": {
+          "sha256": "b30f2d944ea1844766c182f718cc64886b9f5d382819e2b47859a3c016443c11",
+          "octets": 220
+        },
+        "Test/preuves_personnel881/personnel881_api.xml": {
+          "sha256": "06bcc5596159fa811f4b634c87f08d276563defd5aacaaf1a6ca76c0d81b2b17",
+          "octets": 2099
+        },
+        "Test/preuves_personnel881/personnel881_api_apres.xml": {
+          "sha256": "046d602dc13f78eb6f73b0598d0d0c18d7ba380e2b6f46dc35be813ad4decadd",
+          "octets": 4595
+        },
+        "Test/preuves_personnel881/personnel881_auth.xml": {
+          "sha256": "ccfcb0da5763f0c13c78894b8d6cb939c2db00cca7652b221778e263245a557f",
+          "octets": 17177
+        },
+        "Test/preuves_personnel881/personnel881_cible.xml": {
+          "sha256": "47e1b6994a114e3493f576b357bcbff71b266e9d645dd6bfbb8e8e92dbe18f9f",
+          "octets": 7144
+        },
+        "Test/preuves_personnel881/personnel881_final.xml": {
+          "sha256": "e5f98a9ba8f76f0616163e0d8f6f4703833d8dc8de7273a56eb75fbeb885dac7",
+          "octets": 6272
+        },
+        "Test/preuves_personnel881/personnel881_nonreg.xml": {
+          "sha256": "16c3951c0e858c201cc5c0a0c0ea50752301e345d17d676b02016c1d6bc3e00f",
+          "octets": 232
+        },
+        "Test/preuves_personnel881/personnel881_nonreg_final.xml": {
+          "sha256": "c33434346096ece238cdc803b68bf4ff20c05f9481af86b31b80219be3007d14",
+          "octets": 51879
+        },
+        "Test/preuves_personnel881/personnel881_qualification.xml": {
+          "sha256": "196313a4190be1ea8fe88fd6d929d8a4892c2bed997a1b0c9a66123164f2c53a",
+          "octets": 6398
+        },
+        "Test/preuves_personnel881/personnel881_reseau.xml": {
+          "sha256": "c7fdbb3a7acf5d2730edc256bd3ca6451913977a85f73fbeb46656938e3e699a",
+          "octets": 3195
+        },
+        "Test/preuves_personnel881/personnel881_ui_apres.xml": {
+          "sha256": "1ddb6b68513b8994e7009a2bc120eef43032a44c62224258430faea0497479d3",
+          "octets": 519
+        },
+        "Test/preuves_personnel881/personnel881_ui_diagnostic.xml": {
+          "sha256": "abb8caeb898b407f7b0d52d7eb31ddd6b0ea3242c7f0820883dc22d61433a2c4",
+          "octets": 4026
+        },
+        "Test/preuves_personnel883/personnel883_api.xml": {
+          "sha256": "6a08868aa10c0500d226f475fbd315e49d09429de74351b61f4de9036f5ec6c3",
+          "octets": 1242
+        },
+        "Test/preuves_personnel883/personnel883_contrat_avant.xml": {
+          "sha256": "a863dd16319d54256df172d59476ad73f2fe2717b906e01f07eb0d45b40f663a",
+          "octets": 2400
+        },
+        "Test/preuves_personnel883/personnel883_expire_avant.xml": {
+          "sha256": "129fb8216be5576d88809c5a032a8b404023dc4a56b49014d4d619311c59d1c6",
+          "octets": 2577
+        },
+        "Test/preuves_personnel883/personnel883_final.xml": {
+          "sha256": "a27bb4090c6e1f624de5487f12ece55e701dbe045a2ecedd13d2f59cd2d914af",
+          "octets": 1502
+        },
+        "Test/preuves_personnel883/personnel883_nonreg.xml": {
+          "sha256": "c52986d960ae8444a5fc7b8bd13fe8622c314963e790f3fcdd0ad134e370b623",
+          "octets": 58033
+        },
+        "Test/preuves_personnel883/personnel883_qualification.xml": {
+          "sha256": "3725dc830d9c80161b4d029de4ebaf316f78c8f6f73a44c40b5f875ea6fcf0af",
+          "octets": 1642
+        },
+        "Test/preuves_personnel883/personnel883_qualification_finale.xml": {
+          "sha256": "1595ad447d706222c7008b2fd80b6a28bf4967bd7cbbca56f7437027e904900a",
+          "octets": 4130
+        },
+        "Test/preuves_personnel885/personnel885_cible.xml": {
+          "sha256": "49d05660782d0889b7bd6fd1407467dd6842fc621443d80488ca208a9669ac5d",
+          "octets": 2889
+        },
+        "Test/preuves_personnel885/personnel885_final.xml": {
+          "sha256": "06af77f73898b829810441942a5940b55f5832e24ea11932d89b1447a22bf0ac",
+          "octets": 6686
+        },
+        "Test/preuves_personnel885/personnel885_flux.xml": {
+          "sha256": "fdb3067d6e91281579fd5a22298444faa48a5bf77da552889eb4e57494432cc7",
+          "octets": 2621
+        },
+        "Test/preuves_personnel885/personnel885_reprise.xml": {
+          "sha256": "7200daf06188221aa22e4c0921da891b55e6ea2dbfae9a89e63579a623d49152",
+          "octets": 374
+        },
+        "Test/preuves_personnel887/personnel887_api.xml": {
+          "sha256": "bb9548264503b417c0234a40bce64680b79673f238a00a7cffbd5ab17430bb3c",
+          "octets": 1394
+        },
+        "Test/preuves_personnel887/personnel887_final.xml": {
+          "sha256": "1cf5780640e176ce68ccf5a0c4bb4a8b6c48b6d2f1e804fc14d2f49285c19abe",
+          "octets": 64030
+        },
+        "Test/preuves_personnel887/personnel887_restauration.xml": {
+          "sha256": "2fe3982f66216124f06243227b8b716e07d8e0b4892c836dc80e45178e3d8112",
+          "octets": 388
+        },
+        "Test/preuves_personnel887/personnel887_ui.xml": {
+          "sha256": "d22bfe0cf83503759956dddde89f2946e61ee1e57536554557a0fdd4014e6903",
+          "octets": 1753
+        },
+        "Test/preuves_personnel887/personnel887_ui_justificatif.xml": {
+          "sha256": "1661701f9c0e1de58bf14f32af8d5bd2190ef1d6fad6349002ae115129516f4c",
+          "octets": 468
+        },
+        "Test/preuves_personnel887/restauration_native_85_tables.json": {
+          "sha256": "41f2fd96a9dab89d6e19570d5204f9b7f4620adccac6950bd92a65847a0553cf",
+          "octets": 417
+        },
+        "Test/recette_coffre887.py": {
+          "sha256": "89424dfdd83c53a0448b21f3e46e84816aa8c8750d17758b86962a01ee8a9fd6",
+          "octets": 14288
+        },
+        "Test/recette_restauration_consolidee_084.py": {
+          "sha256": "5e5be36871f40af290eaa328f5c902edf11431d16af76e36236e906e741e3de0",
+          "octets": 15650
+        },
+        "Test/test_audit_personnel_paie871_isole.py": {
+          "sha256": "a44379091a86ff70de215b94de8a4ed86ca5a7ee74791e4aeedcbeaa66cfb1a7",
+          "octets": 4531
+        },
+        "Test/test_e2e_paie889_catalogue_isole.py": {
+          "sha256": "e3c34e42b775756d2cecff6d276507ad52769b1133b1c3f425bc263514ae30eb",
+          "octets": 8474
+        },
+        "Test/test_e2e_paie891_variables_isole.py": {
+          "sha256": "252bc106586fdbd47635b38815f023b585ebaefc26453e3855540b841700a1ed",
+          "octets": 6292
+        },
+        "Test/test_e2e_paie893_campagnes_isole.py": {
+          "sha256": "a4f4ffe9e94bc60da01bf8b06c6d9274ab116f219f6294689ac998c58ee56a39",
+          "octets": 5214
+        },
+        "Test/test_e2e_paie897_social_isole.py": {
+          "sha256": "681c45a9d577572f9f1ae9f9f1cbb9bd8502f0e49fe897423de613283a77242a",
+          "octets": 7619
+        },
+        "Test/test_e2e_paie899_social_isole.py": {
+          "sha256": "20c59f4cc4c3968dbda0e12423eaf9a43fbe45ed3ef7482ab922363ba9f9b4cb",
+          "octets": 6202
+        },
+        "Test/test_e2e_paie901_ir_annuel_isole.py": {
+          "sha256": "eadc8029fc789c2cfa0f32681f22cf76af886f91ea9bc680d5bd5522978deece",
+          "octets": 5795
+        },
+        "Test/test_e2e_personnel879_isole.py": {
+          "sha256": "024c359ba7410f8c088d1430e603f9087b1cd3585c2280bc5d4b15f9aa558d5d",
+          "octets": 26423
+        },
+        "Test/test_e2e_personnel881_isole.py": {
+          "sha256": "25078f37ad0571a3c67cadbd1d45ff01ad887ee74c8e27b0baa4af75f2f8cf61",
+          "octets": 8731
+        },
+        "Test/test_e2e_personnel883_isole.py": {
+          "sha256": "db6a722b05809b2fe339876e1a2adea0f2f8c72d8f4ec8e394c9e589b0e24a4f",
+          "octets": 5591
+        },
+        "Test/test_e2e_personnel887_isole.py": {
+          "sha256": "41816546c88b81e297a309059024050b7d54ba9671206ab26c5bf18134022f7f",
+          "octets": 8363
+        },
+        "Test/test_e2e_personnel_habilitations873_isole.py": {
+          "sha256": "23667c032ff2ba96a783e38b0b0ce1889db76b24d7bc707a8ff5ead43b361fc7",
+          "octets": 4372
+        },
+        "Test/test_fact11_production_hardening.py": {
+          "sha256": "4b99cb24ff9a451b8d105c947e723ba246f486537eb3004bfd89095f11e59215",
+          "octets": 7305
+        },
+        "Test/test_paie889_catalogue_isole.py": {
+          "sha256": "916c20319b21609bfaac3f05a268ea3a7fa11aff1b82e4b8fa21c06e056c8816",
+          "octets": 10436
+        },
+        "Test/test_paie889_catalogue_unitaire.py": {
+          "sha256": "941a640c76ffb7e6921bbcadb40707addae8a5ce67eaa7a6865f1aac72337565",
+          "octets": 2706
+        },
+        "Test/test_paie891_variables_isole.py": {
+          "sha256": "caef4ce21d2ff11d93419ffcaeed3a1d7d724559a6504e9162c50870ff866b40",
+          "octets": 10665
+        },
+        "Test/test_paie891_variables_unitaire.py": {
+          "sha256": "6807fb95a2ac8ee01850f181bdec4ca43abdf7e1064f419d157262d01745da83",
+          "octets": 1968
+        },
+        "Test/test_paie893_campagnes_isole.py": {
+          "sha256": "a5a6c7606c351a08d509b6877ab0e24cf6e59d8b47dd9d42035149baf500f25c",
+          "octets": 8389
+        },
+        "Test/test_paie893_campagnes_unitaire.py": {
+          "sha256": "68c62abf6f4767069c2836ca23fba409176d417938a72a27b2ac38d78c89b32a",
+          "octets": 1868
+        },
+        "Test/test_paie893_restauration_isole.py": {
+          "sha256": "24dc55313c8119382751a1910891f224265e943ace2e297464a79d2e7a0db0de",
+          "octets": 4539
+        },
+        "Test/test_paie897_concurrence_isole.py": {
+          "sha256": "fc58a75f960f94a703e32e85a5ea1593bff0c909417ec6351e62d3bdfd539378",
+          "octets": 3024
+        },
+        "Test/test_paie897_restauration_isole.py": {
+          "sha256": "94fc33d792e12cdadcfd2cd6def1a718f369821af328664ed1ce18d649dac135",
+          "octets": 4989
+        },
+        "Test/test_paie897_social_isole.py": {
+          "sha256": "3818f2b6c686011ec7182b94db05a839e5784a095bcc74177314f99f01cc7b39",
+          "octets": 7214
+        },
+        "Test/test_paie897_social_unitaire.py": {
+          "sha256": "c8f975a335db52abb3db2fa4d4a7e3f34d4afeec1c6751a15f2970b634d1a113",
+          "octets": 3764
+        },
+        "Test/test_paie899_restauration_isole.py": {
+          "sha256": "0ce66596fc3ca337eadbc33152a505fa9bfee65ca69deb1b6cfc8276466d2947",
+          "octets": 5328
+        },
+        "Test/test_paie899_social_isole.py": {
+          "sha256": "4e53d62fad6554539a7817e2494a7179d02e5ec57c11b8f5d29c0fd2052bd7db",
+          "octets": 10476
+        },
+        "Test/test_paie899_social_moteur_unitaire.py": {
+          "sha256": "49b8e8a1c6ccee37302769f4f32148face6e882d165862169e2789320df5cea8",
+          "octets": 5159
+        },
+        "Test/test_paie901_ir_annuel_isole.py": {
+          "sha256": "47d524d9924f6e8924ddb5c78081dd1909f8d351d8f2c1b88239da4b41fe738d",
+          "octets": 4502
+        },
+        "Test/test_paie901_ir_annuel_unitaire.py": {
+          "sha256": "9de4667efddf407f90cc523715abd7830a4835eb4f348c80c849fd6c063f660b",
+          "octets": 3195
+        },
+        "Test/test_paie901_restauration_isole.py": {
+          "sha256": "04a773237765686c5b928dd9f92c6bdae563d3f098ebffbb38f9283944114764",
+          "octets": 5764
+        },
+        "Test/test_personnel879_donnees_isole.py": {
+          "sha256": "ec9f6b020a382cf2e37ef0e57899bcc6a094548a1bc6d6ae3b2b51f99d1e3da3",
+          "octets": 4287
+        },
+        "Test/test_personnel881_profil_isole.py": {
+          "sha256": "c36c1ddc6503a0cd36995e587f1b3720ed3fcb4a281d73a2f464c406993c0d78",
+          "octets": 6865
+        },
+        "Test/test_personnel881_profil_unitaire.py": {
+          "sha256": "c8141debe67227563233f10a456a327f37af13c8d3ef20c218b0b16b746e62b5",
+          "octets": 1380
+        },
+        "Test/test_personnel883_regimes_isole.py": {
+          "sha256": "4c1ddd14ca30bb77b54f0b17fa994060e15b84ad59b6177f8e61c95d370f33e0",
+          "octets": 7732
+        },
+        "Test/test_personnel885_cles_ops.py": {
+          "sha256": "b4ca1c8ced9b9bcc55aa20514166f8ee9295e03c0a5cd9fadc695442d81bb327",
+          "octets": 1673
+        },
+        "Test/test_personnel885_coffre_isole.py": {
+          "sha256": "4298651d8c8797559cf8f4bc06df36fe425c3ba30acafac23e9d3839e3d49c18",
+          "octets": 7665
+        },
+        "Test/test_personnel885_crypto.py": {
+          "sha256": "092c43341512531c9b15cb1e86ad29d8f394a3e23f803b385999fa0c87330c77",
+          "octets": 3787
+        },
+        "Test/test_personnel887_banque_isole.py": {
+          "sha256": "84a1839c7f55795a1459424e73de3db5d5f579761ffde44a5604bacdd0d9dec5",
+          "octets": 9208
+        },
+        "Test/test_personnel887_restauration_isole.py": {
+          "sha256": "95fb9a5f982d4b0546f500dffc7de5ff47d682a34315c67b976fd7bfd393c3d1",
+          "octets": 4868
+        },
+        "Test/test_personnel_dossiers875_deploiement_isole.py": {
+          "sha256": "21656bd6480acef1ce039f07e7097441a7fecacd7d6b493bb3903b6059a92f98",
+          "octets": 2863
+        },
+        "Test/test_personnel_dossiers875_isole.py": {
+          "sha256": "858b8cb34d6e7cd8ea44b023f6b577874fc83d7142ab0ff17c54de5423e4fbe5",
+          "octets": 18464
+        },
+        "Test/test_personnel_dossiers875_unitaire.py": {
+          "sha256": "cdbf4baf58219fff070edab202211344fd84b60aa473f12c4f7bab9f215f2bda",
+          "octets": 2104
+        },
+        "Test/test_personnel_habilitations873_compat_isole.py": {
+          "sha256": "ab7eeec644efac586ba68cacaa7bd08543809bcf7cf0d377893fd800c745ea86",
+          "octets": 2392
+        },
+        "Test/test_personnel_habilitations873_isole.py": {
+          "sha256": "ce796b3acf7d713ff949f92006eb3f6c9f5fad37f1807050b02d57eab4fb650b",
+          "octets": 16453
+        },
+        "Test/test_personnel_workflow877_deploiement_isole.py": {
+          "sha256": "68d1c1812c0dd6b12eb454c9bfd15beba90467df2084d3fe64b66e60077fa9c5",
+          "octets": 1432
+        },
+        "Test/test_personnel_workflow877_isole.py": {
+          "sha256": "8db654c86912f25fef7a4ed1676d0c20f33dad231feca99283c87615d4ac9126",
+          "octets": 19603
+        },
+        "Test/test_personnel_workflow877_unitaire.py": {
+          "sha256": "bf72e25a6b7c26943245aa2dd4ab8d3e91c444f29548d466b6f265c27146d7cf",
+          "octets": 3027
+        },
+        "Test/verifier_cahiers_paie903.py": {
+          "sha256": "f91e91fbed0cd6d0094b445d54509e80f3dabb4bde5c0bb43476f09314879593",
+          "octets": 4501
+        },
+        "docs/audit/MATRICE_COUVERTURE_HISABPRO.md": {
+          "sha256": "0a3cda9498b9f8db24149dde1dce3b2693bfdf35e9659f11502945f2faac397f",
+          "octets": 278946
+        },
+        "docs/personnel-paie/BILAN_SESSION_PAIE_20261028.md": {
+          "sha256": "0fb7ce886519ed9869d2bbfe3501586b2e2e529231befcdfb4d1e70971aece80",
+          "octets": 5222
+        },
+        "docs/personnel-paie/BILAN_SESSION_PAIE_897_903.md": {
+          "sha256": "cf4c05514d643b7d81f5b1b4ad79d0d463ddb19ba6d955c034e6d3cbc624e5c3",
+          "octets": 5836
+        },
+        "docs/personnel-paie/CAHIER_RECETTE_PERSONNEL_HISABPRO_879.pdf": {
+          "sha256": "ca17d9e924818b1370a5e4140d6b4bc145934b7c4044c32ea13b587de4ff65ea",
+          "octets": 278650
+        },
+        "docs/personnel-paie/CAHIER_RECETTE_PERSONNEL_HISABPRO_883.pdf": {
+          "sha256": "8e1503f09b82a949ab1ca4faaad2ac91324023308c5aa973185c64647bc7c79e",
+          "octets": 82333
+        },
+        "docs/personnel-paie/CAHIER_RECETTE_PERSONNEL_HISABPRO_887.pdf": {
+          "sha256": "487a8c452b8378bf650b806b9f28b57e8c7a1ad706604076fcf514a462be066e",
+          "octets": 102731
+        },
+        "docs/personnel-paie/CAMPAGNES_BRUT_893.md": {
+          "sha256": "3d31f6acb6ce58f679917b8cbb59f29cf395b62272576ea07a001cad172969ec",
+          "octets": 6698
+        },
+        "docs/personnel-paie/CAS_CALCUL_SOCIAL_PAIE_899.json": {
+          "sha256": "71b593e38c0d7d53ab9b7dd3e8234a618a2399d342e44ddda41ac9afa0a43f9b",
+          "octets": 5766
+        },
+        "docs/personnel-paie/CAS_CAMPAGNES_PAIE_893.json": {
+          "sha256": "471b932894f625eefcbdc47f88057bd8aea9bb0075c0cfc087c0ecc0744893d4",
+          "octets": 4098
+        },
+        "docs/personnel-paie/CAS_IR_ANNUEL_PAIE_901.json": {
+          "sha256": "615615cf30d622b663f0d56e19533adf732148717e01659e6159f04f033c3ff7",
+          "octets": 4371
+        },
+        "docs/personnel-paie/CAS_RECETTE_PERSONNEL_879.json": {
+          "sha256": "baaf305d1427f7eab5fbcd7ccae0b60973aba3f155c50b3cf1fd52a43e1d6704",
+          "octets": 30253
+        },
+        "docs/personnel-paie/CAS_RECETTE_PERSONNEL_883.json": {
+          "sha256": "dfec6cda4cea2c2779297bfe5018f454210f5c7d1c3bb6dcaa8ef6f65ee156aa",
+          "octets": 45736
+        },
+        "docs/personnel-paie/CAS_RECETTE_PERSONNEL_887.json": {
+          "sha256": "51aca1065ae7edfae959006d8557b6b5eaf7baaed6b7280b6af447f5d38867b5",
+          "octets": 70387
+        },
+        "docs/personnel-paie/CAS_SOCIAL_PAIE_897.json": {
+          "sha256": "fddaad4e64dbc3d260480dcc01b22972db6198062b4b799b88f0a93c15091b34",
+          "octets": 4087
+        },
+        "docs/personnel-paie/CAS_VARIABLES_PAIE_891.json": {
+          "sha256": "e1bb1ec463fe5c8fba4a31a7397824cb1125ef56a789dc2e2cff58d0ed5e5e52",
+          "octets": 6390
+        },
+        "docs/personnel-paie/CATALOGUE_PAIE_889.md": {
+          "sha256": "fe2974cd9dc5a94015b1c570941b9508c092eb00d02b86f3ed818e12edb678e5",
+          "octets": 7576
+        },
+        "docs/personnel-paie/COFFRE_BANQUE_RH_887.md": {
+          "sha256": "710e30e645f2b2a2bf7bc222af8baa911e947d82238b13a9d1f3180ac71347fc",
+          "octets": 5157
+        },
+        "docs/personnel-paie/COFFRE_RH_885.md": {
+          "sha256": "e97115f8f4c142b4a17fd477f858e127a370f0ba9b98c22927d798443aab7241",
+          "octets": 6785
+        },
+        "docs/personnel-paie/COMPLEMENT_RECETTE_PROFIL_PERSONNEL_881.pdf": {
+          "sha256": "a3d42dc83a9de6db91da8b3724380f8c72f910c3fed337d3b72eb688777c583d",
+          "octets": 47174
+        },
+        "docs/personnel-paie/CONTROLE_IR_ANNUEL_901.md": {
+          "sha256": "9be2627a89aeb8d1cc6a9175bb9747fa2a31a9a79860c3f81111c7294e781b68",
+          "octets": 4031
+        },
+        "docs/personnel-paie/INSTALLATION_COPIE_PAIE_116_118.md": {
+          "sha256": "dc5c29aab0a04661a0fe6dcf8aa940c6417f6d6309d8cc2d127ca34906a21df4",
+          "octets": 4908
+        },
+        "docs/personnel-paie/JEU_CALCUL_SOCIAL_PAIE_899.json": {
+          "sha256": "0089963bcf21a2d9a6e468362881e35621bd0cac1b07bad3720dae3dba2c8840",
+          "octets": 4291
+        },
+        "docs/personnel-paie/JEU_CAMPAGNES_PAIE_893.json": {
+          "sha256": "47318740429b5e7a39e5b0bfd7e686a10c60bd00056eed703171d14b4525fd87",
+          "octets": 1084
+        },
+        "docs/personnel-paie/JEU_CATALOGUE_PAIE_889.json": {
+          "sha256": "0f8e2697ffb58524105f62b5b9737dedaa250480a422897448d95c3d7b7ecad8",
+          "octets": 2022
+        },
+        "docs/personnel-paie/JEU_DONNEES_PERSONNEL_879.json": {
+          "sha256": "0ce0f04194ba94f68fb75ffc99d97d65c8171cfa1da9951b3bea9ea78d88543f",
+          "octets": 2317
+        },
+        "docs/personnel-paie/JEU_DONNEES_PERSONNEL_883.json": {
+          "sha256": "2bf4d80ae0f08dc47fd6d9741e581eec5fed19e2dbe085a73fefd3f0ba324c78",
+          "octets": 3552
+        },
+        "docs/personnel-paie/JEU_DONNEES_PERSONNEL_887.json": {
+          "sha256": "78efe41125fae17b6b2f9060921c038fe483f90501277f83e0607ae9e70743d9",
+          "octets": 4300
+        },
+        "docs/personnel-paie/JEU_IR_ANNUEL_PAIE_901.json": {
+          "sha256": "0df19cf188393ef2ad8b697d08fe44c62538240aea629db65a2b5360c8a306ab",
+          "octets": 1952
+        },
+        "docs/personnel-paie/JEU_SOCIAL_PAIE_897.json": {
+          "sha256": "a0bef7a5076d01189aed429932161e2cfc4c1b79b0cafc4d37c667cfe86fc882",
+          "octets": 1112
+        },
+        "docs/personnel-paie/JEU_VARIABLES_PAIE_891.json": {
+          "sha256": "da30d898e5a09ef532f4ee0726d9a03ad210d16a505d8c33dd2901f94936cffe",
+          "octets": 1498
+        },
+        "docs/personnel-paie/LOT0_AUDIT_ARCHITECTURE.md": {
+          "sha256": "62c429847d2dd05533159fbb91300e0149009b38782a035db0f4c9f7a4d51dc4",
+          "octets": 10937
+        },
+        "docs/personnel-paie/LOT0_CONCEPTION.md": {
+          "sha256": "b8204a9df2a529df7cca918c206b4c566a3f0ecfdf0ce0f1de3a95abec92a755",
+          "octets": 13317
+        },
+        "docs/personnel-paie/LOT0_INVENTAIRE.json": {
+          "sha256": "032e2c53b0be4ab83765f8a2f820fde84db10fff785bb70253d0c68727bd11a6",
+          "octets": 51252
+        },
+        "docs/personnel-paie/LOT0_MIGRATIONS_ET_RECETTE.md": {
+          "sha256": "fa96b9fc279aa8c49df2390aefc93a826f7d7161de78d9111b9e76c72bdec94f",
+          "octets": 9922
+        },
+        "docs/personnel-paie/LOT0_RBAC.csv": {
+          "sha256": "809cd66d44d5afa4b273080433b786628c5e24b3f47bbd5e9cc844a845bef204",
+          "octets": 2292
+        },
+        "docs/personnel-paie/LOT0_SYNTHESE.md": {
+          "sha256": "48695e4044ae627a3e2bf6beac4d8b82804e2c56e0282d3f19a1fd3d75dc9f4a",
+          "octets": 6409
+        },
+        "docs/personnel-paie/LOT0_SYNTHESE.pdf": {
+          "sha256": "1421a9e00d42c4bd4cc7bdeed709b5c9a05f00683f6146ea7e086b1c4180792a",
+          "octets": 80150
+        },
+        "docs/personnel-paie/LOT0_TESTS_ET_REPRISE.md": {
+          "sha256": "59c06e3dc2da04d14c530c0fd4a63f4f0b16c4a88ec8ab306b9f2cf0a728d42c",
+          "octets": 4568
+        },
+        "docs/personnel-paie/LOT1A1_HABILITATIONS_873.md": {
+          "sha256": "05fb03e91209308c12e03d2effa660ce9e8ae5c4f5e44816e02349941fb4d33f",
+          "octets": 10742
+        },
+        "docs/personnel-paie/LOT1A1_RESULTATS_873.md": {
+          "sha256": "6c18af45b2f900d4455abc83ad2dca32146934185194ed083fe67e3fc1ab9078",
+          "octets": 5168
+        },
+        "docs/personnel-paie/LOT1A1_SYNTHESE_873.md": {
+          "sha256": "4048fdd18b2379b268cf7d32372c09cd8601ba0099cd08846fbd07db368e76b6",
+          "octets": 4934
+        },
+        "docs/personnel-paie/LOT1A1_SYNTHESE_873.pdf": {
+          "sha256": "8d9e339cc69e4e35bbf2387ad4e6b06456b2c38dbd2b1e085ca9178adadb2b20",
+          "octets": 79062
+        },
+        "docs/personnel-paie/LOT1A2_DOSSIERS_VERSIONS_875.md": {
+          "sha256": "230d353e85bff86a14390729545831bc8daadfd98d34bf364501a43ed18c2812",
+          "octets": 8427
+        },
+        "docs/personnel-paie/LOT1A2_RESULTATS_875.md": {
+          "sha256": "6c0a24147a2e101074014240eb09aa1833e1851a9b9066646b1e2455e740f018",
+          "octets": 6665
+        },
+        "docs/personnel-paie/LOT1A3_API_PERSONNEL_877.md": {
+          "sha256": "0c1aefd64411a79be102fab1908d0296674c2c4924b6d544b7fcddae3d7b1226",
+          "octets": 13576
+        },
+        "docs/personnel-paie/LOT1A3_RESULTATS_877.md": {
+          "sha256": "76e0184bb651c9b55a7a2c9e25cd44678a57e0c9993ea4586b1a32b0ac6d6a38",
+          "octets": 8122
+        },
+        "docs/personnel-paie/LOT1A_PLAN.md": {
+          "sha256": "dc833dbb8125461b67a59c030fa3d71eadb1f02387874d7367d0828ed2eb8cf7",
+          "octets": 5979
+        },
+        "docs/personnel-paie/LOT1BC_RESULTATS_879.md": {
+          "sha256": "16579ad515edd8d5ab8a649d719e7eae00e4c5563df399c24cb9b1106f2f99af",
+          "octets": 6044
+        },
+        "docs/personnel-paie/LOT1BC_UTILISATION_RECETTE_879.md": {
+          "sha256": "670ee246b3f8fc18f00c3a62dae1d98509740257c9fc60f915e303a9b2432adf",
+          "octets": 6102
+        },
+        "docs/personnel-paie/LOT1B_REPRISE_INTERMEDIAIRE_879.md": {
+          "sha256": "3db4cd94e3bcf6c83e072625aec9e62b97acb105bd3f073c937f7a6e4c78bab8",
+          "octets": 4891
+        },
+        "docs/personnel-paie/MODE_EMPLOI_PERSONNEL_PAIE.md": {
+          "sha256": "3f69c9818e28b0b7c1d27562442fe0a157fbbf84d8327cabdbd8b32b974fb78e",
+          "octets": 3790
+        },
+        "docs/personnel-paie/PREPARATION_COTISATIONS_3B_895.md": {
+          "sha256": "2c63a8962f7d646d0c7daaae439a77e897d7c0efd029d2eb86f622a9e02353f6",
+          "octets": 9043
+        },
+        "docs/personnel-paie/PROFIL_PERSONNEL_881.md": {
+          "sha256": "aa9ae37d6c8e4d00352ef40afc386aee883afb5e3e570c9e9733495721201527",
+          "octets": 4593
+        },
+        "docs/personnel-paie/RECETTE_CALCUL_SOCIAL_PAIE_899.pdf": {
+          "sha256": "04f3bf63f92433fb79cec1ceb5885766cd2ba40c7cdeb38e5649c33875ad673c",
+          "octets": 53330
+        },
+        "docs/personnel-paie/RECETTE_CAMPAGNES_PAIE_893.pdf": {
+          "sha256": "62f7057eca5b52dedab7582fc31376eb590c42b08eb4b7b3c66453557358e505",
+          "octets": 48966
+        },
+        "docs/personnel-paie/RECETTE_CATALOGUE_PAIE_889.pdf": {
+          "sha256": "f18f1d5a7add517c086075612635fc438218177a29ea06d54b88f54c61e78817",
+          "octets": 53092
+        },
+        "docs/personnel-paie/RECETTE_IR_ANNUEL_PAIE_901.pdf": {
+          "sha256": "f33ecbd3585b8efc396da64dd7521c5fb65024ac68c274ca6f503da74fbed1bb",
+          "octets": 49730
+        },
+        "docs/personnel-paie/RECETTE_SOCIAL_PAIE_897.pdf": {
+          "sha256": "973d85e1aec7190ef9ef0892b647b57707862bb4e0d86f5063e8551f4e0d5a41",
+          "octets": 48908
+        },
+        "docs/personnel-paie/RECETTE_VARIABLES_PAIE_891.pdf": {
+          "sha256": "0ce1924ffdd225b70cf33de3e00510a77eafb5f79d9884be748a2fc6c4aa7b0f",
+          "octets": 52390
+        },
+        "docs/personnel-paie/REFERENTIEL_SOCIAL_897.md": {
+          "sha256": "0602801c9471a837451e39cd41eba70a83b87b50471b5d87dce1c04e1048040c",
+          "octets": 5400
+        },
+        "docs/personnel-paie/REGIMES_ET_LIMITES_RH_883.md": {
+          "sha256": "caa728780926a4a6859cfeb759282151a3e61135ea8cee780894dd549abc65d9",
+          "octets": 5752
+        },
+        "docs/personnel-paie/REPRISE_IR_MENSUEL_3C2_903.md": {
+          "sha256": "3c65aae9938eb0310980253be7f4989fb2b950d933f3a4355a7dcb7810758eab",
+          "octets": 4790
+        },
+        "docs/personnel-paie/RESULTATS_PAIE_889.md": {
+          "sha256": "656c96183ca7016c6fe79b0ab5949c25c837587e1121aebd488ed347f3b5175d",
+          "octets": 4878
+        },
+        "docs/personnel-paie/RESULTATS_PAIE_891.md": {
+          "sha256": "f99d5064b976c306a13e1d3f488696ad7bb6c87cdc3f8367fed66bccc1f8b08b",
+          "octets": 4382
+        },
+        "docs/personnel-paie/RESULTATS_PAIE_893.md": {
+          "sha256": "650e7c43a50cf39eae0dc06a8f40b3d8d2a41efa3a2adc6e30d3270ac520d736",
+          "octets": 5288
+        },
+        "docs/personnel-paie/RESULTATS_PAIE_897.md": {
+          "sha256": "1763561139578ef08b143e24ce2e1760d0f583091c541970d5fb2e6bd0f1ac87",
+          "octets": 2358
+        },
+        "docs/personnel-paie/RESULTATS_PAIE_899.md": {
+          "sha256": "814f58d2b68a9b9bf99bacf0f805dcc9fbf23f668c3e298861b20927aa7ac70c",
+          "octets": 2671
+        },
+        "docs/personnel-paie/RESULTATS_PAIE_901.md": {
+          "sha256": "7909717223fe30b4a4d60fc0d189432cd42f94c2123934898f3beed436e490f3",
+          "octets": 2817
+        },
+        "docs/personnel-paie/RESULTATS_PROFIL_PERSONNEL_881.md": {
+          "sha256": "45938993cb1e6aa295937ed78b78216a7c27bd061483fcced1b8c399f59cf8ce",
+          "octets": 4085
+        },
+        "docs/personnel-paie/RESULTATS_RH_883.md": {
+          "sha256": "437af28af1e91d9b3b4e856936107cc932d4aa5b6721685e904f2a5c8aecd83e",
+          "octets": 5516
+        },
+        "docs/personnel-paie/RESULTATS_RH_887.md": {
+          "sha256": "e5a043ac80419ee218d16ae2ef3a26882414f4650a75556b435b00fa1f6b8312",
+          "octets": 5084
+        },
+        "docs/personnel-paie/SIMULATIONS_SOCIALES_899.md": {
+          "sha256": "8a121b33e384fbae3ebb39bef4988952809738106c797c8bcc9f2b780cea4a9f",
+          "octets": 6384
+        },
+        "docs/personnel-paie/SOURCES_IR_ANNUEL_901.md": {
+          "sha256": "254d2a5b2cb9cb95e6067d1d3aceb0b0aaa2ad03d13f12553b707607aedee978",
+          "octets": 3206
+        },
+        "docs/personnel-paie/SUIVI_CALCUL_SOCIAL_PAIE_899.xlsx": {
+          "sha256": "1800774f6dfcde6dd5754b220f2bcf0eb2cd3a79d7d47fb65d949f8815fbda1d",
+          "octets": 13575
+        },
+        "docs/personnel-paie/SUIVI_CAMPAGNES_PAIE_893.xlsx": {
+          "sha256": "70c9496b2e18662cf72d9acd7ad019b961524c56c33955b87176bf17e73d39cc",
+          "octets": 11384
+        },
+        "docs/personnel-paie/SUIVI_CATALOGUE_PAIE_889.xlsx": {
+          "sha256": "7b610330495f9725608d76e16e0b5a13616e95c6195b9edf6b77cf412f6d3d5f",
+          "octets": 12616
+        },
+        "docs/personnel-paie/SUIVI_IR_ANNUEL_PAIE_901.xlsx": {
+          "sha256": "2d2c60c5f02aa46d147c6b71c0e7f005c26a43f4852f4df39a217d4ae20b2499",
+          "octets": 11783
+        },
+        "docs/personnel-paie/SUIVI_RECETTE_PERSONNEL_879.xlsx": {
+          "sha256": "aab5f0a93218927d6f1a029bf0469fb3fc0c95f2fbdb4898572a95c19e2c1418",
+          "octets": 23304
+        },
+        "docs/personnel-paie/SUIVI_RECETTE_PERSONNEL_881.xlsx": {
+          "sha256": "dc8b09bb5403579bb257a9597c7b3572b389d2da6b753e7125b6905725da98bd",
+          "octets": 26626
+        },
+        "docs/personnel-paie/SUIVI_RECETTE_PERSONNEL_883.xlsx": {
+          "sha256": "9788c9898a12ac527289c56b7e755ba0ac71c4deceae3376ffa401bedc76196d",
+          "octets": 29159
+        },
+        "docs/personnel-paie/SUIVI_RECETTE_PERSONNEL_887.xlsx": {
+          "sha256": "960779c88d659ef624dc8f7dc52bfec9dd3a29cb0bdccabd960f6db1b1b661e8",
+          "octets": 36337
+        },
+        "docs/personnel-paie/SUIVI_SOCIAL_PAIE_897.xlsx": {
+          "sha256": "f1b6a4e79a1ad30e7a8ec76fc461fd0684236365652351aeaacab2c1ee8d0832",
+          "octets": 11354
+        },
+        "docs/personnel-paie/SUIVI_VARIABLES_PAIE_891.xlsx": {
+          "sha256": "e74d9ecca4dd957fd3f459fbc9fd414d0ebdcdc9efedf1a5fa2a99d1a2779fdd",
+          "octets": 12748
+        },
+        "docs/personnel-paie/VARIABLES_PAIE_891.md": {
+          "sha256": "55315df924f7ac6d8aaf4a47d333b5d0020b60c0c38623555aa205a3b349e227",
+          "octets": 6980
+        },
+        "docs/personnel-paie/jeu887/DONNEES_COFFRE_FICTIVES.json": {
+          "sha256": "1430cf874c60e4acdd99014039cd7d71b4aa582e250477cc252001fe2e382cf8",
+          "octets": 695
+        },
+        "docs/personnel-paie/jeu887/Justificatif_FICTIF_P004_A.pdf": {
+          "sha256": "d846f9fe8593d8a497932fe3febaf0b738ca80cecbd29d5d4957a32d216f30ad",
+          "octets": 2229
+        },
+        "docs/personnel-paie/jeu887/Justificatif_FICTIF_P004_B.pdf": {
+          "sha256": "3d11a4596ffcd277f30b16d973ac62e5090db1aaff3fdabcbe9b913308d7f3e5",
+          "octets": 2229
+        },
+        "docs/personnel-paie/jeu887/Trop_grand_FICTIF.pdf": {
+          "sha256": "47d85ddf6a0ad00cbfdbbf5125c3d8a25a95c8a6f85328d1d99825d6813cef86",
+          "octets": 4194305
+        },
+        "docs/personnel-paie/jeu887/Type_refuse_FICTIF.pdf": {
+          "sha256": "f23d53db15c6f1149d106c97e84fe3a8b320266bd9041ab212732336bded98ac",
+          "octets": 53
+        },
+        "docs/personnel-paie/preuves/873_1440.png": {
+          "sha256": "b059f4063025f1bda0ebf7fc03ad42b54c36113bc93a4b6108a9818775928fbd",
+          "octets": 101477
+        },
+        "docs/personnel-paie/preuves/873_390.png": {
+          "sha256": "2b13d8b871e587d8aa732724a8b046144224a47c6fc86e6626a6434b4cf484d6",
+          "octets": 45901
+        },
+        "docs/personnel-paie/preuves/879_1440_creation.png": {
+          "sha256": "8fb5170f567bee8d99a7a8cc7a3c202d92cfd47f908b67b6ac4ab8b079241504",
+          "octets": 182928
+        },
+        "docs/personnel-paie/preuves/879_1440_fiche.png": {
+          "sha256": "029c35bb4a339d567f13e82d32f368dd0614132dbcf5bca9eeb6873f0c787277",
+          "octets": 161087
+        },
+        "docs/personnel-paie/preuves/879_1440_habilitations.png": {
+          "sha256": "6e336dfb4b21b718c2dae62f465e89bf4c4bab9196c2f6de6f38c36be3db124a",
+          "octets": 141516
+        },
+        "docs/personnel-paie/preuves/879_390_creation.png": {
+          "sha256": "dcfd584f3490b8c015451cefe98620bb2dd83afe74bf16878b111dad284f2405",
+          "octets": 54848
+        },
+        "docs/personnel-paie/preuves/879_390_fiche.png": {
+          "sha256": "69a77c4a03040d9fde5b04876a6a07820590a7fd3d05c345a1300e45510f7364",
+          "octets": 70480
+        },
+        "docs/personnel-paie/preuves/879_390_habilitations.png": {
+          "sha256": "a07a99eec474b9adf01f215c6e5482fef366ec7b1f5b5ac0f122f90d6860a4d0",
+          "octets": 70964
+        },
+        "docs/personnel-paie/preuves/881_1440.png": {
+          "sha256": "8aa4f684861fac6d81618a86c6eb1de7f815b68111e8531ebe3c93d9ad109d70",
+          "octets": 88984
+        },
+        "docs/personnel-paie/preuves/881_390.png": {
+          "sha256": "d6de99eb6766ff3323d480691ce3b060003972a5cd08a6ff8d1e75916c900661",
+          "octets": 51632
+        },
+        "docs/personnel-paie/preuves/883_1440_regimes.png": {
+          "sha256": "feee6d278b36362a2e8dfcdd58e8b3dfff3dd7404d0a19cf3dbc74b02aa06f84",
+          "octets": 147450
+        },
+        "docs/personnel-paie/preuves/883_390_regimes.png": {
+          "sha256": "ebecc078179db1b483d6564111f308aa954afbb479d5d030eae163934e67b1de",
+          "octets": 72974
+        },
+        "docs/personnel-paie/preuves/887_1440_coffre.png": {
+          "sha256": "aa74a6c2ae88141d3cccb6259ff32028ac7390f52bc417fb0c105577589c6172",
+          "octets": 135301
+        },
+        "docs/personnel-paie/preuves/887_390_coffre.png": {
+          "sha256": "51c0eda5aa1f756bd84b25f765777101ec4a5abdd42252320423056ddefd4419",
+          "octets": 74434
+        },
+        "docs/personnel-paie/preuves/889_1440_catalogue.png": {
+          "sha256": "7cc7927ee837b73c5f991dce711675f8c676f6cefba1cc275255ab3aebc6a25f",
+          "octets": 92286
+        },
+        "docs/personnel-paie/preuves/889_390_catalogue.png": {
+          "sha256": "18bcab45ee5ec14aed386702ddb175504ea062a56baf2ce3d4d171eb5a18b486",
+          "octets": 58521
+        },
+        "docs/personnel-paie/preuves/891_1440_variables.png": {
+          "sha256": "9f885c77d481329d65e8e38e9622794cd81947117ab4f23f9616b24e7d98527f",
+          "octets": 88762
+        },
+        "docs/personnel-paie/preuves/891_390_variables.png": {
+          "sha256": "fb97605dcef3a3aeece7e5d2a955253d2dab495392ae414e81e9d819834b5bec",
+          "octets": 53620
+        },
+        "docs/personnel-paie/preuves/893_1440_campagne.png": {
+          "sha256": "18c3f1b2a52fab281b87be64e5cf417c80ca294012bc0f479a52f05915b3bec0",
+          "octets": 132374
+        },
+        "docs/personnel-paie/preuves/893_390_campagne.png": {
+          "sha256": "ccd454a5f0cf57d25259a2a19c615c21dde4848706cf0085701538455e0a76c5",
+          "octets": 68169
+        },
+        "docs/personnel-paie/preuves/897_1440_social.png": {
+          "sha256": "15614e4348be988bf178f9442f079d80c43187b806d96bc305e9beb9e908f975",
+          "octets": 156156
+        },
+        "docs/personnel-paie/preuves/897_390_social.png": {
+          "sha256": "6578d1b34007b21aea5cc617511ceb5f78a5571184cf30779cff45b8fd8d3119",
+          "octets": 85187
+        },
+        "docs/personnel-paie/preuves/899_1440_social.png": {
+          "sha256": "adebf239640273e6ac7955759e90f52d8e991ba49e79aae183f1d3ed53ac5d1d",
+          "octets": 140915
+        },
+        "docs/personnel-paie/preuves/899_390_social.png": {
+          "sha256": "69fe61e290272437d11396f87711d0536eca5625b28856490db4e928c3daaf4f",
+          "octets": 83842
+        },
+        "docs/personnel-paie/preuves/901_1440_ir_annuel.png": {
+          "sha256": "49e148ac1b1c80567c4af2ba2ed48b7f39643c58f216b90779899c5b30d0f5e8",
+          "octets": 149659
+        },
+        "docs/personnel-paie/preuves/901_390_ir_annuel.png": {
+          "sha256": "59f803d5230f3519bf8c371c796b1d6c4e944ad039eb30259b668a1c42572f49",
+          "octets": 70728
+        },
+        "hisabpro-backend/.env.example": {
+          "sha256": "c9654b18b383c3a373096201a620c2633e2c772a4ed84ade5997d0c4a3a08396",
+          "octets": 570
+        },
+        "hisabpro-backend/105_personnel_habilitations.sql": {
+          "sha256": "56eeb9b73a30a40cdb18a5af0d3f323eb6ea9509ae4b54fb8626f6f759514cec",
+          "octets": 6071
+        },
+        "hisabpro-backend/106_personnel_dossiers_versions.sql": {
+          "sha256": "7123a406c5eb81f28b07a8b76edfff838afc21dd8f2b4743623f2812fb7decad",
+          "octets": 15394
+        },
+        "hisabpro-backend/107_personnel_workflow.sql": {
+          "sha256": "1099db96ba341c92b5c1b9347295b3e72869d3a96732fdda5fd1776bdd414459",
+          "octets": 5997
+        },
+        "hisabpro-backend/108_personnel_rejet_auteur_inactif.sql": {
+          "sha256": "3417bc2c44b8359e5b72dec326525199ff7dfa57040cd89a5b5612c3be1a7d4c",
+          "octets": 3954
+        },
+        "hisabpro-backend/109_personnel_profil_cloisonne.sql": {
+          "sha256": "e3d7ea765577e1cbd81c98fcdde299c330961eb86596bfa4cb0942ed15c822c7",
+          "octets": 825
+        },
+        "hisabpro-backend/110_personnel_regimes_contrat.sql": {
+          "sha256": "74cca085c92c21c61da34941938786558be571edc7f8382d295d8ed0f24a425a",
+          "octets": 865
+        },
+        "hisabpro-backend/111_personnel_coffre.sql": {
+          "sha256": "f7f8cec9d4107a3c383ae9946226f92b989faf091698427f8685080bdeb9ef93",
+          "octets": 3811
+        },
+        "hisabpro-backend/112_personnel_banque_chiffree.sql": {
+          "sha256": "fbaae85f4de27203fca994b2963cc23797eb673c0a402a14a7963c8578505791",
+          "octets": 4235
+        },
+        "hisabpro-backend/113_paie_catalogue.sql": {
+          "sha256": "52302dffee424f15f04f6409628d49487470138c22a5017981b1da6c73cedc6e",
+          "octets": 6364
+        },
+        "hisabpro-backend/114_paie_variables.sql": {
+          "sha256": "3d3d6630796a65bbda06293bf5e044f0f95e47a5bd13c8fedf4a19a19fd7e262",
+          "octets": 8049
+        },
+        "hisabpro-backend/115_paie_campagnes_brut.sql": {
+          "sha256": "37a2b1c516a2fb373f4d845c37fce4ec515a3148e67f7d828c8809e1e5a34ee3",
+          "octets": 3259
+        },
+        "hisabpro-backend/116_paie_referentiel_social.sql": {
+          "sha256": "030d70684e5065a93bdbe6614674fbb87a03cc36d0430b4e02b7e773e024ddb9",
+          "octets": 8472
+        },
+        "hisabpro-backend/117_paie_simulations_sociales.sql": {
+          "sha256": "f4cd6baf9b8154f3e9bca4ff18c85249e6da9076c2c527cd78ea6efd1a0555ff",
+          "octets": 2321
+        },
+        "hisabpro-backend/118_paie_controles_ir_annuels.sql": {
+          "sha256": "aa6ed55b26c55bfa546bcec913a34162537d49c96b0f6a648c55a1103f9a2964",
+          "octets": 1996
+        },
+        "hisabpro-backend/auth.py": {
+          "sha256": "ba55a170713ca0d9dc8e96bea2aa877bd7fe4cc68c8e097985b43ed53194545d",
+          "octets": 8422
+        },
+        "hisabpro-backend/models.py": {
+          "sha256": "d008ee2db016fc6c46bb36289316256396ee5bb9aec303c28c19ffc80b3fffeb",
+          "octets": 117372
+        },
+        "hisabpro-backend/requirements.txt": {
+          "sha256": "9791610c39970c1378f5be3f0761d5c5ca8f3d908f526d5efa8d64d9a434ef84",
+          "octets": 271
+        },
+        "hisabpro-backend/routers/avances_salaries.py": {
+          "sha256": "7712d3e63582a1544291bb850c152d6f914d4c0b8f20f25107855cdc41545caf",
+          "octets": 6684
+        },
+        "hisabpro-backend/routers/employes.py": {
+          "sha256": "dbee7446f9633f0a48473860228da724a33816f708692c6ec1e4c992788cccaf",
+          "octets": 7900
+        },
+        "hisabpro-backend/routers/grh.py": {
+          "sha256": "d41710819cd9fb1c96fc53329d9113d3026d2bdff48fbd4bfced6e2d0ec1d48a",
+          "octets": 7985
+        },
+        "hisabpro-backend/routers/multi_societes.py": {
+          "sha256": "ceddd6066aa06af1fd2d5220684c54785c0aea426feba9bbb2b7b06bc8c1e10d",
+          "octets": 9754
+        },
+        "hisabpro-backend/routers/paie_campagnes.py": {
+          "sha256": "fffb98a635622da4a27417e7a3accb9b6bc0c0fe52ad2c300f64feb0e8623077",
+          "octets": 1715
+        },
+        "hisabpro-backend/routers/paie_catalogue.py": {
+          "sha256": "782f1367bb9311dbcece8dc0cad57f040173c71f6c76939416ba8e0d3b041e9e",
+          "octets": 1911
+        },
+        "hisabpro-backend/routers/paie_ir_annuel.py": {
+          "sha256": "537581c224eec085e166f34878f06308631b87616ce3b6a5e3a6eadc13e0e24c",
+          "octets": 1028
+        },
+        "hisabpro-backend/routers/paie_social.py": {
+          "sha256": "9cb46cb8073e16a9b55b54c386b6d57b7f3dae7f90514e781183b4639b924a0a",
+          "octets": 1816
+        },
+        "hisabpro-backend/routers/paie_social_calcul.py": {
+          "sha256": "41f7198159a529ee49f9a944dc56fa26a16cd10971ff59ee87d4436a59d290f2",
+          "octets": 1060
+        },
+        "hisabpro-backend/routers/paie_variables.py": {
+          "sha256": "90e400792f016395480d12157eb277f3366d664fdc52bae55494b08d9599fa01",
+          "octets": 2226
+        },
+        "hisabpro-backend/routers/personnel_coffre.py": {
+          "sha256": "238e19a15708a423b5bb6c0ad098c7daba3c68bdf557572930f49e5bc777ccb1",
+          "octets": 2934
+        },
+        "hisabpro-backend/routers/personnel_habilitations.py": {
+          "sha256": "fcfc92a788e5d410b663bce2cc792da25cf6af98e0b8f35867d2d5f98283b7ad",
+          "octets": 6522
+        },
+        "hisabpro-backend/routers/personnel_workflow.py": {
+          "sha256": "97a61d9d65262ec187891c023a23ef44d029eee13efd2b5022c908f7572434fe",
+          "octets": 4384
+        },
+        "hisabpro-backend/routers/utilisateurs.py": {
+          "sha256": "fea748ded5facc46105ef7801b91bcd9c7ec5f5d69b1f2af371374314d3a5e79",
+          "octets": 9338
+        },
+        "hisabpro-backend/services/api_validation_service.py": {
+          "sha256": "b5a041482eb3586fb7859d4e006658a3d60b2c104267128ac9c74775fc4d078a",
+          "octets": 1417
+        },
+        "hisabpro-backend/services/paie_campagnes_schemas.py": {
+          "sha256": "dec052808c76d6cc42f9ff9092f36006a963b9e8562a5b153755707f478b197a",
+          "octets": 1257
+        },
+        "hisabpro-backend/services/paie_campagnes_service.py": {
+          "sha256": "4dba9f679f99e927cc09a6d2310753c7619ea2585aaff75049d9c20ee856f64b",
+          "octets": 9725
+        },
+        "hisabpro-backend/services/paie_catalogue_schemas.py": {
+          "sha256": "082a5e6d094183d8b0fe465702b7b72d26d0e80ca1e66ca250caa2676701dbdb",
+          "octets": 4238
+        },
+        "hisabpro-backend/services/paie_catalogue_service.py": {
+          "sha256": "403bae4f4ace3f77aa01473193c7f01bcff60208f0b4c7751e231e8828751794",
+          "octets": 9109
+        },
+        "hisabpro-backend/services/paie_ir_annuel_moteur.py": {
+          "sha256": "88a38ff5f10d70ddf035b09787ec8bdc3d5427df4313532db43fbf624e02e39f",
+          "octets": 4356
+        },
+        "hisabpro-backend/services/paie_ir_annuel_schemas.py": {
+          "sha256": "05296f37c0ec98f415254fb0dec8681e859212abe1a84c0d73988df33343164c",
+          "octets": 1595
+        },
+        "hisabpro-backend/services/paie_ir_annuel_service.py": {
+          "sha256": "7eaa31a1a160071e33f3b2f2646d9ba5cb960e5b58a0e626a96dbc56ee8e4e62",
+          "octets": 3093
+        },
+        "hisabpro-backend/services/paie_social_calcul_schemas.py": {
+          "sha256": "a2780586016b16d0f7a4cd253f43716f49ac31bb9fb72a93cd2b009a817544da",
+          "octets": 1554
+        },
+        "hisabpro-backend/services/paie_social_calcul_service.py": {
+          "sha256": "400114e270a365fb4f464983a9b58186d2fda0dc2458a56fc5009bc0e3e0d060",
+          "octets": 10659
+        },
+        "hisabpro-backend/services/paie_social_moteur.py": {
+          "sha256": "7b56ee59926d0192165934f22b2510d8d862d9c7418850b416d2a9078c3ac7e3",
+          "octets": 4265
+        },
+        "hisabpro-backend/services/paie_social_schemas.py": {
+          "sha256": "bfaeddb79f5a364845280ce81971069efb644af2250c3b6c93d287e0d0814c88",
+          "octets": 6317
+        },
+        "hisabpro-backend/services/paie_social_service.py": {
+          "sha256": "335f9ab41e37e9fffa20b3bf935e300612e8c674313fe95dc79e3ddce37374ee",
+          "octets": 7738
+        },
+        "hisabpro-backend/services/paie_variables_schemas.py": {
+          "sha256": "ffe612e11db610788efb9c0fd9a54aa24ce0bc18db369ad18771740bfb88e062",
+          "octets": 3292
+        },
+        "hisabpro-backend/services/paie_variables_service.py": {
+          "sha256": "dc3416057da755831591668a1a2712f56ea20dddf24c4fbe839c0b36c1372abc",
+          "octets": 10120
+        },
+        "hisabpro-backend/services/personnel_acces_service.py": {
+          "sha256": "de5c91ba1a05571c40ca8b913182e7661ee2f3a46a22007f923b470062fabce4",
+          "octets": 5465
+        },
+        "hisabpro-backend/services/personnel_coffre_crypto.py": {
+          "sha256": "a47087ad4531cc72ccf597e23bc26b61a3801f582eef783c9697d51488a3fc09",
+          "octets": 3553
+        },
+        "hisabpro-backend/services/personnel_coffre_service.py": {
+          "sha256": "414a0a9aa930ed3b2aa26e29057a2493996795abbaa9f1f45a6221a4fb44a422",
+          "octets": 11633
+        },
+        "hisabpro-backend/services/personnel_dossiers_service.py": {
+          "sha256": "73c34768c6bb4fbb0c8fb78b899ec8ec54a31b651aa22cdcfe46439eba745a0d",
+          "octets": 8127
+        },
+        "hisabpro-backend/services/personnel_profil_service.py": {
+          "sha256": "fc46432e75f48d2742e3a7546372713f1c2f49f85433fcfbd9d3b73a25e23f6d",
+          "octets": 3612
+        },
+        "hisabpro-backend/services/personnel_workflow_schemas.py": {
+          "sha256": "c6d68e0d44ebc2c21846f218d5a72c2679ac656d76da73f18d3ea93698dea387",
+          "octets": 5636
+        },
+        "hisabpro-backend/services/personnel_workflow_service.py": {
+          "sha256": "55f4b963c0d9c7db351388320ab68620939b924c9fac5793351921312f910682",
+          "octets": 30882
+        },
+        "ops/personnel_coffre_cles.py": {
+          "sha256": "42b22c09772e56a59edb5843b088a46dc12cad715ac3f3f4d9e201bc8b8bfc53",
+          "octets": 3791
+        },
+        "src/App.jsx": {
+          "sha256": "c3269af99c8f361d8a2152563c1509f7df682bf25742a79d57077831a2671d3f",
+          "octets": 5452
+        },
+        "src/PersonnelApp.jsx": {
+          "sha256": "26257662b69d413d36b845bf12332b21e249f70b226b2f1c1d863e499f61edfc",
+          "octets": 3016
+        },
+        "src/components/PaieSimulationsSociales.jsx": {
+          "sha256": "10cc71c8902ea4a587001e50c36d6b59307d55b3bff1b7d3e291216c3a81e5a1",
+          "octets": 9884
+        },
+        "src/components/PaieVariables.jsx": {
+          "sha256": "9a1179d8e8c63d2c1774b350994d183a4789168733381add6dbb189461979530",
+          "octets": 14232
+        },
+        "src/components/PersonnelCoffre.jsx": {
+          "sha256": "4b3b585cf26fefa98fbdb15fac3da1f728d32381c25a53295e0b30fd7d8a4e48",
+          "octets": 10379
+        },
+        "src/components/SelecteurSociete.jsx": {
+          "sha256": "33d64384c550b1e034ab21d930dbab60c77af56dea5dc2cd2919da3c360d15b8",
+          "octets": 6437
+        },
+        "src/components/Sidebar.jsx": {
+          "sha256": "d7876b22dc9a73c9285983341840c2b0b433a96d0e183097dfbe700fa1425000",
+          "octets": 11215
+        },
+        "src/components/Sidebar.module.css": {
+          "sha256": "756e5e39d034d88f161e8ed6a2592b5e13bd9d49f0b91e3f66267f4869b7c9b9",
+          "octets": 5261
+        },
+        "src/data/EmployesContext.jsx": {
+          "sha256": "fa77fbfe7adec90dd4193de19348544c08d87f290e78fe3f79889ed4f8436450",
+          "octets": 5132
+        },
+        "src/data/ModulesContext.jsx": {
+          "sha256": "67048f42bce14f4ca2e6a6e5b287227412e32aff33e7f57b7637b51ab9179474",
+          "octets": 3338
+        },
+        "src/data/PersonnelAccesContext.jsx": {
+          "sha256": "334b7fa573aea92646f5a0cb64b3be8b528bb818b45f7beafad60f573e51473a",
+          "octets": 1365
+        },
+        "src/main.jsx": {
+          "sha256": "70a81a45ce8aa3d6b40d23096c28cd5604c4fb69cbb8e8e70583688a8399cf87",
+          "octets": 2402
+        },
+        "src/pages/CNSS.jsx": {
+          "sha256": "dbbc307e8520553a645549728a4102062ddef28df5d8510f4cdcaecd9cd44098",
+          "octets": 39680
+        },
+        "src/pages/PaieChargesSociales.jsx": {
+          "sha256": "e60545a985165eff21fb8d520fff1aceaf5af1ee0a9325eab71835acd028de08",
+          "octets": 15551
+        },
+        "src/pages/PaieElements.jsx": {
+          "sha256": "60c9e2baeb7847a7ddfc543a2f14db954f6d862ac90d6daedc6e51314e73cfc6",
+          "octets": 18398
+        },
+        "src/pages/PaieFiscalite.jsx": {
+          "sha256": "10f37e8edf6cb5d6275637e0fa22c5c19903f30f5fc41986934383d45e0208f9",
+          "octets": 9992
+        },
+        "src/pages/PaieTraitement.jsx": {
+          "sha256": "ed4cfd1e9cb905cb6a5e8041a12d1c5ccb1f711e7cf6eab797f20719b1bf7be2",
+          "octets": 12027
+        },
+        "src/pages/Personnel.jsx": {
+          "sha256": "0b419a37b2cfca78f5f13b9f1c97db204954c4cb6ba8e5ba95e44e9415564ffb",
+          "octets": 36387
+        },
+        "src/pages/Personnel.module.css": {
+          "sha256": "96367aa0bcf45b562d9fcde24da2d74fa1f9bb10c9977d930e588d5449574606",
+          "octets": 5903
+        },
+        "src/services/api.js": {
+          "sha256": "635983b485d441f1a026b2d461edce82ef8d5dcac7c488643f8d26ecf9d654bf",
+          "octets": 38824
+        }
+      }
+    },
+    {
+      "nom": "HisabPro_Session_20261028_Paie_897_903.zip",
+      "fichiers": {
+        "CODEX_PROGRESS.md": {
+          "sha256": "2a147a4097fa5137d62d716e4df2700aaa52116380733d566ee9126334ca0b39",
+          "octets": 7441861
+        },
+        "Test/CANDIDAT_PAIE_897.json": {
+          "sha256": "936704cbaf13aedf56affeca5d925dc7f20fd17314e6f8654b8bcd0615fa91ad",
+          "octets": 60248
+        },
+        "Test/CANDIDAT_PAIE_899.json": {
+          "sha256": "d7be83dd06e16f0a7f084915c1610579213550482416181f1d4cc48711e2896a",
+          "octets": 61016
+        },
+        "Test/CANDIDAT_PAIE_901.json": {
+          "sha256": "8f4de9fa794efcc533e5ed2fd8ab018c32b93c8b206344e45bcdd59df2193bb5",
+          "octets": 61751
+        },
+        "Test/PREUVE_CAHIERS_PAIE_903.json": {
+          "sha256": "771efa62bd21d6bb0b08dc628587a417e5de234f626b2456b2239a37eb36fb6a",
+          "octets": 3395
+        },
+        "Test/PREUVE_PAIE_897.json": {
+          "sha256": "e895a7e59649f1ba7ccded633d42821b3bd148eaf3fa5681afc7733c1012bb47",
+          "octets": 57825
+        },
+        "Test/PREUVE_PAIE_899.json": {
+          "sha256": "8df2cfa71d675350452e957d952870af085b7ddbae0b742d631d6d34ef67d10b",
+          "octets": 68076
+        },
+        "Test/PREUVE_PAIE_901.json": {
+          "sha256": "b162a52ca92f442a61dfe39cd0f7e3d27eb36b42a7f3c2a4342293f8bf7765fa",
+          "octets": 80228
+        },
+        "Test/PREUVE_SESSION_PAIE_903.json": {
+          "sha256": "e4aa75b26897339603b615cfc84f65b987321bd82b47f22e26913f88f9cc17ad",
+          "octets": 4484
+        },
+        "Test/generer_recette_paie897.py": {
+          "sha256": "a22847dd427b2493c93b552abb9b03793490b79913d5871d87d398ec27627d5f",
+          "octets": 9818
+        },
+        "Test/generer_recette_paie899.py": {
+          "sha256": "9d5e37601aa33aff2a39fd81b21f457ec0bea96385d843271d803cfcd7e85d1f",
+          "octets": 15070
+        },
+        "Test/generer_recette_paie901.py": {
+          "sha256": "a2e0e740e38546a579c16c0ba47977777a8b1e10f6945c4f9b27dec5d35bb311",
+          "octets": 11428
+        },
+        "Test/preuves_paie897/paie897_cible.xml": {
+          "sha256": "6593589aeca89563a64190c8217a9bb1975f2ea06f7c79ffe099369d521bfc31",
+          "octets": 9105
+        },
+        "Test/preuves_paie897/paie897_concurrence.xml": {
+          "sha256": "102018cd0e9469971cb77fcf1596461c0f53f0771559ca3a6abbe95099df7920",
+          "octets": 635
+        },
+        "Test/preuves_paie897/paie897_edge.xml": {
+          "sha256": "8a8082e2d27f08e8c3c98c768645b22b776e5f902ea491c8a0a3fb919b602cab",
+          "octets": 524
+        },
+        "Test/preuves_paie897/paie897_final.xml": {
+          "sha256": "ca9ffb4946a4f536cf7eb53f6acfca0c413e81d7d4668188976caeb022389eb8",
+          "octets": 31229
+        },
+        "Test/preuves_paie897/paie897_reprise.xml": {
+          "sha256": "2a241e69e64fbb2c9333829f2c6069c22cc0f533c45d473d1196d4cee3665715",
+          "octets": 378
+        },
+        "Test/preuves_paie897/restauration_native_paie.json": {
+          "sha256": "35da383634bc71208e923ffb72d2b61c18402afd1c894f3b29823a9f4209d99d",
+          "octets": 371
+        },
+        "Test/preuves_paie899/paie899_cible.xml": {
+          "sha256": "76d8af68df71e0e8c8f459379e7cdf0a5be5224c1f705f9975bee56f213d2e45",
+          "octets": 6064
+        },
+        "Test/preuves_paie899/paie899_edge.xml": {
+          "sha256": "fea5d13c797061e27baa49a05c43589ea40e7adb5e6c57055d41395f42254578",
+          "octets": 520
+        },
+        "Test/preuves_paie899/paie899_final.xml": {
+          "sha256": "cab2af0af3935917d4fa14ccf9f5954e330e676008c4d76bf0746491e88ba82b",
+          "octets": 38114
+        },
+        "Test/preuves_paie899/restauration_native_paie.json": {
+          "sha256": "3db8b919ae4c20d66a852c908f4f24db55b483f58370c4a5ad7b3ae7cc3006f9",
+          "octets": 371
+        },
+        "Test/preuves_paie901/paie901_cible.xml": {
+          "sha256": "df0ae2e9f1d0b9b5350d460fae337119506e76c71b10f8f4d03d742d986f2d04",
+          "octets": 7065
+        },
+        "Test/preuves_paie901/paie901_edge.xml": {
+          "sha256": "e8680a3205e5dc0438374f8c3d6890a0a32cfdfe91ca05b7c429094b01fb7dea",
+          "octets": 538
+        },
+        "Test/preuves_paie901/paie901_final.xml": {
+          "sha256": "e5347fbfa77ce127c94dd9f5645201b2e88e3a2c89e97f761b8bc18fd1344487",
+          "octets": 45364
+        },
+        "Test/preuves_paie901/restauration_native_paie.json": {
+          "sha256": "c8e719bb6d48a5693461e1ca52f96b533c0ff49a14f97bb364143b572fc8297e",
+          "octets": 371
+        },
+        "Test/test_e2e_paie897_social_isole.py": {
+          "sha256": "681c45a9d577572f9f1ae9f9f1cbb9bd8502f0e49fe897423de613283a77242a",
+          "octets": 7619
+        },
+        "Test/test_e2e_paie899_social_isole.py": {
+          "sha256": "20c59f4cc4c3968dbda0e12423eaf9a43fbe45ed3ef7482ab922363ba9f9b4cb",
+          "octets": 6202
+        },
+        "Test/test_e2e_paie901_ir_annuel_isole.py": {
+          "sha256": "eadc8029fc789c2cfa0f32681f22cf76af886f91ea9bc680d5bd5522978deece",
+          "octets": 5795
+        },
+        "Test/test_e2e_personnel879_isole.py": {
+          "sha256": "024c359ba7410f8c088d1430e603f9087b1cd3585c2280bc5d4b15f9aa558d5d",
+          "octets": 26423
+        },
+        "Test/test_paie897_concurrence_isole.py": {
+          "sha256": "fc58a75f960f94a703e32e85a5ea1593bff0c909417ec6351e62d3bdfd539378",
+          "octets": 3024
+        },
+        "Test/test_paie897_restauration_isole.py": {
+          "sha256": "94fc33d792e12cdadcfd2cd6def1a718f369821af328664ed1ce18d649dac135",
+          "octets": 4989
+        },
+        "Test/test_paie897_social_isole.py": {
+          "sha256": "3818f2b6c686011ec7182b94db05a839e5784a095bcc74177314f99f01cc7b39",
+          "octets": 7214
+        },
+        "Test/test_paie897_social_unitaire.py": {
+          "sha256": "c8f975a335db52abb3db2fa4d4a7e3f34d4afeec1c6751a15f2970b634d1a113",
+          "octets": 3764
+        },
+        "Test/test_paie899_restauration_isole.py": {
+          "sha256": "0ce66596fc3ca337eadbc33152a505fa9bfee65ca69deb1b6cfc8276466d2947",
+          "octets": 5328
+        },
+        "Test/test_paie899_social_isole.py": {
+          "sha256": "4e53d62fad6554539a7817e2494a7179d02e5ec57c11b8f5d29c0fd2052bd7db",
+          "octets": 10476
+        },
+        "Test/test_paie899_social_moteur_unitaire.py": {
+          "sha256": "49b8e8a1c6ccee37302769f4f32148face6e882d165862169e2789320df5cea8",
+          "octets": 5159
+        },
+        "Test/test_paie901_ir_annuel_isole.py": {
+          "sha256": "47d524d9924f6e8924ddb5c78081dd1909f8d351d8f2c1b88239da4b41fe738d",
+          "octets": 4502
+        },
+        "Test/test_paie901_ir_annuel_unitaire.py": {
+          "sha256": "9de4667efddf407f90cc523715abd7830a4835eb4f348c80c849fd6c063f660b",
+          "octets": 3195
+        },
+        "Test/test_paie901_restauration_isole.py": {
+          "sha256": "04a773237765686c5b928dd9f92c6bdae563d3f098ebffbb38f9283944114764",
+          "octets": 5764
+        },
+        "Test/verifier_cahiers_paie903.py": {
+          "sha256": "f91e91fbed0cd6d0094b445d54509e80f3dabb4bde5c0bb43476f09314879593",
+          "octets": 4501
+        },
+        "docs/audit/MATRICE_COUVERTURE_HISABPRO.md": {
+          "sha256": "0a3cda9498b9f8db24149dde1dce3b2693bfdf35e9659f11502945f2faac397f",
+          "octets": 278946
+        },
+        "docs/personnel-paie/BILAN_SESSION_PAIE_897_903.md": {
+          "sha256": "cf4c05514d643b7d81f5b1b4ad79d0d463ddb19ba6d955c034e6d3cbc624e5c3",
+          "octets": 5836
+        },
+        "docs/personnel-paie/CAS_CALCUL_SOCIAL_PAIE_899.json": {
+          "sha256": "71b593e38c0d7d53ab9b7dd3e8234a618a2399d342e44ddda41ac9afa0a43f9b",
+          "octets": 5766
+        },
+        "docs/personnel-paie/CAS_IR_ANNUEL_PAIE_901.json": {
+          "sha256": "615615cf30d622b663f0d56e19533adf732148717e01659e6159f04f033c3ff7",
+          "octets": 4371
+        },
+        "docs/personnel-paie/CAS_SOCIAL_PAIE_897.json": {
+          "sha256": "fddaad4e64dbc3d260480dcc01b22972db6198062b4b799b88f0a93c15091b34",
+          "octets": 4087
+        },
+        "docs/personnel-paie/CONTROLE_IR_ANNUEL_901.md": {
+          "sha256": "9be2627a89aeb8d1cc6a9175bb9747fa2a31a9a79860c3f81111c7294e781b68",
+          "octets": 4031
+        },
+        "docs/personnel-paie/INSTALLATION_COPIE_PAIE_116_118.md": {
+          "sha256": "dc5c29aab0a04661a0fe6dcf8aa940c6417f6d6309d8cc2d127ca34906a21df4",
+          "octets": 4908
+        },
+        "docs/personnel-paie/JEU_CALCUL_SOCIAL_PAIE_899.json": {
+          "sha256": "0089963bcf21a2d9a6e468362881e35621bd0cac1b07bad3720dae3dba2c8840",
+          "octets": 4291
+        },
+        "docs/personnel-paie/JEU_IR_ANNUEL_PAIE_901.json": {
+          "sha256": "0df19cf188393ef2ad8b697d08fe44c62538240aea629db65a2b5360c8a306ab",
+          "octets": 1952
+        },
+        "docs/personnel-paie/JEU_SOCIAL_PAIE_897.json": {
+          "sha256": "a0bef7a5076d01189aed429932161e2cfc4c1b79b0cafc4d37c667cfe86fc882",
+          "octets": 1112
+        },
+        "docs/personnel-paie/MODE_EMPLOI_PERSONNEL_PAIE.md": {
+          "sha256": "3f69c9818e28b0b7c1d27562442fe0a157fbbf84d8327cabdbd8b32b974fb78e",
+          "octets": 3790
+        },
+        "docs/personnel-paie/PREPARATION_COTISATIONS_3B_895.md": {
+          "sha256": "2c63a8962f7d646d0c7daaae439a77e897d7c0efd029d2eb86f622a9e02353f6",
+          "octets": 9043
+        },
+        "docs/personnel-paie/RECETTE_CALCUL_SOCIAL_PAIE_899.pdf": {
+          "sha256": "04f3bf63f92433fb79cec1ceb5885766cd2ba40c7cdeb38e5649c33875ad673c",
+          "octets": 53330
+        },
+        "docs/personnel-paie/RECETTE_IR_ANNUEL_PAIE_901.pdf": {
+          "sha256": "f33ecbd3585b8efc396da64dd7521c5fb65024ac68c274ca6f503da74fbed1bb",
+          "octets": 49730
+        },
+        "docs/personnel-paie/RECETTE_SOCIAL_PAIE_897.pdf": {
+          "sha256": "973d85e1aec7190ef9ef0892b647b57707862bb4e0d86f5063e8551f4e0d5a41",
+          "octets": 48908
+        },
+        "docs/personnel-paie/REFERENTIEL_SOCIAL_897.md": {
+          "sha256": "0602801c9471a837451e39cd41eba70a83b87b50471b5d87dce1c04e1048040c",
+          "octets": 5400
+        },
+        "docs/personnel-paie/REPRISE_IR_MENSUEL_3C2_903.md": {
+          "sha256": "3c65aae9938eb0310980253be7f4989fb2b950d933f3a4355a7dcb7810758eab",
+          "octets": 4790
+        },
+        "docs/personnel-paie/RESULTATS_PAIE_897.md": {
+          "sha256": "1763561139578ef08b143e24ce2e1760d0f583091c541970d5fb2e6bd0f1ac87",
+          "octets": 2358
+        },
+        "docs/personnel-paie/RESULTATS_PAIE_899.md": {
+          "sha256": "814f58d2b68a9b9bf99bacf0f805dcc9fbf23f668c3e298861b20927aa7ac70c",
+          "octets": 2671
+        },
+        "docs/personnel-paie/RESULTATS_PAIE_901.md": {
+          "sha256": "7909717223fe30b4a4d60fc0d189432cd42f94c2123934898f3beed436e490f3",
+          "octets": 2817
+        },
+        "docs/personnel-paie/SIMULATIONS_SOCIALES_899.md": {
+          "sha256": "8a121b33e384fbae3ebb39bef4988952809738106c797c8bcc9f2b780cea4a9f",
+          "octets": 6384
+        },
+        "docs/personnel-paie/SOURCES_IR_ANNUEL_901.md": {
+          "sha256": "254d2a5b2cb9cb95e6067d1d3aceb0b0aaa2ad03d13f12553b707607aedee978",
+          "octets": 3206
+        },
+        "docs/personnel-paie/SUIVI_CALCUL_SOCIAL_PAIE_899.xlsx": {
+          "sha256": "1800774f6dfcde6dd5754b220f2bcf0eb2cd3a79d7d47fb65d949f8815fbda1d",
+          "octets": 13575
+        },
+        "docs/personnel-paie/SUIVI_IR_ANNUEL_PAIE_901.xlsx": {
+          "sha256": "2d2c60c5f02aa46d147c6b71c0e7f005c26a43f4852f4df39a217d4ae20b2499",
+          "octets": 11783
+        },
+        "docs/personnel-paie/SUIVI_SOCIAL_PAIE_897.xlsx": {
+          "sha256": "f1b6a4e79a1ad30e7a8ec76fc461fd0684236365652351aeaacab2c1ee8d0832",
+          "octets": 11354
+        },
+        "docs/personnel-paie/preuves/881_1440.png": {
+          "sha256": "8aa4f684861fac6d81618a86c6eb1de7f815b68111e8531ebe3c93d9ad109d70",
+          "octets": 88984
+        },
+        "docs/personnel-paie/preuves/881_390.png": {
+          "sha256": "d6de99eb6766ff3323d480691ce3b060003972a5cd08a6ff8d1e75916c900661",
+          "octets": 51632
+        },
+        "docs/personnel-paie/preuves/889_1440_catalogue.png": {
+          "sha256": "7cc7927ee837b73c5f991dce711675f8c676f6cefba1cc275255ab3aebc6a25f",
+          "octets": 92286
+        },
+        "docs/personnel-paie/preuves/889_390_catalogue.png": {
+          "sha256": "18bcab45ee5ec14aed386702ddb175504ea062a56baf2ce3d4d171eb5a18b486",
+          "octets": 58521
+        },
+        "docs/personnel-paie/preuves/891_1440_variables.png": {
+          "sha256": "9f885c77d481329d65e8e38e9622794cd81947117ab4f23f9616b24e7d98527f",
+          "octets": 88762
+        },
+        "docs/personnel-paie/preuves/891_390_variables.png": {
+          "sha256": "fb97605dcef3a3aeece7e5d2a955253d2dab495392ae414e81e9d819834b5bec",
+          "octets": 53620
+        },
+        "docs/personnel-paie/preuves/893_1440_campagne.png": {
+          "sha256": "18c3f1b2a52fab281b87be64e5cf417c80ca294012bc0f479a52f05915b3bec0",
+          "octets": 132374
+        },
+        "docs/personnel-paie/preuves/893_390_campagne.png": {
+          "sha256": "ccd454a5f0cf57d25259a2a19c615c21dde4848706cf0085701538455e0a76c5",
+          "octets": 68169
+        },
+        "docs/personnel-paie/preuves/897_1440_social.png": {
+          "sha256": "15614e4348be988bf178f9442f079d80c43187b806d96bc305e9beb9e908f975",
+          "octets": 156156
+        },
+        "docs/personnel-paie/preuves/897_390_social.png": {
+          "sha256": "6578d1b34007b21aea5cc617511ceb5f78a5571184cf30779cff45b8fd8d3119",
+          "octets": 85187
+        },
+        "docs/personnel-paie/preuves/899_1440_social.png": {
+          "sha256": "adebf239640273e6ac7955759e90f52d8e991ba49e79aae183f1d3ed53ac5d1d",
+          "octets": 140915
+        },
+        "docs/personnel-paie/preuves/899_390_social.png": {
+          "sha256": "69fe61e290272437d11396f87711d0536eca5625b28856490db4e928c3daaf4f",
+          "octets": 83842
+        },
+        "docs/personnel-paie/preuves/901_1440_ir_annuel.png": {
+          "sha256": "49e148ac1b1c80567c4af2ba2ed48b7f39643c58f216b90779899c5b30d0f5e8",
+          "octets": 149659
+        },
+        "docs/personnel-paie/preuves/901_390_ir_annuel.png": {
+          "sha256": "59f803d5230f3519bf8c371c796b1d6c4e944ad039eb30259b668a1c42572f49",
+          "octets": 70728
+        },
+        "hisabpro-backend/116_paie_referentiel_social.sql": {
+          "sha256": "030d70684e5065a93bdbe6614674fbb87a03cc36d0430b4e02b7e773e024ddb9",
+          "octets": 8472
+        },
+        "hisabpro-backend/117_paie_simulations_sociales.sql": {
+          "sha256": "f4cd6baf9b8154f3e9bca4ff18c85249e6da9076c2c527cd78ea6efd1a0555ff",
+          "octets": 2321
+        },
+        "hisabpro-backend/118_paie_controles_ir_annuels.sql": {
+          "sha256": "aa6ed55b26c55bfa546bcec913a34162537d49c96b0f6a648c55a1103f9a2964",
+          "octets": 1996
+        },
+        "hisabpro-backend/routers/paie_ir_annuel.py": {
+          "sha256": "537581c224eec085e166f34878f06308631b87616ce3b6a5e3a6eadc13e0e24c",
+          "octets": 1028
+        },
+        "hisabpro-backend/routers/paie_social.py": {
+          "sha256": "9cb46cb8073e16a9b55b54c386b6d57b7f3dae7f90514e781183b4639b924a0a",
+          "octets": 1816
+        },
+        "hisabpro-backend/routers/paie_social_calcul.py": {
+          "sha256": "41f7198159a529ee49f9a944dc56fa26a16cd10971ff59ee87d4436a59d290f2",
+          "octets": 1060
+        },
+        "hisabpro-backend/routers/personnel_workflow.py": {
+          "sha256": "97a61d9d65262ec187891c023a23ef44d029eee13efd2b5022c908f7572434fe",
+          "octets": 4384
+        },
+        "hisabpro-backend/services/paie_ir_annuel_moteur.py": {
+          "sha256": "88a38ff5f10d70ddf035b09787ec8bdc3d5427df4313532db43fbf624e02e39f",
+          "octets": 4356
+        },
+        "hisabpro-backend/services/paie_ir_annuel_schemas.py": {
+          "sha256": "05296f37c0ec98f415254fb0dec8681e859212abe1a84c0d73988df33343164c",
+          "octets": 1595
+        },
+        "hisabpro-backend/services/paie_ir_annuel_service.py": {
+          "sha256": "7eaa31a1a160071e33f3b2f2646d9ba5cb960e5b58a0e626a96dbc56ee8e4e62",
+          "octets": 3093
+        },
+        "hisabpro-backend/services/paie_social_calcul_schemas.py": {
+          "sha256": "a2780586016b16d0f7a4cd253f43716f49ac31bb9fb72a93cd2b009a817544da",
+          "octets": 1554
+        },
+        "hisabpro-backend/services/paie_social_calcul_service.py": {
+          "sha256": "400114e270a365fb4f464983a9b58186d2fda0dc2458a56fc5009bc0e3e0d060",
+          "octets": 10659
+        },
+        "hisabpro-backend/services/paie_social_moteur.py": {
+          "sha256": "7b56ee59926d0192165934f22b2510d8d862d9c7418850b416d2a9078c3ac7e3",
+          "octets": 4265
+        },
+        "hisabpro-backend/services/paie_social_schemas.py": {
+          "sha256": "bfaeddb79f5a364845280ce81971069efb644af2250c3b6c93d287e0d0814c88",
+          "octets": 6317
+        },
+        "hisabpro-backend/services/paie_social_service.py": {
+          "sha256": "335f9ab41e37e9fffa20b3bf935e300612e8c674313fe95dc79e3ddce37374ee",
+          "octets": 7738
+        },
+        "hisabpro-backend/services/personnel_profil_service.py": {
+          "sha256": "fc46432e75f48d2742e3a7546372713f1c2f49f85433fcfbd9d3b73a25e23f6d",
+          "octets": 3612
+        },
+        "src/App.jsx": {
+          "sha256": "c3269af99c8f361d8a2152563c1509f7df682bf25742a79d57077831a2671d3f",
+          "octets": 5452
+        },
+        "src/PersonnelApp.jsx": {
+          "sha256": "26257662b69d413d36b845bf12332b21e249f70b226b2f1c1d863e499f61edfc",
+          "octets": 3016
+        },
+        "src/components/PaieSimulationsSociales.jsx": {
+          "sha256": "10cc71c8902ea4a587001e50c36d6b59307d55b3bff1b7d3e291216c3a81e5a1",
+          "octets": 9884
+        },
+        "src/components/Sidebar.jsx": {
+          "sha256": "d7876b22dc9a73c9285983341840c2b0b433a96d0e183097dfbe700fa1425000",
+          "octets": 11215
+        },
+        "src/pages/PaieChargesSociales.jsx": {
+          "sha256": "e60545a985165eff21fb8d520fff1aceaf5af1ee0a9325eab71835acd028de08",
+          "octets": 15551
+        },
+        "src/pages/PaieFiscalite.jsx": {
+          "sha256": "10f37e8edf6cb5d6275637e0fa22c5c19903f30f5fc41986934383d45e0208f9",
+          "octets": 9992
+        },
+        "src/pages/PaieTraitement.jsx": {
+          "sha256": "ed4cfd1e9cb905cb6a5e8041a12d1c5ccb1f711e7cf6eab797f20719b1bf7be2",
+          "octets": 12027
+        },
+        "src/services/api.js": {
+          "sha256": "635983b485d441f1a026b2d461edce82ef8d5dcac7c488643f8d26ecf9d654bf",
+          "octets": 38824
+        }
+      }
+    }
+  ],
+  "auto_reference": "Le manifeste ne se contient pas lui-même."
+}

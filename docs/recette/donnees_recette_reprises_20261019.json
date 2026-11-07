@@ -1,0 +1,566 @@
+{
+  "date": "2026-10-19",
+  "perimetre": "Complément615/617 ; base fictive isolée uniquement. Recette humaine non exécutée.",
+  "societe": {
+    "nom": "RECETTE PROVISIONS615 SARL",
+    "ville": "Casablanca",
+    "devise": "MAD",
+    "forme": "SARL",
+    "regime_fiscal": "IS déclaré, aucune liquidation ni déductibilité qualifiée par cette annexe",
+    "identifiants_fiscaux": "Laisser vides ; aucun identifiant réel ni dépôt.",
+    "administrateur": "Admin Recette Provisions",
+    "email": "recette.provisions615@example.com",
+    "mot_de_passe": "RecetteProvisions615!",
+    "lecteur": "lecture.provisions615@example.com",
+    "mot_de_passe_lecteur": "LectureProvisions615!"
+  },
+  "autres_societes": {
+    "S2": "RECETTE PROVISIONS CONTROLES615",
+    "S3": "RECETTE PROVISIONS CHRONO615"
+  },
+  "calendriers": {
+    "2025": [
+      "2025-01-01",
+      "2025-12-31"
+    ],
+    "2026": [
+      "2026-01-01",
+      "2026-12-31"
+    ]
+  },
+  "logo": "docs/recette/images/LOGO_RECETTE_FICTIF.png",
+  "comptes": {
+    "5141": "Banques (solde débiteur)",
+    "1111": "Capital social",
+    "6195": "Dotations d'exploitation aux provisions pour risques et charges",
+    "1518": "Autres provisions pour risques",
+    "7195": "Reprises sur provisions pour risques et charges"
+  },
+  "dotation": {
+    "type": "provision_risque",
+    "libelle": "DOSSIER-PV01 — risque fictif de recette",
+    "montant": "1000.00",
+    "compte_activite": "6195",
+    "compte_contrepartie": "1518"
+  },
+  "reprises": [
+    {
+      "reference": "REP-PV01",
+      "montant": "400.00",
+      "justification": "Diminution fictive du risque — phase 1"
+    },
+    {
+      "reference": "REP-PV02",
+      "montant": "200.00",
+      "justification": "Diminution fictive du risque — phase 2"
+    }
+  ],
+  "annulation": {
+    "date": "2025-12-31",
+    "motif": "Correction fictive de la reprise phase 1"
+  },
+  "oracle": {
+    "pieces": [
+      {
+        "reference": "CAP-PV01",
+        "date": "2025-01-02",
+        "journal": "BQ",
+        "lignes": [
+          [
+            "5141",
+            2000000,
+            0
+          ],
+          [
+            "1111",
+            0,
+            2000000
+          ]
+        ]
+      },
+      {
+        "reference": "INV générée pour DOSSIER-PV01",
+        "date": "2025-12-31",
+        "journal": "OD",
+        "lignes": [
+          [
+            "6195",
+            100000,
+            0
+          ],
+          [
+            "1518",
+            0,
+            100000
+          ]
+        ]
+      },
+      {
+        "reference": "REP-PV01",
+        "date": "2025-12-31",
+        "journal": "OD",
+        "lignes": [
+          [
+            "1518",
+            40000,
+            0
+          ],
+          [
+            "7195",
+            0,
+            40000
+          ]
+        ]
+      },
+      {
+        "reference": "REP-PV02",
+        "date": "2025-12-31",
+        "journal": "OD",
+        "lignes": [
+          [
+            "1518",
+            20000,
+            0
+          ],
+          [
+            "7195",
+            0,
+            20000
+          ]
+        ]
+      },
+      {
+        "reference": "ANN-REPRISE générée pour REP-PV01",
+        "date": "2025-12-31",
+        "journal": "OD",
+        "lignes": [
+          [
+            "7195",
+            40000,
+            0
+          ],
+          [
+            "1518",
+            0,
+            40000
+          ]
+        ]
+      }
+    ],
+    "soldes_cents": {
+      "5141": 2000000,
+      "1111": -2000000,
+      "6195": 100000,
+      "1518": -80000,
+      "7195": -20000
+    },
+    "resultat_avant_impot": "-800.00",
+    "actif": "20000.00",
+    "passif": "20000.00",
+    "provision_finale": "800.00",
+    "reprises_actives": "200.00",
+    "disponible_final": "800.00",
+    "apres_deux_reprises": {
+      "resultat_avant_impot": "-400.00",
+      "provision": "400.00"
+    },
+    "journal": {
+      "pieces": 5,
+      "lignes": 10,
+      "debit": "22000.00",
+      "credit": "22000.00"
+    },
+    "capacites": {
+      "source": "1000.00",
+      "premier_brouillon": "600.00",
+      "deux_reprises": "400.00",
+      "inverse_brouillon": "400.00",
+      "inverse_valide": "800.00"
+    },
+    "chronologie": {
+      "date_reprise": "2026-02-01",
+      "date_inverse": "2026-06-01",
+      "date_refusee": "2026-03-01",
+      "demande": "600.00",
+      "capacite_mars": "0.00",
+      "date_acceptee": "2026-07-01",
+      "capacite_juillet": "1000.00"
+    }
+  },
+  "limites": [
+    {
+      "id": "LIM-RP01",
+      "statut": "Bloqué",
+      "objet": "Attribution des mouvements manuels historiques sans lien fiable",
+      "action": "Analyse humaine distincte ; aucun rapprochement par libellé supposé."
+    },
+    {
+      "id": "LIM-RP02",
+      "statut": "Bloqué",
+      "objet": "Déductibilité et qualification fiscale du risque réel",
+      "action": "Justificatifs et décision comptable/fiscale à obtenir, aucune attestation automatique."
+    }
+  ],
+  "cas": [
+    {
+      "id": "RP-01",
+      "module": "Préparation",
+      "objectif": "Créer le dossier vierge et ses calendriers",
+      "prerequis": "Application de recette isolée ; migration100 installée séparément par l’administrateur. Aucune société réelle sélectionnée.",
+      "donnees": "Admin Recette Provisions ; RECETTE PROVISIONS615 SARL ; Casablanca ; recette.provisions615@example.com ; RecetteProvisions615! ; premier exercice 2025 ; calendriers civils2025/2026.",
+      "actions": "Déconnexion si nécessaire. Créer un compte → renseigner les cinq champs du jeu → créer. Paramètres : choisir SARL/MAD et Premier exercice (année de clôture)2025, enregistrer. Clôture : sélectionner2025, vérifier01/01–31/12 et périodes ouvertes ; conserver2026 civil. Si2025 n’a pas été préparé, Créer un exercice → année2025, début01/01/2025, clôture 31/12/2025 → Créer cet exercice.",
+      "attendu": "Société fictive active, administrateur identifié, exercices 2025/2026 présents sans chevauchement. Aucun identifiant fiscal inventé.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Écrans société et Gestion des exercices.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "RP-02",
+      "module": "Préparation",
+      "objectif": "Préparer les comptes et le logo",
+      "prerequis": "RP-01 réussi.",
+      "donnees": "Comptes 5141,1111,6195,1518,7195 ; logo docs/recette/images/LOGO_RECETTE_FICTIF.png.",
+      "actions": "Plan comptable de la société → Compléter le plan CGNC. Rechercher les cinq comptes et vérifier leurs libellés. Paramètres → Logo de la société → choisir le PNG fictif → enregistrer. Ne pas utiliser un logo ou un dossier réel.",
+      "attendu": "Comptes disponibles et logo fictif visible, aucun mouvement comptable.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Plan filtré et aperçu du logo.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "RP-03",
+      "module": "Inventaire",
+      "objectif": "Enregistrer le capital fictif et la dotation",
+      "prerequis": "RP-02 réussi ; exercice 2025 actif.",
+      "donnees": "CAP-PV01 ; 02/01/2025 ; BQ ; 20000 MAD. Dotation DOSSIER-PV01 — risque fictif de recette ; 1000 MAD ; 6195/1518.",
+      "actions": "Journal → Nouvelle écriture : date comptable et justificatif 02/01/2025, journal BQ, libellé Apport bancaire fictif PV01, référence CAP-PV01. Deux lignes 5141 débit 20000 et1111 crédit 20000 → enregistrer, puis Valider. Clôture 2025 → Ajouter un ajustement → Provision pour risques et charges, libellé/montant/comptes du jeu → Vérifier l’écriture → Créer l’écriture. Journal 2025 : valider uniquement cette nouvelle OD.",
+      "attendu": "Deux pièces validées et équilibrées. Source datée 31/12/2025 ; aucune contrepassation automatique. Résultat comptable avant impôt−1000 ; banque 20000 ; provision1000.",
+      "ecritures": "BQ D5141/C1111 20000 ; OD D6195/C1518 1000.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Deux pièces du Journal avec numéros et dotation de Clôture.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "RP-04",
+      "module": "Inventaire",
+      "objectif": "Vérifier un aperçu sans mutation",
+      "prerequis": "RP-03 réussi.",
+      "donnees": "Source DOSSIER-PV01 ; date 31/12/2025 ; montant 400 ; REP-PV01 ; date pièce 31/12/2025 ; Diminution fictive du risque — phase 1.",
+      "actions": "Clôture 2025 → Reprises partielles de provisions → sélectionner DOSSIER-PV01. Saisir les cinq champs du jeu. Cliquer Vérifier la reprise, sans créer. Relever dotation 1000, disponible 1000, comptes/libellés et capacité pour cette date.",
+      "attendu": "Aperçu OD 2025 : débit 1518 et crédit 7195 pour400. Aucun brouillon supplémentaire au Journal. Créer reste désactivé avant confirmation.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Comparer le nombre de pièces avant/après aperçu ; contrôler1000 de capacité.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Aperçu et nombre de pièces du Journal.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "RP-05",
+      "module": "Inventaire",
+      "objectif": "Créer la réservation de 400",
+      "prerequis": "RP-04 réussi ; ne pas changer les données après l’aperçu.",
+      "donnees": "Même demande REP-PV01,400 MAD.",
+      "actions": "Contrôler les mouvements et justificatifs fictifs. Cocher J’ai vérifié les mouvements du compte et les justificatifs de la reprise. Cliquer Créer le brouillon de reprise une fois. Rester sur le suivi puis ouvrir le Journal 2025.",
+      "attendu": "Suivi mis à jour sans F5 : dotation 1000 ; reprises validées0 ; réservation 400 ; disponible 600. Un seul nouveau brouillon, sans modifier la dotation.",
+      "ecritures": "Brouillon OD D1518/C7195 400.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Suivi1000/0/400/600 et brouillon REP-PV01.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "RP-06",
+      "module": "Inventaire",
+      "objectif": "Valider la première reprise",
+      "prerequis": "RP-05 réussi ; exercice 2025 actif.",
+      "donnees": "REP-PV01 de 400 MAD.",
+      "actions": "Journal : ouvrir la pièce REP-PV01, contrôler les deux lignes puis Valider. Revenir dans Clôture → reprises, sélectionner DOSSIER-PV01 et Actualiser les provisions si nécessaire.",
+      "attendu": "Reprise validée400 ; réservation 0 ; disponible 600. Montants et source inchangés, numéro définitif conservé.",
+      "ecritures": "OD définitive D1518/C7195 400.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Pièce définitive et suivi actualisé.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "RP-07",
+      "module": "Inventaire",
+      "objectif": "Ajouter200 et contrôler le premier résultat",
+      "prerequis": "RP-06 réussi.",
+      "donnees": "31/12/2025 ; 200 MAD ; REP-PV02 ; date pièce 31/12/2025 ; Diminution fictive du risque — phase 2.",
+      "actions": "Même source : renseigner les données, Vérifier la reprise, confirmer puis créer. Vérifier réservation 200 et disponible 400. Journal 2025 : valider REP-PV02. Liasse fiscale2025 : ouvrir CPC et Bilan.",
+      "attendu": "Reprises validées600, disponible 400. CPC avant impôt−400 ; provision au bilan400 ; banque 20000 ; actif=passif20000. Aucun impôt ou retraitement fiscal n’est ajouté dans ce scénario.",
+      "ecritures": "OD D1518/C7195 200.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Suivi, CPC et bilan2025.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "RP-08",
+      "module": "Inventaire",
+      "objectif": "Préparer l’annulation sans libération anticipée",
+      "prerequis": "RP-07 réussi.",
+      "donnees": "Annuler REP-PV01 ; date 31/12/2025 ; motif Correction fictive de la reprise phase 1.",
+      "actions": "Suivi → repérer la ligne REP-PV01 de 400 → Annuler la reprise → saisir date/motif → Créer l’inverse de reprise. Ne pas valider l’inverse immédiatement. Consulter le Journal.",
+      "attendu": "Original de 400 conservé ; inverse 400 en brouillon. Le disponible reste400, pas800. Le suivi explique la capacité maintenue jusqu’à validation des deux pièces.",
+      "ecritures": "Inverse brouillon D7195/C1518 400.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Original et inverse présents, suivi avec capacité 400.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "RP-09",
+      "module": "Inventaire",
+      "objectif": "Valider l’inverse et contrôler le résultat final",
+      "prerequis": "RP-08 réussi ; seul l’inverse reste en brouillon.",
+      "donnees": "Inverse ANN-REPRISE de REP-PV01 ; 400 MAD ; 31/12/2025.",
+      "actions": "Journal 2025 : contrôler puis valider l’inverse. Revenir au suivi, actualiser et sélectionner DOSSIER-PV01. Ouvrir Bilan/CPC depuis Liasse fiscale2025.",
+      "attendu": "Reprise active200, réservation 0, disponible 800. REP-PV01 et son inverse restent visibles. Provision finale800 ; CPC avant impôt−800 ; banque 20000 ; actif=passif20000.",
+      "ecritures": "Inverse définitif D7195/C1518 400. Aucun effacement de l’original.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Deux pièces 400, suivi final1000/200/0/800 et états2025.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "RP-10",
+      "module": "Exports",
+      "objectif": "Télécharger le suivi avec logo",
+      "prerequis": "RP-09 réussi ; logo fictif enregistré.",
+      "donnees": "Source DOSSIER-PV01 ; PDF et Excel de suivi.",
+      "actions": "Dans le suivi, cliquer Télécharger le suivi PDF puis Télécharger le suivi Excel. Ouvrir les fichiers. Excel : feuilles Synthèse, Reprises, Logo société ; vérifier les deux reprises, référence déclarée, inverse et statut.",
+      "attendu": "Identité/logo fictifs dans les deux formats ; dotation 1000, active200, réservations 0, disponible 800. Reprise 400 annulée par inverse validé ; 200 active. Empreinte présente, aucune attestation de déductibilité.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Comparer écran/fichiers ; consigner les noms téléchargés et conserver les fichiers.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "PDF, Excel et captures des cellules/du logo.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "RP-11",
+      "module": "Exports",
+      "objectif": "Contrôler le Journal et le FEC final",
+      "prerequis": "RP-09 réussi ; cinq pièces toutes validées ; aucune autre opération dans S1.",
+      "donnees": "Exercice 2025 ; référencesCAP-PV01,INV du dossier,REP-PV01,REP-PV02,ANN-REPRISE.",
+      "actions": "Journal : filtrer2025, contrôler cinq pièces et leurs lignes. Exporter le FEC 2025 depuis le module FEC. Ouvrir le fichier sans modifier les montants, comparer les comptes et références au tableau de l’oracle.",
+      "attendu": "5 pièces,10 lignes ; débit=crédit 22000 MAD. Soldes D5141=20000 ; C1111=20000 ; D6195=1000 ; C1518=800 ; C7195=200. Aucun brouillon.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Sommes en centimes, unicité des pièces, références et numéros définitifs.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "FEC et contrôle indépendant des10 lignes.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "RP-12",
+      "module": "Permissions",
+      "objectif": "Consulter sans commandes de mutation",
+      "prerequis": "RP-10 réussi ; administrateur S1.",
+      "donnees": "Nom Lecteur Provisions ; lecture.provisions615@example.com ; LectureProvisions615! ; rôle lecture.",
+      "actions": "Paramètres → Utilisateurs → Ajouter un utilisateur : saisir nom, adresse et mot de passe du jeu, rôle lecture, Créer le compte. Déconnexion, connexion du lecteur. Clôture 2025 → même source → lire et télécharger PDF/Excel.",
+      "attendu": "Suivi800 disponible et exports accessibles. Aucun formulaire Vérifier la reprise ni bouton Annuler la reprise. Source et pièces intactes.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Écran lecteur sans mutations, fichiers téléchargés et contrôle du Journal.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "RP-13",
+      "module": "Permissions",
+      "objectif": "Séparer les sociétés",
+      "prerequis": "Administrateur reconnecté à S1 ; conserver ses fichiers finaux.",
+      "donnees": "Nouvelle société RECETTE PROVISIONS CONTROLES615 (S2).",
+      "actions": "Sélecteur de société → Nouvelle société → saisir le nomS2 → Créer. Clôture → ouvrir les reprises. Vérifier l’absence du DOSSIER-PV01 deS1. Revenir à S1 et retrouver son suivi800.",
+      "attendu": "Aucune source deS1 visible dans S2 ; suivi deS1 inchangé.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Vérifier les noms de sociétés en haut de page et dans les exports.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Deux écrans distincts S1/S2.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "NEG-RP01",
+      "module": "Négatifs",
+      "objectif": "Refuser un dépassement ou une saisie invalide",
+      "prerequis": "Administrateur S1, aprèsRP-09.",
+      "donnees": "Source DOSSIER-PV01 ; 31/12/2025 ; montant 800.01 puis0,-1,0.001 ; justificationEssai négatif fictif.",
+      "actions": "Essayer successivement ces montants dans Montant de reprise, cliquer Vérifier la reprise lorsque le navigateur le permet. Ne pas forcer les contrôles HTML. Revenir au suivi après chaque essai.",
+      "attendu": "800.01 refusé par capacité ; valeurs nulles/négatives/précision excessive empêchées par formulaire ou API. Disponible 800, aucun nouveau brouillon.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Messages ou contrôle de saisie, nombre de pièces toujours5.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "NEG-RP02",
+      "module": "Négatifs",
+      "objectif": "Refuser une reprise antérieure à la source",
+      "prerequis": "S1 aprèsRP-09.",
+      "donnees": "Date 30/12/2025 ; 100 MAD ; justificationEssai de date fictif.",
+      "actions": "Saisir les données dans le même panneau, Vérifier la reprise. Relever le refus puis remettre31/12/2025, sans créer.",
+      "attendu": "Refus : reprise antérieure à la dotation du31/12/2025 ; disponible 800 et Journal inchangés.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Message de date et suivi800.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "NEG-RP03",
+      "module": "Négatifs",
+      "objectif": "Bloquer une période fermée puis la rouvrir",
+      "prerequis": "S1 aprèsRP-11 ; administrateur ; aucune pièce brouillon.",
+      "donnees": "Période Décembre2025 ; demande100 MAD au 31/12/2025.",
+      "actions": "Clôture 2025 → Périodes comptables → cliquer la période dont l’action est Fermer Décembre, confirmer. Essayer un aperçu de reprise 100 au 31/12/2025 : relever le refus. Revenir aux périodes et Ouvrir Décembre, confirmer. Réessayer l’aperçu, sans créer.",
+      "attendu": "Fermeture bloque l’aperçu ; réouverture administrative rétablit l’aperçu. Aucune reprise ajoutée ni clôture annuelle exécutée ; trace de période conservée.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Période fermée/refus puis période ouverte ; Journal toujours5 pièces.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "NEG-RP04",
+      "module": "Négatifs",
+      "objectif": "Imposer original avant inverse",
+      "prerequis": "S2 vierge ; initialiser son plan,2025 et capital commeRP-01 à03. Dotation 1000libellée DOSSIER-CONTROLE-S2 validée.",
+      "donnees": "Reprise 100 au 31/12/2025 référenceREP-S2 ; annulation même date, motif Annulation brouillon fictif.",
+      "actions": "Créer REP-S2 en brouillon, ne pas valider. Depuis le suivi, créer son inverse. Journal 2025 : essayer de valider uniquement l’inverse ; relever le refus. Puis Valider les brouillons pour les deux pièces, après contrôle.",
+      "attendu": "Inverse seul refusé ; original et inverse validés ensemble dans le bon ordre. Capacité 1000 libérée uniquement après les deux validations.",
+      "ecritures": "Brouillon D1518/C7195 100 et inverse D7195/C1518 100 ; effet net0.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Refus de validation isolée, deux numéros définitifs et disponible 1000.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "NEG-RP05",
+      "module": "Négatifs",
+      "objectif": "Respecter la date d’une annulation future",
+      "prerequis": "Créer S3 et initialiser plan/capital/dotation 1000commeRP-01 à03, libelléDOSSIER-CHRONO-S3. Calendrier 2026 ouvert.",
+      "donnees": "Reprise 1000 le01/02/2026, référenceREP-CHRONO ; inverse 01/06/2026, motifRisque fictif rétabli en juin ; aperçus600au01/03 puis01/07/2026.",
+      "actions": "Dans S3, créer puis valider la reprise 1000. Créer puis valider son inverse de juin. Suivi : disponible final1000. Essayer un aperçu600 en mars : relever le refus ; essayer600 en juillet : contrôler l’aperçu, sans créer. Cette branche ne simule aucune clôture ni à-nouveaux annuels.",
+      "attendu": "Mars refusé, capacité 0 à cette date ; juillet autorisé en aperçu avec capacité 1000. Aucun nouveau mouvement600.",
+      "ecritures": "Reprise 2026 D1518/C7195 1000 ; inversejuin D7195/C1518 1000. Effet net2026nul.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Deux pièces 1000 et les deux résultats d’aperçu.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "NEG-RP06",
+      "module": "Négatifs",
+      "objectif": "Conserver les pièces liées et leurs justificatifs",
+      "prerequis": "S1 aprèsRP-11 ; administrateur.",
+      "donnees": "Source DOSSIER-PV01 ; REP-PV01 ; son inverse ; REP-PV02.",
+      "actions": "Journal 2025 : consulter chaque pièce, vérifier qu’une pièce définitive ne peut être supprimée ou réécrite. Les corrections liées se font depuis le suivi, pas par contrepassation générique. Ne pas tenter de modifier directement la base. Relever les messages de protection lorsque la commande est proposée.",
+      "attendu": "Source/originaux/inverse conservés,5 pièces/10 lignes22000. Les compléments justificatifs éventuels utilisent le flux append-only existant, sans réécrire les lignes.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Pièces conservées et contrôles/message de protection.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    },
+    {
+      "id": "TECH-RP01",
+      "module": "Technique",
+      "objectif": "Rejouer les protections financières et concurrentes",
+      "prerequis": "Développeur sur copie locale isolée ; environnement Python et binaires PostgreSQL de recette disponibles. Jamais la base utilisateur.",
+      "donnees": "Depuis la racine : $env:PYTHON_DOTENV_DISABLED='1' ; .\\hisabpro-backend\\.venv\\Scripts\\python.exe -X utf8 Test/run_unit_tests.py Test/test_reprises_provisions.py Test/test_reprises_provisions615_isole.py Test/test_reprises_chronologie615_isole.py -q",
+      "actions": "Exécuter exactement la commande dans PowerShell. Conserver la sortie et le code retour. Le banc prépare ses propres clusters nonce. Si les binaires/dépendances manquent, noter Bloqué avec la cause ; ne pas substituer un PostgreSQL réel.",
+      "attendu": "NaN/infini/booléen refusés, idempotence et concurrence sans double consommation, sociétés/rôles protégés, périodes/clôture gardées, source antérieure intacte. Aucun succès déduit si commande échouée/ignorée.",
+      "ecritures": "Aucune nouvelle écriture.",
+      "fiscal": "Aucune TVA ni déductibilité présumée ; résultat fiscal non qualifié.",
+      "controles": "Contrôler société/exercice, nombres et absence de doublon.",
+      "statut": "Non testé",
+      "reel": "",
+      "anomalies": "",
+      "preuves": "",
+      "preuve_attendue": "Commande, sortie complète, code retour et chemins des preuves du banc.",
+      "observations": "Recette humaine à effectuer ; preuves automatisées distinctes dans les rapports 615/617."
+    }
+  ]
+}

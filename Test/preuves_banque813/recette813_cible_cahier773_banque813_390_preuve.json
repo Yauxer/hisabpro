@@ -1,0 +1,51 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_pvcj5n_i",
+  "nonce": "e43566c96db34d739ad2db207bc2aec3",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [
+    {
+      "id": "HP-BNQ-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-024",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-BNQ-002",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError('assert (0 == 17)\\n +  where 0 = len([])')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "sources813": {
+    "releve_banque_recette_2025.xlsx": "bb5b5268106357df9193d57005a7e48801622c5846c1a573b1429f50e919f80a",
+    "releve_banque_recette_2025.csv": "61a18e0eb66a79d0c5563804356aa71bcb2f4656323297a15c5bed13b0e1ffdc",
+    "negatifs/releve_debit_credit_simultanes.csv": "7cba2315410fc1abff8b919cd54b137cfb8a1d5e975ca2471226946f1c3d63b4"
+  },
+  "operations": [
+    {
+      "reference": "FRAIS-BQ",
+      "id": 100,
+      "date": "2025-12-31",
+      "journal": "BQ",
+      "lignes": {
+        "61473": [
+          "60.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "60.00"
+        ]
+      }
+    }
+  ],
+  "releve_invalide813": {
+    "capture": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette813_cible\\test_813_banque_releve_integra1\\releve_invalide813_390.png",
+    "sha256": "622615adcb5d52b257cfe65b7209368c20b1710e926fc245a14ff8837761bbb9"
+  }
+}

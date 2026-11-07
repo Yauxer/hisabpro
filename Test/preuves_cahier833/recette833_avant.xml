@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="46.237" timestamp="2026-10-25T21:01:54.445456+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_negatifs833_isole" name="test_833_identite_exercices_et_saisies_invalides[1440]" time="42.863"><failure message="AssertionError: assert '6' == '8'&#10;  &#10;  - 8&#10;  + 6">application = {'api_url': 'http://127.0.0.1:50654', 'web_url': 'http://127.0.0.1:50655', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_13nklqnx'), 'nonce': 'e2122413cec54b5995dcef17b4686c39', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette833_avant/test_833_identite_exercices_et0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_833_identite_exercices_et_saisies_invalides(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'negatifs833') as (api,page,sid,preuve):
+      resultats={};preuve['negatifs833']=resultats;me=ok(api.get('/api/auth/me'));nb=comptes833(application);identite=ok(api.get('/api/societe/moi'));calendrier=ok(api.get('/api/exercices'));assert core(application,sid)==()
+      ctx=page.context.browser.new_context(viewport={'width':largeur,'height':1050});gp=ctx.new_page();gp.set_default_timeout(15000);erreurs,serveur=observer(gp,application['api_url'])
+      try:
+&gt;      gp.goto(application['web_url']+'/login');gp.get_by_role('button',name='Créer un compte',exact=True).click();champ(gp,'Votre nom').fill('Copie Faible');champ(gp,'Raison sociale').fill('Copie négative fictive');champ(gp,'Email').fill(me['email']);pwd=champ(gp,'Mot de passe');assert pwd.get_attribute('minlength')=='8';pwd.fill(DATA['societe']['password_test'])
+                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E      AssertionError: assert '6' == '8'
+E        
+E        - 8
+E        + 6
+
+Test\test_e2e_cahier_negatifs833_isole.py:27: AssertionError</failure></testcase></testsuite></testsuites>

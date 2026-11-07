@@ -1,0 +1,27 @@
+{
+  "copie": {
+    "id": 1,
+    "facture_id": 1,
+    "auteur_id": 7,
+    "motif": "Conservation FICTIVE923 <copie> & contrôle",
+    "cree_at": "2026-10-29T02:18:25.495923+01:00",
+    "pdf_sha256": "ff945bc78e40753e08d78d6997b33f7c7bbd0f30c68806828481b04337a7a037",
+    "source_sha256": "597525d4a0de7a2540f746bde898040b43b049b423be7e04d0b5509247230812",
+    "source": {
+      "date": "2026-01-20",
+      "type": "vente",
+      "numero": "FA-2026-001",
+      "portee": "PDF produit par HisabPro lors de cette conservation. Ne certifie ni un dépôt, ni un paiement, ni une durée légale de conservation.",
+      "version": "COPIE_FACTURE_923",
+      "facture_id": 1,
+      "date_validation": "2026-10-29T01:18:25.445591"
+    },
+    "octets": 4147,
+    "reutilise": false,
+    "portee": "Copie interne figée du PDF émis ; ni preuve de règlement ni archivage légal certifié."
+  },
+  "octets_identiques_apres_changement_societe": true,
+  "logo_incorpore": true,
+  "comptabilite_inchangee": true,
+  "rejeu_sans_remplacement": true
+}

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="45.928" timestamp="2026-10-26T20:02:49.287061+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_navigation863_isole" name="test_863_navigation_et_details_sans_debordement[1366-768]" time="29.881"><failure message="AssertionError: Locator expected to contain text 'UX-863'&#10;Actual value: Grand livreÉcritures définitives · soldes d'ouverture et cumulésDuAu Exporter CSV3 comptes mouvementés · 1 écriture(s) définitive(s)CompteLibelléSolde initialMvt débitMvt créditSolde finalMvt3421Clients0,001.200,000,001.200,0014455État - TVA facturée0,000,00200,00-200,0017111Ventes de marchandises au Maroc0,000,001.000,00-1.000,0013421ClientsSolde initial0,00 MADMvt débit1.200,00 MADMvt crédit0,00 MADSolde final1.200,00 MADDateJournalN° écritureRéférenceTiersLibelléDébitCréditSolde cumuléLettrage20/01/25VTVT-2025-0001FA-2025-001Client Services RecetteFacture FA-2025-001 Client Services RecetteClient Services Recette1.200,00—1.200,00— &#10;Call log:&#10;  - Expect &quot;to_contain_text&quot; get_by_role(&quot;main&quot;) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;main&quot;)&#10;    14 × locator resolved to &lt;main class=&quot;Layout_content&quot;&gt;…&lt;/main&gt;&#10;       - unexpected value &quot;Grand livreÉcritures définitives · soldes d'ouverture et cumulésDuAu Exporter CSV3 comptes mouvementés · 1 écriture(s) définitive(s)CompteLibelléSolde initialMvt débitMvt créditSolde finalMvt3421Clients0,001.200,000,001.200,0014455État - TVA facturée0,000,00200,00-200,0017111Ventes de marchandises au Maroc0,000,001.000,00-1.000,0013421ClientsSolde initial0,00 MADMvt débit1.200,00 MADMvt crédit0,00 MADSolde final1.200,00 MADDateJournalN° écritureRéférenceTiersLibelléDébitCréditSolde cumuléLettrage20/01/25VTVT-2025-0001FA-2025-001Client Services RecetteFacture FA-2025-001 Client Services RecetteClient Services Recette1.200,00—1.200,00—&quot;&#10;&#10;Aria snapshot:&#10;- main:&#10;  - heading &quot;Grand livre&quot; [level=1]&#10;  - text: Écritures définitives · soldes d'ouverture et cumulés Du&#10;  - textbox: 2025-01-01&#10;  - text: Au&#10;  - textbox: 2025-12-31&#10;  - button &quot;Exporter CSV&quot;&#10;  - textbox &quot;Compte, libellé, tiers, référence, n° écriture…&quot;&#10;  - text: 3 comptes mouvementés · 1 écriture(s) définitive(s)&#10;  - table:&#10;    - rowgroup:&#10;      - row &quot;Compte Libellé Solde initial Mvt débit Mvt crédit Solde final Mvt&quot;:&#10;        - columnheader &quot;Compte&quot;&#10;        - columnheader &quot;Libellé&quot;&#10;        - columnheader &quot;Solde initial&quot;&#10;        - columnheader &quot;Mvt débit&quot;&#10;        - columnheader &quot;Mvt crédit&quot;&#10;        - columnheader &quot;Solde final&quot;&#10;        - columnheader &quot;Mvt&quot;&#10;    - rowgroup:&#10;      - row &quot;3421 Clients 0,00 1.200,00 0,00 1.200,00 1&quot;:&#10;        - cell &quot;3421&quot;&#10;        - cell &quot;Clients&quot;&#10;        - cell &quot;0,00&quot;&#10;        - cell &quot;1.200,00&quot;&#10;        - cell &quot;0,00&quot;&#10;        - cell &quot;1.200,00&quot;&#10;        - cell &quot;1&quot;&#10;      - row &quot;4455 État - TVA facturée 0,00 0,00 200,00 -200,00 1&quot;:&#10;        - cell &quot;4455&quot;&#10;        - cell &quot;État - TVA facturée&quot;&#10;        - cell &quot;0,00&quot;&#10;        - cell &quot;0,00&quot;&#10;        - cell &quot;200,00&quot;&#10;        - cell &quot;-200,00&quot;&#10;        - cell &quot;1&quot;&#10;      - row &quot;7111 Ventes de marchandises au Maroc 0,00 0,00 1.000,00 -1.000,00 1&quot;:&#10;        - cell &quot;7111&quot;&#10;        - cell &quot;Ventes de marchandises au Maroc&quot;&#10;        - cell &quot;0,00&quot;&#10;        - cell &quot;0,00&quot;&#10;        - cell &quot;1.000,00&quot;&#10;        - cell &quot;-1.000,00&quot;&#10;        - cell &quot;1&quot;&#10;  - text: 3421 Clients&#10;  - button &quot;Fermer le détail&quot;&#10;  - text: Solde initial 0,00 MAD Mvt débit 1.200,00 MAD Mvt crédit 0,00 MAD Solde final 1.200,00 MAD&#10;  - table:&#10;    - rowgroup:&#10;      - row &quot;Date Journal N° écriture Référence Tiers Libellé Débit Crédit Solde cumulé Lettrage&quot;:&#10;        - columnheader &quot;Date&quot;&#10;        - columnheader &quot;Journal&quot;&#10;        - columnheader &quot;N° écriture&quot;&#10;        - columnheader &quot;Référence&quot;&#10;        - columnheader &quot;Tiers&quot;&#10;        - columnheader &quot;Libellé&quot;&#10;        - columnheader &quot;Débit&quot;&#10;        - columnheader &quot;Crédit&quot;&#10;        - columnheader &quot;Solde cumulé&quot;&#10;        - columnheader &quot;Lettrage&quot;&#10;    - rowgroup:&#10;      - row &quot;20/01/25 VT VT-2025-0001 FA-2025-001 Client Services Recette Facture FA-2025-001 Client Services Recette Client Services Recette 1.200,00 — 1.200,00 —&quot;:&#10;        - cell &quot;20/01/25&quot;&#10;        - cell &quot;VT&quot;&#10;        - cell &quot;VT-2025-0001&quot;&#10;        - cell &quot;FA-2025-001&quot;&#10;        - cell &quot;Client Services Recette&quot;&#10;        - cell &quot;Facture FA-2025-001 Client Services Recette Client Services Recette&quot;&#10;        - cell &quot;1.200,00&quot;&#10;        - cell &quot;—&quot;&#10;        - cell &quot;1.200,00&quot;&#10;        - cell &quot;—&quot;">application = {'api_url': 'http://127.0.0.1:55409', 'web_url': 'http://127.0.0.1:55410', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_r_6w4hg2'), 'nonce': '3b1da551435c459fb9ecbe6abbcf255e', ...}, ...}
+largeur = 1366, hauteur = 768
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette863_cible/test_863_navigation_et_details0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur,hauteur',[(1366,768),(390,844)])
+    def test_863_navigation_et_details_sans_debordement(application,largeur,hauteur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'navigation863') as (api,page,sid,preuve):
+      page.set_viewport_size({'width':largeur,'height':hauteur});t=next(t for t in DATA['tiers'] if t['code']=='C-SERVICE');t=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'client','compte_client':'3421'}),201);f=facture843(api,t,'vente','2025-01-20',1000,'UX-863');valider843(api);avant=core(application,sid)
+      page.goto(application['web_url']+'/factures');geometrie863(page,'Factures',preuve);page.locator('tbody tr').filter(has_text=t['nom']).click();pdf=page.get_by_role('button',name='Télécharger PDF',exact=True);expect(pdf).to_be_visible();pdf.scroll_into_view_if_needed();q=pdf.bounding_box();assert q['x']&gt;=-1 and q['x']+q['width']&lt;=largeur+1;preuve['detail_facture863']={'telechargement_accessible':True}
+      page.goto(application['web_url']+'/commercial');devis=page.get_by_role('button',name='Nouveau devis',exact=True);geometrie863(page,'Cycle commercial',preuve,[devis]);devis.click();modal863(page,'Nouveau devis',preuve)
+      page.goto(application['web_url']+'/journal');nouvelle=page.get_by_role('button',name='Nouvelle écriture',exact=True);geometrie863(page,'Journal',preuve,[nouvelle]);nouvelle.click();modal863(page,'Nouvelle écriture',preuve)
+&gt;     page.goto(application['web_url']+'/grand-livre');geometrie863(page,'Grand livre',preuve);page.locator('tbody tr').filter(has_text='3421').first.click();fermer=page.get_by_role('button',name='Fermer le détail',exact=True);geometrie863(page,'Grand livre détail',preuve,[fermer]);expect(page.get_by_role('main')).to_contain_text('UX-863');fermer.click()
+                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to contain text 'UX-863'
+E     Actual value: Grand livreÉcritures définitives · soldes d'ouverture et cumulésDuAu Exporter CSV3 comptes mouvementés · 1 écriture(s) définitive(s)CompteLibelléSolde initialMvt débitMvt créditSolde finalMvt3421Clients0,001.200,000,001.200,0014455État - TVA facturée0,000,00200,00-200,0017111Ventes de marchandises au Maroc0,000,001.000,00-1.000,0013421ClientsSolde initial0,00 MADMvt débit1.200,00 MADMvt crédit0,00 MADSolde final1.200,00 MADDateJournalN° écritureRéférenceTiersLibelléDébitCréditSolde cumuléLettrage20/01/25VTVT-2025-0001FA-2025-001Client Services RecetteFacture FA-2025-001 Client Services RecetteClient Services Recette1.200,00—1.200,00— 
+E     Call log:
+E       - Expect "to_contain_text" get_by_role("main") with timeout 5000ms
+E       - waiting for get_by_role("main")
+E         14 × locator resolved to &lt;main class="Layout_content"&gt;…&lt;/main&gt;
+E            - unexpected value "Grand livreÉcritures définitives · soldes d'ouverture et cumulésDuAu Exporter CSV3 comptes mouvementés · 1 écriture(s) définitive(s)CompteLibelléSolde initialMvt débitMvt créditSolde finalMvt3421Clients0,001.200,000,001.200,0014455État - TVA facturée0,000,00200,00-200,0017111Ventes de marchandises au Maroc0,000,001.000,00-1.000,0013421ClientsSolde initial0,00 MADMvt débit1.200,00 MADMvt crédit0,00 MADSolde final1.200,00 MADDateJournalN° écritureRéférenceTiersLibelléDébitCréditSolde cumuléLettrage20/01/25VTVT-2025-0001FA-2025-001Client Services RecetteFacture FA-2025-001 Client Services RecetteClient Services Recette1.200,00—1.200,00—"
+E     
+E     Aria snapshot:
+E     - main:
+E       - heading "Grand livre" [level=1]
+E       - text: Écritures définitives · soldes d'ouverture et cumulés Du
+E       - textbox: 2025-01-01
+E       - text: Au
+E       - textbox: 2025-12-31
+E       - button "Exporter CSV"
+E       - textbox "Compte, libellé, tiers, référence, n° écriture…"
+E       - text: 3 comptes mouvementés · 1 écriture(s) définitive(s)
+E       - table:
+E         - rowgroup:
+E           - row "Compte Libellé Solde initial Mvt débit Mvt crédit Solde final Mvt":
+E             - columnheader "Compte"
+E             - columnheader "Libellé"
+E             - columnheader "Solde initial"
+E             - columnheader "Mvt débit"
+E             - columnheader "Mvt crédit"
+E             - columnheader "Solde final"
+E             - columnheader "Mvt"
+E         - rowgroup:
+E           - row "3421 Clients 0,00 1.200,00 0,00 1.200,00 1":
+E             - cell "3421"
+E             - cell "Clients"
+E             - cell "0,00"
+E             - cell "1.200,00"
+E             - cell "0,00"
+E             - cell "1.200,00"
+E             - cell "1"
+E           - row "4455 État - TVA facturée 0,00 0,00 200,00 -200,00 1":
+E             - cell "4455"
+E             - cell "État - TVA facturée"
+E             - cell "0,00"
+E             - cell "0,00"
+E             - cell "200,00"
+E             - cell "-200,00"
+E             - cell "1"
+E           - row "7111 Ventes de marchandises au Maroc 0,00 0,00 1.000,00 -1.000,00 1":
+E             - cell "7111"
+E             - cell "Ventes de marchandises au Maroc"
+E             - cell "0,00"
+E             - cell "0,00"
+E             - cell "1.000,00"
+E             - cell "-1.000,00"
+E             - cell "1"
+E       - text: 3421 Clients
+E       - button "Fermer le détail"
+E       - text: Solde initial 0,00 MAD Mvt débit 1.200,00 MAD Mvt crédit 0,00 MAD Solde final 1.200,00 MAD
+E       - table:
+E         - rowgroup:
+E           - row "Date Journal N° écriture Référence Tiers Libellé Débit Crédit Solde cumulé Lettrage":
+E             - columnheader "Date"
+E             - columnheader "Journal"
+E             - columnheader "N° écriture"
+E             - columnheader "Référence"
+E             - columnheader "Tiers"
+E             - columnheader "Libellé"
+E             - columnheader "Débit"
+E             - columnheader "Crédit"
+E             - columnheader "Solde cumulé"
+E             - columnheader "Lettrage"
+E         - rowgroup:
+E           - row "20/01/25 VT VT-2025-0001 FA-2025-001 Client Services Recette Facture FA-2025-001 Client Services Recette Client Services Recette 1.200,00 — 1.200,00 —":
+E             - cell "20/01/25"
+E             - cell "VT"
+E             - cell "VT-2025-0001"
+E             - cell "FA-2025-001"
+E             - cell "Client Services Recette"
+E             - cell "Facture FA-2025-001 Client Services Recette Client Services Recette"
+E             - cell "1.200,00"
+E             - cell "—"
+E             - cell "1.200,00"
+E             - cell "—"
+
+Test\test_e2e_cahier_navigation863_isole.py:33: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_navigation863_isole" name="test_863_navigation_et_details_sans_debordement[390-844]" time="13.975"><failure message="AssertionError: Locator expected to contain text 'UX-863'&#10;Actual value: Grand livreÉcritures définitives · soldes d'ouverture et cumulésDuAu Exporter CSV3 comptes mouvementés · 1 écriture(s) définitive(s)CompteLibelléSolde initialMvt débitMvt créditSolde finalMvt3421Clients0,001.200,000,001.200,0014455État - TVA facturée0,000,00200,00-200,0017111Ventes de marchandises au Maroc0,000,001.000,00-1.000,0013421ClientsSolde initial0,00 MADMvt débit1.200,00 MADMvt crédit0,00 MADSolde final1.200,00 MADDateJournalN° écritureRéférenceTiersLibelléDébitCréditSolde cumuléLettrage20/01/25VTVT-2025-0001FA-2025-001Client Services RecetteFacture FA-2025-001 Client Services RecetteClient Services Recette1.200,00—1.200,00— &#10;Call log:&#10;  - Expect &quot;to_contain_text&quot; get_by_role(&quot;main&quot;) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;main&quot;)&#10;    14 × locator resolved to &lt;main class=&quot;Layout_content&quot;&gt;…&lt;/main&gt;&#10;       - unexpected value &quot;Grand livreÉcritures définitives · soldes d'ouverture et cumulésDuAu Exporter CSV3 comptes mouvementés · 1 écriture(s) définitive(s)CompteLibelléSolde initialMvt débitMvt créditSolde finalMvt3421Clients0,001.200,000,001.200,0014455État - TVA facturée0,000,00200,00-200,0017111Ventes de marchandises au Maroc0,000,001.000,00-1.000,0013421ClientsSolde initial0,00 MADMvt débit1.200,00 MADMvt crédit0,00 MADSolde final1.200,00 MADDateJournalN° écritureRéférenceTiersLibelléDébitCréditSolde cumuléLettrage20/01/25VTVT-2025-0001FA-2025-001Client Services RecetteFacture FA-2025-001 Client Services RecetteClient Services Recette1.200,00—1.200,00—&quot;&#10;&#10;Aria snapshot:&#10;- main:&#10;  - heading &quot;Grand livre&quot; [level=1]&#10;  - text: Écritures définitives · soldes d'ouverture et cumulés Du&#10;  - textbox: 2025-01-01&#10;  - text: Au&#10;  - textbox: 2025-12-31&#10;  - button &quot;Exporter CSV&quot;&#10;  - textbox &quot;Compte, libellé, tiers, référence, n° écriture…&quot;&#10;  - text: 3 comptes mouvementés · 1 écriture(s) définitive(s)&#10;  - table:&#10;    - rowgroup:&#10;      - row &quot;Compte Libellé Solde initial Mvt débit Mvt crédit Solde final Mvt&quot;:&#10;        - columnheader &quot;Compte&quot;&#10;        - columnheader &quot;Libellé&quot;&#10;        - columnheader &quot;Solde initial&quot;&#10;        - columnheader &quot;Mvt débit&quot;&#10;        - columnheader &quot;Mvt crédit&quot;&#10;        - columnheader &quot;Solde final&quot;&#10;        - columnheader &quot;Mvt&quot;&#10;    - rowgroup:&#10;      - row &quot;3421 Clients 0,00 1.200,00 0,00 1.200,00 1&quot;:&#10;        - cell &quot;3421&quot;&#10;        - cell &quot;Clients&quot;&#10;        - cell &quot;0,00&quot;&#10;        - cell &quot;1.200,00&quot;&#10;        - cell &quot;0,00&quot;&#10;        - cell &quot;1.200,00&quot;&#10;        - cell &quot;1&quot;&#10;      - row &quot;4455 État - TVA facturée 0,00 0,00 200,00 -200,00 1&quot;:&#10;        - cell &quot;4455&quot;&#10;        - cell &quot;État - TVA facturée&quot;&#10;        - cell &quot;0,00&quot;&#10;        - cell &quot;0,00&quot;&#10;        - cell &quot;200,00&quot;&#10;        - cell &quot;-200,00&quot;&#10;        - cell &quot;1&quot;&#10;      - row &quot;7111 Ventes de marchandises au Maroc 0,00 0,00 1.000,00 -1.000,00 1&quot;:&#10;        - cell &quot;7111&quot;&#10;        - cell &quot;Ventes de marchandises au Maroc&quot;&#10;        - cell &quot;0,00&quot;&#10;        - cell &quot;0,00&quot;&#10;        - cell &quot;1.000,00&quot;&#10;        - cell &quot;-1.000,00&quot;&#10;        - cell &quot;1&quot;&#10;  - text: 3421 Clients&#10;  - button &quot;Fermer le détail&quot;&#10;  - text: Solde initial 0,00 MAD Mvt débit 1.200,00 MAD Mvt crédit 0,00 MAD Solde final 1.200,00 MAD&#10;  - table:&#10;    - rowgroup:&#10;      - row &quot;Date Journal N° écriture Référence Tiers Libellé Débit Crédit Solde cumulé Lettrage&quot;:&#10;        - columnheader &quot;Date&quot;&#10;        - columnheader &quot;Journal&quot;&#10;        - columnheader &quot;N° écriture&quot;&#10;        - columnheader &quot;Référence&quot;&#10;        - columnheader &quot;Tiers&quot;&#10;        - columnheader &quot;Libellé&quot;&#10;        - columnheader &quot;Débit&quot;&#10;        - columnheader &quot;Crédit&quot;&#10;        - columnheader &quot;Solde cumulé&quot;&#10;        - columnheader &quot;Lettrage&quot;&#10;    - rowgroup:&#10;      - row &quot;20/01/25 VT VT-2025-0001 FA-2025-001 Client Services Recette Facture FA-2025-001 Client Services Recette Client Services Recette 1.200,00 — 1.200,00 —&quot;:&#10;        - cell &quot;20/01/25&quot;&#10;        - cell &quot;VT&quot;&#10;        - cell &quot;VT-2025-0001&quot;&#10;        - cell &quot;FA-2025-001&quot;&#10;        - cell &quot;Client Services Recette&quot;&#10;        - cell &quot;Facture FA-2025-001 Client Services Recette Client Services Recette&quot;&#10;        - cell &quot;1.200,00&quot;&#10;        - cell &quot;—&quot;&#10;        - cell &quot;1.200,00&quot;&#10;        - cell &quot;—&quot;">application = {'api_url': 'http://127.0.0.1:55409', 'web_url': 'http://127.0.0.1:55410', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_r_6w4hg2'), 'nonce': '3b1da551435c459fb9ecbe6abbcf255e', ...}, ...}
+largeur = 390, hauteur = 844
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette863_cible/test_863_navigation_et_details1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur,hauteur',[(1366,768),(390,844)])
+    def test_863_navigation_et_details_sans_debordement(application,largeur,hauteur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'navigation863') as (api,page,sid,preuve):
+      page.set_viewport_size({'width':largeur,'height':hauteur});t=next(t for t in DATA['tiers'] if t['code']=='C-SERVICE');t=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'client','compte_client':'3421'}),201);f=facture843(api,t,'vente','2025-01-20',1000,'UX-863');valider843(api);avant=core(application,sid)
+      page.goto(application['web_url']+'/factures');geometrie863(page,'Factures',preuve);page.locator('tbody tr').filter(has_text=t['nom']).click();pdf=page.get_by_role('button',name='Télécharger PDF',exact=True);expect(pdf).to_be_visible();pdf.scroll_into_view_if_needed();q=pdf.bounding_box();assert q['x']&gt;=-1 and q['x']+q['width']&lt;=largeur+1;preuve['detail_facture863']={'telechargement_accessible':True}
+      page.goto(application['web_url']+'/commercial');devis=page.get_by_role('button',name='Nouveau devis',exact=True);geometrie863(page,'Cycle commercial',preuve,[devis]);devis.click();modal863(page,'Nouveau devis',preuve)
+      page.goto(application['web_url']+'/journal');nouvelle=page.get_by_role('button',name='Nouvelle écriture',exact=True);geometrie863(page,'Journal',preuve,[nouvelle]);nouvelle.click();modal863(page,'Nouvelle écriture',preuve)
+&gt;     page.goto(application['web_url']+'/grand-livre');geometrie863(page,'Grand livre',preuve);page.locator('tbody tr').filter(has_text='3421').first.click();fermer=page.get_by_role('button',name='Fermer le détail',exact=True);geometrie863(page,'Grand livre détail',preuve,[fermer]);expect(page.get_by_role('main')).to_contain_text('UX-863');fermer.click()
+                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to contain text 'UX-863'
+E     Actual value: Grand livreÉcritures définitives · soldes d'ouverture et cumulésDuAu Exporter CSV3 comptes mouvementés · 1 écriture(s) définitive(s)CompteLibelléSolde initialMvt débitMvt créditSolde finalMvt3421Clients0,001.200,000,001.200,0014455État - TVA facturée0,000,00200,00-200,0017111Ventes de marchandises au Maroc0,000,001.000,00-1.000,0013421ClientsSolde initial0,00 MADMvt débit1.200,00 MADMvt crédit0,00 MADSolde final1.200,00 MADDateJournalN° écritureRéférenceTiersLibelléDébitCréditSolde cumuléLettrage20/01/25VTVT-2025-0001FA-2025-001Client Services RecetteFacture FA-2025-001 Client Services RecetteClient Services Recette1.200,00—1.200,00— 
+E     Call log:
+E       - Expect "to_contain_text" get_by_role("main") with timeout 5000ms
+E       - waiting for get_by_role("main")
+E         14 × locator resolved to &lt;main class="Layout_content"&gt;…&lt;/main&gt;
+E            - unexpected value "Grand livreÉcritures définitives · soldes d'ouverture et cumulésDuAu Exporter CSV3 comptes mouvementés · 1 écriture(s) définitive(s)CompteLibelléSolde initialMvt débitMvt créditSolde finalMvt3421Clients0,001.200,000,001.200,0014455État - TVA facturée0,000,00200,00-200,0017111Ventes de marchandises au Maroc0,000,001.000,00-1.000,0013421ClientsSolde initial0,00 MADMvt débit1.200,00 MADMvt crédit0,00 MADSolde final1.200,00 MADDateJournalN° écritureRéférenceTiersLibelléDébitCréditSolde cumuléLettrage20/01/25VTVT-2025-0001FA-2025-001Client Services RecetteFacture FA-2025-001 Client Services RecetteClient Services Recette1.200,00—1.200,00—"
+E     
+E     Aria snapshot:
+E     - main:
+E       - heading "Grand livre" [level=1]
+E       - text: Écritures définitives · soldes d'ouverture et cumulés Du
+E       - textbox: 2025-01-01
+E       - text: Au
+E       - textbox: 2025-12-31
+E       - button "Exporter CSV"
+E       - textbox "Compte, libellé, tiers, référence, n° écriture…"
+E       - text: 3 comptes mouvementés · 1 écriture(s) définitive(s)
+E       - table:
+E         - rowgroup:
+E           - row "Compte Libellé Solde initial Mvt débit Mvt crédit Solde final Mvt":
+E             - columnheader "Compte"
+E             - columnheader "Libellé"
+E             - columnheader "Solde initial"
+E             - columnheader "Mvt débit"
+E             - columnheader "Mvt crédit"
+E             - columnheader "Solde final"
+E             - columnheader "Mvt"
+E         - rowgroup:
+E           - row "3421 Clients 0,00 1.200,00 0,00 1.200,00 1":
+E             - cell "3421"
+E             - cell "Clients"
+E             - cell "0,00"
+E             - cell "1.200,00"
+E             - cell "0,00"
+E             - cell "1.200,00"
+E             - cell "1"
+E           - row "4455 État - TVA facturée 0,00 0,00 200,00 -200,00 1":
+E             - cell "4455"
+E             - cell "État - TVA facturée"
+E             - cell "0,00"
+E             - cell "0,00"
+E             - cell "200,00"
+E             - cell "-200,00"
+E             - cell "1"
+E           - row "7111 Ventes de marchandises au Maroc 0,00 0,00 1.000,00 -1.000,00 1":
+E             - cell "7111"
+E             - cell "Ventes de marchandises au Maroc"
+E             - cell "0,00"
+E             - cell "0,00"
+E             - cell "1.000,00"
+E             - cell "-1.000,00"
+E             - cell "1"
+E       - text: 3421 Clients
+E       - button "Fermer le détail"
+E       - text: Solde initial 0,00 MAD Mvt débit 1.200,00 MAD Mvt crédit 0,00 MAD Solde final 1.200,00 MAD
+E       - table:
+E         - rowgroup:
+E           - row "Date Journal N° écriture Référence Tiers Libellé Débit Crédit Solde cumulé Lettrage":
+E             - columnheader "Date"
+E             - columnheader "Journal"
+E             - columnheader "N° écriture"
+E             - columnheader "Référence"
+E             - columnheader "Tiers"
+E             - columnheader "Libellé"
+E             - columnheader "Débit"
+E             - columnheader "Crédit"
+E             - columnheader "Solde cumulé"
+E             - columnheader "Lettrage"
+E         - rowgroup:
+E           - row "20/01/25 VT VT-2025-0001 FA-2025-001 Client Services Recette Facture FA-2025-001 Client Services Recette Client Services Recette 1.200,00 — 1.200,00 —":
+E             - cell "20/01/25"
+E             - cell "VT"
+E             - cell "VT-2025-0001"
+E             - cell "FA-2025-001"
+E             - cell "Client Services Recette"
+E             - cell "Facture FA-2025-001 Client Services Recette Client Services Recette"
+E             - cell "1.200,00"
+E             - cell "—"
+E             - cell "1.200,00"
+E             - cell "—"
+
+Test\test_e2e_cahier_navigation863_isole.py:33: AssertionError</failure></testcase></testsuite></testsuites>

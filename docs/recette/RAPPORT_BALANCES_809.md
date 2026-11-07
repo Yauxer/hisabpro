@@ -1,0 +1,19 @@
+# HisabPro — recette des imports de balances et des versions conservées
+
+Les quatre fiches HP-LIA-010, 011, 013 et 014 ont été exécutées dans Edge réel, sur ordinateur et mobile, avec PostgreSQL natif temporaire. Les fichiers originaux du cahier sont utilisés : balance_attendue_2025.csv, balance_attendue_2025.xlsx et a_nouveaux_attendus_2026.csv. Leurs empreintes sont vérifiées avant et après. Les 50 opérations comptables du cahier sont créées et validées par API comme témoin préalable ; ce lot teste ensuite les formulaires d’import et non de nouveau les formulaires commerciaux déjà testés.
+
+L’import 2025 en CSV puis en XLSX donne les mêmes données normalisées et les mêmes états : bilan actif/passif 337 010 MAD, résultat net 106 409,75 et CAF 112 709,75. Le plan comptable de la société contient réellement les comptes sources. Le comparatif N-1 absent apparaît Indisponible ; aucune année 2024 n’est créée. L’aperçu Excel est téléchargé et ouvert.
+
+La première préparation est conservée, avec version, période, fichiers et empreinte SHA-256. Après rechargement, elle est sélectionnée sans recharger de fichier. Ses exports Excel et PDF sont contrôlés. Une deuxième version distincte issue du fichier XLSX est conservée ; ses sources comptables normalisées égalent celles du CSV. La première version est relue et demeure strictement identique. Les noms de fichiers font partie du contenu conservé : deux empreintes peuvent donc différer malgré des montants normalisés identiques.
+
+L’import du fichier d’à-nouveaux 2026, sans classes 6/7, présente un bilan disponible à 337 010, mais un CPC et une CAF indisponibles. Ni l’interface ni les exports ne remplacent ces valeurs par zéro. Une préparation comparative 2026 utilise ensuite ce fichier en N et la balance avant clôture 2025 en N-1 : les deux bilans valent 337 010, seuls le résultat net et la CAF N-1 sont disponibles. L’exercice 2026 existe réellement dans le laboratoire ; aucune antériorité 2024 n’est inventée.
+
+Un utilisateur lecteur distinct se connecte dans une nouvelle session navigateur. Il consulte et exporte la version 2025, sans formulaire d’import ni bouton de conservation ; une tentative API de créer une version est refusée (403). Les PDF contiennent le logo fictif fourni dans le cahier et les classeurs conservés contiennent leur média. Au total, 22 fichiers sont téléchargés, ouverts et vérifiés dans les deux parcours.
+
+Les quatre versions sont relues en fin de test. Les 50 écritures d’origine et les états comptables 2025 restent strictement inchangés et aucune archive fiscale n’est créée. Ces préparations indépendantes ne sont pas des dossiers annuels finalisés et ne constituent pas un dépôt. La préparation 2026 d’ouverture ne décrit pas une activité annuelle complète. Aucun code produit ni migration n’a été modifié dans ce lot ; aucun PostgreSQL utilisateur n’a été utilisé.
+
+Les deux parcours ont réussi. Le suivi atteint 117 fiches réussies, 4 partielles, 141 non qualifiées individuellement et 10 bloquées par les sources. La matrice fonctionnelle de 70 lignes conserve ses statuts. La recette humaine et la conformité réglementaire restent à valider. B6 et B13 nécessitent des justificatifs ou une méthode ; RH/paie et point 6 restent différés.
+
+Mode d’emploi : Liasse fiscale → Préparer depuis des balances externes → Importer N / N-1. Choisir les fichiers et cliquer Contrôler et préparer. Vérifier chaque disponibilité avant de conserver. Pour relire, recharger puis sélectionner une entrée dans Préparations conservées ; les fichiers n’ont pas à être rechargés. Télécharger les pièces de cette version. L’import ne doit jamais être interprété comme une génération d’écritures.
+
+Prochaine étape : recette des cas négatifs d’import avec les fichiers fournis, puis rapprochement bancaire du scénario annuel, sans toucher aux données réelles.

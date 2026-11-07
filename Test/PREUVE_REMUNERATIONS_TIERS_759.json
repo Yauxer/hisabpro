@@ -1,0 +1,89 @@
+{
+  "lot": 759,
+  "tests_executes": {
+    "reference759": {
+      "cas": 10,
+      "temps_secondes": 130.22,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "tiers759_api": {
+      "cas": 57,
+      "temps_secondes": 63.0,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "tiers759_ui": {
+      "cas": 8,
+      "temps_secondes": 62.44,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "tiers759_final_cibles": {
+      "cas": 66,
+      "temps_secondes": 179.99,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "tiers759_commune": {
+      "cas": 226,
+      "temps_secondes": 344.4,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "session759_annuel": {
+      "cas": 2,
+      "temps_secondes": 36.09,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    }
+  },
+  "sources_figees": 1230,
+  "protections_inchangees": 117,
+  "documents": {
+    "word_xml_crc": true,
+    "pdf_pages": 10,
+    "piece_fictive_pages": 3,
+    "excel_feuilles": 6,
+    "cas_humains_non_testes": 8,
+    "formules_office_executees": false,
+    "oracles_decimal_executes": true
+  },
+  "restauration": {
+    "schema": 104,
+    "tables": 83,
+    "fichiers": 7,
+    "identites_mouvements_sources_et_rendus": true
+  },
+  "scenario": {
+    "comptabilise": "1400.00",
+    "soumis": "740.00",
+    "retenu": "37.00",
+    "groupe_A": [
+      "900.00",
+      "540.00",
+      "27.00"
+    ],
+    "groupe_B": [
+      "500.00",
+      "200.00",
+      "10.00"
+    ],
+    "calcul_taux": false,
+    "comptabilite_raccordee": false
+  },
+  "limites": [
+    "Préparation interne151, modèle administratif et annexes applicables non intégrés",
+    "Aucun taux calculé, Journal ou fiche tiers modifié",
+    "Aucun rapprochement comptable/fiscal global ou dépôt validé",
+    "Aucun PostgreSQL réel utilisé",
+    "Recette utilisateur, Office natif et environnement cible à vérifier",
+    "RH/paie et point6 différés"
+  ]
+}

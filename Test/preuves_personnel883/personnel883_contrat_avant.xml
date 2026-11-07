@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="26.248" timestamp="2026-10-28T03:45:10.222250+01:00" hostname="Taiyou"><testcase classname="Test.test_personnel883_regimes_isole" name="test_883_nouveau_contrat_ne_strande_pas_salaire_futur_approuve" time="24.062"><failure message="AssertionError: {&quot;id&quot;:7,&quot;employe_id&quot;:2,&quot;nature&quot;:&quot;CONTRAT&quot;,&quot;statut&quot;:&quot;BROUILLON&quot;,&quot;revision_attendue&quot;:4}&#10;assert 201 == 409&#10; +  where 201 = &lt;Response [201 Created]&gt;.status_code">equipe = {'a': &lt;httpx.Client object at 0x00000242AC90F4D0&gt;, 'b': &lt;httpx.Client object at 0x00000242AE204090&gt;, 'l': &lt;httpx.Client object at 0x00000242AE207350&gt;, 'uid': 5, ...}
+
+    def test_883_nouveau_contrat_ne_strande_pas_salaire_futur_approuve(equipe):
+        from test_personnel_workflow877_isole import avec_salaire
+        eq=equipe;eid,cid=avec_salaire(eq)
+        p=proposition(eq,eid,3,'REMUNERATION',{'contrat_version_id':cid,'montant':'9876.54','date_effet':'2027-01-01',
+          'periodicite':'mensuelle','reference_justificatif':'Avenant fictif883'})
+        soumettre(eq['a'],p['id'],3);approuver(eq,p['id'],3)
+&gt;       proposition(eq,eid,4,'CONTRAT',contrat('2027-01-01'),409)
+
+Test\test_personnel883_regimes_isole.py:115: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_workflow877_isole.py:86: in proposition
+    return ok(eq['a'].post(f'{W}/{eid}/modifications',json={'revision_attendue':rev,'motif':'Proposition fictive877','nature':nature,'contenu':contenu}),status)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [201 Created]&gt;, status = 409
+
+    def ok(r,status=200):
+&gt;       assert r.status_code==status,r.text
+E       AssertionError: {"id":7,"employe_id":2,"nature":"CONTRAT","statut":"BROUILLON","revision_attendue":4}
+E       assert 201 == 409
+E        +  where 201 = &lt;Response [201 Created]&gt;.status_code
+
+Test\test_multi_societes_runtime_isole.py:49: AssertionError</failure></testcase></testsuite></testsuites>

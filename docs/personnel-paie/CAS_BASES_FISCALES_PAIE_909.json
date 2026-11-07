@@ -1,0 +1,50 @@
+[
+  [
+    "PA-BASE01",
+    "Ouvrir depuis une simulation sociale",
+    "Copie isolée et sources fictives complètes préparées selon le jeu ; technicien et deux acteurs indépendants.",
+    "IDsocial retourné, novembre2026, P909, brut9800.11, salarial354.00.",
+    "Depuis04 > Simulations sociales, consulter la simulation puis Préparer les bases fiscales. Ouvrir Nouvelle préparation fiscale et Charger le social.",
+    "Onglet Bases fiscales actif, IDsocial prérempli ; société, mois, base9000.10 et brut9800.11 visibles. Aucune saisie de revenu annuel de substitution."
+  ],
+  [
+    "PA-BASE02",
+    "Calculer les cinq montants distincts",
+    "PA-BASE01, utilisateur habilité proposer.",
+    "Baseimposable9000.10, basefrais9000.10, référenceCTRL-FICTIF909, motif Préparation FICTIVE909 ; trois confirmations justifiées.",
+    "Saisir les seules fractions de base, sans rajouter800.01. Calculer et conserver. Déplier Variables et cotisations fiscales puis Qualifications conservées.",
+    "Brutimposable9300.11, basefrais9000.10, cotisations déductibles60.00, non déductibles294.00, revenu avant frais9240.11. Versions/IDs/empreintes conservés ; ni RNI définitif ni IR/net calculés."
+  ],
+  [
+    "PA-BASE03",
+    "Garder une inconnue et un montant certain",
+    "PA-BASE02 ; créer une nouvelle préparation.",
+    "MêmeIDsocial et données, basefrais laissée vide ; référence/motif suffixe INCONNU, autres confirmations inchangées.",
+    "Calculer et lire les anomalies. Ne pas saisir0 pour obtenir un résultat complet. Réouvrir ensuite la première préparation.",
+    "Basefrais À compléter, brutimposable9300.11 reste connu ; montant intermédiaire ne devient pas un RNI définitif. Premier résultat reste9000.10 pour sa basefrais et conserve son empreinte."
+  ],
+  [
+    "PA-BASE04",
+    "Bloquer une déduction intégrale non justifiée",
+    "Sources du jeu, nouvelles préparations distinctes.",
+    "Essai1 : ne pas confirmer déductibilité intégrale. Essai2 : baseimposable9800.11 alors que la base salariale n’est que9000.10. Autres champs commePA-BASE02.",
+    "Calculer séparément les deux essais. Lire les anomalies et l’état des totaux. Pour une véritable déduction partielle, ne pas confirmer intégrale pour contourner le contrôle.",
+    "Essai1 : cotisations déductibles et revenu intermédiaire À compléter. Essai2 : base fiscale incohérente, brut imposable non calculé. Aucun zéro ou montant négatif de secours."
+  ],
+  [
+    "PA-BASE05",
+    "Détecter un changement des sources",
+    "PA-BASE02 conservé ; préparateur et décideur.",
+    "Nouvelle variable ponctuelle100.00 de GAIN_FICTIF909, même novembre, référenceEXTRA-FICTIF909 ; justificatifATTESTATION_FICTIVE=PIECE-FICTIVE909 ; motifs Proposition/Soumission/Contrôle FICTIF909.",
+    "Créer, soumettre puis faire approuver la variable indépendamment. Tenter une nouvelle préparation fiscale depuis l’ancienIDsocial. Lire l’alerte, puis refaire le brut et le social avant une nouvelle préparation.",
+    "Ancienne source refusée pour un nouveau calcul complet, SOURCE_SOCIALE_CHANGEE visible ; ancien snapshot fiscal inchangé. Le logiciel ne modifie pas rétroactivement le brut/social ni les écritures."
+  ],
+  [
+    "PA-BASE06",
+    "Vérifier historique, accès et séparation du contrôle annuel",
+    "Deux sociétés fictives, administrateur d’habilitations ; journal/soldes relevés avant recette.",
+    "IDsdes préparations, motif révocation Fin accès fictif909.",
+    "Passer au Contrôle annuel IR puis revenir aux Bases fiscales. Changer de société. Révoquer rémunération et Actualiser. Vérifier ordinateur et mobile, puis comparer le journal avant/après.",
+    "Contrôle annuel reste séparé et ne reçoit aucun revenu intermédiaire automatiquement. Isolation, révocation et lecture verticale conservées. Aucun bulletin, paiement, retenue mensuelle ou écriture ; production non validée."
+  ]
+]

@@ -1,0 +1,101 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_r_6w4hg2",
+  "nonce": "3b1da551435c459fb9ecbe6abbcf255e",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1366,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError('Locator expected to contain text \\'UX-863\\'\\nActual value: Grand livreÉcritures définitives · soldes d\\'ouverture et cumulésDuAu Exporter CSV3 comptes mouvementés · 1 écriture(s) définitive(s)CompteLibelléSolde initialMvt débitMvt créditSolde finalMvt3421Clients0,001.200,000,001.200,0014455État - TVA facturée0,000,00200,00-200,0017111Ventes de marchandises au Maroc0,000,001.000,00-1.000,0013421ClientsSolde initial0,00 MADMvt débit1.200,00 MADMvt crédit0,00 MADSolde final1.200,00 MADDateJournalN° écritureRéférenceTiersLibelléDébitCréditSolde cumuléLettrage20/01/25VTVT-2025-0001FA-2025-001Client Services RecetteFacture FA-2025-001 Client Services RecetteClient Services Recette1.200,00—1.200,00— \\nCall log:\\n  - Expect \"to_contain_text\" get_by_role(\"main\") with timeout 5000ms\\n  - waiting for get_by_role(\"main\")\\n    14 × locator resolved to <main class=\"Layout_content\">…</main>\\n       - unexpected value \"Grand livreÉcritures définitives · soldes d\\'ouverture et cumulésDuAu Exporter CSV3 comptes mouvementés · 1 écriture(s) définitive(s)CompteLibelléSolde initialMvt débitMvt créditSolde finalMvt3421Clients0,001.200,000,001.200,0014455État - TVA facturée0,000,00200,00-200,0017111Ventes de marchandises au Maroc0,000,001.000,00-1.000,0013421ClientsSolde initial0,00 MADMvt débit1.200,00 MADMvt crédit0,00 MADSolde final1.200,00 MADDateJournalN° écritureRéférenceTiersLibelléDébitCréditSolde cumuléLettrage20/01/25VTVT-2025-0001FA-2025-001Client Services RecetteFacture FA-2025-001 Client Services RecetteClient Services Recette1.200,00—1.200,00—\"\\n\\nAria snapshot:\\n- main:\\n  - heading \"Grand livre\" [level=1]\\n  - text: Écritures définitives · soldes d\\'ouverture et cumulés Du\\n  - textbox: 2025-01-01\\n  - text: Au\\n  - textbox: 2025-12-31\\n  - button \"Exporter CSV\"\\n  - textbox \"Compte, libellé, tiers, référence, n° écriture…\"\\n  - text: 3 comptes mouvementés · 1 écriture(s) définitive(s)\\n  - table:\\n    - rowgroup:\\n      - row \"Compte Libellé Solde initial Mvt débit Mvt crédit Solde final Mvt\":\\n        - columnheader \"Compte\"\\n        - columnheader \"Libellé\"\\n        - columnheader \"Solde initial\"\\n        - columnheader \"Mvt débit\"\\n        - columnheader \"Mvt crédit\"\\n        - columnheader \"Solde final\"\\n        - columnheader \"Mvt\"\\n    - rowgroup:\\n      - row \"3421 Clients 0,00 1.200,00 0,00 1.200,00 1\":\\n        - cell \"3421\"\\n        - cell \"Clients\"\\n        - cell \"0,00\"\\n        - cell \"1.200,00\"\\n        - cell \"0,00\"\\n        - cell \"1.200,00\"\\n        - cell \"1\"\\n      - row \"4455 État - TVA facturée 0,00 0,00 200,00 -200,00 1\":\\n        - cell \"4455\"\\n        - cell \"État - TVA facturée\"\\n        - cell \"0,00\"\\n        - cell \"0,00\"\\n        - cell \"200,00\"\\n        - cell \"-200,00\"\\n        - cell \"1\"\\n      - row \"7111 Ventes de marchandises au Maroc 0,00 0,00 1.000,00 -1.000,00 1\":\\n        - cell \"7111\"\\n        - cell \"Ventes de marchandises au Maroc\"\\n        - cell \"0,00\"\\n        - cell \"0,00\"\\n        - cell \"1.000,00\"\\n        - cell \"-1.000,00\"\\n        - cell \"1\"\\n  - text: 3421 Clients\\n  - button \"Fermer le détail\"\\n  - text: Solde initial 0,00 MAD Mvt débit 1.200,00 MAD Mvt crédit 0,00 MAD Solde final 1.200,00 MAD\\n  - table:\\n    - rowgroup:\\n      - row \"Date Journal N° écriture Référence Tiers Libellé Débit Crédit Solde cumulé Lettrage\":\\n        - columnheader \"Date\"\\n        - columnheader \"Journal\"\\n        - columnheader \"N° écriture\"\\n        - columnheader \"Référence\"\\n        - columnheader \"Tiers\"\\n        - columnheader \"Libellé\"\\n        - columnheader \"Débit\"\\n        - columnheader \"Crédit\"\\n        - columnheader \"Solde cumulé\"\\n        - columnheader \"Lettrage\"\\n    - rowgroup:\\n      - row \"20/01/25 VT VT-2025-0001 FA-2025-001 Client Services Recette Facture FA-2025-001 Client Services Recette Client Services Recette 1.200,00 — 1.200,00 —\":\\n        - cell \"20/01/25\"\\n        - cell \"VT\"\\n        - cell \"VT-2025-0001\"\\n        - cell \"FA-2025-001\"\\n        - cell \"Client Services Recette\"\\n        - cell \"Facture FA-2025-001 Client Services Recette Client Services Recette\"\\n        - cell \"1.200,00\"\\n        - cell \"—\"\\n        - cell \"1.200,00\"\\n        - cell \"—\"')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "navigation863": [
+    {
+      "ecran": "Factures",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "document": {
+        "largeur": 1366,
+        "document": 1366
+      },
+      "titre_dans_largeur": true,
+      "actions_accessibles": 0
+    },
+    {
+      "ecran": "Cycle commercial",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "document": {
+        "largeur": 1366,
+        "document": 1366
+      },
+      "titre_dans_largeur": true,
+      "actions_accessibles": 1
+    },
+    {
+      "ecran": "Journal",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "document": {
+        "largeur": 1366,
+        "document": 1366
+      },
+      "titre_dans_largeur": true,
+      "actions_accessibles": 1
+    },
+    {
+      "ecran": "Grand livre",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "document": {
+        "largeur": 1366,
+        "document": 1366
+      },
+      "titre_dans_largeur": true,
+      "actions_accessibles": 0
+    },
+    {
+      "ecran": "Grand livre détail",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "document": {
+        "largeur": 1366,
+        "document": 1366
+      },
+      "titre_dans_largeur": true,
+      "actions_accessibles": 1
+    }
+  ],
+  "detail_facture863": {
+    "telechargement_accessible": true
+  },
+  "modales863": [
+    {
+      "nom": "Nouveau devis",
+      "largeur": 900,
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "fermeture_accessible": true
+    },
+    {
+      "nom": "Nouvelle écriture",
+      "largeur": 1100,
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "fermeture_accessible": true
+    }
+  ]
+}

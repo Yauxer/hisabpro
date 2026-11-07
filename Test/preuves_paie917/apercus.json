@@ -1,0 +1,25 @@
+{
+  "document": "PDF régénéré après restauration native du jeu fictif, aucun revenu réel",
+  "pages": 3,
+  "pdf_sha256": "2b9d1be80cf6cb6c446509a3fab42237002924aa53402069c9ef16c62f63ddcb",
+  "xlsx_sha256": "e1ede05ceae4b3138ae4325aad422c1d0edc87ebd99ffd4b7d17127dc1463458",
+  "images": [
+    {
+      "page": 1,
+      "chemin": "docs/personnel-paie/preuves/917_document_page1.png",
+      "sha256": "d247cd8e84a11b1864e28c080ff8c3e3fae46b319c644472d61e544b2a5d6759"
+    },
+    {
+      "page": 2,
+      "chemin": "docs/personnel-paie/preuves/917_document_page2.png",
+      "sha256": "9f54a5bbc1aeba0539e80b836461f5ac6c07ea205a041953fc9b0824a1eb8646"
+    },
+    {
+      "page": 3,
+      "chemin": "docs/personnel-paie/preuves/917_document_page3.png",
+      "sha256": "7e788addf5449d0f7ad1cd11f179f77da584911dc2319aee3d5a6900a7b6a012"
+    }
+  ],
+  "inspection_visuelle_effectuee": true,
+  "observations": "Trois pages effectivement vues par agent : logo intégré, montants et inconnues lisibles, tranches et douze sources libellées, références complètes, aucun recouvrement visible. Ne remplace pas la recette humaine ni un contrôle réglementaire."
+}

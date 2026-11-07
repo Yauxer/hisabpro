@@ -1,0 +1,7 @@
+# Reprise après753
+
+749/751/753 livrés : ne pas réappliquer. Contrôler journal/processus/ZIPs. Proposition externe IS/CM sur B12/CM/CR/AP qualifiés et cohérents ; clés B12→CM et crédits→acomptes vérifiées, anciens calculs figés, CSS distincte. Oracle de composants1425 ; ce n’est pas une déclaration annuelle réelle ou une conformité validée. Ordre de simulation à examiner ; aucune restitution/report légal universel déduit, aucune confirmation/paiement/écriture.
+
+Suite755 : scénario annuel entièrement chiffré du mode Liasse seule depuis société fictive neuve, import N/N-1 et formulaires réels jusqu’au solde proposé et aux exports. Brouillon mathématique : N1 bénéfice100000/IS17500/acomptes17600→ancien excédent100 ; référence2026 adaptée20000. N ventes140000, intérêts1500, charges21500, IS24000→résultat96000 ; crédits500 dont150 déjà utilisés, disponible350 ; acomptes20000 dontcash19750+ancien100+retenues150 ; solde proposé3650. CSS2026 sur100000 de dernier clos2025→0. Vérifier tous les chiffres et les sources avant génération des CSV/guide ; aucun fait réel inventé.
+
+Sources déjà relues : CGI2026 pages52(taux RAS5%/PPRF20%),179(TVA20%),475(17,5%2025/20%2026),478(référenceacomptes). Notes privées sources_fictives755.txt. Plan réel :7124services,7381intérêts,6136honoraires,1181résultats nets en instance,3453acomptes et4453IS. Pas de119technique. Base de test nonce exclusivement. Conserver toutes réserves FEC/ETIC historiques ;RH/paie/point6 différés. EDI toujours sur schéma officiel applicable, recette humaine et production nonvalidées.

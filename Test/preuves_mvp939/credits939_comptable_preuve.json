@@ -1,0 +1,17 @@
+{
+  "role": "comptable",
+  "largeur": 390,
+  "exports_individuels_reels": {
+    "pdf": {
+      "sha256": "9f0d76eae46dcc8a68486ded358f931e640f0b619f0e9f2d64f8f3361e5c72c2",
+      "montant325_et_logo_verifies": true
+    },
+    "xlsx": {
+      "sha256": "0fe37881428eb9864c2bbbd8c86a1267f0cfd3a4039085a21d8589dcb861169f",
+      "montant325_et_logo_verifies": true
+    }
+  },
+  "ZIP_credits325_verifie": true,
+  "brouillon_non_confondu_snapshot": true,
+  "hors_preparations_inchange": true
+}

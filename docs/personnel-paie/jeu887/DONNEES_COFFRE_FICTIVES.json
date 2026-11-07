@@ -1,0 +1,18 @@
+{
+  "A": {
+    "fichier": "docs/personnel-paie/jeu887/Justificatif_FICTIF_P004_A.pdf",
+    "sha256": "d846f9fe8593d8a497932fe3febaf0b738ca80cecbd29d5d4957a32d216f30ad",
+    "rib_iban_fictif": "FICTIF-COORDONNEES-P004-1122",
+    "titulaire": "Hassan FICTIF883",
+    "banque": "Banque FICTIVE de recette",
+    "date_effet": "2026-01-01"
+  },
+  "B": {
+    "fichier": "docs/personnel-paie/jeu887/Justificatif_FICTIF_P004_B.pdf",
+    "sha256": "3d11a4596ffcd277f30b16d973ac62e5090db1aaff3fdabcbe9b913308d7f3e5",
+    "rib_iban_fictif": "FICTIF-COORDONNEES-P004-3344",
+    "titulaire": "Hassan FICTIF883",
+    "banque": "Banque FICTIVE de recette",
+    "date_effet": "2027-01-01"
+  }
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="328.991" timestamp="2026-10-25T03:11:43.564660+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_etic805_isole" name="test_805_etic_documente_et_archive_nonforcee[1440]" time="81.015"><failure message="playwright._impl._errors.TimeoutError: Locator.inner_text: Timeout 15000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;body&quot;)">application = {'api_url': 'http://127.0.0.1:51313', 'web_url': 'http://127.0.0.1:51314', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_dfqohyb3'), 'nonce': '6d12b0805a814af59d404cb07c65d9d1', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette805_compteur/test_805_etic_documente_et_arc0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_805_etic_documente_et_archive_nonforcee(application,largeur,tmp_path):
+&gt;    with laboratoire(application,largeur,tmp_path,'etic805r') as (api,page,sid,preuve):
+
+Test\test_e2e_cahier_etic805_isole.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py:158: in __exit__
+    self.gen.throw(typ, value, traceback)
+Test\cahier_formulaires773_support.py:40: in laboratoire
+    preuve['erreur']=repr(e);print('DIAGNOSTIC',page.url,errors,serveur,page.locator('body').inner_text()[-4500:]);page.screenshot(path=str(tmp_path/f'cahier773_{nom}_echec.png'),full_page=True);raise
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\playwright\sync_api\_generated.py:19603: in inner_text
+    self._sync(self._impl_obj.inner_text(timeout=to_milliseconds(timeout)))
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_locator.py:502: in inner_text
+    return await self._frame.inner_text(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_frame.py:744: in inner_text
+    return await self._channel.send(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x0000017079B89650&gt;
+cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x000001707B835120&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        parsed_st = _attach_api_call_information(
+            getattr(task, "__pw_stack__", None) or _capture_stack_trace(),
+            is_internal,
+            title,
+        )
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Locator.inner_text: Timeout 15000ms exceeded.
+E           Call log:
+E             - waiting for locator("body")
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:632: TimeoutError</failure></testcase><testcase classname="Test.test_e2e_cahier_etic805_isole" name="test_805_etic_documente_et_archive_nonforcee[390]" time="244.916"><failure message="AssertionError: Locator expected to have Value '14400'&#10;Actual value:  &#10;Call log:&#10;  - Expect &quot;to_have_value&quot; locator(&quot;#etic-B6&quot;).get_by_label(&quot;3421 Échues et non recouvrées&quot;, exact=True) with timeout 5000ms&#10;  - waiting for locator(&quot;#etic-B6&quot;).get_by_label(&quot;3421 Échues et non recouvrées&quot;, exact=True)&#10;    14 × locator resolved to &lt;input min=&quot;0&quot; value=&quot;&quot; step=&quot;0.01&quot; type=&quot;number&quot; class=&quot;Etic_ventilationInput&quot; aria-label=&quot;3421 Échues et non recouvrées&quot;/&gt;&#10;       - unexpected value &quot;&quot;&#10;&#10;Aria snapshot:&#10;- spinbutton &quot;3421 Échues et non recouvrées&quot;">application = {'api_url': 'http://127.0.0.1:51313', 'web_url': 'http://127.0.0.1:51314', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_dfqohyb3'), 'nonce': '6d12b0805a814af59d404cb07c65d9d1', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette805_compteur/test_805_etic_documente_et_arc1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_805_etic_documente_et_archive_nonforcee(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'etic805r') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve);cloturer_cahier(api,page,application,sid,preuve)
+    
+&gt;     echeances_2026(api,page,application,sid,preuve);completer_etic(api,page,application,sid,preuve,tmp_path)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_etic805_isole.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+api = &lt;httpx.Client object at 0x0000017079FE67D0&gt;
+page = &lt;Page url='http://127.0.0.1:51314/etic'&gt;
+app = {'api_url': 'http://127.0.0.1:51313', 'web_url': 'http://127.0.0.1:51314', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_dfqohyb3'), 'nonce': '6d12b0805a814af59d404cb07c65d9d1', ...}, ...}
+sid = 9
+preuve = {'cible_isolee': 'C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_dfqohyb3', 'nonce': '6d12b0805a814af59d404cb07c65d9d1', 'source_sha256': 'b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7', 'largeur': 390, ...}
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette805_compteur/test_805_etic_documente_et_arc1')
+
+    def completer_etic(api,page,app,sid,preuve,tmp_path):
+     avant=core(app,sid);snapshot=ok(api.get('/api/fiscalite/is/2025'))['liquidation']['snapshot'];page.goto(app['web_url']+'/cloture');page.get_by_label('Exercice actif',exact=True).select_option('2025');page.goto(app['web_url']+'/etic');expect(page.get_by_role('button',name=GROUPES['A'],exact=True)).to_be_visible();debut=lire(api);assert not debut['verrouillee'];preuve['etic805']={'avant':debut,'sections_verifiees':[]}
+     for code,cas in CAS.items():
+      s=section(api,code);p=ouvrir(page,code);texte=TEXTES[cas]
+      if code=='C1':
+       p.get_by_role('button',name='Ajouter une ligne',exact=False).click()
+       valeurs={'Actionnaire / associé':'Associé Recette','Identifiant / adresse':'REC-ASSOC01','Nombre de titres / parts':'2000','Valeur nominale':'100','Montant du capital détenu':'200000','% capital':'100'}
+       for label,v in valeurs.items():p.get_by_label(label,exact=True).fill(v)
+      elif code=='C5':
+       assert preuve['echeances795']['cloture_et_snapshot2025_inchanges']
+       texte='État fictif du cahier préparé au 06/10/2026 ; contrôle automatisé exécuté le 25/10/2026. Événements N+1 effectivement enregistrés dans ce laboratoire : TVA décembre 2025 payée 2 400 MAD le 20/01/2026 ; IS 2025 payé 23 220,25 MAD le 31/03/2026. Acomptes 2026 : 6 691,50 MAD le 31/03 et 2 000 MAD le 30/06. Aucun événement réel n’est affirmé.'
+       p.locator('textarea').fill(texte)
+      elif s['mode']=='manuel' and (texte.startswith('Néant') or code=='C2'):
+       p.get_by_role('checkbox',name="Néant pour l'exercice 2025",exact=True).check()
+      else:p.locator('textarea').fill(texte)
+      if s['mode']=='assiste':p.get_by_role('checkbox',name=re.compile("^J'ai contrôlé")).check()
+      enregistre=sauvegarder(api,page,app,code,True);c=enregistre['contenu']
+      if code=='C1':
+       ligne=c['lignes'][0];assert ligne['associe']=='Associé Recette' and ligne['identifiant']=='REC-ASSOC01';assert [D(str(ligne[k])) for k in ['titres','nominal','capital','pourcentage']]==list(map(D,['2000','100','200000','100']))
+      elif s['mode']=='manuel' and (TEXTES[cas].startswith('Néant') or code=='C2'):assert c['neant'] is True
+      else:assert c.get('texte',c.get('notes'))==texte
+      if code=='B2':assert any(D(str(x.get('fin_module',0)))==D('24000') and D(str(x.get('ecart',0)))==0 for x in enregistre['automatique']['lignes'])
+      if code=='B2bis':assert sum(D(str(x['dotations'])) for x in enregistre['automatique']['lignes'])==D('4800')
+      if code=='B5':assert {x['compte']:D(str(x['fin'])) for x in enregistre['automatique']['lignes']}=={'1518':D('1500'),'3942':D('2000')}
+      if code=='B12':
+       l={x['rubrique']:D(str(x['montant'])) for x in enregistre['automatique']['lignes']};assert l['Résultat net comptable']==D('106409.75') and l['Réintégrations fiscales (dont IS comptabilisé)']==D('27420.25') and l['Bénéfice fiscal imposable']==D('133830')
+      if code=='C3':
+       l=enregistre['automatique']['lignes'];assert all(x['resultat_net'] is None for x in l if x['exercice']&lt;2025);assert next(D(str(x['resultat_net'])) for x in l if x['exercice']==2025)==D('106409.75')
+      preuve['etic805']['sections_verifiees'].append(code);preuve['cas'].append({'id':cas,'statut':'Réussi'})
+     # B7 : échéances documentées par les pièces et paiements N+1 réellement joués.
+     s=section(api,'B7');p=ouvrir(page,'B7');a=next(x for x in s['automatique']['lignes'] if x['compte']=='4411');assert D(str(a['echeance_auto_total']))==D('480') and a['echeance_auto_nb_factures']&gt;=2
+     factures=[f for f in ok(api.get('/api/factures',params={'exercice':2025})) if f.get('reference') in ['02','002']];assert len(factures)==2 and all(f['date_echeance']=='2025-12-31' for f in factures);preuve['etic805']['sources_b7']={'factures_examinees':a['echeance_auto_nb_factures'],'references_impayees':[f['reference'] for f in factures],'echues_certaines':'480.00'}
+     expect(p.get_by_label('4411 Échues et non payées',exact=True)).to_have_value('480')
+     for compte,val in [('4417','3000'),('4453','23220.25'),('4456','2400')]:
+      for lib,m in [('+ d’un an','0'),('- d’un an',val),('Échues et non payées','0')]:p.get_by_label(compte+' '+lib,exact=True).fill(m)
+     p.get_by_role('checkbox',name=re.compile('^Autres analyses')).check();p.locator('textarea').fill('FNP-01 : échéance contractuelle au 31/01/2026 selon le cahier. IS de 23 220,25 payé le 31/03/2026 et TVA de 2 400 payée le 20/01/2026 : écritures N+1 effectivement jouées. Références 02 et 002 distinctes, échéances au 31/12/2025 ; autres analyses néant selon le cas fictif.');p.get_by_role('checkbox',name=re.compile("^J'ai contrôlé")).check();b7=sauvegarder(api,page,app,'B7',True)
+     for compte,val in [('4453','23220.25'),('4456','2400')]:assert D(str(next(x for x in b7['ventilation'] if str(x['compte'])==compte)['etat_organismes_publics']))==D(val)
+     # B6 : seules les créances clients sont certaines ;aucune tranche supposée pour80/11000.
+&gt;    s=section(api,'B6');p=ouvrir(page,'B6');a=next(x for x in s['automatique']['lignes'] if x['compte']=='3421');assert D(str(a['echeance_auto_total']))==D('14400');expect(p.get_by_label('3421 Échues et non recouvrées',exact=True)).to_have_value('14400')
+                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: Locator expected to have Value '14400'
+E    Actual value:  
+E    Call log:
+E      - Expect "to_have_value" locator("#etic-B6").get_by_label("3421 Échues et non recouvrées", exact=True) with timeout 5000ms
+E      - waiting for locator("#etic-B6").get_by_label("3421 Échues et non recouvrées", exact=True)
+E        14 × locator resolved to &lt;input min="0" value="" step="0.01" type="number" class="Etic_ventilationInput" aria-label="3421 Échues et non recouvrées"/&gt;
+E           - unexpected value ""
+E    
+E    Aria snapshot:
+E    - spinbutton "3421 Échues et non recouvrées"
+
+Test\cahier_etic805_support.py:64: AssertionError</failure></testcase></testsuite></testsuites>

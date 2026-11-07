@@ -1,0 +1,50 @@
+[
+  [
+    "PA-ARR01",
+    "Comparer avant/après arrondi annuel",
+    "Copie isolée ; Personnel actif/protégé et habilitations identité/rémunération/proposer ; RNI annuel déjà établi.",
+    "Tous les champs du jeu principal40000.01/0.",
+    "Créer un contrôle annuel, saisir les références et confirmations, calculer ; lire Comparaison sur base annuelle arrondie.",
+    "Sans arrondi0.0010 ; base40010.00 ; avant réduction1.0000 ; réduction0.0000 ; comparatif1.0000 ; écart0.9990. Versement non déterminé."
+  ],
+  [
+    "PA-ARR02",
+    "Conserver une base déjà multiple",
+    "PA-ARR01 ; nouveau contrôle.",
+    "RNI40010.00, personnes0, mêmes références/confirmations, motif Multiple FICTIF911.",
+    "Calculer et comparer la base déclarée à la base arrondie.",
+    "Base40010.00 conservée, résultat1.0000 etécart0.0000 ; aucune dizaine supplémentaire."
+  ],
+  [
+    "PA-ARR03",
+    "Préserver les inconnues",
+    "Nouveaux contrôles, aucun ancien résultat écrasé.",
+    "Essai1 RNI40000.01/personnes Inconnu, famille non confirmée. Essai2 RNI vide/cadre non confirmé, personnes0/famille confirmée.",
+    "Calculer séparément et lire les anomalies.",
+    "Essai1 : base40010.00 etimpôt avant réduction1.0000 connus, résultat après famille À compléter. Essai2 : base etcomparaison inconnues, jamais zéro présumé."
+  ],
+  [
+    "PA-ARR04",
+    "Plafonner une réduction et distinguer zéro",
+    "PA-ARR01 ; contrôles distincts.",
+    "RNI40000.01/personnes6, puisRNI0.00/personnes0 ; références etconfirmations du jeu.",
+    "Calculer chaque cas etcomparer réduction appliquée, résultat etversement.",
+    "Premier : réduction1.0000 sur base arrondie,résultat0.0000 ; second : base0.00 connue,résultat0.0000. Aucun crédit fictif ni versement déterminé."
+  ],
+  [
+    "PA-ARR05",
+    "Conserver les contrôles historiques",
+    "Un véritable contrôle créé avant911 est présent sur copie ; sinon noter ce cas Bloqué sans inventer un historique.",
+    "ID etempreinte de l’ancien contrôle ; nouveauRNI40000.01/0 si nécessaire.",
+    "Relire l’ancien contrôle, comparer à la preuve conservée avantmiseàjour. Créer ensuite un nouveau contrôle etrelire le premier.",
+    "Ancien contenu/référentiel/empreinte inchangés,sans comparaison ajoutée rétroactivement. Nouveau contrôle conserve la règle911 etson document. Le rejeu idempotent authentique911 est couvert par le testAPI fourni."
+  ],
+  [
+    "PA-ARR06",
+    "Vérifier sources et limites",
+    "Deux sociétés fictives, administrateur d’habilitations ; journal relevé avantrecette.",
+    "IDdu nouveau contrôle, motif Fin accès FICTIF911.",
+    "Ouvrir la source article167, vérifier empreinte/date affichées. Changer de société,révoquer rémunération etActualiser. Comparer journal etpaiements.",
+    "Sources conservées,isolation etrévocation effectives,aucun débordement mobile. Aucun net,bulletin,paiement,écriture oumontantàdéclarer ; production nonvalidée."
+  ]
+]

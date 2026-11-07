@@ -1,0 +1,34 @@
+{
+  "societe": "RECETTE PAIE921 — société entièrement fictive, copie isolée uniquement",
+  "menu": "05 · Fiscalité salariale → Bases fiscales → Préparer le RNI mensuel de P909",
+  "installation": "Code921 ; migrations123 puis124 sur copie après120 ; prérequis Personnel, brut et social déjà installés. Ne jamais lancer cette recette sur les données habituelles.",
+  "sources": "Créer une nouvelle fiche P909 et des sources approuvées dans la société vierge : contrat CDI dès2026-01-01, rémunération mensuelle9000.10, tout novembre2026. Gain mensuel800.01 approuvé indépendamment. Préparer brut, social puis bases fiscales via les guides893,899,909.",
+  "rubrique_fictive": "GAIN_FICTIF909, Gain, Mensuelle (et non Ponctuelle), Montant exact, début2026-01-01, fin et compte vides, justificatif ATTESTATION_FICTIVE. Créer cette périodicité avant approbation ; ne jamais modifier une rubrique historique approuvée.",
+  "regles_rubrique": "IR : plafond500.00/par opération ; CNSS : plafond300.00/par opération ; AMO : soumis. Conditions Hypothèse FICTIVE909 sans portée légale. IR qualifié seulement dans le jeu de test isolé ; frais Exclue / qualifiée dans ce même jeu.",
+  "branches_fictives": "Régime REGIME_FISC909. B1_FICTIF909 : CNSS, salarial1%, patronal2%, plafond6000.00/mensuel, composantB1, déductibilité intégrale fictive. B2_FICTIF909 : AMO, salarial3%, patronal4%, sans plafond, composantB2, non déductible fictivement. Organisme Organisme fictif, début2026-01-01, conditions Hypothèse FICTIVE909 sans portée légale.",
+  "qualification_test": "Pour la recette isolée exclusivement, le technicien peut constituer les états synthétiques qualifiés comme les fixtures test_paie909_bases_isole.py : texte/article/référence FICTIF909, URL https://www.finances.gov.ma/, SHA a répété64fois, consultation2026-01-01 ; approbateur distinct habilité valider_regles_paie. Ces références fictives ne justifient aucune véritable règle et sont interdites pour une paie réelle.",
+  "sources_reelles": "En exploitation, utiliser uniquement des preuves véritables de l’éligibilité du salarié et de chaque règle, contrôlées par le décideur. Ne pas copier les taux ou preuves fictifs du cahier.",
+  "declarations_sociales": "BaseCNSS9000.10 etbaseAMO9000.10 ; conditions confirmées, référenceCTRL-FICTIF909 ; motif Social FICTIF909 ; conserverIDsocial après calcul354.00 salarial/512.00 patronal.",
+  "part_base_imposable": "9000.10",
+  "part_base_frais": "9000.10",
+  "reference_controle": "CTRL-FICTIF909",
+  "motif": "Préparation FICTIVE909",
+  "confirmations": "Conditions fiscales ; déductibilité intégrale des cotisations éligibles ; compréhension du résultat intermédiaire. Uniquement si justifiées dans le scénario.",
+  "attendus": "Gain imposable300.01 ; brut imposable9300.11 ; basefrais9000.10 ; déductible60.00 ; non déductible294.00 ; revenu avantfrais9240.11. Frais déduits/RNI/IR/net non déterminés.",
+  "attention": "Les règles sociales et qualifications FISC909 sont fictives et ne sont pas les taux CNSS/AMO applicables. Annualiser par12 ici est une transformation mathématique, pas une estimation des revenus futurs ni une règle de retenue liquidée. Ne pas utiliser497.0240 pour payer ou déclarer.",
+  "frais_declares": "2250.03 ; référence FRAIS-DECLARES-FICTIFS921. Hypothèse arithmétique déclarée, pas un forfait mensuel réglementaire calculé par HisabPro.",
+  "autres_deductions": "0.00 explicite ; référence AUCUNE-AUTRE-FICTIVE921. Ne pas saisir zéro pour une donnée inconnue.",
+  "cadre_mensuel": "Cocher déductions confirmées et mois complet du cas général ; référence MOIS-FICTIF921. Ces confirmations concernent seulement le scénario fictif.",
+  "famille": "2 personnes ; confirmer éligibilité uniquement dans ce scénario ; référence FAMILLE-FICTIVE921. Nombre civil seul insuffisant.",
+  "versement": "Laisser date et référence de versement vides : date inconnue, aucune date déduite du mois ou de la date d’effet.",
+  "motif_mensuel": "Contrôle mensuel entièrement FICTIF921 ; cocher la compréhension du mode préparatoire pédagogique.",
+  "attendu_mensuel": "9300.11 - 60.00 - 2250.03 - 0.00 = RNI6990.08. Équivalence mathématique annuelle83880.96 ; IR annuel mathématique7164.288 /12 =597.0240. Réduction mathématique2×600/12=100.0000 ; après réduction497.0240, fraction exacte62128/125.",
+  "indisponibles": "Retenue à opérer, montant à déclarer, versement et net à payer : non déterminés. Aucun bulletin ni OD de paie. Statut NON_VALIDE_JURIDIQUEMENT.",
+  "periodes_exactes": [
+    {
+      "periode": "2026-11-01",
+      "date_effet_variable": "2026-11-15",
+      "reference_variable": "SOURCE-FICTIVE921"
+    }
+  ]
+}

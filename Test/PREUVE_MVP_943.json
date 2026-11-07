@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-29",
+  "nombre_distinct": 7,
+  "campagne_unique_verte": true,
+  "repartition": {
+    "Edge_API_PostgreSQL_natif_isole": 3,
+    "unitaires": 4
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_e2e_qualification_liasse943_isole::test_943_exports_annuels_fideles_et_finalisation_non_forcee[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "liasse943_final"
+    },
+    {
+      "id": "Test.test_e2e_qualification_liasse943_isole::test_943_exports_annuels_fideles_et_finalisation_non_forcee[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "liasse943_final"
+    },
+    {
+      "id": "Test.test_e2e_archive_liasse_isole::test_archive_liasse_finalisation_exports_empreinte_et_immutabilite",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "liasse943_final"
+    },
+    {
+      "id": "Test.test_patch120_liasse_exports_ventilations::test_pdf_conserve_ventilation_et_diagnostics_avec_caracteres_speciaux[B6]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "liasse943_final"
+    },
+    {
+      "id": "Test.test_patch120_liasse_exports_ventilations::test_pdf_conserve_ventilation_et_diagnostics_avec_caracteres_speciaux[B7]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "liasse943_final"
+    },
+    {
+      "id": "Test.test_patch120_liasse_exports_ventilations::test_export_excel_reel_preserve_zero_inconnus_et_diagnostics",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "liasse943_final"
+    },
+    {
+      "id": "Test.test_patch131_liasse_pdf_identite::test_raison_sociale_reste_litterale_dans_le_titre_et_le_pied_de_page",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "liasse943_final"
+    }
+  ],
+  "selection": [
+    "Test/test_e2e_qualification_liasse943_isole.py",
+    "Test/test_e2e_archive_liasse_isole.py",
+    "Test/test_patch120_liasse_exports_ventilations.py",
+    "Test/test_patch131_liasse_pdf_identite.py"
+  ],
+  "duree_xml_s": 597.58,
+  "code_sortie": 0,
+  "execution": "PYTHON_DOTENV_DISABLED=1 ;SECRET_KEY fictive,DATABASE_URL inerte port1 ;python .codex-tests/lancer_session.py liasse943_final <selection> ;fixtures PG/serveurs nonce.",
+  "historique_non_additionne": [
+    "Reprise initiale code2 :erreur de collecte provoquée par ancien stub models ;aucun test exécuté. Reprise2 cinq tests réussis/41.04s,ordre de collecte fixtures réelles puis unitaires ;répétitions non additionnées.",
+    "Cible1440 :1échoué/304.09s,repère Excel de synthèse C pris à tort pour compte23 ;assertion corrigée sur libellé,aucun changement produit. Inspection des fichiers réelsB6/B7/B12/logos passée ;ne remplace pas le test échoué.",
+    "Relecture documentaire Python initialement non exécutable :PYTHONPATH backend manquant ;relecture corrigée réussie,non comptée parmi les7tests."
+  ],
+  "preuves": {
+    "Test/preuves_mvp943/cahier773_liasse943_1440_preuve.json": "09c0136730bcd5a3e2200d5a965acf1228e139c6e8f1a868b9f4adc7e607cdb4",
+    "Test/preuves_mvp943/cahier773_liasse943_390_preuve.json": "3f7f0e36422a3c4b4313d740500cb60459c2b309659cb08a0c88bedf48ec4b29",
+    "Test/preuves_mvp943/liasse943_cible.xml": "7016cb2c93b37d69bbec83d1e2fba3275874416d0defde3860ce82c6647dbf55",
+    "Test/preuves_mvp943/liasse943_final.xml": "70a73a8fe1d7bdf61074075adba63cae26adaa0191e743eb2b76fa59a6dcf89b",
+    "Test/preuves_mvp943/liasse943_reprise.xml": "e2836c74ca323d08366a21bee9640d047535506e4a34741d99bb7f20b87e3812",
+    "Test/preuves_mvp943/liasse943_reprise2.xml": "1d26c66cab54b684fa9850ce1723d1f57f57d4a5041eff32c3576d8faa2578c5"
+  },
+  "rattachement": "Test/QUALIFICATION_FICHES_943.json",
+  "fiches_qualifiees": 1,
+  "candidat": "Test/CANDIDAT_MVP_943.json",
+  "nombre_fichiers_candidat": 549,
+  "produit_identique_au_931": true,
+  "build": "Non relancé,frontend inchangé ;dernier réel931 :214modules/5.55s,code0.",
+  "anciens_documents_preserves": 332,
+  "aucune_base_reelle": true,
+  "restauration": "Non rejouée ;preuves antérieures distinctes.",
+  "limites": "HP-LIA-001 Bloqué(source) :ETIC20/23,échéances80/11000non qualifiées,méthodeB13et confirmationB14 non renseignées. Le refus409est un test réussi,la finalisation annuelle ne l’est pas. L’archive capital-seul23/23est distincte. Aucune conformité officielle,EDI,dépôt ni recette humaine validés ;aucune donnée réelle.",
+  "fiches_rattachees": 2,
+  "fiches_par_statut": {
+    "Réussi": 1,
+    "Bloqué (source)": 1
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "contexte": "Société fictive731 MAD2026, données extra-comptables déclarées, aucun scénario de paie déduit.",
+  "n": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "2111",
+      "debit": "2000",
+      "credit": "0"
+    },
+    {
+      "compte": "28111",
+      "debit": "0",
+      "credit": "500"
+    },
+    {
+      "compte": "5141",
+      "debit": "14500",
+      "credit": "0"
+    },
+    {
+      "compte": "7111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "6132",
+      "debit": "3000",
+      "credit": "0"
+    },
+    {
+      "compte": "7581",
+      "debit": "0",
+      "credit": "1000"
+    },
+    {
+      "compte": "6701",
+      "debit": "1600",
+      "credit": "0"
+    },
+    {
+      "compte": "6171",
+      "debit": "400",
+      "credit": "0"
+    }
+  ],
+  "n1": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "2111",
+      "debit": "1000",
+      "credit": "0"
+    },
+    {
+      "compte": "28111",
+      "debit": "0",
+      "credit": "200"
+    },
+    {
+      "compte": "5141",
+      "debit": "12200",
+      "credit": "0"
+    },
+    {
+      "compte": "7111",
+      "debit": "0",
+      "credit": "5000"
+    },
+    {
+      "compte": "6132",
+      "debit": "2000",
+      "credit": "0"
+    }
+  ],
+  "n2": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "5141",
+      "debit": "11000",
+      "credit": "0"
+    },
+    {
+      "compte": "7111",
+      "debit": "0",
+      "credit": "2000"
+    },
+    {
+      "compte": "6132",
+      "debit": "1000",
+      "credit": "0"
+    }
+  ],
+  "perte": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "5141",
+      "debit": "8999",
+      "credit": "0"
+    },
+    {
+      "compte": "6132",
+      "debit": "1001",
+      "credit": "0"
+    }
+  ],
+  "declarations": [
+    {
+      "code": "C3-N",
+      "effectif_moyen": "3.50",
+      "benefices_distribues": "2000",
+      "resultat_par_titre": "60",
+      "distribution_par_titre": "20",
+      "reference_source": "NOTE EXTRA FICTIVE731 C3-N"
+    },
+    {
+      "code": "C3-N1",
+      "effectif_moyen": "3",
+      "benefices_distribues": "1000",
+      "resultat_par_titre": "30",
+      "distribution_par_titre": "10",
+      "reference_source": "NOTE EXTRA FICTIVE731 C3-N1"
+    },
+    {
+      "code": "C3-N2",
+      "effectif_moyen": "2",
+      "benefices_distribues": "0",
+      "resultat_par_titre": "10",
+      "distribution_par_titre": "0",
+      "reference_source": "NOTE EXTRA FICTIVE731 C3-N2"
+    }
+  ],
+  "attendus": {
+    "effectif_n": "3.50",
+    "effectif_n1": "3.00",
+    "effectif_n2": "2.00",
+    "variante_effectif_n": "141.25",
+    "resultat_par_titre_n": "60.00",
+    "resultat_par_titre_n1": "30.00",
+    "resultat_par_titre_n2": "10.00",
+    "distribution_par_titre_n": "20.00",
+    "distribution_par_titre_n1": "10.00",
+    "distribution_par_titre_n2": "0.00",
+    "perte_net_n2": "-1001.00",
+    "perte_situation_n2": "8999.00",
+    "perte_resultat_par_titre_n2": "-10.01"
+  },
+  "inconnus": [
+    "Une case vide ne vaut pas0, même si bénéfices distribués0",
+    "Sans balance, comptabilité comparative inconnue",
+    "Valeurs déclarées sans qualification juridique/sociale automatique"
+  ],
+  "impacts": "Aucune écriture, salarié, bulletin, liquidation ou donnée réelle créée ou modifiée."
+}

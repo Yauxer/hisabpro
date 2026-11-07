@@ -1,0 +1,68 @@
+{
+  "contexte": "Société fictive séparée en MAD, exercice2026. Données de recette uniquement.",
+  "balances_reutilisees": [
+    "BALANCE_FICTIVE_PARTICIPATIONS707_N.csv",
+    "BALANCE_FICTIVE_PARTICIPATIONS707_N1.csv"
+  ],
+  "tables": [
+    {
+      "code": "B4-N",
+      "statut": "documente",
+      "justification": "Relevé fictif709 N",
+      "lignes": [
+        {
+          "compte": "2510",
+          "emetteur": "Atlas Industrie fictive",
+          "identifiant": "FICTIF-A",
+          "valeur_brute": "2500",
+          "capital_emetteur": "500000",
+          "quote_part": "20",
+          "produits_recus": null,
+          "reference_source": "Attestation fictive A"
+        },
+        {
+          "compte": "2510",
+          "emetteur": "Rif Services fictive",
+          "valeur_brute": "1500",
+          "capital_emetteur": null,
+          "quote_part": null,
+          "produits_recus": "100",
+          "reference_source": "Attestation fictive B"
+        }
+      ]
+    },
+    {
+      "code": "B4-N1",
+      "statut": "documente",
+      "justification": "Relevé fictif709 N-1",
+      "lignes": [
+        {
+          "compte": "2510",
+          "emetteur": "Atlas Industrie fictive",
+          "valeur_brute": "3000",
+          "capital_emetteur": "500000",
+          "quote_part": "20",
+          "produits_recus": "0",
+          "reference_source": "Attestation fictive N-1"
+        }
+      ]
+    }
+  ],
+  "attendus": {
+    "n": {
+      "source2510": "4000.00",
+      "somme": "4000.00",
+      "ecart": "0.00"
+    },
+    "n1": {
+      "source2510": "3000.00",
+      "somme": "3000.00",
+      "ecart": "0.00"
+    },
+    "apres_modification_n": {
+      "premiere_valeur": "2499.99",
+      "somme": "3999.99",
+      "ecart": "-0.01"
+    }
+  }
+}

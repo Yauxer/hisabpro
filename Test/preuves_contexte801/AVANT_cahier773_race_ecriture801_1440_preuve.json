@@ -1,0 +1,20 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_kx9u2srz",
+  "nonce": "ecae5d4b38e44343a9ca77cf1628bfd7",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError('Locator expected to have count \\'1\\'\\nActual value: 0 \\nCall log:\\n  - Expect \"to_have_count\" locator(\"tr\").filter(has=get_by_text(\"RACE-801\", exact=True)) with timeout 5000ms\\n  - waiting for locator(\"tr\").filter(has=get_by_text(\"RACE-801\", exact=True))\\n    14 × locator resolved to 0 elements\\n       - unexpected value \"0\"\\n')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "race801": {
+    "get_avant": [],
+    "get_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "post201_id": 1,
+    "api_apres_ids": [
+      1
+    ],
+    "transport": "Réponse GET réelle retenue sans modifier les données ;POST etvalidation réels."
+  }
+}

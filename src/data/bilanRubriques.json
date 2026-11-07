@@ -1,0 +1,446 @@
+[
+  {
+    "side": "actif",
+    "key": "immobilise",
+    "label": "ACTIF IMMOBILISÉ",
+    "total": "TOTAL I — ACTIF IMMOBILISÉ",
+    "groups": [
+      {
+        "code": "A",
+        "label": "Immobilisations en non-valeurs",
+        "details": [
+          {
+            "code": "211",
+            "label": "Frais préliminaires",
+            "prefixes": [
+              "211"
+            ]
+          },
+          {
+            "code": "212",
+            "label": "Charges à répartir sur plusieurs exercices",
+            "prefixes": [
+              "212"
+            ]
+          },
+          {
+            "code": "213",
+            "label": "Primes de remboursement des obligations",
+            "prefixes": [
+              "213"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "B",
+        "label": "Immobilisations incorporelles",
+        "details": [
+          {
+            "code": "221",
+            "label": "Immobilisations en recherche et développement",
+            "prefixes": [
+              "221"
+            ]
+          },
+          {
+            "code": "222",
+            "label": "Brevets, marques, droits et valeurs similaires",
+            "prefixes": [
+              "222"
+            ]
+          },
+          {
+            "code": "223",
+            "label": "Fonds commercial",
+            "prefixes": [
+              "223"
+            ]
+          },
+          {
+            "code": "228",
+            "label": "Autres immobilisations incorporelles",
+            "prefixes": [
+              "228"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "C",
+        "label": "Immobilisations corporelles",
+        "details": [
+          {
+            "code": "231",
+            "label": "Terrains",
+            "prefixes": [
+              "231"
+            ]
+          },
+          {
+            "code": "232",
+            "label": "Constructions",
+            "prefixes": [
+              "232"
+            ]
+          },
+          {
+            "code": "233",
+            "label": "Installations techniques, matériel et outillage",
+            "prefixes": [
+              "233"
+            ]
+          },
+          {
+            "code": "234",
+            "label": "Matériel de transport",
+            "prefixes": [
+              "234"
+            ]
+          },
+          {
+            "code": "235",
+            "label": "Mobilier, matériel de bureau et aménagements divers",
+            "prefixes": [
+              "235"
+            ]
+          },
+          {
+            "code": "238",
+            "label": "Autres immobilisations corporelles et en cours",
+            "prefixes": [
+              "238",
+              "239"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "D",
+        "label": "Immobilisations financières",
+        "details": [
+          {
+            "code": "241",
+            "label": "Prêts immobilisés",
+            "prefixes": [
+              "241"
+            ]
+          },
+          {
+            "code": "248",
+            "label": "Autres créances financières",
+            "prefixes": [
+              "248"
+            ]
+          },
+          {
+            "code": "251",
+            "label": "Titres de participation",
+            "prefixes": [
+              "251"
+            ]
+          },
+          {
+            "code": "258",
+            "label": "Autres titres immobilisés",
+            "prefixes": [
+              "258"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "E",
+        "label": "Écarts de conversion — actif",
+        "details": [
+          {
+            "code": "271",
+            "label": "Diminution des créances immobilisées",
+            "prefixes": [
+              "271"
+            ]
+          },
+          {
+            "code": "272",
+            "label": "Augmentation des dettes de financement",
+            "prefixes": [
+              "272"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "side": "actif",
+    "key": "circulant",
+    "label": "ACTIF CIRCULANT (HORS TRÉSORERIE)",
+    "total": "TOTAL II — ACTIF CIRCULANT",
+    "groups": [
+      {
+        "code": "F",
+        "label": "Stocks",
+        "details": [
+          {
+            "code": "311",
+            "label": "Marchandises",
+            "prefixes": [
+              "311"
+            ]
+          },
+          {
+            "code": "312",
+            "label": "Matières et fournitures consommables",
+            "prefixes": [
+              "312"
+            ]
+          },
+          {
+            "code": "313",
+            "label": "Produits en cours",
+            "prefixes": [
+              "313"
+            ]
+          },
+          {
+            "code": "314",
+            "label": "Produits intermédiaires et produits résiduels",
+            "prefixes": [
+              "314"
+            ]
+          },
+          {
+            "code": "315",
+            "label": "Produits finis",
+            "prefixes": [
+              "315"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "G1",
+        "label": "Fournisseurs débiteurs, avances",
+        "details": []
+      },
+      {
+        "code": "G2",
+        "label": "Clients et comptes rattachés",
+        "details": []
+      },
+      {
+        "code": "G3",
+        "label": "Personnel — débiteur",
+        "details": []
+      },
+      {
+        "code": "G4",
+        "label": "État — débiteur",
+        "details": [
+          {
+            "code": "3455",
+            "label": "TVA récupérable",
+            "prefixes": [
+              "3455"
+            ]
+          }
+        ]
+      },
+      {
+        "code": "G5",
+        "label": "Comptes d'associés — débiteurs",
+        "details": []
+      },
+      {
+        "code": "G6",
+        "label": "Autres débiteurs",
+        "details": []
+      },
+      {
+        "code": "G7",
+        "label": "Comptes de régularisation — actif",
+        "details": []
+      },
+      {
+        "code": "H",
+        "label": "Titres et valeurs de placement",
+        "details": []
+      },
+      {
+        "code": "I",
+        "label": "Écarts de conversion — actif circulant",
+        "details": []
+      }
+    ]
+  },
+  {
+    "side": "actif",
+    "key": "tresorerie",
+    "label": "TRÉSORERIE — ACTIF",
+    "total": "TOTAL III — TRÉSORERIE ACTIF",
+    "groups": [
+      {
+        "code": "511",
+        "label": "Chèques et valeurs à encaisser",
+        "details": []
+      },
+      {
+        "code": "514",
+        "label": "Banques, TG et CCP",
+        "details": []
+      },
+      {
+        "code": "516",
+        "label": "Caisses, régies d'avances",
+        "details": []
+      }
+    ]
+  },
+  {
+    "side": "passif",
+    "key": "capitaux_propres",
+    "label": "CAPITAUX PROPRES",
+    "total": "TOTAL CAPITAUX PROPRES",
+    "groups": [
+      {
+        "code": "111",
+        "label": "Capital social ou personnel",
+        "details": []
+      },
+      {
+        "code": "112/113",
+        "label": "Primes d'émission, de fusion, d'apport",
+        "details": []
+      },
+      {
+        "code": "114/115",
+        "label": "Réserves (légale et autres)",
+        "details": []
+      },
+      {
+        "code": "116",
+        "label": "Report à nouveau (±)",
+        "details": []
+      },
+      {
+        "code": "118",
+        "label": "Résultats nets en instance d'affectation (±)",
+        "details": []
+      },
+      {
+        "code": "119",
+        "label": "Résultat antérieur en attente d’affectation (119)",
+        "details": []
+      },
+      {
+        "code": "R",
+        "label": "Résultat net de l'exercice (±)",
+        "details": []
+      }
+    ]
+  },
+  {
+    "side": "passif",
+    "key": "financement_permanent",
+    "label": "AUTRES FINANCEMENTS PERMANENTS",
+    "total": "TOTAL I — FINANCEMENT PERMANENT",
+    "groups": [
+      {
+        "code": "13",
+        "label": "Capitaux propres assimilés (subventions, prov. réglementées)",
+        "details": []
+      },
+      {
+        "code": "14",
+        "label": "Dettes de financement",
+        "details": []
+      },
+      {
+        "code": "15",
+        "label": "Provisions durables pour risques et charges",
+        "details": []
+      },
+      {
+        "code": "17",
+        "label": "Écarts de conversion — passif",
+        "details": []
+      }
+    ]
+  },
+  {
+    "side": "passif",
+    "key": "passif_circulant",
+    "label": "PASSIF CIRCULANT (HORS TRÉSORERIE)",
+    "total": "TOTAL II — PASSIF CIRCULANT",
+    "groups": [
+      {
+        "code": "441",
+        "label": "Fournisseurs et comptes rattachés",
+        "details": []
+      },
+      {
+        "code": "442",
+        "label": "Clients créditeurs, avances et acomptes",
+        "details": []
+      },
+      {
+        "code": "443",
+        "label": "Personnel — créditeur",
+        "details": []
+      },
+      {
+        "code": "444",
+        "label": "Organismes sociaux",
+        "details": []
+      },
+      {
+        "code": "445",
+        "label": "État — créditeur",
+        "details": []
+      },
+      {
+        "code": "446",
+        "label": "Comptes d'associés — créditeurs",
+        "details": []
+      },
+      {
+        "code": "448",
+        "label": "Autres créanciers",
+        "details": []
+      },
+      {
+        "code": "449",
+        "label": "Comptes de régularisation — passif",
+        "details": []
+      },
+      {
+        "code": "45",
+        "label": "Autres provisions pour risques et charges",
+        "details": []
+      },
+      {
+        "code": "47",
+        "label": "Écarts de conversion — passif circulant",
+        "details": []
+      }
+    ]
+  },
+  {
+    "side": "passif",
+    "key": "tresorerie",
+    "label": "TRÉSORERIE — PASSIF",
+    "total": "TOTAL III — TRÉSORERIE PASSIF",
+    "groups": [
+      {
+        "code": "552/553",
+        "label": "Crédits d'escompte et de trésorerie",
+        "details": []
+      },
+      {
+        "code": "554",
+        "label": "Banques (soldes créditeurs)",
+        "details": []
+      }
+    ]
+  }
+]

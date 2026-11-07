@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "lot": "Personnel & Paie / Lot 0",
+  "date": "2026-10-27",
+  "nature": "Différentiel de la présente étape ;pas le projet complet.",
+  "fichiers": {
+    "CODEX_PROGRESS.md": {
+      "sha256": "0dea2b1bbf4dd1717a451fb3d781d80c797700d18efcf893e4e0f83e0c721f9f",
+      "octets": 7053001
+    },
+    "Test/PREUVE_PERSONNEL_PAIE_LOT0_871.json": {
+      "sha256": "effb72c583d8b88d7acfa026625f2decd77785f251367d2dc4077c5b5b695faa",
+      "octets": 4381
+    },
+    "Test/audit_personnel_paie871.py": {
+      "sha256": "9dc1170c7ce3373fb0249b83f0e38ea23e23289dc963bb3429d2be68429d487b",
+      "octets": 7666
+    },
+    "Test/preuves_personnel871/constats.json": {
+      "sha256": "85d0ac56aed04887089cea96f9dc9810a77e7a9aa57442158a5a64a2b247c614",
+      "octets": 934
+    },
+    "Test/preuves_personnel871/personnel871_api_pg.xml": {
+      "sha256": "702d5b0c4b7affacd6a59e009028f036d43e236c9561ddfc831040cbe50e4e9e",
+      "octets": 18263
+    },
+    "Test/preuves_personnel871/personnel871_constats.xml": {
+      "sha256": "5cf8e8e5a837dcdac7603ae11498988c7c2636d332ec4ee87770578cba74e0a8",
+      "octets": 653
+    },
+    "Test/preuves_personnel871/personnel871_dependances.xml": {
+      "sha256": "6ed3666ad44732e306663949cba004d69e446a372b23f7af96622ec349c824fc",
+      "octets": 4319
+    },
+    "Test/preuves_personnel871/personnel871_navigateur.xml": {
+      "sha256": "ea16cc29ba19881c42208948219d7a88fe19e42c27fb8dc5f99c5dab8862329d",
+      "octets": 1197
+    },
+    "Test/preuves_personnel871/personnel871_unitaires.xml": {
+      "sha256": "9162e9127d7c84e5cfb67cd73c64f347db1ebc85e908c28e4bb2633b1649c715",
+      "octets": 9089
+    },
+    "Test/test_audit_personnel_paie871_isole.py": {
+      "sha256": "a44379091a86ff70de215b94de8a4ed86ca5a7ee74791e4aeedcbeaa66cfb1a7",
+      "octets": 4531
+    },
+    "docs/audit/MATRICE_COUVERTURE_HISABPRO.md": {
+      "sha256": "8ae40939b80dec16854cf10d116f344f4082fce45b88d2e373d8f84a9034e34e",
+      "octets": 255414
+    },
+    "docs/personnel-paie/LOT0_AUDIT_ARCHITECTURE.md": {
+      "sha256": "62c429847d2dd05533159fbb91300e0149009b38782a035db0f4c9f7a4d51dc4",
+      "octets": 10937
+    },
+    "docs/personnel-paie/LOT0_CONCEPTION.md": {
+      "sha256": "b8204a9df2a529df7cca918c206b4c566a3f0ecfdf0ce0f1de3a95abec92a755",
+      "octets": 13317
+    },
+    "docs/personnel-paie/LOT0_INVENTAIRE.json": {
+      "sha256": "032e2c53b0be4ab83765f8a2f820fde84db10fff785bb70253d0c68727bd11a6",
+      "octets": 51252
+    },
+    "docs/personnel-paie/LOT0_MIGRATIONS_ET_RECETTE.md": {
+      "sha256": "fa96b9fc279aa8c49df2390aefc93a826f7d7161de78d9111b9e76c72bdec94f",
+      "octets": 9922
+    },
+    "docs/personnel-paie/LOT0_RBAC.csv": {
+      "sha256": "809cd66d44d5afa4b273080433b786628c5e24b3f47bbd5e9cc844a845bef204",
+      "octets": 2292
+    },
+    "docs/personnel-paie/LOT0_SYNTHESE.md": {
+      "sha256": "48695e4044ae627a3e2bf6beac4d8b82804e2c56e0282d3f19a1fd3d75dc9f4a",
+      "octets": 6409
+    },
+    "docs/personnel-paie/LOT0_SYNTHESE.pdf": {
+      "sha256": "1421a9e00d42c4bd4cc7bdeed709b5c9a05f00683f6146ea7e086b1c4180792a",
+      "octets": 80150
+    },
+    "docs/personnel-paie/LOT0_TESTS_ET_REPRISE.md": {
+      "sha256": "59c06e3dc2da04d14c530c0fd4a63f4f0b16c4a88ec8ab306b9f2cf0a728d42c",
+      "octets": 4568
+    },
+    "docs/personnel-paie/LOT1A_PLAN.md": {
+      "sha256": "dc833dbb8125461b67a59c030fa3d71eadb1f02387874d7367d0828ed2eb8cf7",
+      "octets": 5979
+    }
+  },
+  "limite_auto_reference": "Le manifeste ne se contient pas lui-même ;il est protégé par le CRC ZIP."
+}

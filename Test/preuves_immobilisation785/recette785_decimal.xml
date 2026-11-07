@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="69.336" timestamp="2026-10-24T19:00:23.817774+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_immobilisation785_isole" name="test_785_ordinateur_cahier_acquisition_paiement_amortissement_bilan[1440]" time="44.560"><failure message="AssertionError: assert [] == ['4.800,00 MA...9.200,00 MAD']&#10;  &#10;  Right contains 3 more items, first extra item: '4.800,00 MAD'&#10;  Use -v to get more diff">application = {'api_url': 'http://127.0.0.1:62221', 'web_url': 'http://127.0.0.1:62222', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_rbqvwwci'), 'nonce': '6782700e781342c286356f3c6303edd9', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette785_decimal/test_785_ordinateur_cahier_acq0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_785_ordinateur_cahier_acquisition_paiement_amortissement_bilan(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'immobilisation785') as (api,page,sid,preuve):
+      t=next(t for t in DATA['tiers'] if t['code']=='F-IMMO');f=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':t['type'],'compte_fournisseur':t['compte']}),201)
+      b=DATA['banque'];ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      preuve['preconditions']+=' Fournisseur F-IMMO et banque préparés par API, formulaires déjà vérifiés 773/771.'
+&gt;     capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,f,preuve);amortissement(api,page,application,sid,immo,preuve)
+                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_immobilisation785_isole.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+api = &lt;httpx.Client object at 0x0000026A2F276650&gt;
+page = &lt;Page url='http://127.0.0.1:62222/immobilisations'&gt;
+app = {'api_url': 'http://127.0.0.1:62221', 'web_url': 'http://127.0.0.1:62222', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_rbqvwwci'), 'nonce': '6782700e781342c286356f3c6303edd9', ...}, ...}
+sid = 8
+immo = {'id': 1, 'designation': 'Ordinateur de recette', 'reference': 'IMMO-01', 'categorie': 'Matériel informatique', ...}
+preuve = {'cible_isolee': 'C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_rbqvwwci', 'nonce': '6782700e781342c286356f3c6303edd9', 'source_sha256': 'b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7', 'largeur': 1440, ...}
+
+    def amortissement(api,page,app,sid,immo,preuve):
+     avant=core(app,sid);ids=identifiants(app,sid);page.goto(app['web_url']+'/immobilisations');row=page.locator('tbody tr').filter(has_text='Ordinateur de recette').first;row.click()
+&gt;    table=page.locator('table').filter(has=page.get_by_role('columnheader',name='Prorata',exact=True)).last;ligne=table.locator('tbody tr').filter(has=page.get_by_role('cell',name='2025',exact=True));assert ligne.locator('td').all_text_contents()[3:6]==['4.800,00 MAD','4.800,00 MAD','19.200,00 MAD']
+                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: assert [] == ['4.800,00 MA...9.200,00 MAD']
+E      
+E      Right contains 3 more items, first extra item: '4.800,00 MAD'
+E      Use -v to get more diff
+
+Test\test_e2e_cahier_immobilisation785_isole.py:48: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_immobilisation785_isole" name="test_785_ordinateur_cahier_acquisition_paiement_amortissement_bilan[390]" time="19.615"><failure message="AssertionError: assert [] == ['4.800,00 MA...9.200,00 MAD']&#10;  &#10;  Right contains 3 more items, first extra item: '4.800,00 MAD'&#10;  Use -v to get more diff">application = {'api_url': 'http://127.0.0.1:62221', 'web_url': 'http://127.0.0.1:62222', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_rbqvwwci'), 'nonce': '6782700e781342c286356f3c6303edd9', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette785_decimal/test_785_ordinateur_cahier_acq1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_785_ordinateur_cahier_acquisition_paiement_amortissement_bilan(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'immobilisation785') as (api,page,sid,preuve):
+      t=next(t for t in DATA['tiers'] if t['code']=='F-IMMO');f=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':t['type'],'compte_fournisseur':t['compte']}),201)
+      b=DATA['banque'];ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      preuve['preconditions']+=' Fournisseur F-IMMO et banque préparés par API, formulaires déjà vérifiés 773/771.'
+&gt;     capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,f,preuve);amortissement(api,page,application,sid,immo,preuve)
+                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_immobilisation785_isole.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+api = &lt;httpx.Client object at 0x0000026A326DA790&gt;
+page = &lt;Page url='http://127.0.0.1:62222/immobilisations'&gt;
+app = {'api_url': 'http://127.0.0.1:62221', 'web_url': 'http://127.0.0.1:62222', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_rbqvwwci'), 'nonce': '6782700e781342c286356f3c6303edd9', ...}, ...}
+sid = 9
+immo = {'id': 2, 'designation': 'Ordinateur de recette', 'reference': 'IMMO-01', 'categorie': 'Matériel informatique', ...}
+preuve = {'cible_isolee': 'C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_rbqvwwci', 'nonce': '6782700e781342c286356f3c6303edd9', 'source_sha256': 'b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7', 'largeur': 390, ...}
+
+    def amortissement(api,page,app,sid,immo,preuve):
+     avant=core(app,sid);ids=identifiants(app,sid);page.goto(app['web_url']+'/immobilisations');row=page.locator('tbody tr').filter(has_text='Ordinateur de recette').first;row.click()
+&gt;    table=page.locator('table').filter(has=page.get_by_role('columnheader',name='Prorata',exact=True)).last;ligne=table.locator('tbody tr').filter(has=page.get_by_role('cell',name='2025',exact=True));assert ligne.locator('td').all_text_contents()[3:6]==['4.800,00 MAD','4.800,00 MAD','19.200,00 MAD']
+                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    AssertionError: assert [] == ['4.800,00 MA...9.200,00 MAD']
+E      
+E      Right contains 3 more items, first extra item: '4.800,00 MAD'
+E      Use -v to get more diff
+
+Test\test_e2e_cahier_immobilisation785_isole.py:48: AssertionError</failure></testcase></testsuite></testsuites>

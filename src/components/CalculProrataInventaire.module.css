@@ -1,0 +1,12 @@
+.panel { margin: 14px 0; padding: 12px; border: .5px solid var(--border-medium); border-radius: 9px; background: var(--bg-secondary); font-size: 12px; min-width: 0; }
+.panel > summary { cursor: pointer; font-weight: 600; }
+.region { min-width: 0; }
+.region p { line-height: 1.5; overflow-wrap: anywhere; }
+.champs { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,220px),1fr)); gap: 10px; }
+.champs label { display: grid; gap: 5px; }
+.champs input, .champs select { width: 100%; min-width: 0; box-sizing: border-box; padding: 8px; border-radius: 6px; border: .5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-primary); font: inherit; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.actions button { padding: 8px 12px; border: .5px solid var(--border-medium); border-radius: 7px; background: var(--bg-primary); color: var(--text-primary); font: inherit; cursor: pointer; }
+.actions button:disabled { opacity: .5; cursor: default; }
+.resultat { border-top: .5px solid var(--border-medium); padding-top: 10px; margin-top: 10px; }
+.erreur { color: var(--red); }

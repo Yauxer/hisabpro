@@ -1,0 +1,11 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg__5hl1lqs",
+  "nonce": "3e4774e178bf4b82bd21c49ad6f68d62",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError(\"assert (b'%PDF-1.4\\\\n%...4138\\\\n%%EOF\\\\n' == b'%PDF-1.4\\\\n%...4138\\\\n%%EOF\\\\n'\\n  \\n  Use -v to get more diff and {'id': 2, 'nu...5-04-01', ...} == {'id': 2, 'nu...5-04-01', ...}\\n  \\n  Omitting 51 identical items, use -vv to show\\n  Differing items:\\n  {'date_validation': '2026-10-25T22:22:45.192237'} != {'date_validation': None}\\n  {'validee_par': 8} != {'validee_par': None}\\n  Left contains 3 more items:\\n  {'anomalies_montants': [],...\\n  \\n  ...Full output truncated (6 lines hidden), use '-vv' to show)\")",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier."
+}

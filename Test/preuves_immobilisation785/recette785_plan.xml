@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="73.316" timestamp="2026-10-24T19:01:48.759861+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_immobilisation785_isole" name="test_785_ordinateur_cahier_acquisition_paiement_amortissement_bilan[1440]" time="47.034"><failure message="assert ('24.000,00 MAD' in 'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t' and '19.200,00 MAD' in 'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t')&#10; +  where 'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t' = inner_text()&#10; +    where inner_text = &lt;Locator frame=&lt;Frame name= url='http://127.0.0.1:63820/immobilisations'&gt; selector='tbody tr &gt;&gt; internal:has-text=&quot;Ordinateur de recette&quot;i &gt;&gt; nth=0'&gt;.inner_text&#10; +  and   'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t' = inner_text()&#10; +    where inner_text = &lt;Locator frame=&lt;Frame name= url='http://127.0.0.1:63820/immobilisations'&gt; selector='tbody tr &gt;&gt; internal:has-text=&quot;Ordinateur de recette&quot;i &gt;&gt; nth=0'&gt;.inner_text">application = {'api_url': 'http://127.0.0.1:63819', 'web_url': 'http://127.0.0.1:63820', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_3atpfhyj'), 'nonce': '8a408f81e7e54b4a9788907a1fb2d543', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette785_plan/test_785_ordinateur_cahier_acq0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_785_ordinateur_cahier_acquisition_paiement_amortissement_bilan(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'immobilisation785') as (api,page,sid,preuve):
+      t=next(t for t in DATA['tiers'] if t['code']=='F-IMMO');f=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':t['type'],'compte_fournisseur':t['compte']}),201)
+      b=DATA['banque'];ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      preuve['preconditions']+=' Fournisseur F-IMMO et banque préparés par API, formulaires déjà vérifiés 773/771.'
+&gt;     capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,f,preuve);amortissement(api,page,application,sid,immo,preuve)
+                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_immobilisation785_isole.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+api = &lt;httpx.Client object at 0x000001B2935BF210&gt;
+page = &lt;Page url='http://127.0.0.1:63820/immobilisations'&gt;
+app = {'api_url': 'http://127.0.0.1:63819', 'web_url': 'http://127.0.0.1:63820', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_3atpfhyj'), 'nonce': '8a408f81e7e54b4a9788907a1fb2d543', ...}, ...}
+sid = 8
+immo = {'id': 1, 'designation': 'Ordinateur de recette', 'reference': 'IMMO-01', 'categorie': 'Matériel informatique', ...}
+preuve = {'cible_isolee': 'C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_3atpfhyj', 'nonce': '8a408f81e7e54b4a9788907a1fb2d543', 'source_sha256': 'b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7', 'largeur': 1440, ...}
+
+    def amortissement(api,page,app,sid,immo,preuve):
+     avant=core(app,sid);ids=identifiants(app,sid);page.goto(app['web_url']+'/immobilisations');row=page.locator('tbody tr').filter(has_text='Ordinateur de recette').first;row.click()
+     table=page.locator('table').filter(has=page.get_by_role('columnheader',name='Prorata',exact=True)).last;ligne=table.locator('tbody tr').filter(has=page.get_by_role('cell',name='2025',exact=True));expect(ligne).to_have_count(1);assert ligne.locator('td').all_text_contents()[3:6]==['4.800,00 MAD','4.800,00 MAD','19.200,00 MAD']
+     with page.expect_response(lambda r:f'/api/immobilisations/{immo["id"]}/generer-ecriture?annee=2025' in r.url) as r:ligne.get_by_role('button',name='Générer',exact=True).click()
+     resultat=ok(r.value);assert D(str(resultat['dotation']))==D('4800');nouvelle_ecriture(app,sid,ids,'AMORT-2025',preuve);valider_journal(page,app,1)
+     bilan=ok(api.get('/api/etats/liasse/2025'))['etats'];b=bilan['bilan'];imm=next(l for l in b['actif']['immobilise'] if l['code']=='23');assert [D(str(imm[k])) for k in ['brut','amort_prov','net']]==[D('24000'),D('4800'),D('19200')];detail=next(l for l in b['detail']['actif'] if l.get('numero')=='235');assert D(str(detail['valeurs'][0]))==D('24000');assert b['actif']['total']['net']==b['passif']['total']==195200 and bilan['cpc']['resultat_net']==-4800
+     apres=core(app,sid);assert all(e in apres for e in avant) and len(apres)==4
+     # Route normale forcée pour vérifier aussi le verrou serveur, sans contourner l'interface.
+     r=api.post(f'/api/immobilisations/{immo["id"]}/generer-ecriture',params={'annee':2025});assert r.status_code==409,r.text;assert core(app,sid)==apres
+     page.goto(app['web_url']+'/immobilisations')
+     with page.expect_response(lambda r:'/api/immobilisations/generer-dotations-annee?annee=2025' in r.url) as r:page.get_by_role('button',name='Dotations 2025',exact=True).click()
+     batch=ok(r.value);assert batch['nb_generees']==0 and batch['nb_ignorees']==1 and batch['total_dotation']==0;assert core(app,sid)==apres
+&gt;    page.reload();row.wait_for();assert '24.000,00 MAD' in row.inner_text() and '19.200,00 MAD' in row.inner_text()
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    assert ('24.000,00 MAD' in 'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t' and '19.200,00 MAD' in 'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t')
+E     +  where 'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t' = inner_text()
+E     +    where inner_text = &lt;Locator frame=&lt;Frame name= url='http://127.0.0.1:63820/immobilisations'&gt; selector='tbody tr &gt;&gt; internal:has-text="Ordinateur de recette"i &gt;&gt; nth=0'&gt;.inner_text
+E     +  and   'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t' = inner_text()
+E     +    where inner_text = &lt;Locator frame=&lt;Frame name= url='http://127.0.0.1:63820/immobilisations'&gt; selector='tbody tr &gt;&gt; internal:has-text="Ordinateur de recette"i &gt;&gt; nth=0'&gt;.inner_text
+
+Test\test_e2e_cahier_immobilisation785_isole.py:58: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_immobilisation785_isole" name="test_785_ordinateur_cahier_acquisition_paiement_amortissement_bilan[390]" time="22.141"><failure message="assert ('24.000,00 MAD' in 'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t' and '19.200,00 MAD' in 'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t')&#10; +  where 'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t' = inner_text()&#10; +    where inner_text = &lt;Locator frame=&lt;Frame name= url='http://127.0.0.1:63820/immobilisations'&gt; selector='tbody tr &gt;&gt; internal:has-text=&quot;Ordinateur de recette&quot;i &gt;&gt; nth=0'&gt;.inner_text&#10; +  and   'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t' = inner_text()&#10; +    where inner_text = &lt;Locator frame=&lt;Frame name= url='http://127.0.0.1:63820/immobilisations'&gt; selector='tbody tr &gt;&gt; internal:has-text=&quot;Ordinateur de recette&quot;i &gt;&gt; nth=0'&gt;.inner_text">application = {'api_url': 'http://127.0.0.1:63819', 'web_url': 'http://127.0.0.1:63820', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_3atpfhyj'), 'nonce': '8a408f81e7e54b4a9788907a1fb2d543', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette785_plan/test_785_ordinateur_cahier_acq1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_785_ordinateur_cahier_acquisition_paiement_amortissement_bilan(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'immobilisation785') as (api,page,sid,preuve):
+      t=next(t for t in DATA['tiers'] if t['code']=='F-IMMO');f=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':t['type'],'compte_fournisseur':t['compte']}),201)
+      b=DATA['banque'];ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      preuve['preconditions']+=' Fournisseur F-IMMO et banque préparés par API, formulaires déjà vérifiés 773/771.'
+&gt;     capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,f,preuve);amortissement(api,page,application,sid,immo,preuve)
+                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_immobilisation785_isole.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+api = &lt;httpx.Client object at 0x000001B29FA9CB50&gt;
+page = &lt;Page url='http://127.0.0.1:63820/immobilisations'&gt;
+app = {'api_url': 'http://127.0.0.1:63819', 'web_url': 'http://127.0.0.1:63820', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_3atpfhyj'), 'nonce': '8a408f81e7e54b4a9788907a1fb2d543', ...}, ...}
+sid = 9
+immo = {'id': 2, 'designation': 'Ordinateur de recette', 'reference': 'IMMO-01', 'categorie': 'Matériel informatique', ...}
+preuve = {'cible_isolee': 'C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_3atpfhyj', 'nonce': '8a408f81e7e54b4a9788907a1fb2d543', 'source_sha256': 'b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7', 'largeur': 390, ...}
+
+    def amortissement(api,page,app,sid,immo,preuve):
+     avant=core(app,sid);ids=identifiants(app,sid);page.goto(app['web_url']+'/immobilisations');row=page.locator('tbody tr').filter(has_text='Ordinateur de recette').first;row.click()
+     table=page.locator('table').filter(has=page.get_by_role('columnheader',name='Prorata',exact=True)).last;ligne=table.locator('tbody tr').filter(has=page.get_by_role('cell',name='2025',exact=True));expect(ligne).to_have_count(1);assert ligne.locator('td').all_text_contents()[3:6]==['4.800,00 MAD','4.800,00 MAD','19.200,00 MAD']
+     with page.expect_response(lambda r:f'/api/immobilisations/{immo["id"]}/generer-ecriture?annee=2025' in r.url) as r:ligne.get_by_role('button',name='Générer',exact=True).click()
+     resultat=ok(r.value);assert D(str(resultat['dotation']))==D('4800');nouvelle_ecriture(app,sid,ids,'AMORT-2025',preuve);valider_journal(page,app,1)
+     bilan=ok(api.get('/api/etats/liasse/2025'))['etats'];b=bilan['bilan'];imm=next(l for l in b['actif']['immobilise'] if l['code']=='23');assert [D(str(imm[k])) for k in ['brut','amort_prov','net']]==[D('24000'),D('4800'),D('19200')];detail=next(l for l in b['detail']['actif'] if l.get('numero')=='235');assert D(str(detail['valeurs'][0]))==D('24000');assert b['actif']['total']['net']==b['passif']['total']==195200 and bilan['cpc']['resultat_net']==-4800
+     apres=core(app,sid);assert all(e in apres for e in avant) and len(apres)==4
+     # Route normale forcée pour vérifier aussi le verrou serveur, sans contourner l'interface.
+     r=api.post(f'/api/immobilisations/{immo["id"]}/generer-ecriture',params={'annee':2025});assert r.status_code==409,r.text;assert core(app,sid)==apres
+     page.goto(app['web_url']+'/immobilisations')
+     with page.expect_response(lambda r:'/api/immobilisations/generer-dotations-annee?annee=2025' in r.url) as r:page.get_by_role('button',name='Dotations 2025',exact=True).click()
+     batch=ok(r.value);assert batch['nb_generees']==0 and batch['nb_ignorees']==1 and batch['total_dotation']==0;assert core(app,sid)==apres
+&gt;    page.reload();row.wait_for();assert '24.000,00 MAD' in row.inner_text() and '19.200,00 MAD' in row.inner_text()
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E    assert ('24.000,00 MAD' in 'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t' and '19.200,00 MAD' in 'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t')
+E     +  where 'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t' = inner_text()
+E     +    where inner_text = &lt;Locator frame=&lt;Frame name= url='http://127.0.0.1:63820/immobilisations'&gt; selector='tbody tr &gt;&gt; internal:has-text="Ordinateur de recette"i &gt;&gt; nth=0'&gt;.inner_text
+E     +  and   'Ordinateur de recette\nMatériel informatique · IMMO-01\n\tActif\t2025-01-01\n24.000,00 HT\n\t2025-01-01\t24.000,00 MAD\t15.280,00 MAD\n8.720,00 amorti\n\t5 ans · Linéaire\tPayé · 2025-01-01\t' = inner_text()
+E     +    where inner_text = &lt;Locator frame=&lt;Frame name= url='http://127.0.0.1:63820/immobilisations'&gt; selector='tbody tr &gt;&gt; internal:has-text="Ordinateur de recette"i &gt;&gt; nth=0'&gt;.inner_text
+
+Test\test_e2e_cahier_immobilisation785_isole.py:58: AssertionError</failure></testcase></testsuite></testsuites>

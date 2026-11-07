@@ -1,0 +1,243 @@
+.page { display:flex; flex-direction:column; height:100%; }
+.topbar { background:var(--bg-primary); border-bottom:.5px solid var(--border-light); padding:14px 24px; display:flex; align-items:center; justify-content:space-between; flex-shrink:0; }
+.pageTitle { font-size:15px; font-weight:500; }
+.pageSubtitle { display:block; margin-top:2px; color:var(--text-tertiary); font-size:11px; }
+.exercice { padding:6px 12px; border-radius:var(--radius-md); background:var(--blue-light); border:.5px solid #B5D4F4; color:var(--blue); font-size:12px; font-weight:600; display:flex; gap:6px; align-items:center; }
+.content { flex:1; overflow:auto; padding:16px 24px 30px; display:flex; flex-direction:column; gap:14px; }
+/* Les sections doivent conserver leur hauteur naturelle : le conteneur .content scrolle au lieu de les comprimer. */
+.content > * { flex-shrink:0; }
+.center { height:100%; display:flex; align-items:center; justify-content:center; color:var(--text-tertiary); font-size:13px; }
+.erreur,.alerte { border-radius:var(--radius-md); padding:9px 12px; font-size:12px; display:flex; gap:7px; align-items:flex-start; }
+.erreur { background:#FEF2F2; color:#B42318; border:.5px solid #FECDCA; }
+.alerte { background:#EFF8FF; color:#175CD3; border:.5px solid #B2DDFF; }
+.kpis { display:grid; grid-template-columns:repeat(6,1fr); gap:10px; }
+.kpi { background:var(--bg-primary); border:.5px solid var(--border-light); border-radius:var(--radius-lg); padding:13px 14px; display:flex; flex-direction:column; gap:7px; }
+.kpi span { color:var(--text-tertiary); font-size:10px; text-transform:uppercase; letter-spacing:.04em; }
+.kpi strong { font-size:17px; font-weight:650; font-variant-numeric:tabular-nums; }
+.kpiAccent { border-color:#B5D4F4; background:var(--blue-light); }
+.kpiAccent strong { color:var(--blue); }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.card { background:var(--bg-primary); border:.5px solid var(--border-light); border-radius:var(--radius-lg); overflow:hidden; }
+.cardHeader { min-height:52px; padding:11px 14px; border-bottom:.5px solid var(--border-light); display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.cardHeader div { display:flex; flex-direction:column; gap:2px; }
+.cardHeader strong { font-size:13px; font-weight:600; }
+.cardHeader span { color:var(--text-tertiary); font-size:10px; }
+.btnPrimary { border:0; background:var(--blue); color:#fff; border-radius:var(--radius-md); padding:7px 12px; font-size:11px; font-weight:600; cursor:pointer; white-space:nowrap; }
+.btnPrimary:disabled { opacity:.45; cursor:not-allowed; }
+.formGrid { padding:14px; display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.fieldWide { grid-column:1/-1; }
+.formGrid label { display:flex; flex-direction:column; gap:5px; font-size:10px; color:var(--text-tertiary); font-weight:500; }
+.formGrid select,.formGrid input,.addForm select,.addForm input { border:.5px solid var(--border-medium); border-radius:var(--radius-md); background:var(--bg-primary); color:var(--text-primary); padding:8px 9px; font-size:12px; outline:none; }
+.formGrid select:focus,.formGrid input:focus,.addForm select:focus,.addForm input:focus { border-color:var(--blue); }
+.checkboxField { grid-column:1/-1; flex-direction:row !important; align-items:center; padding:8px 10px; background:var(--bg-secondary); border-radius:var(--radius-md); color:var(--text-secondary) !important; }
+.checkboxField input { width:auto; }
+.calcul { padding:6px 14px 10px; }
+.calcRow,.tauxRow { display:flex; justify-content:space-between; align-items:center; min-height:36px; border-bottom:.5px solid var(--border-light); font-size:12px; }
+.calcRow span,.tauxRow span { color:var(--text-secondary); }
+.calcRow strong,.tauxRow strong { font-variant-numeric:tabular-nums; }
+.sign { display:inline-block; width:18px; color:var(--text-tertiary); }
+.calcTotal { background:var(--bg-secondary); margin:0 -14px; padding:0 14px; font-weight:600; }
+.isFinal { margin:10px 0 2px; padding:12px; border-radius:var(--radius-md); background:var(--blue-light); display:flex; justify-content:space-between; align-items:center; color:var(--blue); }
+.isFinal span { font-size:12px; font-weight:600; }
+.isFinal strong { font-size:17px; }
+.legal { font-size:10px; color:var(--text-tertiary); padding:0 14px 12px; }
+.tableWrap { width:100%; overflow:auto; }
+.table { width:100%; border-collapse:collapse; }
+.table th { padding:8px 12px; text-align:left; font-size:10px; font-weight:500; color:var(--text-tertiary); border-bottom:.5px solid var(--border-light); }
+.table td { padding:8px 12px; font-size:11px; border-bottom:.5px solid var(--border-light); color:var(--text-secondary); }
+.table td:nth-child(2) strong { display:block; color:var(--text-primary); font-weight:500; }
+.table td small { display:block; margin-top:2px; color:var(--text-tertiary); }
+.amount { text-align:right; font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.empty { text-align:center; padding:18px !important; color:var(--text-tertiary) !important; }
+.badge { display:inline-flex; padding:2px 7px; border-radius:100px; font-size:10px; font-weight:600; }
+.reintegration { background:#FEF3F2; color:#B42318; }
+.deduction { background:#ECFDF3; color:#027A48; }
+.code { font-family:'Courier New',monospace; font-size:10px; }
+.iconBtn { border:0; background:transparent; color:var(--text-tertiary); cursor:pointer; padding:4px; }
+.iconBtn:hover { color:#B42318; }
+.autoBlock { padding:10px 14px; background:#FFFAEB; border-bottom:.5px solid #FEDF89; }
+.autoTitle { font-size:10px; color:#B54708; font-weight:700; margin-bottom:7px; display:flex; align-items:center; gap:5px; }
+.autoRow { display:grid; grid-template-columns:110px 1fr 70px 100px 130px; gap:10px; align-items:center; font-size:11px; }
+.autoLabel { color:var(--text-secondary); }
+.autoRow strong { text-align:right; }
+.addForm { padding:10px 12px; display:grid; grid-template-columns:125px 180px minmax(220px,1fr) 110px 130px auto; gap:7px; background:var(--bg-secondary); }
+.sourceCard { background:var(--bg-primary); border:.5px solid var(--border-light); border-radius:var(--radius-lg); padding:12px 14px; display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:14px; align-items:center; }
+.sourceCard>div { display:flex; flex-direction:column; gap:3px; }
+.sourceCard span { font-size:10px; color:var(--text-tertiary); }
+.sourceCard strong { font-size:12px; font-weight:600; }
+@media(max-width:1100px){.kpis{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.addForm{grid-template-columns:1fr 1fr}.sourceCard{grid-template-columns:1fr 1fr}}
+
+/* Patch 08.2 — retraitements automatiques / assistés / manuels */
+.confirmBlock { border-bottom:.5px solid var(--border-light); background:#FFFCF5; }
+.confirmTitle { padding:9px 14px; font-size:10px; font-weight:700; color:#B54708; border-bottom:.5px solid #FDE3B4; display:flex; align-items:center; gap:6px; }
+.confirmList { display:flex; flex-direction:column; }
+.confirmRow { display:grid; grid-template-columns:minmax(0,1fr) 210px; gap:16px; padding:12px 14px; border-bottom:.5px solid var(--border-light); }
+.confirmRow:last-child { border-bottom:0; }
+.confirmMain { min-width:0; display:flex; flex-direction:column; gap:5px; }
+.confirmMain>strong { font-size:12px; font-weight:600; color:var(--text-primary); }
+.confirmMain>span { font-size:11px; line-height:1.45; color:var(--text-secondary); }
+.confirmMain ul { margin:2px 0 0 17px; padding:0; display:flex; flex-direction:column; gap:2px; color:var(--text-secondary); font-size:10px; line-height:1.4; }
+.confirmMain small { color:var(--text-tertiary); font-size:9px; }
+.confirmBadges { display:flex; align-items:center; gap:6px; margin-bottom:1px; }
+.badgeConfirm { display:inline-flex; padding:2px 7px; border-radius:100px; font-size:10px; font-weight:700; background:#FFF4E5; color:#B54708; }
+.confirmSide { display:flex; flex-direction:column; justify-content:center; align-items:flex-end; gap:7px; text-align:right; }
+.confirmSide>strong { font-size:12px; font-variant-numeric:tabular-nums; }
+.btnSecondary { border:.5px solid var(--border-medium); background:var(--bg-primary); color:var(--text-secondary); border-radius:var(--radius-md); padding:6px 9px; font-size:10px; font-weight:600; cursor:pointer; }
+.btnSecondary:hover { border-color:var(--blue); color:var(--blue); }
+.manualTitle { padding:9px 14px 7px; font-size:10px; font-weight:700; color:var(--text-secondary); background:var(--bg-secondary); border-bottom:.5px solid var(--border-light); }
+.checklist { padding:12px 14px 14px; border-top:.5px solid var(--border-light); background:var(--bg-primary); }
+.checklistTitle { font-size:10px; font-weight:700; color:var(--text-secondary); margin-bottom:9px; }
+.checklistGrid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.checkItem { display:flex; gap:8px; align-items:flex-start; padding:9px 10px; border:.5px solid var(--border-light); border-radius:var(--radius-md); background:var(--bg-secondary); }
+.checkItem>i { color:var(--blue); margin-top:1px; }
+.checkItem>div { min-width:0; display:flex; flex-direction:column; gap:2px; }
+.checkItem strong { font-size:10px; font-weight:600; color:var(--text-primary); }
+.checkItem span { font-size:10px; line-height:1.4; color:var(--text-secondary); }
+.checkItem small { font-size:9px; color:var(--text-tertiary); }
+
+@media(max-width:1100px){
+  .confirmRow{grid-template-columns:1fr}
+  .confirmSide{align-items:flex-start;text-align:left}
+  .checklistGrid{grid-template-columns:1fr}
+}
+
+/* Patch 08.3 — déficits fiscaux par millésime */
+.legacyWarn { margin:12px 14px 0; padding:9px 11px; border:.5px solid #FEDF89; background:#FFFAEB; color:#B54708; border-radius:var(--radius-md); font-size:10px; line-height:1.45; }
+.deficitStats { display:grid; grid-template-columns:repeat(4,1fr); gap:0; border-bottom:.5px solid var(--border-light); }
+.deficitStats>div { padding:11px 14px; display:flex; flex-direction:column; gap:3px; border-right:.5px solid var(--border-light); }
+.deficitStats>div:last-child { border-right:0; }
+.deficitStats span { font-size:9px; text-transform:uppercase; letter-spacing:.03em; color:var(--text-tertiary); }
+.deficitStats strong { font-size:13px; font-variant-numeric:tabular-nums; }
+.deficitStats small { font-size:9px; color:var(--text-tertiary); }
+.expired { color:#B42318 !important; font-weight:700; }
+.sourceBadge { display:inline-flex; padding:2px 7px; border-radius:100px; background:var(--bg-secondary); color:var(--text-secondary); font-size:9px; font-weight:600; }
+.imputationBox { margin:12px 14px; border:.5px solid #B5D4F4; border-radius:var(--radius-md); background:#F5FAFF; overflow:hidden; }
+.imputationHead { padding:10px 11px; display:flex; align-items:center; justify-content:space-between; gap:12px; border-bottom:.5px solid #D8EAFB; }
+.imputationHead>div:first-child { display:flex; flex-direction:column; gap:2px; }
+.imputationHead strong { font-size:11px; }
+.imputationHead span { font-size:9px; color:var(--text-tertiary); }
+.imputationActions { display:flex; align-items:center; gap:6px; }
+.imputationList { display:flex; flex-direction:column; }
+.imputationList>div { min-height:32px; padding:7px 11px; display:flex; justify-content:space-between; align-items:center; gap:14px; border-bottom:.5px solid #E7F2FC; font-size:10px; }
+.imputationList>div:last-child { border-bottom:0; }
+.imputationList span { color:var(--text-secondary); }
+.imputationList strong { font-variant-numeric:tabular-nums; }
+.confirmedBadge { display:inline-flex; align-items:center; gap:4px; padding:4px 8px; border-radius:100px; background:#ECFDF3; color:#027A48 !important; font-size:10px !important; font-weight:700; }
+.generatedDeficit { margin:12px 14px; padding:11px 12px; border:.5px solid #FECACA; background:#FFF7F7; border-radius:var(--radius-md); display:flex; align-items:center; justify-content:space-between; gap:14px; }
+.generatedDeficit>div { display:flex; flex-direction:column; gap:3px; }
+.generatedDeficit strong { font-size:11px; color:#B42318; }
+.generatedDeficit span { font-size:10px; color:var(--text-secondary); }
+.generatedDeficit small { font-size:9px; color:var(--text-tertiary); }
+.deficitForm { padding:10px 12px; display:grid; grid-template-columns:130px 150px 165px minmax(220px,1fr) auto; gap:8px; align-items:end; background:var(--bg-secondary); border-top:.5px solid var(--border-light); }
+.deficitForm label { display:flex; flex-direction:column; gap:4px; font-size:9px; font-weight:600; color:var(--text-tertiary); }
+.deficitForm input { border:.5px solid var(--border-medium); border-radius:var(--radius-md); background:var(--bg-primary); color:var(--text-primary); padding:7px 8px; font-size:11px; outline:none; min-width:0; }
+.deficitForm input:focus { border-color:var(--blue); }
+.deficitComment { min-width:0; }
+
+@media(max-width:1100px){
+  .deficitStats{grid-template-columns:1fr 1fr}
+  .deficitStats>div:nth-child(2){border-right:0}
+  .deficitStats>div:nth-child(-n+2){border-bottom:.5px solid var(--border-light)}
+  .deficitForm{grid-template-columns:1fr 1fr}
+  .deficitComment{grid-column:1/-1}
+  .generatedDeficit,.imputationHead{align-items:flex-start;flex-direction:column}
+}
+
+/* Patch 08.4 — cotisation minimale */
+.formSubTitle { grid-column:1/-1; margin-top:4px; padding-top:10px; border-top:.5px solid var(--border-light); font-size:10px; font-weight:700; color:var(--text-secondary); }
+.cmGrid { display:grid; grid-template-columns:1fr 1fr; border-bottom:.5px solid var(--border-light); }
+.cmBreakdown { padding:8px 14px 10px; }
+.cmBreakdown:first-child { border-right:.5px solid var(--border-light); }
+.cmFinal { margin:10px 0 2px; padding:10px 12px; border-radius:var(--radius-md); background:#F5FAFF; display:flex; justify-content:space-between; align-items:center; color:var(--blue); }
+.cmFinal span { font-size:11px; font-weight:600; }
+.cmFinal strong { font-size:15px; }
+.cmCompare { display:grid; grid-template-columns:1fr 1fr 1.4fr; gap:0; border-bottom:.5px solid var(--border-light); }
+.cmCompare>div { padding:11px 14px; display:flex; flex-direction:column; gap:4px; border-right:.5px solid var(--border-light); }
+.cmCompare>div:last-child { border-right:0; }
+.cmCompare span { font-size:9px; text-transform:uppercase; letter-spacing:.03em; color:var(--text-tertiary); }
+.cmCompare strong { font-size:14px; font-variant-numeric:tabular-nums; }
+.cmDue { background:var(--blue-light); }
+.cmDue span,.cmDue strong { color:var(--blue); }
+.cmLegal { padding:10px 14px 12px; font-size:9px; line-height:1.5; color:var(--text-tertiary); }
+.cmLegal strong { color:var(--text-secondary); }
+
+@media(max-width:1100px){
+  .cmGrid{grid-template-columns:1fr}
+  .cmBreakdown:first-child{border-right:0;border-bottom:.5px solid var(--border-light)}
+  .cmCompare{grid-template-columns:1fr}
+  .cmCompare>div{border-right:0;border-bottom:.5px solid var(--border-light)}
+  .cmCompare>div:last-child{border-bottom:0}
+}
+
+/* Patch 08.5 — acomptes provisionnels & liquidation */
+.acompteReference { display:grid; grid-template-columns:140px 180px minmax(260px,1fr) 180px; border-bottom:.5px solid var(--border-light); background:var(--bg-secondary); }
+.acompteReference>div { padding:10px 12px; display:flex; flex-direction:column; gap:3px; border-right:.5px solid var(--border-light); }
+.acompteReference>div:last-child { border-right:0; }
+.acompteReference span { font-size:9px; text-transform:uppercase; letter-spacing:.03em; color:var(--text-tertiary); }
+.acompteReference strong { font-size:10px; font-weight:600; color:var(--text-primary); }
+.acompteEdit { min-width:360px; display:grid; grid-template-columns:85px 90px 128px 120px; gap:5px; align-items:center; }
+.acompteEdit input[type="number"], .acompteEdit input[type="date"], .acompteEdit input:not([type]) { min-width:0; border:.5px solid var(--border-medium); border-radius:var(--radius-md); background:var(--bg-primary); padding:5px 6px; font-size:9px; color:var(--text-primary); }
+.acompteDispense { display:flex; align-items:center; gap:4px; font-size:9px; color:var(--text-secondary); white-space:nowrap; }
+.acompteStatusCell { display:flex; flex-direction:column; align-items:flex-start; gap:2px; }
+.acompteStatus { display:inline-flex; padding:3px 7px; border-radius:100px; font-size:9px; font-weight:700; white-space:nowrap; background:var(--bg-secondary); color:var(--text-secondary); }
+.acompte_solde { background:#ECFDF3; color:#027A48; }
+.acompte_partiel { background:#FFFAEB; color:#B54708; }
+.acompte_partiel_en_retard { background:#FEF3F2; color:#B42318; }
+.acompte_a_venir { background:#EFF8FF; color:#175CD3; }
+.acompte_en_retard { background:#FEF3F2; color:#B42318; }
+.acompteReste { font-size:8px; color:var(--text-tertiary); white-space:nowrap; }
+.acompte_dispense { background:#F2F4F7; color:#475467; }
+.acompte_reference_manquante { background:#FFF4E5; color:#B54708; }
+.acompte_non_applicable { background:#F2F4F7; color:#475467; }
+.acompteNAHint { color:var(--text-tertiary); font-size:9px; white-space:nowrap; }
+.rowActions { display:flex; align-items:center; gap:2px; }
+.liquidationGrid { display:grid; grid-template-columns:repeat(5,1fr); border-top:.5px solid var(--border-light); }
+.liquidationGrid>div { padding:11px 14px; display:flex; flex-direction:column; gap:4px; border-right:.5px solid var(--border-light); }
+.liquidationGrid>div:last-child { border-right:0; }
+.liquidationGrid span { font-size:9px; text-transform:uppercase; letter-spacing:.03em; color:var(--text-tertiary); }
+.liquidationGrid strong { font-size:14px; font-variant-numeric:tabular-nums; }
+.liquidationDue { background:var(--blue-light); }
+.liquidationDue span,.liquidationDue strong { color:var(--blue); }
+.liquidationSnapshot { padding:9px 14px; border-top:.5px solid #B7E4C7; background:#F0FFF4; color:#027A48; font-size:9px; line-height:1.45; display:flex; align-items:center; gap:6px; }
+.liquidationGuard { padding:9px 14px; border-bottom:.5px solid #FEDF89; background:#FFFAEB; color:#B54708; font-size:10px; line-height:1.45; display:flex; align-items:flex-start; gap:7px; }
+.liquidationGuard strong { color:#93370D; }
+
+@media(max-width:1100px){
+  .acompteReference{grid-template-columns:1fr 1fr}
+  .acompteReference>div:nth-child(2){border-right:0}
+  .acompteReference>div:nth-child(-n+2){border-bottom:.5px solid var(--border-light)}
+  .liquidationGrid{grid-template-columns:1fr 1fr}
+  .liquidationGrid>div:nth-child(2){border-right:0}
+  .liquidationGrid>div:nth-child(-n+2){border-bottom:.5px solid var(--border-light)}
+}
+
+/* Patch 08.6 — CSS + retenues/crédits IS */
+.cssGrid { display:grid; grid-template-columns:repeat(6,1fr); border-bottom:.5px solid var(--border-light); }
+.cssGrid>div { padding:11px 12px; display:flex; flex-direction:column; gap:4px; border-right:.5px solid var(--border-light); }
+.cssGrid>div:last-child { border-right:0; }
+.cssGrid span,.creditStats span { font-size:9px; text-transform:uppercase; letter-spacing:.03em; color:var(--text-tertiary); }
+.cssGrid strong,.creditStats strong { font-size:12px; font-variant-numeric:tabular-nums; }
+.cssSource { padding:9px 14px; font-size:9px; color:var(--text-tertiary); border-bottom:.5px solid var(--border-light); }
+.cssSource strong { color:var(--text-secondary); }
+.cssPayment { padding:10px 12px; display:grid; grid-template-columns:130px 140px minmax(220px,1fr) minmax(180px,1fr) auto auto; gap:7px; background:var(--bg-secondary); }
+.cssPayment input,.creditForm input,.creditForm select { border:.5px solid var(--border-medium); border-radius:var(--radius-md); background:var(--bg-primary); color:var(--text-primary); padding:7px 8px; font-size:10px; outline:none; min-width:0; }
+.cssPayment input:focus,.creditForm input:focus,.creditForm select:focus { border-color:var(--blue); }
+.css_solde,.css_non_due { background:#ECFDF3; color:#027A48; }
+.css_partiel,.css_a_payer { background:#FFFAEB; color:#B54708; }
+.css_en_retard { background:#FEF3F2; color:#B42318; }
+.css_reference_manquante { background:#FFF4E5; color:#B54708; }
+.css_hors_periode { background:#F2F4F7; color:#475467; }
+.creditStats { display:grid; grid-template-columns:repeat(3,1fr); border-bottom:.5px solid var(--border-light); background:var(--bg-secondary); }
+.creditStats>div { padding:10px 12px; display:flex; flex-direction:column; gap:4px; border-right:.5px solid var(--border-light); }
+.creditStats>div:last-child { border-right:0; }
+.creditForm { padding:10px 12px; display:grid; grid-template-columns:minmax(180px,1.4fr) 120px 145px 140px minmax(190px,1fr) auto; gap:7px; align-items:center; background:var(--bg-secondary); border-top:.5px solid var(--border-light); }
+.liquidationExcess { padding:8px 14px; border-top:.5px solid var(--border-light); background:#FFFAEB; color:#B54708; font-size:9px; }
+
+@media(max-width:1100px){
+  .cssGrid{grid-template-columns:1fr 1fr}
+  .cssGrid>div:nth-child(even){border-right:0}
+  .cssPayment,.creditForm{grid-template-columns:1fr 1fr}
+  .creditStats{grid-template-columns:1fr}
+  .creditStats>div{border-right:0;border-bottom:.5px solid var(--border-light)}
+  .creditStats>div:last-child{border-bottom:0}
+}

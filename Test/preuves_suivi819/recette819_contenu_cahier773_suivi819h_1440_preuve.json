@@ -1,0 +1,319 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_8zpg9jl3",
+  "nonce": "daedb682461f4f88a8865865a44bb5ed",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-FAC-012",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-017",
+      "statut": "Partiel",
+      "limite": "Le cas initial demande T4 2025 mais ces factures échéance31/12 ne sont pas encore en retard ;compléments et export contrôlés enT1 2026 sans changer les dates."
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "relance_creation819": {
+    "id": 1,
+    "facture_id": 3,
+    "facture_numero": "FA-2025-003",
+    "tiers": "Client Impayé Recette",
+    "niveau": 1,
+    "date_relance": "2025-12-22",
+    "canal": "email",
+    "commentaire": "Suivi fictif du laboratoire, sans envoi externe.",
+    "date_promesse_reglement": "2026-01-31",
+    "montant_promis": null,
+    "prochaine_relance": null,
+    "statut": "effectuee",
+    "created_by": 7,
+    "created_at": "2026-10-25T13:58:28.997461"
+  },
+  "relance819": {
+    "cree": {
+      "id": 1,
+      "facture_id": 3,
+      "facture_numero": "FA-2025-003",
+      "tiers": "Client Impayé Recette",
+      "niveau": 1,
+      "date_relance": "2025-12-22",
+      "canal": "email",
+      "commentaire": "Suivi fictif du laboratoire, sans envoi externe.",
+      "date_promesse_reglement": "2026-01-31",
+      "montant_promis": null,
+      "prochaine_relance": null,
+      "statut": "effectuee",
+      "created_by": 7,
+      "created_at": "2026-10-25T13:58:28.997461"
+    },
+    "modifie": {
+      "id": 1,
+      "facture_id": 3,
+      "facture_numero": "FA-2025-003",
+      "tiers": "Client Impayé Recette",
+      "niveau": 1,
+      "date_relance": "2025-12-22",
+      "canal": "email",
+      "commentaire": "Promesse fictive modifiée",
+      "date_promesse_reglement": "2026-02-15",
+      "montant_promis": null,
+      "prochaine_relance": null,
+      "statut": "effectuee",
+      "created_by": 7,
+      "created_at": "2026-10-25T13:58:28.997461"
+    },
+    "annule": {
+      "id": 1,
+      "facture_id": 3,
+      "facture_numero": "FA-2025-003",
+      "tiers": "Client Impayé Recette",
+      "niveau": 1,
+      "date_relance": "2025-12-22",
+      "canal": "email",
+      "commentaire": "Promesse fictive modifiée",
+      "date_promesse_reglement": "2026-02-15",
+      "montant_promis": null,
+      "prochaine_relance": null,
+      "statut": "annulee",
+      "created_by": 7,
+      "created_at": "2026-10-25T13:58:28.997461"
+    },
+    "journal_inchange": true,
+    "envoi_externe": false
+  },
+  "delais_fin2025_vide819": {
+    "echeance": "2025-12-31",
+    "fin_periode": "2025-12-31",
+    "raison": "Pas encore en retard le jour de l’échéance ; dates conservées, contrôle complémentaire T1 2026."
+  },
+  "nom_export819": {
+    "recu": "export.bin",
+    "attendu": "delais_paiement_2026_T1.csv",
+    "conforme": false
+  },
+  "delais819": {
+    "avant": {
+      "annee": 2026,
+      "trimestre": 1,
+      "date_debut": "2026-01-01",
+      "date_fin": "2026-03-31",
+      "cadre": {
+        "loi": "69-21",
+        "periodicite": "trimestrielle",
+        "seuil_ca_ht": 2000000.0,
+        "declaration_requise_meme_sans_retard": false,
+        "export": "préparatoire — à contrôler et viser avant dépôt DGI"
+      },
+      "assujettissement": {
+        "exercice_reference": 2025,
+        "exercice_reference_cloture": false,
+        "ca_ht_reference": 12000.0,
+        "assujetti": false,
+        "date_entree_dispositif": null
+      },
+      "resume": {
+        "nb_factures": 2,
+        "nb_incompletes": 2,
+        "montant_non_paye_fin_periode": 480.0,
+        "montant_paye_hors_delai_periode": 0.0,
+        "amende_indicative": 18.96
+      },
+      "factures": [
+        {
+          "facture_id": 1,
+          "numero_interne": "FA-2025-001",
+          "reference_facture": "02",
+          "date_facture": "2025-12-02",
+          "date_livraison_service": null,
+          "date_echeance": "2025-12-31",
+          "fournisseur": "Fournisseur Contrôle Références Recette",
+          "fournisseur_adresse": null,
+          "fournisseur_rc": null,
+          "fournisseur_if": null,
+          "fournisseur_ice": null,
+          "nature_operation": "Service fictif du cahier",
+          "montant_ttc": 240.0,
+          "montant_non_paye_fin_periode": 240.0,
+          "montant_paye_hors_delai_periode": 0.0,
+          "dates_paiements_hors_delai": [],
+          "modes_paiement": [],
+          "references_paiement": [],
+          "mois_retard_max": 3,
+          "amende_indicative": 9.48,
+          "amende_calculable": true,
+          "litige_judiciaire": false,
+          "reference_litige": null,
+          "hors_champ": false,
+          "motif_hors_champ": null,
+          "completude": {
+            "complete": false,
+            "manquants": [
+              "IF fournisseur",
+              "ICE fournisseur",
+              "RC fournisseur",
+              "adresse fournisseur",
+              "date livraison/service"
+            ]
+          }
+        },
+        {
+          "facture_id": 2,
+          "numero_interne": "FA-2025-002",
+          "reference_facture": "002",
+          "date_facture": "2025-12-02",
+          "date_livraison_service": null,
+          "date_echeance": "2025-12-31",
+          "fournisseur": "Fournisseur Contrôle Références Recette",
+          "fournisseur_adresse": null,
+          "fournisseur_rc": null,
+          "fournisseur_if": null,
+          "fournisseur_ice": null,
+          "nature_operation": "Service fictif du cahier",
+          "montant_ttc": 240.0,
+          "montant_non_paye_fin_periode": 240.0,
+          "montant_paye_hors_delai_periode": 0.0,
+          "dates_paiements_hors_delai": [],
+          "modes_paiement": [],
+          "references_paiement": [],
+          "mois_retard_max": 3,
+          "amende_indicative": 9.48,
+          "amende_calculable": true,
+          "litige_judiciaire": false,
+          "reference_litige": null,
+          "hors_champ": false,
+          "motif_hors_champ": null,
+          "completude": {
+            "complete": false,
+            "manquants": [
+              "IF fournisseur",
+              "ICE fournisseur",
+              "RC fournisseur",
+              "adresse fournisseur",
+              "date livraison/service"
+            ]
+          }
+        }
+      ],
+      "avertissements": [
+        "L'exercice de référence 2025 n'est pas clôturé : le CA HT est indicatif et l'assujettissement doit être confirmé.",
+        "2 facture(s) à déclarer ont des informations manquantes dans l'état détaillé."
+      ]
+    },
+    "apres": {
+      "annee": 2026,
+      "trimestre": 1,
+      "date_debut": "2026-01-01",
+      "date_fin": "2026-03-31",
+      "cadre": {
+        "loi": "69-21",
+        "periodicite": "trimestrielle",
+        "seuil_ca_ht": 2000000.0,
+        "declaration_requise_meme_sans_retard": false,
+        "export": "préparatoire — à contrôler et viser avant dépôt DGI"
+      },
+      "assujettissement": {
+        "exercice_reference": 2025,
+        "exercice_reference_cloture": false,
+        "ca_ht_reference": 12000.0,
+        "assujetti": false,
+        "date_entree_dispositif": null
+      },
+      "resume": {
+        "nb_factures": 2,
+        "nb_incompletes": 2,
+        "montant_non_paye_fin_periode": 480.0,
+        "montant_paye_hors_delai_periode": 0.0,
+        "amende_indicative": 18.96
+      },
+      "factures": [
+        {
+          "facture_id": 1,
+          "numero_interne": "FA-2025-001",
+          "reference_facture": "02",
+          "date_facture": "2025-12-02",
+          "date_livraison_service": "2025-12-02",
+          "date_echeance": "2025-12-31",
+          "fournisseur": "Fournisseur Contrôle Références Recette",
+          "fournisseur_adresse": null,
+          "fournisseur_rc": null,
+          "fournisseur_if": null,
+          "fournisseur_ice": null,
+          "nature_operation": "Service fictif du cahier",
+          "montant_ttc": 240.0,
+          "montant_non_paye_fin_periode": 240.0,
+          "montant_paye_hors_delai_periode": 0.0,
+          "dates_paiements_hors_delai": [],
+          "modes_paiement": [],
+          "references_paiement": [],
+          "mois_retard_max": 3,
+          "amende_indicative": 9.48,
+          "amende_calculable": true,
+          "litige_judiciaire": false,
+          "reference_litige": null,
+          "hors_champ": false,
+          "motif_hors_champ": null,
+          "completude": {
+            "complete": false,
+            "manquants": [
+              "IF fournisseur",
+              "ICE fournisseur",
+              "RC fournisseur",
+              "adresse fournisseur"
+            ]
+          }
+        },
+        {
+          "facture_id": 2,
+          "numero_interne": "FA-2025-002",
+          "reference_facture": "002",
+          "date_facture": "2025-12-02",
+          "date_livraison_service": "2025-12-02",
+          "date_echeance": "2025-12-31",
+          "fournisseur": "Fournisseur Contrôle Références Recette",
+          "fournisseur_adresse": null,
+          "fournisseur_rc": null,
+          "fournisseur_if": null,
+          "fournisseur_ice": null,
+          "nature_operation": "Service fictif du cahier",
+          "montant_ttc": 240.0,
+          "montant_non_paye_fin_periode": 240.0,
+          "montant_paye_hors_delai_periode": 0.0,
+          "dates_paiements_hors_delai": [],
+          "modes_paiement": [],
+          "references_paiement": [],
+          "mois_retard_max": 3,
+          "amende_indicative": 9.48,
+          "amende_calculable": true,
+          "litige_judiciaire": false,
+          "reference_litige": null,
+          "hors_champ": false,
+          "motif_hors_champ": null,
+          "completude": {
+            "complete": false,
+            "manquants": [
+              "IF fournisseur",
+              "ICE fournisseur",
+              "RC fournisseur",
+              "adresse fournisseur"
+            ]
+          }
+        }
+      ],
+      "avertissements": [
+        "L'exercice de référence 2025 n'est pas clôturé : le CA HT est indicatif et l'assujettissement doit être confirmé.",
+        "2 facture(s) à déclarer ont des informations manquantes dans l'état détaillé."
+      ]
+    },
+    "journal_inchange": true,
+    "limite": "État préparatoire, informations fournisseur et assujettissement à qualifier ;aucune amende ni dépôt réel validé."
+  },
+  "fichier819": {
+    "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette819_contenu\\test_819_relance_et_complement0\\delais819_1440.csv",
+    "sha256": "44555df636cda27a12f8101309cb8af538c149a189270539e2ebcd051458135d"
+  }
+}

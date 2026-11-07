@@ -1,0 +1,14 @@
+{
+  "donnees_reelles": false,
+  "tables": 100,
+  "schema_donnees_sequences_acl_identiques": true,
+  "predicat_index_altere_detecte": true,
+  "role_runtime_limite": true,
+  "snapshot_et_empreinte_restitues": true,
+  "source_inchangee": true,
+  "cible_nonce_supprimee": true,
+  "archive_sha256": "3988aef3ecf002c72ac1835c0c2b28aa889b652e9013dffb19010ae91097fe9a",
+  "controle_mensuel_restitue": true,
+  "fractions_exactes_restituees": true,
+  "source_preparation_restituee": true
+}

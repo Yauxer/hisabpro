@@ -1,0 +1,13 @@
+# Résultats — Préparation des rémunérations de tiers759,lot935
+
+**68tests distincts réussis**,aucun échec ni ignoré,dans une finale unique en211.22s XML,code0 :{'unitaires': 21, 'API_SQL_PostgreSQL_natif_isole': 37, 'Edge_API_PostgreSQL_natif_isole': 9, 'restauration_PostgreSQL_native_isolee': 1}. 8fiches rattachées individuellement ;les répétitions ne sont pas additionnées. [Preuve](../../Test/PREUVE_MVP_935.json),[correspondances](../../Test/QUALIFICATION_FICHES_935.json).
+
+Les trois rôles sont réellement testés :administrateur1440,comptable390,lecteur390. Trois rubriques saisies et conservées ;brouillon modifié sans altérer les totaux conservés ;anciennes versions relues sans recalcul. Sommes nettes déclarées1400/740/37MAD (1000+500−100,600+200−60,30+10−3),deux bénéficiaires regroupés ;aucun taux déduit. Identité et somme soumise inconnues conservées en versions distinctes,la somme reste null et non0,puis une nouvelle version complète est enregistrée. Témoin comptable définitif333 et sources inchangés. Les deux chaînes NaN/Infinity sont réellement saisies dans le formulaire,refusées422 sans mutation,puis corrigées1000 et conservées sans F5. Doublons,bénéficiaires et références de correction rejetés par API,ainsi que permissions/sociétés,empreinte et concurrence. Les réponses HTTP réelles tardives ne remplacent pas une autre version ou session. ZIP/PDF/Excel/JSON/manifeste et logos vérifiés ;pièce fictive et anciennes versions retrouvées après restauration. Aucun résultat humain n’est validé par ces essais.
+
+Restauration :Restauration froide native du banc759 :83tables,données/schéma/ACL/séquences identiques,pièces et logos relus,source préservée,cibles nonce supprimées. Ne qualifie ni la restauration de votre cible ni le périmètre paie100tables.
+
+Suivi par fiche :{'Réussi': 203, 'Partiel': 6, 'Non qualifié par fiche': 54, 'Bloqué (source)': 9} (total272). Les8cas humains restent Non testé,et328anciens documents de recette sont conservés octet pour octet. Les méthodes UI/API/SQL sont indiquées par fiche ;un succès technique ne remplit pas la recette humaine.
+
+Produit549empreintes identique931 :aucun frontend,backend,migration ou calcul fiscal modifié. Dernier build réel931214modules/5,55s,non relancé dans ce lot. Montants et événements déclarés sur pièces fictives ;aucun taux fiscal implicite,paie,écriture générée ou dépôt officiel. Fiche06 contrôles de doublons/provenance par API ;gestes humains à faire. Réserves de cession et production inchangées.
+
+[Documents humains et guide](QUALIFICATION_TIERS_935.md) · [Suivi](SUIVI_AUTOMATISATION_CAHIER_935.xlsx) · [Décision](DECISION_FACTURATION_COMPTABILITE_935.md).

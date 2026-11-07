@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="8" time="74.815" timestamp="2026-10-29T12:47:28.722318+01:00" hostname="Taiyou"><testcase classname="Test.test_immobilisations_apercu927_isole" name="test_927_apercu_sans_mutation_et_montants_identiques_enregistrement[lineaire-4813.33-19186.67-813.33-13.33]" time="23.277" /><testcase classname="Test.test_immobilisations_apercu927_isole" name="test_927_apercu_sans_mutation_et_montants_identiques_enregistrement[degressif-10080.00-13920.00-6080.00-480.00]" time="0.734" /><testcase classname="Test.test_immobilisations_apercu927_isole" name="test_927_lecture_seule_sql_meme_avec_dependance_et_aucun_exercice_cree" time="0.721" /><testcase classname="Test.test_immobilisations_apercu927_isole" name="test_927_changement_demande_ou_dotation_rend_apercu_perime" time="0.787" /><testcase classname="Test.test_immobilisations_apercu927_isole" name="test_927_incoherence_dotation_refusee_avant_toute_ecriture" time="0.677" /><testcase classname="Test.test_immobilisations_apercu927_isole" name="test_927_roles_societes_dates_et_montants_non_finis" time="1.389" /><testcase classname="Test.test_immobilisations_apercu927_isole" name="test_927_bien_non_amortissable_et_rebut" time="4.419" /><testcase classname="Test.test_e2e_immobilisations_droits929_isole" name="test_929_registre_et_reconciliation_respectent_role[lecture-1440]" time="39.845"><failure message="AssertionError: Locator expected to be disabled&#10;Actual value: enabled &#10;Call log:&#10;  - Expect &quot;to_be_disabled&quot; get_by_role(&quot;button&quot;, name=&quot;Nouvelle immobilisation&quot;, exact=True) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;button&quot;, name=&quot;Nouvelle immobilisation&quot;, exact=True)&#10;    14 × locator resolved to &lt;button class=&quot;Immobilisations_btnPrim&quot;&gt;…&lt;/button&gt;&#10;       - unexpected value &quot;enabled&quot;&#10;&#10;Aria snapshot:&#10;- button &quot;Nouvelle immobilisation&quot;">application = {'api_url': 'http://127.0.0.1:64097', 'web_url': 'http://127.0.0.1:64098', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_7zmhmgw0'), 'nonce': 'c15bfae5dae941a3a142fbd20294636d', ...}, ...}
+largeur = 1440, role = 'lecture'
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/droits929_reproduction/test_929_registre_et_reconcili0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    @pytest.mark.parametrize('role',['lecture','comptable','admin'])
+    def test_929_registre_et_reconciliation_respectent_role(application,largeur,role,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,f'droits929_{role}') as (api,parent,sid,preuve):
+      i=preparer(api);ok(api.patch(f'/api/immobilisations/{i["id"]}',json={'designation':'Bien ACTIF FICTIF929'}))
+      c=preparer(api);ok(api.patch(f'/api/immobilisations/{c["id"]}',json={'designation':'Bien CEDE FICTIF929'}));ok(api.post(url(c),json=demande()))
+      h=ok(api.post('/api/immobilisations',params={'generer_ecriture':False},json={'designation':'Bien HISTORIQUE FICTIF929','categorie':'Matériel informatique','date_acquisition':'2025-01-01','date_mise_en_service':'2025-01-01','prix_acquisition_ht':24000,'duree_amort':5,'methode':'lineaire','valeur_residuelle':0,'compte_immo':'2355','compte_amort':'28355','compte_dotation':'61935'}),201)
+      email=f'{role}929-{sid}@hisabpro-recette.example';password=DATA['societe']['password_test']
+      ok(api.post('/api/utilisateurs',json={'nom':f'Compte FICTIF929 {role}','email':email,'mot_de_passe':password,'role':role}),201)
+      ctx=parent.context.browser.new_context(viewport={'width':largeur,'height':1050});page=ctx.new_page();page.set_default_timeout(15000);errors,server=observer(page,application['api_url'])
+      try:
+       connexion(page,application['web_url'],email,password);page.goto(application['web_url']+'/cloture');page.get_by_label('Exercice actif',exact=True).select_option('2026')
+       avant=photo(application,sid);mutations=[]
+       page.on('request',lambda r:mutations.append((r.method,r.url)) if '/api/immobilisations' in r.url and r.method not in ['GET','OPTIONS'] else None)
+       page.goto(application['web_url']+'/immobilisations');actif=page.locator('tbody tr').filter(has_text='Bien ACTIF FICTIF929');expect(actif).to_have_count(1)
+       ecrire=role!='lecture';admin=role=='admin'
+       for b in [page.get_by_role('button',name='Nouvelle immobilisation',exact=True),page.get_by_role('button',name='Dotations 2026',exact=True)]:
+&gt;       (expect(b).to_be_enabled if ecrire else expect(b).to_be_disabled)()
+E       AssertionError: Locator expected to be disabled
+E       Actual value: enabled 
+E       Call log:
+E         - Expect "to_be_disabled" get_by_role("button", name="Nouvelle immobilisation", exact=True) with timeout 5000ms
+E         - waiting for get_by_role("button", name="Nouvelle immobilisation", exact=True)
+E           14 × locator resolved to &lt;button class="Immobilisations_btnPrim"&gt;…&lt;/button&gt;
+E              - unexpected value "enabled"
+E       
+E       Aria snapshot:
+E       - button "Nouvelle immobilisation"
+
+Test\test_e2e_immobilisations_droits929_isole.py:32: AssertionError</failure></testcase></testsuite></testsuites>

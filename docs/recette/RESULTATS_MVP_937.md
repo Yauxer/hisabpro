@@ -1,0 +1,13 @@
+# Résultats — Préparation brute de taxe professionnelle761,lot937
+
+**64tests distincts réussis**,aucun échec ni ignoré,dans une finale unique en203.36s XML,code0 :{'unitaires': 26, 'API_SQL_PostgreSQL_natif_isole': 28, 'Edge_API_PostgreSQL_natif_isole': 9, 'restauration_PostgreSQL_native_isolee': 1}. 8fiches rattachées individuellement ;les répétitions ne sont pas additionnées. [Preuve](../../Test/PREUVE_MVP_937.json),[correspondances](../../Test/QUALIFICATION_FICHES_937.json).
+
+Les trois rôles sont réellement testés :administrateur1440,comptable390,lecteur390. Profil et deux établissements saisis/conservés,brut simulé7200/avis7400/écart−200 selon bases et classes fictives. Brouillon999sans changement de l’ancien contrôle,versions figées et aucune écriture. Valeur locative inconnue et base non revue conservées dans des versions distinctes :brut proposé indisponible et aucun zéro inventé. C3/base100 donne un brut simulé total1210 ;C3/base0.05 donne0.005exact pourA,arrondi0.01,total1200.01avecB ;aucun minimum ou dû confirmé déduit. Référence d’avis partagée rend la comparaison indisponible,anciennes versions relues inchangées. Témoin comptable définitif333 préservé. Vraies saisies NaN/Infinity refusées422 sans mutation,puis30000 et revue repris sans F5. Structures,doublons,permissions/sociétés,empreinte et concurrence testés par API ;réponses réelles tardives protégées. ZIP/PDF/Excel/JSON/manifeste et logos vérifiés,pièce et états retrouvés après restauration isolée.
+
+Restauration :Restauration froide native du banc761 :83tables,données/schéma/ACL/séquences identiques,pièces/logos/versions relus,source préservée,cibles nonce supprimées. Ne qualifie pas la restauration de votre cible complète ou de la paie.
+
+Suivi par fiche :{'Réussi': 211, 'Partiel': 6, 'Non qualifié par fiche': 46, 'Bloqué (source)': 9} (total272). Les8cas humains restent Non testé,et329anciens documents de recette sont conservés octet pour octet. Les méthodes UI/API/SQL sont indiquées par fiche ;un succès technique ne remplit pas la recette humaine.
+
+Produit549empreintes identique931 :aucun frontend,backend,migration ou calcul fiscal modifié. Dernier build réel931214modules/5,55s,non relancé dans ce lot. Classes et bases pédagogiques explicitement déclarées,aucune activité réelle classée automatiquement. Brut simulé7200,avis déclarés7400,écart−200 ;aucun montant dû,imposition,paiement ou dépôt confirmé. Fiches05–06 variantes par API et calcul indépendant ;gestes humains à faire. Réserves de cession et production inchangées.
+
+[Documents humains et guide](QUALIFICATION_TP_937.md) · [Suivi](SUIVI_AUTOMATISATION_CAHIER_937.xlsx) · [Décision](DECISION_FACTURATION_COMPTABILITE_937.md).

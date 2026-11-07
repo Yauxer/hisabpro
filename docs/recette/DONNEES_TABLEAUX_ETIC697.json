@@ -1,0 +1,60 @@
+{
+  "lot": 697,
+  "societe_fictive": true,
+  "devise": "MAD",
+  "exercice": 2026,
+  "prerequis_balances": [
+    "BALANCE_FICTIVE_FINANCEMENT695_N.csv",
+    "BALANCE_FICTIVE_FINANCEMENT695_N1.csv"
+  ],
+  "tables": [
+    {
+      "code": "B8",
+      "statut": "documente",
+      "justification": "Contrat fictif697 — sûreté déclarée",
+      "lignes": [
+        {
+          "nature": "Hypothèque fictive697",
+          "objet": "Immeuble fictif",
+          "tiers": "Banque fictive697",
+          "montant_couvert": "12345.67",
+          "valeur_nette": null,
+          "inscription": "À confirmer",
+          "reference_source": "Annexe A fictive697"
+        }
+      ]
+    },
+    {
+      "code": "B9",
+      "statut": "documente",
+      "justification": "Relevé fictif697 des engagements",
+      "lignes": [
+        {
+          "sens": "Donné",
+          "nature": "Caution fictive697",
+          "montant": "2000.00",
+          "montant_n1": "0.00",
+          "observation": "Recette uniquement",
+          "reference_source": "Annexe B fictive697"
+        }
+      ]
+    }
+  ],
+  "controle_independant": {
+    "montant_couvert_centimes": 1234567,
+    "engagement_n_centimes": 200000,
+    "engagement_n1_centimes": 0,
+    "valeur_nette_connue": false,
+    "aucune_somme_b8_b9_pertinente": true,
+    "ecritures_creees": 0,
+    "impot_calcule": false,
+    "statuts_humains": [
+      "Non testé",
+      "Non testé",
+      "Non testé",
+      "Non testé",
+      "Non testé",
+      "Non testé"
+    ]
+  }
+}

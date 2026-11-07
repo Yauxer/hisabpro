@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-30",
+  "nature": "Rattachement automatique ;ne renseigne pas la recette utilisateur",
+  "sources_humaines_sha256": {
+    "docs/recette/CAHIER_RECETTE_HISABPRO.xlsx": "a857310bf3a2cf78413f7fcb56d280592a215478507fcae985008cafe57cf837"
+  },
+  "fiches": [
+    {
+      "fiche": "HP-FIS-024",
+      "objectif_source": "CM et qualification d'exonération",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Deux copiesindépendantes,Edge1440/390 etAPI/PostgreSQLnatifs isolés",
+      "portee": "Base170500×0.25%=426.25 ;copieexonérée avecjustificatif0,copienonexonérée3000. Deuxsociétésparlargeur,sauvegardeet rechargementUI ;IS23420.25supérieurdanslesdeuxcas,comptabilitéinchangée. Qualification réelle du dossier àvalider humainement.",
+      "tests_executés": [
+        "Test.test_e2e_cm_copies955_isole::test_955_cm_exoneree_et_controle_non_exonere_independants[1440]",
+        "Test.test_e2e_cm_copies955_isole::test_955_cm_exoneree_et_controle_non_exonere_independants[390]"
+      ],
+      "limites": "Hypothèses explicites du cahierfictif uniquement ;exonération réelle àdocumenter humainement. Copiescomptables48opérations avantIS,sansregistreimmobilisations/commercial reconstruit ni restaurationannuellecomplète. Aucun PostgreSQLréel. Recettehumaine,production etPersonnel/Paie inchangés."
+    }
+  ],
+  "apres": {
+    "Réussi": 250,
+    "Partiel": 10,
+    "Bloqué (source)": 12
+  }
+}

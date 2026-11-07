@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="49.866" timestamp="2026-10-27T21:49:09.811904+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_personnel_habilitations873_isole" name="test_873_protection_personnel_et_revocation_dans_edge[1440]" time="32.597"><failure message="AssertionError: Locator expected to have Value ''&#10;Actual value: None&#10;Error: element(s) not found &#10;Call log:&#10;  - Expect &quot;to_have_value&quot; locator(&quot;label&quot;).filter(has_text=&quot;N° CNSS&quot;).locator(&quot;..&quot;).locator(&quot;input&quot;).first with timeout 5000ms&#10;  - waiting for locator(&quot;label&quot;).filter(has_text=&quot;N° CNSS&quot;).locator(&quot;..&quot;).locator(&quot;input&quot;).first&#10;&#10;Aria snapshot:&#10;- complementary &quot;Navigation principale&quot;:&#10;  - text: HisabPro RAS lecture fictive 17ad6d25&#10;  - navigation:&#10;    - link &quot;Tableau de bord&quot;:&#10;      - /url: /dashboard&#10;    - button &quot;Facturation&quot;&#10;    - button &quot;Comptabilité&quot;&#10;    - button &quot;Paie / GRH&quot;&#10;    - link &quot;Paie &amp; GRH&quot;:&#10;      - /url: /cnss&#10;  - link &quot;Paramètres&quot;:&#10;    - /url: /parametres&#10;  - text: Consultation seule — les modifications sont désactivées&#10;  - button &quot;Déconnexion&quot;&#10;- text: Exercice&#10;- button &quot;Aucun exercice précédent&quot; [disabled]&#10;- combobox &quot;Exercice comptable&quot;:&#10;  - option &quot;2026 — Ouvert&quot; [selected]&#10;- button &quot;Aucun exercice suivant&quot; [disabled]&#10;- text: Ouvert&#10;- button &quot;RAS lecture fictive 17ad6d25&quot;&#10;- text: 01/01/2026 — 31/12/2026&#10;- main:&#10;  - heading &quot;Paie &amp; GRH&quot; [level=1]&#10;  - paragraph: Dossiers salariés et préparation des rémunérations · RAS lecture fictive 17ad6d25&#10;  - button &quot;Actualiser&quot;&#10;  - text: Salariés actifs 1 Brut contractuel mensuel — Net simulé de la période — Coût employeur simulé —&#10;  - navigation &quot;Gestion du personnel&quot;:&#10;    - button &quot;Équipe&quot;&#10;    - button &quot;Préparation mensuelle&quot;&#10;    - button &quot;Congés &amp; absences&quot;&#10;    - button &quot;Avances des salariés&quot;&#10;  - text: &quot;Personnel protégé : les consultations dépendent de vos habilitations. Les modifications sont désactivées dans cet accès.&quot;&#10;  - heading &quot;Fiche du salarié&quot; [level=2]&#10;  - button &quot;Fermer la fiche&quot;&#10;  - group:&#10;    - text: Identité et contrat Nom complet *&#10;    - textbox &quot;Nom complet *&quot; [disabled]: Salarié fictif&#10;    - text: Poste&#10;    - textbox &quot;Poste&quot; [disabled]: Comptable&#10;    - text: Matricule interne&#10;    - textbox &quot;Matricule interne&quot; [disabled]: FICTIF-001&#10;    - text: Numéro CNSS&#10;    - textbox &quot;Numéro CNSS&quot; [disabled]&#10;    - text: Type de contrat&#10;    - combobox &quot;Type de contrat&quot; [disabled]:&#10;      - option &quot;? renseigner&quot; [disabled] [selected]&#10;      - option &quot;CDI&quot; [disabled]&#10;      - option &quot;CDD&quot; [disabled]&#10;      - option &quot;Autre&quot; [disabled]&#10;    - text: Date d’embauche&#10;    - textbox &quot;Date d’embauche&quot; [disabled]: 2025-01-01&#10;    - text: Date de sortie&#10;    - textbox &quot;Date de sortie&quot; [disabled]&#10;    - text: Adresse e-mail&#10;    - textbox &quot;Adresse e-mail&quot; [disabled]&#10;    - text: Téléphone&#10;    - textbox &quot;Téléphone&quot; [disabled]&#10;    - text: Rémunération et situation personnelle Salaire brut mensuel (MAD) *&#10;    - spinbutton &quot;Salaire brut mensuel (MAD) *&quot; [disabled]&#10;    - text: Situation familiale&#10;    - combobox &quot;Situation familiale&quot; [disabled]:&#10;      - option &quot;Célibataire&quot; [disabled] [selected]&#10;      - option &quot;Marié(e)&quot; [disabled]&#10;      - option &quot;Veuf / Veuve&quot; [disabled]&#10;      - option &quot;Divorcé(e)&quot; [disabled]&#10;    - text: Nombre d’enfants&#10;    - spinbutton &quot;Nombre d’enfants&quot; [disabled]&#10;    - text: Personnes à charge IR confirmées&#10;    - combobox &quot;Personnes à charge IR confirmées&quot; [disabled]:&#10;      - option &quot;À confirmer&quot; [disabled] [selected]&#10;      - option &quot;0&quot; [disabled]&#10;      - option &quot;1&quot; [disabled]&#10;      - option &quot;2&quot; [disabled]&#10;      - option &quot;3&quot; [disabled]&#10;      - option &quot;4&quot; [disabled]&#10;      - option &quot;5&quot; [disabled]&#10;      - option &quot;6&quot; [disabled]&#10;    - paragraph: La situation familiale et le nombre d’enfants ne valent pas confirmation des personnes à charge pour l’IR.&#10;  - button &quot;Annuler&quot;&#10;  - heading &quot;Dossiers du personnel&quot; [level=2]&#10;  - paragraph: 1 fiche · ordre des ajouts les plus récents&#10;  - textbox &quot;Rechercher un salarié&quot;:&#10;    - /placeholder: Nom, poste, matricule…&#10;  - combobox &quot;Statut des salariés&quot;:&#10;    - option &quot;Actifs&quot; [selected]&#10;    - option &quot;Archivés&quot;&#10;    - option &quot;Tous les salariés&quot;&#10;  - table:&#10;    - rowgroup:&#10;      - row &quot;Salarié Contrat / embauche CNSS Brut mensuel État Fiche&quot;:&#10;        - columnheader &quot;Salarié&quot;&#10;        - columnheader &quot;Contrat / embauche&quot;&#10;        - columnheader &quot;CNSS&quot;&#10;        - columnheader &quot;Brut mensuel&quot;&#10;        - columnheader &quot;État&quot;&#10;        - columnheader &quot;Fiche&quot;&#10;    - rowgroup:&#10;      - row &quot;Salarié fictif FICTIF-001 · Comptable À compléter 2025-01-01 Masqué Masqué Actif Consulter Salarié fictif&quot;:&#10;        - cell &quot;Salarié fictif FICTIF-001 · Comptable&quot;:&#10;          - strong: Salarié fictif&#10;          - text: FICTIF-001 · Comptable&#10;        - cell &quot;À compléter 2025-01-01&quot;&#10;        - cell &quot;Masqué&quot;&#10;        - cell &quot;Masqué&quot;&#10;        - cell &quot;Actif&quot;&#10;        - cell &quot;Consulter Salarié fictif&quot;:&#10;          - button &quot;Consulter Salarié fictif&quot;: Consulter">application = {'api_url': 'http://127.0.0.1:56739', 'web_url': 'http://127.0.0.1:56740', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_6b0jcuvg'), 'nonce': 'f28bf73106ca49f792bcd91ac8db5fdd', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/personnel873_edge_reproduction/test_873_protection_personnel_0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_873_protection_personnel_et_revocation_dans_edge(application,largeur,tmp_path,navigations_completes823):
+        preuve={'largeur':largeur,'erreur':None,'donnees_reelles':False}
+        cible=Path(__file__).resolve().parents[1]/f'.codex-tests/personnel873_edge_{largeur}_preuve.json'
+        try:
+            with closing(client(application)[0]) as api:
+                e=employee(api);sid=ok(api.get('/api/auth/me'))['societe_id'];avant=originaux(application,sid)
+                lecteur,u,email,secret=role_client(application,api);lecteur.close()
+                grant(api,u['id'],IDENTITE);activer(api)
+                with sync_playwright() as p:
+                    browser=p.chromium.launch(executable_path=chromium_executable(),headless=True)
+                    try:
+                        page=browser.new_page(viewport={'width':largeur,'height':900});page.set_default_timeout(15000)
+                        errors,serveur=observer(page,application['api_url']);connexion(page,application['web_url'],email,secret)
+                        page.goto(application['web_url']+'/cnss');expect(page.get_by_text('Personnel protégé',exact=False)).to_be_visible()
+                        expect(page.get_by_role('button',name='Ajouter un salarié',exact=True)).to_have_count(0)
+                        row=page.locator('tbody tr').filter(has_text=e['nom']);expect(row.get_by_text('Masqué',exact=True)).to_have_count(2)
+                        row.get_by_role('button',name='Consulter',exact=False).click()
+                        expect(champ(page,'Salaire brut mensuel')).to_have_value('');expect(champ(page,'Salaire brut mensuel')).to_be_disabled()
+&gt;                       expect(champ(page,'N° CNSS')).to_have_value('')
+E                       AssertionError: Locator expected to have Value ''
+E                       Actual value: None
+E                       Error: element(s) not found 
+E                       Call log:
+E                         - Expect "to_have_value" locator("label").filter(has_text="N° CNSS").locator("..").locator("input").first with timeout 5000ms
+E                         - waiting for locator("label").filter(has_text="N° CNSS").locator("..").locator("input").first
+E                       
+E                       Aria snapshot:
+E                       - complementary "Navigation principale":
+E                         - text: HisabPro RAS lecture fictive 17ad6d25
+E                         - navigation:
+E                           - link "Tableau de bord":
+E                             - /url: /dashboard
+E                           - button "Facturation"
+E                           - button "Comptabilité"
+E                           - button "Paie / GRH"
+E                           - link "Paie &amp; GRH":
+E                             - /url: /cnss
+E                         - link "Paramètres":
+E                           - /url: /parametres
+E                         - text: Consultation seule — les modifications sont désactivées
+E                         - button "Déconnexion"
+E                       - text: Exercice
+E                       - button "Aucun exercice précédent" [disabled]
+E                       - combobox "Exercice comptable":
+E                         - option "2026 — Ouvert" [selected]
+E                       - button "Aucun exercice suivant" [disabled]
+E                       - text: Ouvert
+E                       - button "RAS lecture fictive 17ad6d25"
+E                       - text: 01/01/2026 — 31/12/2026
+E                       - main:
+E                         - heading "Paie &amp; GRH" [level=1]
+E                         - paragraph: Dossiers salariés et préparation des rémunérations · RAS lecture fictive 17ad6d25
+E                         - button "Actualiser"
+E                         - text: Salariés actifs 1 Brut contractuel mensuel — Net simulé de la période — Coût employeur simulé —
+E                         - navigation "Gestion du personnel":
+E                           - button "Équipe"
+E                           - button "Préparation mensuelle"
+E                           - button "Congés &amp; absences"
+E                           - button "Avances des salariés"
+E                         - text: "Personnel protégé : les consultations dépendent de vos habilitations. Les modifications sont désactivées dans cet accès."
+E                         - heading "Fiche du salarié" [level=2]
+E                         - button "Fermer la fiche"
+E                         - group:
+E                           - text: Identité et contrat Nom complet *
+E                           - textbox "Nom complet *" [disabled]: Salarié fictif
+E                           - text: Poste
+E                           - textbox "Poste" [disabled]: Comptable
+E                           - text: Matricule interne
+E                           - textbox "Matricule interne" [disabled]: FICTIF-001
+E                           - text: Numéro CNSS
+E                           - textbox "Numéro CNSS" [disabled]
+E                           - text: Type de contrat
+E                           - combobox "Type de contrat" [disabled]:
+E                             - option "? renseigner" [disabled] [selected]
+E                             - option "CDI" [disabled]
+E                             - option "CDD" [disabled]
+E                             - option "Autre" [disabled]
+E                           - text: Date d’embauche
+E                           - textbox "Date d’embauche" [disabled]: 2025-01-01
+E                           - text: Date de sortie
+E                           - textbox "Date de sortie" [disabled]
+E                           - text: Adresse e-mail
+E                           - textbox "Adresse e-mail" [disabled]
+E                           - text: Téléphone
+E                           - textbox "Téléphone" [disabled]
+E                           - text: Rémunération et situation personnelle Salaire brut mensuel (MAD) *
+E                           - spinbutton "Salaire brut mensuel (MAD) *" [disabled]
+E                           - text: Situation familiale
+E                           - combobox "Situation familiale" [disabled]:
+E                             - option "Célibataire" [disabled] [selected]
+E                             - option "Marié(e)" [disabled]
+E                             - option "Veuf / Veuve" [disabled]
+E                             - option "Divorcé(e)" [disabled]
+E                           - text: Nombre d’enfants
+E                           - spinbutton "Nombre d’enfants" [disabled]
+E                           - text: Personnes à charge IR confirmées
+E                           - combobox "Personnes à charge IR confirmées" [disabled]:
+E                             - option "À confirmer" [disabled] [selected]
+E                             - option "0" [disabled]
+E                             - option "1" [disabled]
+E                             - option "2" [disabled]
+E                             - option "3" [disabled]
+E                             - option "4" [disabled]
+E                             - option "5" [disabled]
+E                             - option "6" [disabled]
+E                           - paragraph: La situation familiale et le nombre d’enfants ne valent pas confirmation des personnes à charge pour l’IR.
+E                         - button "Annuler"
+E                         - heading "Dossiers du personnel" [level=2]
+E                         - paragraph: 1 fiche · ordre des ajouts les plus récents
+E                         - textbox "Rechercher un salarié":
+E                           - /placeholder: Nom, poste, matricule…
+E                         - combobox "Statut des salariés":
+E                           - option "Actifs" [selected]
+E                           - option "Archivés"
+E                           - option "Tous les salariés"
+E                         - table:
+E                           - rowgroup:
+E                             - row "Salarié Contrat / embauche CNSS Brut mensuel État Fiche":
+E                               - columnheader "Salarié"
+E                               - columnheader "Contrat / embauche"
+E                               - columnheader "CNSS"
+E                               - columnheader "Brut mensuel"
+E                               - columnheader "État"
+E                               - columnheader "Fiche"
+E                           - rowgroup:
+E                             - row "Salarié fictif FICTIF-001 · Comptable À compléter 2025-01-01 Masqué Masqué Actif Consulter Salarié fictif":
+E                               - cell "Salarié fictif FICTIF-001 · Comptable":
+E                                 - strong: Salarié fictif
+E                                 - text: FICTIF-001 · Comptable
+E                               - cell "À compléter 2025-01-01"
+E                               - cell "Masqué"
+E                               - cell "Masqué"
+E                               - cell "Actif"
+E                               - cell "Consulter Salarié fictif":
+E                                 - button "Consulter Salarié fictif": Consulter
+
+Test\test_e2e_personnel_habilitations873_isole.py:38: AssertionError</failure></testcase><testcase classname="Test.test_e2e_personnel_habilitations873_isole" name="test_873_protection_personnel_et_revocation_dans_edge[390]" time="14.367"><failure message="AssertionError: Locator expected to have Value ''&#10;Actual value: None&#10;Error: element(s) not found &#10;Call log:&#10;  - Expect &quot;to_have_value&quot; locator(&quot;label&quot;).filter(has_text=&quot;N° CNSS&quot;).locator(&quot;..&quot;).locator(&quot;input&quot;).first with timeout 5000ms&#10;  - waiting for locator(&quot;label&quot;).filter(has_text=&quot;N° CNSS&quot;).locator(&quot;..&quot;).locator(&quot;input&quot;).first&#10;&#10;Aria snapshot:&#10;- button &quot;Ouvrir la navigation&quot;&#10;- button &quot;Aucun exercice précédent&quot; [disabled]&#10;- combobox &quot;Exercice comptable&quot;:&#10;  - option &quot;2026 — Ouvert&quot; [selected]&#10;- button &quot;Aucun exercice suivant&quot; [disabled]&#10;- button &quot;RAS lecture fictive c046b4eb&quot;&#10;- main:&#10;  - heading &quot;Paie &amp; GRH&quot; [level=1]&#10;  - paragraph: Dossiers salariés et préparation des rémunérations · RAS lecture fictive c046b4eb&#10;  - button &quot;Actualiser&quot;&#10;  - text: Salariés actifs 1 Brut contractuel mensuel — Net simulé de la période — Coût employeur simulé —&#10;  - navigation &quot;Gestion du personnel&quot;:&#10;    - button &quot;Équipe&quot;&#10;    - button &quot;Préparation mensuelle&quot;&#10;    - button &quot;Congés &amp; absences&quot;&#10;    - button &quot;Avances des salariés&quot;&#10;  - text: &quot;Personnel protégé : les consultations dépendent de vos habilitations. Les modifications sont désactivées dans cet accès.&quot;&#10;  - heading &quot;Fiche du salarié&quot; [level=2]&#10;  - button &quot;Fermer la fiche&quot;&#10;  - group:&#10;    - text: Identité et contrat Nom complet *&#10;    - textbox &quot;Nom complet *&quot; [disabled]: Salarié fictif&#10;    - text: Poste&#10;    - textbox &quot;Poste&quot; [disabled]: Comptable&#10;    - text: Matricule interne&#10;    - textbox &quot;Matricule interne&quot; [disabled]: FICTIF-001&#10;    - text: Numéro CNSS&#10;    - textbox &quot;Numéro CNSS&quot; [disabled]&#10;    - text: Type de contrat&#10;    - combobox &quot;Type de contrat&quot; [disabled]:&#10;      - option &quot;? renseigner&quot; [disabled] [selected]&#10;      - option &quot;CDI&quot; [disabled]&#10;      - option &quot;CDD&quot; [disabled]&#10;      - option &quot;Autre&quot; [disabled]&#10;    - text: Date d’embauche&#10;    - textbox &quot;Date d’embauche&quot; [disabled]: 2025-01-01&#10;    - text: Date de sortie&#10;    - textbox &quot;Date de sortie&quot; [disabled]&#10;    - text: Adresse e-mail&#10;    - textbox &quot;Adresse e-mail&quot; [disabled]&#10;    - text: Téléphone&#10;    - textbox &quot;Téléphone&quot; [disabled]&#10;    - text: Rémunération et situation personnelle Salaire brut mensuel (MAD) *&#10;    - spinbutton &quot;Salaire brut mensuel (MAD) *&quot; [disabled]&#10;    - text: Situation familiale&#10;    - combobox &quot;Situation familiale&quot; [disabled]:&#10;      - option &quot;Célibataire&quot; [disabled] [selected]&#10;      - option &quot;Marié(e)&quot; [disabled]&#10;      - option &quot;Veuf / Veuve&quot; [disabled]&#10;      - option &quot;Divorcé(e)&quot; [disabled]&#10;    - text: Nombre d’enfants&#10;    - spinbutton &quot;Nombre d’enfants&quot; [disabled]&#10;    - text: Personnes à charge IR confirmées&#10;    - combobox &quot;Personnes à charge IR confirmées&quot; [disabled]:&#10;      - option &quot;À confirmer&quot; [disabled] [selected]&#10;      - option &quot;0&quot; [disabled]&#10;      - option &quot;1&quot; [disabled]&#10;      - option &quot;2&quot; [disabled]&#10;      - option &quot;3&quot; [disabled]&#10;      - option &quot;4&quot; [disabled]&#10;      - option &quot;5&quot; [disabled]&#10;      - option &quot;6&quot; [disabled]&#10;    - paragraph: La situation familiale et le nombre d’enfants ne valent pas confirmation des personnes à charge pour l’IR.&#10;  - button &quot;Annuler&quot;&#10;  - heading &quot;Dossiers du personnel&quot; [level=2]&#10;  - paragraph: 1 fiche · ordre des ajouts les plus récents&#10;  - textbox &quot;Rechercher un salarié&quot;:&#10;    - /placeholder: Nom, poste, matricule…&#10;  - combobox &quot;Statut des salariés&quot;:&#10;    - option &quot;Actifs&quot; [selected]&#10;    - option &quot;Archivés&quot;&#10;    - option &quot;Tous les salariés&quot;&#10;  - table:&#10;    - rowgroup:&#10;      - row &quot;Salarié Contrat / embauche CNSS Brut mensuel État Fiche&quot;:&#10;        - columnheader &quot;Salarié&quot;&#10;        - columnheader &quot;Contrat / embauche&quot;&#10;        - columnheader &quot;CNSS&quot;&#10;        - columnheader &quot;Brut mensuel&quot;&#10;        - columnheader &quot;État&quot;&#10;        - columnheader &quot;Fiche&quot;&#10;    - rowgroup:&#10;      - row &quot;Salarié fictif FICTIF-001 · Comptable À compléter 2025-01-01 Masqué Masqué Actif Consulter Salarié fictif&quot;:&#10;        - cell &quot;Salarié fictif FICTIF-001 · Comptable&quot;:&#10;          - strong: Salarié fictif&#10;          - text: FICTIF-001 · Comptable&#10;        - cell &quot;À compléter 2025-01-01&quot;&#10;        - cell &quot;Masqué&quot;&#10;        - cell &quot;Masqué&quot;&#10;        - cell &quot;Actif&quot;&#10;        - cell &quot;Consulter Salarié fictif&quot;:&#10;          - button &quot;Consulter Salarié fictif&quot;: Consulter">application = {'api_url': 'http://127.0.0.1:56739', 'web_url': 'http://127.0.0.1:56740', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_6b0jcuvg'), 'nonce': 'f28bf73106ca49f792bcd91ac8db5fdd', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/personnel873_edge_reproduction/test_873_protection_personnel_1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_873_protection_personnel_et_revocation_dans_edge(application,largeur,tmp_path,navigations_completes823):
+        preuve={'largeur':largeur,'erreur':None,'donnees_reelles':False}
+        cible=Path(__file__).resolve().parents[1]/f'.codex-tests/personnel873_edge_{largeur}_preuve.json'
+        try:
+            with closing(client(application)[0]) as api:
+                e=employee(api);sid=ok(api.get('/api/auth/me'))['societe_id'];avant=originaux(application,sid)
+                lecteur,u,email,secret=role_client(application,api);lecteur.close()
+                grant(api,u['id'],IDENTITE);activer(api)
+                with sync_playwright() as p:
+                    browser=p.chromium.launch(executable_path=chromium_executable(),headless=True)
+                    try:
+                        page=browser.new_page(viewport={'width':largeur,'height':900});page.set_default_timeout(15000)
+                        errors,serveur=observer(page,application['api_url']);connexion(page,application['web_url'],email,secret)
+                        page.goto(application['web_url']+'/cnss');expect(page.get_by_text('Personnel protégé',exact=False)).to_be_visible()
+                        expect(page.get_by_role('button',name='Ajouter un salarié',exact=True)).to_have_count(0)
+                        row=page.locator('tbody tr').filter(has_text=e['nom']);expect(row.get_by_text('Masqué',exact=True)).to_have_count(2)
+                        row.get_by_role('button',name='Consulter',exact=False).click()
+                        expect(champ(page,'Salaire brut mensuel')).to_have_value('');expect(champ(page,'Salaire brut mensuel')).to_be_disabled()
+&gt;                       expect(champ(page,'N° CNSS')).to_have_value('')
+E                       AssertionError: Locator expected to have Value ''
+E                       Actual value: None
+E                       Error: element(s) not found 
+E                       Call log:
+E                         - Expect "to_have_value" locator("label").filter(has_text="N° CNSS").locator("..").locator("input").first with timeout 5000ms
+E                         - waiting for locator("label").filter(has_text="N° CNSS").locator("..").locator("input").first
+E                       
+E                       Aria snapshot:
+E                       - button "Ouvrir la navigation"
+E                       - button "Aucun exercice précédent" [disabled]
+E                       - combobox "Exercice comptable":
+E                         - option "2026 — Ouvert" [selected]
+E                       - button "Aucun exercice suivant" [disabled]
+E                       - button "RAS lecture fictive c046b4eb"
+E                       - main:
+E                         - heading "Paie &amp; GRH" [level=1]
+E                         - paragraph: Dossiers salariés et préparation des rémunérations · RAS lecture fictive c046b4eb
+E                         - button "Actualiser"
+E                         - text: Salariés actifs 1 Brut contractuel mensuel — Net simulé de la période — Coût employeur simulé —
+E                         - navigation "Gestion du personnel":
+E                           - button "Équipe"
+E                           - button "Préparation mensuelle"
+E                           - button "Congés &amp; absences"
+E                           - button "Avances des salariés"
+E                         - text: "Personnel protégé : les consultations dépendent de vos habilitations. Les modifications sont désactivées dans cet accès."
+E                         - heading "Fiche du salarié" [level=2]
+E                         - button "Fermer la fiche"
+E                         - group:
+E                           - text: Identité et contrat Nom complet *
+E                           - textbox "Nom complet *" [disabled]: Salarié fictif
+E                           - text: Poste
+E                           - textbox "Poste" [disabled]: Comptable
+E                           - text: Matricule interne
+E                           - textbox "Matricule interne" [disabled]: FICTIF-001
+E                           - text: Numéro CNSS
+E                           - textbox "Numéro CNSS" [disabled]
+E                           - text: Type de contrat
+E                           - combobox "Type de contrat" [disabled]:
+E                             - option "? renseigner" [disabled] [selected]
+E                             - option "CDI" [disabled]
+E                             - option "CDD" [disabled]
+E                             - option "Autre" [disabled]
+E                           - text: Date d’embauche
+E                           - textbox "Date d’embauche" [disabled]: 2025-01-01
+E                           - text: Date de sortie
+E                           - textbox "Date de sortie" [disabled]
+E                           - text: Adresse e-mail
+E                           - textbox "Adresse e-mail" [disabled]
+E                           - text: Téléphone
+E                           - textbox "Téléphone" [disabled]
+E                           - text: Rémunération et situation personnelle Salaire brut mensuel (MAD) *
+E                           - spinbutton "Salaire brut mensuel (MAD) *" [disabled]
+E                           - text: Situation familiale
+E                           - combobox "Situation familiale" [disabled]:
+E                             - option "Célibataire" [disabled] [selected]
+E                             - option "Marié(e)" [disabled]
+E                             - option "Veuf / Veuve" [disabled]
+E                             - option "Divorcé(e)" [disabled]
+E                           - text: Nombre d’enfants
+E                           - spinbutton "Nombre d’enfants" [disabled]
+E                           - text: Personnes à charge IR confirmées
+E                           - combobox "Personnes à charge IR confirmées" [disabled]:
+E                             - option "À confirmer" [disabled] [selected]
+E                             - option "0" [disabled]
+E                             - option "1" [disabled]
+E                             - option "2" [disabled]
+E                             - option "3" [disabled]
+E                             - option "4" [disabled]
+E                             - option "5" [disabled]
+E                             - option "6" [disabled]
+E                           - paragraph: La situation familiale et le nombre d’enfants ne valent pas confirmation des personnes à charge pour l’IR.
+E                         - button "Annuler"
+E                         - heading "Dossiers du personnel" [level=2]
+E                         - paragraph: 1 fiche · ordre des ajouts les plus récents
+E                         - textbox "Rechercher un salarié":
+E                           - /placeholder: Nom, poste, matricule…
+E                         - combobox "Statut des salariés":
+E                           - option "Actifs" [selected]
+E                           - option "Archivés"
+E                           - option "Tous les salariés"
+E                         - table:
+E                           - rowgroup:
+E                             - row "Salarié Contrat / embauche CNSS Brut mensuel État Fiche":
+E                               - columnheader "Salarié"
+E                               - columnheader "Contrat / embauche"
+E                               - columnheader "CNSS"
+E                               - columnheader "Brut mensuel"
+E                               - columnheader "État"
+E                               - columnheader "Fiche"
+E                           - rowgroup:
+E                             - row "Salarié fictif FICTIF-001 · Comptable À compléter 2025-01-01 Masqué Masqué Actif Consulter Salarié fictif":
+E                               - cell "Salarié fictif FICTIF-001 · Comptable":
+E                                 - strong: Salarié fictif
+E                                 - text: FICTIF-001 · Comptable
+E                               - cell "À compléter 2025-01-01"
+E                               - cell "Masqué"
+E                               - cell "Masqué"
+E                               - cell "Actif"
+E                               - cell "Consulter Salarié fictif":
+E                                 - button "Consulter Salarié fictif": Consulter
+
+Test\test_e2e_personnel_habilitations873_isole.py:38: AssertionError</failure></testcase></testsuite></testsuites>

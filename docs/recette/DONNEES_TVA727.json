@@ -1,0 +1,96 @@
+{
+  "contexte": "Société fictive727 MAD2026, flux explicitement justifiés ; aucun dépôt confirmé.",
+  "n": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "5141",
+      "debit": "10300",
+      "credit": "0"
+    },
+    {
+      "compte": "4455",
+      "debit": "0",
+      "credit": "1000"
+    },
+    {
+      "compte": "34552",
+      "debit": "500",
+      "credit": "0"
+    },
+    {
+      "compte": "34551",
+      "debit": "200",
+      "credit": "0"
+    }
+  ],
+  "n1": [
+    {
+      "compte": "1111",
+      "debit": "0",
+      "credit": "10000"
+    },
+    {
+      "compte": "5141",
+      "debit": "10150",
+      "credit": "0"
+    },
+    {
+      "compte": "4455",
+      "debit": "0",
+      "credit": "300"
+    },
+    {
+      "compte": "34552",
+      "debit": "100",
+      "credit": "0"
+    },
+    {
+      "compte": "34551",
+      "debit": "50",
+      "credit": "0"
+    }
+  ],
+  "declarations": [
+    {
+      "code": "4455",
+      "debut": "300",
+      "operations": "2000",
+      "declarations": "1300",
+      "reference": "DECL FICTIVE727 4455"
+    },
+    {
+      "code": "34552",
+      "debut": "100",
+      "operations": "800",
+      "declarations": "400",
+      "reference": "DECL FICTIVE727 34552"
+    },
+    {
+      "code": "34551",
+      "debut": "50",
+      "operations": "300",
+      "declarations": "150",
+      "reference": "DECL FICTIVE727 34551"
+    }
+  ],
+  "attendus": {
+    "fin_collectee": "1000.00",
+    "fin_charges": "500.00",
+    "fin_immo": "200.00",
+    "recuperable_totale": "700.00",
+    "net_documentaire": "300.00",
+    "variante_fin": "999.99",
+    "variante_ecart": "-0.01",
+    "variante_net": "299.99"
+  },
+  "inconnus": [
+    "N-1 ne prouve pas le début N",
+    "Déclaration absente : fin reconstituée et écart inconnus",
+    "Aucun dépôt, liquidation ou montant à payer déduit"
+  ],
+  "impacts": "Aucune écriture, déclaration, liquidation ou donnée TVA réelle créée."
+}

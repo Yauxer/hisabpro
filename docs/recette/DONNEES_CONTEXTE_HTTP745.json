@@ -1,0 +1,21 @@
+{
+  "societes_fictives": [
+    "Session A745",
+    "Session B745"
+  ],
+  "devise": "MAD",
+  "exercice": 2026,
+  "roles_meme_utilisateur": {
+    "A": "admin",
+    "B": "lecture"
+  },
+  "preparation_fictive": "Petit CSV du guide741,dansA",
+  "attendus": {
+    "GET_courant": "profil/fichier conservé",
+    "ancienne_reponse": "ignorée sans déconnexion nouvelle session",
+    "POST_abouti": "une version dansA,aucun rejeu dansB",
+    "ecritures_creees": 0
+  },
+  "statut_humain": "Non testé",
+  "limite": "Bac isolé avec responsable pour latence,aucune donnée réelle."
+}

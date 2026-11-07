@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="102.533" timestamp="2026-10-29T02:08:31.145919+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_integrite839_isole" name="test_839_cycle_annuel_et_integrite[390]" time="88.394"><failure message="playwright._impl._errors.TimeoutError: Page.goto: Timeout 15000ms exceeded.&#10;Call log:&#10;  - navigating to &quot;http://127.0.0.1:59422/factures&quot;, waiting until &quot;load&quot;">application = {'api_url': 'http://127.0.0.1:59421', 'web_url': 'http://127.0.0.1:59422', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_unqpp43h'), 'nonce': 'b7ff6747c32e44a2a2ecc31ba1c827a6', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/conservation923_diagnostic/test_839_cycle_annuel_et_integ0')
+navigation_observee839 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_839_cycle_annuel_et_integrite(application,largeur,tmp_path,navigation_observee839):
+     with laboratoire(application,largeur,tmp_path,'integrite839') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+&gt;     capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path)
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_integrite839_isole.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\cahier_semestre789_support.py:60: in semestre
+    suite(api,page,app,sid,tiers,articles,preuve,intercaler=intercaler)
+Test\cahier_suite777_support.py:29: in suite
+    if intercaler:intercaler('avant_avoir')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+Test\cahier_semestre789_support.py:55: in intercaler
+    elif etape=='avant_avoir':services['achat']=facture_service(api,page,app,sid,tiers['F-SERVICE'],articles['S-ACH'],'ACH-SERVICE',12000,'2025-02-10','2025-02-15',preuve,'HP-FAC-005')
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Test\cahier_semestre789_support.py:30: in facture_service
+    avant=identifiants(app,sid);achat=tiers['type']=='fournisseur';page.goto(app['web_url']+'/factures');page.get_by_role('button',name='Nouvelle facture',exact=True).click();m=page.get_by_role('dialog',name='Nouvelle facture',exact=True)
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Test\test_e2e_cahier_integrite839_isole.py:39: in aller
+    try:return original(page,url,**kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+Test\navigation823_support.py:14: in aller
+    reponse=original(page,url,**kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\playwright\sync_api\_generated.py:9903: in goto
+    self._sync(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_page.py:562: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_frame.py:157: in goto
+    await self._channel.send(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:76: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x0000018CDBF5AFD0&gt;
+cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x0000018CE1B3C7C0&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        parsed_st = _attach_api_call_information(
+            getattr(task, "__pw_stack__", None) or _capture_stack_trace(),
+            is_internal,
+            title,
+        )
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Page.goto: Timeout 15000ms exceeded.
+E           Call log:
+E             - navigating to "http://127.0.0.1:59422/factures", waiting until "load"
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_connection.py:632: TimeoutError</failure></testcase></testsuite></testsuites>

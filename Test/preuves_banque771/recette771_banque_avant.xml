@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="37.758" timestamp="2026-10-24T16:03:51.871865+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_banque_cahier771_isole" name="test_771_banque_cahier_nom_libre_creation_reouverture_et_edition[1440]" time="34.891"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: None&#10;Error: element(s) not found &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; get_by_placeholder(&quot;Nom de la banque...&quot;, exact=True) with timeout 5000ms&#10;  - waiting for get_by_placeholder(&quot;Nom de la banque...&quot;, exact=True)&#10;&#10;Aria snapshot:&#10;- complementary &quot;Navigation principale&quot;:&#10;  - text: HisabPro ATLAS RECETTE HISABPRO SARL — FICTIVE&#10;  - navigation:&#10;    - link &quot;Tableau de bord&quot;:&#10;      - /url: /dashboard&#10;    - button &quot;Facturation&quot;&#10;    - button &quot;Comptabilité&quot;&#10;    - button &quot;Paie / GRH&quot;&#10;  - link &quot;Paramètres&quot;:&#10;    - /url: /parametres&#10;  - button &quot;Déconnexion&quot;&#10;- text: Exercice&#10;- button &quot;Aucun exercice précédent&quot; [disabled]&#10;- combobox &quot;Exercice comptable&quot;:&#10;  - option &quot;2026 — Ouvert&quot; [selected]&#10;- button &quot;Aucun exercice suivant&quot; [disabled]&#10;- text: Ouvert&#10;- button &quot;ATLAS RECETTE HISABPRO SARL — FICTIVE&quot;&#10;- text: 01/01/2026 — 31/12/2026&#10;- main:&#10;  - heading &quot;Paramètres&quot; [level=1]&#10;  - button &quot;Fiche société&quot;&#10;  - button &quot;Modules&quot;&#10;  - button &quot;Fiscalité&quot;&#10;  - button &quot;Comptes bancaires&quot;&#10;  - button &quot;Utilisateurs&quot;&#10;  - button &quot;Sociétés liées&quot;&#10;  - button &quot;Sécurité &amp; contrôle&quot;&#10;  - button &quot;Mon compte&quot;&#10;  - text: 0 comptes bancaires&#10;  - button &quot;Ajouter un compte&quot;&#10;  - text: Nouveau compte bancaire Banque *&#10;  - combobox:&#10;    - option &quot;— Choisir —&quot; [selected]&#10;    - option &quot;Attijariwafa Bank&quot;&#10;    - option &quot;Banque Populaire&quot;&#10;    - option &quot;BMCE Bank of Africa&quot;&#10;    - option &quot;BMCI&quot;&#10;    - option &quot;CIH Bank&quot;&#10;    - option &quot;Société Générale Maroc&quot;&#10;    - option &quot;Crédit du Maroc&quot;&#10;    - option &quot;CFG Bank&quot;&#10;    - option &quot;Al Barid Bank&quot;&#10;    - option &quot;CDG Capital&quot;&#10;    - option &quot;Autre&quot;&#10;  - text: Agence&#10;  - 'textbox &quot;ex: Agence Hay Riad&quot;'&#10;  - text: RIB&#10;  - textbox &quot;000 000 0000000000000000 00&quot;&#10;  - text: IBAN (optionnel)&#10;  - textbox &quot;MA...&quot;&#10;  - text: Devise&#10;  - combobox:&#10;    - option &quot;MAD&quot; [selected]&#10;    - option &quot;EUR&quot;&#10;    - option &quot;USD&quot;&#10;    - option &quot;GBP&quot;&#10;  - text: Compte CGNC&#10;  - combobox:&#10;    - option &quot;5141 — Banque&quot; [selected]&#10;    - option &quot;5142 — Banque&quot;&#10;    - option &quot;5143 — Banque&quot;&#10;    - option &quot;5144 — Banque&quot;&#10;    - option &quot;5145 — Banque&quot;&#10;    - option &quot;5161 — Caisse&quot;&#10;  - button &quot;Annuler&quot;&#10;  - button &quot;Créer&quot;&#10;  - text: Aucun compte bancaire — ajoutez votre premier compte">application = {'api_url': 'http://127.0.0.1:55298', 'web_url': 'http://127.0.0.1:55299', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_py6avt4c'), 'nonce': '3115bfdf7af6415d9bf72a4c1dfafa84', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette771_banque_avant/test_771_banque_cahier_nom_lib0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_771_banque_cahier_nom_libre_creation_reouverture_et_edition(application,largeur,tmp_path):
+     c=application['cluster'];assert verifier_cible_isolee(c['url'],c['directory'],c['nonce'])
+     data=json.loads((ROOT/'docs/recette/jeu_donnees_recette.json').read_text(encoding='utf8'));s=data['societe'];b=data['banque']
+     email=f'banque771-{uuid4().hex[:8]}@hisabpro-recette.example';password=s['password_test']
+     with httpx.Client(base_url=application['api_url']) as api,sync_playwright() as p:
+      auth=ok(api.post('/api/auth/register',json={'nom':s['nom_admin'],'email':email,'password':password,'raison_sociale':s['raison_sociale']}));api.headers['Authorization']='Bearer '+auth['access_token'];sid=ok(api.get('/api/societe/moi'))['id']
+      browser=p.chromium.launch(executable_path=chromium_executable(),headless=True)
+      page=browser.new_page(viewport={'width':largeur,'height':1000});page.set_default_timeout(15000)
+      erreurs,serveur=observer(page,application['api_url'])
+      try:
+       connexion(page,application['web_url'],email,password)
+       page.goto(application['web_url']+'/parametres',wait_until='domcontentloaded');page.get_by_role('button',name='Comptes bancaires',exact=True).click()
+       page.get_by_role('button',name='Ajouter un compte',exact=True).click();champ(page,'Banque *','select').select_option('Autre')
+       nom=page.get_by_placeholder('Nom de la banque...',exact=True);nom.press_sequentially(b['banque'])
+&gt;      expect(nom).to_be_visible();expect(nom).to_have_value(b['banque'])
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E      AssertionError: Locator expected to be visible
+E      Actual value: None
+E      Error: element(s) not found 
+E      Call log:
+E        - Expect "to_be_visible" get_by_placeholder("Nom de la banque...", exact=True) with timeout 5000ms
+E        - waiting for get_by_placeholder("Nom de la banque...", exact=True)
+E      
+E      Aria snapshot:
+E      - complementary "Navigation principale":
+E        - text: HisabPro ATLAS RECETTE HISABPRO SARL — FICTIVE
+E        - navigation:
+E          - link "Tableau de bord":
+E            - /url: /dashboard
+E          - button "Facturation"
+E          - button "Comptabilité"
+E          - button "Paie / GRH"
+E        - link "Paramètres":
+E          - /url: /parametres
+E        - button "Déconnexion"
+E      - text: Exercice
+E      - button "Aucun exercice précédent" [disabled]
+E      - combobox "Exercice comptable":
+E        - option "2026 — Ouvert" [selected]
+E      - button "Aucun exercice suivant" [disabled]
+E      - text: Ouvert
+E      - button "ATLAS RECETTE HISABPRO SARL — FICTIVE"
+E      - text: 01/01/2026 — 31/12/2026
+E      - main:
+E        - heading "Paramètres" [level=1]
+E        - button "Fiche société"
+E        - button "Modules"
+E        - button "Fiscalité"
+E        - button "Comptes bancaires"
+E        - button "Utilisateurs"
+E        - button "Sociétés liées"
+E        - button "Sécurité &amp; contrôle"
+E        - button "Mon compte"
+E        - text: 0 comptes bancaires
+E        - button "Ajouter un compte"
+E        - text: Nouveau compte bancaire Banque *
+E        - combobox:
+E          - option "— Choisir —" [selected]
+E          - option "Attijariwafa Bank"
+E          - option "Banque Populaire"
+E          - option "BMCE Bank of Africa"
+E          - option "BMCI"
+E          - option "CIH Bank"
+E          - option "Société Générale Maroc"
+E          - option "Crédit du Maroc"
+E          - option "CFG Bank"
+E          - option "Al Barid Bank"
+E          - option "CDG Capital"
+E          - option "Autre"
+E        - text: Agence
+E        - 'textbox "ex: Agence Hay Riad"'
+E        - text: RIB
+E        - textbox "000 000 0000000000000000 00"
+E        - text: IBAN (optionnel)
+E        - textbox "MA..."
+E        - text: Devise
+E        - combobox:
+E          - option "MAD" [selected]
+E          - option "EUR"
+E          - option "USD"
+E          - option "GBP"
+E        - text: Compte CGNC
+E        - combobox:
+E          - option "5141 — Banque" [selected]
+E          - option "5142 — Banque"
+E          - option "5143 — Banque"
+E          - option "5144 — Banque"
+E          - option "5145 — Banque"
+E          - option "5161 — Caisse"
+E        - button "Annuler"
+E        - button "Créer"
+E        - text: Aucun compte bancaire — ajoutez votre premier compte
+
+Test\test_e2e_banque_cahier771_isole.py:34: AssertionError</failure></testcase></testsuite></testsuites>

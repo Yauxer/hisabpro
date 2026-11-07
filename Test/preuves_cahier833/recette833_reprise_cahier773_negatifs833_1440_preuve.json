@@ -1,0 +1,90 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_nalekajf",
+  "nonce": "e0bab2ab677e471f80140dcaf17d5a7c",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError('Locator expected to be visible\\nActual value: None\\nError: element(s) not found \\nCall log:\\n  - Expect \"to_be_visible\" get_by_role(\"dialog\", name=\"Nouvelle facture\", exact=True).get_by_text(\"Ligne 1 : le prix unitaire ne peut pas être négatif.\", exact=True) with timeout 5000ms\\n  - waiting for get_by_role(\"dialog\", name=\"Nouvelle facture\", exact=True).get_by_text(\"Ligne 1 : le prix unitaire ne peut pas être négatif.\", exact=True)\\n\\nAria snapshot:\\n- complementary \"Navigation principale\":\\n  - text: HisabPro ATLAS RECETTE HISABPRO SARL — FICTIVE\\n  - navigation:\\n    - link \"Tableau de bord\":\\n      - /url: /dashboard\\n    - button \"Facturation\"\\n    - link \"Cycle commercial\":\\n      - /url: /commercial\\n    - link \"Situation financière\":\\n      - /url: /situation\\n    - link \"Factures\":\\n      - /url: /factures\\n    - link \"Avoirs\":\\n      - /url: /avoirs\\n    - link \"Acomptes\":\\n      - /url: /acomptes\\n    - link \"Effets & Chèques\":\\n      - /url: /effets\\n    - link \"Délais de paiement\":\\n      - /url: /delais-paiement\\n    - link \"Clients / Fournisseurs\":\\n      - /url: /tiers\\n    - link \"Articles\":\\n      - /url: /articles\\n    - link \"Inventaire & stock\":\\n      - /url: /inventaire\\n    - button \"Comptabilité\"\\n    - button \"Paie / GRH\"\\n  - link \"Paramètres\":\\n    - /url: /parametres\\n  - button \"Déconnexion\"\\n- text: Exercice\\n- button \"Aucun exercice précédent\" [disabled]\\n- combobox \"Exercice comptable\":\\n  - option \"2026 — Ouvert\"\\n  - option \"2025 — Ouvert\" [selected]\\n- button \"Exercice 2026\"\\n- text: Ouvert\\n- button \"ATLAS RECETTE HISABPRO SARL — FICTIVE\"\\n- text: 01/01/2025 — 31/12/2025\\n- main:\\n  - heading \"Factures\" [level=1]\\n  - button \"Exporter CSV\"\\n  - button \"Nouvelle facture\"\\n  - dialog \"Nouvelle facture\":\\n    - text: Nouvelle facture\\n    - button \"Fermer\"\\n    - text: Document & tiers Les informations essentielles de la facture. Les paramètres du tiers sont repris automatiquement. Date *\\n    - textbox: 2025-04-01\\n    - text: Type\\n    - button \"Vente\"\\n    - button \"Achat\"\\n    - text: Client *\\n    - \\'combobox \"Rechercher un client : nom, ICE, compte…\"\\': Client Services Recette\\n    - button \"Effacer\"\\n    - text: Recherche par nom, ICE, compte comptable ou ville. Client Services Recette · 3421 · 60 j N° facture interne\\n    - textbox: FA-2025-001 (prévision)\\n    - text: La prévision n’est pas réservée. Le numéro définitif est attribué à la validation. Référence / N° commande\\n    - textbox \"N° BC, bon de commande...\"\\n    - text: Délai de paiement\\n    - spinbutton \"Délai de paiement de la nouvelle facture\": \"60\"\\n    - text: 60 jours Échéance\\n    - textbox \"Échéance de la nouvelle facture\": 2025-05-31\\n    - text: \"Échéance retenue : 31/05/2025 Mode de règlement convenu\"\\n    - combobox:\\n      - option \"— Non précisé —\" [selected]\\n      - option \"Virement\"\\n      - option \"Chèque\"\\n      - option \"Espèces\"\\n      - option \"Effet de commerce\"\\n      - option \"Carte\"\\n      - option \"Prélèvement\"\\n      - option \"Autre\"\\n    - text: Référence de règlement prévue\\n    - \\'textbox \"Optionnel : réf. virement, effet, commande…\"\\'\\n    - strong: Conditions de paiement\\n    - text: Une ou plusieurs échéances contractuelles.\\n    - button \"Paiement unique\"\\n    - button \"Échéancier\"\\n    - text: Lignes de facturation Ajoutez les articles ou services à facturer. Les prix, TVA et comptes sont proposés depuis les fiches articles.\\n    - button \"Ajouter une ligne\"\\n    - text: Détail 1 ligne\\n    - textbox \"Description ou article...\": Service fictif négatifs833\\n    - text: Rupture de stock Quantité\\n    - spinbutton: \"1\"\\n    - text: \"⚠ stock: 0 unité Prix unitaire HT\"\\n    - spinbutton \"Prix unitaire HT\": \"-10\"\\n    - text: Remise (%)\\n    - spinbutton \"0\"\\n    - text: \"% TVA\"\\n    - combobox:\\n      - option \"À vérifier\"\\n      - option \"0%\"\\n      - option \"9%\"\\n      - option \"10%\"\\n      - option \"12%\"\\n      - option \"15%\"\\n      - option \"18%\"\\n      - option \"20%\" [selected]\\n    - text: Total HT À vérifier\\n    - button [disabled]\\n    - button \"Réductions\"\\n    - text: Montants & options Le résumé reste simple ; les ajustements fiscaux ou commerciaux avancés sont regroupés dans un seul bloc. Total HT lignes À vérifier MAD\\n    - group: Options commerciales & fiscales ›\\n    - text: Total TTC net À vérifier MAD\\n    - strong: \"Aperçu comptable :\"\\n    - text: tiers 3421 · comptes articles 7124 · TVA automatique Que souhaitez-vous faire ?\\n    - button \"Enregistrer en brouillon Modifiable, sans numéro définitif\":\\n      - strong: Enregistrer en brouillon\\n      - text: Modifiable, sans numéro définitif\\n    - button \"Valider & comptabiliser immédiatement Numéro définitif et facture figée\":\\n      - strong: Valider & comptabiliser immédiatement\\n      - text: Numéro définitif et facture figée\\n    - text: Le brouillon reste entièrement modifiable.\\n    - button \"Annuler\"\\n    - button \"Enregistrer le brouillon\"\\n  - paragraph: Indicateurs de facturation sur la période sélectionnée, factures validées hors proformas et annulations, nets des avoirs datés sur cette période. HT après remises, avant escompte. Coûts moyens indicatifs ; ne remplace pas le CA comptable.\\n  - text: Facturation nette HT 0,00 MAD Ventes nettes TTC ▼ détail 0,00 MAD Achats nets TTC 0,00 MAD En attente 0 factures En retard 0 factures\\n  - searchbox \"Rechercher une facture par numéro ou tiers\"\\n  - button \"Tous\" [pressed]\\n  - button \"Ventes\"\\n  - button \"Achats\"\\n  - button \"Tous statuts\" [pressed]\\n  - button \"Payées\"\\n  - button \"Part. payées\"\\n  - button \"En attente\"\\n  - button \"En retard\"\\n  - text: Du\\n  - textbox \"Date de début des factures et indicateurs\"\\n  - text: au\\n  - textbox \"Date de fin des factures et indicateurs\"\\n  - status: 0 factures\\n  - text: Aucune facture trouvée\\n  - paragraph: Aucune facture enregistrée pour cet exercice.\\n  - button \"Créer une première facture\"')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "negatifs833": {
+    "HP-NEG-001": {
+      "status": 400,
+      "corps": {
+        "detail": "Email déjà utilisé"
+      }
+    },
+    "HP-NEG-002": {
+      "status": 400,
+      "corps": {
+        "detail": "Le mot de passe doit contenir au moins 8 caractères"
+      }
+    },
+    "HP-NEG-003": {
+      "status": 422,
+      "corps": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "ice"
+            ],
+            "msg": "Value error, L’ICE doit contenir exactement 15 chiffres",
+            "input": "12345678901234",
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      }
+    },
+    "HP-NEG-004": {
+      "status": 409,
+      "corps": {
+        "detail": "L'exercice 2026 existe déjà."
+      },
+      "controle_chevauchement": {
+        "status": 409,
+        "corps": {
+          "detail": "Les dates chevauchent l'exercice 2025."
+        }
+      }
+    },
+    "HP-NEG-005": {
+      "status": 400,
+      "corps": {
+        "detail": "Un exercice comptable ne peut pas dépasser 12 mois."
+      }
+    },
+    "HP-NEG-006": {
+      "status": 422,
+      "corps": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "lignes"
+            ],
+            "msg": "Value error, Écriture non équilibrée : débit=100.0, crédit=99.0",
+            "input": [
+              {
+                "compte": "5141",
+                "debit": 100
+              },
+              {
+                "compte": "1111",
+                "credit": 99
+              }
+            ],
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      }
+    }
+  }
+}

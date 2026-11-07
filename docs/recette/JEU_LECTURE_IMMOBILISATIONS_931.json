@@ -1,0 +1,61 @@
+{
+  "environnement": "Copie isolée restaurable avec frontend931 et backend existant, jamais le dossier réel. Application connectée et entièrement chargée avant de simuler une coupure. Les tests automatisés interrompent explicitement deux GET dans Edge ;les reprises utilisent les vrais HTTP/API/PostgreSQL nonce.",
+  "donnees": "Bien actif du jeu JEU_APERCU_SORTIES_927.json :Immobilisation FICTIVE927,24000MAD HT,acquisition et mise en service01/01/2025,linéaire5ans,résiduelle0,fournisseur FICTIF927,TVA hypothétique20% récupérable100%,comptes2355/28355/61935,TVA34551,dette4411 explicitement choisie. Acquisition et dotation2025 de4800 validées. Ne pas enregistrer sa sortie avant ces essais. Utiliser l’administrateur et le lecteur fictifs du jeu929 ;exercice2026 ouvert.",
+  "simulation": "Sur navigateur de laboratoire uniquement,ouvrir les outils de développement → Réseau et utiliser Hors connexion,ou faire préparer par le technicien le blocage ciblé du GET indiqué dans chaque cas. Ne pas arrêter PostgreSQL,ne pas toucher aux données et ne pas modifier les réponses financières. En cas d’impossibilité de simuler la panne,classer le cas Bloqué avec son prérequis manquant.",
+  "controles": "Photographier le Journal et le registre avant/après. Aucune écriture,paiement,dotation,sortie ou période créée par la consultation et les reprises. La trace d’audit HTTP est distincte. Faire les cas à1440px et390px avec administrateur puis lecteur. Aucun secret dans les captures.",
+  "limites": "Ce lot concerne l’affichage et la reprise de lectures. Aucun nouveau calcul ou traitement fiscal ;convention de prorata et TVA/régularisation de cession restent à qualifier. Les résultats humains ci-dessous restent Non testé.",
+  "cas": [
+    {
+      "id": "IMM931-01",
+      "module": "Immobilisations / registre",
+      "objectif": "Ne pas confondre lecture indisponible et registre vide",
+      "prerequis": "Bien du jeu présent ;utilisateur connecté,application déjà chargée sur une autre page ;simulation de coupure disponible.",
+      "donnees_exactes": "GET ciblé :/api/immobilisations?inclure_sorties=true. Bien24000MAD et dotation2025 4800 déjà présents. Aucun montant à saisir pendant ce cas.",
+      "actions": "1. Depuis une autre page chargée,activer la coupure du laboratoire. 2. Ouvrir Immobilisations par la sidebar sans rechargement global du navigateur. 3. Vérifier l’alerte Impossible de charger le registre,les quatre indicateurs à —,l’absence du message Aucune immobilisation et les commandes de création/dotations désactivées. 4. Rétablir la connexion ou retirer le blocage. 5. Cliquer Réessayer le registre,sans F5. 6. Vérifier le retour du bien,de sa valeur brute24000 et des droits habituels du rôle. 7. Comparer les écritures avant/après.",
+      "attendu": "Une erreur de lecture n’affiche pas des zéros ou une absence de bien. La reprise relit les données réelles et retire l’alerte. Les totaux ne sont affichés qu’après une lecture réussie ;aucune mutation comptable.",
+      "ecritures": "Aucune écriture nouvelle ou modifiée.",
+      "fiscalite": "Aucun impact fiscal direct.",
+      "preuve": "Capture de l’alerte et des indicateurs inconnus,puis du registre rétabli et du Journal inchangé.",
+      "statut": "Non testé"
+    },
+    {
+      "id": "IMM931-02",
+      "module": "Immobilisations / plan d’amortissement",
+      "objectif": "Lire de nouveau un plan après échec sans refermer la page",
+      "prerequis": "Registre déjà chargé et bien amortissable visible ;plan encore replié ;simulation de coupure disponible.",
+      "donnees_exactes": "GET ciblé :/api/immobilisations/ID_REEL/tableau ;relever l’ID du bien réel du laboratoire sans en deviner un. Plan du bien24000MAD sur5ans ;annuité2025 attendue4800MAD.",
+      "actions": "1. Sur le registre chargé,activer la coupure. 2. Cliquer la ligne du bien pour déployer le plan. 3. Vérifier l’alerte Impossible de charger le plan et l’absence de boutons Générer pendant l’échec. 4. Rétablir la connexion ou retirer le blocage. 5. Cliquer Réessayer le plan. 6. Vérifier les annuités,dont2025 à4800MAD. 7. Le lecteur ne doit toujours pas disposer de Générer ;l’administrateur retrouve les commandes selon l’état du bien. Ne pas générer de dotation dans ce cas.",
+      "attendu": "Le plan indisponible est signalé explicitement ;une reprise réelle réaffiche les annuités sans F5 ni écriture. L’indisponibilité ne devient pas un plan vide ou une absence d’amortissement.",
+      "ecritures": "Aucune écriture nouvelle ou modifiée ;dotation2025 conservée.",
+      "fiscalite": "Aucun calcul fiscal nouveau ;conventions existantes inchangées.",
+      "preuve": "Capture de l’alerte puis du plan rétabli,avec rôle et ligne2025 ;Journal avant/après.",
+      "statut": "Non testé"
+    },
+    {
+      "id": "IMM931-03",
+      "module": "Immobilisations / registre vide",
+      "objectif": "Conserver un vrai zéro lorsqu’aucun bien n’existe",
+      "prerequis": "Seconde société fictive RECETTE VIDE931 préparée sans aucune immobilisation,exercices ouverts,connexion disponible ;aucune suppression de bien pour préparer ce cas.",
+      "donnees_exactes": "Aucune immobilisation dans cette société distincte ;aucune donnée à saisir.",
+      "actions": "1. Rétablir le réseau et retirer tout blocage du laboratoire. 2. Basculer vers la société fictive vide. 3. Ouvrir Immobilisations et attendre la fin de la lecture. 4. Vérifier Aucune immobilisation,les trois montants à0,00MAD et0biens. 5. Vérifier l’absence d’alerte de chargement. 6. Revenir à la société du bien et vérifier qu’il existe toujours.",
+      "attendu": "Une lecture réussie d’une liste vide affiche des zéros justifiés. Elle reste distincte d’un échec et n’altère aucune autre société.",
+      "ecritures": "Aucune écriture ou donnée comptable créée,supprimée ou modifiée.",
+      "fiscalite": "Aucun impact fiscal direct.",
+      "preuve": "Capture du registre réellement vide et du retour au bien de l’autre société.",
+      "statut": "Non testé"
+    },
+    {
+      "id": "IMM931-04",
+      "module": "Immobilisations / rafraîchissement après modification",
+      "objectif": "Reprendre la lecture sans enregistrer deux fois une modification réussie",
+      "prerequis": "Administrateur du laboratoire,bien actif du jeu chargé ;le technicien doit pouvoir bloquer uniquement le GET du registre tout en laissant le PATCH de modification passer. Sans ce prérequis technique,classer Bloqué.",
+      "donnees_exactes": "Nouvelle désignation :Bien RENOMME FICTIF931. GET à bloquer :/api/immobilisations?inclure_sorties=true. PATCH à autoriser :/api/immobilisations/ID_REEL. Ne pas changer de montant,compte,méthode ou date.",
+      "actions": "1. Ouvrir Modifier sur le bien et saisir uniquement la nouvelle désignation. 2. Faire activer le blocage ciblé du GET. 3. Enregistrer la modification. 4. Vérifier la fermeture du formulaire et l’alerte de lecture du registre,avec indicateurs à — et aucune annonce de registre vide. 5. Retirer le blocage. 6. Cliquer Réessayer le registre,sans rouvrir ou enregistrer le formulaire. 7. Vérifier le nouveau nom et la valeur brute24000MAD. 8. Comparer le Journal avant/après. 9. Contrôle négatif distinct :rouvrir Modifier,changer Durée (années) de5 à6,tenter l’enregistrement. Vérifier le refus du plan verrouillé puis Annuler ;ne pas chercher à contourner ce refus.",
+      "attendu": "La modification descriptive est conservée malgré l’échec du rafraîchissement. Les anciennes valeurs ne sont pas présentées comme actualisées. La reprise ne renvoie pas de PATCH ou de nouvelle opération :elle relit le nom enregistré. Le renommage est autorisé après dotation,mais un véritable changement du plan reste refusé409 ;la durée demeure5ans.",
+      "ecritures": "Aucune écriture,ligne,période ou dotation nouvelle/modifiée ;seule la modification descriptive explicitement demandée sur le bien fictif est enregistrée.",
+      "fiscalite": "Aucun impact fiscal direct.",
+      "preuve": "Preuve du PATCH réussi et du GET interrompu,puis registre au nouveau nom ;Journal avant/après inchangé.",
+      "statut": "Non testé"
+    }
+  ]
+}

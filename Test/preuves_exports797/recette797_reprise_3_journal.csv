@@ -1,0 +1,146 @@
+﻿N° écriture;Date;Date pièce;Journal;Libellé écriture;Référence pièce;Compte;Intitulé du compte;Compte auxiliaire;Libellé auxiliaire;Libellé ligne;Débit;Crédit
+CL-2025-0001;2025-12-31;2025-12-31;CL;Détermination du résultat 2025;CLOTURE-2025;6111;Achats de marchandises (groupe A);;;Solde de clôture 6111;0,00;22000,00
+;;;;;;1191;Résultat net de l'exercice (solde créditeur);;;Résultat net de l'exercice (bénéfice);0,00;106409,75
+;;;;;;8800;Résultat après impôts;;;Solde du résultat après impôts;106409,75;0,00
+;;;;;;8800;Résultat après impôts;;;Résultat après impôts;0,00;106409,75
+;;;;;;8600;Résultat avant impôts;;;Solde du résultat avant impôts;129830,00;0,00
+;;;;;;6701;Impôts sur les bénéfices;;;Solde de clôture 6701;0,00;23420,25
+;;;;;;8600;Résultat avant impôts;;;Résultat avant impôts;0,00;129830,00
+;;;;;;8500;Résultat non courant;;;Solde de 8500;0,00;500,00
+;;;;;;8400;Résultat courant;;;Solde de 8400;130330,00;0,00
+;;;;;;8500;Résultat non courant;;;Résultat non courant;500,00;0,00
+;;;;;;6583;Pénalités et amendes fiscales ou pénales;;;Solde de clôture 6583;0,00;500,00
+;;;;;;8400;Résultat courant;;;Résultat courant;0,00;130330,00
+;;;;;;8300;Résultat financier;;;Solde de 8300;1000,00;0,00
+;;;;;;8100;Résultat d'exploitation;;;Solde de 8100;129330,00;0,00
+;;;;;;8300;Résultat financier;;;Résultat financier;0,00;1000,00
+;;;;;;7381;Intérêts et produits assimilés;;;Solde de clôture 7381;1000,00;0,00
+;;;;;;8100;Résultat d'exploitation;;;Résultat d'exploitation;0,00;129330,00
+;;;;;;7124;Ventes de services produits au Maroc;;;Solde de clôture 7124;132000,00;0,00
+;;;;;;7111;Ventes de marchandises au Maroc;;;Solde de clôture 7111;37500,00;0,00
+;;;;;;61964;DEP pour dépréciation des créances de l'actif circulant;;;Solde de clôture 61964;0,00;2000,00
+;;;;;;61955;DEP pour risques et charges durables;;;Solde de clôture 61955;0,00;1500,00
+;;;;;;61935;DEA des mobiliers, matériels de bureau et aménagements divers;;;Solde de clôture 61935;0,00;4800,00
+;;;;;;61473;Frais et commissions sur services bancaires;;;Solde de clôture 61473;0,00;60,00
+;;;;;;61472;Frais sur effets de commerce;;;Solde de clôture 61472;0,00;10,00
+;;;;;;6134;Primes d'assurances;;;Solde de clôture 6134;0,00;1000,00
+;;;;;;6125;Achats non stockés de matières et fournitures;;;Solde de clôture 6125;0,00;15400,00
+;;;;;;6114;Variation de stocks de marchandises;;;Solde de clôture 6114;6600,00;0,00
+OD-2025-0015;2025-12-31;2025-12-31;OD;Imputation documentaire retenue 200;PPRF-IMP;3453;Acomptes sur impôts sur les résultats;;;Acomptes sur impôts sur les résultats;0,00;200,00
+;;;;;;4453;État - impôts sur les résultats;;;État - impôts sur les résultats;200,00;0,00
+OD-2025-0014;2025-12-31;2025-12-31;OD;IS attendu à constater une seule fois;IS-2025;4453;État - impôts sur les résultats;;;État - impôts sur les résultats;0,00;23420,25
+;;;;;;6701;Impôts sur les bénéfices;;;Impôts sur les bénéfices;23420,25;0,00
+OD-2025-0013;2025-12-31;2025-12-31;OD;TVA nette décembre 2 400;TVA-12;4456;État - TVA due (suivant déclarations);;;État - TVA due (suivant déclarations);0,00;2400,00
+;;;;;;4455;État - TVA facturée;;;État - TVA facturée;2400,00;0,00
+OD-2025-0012;2025-12-31;2025-12-31;OD;Dépréciation VENTE-IMPAYEE selon REC-DEP01;INV-DEPRECIATION_CLIENT-2025-4;3942;Provisions pour dépréciation des clients et comptes rattachés;;;Dépréciation d'une créance client;0,00;2000,00
+;;;;;;61964;DEP pour dépréciation des créances de l'actif circulant;;;Dépréciation d'une créance client;2000,00;0,00
+OD-2025-0011;2025-12-31;2025-12-31;OD;Litige REC-LIT01 probable, conditions fiscales non satisfaites;INV-PROVISION_RISQUE-2025-3;1518;Autres provisions pour risques;;;Provision pour risques et charges;0,00;1500,00
+;;;;;;61955;DEP pour risques et charges durables;;;Provision pour risques et charges;1500,00;0,00
+OD-2025-0010;2025-12-31;2025-12-31;OD;Service livré décembre, contrat FNP-01;INV-FNP-2025-2;4417;Fournisseurs - factures non parvenues;;;Fournisseur - facture non parvenue (FNP);0,00;3000,00
+;;;;;;6125;Achats non stockés de matières et fournitures;;;Fournisseur - facture non parvenue (FNP);3000,00;0,00
+OD-2025-0009;2025-12-31;2025-12-31;OD;Assurance ASS-01,11 mois 2026;INV-CCA-2025-1;6134;Primes d'assurances;;;Charge constatée d'avance (CCA);0,00;11000,00
+;;;;;;3491;Charges constatées d'avance;;;Charge constatée d'avance (CCA);11000,00;0,00
+AM-2025-0001;2025-12-31;2025-12-31;AM;Dotation aux amortissements — Ordinateur de recette 2025;AM-2025-1;61935;DEA des mobiliers, matériels de bureau et aménagements divers;;;Dotation amort. — Ordinateur de recette;4800,00;0,00
+;;;;;;28355;Amortissements du matériel informatique;;;Amort. cumulé — Ordinateur de recette;0,00;4800,00
+OD-2025-0008;2025-12-31;2025-12-31;OD;Régularisation du stock final 2025;STOCK-CLOTURE-2025;6114;Variation de stocks de marchandises;;;Variation de stock;0,00;6600,00
+;;;;;;3111;Marchandises (groupe A);;;Stock final;6600,00;0,00
+BQ-2025-0017;2025-12-31;2025-12-31;BQ;Frais bancaires 60 sans TVA selon avis;FRAIS-BQ;5141;Banques (solde débiteur);;;Banques (solde débiteur);0,00;60,00
+;;;;;;61473;Frais et commissions sur services bancaires;;;Frais et commissions sur services bancaires;60,00;0,00
+BQ-2025-0016;2025-12-20;2025-12-20;BQ;Amende fiscale documentée 500;AMENDE;5141;Banques (solde débiteur);;;Banques (solde débiteur);0,00;500,00
+;;;;;;6583;Pénalités et amendes fiscales ou pénales;;;Pénalités et amendes fiscales ou pénales;500,00;0,00
+OD-2025-0007;2025-12-15;2025-12-15;OD;Impayé cheque — Client Impayé Recette;CHQ-REJET;51111;Chèques en portefeuille;;;Valeur impayée;0,00;2000,00
+;;;;;;3421;Clients;C00000005;Client Impayé Recette;Client Impayé Recette — impayé;2000,00;0,00
+AE-2025-0006;2025-12-12;2025-12-12;AE;Réception chèque — Client Impayé Recette;CHQ-REJET;3421;Clients;C00000005;Client Impayé Recette;Client Impayé Recette;0,00;2000,00
+;;;;;;51111;Chèques en portefeuille;;;Chèque en portefeuille CHQ-REJET;2000,00;0,00
+VT-2025-0004;2025-12-10;2025-12-10;VT;Facture FA-2025-009 Client Impayé Recette;FA-2025-009;4455;État - TVA facturée;;;État — TVA facturée;0,00;2400,00
+;;;;;;7124;Ventes de services produits au Maroc;;;Ventes;0,00;12000,00
+;;;;;;3421;Clients;C00000005;Client Impayé Recette;Client Impayé Recette;14400,00;0,00
+AC-2025-0006;2025-12-02;2025-12-02;AC;Facture d'achat FA-2025-008 Fournisseur Contrôle Références Recette;002;34552;État - TVA récupérable sur charges;;;État — TVA récupérable sur charges;40,00;0,00
+;;;;;;4411;Fournisseurs;F00000008;Fournisseur Contrôle Références Recette;Fournisseur Contrôle Références Recette;0,00;240,00
+;;;;;;6125;Achats non stockés de matières et fournitures;;;Achats;200,00;0,00
+AC-2025-0005;2025-12-02;2025-12-02;AC;Facture d'achat FA-2025-007 Fournisseur Contrôle Références Recette;02;6125;Achats non stockés de matières et fournitures;;;Achats;200,00;0,00
+;;;;;;4411;Fournisseurs;F00000008;Fournisseur Contrôle Références Recette;Fournisseur Contrôle Références Recette;0,00;240,00
+;;;;;;34552;État - TVA récupérable sur charges;;;État — TVA récupérable sur charges;40,00;0,00
+BQ-2025-0015;2025-12-01;2025-12-01;BQ;Assurance 12000 couvrant décembre 2025 à novembre 2026;ASS-01;5141;Banques (solde débiteur);;;Banques (solde débiteur);0,00;12000,00
+;;;;;;6134;Primes d'assurances;;;Primes d'assurances;12000,00;0,00
+BQ-2025-0014;2025-11-30;2025-11-30;BQ;Intérêts bancaires selon attestation fictive;INT-PPRF;3453;Acomptes sur impôts sur les résultats;;;Acomptes sur impôts sur les résultats;200,00;0,00
+;;;;;;7381;Intérêts et produits assimilés;;;Intérêts et produits assimilés;0,00;1000,00
+;;;;;;5141;Banques (solde débiteur);;;Banques (solde débiteur);800,00;0,00
+BQ-2025-0013;2025-07-20;2025-07-20;BQ;Paiement TVA juin 19900;TVA-06-PAY;5141;Banques (solde débiteur);;;Banques (solde débiteur);0,00;19900,00
+;;;;;;4456;État - TVA due (suivant déclarations);;;État - TVA due (suivant déclarations);19900,00;0,00
+OD-2025-0006;2025-06-30;2025-06-30;OD;TVA nette juin 19 900;TVA-06;3456;État - crédit de TVA (suivant déclaration);;;État - crédit de TVA (suivant déclaration);0,00;4100,00
+;;;;;;4456;État - TVA due (suivant déclarations);;;État - TVA due (suivant déclarations);0,00;19900,00
+;;;;;;4455;État - TVA facturée;;;État - TVA facturée;24000,00;0,00
+BQ-2025-0012;2025-06-30;2025-06-30;BQ;Règlement Client Services Recette VENTE-SERVICE-PAY;VENTE-SERVICE-PAY;3421;Clients;C00000004;Client Services Recette;Client Services Recette;0,00;120000,00
+;;;;;;5141;Banques (solde débiteur);;;Virement reçu VENTE-SERVICE-PAY;120000,00;0,00
+OD-2025-0005;2025-06-15;2025-06-15;OD;Imputation acompte AC-2025-002 sur FA-2025-006;AC-2025-002;4421;Clients - avances et acomptes reçus sur commandes en cours;C00000004;Client Services Recette;Client Services Recette — avances et acomptes reçus;24000,00;0,00
+;;;;;;3421;Clients;C00000004;Client Services Recette;Client Services Recette;0,00;24000,00
+VT-2025-0003;2025-06-15;2025-06-15;VT;Facture FA-2025-006 Client Services Recette;FA-2025-006;7124;Ventes de services produits au Maroc;;;Ventes;0,00;120000,00
+;;;;;;4455;État - TVA facturée;;;État — TVA facturée;0,00;24000,00
+;;;;;;3421;Clients;C00000004;Client Services Recette;Client Services Recette;144000,00;0,00
+BQ-2025-0011;2025-06-01;2025-06-01;BQ;Acompte client reçu — AC-2025-002 Client Services Recette;AC-2025-002;5141;Banques (solde débiteur);;;Trésorerie;24000,00;0,00
+;;;;;;4421;Clients - avances et acomptes reçus sur commandes en cours;C00000004;Client Services Recette;Client Services Recette — avances et acomptes reçus;0,00;24000,00
+BQ-2025-0010;2025-05-16;2025-05-16;BQ;Encaissement effet — Client Marchandises Recette;EFF-C01;61472;Frais sur effets de commerce;;;Frais sur effets de commerce;10,00;0,00
+;;;;;;51132;Effets à l'encaissement;;;Valeurs à l'encaissement;0,00;10000,00
+;;;;;;5141;Banques (solde débiteur);;;Effet encaissé EFF-C01;9990,00;0,00
+AE-2025-0005;2025-05-15;2025-05-15;AE;Remise à l'encaissement effet — Client Marchandises Recette;EFF-C01;3425;Clients - effets à recevoir;C00000003;Client Marchandises Recette;Effet à recevoir;0,00;10000,00
+;;;;;;51132;Effets à l'encaissement;;;Effet à l'encaissement;10000,00;0,00
+AE-2025-0004;2025-04-01;2025-04-01;AE;Acceptation effet — Client Marchandises Recette;EFF-C01;3421;Clients;C00000003;Client Marchandises Recette;Client Marchandises Recette;0,00;10000,00
+;;;;;;3425;Clients - effets à recevoir;C00000003;Client Marchandises Recette;Effet à recevoir EFF-C01;10000,00;0,00
+OD-2025-0004;2025-03-31;2025-03-31;OD;Consommation crédit TVA mars 600;TVA-03;34552;État - TVA récupérable sur charges;;;État - TVA récupérable sur charges;0,00;2400,00
+;;;;;;3456;État - crédit de TVA (suivant déclaration);;;État - crédit de TVA (suivant déclaration);0,00;600,00
+;;;;;;4455;État - TVA facturée;;;État - TVA facturée;3000,00;0,00
+BQ-2025-0009;2025-03-20;2025-03-20;BQ;Paiement effet — Fournisseur Marchandises Recette;EFF-F01;5141;Banques (solde débiteur);;;Effet payé EFF-F01;0,00;14400,00
+;;;;;;4415;Fournisseurs - effets à payer;F00000006;Fournisseur Marchandises Recette;Effet à payer;14400,00;0,00
+BQ-2025-0008;2025-03-05;2025-03-05;BQ;Règlement Client Marchandises Recette PAY-V02;PAY-V02;3421;Clients;C00000003;Client Marchandises Recette;Client Marchandises Recette;0,00;5000,00
+;;;;;;5141;Banques (solde débiteur);;;Virement reçu PAY-V02;5000,00;0,00
+AE-2025-0003;2025-03-01;2025-03-01;AE;Effet à payer — Fournisseur Marchandises Recette;EFF-F01;4415;Fournisseurs - effets à payer;F00000006;Fournisseur Marchandises Recette;Effet à payer EFF-F01;0,00;14400,00
+;;;;;;4411;Fournisseurs;F00000006;Fournisseur Marchandises Recette;Fournisseur Marchandises Recette;14400,00;0,00
+VT-2025-0002;2025-03-01;2025-03-01;VT;Facture FA-2025-005 Client Marchandises Recette;FA-2025-005;4455;État - TVA facturée;;;État — TVA facturée;0,00;3000,00
+;;;;;;7111;Ventes de marchandises au Maroc;;;Ventes;0,00;15000,00
+;;;;;;3421;Clients;C00000003;Client Marchandises Recette;Client Marchandises Recette;18000,00;0,00
+OD-2025-0003;2025-02-28;2025-02-28;OD;Augmentation crédit TVA février 2 900;TVA-02;4455;État - TVA facturée;;;État - TVA facturée;0,00;500,00
+;;;;;;34552;État - TVA récupérable sur charges;;;État - TVA récupérable sur charges;0,00;2400,00
+;;;;;;3456;État - crédit de TVA (suivant déclaration);;;État - crédit de TVA (suivant déclaration);2900,00;0,00
+BQ-2025-0007;2025-02-15;2025-02-15;BQ;Règlement Fournisseur Services Recette ACH-SERVICE-PAY;ACH-SERVICE-PAY;5141;Banques (solde débiteur);;;Virement émis ACH-SERVICE-PAY;0,00;14400,00
+;;;;;;4411;Fournisseurs;F00000007;Fournisseur Services Recette;Fournisseur Services Recette;14400,00;0,00
+AV-2025-0001;2025-02-10;2025-02-10;AV;Avoir AV-2025-001 Client Marchandises Recette;AV-2025-001;4455;État - TVA facturée;;;État — TVA facturée (avoir);500,00;0,00
+;;;;;;3421;Clients;C00000003;Client Marchandises Recette;Client Marchandises Recette;0,00;3000,00
+;;;;;;7111;Ventes de marchandises au Maroc;;;Avoir sur ventes;2500,00;0,00
+AC-2025-0004;2025-02-10;2025-02-10;AC;Facture d'achat FA-2025-004 Fournisseur Services Recette;ACH-SERVICE;4411;Fournisseurs;F00000007;Fournisseur Services Recette;Fournisseur Services Recette;0,00;14400,00
+;;;;;;34552;État - TVA récupérable sur charges;;;État — TVA récupérable sur charges;2400,00;0,00
+;;;;;;6125;Achats non stockés de matières et fournitures;;;Achats;12000,00;0,00
+BQ-2025-0006;2025-02-05;2025-02-05;BQ;Encaissement cheque — Client Marchandises Recette;CHQ-01;51112;Chèques à l'encaissement;;;Valeurs à l'encaissement;0,00;20000,00
+;;;;;;5141;Banques (solde débiteur);;;Chèque encaissé CHQ-01;20000,00;0,00
+AE-2025-0002;2025-02-01;2025-02-01;AE;Remise à l'encaissement cheque — Client Marchandises Recette;CHQ-01;51112;Chèques à l'encaissement;;;Chèque à l'encaissement;20000,00;0,00
+;;;;;;51111;Chèques en portefeuille;;;Chèque en portefeuille;0,00;20000,00
+OD-2025-0002;2025-01-31;2025-01-31;OD;Crédit TVA janvier 1 800;TVA-01;3456;État - crédit de TVA (suivant déclaration);;;État - crédit de TVA (suivant déclaration);1800,00;0,00
+;;;;;;34552;État - TVA récupérable sur charges;;;État - TVA récupérable sur charges;0,00;2000,00
+;;;;;;34551;État - TVA récupérable sur immobilisations;;;État - TVA récupérable sur immobilisations;0,00;4800,00
+;;;;;;4455;État - TVA facturée;;;État - TVA facturée;5000,00;0,00
+AE-2025-0001;2025-01-26;2025-01-26;AE;Réception chèque — Client Marchandises Recette;CHQ-01;3421;Clients;C00000003;Client Marchandises Recette;Client Marchandises Recette;0,00;20000,00
+;;;;;;51111;Chèques en portefeuille;;;Chèque en portefeuille CHQ-01;20000,00;0,00
+BQ-2025-0005;2025-01-25;2025-01-25;BQ;Règlement Client Marchandises Recette PAY-V01;PAY-V01;3421;Clients;C00000003;Client Marchandises Recette;Client Marchandises Recette;0,00;10000,00
+;;;;;;5141;Banques (solde débiteur);;;Virement reçu PAY-V01;10000,00;0,00
+VT-2025-0001;2025-01-20;2025-01-20;VT;Facture FA-2025-003 Client Marchandises Recette;FA-2025-003;4455;État - TVA facturée;;;État — TVA facturée;0,00;5000,00
+;;;;;;7111;Ventes de marchandises au Maroc;;;Ventes;0,00;25000,00
+;;;;;;3421;Clients;C00000003;Client Marchandises Recette;Client Marchandises Recette;30000,00;0,00
+AC-2025-0003;2025-01-10;2025-01-10;AC;Facture d'achat FA-2025-002 Fournisseur Marchandises Recette;ACH-02;34552;État - TVA récupérable sur charges;;;État — TVA récupérable sur charges;2400,00;0,00
+;;;;;;4411;Fournisseurs;F00000006;Fournisseur Marchandises Recette;Fournisseur Marchandises Recette;0,00;14400,00
+;;;;;;6111;Achats de marchandises (groupe A);;;Achats;12000,00;0,00
+BQ-2025-0004;2025-01-07;2025-01-07;BQ;Règlement Fournisseur Marchandises Recette PAY-ACH01;PAY-ACH01;5141;Banques (solde débiteur);;;Virement émis PAY-ACH01;0,00;6000,00
+;;;;;;4411;Fournisseurs;F00000006;Fournisseur Marchandises Recette;Fournisseur Marchandises Recette;6000,00;0,00
+OD-2025-0001;2025-01-05;2025-01-05;OD;Imputation acompte AC-2025-001 sur FA-2025-001;AC-2025-001;3411;Fournisseurs - avances et acomptes versés sur commandes d'exploitation;F00000006;Fournisseur Marchandises Recette;Fournisseur Marchandises Recette — avances et acomptes versés;0,00;6000,00
+;;;;;;4411;Fournisseurs;F00000006;Fournisseur Marchandises Recette;Fournisseur Marchandises Recette;6000,00;0,00
+AC-2025-0002;2025-01-05;2025-01-05;AC;Facture d'achat FA-2025-001 Fournisseur Marchandises Recette;ACH-01;34552;État - TVA récupérable sur charges;;;État — TVA récupérable sur charges;2000,00;0,00
+;;;;;;4411;Fournisseurs;F00000006;Fournisseur Marchandises Recette;Fournisseur Marchandises Recette;0,00;12000,00
+;;;;;;6111;Achats de marchandises (groupe A);;;Achats;10000,00;0,00
+BQ-2025-0003;2025-01-04;2025-01-04;BQ;Acompte fournisseur versé — AC-2025-001 Fournisseur Marchandises Recette;AC-2025-001;5141;Banques (solde débiteur);;;Trésorerie;0,00;6000,00
+;;;;;;3411;Fournisseurs - avances et acomptes versés sur commandes d'exploitation;F00000006;Fournisseur Marchandises Recette;Fournisseur Marchandises Recette — avances et acomptes versés;6000,00;0,00
+BQ-2025-0002;2025-01-01;2025-01-01;BQ;Paiement immobilisation — Ordinateur de recette;PAY-IMMO-1;5141;Banques (solde débiteur);;;Paiement immobilisation — Ordinateur de recette;0,00;28800,00
+;;;;;;4481;Dettes sur acquisitions d'immobilisations;F00000009;Fournisseur Informatique Recette;Règlement dette immobilisation — Ordinateur de recette;28800,00;0,00
+AC-2025-0001;2025-01-01;2025-01-01;AC;Acquisition immobilisation — Ordinateur de recette;ACQ-2025-1;2355;Matériel informatique;;;Acquisition Ordinateur de recette;24000,00;0,00
+;;;;;;4481;Dettes sur acquisitions d'immobilisations;F00000009;Fournisseur Informatique Recette;Dette acquisition immobilisation — Fournisseur Informatique Recette;0,00;28800,00
+;;;;;;34551;État - TVA récupérable sur immobilisations;;;TVA récupérable sur immobilisation — Ordinateur de recette;4800,00;0,00
+BQ-2025-0001;2025-01-01;2025-01-01;BQ;Apport associé Recette;CAP-01;5141;Banques (solde débiteur);;;Banques (solde débiteur);200000,00;0,00
+;;;;;;1111;Capital social;;;Capital social;0,00;200000,00

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="7" time="57.369" timestamp="2026-10-29T19:59:31.074829+01:00" hostname="Taiyou"><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_deficit_documente_12000_sans_double_consommation" time="36.336"><failure message="AssertionError: {&quot;detail&quot;:&quot;Validation non chronologique : la date comptable 2025-01-31 est antérieure à la dernière date validée 2025-12-31 du journal OD. Corrigez la date du brouillon avant de le valider.&quot;}">application = {'api_url': 'http://127.0.0.1:53462', 'web_url': 'http://127.0.0.1:53463', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_nsub4vc_'), 'nonce': 'e717c0bfa7464bfaaee4ad8b0675498e', ...}, ...}
+
+    def test_947_deficit_documente_12000_sans_double_consommation(application):
+        with closing(client(application)[0]) as api:
+&gt;           sid = copie(api, application, reprise=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_variantes_fiscales947_isole.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\fiscal947_support.py:82: in copie
+    ecriture(api, o['reference_recette'], lignes, o['date'], o['journal'])
+Test\fiscal947_support.py:27: in ecriture
+    ok(api.post(f'/api/ecritures/{e["id"]}/valider'))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [409 Conflict]&gt;, status = 200
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":"Validation non chronologique : la date comptable 2025-01-31 est antérieure à la dernière date validée 2025-12-31 du journal OD. Corrigez la date du brouillon avant de le valider."}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_reprise_taxee_deduction_seulement_apres_justification" time="4.278"><failure message="AssertionError: {&quot;detail&quot;:&quot;Validation non chronologique : la date comptable 2025-01-31 est antérieure à la dernière date validée 2025-12-31 du journal OD. Corrigez la date du brouillon avant de le valider.&quot;}">application = {'api_url': 'http://127.0.0.1:53462', 'web_url': 'http://127.0.0.1:53463', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_nsub4vc_'), 'nonce': 'e717c0bfa7464bfaaee4ad8b0675498e', ...}, ...}
+
+    def test_947_reprise_taxee_deduction_seulement_apres_justification(application):
+        with closing(client(application)[0]) as api:
+&gt;           sid = copie(api, application)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_variantes_fiscales947_isole.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\fiscal947_support.py:82: in copie
+    ecriture(api, o['reference_recette'], lignes, o['date'], o['journal'])
+Test\fiscal947_support.py:27: in ecriture
+    ok(api.post(f'/api/ecritures/{e["id"]}/valider'))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [409 Conflict]&gt;, status = 200
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":"Validation non chronologique : la date comptable 2025-01-31 est antérieure à la dernière date validée 2025-12-31 du journal OD. Corrigez la date du brouillon avant de le valider."}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_refus_fiscaux_exacts_sans_mutation[029]" time="1.162"><failure message="decimal.InvalidOperation: [&lt;class 'decimal.ConversionSyntax'&gt;]">application = {'api_url': 'http://127.0.0.1:53462', 'web_url': 'http://127.0.0.1:53463', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_nsub4vc_'), 'nonce': 'e717c0bfa7464bfaaee4ad8b0675498e', ...}, ...}
+cas = '029'
+
+    @pytest.mark.parametrize('cas', ['029', '030', '031', '032', '033'])
+    def test_947_refus_fiscaux_exacts_sans_mutation(application, cas):
+        with closing(client(application)[0]) as api:
+            sid = copie(api, application, minimale=True, qualifie=cas != '029', avec_credit=False)
+            if cas == '033':
+                ecriture(api, 'IS-INCORRECT-FICTIF947', [{'compte': '6705', 'debit': 1},
+                    {'compte': '4453', 'credit': 1}], piece=True)
+            avant = core(application, sid)
+            debut = lire(api)
+            if cas == '029':
+&gt;               assert any('61955' in str(x) and D(str(x['montant'])) == 1500
+                           for x in debut['retraitements_a_confirmer'])
+
+Test\test_variantes_fiscales947_isole.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+.0 = &lt;list_iterator object at 0x0000020C68647B50&gt;
+
+&gt;   assert any('61955' in str(x) and D(str(x['montant'])) == 1500
+                                     ^^^^^^^^^^^^^^^^^^^^
+               for x in debut['retraitements_a_confirmer'])
+E   decimal.InvalidOperation: [&lt;class 'decimal.ConversionSyntax'&gt;]
+
+Test\test_variantes_fiscales947_isole.py:68: InvalidOperation</failure></testcase><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_refus_fiscaux_exacts_sans_mutation[030]" time="1.347" /><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_refus_fiscaux_exacts_sans_mutation[031]" time="1.255" /><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_refus_fiscaux_exacts_sans_mutation[032]" time="1.108" /><testcase classname="Test.test_variantes_fiscales947_isole" name="test_947_refus_fiscaux_exacts_sans_mutation[033]" time="7.276" /></testsuite></testsuites>

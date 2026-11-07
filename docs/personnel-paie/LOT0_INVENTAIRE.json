@@ -1,0 +1,1085 @@
+{
+  "lot": "0",
+  "date_audit": "2026-10-27",
+  "nature": "Constats de sources, aucune connexion SQL et aucune validation réglementaire.",
+  "specification": {
+    "chemin": "docs/HISABPRO_PERSONNEL_PAIE_CODEX_MASTER.md",
+    "sha256": "9e4bbe3dbc16ee4bf236590eec70f803db4f1ada7392b91bd09e6ed1acde2e00"
+  },
+  "fichiers_sources": {
+    "docs/HISABPRO_PERSONNEL_PAIE_CODEX_MASTER.md": "9e4bbe3dbc16ee4bf236590eec70f803db4f1ada7392b91bd09e6ed1acde2e00",
+    "hisabpro-backend/models.py": "b78be3fc2d24ce7671448e31fe0e7d97ae34ee91032a2314f30793970e4cd65a",
+    "hisabpro-backend/schemas.py": "dd57ca56e4aa520820655f226bc69c6a77734a3b737838cde846e939dcf4b85b",
+    "hisabpro-backend/auth.py": "883d763c06c4c19ac7d25b64dc59adc20cef68a27d28ddad1a8d9d10b88b3789",
+    "hisabpro-backend/main.py": "d96bf5f2887e8caf7e9c41fcd1b1b010e994eb4ab8886317d9b75acd826c897b",
+    "hisabpro-backend/routers/employes.py": "fa5a2513474b259983c3bd1b0027c799175c2cc214fc9227efb82b9232860d2d",
+    "hisabpro-backend/routers/grh.py": "d5c8e0aaceb04e03c7d05b1f9eab1b94f595c05cdd3a597b801c18a6b1d88422",
+    "hisabpro-backend/routers/avances_salaries.py": "b3aadb3f1ce2c97c7c7de0a854e3a41324d1d0c53e5a6fefd7f6573cab2358cf",
+    "hisabpro-backend/routers/ecritures.py": "33f3fff35011c03093549b5f1991b5a8c23296572d18e66a894f0b739c494643",
+    "hisabpro-backend/routers/commercial.py": "6fd114cc2bdb8cbbb9108177fe1aa41a3c9d0c5f244abbc3f594e26ba7a4eb26",
+    "hisabpro-backend/routers/banque.py": "b0bf75811ea854d3481fe7e5e40b4fae04a261ea9f91d37ece532f548cbcfd61",
+    "hisabpro-backend/routers/rapprochement.py": "12d6585778d68008d2fb5f3b575732a5d0fc8d5c900c35e225daa519b8e93c78",
+    "hisabpro-backend/routers/parametres.py": "40d5646bd800bf0eec4af0223212810ddff5a82dd0ad650e421c79e5b62f679b",
+    "hisabpro-backend/routers/societe.py": "6cb276add367dc9dc99add35cd5dae2df2000c52900841db37aa5f0648f58ac5",
+    "hisabpro-backend/services/paie_service.py": "11606a2b8718360a9b0e4214e3498bbe5ef6bbfa4536b79d7658592b3c046fb5",
+    "hisabpro-backend/services/paie_referentiel_service.py": "df82668a7336153f549b363f6b074e92b306b66048c483a8762a26f24cdf3356",
+    "hisabpro-backend/services/parametres_paie_service.py": "d1d85925da2d815858d92ac9db0434bc5705b5f9f11dfbdaa97832bf68d3b6e8",
+    "hisabpro-backend/services/grh_bootstrap_service.py": "357acd301693a3b89959e2dcd815d741c0987c8f6f36261d4008170bc9d01037",
+    "hisabpro-backend/services/exercices_service.py": "fed15e0cd7257e7e4967b5cad060d26f86c9bde8e1a68a96e601bf01dd6bdd0c",
+    "hisabpro-backend/services/exercice_verrou_service.py": "44668cc8196f95eabc818ee553033dcee72809093e345b10de7237befd84bb3b",
+    "hisabpro-backend/services/auxiliaire_service.py": "fbfc4b91cdd165a7dadf29115e18a9c7fc42230c6e49381d5ec4731c80766ec5",
+    "hisabpro-backend/services/plan_comptable.py": "ad56d8a140708b483a702c2377acd1fe99c61892e7b5028099f19faa42ee1da9",
+    "hisabpro-backend/services/grh_registre_pdf.py": "d846c9a163588d1f5341cb2d02bd075ea0c7b44a90c36a321345325f227a43bd",
+    "hisabpro-backend/attachments.py": "a83b6204549c50d8234b7e310066330b154d3483a4379c0d8a1b5efb7bf9b4f8",
+    "ops/postgres_sauvegarde.py": "11b68cf25f904c06d4f7b74b8e0543c7d4cc1a72227b769d4b667c6324375735",
+    "hisabpro-backend/080_dossiers_employes.sql": "4c1b71e0e09763f91ed3fe25b67ad60b65a77de30b911e066658d30e2f704431",
+    "hisabpro-backend/081_grh_absences.sql": "d11b50625261e35d9769ef8f654812622b5ff3244852eb6529dcae6fb7f593e2",
+    "hisabpro-backend/082_paie_referentiels.sql": "f67ab12ac510ae66b0f3e0437586533a483bc448ef628a2fb83381d508fd6548",
+    "hisabpro-backend/092_modeles_avances_personnel.sql": "548e60f92c12db246f10a0efdd447860ca5c127209c4c7f5dda3c5ab20fc147c",
+    "hisabpro-backend/095_registre_avances_salaries.sql": "1ebc5962dcc12c678d4253cbf333dfa3049705614e2ce6a5c41955901294885e",
+    "src/pages/CNSS.jsx": "788bd95e97960c4ac11c79e6496e5d0d751168aa90c4ee4a287158d7796932b4",
+    "src/components/AvancesSalaries.jsx": "c0ca2dd47146467b3d5ad611423075bdc038cb79f64754d58c55f1899ae1d253",
+    "src/components/Sidebar.jsx": "c8a73dab5d0e56e8db04cbae9b2b87d3c2035bcb1562c2b811d2b9e6330407b7",
+    "src/App.jsx": "3de24aea6b0d3c039abd4f138818c43b4e1c0800c73529f171b7d709c16afb6b",
+    "src/data/ModulesContext.jsx": "f90ff509e37beaf5049de1e3c85b590c76fa88bdea6bc67fb9a4bf4ac97e3151",
+    "Test/e2e_isole_support.py": "28e2302c15daab8b1d469901ff271de05725dd346579bb519a67c77a796de1b8",
+    "Test/postgres_isole.py": "b84601b40568b7063f86370e703765489fdf35eb7affa42fd41a993d3f643902",
+    "Test/test_paie_grh_service.py": "b525c8e7af8e9b36f35b0b852f1954227182e10a74648396c9aaf5d92e516e6b",
+    "Test/test_paie_grh_postgres.py": "ef3021c871a8737af0e68f4a91eefff065b8477bd2737cacb4bf0f7125040244",
+    "Test/test_paie_referentiel_service.py": "ca4e7bfe8facb21855ff98f8275aeb19d7badf6fb534ef4e97199ed6fb7b5b8a",
+    "Test/test_paie_referentiel_postgres.py": "e5bcd5325dda9ff2f82e44733295fc090a4236b52aab43a3b1a8c297fdef4d93",
+    "Test/test_grh_absences_service.py": "41122519796c62885d3895d0dd3c05de02d264efa3985a914026209e54b30a37",
+    "Test/test_grh_absences_postgres.py": "45ac5aba2e56bbbb9e9082b01f6ecec44c03574526b625666604af1f41dcb4eb",
+    "Test/test_parametres_paie_finis.py": "7f6ad7fa5fd130dba60dff02f9be539c4b987b2826f43394b52ef5cc2d715edb",
+    "Test/test_e2e_paie_grh_isole.py": "7449cd8118252d437e1bce44e8849c52b00aa8e9f7bcdacfe5dc66f5b67bd6e2",
+    "Test/test_e2e_paie_referentiel_isole.py": "24f4d25ef014025af8b36ab5167e0c097401ce084fe1b4465424efdfedfebfc6",
+    "Test/test_e2e_grh_absences_isole.py": "f92c6cea627c3c19dc4d57069a740420ec3aaabc5ec2cdfe46840061c841c89a",
+    "Test/test_demarrage_grh_base_existante_postgres.py": "315333ee836655cc001090072a269c70b9939b362e89633ff03c57178653bcb1",
+    "Test/test_avances_salaries_isole.py": "91c12e97f03cdf66cc02a0e84cc903489a8e95d2abb9b5a65c666f4d400eb592"
+  },
+  "tables_orm": [
+    {
+      "classe": "Societe",
+      "table": "societes",
+      "ligne": 61,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "raison_sociale": "Column(String(200), nullable=False)",
+        "identifiant_fiscal": "Column(String(50))",
+        "ice": "Column(String(20))",
+        "rc": "Column(String(50))",
+        "patente": "Column(String(50))",
+        "cnss_numero": "Column(String(50))",
+        "adresse": "Column(Text)",
+        "ville": "Column(String(100))",
+        "pays": "Column(String(50), default='Maroc')",
+        "telephone": "Column(String(20))",
+        "fax": "Column(String(20))",
+        "email": "Column(String(100))",
+        "site_web": "Column(String(200))",
+        "banque": "Column(String(100))",
+        "agence": "Column(String(100))",
+        "rib": "Column(String(50))",
+        "exercice_debut": "Column(Integer, default=2026)",
+        "periodicite_tva": "Column(String(20), default='mensuelle')",
+        "devise": "Column(String(10), default='MAD')",
+        "regime_fiscal": "Column(String(30), default='is')",
+        "regime_tva": "Column(String(30), default='encaissement')",
+        "secteur": "Column(String(80), nullable=True)",
+        "forme_juridique": "Column(String(50), nullable=True)",
+        "capital_social": "Column(Float, default=0.0)",
+        "prefixe_facture": "Column(String(10), default='FA')",
+        "prefixe_devis": "Column(String(10), default='DV')",
+        "prefixe_bc": "Column(String(10), default='BC')",
+        "prefixe_bl": "Column(String(10), default='BL')",
+        "prefixe_avoir": "Column(String(10), default='AV')",
+        "stock_declencheur_vente": "Column(String(10), default='facture')",
+        "stock_declencheur_achat": "Column(String(10), default='facture')",
+        "format_libelle_vente": "Column(String(120), default='Facture {numero} {tiers}')",
+        "format_libelle_achat": "Column(String(120), default=\"Facture d'achat {numero} {tiers}\")",
+        "format_libelle_avoir": "Column(String(120), default='Avoir {numero} {tiers}')",
+        "format_libelle_banque": "Column(String(120), default='Règlement {tiers} {ref}')",
+        "logo_url": "Column(Text)",
+        "created_at": "Column(DateTime, server_default=func.now())"
+      },
+      "contraintes_orm": []
+    },
+    {
+      "classe": "CompteSociete",
+      "table": "comptes_societe",
+      "ligne": 133,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "societe_id": "Column(Integer, ForeignKey('societes.id', ondelete='CASCADE'), nullable=False, index=True)",
+        "numero": "Column(String(10), nullable=False)",
+        "libelle": "Column(String(300), nullable=False)",
+        "classe": "Column(Integer, nullable=False)",
+        "type_compte": "Column(String(10), nullable=True)",
+        "origine": "Column(String(20), nullable=False, default='cgnc')",
+        "actif": "Column(Boolean, nullable=False, default=True, index=True)",
+        "created_at": "Column(DateTime, server_default=func.now(), nullable=False)",
+        "updated_at": "Column(DateTime, server_default=func.now(), onupdate=func.now())"
+      },
+      "contraintes_orm": [
+        "(UniqueConstraint('societe_id', 'numero', name='uq_compte_societe_numero'), CheckConstraint('LENGTH(numero) BETWEEN 4 AND 10', name='ck_compte_societe_numero_longueur'), CheckConstraint('classe BETWEEN 0 AND 9', name='ck_compte_societe_classe'), CheckConstraint(\"origine IN ('cgnc','personnalise','historique')\", name='ck_compte_societe_origine'))"
+      ]
+    },
+    {
+      "classe": "Utilisateur",
+      "table": "utilisateurs",
+      "ligne": 511,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "societe_id": "Column(Integer, ForeignKey('societes.id'), nullable=False)",
+        "nom": "Column(String(100), nullable=False)",
+        "email": "Column(String(100), unique=True, nullable=False, index=True)",
+        "hashed_password": "Column(String(200), nullable=False)",
+        "role": "Column(String(20), default='comptable')",
+        "actif": "Column(Boolean, default=True)",
+        "created_at": "Column(DateTime, server_default=func.now())"
+      },
+      "contraintes_orm": [
+        "(CheckConstraint(\"role IN ('admin','comptable','lecture')\", name='ck_utilisateurs_role_hisabpro'),)"
+      ]
+    },
+    {
+      "classe": "AuditAction",
+      "table": "audit_actions",
+      "ligne": 530,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "societe_id": "Column(Integer, nullable=True, index=True)",
+        "acteur_id": "Column(Integer, nullable=True, index=True)",
+        "acteur_nom": "Column(String(200), nullable=True)",
+        "acteur_email": "Column(String(200), nullable=True)",
+        "acteur_role": "Column(String(40), nullable=True)",
+        "methode": "Column(String(10), nullable=False)",
+        "chemin": "Column(String(300), nullable=False)",
+        "statut_http": "Column(Integer, nullable=False)",
+        "succes": "Column(Boolean, nullable=False, default=True)",
+        "ip": "Column(String(80), nullable=True)",
+        "request_id": "Column(String(64), nullable=True, index=True)",
+        "created_at": "Column(DateTime, server_default=func.now(), nullable=False)"
+      },
+      "contraintes_orm": []
+    },
+    {
+      "classe": "Ecriture",
+      "table": "ecritures",
+      "ligne": 551,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "societe_id": "Column(Integer, ForeignKey('societes.id'), nullable=False)",
+        "date": "Column(Date, nullable=False, index=True)",
+        "journal": "Column(Enum(JournalEnum), nullable=False)",
+        "libelle": "Column(String(300), nullable=False)",
+        "numero_ecriture": "Column(String(40), nullable=True, index=True)",
+        "reference": "Column(String(100))",
+        "date_piece": "Column(Date, nullable=True)",
+        "exercice": "Column(Integer, nullable=False, index=True)",
+        "source": "Column(String(20), default='manuel')",
+        "est_validee": "Column(Boolean, default=False, index=True)",
+        "date_validation": "Column(DateTime, nullable=True)",
+        "validee_par": "Column(Integer, ForeignKey('utilisateurs.id'), nullable=True)",
+        "contrepassation_de_id": "Column(Integer, ForeignKey('ecritures.id', ondelete='RESTRICT'), nullable=True, index=True)",
+        "motif_correction": "Column(String(500), nullable=True)",
+        "created_at": "Column(DateTime, server_default=func.now())"
+      },
+      "contraintes_orm": []
+    },
+    {
+      "classe": "LigneEcriture",
+      "table": "lignes_ecriture",
+      "ligne": 631,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "ecriture_id": "Column(Integer, ForeignKey('ecritures.id', ondelete='CASCADE'), nullable=False)",
+        "compte": "Column(String(10), nullable=False, index=True)",
+        "libelle": "Column(String(300))",
+        "debit": "Column(Numeric(18, 2), nullable=False, default=0)",
+        "credit": "Column(Numeric(18, 2), nullable=False, default=0)",
+        "tiers_id": "Column(Integer, ForeignKey('tiers.id', ondelete='SET NULL'), nullable=True, index=True)",
+        "nature_auxiliaire": "Column(String(20), nullable=True)",
+        "compte_auxiliaire_snapshot": "Column(String(20), nullable=True)",
+        "libelle_auxiliaire_snapshot": "Column(String(200), nullable=True)",
+        "confidence": "Column(Float, nullable=True)"
+      },
+      "contraintes_orm": [
+        "(CheckConstraint('debit >= 0', name='ck_ligne_ecriture_debit_non_negatif'), CheckConstraint('credit >= 0', name='ck_ligne_ecriture_credit_non_negatif'), CheckConstraint('NOT (debit > 0 AND credit > 0)', name='ck_ligne_ecriture_un_seul_sens'))"
+      ]
+    },
+    {
+      "classe": "Employe",
+      "table": "employes",
+      "ligne": 999,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "societe_id": "Column(Integer, ForeignKey('societes.id'), nullable=False)",
+        "nom": "Column(String(150), nullable=False)",
+        "poste": "Column(String(150))",
+        "salaire_brut": "Column(Float, nullable=False)",
+        "situation_familiale": "Column(String(20), default='celiba')",
+        "nb_enfants": "Column(Integer, default=0)",
+        "date_embauche": "Column(Date)",
+        "matricule": "Column(String(50))",
+        "numero_cnss": "Column(String(50))",
+        "type_contrat": "Column(String(20), nullable=True)",
+        "date_sortie": "Column(Date)",
+        "email": "Column(String(254))",
+        "telephone": "Column(String(50))",
+        "personnes_charge_ir": "Column(Integer, nullable=True)",
+        "actif": "Column(Boolean, default=True)",
+        "created_at": "Column(DateTime, server_default=func.now())"
+      },
+      "contraintes_orm": [
+        "(UniqueConstraint('id', 'societe_id', name='uq_employes_id_societe'),)"
+      ]
+    },
+    {
+      "classe": "AbsenceRH",
+      "table": "grh_absences",
+      "ligne": 1025,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True)",
+        "societe_id": "Column(Integer, ForeignKey('societes.id'), nullable=False, index=True)",
+        "employe_id": "Column(Integer, nullable=False, index=True)",
+        "type_absence": "Column(String(20), nullable=False)",
+        "date_debut": "Column(Date, nullable=False)",
+        "date_fin": "Column(Date, nullable=False)",
+        "motif": "Column(String(1000))",
+        "statut": "Column(String(20), nullable=False, default='demande')",
+        "commentaire_decision": "Column(String(1000))",
+        "created_by": "Column(Integer, ForeignKey('utilisateurs.id'), nullable=False)",
+        "decided_by": "Column(Integer, ForeignKey('utilisateurs.id'))",
+        "created_at": "Column(DateTime, nullable=False, server_default=func.now())",
+        "decided_at": "Column(DateTime)"
+      },
+      "contraintes_orm": [
+        "(UniqueConstraint('id', 'societe_id', name='uq_grh_absences_id_societe'), ForeignKeyConstraint(['employe_id', 'societe_id'], ['employes.id', 'employes.societe_id']), CheckConstraint('date_fin >= date_debut', name='ck_grh_absences_dates'), CheckConstraint(\"type_absence IN ('conge','absence','autre')\", name='ck_grh_absences_type'), CheckConstraint(\"statut IN ('demande','approuve','refuse','annule')\", name='ck_grh_absences_statut'))"
+      ]
+    },
+    {
+      "classe": "EvenementAbsenceRH",
+      "table": "grh_absence_evenements",
+      "ligne": 1049,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True)",
+        "absence_id": "Column(Integer, nullable=False, index=True)",
+        "societe_id": "Column(Integer, ForeignKey('societes.id'), nullable=False, index=True)",
+        "acteur_id": "Column(Integer, ForeignKey('utilisateurs.id'), nullable=False)",
+        "ancien_statut": "Column(String(20))",
+        "nouveau_statut": "Column(String(20), nullable=False)",
+        "commentaire": "Column(String(1000))",
+        "created_at": "Column(DateTime, nullable=False, server_default=func.now())"
+      },
+      "contraintes_orm": [
+        "(ForeignKeyConstraint(['absence_id', 'societe_id'], ['grh_absences.id', 'grh_absences.societe_id']), CheckConstraint(\"nouveau_statut IN ('demande','approuve','refuse','annule')\", name='ck_grh_absence_evenements_statut'))"
+      ]
+    },
+    {
+      "classe": "PaieReferentielVersion",
+      "table": "paie_referentiel_versions",
+      "ligne": 1067,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True)",
+        "societe_id": "Column(Integer, ForeignKey('societes.id'), nullable=False, index=True)",
+        "annee": "Column(Integer, nullable=False)",
+        "version": "Column(Integer, nullable=False)",
+        "empreinte": "Column(String(64), nullable=False)",
+        "parametres": "Column(JSON, nullable=False)",
+        "sources": "Column(JSON, nullable=False)",
+        "regime": "Column(String(200), nullable=True)",
+        "commentaire": "Column(String(2000), nullable=True)",
+        "qualification": "Column(String(30), nullable=False)",
+        "created_by": "Column(Integer, ForeignKey('utilisateurs.id'), nullable=False)",
+        "created_at": "Column(DateTime, server_default=func.now(), nullable=False)"
+      },
+      "contraintes_orm": [
+        "(UniqueConstraint('societe_id', 'annee', 'version', name='uq_paie_referentiel_version'), CheckConstraint('version > 0', name='ck_paie_referentiel_version'), CheckConstraint('annee BETWEEN 2025 AND 2100', name='ck_paie_referentiel_annee'), CheckConstraint(\"qualification IN ('non_verifie','preuves_partielles')\", name='ck_paie_referentiel_qualification'))"
+      ]
+    },
+    {
+      "classe": "BaremeIR",
+      "table": "bareme_ir",
+      "ligne": 1090,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "annee": "Column(Integer, nullable=False, index=True)",
+        "tranche_min": "Column(Float, nullable=False)",
+        "tranche_max": "Column(Float, nullable=True)",
+        "taux": "Column(Float, nullable=False)",
+        "deduction": "Column(Float, default=0.0)"
+      },
+      "contraintes_orm": []
+    },
+    {
+      "classe": "TauxCotisation",
+      "table": "taux_cotisations",
+      "ligne": 1101,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "annee": "Column(Integer, nullable=False, index=True)",
+        "code": "Column(String(50), nullable=False)",
+        "libelle": "Column(String(200))",
+        "taux_sal": "Column(Float, default=0.0)",
+        "taux_pat": "Column(Float, default=0.0)",
+        "plafond": "Column(Float, nullable=True)"
+      },
+      "contraintes_orm": []
+    },
+    {
+      "classe": "DeductionIR",
+      "table": "deductions_ir",
+      "ligne": 1113,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "annee": "Column(Integer, nullable=False, index=True)",
+        "code": "Column(String(50), nullable=False)",
+        "libelle": "Column(String(200))",
+        "montant_an": "Column(Float, nullable=False)",
+        "max_beneficiaires": "Column(Integer, nullable=True)"
+      },
+      "contraintes_orm": []
+    },
+    {
+      "classe": "UtilisateurSociete",
+      "table": "utilisateurs_societes",
+      "ligne": 1221,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "utilisateur_id": "Column(Integer, ForeignKey('utilisateurs.id'), nullable=False)",
+        "societe_id": "Column(Integer, ForeignKey('societes.id'), nullable=False)",
+        "role": "Column(String(20), default='comptable')",
+        "actif": "Column(Boolean, default=True)",
+        "created_at": "Column(DateTime, server_default=func.now())"
+      },
+      "contraintes_orm": [
+        "(__import__('sqlalchemy').UniqueConstraint('utilisateur_id', 'societe_id'), CheckConstraint(\"role IN ('admin','comptable','lecture')\", name='ck_utilisateurs_societes_role_hisabpro'))"
+      ]
+    },
+    {
+      "classe": "Reglement",
+      "table": "reglements",
+      "ligne": 1575,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "societe_id": "Column(Integer, ForeignKey('societes.id'), nullable=False)",
+        "facture_id": "Column(Integer, ForeignKey('factures.id'), nullable=True)",
+        "tiers_id": "Column(Integer, ForeignKey('tiers.id', ondelete='SET NULL'), nullable=True, index=True)",
+        "numero": "Column(String(50), nullable=True)",
+        "date": "Column(Date, nullable=False, index=True)",
+        "tiers": "Column(String(200), nullable=False)",
+        "montant": "Column(Float, nullable=False)",
+        "mode": "Column(String(20), default='virement')",
+        "reference": "Column(String(100), nullable=True)",
+        "banque": "Column(String(100), nullable=True)",
+        "date_echeance": "Column(Date, nullable=True)",
+        "date_encaissement": "Column(Date, nullable=True, index=True)",
+        "statut": "Column(String(20), default='complet')",
+        "est_comptabilisee": "Column(Boolean, default=False)",
+        "ecriture_id": "Column(Integer, ForeignKey('ecritures.id', ondelete='SET NULL'), nullable=True)",
+        "ecriture_annulation_id": "Column(Integer, ForeignKey('ecritures.id', ondelete='SET NULL'), nullable=True)",
+        "date_annulation": "Column(DateTime, nullable=True)",
+        "annulee_par": "Column(Integer, ForeignKey('utilisateurs.id', ondelete='SET NULL'), nullable=True)",
+        "notes": "Column(Text, nullable=True)",
+        "code_lettrage": "Column(String(10), nullable=True, index=True)",
+        "created_at": "Column(DateTime, server_default=func.now())"
+      },
+      "contraintes_orm": [
+        "(CheckConstraint(\"statut NOT IN ('encaisse', 'paye') OR date_encaissement IS NOT NULL\", name='ck_reglements_statut_date_effective'),)"
+      ]
+    },
+    {
+      "classe": "CompteBancaire",
+      "table": "comptes_bancaires",
+      "ligne": 1616,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "societe_id": "Column(Integer, ForeignKey('societes.id'), nullable=False)",
+        "banque": "Column(String(100), nullable=False)",
+        "agence": "Column(String(100), nullable=True)",
+        "rib": "Column(String(50), nullable=True)",
+        "iban": "Column(String(50), nullable=True)",
+        "devise": "Column(String(10), default='MAD')",
+        "compte_comptable": "Column(String(10), default='5141')",
+        "actif": "Column(Boolean, default=True)",
+        "created_at": "Column(DateTime, server_default=func.now())"
+      },
+      "contraintes_orm": []
+    },
+    {
+      "classe": "RapprochementLigne",
+      "table": "rapprochement_lignes",
+      "ligne": 1635,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "societe_id": "Column(Integer, ForeignKey('societes.id'), nullable=False, index=True)",
+        "compte": "Column(String(10), nullable=False, index=True)",
+        "date": "Column(Date, nullable=False)",
+        "libelle": "Column(String(300), nullable=True)",
+        "montant": "Column(Float, nullable=False)",
+        "sens": "Column(String(10), default='debit')",
+        "rapprochee": "Column(Boolean, default=False)",
+        "reglement_id": "Column(Integer, ForeignKey('reglements.id'), nullable=True)",
+        "ecriture_ligne_id": "Column(Integer, ForeignKey('lignes_ecriture.id', ondelete='SET NULL'), nullable=True, index=True)",
+        "date_rapprochement": "Column(DateTime, nullable=True)",
+        "rapproche_par": "Column(Integer, ForeignKey('utilisateurs.id', ondelete='SET NULL'), nullable=True)",
+        "created_at": "Column(DateTime, server_default=func.now())"
+      },
+      "contraintes_orm": []
+    },
+    {
+      "classe": "ExerciceComptable",
+      "table": "exercices_comptables",
+      "ligne": 1939,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "societe_id": "Column(Integer, ForeignKey('societes.id'), nullable=False, index=True)",
+        "annee": "Column(Integer, nullable=False, index=True)",
+        "date_debut": "Column(Date, nullable=False)",
+        "date_fin": "Column(Date, nullable=False)",
+        "statut": "Column(String(20), nullable=False, default='ouvert')",
+        "created_at": "Column(DateTime, server_default=func.now())",
+        "updated_at": "Column(DateTime, server_default=func.now(), onupdate=func.now())"
+      },
+      "contraintes_orm": [
+        "(UniqueConstraint('societe_id', 'annee', name='uq_exercice_societe_annee'), CheckConstraint('date_fin >= date_debut', name='ck_exercice_dates'), CheckConstraint(\"date_fin <= ((date_debut + INTERVAL '1 year')::date - CASE WHEN EXTRACT(MONTH FROM date_debut) = 2 AND EXTRACT(DAY FROM date_debut) = 29 THEN 0 ELSE 1 END)\", name='ck_exercice_duree_max'), CheckConstraint('EXTRACT(YEAR FROM date_fin)::int = annee', name='ck_exercice_annee_reference_fin'), CheckConstraint(\"statut IN ('a_venir','ouvert','cloture')\", name='ck_exercice_statut'))"
+      ]
+    },
+    {
+      "classe": "PeriodeComptable",
+      "table": "periodes_comptables",
+      "ligne": 1973,
+      "colonnes": {
+        "id": "Column(Integer, primary_key=True, index=True)",
+        "exercice_id": "Column(Integer, ForeignKey('exercices_comptables.id', ondelete='CASCADE'), nullable=False, index=True)",
+        "numero": "Column(Integer, nullable=False)",
+        "libelle": "Column(String(40), nullable=False)",
+        "date_debut": "Column(Date, nullable=False)",
+        "date_fin": "Column(Date, nullable=False)",
+        "statut": "Column(String(20), nullable=False, default='a_venir')",
+        "date_fermeture": "Column(DateTime, nullable=True)",
+        "created_at": "Column(DateTime, server_default=func.now())"
+      },
+      "contraintes_orm": [
+        "(UniqueConstraint('exercice_id', 'numero', name='uq_periode_exercice_numero'), CheckConstraint('date_fin >= date_debut', name='ck_periode_dates'), CheckConstraint(\"statut IN ('a_venir','ouverte','fermee')\", name='ck_periode_statut'))"
+      ]
+    }
+  ],
+  "table_sql_sans_modele_orm_dedie": {
+    "nom": "grh_avances_affectations",
+    "source": "hisabpro-backend/095_registre_avances_salaries.sql"
+  },
+  "routes_personnel_existantes": [
+    {
+      "fichier": "hisabpro-backend/routers/employes.py",
+      "ligne": 20,
+      "fonction": "lister_employes",
+      "methode": "GET",
+      "chemin": "/api/employes",
+      "signature": "inclure_archives: bool=False, current_user=Depends(get_current_user), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/employes.py",
+      "ligne": 32,
+      "fonction": "creer_employe",
+      "methode": "POST",
+      "chemin": "/api/employes",
+      "signature": "data: schemas.EmployeCreate, current_user=Depends(requiert_ecriture), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/employes.py",
+      "ligne": 45,
+      "fonction": "cotisations_masse_salariale",
+      "methode": "GET",
+      "chemin": "/api/employes/cotisations",
+      "signature": "annee: int=Query(..., ge=2025, le=2100), mois: int=Query(default=1, ge=1, le=12), current_user=Depends(get_current_user), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/employes.py",
+      "ligne": 91,
+      "fonction": "consulter_referentiel_paie",
+      "methode": "GET",
+      "chemin": "/api/employes/referentiel",
+      "signature": "annee: int=Query(..., ge=2025, le=2100), current_user=Depends(get_current_user), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/employes.py",
+      "ligne": 100,
+      "fonction": "consigner_referentiel_paie",
+      "methode": "POST",
+      "chemin": "/api/employes/referentiel",
+      "signature": "data: ConsignationPaie, annee: int=Query(..., ge=2025, le=2100), current_user=Depends(requiert_ecriture), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/employes.py",
+      "ligne": 111,
+      "fonction": "modifier_employe",
+      "methode": "PUT",
+      "chemin": "/api/employes/{employe_id}",
+      "signature": "employe_id: int, data: schemas.EmployeCreate, current_user=Depends(requiert_ecriture), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/employes.py",
+      "ligne": 130,
+      "fonction": "supprimer_employe",
+      "methode": "DELETE",
+      "chemin": "/api/employes/{employe_id}",
+      "signature": "employe_id: int, current_user=Depends(requiert_ecriture), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/grh.py",
+      "ligne": 68,
+      "fonction": "lister_absences",
+      "methode": "GET",
+      "chemin": "/api/employes/conges",
+      "signature": "current_user=Depends(get_current_user), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/grh.py",
+      "ligne": 74,
+      "fonction": "exporter_absences_pdf",
+      "methode": "GET",
+      "chemin": "/api/employes/conges/export/pdf",
+      "signature": "statut: Optional[Literal['demande', 'approuve', 'refuse', 'annule']]=None, current_user=Depends(get_current_user), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/grh.py",
+      "ligne": 101,
+      "fonction": "creer_absence",
+      "methode": "POST",
+      "chemin": "/api/employes/conges",
+      "signature": "data: DemandeAbsence, current_user=Depends(requiert_ecriture), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/grh.py",
+      "ligne": 120,
+      "fonction": "decider_absence",
+      "methode": "PATCH",
+      "chemin": "/api/employes/conges/{absence_id}",
+      "signature": "absence_id: int, data: DecisionAbsence, current_user=Depends(requiert_ecriture), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/avances_salaries.py",
+      "ligne": 46,
+      "fonction": "consulter",
+      "methode": "GET",
+      "chemin": "/api/employes/avances",
+      "signature": "current_user=Depends(get_current_user), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/avances_salaries.py",
+      "ligne": 81,
+      "fonction": "affecter",
+      "methode": "POST",
+      "chemin": "/api/employes/avances",
+      "signature": "data: Affectation, current_user=Depends(requiert_ecriture), db: Session=Depends(get_db)"
+    },
+    {
+      "fichier": "hisabpro-backend/routers/avances_salaries.py",
+      "ligne": 108,
+      "fonction": "annuler",
+      "methode": "POST",
+      "chemin": "/api/employes/avances/{ident}/annuler",
+      "signature": "ident: int, data: Annulation, current_user=Depends(requiert_ecriture), db: Session=Depends(get_db)"
+    }
+  ],
+  "migrations_numerotees": [
+    {
+      "fichier": "hisabpro-backend/001_accounting_integrity.sql",
+      "sha256": "e65806463fd4604e3c4b8d98017e54886924ad9414eb9c4eeb9a3d3185716fcd",
+      "numero": 1
+    },
+    {
+      "fichier": "hisabpro-backend/002_tva_exigibilite.sql",
+      "sha256": "6e95caf5b97ee19bc3a0c9dcf7440ccb76a69e642a75302d4e3a3c8e37852f25",
+      "numero": 2
+    },
+    {
+      "fichier": "hisabpro-backend/003_tva_02b.sql",
+      "sha256": "5ca5e81c445989dbdac7d7c0ad8e067ea6facca14041a2c1ba495314356d9b92",
+      "numero": 3
+    },
+    {
+      "fichier": "hisabpro-backend/004_reglement_date_effective.sql",
+      "sha256": "b67c44be9d9e33dc3726ed3dc2fed6a2ff4376581d4aa4a0c2067d5d385ad4f8",
+      "numero": 4
+    },
+    {
+      "fichier": "hisabpro-backend/005_immobilisations_cycle.sql",
+      "sha256": "842c326a524145807c42348bc47cf712534a0b88ce00f7d36d95eaa0232ea047",
+      "numero": 5
+    },
+    {
+      "fichier": "hisabpro-backend/006_immobilisations_fournisseur_tiers.sql",
+      "sha256": "909bedf1f635166c19e323992b82a77653c0797a6d55dd562ade154983a38aad",
+      "numero": 6
+    },
+    {
+      "fichier": "hisabpro-backend/007_cloture_inventaire.sql",
+      "sha256": "4381140e9b43f663f8ec252a863ebc349a0f58842ead2d029cfe7617d50d9c72",
+      "numero": 7
+    },
+    {
+      "fichier": "hisabpro-backend/008_exercices_periodes.sql",
+      "sha256": "d85a725fd53d189acafafb414177adf1667e05b632723609293653ab9ec86d4e",
+      "numero": 8
+    },
+    {
+      "fichier": "hisabpro-backend/009_livre_inventaire.sql",
+      "sha256": "c3d8456d7b846da75ed68241071511d59defb35eb616c1df26b96434fdb773e4",
+      "numero": 9
+    },
+    {
+      "fichier": "hisabpro-backend/010_stock_cloture.sql",
+      "sha256": "2b8935717af89f2c2e03d4480ee713c44f2b937694e51613bbb4617582fde0ca",
+      "numero": 10
+    },
+    {
+      "fichier": "hisabpro-backend/011_livre_inventaire_v2.sql",
+      "sha256": "29a07478d9051dea0b0d3a45b3a26b9cb53c662567b082f55c0598e9d2e19132",
+      "numero": 11
+    },
+    {
+      "fichier": "hisabpro-backend/012_stock_movement_engine.sql",
+      "sha256": "e84feb0a5060a851d9b434cebe2992f5254ef8e4c12a11a705601f6145b800d5",
+      "numero": 12
+    },
+    {
+      "fichier": "hisabpro-backend/013_audit_ecritures.sql",
+      "sha256": "95fa48ca355408c458a7d5574f1ca4d92f2ead8d08c7a039c42351ba0a06df84",
+      "numero": 13
+    },
+    {
+      "fichier": "hisabpro-backend/014_ecriture_metadata.sql",
+      "sha256": "8317520d51c7564e5848843d0d4d0951b8a54767e14cf6b8b057ec71912afcbb",
+      "numero": 14
+    },
+    {
+      "fichier": "hisabpro-backend/015_ecriture_numero_scope.sql",
+      "sha256": "3c1b838fd3ce055d28b6b117f874fe778f08fba8e2d5923b4d40f0732cc65de9",
+      "numero": 15
+    },
+    {
+      "fichier": "hisabpro-backend/016_libelles_justificatifs.sql",
+      "sha256": "be474458e1fcd7aeaf65d96316e55ce671c01217f745103819146b4e20890493",
+      "numero": 16
+    },
+    {
+      "fichier": "hisabpro-backend/017_ecriture_numero_large_sequence.sql",
+      "sha256": "930cc616fbaaf3ec6950edee1d4b5432ff9c860bafa3be531abd5b77ac6e2ba8",
+      "numero": 17
+    },
+    {
+      "fichier": "hisabpro-backend/018_numero_ecriture_a_validation.sql",
+      "sha256": "e9a5f8d7ea729dfd9d91b41461d0ba452268137ae926624f06cb869528cc842d",
+      "numero": 18
+    },
+    {
+      "fichier": "hisabpro-backend/019_journal_cloture_dedie.sql",
+      "sha256": "ba5c3bfca5a24e894c07257045db2533519edc55dffa0a0f8bf15ce92227549c",
+      "numero": 19
+    },
+    {
+      "fichier": "hisabpro-backend/021_fiscalite_is.sql",
+      "sha256": "15b99b88ea304bfdc66bcdefd1adfb90c31c02c8c20e55e4d693e26a56e0a312",
+      "numero": 21
+    },
+    {
+      "fichier": "hisabpro-backend/021_fiscalite_is_CORRIGE.sql",
+      "sha256": "ea7160b2e03a1c020353e6edd0821dec3e76a45945176bf31c9772495a979a97",
+      "numero": 21
+    },
+    {
+      "fichier": "hisabpro-backend/022_deficits_fiscaux_millesimes.sql",
+      "sha256": "16615ca04096d94e151881ab32fae53751096dd7ab1e2f19b5812791700993b6",
+      "numero": 22
+    },
+    {
+      "fichier": "hisabpro-backend/023_cotisation_minimale.sql",
+      "sha256": "f8647b92776777ab9d52094b98cbfa76fa1bd971f6a8c93c2981fe67956acff1",
+      "numero": 23
+    },
+    {
+      "fichier": "hisabpro-backend/024_acomptes_liquidation_is.sql",
+      "sha256": "be6131c72f83081f771f17e89b05e015e20efb9aaa3667f9cb5a0d51808d9541",
+      "numero": 24
+    },
+    {
+      "fichier": "hisabpro-backend/025_css_credits_is.sql",
+      "sha256": "3f788f58c1acc922dbc54790dc53a35486b69a5f100b7beaf6909e503707c36b",
+      "numero": 25
+    },
+    {
+      "fichier": "hisabpro-backend/026_etic_exercice.sql",
+      "sha256": "19aac6bfa2e528833398e9b1fc997e5dabb208181851d84e0dee705f4f169612",
+      "numero": 26
+    },
+    {
+      "fichier": "hisabpro-backend/027_liasse_fiscale_archive.sql",
+      "sha256": "24e1ed1590dec9b333d36c660285ee159ccb854a0b5637326916d50e76b35431",
+      "numero": 27
+    },
+    {
+      "fichier": "hisabpro-backend/028_facturation_fondations.sql",
+      "sha256": "a518cce1d42fa33aaf6a59fa8fdf551e297d905f3ae99a5f3892993f6c1f5b72",
+      "numero": 28
+    },
+    {
+      "fichier": "hisabpro-backend/029_factures_validation.sql",
+      "sha256": "b4f15b7c3ac40adad6247107f68cacf0df4c9f6e6770f58ff20915113e75caab",
+      "numero": 29
+    },
+    {
+      "fichier": "hisabpro-backend/030_facturation_durcissement.sql",
+      "sha256": "324b73786c81fcb3cc17f4abbbc86859c17c941cbf61e6d2b8cea48a3760b069",
+      "numero": 30
+    },
+    {
+      "fichier": "hisabpro-backend/031_avoirs_retours.sql",
+      "sha256": "09eea9c8f337ec2dc299cb120486a7451efe5771f4181fea1513c37dff34aa5b",
+      "numero": 31
+    },
+    {
+      "fichier": "hisabpro-backend/032_compta_mapping.sql",
+      "sha256": "8bfee4d9d9c451cbcfd8ac224a64c63b574dfc6262661b0e641c168ec128fafa",
+      "numero": 32
+    },
+    {
+      "fichier": "hisabpro-backend/033_conformite_tva_frais.sql",
+      "sha256": "d84e647bdc46f14aba8ebace3533886b800c79e5a317a749db6c1b2db79e3e56",
+      "numero": 33
+    },
+    {
+      "fichier": "hisabpro-backend/034_recouvrement.sql",
+      "sha256": "e602eead590310d7991e5be586fc086c641b268539e45d27f6b5f1fc312d4fc6",
+      "numero": 34
+    },
+    {
+      "fichier": "hisabpro-backend/035_echeanciers_acomptes.sql",
+      "sha256": "43b1400572f6d36849deb1ba200305ba0e9d354211eec53286badaf273752ed5",
+      "numero": 35
+    },
+    {
+      "fichier": "hisabpro-backend/036_production_hardening.sql",
+      "sha256": "60d70facc2faf9bc05dbd84c5709ee07a0774d6ac1c5e3efa25fe90912ffead5",
+      "numero": 36
+    },
+    {
+      "fichier": "hisabpro-backend/037_compta2_modeles_ecritures.sql",
+      "sha256": "daf4b99a9fca8cc606c15161666d7015b857f8ca246fe37fbfbdec822708dc25",
+      "numero": 37
+    },
+    {
+      "fichier": "hisabpro-backend/038_compta3_avis24_durcissement.sql",
+      "sha256": "c1013f796409c6e3967261e1242b7ad57fb65b5f93faf8952577ef8422b4751b",
+      "numero": 38
+    },
+    {
+      "fichier": "hisabpro-backend/039_compta4_justificatifs_fec.sql",
+      "sha256": "99a5ea82784f170cdf867d8d2b890bdb2cf3866c88f9438a500a639f173b9be0",
+      "numero": 39
+    },
+    {
+      "fichier": "hisabpro-backend/040_factB_identites_dates.sql",
+      "sha256": "1540b1e15190fcc85703558a645c16894b9cfe48d0dd451b235d59a02a07beab",
+      "numero": 40
+    },
+    {
+      "fichier": "hisabpro-backend/041_factC_cycle_documentaire.sql",
+      "sha256": "27e65a40d47da745bf396f79098634ac7c995d95d902810610ff547d8ce6f31f",
+      "numero": 41
+    },
+    {
+      "fichier": "hisabpro-backend/042_factD_reglements_delais.sql",
+      "sha256": "6ad54b5957795b7f616d7091df42b97ed94426d6294f62da444bff4f70ada35a",
+      "numero": 42
+    },
+    {
+      "fichier": "hisabpro-backend/043_factE_audit_identifiants.sql",
+      "sha256": "8bb2fc3d08e21597341d49a81ef9356e839c964534d70922ce83cf9daba2ae9c",
+      "numero": 43
+    },
+    {
+      "fichier": "hisabpro-backend/044_factF_delais_paiement.sql",
+      "sha256": "cbd1dba35eca430e12219f6957b0c476c887a7d61a8d46f91a2130228d4fd575",
+      "numero": 44
+    },
+    {
+      "fichier": "hisabpro-backend/045_factG_acomptes_avoirs.sql",
+      "sha256": "86179226f82d13ff0d59ff2cd4418988f8df443a147c1ea2c2e3218839b925f9",
+      "numero": 45
+    },
+    {
+      "fichier": "hisabpro-backend/046_factH_audit_final_facturation.sql",
+      "sha256": "d710d81c80ba587f999eb487083d7f5261931c919b33ab0ca1c87054fac925bf",
+      "numero": 46
+    },
+    {
+      "fichier": "hisabpro-backend/047_compta_final_audit.sql",
+      "sha256": "48e3a296ecbb7a7c322fc44c3585992f639dde2bce56fd4e4afa83673f11d6e5",
+      "numero": 47
+    },
+    {
+      "fichier": "hisabpro-backend/048_rapprochement_bancaire_final.sql",
+      "sha256": "fc3b96e80963ddee9f7330fa28d2f260837914f1498b8da2a4305f64e699419a",
+      "numero": 48
+    },
+    {
+      "fichier": "hisabpro-backend/049_lettrage_final.sql",
+      "sha256": "360f8d47f3a2b58d32666b25d30ce98db6438d716307e298389798426e16aff4",
+      "numero": 49
+    },
+    {
+      "fichier": "hisabpro-backend/050_balance_grand_livre_final.sql",
+      "sha256": "09e49efe761d25d90bdad04e3860c3c75271a3588c1c569d6c08dfaafa4aa54f",
+      "numero": 50
+    },
+    {
+      "fichier": "hisabpro-backend/052_conformite_normative.sql",
+      "sha256": "14a70c0a4d80899154fe590174ba4d2aaa18f87d4c9a80331573a69aef89d496",
+      "numero": 52
+    },
+    {
+      "fichier": "hisabpro-backend/053_comptabilite_auxiliaire_avis24.sql",
+      "sha256": "bf9e8ee3b66b3e5f9125a2fe2034d9817d85dd80bf795e457ae313dfe2552915",
+      "numero": 53
+    },
+    {
+      "fichier": "hisabpro-backend/055_plan_comptable_societe_exercices_decales.sql",
+      "sha256": "920ddd0a9dfe1c7c8be65ce610be77b9cc498b678d465675d2094822f0dbc0f5",
+      "numero": 55
+    },
+    {
+      "fichier": "hisabpro-backend/058_droits_plan_comptable.sql",
+      "sha256": "66d8b53563eeb005a9b957f349123bff9d069551869d0ea97a38637b24d3bfa2",
+      "numero": 58
+    },
+    {
+      "fichier": "hisabpro-backend/059_ouverture_periodes_comptables.sql",
+      "sha256": "7d360aa7178a6769dda33b2d917fc61b093b3a7d31b0b3dbce89a2d2ce633dfa",
+      "numero": 59
+    },
+    {
+      "fichier": "hisabpro-backend/060_compatibilite_tva_double_precision.sql",
+      "sha256": "3cd7acf82190b7996d40a0b66887a7cc2f503a2fc9e2c37f30ef9760d8faa5d3",
+      "numero": 60
+    },
+    {
+      "fichier": "hisabpro-backend/063_tiers_autoentrepreneur_modeles_capital.sql",
+      "sha256": "6e0257b5fb1791bac45eb738f35d869188acfa08868b2d530813d21b8671da5d",
+      "numero": 63
+    },
+    {
+      "fichier": "hisabpro-backend/064_fiscal_retraitement_compte_source.sql",
+      "sha256": "4e0dadd525605675979f20d3dccec3373974c972c0650a9c491ee6c95ccbb3df",
+      "numero": 64
+    },
+    {
+      "fichier": "hisabpro-backend/065_reparation_liquidations_is_reference_acomptes.sql",
+      "sha256": "1e59c17deddff2bc622a4e17340e6e3a645dbe9b01fab7239acb3993a2db703c",
+      "numero": 65
+    },
+    {
+      "fichier": "hisabpro-backend/066_liquidation_is_snapshot_detail.sql",
+      "sha256": "e6df448010fc3a457f14d9ada4da600e7b56c488e3eb975c6989e7b05f6ab4fa",
+      "numero": 66
+    },
+    {
+      "fichier": "hisabpro-backend/067_reparation_fec_historique_sure.sql",
+      "sha256": "08892347ea46d1d68a03402c08b101607fe6f15b689487161eee8ed639cd4ef5",
+      "numero": 67
+    },
+    {
+      "fichier": "hisabpro-backend/068_fec_complements_historiques_append_only.sql",
+      "sha256": "6bc924a24554f2969bb3289c149b9ffd6c2577819ad1b2998735077960b51134",
+      "numero": 68
+    },
+    {
+      "fichier": "hisabpro-backend/069_fec_complements_historiques_saisie_manuelle.sql",
+      "sha256": "e650c35dad1e1d5955565f9190911162425da135e4ce9155507a4bd55665b71e",
+      "numero": 69
+    },
+    {
+      "fichier": "hisabpro-backend/070_reparation_is_cloture_historique_2026.sql",
+      "sha256": "56ea3c212c8953ff353f7bcd616013d7bff7832704d15aa6a9467a68713f7d46",
+      "numero": 70
+    },
+    {
+      "fichier": "hisabpro-backend/071_liasse_balances_preparation.sql",
+      "sha256": "2cf0b2cacb474a07072ed23dd30a5af0b7e164d65e3563173e66edbaa9100b3a",
+      "numero": 71
+    },
+    {
+      "fichier": "hisabpro-backend/072_integrite_ecritures_definitives.sql",
+      "sha256": "0960542f7f77323d47dca30026123022e7c6680e53c9b492a04731e11cf58dc1",
+      "numero": 72
+    },
+    {
+      "fichier": "hisabpro-backend/073_archives_fiscales_permissions.sql",
+      "sha256": "00cf665ddfeb525c845eb3e0581c88ac8ca100fcb8698f41d9151d9025657ff7",
+      "numero": 73
+    },
+    {
+      "fichier": "hisabpro-backend/074_archives_comptables_immutables.sql",
+      "sha256": "40bad8b322da799bc32550133b613ccc5bd1ca6cd7b718fc6bee735a996f8fe3",
+      "numero": 74
+    },
+    {
+      "fichier": "hisabpro-backend/075_complements_auxiliaires_structure.sql",
+      "sha256": "898ad572c5ceb277d45f1c2dfe5178dc4aedbbdb6a7662d1a2582aee40ae1257",
+      "numero": 75
+    },
+    {
+      "fichier": "hisabpro-backend/076_contraintes_etic_archives.sql",
+      "sha256": "986252e2d96b9e0bded2a0519422c24c31662405d3d8778b54bf36f8e23141b9",
+      "numero": 76
+    },
+    {
+      "fichier": "hisabpro-backend/077_permissions_cycle_facturation.sql",
+      "sha256": "c6f139d418f877d912c1877e6470a6e2bd64aeaf76b203c320f0c4295b1ebde3",
+      "numero": 77
+    },
+    {
+      "fichier": "hisabpro-backend/078_factures_definitives_suppression.sql",
+      "sha256": "8f6017ba928fc84bf7bdfd59d3612371a093beeccbfb681be491db6876229d71",
+      "numero": 78
+    },
+    {
+      "fichier": "hisabpro-backend/079_permissions_suppression_brouillons.sql",
+      "sha256": "988ad4d7d5ca880a64d6d94b97289903118d1ea5581b95fd4dba1d3eca7ed2e0",
+      "numero": 79
+    },
+    {
+      "fichier": "hisabpro-backend/080_dossiers_employes.sql",
+      "sha256": "4c1b71e0e09763f91ed3fe25b67ad60b65a77de30b911e066658d30e2f704431",
+      "numero": 80
+    },
+    {
+      "fichier": "hisabpro-backend/081_grh_absences.sql",
+      "sha256": "d11b50625261e35d9769ef8f654812622b5ff3244852eb6529dcae6fb7f593e2",
+      "numero": 81
+    },
+    {
+      "fichier": "hisabpro-backend/082_paie_referentiels.sql",
+      "sha256": "f67ab12ac510ae66b0f3e0437586533a483bc448ef628a2fb83381d508fd6548",
+      "numero": 82
+    },
+    {
+      "fichier": "hisabpro-backend/083_ras_reglements.sql",
+      "sha256": "b62cc45eeee75c264a972bf10c9597ac67c8de0a372f2832d7871705960cf762",
+      "numero": 83
+    },
+    {
+      "fichier": "hisabpro-backend/084_rapprochement_ventilations.sql",
+      "sha256": "efeb097d0de37d83433ac1993cfc263376442151ce94c1e8f9f4ab4eecf3203a",
+      "numero": 84
+    },
+    {
+      "fichier": "hisabpro-backend/085_permissions_documents_commerciaux.sql",
+      "sha256": "8d624003fced83890072e33b4bb20dd8a1f200884d87f396acb60fab34ba7ee6",
+      "numero": 85
+    },
+    {
+      "fichier": "hisabpro-backend/086_permissions_acomptes_avoirs.sql",
+      "sha256": "49be8127e4ef0b53cef7518a5f09d6d7558dcd837e00b8af544fa8b1be79be33",
+      "numero": 86
+    },
+    {
+      "fichier": "hisabpro-backend/087_permissions_banque_releves.sql",
+      "sha256": "84f8b3fa99a50ff9faafbbb0be818673d8563b78d11cae313ce2c4de4cec0686",
+      "numero": 87
+    },
+    {
+      "fichier": "hisabpro-backend/088_permissions_cycle_annuel.sql",
+      "sha256": "fda06dcc9a681bbf9a4e899a2c623f362122c96f9ee95c869a9505e85a65f112",
+      "numero": 88
+    },
+    {
+      "fichier": "hisabpro-backend/089_lettrage_identite_auxiliaire.sql",
+      "sha256": "5ffb8e0b1cdf262ec58d5787e00c3ad52d5cd1d03b1b5bf50488730bc99afbb2",
+      "numero": 89
+    },
+    {
+      "fichier": "hisabpro-backend/090_permissions_multi_societes.sql",
+      "sha256": "9058dbf0af76cb99ea16ab5478853e8c3c00283c5dfce6d9c1bcede1b997683b",
+      "numero": 90
+    },
+    {
+      "fichier": "hisabpro-backend/091_permissions_affectation_resultat.sql",
+      "sha256": "a9e625e6fc3cc72645e430efbf04a05afed99c0a23682a76d1fd4e67a3a6e0b3",
+      "numero": 91
+    },
+    {
+      "fichier": "hisabpro-backend/092_modeles_avances_personnel.sql",
+      "sha256": "548e60f92c12db246f10a0efdd447860ca5c127209c4c7f5dda3c5ab20fc147c",
+      "numero": 92
+    },
+    {
+      "fichier": "hisabpro-backend/093_permissions_parametres_tva.sql",
+      "sha256": "d35acb62069c28241ac736c2329cc50ac7afa4791ac83a9676261308444b8f2e",
+      "numero": 93
+    },
+    {
+      "fichier": "hisabpro-backend/094_protection_parametres_tva_clotures.sql",
+      "sha256": "6d4c3e90425f6793e5fd895714d84d6e1dc0d27824c7bd23c97439bfaf3679a5",
+      "numero": 94
+    },
+    {
+      "fichier": "hisabpro-backend/095_registre_avances_salaries.sql",
+      "sha256": "1ebc5962dcc12c678d4253cbf333dfa3049705614e2ce6a5c41955901294885e",
+      "numero": 95
+    },
+    {
+      "fichier": "hisabpro-backend/096_verrou_parametres_tva.sql",
+      "sha256": "360d8ae5c74161150bfbb053fa7155805fbb61723be679f4f1d6bb161cdde617",
+      "numero": 96
+    },
+    {
+      "fichier": "hisabpro-backend/097_verrou_tva_trace_cloture.sql",
+      "sha256": "ff4cee8b373b566c413a7eb5eba92521bab08a50cda11390c76d62c6e01c577b",
+      "numero": 97
+    },
+    {
+      "fichier": "hisabpro-backend/098_verrou_journal_cloture.sql",
+      "sha256": "d0cf83d762a67efaa6b43542d65cca04fd1c37ab556feb95ab89a819b510c18c",
+      "numero": 98
+    },
+    {
+      "fichier": "hisabpro-backend/099_ras_tva_details.sql",
+      "sha256": "416942937a797ea2be1efcb8ee4a8337a38efc262bdc94c11e9a46d6da337fc7",
+      "numero": 99
+    },
+    {
+      "fichier": "hisabpro-backend/100_reprises_provisions.sql",
+      "sha256": "a89ad5fb546a5a2c2efca4c282940282d439a43eeba5c208f00cfa1387f3b9df",
+      "numero": 100
+    },
+    {
+      "fichier": "hisabpro-backend/101_societes_liees.sql",
+      "sha256": "e3ca871e783d9938be9553140ea67b9fd2d5e28d9500ff9857f4089fef1a11cc",
+      "numero": 101
+    },
+    {
+      "fichier": "hisabpro-backend/102_factures_correspondantes.sql",
+      "sha256": "097629e3d94d6673ca0b7f901f484ecb858b85236d48cd7201c8795139336e97",
+      "numero": 102
+    },
+    {
+      "fichier": "hisabpro-backend/103_ras_rapprochements_versement.sql",
+      "sha256": "ba869fa974da85cf742334a624d4dbb013bef5d22ea549d0ca4c5d5377f7e992",
+      "numero": 103
+    },
+    {
+      "fichier": "hisabpro-backend/104_liasse_balance_documents.sql",
+      "sha256": "2ed4b1de921617fc43bc3d2f27030a5cab44233b265547fca6f5918551f5a5ed",
+      "numero": 104
+    }
+  ],
+  "maximum_migration_constate": 104,
+  "limites": [
+    "Un AST ne prouve pas le schéma installé ni les permissions effectives.",
+    "Les campagnes exécutées sont décrites séparément dans le rapport de tests.",
+    "Aucun état réel de salarié ni identifiant personnel n’est collecté."
+  ]
+}

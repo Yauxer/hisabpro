@@ -1,0 +1,11 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_8ex84ayw",
+  "nonce": "db4368c34b744c66a47a3672cd255c7a",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError('Locator expected to contain text \\'31/05/25\\'\\nActual value:  30/04/25 (543j retard) \\nCall log:\\n  - Expect \"to_contain_text\" locator(\"tbody tr\").filter(has_text=\"FA-2025-001\").locator(\"td\").nth(9) with timeout 5000ms\\n  - waiting for locator(\"tbody tr\").filter(has_text=\"FA-2025-001\").locator(\"td\").nth(9)\\n    14 × locator resolved to <td>…</td>\\n       - unexpected value \" 30/04/25 (543j retard)\"\\n\\nAria snapshot:\\n- cell \"30/04/25 (543j retard)\"')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier."
+}

@@ -1,0 +1,510 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_nme6tcvf",
+  "nonce": "eeb7101058f94d6cbefd061bf702ff10",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [
+    {
+      "id": "HP-FAC-015",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "echeancier827": {
+    "facture": {
+      "id": 2,
+      "numero": "FA-2025-001",
+      "type": "vente",
+      "date": "2025-04-01",
+      "exercice": 2025,
+      "tiers": "Client Services Recette",
+      "tiers_id": 4,
+      "tiers_ice_snapshot": null,
+      "tiers_if_snapshot": null,
+      "tiers_rc_snapshot": null,
+      "tiers_adresse_snapshot": null,
+      "tiers_ville_snapshot": null,
+      "reference": "VAR-ECHEANCIER-827",
+      "statut": "partiellement_payee",
+      "delai_paiement": 60,
+      "date_echeance": "2025-04-30",
+      "mode_reglement_prevu": null,
+      "reference_reglement_prevue": null,
+      "alerte_delai_paiement": null,
+      "total_encaisse": 600.0,
+      "total_reglement_en_cours": 0.0,
+      "echeances": [
+        {
+          "date_echeance": "2025-04-30",
+          "montant": 600.0,
+          "libelle": "Échéance 1/2",
+          "id": 3,
+          "ordre": 1
+        },
+        {
+          "date_echeance": "2025-05-31",
+          "montant": 600.0,
+          "libelle": "Échéance 2/2",
+          "id": 4,
+          "ordre": 2
+        }
+      ],
+      "est_validee": true,
+      "date_validation": "2026-10-25T19:36:51.997474",
+      "validee_par": 8,
+      "est_comptabilisee": true,
+      "est_proforma": false,
+      "regime_tva": "debit",
+      "qualification_tva": "taxable",
+      "nature_tva_achat": "charge",
+      "tva_deductible_pct": 100.0,
+      "remise_globale": 0.0,
+      "ristourne": 0.0,
+      "escompte": 0.0,
+      "frais_transport_ht": 0.0,
+      "frais_transport_tva": 20.0,
+      "frais_transport_mode": "accessoire",
+      "frais_transport_qualification_tva": "taxable",
+      "frais_emballage_ht": 0.0,
+      "frais_emballage_tva": 20.0,
+      "frais_emballage_mode": "perdu",
+      "frais_emballage_qualification_tva": "taxable",
+      "total_ht": 1000.0,
+      "total_tva": 200.0,
+      "total_ttc": 1200.0,
+      "ras_taux": 0.0,
+      "montant_ras": 0.0,
+      "net_a_payer": 1200.0,
+      "ras_anomalie": null,
+      "total_avoirs": 0.0,
+      "statut_credit": "aucun",
+      "lignes": [
+        {
+          "id": 2,
+          "article_id": 2,
+          "source_ligne_devis_id": null,
+          "source_ligne_bc_id": null,
+          "source_ligne_bl_id": null,
+          "description": "Prestation de recette",
+          "quantite": 1.0,
+          "prix_unitaire": 1000.0,
+          "tva": 20.0,
+          "qualification_tva": "taxable",
+          "remise": 0.0,
+          "remise2": 0.0,
+          "rabais": 0.0,
+          "montant_ht": 1000.0,
+          "montant_tva": 200.0,
+          "montant_ttc": 1200.0
+        }
+      ],
+      "created_at": "2026-10-25T20:36:50.826460",
+      "date_prochaine_echeance": "2025-05-31",
+      "montants_valides": true,
+      "anomalies_montants": []
+    },
+    "initial": {
+      "facture_id": 2,
+      "numero": null,
+      "tiers": "Client Services Recette",
+      "total_ttc": 1200.0,
+      "total_ht": 1000.0,
+      "total_impute": 0.0,
+      "reste_du": 1200.0,
+      "personnalise": true,
+      "echeances": [
+        {
+          "id": 3,
+          "ordre": 1,
+          "date_echeance": "2025-04-30",
+          "montant": 600.0,
+          "libelle": "Échéance 1/2",
+          "impute": 0.0,
+          "reste_du": 600.0,
+          "jours_retard": 0,
+          "tranche_age": "non_echu",
+          "statut": "a_echoir"
+        },
+        {
+          "id": 4,
+          "ordre": 2,
+          "date_echeance": "2025-05-31",
+          "montant": 600.0,
+          "libelle": "Échéance 2/2",
+          "impute": 0.0,
+          "reste_du": 600.0,
+          "jours_retard": 0,
+          "tranche_age": "non_echu",
+          "statut": "a_echoir"
+        }
+      ],
+      "total_echeancier": 1200.0,
+      "montant_en_retard": 0,
+      "nb_echeances": 2,
+      "nb_ouvertes": 2,
+      "nb_retard": 0,
+      "retard_max": 0,
+      "prochaine_echeance": {
+        "id": 3,
+        "ordre": 1,
+        "date_echeance": "2025-04-30",
+        "montant": 600.0,
+        "libelle": "Échéance 1/2",
+        "impute": 0.0,
+        "reste_du": 600.0,
+        "jours_retard": 0,
+        "tranche_age": "non_echu",
+        "statut": "a_echoir"
+      }
+    },
+    "controles_dates": {
+      "2025-05-30": {
+        "facture_id": 2,
+        "numero": "FA-2025-001",
+        "tiers": "Client Services Recette",
+        "total_ttc": 1200.0,
+        "total_ht": 1000.0,
+        "total_impute": 600.0,
+        "reste_du": 600.0,
+        "personnalise": true,
+        "echeances": [
+          {
+            "id": 3,
+            "ordre": 1,
+            "date_echeance": "2025-04-30",
+            "montant": 600.0,
+            "libelle": "Échéance 1/2",
+            "impute": 600.0,
+            "reste_du": 0.0,
+            "jours_retard": 0,
+            "tranche_age": "non_echu",
+            "statut": "reglee"
+          },
+          {
+            "id": 4,
+            "ordre": 2,
+            "date_echeance": "2025-05-31",
+            "montant": 600.0,
+            "libelle": "Échéance 2/2",
+            "impute": 0.0,
+            "reste_du": 600.0,
+            "jours_retard": 0,
+            "tranche_age": "non_echu",
+            "statut": "a_echoir"
+          }
+        ],
+        "total_echeancier": 1200.0,
+        "montant_en_retard": 0,
+        "nb_echeances": 2,
+        "nb_ouvertes": 1,
+        "nb_retard": 0,
+        "retard_max": 0,
+        "prochaine_echeance": {
+          "id": 4,
+          "ordre": 2,
+          "date_echeance": "2025-05-31",
+          "montant": 600.0,
+          "libelle": "Échéance 2/2",
+          "impute": 0.0,
+          "reste_du": 600.0,
+          "jours_retard": 0,
+          "tranche_age": "non_echu",
+          "statut": "a_echoir"
+        }
+      },
+      "2025-05-31": {
+        "facture_id": 2,
+        "numero": "FA-2025-001",
+        "tiers": "Client Services Recette",
+        "total_ttc": 1200.0,
+        "total_ht": 1000.0,
+        "total_impute": 600.0,
+        "reste_du": 600.0,
+        "personnalise": true,
+        "echeances": [
+          {
+            "id": 3,
+            "ordre": 1,
+            "date_echeance": "2025-04-30",
+            "montant": 600.0,
+            "libelle": "Échéance 1/2",
+            "impute": 600.0,
+            "reste_du": 0.0,
+            "jours_retard": 0,
+            "tranche_age": "non_echu",
+            "statut": "reglee"
+          },
+          {
+            "id": 4,
+            "ordre": 2,
+            "date_echeance": "2025-05-31",
+            "montant": 600.0,
+            "libelle": "Échéance 2/2",
+            "impute": 0.0,
+            "reste_du": 600.0,
+            "jours_retard": 0,
+            "tranche_age": "non_echu",
+            "statut": "echue_aujourdhui"
+          }
+        ],
+        "total_echeancier": 1200.0,
+        "montant_en_retard": 0,
+        "nb_echeances": 2,
+        "nb_ouvertes": 1,
+        "nb_retard": 0,
+        "retard_max": 0,
+        "prochaine_echeance": {
+          "id": 4,
+          "ordre": 2,
+          "date_echeance": "2025-05-31",
+          "montant": 600.0,
+          "libelle": "Échéance 2/2",
+          "impute": 0.0,
+          "reste_du": 600.0,
+          "jours_retard": 0,
+          "tranche_age": "non_echu",
+          "statut": "echue_aujourdhui"
+        }
+      },
+      "2025-06-01": {
+        "facture_id": 2,
+        "numero": "FA-2025-001",
+        "tiers": "Client Services Recette",
+        "total_ttc": 1200.0,
+        "total_ht": 1000.0,
+        "total_impute": 600.0,
+        "reste_du": 600.0,
+        "personnalise": true,
+        "echeances": [
+          {
+            "id": 3,
+            "ordre": 1,
+            "date_echeance": "2025-04-30",
+            "montant": 600.0,
+            "libelle": "Échéance 1/2",
+            "impute": 600.0,
+            "reste_du": 0.0,
+            "jours_retard": 0,
+            "tranche_age": "non_echu",
+            "statut": "reglee"
+          },
+          {
+            "id": 4,
+            "ordre": 2,
+            "date_echeance": "2025-05-31",
+            "montant": 600.0,
+            "libelle": "Échéance 2/2",
+            "impute": 0.0,
+            "reste_du": 600.0,
+            "jours_retard": 1,
+            "tranche_age": "1_30",
+            "statut": "en_retard"
+          }
+        ],
+        "total_echeancier": 1200.0,
+        "montant_en_retard": 600.0,
+        "nb_echeances": 2,
+        "nb_ouvertes": 1,
+        "nb_retard": 1,
+        "retard_max": 1,
+        "prochaine_echeance": {
+          "id": 4,
+          "ordre": 2,
+          "date_echeance": "2025-05-31",
+          "montant": 600.0,
+          "libelle": "Échéance 2/2",
+          "impute": 0.0,
+          "reste_du": 600.0,
+          "jours_retard": 1,
+          "tranche_age": "1_30",
+          "statut": "en_retard"
+        }
+      }
+    },
+    "etic_b6": {
+      "code": "B6",
+      "groupe": "B",
+      "titre": "Tableau des créances",
+      "mode": "assiste",
+      "type_saisie": "ventilation",
+      "automatique": {
+        "colonnes": [
+          "compte",
+          "intitule",
+          "montant"
+        ],
+        "lignes": [
+          {
+            "compte": "3421",
+            "intitule": "Clients",
+            "montant": 600.0,
+            "echeance_auto_total": 600.0,
+            "echeance_auto_ecart": 0.0,
+            "echeance_auto_non_qualifie": 0.0,
+            "echeance_auto_nb_factures": 1,
+            "echeance_auto_nb_factures_historiques": 0,
+            "echeance_auto_anomalies_sources": [],
+            "echeance_auto_diagnostic": {
+              "plus_un_an": 0.0,
+              "moins_un_an": 0.0,
+              "echues": 600.0
+            },
+            "echeance_auto": {
+              "plus_un_an": 0.0,
+              "moins_un_an": 0.0,
+              "echues": 600.0
+            },
+            "echeance_auto_source": "factures et échéanciers à la date de clôture"
+          }
+        ],
+        "avertissement": "Les échéances des factures clients sont préremplies automatiquement lorsqu'elles recoupent exactement le solde comptable ; les autres ventilations restent extra-comptables."
+      },
+      "contenu": {},
+      "complete": false,
+      "ventilation": [
+        {
+          "compte": "3421",
+          "intitule": "Clients",
+          "total": 600.0,
+          "plus_un_an": 0.0,
+          "moins_un_an": 0.0,
+          "echues": 600.0,
+          "devises": null,
+          "etat_organismes_publics": null,
+          "entreprises_liees": null,
+          "effets": null
+        }
+      ],
+      "erreurs_ventilation": [
+        "3421 : renseignez montant en devises ou confirmez que les autres analyses sont néant.",
+        "3421 : renseignez Etat / organismes publics ou confirmez que les autres analyses sont néant.",
+        "3421 : renseignez entreprises liées ou confirmez que les autres analyses sont néant.",
+        "3421 : renseignez montant représenté par effets ou confirmez que les autres analyses sont néant."
+      ],
+      "updated_at": null
+    },
+    "ecritures": [
+      {
+        "id": 4,
+        "numero_ecriture": "BQ-2025-0001",
+        "date": "2025-04-30",
+        "date_piece": "2025-04-30",
+        "journal": "BQ",
+        "libelle": "Règlement Client Services Recette VAR-ECHEANCIER-PAY-827",
+        "reference": "VAR-ECHEANCIER-PAY-827",
+        "reference_fec": "VAR-ECHEANCIER-PAY-827",
+        "date_piece_fec": "2025-04-30",
+        "nb_justificatifs": 0,
+        "exercice": 2025,
+        "source": "reglement",
+        "est_validee": true,
+        "date_validation": "2026-10-25T20:36:59.109480",
+        "validee_par": 8,
+        "contrepassation_de_id": null,
+        "motif_correction": null,
+        "lignes": [
+          {
+            "compte": "5141",
+            "libelle": "Virement reçu VAR-ECHEANCIER-PAY-827",
+            "debit": 600.0,
+            "credit": 0.0,
+            "tiers_id": null,
+            "id": 9,
+            "confidence": null,
+            "nature_auxiliaire": null,
+            "compte_auxiliaire_snapshot": null,
+            "libelle_auxiliaire_snapshot": null,
+            "code_lettrage": null,
+            "date_lettrage": null
+          },
+          {
+            "compte": "3421",
+            "libelle": "Client Services Recette",
+            "debit": 0.0,
+            "credit": 600.0,
+            "tiers_id": 4,
+            "id": 10,
+            "confidence": null,
+            "nature_auxiliaire": "client",
+            "compte_auxiliaire_snapshot": "C00000004",
+            "libelle_auxiliaire_snapshot": "Client Services Recette",
+            "code_lettrage": null,
+            "date_lettrage": null
+          }
+        ],
+        "created_at": "2026-10-25T20:36:56.844698"
+      },
+      {
+        "id": 3,
+        "numero_ecriture": "VT-2025-0001",
+        "date": "2025-04-01",
+        "date_piece": "2025-04-01",
+        "journal": "VT",
+        "libelle": "Facture FA-2025-001 Client Services Recette",
+        "reference": "FA-2025-001",
+        "reference_fec": "FA-2025-001",
+        "date_piece_fec": "2025-04-01",
+        "nb_justificatifs": 0,
+        "exercice": 2025,
+        "source": "facture",
+        "est_validee": true,
+        "date_validation": "2026-10-25T20:36:54.654893",
+        "validee_par": 8,
+        "contrepassation_de_id": null,
+        "motif_correction": null,
+        "lignes": [
+          {
+            "compte": "3421",
+            "libelle": "Client Services Recette",
+            "debit": 1200.0,
+            "credit": 0.0,
+            "tiers_id": 4,
+            "id": 6,
+            "confidence": null,
+            "nature_auxiliaire": "client",
+            "compte_auxiliaire_snapshot": "C00000004",
+            "libelle_auxiliaire_snapshot": "Client Services Recette",
+            "code_lettrage": null,
+            "date_lettrage": null
+          },
+          {
+            "compte": "4455",
+            "libelle": "État — TVA facturée",
+            "debit": 0.0,
+            "credit": 200.0,
+            "tiers_id": null,
+            "id": 7,
+            "confidence": null,
+            "nature_auxiliaire": null,
+            "compte_auxiliaire_snapshot": null,
+            "libelle_auxiliaire_snapshot": null,
+            "code_lettrage": null,
+            "date_lettrage": null
+          },
+          {
+            "compte": "7124",
+            "libelle": "Ventes",
+            "debit": 0.0,
+            "credit": 1000.0,
+            "tiers_id": null,
+            "id": 8,
+            "confidence": null,
+            "nature_auxiliaire": null,
+            "compte_auxiliaire_snapshot": null,
+            "libelle_auxiliaire_snapshot": null,
+            "code_lettrage": null,
+            "date_lettrage": null
+          }
+        ],
+        "created_at": "2026-10-25T20:36:52.325344"
+      }
+    ],
+    "refus_modification_apres_paiement": {
+      "detail": "L'échéancier d'une facture ayant déjà reçu un règlement, un acompte, un avoir ou une RAS est figé."
+    },
+    "journal_inchange_pendant_controles": true
+  }
+}

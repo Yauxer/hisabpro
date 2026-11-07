@@ -1,0 +1,281 @@
+{
+  "date": "2026-10-29",
+  "nombre_distinct": 34,
+  "campagne_unique_verte": true,
+  "repartition": {
+    "Edge_API_PostgreSQL_natif_isole": 26,
+    "API_SQL_PostgreSQL_natif_isole": 7,
+    "unitaires": 1
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_registre_et_plan_indisponibles_ne_deviennent_pas_vides[lecture-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_registre_et_plan_indisponibles_ne_deviennent_pas_vides[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_registre_et_plan_indisponibles_ne_deviennent_pas_vides[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_registre_et_plan_indisponibles_ne_deviennent_pas_vides[admin-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_registre_reellement_vide_affiche_zero_apres_lecture[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_registre_reellement_vide_affiche_zero_apres_lecture[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_modification_enregistree_mais_rafraichissement_indisponible[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_erreurs931_isole::test_931_modification_enregistree_mais_rafraichissement_indisponible[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_droits929_isole::test_929_registre_et_reconciliation_respectent_role[lecture-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_droits929_isole::test_929_registre_et_reconciliation_respectent_role[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_droits929_isole::test_929_registre_et_reconciliation_respectent_role[comptable-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_droits929_isole::test_929_registre_et_reconciliation_respectent_role[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_droits929_isole::test_929_registre_et_reconciliation_respectent_role[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_droits929_isole::test_929_registre_et_reconciliation_respectent_role[admin-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_apercu927_isole::test_927_consulter_calcul_avant_sortie_sans_ancien_apercu_reutilise[cession-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_apercu927_isole::test_927_consulter_calcul_avant_sortie_sans_ancien_apercu_reutilise[cession-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_apercu927_isole::test_927_consulter_calcul_avant_sortie_sans_ancien_apercu_reutilise[rebut-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_apercu927_isole::test_927_consulter_calcul_avant_sortie_sans_ancien_apercu_reutilise[rebut-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_apercu_sans_mutation_et_montants_identiques_enregistrement[lineaire-4813.33-19186.67-813.33-13.33]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_apercu_sans_mutation_et_montants_identiques_enregistrement[degressif-10080.00-13920.00-6080.00-480.00]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_lecture_seule_sql_meme_avec_dependance_et_aucun_exercice_cree",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_changement_demande_ou_dotation_rend_apercu_perime",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_incoherence_dotation_refusee_avant_toute_ecriture",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_roles_societes_dates_et_montants_non_finis",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_bien_non_amortissable_et_rebut",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_isole::test_acquisition_plan_acheve_dotations_centimes_et_journal_ui",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_sortie_isole::test_sortie_ui_oracle_validation_refus_et_originaux_immuables[cession]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_sortie_isole::test_sortie_ui_oracle_validation_refus_et_originaux_immuables[rebut]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_cession_differee_isole::test_cession_differee_encaissement_et_validations_browser",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_degressif_isole::test_oracle_degressif_bascule_lineaire_independant",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_degressif_isole::test_edge_cinq_dotations_degressives_et_acquisition_definitive_conservee[reseau-normal]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_degressif_isole::test_edge_cinq_dotations_degressives_et_acquisition_definitive_conservee[reseau-ralenti]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_cahier_integrite839_isole::test_839_cycle_annuel_et_integrite[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    },
+    {
+      "id": "Test.test_e2e_cahier_integrite839_isole::test_839_cycle_annuel_et_integrite[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "lecture931_final"
+    }
+  ],
+  "selection": [
+    "Test/test_e2e_immobilisations_erreurs931_isole.py",
+    "Test/test_e2e_immobilisations_droits929_isole.py",
+    "Test/test_e2e_immobilisations_apercu927_isole.py",
+    "Test/test_immobilisations_apercu927_isole.py",
+    "Test/test_e2e_immobilisations_isole.py",
+    "Test/test_e2e_immobilisations_sortie_isole.py",
+    "Test/test_e2e_immobilisations_cession_differee_isole.py",
+    "Test/test_e2e_immobilisations_degressif_isole.py",
+    "Test/test_e2e_cahier_integrite839_isole.py"
+  ],
+  "execution": "PYTHON_DOTENV_DISABLED=1 ;SECRET_KEY fictive ;DATABASE_URL inerte port1 ;python .codex-tests/lancer_session.py lecture931_final <selection ci-dessus> ;cibles PostgreSQL nonce et serveurs isolés fournis par fixtures.",
+  "duree_xml_s": 584.79,
+  "code_sortie": 0,
+  "historique_non_additionne": [
+    {
+      "campagne": "lecture931_reproduction",
+      "resultat": "6droits929 réussis et1échec attendu :panne du registre affichée comme liste vide,112.14s,code1."
+    },
+    {
+      "campagne": "lecture931_cible",
+      "resultat": "6réussis,58.59s,code0."
+    },
+    {
+      "campagne": "lecture931_cible2",
+      "resultat": "6réussis,2échecs de renommage révélant les champs de plan inchangés transmis,66.58s,code1."
+    },
+    {
+      "campagne": "lecture931_cible3",
+      "resultat": "6réussis,2échecs de renommage :comparaison initiale insuffisante car Decimal API sérialisés en chaînes,67.62s,code1."
+    },
+    {
+      "campagne": "lecture931_cible4",
+      "resultat": "8réussis,68.62s,code0,avec normalisation de comparaison et correction mobile."
+    }
+  ],
+  "preuves": {
+    "Test/preuves_mvp931/cahier773_erreurs931_admin_1440_preuve.json": "124bcd90659e06e0bd4674e4b74b40325e54eda58a50fb7414f5f34721d7ba34",
+    "Test/preuves_mvp931/cahier773_erreurs931_admin_390_preuve.json": "363eb6e7c45c5735237ea19651d39e6f0765879239486dad6345a436aceecc90",
+    "Test/preuves_mvp931/cahier773_erreurs931_lecture_1440_preuve.json": "8ac2a001382325bc8ccd2718d926c1ef2df83a96e6a63b28da15c573049132ed",
+    "Test/preuves_mvp931/cahier773_erreurs931_lecture_390_preuve.json": "76c94ed078416471dcf6581d481e41a50ddd21c5cd89362e582435f7313803e9",
+    "Test/preuves_mvp931/cahier773_rafraichissement931_1440_preuve.json": "e77ef63167b98f0dfd1aa3eab3c5e35dfe07eb4de9dd9d2a5884bca80e84834c",
+    "Test/preuves_mvp931/cahier773_rafraichissement931_390_preuve.json": "5fd66a9f819139339fa033f4506e33bbd9095100752bec1cc9545791be75c713",
+    "Test/preuves_mvp931/cahier773_vide931_1440_preuve.json": "49036b730980e666aea8e25c1ec5a89fae57c2082441065cbc0baa628abc7fd6",
+    "Test/preuves_mvp931/cahier773_vide931_390_preuve.json": "0a08a91cd4e7d10346651ab53f7c087829c74e7ba5fa3b48cf3ba1d10d244b8f",
+    "Test/preuves_mvp931/lecture931_cible.xml": "0c50282e81727ea023cf64097e56e862a66a168c110f0f3d4b6c1dd05280b2ec",
+    "Test/preuves_mvp931/lecture931_cible2.xml": "f69308e69f49403aaf047ece49e94f1dee44765d2ff4f23f80fa8454d9b22cdd",
+    "Test/preuves_mvp931/lecture931_cible3.xml": "32e54f86098ccfb5611ea0d9148f5a80566684ec4b2ded3f8765af45a29b1f98",
+    "Test/preuves_mvp931/lecture931_cible4.xml": "7407f7760bcab750bea23f9b36926f2559e1827ce24c0ed9d1c95a0be67b27ff",
+    "Test/preuves_mvp931/lecture931_final.xml": "93cb1f1645c412c4704a1c4c64668a40cd237f1d4a084179a9a4ad63a7a8fdf9",
+    "Test/preuves_mvp931/lecture931_reproduction.xml": "8ea485561dd43ca971a040f8a8b8bb892478865471230cc214ebfd376a128438"
+  },
+  "pannes_simulees": "Interruption explicite de GET dans Edge ;aucun montant/JSON financier substitué. Reprises HTTP réelles vers API/PostgreSQL nonce.",
+  "build": {
+    "modules": 214,
+    "secondes": 5.55,
+    "code_sortie": 0,
+    "avertissement": "Taille du bundle Vite ;avertissements de dépendances pytest conservés dans XML."
+  },
+  "candidat": "Test/CANDIDAT_MVP_931.json",
+  "nombre_fichiers_candidat": 549,
+  "aucune_base_reelle": true,
+  "migration": "Aucun SQL,schéma ou backend modifié.",
+  "restauration": "Non rejouée931 ;84tables925 est une preuve antérieure distincte.",
+  "reserve": "Quatre cas humains931 Non testé ;anciens statuts humains préservés. Prorata/TVA de cession à qualifier ;IMM004 Partiel. Production non validée."
+}

@@ -1,0 +1,41 @@
+.page     { display: flex; flex-direction: column; height: 100%; background: var(--bg-secondary); }
+.topbar   { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; background: var(--bg-primary); border-bottom: 0.5px solid var(--border-light); flex-shrink: 0; }
+.pageTitle { font-size: 18px; font-weight: 600; color: var(--text-primary); margin: 0; }
+.content  { flex: 1; min-width: 0; min-height: 0; overflow: hidden; padding: 16px 24px; display: flex; flex-direction: column; gap: 12px; }
+.card     { background: var(--bg-primary); border-radius: var(--radius-md); border: 0.5px solid var(--border-light); box-shadow: var(--shadow-xs); overflow: hidden; flex-shrink: 0; }
+.cardMain { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.tableWrapper { flex:1; min-width:0; min-height:0; overflow:auto; overscroll-behavior:contain; scrollbar-gutter:stable; -webkit-overflow-scrolling:touch; }
+.vide     { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 48px; color: var(--text-tertiary); font-size: 13px; }
+.vide i   { font-size: 28px; }
+
+/* 066 — détail d'un avoir dans le panneau étroit : fiches sans débordement. */
+.detailLignesAvoir { display: grid; gap: 8px; min-width: 0; max-width: 100%; }
+.detailLigneAvoir { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 10px; min-width: 0; border: 1px solid var(--border-light); border-radius: 8px; }
+.detailDescriptionAvoir { grid-column: 1 / -1; display: flex; flex-direction: column; min-width: 0; border-bottom: 1px solid var(--border-light); padding-bottom: 6px; }
+.detailDescriptionAvoir strong, .detailDescriptionAvoir small { overflow-wrap: anywhere; }
+.detailDescriptionAvoir strong { font-size: 11px; font-weight: 600; }
+.detailDescriptionAvoir small { color: var(--text-tertiary); font-size: 10px; }
+.detailLabelAvoir { color: var(--text-tertiary); font-size: 10px; }
+.detailValeurAvoir { display: flex; flex-direction: column; min-width: 0; font-size: 11px; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+
+/* 076 — la fiche d'avoir ne rétrécit plus le tableau. */
+.listeZone { display: flex; flex: 1; min-width: 0; min-height: 0; }
+.detailModal { display: flex; flex-direction: column; gap: 14px; min-width: 0; padding: 18px; }
+.detailOrigine { color: var(--text-tertiary); font-size: 11px; }
+.detailModal > div { min-width: 0; }
+.detailModal strong { overflow-wrap: anywhere; }
+@media (max-width: 1050px) {
+  .content { padding: 12px; }
+  .tableWrapper table, .tableWrapper tbody { display: block; width: 100%; }
+  .tableWrapper thead { display: none; }
+  .tableWrapper tbody tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 10px; gap: 6px; }
+  .tableWrapper tbody td { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 3px; min-width: 0; overflow-wrap: anywhere; padding: 4px !important; text-align: left !important; }
+  .tableWrapper tbody td::before { content: attr(data-label); font-size: 10px; color: var(--text-tertiary); }
+  .tableWrapper tbody td:last-child { flex-direction: row; align-items: center; grid-column: 1 / -1; }
+  .tableWrapper tbody td:last-child::before { content: ''; }
+}
+@media (max-width: 520px) {
+  .tableWrapper tbody tr { grid-template-columns: minmax(0, 1fr); }
+  .tableWrapper tbody td:last-child { grid-column: auto; }
+  .detailModal { padding: 12px; }
+}

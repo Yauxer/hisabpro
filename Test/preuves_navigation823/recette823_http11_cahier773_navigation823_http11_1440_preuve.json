@@ -1,0 +1,1425 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_l4341sks",
+  "nonce": "e74d2d72ff5940558130d229de9a544b",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "TimeoutError('Page.wait_for_function: Timeout 15000ms exceeded.')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "reseau823": {
+    "en_attente": {
+      "27764.140": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896763.525796
+      },
+      "27764.141": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896763.526507
+      },
+      "27764.142": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896763.526821
+      },
+      "27764.143": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896763.527315
+      },
+      "27764.139": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896763.534331
+      },
+      "27764.161": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896763.710299
+      },
+      "27764.176": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896763.71111
+      },
+      "27764.177": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896763.718752
+      },
+      "27764.178": {
+        "url": "http://127.0.0.1:61750/api/immobilisations?inclure_sorties=true",
+        "type": "Fetch",
+        "timestamp": 896763.71923
+      },
+      "27764.179": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896763.71953
+      },
+      "27764.180": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896763.719695
+      },
+      "27764.181": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896763.719863
+      },
+      "27764.198": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896763.851893
+      },
+      "27764.213": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896763.8538
+      },
+      "27764.215": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896763.859657
+      },
+      "27764.216": {
+        "url": "http://127.0.0.1:61750/api/avoirs?exercice=2025",
+        "type": "Fetch",
+        "timestamp": 896763.860233
+      },
+      "27764.217": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896763.860694
+      },
+      "27764.218": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896763.860911
+      },
+      "27764.219": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896763.861091
+      },
+      "27764.236": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896763.992464
+      },
+      "27764.251": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896763.993272
+      },
+      "27764.252": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896764.002628
+      },
+      "27764.253": {
+        "url": "http://127.0.0.1:61750/api/lettrage/comptable?exercice=2025&compte=3421",
+        "type": "Fetch",
+        "timestamp": 896764.003188
+      },
+      "27764.254": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896764.003475
+      },
+      "27764.255": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896764.003652
+      },
+      "27764.256": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896764.003818
+      },
+      "27764.273": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896764.138492
+      },
+      "27764.288": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896764.141192
+      },
+      "27764.290": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896764.146786
+      },
+      "27764.291": {
+        "url": "http://127.0.0.1:61750/api/ecritures/reporting/grand-livre?exercice=2025&date_from=2025-01-01&date_to=2025-12-31",
+        "type": "Fetch",
+        "timestamp": 896764.147357
+      },
+      "27764.292": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896764.147759
+      },
+      "27764.293": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896764.147944
+      },
+      "27764.294": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896764.14813
+      },
+      "27764.311": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896764.278228
+      },
+      "27764.326": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896764.281238
+      },
+      "27764.328": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896764.287038
+      },
+      "27764.329": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896764.287395
+      },
+      "27764.330": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896764.287573
+      },
+      "27764.331": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896764.287772
+      },
+      "27764.364": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896764.414511
+      },
+      "27764.365": {
+        "url": "http://127.0.0.1:61750/api/immobilisations?inclure_sorties=true",
+        "type": "Fetch",
+        "timestamp": 896764.414705
+      },
+      "27764.366": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896764.414865
+      },
+      "27764.367": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896764.414946
+      },
+      "27764.368": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896764.415032
+      },
+      "27764.348": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896764.418116
+      },
+      "27764.363": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896764.418729
+      },
+      "27764.401": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896764.539496
+      },
+      "27764.402": {
+        "url": "http://127.0.0.1:61750/api/avoirs?exercice=2025",
+        "type": "Fetch",
+        "timestamp": 896764.539717
+      },
+      "27764.403": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896764.539849
+      },
+      "27764.404": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896764.539926
+      },
+      "27764.405": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896764.539999
+      },
+      "27764.385": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896764.541059
+      },
+      "27764.400": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896764.542819
+      },
+      "27764.439": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896764.671228
+      },
+      "27764.440": {
+        "url": "http://127.0.0.1:61750/api/lettrage/comptable?exercice=2025&compte=3421",
+        "type": "Fetch",
+        "timestamp": 896764.671466
+      },
+      "27764.441": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896764.671602
+      },
+      "27764.442": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896764.671695
+      },
+      "27764.443": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896764.671777
+      },
+      "27764.423": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896764.672818
+      },
+      "27764.438": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896764.673495
+      },
+      "27764.460": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896764.82577
+      },
+      "27764.475": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896764.82795
+      },
+      "27764.477": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896764.832877
+      },
+      "27764.478": {
+        "url": "http://127.0.0.1:61750/api/ecritures/reporting/grand-livre?exercice=2025&date_from=2025-01-01&date_to=2025-12-31",
+        "type": "Fetch",
+        "timestamp": 896764.833125
+      },
+      "27764.480": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896764.833377
+      },
+      "27764.481": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896764.833486
+      },
+      "27764.498": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896765.059475
+      },
+      "27764.513": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896765.06424
+      },
+      "27764.517": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896765.069734
+      },
+      "27764.518": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896765.069937
+      },
+      "27764.535": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896765.30132
+      },
+      "27764.550": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896765.302256
+      },
+      "27764.551": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896765.309439
+      },
+      "27764.552": {
+        "url": "http://127.0.0.1:61750/api/immobilisations?inclure_sorties=true",
+        "type": "Fetch",
+        "timestamp": 896765.309948
+      },
+      "27764.553": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896765.311152
+      },
+      "27764.554": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896765.311536
+      },
+      "27764.555": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896765.31192
+      },
+      "27764.572": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896765.524012
+      },
+      "27764.587": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896765.527708
+      },
+      "27764.589": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896765.535538
+      },
+      "27764.590": {
+        "url": "http://127.0.0.1:61750/api/avoirs?exercice=2025",
+        "type": "Fetch",
+        "timestamp": 896765.535938
+      },
+      "27764.591": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896765.536238
+      },
+      "27764.592": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896765.536755
+      },
+      "27764.593": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896765.537113
+      },
+      "27764.627": {
+        "url": "http://127.0.0.1:61750/api/lettrage/comptable?exercice=2025&compte=3421",
+        "type": "Fetch",
+        "timestamp": 896765.772987
+      },
+      "27764.629": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896765.773559
+      },
+      "27764.630": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896765.773731
+      },
+      "27764.610": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896765.778193
+      },
+      "27764.625": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896765.77988
+      },
+      "27764.647": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896766.01309
+      },
+      "27764.662": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896766.016088
+      },
+      "27764.664": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896766.02625
+      },
+      "27764.665": {
+        "url": "http://127.0.0.1:61750/api/ecritures/reporting/grand-livre?exercice=2025&date_from=2025-01-01&date_to=2025-12-31",
+        "type": "Fetch",
+        "timestamp": 896766.026805
+      },
+      "27764.667": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896766.02772
+      },
+      "27764.685": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896766.274171
+      },
+      "27764.700": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896766.279799
+      },
+      "CEBCDDB61BB826DA871B8B2B7B8538E1": {
+        "url": "http://127.0.0.1:61750/api/plan-comptable?inclure_inactifs=true",
+        "type": "Other",
+        "timestamp": 896766.356444
+      },
+      "5C319B48A2FCA6BACD44A5E1379B119E": {
+        "url": "http://127.0.0.1:61750/api/employes?inclure_archives=true",
+        "type": "Other",
+        "timestamp": 896766.357319
+      },
+      "2752AF9B61F2C8931E958529FA7B8C4B": {
+        "url": "http://127.0.0.1:61750/api/employes/cotisations?annee=2025&mois=10",
+        "type": "Other",
+        "timestamp": 896766.357386
+      },
+      "AEFC8F6FA03D536905EF00AD75AB5658": {
+        "url": "http://127.0.0.1:61750/api/employes/conges",
+        "type": "Other",
+        "timestamp": 896766.357426
+      },
+      "C820819F6C06E3110769D471011B62FB": {
+        "url": "http://127.0.0.1:61750/api/employes/referentiel?annee=2025",
+        "type": "Other",
+        "timestamp": 896766.357935
+      },
+      "A23879E18258C456FB67110C7E3F5939": {
+        "url": "http://127.0.0.1:61750/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "Other",
+        "timestamp": 896766.358098
+      },
+      "97F0EE7098F4D1C655394A996322BDDB": {
+        "url": "http://127.0.0.1:61750/api/ecritures?exercice=2025",
+        "type": "Other",
+        "timestamp": 896766.358161
+      },
+      "27764.729": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896766.524043
+      },
+      "27764.744": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896766.525625
+      },
+      "27764.745": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896766.52995
+      },
+      "27764.746": {
+        "url": "http://127.0.0.1:61750/api/immobilisations?inclure_sorties=true",
+        "type": "Fetch",
+        "timestamp": 896766.530417
+      },
+      "27764.747": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896766.530749
+      },
+      "27764.748": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896766.530935
+      },
+      "27764.749": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896766.531122
+      },
+      "27764.766": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896766.765584
+      },
+      "27764.781": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896766.769829
+      },
+      "27764.783": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896766.777901
+      },
+      "27764.784": {
+        "url": "http://127.0.0.1:61750/api/avoirs?exercice=2025",
+        "type": "Fetch",
+        "timestamp": 896766.778363
+      },
+      "27764.786": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896766.778913
+      },
+      "27764.787": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896766.779292
+      },
+      "27764.804": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896766.99925
+      },
+      "27764.819": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896767.001258
+      },
+      "27764.820": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896767.006622
+      },
+      "27764.821": {
+        "url": "http://127.0.0.1:61750/api/lettrage/comptable?exercice=2025&compte=3421",
+        "type": "Fetch",
+        "timestamp": 896767.007188
+      },
+      "27764.824": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896767.008272
+      },
+      "2B2EDA6F870F50D71F5E95571FB465CB": {
+        "url": "http://127.0.0.1:61750/api/plan-comptable?inclure_inactifs=true",
+        "type": "Other",
+        "timestamp": 896767.074774
+      },
+      "B175F2303785E7D512B163E3A7315634": {
+        "url": "http://127.0.0.1:61750/api/employes?inclure_archives=true",
+        "type": "Other",
+        "timestamp": 896767.075801
+      },
+      "EF98BA185CE5A34E49C2657E53970E2C": {
+        "url": "http://127.0.0.1:61750/api/employes/cotisations?annee=2025&mois=10",
+        "type": "Other",
+        "timestamp": 896767.077514
+      },
+      "73BEF7601F335962A65FAD5BBA9E5719": {
+        "url": "http://127.0.0.1:61750/api/employes/conges",
+        "type": "Other",
+        "timestamp": 896767.078429
+      },
+      "57AE178540F0745AD7D9C80CE9258658": {
+        "url": "http://127.0.0.1:61750/api/employes/referentiel?annee=2025",
+        "type": "Other",
+        "timestamp": 896767.078491
+      },
+      "0C3634080EAD05D3C17E3E8F1A01C8BE": {
+        "url": "http://127.0.0.1:61750/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "Other",
+        "timestamp": 896767.079099
+      },
+      "27764.848": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896767.23105
+      },
+      "27764.863": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896767.233989
+      },
+      "27764.871": {
+        "url": "http://127.0.0.1:61750/api/ecritures/reporting/grand-livre?exercice=2025&date_from=2025-01-01&date_to=2025-12-31",
+        "type": "Fetch",
+        "timestamp": 896767.381743
+      },
+      "27764.872": {
+        "url": "http://127.0.0.1:61750/api/plan-comptable?inclure_inactifs=true",
+        "type": "Fetch",
+        "timestamp": 896767.384391
+      },
+      "27764.873": {
+        "url": "http://127.0.0.1:61750/api/employes?inclure_archives=true",
+        "type": "Fetch",
+        "timestamp": 896767.384683
+      },
+      "27764.874": {
+        "url": "http://127.0.0.1:61750/api/employes/cotisations?annee=2025&mois=10",
+        "type": "Fetch",
+        "timestamp": 896767.38491
+      },
+      "27764.875": {
+        "url": "http://127.0.0.1:61750/api/employes/conges",
+        "type": "Fetch",
+        "timestamp": 896767.385141
+      },
+      "27764.876": {
+        "url": "http://127.0.0.1:61750/api/employes/referentiel?annee=2025",
+        "type": "Fetch",
+        "timestamp": 896767.385345
+      },
+      "27764.877": {
+        "url": "http://127.0.0.1:61750/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "Fetch",
+        "timestamp": 896767.385645
+      },
+      "27764.878": {
+        "url": "http://127.0.0.1:61750/api/ecritures?exercice=2025",
+        "type": "Fetch",
+        "timestamp": 896767.385907
+      },
+      "27764.894": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896767.588827
+      },
+      "27764.909": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896767.59276
+      },
+      "27764.911": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896767.601322
+      },
+      "27764.913": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896767.602207
+      },
+      "27764.914": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896767.603337
+      },
+      "27764.931": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896767.830352
+      },
+      "27764.946": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896767.831251
+      },
+      "27764.947": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896767.835722
+      },
+      "27764.948": {
+        "url": "http://127.0.0.1:61750/api/immobilisations?inclure_sorties=true",
+        "type": "Fetch",
+        "timestamp": 896767.836068
+      },
+      "27764.951": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896767.837191
+      },
+      "ECB3115D4C0E99E10DDA905E39AB69D8": {
+        "url": "http://127.0.0.1:61750/api/plan-comptable?inclure_inactifs=true",
+        "type": "Other",
+        "timestamp": 896767.907727
+      },
+      "24EC1288848F26601E4D68B1E464096F": {
+        "url": "http://127.0.0.1:61750/api/employes?inclure_archives=true",
+        "type": "Other",
+        "timestamp": 896767.91024
+      },
+      "3D85AE33467EB25527BF23198348D162": {
+        "url": "http://127.0.0.1:61750/api/employes/cotisations?annee=2025&mois=10",
+        "type": "Other",
+        "timestamp": 896767.910384
+      },
+      "F85AF3BA331B017CFD8AC1B7D296C6F2": {
+        "url": "http://127.0.0.1:61750/api/employes/conges",
+        "type": "Other",
+        "timestamp": 896767.910456
+      },
+      "5A45E49CC4114C7CE9C2BA8C5F5FAD77": {
+        "url": "http://127.0.0.1:61750/api/employes/referentiel?annee=2025",
+        "type": "Other",
+        "timestamp": 896767.910997
+      },
+      "738E23827F81B3B592D4357972C5A124": {
+        "url": "http://127.0.0.1:61750/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "Other",
+        "timestamp": 896767.911076
+      },
+      "092CFB5CD1F3C40B7BC375AEB7095C76": {
+        "url": "http://127.0.0.1:61750/api/ecritures?exercice=2025",
+        "type": "Other",
+        "timestamp": 896767.911133
+      },
+      "27764.975": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896768.06883
+      },
+      "27764.990": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896768.072082
+      },
+      "27764.992": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896768.079532
+      },
+      "27764.993": {
+        "url": "http://127.0.0.1:61750/api/avoirs?exercice=2025",
+        "type": "Fetch",
+        "timestamp": 896768.079935
+      },
+      "27764.995": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896768.080826
+      },
+      "27764.996": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896768.081152
+      },
+      "27764.1029": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896768.321824
+      },
+      "27764.1013": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896768.327125
+      },
+      "27764.1028": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896768.328494
+      },
+      "270F4FAE375913478430943C78318F93": {
+        "url": "http://127.0.0.1:61750/api/plan-comptable?inclure_inactifs=true",
+        "type": "Other",
+        "timestamp": 896768.405776
+      },
+      "F4DF8A18A5F2290C16E298E19DF0E4BA": {
+        "url": "http://127.0.0.1:61750/api/employes?inclure_archives=true",
+        "type": "Other",
+        "timestamp": 896768.40603
+      },
+      "7B717F826BF63DD12D2009515948D37F": {
+        "url": "http://127.0.0.1:61750/api/employes/cotisations?annee=2025&mois=10",
+        "type": "Other",
+        "timestamp": 896768.407868
+      },
+      "33F1611EA385259BF21B994AC7010892": {
+        "url": "http://127.0.0.1:61750/api/employes/conges",
+        "type": "Other",
+        "timestamp": 896768.409131
+      },
+      "CFC2372344C79FAFBBC8EB8E72C511D9": {
+        "url": "http://127.0.0.1:61750/api/employes/referentiel?annee=2025",
+        "type": "Other",
+        "timestamp": 896768.409336
+      },
+      "D7AD9570BEEC91E84AD51DD2C81CB451": {
+        "url": "http://127.0.0.1:61750/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "Other",
+        "timestamp": 896768.409411
+      },
+      "7B3612DF9F2C0655CD6B7A463D6D9BD9": {
+        "url": "http://127.0.0.1:61750/api/ecritures?exercice=2025",
+        "type": "Other",
+        "timestamp": 896768.411225
+      },
+      "27764.1074": {
+        "url": "http://127.0.0.1:61750/api/ecritures/reporting/grand-livre?exercice=2025&date_from=2025-01-01&date_to=2025-12-31",
+        "type": "Fetch",
+        "timestamp": 896768.570887
+      },
+      "27764.1075": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896768.571201
+      },
+      "27764.1057": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896768.575475
+      },
+      "27764.1072": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896768.580063
+      },
+      "0F11ABE09126EAA524138CFF97BAA747": {
+        "url": "http://127.0.0.1:61750/api/ecritures/reporting/grand-livre?exercice=2025&date_from=2025-01-01&date_to=2025-12-31",
+        "type": "Other",
+        "timestamp": 896768.657553
+      },
+      "C75FEC7B094EF9B5B158971B2F41535F": {
+        "url": "http://127.0.0.1:61750/api/plan-comptable?inclure_inactifs=true",
+        "type": "Other",
+        "timestamp": 896768.658446
+      },
+      "9E1E3D3019921DFB43085D4C5D3A4782": {
+        "url": "http://127.0.0.1:61750/api/employes?inclure_archives=true",
+        "type": "Other",
+        "timestamp": 896768.66064
+      },
+      "CB72D0147E79F1E31D242D82E306C3F0": {
+        "url": "http://127.0.0.1:61750/api/employes/cotisations?annee=2025&mois=10",
+        "type": "Other",
+        "timestamp": 896768.661423
+      },
+      "B502B07327B58D6E5DFCA07279DC5DF7": {
+        "url": "http://127.0.0.1:61750/api/employes/conges",
+        "type": "Other",
+        "timestamp": 896768.661598
+      },
+      "E2382CD5C32164604B5750DD6148C470": {
+        "url": "http://127.0.0.1:61750/api/employes/referentiel?annee=2025",
+        "type": "Other",
+        "timestamp": 896768.661769
+      },
+      "101489D66C1E20BD8E2D32C7344D120D": {
+        "url": "http://127.0.0.1:61750/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "Other",
+        "timestamp": 896768.661903
+      },
+      "C6A540450CBB641094E678273893EC51": {
+        "url": "http://127.0.0.1:61750/api/ecritures?exercice=2025",
+        "type": "Other",
+        "timestamp": 896768.661993
+      },
+      "27764.1103": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896768.815526
+      },
+      "27764.1118": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896768.819026
+      },
+      "DBA366A28998755884C9C19E5A4D320E": {
+        "url": "http://127.0.0.1:61750/api/plan-comptable?inclure_inactifs=true",
+        "type": "Other",
+        "timestamp": 896768.918634
+      },
+      "E24902B072D63B2295AB70A94C87EF45": {
+        "url": "http://127.0.0.1:61750/api/employes?inclure_archives=true",
+        "type": "Other",
+        "timestamp": 896768.919084
+      },
+      "BC11E6BDE0D924473D106A5C70A97444": {
+        "url": "http://127.0.0.1:61750/api/employes/cotisations?annee=2025&mois=10",
+        "type": "Other",
+        "timestamp": 896768.928935
+      },
+      "7204A70456404D1C513B566CBD3AFB18": {
+        "url": "http://127.0.0.1:61750/api/employes/conges",
+        "type": "Other",
+        "timestamp": 896768.929644
+      },
+      "78A0BDD86207C7F79F1954EA7491FA92": {
+        "url": "http://127.0.0.1:61750/api/employes/referentiel?annee=2025",
+        "type": "Other",
+        "timestamp": 896768.929715
+      },
+      "6939E449969B239BCA1A8FEDFF8F8138": {
+        "url": "http://127.0.0.1:61750/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "Other",
+        "timestamp": 896768.929757
+      },
+      "9354E92AC96C6A75EA2832007FEB3614": {
+        "url": "http://127.0.0.1:61750/api/ecritures?exercice=2025",
+        "type": "Other",
+        "timestamp": 896768.9298
+      },
+      "27764.1147": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896769.11445
+      },
+      "27764.1162": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896769.115838
+      },
+      "27764.1163": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896769.124125
+      },
+      "27764.1164": {
+        "url": "http://127.0.0.1:61750/api/immobilisations?inclure_sorties=true",
+        "type": "Fetch",
+        "timestamp": 896769.124624
+      },
+      "27764.1165": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896769.126307
+      },
+      "27764.1166": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896769.126741
+      },
+      "27764.1167": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896769.127145
+      },
+      "27764.1184": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896769.384728
+      },
+      "27764.1199": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896769.388184
+      },
+      "27764.1202": {
+        "url": "http://127.0.0.1:61750/api/avoirs?exercice=2025",
+        "type": "Fetch",
+        "timestamp": 896769.397595
+      },
+      "27764.1205": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896769.398913
+      },
+      "6E338603DB441CEE19E2657D8A093780": {
+        "url": "http://127.0.0.1:61750/api/plan-comptable?inclure_inactifs=true",
+        "type": "Other",
+        "timestamp": 896769.466677
+      },
+      "BF273E55A41EA80DE0212DF0DF91367C": {
+        "url": "http://127.0.0.1:61750/api/employes?inclure_archives=true",
+        "type": "Other",
+        "timestamp": 896769.46763
+      },
+      "3F9E303570C53040B84C8EF2EB30AF91": {
+        "url": "http://127.0.0.1:61750/api/employes/cotisations?annee=2025&mois=10",
+        "type": "Other",
+        "timestamp": 896769.467965
+      },
+      "9E630D52688C269AD8C4CC82C8B3E1FE": {
+        "url": "http://127.0.0.1:61750/api/employes/conges",
+        "type": "Other",
+        "timestamp": 896769.46824
+      },
+      "210025F2CAEBE084C31369EDE8B30F62": {
+        "url": "http://127.0.0.1:61750/api/employes/referentiel?annee=2025",
+        "type": "Other",
+        "timestamp": 896769.469888
+      },
+      "EB97512DAF7E8F7B65401CDA6B7DFD8E": {
+        "url": "http://127.0.0.1:61750/api/factures?exercice=2025&skip=0&limit=100",
+        "type": "Other",
+        "timestamp": 896769.470178
+      },
+      "AF9375201D6BFA6F85CDEA1B5D0315E9": {
+        "url": "http://127.0.0.1:61750/api/ecritures?exercice=2025",
+        "type": "Other",
+        "timestamp": 896769.470247
+      },
+      "27764.1230": {
+        "url": "http://127.0.0.1:61751/vendor/inter/inter-07.woff2",
+        "type": "Font",
+        "timestamp": 896769.621389
+      },
+      "27764.1245": {
+        "url": "http://127.0.0.1:61751/vendor/tabler/fonts/tabler-icons.woff2",
+        "type": "Font",
+        "timestamp": 896769.623421
+      },
+      "27764.1246": {
+        "url": "http://127.0.0.1:61750/api/societes/mes-societes",
+        "type": "Fetch",
+        "timestamp": 896769.632134
+      },
+      "27764.1247": {
+        "url": "http://127.0.0.1:61750/api/lettrage/comptable?exercice=2025&compte=3421",
+        "type": "Fetch",
+        "timestamp": 896769.632583
+      },
+      "27764.1248": {
+        "url": "http://127.0.0.1:61750/api/societe/modules",
+        "type": "Fetch",
+        "timestamp": 896769.6329
+      },
+      "27764.1249": {
+        "url": "http://127.0.0.1:61750/api/societe/moi",
+        "type": "Fetch",
+        "timestamp": 896769.633195
+      },
+      "27764.1250": {
+        "url": "http://127.0.0.1:61750/api/exercices",
+        "type": "Fetch",
+        "timestamp": 896769.633418
+      }
+    },
+    "echecs": [
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896763.54244
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896763.720389
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896763.862482
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896764.014067
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896764.148785
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896764.288332
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896764.416915
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896764.547073
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896764.677756
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896764.841951
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896765.073813
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896765.313747
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896765.538558
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896765.775854
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896766.045918
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896766.291051
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896766.53463
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896766.781763
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896767.011099
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896767.245345
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896767.624562
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896767.837836
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896768.083107
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896768.335779
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896768.573187
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896768.848864
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896769.128213
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896769.400943
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896769.635517
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:61751/favicon.ico",
+          "type": "Other",
+          "timestamp": 896769.86464
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      }
+    ]
+  },
+  "navigations823": [
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre"
+  ],
+  "polices823": {
+    "etat": "loading",
+    "faces": [
+      {
+        "famille": "Inter",
+        "etat": "loading"
+      },
+      {
+        "famille": "Inter",
+        "etat": "loading"
+      },
+      {
+        "famille": "Inter",
+        "etat": "loading"
+      },
+      {
+        "famille": "tabler-icons",
+        "etat": "loading"
+      }
+    ],
+    "ressources": []
+  },
+  "serveur823": {
+    "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette823_http11\\test_823_diagnostic_reseau_pol0\\serveur_navigation823.log",
+    "sha256": "f3e774e6fb6bf896f4641c49546451bfd8537da85f67ecdcfa4d1f357ae58b85"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "donnees_reelles": false,
+  "erreur": null,
+  "schema_acl_donnees_sequences_identiques": true,
+  "role_runtime_limite": true,
+  "cles_absentes_archive": true,
+  "pieces_banque_restituees": true,
+  "cle_absente_refusee": true,
+  "recuperation_cle_reussie": true,
+  "tables": 85,
+  "dump_sha256": "262dabd640d8fd96b6ce4ccc6d5f47a1a3efb9b8d6097ec98025482d6e37ffa0",
+  "cible_temporaire_supprimee": true
+}

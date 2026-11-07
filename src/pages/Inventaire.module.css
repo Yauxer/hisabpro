@@ -1,0 +1,152 @@
+.page { display: flex; flex-direction: column; height: 100%; }
+
+.topbar {
+  background: var(--bg-primary); border-bottom: 0.5px solid var(--border-light);
+  padding: 14px 24px; flex-shrink: 0;
+}
+.pageTitle { font-size: 15px; font-weight: 500; margin: 0; }
+.pageSub { font-size: 11px; color: var(--text-tertiary); margin: 2px 0 0 0; }
+
+/* ── Onglets ── */
+.onglets {
+  display: flex; gap: 6px; padding: 12px 24px 0 24px;
+  flex-shrink: 0; background: var(--bg-primary);
+  border-bottom: 0.5px solid var(--border-light);
+}
+.ongletBtn {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; padding: 8px 14px; cursor: pointer;
+  background: none; border: none; border-bottom: 2px solid transparent;
+  color: var(--text-secondary); font-family: var(--font);
+}
+.ongletBtn:hover { color: var(--text-primary); }
+.ongletBtnActif { color: var(--blue); border-bottom-color: var(--blue); font-weight: 500; }
+
+.content {
+  flex: 1; min-width: 0; min-height: 0; overflow-y: scroll; overflow-x: hidden; overscroll-behavior: contain; scrollbar-gutter: stable; padding: 16px 24px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+
+/* ── Boutons ── */
+.btnPrim {
+  display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500;
+  padding: 8px 16px; border-radius: var(--radius-md);
+  background: var(--blue); color: #fff; border: none; cursor: pointer;
+}
+.btnPrim:hover:not(:disabled) { background: var(--blue-dark); }
+.btnPrim:disabled { background: var(--border-medium); cursor: not-allowed; }
+
+.btnSec {
+  display: flex; align-items: center; gap: 6px; font-size: 12px;
+  padding: 8px 14px; border-radius: var(--radius-md);
+  background: var(--bg-primary); border: 0.5px solid var(--border-medium);
+  color: var(--text-secondary); cursor: pointer;
+}
+.btnSec:hover:not(:disabled) { background: var(--bg-secondary); }
+.btnSec:disabled { color: var(--text-tertiary); cursor: not-allowed; }
+
+/* ── Barre d'outils ── */
+.barre { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; flex-shrink: 0; }
+
+.recherche {
+  display: flex; align-items: center; gap: 8px; flex: 1; min-width: 200px;
+  background: var(--bg-primary); border: 0.5px solid var(--border-light);
+  border-radius: var(--radius-md); padding: 8px 12px;
+}
+.recherche i { color: var(--text-tertiary); font-size: 15px; }
+.recherche input {
+  border: none; background: none; outline: none; flex: 1;
+  font-size: 13px; color: var(--text-primary); font-family: var(--font);
+}
+
+.inputNote {
+  padding: 8px 12px; border-radius: var(--radius-md);
+  border: 0.5px solid var(--border-light); background: var(--bg-primary);
+  font-size: 13px; font-family: var(--font); color: var(--text-primary);
+  min-width: 240px;
+}
+
+/* ── Récapitulatif ── */
+.recap {
+  display: flex; align-items: center; gap: 28px; flex-wrap: wrap;
+  background: var(--bg-primary); border: 0.5px solid var(--border-light);
+  border-radius: var(--radius-lg); padding: 14px 20px; flex-shrink: 0;
+}
+.recapItem { display: flex; flex-direction: column; gap: 2px; }
+.recapLabel { font-size: 11px; color: var(--text-tertiary); }
+.recapValeur { font-size: 17px; font-weight: 600; letter-spacing: -0.2px; }
+.recapValeur small { font-size: 10px; font-weight: 400; color: var(--text-tertiary); }
+.recapActions { margin-left: auto; display: flex; gap: 8px; }
+
+.aide {
+  font-size: 11.5px; color: var(--text-secondary); line-height: 1.5;
+  padding: 10px 14px; background: var(--bg-secondary);
+  border-radius: var(--radius-md); flex-shrink: 0;
+}
+
+/* ── Aperçu de contrôle ── */
+.apercu {
+  background: var(--bg-primary); border: 0.5px solid var(--blue);
+  border-radius: var(--radius-lg); overflow: hidden; flex-shrink: 0;
+}
+.apercuTitre {
+  display: flex; align-items: center; gap: 6px;
+  padding: 10px 16px; background: #EDF4FC;
+  font-size: 12.5px; font-weight: 500; color: #185FA5;
+}
+.btnFermerApercu {
+  margin-left: auto; background: none; border: none; cursor: pointer;
+  color: #185FA5; font-size: 15px; padding: 0;
+}
+
+/* ── Tableaux ── */
+.card {
+  background: var(--bg-primary); border: 0.5px solid var(--border-light);
+  border-radius: var(--radius-lg); overflow: hidden; flex-shrink: 0;
+}
+
+.tableau { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.tableau thead th {
+  position: sticky; top: 0; z-index: 1;
+  background: var(--bg-secondary); border-bottom: 1px solid var(--border-medium);
+  padding: 8px 12px; text-align: left;
+  font-size: 10px; font-weight: 600; letter-spacing: 0.03em;
+  text-transform: uppercase; color: var(--text-tertiary); white-space: nowrap;
+}
+.tableau td { padding: 7px 12px; border-bottom: 0.5px solid var(--border-light); }
+.tableau tbody tr:hover td { background: var(--bg-secondary); }
+
+.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.gras { font-weight: 600; }
+.mono { font-family: ui-monospace, monospace; font-size: 11.5px; color: var(--text-secondary); }
+.unite { font-size: 10.5px; color: var(--text-tertiary); margin-left: 6px; }
+
+/* Ligne dont le comptage diffère du stock théorique */
+.ligneEcart td { background: #FFFBEB; }
+.ligneEcart:hover td { background: #FEF6DC !important; }
+
+.ligneTotal td {
+  border-top: 2px solid var(--border-medium); background: var(--bg-secondary);
+  font-weight: 700; font-size: 13px; padding: 10px 12px;
+}
+
+.inputQte {
+  width: 100%; padding: 5px 8px; border-radius: var(--radius-sm);
+  border: 0.5px solid var(--border-medium); background: var(--bg-primary);
+  font-size: 12.5px; text-align: right; font-family: var(--font);
+  font-variant-numeric: tabular-nums; color: var(--text-primary); box-sizing: border-box;
+}
+.inputQte:focus { border-color: var(--blue); outline: none; }
+
+.badgeSeuil {
+  display: inline-flex; align-items: center; gap: 3px;
+  margin-left: 8px; padding: 1px 7px; border-radius: 20px;
+  background: #FBEAEA; color: #A32D2D; font-size: 10px; font-weight: 500;
+}
+
+.vide { padding: 40px; text-align: center; color: var(--text-tertiary); font-size: 13px; }
+
+.erreur {
+  padding: 10px 14px; border-radius: var(--radius-md);
+  background: #FBEAEA; color: #A32D2D; font-size: 12.5px; flex-shrink: 0;
+}

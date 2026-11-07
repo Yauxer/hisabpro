@@ -1,0 +1,21 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_x0v5fm25",
+  "nonce": "d75cf4b0e0b54d4a87e89e1f948fc839",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError(\"assert (1 == 1 and {(11, Decimal...al('240.00'))} == {('4411', 240...141', 0, 240)}\\n +  where 1 = len([(5, datetime.date(2025, 12, 3), datetime.date(2025, 12, 3), <JournalEnum.BQ: 'BQ'>, 'PAY-02-EXACT', 'Règlement Fournisseur Contrôle Références Recette PAY-02-EXACT', ...)])\\n  \\n  Extra items in the left set:\\n  (12, Decimal('0.00'), Decimal('240.00'))\\n  (11, Decimal('240.00'), Decimal('0.00'))\\n  Extra items in the right set:\\n  ('5141', 0, 240)\\n  ('4411', 240, 0)\\n  Use -v to get more diff)\")",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "surpaiement843": {
+    "solde": 240,
+    "tentative": 241,
+    "ui_refus": true,
+    "api_statut": 409,
+    "detail": {
+      "detail": "Sur-règlement impossible : reste à payer 240.00 MAD, montant saisi 241.00 MAD."
+    },
+    "aucune_mutation": true
+  }
+}

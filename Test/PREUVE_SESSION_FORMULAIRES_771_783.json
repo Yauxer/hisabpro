@@ -1,0 +1,355 @@
+{
+  "tentatives": 67,
+  "reussites_brutes": 56,
+  "echecs_initiaux_conserves": 11,
+  "tests_distincts_reussis_apres_reprises": 41,
+  "cas_272": {
+    "Réussi": 32,
+    "Non qualifié par fiche": 230,
+    "Bloqué (source)": 10
+  },
+  "tentatives_detail": [
+    {
+      "campagne": "recette769_reprise771",
+      "id": "test_e2e_cahier_principal769_isole::test_769_creation_societe_parametres_et_exercices_du_cahier",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette771_banque_avant",
+      "id": "test_e2e_banque_cahier771_isole::test_771_banque_cahier_nom_libre_creation_reouverture_et_edition[1440]",
+      "statut": "Échoué"
+    },
+    {
+      "campagne": "recette771_banque_apres",
+      "id": "test_e2e_banque_cahier771_isole::test_771_banque_cahier_nom_libre_creation_reouverture_et_edition[1440]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette771_banque_apres",
+      "id": "test_e2e_banque_cahier771_isole::test_771_banque_cahier_nom_libre_creation_reouverture_et_edition[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette771_connexes",
+      "id": "test_e2e_cahier_principal769_isole::test_769_creation_societe_parametres_et_exercices_du_cahier",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette771_connexes",
+      "id": "test_e2e_administration_isole::test_creation_societe_plan_utilisateur_exercice_et_switch_ui_reels",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette771_connexes",
+      "id": "test_e2e_administration_isole::test_login_lecture_ui_et_refus_mutations_reelles",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette773_referentiels",
+      "id": "test_e2e_cahier_commercial773_isole::test_773_sept_tiers_et_trois_articles_cahier_interface[1440]",
+      "statut": "Échoué"
+    },
+    {
+      "campagne": "recette773_referentiels_apres",
+      "id": "test_e2e_cahier_commercial773_isole::test_773_sept_tiers_et_trois_articles_cahier_interface[1440]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette773_referentiels_apres",
+      "id": "test_e2e_cahier_commercial773_isole::test_773_sept_tiers_et_trois_articles_cahier_interface[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette773_final",
+      "id": "test_e2e_cahier_commercial773_isole::test_773_sept_tiers_et_trois_articles_cahier_interface[1440]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette773_final",
+      "id": "test_e2e_cahier_commercial773_isole::test_773_sept_tiers_et_trois_articles_cahier_interface[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette773_final",
+      "id": "test_e2e_tiers_delai_isole::test_delai_tiers_combine_roles_recherche_activite_et_scopes[1365]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette773_final",
+      "id": "test_e2e_tiers_delai_isole::test_delai_tiers_combine_roles_recherche_activite_et_scopes[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette773_final",
+      "id": "test_e2e_tiers_activite_isole::test_tiers_reliquats_et_identifiants_ui_connectee[False]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette773_final",
+      "id": "test_e2e_tiers_activite_isole::test_tiers_reliquats_et_identifiants_ui_connectee[True]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette773_cibles",
+      "id": "test_e2e_cahier_commercial773_isole::test_773_sept_tiers_et_trois_articles_cahier_interface[1440]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette773_cibles",
+      "id": "test_e2e_cahier_commercial773_isole::test_773_sept_tiers_et_trois_articles_cahier_interface[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_avant",
+      "id": "test_e2e_cahier_cycle775_isole::test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier[1440]",
+      "statut": "Échoué"
+    },
+    {
+      "campagne": "recette775_conversion_avant",
+      "id": "test_e2e_cahier_cycle775_isole::test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier[1440]",
+      "statut": "Échoué"
+    },
+    {
+      "campagne": "recette775_apres",
+      "id": "test_e2e_cahier_cycle775_isole::test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier[1440]",
+      "statut": "Échoué"
+    },
+    {
+      "campagne": "recette775_complet",
+      "id": "test_e2e_cahier_cycle775_isole::test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier[1440]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_complet",
+      "id": "test_e2e_cahier_cycle775_isole::test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_cahier_cycle775_isole::test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier[1440]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_cahier_cycle775_isole::test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_cycle_commercial_isole::test_cycle_vente_stock_facture_et_tracabilite_ui",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_cycle_achat_reception_partielle_isole::test_cycle_reception_partielle_stock_br[1365]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_cycle_achat_reception_partielle_isole::test_cycle_reception_partielle_stock_br[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_devis_notes_isole::test_notes_devis_creation_edition_consultation_pdf_et_achat[1365]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_devis_notes_isole::test_notes_devis_creation_edition_consultation_pdf_et_achat[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_articles_frais_isole::test_article_frais_creation_edition_validation_locale_et_stock_inconnu[1365]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_articles_frais_isole::test_article_frais_creation_edition_validation_locale_et_stock_inconnu[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_tiers_activite_isole::test_tiers_reliquats_et_identifiants_ui_connectee[False]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_tiers_activite_isole::test_tiers_reliquats_et_identifiants_ui_connectee[True]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_tiers_delai_isole::test_delai_tiers_combine_roles_recherche_activite_et_scopes[1365]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette775_final",
+      "id": "test_e2e_tiers_delai_isole::test_delai_tiers_combine_roles_recherche_activite_et_scopes[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette777_cible",
+      "id": "test_e2e_cahier_suite777_isole::test_777_cahier_cheque_avoir_credit_vente_stock60[1440]",
+      "statut": "Échoué"
+    },
+    {
+      "campagne": "recette777_apres",
+      "id": "test_e2e_cahier_suite777_isole::test_777_cahier_cheque_avoir_credit_vente_stock60[1440]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette777_apres",
+      "id": "test_e2e_cahier_suite777_isole::test_777_cahier_cheque_avoir_credit_vente_stock60[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette777_connexes",
+      "id": "test_e2e_avoir_retour_isole::test_avoir_retour_comptabilise_annulation_stock_et_piste_ui",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette777_connexes",
+      "id": "test_e2e_avoir_fournisseur_isole::test_achat_avoir_retour_reglement_lettrage[1365]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette777_connexes",
+      "id": "test_e2e_avoir_fournisseur_isole::test_achat_avoir_retour_reglement_lettrage[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette777_connexes",
+      "id": "test_e2e_cheque_impaye_isole::test_cheque_impaye_remplacement_validation_et_lettrage[1365]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette777_connexes",
+      "id": "test_e2e_cheque_impaye_isole::test_cheque_impaye_remplacement_validation_et_lettrage[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette779_cible",
+      "id": "test_e2e_cahier_inventaire779_isole::test_779_cahier_cycle_inventaire_stock6600_etats_provisoires[1440]",
+      "statut": "Échoué"
+    },
+    {
+      "campagne": "recette779_apres",
+      "id": "test_e2e_cahier_inventaire779_isole::test_779_cahier_cycle_inventaire_stock6600_etats_provisoires[1440]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette779_apres",
+      "id": "test_e2e_cahier_inventaire779_isole::test_779_cahier_cycle_inventaire_stock6600_etats_provisoires[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette779_connexes",
+      "id": "test_e2e_inventaire_nombres_isole::test_inventaire_inconnu_visible_refuse_sans_mutation_et_csv[1365]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette779_connexes",
+      "id": "test_e2e_inventaire_nombres_isole::test_inventaire_inconnu_visible_refuse_sans_mutation_et_csv[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette779_connexes",
+      "id": "test_e2e_inventaire_nombres_isole::test_inventaire_connu_perte40_snapshot160_et_ecriture_validee[1365]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette779_connexes",
+      "id": "test_e2e_inventaire_nombres_isole::test_inventaire_connu_perte40_snapshot160_et_ecriture_validee[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette781_cible",
+      "id": "test_e2e_cahier_administration781_isole::test_781_creation_exercice2025_absent_calendrier_source",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette781_cible",
+      "id": "test_e2e_cahier_administration781_isole::test_781_utilisateurs_source_et_societeB_cloisonnee",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette781_connexes",
+      "id": "test_e2e_administration_isole::test_creation_societe_plan_utilisateur_exercice_et_switch_ui_reels",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette781_connexes",
+      "id": "test_e2e_administration_isole::test_login_lecture_ui_et_refus_mutations_reelles",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette783_cible",
+      "id": "test_e2e_cahier_capital783_isole::test_783_capital200000_manuel_piece_libelles_validation_fec[1440]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette783_cible",
+      "id": "test_e2e_cahier_capital783_isole::test_783_capital200000_manuel_piece_libelles_validation_fec[390]",
+      "statut": "Échoué"
+    },
+    {
+      "campagne": "recette783_diagnostic",
+      "id": "test_e2e_cahier_capital783_isole::test_783_capital200000_manuel_piece_libelles_validation_fec[390]",
+      "statut": "Échoué"
+    },
+    {
+      "campagne": "recette783_clics",
+      "id": "test_e2e_cahier_capital783_isole::test_783_capital200000_manuel_piece_libelles_validation_fec[390]",
+      "statut": "Échoué"
+    },
+    {
+      "campagne": "recette783_final",
+      "id": "test_e2e_cahier_capital783_isole::test_783_capital200000_manuel_piece_libelles_validation_fec[1440]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette783_final",
+      "id": "test_e2e_cahier_capital783_isole::test_783_capital200000_manuel_piece_libelles_validation_fec[390]",
+      "statut": "Échoué"
+    },
+    {
+      "campagne": "recette783_blur_final",
+      "id": "test_e2e_cahier_capital783_isole::test_783_capital200000_manuel_piece_libelles_validation_fec[1440]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette783_blur_final",
+      "id": "test_e2e_cahier_capital783_isole::test_783_capital200000_manuel_piece_libelles_validation_fec[390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette783_blur_final",
+      "id": "test_e2e_journal_lecture_isole::test_commandes_journal_documents_et_controles_selon_role[lecture-390]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette783_blur_final",
+      "id": "test_e2e_journal_lecture_isole::test_commandes_journal_documents_et_controles_selon_role[comptable-1440]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette783_blur_final",
+      "id": "test_e2e_ecriture_erreurs_isole::test_creation_ecriture_erreurs_422_libelles_et_comptes_isoles[A]",
+      "statut": "Réussi"
+    },
+    {
+      "campagne": "recette783_blur_final",
+      "id": "test_e2e_ecriture_erreurs_isole::test_creation_ecriture_erreurs_422_libelles_et_comptes_isoles[B]",
+      "statut": "Réussi"
+    }
+  ],
+  "build_final": {
+    "code": 0,
+    "secondes": 5.01,
+    "avertissement": "Bundle >500kB"
+  },
+  "incident_ouvert": "ReloadLettrage769,cause nonétablie malgréreplays réussis",
+  "reprise": "Orchestrer les50opérations annuelles parordre chronologique dansune nouvelle société,fiscalité/immobilisations/services/effets restants,sansmodifier le sous-parcours définitif existant."
+}

@@ -1,0 +1,351 @@
+{
+  "resultats": [
+    {
+      "campagne": "recette787_cible",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 98.52,
+      "code": 1
+    },
+    {
+      "campagne": "recette787_navigation",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 79.9,
+      "code": 0
+    }
+  ],
+  "parcours": [
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_ku6_pxc4",
+      "nonce": "1f4db3742505472d8051c391bc34ae9d",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 1440,
+      "cas": [
+        {
+          "id": "HP-IMM-001",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-IMM-002",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-IMM-003",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-IMM-004",
+          "statut": "Partiel"
+        }
+      ],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "operations": [
+        {
+          "reference": "CAP-01",
+          "id": 1,
+          "date": "2025-01-01",
+          "journal": "BQ",
+          "lignes": {
+            "5141": [
+              "200000.00",
+              "0.00"
+            ],
+            "1111": [
+              "0.00",
+              "200000.00"
+            ]
+          }
+        },
+        {
+          "reference": "IMMO-ACQ",
+          "id": 2,
+          "date": "2025-01-01",
+          "journal": "AC",
+          "lignes": {
+            "2355": [
+              "24000.00",
+              "0.00"
+            ],
+            "34551": [
+              "4800.00",
+              "0.00"
+            ],
+            "4481": [
+              "0.00",
+              "28800.00"
+            ]
+          }
+        },
+        {
+          "reference": "IMMO-PAY",
+          "id": 3,
+          "date": "2025-01-01",
+          "journal": "BQ",
+          "lignes": {
+            "4481": [
+              "28800.00",
+              "0.00"
+            ],
+            "5141": [
+              "0.00",
+              "28800.00"
+            ]
+          }
+        },
+        {
+          "reference": "AMORT-2025",
+          "id": 4,
+          "date": "2025-12-31",
+          "journal": "AM",
+          "lignes": {
+            "61935": [
+              "4800.00",
+              "0.00"
+            ],
+            "28355": [
+              "0.00",
+              "4800.00"
+            ]
+          }
+        }
+      ],
+      "registre_date_du_jour": {
+        "cumul": "8720.00",
+        "net": "15280.00",
+        "date_explicitement_affichee": true
+      },
+      "immobilisation785": {
+        "ecritures": 4,
+        "lignes": 9,
+        "debit_credit": "262400.00",
+        "brut": "24000.00",
+        "amortissement": "4800.00",
+        "net": "19200.00",
+        "bilan": "195200.00",
+        "resultat": "-4800.00",
+        "anti_double_409": true,
+        "tiers_auxiliaire_4481": true,
+        "detail_bilan": {
+          "type": "detail",
+          "numero": "235",
+          "label": "Mobilier, matériel de bureau et aménagements divers",
+          "valeurs": [
+            24000.0,
+            null,
+            null,
+            null
+          ],
+          "niveau": 1
+        },
+        "limite": "Sous-parcours capital et immobilisation dans une nouvelle société ; pas le scénario annuel complet."
+      },
+      "resultat_cession_brut": {
+        "message": "Cession comptabilisée",
+        "type_sortie": "cession",
+        "date_sortie": "2026-01-01",
+        "cumul_amortissement": 4813.33,
+        "vnc": 19186.67,
+        "prix_cession_ht": 20000.0,
+        "tva_cession": 4000.0,
+        "ttc_cession": 24000.0,
+        "resultat_cession": 813.33,
+        "ecriture_sortie_id": 6,
+        "ecriture_cession_id": 7,
+        "ecriture_encaissement_id": 8
+      },
+      "cession787": {
+        "date": "2026-01-01",
+        "dotation2026": "13.33",
+        "cumul": "4813.33",
+        "vnc": "19186.67",
+        "gain": "813.33",
+        "banque": "24000.00",
+        "ecritures2026": 4,
+        "originaux2025_inchanges": true,
+        "bilan2025_inchange": true,
+        "doublon_refuse": 409,
+        "ecart_source": {
+          "vnc_source": "19200.00",
+          "gain_source": "800.00",
+          "cause": "Le cahier omet le jour de sortie 01/01/2026 inclus dans la convention du moteur existant. Aucun calcul produit modifié."
+        },
+        "statut_fiche": "Partiel",
+        "limite": "Parcours technique réussi ; oracle initial du cahier divergent et qualification/régularisation TVA de cession non validée automatiquement."
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_ku6_pxc4",
+      "nonce": "1f4db3742505472d8051c391bc34ae9d",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 390,
+      "cas": [
+        {
+          "id": "HP-IMM-001",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-IMM-002",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-IMM-003",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-IMM-004",
+          "statut": "Partiel"
+        }
+      ],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "operations": [
+        {
+          "reference": "CAP-01",
+          "id": 9,
+          "date": "2025-01-01",
+          "journal": "BQ",
+          "lignes": {
+            "5141": [
+              "200000.00",
+              "0.00"
+            ],
+            "1111": [
+              "0.00",
+              "200000.00"
+            ]
+          }
+        },
+        {
+          "reference": "IMMO-ACQ",
+          "id": 10,
+          "date": "2025-01-01",
+          "journal": "AC",
+          "lignes": {
+            "2355": [
+              "24000.00",
+              "0.00"
+            ],
+            "34551": [
+              "4800.00",
+              "0.00"
+            ],
+            "4481": [
+              "0.00",
+              "28800.00"
+            ]
+          }
+        },
+        {
+          "reference": "IMMO-PAY",
+          "id": 11,
+          "date": "2025-01-01",
+          "journal": "BQ",
+          "lignes": {
+            "4481": [
+              "28800.00",
+              "0.00"
+            ],
+            "5141": [
+              "0.00",
+              "28800.00"
+            ]
+          }
+        },
+        {
+          "reference": "AMORT-2025",
+          "id": 12,
+          "date": "2025-12-31",
+          "journal": "AM",
+          "lignes": {
+            "61935": [
+              "4800.00",
+              "0.00"
+            ],
+            "28355": [
+              "0.00",
+              "4800.00"
+            ]
+          }
+        }
+      ],
+      "registre_date_du_jour": {
+        "cumul": "8720.00",
+        "net": "15280.00",
+        "date_explicitement_affichee": true
+      },
+      "immobilisation785": {
+        "ecritures": 4,
+        "lignes": 9,
+        "debit_credit": "262400.00",
+        "brut": "24000.00",
+        "amortissement": "4800.00",
+        "net": "19200.00",
+        "bilan": "195200.00",
+        "resultat": "-4800.00",
+        "anti_double_409": true,
+        "tiers_auxiliaire_4481": true,
+        "detail_bilan": {
+          "type": "detail",
+          "numero": "235",
+          "label": "Mobilier, matériel de bureau et aménagements divers",
+          "valeurs": [
+            24000.0,
+            null,
+            null,
+            null
+          ],
+          "niveau": 1
+        },
+        "limite": "Sous-parcours capital et immobilisation dans une nouvelle société ; pas le scénario annuel complet."
+      },
+      "resultat_cession_brut": {
+        "message": "Cession comptabilisée",
+        "type_sortie": "cession",
+        "date_sortie": "2026-01-01",
+        "cumul_amortissement": 4813.33,
+        "vnc": 19186.67,
+        "prix_cession_ht": 20000.0,
+        "tva_cession": 4000.0,
+        "ttc_cession": 24000.0,
+        "resultat_cession": 813.33,
+        "ecriture_sortie_id": 14,
+        "ecriture_cession_id": 15,
+        "ecriture_encaissement_id": 16
+      },
+      "cession787": {
+        "date": "2026-01-01",
+        "dotation2026": "13.33",
+        "cumul": "4813.33",
+        "vnc": "19186.67",
+        "gain": "813.33",
+        "banque": "24000.00",
+        "ecritures2026": 4,
+        "originaux2025_inchanges": true,
+        "bilan2025_inchange": true,
+        "doublon_refuse": 409,
+        "ecart_source": {
+          "vnc_source": "19200.00",
+          "gain_source": "800.00",
+          "cause": "Le cahier omet le jour de sortie 01/01/2026 inclus dans la convention du moteur existant. Aucun calcul produit modifié."
+        },
+        "statut_fiche": "Partiel",
+        "limite": "Parcours technique réussi ; oracle initial du cahier divergent et qualification/régularisation TVA de cession non validée automatiquement."
+      }
+    }
+  ],
+  "cas": "HP-IMM-004",
+  "statut_fiche": "Partiel",
+  "modification_produit": false,
+  "ecart_oracle_source": "Le cahier attend VNC19200 et gain800 ; la convention30/360 inclusive du moteur inclut le01/01/2026 : dotation13.33, VNC19186.67, gain813.33. Ne pas modifier les écritures pour retrouver800.",
+  "limites": "Technique et intégrité validées dans ces tests, pas la qualification ou régularisation TVA de cession. Aucune nouvelle règle fiscale codée ni obligation réglementaire affirmée."
+}

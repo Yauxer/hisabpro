@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="52.215" timestamp="2026-10-27T23:43:43.389632+01:00" hostname="Taiyou"><testcase classname="Test.test_personnel_workflow877_isole" name="test_877_ecriture_definitive_existante_conservee" time="48.265"><failure message="sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation &quot;lignes_ecritures&quot; does not exist&#10;LINE 1: SELECT to_jsonb(l) FROM lignes_ecritures l WHERE ecriture_id...&#10;                                ^&#10;&#10;[SQL: SELECT to_jsonb(l) FROM lignes_ecritures l WHERE ecriture_id=%(i)s ORDER BY id]&#10;[parameters: {'i': 1}]&#10;(Background on this error at: https://sqlalche.me/e/20/f405)">self = &lt;sqlalchemy.engine.base.Connection object at 0x000001A10A4F4B50&gt;
+dialect = &lt;sqlalchemy.dialects.postgresql.psycopg2.PGDialect_psycopg2 object at 0x000001A107CD2C90&gt;
+context = &lt;sqlalchemy.dialects.postgresql.psycopg2.PGExecutionContext_psycopg2 object at 0x000001A10A54D510&gt;
+statement = &lt;sqlalchemy.dialects.postgresql.base.PGCompiler object at 0x000001A10A54D550&gt;
+parameters = [{'i': 1}]
+
+    def _exec_single_context(
+        self,
+        dialect: Dialect,
+        context: ExecutionContext,
+        statement: Union[str, Compiled],
+        parameters: Optional[_AnyMultiExecuteParams],
+    ) -&gt; CursorResult[Any]:
+        """continue the _execute_context() method for a single DBAPI
+        cursor.execute() or cursor.executemany() call.
+    
+        """
+        if dialect.bind_typing is BindTyping.SETINPUTSIZES:
+            generic_setinputsizes = context._prepare_set_input_sizes()
+    
+            if generic_setinputsizes:
+                try:
+                    dialect.do_set_input_sizes(
+                        context.cursor, generic_setinputsizes, context
+                    )
+                except BaseException as e:
+                    self._handle_dbapi_exception(
+                        e, str(statement), parameters, None, context
+                    )
+    
+        cursor, str_statement, parameters = (
+            context.cursor,
+            context.statement,
+            context.parameters,
+        )
+    
+        effective_parameters: Optional[_AnyExecuteParams]
+    
+        if not context.executemany:
+            effective_parameters = parameters[0]
+        else:
+            effective_parameters = parameters
+    
+        if self._has_events or self.engine._has_events:
+            for fn in self.dispatch.before_cursor_execute:
+                str_statement, effective_parameters = fn(
+                    self,
+                    cursor,
+                    str_statement,
+                    effective_parameters,
+                    context,
+                    context.executemany,
+                )
+    
+        if self._echo:
+            self._log_info(str_statement)
+    
+            stats = context._get_cache_stats()
+    
+            if not self.engine.hide_parameters:
+                self._log_info(
+                    "[%s] %r",
+                    stats,
+                    sql_util._repr_params(
+                        effective_parameters,
+                        batches=10,
+                        ismulti=context.executemany,
+                    ),
+                )
+            else:
+                self._log_info(
+                    "[%s] [SQL parameters hidden due to hide_parameters=True]",
+                    stats,
+                )
+    
+        evt_handled: bool = False
+        try:
+            if context.execute_style is ExecuteStyle.EXECUTEMANY:
+                effective_parameters = cast(
+                    "_CoreMultiExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_executemany:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_executemany(
+                        cursor,
+                        str_statement,
+                        effective_parameters,
+                        context,
+                    )
+            elif not effective_parameters and context.no_parameters:
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute_no_params:
+                        if fn(cursor, str_statement, context):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_execute_no_params(
+                        cursor, str_statement, context
+                    )
+            else:
+                effective_parameters = cast(
+                    "_CoreSingleExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+&gt;                   self.dialect.do_execute(
+                        cursor, str_statement, effective_parameters, context
+                    )
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1967: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.dialects.postgresql.psycopg2.PGDialect_psycopg2 object at 0x000001A107CD2C90&gt;
+cursor = &lt;cursor object at 0x000001A10A4E5460; closed: -1&gt;
+statement = 'SELECT to_jsonb(l) FROM lignes_ecritures l WHERE ecriture_id=%(i)s ORDER BY id'
+parameters = {'i': 1}
+context = &lt;sqlalchemy.dialects.postgresql.psycopg2.PGExecutionContext_psycopg2 object at 0x000001A10A54D510&gt;
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+&gt;       cursor.execute(statement, parameters)
+E       psycopg2.errors.UndefinedTable: relation "lignes_ecritures" does not exist
+E       LINE 1: SELECT to_jsonb(l) FROM lignes_ecritures l WHERE ecriture_id...
+E                                       ^
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py:941: UndefinedTable
+
+The above exception was the direct cause of the following exception:
+
+application = {'api_url': 'http://127.0.0.1:59495', 'web_url': 'http://127.0.0.1:59496', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_z92t8o2h'), 'nonce': 'a4bbf7b62dae4c2590bd17f6fd4048cb', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000001A10A4D2190&gt;, 'b': &lt;httpx.Client object at 0x000001A10A4F6090&gt;, 'l': &lt;httpx.Client object at 0x000001A10A568890&gt;, 'uid': 4, ...}
+
+    def test_877_ecriture_definitive_existante_conservee(application,equipe):
+        eq=equipe
+        e=ok(eq['a'].post('/api/ecritures',json={'date':'2026-01-05','journal':'BQ','libelle':'Capital fictif conservation877',
+            'lignes':[{'compte':'5141','libelle':'Banque fictive','debit':1000,'credit':0},
+                      {'compte':'1111','libelle':'Capital fictif','debit':0,'credit':1000}]}),201)
+        ok(eq['a'].post(f'/api/ecritures/{e["id"]}/valider'))
+        avant=comptabilite(application,eq['sid'])
+        with application['engine'].connect() as db:
+&gt;           lignes=db.execute(text('SELECT to_jsonb(l) FROM lignes_ecritures l WHERE ecriture_id=:i ORDER BY id'),{'i':e['id']}).scalars().all()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_personnel_workflow877_isole.py:313: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1418: in execute
+    return meth(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\sql\elements.py:515: in _execute_on_connection
+    return connection._execute_clauseelement(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1640: in _execute_clauseelement
+    ret = self._execute_context(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1846: in _execute_context
+    return self._exec_single_context(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1986: in _exec_single_context
+    self._handle_dbapi_exception(
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:2355: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py:1967: in _exec_single_context
+    self.dialect.do_execute(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;sqlalchemy.dialects.postgresql.psycopg2.PGDialect_psycopg2 object at 0x000001A107CD2C90&gt;
+cursor = &lt;cursor object at 0x000001A10A4E5460; closed: -1&gt;
+statement = 'SELECT to_jsonb(l) FROM lignes_ecritures l WHERE ecriture_id=%(i)s ORDER BY id'
+parameters = {'i': 1}
+context = &lt;sqlalchemy.dialects.postgresql.psycopg2.PGExecutionContext_psycopg2 object at 0x000001A10A54D510&gt;
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+&gt;       cursor.execute(statement, parameters)
+E       sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "lignes_ecritures" does not exist
+E       LINE 1: SELECT to_jsonb(l) FROM lignes_ecritures l WHERE ecriture_id...
+E                                       ^
+E       
+E       [SQL: SELECT to_jsonb(l) FROM lignes_ecritures l WHERE ecriture_id=%(i)s ORDER BY id]
+E       [parameters: {'i': 1}]
+E       (Background on this error at: https://sqlalche.me/e/20/f405)
+
+hisabpro-backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py:941: ProgrammingError</failure></testcase></testsuite></testsuites>

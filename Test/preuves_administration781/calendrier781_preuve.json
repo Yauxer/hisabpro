@@ -1,0 +1,9 @@
+{
+  "cible": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_wo85lpx9",
+  "cas": "HP-ADM-003",
+  "variation": "Pour tester absence2025,laisserpremierexercice àvaleur inscription2026 jusqu’àlacréationUI2025,puisappliquer premierexercice2025 ;aucunexercice supprimé.",
+  "erreur": null,
+  "statut": "Réussi",
+  "periodes2025_2026": 24,
+  "doublon_refuse409": true
+}

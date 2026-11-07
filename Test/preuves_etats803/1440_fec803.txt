@@ -1,0 +1,146 @@
+﻿Code_Journal	Libelle_Journal	Num_Ecriture	Date_Ecriture	Num_Compte	Libelle_Compte	Num_Compte_Aux	Libelle_Compte_Aux	Ref_Piece	Date_Piece	Libelle_Ecriture	Montant_Debit	Montant_Credit	Lettrage_Ecriture	Date_Lettrage	Date_Validation	Montant_Devise	Id_devise
+BQ	Journal de banque	BQ-2025-0001	20250101	5141	Banques (solde débiteur)			CAP-01	20250101	Apport associé Recette	200000,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0001	20250101	1111	Capital social			CAP-01	20250101	Apport associé Recette	0,00	200000,00			20261025		
+AC	Journal des achats	AC-2025-0001	20250101	2355	Matériel informatique			ACQ-2025-1	20250101	Acquisition immobilisation — Ordinateur de recette	24000,00	0,00			20261025		
+AC	Journal des achats	AC-2025-0001	20250101	34551	État - TVA récupérable sur immobilisations			ACQ-2025-1	20250101	Acquisition immobilisation — Ordinateur de recette	4800,00	0,00			20261025		
+AC	Journal des achats	AC-2025-0001	20250101	4481	Dettes sur acquisitions d'immobilisations	F00000009	Fournisseur Informatique Recette	ACQ-2025-1	20250101	Acquisition immobilisation — Ordinateur de recette	0,00	28800,00			20261025		
+BQ	Journal de banque	BQ-2025-0002	20250101	4481	Dettes sur acquisitions d'immobilisations	F00000009	Fournisseur Informatique Recette	PAY-IMMO-1	20250101	Paiement immobilisation — Ordinateur de recette	28800,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0002	20250101	5141	Banques (solde débiteur)			PAY-IMMO-1	20250101	Paiement immobilisation — Ordinateur de recette	0,00	28800,00			20261025		
+BQ	Journal de banque	BQ-2025-0003	20250104	3411	Fournisseurs - avances et acomptes versés sur commandes d'exploitation	F00000006	Fournisseur Marchandises Recette	AC-2025-001	20250104	Acompte fournisseur versé — AC-2025-001 Fournisseur Marchandises Recette	6000,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0003	20250104	5141	Banques (solde débiteur)			AC-2025-001	20250104	Acompte fournisseur versé — AC-2025-001 Fournisseur Marchandises Recette	0,00	6000,00			20261025		
+AC	Journal des achats	AC-2025-0002	20250105	6111	Achats de marchandises (groupe A)			ACH-01	20250105	Facture d'achat FA-2025-001 Fournisseur Marchandises Recette	10000,00	0,00			20261025		
+AC	Journal des achats	AC-2025-0002	20250105	34552	État - TVA récupérable sur charges			ACH-01	20250105	Facture d'achat FA-2025-001 Fournisseur Marchandises Recette	2000,00	0,00			20261025		
+AC	Journal des achats	AC-2025-0002	20250105	4411	Fournisseurs	F00000006	Fournisseur Marchandises Recette	ACH-01	20250105	Facture d'achat FA-2025-001 Fournisseur Marchandises Recette	0,00	12000,00	AAA	20261025	20261025		
+OD	Opérations diverses	OD-2025-0001	20250105	4411	Fournisseurs	F00000006	Fournisseur Marchandises Recette	AC-2025-001	20250105	Imputation acompte AC-2025-001 sur FA-2025-001	6000,00	0,00	AAA	20261025	20261025		
+OD	Opérations diverses	OD-2025-0001	20250105	3411	Fournisseurs - avances et acomptes versés sur commandes d'exploitation	F00000006	Fournisseur Marchandises Recette	AC-2025-001	20250105	Imputation acompte AC-2025-001 sur FA-2025-001	0,00	6000,00			20261025		
+BQ	Journal de banque	BQ-2025-0004	20250107	4411	Fournisseurs	F00000006	Fournisseur Marchandises Recette	PAY-ACH01	20250107	Règlement Fournisseur Marchandises Recette PAY-ACH01	6000,00	0,00	AAA	20261025	20261025		
+BQ	Journal de banque	BQ-2025-0004	20250107	5141	Banques (solde débiteur)			PAY-ACH01	20250107	Règlement Fournisseur Marchandises Recette PAY-ACH01	0,00	6000,00			20261025		
+AC	Journal des achats	AC-2025-0003	20250110	6111	Achats de marchandises (groupe A)			ACH-02	20250110	Facture d'achat FA-2025-002 Fournisseur Marchandises Recette	12000,00	0,00			20261025		
+AC	Journal des achats	AC-2025-0003	20250110	34552	État - TVA récupérable sur charges			ACH-02	20250110	Facture d'achat FA-2025-002 Fournisseur Marchandises Recette	2400,00	0,00			20261025		
+AC	Journal des achats	AC-2025-0003	20250110	4411	Fournisseurs	F00000006	Fournisseur Marchandises Recette	ACH-02	20250110	Facture d'achat FA-2025-002 Fournisseur Marchandises Recette	0,00	14400,00			20261025		
+VT	Journal des ventes	VT-2025-0001	20250120	3421	Clients	C00000003	Client Marchandises Recette	FA-2025-003	20250120	Facture FA-2025-003 Client Marchandises Recette	30000,00	0,00			20261025		
+VT	Journal des ventes	VT-2025-0001	20250120	4455	État - TVA facturée			FA-2025-003	20250120	Facture FA-2025-003 Client Marchandises Recette	0,00	5000,00			20261025		
+VT	Journal des ventes	VT-2025-0001	20250120	7111	Ventes de marchandises au Maroc			FA-2025-003	20250120	Facture FA-2025-003 Client Marchandises Recette	0,00	25000,00			20261025		
+BQ	Journal de banque	BQ-2025-0005	20250125	5141	Banques (solde débiteur)			PAY-V01	20250125	Règlement Client Marchandises Recette PAY-V01	10000,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0005	20250125	3421	Clients	C00000003	Client Marchandises Recette	PAY-V01	20250125	Règlement Client Marchandises Recette PAY-V01	0,00	10000,00			20261025		
+AE	Effets à encaisser	AE-2025-0001	20250126	51111	Chèques en portefeuille			CHQ-01	20250126	Réception chèque — Client Marchandises Recette	20000,00	0,00			20261025		
+AE	Effets à encaisser	AE-2025-0001	20250126	3421	Clients	C00000003	Client Marchandises Recette	CHQ-01	20250126	Réception chèque — Client Marchandises Recette	0,00	20000,00			20261025		
+OD	Opérations diverses	OD-2025-0002	20250131	4455	État - TVA facturée			TVA-01	20250131	Crédit TVA janvier 1 800	5000,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0002	20250131	3456	État - crédit de TVA (suivant déclaration)			TVA-01	20250131	Crédit TVA janvier 1 800	1800,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0002	20250131	34551	État - TVA récupérable sur immobilisations			TVA-01	20250131	Crédit TVA janvier 1 800	0,00	4800,00			20261025		
+OD	Opérations diverses	OD-2025-0002	20250131	34552	État - TVA récupérable sur charges			TVA-01	20250131	Crédit TVA janvier 1 800	0,00	2000,00			20261025		
+AE	Effets à encaisser	AE-2025-0002	20250201	51112	Chèques à l'encaissement			CHQ-01	20250201	Remise à l'encaissement cheque — Client Marchandises Recette	20000,00	0,00			20261025		
+AE	Effets à encaisser	AE-2025-0002	20250201	51111	Chèques en portefeuille			CHQ-01	20250201	Remise à l'encaissement cheque — Client Marchandises Recette	0,00	20000,00			20261025		
+BQ	Journal de banque	BQ-2025-0006	20250205	5141	Banques (solde débiteur)			CHQ-01	20250205	Encaissement cheque — Client Marchandises Recette	20000,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0006	20250205	51112	Chèques à l'encaissement			CHQ-01	20250205	Encaissement cheque — Client Marchandises Recette	0,00	20000,00			20261025		
+AC	Journal des achats	AC-2025-0004	20250210	6125	Achats non stockés de matières et fournitures			ACH-SERVICE	20250210	Facture d'achat FA-2025-004 Fournisseur Services Recette	12000,00	0,00			20261025		
+AC	Journal des achats	AC-2025-0004	20250210	34552	État - TVA récupérable sur charges			ACH-SERVICE	20250210	Facture d'achat FA-2025-004 Fournisseur Services Recette	2400,00	0,00			20261025		
+AC	Journal des achats	AC-2025-0004	20250210	4411	Fournisseurs	F00000007	Fournisseur Services Recette	ACH-SERVICE	20250210	Facture d'achat FA-2025-004 Fournisseur Services Recette	0,00	14400,00			20261025		
+AV	Journal des avoirs	AV-2025-0001	20250210	7111	Ventes de marchandises au Maroc			AV-2025-001	20250210	Avoir AV-2025-001 Client Marchandises Recette	2500,00	0,00			20261025		
+AV	Journal des avoirs	AV-2025-0001	20250210	4455	État - TVA facturée			AV-2025-001	20250210	Avoir AV-2025-001 Client Marchandises Recette	500,00	0,00			20261025		
+AV	Journal des avoirs	AV-2025-0001	20250210	3421	Clients	C00000003	Client Marchandises Recette	AV-2025-001	20250210	Avoir AV-2025-001 Client Marchandises Recette	0,00	3000,00			20261025		
+BQ	Journal de banque	BQ-2025-0007	20250215	4411	Fournisseurs	F00000007	Fournisseur Services Recette	ACH-SERVICE-PAY	20250215	Règlement Fournisseur Services Recette ACH-SERVICE-PAY	14400,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0007	20250215	5141	Banques (solde débiteur)			ACH-SERVICE-PAY	20250215	Règlement Fournisseur Services Recette ACH-SERVICE-PAY	0,00	14400,00			20261025		
+OD	Opérations diverses	OD-2025-0003	20250228	3456	État - crédit de TVA (suivant déclaration)			TVA-02	20250228	Augmentation crédit TVA février 2 900	2900,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0003	20250228	4455	État - TVA facturée			TVA-02	20250228	Augmentation crédit TVA février 2 900	0,00	500,00			20261025		
+OD	Opérations diverses	OD-2025-0003	20250228	34552	État - TVA récupérable sur charges			TVA-02	20250228	Augmentation crédit TVA février 2 900	0,00	2400,00			20261025		
+VT	Journal des ventes	VT-2025-0002	20250301	3421	Clients	C00000003	Client Marchandises Recette	FA-2025-005	20250301	Facture FA-2025-005 Client Marchandises Recette	18000,00	0,00			20261025		
+VT	Journal des ventes	VT-2025-0002	20250301	4455	État - TVA facturée			FA-2025-005	20250301	Facture FA-2025-005 Client Marchandises Recette	0,00	3000,00			20261025		
+VT	Journal des ventes	VT-2025-0002	20250301	7111	Ventes de marchandises au Maroc			FA-2025-005	20250301	Facture FA-2025-005 Client Marchandises Recette	0,00	15000,00			20261025		
+AE	Effets à encaisser	AE-2025-0003	20250301	4411	Fournisseurs	F00000006	Fournisseur Marchandises Recette	EFF-F01	20250301	Effet à payer — Fournisseur Marchandises Recette	14400,00	0,00			20261025		
+AE	Effets à encaisser	AE-2025-0003	20250301	4415	Fournisseurs - effets à payer	F00000006	Fournisseur Marchandises Recette	EFF-F01	20250301	Effet à payer — Fournisseur Marchandises Recette	0,00	14400,00			20261025		
+BQ	Journal de banque	BQ-2025-0008	20250305	5141	Banques (solde débiteur)			PAY-V02	20250305	Règlement Client Marchandises Recette PAY-V02	5000,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0008	20250305	3421	Clients	C00000003	Client Marchandises Recette	PAY-V02	20250305	Règlement Client Marchandises Recette PAY-V02	0,00	5000,00			20261025		
+BQ	Journal de banque	BQ-2025-0009	20250320	4415	Fournisseurs - effets à payer	F00000006	Fournisseur Marchandises Recette	EFF-F01	20250320	Paiement effet — Fournisseur Marchandises Recette	14400,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0009	20250320	5141	Banques (solde débiteur)			EFF-F01	20250320	Paiement effet — Fournisseur Marchandises Recette	0,00	14400,00			20261025		
+OD	Opérations diverses	OD-2025-0004	20250331	4455	État - TVA facturée			TVA-03	20250331	Consommation crédit TVA mars 600	3000,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0004	20250331	34552	État - TVA récupérable sur charges			TVA-03	20250331	Consommation crédit TVA mars 600	0,00	2400,00			20261025		
+OD	Opérations diverses	OD-2025-0004	20250331	3456	État - crédit de TVA (suivant déclaration)			TVA-03	20250331	Consommation crédit TVA mars 600	0,00	600,00			20261025		
+AE	Effets à encaisser	AE-2025-0004	20250401	3425	Clients - effets à recevoir	C00000003	Client Marchandises Recette	EFF-C01	20250401	Acceptation effet — Client Marchandises Recette	10000,00	0,00			20261025		
+AE	Effets à encaisser	AE-2025-0004	20250401	3421	Clients	C00000003	Client Marchandises Recette	EFF-C01	20250401	Acceptation effet — Client Marchandises Recette	0,00	10000,00			20261025		
+AE	Effets à encaisser	AE-2025-0005	20250515	51132	Effets à l'encaissement			EFF-C01	20250515	Remise à l'encaissement effet — Client Marchandises Recette	10000,00	0,00			20261025		
+AE	Effets à encaisser	AE-2025-0005	20250515	3425	Clients - effets à recevoir	C00000003	Client Marchandises Recette	EFF-C01	20250515	Remise à l'encaissement effet — Client Marchandises Recette	0,00	10000,00			20261025		
+BQ	Journal de banque	BQ-2025-0010	20250516	5141	Banques (solde débiteur)			EFF-C01	20250516	Encaissement effet — Client Marchandises Recette	9990,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0010	20250516	61472	Frais sur effets de commerce			EFF-C01	20250516	Encaissement effet — Client Marchandises Recette	10,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0010	20250516	51132	Effets à l'encaissement			EFF-C01	20250516	Encaissement effet — Client Marchandises Recette	0,00	10000,00			20261025		
+BQ	Journal de banque	BQ-2025-0011	20250601	5141	Banques (solde débiteur)			AC-2025-002	20250601	Acompte client reçu — AC-2025-002 Client Services Recette	24000,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0011	20250601	4421	Clients - avances et acomptes reçus sur commandes en cours	C00000004	Client Services Recette	AC-2025-002	20250601	Acompte client reçu — AC-2025-002 Client Services Recette	0,00	24000,00			20261025		
+VT	Journal des ventes	VT-2025-0003	20250615	3421	Clients	C00000004	Client Services Recette	FA-2025-006	20250615	Facture FA-2025-006 Client Services Recette	144000,00	0,00			20261025		
+VT	Journal des ventes	VT-2025-0003	20250615	4455	État - TVA facturée			FA-2025-006	20250615	Facture FA-2025-006 Client Services Recette	0,00	24000,00			20261025		
+VT	Journal des ventes	VT-2025-0003	20250615	7124	Ventes de services produits au Maroc			FA-2025-006	20250615	Facture FA-2025-006 Client Services Recette	0,00	120000,00			20261025		
+OD	Opérations diverses	OD-2025-0005	20250615	4421	Clients - avances et acomptes reçus sur commandes en cours	C00000004	Client Services Recette	AC-2025-002	20250615	Imputation acompte AC-2025-002 sur FA-2025-006	24000,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0005	20250615	3421	Clients	C00000004	Client Services Recette	AC-2025-002	20250615	Imputation acompte AC-2025-002 sur FA-2025-006	0,00	24000,00			20261025		
+BQ	Journal de banque	BQ-2025-0012	20250630	5141	Banques (solde débiteur)			VENTE-SERVICE-PAY	20250630	Règlement Client Services Recette VENTE-SERVICE-PAY	120000,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0012	20250630	3421	Clients	C00000004	Client Services Recette	VENTE-SERVICE-PAY	20250630	Règlement Client Services Recette VENTE-SERVICE-PAY	0,00	120000,00			20261025		
+OD	Opérations diverses	OD-2025-0006	20250630	4455	État - TVA facturée			TVA-06	20250630	TVA nette juin 19 900	24000,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0006	20250630	3456	État - crédit de TVA (suivant déclaration)			TVA-06	20250630	TVA nette juin 19 900	0,00	4100,00			20261025		
+OD	Opérations diverses	OD-2025-0006	20250630	4456	État - TVA due (suivant déclarations)			TVA-06	20250630	TVA nette juin 19 900	0,00	19900,00			20261025		
+BQ	Journal de banque	BQ-2025-0013	20250720	4456	État - TVA due (suivant déclarations)			TVA-06-PAY	20250720	Paiement TVA juin 19900	19900,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0013	20250720	5141	Banques (solde débiteur)			TVA-06-PAY	20250720	Paiement TVA juin 19900	0,00	19900,00			20261025		
+BQ	Journal de banque	BQ-2025-0014	20251130	5141	Banques (solde débiteur)			INT-PPRF	20251130	Intérêts bancaires selon attestation fictive	800,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0014	20251130	3453	Acomptes sur impôts sur les résultats			INT-PPRF	20251130	Intérêts bancaires selon attestation fictive	200,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0014	20251130	7381	Intérêts et produits assimilés			INT-PPRF	20251130	Intérêts bancaires selon attestation fictive	0,00	1000,00			20261025		
+BQ	Journal de banque	BQ-2025-0015	20251201	6134	Primes d'assurances			ASS-01	20251201	Assurance 12000 couvrant décembre 2025 à novembre 2026	12000,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0015	20251201	5141	Banques (solde débiteur)			ASS-01	20251201	Assurance 12000 couvrant décembre 2025 à novembre 2026	0,00	12000,00			20261025		
+AC	Journal des achats	AC-2025-0005	20251202	6125	Achats non stockés de matières et fournitures			02	20251202	Facture d'achat FA-2025-007 Fournisseur Contrôle Références Recette	200,00	0,00			20261025		
+AC	Journal des achats	AC-2025-0005	20251202	34552	État - TVA récupérable sur charges			02	20251202	Facture d'achat FA-2025-007 Fournisseur Contrôle Références Recette	40,00	0,00			20261025		
+AC	Journal des achats	AC-2025-0005	20251202	4411	Fournisseurs	F00000008	Fournisseur Contrôle Références Recette	02	20251202	Facture d'achat FA-2025-007 Fournisseur Contrôle Références Recette	0,00	240,00			20261025		
+AC	Journal des achats	AC-2025-0006	20251202	6125	Achats non stockés de matières et fournitures			002	20251202	Facture d'achat FA-2025-008 Fournisseur Contrôle Références Recette	200,00	0,00			20261025		
+AC	Journal des achats	AC-2025-0006	20251202	34552	État - TVA récupérable sur charges			002	20251202	Facture d'achat FA-2025-008 Fournisseur Contrôle Références Recette	40,00	0,00			20261025		
+AC	Journal des achats	AC-2025-0006	20251202	4411	Fournisseurs	F00000008	Fournisseur Contrôle Références Recette	002	20251202	Facture d'achat FA-2025-008 Fournisseur Contrôle Références Recette	0,00	240,00			20261025		
+VT	Journal des ventes	VT-2025-0004	20251210	3421	Clients	C00000005	Client Impayé Recette	FA-2025-009	20251210	Facture FA-2025-009 Client Impayé Recette	14400,00	0,00			20261025		
+VT	Journal des ventes	VT-2025-0004	20251210	4455	État - TVA facturée			FA-2025-009	20251210	Facture FA-2025-009 Client Impayé Recette	0,00	2400,00			20261025		
+VT	Journal des ventes	VT-2025-0004	20251210	7124	Ventes de services produits au Maroc			FA-2025-009	20251210	Facture FA-2025-009 Client Impayé Recette	0,00	12000,00			20261025		
+AE	Effets à encaisser	AE-2025-0006	20251212	51111	Chèques en portefeuille			CHQ-REJET	20251212	Réception chèque — Client Impayé Recette	2000,00	0,00			20261025		
+AE	Effets à encaisser	AE-2025-0006	20251212	3421	Clients	C00000005	Client Impayé Recette	CHQ-REJET	20251212	Réception chèque — Client Impayé Recette	0,00	2000,00			20261025		
+OD	Opérations diverses	OD-2025-0007	20251215	3421	Clients	C00000005	Client Impayé Recette	CHQ-REJET	20251215	Impayé cheque — Client Impayé Recette	2000,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0007	20251215	51111	Chèques en portefeuille			CHQ-REJET	20251215	Impayé cheque — Client Impayé Recette	0,00	2000,00			20261025		
+BQ	Journal de banque	BQ-2025-0016	20251220	6583	Pénalités et amendes fiscales ou pénales			AMENDE	20251220	Amende fiscale documentée 500	500,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0016	20251220	5141	Banques (solde débiteur)			AMENDE	20251220	Amende fiscale documentée 500	0,00	500,00			20261025		
+BQ	Journal de banque	BQ-2025-0017	20251231	61473	Frais et commissions sur services bancaires			FRAIS-BQ	20251231	Frais bancaires 60 sans TVA selon avis	60,00	0,00			20261025		
+BQ	Journal de banque	BQ-2025-0017	20251231	5141	Banques (solde débiteur)			FRAIS-BQ	20251231	Frais bancaires 60 sans TVA selon avis	0,00	60,00			20261025		
+OD	Opérations diverses	OD-2025-0008	20251231	3111	Marchandises (groupe A)			STOCK-CLOTURE-2025	20251231	Régularisation du stock final 2025	6600,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0008	20251231	6114	Variation de stocks de marchandises			STOCK-CLOTURE-2025	20251231	Régularisation du stock final 2025	0,00	6600,00			20261025		
+AM	Journal des amortissements	AM-2025-0001	20251231	61935	DEA des mobiliers, matériels de bureau et aménagements divers			AM-2025-1	20251231	Dotation aux amortissements — Ordinateur de recette 2025	4800,00	0,00			20261025		
+AM	Journal des amortissements	AM-2025-0001	20251231	28355	Amortissements du matériel informatique			AM-2025-1	20251231	Dotation aux amortissements — Ordinateur de recette 2025	0,00	4800,00			20261025		
+OD	Opérations diverses	OD-2025-0009	20251231	3491	Charges constatées d'avance			INV-CCA-2025-1	20251231	Assurance ASS-01,11 mois 2026	11000,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0009	20251231	6134	Primes d'assurances			INV-CCA-2025-1	20251231	Assurance ASS-01,11 mois 2026	0,00	11000,00			20261025		
+OD	Opérations diverses	OD-2025-0010	20251231	6125	Achats non stockés de matières et fournitures			INV-FNP-2025-2	20251231	Service livré décembre, contrat FNP-01	3000,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0010	20251231	4417	Fournisseurs - factures non parvenues			INV-FNP-2025-2	20251231	Service livré décembre, contrat FNP-01	0,00	3000,00			20261025		
+OD	Opérations diverses	OD-2025-0011	20251231	61955	DEP pour risques et charges durables			INV-PROVISION_RISQUE-2025-3	20251231	Litige REC-LIT01 probable, conditions fiscales non satisfaites	1500,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0011	20251231	1518	Autres provisions pour risques			INV-PROVISION_RISQUE-2025-3	20251231	Litige REC-LIT01 probable, conditions fiscales non satisfaites	0,00	1500,00			20261025		
+OD	Opérations diverses	OD-2025-0012	20251231	61964	DEP pour dépréciation des créances de l'actif circulant			INV-DEPRECIATION_CLIENT-2025-4	20251231	Dépréciation VENTE-IMPAYEE selon REC-DEP01	2000,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0012	20251231	3942	Provisions pour dépréciation des clients et comptes rattachés			INV-DEPRECIATION_CLIENT-2025-4	20251231	Dépréciation VENTE-IMPAYEE selon REC-DEP01	0,00	2000,00			20261025		
+OD	Opérations diverses	OD-2025-0013	20251231	4455	État - TVA facturée			TVA-12	20251231	TVA nette décembre 2 400	2400,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0013	20251231	4456	État - TVA due (suivant déclarations)			TVA-12	20251231	TVA nette décembre 2 400	0,00	2400,00			20261025		
+OD	Opérations diverses	OD-2025-0014	20251231	6701	Impôts sur les bénéfices			IS-2025	20251231	IS attendu à constater une seule fois	23420,25	0,00			20261025		
+OD	Opérations diverses	OD-2025-0014	20251231	4453	État - impôts sur les résultats			IS-2025	20251231	IS attendu à constater une seule fois	0,00	23420,25			20261025		
+OD	Opérations diverses	OD-2025-0015	20251231	4453	État - impôts sur les résultats			PPRF-IMP	20251231	Imputation documentaire retenue 200	200,00	0,00			20261025		
+OD	Opérations diverses	OD-2025-0015	20251231	3453	Acomptes sur impôts sur les résultats			PPRF-IMP	20251231	Imputation documentaire retenue 200	0,00	200,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	6111	Achats de marchandises (groupe A)			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	22000,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	6114	Variation de stocks de marchandises			CLOTURE-2025	20251231	Détermination du résultat 2025	6600,00	0,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	6125	Achats non stockés de matières et fournitures			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	15400,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	6134	Primes d'assurances			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	1000,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	61472	Frais sur effets de commerce			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	10,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	61473	Frais et commissions sur services bancaires			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	60,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	61935	DEA des mobiliers, matériels de bureau et aménagements divers			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	4800,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	61955	DEP pour risques et charges durables			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	1500,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	61964	DEP pour dépréciation des créances de l'actif circulant			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	2000,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	7111	Ventes de marchandises au Maroc			CLOTURE-2025	20251231	Détermination du résultat 2025	37500,00	0,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	7124	Ventes de services produits au Maroc			CLOTURE-2025	20251231	Détermination du résultat 2025	132000,00	0,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	8100	Résultat d'exploitation			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	129330,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	7381	Intérêts et produits assimilés			CLOTURE-2025	20251231	Détermination du résultat 2025	1000,00	0,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	8300	Résultat financier			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	1000,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	8100	Résultat d'exploitation			CLOTURE-2025	20251231	Détermination du résultat 2025	129330,00	0,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	8300	Résultat financier			CLOTURE-2025	20251231	Détermination du résultat 2025	1000,00	0,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	8400	Résultat courant			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	130330,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	6583	Pénalités et amendes fiscales ou pénales			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	500,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	8500	Résultat non courant			CLOTURE-2025	20251231	Détermination du résultat 2025	500,00	0,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	8400	Résultat courant			CLOTURE-2025	20251231	Détermination du résultat 2025	130330,00	0,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	8500	Résultat non courant			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	500,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	8600	Résultat avant impôts			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	129830,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	6701	Impôts sur les bénéfices			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	23420,25			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	8600	Résultat avant impôts			CLOTURE-2025	20251231	Détermination du résultat 2025	129830,00	0,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	8800	Résultat après impôts			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	106409,75			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	8800	Résultat après impôts			CLOTURE-2025	20251231	Détermination du résultat 2025	106409,75	0,00			20261025		
+CL	Journal de clôture	CL-2025-0001	20251231	1191	Résultat net de l'exercice (solde créditeur)			CLOTURE-2025	20251231	Détermination du résultat 2025	0,00	106409,75			20261025		

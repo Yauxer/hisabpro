@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="48.095" timestamp="2026-10-26T00:54:07.315802+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_pointage849_isole" name="test_849_remplacement_lien_et_double_utilisation[1440]" time="34.847"><failure message="AssertionError: assert 200 == 409&#10; +  where 200 = &lt;Response url='http://127.0.0.1:54062/api/rapprochement/1/rapprocher' request=&lt;Request url='http://127.0.0.1:54062/api/rapprochement/1/rapprocher' method='POST'&gt;&gt;.status&#10; +    where &lt;Response url='http://127.0.0.1:54062/api/rapprochement/1/rapprocher' request=&lt;Request url='http://127.0.0.1:54062/api/rapprochement/1/rapprocher' method='POST'&gt;&gt; = &lt;playwright._impl._sync_base.EventInfo object at 0x0000017A9E5E91D0&gt;.value">application = {'api_url': 'http://127.0.0.1:54062', 'web_url': 'http://127.0.0.1:54063', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_zaj3mwj1'), 'nonce': '2858881a9c2549268d053c8b5e65a160', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette849_reproduction/test_849_remplacement_lien_et_0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_849_remplacement_lien_et_double_utilisation(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'pointage849') as (api,page,sid,preuve):
+      b=DATA['banque'];ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201);lignes=[]
+      for ref in ['CAP-01','TEMOIN-849']:
+       e=ok(api.post('/api/ecritures',json={'date':'2025-01-01','date_piece':'2025-01-01','journal':'BQ','reference':ref,'libelle':'Témoin fictif pointage849','lignes':[{'compte':'5141','debit':100000},{'compte':'1111','credit':100000}]}),201);ok(api.post(f'/api/ecritures/{e["id"]}/valider'));lignes.append(next(l['id'] for l in e['lignes'] if l['compte']=='5141'))
+      imp=ok(api.post('/api/rapprochement/import',json={'compte':'5141','lignes':[{'date':'2025-01-01','libelle':ref,'sens':'credit','montant':100000} for ref in ['CAP-01','SECOND-849']]}),201);rl=imp['lignes'];a=next(l for l in rl if l['libelle']=='CAP-01');b=next(l for l in rl if l['libelle']=='SECOND-849');initial=core(application,sid)
+      page.goto(application['web_url']+'/rapprochement');row=lambda ref:page.locator('tbody tr').filter(has_text=ref).filter(has=page.locator('select'))
+      with page.expect_response(lambda r:r.url.endswith(f'/api/rapprochement/{a["id"]}/rapprocher') and r.request.method=='POST') as rr:row('CAP-01').locator('select').select_option(str(lignes[0]))
+      ok(rr.value);avant=situation849(api)
+      with page.expect_response(lambda r:r.url.endswith(f'/api/rapprochement/{a["id"]}/rapprocher') and r.request.method=='POST') as rr:row('CAP-01').locator('select').select_option(str(lignes[1]))
+&gt;     assert rr.value.status==409;expect(page.get_by_text('Dérapprochez',exact=False)).to_be_visible();assert situation849(api)==avant and core(application,sid)==initial
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: assert 200 == 409
+E      +  where 200 = &lt;Response url='http://127.0.0.1:54062/api/rapprochement/1/rapprocher' request=&lt;Request url='http://127.0.0.1:54062/api/rapprochement/1/rapprocher' method='POST'&gt;&gt;.status
+E      +    where &lt;Response url='http://127.0.0.1:54062/api/rapprochement/1/rapprocher' request=&lt;Request url='http://127.0.0.1:54062/api/rapprochement/1/rapprocher' method='POST'&gt;&gt; = &lt;playwright._impl._sync_base.EventInfo object at 0x0000017A9E5E91D0&gt;.value
+
+Test\test_e2e_cahier_pointage849_isole.py:24: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_pointage849_isole" name="test_849_remplacement_lien_et_double_utilisation[390]" time="10.459"><failure message="AssertionError: assert 200 == 409&#10; +  where 200 = &lt;Response url='http://127.0.0.1:54062/api/rapprochement/3/rapprocher' request=&lt;Request url='http://127.0.0.1:54062/api/rapprochement/3/rapprocher' method='POST'&gt;&gt;.status&#10; +    where &lt;Response url='http://127.0.0.1:54062/api/rapprochement/3/rapprocher' request=&lt;Request url='http://127.0.0.1:54062/api/rapprochement/3/rapprocher' method='POST'&gt;&gt; = &lt;playwright._impl._sync_base.EventInfo object at 0x0000017A9E8989D0&gt;.value">application = {'api_url': 'http://127.0.0.1:54062', 'web_url': 'http://127.0.0.1:54063', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_zaj3mwj1'), 'nonce': '2858881a9c2549268d053c8b5e65a160', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette849_reproduction/test_849_remplacement_lien_et_1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_849_remplacement_lien_et_double_utilisation(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'pointage849') as (api,page,sid,preuve):
+      b=DATA['banque'];ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201);lignes=[]
+      for ref in ['CAP-01','TEMOIN-849']:
+       e=ok(api.post('/api/ecritures',json={'date':'2025-01-01','date_piece':'2025-01-01','journal':'BQ','reference':ref,'libelle':'Témoin fictif pointage849','lignes':[{'compte':'5141','debit':100000},{'compte':'1111','credit':100000}]}),201);ok(api.post(f'/api/ecritures/{e["id"]}/valider'));lignes.append(next(l['id'] for l in e['lignes'] if l['compte']=='5141'))
+      imp=ok(api.post('/api/rapprochement/import',json={'compte':'5141','lignes':[{'date':'2025-01-01','libelle':ref,'sens':'credit','montant':100000} for ref in ['CAP-01','SECOND-849']]}),201);rl=imp['lignes'];a=next(l for l in rl if l['libelle']=='CAP-01');b=next(l for l in rl if l['libelle']=='SECOND-849');initial=core(application,sid)
+      page.goto(application['web_url']+'/rapprochement');row=lambda ref:page.locator('tbody tr').filter(has_text=ref).filter(has=page.locator('select'))
+      with page.expect_response(lambda r:r.url.endswith(f'/api/rapprochement/{a["id"]}/rapprocher') and r.request.method=='POST') as rr:row('CAP-01').locator('select').select_option(str(lignes[0]))
+      ok(rr.value);avant=situation849(api)
+      with page.expect_response(lambda r:r.url.endswith(f'/api/rapprochement/{a["id"]}/rapprocher') and r.request.method=='POST') as rr:row('CAP-01').locator('select').select_option(str(lignes[1]))
+&gt;     assert rr.value.status==409;expect(page.get_by_text('Dérapprochez',exact=False)).to_be_visible();assert situation849(api)==avant and core(application,sid)==initial
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: assert 200 == 409
+E      +  where 200 = &lt;Response url='http://127.0.0.1:54062/api/rapprochement/3/rapprocher' request=&lt;Request url='http://127.0.0.1:54062/api/rapprochement/3/rapprocher' method='POST'&gt;&gt;.status
+E      +    where &lt;Response url='http://127.0.0.1:54062/api/rapprochement/3/rapprocher' request=&lt;Request url='http://127.0.0.1:54062/api/rapprochement/3/rapprocher' method='POST'&gt;&gt; = &lt;playwright._impl._sync_base.EventInfo object at 0x0000017A9E8989D0&gt;.value
+
+Test\test_e2e_cahier_pointage849_isole.py:24: AssertionError</failure></testcase></testsuite></testsuites>

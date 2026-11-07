@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-29",
+  "nombre_distinct": 16,
+  "campagne_unique_verte": true,
+  "repartition": {
+    "API_SQL_PostgreSQL_natif_isole": 10,
+    "CLI_refus_cible_externe": 1,
+    "restauration_PostgreSQL_native_isolee": 2,
+    "unitaires": 3
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_reprise_backend951_isole::test_951_redemarrage_backend_brouillon_puis_validation_unique",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_installation_vierge_104::test_104_installation_rejeu_acl_et_aucune_base_reelle",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_installation_vierge_104::test_104_cli_refuse_url_externe_avant_cluster",
+      "famille": "CLI_refus_cible_externe",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_pdf_exact_logo_source_audit_rejeu_et_comptabilite",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_brouillon_proforma_achat_non_acceptes[params0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_brouillon_proforma_achat_non_acceptes[params1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_brouillon_proforma_achat_non_acceptes[params2]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_societes_lecture_et_revocation",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_double_clic_concurrent_et_payload_non_substituable",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_gardes_sql_role_limite_et_aucune_substitution",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_factures_conservation923_isole::test_923_absence_migration_n_empeche_pas_pdf_habituel",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_factures_conservation923_restauration_isole::test_923_restauration_native_copie_et_droits",
+      "famille": "restauration_PostgreSQL_native_isolee",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_sauvegarde_pieces_documents_isole::test_dump_restore_db_et_pieces_bl_homonymes_permissions_reelles",
+      "famille": "restauration_PostgreSQL_native_isolee",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_fact11_production_hardening::test_production_refuse_secrets_db_par_defaut_en_prod",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_fact11_production_hardening::test_pieces_jointes_sont_bornees_au_tenant_et_protegees_du_path_traversal",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    },
+    {
+      "id": "Test.test_fact11_production_hardening::test_audit_applicatif_est_append_only_et_journalise_toutes_les_mutations_http",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "ops951_final"
+    }
+  ],
+  "selection": [
+    "Test/test_reprise_backend951_isole.py",
+    "Test/test_installation_vierge_104.py",
+    "Test/test_factures_conservation923_isole.py",
+    "Test/test_factures_conservation923_restauration_isole.py",
+    "Test/test_sauvegarde_pieces_documents_isole.py",
+    "Test/test_fact11_production_hardening.py::test_production_refuse_secrets_db_par_defaut_en_prod",
+    "Test/test_fact11_production_hardening.py::test_pieces_jointes_sont_bornees_au_tenant_et_protegees_du_path_traversal",
+    "Test/test_fact11_production_hardening.py::test_audit_applicatif_est_append_only_et_journalise_toutes_les_mutations_http"
+  ],
+  "duree_xml_s": 233.51,
+  "code_sortie": 0,
+  "execution": "PYTHON_DOTENV_DISABLED=1 ;SECRET_KEY fictive,DATABASE_URL inerte port1 ;python .codex-tests/lancer_session.py ops951_final <selection> ;fixtures PG/serveurs nonce.",
+  "historique_non_additionne": [
+    "Cible1 :corpsréussi maiserreurdefin de fixture,code1,34.40s :nouveauprocessusarrêtétroptôtavantcontrôlerôleruntime. Pasdesuccèsglobal.",
+    "Cyclepropriétairecorrigépar enregistrementduPopen aucontexte,quilecontrôlepuisl’arrête. Cible2 :1réussi/43.18s,code0. Répétitionsnonadditionnées."
+  ],
+  "preuves": {
+    "Test/preuves_mvp951/conservation923_restauration.json": "d12381a0eb5540584fc1c2f2f55dfab4977d956e119277cc94e9e90159a7f21a",
+    "Test/preuves_mvp951/installation951_preuve.json": "55fd710ddc54ac6a3368b04ec6f01823a8289a750728348aa3b95028111d8543",
+    "Test/preuves_mvp951/ops951_cible.xml": "d9ef0ab634978c8d4b6a23e681ae54fec61abec23b5a57acd5e6346c810f2176",
+    "Test/preuves_mvp951/ops951_cible2.xml": "a802cbad74b29852febf71b468165ac68b108f0489b68f0384c4f9678428f8d7",
+    "Test/preuves_mvp951/ops951_final.xml": "84806860ad17f007534429fdfb393fa2cdfd53fac500b4a700ac5c9e347f2a30",
+    "Test/preuves_mvp951/processus951_verification.json": "e0ec805c5c0ac7f17f350fb121c62e3697d44da1702d7f243a44bab30160d721",
+    "Test/preuves_mvp951/reprise951_preuve.json": "09b0949c9198f62fe4e632414fe20f8d14f8a61a0eea293df76818d65abfb065",
+    "Test/preuves_mvp951/installation104_native.md": "4fb5c90b7cf30f55a0f3cd6e24b7e350f1e326d91b50ac4aae5946e9cf9c0152"
+  },
+  "rattachement": "Test/QUALIFICATION_FICHES_951.json",
+  "fiches_qualifiees": 2,
+  "candidat": "Test/CANDIDAT_MVP_951.json",
+  "nombre_fichiers_candidat": 549,
+  "produit_identique_au_931": false,
+  "build": "Non relancé951 :produit949 inchangé ;dernier réel public945214modules/6.55s,code0.",
+  "anciens_documents_preserves": 336,
+  "aucune_base_reelle": true,
+  "restauration": "Non rejouée ;preuves antérieures distinctes.",
+  "limites": "Fiches001–004Partiel :laboratoireséphémères,banc104+125etjeuxfictifs,sansrestauration del’archiveannuelle337010/287730ni sauvegardeconfigurationréelle.006/008Bloqué(source) :cibleHTTPS/secrets/avisresponsable nonvalidés,point6humainmaintenu. Incidents enpleineécriture etpannes système nonexhaustifs. Aucun PostgreSQLréel,dumpou.envlivré ;aucun statut humain rempli.",
+  "produit_identique_au_949": true,
+  "produit_reference": "949",
+  "fiches_rattachees": 8,
+  "fiches_par_statut": {
+    "Réussi": 2,
+    "Partiel": 4,
+    "Bloqué (source)": 2
+  },
+  "documents_generes": {
+    "docs/recette/MODE_EMPLOI_CORRECTIFS_943_951.docx": "6d787c8856e281a7766b181c9a0081dd8378db20cf4d132b2151b105561bdd3a",
+    "docs/recette/MODE_EMPLOI_CORRECTIFS_943_951.pdf": "d272024325991559c3d12676f3b2032661bdc8349f35d09a71ede0769b1d8035"
+  },
+  "validation_documents": "PDF9pages,textes essentiels relus par pypdf ;WordOpenXML CRC/XML/relations/styles/tableaux vérifiés,pas ouverture visuelleMicrosoftWord."
+}

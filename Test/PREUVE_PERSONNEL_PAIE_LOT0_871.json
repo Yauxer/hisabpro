@@ -1,0 +1,126 @@
+{
+  "lot": "0",
+  "statut": "Audit/conception,aucune nouvelle fonction métier",
+  "campagnes": [
+    {
+      "campagne": "personnel871_unitaires",
+      "cas": 69,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 12.05,
+      "code": 0,
+      "commande": "Test/test_paie_grh_service.py Test/test_grh_absences_service.py Test/test_paie_referentiel_service.py"
+    },
+    {
+      "campagne": "personnel871_api_pg",
+      "cas": 132,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 159.0,
+      "code": 0,
+      "commande": "Test/test_paie_grh_postgres.py Test/test_grh_absences_postgres.py Test/test_paie_referentiel_postgres.py Test/test_parametres_paie_finis.py"
+    },
+    {
+      "campagne": "personnel871_navigateur",
+      "cas": 7,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 118.53,
+      "code": 0,
+      "commande": "Test/test_e2e_paie_grh_isole.py Test/test_e2e_paie_referentiel_isole.py Test/test_e2e_grh_absences_isole.py"
+    },
+    {
+      "campagne": "personnel871_constats",
+      "cas": 3,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 27.48,
+      "code": 0,
+      "commande": "Test/test_audit_personnel_paie871_isole.py"
+    },
+    {
+      "campagne": "personnel871_dependances",
+      "cas": 30,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes_junit": 163.85,
+      "code": 0,
+      "commande": "Test/test_demarrage_grh_base_existante_postgres.py Test/test_avances_salaries_isole.py"
+    }
+  ],
+  "total": 241,
+  "repartition": {
+    "unitaires_et_schemas": 105,
+    "API_SQL_bootstrap_PG_natif_isole": 127,
+    "Edge_API_PG_natif_isole": 9
+  },
+  "build": {
+    "code": 0,
+    "duree_vite_secondes": 11.51,
+    "avertissements": [
+      "chunk size",
+      "xlsx import statique/dynamique"
+    ]
+  },
+  "compilation_python": {
+    "fichiers": 2,
+    "code": 0
+  },
+  "inventaire_reproductible": true,
+  "rbac_capacites": 25,
+  "constats": {
+    "nature": "Caractérisation existant, pas validation master",
+    "constats": [
+      {
+        "id": "C01",
+        "doublons_matricule_meme_societe_acceptes": [
+          201,
+          201
+        ],
+        "creation_active_sans_approbation": true,
+        "PUT_salaire_immediat": 200,
+        "ecritures_creees": 0,
+        "ecart_master": "Unicité, activation et salaire à date d’effet à construire."
+      },
+      {
+        "id": "C02",
+        "lecture_liste": 200,
+        "montant_salaire_retourne_sans_masque": true,
+        "numero_cnss_retourne_sans_masque": true,
+        "creation_refusee_lecture": 403,
+        "ecart_master": "Lecture financière/documentaire à habiliter et projections API à masquer."
+      },
+      {
+        "id": "C03",
+        "reglement_sans_facture_refuse": 422,
+        "ecritures_creees": 0,
+        "consequence": "Adapter trésorerie hors facturation ; aucune fausse facture salariale."
+      }
+    ]
+  },
+  "limites": [
+    "Aucun PostgreSQL utilisateur contacté",
+    "Caractérisations AS-IS ne sont pas les critères du futur master",
+    "Pas de nouvelle migration ni taux validé",
+    "Aucune validation des futurs écrans ou moteurs"
+  ],
+  "preuves": {
+    "Test/preuves_personnel871/constats.json": "85d0ac56aed04887089cea96f9dc9810a77e7a9aa57442158a5a64a2b247c614",
+    "Test/preuves_personnel871/personnel871_api_pg.xml": "702d5b0c4b7affacd6a59e009028f036d43e236c9561ddfc831040cbe50e4e9e",
+    "Test/preuves_personnel871/personnel871_constats.xml": "5cf8e8e5a837dcdac7603ae11498988c7c2636d332ec4ee87770578cba74e0a8",
+    "Test/preuves_personnel871/personnel871_dependances.xml": "6ed3666ad44732e306663949cba004d69e446a372b23f7af96622ec349c824fc",
+    "Test/preuves_personnel871/personnel871_navigateur.xml": "ea16cc29ba19881c42208948219d7a88fe19e42c27fb8dc5f99c5dab8862329d",
+    "Test/preuves_personnel871/personnel871_unitaires.xml": "9162e9127d7c84e5cfb67cd73c64f347db1ebc85e908c28e4bb2633b1649c715"
+  },
+  "candidat_conserve": {
+    "fichier": "Test/CANDIDAT_FACTURATION_COMPTABILITE_865.json",
+    "sources": 463,
+    "sha256_global": "60ac726f05e25fc2942e842a55681c253166ef8a0cd3025be486a89777767541",
+    "sources_produit_inchangees": true
+  }
+}

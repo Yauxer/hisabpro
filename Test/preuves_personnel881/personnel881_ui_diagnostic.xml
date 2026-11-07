@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="60.112" timestamp="2026-10-28T03:14:25.617596+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_personnel881_isole" name="test_881_deux_profils_personnel_sans_comptabilite_edge[1440]" time="57.693"><failure message="playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for navigation to &quot;**/personnel-paie/personnel&quot; until 'load'&#10;  navigated to &quot;http://127.0.0.1:65081/&quot;&#10;============================================================">application = {'api_url': 'http://127.0.0.1:65080', 'web_url': 'http://127.0.0.1:65081', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_jwmop_7z'), 'nonce': '476672428a734081be62c91f0bb62c42', ...}, ...}
+largeur = 1440
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_881_deux_profils_personnel_sans_comptabilite_edge(application,largeur):
+        app=application
+        with closing(client(app)[0]) as admin:
+            prep,u,mail,secret=role_client(app,admin,'personnel');valid,v,mailv,secretv=role_client(app,admin,'personnel')
+            with closing(prep),closing(valid):
+                for uid in (u['id'],v['id']):
+                    for cap in CAPS:grant(admin,uid,cap)
+                activer(admin)
+                with sync_playwright() as p:
+                    browser=p.chromium.launch(executable_path=chromium_executable(),headless=True)
+                    try:
+                        a=browser.new_context(viewport={'width':largeur,'height':1000});b=browser.new_context(viewport={'width':largeur,'height':1000})
+                        page=a.new_page();review=b.new_page();erreurs,serveur=observer(page,app['api_url']);ev,sv=observer(review,app['api_url'])
+                        appels=[];page.on('request',lambda r:appels.append(r.url.removeprefix(app['api_url']).split('?')[0]) if r.url.startswith(app['api_url']) else None)
+&gt;                       connexion_personnel(page,app,mail,secret);connexion_personnel(review,app,mailv,secretv)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_personnel881_isole.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_e2e_personnel881_isole.py:20: in connexion_personnel
+    page.wait_for_url('**/personnel-paie/personnel');expect(page.get_by_role('button',name='Créer un salarié',exact=True)).to_be_visible()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\playwright\sync_api\_generated.py:10057: in wait_for_url
+    self._sync(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_page.py:590: in wait_for_url
+    return await self._main_frame.wait_for_url(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_frame.py:289: in wait_for_url
+    async with self.expect_navigation(
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_event_context_manager.py:33: in __aexit__
+    await self._future
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    async def continuation() -&gt; Optional[Response]:
+&gt;       event = await waiter.result()
+                ^^^^^^^^^^^^^^^^^^^^^
+E       playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+E       =========================== logs ===========================
+E       waiting for navigation to "**/personnel-paie/personnel" until 'load'
+E         navigated to "http://127.0.0.1:65081/"
+E       ============================================================
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_frame.py:265: TimeoutError</failure></testcase></testsuite></testsuites>

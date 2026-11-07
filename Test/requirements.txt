@@ -1,0 +1,6 @@
+# Dépendances des tests ; les dépendances applicatives restent dans le backend.
+pytest==9.1.1
+pypdf==6.19.0
+playwright==1.63.0
+httpx==0.28.1
+openpyxl==3.1.5

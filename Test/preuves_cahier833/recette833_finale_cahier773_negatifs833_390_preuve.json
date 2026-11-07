@@ -1,0 +1,172 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_wyhw26kw",
+  "nonce": "921ff2462d76482c9b29fedc2af0a5de",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [
+    {
+      "id": "HP-NEG-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-008",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "negatifs833": {
+    "HP-NEG-001": {
+      "status": 400,
+      "corps": {
+        "detail": "Email déjà utilisé"
+      }
+    },
+    "HP-NEG-002": {
+      "status": 400,
+      "corps": {
+        "detail": "Le mot de passe doit contenir au moins 8 caractères"
+      }
+    },
+    "HP-NEG-003": {
+      "status": 422,
+      "corps": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "ice"
+            ],
+            "msg": "Value error, L’ICE doit contenir exactement 15 chiffres",
+            "input": "12345678901234",
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      }
+    },
+    "HP-NEG-004": {
+      "status": 409,
+      "corps": {
+        "detail": "L'exercice 2026 existe déjà."
+      },
+      "controle_chevauchement": {
+        "status": 409,
+        "corps": {
+          "detail": "Les dates chevauchent l'exercice 2025."
+        }
+      }
+    },
+    "HP-NEG-005": {
+      "status": 400,
+      "corps": {
+        "detail": "Un exercice comptable ne peut pas dépasser 12 mois."
+      }
+    },
+    "HP-NEG-006": {
+      "status": 422,
+      "corps": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "lignes"
+            ],
+            "msg": "Value error, Écriture non équilibrée : débit=100.0, crédit=99.0",
+            "input": [
+              {
+                "compte": "5141",
+                "debit": 100
+              },
+              {
+                "compte": "1111",
+                "credit": 99
+              }
+            ],
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      }
+    },
+    "HP-NEG-007": {
+      "status": 422,
+      "corps": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "lignes",
+              0,
+              "prix_unitaire"
+            ],
+            "msg": "Value error, Les montants ne peuvent pas être négatifs",
+            "input": -10,
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      }
+    },
+    "HP-NEG-008": {
+      "status": 422,
+      "corps": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "lignes",
+              0,
+              "tva"
+            ],
+            "msg": "Value error, Le pourcentage doit être compris entre 0 et 100",
+            "input": 101,
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "absence_mutation833": {
+    "ecritures": 0,
+    "factures": 0,
+    "identite_conservee": true,
+    "calendrier_conserve": true,
+    "aucune_societe_utilisateur_orphelin": true
+  }
+}

@@ -1,0 +1,190 @@
+/* Layout global HisabPro */
+
+.layout {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 44px;
+  flex-shrink: 0;
+  background: var(--bg-primary);
+  border-bottom: 0.5px solid var(--border-light);
+}
+
+.exerciceBar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.exerciceBar > i {
+  font-size: 13px;
+  color: var(--text-tertiary);
+}
+
+.exerciceLabel {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-right: 2px;
+}
+
+.navExerciceBtn {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid var(--border-light);
+  border-radius: 7px;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.navExerciceBtn:hover:not(:disabled) {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.navExerciceBtn:disabled {
+  opacity: .35;
+  cursor: not-allowed;
+}
+
+.exerciceSelectWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.exerciceSelect {
+  appearance: none;
+  min-width: 132px;
+  height: 30px;
+  padding: 0 30px 0 10px;
+  border: 0.5px solid var(--border-medium);
+  border-radius: 7px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
+
+.exerciceSelect:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 2px rgba(24, 95, 165, .10);
+}
+
+.exerciceSelectWrap > i {
+  position: absolute;
+  right: 9px;
+  font-size: 12px;
+  color: var(--text-tertiary);
+  pointer-events: none;
+}
+
+.exerciceStatut {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.statut_ouvert {
+  background: #EAF3DE;
+  color: #3B6D11;
+}
+
+.statut_a_venir {
+  background: #E6F1FB;
+  color: #185FA5;
+}
+
+.statut_cloture {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.topbarRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.periodeLabel {
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+
+/* Zone de contenu — scrollable ici uniquement */
+.content {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 900px) {
+  .periodeLabel { display: none; }
+  .exerciceStatut { display: none; }
+  .topbar { padding: 0 12px; }
+}
+
+
+.menuMobile, .voileNavigation { display: none; }
+@media (max-width: 767px) {
+  .topbar { height: auto; min-height: 44px; flex-wrap: wrap; gap: 6px; padding: 6px 10px; }
+  .topbarRight { max-width: 100%; margin-left: auto; }
+  .exerciceLabel { display: none; }
+  .menuMobile { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+    width: 34px; height: 34px; border: .5px solid var(--border-medium); border-radius: 7px;
+    background: var(--bg-primary); color: var(--text-primary); cursor: pointer; }
+  .voileNavigation { display: block; position: fixed; inset: 0; z-index: 1100;
+    background: rgba(0,0,0,.35); border: 0; padding: 0; cursor: pointer; }
+}
+
+/* Laisser le document paginer au-delà des conteneurs de l'écran. */
+@media print {
+  .layout,
+  .main,
+  .content {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  .layout > aside,
+  .topbar,
+  .voileNavigation {
+    display: none !important;
+  }
+}

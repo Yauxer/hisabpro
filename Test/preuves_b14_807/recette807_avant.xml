@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="61.522" timestamp="2026-10-25T12:08:32.573533+01:00" hostname="Taiyou"><testcase classname="Test.test_etic_b14_liquidations807_isole" name="test_807_b14_cinquante_operations_od_du_cahier" time="47.182"><failure message="AssertionError: {'nature': 'A. TVA facturée / collectée', 'solde_debut': 0.0, 'operations': 0.0, 'declarations': 0.0, ...}&#10;assert [Decimal('0.0...ecimal('0.0')] == [Decimal('339... Decimal('0')]&#10;  &#10;  At index 0 diff: Decimal('0.0') != Decimal('33900')&#10;  Use -v to get more diff">application = {'api_url': 'http://127.0.0.1:54388', 'web_url': 'http://127.0.0.1:54389', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_vt252jy4'), 'nonce': '2523c8e40ff94b2ba114fe074ead8500', ...}, ...}
+
+    def test_807_b14_cinquante_operations_od_du_cahier(application):
+     preuve={'source_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'erreur':None}
+     try:
+      with closing(client(application)) as api:
+       tiers={}
+       for t in DATA['tiers']:
+        tiers[t['code']]=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':t['type'],('compte_client' if t['type']=='client' else 'compte_fournisseur'):t['compte']}),201)
+       for o in sorted(DATA['operations'],key=lambda x:x['date']):
+        lignes=[{'compte':l['compte'],'debit':l['debit'],'credit':l['credit'],'libelle':o['description'],**({'tiers_id':tiers[l['tiers']]['id']} if l['tiers'] else {})} for l in o['lignes']]
+        poster(api,o['journal'],o['date'],lignes,o['reference_recette'])
+       avant=ok(api.get('/api/ecritures',params={'exercice':2025}));assert len(avant)==50
+       s=b14(api);preuve['b14']=s
+       lignes=s['automatique']['lignes'];a,b,charges,immo,c=lignes
+       for row,operations,declarations,fin in [(a,'33900','33900','0'),(b,'11680','11600','80'),(charges,'6880','6800','80'),(immo,'4800','4800','0'),(c,'22220','22300','-80')]:
+&gt;       assert [D(str(row[k])) for k in ['operations','declarations','solde_fin']]==list(map(D,[operations,declarations,fin])),row
+E       AssertionError: {'nature': 'A. TVA facturée / collectée', 'solde_debut': 0.0, 'operations': 0.0, 'declarations': 0.0, ...}
+E       assert [Decimal('0.0...ecimal('0.0')] == [Decimal('339... Decimal('0')]
+E         
+E         At index 0 diff: Decimal('0.0') != Decimal('33900')
+E         Use -v to get more diff
+
+Test\test_etic_b14_liquidations807_isole.py:52: AssertionError</failure></testcase></testsuite></testsuites>

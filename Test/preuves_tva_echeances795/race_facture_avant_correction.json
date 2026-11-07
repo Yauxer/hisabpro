@@ -1,0 +1,20 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_tvl57k36",
+  "nonce": "1beb7fa1df3e493f8b4530138732fa20",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError('Locator expected to have count \\'1\\'\\nActual value: 0 \\nCall log:\\n  - Expect \"to_have_count\" locator(\"tbody tr\").filter(has_text=\"Client Services Recette\") with timeout 5000ms\\n  - waiting for locator(\"tbody tr\").filter(has_text=\"Client Services Recette\")\\n    14 × locator resolved to 0 elements\\n       - unexpected value \"0\"\\n')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "race_facture795": {
+    "get_reel_avant": [],
+    "get_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "post_reel201_id": 1,
+    "api_reelle_apres_ids": [
+      1
+    ],
+    "retard": "Transport GET réel retenu, données non modifiées ;POST etDELETE réels. Aucun calcul métier simulé."
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-29",
+  "nature": "Rattachement automatique ;ne renseigne pas la recette utilisateur",
+  "source_humaine": "docs/recette/MODE_EMPLOI_TIERS759.xlsx",
+  "source_humaine_sha256": "040c93d8ed3e611b0c628192154a961fb5c438614c48745a7fcdaaf73c5561f7",
+  "fiches": [
+    {
+      "fiche": "TIERS759-01",
+      "objectif_source": "Ouvrir une préparation fictive MAD et parcourir les trois rubriques du formulaire tiers.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface",
+      "portee": "Préparation fictive MAD et trois rubriques ouvertes ;admin1440,comptable390,lecteur390.",
+      "tests_executés": [
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[admin-1440]",
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[comptable-390]",
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[lecture-390]"
+      ],
+      "limites": "Montants et événements déclarés sur pièces fictives ;aucun taux fiscal implicite,paie,écriture générée ou dépôt officiel. Fiche06 contrôles de doublons/provenance par API ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TIERS759-02",
+      "objectif_source": "Saisir exactement les trois rubriques ci-dessus et conserver.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Trois rubriques saisies/conservées ;1400/740/37net déclarés,deux bénéficiaires et contrôle de préparation interne sans écriture.",
+      "tests_executés": [
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[admin-1440]",
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[comptable-390]",
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[lecture-390]",
+        "Test.test_remunerations_tiers759_isole::test_759_versions_rejeu_source_figee_sans_journal"
+      ],
+      "limites": "Montants et événements déclarés sur pièces fictives ;aucun taux fiscal implicite,paie,écriture générée ou dépôt officiel. Fiche06 contrôles de doublons/provenance par API ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TIERS759-03",
+      "objectif_source": "Modifier seulement un brouillon puis consulter l’ancienne version.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Brouillon999sans changement des totaux conservés ;ancienne version relue après nouvelle identité ;rejeu identique et aucun recalcul historique.",
+      "tests_executés": [
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[admin-1440]",
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[comptable-390]",
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[lecture-390]",
+        "Test.test_remunerations_tiers759_isole::test_759_versions_rejeu_source_figee_sans_journal"
+      ],
+      "limites": "Montants et événements déclarés sur pièces fictives ;aucun taux fiscal implicite,paie,écriture générée ou dépôt officiel. Fiche06 contrôles de doublons/provenance par API ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TIERS759-04",
+      "objectif_source": "Sur copie, vider CNSS puis une somme soumise ; conserver des versions distinctes.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "CNSS absente conservée et corrigée dans UI ;API somme soumise inconnue conservée null,versions distinctes reconsultables,puis reprise complète sans modification du témoin définitif.",
+      "tests_executés": [
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_nan_refuse_identite_incomplete_puis_reprise_sans_f5[NaN]",
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_nan_refuse_identite_incomplete_puis_reprise_sans_f5[Infinity]",
+        "Test.test_qualification_tiers935_isole::test_935_conserver_identite_et_somme_inconnues_sans_zero_ni_ecriture"
+      ],
+      "limites": "Montants et événements déclarés sur pièces fictives ;aucun taux fiscal implicite,paie,écriture générée ou dépôt officiel. Fiche06 contrôles de doublons/provenance par API ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TIERS759-05",
+      "objectif_source": "Sur copie, saisir NaN puis Infinity dans Somme comptabilisée et tenter de conserver ; corriger ensuite1000.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Vraies saisies NaN/Infinity,POST422 sans mutation,valeur invalide maintenue pour correction,puis1000 accepté sans F5.",
+      "tests_executés": [
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_nan_refuse_identite_incomplete_puis_reprise_sans_f5[NaN]",
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_nan_refuse_identite_incomplete_puis_reprise_sans_f5[Infinity]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise-NaN]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise-Infinity]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise-True]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise--1]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise-0.001]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise-10000000000000]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[comptabilise-1e9999]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[soumis-NaN]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[retenu-NaN]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[retenu-601]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[beneficiaire_ref-B-INCONNU]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[date_comptabilisation-2026-02-30]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[date_evenement-20260710]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[sens-Autre]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[categorie-Salaire]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[evenement-Date facture]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[reference_source-]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[source_revue-True]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_rejets_sans_mutation[inconnu-0]"
+      ],
+      "limites": "Montants et événements déclarés sur pièces fictives ;aucun taux fiscal implicite,paie,écriture générée ou dépôt officiel. Fiche06 contrôles de doublons/provenance par API ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TIERS759-06",
+      "objectif_source": "Sur copie, dupliquer un bénéficiaire puis une référence de mouvement ; retirer les doublons et supprimer l’origine de la correction.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "API réelle",
+      "portee": "Bénéficiaire double,source de mouvement double,correction sans origine et autres structures incohérentes refusés422,sources inchangées ;gestes de formulaire négatifs non rejoués935.",
+      "tests_executés": [
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[omission]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[profil_double]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[benef_double]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[source_double]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[correction_sans_origine]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[correction_meme_origine]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[allocation_avec_origine]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[absence_contradictoire]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[sans_benef_ref]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[regime_inconnu]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[neant_contradictoire]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[montant_absence]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[date_absence]",
+        "Test.test_remunerations_tiers759_isole::test_759_api_structure_et_provenance[declaration_injectee]"
+      ],
+      "limites": "Montants et événements déclarés sur pièces fictives ;aucun taux fiscal implicite,paie,écriture générée ou dépôt officiel. Fiche06 contrôles de doublons/provenance par API ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TIERS759-07",
+      "objectif_source": "Consulter avec lecture, refaire avec comptable sur390px et tenter un accès depuis une autre société.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface et API",
+      "portee": "Lecteur et comptable390,commandes selon rôle ;autre société404,lecture autorisée et écriture403 ;concurrence/rejeu et devise contrôlés.",
+      "tests_executés": [
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[admin-1440]",
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[comptable-390]",
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[lecture-390]",
+        "Test.test_remunerations_tiers759_isole::test_759_roles_societes_hash_concurrence"
+      ],
+      "limites": "Montants et événements déclarés sur pièces fictives ;aucun taux fiscal implicite,paie,écriture générée ou dépôt officiel. Fiche06 contrôles de doublons/provenance par API ;gestes humains à faire. Réserves de cession et production inchangées."
+    },
+    {
+      "fiche": "TIERS759-08",
+      "objectif_source": "Télécharger ZIP ; ouvrir PDF/Excel/JSON/manifeste, joindre la pièce fictive et consulter l’ancienne version.",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Interface,API et restauration native",
+      "portee": "ZIP/PDF/Excel/JSON/manifeste,logo et ancienne version vérifiés ;pièce PDF fictive jointe et relue après restauration froide83tables,sans écriture.",
+      "tests_executés": [
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[admin-1440]",
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[comptable-390]",
+        "Test.test_e2e_remunerations_tiers759_isole::test_759_formulaire_natif_roles_versions_exports[lecture-390]",
+        "Test.test_remunerations_tiers759_isole::test_759_exports_sources_logo_sans_ecriture",
+        "Test.test_restauration_tiers759_isole::test_759_restaurer_cm_qualifiee_et_tous_complements",
+        "Test.test_remunerations_tiers759_isole::test_759_versions_rejeu_source_figee_sans_journal"
+      ],
+      "limites": "Montants et événements déclarés sur pièces fictives ;aucun taux fiscal implicite,paie,écriture générée ou dépôt officiel. Fiche06 contrôles de doublons/provenance par API ;gestes humains à faire. Réserves de cession et production inchangées."
+    }
+  ],
+  "apres": {
+    "Réussi": 203,
+    "Partiel": 6,
+    "Non qualifié par fiche": 54,
+    "Bloqué (source)": 9
+  }
+}

@@ -1,0 +1,50 @@
+[
+  [
+    "PA-SOC01",
+    "Ouvrir le référentiel vide",
+    "Copie isolée restaurable, Personnel protégé et module actif ; habilitations identité/rémunération et proposer pour le préparateur.",
+    "Migration116 après115 ; société fictive du cahier887.",
+    "Faire installer116 sur copie. Ouvrir Personnel & Paie > 04 · Charges sociales. Consulter les avertissements.",
+    "Écran accessible, référentiel initial vide ; aucune valeur légale inventée ni régime attribué aux salariés."
+  ],
+  [
+    "PA-SOC02",
+    "Créer une branche exacte et inspecter sa version",
+    "PA-SOC01 ; compte préparateur.",
+    "Tous les champs du jeu ci-dessus. Sources, article, URL, empreinte et consultation laissés vides puisque qualification À vérifier.",
+    "Créer une branche. Saisir exactement les données. Laisser les champs facultatifs vides. Enregistrer la proposition, puis Consulter B1_FICTIVE.",
+    "Version1 Proposée visible immédiatement ; taux1.234567 et2.5 conservés sans flottant. Deux composants distincts. Le préparateur ne peut pas approuver sa proposition."
+  ],
+  [
+    "PA-SOC03",
+    "Faire approuver par une personne indépendante",
+    "Deuxième utilisateur habilité approuver et lire identité/rémunération ; ne pas utiliser le compte du préparateur.",
+    "Motif Contrôle indépendant fictif897 ; référence CTRL-FICTIF897 ; confirmation d’indépendance.",
+    "Se connecter avec le décideur. Consulter B1_FICTIVE > Approuver la version1. Saisir motif, référence et confirmation, puis confirmer.",
+    "Version1 Approuvée ; acteur, date, motif et référence conservés. La qualification reste À vérifier ; aucune conformité automatique ni paie produite."
+  ],
+  [
+    "PA-SOC04",
+    "Bloquer une double couverture",
+    "B1_FICTIVE approuvée.",
+    "Nouvelle branche IPE_DOUBLE, même régime REGIME_FICTIF, mêmes paramètres, composant IPE_FICTIF seulement, début2026-01-01 ; motif Test doublon fictif897.",
+    "Créer la proposition IPE_DOUBLE et tenter de la faire approuver par le décideur indépendant.",
+    "Refus explicite : composant déjà couvert dans ce régime sur cette période. La proposition reste Proposée. Un autre régime distinct ne constitue pas le même périmètre ; cela ne justifie pas son affectation à un salarié."
+  ],
+  [
+    "PA-SOC05",
+    "Conserver l’histoire et sélectionner la date",
+    "B1_FICTIVE version1 approuvée.",
+    "Nouvelle version : début2027-01-01, taux salarial1.5, autres données inchangées ; motif Révision fictive897.",
+    "Depuis le préparateur, Consulter B1_FICTIVE > Proposer une nouvelle version. La date de début doit être vide : saisir la nouvelle date. Enregistrer et faire approuver indépendamment. Filtrer au31/12/2026 puis01/01/2027.",
+    "Ancienne version intacte et applicable en2026 ; nouvelle applicable en2027. Aucune modification d’une ancienne paie. Une fin de validité explicite ne réactive pas une version antérieure."
+  ],
+  [
+    "PA-SOC06",
+    "Vérifier qualification, sources et révocation",
+    "Copie de recette uniquement ; administrateur des habilitations et deux comptes séparés.",
+    "Branche SOURCE_TEST, régime TEST_SOURCE, composant GARANTIE_TEST. Ne qualifier aucune véritable règle avec des pièces fictives.",
+    "Vérifier qu’une proposition déclarée Validée exige référence, texte, empreinte et consultation ; une source réglementaire exige article et URL officielle HTTPS. Vérifier qu’un décideur sans habilitation dédiée ne peut pas approuver cette qualification. Ne pas inventer une preuve. Révoquer ensuite lire_remuneration au préparateur et cliquer Actualiser.",
+    "Preuves manquantes refusées ; approbation qualifiée réservée au décideur habilité ayant confirmé son contrôle. Après révocation, détail et formulaire disparaissent, API interdite. Deuxième société ne voit pas ces branches. Les tests automatisés de qualification emploient des preuves explicitement fictives sur base isolée uniquement."
+  ]
+]

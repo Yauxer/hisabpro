@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="23.827" timestamp="2026-10-28T03:10:05.928445+01:00" hostname="Taiyou"><testcase classname="Test.test_personnel881_profil_isole" name="test_881_profil_sans_droit_implicite_et_contexte_minimal" time="21.745"><failure message="AssertionError: {&quot;detail&quot;:&quot;Ce profil est réservé au Personnel ; accès aux autres modules interdit.&quot;}&#10;assert 403 == 200&#10; +  where 403 = &lt;Response [403 Forbidden]&gt;.status_code">application = {'api_url': 'http://127.0.0.1:58835', 'web_url': 'http://127.0.0.1:58836', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_nbo4hw97'), 'nonce': '73bbead7c42345b6b72a2d561d40af33', ...}, ...}
+equipe881 = {'a': &lt;httpx.Client object at 0x000001E348F42410&gt;, 'p': &lt;httpx.Client object at 0x000001E35326B6D0&gt;, 'uid': 6, 'email': 'personnel873-ae13763b@hisabpro-recette.example', ...}
+
+    def test_881_profil_sans_droit_implicite_et_contexte_minimal(application,equipe881):
+        eq=equipe881;p=eq['p']
+        assert ok(p.get('/api/auth/me'))['role']=='personnel'
+        ctx=ok(p.get(W+'/contexte'));assert set(ctx)=={'societe','module_actif'} and set(ctx['societe'])=={'id','raison_sociale'}
+        assert p.get(W).status_code==409
+        activer(eq['a'])
+&gt;       assert ok(p.get(P+'/acces'))['capacites']==[]
+               ^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_personnel881_profil_isole.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [403 Forbidden]&gt;, status = 200
+
+    def ok(r,status=200):
+&gt;       assert r.status_code==status,r.text
+E       AssertionError: {"detail":"Ce profil est réservé au Personnel ; accès aux autres modules interdit."}
+E       assert 403 == 200
+E        +  where 403 = &lt;Response [403 Forbidden]&gt;.status_code
+
+Test\test_multi_societes_runtime_isole.py:49: AssertionError</failure></testcase></testsuite></testsuites>

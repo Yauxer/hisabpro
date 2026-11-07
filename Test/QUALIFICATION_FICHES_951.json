@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-29",
+  "nature": "Rattachement automatique ;ne renseigne pas la recette utilisateur",
+  "sources_humaines_sha256": {
+    "docs/recette/CAHIER_RECETTE_HISABPRO.xlsx": "a857310bf3a2cf78413f7fcb56d280592a215478507fcae985008cafe57cf837"
+  },
+  "fiches": [
+    {
+      "fiche": "HP-EXP-001",
+      "objectif_source": "Préparer un environnement vierge isolé",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Partiel",
+      "methode": "Installation native etHTTP de laboratoire",
+      "portee": "Environnement vierge isolé etAPIaccessibles pendantfixtures,sociétésfictives ;URLpermanente de recette humaine non livrée.",
+      "tests_executés": [
+        "Test.test_installation_vierge_104::test_104_installation_rejeu_acl_et_aucune_base_reelle",
+        "Test.test_factures_conservation923_isole::test_923_pdf_exact_logo_source_audit_rejeu_et_comptabilite"
+      ],
+      "limites": "Fiches001–004Partiel :laboratoireséphémères,banc104+125etjeuxfictifs,sansrestauration del’archiveannuelle337010/287730ni sauvegardeconfigurationréelle.006/008Bloqué(source) :cibleHTTPS/secrets/avisresponsable nonvalidés,point6humainmaintenu. Incidents enpleineécriture etpannes système nonexhaustifs. Aucun PostgreSQLréel,dumpou.envlivré ;aucun statut humain rempli."
+    },
+    {
+      "fiche": "HP-EXP-002",
+      "objectif_source": "Migrations effectives",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Partiel",
+      "methode": "BancSQLnatif etrejeu125sur rôlelimité",
+      "portee": "95SQL/31rejeuxdu banc104,empreintes etzéros ;125rejouédeuxfoisavecconservationdesdonnées. Runtimeglobal etbaseutilisateur nonqualifiés ;migrationsoptionnellesPersonnel/Paie horspérimètre.",
+      "tests_executés": [
+        "Test.test_installation_vierge_104::test_104_installation_rejeu_acl_et_aucune_base_reelle",
+        "Test.test_factures_conservation923_isole::test_923_pdf_exact_logo_source_audit_rejeu_et_comptabilite",
+        "Test.test_factures_conservation923_isole::test_923_gardes_sql_role_limite_et_aucune_substitution"
+      ],
+      "limites": "Fiches001–004Partiel :laboratoireséphémères,banc104+125etjeuxfictifs,sansrestauration del’archiveannuelle337010/287730ni sauvegardeconfigurationréelle.006/008Bloqué(source) :cibleHTTPS/secrets/avisresponsable nonvalidés,point6humainmaintenu. Incidents enpleineécriture etpannes système nonexhaustifs. Aucun PostgreSQLréel,dumpou.envlivré ;aucun statut humain rempli."
+    },
+    {
+      "fiche": "HP-EXP-003",
+      "objectif_source": "Sauvegarde intégrale",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Partiel",
+      "methode": "pg_dumpnatif etfichiers physiques fictifs",
+      "portee": "Données/copiesPDF/pièces fictives sauvegardées etrelues,empreintes contrôlées ;pas de sauvegarde du dossierannuelréel ni desaconfigurationcible. Aucun dump livré.",
+      "tests_executés": [
+        "Test.test_factures_conservation923_restauration_isole::test_923_restauration_native_copie_et_droits",
+        "Test.test_sauvegarde_pieces_documents_isole::test_dump_restore_db_et_pieces_bl_homonymes_permissions_reelles"
+      ],
+      "limites": "Fiches001–004Partiel :laboratoireséphémères,banc104+125etjeuxfictifs,sansrestauration del’archiveannuelle337010/287730ni sauvegardeconfigurationréelle.006/008Bloqué(source) :cibleHTTPS/secrets/avisresponsable nonvalidés,point6humainmaintenu. Incidents enpleineécriture etpannes système nonexhaustifs. Aucun PostgreSQLréel,dumpou.envlivré ;aucun statut humain rempli."
+    },
+    {
+      "fiche": "HP-EXP-004",
+      "objectif_source": "Restauration sur base vierge dédiée",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Partiel",
+      "methode": "pg_restorenatif,deuxscénarios",
+      "portee": "84tables,schéma/données/séquences/ACL,PDFidentique etrôlelimité ;autre scénarioDB+piècestenants restauré. Pas de restaurationdes337010/287730ni del’archiveannuellebloquée20/23.",
+      "tests_executés": [
+        "Test.test_factures_conservation923_restauration_isole::test_923_restauration_native_copie_et_droits",
+        "Test.test_sauvegarde_pieces_documents_isole::test_dump_restore_db_et_pieces_bl_homonymes_permissions_reelles"
+      ],
+      "limites": "Fiches001–004Partiel :laboratoireséphémères,banc104+125etjeuxfictifs,sansrestauration del’archiveannuelle337010/287730ni sauvegardeconfigurationréelle.006/008Bloqué(source) :cibleHTTPS/secrets/avisresponsable nonvalidés,point6humainmaintenu. Incidents enpleineécriture etpannes système nonexhaustifs. Aucun PostgreSQLréel,dumpou.envlivré ;aucun statut humain rempli."
+    },
+    {
+      "fiche": "HP-EXP-005",
+      "objectif_source": "Reprise après incident",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Arrêt/redémarrage APIréel surPGnonce",
+      "portee": "BackendPopenproprearrêté entrebrouillonetvalidation,puisreparti surmêmecible/rôle/secretfictif ;brouillonconservé,validationuniqueBQ,numérostable,D=C1000,auditpréservé,processusarrêtésenfindecontexte.",
+      "tests_executés": [
+        "Test.test_reprise_backend951_isole::test_951_redemarrage_backend_brouillon_puis_validation_unique"
+      ],
+      "limites": "Fiches001–004Partiel :laboratoireséphémères,banc104+125etjeuxfictifs,sansrestauration del’archiveannuelle337010/287730ni sauvegardeconfigurationréelle.006/008Bloqué(source) :cibleHTTPS/secrets/avisresponsable nonvalidés,point6humainmaintenu. Incidents enpleineécriture etpannes système nonexhaustifs. Aucun PostgreSQLréel,dumpou.envlivré ;aucun statut humain rempli."
+    },
+    {
+      "fiche": "HP-EXP-006",
+      "objectif_source": "Sécurité déploiement",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Bloqué (source)",
+      "methode": "Gardeslocales vérifiées,revueciblemanquante",
+      "portee": "Rôlelimité,séparation dessociétés,droitsdespièces,gardesecretsDBetSQLtestés. HTTPS,origines,secrets,permissionsfichiers etexpositiondelavéritablecible nonvérifiés ;pasdemiseenproduction.",
+      "tests_executés": [
+        "Test.test_factures_conservation923_isole::test_923_societes_lecture_et_revocation",
+        "Test.test_factures_conservation923_isole::test_923_gardes_sql_role_limite_et_aucune_substitution",
+        "Test.test_fact11_production_hardening::test_production_refuse_secrets_db_par_defaut_en_prod",
+        "Test.test_fact11_production_hardening::test_pieces_jointes_sont_bornees_au_tenant_et_protegees_du_path_traversal"
+      ],
+      "limites": "Fiches001–004Partiel :laboratoireséphémères,banc104+125etjeuxfictifs,sansrestauration del’archiveannuelle337010/287730ni sauvegardeconfigurationréelle.006/008Bloqué(source) :cibleHTTPS/secrets/avisresponsable nonvalidés,point6humainmaintenu. Incidents enpleineécriture etpannes système nonexhaustifs. Aucun PostgreSQLréel,dumpou.envlivré ;aucun statut humain rempli."
+    },
+    {
+      "fiche": "HP-EXP-007",
+      "objectif_source": "Recette automatisée reproductible",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Réussi",
+      "methode": "Commandes réellement rejouées etpreuvesversionnées",
+      "portee": "Suite951code0,installation/rejeu/restauration etincidentreproductibles ;logs/XML/empreintes/candidat,buildpublic945inchangé etbilandescampagnes. Ne remplit paslesrésultatshumains.",
+      "tests_executés": [
+        "Test.test_installation_vierge_104::test_104_cli_refuse_url_externe_avant_cluster",
+        "Test.test_reprise_backend951_isole::test_951_redemarrage_backend_brouillon_puis_validation_unique",
+        "Test.test_factures_conservation923_restauration_isole::test_923_restauration_native_copie_et_droits"
+      ],
+      "limites": "Fiches001–004Partiel :laboratoireséphémères,banc104+125etjeuxfictifs,sansrestauration del’archiveannuelle337010/287730ni sauvegardeconfigurationréelle.006/008Bloqué(source) :cibleHTTPS/secrets/avisresponsable nonvalidés,point6humainmaintenu. Incidents enpleineécriture etpannes système nonexhaustifs. Aucun PostgreSQLréel,dumpou.envlivré ;aucun statut humain rempli."
+    },
+    {
+      "fiche": "HP-EXP-008",
+      "objectif_source": "Validation réglementaire finale",
+      "statut_humain_source": "Non testé",
+      "resultat_automatique": "Bloqué (source)",
+      "methode": "Limites documentées,avisresponsable absent",
+      "portee": "Aucun avisdevalidation réglementaire,schémaEDIouqualificationdudossier fournis ;aucun testnepeutconstituerune certification. Gardeslocales ne valentpasavisfiscal.",
+      "tests_executés": [
+        "Test.test_installation_vierge_104::test_104_cli_refuse_url_externe_avant_cluster"
+      ],
+      "limites": "Fiches001–004Partiel :laboratoireséphémères,banc104+125etjeuxfictifs,sansrestauration del’archiveannuelle337010/287730ni sauvegardeconfigurationréelle.006/008Bloqué(source) :cibleHTTPS/secrets/avisresponsable nonvalidés,point6humainmaintenu. Incidents enpleineécriture etpannes système nonexhaustifs. Aucun PostgreSQLréel,dumpou.envlivré ;aucun statut humain rempli."
+    }
+  ],
+  "apres": {
+    "Réussi": 248,
+    "Partiel": 12,
+    "Bloqué (source)": 12
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "nonce": "13d7bdf2d2f64984844cab7389380373",
+  "juin": {
+    "periode": {
+      "type": "mensuelle",
+      "date_debut": "2025-06-01",
+      "date_fin": "2025-06-30"
+    },
+    "regime_tva": "encaissement",
+    "parametres": {
+      "credit_ouverture": 0.0,
+      "prorata_deduction_pct": 100.0
+    },
+    "collectee": {
+      "total": 0.0,
+      "base_total": 0.0,
+      "par_taux": {}
+    },
+    "recuperable": {
+      "total": 0.0,
+      "base_total": 0.0,
+      "par_taux": {}
+    },
+    "recuperable_charges": {
+      "total": 0.0,
+      "base_total": 0.0,
+      "par_taux": {}
+    },
+    "recuperable_immobilisations": {
+      "total": 0.0,
+      "base_total": 0.0,
+      "par_taux": {}
+    },
+    "credit_tva_anterieur": 0.0,
+    "tva_due_avant_credit": 0.0,
+    "tva_due": 0.0,
+    "credit_tva": 0.0,
+    "details_ventes": [],
+    "details_achats": [],
+    "alertes": [],
+    "limitations": [
+      "retenue_tva_article_117",
+      "controle_automatique_exclusions_article_106",
+      "gel_declaration_deposee",
+      "regularisations_immobilisations_article_104"
+    ],
+    "statut_conformite": "moteur_02b_a_controler_avant_depot"
+  },
+  "juillet": {
+    "periode": {
+      "type": "mensuelle",
+      "date_debut": "2025-07-01",
+      "date_fin": "2025-07-31"
+    },
+    "regime_tva": "encaissement",
+    "parametres": {
+      "credit_ouverture": 0.0,
+      "prorata_deduction_pct": 100.0
+    },
+    "collectee": {
+      "total": 4000.0,
+      "base_total": 20000.0,
+      "par_taux": {
+        "20": {
+          "base": 20000.0,
+          "tva": 4000.0
+        }
+      }
+    },
+    "recuperable": {
+      "total": 0.0,
+      "base_total": 0.0,
+      "par_taux": {}
+    },
+    "recuperable_charges": {
+      "total": 0.0,
+      "base_total": 0.0,
+      "par_taux": {}
+    },
+    "recuperable_immobilisations": {
+      "total": 0.0,
+      "base_total": 0.0,
+      "par_taux": {}
+    },
+    "credit_tva_anterieur": 0.0,
+    "tva_due_avant_credit": 4000.0,
+    "tva_due": 4000.0,
+    "credit_tva": 0.0,
+    "details_ventes": [
+      {
+        "facture_id": null,
+        "facture_numero": null,
+        "tiers": null,
+        "origine": "acomptes_clients",
+        "regime": "encaissement",
+        "ventilation": {
+          "20": {
+            "base": 20000.0,
+            "tva": 4000.0
+          }
+        }
+      }
+    ],
+    "details_achats": [],
+    "alertes": [],
+    "limitations": [
+      "retenue_tva_article_117",
+      "controle_automatique_exclusions_article_106",
+      "gel_declaration_deposee",
+      "regularisations_immobilisations_article_104"
+    ],
+    "statut_conformite": "moteur_02b_a_controler_avant_depot"
+  },
+  "montant_ttc": 24000,
+  "date_reception": "2025-06-01",
+  "date_effective": "2025-07-05",
+  "lectures_sans_mutation_comptable": true
+}

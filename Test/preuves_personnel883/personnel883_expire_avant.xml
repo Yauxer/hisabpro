@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="26.758" timestamp="2026-10-28T03:41:33.528360+01:00" hostname="Taiyou"><testcase classname="Test.test_personnel883_regimes_isole" name="test_883_contrat_expire_ne_presume_pas_regime_du_nouveau" time="24.570"><failure message="AssertionError: {&quot;detail&quot;:&quot;Habilitation identifiants sensibles requise pour les régimes sociaux déclarés.&quot;}&#10;assert 403 == 201&#10; +  where 403 = &lt;Response [403 Forbidden]&gt;.status_code">equipe = {'a': &lt;httpx.Client object at 0x000001EC18733C90&gt;, 'b': &lt;httpx.Client object at 0x000001EC1880B9D0&gt;, 'l': &lt;httpx.Client object at 0x000001EC1880E890&gt;, 'uid': 5, ...}
+
+    def test_883_contrat_expire_ne_presume_pas_regime_du_nouveau(equipe):
+        eq=equipe;a=eq['a'];eid=identite(eq)
+        hs=grant(a,eq['uid'],'personnel.lire_identifiants_sensibles')['id'];grant(a,eq['bid'],'personnel.lire_identifiants_sensibles')
+        c=contrat(regime_amo='AMO-CDD-EXPIRE-FICTIF883');c.update(type_contrat='CDD',date_fin='2026-12-31')
+        p=proposition(eq,eid,1,'CONTRAT',c);soumettre(a,p['id'],1);approuver(eq,p['id'],1)
+        ok(a.post(P+f'/habilitations/{hs}/revoquer',json={'motif':'Fin de mission de saisie883'}))
+        nouveau=contrat('2027-01-01');nouveau['date_debut']='2027-01-01'
+&gt;       q=proposition(eq,eid,2,'CONTRAT',nouveau)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_personnel883_regimes_isole.py:106: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\test_personnel_workflow877_isole.py:86: in proposition
+    return ok(eq['a'].post(f'{W}/{eid}/modifications',json={'revision_attendue':rev,'motif':'Proposition fictive877','nature':nature,'contenu':contenu}),status)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [403 Forbidden]&gt;, status = 201
+
+    def ok(r,status=200):
+&gt;       assert r.status_code==status,r.text
+E       AssertionError: {"detail":"Habilitation identifiants sensibles requise pour les régimes sociaux déclarés."}
+E       assert 403 == 201
+E        +  where 403 = &lt;Response [403 Forbidden]&gt;.status_code
+
+Test\test_multi_societes_runtime_isole.py:49: AssertionError</failure></testcase></testsuite></testsuites>

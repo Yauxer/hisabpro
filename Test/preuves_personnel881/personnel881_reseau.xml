@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="30.236" timestamp="2026-10-28T03:23:02.716219+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_personnel881_isole" name="test_881_contexte_interrompu_reprise_reelle_edge" time="28.032"><failure message="AssertionError: Locator expected to contain text 'Contexte Personnel indisponible'&#10;Actual value: Failed to fetch &#10;Call log:&#10;  - Expect &quot;to_contain_text&quot; get_by_role(&quot;alert&quot;) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;alert&quot;)&#10;    10 × locator resolved to &lt;p role=&quot;alert&quot;&gt;Failed to fetch&lt;/p&gt;&#10;       - unexpected value &quot;Failed to fetch&quot;&#10;&#10;Aria snapshot:&#10;- alert: Failed to fetch">application = {'api_url': 'http://127.0.0.1:57219', 'web_url': 'http://127.0.0.1:57220', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_itjtapof'), 'nonce': 'a86c2617236a4330ab6d3e9a0f47dd93', ...}, ...}
+
+    def test_881_contexte_interrompu_reprise_reelle_edge(application):
+        app=application
+        with closing(client(app)[0]) as admin:
+            api,u,mail,secret=role_client(app,admin,'personnel')
+            with closing(api):
+                for cap in CAPS:grant(admin,u['id'],cap)
+                activer(admin)
+                with sync_playwright() as p:
+                    browser=p.chromium.launch(executable_path=chromium_executable(),headless=True)
+                    try:
+                        page=browser.new_page(viewport={'width':390,'height':1000});erreurs,serveur=observer(page,app['api_url'])
+                        panne={'active':True,'tentatives':0}
+                        def transport(route):
+                            panne['tentatives']+=1
+                            if panne['active']:route.abort()
+                            else:route.continue_()
+                        page.route(app['api_url']+W+'/contexte',transport)
+                        page.goto(app['web_url']);page.get_by_placeholder('admin@societe.ma').fill(mail)
+                        page.locator('input[type="password"]').fill(secret);page.get_by_role('button',name='Se connecter',exact=True).click()
+&gt;                       expect(page.get_by_role('alert')).to_contain_text('Contexte Personnel indisponible')
+E                       AssertionError: Locator expected to contain text 'Contexte Personnel indisponible'
+E                       Actual value: Failed to fetch 
+E                       Call log:
+E                         - Expect "to_contain_text" get_by_role("alert") with timeout 5000ms
+E                         - waiting for get_by_role("alert")
+E                           10 × locator resolved to &lt;p role="alert"&gt;Failed to fetch&lt;/p&gt;
+E                              - unexpected value "Failed to fetch"
+E                       
+E                       Aria snapshot:
+E                       - alert: Failed to fetch
+
+Test\test_e2e_personnel881_isole.py:94: AssertionError</failure></testcase></testsuite></testsuites>

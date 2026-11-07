@@ -1,0 +1,9 @@
+{
+  "fiche": "F755-13",
+  "ancienne_proposition_figee": "3650.00",
+  "nouvelle_avant_CM": null,
+  "nouvelle_apres_CM": "3850.00",
+  "oracle": "(120000+1000)*20%−350−20000=3850 selon hypothèse du scénario",
+  "aucune_liquidation_confirmee": true,
+  "temoin_comptable_definitif_inchange": true
+}

@@ -1,0 +1,50 @@
+[
+  [
+    "PA-CAMP01",
+    "Préparer la campagne sans inventer la date d’entrée",
+    "Cahiers887/889/891 effectués sur copie restaurable ;technicien et préparateur habilités.",
+    "Migration115 après114. P001 :entrée connue2025-12-15,base9000.10 mensuelle,contrat couvrant novembre2026.",
+    "Appliquer115 sur copie. Si entrée inconnue,fiche P001 >Proposer une modification >Identité >Coordonnées et informations personnelles >Date d’entrée connue. Saisir15/12/2025,motif Entrée fictive P001 pour recette893,conserver le nom,enregistrer,soumettre etfaire approuver indépendamment.",
+    "La date est déclarée etapprouvée,non déduite ducontrat. Aucun salaire oubarème automatiquement modifié ;03 · Traitement de la paie devient accessible."
+  ],
+  [
+    "PA-CAMP02",
+    "Simuler le brut exact de la sélection",
+    "P001 actif avec conditions mensuelles complètes ;deux gains du cahier891 approuvés.",
+    "Mois2026-11,sélectionP001 seulement,motif Simulation fictive novembre893 ;confirmer mois complets etvariables préparées.",
+    "03 · Traitement de la paie >Nouvelle simulation du brut. Choisir le mois,rechercher P001,cocher la ligne,saisir le motif etla confirmation,puis Simuler et conserver.",
+    "Base9000.10,gains801.02,brut9801.12. Cotisations,IR,net etcoût employeur Non calculés. Snapshot version1,auteur etempreinte conservés ;aucune validation de paie."
+  ],
+  [
+    "PA-CAMP03",
+    "Refuser d’ignorer une variable en attente",
+    "Scénario P001 de PA-CAMP02 ;continuer sur la même copie en ajoutant le gain explicite ci-dessous.",
+    "Nouvelle variable QUANT_FICTIVE891,novembre,effet15/11/2026,quantité1,taux1.00,source VAR-CAMP893-ATTENTE,justificatif ATTEST-CAMP893-ATTENTE,motif Gain complémentaire fictif893.",
+    "Créer ce brouillon sans le soumettre. Revenir aux campagnes etsimuler de nouveau P001,motif Contrôle attente fictif893.",
+    "Anomalie variables en attente ;brut global À compléter,aucun total qui ignore1.00MAD. Ancienne version1 reste9801.12."
+  ],
+  [
+    "PA-CAMP04",
+    "Recalculer et conserver les anciennes versions",
+    "Variable supplémentaire de PA-CAMP03 en brouillon.",
+    "Soumission motif Soumission complémentaire893 ;approbation motif Contrôle indépendant893,référence CTRL-CAMP893 ;simulation motif Recalcul après variable893.",
+    "Soumettre puis faire approuver la variable indépendamment. Simuler de nouveau P001. Ouvrir Historique de la campagne puis les trois versions.",
+    "Nouvelle version complète :gains802.02,brut9802.12. Première version reste9801.12,deuxième reste incomplète. Une campagne normale unique pour le mois ;pas d’écrasement."
+  ],
+  [
+    "PA-CAMP05",
+    "Distinguer un montant inconnu d’un zéro",
+    "P004 du cahier887 sans salaire confirmé ;P001 complet du scénario principal.",
+    "Même mois,sélectionP001 etP004,motif Contrôle dossier incomplet893.",
+    "Créer une nouvelle simulation de la même campagne avec les deux salariés ;consulter les anomalies etles lignes. Ne renseigner aucun faux salaire pour P004.",
+    "P001 garde son brut connu ;P004 est À compléter. Les totaux globaux concernés sont inconnus,aucun zéro artificiel ni exclusion silencieuse du salarié incomplet."
+  ],
+  [
+    "PA-CAMP06",
+    "Contrôler reprise,droits et séparation comptable",
+    "Comptable légitime,deux sociétés etdeux sessions de recette.",
+    "Preuves dujournal etsoldes avant les simulations ;motif révocation Fin accès campagne893.",
+    "Vérifier qu’un double clic pendant une même requête ne duplique pas sa simulation. Contrôler historique,absence de bouton Valider une paie définitive,bulletin,paiement ouOD. Révoquer rémunération du préparateur,puis Actualiser ;vérifier seconde société.",
+    "Une reprise identique est idempotente. Nouvelle simulation volontaire crée une version distincte. Révocation/isolation effectives ;journal et soldes inchangés. Les validations SQL natives sont documentées,ne lancer aucun UPDATE sur une base réelle."
+  ]
+]

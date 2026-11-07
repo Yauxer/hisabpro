@@ -1,0 +1,510 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_bh90nwcy",
+  "nonce": "66bf74e060214e7cb258e110cd743631",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "reseau823": {
+    "en_attente": {
+      "2AB39D0CA09D0629DC2A8E0BF51FA4AC": {
+        "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+        "type": "Other",
+        "timestamp": 897113.022234
+      },
+      "40D5517F2C45D810989CEE51B5FE54E7": {
+        "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+        "type": "Other",
+        "timestamp": 897124.707298
+      }
+    },
+    "echecs": [
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897093.578013
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897094.013442
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897094.464047
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897094.50994
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897094.514449
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897094.520537
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897094.998228
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897096.125034
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897097.339301
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897098.488788
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897099.762201
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897099.824765
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897099.840024
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897101.090724
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897102.368852
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897103.757064
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897105.067148
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897106.395986
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897106.50015
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897106.513826
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897107.797298
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897108.974692
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897110.259657
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897111.598382
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897112.91287
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897112.892587
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897112.963915
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897113.005833
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897113.011601
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897114.121336
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897115.318867
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897116.545543
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897117.677228
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897118.88068
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897118.980344
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897120.057781
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897121.223228
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897122.364765
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897123.49125
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897124.628793
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897124.626308
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897124.690091
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897124.697306
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56593/api/avoirs?exercice=2025",
+          "type": "Fetch",
+          "timestamp": 897124.710792
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897125.756486
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      },
+      {
+        "request": {
+          "url": "http://127.0.0.1:56594/favicon.ico",
+          "type": "Other",
+          "timestamp": 897126.945176
+        },
+        "erreur": "net::ERR_ABORTED",
+        "cancelled": true
+      }
+    ]
+  },
+  "navigations823": [
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre",
+    "/journal",
+    "/immobilisations",
+    "/factures",
+    "/lettrage",
+    "/grand-livre"
+  ],
+  "polices823": {
+    "etat": "loaded",
+    "faces": [
+      {
+        "famille": "Inter",
+        "etat": "loaded"
+      },
+      {
+        "famille": "Inter",
+        "etat": "loaded"
+      },
+      {
+        "famille": "Inter",
+        "etat": "loaded"
+      },
+      {
+        "famille": "tabler-icons",
+        "etat": "loaded"
+      }
+    ],
+    "ressources": [
+      {
+        "nom": "http://127.0.0.1:56594/vendor/inter/inter-07.woff2",
+        "duree": 30.600000023841858,
+        "octets": 48556
+      },
+      {
+        "nom": "http://127.0.0.1:56594/vendor/tabler/fonts/tabler-icons.woff2",
+        "duree": 44.10000002384186,
+        "octets": 779112
+      }
+    ]
+  },
+  "serveur823": {
+    "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette823_synchronisee\\test_823_diagnostic_reseau_pol0\\serveur_navigation823.log",
+    "sha256": "81868d56799c6df51869c817864249c95071a8b285d6077fc4bf40a160ef0d88"
+  }
+}

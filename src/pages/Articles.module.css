@@ -1,0 +1,57 @@
+.page { display: flex; flex-direction: column; height: 100%; }
+.topbar { background: var(--bg-primary); border-bottom: 0.5px solid var(--border-light); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.pageTitle { font-size: 15px; font-weight: 500; }
+.topbarRight { display: flex; gap: 8px; }
+.btnPrim { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 7px 14px; border-radius: var(--radius-md); background: var(--blue); color: #fff; border: none; cursor: pointer; }
+.btnPrim:hover { background: var(--blue-dark); }
+.btnSec { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 7px 12px; border-radius: var(--radius-md); background: var(--bg-primary); border: 0.5px solid var(--border-medium); color: var(--text-secondary); cursor: pointer; }
+.btnSec:hover { background: var(--bg-secondary); }
+
+.content { flex: 1; min-width: 0; min-height: 0; overflow: hidden; padding: 16px 24px; display: flex; flex-direction: column; gap: 12px; }
+
+.familles { display: flex; gap: 6px; flex-wrap: wrap; }
+.familleBtn { font-size: 12px; padding: 5px 12px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; gap: 6px; }
+.familleBtn:hover { background: var(--bg-secondary); }
+.familleBtnActif { background: var(--blue-light) !important; color: var(--blue) !important; border-color: #B5D4F4 !important; font-weight: 500; }
+.familleTva { font-size: 10px; background: var(--bg-secondary); padding: 1px 5px; border-radius: 4px; }
+
+.recherche { display: flex; align-items: center; gap: 8px; background: var(--bg-primary); border: 0.5px solid var(--border-medium); border-radius: var(--radius-md); padding: 0 12px; }
+.recherche i { font-size: 14px; color: var(--text-tertiary); }
+.recherche input { flex: 1; border: none; background: transparent; font-size: 13px; color: var(--text-primary); padding: 9px 0; font-family: var(--font); }
+.recherche input:focus { outline: none; }
+
+.card { background: var(--bg-primary); border: 0.5px solid var(--border-light); border-radius: var(--radius-lg); overflow: hidden; flex: 1; display: flex; flex-direction: column; }
+.table { width: 100%; border-collapse: collapse; }
+.table th { font-size: 11px; color: var(--text-tertiary); font-weight: 400; text-align: left; padding: 9px 14px; border-bottom: 0.5px solid var(--border-light); background: var(--bg-primary); position: sticky; top: 0; }
+.table td { font-size: 12px; padding: 9px 14px; border-bottom: 0.5px solid var(--border-light); vertical-align: middle; }
+.table tr:last-child td { border-bottom: none; }
+.table tbody tr:hover td { background: var(--bg-secondary); }
+
+.code { font-family: 'Courier New', monospace; font-size: 11px; font-weight: 600; color: var(--blue); background: var(--blue-light); padding: 2px 7px; border-radius: 4px; }
+.desc { font-size: 11px; color: var(--text-tertiary); margin-top: 2px; }
+.familleTag { font-size: 11px; background: var(--bg-secondary); color: var(--text-secondary); padding: 2px 8px; border-radius: 4px; }
+.sansFamille { color: var(--text-tertiary); font-size: 12px; }
+.tvaBadge { font-size: 11px; font-weight: 500; color: var(--amber); background: #FAEEDA; padding: 2px 7px; border-radius: 4px; }
+.btnSuppr { width: 28px; height: 28px; border-radius: var(--radius-sm); background: none; border: none; color: transparent; font-size: 14px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+tr:hover .btnSuppr { color: var(--text-tertiary); }
+.btnSuppr:hover { background: var(--red-light) !important; color: var(--red) !important; }
+
+.vide { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--text-tertiary); font-size: 13px; padding: 48px; }
+.vide i { font-size: 28px; }
+
+/* Formulaire */
+.formContenu { display: flex; flex-direction: column; gap: 14px; }
+.formGrid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.formGrid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.formGroup { display: flex; flex-direction: column; gap: 4px; }
+.label { font-size: 11px; color: var(--text-secondary); font-weight: 500; }
+.input { padding: 9px 12px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-primary); font-size: 13px; font-family: var(--font); width: 100%; }
+.input:focus { border-color: var(--blue); outline: none; box-shadow: 0 0 0 2px rgba(24,95,165,0.1); }
+.textarea { padding: 9px 12px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-primary); font-size: 13px; font-family: var(--font); width: 100%; resize: vertical; }
+.textarea:focus { border-color: var(--blue); outline: none; }
+
+.apercuPrix { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: var(--green-light); border-radius: var(--radius-md); font-size: 13px; color: var(--green); }
+
+.erreur { font-size: 12px; color: var(--red); background: var(--red-light); padding: 10px 14px; border-radius: var(--radius-md); }
+.formActions { display: flex; gap: 10px; justify-content: flex-end; }
+.fieldHint { font-size: 10.5px; color: var(--text-tertiary); line-height: 1.35; }

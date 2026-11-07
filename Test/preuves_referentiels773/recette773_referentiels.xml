@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="59.152" timestamp="2026-10-24T16:12:57.933765+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_commercial773_isole" name="test_773_sept_tiers_et_trois_articles_cahier_interface[1440]" time="54.629"><failure message="AssertionError: Locator expected to contain text 'Client Services Recette'&#10;Actual value: Client Marchandises RecetteClient——60jAucun mouvement &#10;Call log:&#10;  - Expect &quot;to_contain_text&quot; locator(&quot;tbody tr&quot;).first with timeout 5000ms&#10;  - waiting for locator(&quot;tbody tr&quot;).first&#10;    13 × locator resolved to &lt;tr class=&quot;&quot;&gt;…&lt;/tr&gt;&#10;       - unexpected value &quot;Client Marchandises RecetteClient——60jAucun mouvement&quot;&#10;&#10;Aria snapshot:&#10;- row &quot;Client Marchandises Recette Client — — 60j Aucun mouvement Supprimer&quot;:&#10;  - cell &quot;Client Marchandises Recette&quot;:&#10;    - strong: Client Marchandises Recette&#10;  - cell &quot;Client&quot;&#10;  - cell &quot;—&quot;&#10;  - cell &quot;—&quot;&#10;  - cell &quot;60j&quot;&#10;  - cell &quot;Aucun mouvement&quot;&#10;  - cell &quot;Supprimer&quot;:&#10;    - button &quot;Supprimer&quot;">application = {'api_url': 'http://127.0.0.1:61550', 'web_url': 'http://127.0.0.1:61551', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_0g6_r2_t'), 'nonce': '23f163f2eea64e9aaf5c63336d3decd2', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette773_referentiels/test_773_sept_tiers_et_trois_a0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_773_sept_tiers_et_trois_articles_cahier_interface(application,largeur,tmp_path):
+&gt;    with laboratoire(application,largeur,tmp_path) as (api,page,sid,preuve):referentiels(api,page,application,sid,preuve)
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_commercial773_isole.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+api = &lt;httpx.Client object at 0x00000108602E2690&gt;
+page = &lt;Page url='http://127.0.0.1:61551/tiers'&gt;
+application = {'api_url': 'http://127.0.0.1:61550', 'web_url': 'http://127.0.0.1:61551', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_0g6_r2_t'), 'nonce': '23f163f2eea64e9aaf5c63336d3decd2', ...}, ...}
+sid = 8
+preuve = {'source_sha256': 'b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7', 'largeur': 1440, 'cas': [{'id': ...,auxiliaire généré etlecture API'}], 'tiers': {'C-MARCH': {'id': 3, 'compte': '3421', 'auxiliaire': 'C00000003'}}, ...}
+
+    def referentiels(api,page,application,sid,preuve):
+     tiers={};articles={};page.goto(application['web_url']+'/tiers')
+     for i,t in enumerate(DATA['tiers']):
+      page.get_by_role('button',name='Nouveau tiers',exact=True).click();modal=page.get_by_role('dialog',name='Nouveau tiers',exact=True)
+      modal.get_by_role('button',name='Client' if t['type']=='client' else 'Fournisseur',exact=True).click();modal.get_by_placeholder('Ex. Atlas Distribution SARL').fill(t['nom'])
+      ouvrir_avance(modal,'Paramétrage comptable');label='Compte client' if t['type']=='client' else 'Compte fournisseur';champ(modal,label).fill(t['compte'])
+      with page.expect_response(lambda r:r.url.endswith('/api/tiers') and r.request.method=='POST') as r:modal.get_by_role('button',name='Créer le tiers',exact=True).click()
+      record=ok(r.value,201);tiers[t['code']]=record;modal.wait_for(state='hidden')
+&gt;     expect(page.locator('tbody tr').first).to_contain_text(t['nom']);page.locator('tbody tr').filter(has_text=t['nom']).click();page.get_by_role('button',name='Modifier le tiers',exact=True).click()
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to contain text 'Client Services Recette'
+E     Actual value: Client Marchandises RecetteClient——60jAucun mouvement 
+E     Call log:
+E       - Expect "to_contain_text" locator("tbody tr").first with timeout 5000ms
+E       - waiting for locator("tbody tr").first
+E         13 × locator resolved to &lt;tr class=""&gt;…&lt;/tr&gt;
+E            - unexpected value "Client Marchandises RecetteClient——60jAucun mouvement"
+E     
+E     Aria snapshot:
+E     - row "Client Marchandises Recette Client — — 60j Aucun mouvement Supprimer":
+E       - cell "Client Marchandises Recette":
+E         - strong: Client Marchandises Recette
+E       - cell "Client"
+E       - cell "—"
+E       - cell "—"
+E       - cell "60j"
+E       - cell "Aucun mouvement"
+E       - cell "Supprimer":
+E         - button "Supprimer"
+
+Test\cahier_formulaires773_support.py:52: AssertionError</failure></testcase></testsuite></testsuites>

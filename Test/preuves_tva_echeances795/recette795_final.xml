@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="456.306" timestamp="2026-10-24T22:20:01.483010+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_tva_echeances795_isole" name="test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css[1440]" time="251.076"><failure message="AssertionError: {&quot;detail&quot;:[{&quot;type&quot;:&quot;value_error&quot;,&quot;loc&quot;:[&quot;body&quot;],&quot;msg&quot;:&quot;Value error, Renseignez un paiement positif ou marquez l'acompte comme dispensé.&quot;,&quot;input&quot;:{&quot;montant_verse&quot;:0,&quot;date_versement&quot;:null,&quot;reference_paiement&quot;:&quot;AP2-2026&quot;,&quot;dispense&quot;:false,&quot;reference_dispense&quot;:null,&quot;commentaire&quot;:null},&quot;ctx&quot;:{&quot;error&quot;:{}}}]}">application = {'api_url': 'http://127.0.0.1:49338', 'web_url': 'http://127.0.0.1:49339', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_rtzjp1fb'), 'nonce': 'f9bb2cac86554b498c482a287f0ac25e', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette795_final/test_795_cahier_tva12_impressi0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'tva_echeances795') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+&gt;     capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve);cloturer_cahier(api,page,application,sid,preuve);tva_mensuelle(api,page,application,sid,preuve,tmp_path);echeances_2026(api,page,application,sid,preuve)
+                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_tva_echeances795_isole.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\cahier_tva_echeances795_support.py:67: in echeances_2026
+    ok(r.value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response url='http://127.0.0.1:49338/api/fiscalite/is/2026/acomptes/2' request=&lt;Request url='http://127.0.0.1:49338/api/fiscalite/is/2026/acomptes/2' method='PUT'&gt;&gt;
+status = 200
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":[{"type":"value_error","loc":["body"],"msg":"Value error, Renseignez un paiement positif ou marquez l'acompte comme dispensé.","input":{"montant_verse":0,"date_versement":null,"reference_paiement":"AP2-2026","dispense":false,"reference_dispense":null,"commentaire":null},"ctx":{"error":{}}}]}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_tva_echeances795_isole" name="test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css[390]" time="200.968"><failure message="AssertionError: {&quot;detail&quot;:[{&quot;type&quot;:&quot;value_error&quot;,&quot;loc&quot;:[&quot;body&quot;],&quot;msg&quot;:&quot;Value error, Renseignez un paiement positif ou marquez l'acompte comme dispensé.&quot;,&quot;input&quot;:{&quot;montant_verse&quot;:0,&quot;date_versement&quot;:null,&quot;reference_paiement&quot;:&quot;AP2-2026&quot;,&quot;dispense&quot;:false,&quot;reference_dispense&quot;:null,&quot;commentaire&quot;:null},&quot;ctx&quot;:{&quot;error&quot;:{}}}]}">application = {'api_url': 'http://127.0.0.1:49338', 'web_url': 'http://127.0.0.1:49339', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_rtzjp1fb'), 'nonce': 'f9bb2cac86554b498c482a287f0ac25e', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette795_final/test_795_cahier_tva12_impressi1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_795_cahier_tva12_impressions_soldes2025_acomptes2026_css(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'tva_echeances795') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+&gt;     capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve);cloturer_cahier(api,page,application,sid,preuve);tva_mensuelle(api,page,application,sid,preuve,tmp_path);echeances_2026(api,page,application,sid,preuve)
+                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_tva_echeances795_isole.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\cahier_tva_echeances795_support.py:67: in echeances_2026
+    ok(r.value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response url='http://127.0.0.1:49338/api/fiscalite/is/2026/acomptes/2' request=&lt;Request url='http://127.0.0.1:49338/api/fiscalite/is/2026/acomptes/2' method='PUT'&gt;&gt;
+status = 200
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":[{"type":"value_error","loc":["body"],"msg":"Value error, Renseignez un paiement positif ou marquez l'acompte comme dispensé.","input":{"montant_verse":0,"date_versement":null,"reference_paiement":"AP2-2026","dispense":false,"reference_dispense":null,"commentaire":null},"ctx":{"error":{}}}]}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase></testsuite></testsuites>

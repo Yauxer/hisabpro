@@ -1,0 +1,465 @@
+{
+  "date": "2026-10-29",
+  "nombre_distinct": 70,
+  "campagne_unique_verte": true,
+  "repartition": {
+    "unitaires": 25,
+    "API_SQL_PostgreSQL_natif_isole": 33,
+    "Edge_API_PostgreSQL_natif_isole": 12
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[normal]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[sukuk]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[location]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[inconnu]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[autre]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[date_hors_periode]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[ancien_credit]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[periode]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[exhaustivite]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[profil]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[exclu]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[tous_utilises]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[absence]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[neant_seul]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[ancien]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[futur]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[grand]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[location_avant]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[allocation_inconnue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[banque_avant]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[banque_apres]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[prive_avant]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[prive_apres]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[payeur_inconnu]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_oracles_types_dates_et_inconnus[allocation_apres_retenue]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_versions_rejeu_lecture_sans_recalcul",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-NaN]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-Infinity]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant--1]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-0.001]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-1e9999]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[montant-10000000000000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[autres_utilisations-201]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[deja_impute_acomptes-300]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[exercice_rattachement-2027]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[exercice_rattachement-2026.0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[date_retenue-2026-02-30]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[date_retenue-20260320]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[date_allocation-2026-02-30]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[categorie_payeur-Particulier]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[eligibilite_confirmee-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[type_credit-TVA]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[reference_source-]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_rejets_sans_mutation[inconnu-0]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[omission]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[doublon_table]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[doublon_source]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[deux_profils]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[absence_contradictoire]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[solde_injecte]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[neant_seul]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_structures_exhaustivite_absence[absence_confirmee]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_contexte_change_comparaison_et_versions_figees",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_droits_societes_devise_hash_concurrence",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_balance_credits749_isole::test_749_exports_logo_formules_sources_manifestes",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[admin-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[comptable-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_credits_droits_exports_brouillon_mobile[lecture-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_nan_refuse_puis_part_exclue_sans_f5",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_contexte_change_actualisation_explicite_interface",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_get_reel_tardif_ignore[version]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_get_reel_tardif_ignore[fermeture]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_get_reel_tardif_ignore[jeton]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_post_reel_tardif_ne_remplace_pas_selection",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_date_allocation_payeur_et_entree_en_vigueur_interface[location_avant-Indisponible]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_date_allocation_payeur_et_entree_en_vigueur_interface[location_apres-325,00 MAD]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_e2e_balance_credits749_isole::test_749_date_allocation_payeur_et_entree_en_vigueur_interface[banque_avant-Indisponible]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    },
+    {
+      "id": "Test.test_qualification_credits939_isole::test_939_versions_inconnues_et_absence_confirmee_sans_imputation",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cr939_final2"
+    }
+  ],
+  "selection": [
+    "Test/test_balance_credits749_isole.py",
+    "Test/test_e2e_balance_credits749_isole.py",
+    "Test/test_qualification_credits939_isole.py"
+  ],
+  "duree_xml_s": 144.84,
+  "code_sortie": 0,
+  "execution": "PYTHON_DOTENV_DISABLED=1 ;SECRET_KEY fictive,DATABASE_URL inerte port1 ;python .codex-tests/lancer_session.py cr939_final2 <selection> ;fixtures PG/serveurs nonce.",
+  "historique_non_additionne": [
+    "Reprise69réussis/117.26s,code0",
+    "Cible4réussis/64.81s,code0 :versions inconnues/absence et3rôles,exports individuels ;répétitions non additionnées",
+    "Première finale70réussis/145.81s,code0 ;extension de la fiche02 pour modifier aussi le montant999 du brouillon,et non seulement son éligibilité."
+  ],
+  "preuves": {
+    "Test/preuves_mvp939/cr939_cible.xml": "69f509f82faf2174f0bdc4fd5f9e991c6bd5be0213297fb824c94af197f2cf71",
+    "Test/preuves_mvp939/cr939_final.xml": "65d9407ef918c1b84797322217cdbc08a59b3438a6d94f505f245767873e3e9f",
+    "Test/preuves_mvp939/cr939_final2.xml": "fcb06927e05f7281fcee19db8432b7ab393fa8782e7466f25ecfcb0f0d9e8ee1",
+    "Test/preuves_mvp939/cr939_reprise.xml": "c0a12ea528dce6c99010d96826957fa4b9669e865d9f822eaad275beab453a31",
+    "Test/preuves_mvp939/credits939_admin_preuve.json": "8bc3ad5ef2251d517367d623f14f13a995067669b79ce91270a4d83148c2b5ca",
+    "Test/preuves_mvp939/credits939_comptable_preuve.json": "7bf7643ea768ac4996029deee15d4d497465a93dec2d635237f24f633d75fa63",
+    "Test/preuves_mvp939/credits939_lecture_preuve.json": "d90ff3863dc62e70b03fd8d02357bc1b7cb3a9663d41844db787a06ca3c22416",
+    "Test/preuves_mvp939/credits939_variantes.json": "dc2a5b872e54a82554f694ddc34396dc26cc17898295723446713920905f1e79"
+  },
+  "rattachement": "Test/QUALIFICATION_FICHES_939.json",
+  "fiches_qualifiees": 8,
+  "candidat": "Test/CANDIDAT_MVP_939.json",
+  "nombre_fichiers_candidat": 549,
+  "produit_identique_au_931": true,
+  "build": "Non relancé,frontend inchangé ;dernier réel931 :214modules/5.55s,code0.",
+  "anciens_documents_preserves": 330,
+  "aucune_base_reelle": true,
+  "restauration": "Non rejouée ;preuves antérieures distinctes.",
+  "limites": "Propositions de crédits selon déclarations du jeu749,aucune imputation/liquidation/paiement/dépôt confirmé. Oracle325 distinct des350du jeu annuel755. Fiches04–06 certaines variantes par API ;gestes humains à effectuer. Réserves métier/production inchangées."
+}

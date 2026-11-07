@@ -1,0 +1,256 @@
+{
+  "largeur": 1440,
+  "copies": [
+    {
+      "societe_id": 8,
+      "exoneree": true,
+      "comptabilite_inchangee": true,
+      "ecritures": 48,
+      "cm": {
+        "base_comptable_brute": 170500.0,
+        "details": [
+          {
+            "code": "chiffre_affaires",
+            "libelle": "Chiffre d'affaires",
+            "montant": 169500.0,
+            "prefixes": [
+              "711",
+              "712"
+            ]
+          },
+          {
+            "code": "autres_produits_exploitation",
+            "libelle": "Autres produits d'exploitation",
+            "montant": 0.0,
+            "prefixes": [
+              "718"
+            ]
+          },
+          {
+            "code": "subventions_exploitation",
+            "libelle": "Subventions d'exploitation",
+            "montant": 0.0,
+            "prefixes": [
+              "716"
+            ]
+          },
+          {
+            "code": "produits_financiers",
+            "libelle": "Produits financiers",
+            "montant": 1000.0,
+            "prefixes": [
+              "732",
+              "733",
+              "738"
+            ]
+          },
+          {
+            "code": "subventions_dons_non_courants",
+            "libelle": "Subventions et dons non courants",
+            "montant": 0.0,
+            "prefixes": [
+              "756",
+              "7586"
+            ]
+          }
+        ],
+        "base_exclue": 0.0,
+        "base_apres_exclusion": 170500.0,
+        "base_taux_reduit_015": 0.0,
+        "base_taux_standard_025": 170500.0,
+        "taux_standard": 0.25,
+        "taux_reduit": 0.15,
+        "cm_part_standard": 426.25,
+        "cm_part_reduite": 0.0,
+        "cm_calculee": 426.25,
+        "minimum_3000": 3000.0,
+        "exoneration_totale": true,
+        "minimum_3000_exonere": false,
+        "cm_exigible": 0.0,
+        "motif_calcul": "exoneration_totale",
+        "is_theorique": 23420.25,
+        "impot_du_avant_acomptes": 23420.25,
+        "nature_impot_du": "IS",
+        "produits_taux_reduit_015": [
+          "produits pétroliers",
+          "gaz",
+          "beurre",
+          "huile",
+          "sucre",
+          "farine",
+          "eau",
+          "électricité",
+          "médicaments"
+        ]
+      },
+      "calcul": {
+        "resultat_comptable_avant_is": 129830.0,
+        "reintegrations": 4000.0,
+        "deductions": 0.0,
+        "resultat_fiscal_avant_deficit": 133830.0,
+        "deficit_reportable_disponible": 0.0,
+        "deficit_impute": 0.0,
+        "deficit_reportable_restant": 0.0,
+        "deficit_fiscal_genere": 0.0,
+        "benefice_fiscal_imposable": 133830.0,
+        "taux_is": 17.5,
+        "libelle_taux": "Régime de droit commun",
+        "source_taux": "CGI art. 247-XXXVII-A — droit commun",
+        "taux_provisoire": false,
+        "is_theorique": 23420.25
+      },
+      "liquidation": {
+        "is_theorique": 23420.25,
+        "cm_exigible": 0.0,
+        "impot_du_avant_acomptes": 23420.25,
+        "nature_impot_du": "IS",
+        "credits_is_disponibles_liquidation": 200.0,
+        "credits_is_appliques": 200.0,
+        "credits_is_appliques_detail": {
+          "pprf": 200.0,
+          "retenue_tiers": 0.0,
+          "autre": 0.0
+        },
+        "excedent_credits_is": 0.0,
+        "acomptes_verses": 0.0,
+        "credit_n_1_impute_sur_acomptes": 0.0,
+        "credits_ras_deja_imputes_sur_acomptes": 0.0,
+        "acomptes_et_credit_imputables": 0.0,
+        "acomptes_appliques_liquidation": 0.0,
+        "solde_a_payer": 23220.25,
+        "excedent_acomptes": 0.0,
+        "excedent_total": 0.0,
+        "nature_solde": "a_payer",
+        "confirmee": false,
+        "snapshot": null
+      },
+      "rechargement_UI": true
+    },
+    {
+      "societe_id": 9,
+      "exoneree": false,
+      "comptabilite_inchangee": true,
+      "ecritures": 48,
+      "cm": {
+        "base_comptable_brute": 170500.0,
+        "details": [
+          {
+            "code": "chiffre_affaires",
+            "libelle": "Chiffre d'affaires",
+            "montant": 169500.0,
+            "prefixes": [
+              "711",
+              "712"
+            ]
+          },
+          {
+            "code": "autres_produits_exploitation",
+            "libelle": "Autres produits d'exploitation",
+            "montant": 0.0,
+            "prefixes": [
+              "718"
+            ]
+          },
+          {
+            "code": "subventions_exploitation",
+            "libelle": "Subventions d'exploitation",
+            "montant": 0.0,
+            "prefixes": [
+              "716"
+            ]
+          },
+          {
+            "code": "produits_financiers",
+            "libelle": "Produits financiers",
+            "montant": 1000.0,
+            "prefixes": [
+              "732",
+              "733",
+              "738"
+            ]
+          },
+          {
+            "code": "subventions_dons_non_courants",
+            "libelle": "Subventions et dons non courants",
+            "montant": 0.0,
+            "prefixes": [
+              "756",
+              "7586"
+            ]
+          }
+        ],
+        "base_exclue": 0.0,
+        "base_apres_exclusion": 170500.0,
+        "base_taux_reduit_015": 0.0,
+        "base_taux_standard_025": 170500.0,
+        "taux_standard": 0.25,
+        "taux_reduit": 0.15,
+        "cm_part_standard": 426.25,
+        "cm_part_reduite": 0.0,
+        "cm_calculee": 426.25,
+        "minimum_3000": 3000.0,
+        "exoneration_totale": false,
+        "minimum_3000_exonere": false,
+        "cm_exigible": 3000.0,
+        "motif_calcul": "minimum_3000",
+        "is_theorique": 23420.25,
+        "impot_du_avant_acomptes": 23420.25,
+        "nature_impot_du": "IS",
+        "produits_taux_reduit_015": [
+          "produits pétroliers",
+          "gaz",
+          "beurre",
+          "huile",
+          "sucre",
+          "farine",
+          "eau",
+          "électricité",
+          "médicaments"
+        ]
+      },
+      "calcul": {
+        "resultat_comptable_avant_is": 129830.0,
+        "reintegrations": 4000.0,
+        "deductions": 0.0,
+        "resultat_fiscal_avant_deficit": 133830.0,
+        "deficit_reportable_disponible": 0.0,
+        "deficit_impute": 0.0,
+        "deficit_reportable_restant": 0.0,
+        "deficit_fiscal_genere": 0.0,
+        "benefice_fiscal_imposable": 133830.0,
+        "taux_is": 17.5,
+        "libelle_taux": "Régime de droit commun",
+        "source_taux": "CGI art. 247-XXXVII-A — droit commun",
+        "taux_provisoire": false,
+        "is_theorique": 23420.25
+      },
+      "liquidation": {
+        "is_theorique": 23420.25,
+        "cm_exigible": 3000.0,
+        "impot_du_avant_acomptes": 23420.25,
+        "nature_impot_du": "IS",
+        "credits_is_disponibles_liquidation": 200.0,
+        "credits_is_appliques": 200.0,
+        "credits_is_appliques_detail": {
+          "pprf": 200.0,
+          "retenue_tiers": 0.0,
+          "autre": 0.0
+        },
+        "excedent_credits_is": 0.0,
+        "acomptes_verses": 0.0,
+        "credit_n_1_impute_sur_acomptes": 0.0,
+        "credits_ras_deja_imputes_sur_acomptes": 0.0,
+        "acomptes_et_credit_imputables": 0.0,
+        "acomptes_appliques_liquidation": 0.0,
+        "solde_a_payer": 23220.25,
+        "excedent_acomptes": 0.0,
+        "excedent_total": 0.0,
+        "nature_solde": "a_payer",
+        "confirmee": false,
+        "snapshot": null
+      },
+      "rechargement_UI": true
+    }
+  ],
+  "limites": "Copies de48opérations avantIS ;pas de dossiercommercial complet restauré,pas de nouvelle règle ouexonération réelle validée."
+}

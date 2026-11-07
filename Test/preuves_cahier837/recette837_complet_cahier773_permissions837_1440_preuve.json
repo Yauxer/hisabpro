@@ -1,0 +1,51 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_3pul_2mm",
+  "nonce": "52e5063a398c49ca81dab49ccc07aa2f",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-NEG-042",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-043",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-044",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-NEG-045",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "permissions837": {
+    "lecture_refus": {
+      "facture": 403,
+      "ecriture": 403,
+      "etic": 403
+    },
+    "isolation": {
+      "facture_pdf": 404,
+      "facture_modification": 404,
+      "piece": 404
+    },
+    "piece_proprietaire_200": true,
+    "piece_sha256": "092f13d61fe592c86010f8d00c14c1cdb4817d8ef13b3dce16731acd78f37024",
+    "dernier_admin": {
+      "desactivation": 400,
+      "retrogradation": 400,
+      "suppression": 400
+    },
+    "deconnexion_locale_et_anonyme_401": true,
+    "A_B_comptabilite_conservee": true,
+    "facture_B_conservee": true,
+    "jetons_et_secrets_exclus": true
+  }
+}

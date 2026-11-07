@@ -1,0 +1,29 @@
+{
+  "commande": "node Test/build_frontend_isole.mjs",
+  "environnement_vide": true,
+  "api_inerte": "http://127.0.0.1:1",
+  "code_sortie": 0,
+  "secondes": 10.903,
+  "sortie": ".codex-tests\\build-frontend-Bgwo18\\dist",
+  "fichiers": {
+    "assets/index-B5d31ydX.css": "544d70e6d02f088aca39e1349472705bf11fcd7150c1aab1b7b938dba59ce92c",
+    "assets/index-CpvWCFO2.js": "705bca6ab7486c8aa31c6cfd3803fbabf9f0959abaef872b5b71721e01df9bf6",
+    "favicon.svg": "61bc9a161de58248288e6905425d7180f0624c2865007b97d763fdac12043a66",
+    "icons.svg": "b45fa506195cfcdef406ba9f0c77b36ddc1a7c224040926ec70abc2fdea7b93a",
+    "index.html": "3d0f176f327bd466bd80698a6a2c66184e815c765fd6c3dd7768d7818ca3881f",
+    "vendor/inter/inter-01.woff2": "ca157063339ac4ad418f214f3abfed119b0798ab4d377386ce5c9e5a7a435ebd",
+    "vendor/inter/inter-02.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "vendor/inter/inter-03.woff2": "6e9e020a25f9b56d418f2c085b1d3c09725a4da23fe693a5b463064606732190",
+    "vendor/inter/inter-04.woff2": "1be3448e292fbf05ffe176fe1e43f135013d50b1e7d324ad1a558f623d3bb6f6",
+    "vendor/inter/inter-05.woff2": "5c66f9e07e90c6d4ac4922cc68d60de26c17b1858e677fb5e603fce3952b3ff2",
+    "vendor/inter/inter-06.woff2": "34b9c504cab7a73e37b746343a449132e56cf7b5481af2cb81dc74dcff25c956",
+    "vendor/inter/inter-07.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "vendor/inter/inter.css": "be9deb91ef35a0bd3d67e3d7daca3eca4c5d5bf3951319d7caeb7108d27b0efd",
+    "vendor/inter/OFL.txt": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+    "vendor/MANIFEST.json": "825a1df5bb4b56f1aaff2335fa02062ec5d1ea65e800b6129b991757b81d6849",
+    "vendor/README.md": "b6a8031c7dc720879e1a73fa358f39550a0d7c6b40c326b785a2f5005a9d8d60",
+    "vendor/tabler/fonts/tabler-icons.woff2": "0586ae822d8eaddd62b354da7ecbdeb1b22c49b78e054616bb8ab06f560c792d",
+    "vendor/tabler/LICENSE.txt": "896d3e36cb41d19f279ce9ffb085a9f0d96e58db59c18f042242ff6c7e78d50f",
+    "vendor/tabler/tabler-icons.css": "09b63058a4d2f069e58a9006e947ddf15dd8786ff448d3a8bb62dc5ed6b51190"
+  }
+}

@@ -1,0 +1,555 @@
+.page { display: flex; flex-direction: column; height: 100%; }
+.topbar { background: var(--bg-primary); border-bottom: 0.5px solid var(--border-light); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.pageTitle { font-size: 15px; font-weight: 500; }
+.topbarRight { display: flex; gap: 8px; }
+
+.btnPrim { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 7px 14px; border-radius: var(--radius-md); background: var(--blue); color: #fff; border: none; cursor: pointer; transition: background 0.15s; }
+.btnPrim:hover:not(:disabled) { background: var(--blue-dark); }
+.btnPrim:disabled { background: var(--border-medium); cursor: not-allowed; }
+.btnSec { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 7px 12px; border-radius: var(--radius-md); background: var(--bg-primary); border: 0.5px solid var(--border-medium); color: var(--text-secondary); cursor: pointer; transition: background 0.12s; }
+.btnSec:hover:not(:disabled) { background: var(--bg-secondary); }
+.btnIcone { width: 28px; height: 28px; border-radius: var(--radius-sm); background: transparent; border: none; color: var(--text-tertiary); font-size: 16px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.btnIcone:hover { background: var(--bg-secondary); color: var(--text-primary); }
+.btnAction { width: 28px; height: 28px; border-radius: var(--radius-sm); background: transparent; border: none; color: var(--text-tertiary); font-size: 15px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.12s; }
+.btnAction:hover { background: var(--bg-secondary); }
+
+.content { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 16px 24px; display: flex; flex-direction: column; gap: 12px; }
+
+.kpiGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; flex-shrink: 0; }
+.kpiCard { background: var(--bg-primary); border: 0.5px solid var(--border-light); border-radius: var(--radius-lg); padding: 14px 16px; }
+.kpiLabel { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text-secondary); margin-bottom: 8px; }
+.kpiLabel i { font-size: 14px; }
+.kpiValeur { font-size: 18px; font-weight: 500; }
+.kpiDevise { font-size: 11px; color: var(--text-tertiary); font-weight: 400; }
+
+.filtres { display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; }
+.recherche { display: flex; align-items: center; gap: 8px; background: var(--bg-primary); border: 0.5px solid var(--border-medium); border-radius: var(--radius-md); padding: 0 10px; color: var(--text-tertiary); }
+.recherche i { font-size: 15px; flex-shrink: 0; }
+.inputRecherche { flex: 1; border: none; background: transparent; font-size: 13px; color: var(--text-primary); padding: 8px 0; }
+.inputRecherche:focus { outline: none; border: none; box-shadow: none; }
+.inputRecherche { min-width: 0; }
+.recherche:focus-within { border-color: var(--blue); box-shadow: 0 0 0 2px rgba(24,95,165,0.1); }
+.clearBtn:focus-visible, .filtreBtn:focus-visible, .btnSec:focus-visible, .btnPrim:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.aideListeVide { margin: 0; max-width: 440px; line-height: 1.5; color: var(--text-secondary); }
+.filtresBarre { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.filtreBtn { font-size: 12px; padding: 5px 10px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-secondary); cursor: pointer; }
+.filtreBtn:hover { background: var(--bg-secondary); }
+.filtreBtnActif { background: var(--blue-light) !important; color: var(--blue) !important; border-color: #B5D4F4 !important; font-weight: 500; }
+.separateur { width: 1px; height: 18px; background: var(--border-medium); margin: 0 4px; }
+.clearBtn { display: flex; align-items: center; font-size: 11px; padding: 4px 7px; border-radius: var(--radius-sm); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-tertiary); cursor: pointer; }
+
+.fullWidth { flex: 1 0 240px; min-height: 240px; }
+.listeVideWrap { flex: 0 0 auto; min-width: 0; }
+.listeVideWrap .card { height: auto; min-height: 240px; }
+.listeVideWrap .vide { padding: 24px; }
+.twoCols { display: grid; grid-template-columns: 1fr 480px; gap: 16px; flex: 1; min-height: 0; }
+
+.card { background: var(--bg-primary); border: 0.5px solid var(--border-light); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; height: 100%; }
+.cardHeader { padding: 12px 16px; border-bottom: 0.5px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.cardTitle { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; }
+.tableWrapper { flex:1; min-width:0; min-height:0; overflow:auto; overscroll-behavior:contain; scrollbar-gutter:stable; -webkit-overflow-scrolling:touch; }
+.table { width: 100%; border-collapse: collapse; }
+.table th { font-size: 11px; color: var(--text-tertiary); font-weight: 400; text-align: left; padding: 9px 14px; border-bottom: 0.5px solid var(--border-light); position: sticky; top: 0; background: var(--bg-primary); }
+.table td { font-size: 12px; padding: 9px 14px; border-bottom: 0.5px solid var(--border-light); color: var(--text-primary); vertical-align: middle; }
+.table tr:last-child td { border-bottom: none; }
+.table tr:hover td { background: var(--bg-secondary); cursor: pointer; }
+.rowSelected td { background: var(--blue-light) !important; }
+.badge { font-size: 10px; font-weight: 500; padding: 2px 8px; border-radius: 100px; }
+.numFact { font-family: 'Courier New', monospace; font-size: 11px; font-weight: 600; }
+.tdDate { color: var(--text-tertiary); font-size: 11px; }
+.btnTrash { width: 24px; height: 24px; border-radius: var(--radius-sm); background: none; border: none; color: transparent; font-size: 13px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+tr:hover .btnTrash { color: var(--text-tertiary); }
+.btnTrash:hover { background: var(--red-light) !important; color: var(--red) !important; }
+.vide { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--text-tertiary); font-size: 13px; padding: 48px; text-align: center; }
+.vide i { font-size: 28px; }
+
+/* ── Formulaire modal ── */
+.formContenu { display: flex; flex-direction: column; gap: 16px; }
+.formGrid4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; }
+.formGroup { display: flex; flex-direction: column; gap: 4px; }
+.label { font-size: 11px; color: var(--text-secondary); font-weight: 500; }
+.input { padding: 9px 12px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-primary); font-size: 13px; font-family: var(--font); width: 100%; }
+.input:focus { border-color: var(--blue); outline: none; box-shadow: 0 0 0 2px rgba(24,95,165,0.1); }
+.typeToggle { display: flex; gap: 5px; }
+.typeBtn { font-size: 12px; padding: 7px 14px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; gap: 5px; }
+.typeBtnActif { background: var(--blue) !important; color: #fff !important; border-color: var(--blue) !important; font-weight: 500; }
+
+.lignesHeader { display: flex; align-items: center; justify-content: space-between; }
+.lignesTitle { font-size: 13px; font-weight: 500; }
+.btnAjout { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--blue); background: var(--blue-light); border: 0.5px solid #B5D4F4; padding: 6px 12px; border-radius: var(--radius-md); cursor: pointer; }
+.btnAjout:hover { background: #D0E8FA; }
+.lignesColHeaders { display: grid; grid-template-columns: minmax(200px, 1fr) 72px 100px 80px 90px 120px 32px; gap: 12px; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text-tertiary); padding: 0 4px 6px 4px; border-bottom: 1px solid var(--border-medium); margin-bottom: 4px; }
+.ligneFactRow { display: grid; grid-template-columns: minmax(200px, 1fr) 72px 100px 80px 90px 120px 32px; gap: 12px; align-items: start; padding: 12px 4px; border-bottom: 0.5px solid var(--border-light); }
+.ligneFactRow:hover { background: var(--bg-secondary); }
+.ligneFactRow:last-of-type { border-bottom: none; }
+.inputSm { padding: 8px 10px; border-radius: var(--radius-sm); border: 0.5px solid var(--border-light); background: var(--bg-primary); color: var(--text-primary); font-size: 13px; font-family: var(--font); width: 100%; box-sizing: border-box; }
+.inputSm:focus { border-color: var(--blue); outline: none; }
+.num { text-align: right; }
+.btnSuppr { width: 32px; height: 32px; margin-top: 2px; border-radius: var(--radius-sm); background: none; border: none; color: var(--text-tertiary); font-size: 15px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.btnSuppr:hover:not(:disabled) { background: var(--red-light); color: var(--red); }
+.btnSuppr:disabled { opacity: 0.25; cursor: not-allowed; }
+
+.totauxFacture { background: var(--bg-secondary); border-radius: var(--radius-md); padding: 12px 16px; display: flex; flex-direction: column; gap: 6px; }
+.totauxLigne { display: flex; justify-content: space-between; font-size: 12px; color: var(--text-secondary); }
+.totauxTTC { font-size: 14px; font-weight: 600; color: var(--text-primary); padding-top: 6px; border-top: 0.5px solid var(--border-medium); }
+
+/* ── Toggle comptabilisation ── */
+.toggleCompta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+.toggleCompta:hover { border-color: var(--blue); background: var(--blue-light); }
+
+.toggleSwitch {
+  width: 44px;
+  height: 24px;
+  border-radius: 24px;
+  background: var(--border-medium);
+  position: relative;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.toggleOn { background: var(--blue) !important; }
+.toggleKnob {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.toggleOn .toggleKnob { transform: translateX(20px); }
+
+.toggleInfo { flex: 1; }
+.toggleLabel { display: block; font-size: 13px; font-weight: 500; color: var(--text-primary); }
+.toggleDesc { display: block; font-size: 11px; color: var(--text-tertiary); margin-top: 2px; }
+
+.erreurMsg { display: flex; align-items: flex-start; gap: 6px; font-size: 12px; color: var(--red); background: var(--red-light); padding: 10px 14px; border-radius: var(--radius-md); white-space: pre-line; }
+.formActions { display: flex; gap: 10px; justify-content: flex-end; padding-top: 4px; }
+.successMsg { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 48px; color: var(--green); font-size: 15px; font-weight: 500; }
+.successMsg i { font-size: 48px; }
+
+/* ── Détail facture ── */
+.formCard { background: var(--bg-primary); border: 0.5px solid var(--border-light); border-radius: var(--radius-lg); display: flex; flex-direction: column; overflow: hidden; height: 100%; }
+.formHeader { padding: 14px 16px; border-bottom: 0.5px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.formBody { padding: 14px 16px; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+.formFooter { padding: 12px 16px; border-top: 0.5px solid var(--border-light); display: flex; gap: 8px; justify-content: flex-end; flex-shrink: 0; }
+.formRow { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+.detailMeta { display: flex; flex-direction: column; gap: 8px; }
+.detailMeta > div { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.metaLabel { font-size: 11px; color: var(--text-tertiary); min-width: 50px; }
+
+.detailTable { width: 100%; border-collapse: collapse; font-size: 12px; }
+.detailTable th { font-size: 10px; color: var(--text-tertiary); font-weight: 400; padding: 6px 8px; border-bottom: 0.5px solid var(--border-light); text-align: left; }
+.detailTable td { padding: 7px 8px; border-bottom: 0.5px solid var(--border-light); }
+.detailTable tr:last-child td { border-bottom: none; }
+
+/* ── Alertes et badges ── */
+.alerteTopbar {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 500; color: #92400E;
+  background: #FEF3C7; border: 1px solid #FCD34D;
+  padding: 6px 12px; border-radius: var(--radius-md);
+}
+.alerteTopbar i { font-size: 14px; }
+
+.badgeRetard {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 100px;
+  background: #FCEBEB; color: #A32D2D;
+}
+.badgeUrgent {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 100px;
+  background: #FEF3C7; color: #92400E;
+}
+.badgeCompta {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-size: 10px; font-weight: 500; padding: 1px 6px; border-radius: 100px;
+  background: var(--blue-light); color: var(--blue);
+}
+
+/* ── Formulaire modal ── */
+.formContenu { display: flex; flex-direction: column; gap: 16px; }
+.formGrid4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; }
+.formGroup { display: flex; flex-direction: column; gap: 4px; }
+.label { font-size: 11px; color: var(--text-secondary); font-weight: 500; }
+.input { padding: 9px 12px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-primary); font-size: 13px; font-family: var(--font); width: 100%; }
+.input:focus { border-color: var(--blue); outline: none; box-shadow: 0 0 0 2px rgba(24,95,165,0.1); }
+.typeToggle { display: flex; gap: 5px; }
+.typeBtn { font-size: 12px; padding: 7px 14px; border-radius: var(--radius-md); border: 0.5px solid var(--border-medium); background: var(--bg-primary); color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; gap: 5px; }
+.typeBtnActif { background: var(--blue) !important; color: #fff !important; border-color: var(--blue) !important; font-weight: 500; }
+
+.echeanceAffich {
+  padding: 9px 12px; border-radius: var(--radius-md);
+  background: var(--bg-secondary); border: 0.5px solid var(--border-light);
+  font-size: 13px; color: var(--text-secondary);
+}
+
+/* Toggle comptabilisation */
+.toggleCompta { display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: var(--bg-secondary); border: 1px solid var(--border-medium); border-radius: var(--radius-md); cursor: pointer; transition: all 0.15s; user-select: none; }
+.toggleCompta:hover { border-color: var(--blue); background: var(--blue-light); }
+.toggleSwitch { width: 44px; height: 24px; border-radius: 24px; background: var(--border-medium); position: relative; flex-shrink: 0; transition: background 0.2s; }
+.toggleOn { background: var(--blue) !important; }
+.toggleKnob { position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #fff; top: 3px; left: 3px; transition: transform 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+.toggleOn .toggleKnob { transform: translateX(20px); }
+.toggleInfo { flex: 1; }
+.toggleLabel { display: block; font-size: 13px; font-weight: 500; color: var(--text-primary); }
+.toggleDesc { display: block; font-size: 11px; color: var(--text-tertiary); margin-top: 2px; }
+
+.erreurMsg { display: flex; align-items: flex-start; gap: 6px; font-size: 12px; color: var(--red); background: var(--red-light); padding: 10px 14px; border-radius: var(--radius-md); white-space: pre-line; }
+.formActions { display: flex; gap: 10px; justify-content: flex-end; padding-top: 4px; }
+.successMsg { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 48px; color: var(--green); font-size: 15px; font-weight: 500; }
+.successMsg i { font-size: 48px; }
+
+/* ── Colonne Articles ── */
+.articlesCell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 200px;
+}
+.articleTag {
+  font-size: 10px;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  padding: 2px 7px;
+  border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+.articleMore {
+  font-size: 10px;
+  background: var(--border-light);
+  color: var(--text-tertiary);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* ═══ Réductions avancées par ligne (remise 2 en cascade, rabais unitaire) ═══ */
+.reducLigne { grid-column: 1 / -1; margin-top: 2px; }
+
+.reducToggle {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: none; border: none; cursor: pointer; padding: 2px 0;
+  font-size: 11px; color: var(--text-tertiary); font-family: var(--font);
+}
+.reducToggle:hover { color: var(--text-secondary); }
+
+.reducBadge {
+  margin-left: 6px; padding: 1px 7px; border-radius: 20px;
+  background: #FDF3E3; color: #8A5A0B; font-size: 10.5px; font-weight: 500;
+}
+
+.reducChamps {
+  display: flex; gap: 20px; flex-wrap: wrap;
+  padding: 10px 12px; margin-top: 6px;
+  background: var(--bg-secondary); border-radius: var(--radius-sm);
+}
+.reducChamps label { display: flex; flex-direction: column; gap: 3px; }
+.reducChamps label > span { font-size: 11px; font-weight: 500; color: var(--text-secondary); }
+.reducChamps label > em {
+  font-size: 10px; color: var(--text-tertiary); font-style: normal;
+}
+.reducChamps .inputSm { width: 130px; }
+
+/* ═══ Modale d'édition de facture — classes utilisées par le JSX ═══ */
+
+/* Bandeau rappelant l'origine du document (BC, BL, devis) */
+.sourceInfo {
+  display: flex; align-items: center; gap: 6px;
+  padding: 9px 14px; border-radius: var(--radius-md);
+  background: #EDF4FC; color: #185FA5; font-size: 12px; margin-bottom: 10px;
+}
+
+.formGrid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.textarea {
+  padding: 8px 10px; border-radius: var(--radius-sm);
+  border: 0.5px solid var(--border-light); background: var(--bg-primary);
+  color: var(--text-primary); font-size: 13px; font-family: var(--font);
+  width: 100%; box-sizing: border-box; resize: vertical; min-height: 60px;
+}
+.textarea:focus { border-color: var(--blue); outline: none; }
+
+/* Tableau des lignes en édition */
+.tableLignes, .lignesTable {
+  width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 4px 0 8px 0;
+}
+.tableLignes th, .lignesTable th {
+  text-align: left; padding: 6px 8px;
+  font-size: 10px; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase;
+  color: var(--text-tertiary); border-bottom: 1px solid var(--border-medium);
+}
+.tableLignes td, .lignesTable td {
+  padding: 5px 8px; border-bottom: 0.5px solid var(--border-light);
+}
+
+.inputLigne {
+  width: 100%; padding: 6px 8px; border-radius: var(--radius-sm);
+  border: 0.5px solid var(--border-light); background: var(--bg-primary);
+  color: var(--text-primary); font-size: 12.5px; font-family: var(--font);
+  box-sizing: border-box;
+}
+.inputLigne:focus { border-color: var(--blue); outline: none; }
+.inputLigne:disabled { background: var(--bg-secondary); color: var(--text-secondary); cursor: not-allowed; }
+
+.btnAjouterLigne {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px 0;
+  font-size: 12px; color: var(--blue); font-family: var(--font);
+}
+.btnAjouterLigne:hover { text-decoration: underline; }
+.btnAjouterLigne:disabled { color: var(--text-tertiary); cursor: not-allowed; text-decoration: none; }
+
+/* Totaux : deux colonnes alignées (libellé à gauche, montant à droite) */
+.totauxZone {
+  display: flex; justify-content: flex-end;
+  margin-top: 14px; padding-top: 12px;
+  border-top: 0.5px solid var(--border-light);
+}
+.totauxGrid {
+  display: grid; grid-template-columns: auto auto;
+  gap: 6px 24px; align-items: baseline; min-width: 260px;
+}
+.totauxGrid > span:nth-child(odd)  { font-size: 12.5px; color: var(--text-secondary); }
+.totauxGrid > span:nth-child(even) {
+  font-size: 12.5px; text-align: right; font-weight: 500;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.totalTTCLabel {
+  font-size: 13.5px !important; font-weight: 600 !important;
+  color: var(--text-primary) !important;
+  padding-top: 6px; border-top: 0.5px solid var(--border-light);
+}
+.totalTTCValeur {
+  font-size: 15px !important; font-weight: 700 !important;
+  text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap;
+  padding-top: 6px; border-top: 0.5px solid var(--border-light);
+}
+
+/* FORM.1 — feedback de saisie et aperçu avant validation */
+.inputError { border-color: var(--red) !important; background: var(--red-light) !important; }
+.fieldError { font-size: 10.5px; line-height: 1.35; color: var(--red); }
+.selectionHint { display: flex; align-items: center; gap: 4px; margin-top: 4px; font-size: 10.5px; color: var(--green); }
+.inlineError { display: flex; align-items: center; gap: 6px; padding: 7px 10px; margin: 5px 0 8px; border-radius: var(--radius-md); background: var(--red-light); color: var(--red); font-size: 11px; }
+.comptaPreview { display: flex; gap: 7px; align-items: flex-start; padding: 8px 10px; border-radius: var(--radius-md); border: 0.5px solid var(--border-light); background: var(--bg-secondary); color: var(--text-secondary); font-size: 10.5px; line-height: 1.45; }
+
+/* FACT.8 — échéancier de paiement */
+.echeancierBox { margin-top:12px; padding:12px; border:1px solid var(--border-light); border-radius:10px; background:var(--bg-secondary); }
+.echeancierHead { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.echeancierHead>div:first-child { display:flex; flex-direction:column; gap:2px; }
+.echeancierHead strong { font-size:12px; }
+.echeancierHead span { font-size:10.5px; color:var(--text-tertiary); }
+.echeancierToggle { display:flex; background:var(--bg-primary); border:1px solid var(--border-medium); border-radius:8px; overflow:hidden; }
+.echeancierToggle button { border:0; border-right:1px solid var(--border-light); background:transparent; padding:7px 10px; font-size:10.5px; color:var(--text-secondary); cursor:pointer; }
+.echeancierToggle button:last-child { border-right:0; }
+.echeancierToggle .echeancierModeActif { background:#eaf3fb; color:var(--blue); font-weight:600; }
+.echeancierPresets { display:flex; align-items:center; flex-wrap:wrap; gap:6px; margin-top:10px; font-size:10.5px; color:var(--text-tertiary); }
+.echeancierPresets button { border:1px solid var(--border-light); background:var(--bg-primary); border-radius:999px; padding:4px 8px; font-size:10px; cursor:pointer; color:var(--text-secondary); }
+.echeancierRows { display:flex; flex-direction:column; gap:6px; margin-top:9px; }
+.echeancierRow { display:grid; grid-template-columns:24px minmax(135px,1fr) 105px 120px 28px; gap:8px; align-items:center; background:var(--bg-primary); border:1px solid var(--border-light); border-radius:8px; padding:7px; }
+.echeancierNumero { width:22px; height:22px; border-radius:50%; display:grid; place-items:center; background:var(--bg-secondary); color:var(--text-tertiary); font-size:10px; font-weight:600; }
+.echeancierPct { position:relative; }
+.echeancierPct input { padding-right:24px; }
+.echeancierPct span { position:absolute; right:8px; top:50%; transform:translateY(-50%); color:var(--text-tertiary); font-size:10px; }
+.echeancierRow>strong { text-align:right; font-size:11px; white-space:nowrap; }
+.echeancierRemove { width:27px; height:27px; border:0; background:transparent; color:var(--text-tertiary); border-radius:6px; cursor:pointer; }
+.echeancierRemove:hover { background:#fbefef; color:var(--red); }
+.echeancierFooter { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:9px; }
+.echeancierOk,.echeancierKo { font-size:10.5px; font-weight:600; }
+.echeancierOk { color:#356513; }.echeancierKo { color:#a32d2d; }
+@media(max-width:760px){.echeancierHead{align-items:stretch;flex-direction:column}.echeancierRow{grid-template-columns:24px 1fr 85px}.echeancierRow>strong{grid-column:2/3;text-align:left}.echeancierRemove{grid-column:3/4;grid-row:2}.echeancierFooter{align-items:flex-start;flex-direction:column}}
+.detailEcheancier { border:1px solid var(--border-light); border-radius:10px; overflow:hidden; background:var(--bg-primary); }
+.detailEcheancierTitle { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:9px 12px; border-bottom:1px solid var(--border-light); font-size:11px; font-weight:600; }
+.detailEcheancierTitle>span { display:flex; align-items:center; gap:6px; }.detailEcheancierTitle small { color:var(--text-tertiary); font-weight:500; }
+.detailEcheancierRows { display:flex; flex-direction:column; }
+.detailEcheancierRow { display:grid; grid-template-columns:24px 1fr 150px 90px; gap:10px; align-items:center; padding:8px 12px; border-bottom:1px solid var(--border-light); font-size:11px; }
+.detailEcheancierRow:last-child { border-bottom:0; }.detailEcheancierRow>span:first-child { width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--bg-secondary);color:var(--text-tertiary);font-size:10px; }
+.detailEcheancierRow>div { display:flex; flex-direction:column; gap:2px; }.detailEcheancierRow small { color:var(--text-tertiary); font-size:9.5px; }.detailEcheancierRow>div:nth-child(3) { text-align:right; }
+.echeanceMiniBadge { justify-self:end; padding:3px 7px; border-radius:99px; background:#eef5fb; color:#24638f; font-size:9.5px; white-space:nowrap; }.echeanceMiniRetard { background:#fbecec; color:#9d2d2d; }
+
+/* 065 — saisie des factures : ligne complète visible dès l'ouverture.
+   Le tableau de consultation reste indépendant du formulaire. */
+.formContenu, .formGrid4, .formGrid2, .formGroup, .ligneFactRow, .lignesTable { min-width: 0; max-width: 100%; }
+.lignesColHeaders, .ligneFactRow { grid-template-columns: minmax(0, 2.2fr) minmax(0, .75fr) minmax(0, 1fr) minmax(0, .85fr) minmax(0, .9fr) minmax(0, 1.2fr) 30px; gap: 8px; }
+.ligneFactRow > *, .lignesColHeaders > * { min-width: 0; }
+.ligneFactRow :is(input,select) { min-width: 0; max-width: 100%; }
+.ligneChampMobile { display: flex; flex-direction: column; min-width: 0; }
+.ligneChampMobile > span { display: none; }
+.tableLignes { table-layout: fixed; width: 100%; min-width: 0; }
+.tableLignes th, .tableLignes td { min-width: 0; overflow-wrap: anywhere; }
+.tableLignes :is(input, select, textarea) { min-width: 0; max-width: 100%; }
+@media (max-width: 850px) {
+  .lignesColHeaders { display: none; }
+  .ligneFactRow { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 12px; border: 1px solid var(--border-light); border-radius: 10px; margin-bottom: 10px; position: relative; }
+  .ligneFactRow > :first-child { grid-column: 1 / -1; padding-right: 30px; }
+  .ligneFactRow > :nth-child(2)::before, .ligneFactRow > :nth-child(4)::before,
+  .ligneFactRow > :nth-child(5)::before, .ligneFactRow > :nth-child(6)::before {
+    display: block; font-size: 11px; font-weight: 600; color: var(--text-secondary); margin-bottom: 4px;
+  }
+  .ligneFactRow > :nth-child(2)::before { content: 'Quantité'; }
+  .ligneFactRow > :nth-child(4)::before { content: 'Remise (%)'; width: 100%; flex: 0 0 100%; }
+  .ligneFactRow > :nth-child(5)::before { content: 'TVA'; }
+  .ligneFactRow > :nth-child(6)::before { content: 'Total HT'; text-align: left; }
+  .ligneFactRow > :nth-child(4) { flex-wrap: wrap; }
+  .ligneFactRow > :nth-child(4) > input { flex: 1; }
+  .ligneFactRow > :nth-child(4) > span:last-child { top: auto !important; bottom: 13px; }
+  .ligneChampMobile > span { display: block; font-size: 11px; font-weight: 600; color: var(--text-secondary); margin-bottom: 4px; }
+  .ligneFactRow > :nth-child(6) { grid-column: 1 / -1; flex-direction: column; align-items: stretch !important; text-align: right; }
+  .ligneFactRow > :nth-child(7) { position: absolute; right: 6px; top: 6px; }
+  .ligneFactRow > .reducLigne { grid-column: 1 / -1; }
+}
+@media (max-width: 620px) {
+  /* Tableau d'édition des factures (6 colonnes) : chaque ligne devient une fiche. */
+  .tableLignes thead { display: none; }
+  .tableLignes, .tableLignes tbody { display: block; }
+  .tableLignes tbody tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 10px; margin-bottom: 10px; border: 1px solid var(--border-light); border-radius: 9px; position: relative; }
+  .tableLignes tbody td { display: block; padding: 2px !important; border-bottom: 0; min-width: 0; }
+  .tableLignes tbody td:first-child { grid-column: 1 / -1; }
+  .tableLignes tbody td[data-label]::before {
+    content: attr(data-label); display: block; font-size: 10px;
+    color: var(--text-secondary); font-weight: 600; margin: 0 0 3px;
+  }
+  .tableLignes tbody td:last-child { grid-column: 1 / -1; }
+  .tableLignes tbody td:first-child:has(input[type='checkbox']) { grid-column: auto; }
+  .tableLignes tbody td:first-child:has(input[type='checkbox']) + td { grid-column: 1 / -1; }
+}
+
+
+/* 066 — consultation des factures : les cinq informations de chaque ligne
+   tiennent dans la modale, sans tableau large ni contenu masqué à droite. */
+.detailLignes { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; width: 100%; min-width: 0; }
+.detailLigne {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 14px; min-width: 0; max-width: 100%; padding: 12px;
+  border: 1px solid var(--border-light); border-radius: var(--radius-md);
+  background: var(--bg-primary);
+}
+.detailLigneChamp { display: flex; flex-direction: column; min-width: 0; gap: 2px; }
+.detailLigneDescription { grid-column: 1 / -1; padding-bottom: 6px; border-bottom: 1px solid var(--border-light); }
+.detailLigneLabel { color: var(--text-tertiary); font-size: 10px; line-height: 1.35; }
+.detailLigneValeur { color: var(--text-primary); font-size: 12px; line-height: 1.45; overflow-wrap: anywhere; word-break: normal; font-weight: 400; }
+strong.detailLigneValeur { font-weight: 600; }
+.detailLigneChamp:last-child .detailLigneValeur { font-variant-numeric: tabular-nums; }
+.totauxFacture { min-width: 0; }
+.totauxLigne { gap: 12px; align-items: baseline; }
+.totauxLigne > :first-child { min-width: 0; overflow-wrap: anywhere; }
+.totauxLigne > :last-child { min-width: 0; text-align: right; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+/* Échéances de consultation : éviter les colonnes fixes de 150/90 px en modale. */
+.detailEcheancierRow { grid-template-columns: 24px minmax(0, 1fr) minmax(0, 140px) minmax(0, 85px); }
+.detailEcheancierRow > * { min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 540px) {
+  .detailEcheancierRow { grid-template-columns: 24px minmax(0, 1fr); }
+  .detailEcheancierRow > div:nth-child(3) { grid-column: 2; text-align: left; }
+  .detailEcheancierRow > .echeanceMiniBadge { grid-column: 2; justify-self: start; }
+}
+
+/* 067 — édition d'une facture : lisibilité et hiérarchie propres à cette fenêtre.
+   Les autres formulaires conservent leurs règles métier et leur mise en page. */
+.editFields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 18px;
+  min-width: 0;
+}
+.editFields > * { min-width: 0; }
+.editFullField { grid-column: 1 / -1; }
+.editFields :is(input, select) { box-sizing: border-box; min-width: 0; width: 100%; }
+.editExtras { display: flex; flex-direction: column; gap: 0; min-width: 0; }
+.editOption, .editRetenue {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+  min-width: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+.editExtras > :last-child { border-bottom: 0; }
+.editOptionLabel {
+  flex: 0 1 195px;
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+.editOptionLabel :is(input[type="checkbox"], i) { flex: 0 0 auto; }
+.editOption > :not(.editOptionLabel) { flex: 1 1 160px; min-width: 0; max-width: 250px; }
+.editOption > input[type="number"] { width: min(100%, 160px) !important; }
+.editRetenue > select { flex: 1 1 160px; max-width: 250px; min-width: 0; }
+:global(.hp-document-editor) .editOption :is(select, input),
+:global(.hp-document-editor) .editRetenue select { font-size: 13px; }
+
+/* Récapitulatif : supprime le grand encart vide à gauche du total. */
+:global(.hp-document-editor) .totauxZone {
+  margin: 0;
+  padding: 16px 18px;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  background: var(--bg-secondary);
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.editSummaryIntro { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.editSummaryIntro strong { font-size: 14px; color: var(--text-primary); }
+.editSummaryIntro span { font-size: 11px; color: var(--text-secondary); }
+:global(.hp-document-editor) .totauxGrid { min-width: min(100%, 285px); gap: 8px 26px; }
+:global(.hp-document-editor) .totauxGrid > span { overflow-wrap: anywhere; }
+:global(.hp-document-editor) .totauxGrid > span:nth-child(even) { white-space: normal; }
+:global(.hp-document-editor) .totalTTCValeur { font-size: 17px !important; }
+
+@container (max-width: 560px) {
+  .editFields { grid-template-columns: minmax(0, 1fr); }
+  .editOptionLabel { flex-basis: 100%; }
+  .editRetenue > select { max-width: 100%; }
+}
+
+/* 067 — lignes de nouvelle facture : adaptation sur largeur du formulaire. */
+@container (max-width: 850px) {
+  .lignesColHeaders { display: none; }
+  .ligneFactRow {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px; padding: 12px; border: 1px solid var(--border-light);
+    border-radius: 10px; margin-bottom: 10px; position: relative;
+  }
+  .ligneFactRow > :first-child { grid-column: 1 / -1; padding-right: 30px; }
+  .ligneFactRow > :nth-child(2)::before, .ligneFactRow > :nth-child(4)::before,
+  .ligneFactRow > :nth-child(5)::before, .ligneFactRow > :nth-child(6)::before {
+    display: block; font-size: 11px; font-weight: 600; color: var(--text-secondary); margin-bottom: 4px;
+  }
+  .ligneFactRow > :nth-child(2)::before { content: 'Quantité'; }
+  .ligneFactRow > :nth-child(4)::before { content: 'Remise (%)'; width: 100%; flex: 0 0 100%; }
+  .ligneFactRow > :nth-child(5)::before { content: 'TVA'; }
+  .ligneFactRow > :nth-child(6)::before { content: 'Total HT'; text-align: left; }
+  .ligneFactRow > :nth-child(4) { flex-wrap: wrap; }
+  .ligneFactRow > :nth-child(4) > input { flex: 1; }
+  .ligneFactRow > :nth-child(4) > span:last-child { top: auto !important; bottom: 13px; }
+  .ligneChampMobile > span { display: block; font-size: 11px; font-weight: 600; color: var(--text-secondary); margin-bottom: 4px; }
+  .ligneFactRow > :nth-child(6) { grid-column: 1 / -1; flex-direction: column; align-items: stretch !important; text-align: right; }
+  .ligneFactRow > :nth-child(7) { position: absolute; right: 6px; top: 6px; }
+  .ligneFactRow > .reducLigne { grid-column: 1 / -1; }
+}
+@container (max-width: 420px) {
+  .ligneFactRow { grid-template-columns: minmax(0, 1fr); }
+}

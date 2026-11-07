@@ -1,0 +1,122 @@
+{
+  "contexte": "Société fictive séparée en MAD, exercice2026. Mouvements explicitement déclarés depuis des pièces fictives, sans reconstitution de toutes les écritures annuelles.",
+  "n": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "10000.00"
+    },
+    {
+      "compte": "2340",
+      "debit": "11000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2834",
+      "debit": "0.00",
+      "credit": "4500.00"
+    },
+    {
+      "compte": "1511",
+      "debit": "0.00",
+      "credit": "700.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "4200.00",
+      "credit": "0.00"
+    }
+  ],
+  "n1": [
+    {
+      "compte": "1111",
+      "debit": "0.00",
+      "credit": "10000.00"
+    },
+    {
+      "compte": "2340",
+      "debit": "10000.00",
+      "credit": "0.00"
+    },
+    {
+      "compte": "2834",
+      "debit": "0.00",
+      "credit": "4000.00"
+    },
+    {
+      "compte": "1511",
+      "debit": "0.00",
+      "credit": "500.00"
+    },
+    {
+      "compte": "5141",
+      "debit": "4500.00",
+      "credit": "0.00"
+    }
+  ],
+  "tables": [
+    {
+      "code": "B2",
+      "statut": "documente",
+      "justification": "Registre fictif713 B2",
+      "lignes": [
+        {
+          "nature": "Matériel de transport fictif",
+          "debut": "10000",
+          "augmentations": "2000",
+          "diminutions": "1000",
+          "fin": "11000",
+          "reference_source": "Pièce fictive713 B2"
+        }
+      ]
+    },
+    {
+      "code": "B2bis",
+      "statut": "documente",
+      "justification": "Registre fictif713 B2bis",
+      "lignes": [
+        {
+          "nature": "Amortissements transport fictifs",
+          "debut": "4000",
+          "augmentations": "1000",
+          "diminutions": "500",
+          "fin": "4500",
+          "reference_source": "Pièce fictive713 B2bis"
+        }
+      ]
+    },
+    {
+      "code": "B5",
+      "statut": "documente",
+      "justification": "Registre fictif713 B5",
+      "lignes": [
+        {
+          "nature": "Litige fictif",
+          "debut": "500",
+          "augmentations": "300",
+          "diminutions": "100",
+          "fin": "700",
+          "reference_source": "Pièce fictive713 B5"
+        }
+      ]
+    }
+  ],
+  "attendus": {
+    "B2": {
+      "fin_reconstituee": "11000.00",
+      "ecart_fin": "0.00"
+    },
+    "B2bis": {
+      "fin_reconstituee": "4500.00",
+      "ecart_fin": "0.00"
+    },
+    "B5": {
+      "fin_reconstituee": "700.00",
+      "ecart_fin": "0.00"
+    }
+  },
+  "variante": {
+    "B2_fin_declaree": "10999.99",
+    "B2_ecart": "-0.01"
+  }
+}

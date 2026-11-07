@@ -1,0 +1,19 @@
+{
+  "role": "comptable",
+  "largeur": 390,
+  "formulaire_reel": true,
+  "totaux": {
+    "valeur_locative_totale": "42000.00",
+    "brut_arithmetique": "7200.00",
+    "brut_propose": "7200.00",
+    "avis_comparables": "7400.00",
+    "ecart_brut_avis": "-200.00"
+  },
+  "export": {
+    "fichiers": 17,
+    "pdf_pages": 40,
+    "excel_feuilles": 57,
+    "logo": true
+  },
+  "aucune_ecriture": true
+}

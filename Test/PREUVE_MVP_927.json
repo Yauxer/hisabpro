@@ -1,0 +1,411 @@
+{
+  "date": "2026-10-29",
+  "nombre_distinct": 62,
+  "campagne_unique_verte": true,
+  "repartition": {
+    "API_SQL_PostgreSQL_natif_isole": 34,
+    "Edge_API_PostgreSQL_natif_isole": 14,
+    "unitaires": 14
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_apercu_sans_mutation_et_montants_identiques_enregistrement[lineaire-4813.33-19186.67-813.33-13.33]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_apercu_sans_mutation_et_montants_identiques_enregistrement[degressif-10080.00-13920.00-6080.00-480.00]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_lecture_seule_sql_meme_avec_dependance_et_aucun_exercice_cree",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_changement_demande_ou_dotation_rend_apercu_perime",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_incoherence_dotation_refusee_avant_toute_ecriture",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_roles_societes_dates_et_montants_non_finis",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_apercu927_isole::test_927_bien_non_amortissable_et_rebut",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_apercu927_isole::test_927_consulter_calcul_avant_sortie_sans_ancien_apercu_reutilise[cession-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_apercu927_isole::test_927_consulter_calcul_avant_sortie_sans_ancien_apercu_reutilise[cession-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_apercu927_isole::test_927_consulter_calcul_avant_sortie_sans_ancien_apercu_reutilise[rebut-1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_apercu927_isole::test_927_consulter_calcul_avant_sortie_sans_ancien_apercu_reutilise[rebut-390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_situation_achevee_identique_au_plan_normal[debut0-0-lineaire]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_situation_achevee_identique_au_plan_normal[debut0-0-degressif]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_situation_achevee_identique_au_plan_normal[debut0-residuelle1-lineaire]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_situation_achevee_identique_au_plan_normal[debut0-residuelle1-degressif]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_situation_achevee_identique_au_plan_normal[debut1-0-lineaire]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_situation_achevee_identique_au_plan_normal[debut1-0-degressif]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_situation_achevee_identique_au_plan_normal[debut1-residuelle1-lineaire]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_situation_achevee_identique_au_plan_normal[debut1-residuelle1-degressif]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_sortie_dernier_jour_acheve_aussi_le_plan[lineaire]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_sortie_dernier_jour_acheve_aussi_le_plan[degressif]",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_sortie_avant_fin_ne_force_pas_un_amortissement_integral",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_dotation_derniere_annee_absorbe_centime_comme_plan_normal",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_fin_plan::test_resultat_cession_apres_plan_ne_cree_pas_moins_value_fictive",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_cahier_cession787_isole::test_787_cession_2026_cahier_prorata_independant_et_2025_immuable[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_cahier_cession787_isole::test_787_cession_2026_cahier_prorata_independant_et_2025_immuable[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_sortie_isole::test_sortie_ui_oracle_validation_refus_et_originaux_immuables[cession]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_sortie_isole::test_sortie_ui_oracle_validation_refus_et_originaux_immuables[rebut]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_cession_differee_isole::test_cession_differee_encaissement_et_validations_browser",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_reprise_ouverture_immobilisations_isole::test_reprise_utilise_ouverture_reelle_sans_dependre_exercice_precedent[01-01-None-4000-2000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_reprise_ouverture_immobilisations_isole::test_reprise_utilise_ouverture_reelle_sans_dependre_exercice_precedent[01-01-12-31-4000-2000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_reprise_ouverture_immobilisations_isole::test_reprise_utilise_ouverture_reelle_sans_dependre_exercice_precedent[07-01-None-3000-2000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_reprise_ouverture_immobilisations_isole::test_reprise_utilise_ouverture_reelle_sans_dependre_exercice_precedent[04-01-None-4500-1500]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_reprise_ouverture_immobilisations_isole::test_reprise_utilise_ouverture_reelle_sans_dependre_exercice_precedent[01-01-03-31-4000-2000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_deux_sorties_ou_encaissements_ne_creent_quune_operation[rebut]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_deux_sorties_ou_encaissements_ne_creent_quune_operation[cession]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_deux_sorties_ou_encaissements_ne_creent_quune_operation[encaissement]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_deux_sorties_ou_encaissements_ne_creent_quune_operation[paiement]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_dotation_en_cours_refuse_changement_du_plan[unitaire]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_dotation_en_cours_refuse_changement_du_plan[lot]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_dotation_en_cours_refuse_changement_du_plan[cloture]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_plan_en_cours_refuse_generation_puis_utilise_plan_confirme[unitaire]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_plan_en_cours_refuse_generation_puis_utilise_plan_confirme[lot]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_plan_en_cours_refuse_generation_puis_utilise_plan_confirme[cloture]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_conflit_asset_ne_bloque_pas_lecture_autres_assets_ni_autres_societes",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_refus_metier_libere_verrou_sans_mutation",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_conflit_tardif_lot_annule_toutes_les_dotations_et_permet_reprise",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_mutations_concurrentes_isole::test_relecture_du_plan_precharge_dans_session_reelle",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_deux_clotures_isole::test_deux_clotures_decalees_et_continuite_dates_dans_navigateur",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_deux_clotures_isole::test_cession_apres_reprise_ne_recree_pas_annuites_anterieures",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_deux_clotures_isole::test_sortie_ne_masque_pas_ecart_reprise_ou_brouillon[2000-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_deux_clotures_isole::test_sortie_ne_masque_pas_ecart_reprise_ou_brouillon[4000-True]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_deux_clotures_isole::test_sortie_ne_masque_pas_ecart_reprise_ou_brouillon[3000-False]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_deux_clotures_isole::test_cession_reconnait_charge_annuelle_corrigee_sans_nouvelle_am[None]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_deux_clotures_isole::test_cession_reconnait_charge_annuelle_corrigee_sans_nouvelle_am[500]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_deux_clotures_isole::test_cession_reconnait_charge_annuelle_corrigee_sans_nouvelle_am[3000]",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_immobilisations_deux_clotures_isole::test_sortie_avant_reprise_refusee_sans_effet",
+      "famille": "API_SQL_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_cahier_integrite839_isole::test_839_cycle_annuel_et_integrite[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_cahier_integrite839_isole::test_839_cycle_annuel_et_integrite[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_degressif_isole::test_oracle_degressif_bascule_lineaire_independant",
+      "famille": "unitaires",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_degressif_isole::test_edge_cinq_dotations_degressives_et_acquisition_definitive_conservee[reseau-normal]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    },
+    {
+      "id": "Test.test_e2e_immobilisations_degressif_isole::test_edge_cinq_dotations_degressives_et_acquisition_definitive_conservee[reseau-ralenti]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "immo927_final"
+    }
+  ],
+  "commande": "python -X utf8 .codex-tests/lancer_session.py immo927_final Test/test_immobilisations_apercu927_isole.py Test/test_e2e_immobilisations_apercu927_isole.py Test/test_immobilisations_fin_plan.py Test/test_patch03_immobilisations.py Test/test_e2e_cahier_cession787_isole.py Test/test_e2e_immobilisations_sortie_isole.py Test/test_e2e_immobilisations_cession_differee_isole.py Test/test_reprise_ouverture_immobilisations_isole.py Test/test_immobilisations_mutations_concurrentes_isole.py Test/test_immobilisations_deux_clotures_isole.py Test/test_e2e_cahier_integrite839_isole.py Test/test_e2e_immobilisations_degressif_isole.py",
+  "duree_s": 539.33,
+  "avertissements": 30,
+  "code_sortie": 0,
+  "preuves": {
+    "Test/preuves_mvp927/cahier773_apercu927_cession_1440_preuve.json": "d1522012d48eff61a5a916a6acf9b8031cfef0cc676f5fb3d3b09c622baabee7",
+    "Test/preuves_mvp927/cahier773_apercu927_cession_390_preuve.json": "702c39bdce18f9cbadd1e03cd539dbb560fcb2ff3caa4fb7171c090e2602a84d",
+    "Test/preuves_mvp927/cahier773_apercu927_rebut_1440_preuve.json": "e6d38a4da3dc8b6818802b6788dba96d69288d2f8ae6e1d4217078b8e0f2e94c",
+    "Test/preuves_mvp927/cahier773_apercu927_rebut_390_preuve.json": "a315d986f84fa13524096300c92cc9bf7ce8f248570322fc5f21edc3ed5a6a01",
+    "Test/preuves_mvp927/chaine927.json": "21e3a09c22d0bcc5d0616408f7b6af2e200d665790cdd8f60d105cdaa537ebe9",
+    "Test/preuves_mvp927/immo927_cible.xml": "1baa2a1b5642405df6ce766193caf305722f649a9d996a1fe46b4c35d1b74cb8",
+    "Test/preuves_mvp927/immo927_final.xml": "7a496f6805fc2b01160021e6ee093c91c9b8c79a58ee5accd7b249e89a5fabb6",
+    "Test/preuves_mvp927/immo927_parcours.xml": "7bb9deee2ac8df6c49462724c8f0eb5ba2ea13eb3f5c14a7bc09d8055079e07f",
+    "Test/preuves_mvp927/immo927_reprise.xml": "130488ce0f25e5df5e953f747d12e20b8ae1676b13e61f78c01b9d4400d44f7b"
+  },
+  "build": {
+    "modules": 214,
+    "secondes": 4.91,
+    "code_sortie": 0,
+    "avertissement": "Bundle principal supérieur au seuil Vite."
+  },
+  "candidat": "Test/CANDIDAT_MVP_927.json",
+  "nombre_fichiers_candidat": 549,
+  "aucune_base_reelle": true,
+  "migration": "Aucune nouvelle migration ;anciennes migrations inchangées.",
+  "restauration": "Non rejouée927 ;84tables de925 est une preuve antérieure distincte.",
+  "reserve": "Convention interne maintenue et TVA de cession/régularisation à qualifier. HP-IMM-004 reste Partiel. Recette humaine et production non validées."
+}

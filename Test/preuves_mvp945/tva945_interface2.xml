@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="3" time="62.287" timestamp="2026-10-29T19:37:56.677538+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_tva_acomptes945_isole" name="test_945_date_effective_interface_droits_et_tva[admin-1440]" time="38.590"><failure message="AssertionError: Locator expected to contain text '05/07/2025'&#10;Actual value: Acompte AC-2025-001Situation de l'acompteTiersTiers FICTIF945Date01/06/25Montant24.000,00 MADDisponible24.000,00 MADPaiementEncaissé / payéMode / référenceChèque · AC-FICTIF945Date effective05/07/25BanqueBanque RecetteHistorique des imputationsUne imputation erronée est annulée et contrepassée ; elle n'est jamais supprimée de l'historique.Aucune imputation pour cet acompte.Fermer &#10;Call log:&#10;  - Expect &quot;to_contain_text&quot; get_by_role(&quot;dialog&quot;) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;dialog&quot;)&#10;    14 × locator resolved to &lt;div role=&quot;dialog&quot; aria-modal=&quot;true&quot; class=&quot;Modal_modal Modal_md&quot; aria-label=&quot;Acompte AC-2025-001&quot;&gt;…&lt;/div&gt;&#10;       - unexpected value &quot;Acompte AC-2025-001Situation de l'acompteTiersTiers FICTIF945Date01/06/25Montant24.000,00 MADDisponible24.000,00 MADPaiementEncaissé / payéMode / référenceChèque · AC-FICTIF945Date effective05/07/25BanqueBanque RecetteHistorique des imputationsUne imputation erronée est annulée et contrepassée ; elle n'est jamais supprimée de l'historique.Aucune imputation pour cet acompte.Fermer&quot;&#10;&#10;Aria snapshot:&#10;- dialog &quot;Acompte AC-2025-001&quot;:&#10;  - text: Acompte AC-2025-001&#10;  - button &quot;Fermer&quot;&#10;  - text: Situation de l'acompte Tiers Tiers FICTIF945 Date 01/06/25 Montant 24.000,00 MAD Disponible 24.000,00 MAD Paiement Encaissé / payé Mode / référence Chèque · AC-FICTIF945 Date effective 05/07/25 Banque Banque Recette Historique des imputations Une imputation erronée est annulée et contrepassée ; elle n'est jamais supprimée de l'historique. Aucune imputation pour cet acompte.&#10;  - button &quot;Fermer&quot;">application = {'api_url': 'http://127.0.0.1:51039', 'web_url': 'http://127.0.0.1:51040', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_1edag15k'), 'nonce': 'd1705cebc9214c41a0b27461e40bf8ee', ...}, ...}
+role = 'admin', largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/tva945_interface2/test_945_date_effective_interf0')
+
+    @pytest.mark.parametrize('role,largeur', [('admin', 1440), ('comptable', 390), ('lecture', 390)])
+    def test_945_date_effective_interface_droits_et_tva(application, role, largeur, tmp_path):
+        api, email, password = client(application)
+        with closing(api), sync_playwright() as p:
+            sid, tiers, banque = dossier(api, application)
+            ac = acompte(api, tiers, banque)
+            if role != 'admin':
+                email = f'{role}-{ac["id"]}-945@hisabpro-recette.example'
+                ok(api.post('/api/utilisateurs', json={'nom': 'Rôle FICTIF945', 'email': email,
+                    'mot_de_passe': password, 'role': role}), 201)
+            browser = p.chromium.launch(executable_path=chromium_executable(), headless=True)
+            preuve = {'role': role, 'largeur': largeur, 'nonce': application['cluster']['nonce'], 'erreur': None}
+            try:
+                page = browser.new_page(viewport={'width': largeur, 'height': 1050})
+                page.set_default_timeout(15000)
+                errors, serveur = observer(page, application['api_url'])
+                page.on('dialog', lambda d: d.accept())
+                connexion(page, application['web_url'], email, password)
+                page.goto(application['web_url'] + '/cloture')
+                page.get_by_label('Exercice actif', exact=True).select_option('2025')
+                page.goto(application['web_url'] + '/acomptes')
+                ligne = page.locator('tbody tr').filter(has_text=ac['numero'])
+                ligne.get_by_role('button', name="Voir le détail et l'historique", exact=True).click()
+                modal = page.get_by_role('dialog')
+                date = modal.get_by_label('Date de l’opération', exact=True)
+                if role == 'lecture':
+                    expect(date).to_have_count(0)
+                    expect(modal.get_by_role('button', name="Confirmer l'encaissement", exact=True)).to_have_count(0)
+                    auth = ok(api.post('/api/auth/login', json={'email': email, 'password': password}))
+                    refus = api.post(f'/api/acomptes/{ac["id"]}/statut-paiement',
+                        headers={'Authorization': 'Bearer ' + auth['access_token']},
+                        json={'statut': 'encaisse', 'date_operation': '2025-07-05'})
+                    assert refus.status_code == 403, refus.text
+                    preuve['refus_role_lecture'] = 403
+                    assert montant(declaration(api, 6)) == montant(declaration(api, 7)) == 0
+                else:
+                    date.fill('2025-07-05')
+                    with page.expect_response(lambda r: r.request.method == 'POST' and
+                            r.url.endswith(f'/api/acomptes/{ac["id"]}/statut-paiement')) as mutation:
+                        modal.get_by_role('button', name="Confirmer l'encaissement", exact=True).click()
+                    ok(mutation.value)
+                    assert mutation.value.request.post_data_json['date_operation'] == '2025-07-05'
+                    modal.wait_for(state='hidden')
+                    # La liste est rafraîchie par la mutation sans F5.
+                    expect(ligne).not_to_contain_text('En attente')
+                    ligne.get_by_role('button', name="Voir le détail et l'historique", exact=True).click()
+&gt;                   expect(page.get_by_role('dialog')).to_contain_text('05/07/2025')
+E                   AssertionError: Locator expected to contain text '05/07/2025'
+E                   Actual value: Acompte AC-2025-001Situation de l'acompteTiersTiers FICTIF945Date01/06/25Montant24.000,00 MADDisponible24.000,00 MADPaiementEncaissé / payéMode / référenceChèque · AC-FICTIF945Date effective05/07/25BanqueBanque RecetteHistorique des imputationsUne imputation erronée est annulée et contrepassée ; elle n'est jamais supprimée de l'historique.Aucune imputation pour cet acompte.Fermer 
+E                   Call log:
+E                     - Expect "to_contain_text" get_by_role("dialog") with timeout 5000ms
+E                     - waiting for get_by_role("dialog")
+E                       14 × locator resolved to &lt;div role="dialog" aria-modal="true" class="Modal_modal Modal_md" aria-label="Acompte AC-2025-001"&gt;…&lt;/div&gt;
+E                          - unexpected value "Acompte AC-2025-001Situation de l'acompteTiersTiers FICTIF945Date01/06/25Montant24.000,00 MADDisponible24.000,00 MADPaiementEncaissé / payéMode / référenceChèque · AC-FICTIF945Date effective05/07/25BanqueBanque RecetteHistorique des imputationsUne imputation erronée est annulée et contrepassée ; elle n'est jamais supprimée de l'historique.Aucune imputation pour cet acompte.Fermer"
+E                   
+E                   Aria snapshot:
+E                   - dialog "Acompte AC-2025-001":
+E                     - text: Acompte AC-2025-001
+E                     - button "Fermer"
+E                     - text: Situation de l'acompte Tiers Tiers FICTIF945 Date 01/06/25 Montant 24.000,00 MAD Disponible 24.000,00 MAD Paiement Encaissé / payé Mode / référence Chèque · AC-FICTIF945 Date effective 05/07/25 Banque Banque Recette Historique des imputations Une imputation erronée est annulée et contrepassée ; elle n'est jamais supprimée de l'historique. Aucune imputation pour cet acompte.
+E                     - button "Fermer"
+
+Test\test_e2e_tva_acomptes945_isole.py:65: AssertionError</failure></testcase><testcase classname="Test.test_e2e_tva_acomptes945_isole" name="test_945_date_effective_interface_droits_et_tva[comptable-390]" time="10.202"><failure message="AssertionError: Locator expected to contain text '05/07/2025'&#10;Actual value: Acompte AC-2025-001Situation de l'acompteTiersTiers FICTIF945Date01/06/25Montant24.000,00 MADDisponible24.000,00 MADPaiementEncaissé / payéMode / référenceChèque · AC-FICTIF945Date effective05/07/25BanqueBanque RecetteHistorique des imputationsUne imputation erronée est annulée et contrepassée ; elle n'est jamais supprimée de l'historique.Aucune imputation pour cet acompte.Fermer &#10;Call log:&#10;  - Expect &quot;to_contain_text&quot; get_by_role(&quot;dialog&quot;) with timeout 5000ms&#10;  - waiting for get_by_role(&quot;dialog&quot;)&#10;    14 × locator resolved to &lt;div role=&quot;dialog&quot; aria-modal=&quot;true&quot; class=&quot;Modal_modal Modal_md&quot; aria-label=&quot;Acompte AC-2025-001&quot;&gt;…&lt;/div&gt;&#10;       - unexpected value &quot;Acompte AC-2025-001Situation de l'acompteTiersTiers FICTIF945Date01/06/25Montant24.000,00 MADDisponible24.000,00 MADPaiementEncaissé / payéMode / référenceChèque · AC-FICTIF945Date effective05/07/25BanqueBanque RecetteHistorique des imputationsUne imputation erronée est annulée et contrepassée ; elle n'est jamais supprimée de l'historique.Aucune imputation pour cet acompte.Fermer&quot;&#10;&#10;Aria snapshot:&#10;- dialog &quot;Acompte AC-2025-001&quot;:&#10;  - text: Acompte AC-2025-001&#10;  - button &quot;Fermer&quot;&#10;  - text: Situation de l'acompte Tiers Tiers FICTIF945 Date 01/06/25 Montant 24.000,00 MAD Disponible 24.000,00 MAD Paiement Encaissé / payé Mode / référence Chèque · AC-FICTIF945 Date effective 05/07/25 Banque Banque Recette Historique des imputations Une imputation erronée est annulée et contrepassée ; elle n'est jamais supprimée de l'historique. Aucune imputation pour cet acompte.&#10;  - button &quot;Fermer&quot;">application = {'api_url': 'http://127.0.0.1:51039', 'web_url': 'http://127.0.0.1:51040', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_1edag15k'), 'nonce': 'd1705cebc9214c41a0b27461e40bf8ee', ...}, ...}
+role = 'comptable', largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/tva945_interface2/test_945_date_effective_interf1')
+
+    @pytest.mark.parametrize('role,largeur', [('admin', 1440), ('comptable', 390), ('lecture', 390)])
+    def test_945_date_effective_interface_droits_et_tva(application, role, largeur, tmp_path):
+        api, email, password = client(application)
+        with closing(api), sync_playwright() as p:
+            sid, tiers, banque = dossier(api, application)
+            ac = acompte(api, tiers, banque)
+            if role != 'admin':
+                email = f'{role}-{ac["id"]}-945@hisabpro-recette.example'
+                ok(api.post('/api/utilisateurs', json={'nom': 'Rôle FICTIF945', 'email': email,
+                    'mot_de_passe': password, 'role': role}), 201)
+            browser = p.chromium.launch(executable_path=chromium_executable(), headless=True)
+            preuve = {'role': role, 'largeur': largeur, 'nonce': application['cluster']['nonce'], 'erreur': None}
+            try:
+                page = browser.new_page(viewport={'width': largeur, 'height': 1050})
+                page.set_default_timeout(15000)
+                errors, serveur = observer(page, application['api_url'])
+                page.on('dialog', lambda d: d.accept())
+                connexion(page, application['web_url'], email, password)
+                page.goto(application['web_url'] + '/cloture')
+                page.get_by_label('Exercice actif', exact=True).select_option('2025')
+                page.goto(application['web_url'] + '/acomptes')
+                ligne = page.locator('tbody tr').filter(has_text=ac['numero'])
+                ligne.get_by_role('button', name="Voir le détail et l'historique", exact=True).click()
+                modal = page.get_by_role('dialog')
+                date = modal.get_by_label('Date de l’opération', exact=True)
+                if role == 'lecture':
+                    expect(date).to_have_count(0)
+                    expect(modal.get_by_role('button', name="Confirmer l'encaissement", exact=True)).to_have_count(0)
+                    auth = ok(api.post('/api/auth/login', json={'email': email, 'password': password}))
+                    refus = api.post(f'/api/acomptes/{ac["id"]}/statut-paiement',
+                        headers={'Authorization': 'Bearer ' + auth['access_token']},
+                        json={'statut': 'encaisse', 'date_operation': '2025-07-05'})
+                    assert refus.status_code == 403, refus.text
+                    preuve['refus_role_lecture'] = 403
+                    assert montant(declaration(api, 6)) == montant(declaration(api, 7)) == 0
+                else:
+                    date.fill('2025-07-05')
+                    with page.expect_response(lambda r: r.request.method == 'POST' and
+                            r.url.endswith(f'/api/acomptes/{ac["id"]}/statut-paiement')) as mutation:
+                        modal.get_by_role('button', name="Confirmer l'encaissement", exact=True).click()
+                    ok(mutation.value)
+                    assert mutation.value.request.post_data_json['date_operation'] == '2025-07-05'
+                    modal.wait_for(state='hidden')
+                    # La liste est rafraîchie par la mutation sans F5.
+                    expect(ligne).not_to_contain_text('En attente')
+                    ligne.get_by_role('button', name="Voir le détail et l'historique", exact=True).click()
+&gt;                   expect(page.get_by_role('dialog')).to_contain_text('05/07/2025')
+E                   AssertionError: Locator expected to contain text '05/07/2025'
+E                   Actual value: Acompte AC-2025-001Situation de l'acompteTiersTiers FICTIF945Date01/06/25Montant24.000,00 MADDisponible24.000,00 MADPaiementEncaissé / payéMode / référenceChèque · AC-FICTIF945Date effective05/07/25BanqueBanque RecetteHistorique des imputationsUne imputation erronée est annulée et contrepassée ; elle n'est jamais supprimée de l'historique.Aucune imputation pour cet acompte.Fermer 
+E                   Call log:
+E                     - Expect "to_contain_text" get_by_role("dialog") with timeout 5000ms
+E                     - waiting for get_by_role("dialog")
+E                       14 × locator resolved to &lt;div role="dialog" aria-modal="true" class="Modal_modal Modal_md" aria-label="Acompte AC-2025-001"&gt;…&lt;/div&gt;
+E                          - unexpected value "Acompte AC-2025-001Situation de l'acompteTiersTiers FICTIF945Date01/06/25Montant24.000,00 MADDisponible24.000,00 MADPaiementEncaissé / payéMode / référenceChèque · AC-FICTIF945Date effective05/07/25BanqueBanque RecetteHistorique des imputationsUne imputation erronée est annulée et contrepassée ; elle n'est jamais supprimée de l'historique.Aucune imputation pour cet acompte.Fermer"
+E                   
+E                   Aria snapshot:
+E                   - dialog "Acompte AC-2025-001":
+E                     - text: Acompte AC-2025-001
+E                     - button "Fermer"
+E                     - text: Situation de l'acompte Tiers Tiers FICTIF945 Date 01/06/25 Montant 24.000,00 MAD Disponible 24.000,00 MAD Paiement Encaissé / payé Mode / référence Chèque · AC-FICTIF945 Date effective 05/07/25 Banque Banque Recette Historique des imputations Une imputation erronée est annulée et contrepassée ; elle n'est jamais supprimée de l'historique. Aucune imputation pour cet acompte.
+E                     - button "Fermer"
+
+Test\test_e2e_tva_acomptes945_isole.py:65: AssertionError</failure></testcase><testcase classname="Test.test_e2e_tva_acomptes945_isole" name="test_945_date_effective_interface_droits_et_tva[lecture-390]" time="9.746" /></testsuite></testsuites>

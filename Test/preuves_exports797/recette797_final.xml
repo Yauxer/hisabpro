@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="386.274" timestamp="2026-10-24T23:02:21.316750+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_exports797_isole" name="test_797_exports_et_justificatif_cahier_cloture[1440]" time="226.189"><failure message="AssertionError: ('journal', 0, 145)&#10;assert 0 == 145&#10; +  where 0 = len([])">application = {'api_url': 'http://127.0.0.1:55014', 'web_url': 'http://127.0.0.1:55015', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_afwgvygy'), 'nonce': 'ee9babf2ae4f4bb18e7f4c83c020fa8b', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette797_final/test_797_exports_et_justificat0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_797_exports_et_justificatif_cahier_cloture(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'exports797') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve);cloturer_cahier(api,page,application,sid,preuve)
+    
+&gt;     verifier_exports(api,page,application,sid,preuve,tmp_path,tiers)
+
+Test\test_e2e_cahier_exports797_isole.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+api = &lt;httpx.Client object at 0x000001EC9F669C10&gt;
+page = &lt;Page url='http://127.0.0.1:55015/journal'&gt;
+app = {'api_url': 'http://127.0.0.1:55014', 'web_url': 'http://127.0.0.1:55015', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_afwgvygy'), 'nonce': 'ee9babf2ae4f4bb18e7f4c83c020fa8b', ...}, ...}
+sid = 8
+preuve = {'cible_isolee': 'C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_afwgvygy', 'nonce': 'ee9babf2ae4f4bb18e7f4c83c020fa8b', 'source_sha256': 'b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7', 'largeur': 1440, ...}
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette797_final/test_797_exports_et_justificat0')
+tiers = {'C-MARCH': {'id': 3, 'type': 'client', 'nom': 'Client Marchandises Recette', 'code_aux_client': 'C00000003', ...}, 'C...MARCH': {'id': 6, 'type': 'fournisseur', 'nom': 'Fournisseur Marchandises Recette', 'code_aux_client': None, ...}, ...}
+
+    def verifier_exports(api,page,app,sid,preuve,tmp_path,tiers):
+     avant=core(app,sid);fige=ok(api.get('/api/fiscalite/is/2025'))['liquidation']['snapshot'];exports=[]
+     page.goto(app['web_url']+'/journal');ligne=page.locator('tr').filter(has=page.get_by_text('CAP-01',exact=True)).filter(has=page.get_by_role('button',name='Justificatifs',exact=True));expect(ligne).to_have_count(1);ligne.get_by_role('button',name='Justificatifs',exact=True).click()
+     modal=page.locator('div[class*="auditModal"]').filter(has=page.get_by_text('Pièces jointes',exact=False));expect(modal).to_have_count(1);expect(modal.get_by_role('button',name='Joindre un fichier',exact=True)).to_be_enabled()
+     source=Path('docs/recette/justificatifs/CAP-01.pdf').resolve()
+     with page.expect_response(lambda r:'/api/attachments/ecriture/' in r.url and r.request.method=='POST') as r:modal.locator('input[type=file]').set_input_files(str(source))
+     fiche=ok(r.value);nom=fiche['nom'];expect(modal.get_by_text(nom,exact=True)).to_be_visible();expect(modal.get_by_role('button',name='Supprimer',exact=True)).to_have_count(0)
+    
+     with app['engine'].connect() as db:
+      traces=db.execute(text('SELECT reference,date_piece,source_type,created_by FROM ecriture_justificatifs WHERE societe_id=:sid AND fichier_nom=:nom'),{'sid':sid,'nom':nom}).all()
+      assert len(traces)==1 and traces[0][0]=='CAP-01' and str(traces[0][1])=='2025-01-01' and traces[0][2]=='fichier' and traces[0][3]
+     preuve['justificatif797']={'nom_serveur':nom,'reference':'CAP-01','date_piece':'2025-01-01','trace_documentaire_verifiee':True,'suppression_non_proposee':True}
+     with page.expect_download() as sortie:modal.get_by_role('button',name='Télécharger',exact=True).click()
+     fichier=tmp_path/'CAP-01_telecharge.pdf';sortie.value.save_as(fichier);assert fichier.read_bytes()==source.read_bytes();exports.append({'nom':'Justificatif CAP-01','chemin':str(fichier),'sha256':hashlib.sha256(fichier.read_bytes()).hexdigest()})
+     modal.get_by_role('button',name='Fermer',exact=True).click();page.reload();ligne=page.locator('tr').filter(has=page.get_by_text('CAP-01',exact=True)).filter(has=page.get_by_role('button',name='Justificatifs',exact=True));ligne.get_by_role('button',name='Justificatifs',exact=True).click();expect(page.get_by_text(nom,exact=True)).to_be_visible();page.get_by_role('button',name='Fermer',exact=True).click();preuve['cas'].append({'id':'HP-CPT-005','statut':'Réussi'})
+    
+     exercice=[e for e in avant if str(e[1]).startswith('2025')];nb_lignes=sum(len(e[-1]) for e in exercice);total_attendu=sum(D(str(l[2])) for e in exercice for l in e[-1])
+     for route,nom_export,ref_col in [('/journal','journal','Référence pièce'),('/grand-livre','grand_livre','Référence')]:
+      page.goto(app['web_url']+route);bouton=page.get_by_role('button',name='Exporter CSV',exact=True);expect(bouton).to_be_enabled()
+      with page.expect_download() as sortie:bouton.click()
+&gt;     fichier=tmp_path/(nom_export+'.csv');sortie.value.save_as(fichier);rows=list(csv.DictReader(io.StringIO(fichier.read_text(encoding='utf-8-sig')),delimiter=';'));assert len(rows)==nb_lignes,(nom_export,len(rows),nb_lignes)
+                                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: ('journal', 0, 145)
+E     assert 0 == 145
+E      +  where 0 = len([])
+
+Test\test_e2e_cahier_exports797_isole.py:43: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_exports797_isole" name="test_797_exports_et_justificatif_cahier_cloture[390]" time="156.888"><failure message="AssertionError: ('journal', 0, 145)&#10;assert 0 == 145&#10; +  where 0 = len([])">application = {'api_url': 'http://127.0.0.1:55014', 'web_url': 'http://127.0.0.1:55015', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_afwgvygy'), 'nonce': 'ee9babf2ae4f4bb18e7f4c83c020fa8b', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette797_final/test_797_exports_et_justificat1')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_797_exports_et_justificatif_cahier_cloture(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'exports797') as (api,page,sid,preuve):
+      tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve);cloturer_cahier(api,page,application,sid,preuve)
+    
+&gt;     verifier_exports(api,page,application,sid,preuve,tmp_path,tiers)
+
+Test\test_e2e_cahier_exports797_isole.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+api = &lt;httpx.Client object at 0x000001ECA259D710&gt;
+page = &lt;Page url='http://127.0.0.1:55015/journal'&gt;
+app = {'api_url': 'http://127.0.0.1:55014', 'web_url': 'http://127.0.0.1:55015', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_afwgvygy'), 'nonce': 'ee9babf2ae4f4bb18e7f4c83c020fa8b', ...}, ...}
+sid = 9
+preuve = {'cible_isolee': 'C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_afwgvygy', 'nonce': 'ee9babf2ae4f4bb18e7f4c83c020fa8b', 'source_sha256': 'b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7', 'largeur': 390, ...}
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette797_final/test_797_exports_et_justificat1')
+tiers = {'C-MARCH': {'id': 10, 'type': 'client', 'nom': 'Client Marchandises Recette', 'code_aux_client': 'C00000010', ...}, '...ARCH': {'id': 13, 'type': 'fournisseur', 'nom': 'Fournisseur Marchandises Recette', 'code_aux_client': None, ...}, ...}
+
+    def verifier_exports(api,page,app,sid,preuve,tmp_path,tiers):
+     avant=core(app,sid);fige=ok(api.get('/api/fiscalite/is/2025'))['liquidation']['snapshot'];exports=[]
+     page.goto(app['web_url']+'/journal');ligne=page.locator('tr').filter(has=page.get_by_text('CAP-01',exact=True)).filter(has=page.get_by_role('button',name='Justificatifs',exact=True));expect(ligne).to_have_count(1);ligne.get_by_role('button',name='Justificatifs',exact=True).click()
+     modal=page.locator('div[class*="auditModal"]').filter(has=page.get_by_text('Pièces jointes',exact=False));expect(modal).to_have_count(1);expect(modal.get_by_role('button',name='Joindre un fichier',exact=True)).to_be_enabled()
+     source=Path('docs/recette/justificatifs/CAP-01.pdf').resolve()
+     with page.expect_response(lambda r:'/api/attachments/ecriture/' in r.url and r.request.method=='POST') as r:modal.locator('input[type=file]').set_input_files(str(source))
+     fiche=ok(r.value);nom=fiche['nom'];expect(modal.get_by_text(nom,exact=True)).to_be_visible();expect(modal.get_by_role('button',name='Supprimer',exact=True)).to_have_count(0)
+    
+     with app['engine'].connect() as db:
+      traces=db.execute(text('SELECT reference,date_piece,source_type,created_by FROM ecriture_justificatifs WHERE societe_id=:sid AND fichier_nom=:nom'),{'sid':sid,'nom':nom}).all()
+      assert len(traces)==1 and traces[0][0]=='CAP-01' and str(traces[0][1])=='2025-01-01' and traces[0][2]=='fichier' and traces[0][3]
+     preuve['justificatif797']={'nom_serveur':nom,'reference':'CAP-01','date_piece':'2025-01-01','trace_documentaire_verifiee':True,'suppression_non_proposee':True}
+     with page.expect_download() as sortie:modal.get_by_role('button',name='Télécharger',exact=True).click()
+     fichier=tmp_path/'CAP-01_telecharge.pdf';sortie.value.save_as(fichier);assert fichier.read_bytes()==source.read_bytes();exports.append({'nom':'Justificatif CAP-01','chemin':str(fichier),'sha256':hashlib.sha256(fichier.read_bytes()).hexdigest()})
+     modal.get_by_role('button',name='Fermer',exact=True).click();page.reload();ligne=page.locator('tr').filter(has=page.get_by_text('CAP-01',exact=True)).filter(has=page.get_by_role('button',name='Justificatifs',exact=True));ligne.get_by_role('button',name='Justificatifs',exact=True).click();expect(page.get_by_text(nom,exact=True)).to_be_visible();page.get_by_role('button',name='Fermer',exact=True).click();preuve['cas'].append({'id':'HP-CPT-005','statut':'Réussi'})
+    
+     exercice=[e for e in avant if str(e[1]).startswith('2025')];nb_lignes=sum(len(e[-1]) for e in exercice);total_attendu=sum(D(str(l[2])) for e in exercice for l in e[-1])
+     for route,nom_export,ref_col in [('/journal','journal','Référence pièce'),('/grand-livre','grand_livre','Référence')]:
+      page.goto(app['web_url']+route);bouton=page.get_by_role('button',name='Exporter CSV',exact=True);expect(bouton).to_be_enabled()
+      with page.expect_download() as sortie:bouton.click()
+&gt;     fichier=tmp_path/(nom_export+'.csv');sortie.value.save_as(fichier);rows=list(csv.DictReader(io.StringIO(fichier.read_text(encoding='utf-8-sig')),delimiter=';'));assert len(rows)==nb_lignes,(nom_export,len(rows),nb_lignes)
+                                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: ('journal', 0, 145)
+E     assert 0 == 145
+E      +  where 0 = len([])
+
+Test\test_e2e_cahier_exports797_isole.py:43: AssertionError</failure></testcase></testsuite></testsuites>

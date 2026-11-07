@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="48.710" timestamp="2026-10-24T16:29:48.058577+02:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_cycle775_isole" name="test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier[1440]" time="45.890"><failure message="playwright._impl._errors.Error: 'id'">application = {'api_url': 'http://127.0.0.1:62398', 'web_url': 'http://127.0.0.1:62399', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_ekep8_1h'), 'nonce': 'e22b8882c5b94d188ef36a689b83944e', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette775_avant/test_775_achats_acompte_lettra0')
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_775_achats_acompte_lettrage_devis_bc_bl_facture_reglement_cahier(application,largeur,tmp_path):
+     with laboratoire(application,largeur,tmp_path,'cycle775') as (api,page,sid,preuve):
+&gt;     tiers,articles=referentiels(api,page,application,sid,preuve);cycle(api,page,application,sid,tiers,articles,preuve,tmp_path)
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_cycle775_isole.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Test\cahier_cycle775_support.py:67: in cycle
+    avant=identifiants(app,sid);ach1=facture_achat(api,page,app,f,a,'ACH-01',100,'2025-01-05','2025-01-07');ach1,row=officialiser(page,app,ach1,f);nouvelle_ecriture(app,sid,avant,'ACH-01',preuve);stock(app,a['id'],100,100);preuve['cas'].append({'id':'HP-FAC-002','statut':'Réussi'})
+                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Test\cahier_cycle775_support.py:52: in officialiser
+    with page.expect_response(lambda r:r.url.endswith(f'/api/factures/{f["id"]}/comptabiliser')) as r:row.get_by_title("Générer l'écriture comptable de cette facture",exact=True).click()
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_sync_base.py:85: in __exit__
+    self._event.value
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._sync_base.EventInfo object at 0x0000028E18D58650&gt;
+
+    @property
+    def value(self) -&gt; T:
+        while not self._future.done():
+            self._sync_base._dispatcher_fiber.switch()
+        asyncio._set_running_loop(self._sync_base._loop)
+        exception = self._future.exception()
+        if exception:
+&gt;           raise exception
+E           playwright._impl._errors.Error: 'id'
+
+hisabpro-backend\.venv\Lib\site-packages\playwright\_impl\_sync_base.py:59: Error</failure></testcase></testsuite></testsuites>

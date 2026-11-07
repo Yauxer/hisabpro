@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="9" time="79.689" timestamp="2026-10-29T20:17:07.634677+01:00" hostname="Taiyou"><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[-1]" time="30.771" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[NaN]" time="1.450" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[Infinity]" time="1.379" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[-Infinity]" time="1.390" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_montant_invalide_refuse_sans_mutation[abc]" time="1.277" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b6_vide_inconnu_et_zero_explicitement_prioritaire" time="1.133"><failure message="assert (480.0 is None)">application = {'api_url': 'http://127.0.0.1:56510', 'web_url': 'http://127.0.0.1:56511', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_9597zzy8'), 'nonce': 'c0cc8e6623864c9cb6bd67b3f49a3217', ...}, ...}
+
+    def test_949_b6_vide_inconnu_et_zero_explicitement_prioritaire(application):
+        with closing(client(application)[0]) as api:
+            sid, _ = dossier(api, application)
+            avant = core(application, sid)
+            # Les valeurs manquantes restent inconnues dans un brouillon conservable.
+            body = {'confirme': False, 'autres_analyses_neant': True,
+                'ventilations': {'3421': {'plus_un_an': 0, 'moins_un_an': 0, 'echues': ''}}}
+            ok(api.put('/api/etats/etic/2025/B6', json={'contenu': body}))
+            vide = section(api, 'B6')
+&gt;           assert vide['ventilation'][0]['echues'] is None and not vide['complete']
+E           assert (480.0 is None)
+
+Test\test_refus_etic_fec949_isole.py:70: AssertionError</failure></testcase><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_b7_total480_ventilation479_refuse_confirmation" time="1.626" /><testcase classname="Test.test_refus_etic_fec949_isole" name="test_949_piece_historique_absente_reliquat_visible_sans_invention" time="6.624"><failure message="assert (True and None is None and datetime.date(2025, 12, 2) is None)&#10; +  where True = &lt;models.Ecriture object at 0x0000021AACDBB310&gt;.est_validee&#10; +  and   None = &lt;models.Ecriture object at 0x0000021AACDBB310&gt;.reference&#10; +  and   datetime.date(2025, 12, 2) = &lt;models.Ecriture object at 0x0000021AACDBB310&gt;.date_piece">application = {'api_url': 'http://127.0.0.1:56510', 'web_url': 'http://127.0.0.1:56511', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_9597zzy8'), 'nonce': 'c0cc8e6623864c9cb6bd67b3f49a3217', ...}, ...}
+
+    def test_949_piece_historique_absente_reliquat_visible_sans_invention(application):
+        with closing(client(application)[0]) as api:
+            sid, tiers = dossier(api, application, nombre=2)
+            e = ok(api.post('/api/ecritures', json={'date': '2025-12-02', 'journal': 'OD',
+                'libelle': 'Ancienne opération FICTIVE949 sans pièce, sources ambiguës',
+                'lignes': [{'compte': '3421', 'debit': 480, 'tiers_id': tiers['id']},
+                           {'compte': '1111', 'credit': 480}]}), 201)
+            # Préparation d'un historique incomplet avant validation, exclusivement
+            # dans la base nonce ; aucune écriture définitive n'est modifiée.
+            with Session(application['engine']) as db:
+                source = db.get(models.Ecriture, e['id'])
+                assert not source.est_validee
+                source.date_piece = None
+                db.commit()
+            ok(api.post(f'/api/ecritures/{e["id"]}/valider'))
+            avant = core(application, sid)
+            fec = ok(api.get('/api/fec/apercu', params={'exercice': 2025}))
+            assert 'REFERENCE_PIECE_MANQUANTE' in json.dumps(fec)
+            b6 = section(api, 'B6')
+            ligne = next(x for x in b6['automatique']['lignes'] if x['compte'] == '3421')
+            assert D(str(ligne['montant'])) == 1440
+            assert D(str(ligne['echeance_auto_total'])) == 960
+            assert D(str(ligne['echeance_auto_ecart'])) == 480
+            assert not b6['complete']
+            with Session(application['engine']) as db:
+                source = db.get(models.Ecriture, e['id'])
+&gt;               assert source.est_validee and source.reference is None and source.date_piece is None
+E               assert (True and None is None and datetime.date(2025, 12, 2) is None)
+E                +  where True = &lt;models.Ecriture object at 0x0000021AACDBB310&gt;.est_validee
+E                +  and   None = &lt;models.Ecriture object at 0x0000021AACDBB310&gt;.reference
+E                +  and   datetime.date(2025, 12, 2) = &lt;models.Ecriture object at 0x0000021AACDBB310&gt;.date_piece
+
+Test\test_refus_etic_fec949_isole.py:128: AssertionError</failure></testcase><testcase classname="Test.test_e2e_archive_liasse_isole" name="test_archive_liasse_finalisation_exports_empreinte_et_immutabilite" time="30.153" /></testsuite></testsuites>

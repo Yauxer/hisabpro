@@ -1,0 +1,47 @@
+{
+  "fiches": [
+    "TP761-03",
+    "TP761-05",
+    "TP761-06"
+  ],
+  "variantes": {
+    "base_inconnue": {
+      "valeur_locative_totale": null,
+      "brut_arithmetique": null,
+      "brut_propose": null,
+      "avis_comparables": "7400.00",
+      "ecart_brut_avis": null
+    },
+    "base_non_revue": {
+      "valeur_locative_totale": "42000.00",
+      "brut_arithmetique": "7200.00",
+      "brut_propose": null,
+      "avis_comparables": "7400.00",
+      "ecart_brut_avis": "-200.00"
+    },
+    "petit": {
+      "valeur_locative_totale": "12100.00",
+      "brut_arithmetique": "1210.00",
+      "brut_propose": "1210.00",
+      "avis_comparables": "7400.00",
+      "ecart_brut_avis": "-6190.00"
+    },
+    "arrondi": {
+      "valeur_locative_totale": "12000.05",
+      "brut_arithmetique": "1200.01",
+      "brut_propose": "1200.01",
+      "avis_comparables": "7400.00",
+      "ecart_brut_avis": "-6199.99"
+    },
+    "avis_partage": {
+      "valeur_locative_totale": "42000.00",
+      "brut_arithmetique": "7200.00",
+      "brut_propose": "7200.00",
+      "avis_comparables": null,
+      "ecart_brut_avis": null
+    }
+  },
+  "versions_sources_figees": true,
+  "aucun_du_confirme": true,
+  "temoin_definitif333_journal_sources_inchanges": true
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="170.514" timestamp="2026-10-29T23:20:45.484774+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_encaissements953_isole" name="test_953_annee_encaissements_cloture_et_recouvrement_suivant[1440]" time="151.785"><failure message="AssertionError: (3, {'total': 833.33, 'base_total': 4166.67, 'par_taux': {'20': {'base': 4166.67, 'tva': 833.33}}}, {'mois': '03', 'credit_ouverture': '4700.00', 'collectee': '1333.33', 'recuperable': '2400.00', ...})&#10;assert Decimal('833.33') == Decimal('1333.33')&#10; +  where Decimal('833.33') = D('833.33')&#10; +    where '833.33' = str(833.33)&#10; +  and   Decimal('1333.33') = D('1333.33')">application = {'api_url': 'http://127.0.0.1:63274', 'web_url': 'http://127.0.0.1:63275', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_v7fh6nq3'), 'nonce': '268d45b87c664a7b975b194fd04eb852', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/enc953_avant/test_953_annee_encaissements_c0')
+
+    @pytest.mark.parametrize('largeur', [1440, 390])
+    def test_953_annee_encaissements_cloture_et_recouvrement_suivant(application, largeur, tmp_path):
+        with donnees_encaissements(), laboratoire(application, largeur, tmp_path, 'encaissements953') as (api, page, sid, preuve):
+            preuve['variante953_sha256'] = hashlib.sha256(VARIANTE.read_bytes()).hexdigest()
+            tiers, articles = referentiels(api, page, application, sid, preuve)
+            b = DATA['banque']
+            banque = ok(api.post('/api/banques', json={'banque': b['banque'], 'rib': b['rib'], 'compte_comptable': '5141', 'devise': 'MAD'}), 201)
+            capital(page, application, sid, preuve)
+            immo = acquisition(api, page, application, sid, tiers['F-IMMO'], preuve)
+            semestre(api, page, application, sid, tiers, articles, banque, preuve, tmp_path,
+                     apres_effet_client=lambda: manuelle(page, application, sid, 'TVA-05', preuve))
+            # Refuser de continuer l'année si le calendrier indépendant ne recoupe pas l'API.
+            for attendu in DATA['tva_mois'][:6]:
+                mois = int(attendu['mois']); declaration = verifier_mois(api, mois)
+&gt;               assert D(str(declaration['collectee']['total'])) == D(attendu['collectee']), (mois, declaration['collectee'], attendu)
+E               AssertionError: (3, {'total': 833.33, 'base_total': 4166.67, 'par_taux': {'20': {'base': 4166.67, 'tva': 833.33}}}, {'mois': '03', 'credit_ouverture': '4700.00', 'collectee': '1333.33', 'recuperable': '2400.00', ...})
+E               assert Decimal('833.33') == Decimal('1333.33')
+E                +  where Decimal('833.33') = D('833.33')
+E                +    where '833.33' = str(833.33)
+E                +  and   Decimal('1333.33') = D('1333.33')
+
+Test\test_e2e_encaissements953_isole.py:58: AssertionError</failure></testcase></testsuite></testsuites>

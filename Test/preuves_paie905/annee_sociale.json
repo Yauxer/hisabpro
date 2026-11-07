@@ -1,0 +1,150 @@
+{
+  "donnees_reelles": false,
+  "mois_explicitement_prepares": 12,
+  "mois": [
+    {
+      "periode": "2026-01-01",
+      "brut": "9800.11",
+      "cnss": "9500.11",
+      "amo": "9800.11",
+      "salarial": "354.00",
+      "patronal": "512.00",
+      "branche_B2_salarial": "294.00",
+      "brut_id": 1,
+      "social_id": 1
+    },
+    {
+      "periode": "2026-02-01",
+      "brut": "9800.11",
+      "cnss": "9500.11",
+      "amo": "9800.11",
+      "salarial": "354.00",
+      "patronal": "512.00",
+      "branche_B2_salarial": "294.00",
+      "brut_id": 2,
+      "social_id": 2
+    },
+    {
+      "periode": "2026-03-01",
+      "brut": "9800.11",
+      "cnss": "9500.11",
+      "amo": "9800.11",
+      "salarial": "354.00",
+      "patronal": "512.00",
+      "branche_B2_salarial": "294.00",
+      "brut_id": 3,
+      "social_id": 3
+    },
+    {
+      "periode": "2026-04-01",
+      "brut": "9800.11",
+      "cnss": "9500.11",
+      "amo": "9800.11",
+      "salarial": "354.00",
+      "patronal": "512.00",
+      "branche_B2_salarial": "294.00",
+      "brut_id": 4,
+      "social_id": 4
+    },
+    {
+      "periode": "2026-05-01",
+      "brut": "9800.11",
+      "cnss": "9500.11",
+      "amo": "9800.11",
+      "salarial": "354.00",
+      "patronal": "512.00",
+      "branche_B2_salarial": "294.00",
+      "brut_id": 5,
+      "social_id": 5
+    },
+    {
+      "periode": "2026-06-01",
+      "brut": "9800.11",
+      "cnss": "9500.11",
+      "amo": "9800.11",
+      "salarial": "354.00",
+      "patronal": "512.00",
+      "branche_B2_salarial": "294.00",
+      "brut_id": 6,
+      "social_id": 6
+    },
+    {
+      "periode": "2026-07-01",
+      "brut": "9800.11",
+      "cnss": "9500.11",
+      "amo": "9800.11",
+      "salarial": "354.00",
+      "patronal": "512.00",
+      "branche_B2_salarial": "294.00",
+      "brut_id": 7,
+      "social_id": 7
+    },
+    {
+      "periode": "2026-08-01",
+      "brut": "9800.11",
+      "cnss": "9500.11",
+      "amo": "9800.11",
+      "salarial": "354.00",
+      "patronal": "512.00",
+      "branche_B2_salarial": "294.00",
+      "brut_id": 8,
+      "social_id": 8
+    },
+    {
+      "periode": "2026-09-01",
+      "brut": "9800.11",
+      "cnss": "9500.11",
+      "amo": "9800.11",
+      "salarial": "354.00",
+      "patronal": "512.00",
+      "branche_B2_salarial": "294.00",
+      "brut_id": 9,
+      "social_id": 9
+    },
+    {
+      "periode": "2026-10-01",
+      "brut": "9800.11",
+      "cnss": "9500.11",
+      "amo": "9800.11",
+      "salarial": "354.00",
+      "patronal": "512.00",
+      "branche_B2_salarial": "294.00",
+      "brut_id": 10,
+      "social_id": 10
+    },
+    {
+      "periode": "2026-11-01",
+      "brut": "9800.11",
+      "cnss": "9500.11",
+      "amo": "9800.11",
+      "salarial": "354.00",
+      "patronal": "512.00",
+      "branche_B2_salarial": "294.00",
+      "brut_id": 11,
+      "social_id": 11
+    },
+    {
+      "periode": "2026-12-01",
+      "brut": "9800.11",
+      "cnss": "9500.11",
+      "amo": "9800.11",
+      "salarial": "354.00",
+      "patronal": "512.00",
+      "branche_B2_salarial": "294.00",
+      "brut_id": 12,
+      "social_id": 12
+    }
+  ],
+  "totaux": {
+    "brut": "117601.32",
+    "cnss": "114001.32",
+    "amo": "117601.32",
+    "salarial": "4248.00",
+    "patronal": "6144.00",
+    "branche_B2_salarial": "3528.00"
+  },
+  "arrondis_mensuels_conserves": true,
+  "anciens_snapshots_intacts": true,
+  "comptabilite_inchangee": true,
+  "IR_net_calcules": false
+}

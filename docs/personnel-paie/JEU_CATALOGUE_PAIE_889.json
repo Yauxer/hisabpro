@@ -1,0 +1,71 @@
+{
+  "attention": "Exclusivement fictif,ne pas utiliser pour calculer une paie réelle",
+  "proposition": {
+    "code": "PRIME_FICTIVE889",
+    "motif": "Exemple entièrement fictif889",
+    "contenu": {
+      "libelle": "Prime FICTIVE889",
+      "nature": "GAIN",
+      "periodicite": "mensuelle",
+      "formule": "MONTANT",
+      "date_debut": "2026-01-01",
+      "date_fin": null,
+      "compte_charge": null,
+      "justificatifs": [
+        "ATTESTATION_FICTIVE",
+        "MISSION_FICTIVE"
+      ],
+      "incompatibilites": [],
+      "regles": {
+        "IR": {
+          "traitement": "PLAFOND_MONTANT",
+          "statut_reglementaire": "A_VERIFIER",
+          "plafond": "500.00",
+          "unite": "operation",
+          "conditions": "Hypothèse FICTIVE889 ;aucune valeur réglementaire"
+        },
+        "CNSS": {
+          "traitement": "PLAFOND_MONTANT",
+          "statut_reglementaire": "A_VERIFIER",
+          "plafond": "300.00",
+          "unite": "operation",
+          "conditions": "Hypothèse FICTIVE889 ;aucune valeur réglementaire"
+        },
+        "AMO": {
+          "traitement": "SOUMIS",
+          "statut_reglementaire": "A_VERIFIER",
+          "plafond": null,
+          "unite": "operation",
+          "conditions": "Hypothèse FICTIVE889 ;aucune valeur réglementaire"
+        }
+      }
+    }
+  },
+  "URL_CGI": "https://www.finances.gov.ma/Publication/dgi/2025/CGI-2026-FR.pdf",
+  "calculs_independants": [
+    {
+      "montant": "0.00",
+      "IR_soumis": "0.00",
+      "CNSS_soumis": "0.00",
+      "AMO_soumis": "0.00"
+    },
+    {
+      "montant": "300.00",
+      "IR_soumis": "0.00",
+      "CNSS_soumis": "0.00",
+      "AMO_soumis": "300.00"
+    },
+    {
+      "montant": "500.00",
+      "IR_soumis": "0.00",
+      "CNSS_soumis": "200.00",
+      "AMO_soumis": "500.00"
+    },
+    {
+      "montant": "800.01",
+      "IR_soumis": "300.01",
+      "CNSS_soumis": "500.01",
+      "AMO_soumis": "800.01"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="30.315" timestamp="2026-10-26T19:22:52.841861+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_plan855_isole" name="test_855_comptes_journaux_autocompletion_cache[1440]" time="20.702"><failure message="AssertionError: assert {'AC', 'AE', ...V', 'BQ', ...} &lt;= {'AC', 'AE', ...V', 'BQ', ...}&#10;  &#10;  Extra items in the left set:&#10;  'CL'">application = {'api_url': 'http://127.0.0.1:54114', 'web_url': 'http://127.0.0.1:54115', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_0vd_g42p'), 'nonce': '2efdc6444aeb46b8a9b7d33efb97122f', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette855_cible/test_855_comptes_journaux_auto0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_855_comptes_journaux_autocompletion_cache(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'plan855') as (api,page,sid,preuve):
+      e=ok(api.post('/api/ecritures',json={'date':'2025-01-01','date_piece':'2025-01-01','journal':'BQ','reference':'TEMOIN-855','libelle':'Capital fictif test855','lignes':[{'compte':'5141','debit':100},{'compte':'1111','credit':100}]}),201);ok(api.post(f'/api/ecritures/{e["id"]}/valider'));avant=core(application,sid);plan=ok(api.get('/api/plan-comptable'));comptes={c['compte']:c for c in plan};attendus={l['compte'] for o in DATA['operations'] for l in o['lignes']};assert attendus&lt;={c for c,v in comptes.items() if v['actif']};assert all(c in comptes for c in ['51111','51112','51132'])
+      r=api.delete('/api/plan-comptable/5141');assert r.status_code==409;assert ok(api.get('/api/plan-comptable'))==plan and core(application,sid)==avant
+      page.goto(application['web_url']+'/plan-comptes')
+      for c in ['51111','51112','51132']:
+       page.get_by_placeholder('Rechercher par numéro ou libellé...',exact=True).fill(c);row=page.locator('tbody tr').filter(has=page.get_by_text(c,exact=True));expect(row).to_have_count(1);expect(row).to_contain_text(comptes[c]['libelle'])
+      requetes=[];page.on('request',lambda r:requetes.append(r.url) if '/api/plan-comptable' in r.url and r.method=='GET' else None);page.goto(application['web_url']+'/journal');expect(page.get_by_text('TEMOIN-855',exact=True)).to_be_visible();mesures=[]
+      for tour in range(2):
+&gt;      page.get_by_role('button',name='Nouvelle écriture',exact=True).click();m=page.get_by_role('dialog');journaux=set(champ(m,'Journal *','select').locator('option').evaluate_all('es=&gt;es.map(e=&gt;e.value)'));assert {'AC','VT','AV','BQ','AE','OD','AM','CL','AN'}&lt;=journaux;entree=m.locator('tbody tr').first.get_by_placeholder('Ex: 6111',exact=True)
+                                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E      AssertionError: assert {'AC', 'AE', ...V', 'BQ', ...} &lt;= {'AC', 'AE', ...V', 'BQ', ...}
+E        
+E        Extra items in the left set:
+E        'CL'
+
+Test\test_e2e_cahier_plan855_isole.py:22: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_plan855_isole" name="test_855_comptes_journaux_autocompletion_cache[390]" time="7.542"><failure message="AssertionError: assert {'AC', 'AE', ...V', 'BQ', ...} &lt;= {'AC', 'AE', ...V', 'BQ', ...}&#10;  &#10;  Extra items in the left set:&#10;  'CL'">application = {'api_url': 'http://127.0.0.1:54114', 'web_url': 'http://127.0.0.1:54115', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_0vd_g42p'), 'nonce': '2efdc6444aeb46b8a9b7d33efb97122f', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette855_cible/test_855_comptes_journaux_auto1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_855_comptes_journaux_autocompletion_cache(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'plan855') as (api,page,sid,preuve):
+      e=ok(api.post('/api/ecritures',json={'date':'2025-01-01','date_piece':'2025-01-01','journal':'BQ','reference':'TEMOIN-855','libelle':'Capital fictif test855','lignes':[{'compte':'5141','debit':100},{'compte':'1111','credit':100}]}),201);ok(api.post(f'/api/ecritures/{e["id"]}/valider'));avant=core(application,sid);plan=ok(api.get('/api/plan-comptable'));comptes={c['compte']:c for c in plan};attendus={l['compte'] for o in DATA['operations'] for l in o['lignes']};assert attendus&lt;={c for c,v in comptes.items() if v['actif']};assert all(c in comptes for c in ['51111','51112','51132'])
+      r=api.delete('/api/plan-comptable/5141');assert r.status_code==409;assert ok(api.get('/api/plan-comptable'))==plan and core(application,sid)==avant
+      page.goto(application['web_url']+'/plan-comptes')
+      for c in ['51111','51112','51132']:
+       page.get_by_placeholder('Rechercher par numéro ou libellé...',exact=True).fill(c);row=page.locator('tbody tr').filter(has=page.get_by_text(c,exact=True));expect(row).to_have_count(1);expect(row).to_contain_text(comptes[c]['libelle'])
+      requetes=[];page.on('request',lambda r:requetes.append(r.url) if '/api/plan-comptable' in r.url and r.method=='GET' else None);page.goto(application['web_url']+'/journal');expect(page.get_by_text('TEMOIN-855',exact=True)).to_be_visible();mesures=[]
+      for tour in range(2):
+&gt;      page.get_by_role('button',name='Nouvelle écriture',exact=True).click();m=page.get_by_role('dialog');journaux=set(champ(m,'Journal *','select').locator('option').evaluate_all('es=&gt;es.map(e=&gt;e.value)'));assert {'AC','VT','AV','BQ','AE','OD','AM','CL','AN'}&lt;=journaux;entree=m.locator('tbody tr').first.get_by_placeholder('Ex: 6111',exact=True)
+                                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E      AssertionError: assert {'AC', 'AE', ...V', 'BQ', ...} &lt;= {'AC', 'AE', ...V', 'BQ', ...}
+E        
+E        Extra items in the left set:
+E        'CL'
+
+Test\test_e2e_cahier_plan855_isole.py:22: AssertionError</failure></testcase></testsuite></testsuites>

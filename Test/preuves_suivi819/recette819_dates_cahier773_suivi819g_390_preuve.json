@@ -1,0 +1,89 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_rtv7t5il",
+  "nonce": "4ab25c93051b4e03b7a5a6b64bdb953b",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [
+    {
+      "id": "HP-FAC-012",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": "AssertionError(\"assert False\\n +  where False = <built-in method endswith of str object at 0x00000259FE523F70>('2026_T1.csv')\\n +    where <built-in method endswith of str object at 0x00000259FE523F70> = 'export.bin'.endswith\\n +      where 'export.bin' = <Download url='blob:http://127.0.0.1:58595/e20bfeb0-11d6-4207-873a-8ee7372ca6a1' suggested_filename='export.bin'>.suggested_filename\\n +        where <Download url='blob:http://127.0.0.1:58595/e20bfeb0-11d6-4207-873a-8ee7372ca6a1' suggested_filename='export.bin'> = <playwright._impl._sync_base.EventInfo object at 0x00000259FE51CA10>.value\")",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "relance_creation819": {
+    "id": 2,
+    "facture_id": 6,
+    "facture_numero": "FA-2025-003",
+    "tiers": "Client Impayé Recette",
+    "niveau": 1,
+    "date_relance": "2025-12-22",
+    "canal": "email",
+    "commentaire": "Suivi fictif du laboratoire, sans envoi externe.",
+    "date_promesse_reglement": "2026-01-31",
+    "montant_promis": null,
+    "prochaine_relance": null,
+    "statut": "effectuee",
+    "created_by": 8,
+    "created_at": "2026-10-25T13:53:21.230000"
+  },
+  "relance819": {
+    "cree": {
+      "id": 2,
+      "facture_id": 6,
+      "facture_numero": "FA-2025-003",
+      "tiers": "Client Impayé Recette",
+      "niveau": 1,
+      "date_relance": "2025-12-22",
+      "canal": "email",
+      "commentaire": "Suivi fictif du laboratoire, sans envoi externe.",
+      "date_promesse_reglement": "2026-01-31",
+      "montant_promis": null,
+      "prochaine_relance": null,
+      "statut": "effectuee",
+      "created_by": 8,
+      "created_at": "2026-10-25T13:53:21.230000"
+    },
+    "modifie": {
+      "id": 2,
+      "facture_id": 6,
+      "facture_numero": "FA-2025-003",
+      "tiers": "Client Impayé Recette",
+      "niveau": 1,
+      "date_relance": "2025-12-22",
+      "canal": "email",
+      "commentaire": "Promesse fictive modifiée",
+      "date_promesse_reglement": "2026-02-15",
+      "montant_promis": null,
+      "prochaine_relance": null,
+      "statut": "effectuee",
+      "created_by": 8,
+      "created_at": "2026-10-25T13:53:21.230000"
+    },
+    "annule": {
+      "id": 2,
+      "facture_id": 6,
+      "facture_numero": "FA-2025-003",
+      "tiers": "Client Impayé Recette",
+      "niveau": 1,
+      "date_relance": "2025-12-22",
+      "canal": "email",
+      "commentaire": "Promesse fictive modifiée",
+      "date_promesse_reglement": "2026-02-15",
+      "montant_promis": null,
+      "prochaine_relance": null,
+      "statut": "annulee",
+      "created_by": 8,
+      "created_at": "2026-10-25T13:53:21.230000"
+    },
+    "journal_inchange": true,
+    "envoi_externe": false
+  },
+  "delais_fin2025_vide819": {
+    "echeance": "2025-12-31",
+    "fin_periode": "2025-12-31",
+    "raison": "Pas encore en retard le jour de l’échéance ; dates conservées, contrôle complémentaire T1 2026."
+  }
+}

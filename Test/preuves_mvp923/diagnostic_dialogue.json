@@ -1,0 +1,16 @@
+{
+  "cause": "TimeoutError('Page.goto: Timeout 15000ms exceeded.\\nCall log:\\n  - navigating to \"http://127.0.0.1:59422/factures\", waiting until \"load\"\\n')",
+  "dialogues_finaux": [
+    {
+      "type": "confirm",
+      "message": "Valider 1 écriture(s) en brouillon ?\n\nElles deviendront définitives et ne pourront plus être modifiées."
+    },
+    {
+      "type": "alert",
+      "message": "1 écriture(s) validée(s).",
+      "erreur_acceptation": "Error('Dialog.accept: Protocol error (Page.handleJavaScriptDialog): Not attached to an active page')"
+    }
+  ],
+  "scope": "Données fictives,aucun secret ;course entre rechargement après validation-lot et navigation.",
+  "produit_corrige": "Message de retour intégré au Journal ;confirmation préalable conservée."
+}

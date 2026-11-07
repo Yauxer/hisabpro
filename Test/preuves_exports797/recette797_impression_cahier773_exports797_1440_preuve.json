@@ -1,0 +1,2084 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_hs5aiquu",
+  "nonce": "bdc9d7b492ce42e48378134de29ece8d",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-ADM-006",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-007",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-008",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-009",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-010",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-011",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-012",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture compte,auxiliaire généré etlecture API"
+    },
+    {
+      "id": "HP-ADM-013",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-014",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-ADM-015",
+      "statut": "Réussi",
+      "controle": "Création UI,réouverture prix/TVA/comptes,stock zéro ouservice etlecture API ;comptes stock3111/6114 àvérifier séparément eninventaire"
+    },
+    {
+      "id": "HP-IMM-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-IMM-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-015",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-005",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-008",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-016",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-009",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-017",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-012",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-013",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-014",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-015",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-008",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-016",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-017",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-018",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-009",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FAC-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-018",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-PAY-019",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-STK-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-IMM-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-003",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-004",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-019",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-001",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CPT-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-002",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-020",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-025",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-026",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-021",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-022",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-023",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-024",
+      "statut": "Partiel",
+      "limite": "Base/calcul/minimum etexonération du scénario testés ;variation nonexonérée observée avantparamétrage, pas surune copie dédiée."
+    },
+    {
+      "id": "HP-CLO-006",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-CLO-007",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-FIS-027",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {
+    "C-MARCH": {
+      "id": 3,
+      "compte": "3421",
+      "auxiliaire": "C00000003"
+    },
+    "C-SERVICE": {
+      "id": 4,
+      "compte": "3421",
+      "auxiliaire": "C00000004"
+    },
+    "C-IMPAYE": {
+      "id": 5,
+      "compte": "3421",
+      "auxiliaire": "C00000005"
+    },
+    "F-MARCH": {
+      "id": 6,
+      "compte": "4411",
+      "auxiliaire": "F00000006"
+    },
+    "F-SERVICE": {
+      "id": 7,
+      "compte": "4411",
+      "auxiliaire": "F00000007"
+    },
+    "F-CONTROLE": {
+      "id": 8,
+      "compte": "4411",
+      "auxiliaire": "F00000008"
+    },
+    "F-IMMO": {
+      "id": 9,
+      "compte": "4481",
+      "auxiliaire": "F00000009"
+    }
+  },
+  "articles": {
+    "M-01": {
+      "id": 1,
+      "stockable": true,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": "6111",
+      "compte_vente": "7111"
+    },
+    "S-VTE": {
+      "id": 2,
+      "stockable": false,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": null,
+      "compte_vente": "7124"
+    },
+    "S-ACH": {
+      "id": 3,
+      "stockable": false,
+      "stock": 0.0,
+      "tva": 20.0,
+      "compte_achat": "6125",
+      "compte_vente": null
+    }
+  },
+  "erreur": "AssertionError('Locator expected to be visible\\nActual value: None\\nError: element(s) not found \\nCall log:\\n  - Expect \"to_be_visible\" locator(\"div[class*=\\\\\"auditModal\\\\\"]\").filter(has=get_by_text(\"Pièces jointes\")).get_by_text(\"CAP-01.pdf\", exact=True) with timeout 5000ms\\n  - waiting for locator(\"div[class*=\\\\\"auditModal\\\\\"]\").filter(has=get_by_text(\"Pièces jointes\")).get_by_text(\"CAP-01.pdf\", exact=True)\\n\\nAria snapshot:\\n- complementary \"Navigation principale\":\\n  - text: HisabPro ATLAS RECETTE HISABPRO SARL — FICTIVE\\n  - navigation:\\n    - link \"Tableau de bord\":\\n      - /url: /dashboard\\n    - button \"Facturation\"\\n    - button \"Comptabilité\"\\n    - link \"Journal\":\\n      - /url: /journal\\n    - link \"Plan de comptes\":\\n      - /url: /plan-comptes\\n    - link \"Déclaration TVA\":\\n      - /url: /declaration-tva\\n    - link \"Résultat fiscal / IS\":\\n      - /url: /fiscalite-is\\n    - link \"Liasse fiscale\":\\n      - /url: /liasse-fiscale\\n    - link \"Grand livre\":\\n      - /url: /grand-livre\\n    - link \"Rapprochement bancaire\":\\n      - /url: /rapprochement\\n    - link \"Lettrage\":\\n      - /url: /lettrage\\n    - link \"Balances\":\\n      - /url: /balances\\n    - link \"Immobilisations\":\\n      - /url: /immobilisations\\n    - link \"Clôture d\\'exercice\":\\n      - /url: /cloture\\n    - link \"Livre d\\'inventaire\":\\n      - /url: /livre-inventaire\\n    - button \"Paie / GRH\"\\n  - link \"Paramètres\":\\n    - /url: /parametres\\n  - button \"Déconnexion\"\\n- text: Exercice\\n- button \"Aucun exercice précédent\" [disabled]\\n- combobox \"Exercice comptable\":\\n  - option \"2026 — Ouvert\"\\n  - option \"2025 — Clôturé\" [selected]\\n- button \"Exercice 2026\"\\n- text: Clôturé\\n- button \"ATLAS RECETTE HISABPRO SARL — FICTIVE\"\\n- text: 01/01/2025 — 31/12/2025\\n- main:\\n  - heading \"Journal comptable\" [level=1]\\n  - button \"Valider les brouillons\"\\n  - button \"Imprimer\"\\n  - button \"Exporter CSV\"\\n  - button \"Export FEC\"\\n  - button \"Nouvelle écriture\" [disabled]\\n  - textbox \"Rechercher libellé, compte...\"\\n  - button \"Tous\"\\n  - button \"AC — Achats\"\\n  - button \"VT — Ventes\"\\n  - button \"BQ — Banque\"\\n  - button \"CA — Caisse\"\\n  - button \"OD — Opérations diverses\"\\n  - button \"AV — Avoirs\"\\n  - button \"AN — À nouveau\"\\n  - button \"EN — Encours\"\\n  - button \"AE — À encaisser\"\\n  - button \"AM — Amortissements\"\\n  - button \"SA — Rémunérations\"\\n  - button \"TV — TVA\"\\n  - button \"PR — Provisions\"\\n  - button \"CL — Clôture\"\\n  - textbox\\n  - text: \"Grouper par :\"\\n  - button \"Aucun\"\\n  - button \"Jour\"\\n  - button \"Mois\"\\n  - button \"Trimestre\"\\n  - text: \"51 écritures Débit :\"\\n  - strong: 1.646.060,00\\n  - text: \"Crédit :\"\\n  - strong: 1.646.060,00\\n  - table:\\n    - rowgroup:\\n      - row \"N° Date Journal Compte Libellé Débit Crédit Lettrage N° écriture Pièce\":\\n        - columnheader \"N°\"\\n        - columnheader \"Date\"\\n        - columnheader \"Journal\"\\n        - columnheader \"Compte\"\\n        - columnheader \"Libellé\"\\n        - columnheader \"Débit\"\\n        - columnheader \"Crédit\"\\n        - columnheader \"Lettrage\"\\n        - columnheader \"N° écriture\"\\n        - columnheader \"Pièce\"\\n        - columnheader\\n    - rowgroup:\\n      - row \"1 31/12/25 CL 6111 Solde de clôture 6111 Achats de marchandises (groupe A) 22.000,00 CL-2025-0001 CLOTURE-2025 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"1\"\\n        - cell \"31/12/25\"\\n        - cell \"CL\"\\n        - cell \"6111\"\\n        - cell \"Solde de clôture 6111 Achats de marchandises (groupe A)\"\\n        - cell\\n        - cell \"22.000,00\"\\n        - cell\\n        - cell \"CL-2025-0001\"\\n        - cell \"CLOTURE-2025\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"2 1191 Résultat net de l\\'exercice (bénéfice) Résultat net de l\\'exercice (solde créditeur) 106.409,75\":\\n        - cell \"2\"\\n        - cell \"1191\"\\n        - cell \"Résultat net de l\\'exercice (bénéfice) Résultat net de l\\'exercice (solde créditeur)\"\\n        - cell\\n        - cell \"106.409,75\"\\n        - cell\\n      - row \"3 8800 Solde du résultat après impôts Résultat après impôts 106.409,75\":\\n        - cell \"3\"\\n        - cell \"8800\"\\n        - cell \"Solde du résultat après impôts Résultat après impôts\"\\n        - cell \"106.409,75\"\\n        - cell\\n        - cell\\n      - row \"4 8800 Détermination du résultat 2025 Résultat après impôts 106.409,75\":\\n        - cell \"4\"\\n        - cell \"8800\"\\n        - cell \"Détermination du résultat 2025 Résultat après impôts\"\\n        - cell\\n        - cell \"106.409,75\"\\n        - cell\\n      - row \"5 8600 Solde du résultat avant impôts Résultat avant impôts 129.830,00\":\\n        - cell \"5\"\\n        - cell \"8600\"\\n        - cell \"Solde du résultat avant impôts Résultat avant impôts\"\\n        - cell \"129.830,00\"\\n        - cell\\n        - cell\\n      - row \"6 6701 Solde de clôture 6701 Impôts sur les bénéfices 23.420,25\":\\n        - cell \"6\"\\n        - cell \"6701\"\\n        - cell \"Solde de clôture 6701 Impôts sur les bénéfices\"\\n        - cell\\n        - cell \"23.420,25\"\\n        - cell\\n      - row \"7 8600 Détermination du résultat 2025 Résultat avant impôts 129.830,00\":\\n        - cell \"7\"\\n        - cell \"8600\"\\n        - cell \"Détermination du résultat 2025 Résultat avant impôts\"\\n        - cell\\n        - cell \"129.830,00\"\\n        - cell\\n      - row \"8 8500 Solde de 8500 Résultat non courant 500,00\":\\n        - cell \"8\"\\n        - cell \"8500\"\\n        - cell \"Solde de 8500 Résultat non courant\"\\n        - cell\\n        - cell \"500,00\"\\n        - cell\\n      - row \"9 8400 Solde de 8400 Résultat courant 130.330,00\":\\n        - cell \"9\"\\n        - cell \"8400\"\\n        - cell \"Solde de 8400 Résultat courant\"\\n        - cell \"130.330,00\"\\n        - cell\\n        - cell\\n      - row \"10 8500 Détermination du résultat 2025 Résultat non courant 500,00\":\\n        - cell \"10\"\\n        - cell \"8500\"\\n        - cell \"Détermination du résultat 2025 Résultat non courant\"\\n        - cell \"500,00\"\\n        - cell\\n        - cell\\n      - row \"11 6583 Solde de clôture 6583 Pénalités et amendes fiscales ou pénales 500,00\":\\n        - cell \"11\"\\n        - cell \"6583\"\\n        - cell \"Solde de clôture 6583 Pénalités et amendes fiscales ou pénales\"\\n        - cell\\n        - cell \"500,00\"\\n        - cell\\n      - row \"12 8400 Détermination du résultat 2025 Résultat courant 130.330,00\":\\n        - cell \"12\"\\n        - cell \"8400\"\\n        - cell \"Détermination du résultat 2025 Résultat courant\"\\n        - cell\\n        - cell \"130.330,00\"\\n        - cell\\n      - row \"13 8300 Solde de 8300 Résultat financier 1.000,00\":\\n        - cell \"13\"\\n        - cell \"8300\"\\n        - cell \"Solde de 8300 Résultat financier\"\\n        - cell \"1.000,00\"\\n        - cell\\n        - cell\\n      - row \"14 8100 Solde de 8100 Résultat d\\'exploitation 129.330,00\":\\n        - cell \"14\"\\n        - cell \"8100\"\\n        - cell \"Solde de 8100 Résultat d\\'exploitation\"\\n        - cell \"129.330,00\"\\n        - cell\\n        - cell\\n      - row \"15 8300 Détermination du résultat 2025 Résultat financier 1.000,00\":\\n        - cell \"15\"\\n        - cell \"8300\"\\n        - cell \"Détermination du résultat 2025 Résultat financier\"\\n        - cell\\n        - cell \"1.000,00\"\\n        - cell\\n      - row \"16 7381 Solde de clôture 7381 Intérêts et produits assimilés 1.000,00\":\\n        - cell \"16\"\\n        - cell \"7381\"\\n        - cell \"Solde de clôture 7381 Intérêts et produits assimilés\"\\n        - cell \"1.000,00\"\\n        - cell\\n        - cell\\n      - row \"17 8100 Détermination du résultat 2025 Résultat d\\'exploitation 129.330,00\":\\n        - cell \"17\"\\n        - cell \"8100\"\\n        - cell \"Détermination du résultat 2025 Résultat d\\'exploitation\"\\n        - cell\\n        - cell \"129.330,00\"\\n        - cell\\n      - row \"18 7124 Solde de clôture 7124 Ventes de services produits au Maroc 132.000,00\":\\n        - cell \"18\"\\n        - cell \"7124\"\\n        - cell \"Solde de clôture 7124 Ventes de services produits au Maroc\"\\n        - cell \"132.000,00\"\\n        - cell\\n        - cell\\n      - row \"19 7111 Solde de clôture 7111 Ventes de marchandises au Maroc 37.500,00\":\\n        - cell \"19\"\\n        - cell \"7111\"\\n        - cell \"Solde de clôture 7111 Ventes de marchandises au Maroc\"\\n        - cell \"37.500,00\"\\n        - cell\\n        - cell\\n      - row \"20 61964 Solde de clôture 61964 DEP pour dépréciation des créances de l\\'actif circulant 2.000,00\":\\n        - cell \"20\"\\n        - cell \"61964\"\\n        - cell \"Solde de clôture 61964 DEP pour dépréciation des créances de l\\'actif circulant\"\\n        - cell\\n        - cell \"2.000,00\"\\n        - cell\\n      - row \"21 61955 Solde de clôture 61955 DEP pour risques et charges durables 1.500,00\":\\n        - cell \"21\"\\n        - cell \"61955\"\\n        - cell \"Solde de clôture 61955 DEP pour risques et charges durables\"\\n        - cell\\n        - cell \"1.500,00\"\\n        - cell\\n      - row \"22 61935 Solde de clôture 61935 DEA des mobiliers, matériels de bureau et aménagements divers 4.800,00\":\\n        - cell \"22\"\\n        - cell \"61935\"\\n        - cell \"Solde de clôture 61935 DEA des mobiliers, matériels de bureau et aménagements divers\"\\n        - cell\\n        - cell \"4.800,00\"\\n        - cell\\n      - row \"23 61473 Solde de clôture 61473 Frais et commissions sur services bancaires 60,00\":\\n        - cell \"23\"\\n        - cell \"61473\"\\n        - cell \"Solde de clôture 61473 Frais et commissions sur services bancaires\"\\n        - cell\\n        - cell \"60,00\"\\n        - cell\\n      - row \"24 61472 Solde de clôture 61472 Frais sur effets de commerce 10,00\":\\n        - cell \"24\"\\n        - cell \"61472\"\\n        - cell \"Solde de clôture 61472 Frais sur effets de commerce\"\\n        - cell\\n        - cell \"10,00\"\\n        - cell\\n      - row \"25 6134 Solde de clôture 6134 Primes d\\'assurances 1.000,00\":\\n        - cell \"25\"\\n        - cell \"6134\"\\n        - cell \"Solde de clôture 6134 Primes d\\'assurances\"\\n        - cell\\n        - cell \"1.000,00\"\\n        - cell\\n      - row \"26 6125 Solde de clôture 6125 Achats non stockés de matières et fournitures 15.400,00\":\\n        - cell \"26\"\\n        - cell \"6125\"\\n        - cell \"Solde de clôture 6125 Achats non stockés de matières et fournitures\"\\n        - cell\\n        - cell \"15.400,00\"\\n        - cell\\n      - row \"27 6114 Solde de clôture 6114 Variation de stocks de marchandises 6.600,00\":\\n        - cell \"27\"\\n        - cell \"6114\"\\n        - cell \"Solde de clôture 6114 Variation de stocks de marchandises\"\\n        - cell \"6.600,00\"\\n        - cell\\n        - cell\\n      - row \"28 31/12/25 OD 3453 Imputation documentaire retenue 200 Acomptes sur impôts sur les résultats 200,00 OD-2025-0015 PPRF-IMP Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"28\"\\n        - cell \"31/12/25\"\\n        - cell \"OD\"\\n        - cell \"3453\"\\n        - cell \"Imputation documentaire retenue 200 Acomptes sur impôts sur les résultats\"\\n        - cell\\n        - cell \"200,00\"\\n        - cell\\n        - cell \"OD-2025-0015\"\\n        - cell \"PPRF-IMP\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"29 4453 Imputation documentaire retenue 200 État - impôts sur les résultats 200,00\":\\n        - cell \"29\"\\n        - cell \"4453\"\\n        - cell \"Imputation documentaire retenue 200 État - impôts sur les résultats\"\\n        - cell \"200,00\"\\n        - cell\\n        - cell\\n      - row \"30 31/12/25 OD 4453 IS attendu à constater une seule fois État - impôts sur les résultats 23.420,25 OD-2025-0014 IS-2025 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"30\"\\n        - cell \"31/12/25\"\\n        - cell \"OD\"\\n        - cell \"4453\"\\n        - cell \"IS attendu à constater une seule fois État - impôts sur les résultats\"\\n        - cell\\n        - cell \"23.420,25\"\\n        - cell\\n        - cell \"OD-2025-0014\"\\n        - cell \"IS-2025\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"31 6701 IS attendu à constater une seule fois Impôts sur les bénéfices 23.420,25\":\\n        - cell \"31\"\\n        - cell \"6701\"\\n        - cell \"IS attendu à constater une seule fois Impôts sur les bénéfices\"\\n        - cell \"23.420,25\"\\n        - cell\\n        - cell\\n      - row \"32 31/12/25 OD 4456 TVA nette décembre 2 400 État - TVA due (suivant déclarations) 2.400,00 OD-2025-0013 TVA-12 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"32\"\\n        - cell \"31/12/25\"\\n        - cell \"OD\"\\n        - cell \"4456\"\\n        - cell \"TVA nette décembre 2 400 État - TVA due (suivant déclarations)\"\\n        - cell\\n        - cell \"2.400,00\"\\n        - cell\\n        - cell \"OD-2025-0013\"\\n        - cell \"TVA-12\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"33 4455 TVA nette décembre 2 400 État - TVA facturée 2.400,00\":\\n        - cell \"33\"\\n        - cell \"4455\"\\n        - cell \"TVA nette décembre 2 400 État - TVA facturée\"\\n        - cell \"2.400,00\"\\n        - cell\\n        - cell\\n      - row \"34 31/12/25 OD 3942 Dépréciation d\\'une créance client Provisions pour dépréciation des clients et comptes rattachés 2.000,00 OD-2025-0012 INV-DEPRECIATION_CLIENT-2025-4 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"34\"\\n        - cell \"31/12/25\"\\n        - cell \"OD\"\\n        - cell \"3942\"\\n        - cell \"Dépréciation d\\'une créance client Provisions pour dépréciation des clients et comptes rattachés\"\\n        - cell\\n        - cell \"2.000,00\"\\n        - cell\\n        - cell \"OD-2025-0012\"\\n        - cell \"INV-DEPRECIATION_CLIENT-2025-4\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"35 61964 Dépréciation d\\'une créance client DEP pour dépréciation des créances de l\\'actif circulant 2.000,00\":\\n        - cell \"35\"\\n        - cell \"61964\"\\n        - cell \"Dépréciation d\\'une créance client DEP pour dépréciation des créances de l\\'actif circulant\"\\n        - cell \"2.000,00\"\\n        - cell\\n        - cell\\n      - row \"36 31/12/25 OD 1518 Provision pour risques et charges Autres provisions pour risques 1.500,00 OD-2025-0011 INV-PROVISION_RISQUE-2025-3 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"36\"\\n        - cell \"31/12/25\"\\n        - cell \"OD\"\\n        - cell \"1518\"\\n        - cell \"Provision pour risques et charges Autres provisions pour risques\"\\n        - cell\\n        - cell \"1.500,00\"\\n        - cell\\n        - cell \"OD-2025-0011\"\\n        - cell \"INV-PROVISION_RISQUE-2025-3\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"37 61955 Provision pour risques et charges DEP pour risques et charges durables 1.500,00\":\\n        - cell \"37\"\\n        - cell \"61955\"\\n        - cell \"Provision pour risques et charges DEP pour risques et charges durables\"\\n        - cell \"1.500,00\"\\n        - cell\\n        - cell\\n      - row \"38 31/12/25 OD 4417 Fournisseur - facture non parvenue (FNP) Fournisseurs - factures non parvenues 3.000,00 OD-2025-0010 INV-FNP-2025-2 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"38\"\\n        - cell \"31/12/25\"\\n        - cell \"OD\"\\n        - cell \"4417\"\\n        - cell \"Fournisseur - facture non parvenue (FNP) Fournisseurs - factures non parvenues\"\\n        - cell\\n        - cell \"3.000,00\"\\n        - cell\\n        - cell \"OD-2025-0010\"\\n        - cell \"INV-FNP-2025-2\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"39 6125 Fournisseur - facture non parvenue (FNP) Achats non stockés de matières et fournitures 3.000,00\":\\n        - cell \"39\"\\n        - cell \"6125\"\\n        - cell \"Fournisseur - facture non parvenue (FNP) Achats non stockés de matières et fournitures\"\\n        - cell \"3.000,00\"\\n        - cell\\n        - cell\\n      - row \"40 31/12/25 OD 6134 Charge constatée d\\'avance (CCA) Primes d\\'assurances 11.000,00 OD-2025-0009 INV-CCA-2025-1 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"40\"\\n        - cell \"31/12/25\"\\n        - cell \"OD\"\\n        - cell \"6134\"\\n        - cell \"Charge constatée d\\'avance (CCA) Primes d\\'assurances\"\\n        - cell\\n        - cell \"11.000,00\"\\n        - cell\\n        - cell \"OD-2025-0009\"\\n        - cell \"INV-CCA-2025-1\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"41 3491 Charge constatée d\\'avance (CCA) Charges constatées d\\'avance 11.000,00\":\\n        - cell \"41\"\\n        - cell \"3491\"\\n        - cell \"Charge constatée d\\'avance (CCA) Charges constatées d\\'avance\"\\n        - cell \"11.000,00\"\\n        - cell\\n        - cell\\n      - row \"42 31/12/25 AM 61935 Dotation amort. — Ordinateur de recette DEA des mobiliers, matériels de bureau et aménagements divers 4.800,00 AM-2025-0001 AM-2025-1 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"42\"\\n        - cell \"31/12/25\"\\n        - cell \"AM\"\\n        - cell \"61935\"\\n        - cell \"Dotation amort. — Ordinateur de recette DEA des mobiliers, matériels de bureau et aménagements divers\"\\n        - cell \"4.800,00\"\\n        - cell\\n        - cell\\n        - cell \"AM-2025-0001\"\\n        - cell \"AM-2025-1\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"43 28355 Amort. cumulé — Ordinateur de recette Amortissements du matériel informatique 4.800,00\":\\n        - cell \"43\"\\n        - cell \"28355\"\\n        - cell \"Amort. cumulé — Ordinateur de recette Amortissements du matériel informatique\"\\n        - cell\\n        - cell \"4.800,00\"\\n        - cell\\n      - row \"44 31/12/25 OD 6114 Variation de stock Variation de stocks de marchandises 6.600,00 OD-2025-0008 STOCK-CLOTURE-2025 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"44\"\\n        - cell \"31/12/25\"\\n        - cell \"OD\"\\n        - cell \"6114\"\\n        - cell \"Variation de stock Variation de stocks de marchandises\"\\n        - cell\\n        - cell \"6.600,00\"\\n        - cell\\n        - cell \"OD-2025-0008\"\\n        - cell \"STOCK-CLOTURE-2025\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"45 3111 Stock final Marchandises (groupe A) 6.600,00\":\\n        - cell \"45\"\\n        - cell \"3111\"\\n        - cell \"Stock final Marchandises (groupe A)\"\\n        - cell \"6.600,00\"\\n        - cell\\n        - cell\\n      - row \"46 31/12/25 BQ 5141 Frais bancaires 60 sans TVA selon avis Banques (solde débiteur) 60,00 BQ-2025-0017 FRAIS-BQ Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"46\"\\n        - cell \"31/12/25\"\\n        - cell \"BQ\"\\n        - cell \"5141\"\\n        - cell \"Frais bancaires 60 sans TVA selon avis Banques (solde débiteur)\"\\n        - cell\\n        - cell \"60,00\"\\n        - cell\\n        - cell \"BQ-2025-0017\"\\n        - cell \"FRAIS-BQ\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"47 61473 Frais bancaires 60 sans TVA selon avis Frais et commissions sur services bancaires 60,00\":\\n        - cell \"47\"\\n        - cell \"61473\"\\n        - cell \"Frais bancaires 60 sans TVA selon avis Frais et commissions sur services bancaires\"\\n        - cell \"60,00\"\\n        - cell\\n        - cell\\n      - row \"48 20/12/25 BQ 5141 Amende fiscale documentée 500 Banques (solde débiteur) 500,00 BQ-2025-0016 AMENDE Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"48\"\\n        - cell \"20/12/25\"\\n        - cell \"BQ\"\\n        - cell \"5141\"\\n        - cell \"Amende fiscale documentée 500 Banques (solde débiteur)\"\\n        - cell\\n        - cell \"500,00\"\\n        - cell\\n        - cell \"BQ-2025-0016\"\\n        - cell \"AMENDE\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"49 6583 Amende fiscale documentée 500 Pénalités et amendes fiscales ou pénales 500,00\":\\n        - cell \"49\"\\n        - cell \"6583\"\\n        - cell \"Amende fiscale documentée 500 Pénalités et amendes fiscales ou pénales\"\\n        - cell \"500,00\"\\n        - cell\\n        - cell\\n      - row \"50 15/12/25 OD 51111 Valeur impayée Chèques en portefeuille 2.000,00 OD-2025-0007 CHQ-REJET Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"50\"\\n        - cell \"15/12/25\"\\n        - cell \"OD\"\\n        - cell \"51111\"\\n        - cell \"Valeur impayée Chèques en portefeuille\"\\n        - cell\\n        - cell \"2.000,00\"\\n        - cell\\n        - cell \"OD-2025-0007\"\\n        - cell \"CHQ-REJET\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"51 3421 Client Impayé Recette — impayé Clients 2.000,00\":\\n        - cell \"51\"\\n        - cell \"3421\"\\n        - cell \"Client Impayé Recette — impayé Clients\"\\n        - cell \"2.000,00\"\\n        - cell\\n        - cell\\n      - row \"52 12/12/25 AE 3421 Client Impayé Recette Clients 2.000,00 AE-2025-0006 CHQ-REJET Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"52\"\\n        - cell \"12/12/25\"\\n        - cell \"AE\"\\n        - cell \"3421\"\\n        - cell \"Client Impayé Recette Clients\"\\n        - cell\\n        - cell \"2.000,00\"\\n        - cell\\n        - cell \"AE-2025-0006\"\\n        - cell \"CHQ-REJET\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"53 51111 Chèque en portefeuille CHQ-REJET Chèques en portefeuille 2.000,00\":\\n        - cell \"53\"\\n        - cell \"51111\"\\n        - cell \"Chèque en portefeuille CHQ-REJET Chèques en portefeuille\"\\n        - cell \"2.000,00\"\\n        - cell\\n        - cell\\n      - row \"54 10/12/25 VT 4455 État — TVA facturée État - TVA facturée 2.400,00 VT-2025-0004 FA-2025-009 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"54\"\\n        - cell \"10/12/25\"\\n        - cell \"VT\"\\n        - cell \"4455\"\\n        - cell \"État — TVA facturée État - TVA facturée\"\\n        - cell\\n        - cell \"2.400,00\"\\n        - cell\\n        - cell \"VT-2025-0004\"\\n        - cell \"FA-2025-009\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"55 7124 Ventes Ventes de services produits au Maroc 12.000,00\":\\n        - cell \"55\"\\n        - cell \"7124\"\\n        - cell \"Ventes Ventes de services produits au Maroc\"\\n        - cell\\n        - cell \"12.000,00\"\\n        - cell\\n      - row \"56 3421 Client Impayé Recette Clients 14.400,00\":\\n        - cell \"56\"\\n        - cell \"3421\"\\n        - cell \"Client Impayé Recette Clients\"\\n        - cell \"14.400,00\"\\n        - cell\\n        - cell\\n      - row \"57 02/12/25 AC 34552 État — TVA récupérable sur charges État - TVA récupérable sur charges 40,00 AC-2025-0006 002 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"57\"\\n        - cell \"02/12/25\"\\n        - cell \"AC\"\\n        - cell \"34552\"\\n        - cell \"État — TVA récupérable sur charges État - TVA récupérable sur charges\"\\n        - cell \"40,00\"\\n        - cell\\n        - cell\\n        - cell \"AC-2025-0006\"\\n        - cell \"002\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"58 4411 Fournisseur Contrôle Références Recette Fournisseurs 240,00\":\\n        - cell \"58\"\\n        - cell \"4411\"\\n        - cell \"Fournisseur Contrôle Références Recette Fournisseurs\"\\n        - cell\\n        - cell \"240,00\"\\n        - cell\\n      - row \"59 6125 Achats Achats non stockés de matières et fournitures 200,00\":\\n        - cell \"59\"\\n        - cell \"6125\"\\n        - cell \"Achats Achats non stockés de matières et fournitures\"\\n        - cell \"200,00\"\\n        - cell\\n        - cell\\n      - row \"60 02/12/25 AC 34552 État — TVA récupérable sur charges État - TVA récupérable sur charges 40,00 AC-2025-0005 02 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"60\"\\n        - cell \"02/12/25\"\\n        - cell \"AC\"\\n        - cell \"34552\"\\n        - cell \"État — TVA récupérable sur charges État - TVA récupérable sur charges\"\\n        - cell \"40,00\"\\n        - cell\\n        - cell\\n        - cell \"AC-2025-0005\"\\n        - cell \"02\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"61 4411 Fournisseur Contrôle Références Recette Fournisseurs 240,00\":\\n        - cell \"61\"\\n        - cell \"4411\"\\n        - cell \"Fournisseur Contrôle Références Recette Fournisseurs\"\\n        - cell\\n        - cell \"240,00\"\\n        - cell\\n      - row \"62 6125 Achats Achats non stockés de matières et fournitures 200,00\":\\n        - cell \"62\"\\n        - cell \"6125\"\\n        - cell \"Achats Achats non stockés de matières et fournitures\"\\n        - cell \"200,00\"\\n        - cell\\n        - cell\\n      - row \"63 01/12/25 BQ 5141 Assurance 12000 couvrant décembre 2025 à novembre 2026 Banques (solde débiteur) 12.000,00 BQ-2025-0015 ASS-01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"63\"\\n        - cell \"01/12/25\"\\n        - cell \"BQ\"\\n        - cell \"5141\"\\n        - cell \"Assurance 12000 couvrant décembre 2025 à novembre 2026 Banques (solde débiteur)\"\\n        - cell\\n        - cell \"12.000,00\"\\n        - cell\\n        - cell \"BQ-2025-0015\"\\n        - cell \"ASS-01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"64 6134 Assurance 12000 couvrant décembre 2025 à novembre 2026 Primes d\\'assurances 12.000,00\":\\n        - cell \"64\"\\n        - cell \"6134\"\\n        - cell \"Assurance 12000 couvrant décembre 2025 à novembre 2026 Primes d\\'assurances\"\\n        - cell \"12.000,00\"\\n        - cell\\n        - cell\\n      - row \"65 30/11/25 BQ 3453 Intérêts bancaires selon attestation fictive Acomptes sur impôts sur les résultats 200,00 BQ-2025-0014 INT-PPRF Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"65\"\\n        - cell \"30/11/25\"\\n        - cell \"BQ\"\\n        - cell \"3453\"\\n        - cell \"Intérêts bancaires selon attestation fictive Acomptes sur impôts sur les résultats\"\\n        - cell \"200,00\"\\n        - cell\\n        - cell\\n        - cell \"BQ-2025-0014\"\\n        - cell \"INT-PPRF\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"66 7381 Intérêts bancaires selon attestation fictive Intérêts et produits assimilés 1.000,00\":\\n        - cell \"66\"\\n        - cell \"7381\"\\n        - cell \"Intérêts bancaires selon attestation fictive Intérêts et produits assimilés\"\\n        - cell\\n        - cell \"1.000,00\"\\n        - cell\\n      - row \"67 5141 Intérêts bancaires selon attestation fictive Banques (solde débiteur) 800,00\":\\n        - cell \"67\"\\n        - cell \"5141\"\\n        - cell \"Intérêts bancaires selon attestation fictive Banques (solde débiteur)\"\\n        - cell \"800,00\"\\n        - cell\\n        - cell\\n      - row \"68 20/07/25 BQ 5141 Paiement TVA juin 19900 Banques (solde débiteur) 19.900,00 BQ-2025-0013 TVA-06-PAY Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"68\"\\n        - cell \"20/07/25\"\\n        - cell \"BQ\"\\n        - cell \"5141\"\\n        - cell \"Paiement TVA juin 19900 Banques (solde débiteur)\"\\n        - cell\\n        - cell \"19.900,00\"\\n        - cell\\n        - cell \"BQ-2025-0013\"\\n        - cell \"TVA-06-PAY\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"69 4456 Paiement TVA juin 19900 État - TVA due (suivant déclarations) 19.900,00\":\\n        - cell \"69\"\\n        - cell \"4456\"\\n        - cell \"Paiement TVA juin 19900 État - TVA due (suivant déclarations)\"\\n        - cell \"19.900,00\"\\n        - cell\\n        - cell\\n      - row \"70 30/06/25 OD 3456 TVA nette juin 19 900 État - crédit de TVA (suivant déclaration) 4.100,00 OD-2025-0006 TVA-06 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"70\"\\n        - cell \"30/06/25\"\\n        - cell \"OD\"\\n        - cell \"3456\"\\n        - cell \"TVA nette juin 19 900 État - crédit de TVA (suivant déclaration)\"\\n        - cell\\n        - cell \"4.100,00\"\\n        - cell\\n        - cell \"OD-2025-0006\"\\n        - cell \"TVA-06\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"71 4456 TVA nette juin 19 900 État - TVA due (suivant déclarations) 19.900,00\":\\n        - cell \"71\"\\n        - cell \"4456\"\\n        - cell \"TVA nette juin 19 900 État - TVA due (suivant déclarations)\"\\n        - cell\\n        - cell \"19.900,00\"\\n        - cell\\n      - row \"72 4455 TVA nette juin 19 900 État - TVA facturée 24.000,00\":\\n        - cell \"72\"\\n        - cell \"4455\"\\n        - cell \"TVA nette juin 19 900 État - TVA facturée\"\\n        - cell \"24.000,00\"\\n        - cell\\n        - cell\\n      - row \"73 30/06/25 BQ 3421 Client Services Recette Clients 120.000,00 BQ-2025-0012 VENTE-SERVICE-PAY Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"73\"\\n        - cell \"30/06/25\"\\n        - cell \"BQ\"\\n        - cell \"3421\"\\n        - cell \"Client Services Recette Clients\"\\n        - cell\\n        - cell \"120.000,00\"\\n        - cell\\n        - cell \"BQ-2025-0012\"\\n        - cell \"VENTE-SERVICE-PAY\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"74 5141 Virement reçu VENTE-SERVICE-PAY Banques (solde débiteur) 120.000,00\":\\n        - cell \"74\"\\n        - cell \"5141\"\\n        - cell \"Virement reçu VENTE-SERVICE-PAY Banques (solde débiteur)\"\\n        - cell \"120.000,00\"\\n        - cell\\n        - cell\\n      - row \"75 15/06/25 OD 4421 Client Services Recette — avances et acomptes reçus Clients - avances et acomptes reçus sur commandes en cours 24.000,00 OD-2025-0005 AC-2025-002 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"75\"\\n        - cell \"15/06/25\"\\n        - cell \"OD\"\\n        - cell \"4421\"\\n        - cell \"Client Services Recette — avances et acomptes reçus Clients - avances et acomptes reçus sur commandes en cours\"\\n        - cell \"24.000,00\"\\n        - cell\\n        - cell\\n        - cell \"OD-2025-0005\"\\n        - cell \"AC-2025-002\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"76 3421 Client Services Recette Clients 24.000,00\":\\n        - cell \"76\"\\n        - cell \"3421\"\\n        - cell \"Client Services Recette Clients\"\\n        - cell\\n        - cell \"24.000,00\"\\n        - cell\\n      - row \"77 15/06/25 VT 7124 Ventes Ventes de services produits au Maroc 120.000,00 VT-2025-0003 FA-2025-006 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"77\"\\n        - cell \"15/06/25\"\\n        - cell \"VT\"\\n        - cell \"7124\"\\n        - cell \"Ventes Ventes de services produits au Maroc\"\\n        - cell\\n        - cell \"120.000,00\"\\n        - cell\\n        - cell \"VT-2025-0003\"\\n        - cell \"FA-2025-006\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"78 4455 État — TVA facturée État - TVA facturée 24.000,00\":\\n        - cell \"78\"\\n        - cell \"4455\"\\n        - cell \"État — TVA facturée État - TVA facturée\"\\n        - cell\\n        - cell \"24.000,00\"\\n        - cell\\n      - row \"79 3421 Client Services Recette Clients 144.000,00\":\\n        - cell \"79\"\\n        - cell \"3421\"\\n        - cell \"Client Services Recette Clients\"\\n        - cell \"144.000,00\"\\n        - cell\\n        - cell\\n      - row \"80 01/06/25 BQ 5141 Trésorerie Banques (solde débiteur) 24.000,00 BQ-2025-0011 AC-2025-002 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"80\"\\n        - cell \"01/06/25\"\\n        - cell \"BQ\"\\n        - cell \"5141\"\\n        - cell \"Trésorerie Banques (solde débiteur)\"\\n        - cell \"24.000,00\"\\n        - cell\\n        - cell\\n        - cell \"BQ-2025-0011\"\\n        - cell \"AC-2025-002\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"81 4421 Client Services Recette — avances et acomptes reçus Clients - avances et acomptes reçus sur commandes en cours 24.000,00\":\\n        - cell \"81\"\\n        - cell \"4421\"\\n        - cell \"Client Services Recette — avances et acomptes reçus Clients - avances et acomptes reçus sur commandes en cours\"\\n        - cell\\n        - cell \"24.000,00\"\\n        - cell\\n      - row \"82 16/05/25 BQ 61472 Encaissement effet — Client Marchandises Recette Frais sur effets de commerce 10,00 BQ-2025-0010 EFF-C01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"82\"\\n        - cell \"16/05/25\"\\n        - cell \"BQ\"\\n        - cell \"61472\"\\n        - cell \"Encaissement effet — Client Marchandises Recette Frais sur effets de commerce\"\\n        - cell \"10,00\"\\n        - cell\\n        - cell\\n        - cell \"BQ-2025-0010\"\\n        - cell \"EFF-C01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"83 51132 Valeurs à l\\'encaissement Effets à l\\'encaissement 10.000,00\":\\n        - cell \"83\"\\n        - cell \"51132\"\\n        - cell \"Valeurs à l\\'encaissement Effets à l\\'encaissement\"\\n        - cell\\n        - cell \"10.000,00\"\\n        - cell\\n      - row \"84 5141 Effet encaissé EFF-C01 Banques (solde débiteur) 9.990,00\":\\n        - cell \"84\"\\n        - cell \"5141\"\\n        - cell \"Effet encaissé EFF-C01 Banques (solde débiteur)\"\\n        - cell \"9.990,00\"\\n        - cell\\n        - cell\\n      - row \"85 15/05/25 AE 3425 Effet à recevoir Clients - effets à recevoir 10.000,00 AE-2025-0005 EFF-C01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"85\"\\n        - cell \"15/05/25\"\\n        - cell \"AE\"\\n        - cell \"3425\"\\n        - cell \"Effet à recevoir Clients - effets à recevoir\"\\n        - cell\\n        - cell \"10.000,00\"\\n        - cell\\n        - cell \"AE-2025-0005\"\\n        - cell \"EFF-C01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"86 51132 Effet à l\\'encaissement Effets à l\\'encaissement 10.000,00\":\\n        - cell \"86\"\\n        - cell \"51132\"\\n        - cell \"Effet à l\\'encaissement Effets à l\\'encaissement\"\\n        - cell \"10.000,00\"\\n        - cell\\n        - cell\\n      - row \"87 01/04/25 AE 3421 Client Marchandises Recette Clients 10.000,00 AE-2025-0004 EFF-C01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"87\"\\n        - cell \"01/04/25\"\\n        - cell \"AE\"\\n        - cell \"3421\"\\n        - cell \"Client Marchandises Recette Clients\"\\n        - cell\\n        - cell \"10.000,00\"\\n        - cell\\n        - cell \"AE-2025-0004\"\\n        - cell \"EFF-C01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"88 3425 Effet à recevoir EFF-C01 Clients - effets à recevoir 10.000,00\":\\n        - cell \"88\"\\n        - cell \"3425\"\\n        - cell \"Effet à recevoir EFF-C01 Clients - effets à recevoir\"\\n        - cell \"10.000,00\"\\n        - cell\\n        - cell\\n      - row \"89 31/03/25 OD 34552 Consommation crédit TVA mars 600 État - TVA récupérable sur charges 2.400,00 OD-2025-0004 TVA-03 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"89\"\\n        - cell \"31/03/25\"\\n        - cell \"OD\"\\n        - cell \"34552\"\\n        - cell \"Consommation crédit TVA mars 600 État - TVA récupérable sur charges\"\\n        - cell\\n        - cell \"2.400,00\"\\n        - cell\\n        - cell \"OD-2025-0004\"\\n        - cell \"TVA-03\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"90 3456 Consommation crédit TVA mars 600 État - crédit de TVA (suivant déclaration) 600,00\":\\n        - cell \"90\"\\n        - cell \"3456\"\\n        - cell \"Consommation crédit TVA mars 600 État - crédit de TVA (suivant déclaration)\"\\n        - cell\\n        - cell \"600,00\"\\n        - cell\\n      - row \"91 4455 Consommation crédit TVA mars 600 État - TVA facturée 3.000,00\":\\n        - cell \"91\"\\n        - cell \"4455\"\\n        - cell \"Consommation crédit TVA mars 600 État - TVA facturée\"\\n        - cell \"3.000,00\"\\n        - cell\\n        - cell\\n      - row \"92 20/03/25 BQ 5141 Effet payé EFF-F01 Banques (solde débiteur) 14.400,00 BQ-2025-0009 EFF-F01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"92\"\\n        - cell \"20/03/25\"\\n        - cell \"BQ\"\\n        - cell \"5141\"\\n        - cell \"Effet payé EFF-F01 Banques (solde débiteur)\"\\n        - cell\\n        - cell \"14.400,00\"\\n        - cell\\n        - cell \"BQ-2025-0009\"\\n        - cell \"EFF-F01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"93 4415 Effet à payer Fournisseurs - effets à payer 14.400,00\":\\n        - cell \"93\"\\n        - cell \"4415\"\\n        - cell \"Effet à payer Fournisseurs - effets à payer\"\\n        - cell \"14.400,00\"\\n        - cell\\n        - cell\\n      - row \"94 05/03/25 BQ 3421 Client Marchandises Recette Clients 5.000,00 BQ-2025-0008 PAY-V02 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"94\"\\n        - cell \"05/03/25\"\\n        - cell \"BQ\"\\n        - cell \"3421\"\\n        - cell \"Client Marchandises Recette Clients\"\\n        - cell\\n        - cell \"5.000,00\"\\n        - cell\\n        - cell \"BQ-2025-0008\"\\n        - cell \"PAY-V02\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"95 5141 Virement reçu PAY-V02 Banques (solde débiteur) 5.000,00\":\\n        - cell \"95\"\\n        - cell \"5141\"\\n        - cell \"Virement reçu PAY-V02 Banques (solde débiteur)\"\\n        - cell \"5.000,00\"\\n        - cell\\n        - cell\\n      - row \"96 01/03/25 AE 4415 Effet à payer EFF-F01 Fournisseurs - effets à payer 14.400,00 AE-2025-0003 EFF-F01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"96\"\\n        - cell \"01/03/25\"\\n        - cell \"AE\"\\n        - cell \"4415\"\\n        - cell \"Effet à payer EFF-F01 Fournisseurs - effets à payer\"\\n        - cell\\n        - cell \"14.400,00\"\\n        - cell\\n        - cell \"AE-2025-0003\"\\n        - cell \"EFF-F01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"97 4411 Fournisseur Marchandises Recette Fournisseurs 14.400,00\":\\n        - cell \"97\"\\n        - cell \"4411\"\\n        - cell \"Fournisseur Marchandises Recette Fournisseurs\"\\n        - cell \"14.400,00\"\\n        - cell\\n        - cell\\n      - row \"98 01/03/25 VT 4455 État — TVA facturée État - TVA facturée 3.000,00 VT-2025-0002 FA-2025-005 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"98\"\\n        - cell \"01/03/25\"\\n        - cell \"VT\"\\n        - cell \"4455\"\\n        - cell \"État — TVA facturée État - TVA facturée\"\\n        - cell\\n        - cell \"3.000,00\"\\n        - cell\\n        - cell \"VT-2025-0002\"\\n        - cell \"FA-2025-005\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"99 7111 Ventes Ventes de marchandises au Maroc 15.000,00\":\\n        - cell \"99\"\\n        - cell \"7111\"\\n        - cell \"Ventes Ventes de marchandises au Maroc\"\\n        - cell\\n        - cell \"15.000,00\"\\n        - cell\\n      - row \"100 3421 Client Marchandises Recette Clients 18.000,00\":\\n        - cell \"100\"\\n        - cell \"3421\"\\n        - cell \"Client Marchandises Recette Clients\"\\n        - cell \"18.000,00\"\\n        - cell\\n        - cell\\n      - row \"101 28/02/25 OD 4455 Augmentation crédit TVA février 2 900 État - TVA facturée 500,00 OD-2025-0003 TVA-02 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"101\"\\n        - cell \"28/02/25\"\\n        - cell \"OD\"\\n        - cell \"4455\"\\n        - cell \"Augmentation crédit TVA février 2 900 État - TVA facturée\"\\n        - cell\\n        - cell \"500,00\"\\n        - cell\\n        - cell \"OD-2025-0003\"\\n        - cell \"TVA-02\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"102 34552 Augmentation crédit TVA février 2 900 État - TVA récupérable sur charges 2.400,00\":\\n        - cell \"102\"\\n        - cell \"34552\"\\n        - cell \"Augmentation crédit TVA février 2 900 État - TVA récupérable sur charges\"\\n        - cell\\n        - cell \"2.400,00\"\\n        - cell\\n      - row \"103 3456 Augmentation crédit TVA février 2 900 État - crédit de TVA (suivant déclaration) 2.900,00\":\\n        - cell \"103\"\\n        - cell \"3456\"\\n        - cell \"Augmentation crédit TVA février 2 900 État - crédit de TVA (suivant déclaration)\"\\n        - cell \"2.900,00\"\\n        - cell\\n        - cell\\n      - row \"104 15/02/25 BQ 5141 Virement émis ACH-SERVICE-PAY Banques (solde débiteur) 14.400,00 BQ-2025-0007 ACH-SERVICE-PAY Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"104\"\\n        - cell \"15/02/25\"\\n        - cell \"BQ\"\\n        - cell \"5141\"\\n        - cell \"Virement émis ACH-SERVICE-PAY Banques (solde débiteur)\"\\n        - cell\\n        - cell \"14.400,00\"\\n        - cell\\n        - cell \"BQ-2025-0007\"\\n        - cell \"ACH-SERVICE-PAY\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"105 4411 Fournisseur Services Recette Fournisseurs 14.400,00\":\\n        - cell \"105\"\\n        - cell \"4411\"\\n        - cell \"Fournisseur Services Recette Fournisseurs\"\\n        - cell \"14.400,00\"\\n        - cell\\n        - cell\\n      - row \"106 10/02/25 AV 4455 État — TVA facturée (avoir) État - TVA facturée 500,00 AV-2025-0001 AV-2025-001 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"106\"\\n        - cell \"10/02/25\"\\n        - cell \"AV\"\\n        - cell \"4455\"\\n        - cell \"État — TVA facturée (avoir) État - TVA facturée\"\\n        - cell \"500,00\"\\n        - cell\\n        - cell\\n        - cell \"AV-2025-0001\"\\n        - cell \"AV-2025-001\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"107 3421 Client Marchandises Recette Clients 3.000,00\":\\n        - cell \"107\"\\n        - cell \"3421\"\\n        - cell \"Client Marchandises Recette Clients\"\\n        - cell\\n        - cell \"3.000,00\"\\n        - cell\\n      - row \"108 7111 Avoir sur ventes Ventes de marchandises au Maroc 2.500,00\":\\n        - cell \"108\"\\n        - cell \"7111\"\\n        - cell \"Avoir sur ventes Ventes de marchandises au Maroc\"\\n        - cell \"2.500,00\"\\n        - cell\\n        - cell\\n      - row \"109 10/02/25 AC 4411 Fournisseur Services Recette Fournisseurs 14.400,00 AC-2025-0004 ACH-SERVICE Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"109\"\\n        - cell \"10/02/25\"\\n        - cell \"AC\"\\n        - cell \"4411\"\\n        - cell \"Fournisseur Services Recette Fournisseurs\"\\n        - cell\\n        - cell \"14.400,00\"\\n        - cell\\n        - cell \"AC-2025-0004\"\\n        - cell \"ACH-SERVICE\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"110 34552 État — TVA récupérable sur charges État - TVA récupérable sur charges 2.400,00\":\\n        - cell \"110\"\\n        - cell \"34552\"\\n        - cell \"État — TVA récupérable sur charges État - TVA récupérable sur charges\"\\n        - cell \"2.400,00\"\\n        - cell\\n        - cell\\n      - row \"111 6125 Achats Achats non stockés de matières et fournitures 12.000,00\":\\n        - cell \"111\"\\n        - cell \"6125\"\\n        - cell \"Achats Achats non stockés de matières et fournitures\"\\n        - cell \"12.000,00\"\\n        - cell\\n        - cell\\n      - row \"112 05/02/25 BQ 51112 Valeurs à l\\'encaissement Chèques à l\\'encaissement 20.000,00 BQ-2025-0006 CHQ-01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"112\"\\n        - cell \"05/02/25\"\\n        - cell \"BQ\"\\n        - cell \"51112\"\\n        - cell \"Valeurs à l\\'encaissement Chèques à l\\'encaissement\"\\n        - cell\\n        - cell \"20.000,00\"\\n        - cell\\n        - cell \"BQ-2025-0006\"\\n        - cell \"CHQ-01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"113 5141 Chèque encaissé CHQ-01 Banques (solde débiteur) 20.000,00\":\\n        - cell \"113\"\\n        - cell \"5141\"\\n        - cell \"Chèque encaissé CHQ-01 Banques (solde débiteur)\"\\n        - cell \"20.000,00\"\\n        - cell\\n        - cell\\n      - row \"114 01/02/25 AE 51112 Chèque à l\\'encaissement Chèques à l\\'encaissement 20.000,00 AE-2025-0002 CHQ-01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"114\"\\n        - cell \"01/02/25\"\\n        - cell \"AE\"\\n        - cell \"51112\"\\n        - cell \"Chèque à l\\'encaissement Chèques à l\\'encaissement\"\\n        - cell \"20.000,00\"\\n        - cell\\n        - cell\\n        - cell \"AE-2025-0002\"\\n        - cell \"CHQ-01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"115 51111 Chèque en portefeuille Chèques en portefeuille 20.000,00\":\\n        - cell \"115\"\\n        - cell \"51111\"\\n        - cell \"Chèque en portefeuille Chèques en portefeuille\"\\n        - cell\\n        - cell \"20.000,00\"\\n        - cell\\n      - row \"116 31/01/25 OD 3456 Crédit TVA janvier 1 800 État - crédit de TVA (suivant déclaration) 1.800,00 OD-2025-0002 TVA-01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"116\"\\n        - cell \"31/01/25\"\\n        - cell \"OD\"\\n        - cell \"3456\"\\n        - cell \"Crédit TVA janvier 1 800 État - crédit de TVA (suivant déclaration)\"\\n        - cell \"1.800,00\"\\n        - cell\\n        - cell\\n        - cell \"OD-2025-0002\"\\n        - cell \"TVA-01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"117 34552 Crédit TVA janvier 1 800 État - TVA récupérable sur charges 2.000,00\":\\n        - cell \"117\"\\n        - cell \"34552\"\\n        - cell \"Crédit TVA janvier 1 800 État - TVA récupérable sur charges\"\\n        - cell\\n        - cell \"2.000,00\"\\n        - cell\\n      - row \"118 34551 Crédit TVA janvier 1 800 État - TVA récupérable sur immobilisations 4.800,00\":\\n        - cell \"118\"\\n        - cell \"34551\"\\n        - cell \"Crédit TVA janvier 1 800 État - TVA récupérable sur immobilisations\"\\n        - cell\\n        - cell \"4.800,00\"\\n        - cell\\n      - row \"119 4455 Crédit TVA janvier 1 800 État - TVA facturée 5.000,00\":\\n        - cell \"119\"\\n        - cell \"4455\"\\n        - cell \"Crédit TVA janvier 1 800 État - TVA facturée\"\\n        - cell \"5.000,00\"\\n        - cell\\n        - cell\\n      - row \"120 26/01/25 AE 3421 Client Marchandises Recette Clients 20.000,00 AE-2025-0001 CHQ-01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"120\"\\n        - cell \"26/01/25\"\\n        - cell \"AE\"\\n        - cell \"3421\"\\n        - cell \"Client Marchandises Recette Clients\"\\n        - cell\\n        - cell \"20.000,00\"\\n        - cell\\n        - cell \"AE-2025-0001\"\\n        - cell \"CHQ-01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"121 51111 Chèque en portefeuille CHQ-01 Chèques en portefeuille 20.000,00\":\\n        - cell \"121\"\\n        - cell \"51111\"\\n        - cell \"Chèque en portefeuille CHQ-01 Chèques en portefeuille\"\\n        - cell \"20.000,00\"\\n        - cell\\n        - cell\\n      - row \"122 25/01/25 BQ 3421 Client Marchandises Recette Clients 10.000,00 BQ-2025-0005 PAY-V01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"122\"\\n        - cell \"25/01/25\"\\n        - cell \"BQ\"\\n        - cell \"3421\"\\n        - cell \"Client Marchandises Recette Clients\"\\n        - cell\\n        - cell \"10.000,00\"\\n        - cell\\n        - cell \"BQ-2025-0005\"\\n        - cell \"PAY-V01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"123 5141 Virement reçu PAY-V01 Banques (solde débiteur) 10.000,00\":\\n        - cell \"123\"\\n        - cell \"5141\"\\n        - cell \"Virement reçu PAY-V01 Banques (solde débiteur)\"\\n        - cell \"10.000,00\"\\n        - cell\\n        - cell\\n      - row \"124 20/01/25 VT 4455 État — TVA facturée État - TVA facturée 5.000,00 VT-2025-0001 FA-2025-003 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"124\"\\n        - cell \"20/01/25\"\\n        - cell \"VT\"\\n        - cell \"4455\"\\n        - cell \"État — TVA facturée État - TVA facturée\"\\n        - cell\\n        - cell \"5.000,00\"\\n        - cell\\n        - cell \"VT-2025-0001\"\\n        - cell \"FA-2025-003\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"125 7111 Ventes Ventes de marchandises au Maroc 25.000,00\":\\n        - cell \"125\"\\n        - cell \"7111\"\\n        - cell \"Ventes Ventes de marchandises au Maroc\"\\n        - cell\\n        - cell \"25.000,00\"\\n        - cell\\n      - row \"126 3421 Client Marchandises Recette Clients 30.000,00\":\\n        - cell \"126\"\\n        - cell \"3421\"\\n        - cell \"Client Marchandises Recette Clients\"\\n        - cell \"30.000,00\"\\n        - cell\\n        - cell\\n      - row \"127 10/01/25 AC 34552 État — TVA récupérable sur charges État - TVA récupérable sur charges 2.400,00 AC-2025-0003 ACH-02 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"127\"\\n        - cell \"10/01/25\"\\n        - cell \"AC\"\\n        - cell \"34552\"\\n        - cell \"État — TVA récupérable sur charges État - TVA récupérable sur charges\"\\n        - cell \"2.400,00\"\\n        - cell\\n        - cell\\n        - cell \"AC-2025-0003\"\\n        - cell \"ACH-02\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"128 4411 Fournisseur Marchandises Recette Fournisseurs 14.400,00\":\\n        - cell \"128\"\\n        - cell \"4411\"\\n        - cell \"Fournisseur Marchandises Recette Fournisseurs\"\\n        - cell\\n        - cell \"14.400,00\"\\n        - cell\\n      - row \"129 6111 Achats Achats de marchandises (groupe A) 12.000,00\":\\n        - cell \"129\"\\n        - cell \"6111\"\\n        - cell \"Achats Achats de marchandises (groupe A)\"\\n        - cell \"12.000,00\"\\n        - cell\\n        - cell\\n      - row \"130 07/01/25 BQ 5141 Virement émis PAY-ACH01 Banques (solde débiteur) 6.000,00 BQ-2025-0004 PAY-ACH01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"130\"\\n        - cell \"07/01/25\"\\n        - cell \"BQ\"\\n        - cell \"5141\"\\n        - cell \"Virement émis PAY-ACH01 Banques (solde débiteur)\"\\n        - cell\\n        - cell \"6.000,00\"\\n        - cell\\n        - cell \"BQ-2025-0004\"\\n        - cell \"PAY-ACH01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"131 4411 Fournisseur Marchandises Recette Fournisseurs 6.000,00 AAA\":\\n        - cell \"131\"\\n        - cell \"4411\"\\n        - cell \"Fournisseur Marchandises Recette Fournisseurs\"\\n        - cell \"6.000,00\"\\n        - cell\\n        - cell \"AAA\"\\n      - row \"132 05/01/25 OD 3411 Fournisseur Marchandises Recette — avances et acomptes versés Fournisseurs - avances et acomptes versés sur commandes d\\'exploitation 6.000,00 OD-2025-0001 AC-2025-001 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"132\"\\n        - cell \"05/01/25\"\\n        - cell \"OD\"\\n        - cell \"3411\"\\n        - cell \"Fournisseur Marchandises Recette — avances et acomptes versés Fournisseurs - avances et acomptes versés sur commandes d\\'exploitation\"\\n        - cell\\n        - cell \"6.000,00\"\\n        - cell\\n        - cell \"OD-2025-0001\"\\n        - cell \"AC-2025-001\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"133 4411 Fournisseur Marchandises Recette Fournisseurs 6.000,00 AAA\":\\n        - cell \"133\"\\n        - cell \"4411\"\\n        - cell \"Fournisseur Marchandises Recette Fournisseurs\"\\n        - cell \"6.000,00\"\\n        - cell\\n        - cell \"AAA\"\\n      - row \"134 05/01/25 AC 34552 État — TVA récupérable sur charges État - TVA récupérable sur charges 2.000,00 AC-2025-0002 ACH-01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"134\"\\n        - cell \"05/01/25\"\\n        - cell \"AC\"\\n        - cell \"34552\"\\n        - cell \"État — TVA récupérable sur charges État - TVA récupérable sur charges\"\\n        - cell \"2.000,00\"\\n        - cell\\n        - cell\\n        - cell \"AC-2025-0002\"\\n        - cell \"ACH-01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"135 4411 Fournisseur Marchandises Recette Fournisseurs 12.000,00 AAA\":\\n        - cell \"135\"\\n        - cell \"4411\"\\n        - cell \"Fournisseur Marchandises Recette Fournisseurs\"\\n        - cell\\n        - cell \"12.000,00\"\\n        - cell \"AAA\"\\n      - row \"136 6111 Achats Achats de marchandises (groupe A) 10.000,00\":\\n        - cell \"136\"\\n        - cell \"6111\"\\n        - cell \"Achats Achats de marchandises (groupe A)\"\\n        - cell \"10.000,00\"\\n        - cell\\n        - cell\\n      - row \"137 04/01/25 BQ 5141 Trésorerie Banques (solde débiteur) 6.000,00 BQ-2025-0003 AC-2025-001 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"137\"\\n        - cell \"04/01/25\"\\n        - cell \"BQ\"\\n        - cell \"5141\"\\n        - cell \"Trésorerie Banques (solde débiteur)\"\\n        - cell\\n        - cell \"6.000,00\"\\n        - cell\\n        - cell \"BQ-2025-0003\"\\n        - cell \"AC-2025-001\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"138 3411 Fournisseur Marchandises Recette — avances et acomptes versés Fournisseurs - avances et acomptes versés sur commandes d\\'exploitation 6.000,00\":\\n        - cell \"138\"\\n        - cell \"3411\"\\n        - cell \"Fournisseur Marchandises Recette — avances et acomptes versés Fournisseurs - avances et acomptes versés sur commandes d\\'exploitation\"\\n        - cell \"6.000,00\"\\n        - cell\\n        - cell\\n      - row \"139 01/01/25 BQ 5141 Paiement immobilisation — Ordinateur de recette Banques (solde débiteur) 28.800,00 BQ-2025-0002 PAY-IMMO-1 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"139\"\\n        - cell \"01/01/25\"\\n        - cell \"BQ\"\\n        - cell \"5141\"\\n        - cell \"Paiement immobilisation — Ordinateur de recette Banques (solde débiteur)\"\\n        - cell\\n        - cell \"28.800,00\"\\n        - cell\\n        - cell \"BQ-2025-0002\"\\n        - cell \"PAY-IMMO-1\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"140 4481 Règlement dette immobilisation — Ordinateur de recette Dettes sur acquisitions d\\'immobilisations 28.800,00\":\\n        - cell \"140\"\\n        - cell \"4481\"\\n        - cell \"Règlement dette immobilisation — Ordinateur de recette Dettes sur acquisitions d\\'immobilisations\"\\n        - cell \"28.800,00\"\\n        - cell\\n        - cell\\n      - row \"141 01/01/25 AC 2355 Acquisition Ordinateur de recette Matériel informatique 24.000,00 AC-2025-0001 ACQ-2025-1 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"141\"\\n        - cell \"01/01/25\"\\n        - cell \"AC\"\\n        - cell \"2355\"\\n        - cell \"Acquisition Ordinateur de recette Matériel informatique\"\\n        - cell \"24.000,00\"\\n        - cell\\n        - cell\\n        - cell \"AC-2025-0001\"\\n        - cell \"ACQ-2025-1\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"142 4481 Dette acquisition immobilisation — Fournisseur Informatique Recette Dettes sur acquisitions d\\'immobilisations 28.800,00\":\\n        - cell \"142\"\\n        - cell \"4481\"\\n        - cell \"Dette acquisition immobilisation — Fournisseur Informatique Recette Dettes sur acquisitions d\\'immobilisations\"\\n        - cell\\n        - cell \"28.800,00\"\\n        - cell\\n      - row \"143 34551 TVA récupérable sur immobilisation — Ordinateur de recette État - TVA récupérable sur immobilisations 4.800,00\":\\n        - cell \"143\"\\n        - cell \"34551\"\\n        - cell \"TVA récupérable sur immobilisation — Ordinateur de recette État - TVA récupérable sur immobilisations\"\\n        - cell \"4.800,00\"\\n        - cell\\n        - cell\\n      - row \"144 01/01/25 BQ 5141 Apport associé Recette Banques (solde débiteur) 200.000,00 BQ-2025-0001 CAP-01 Justificatifs Piste d\\'audit Contrepasser\":\\n        - cell \"144\"\\n        - cell \"01/01/25\"\\n        - cell \"BQ\"\\n        - cell \"5141\"\\n        - cell \"Apport associé Recette Banques (solde débiteur)\"\\n        - cell \"200.000,00\"\\n        - cell\\n        - cell\\n        - cell \"BQ-2025-0001\"\\n        - cell \"CAP-01\"\\n        - cell \"Justificatifs Piste d\\'audit Contrepasser\":\\n          - button \"Justificatifs\"\\n          - button \"Piste d\\'audit\"\\n          - button \"Contrepasser\"\\n      - row \"145 1111 Apport associé Recette Capital social 200.000,00\":\\n        - cell \"145\"\\n        - cell \"1111\"\\n        - cell \"Apport associé Recette Capital social\"\\n        - cell\\n        - cell \"200.000,00\"\\n        - cell\\n      - row \"Total général 1.646.060,00 1.646.060,00\":\\n        - cell \"Total général\"\\n        - cell \"1.646.060,00\"\\n        - cell \"1.646.060,00\"\\n        - cell\\n  - strong: Justificatifs — BQ-2025-0001\\n  - text: \"Référence FEC : CAP-01 · Date pièce : 2025-01-01\"\\n  - button \"Fermer\"\\n  - text: \"La validation comptable reste légère : ces informations peuvent être complétées après coup sans modifier l’écriture définitive. Référence du justificatif\"\\n  - textbox \"Référence du justificatif\":\\n    - /placeholder: N° facture, relevé, contrat…\\n  - text: Date\\n  - textbox \"Date\": 2025-01-01\\n  - text: Motif / note (facultatif)\\n  - textbox \"Motif / note (facultatif)\":\\n    - /placeholder: Ex. référence complétée après réception du document\\n  - button \"Ajouter la référence\" [disabled]\\n  - text: Historique documentaire\\n  - strong: CAP-01\\n  - text: · 2025-01-01pièce jointe Pièces jointes (1)\\n  - button \"Actualiser les pièces jointes\"\\n  - button \"Joindre un fichier\"\\n  - text: CAP-01_6670db94.pdf 73 Ko\\n  - button \"Télécharger\"')",
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "operations": [
+    {
+      "reference": "CAP-01",
+      "id": 1,
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "200000.00",
+          "0.00"
+        ],
+        "1111": [
+          "0.00",
+          "200000.00"
+        ]
+      }
+    },
+    {
+      "reference": "IMMO-ACQ",
+      "id": 2,
+      "date": "2025-01-01",
+      "journal": "AC",
+      "lignes": {
+        "2355": [
+          "24000.00",
+          "0.00"
+        ],
+        "34551": [
+          "4800.00",
+          "0.00"
+        ],
+        "4481": [
+          "0.00",
+          "28800.00"
+        ]
+      }
+    },
+    {
+      "reference": "IMMO-PAY",
+      "id": 3,
+      "date": "2025-01-01",
+      "journal": "BQ",
+      "lignes": {
+        "4481": [
+          "28800.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "28800.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-F01",
+      "id": 4,
+      "date": "2025-01-04",
+      "journal": "BQ",
+      "lignes": {
+        "3411": [
+          "6000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-01",
+      "id": 5,
+      "date": "2025-01-05",
+      "journal": "AC",
+      "lignes": {
+        "6111": [
+          "10000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2000.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-F01-IMP",
+      "id": 6,
+      "date": "2025-01-05",
+      "journal": "OD",
+      "lignes": {
+        "4411": [
+          "6000.00",
+          "0.00"
+        ],
+        "3411": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-01-PAY",
+      "id": 7,
+      "date": "2025-01-07",
+      "journal": "BQ",
+      "lignes": {
+        "4411": [
+          "6000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "6000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-02",
+      "id": 8,
+      "date": "2025-01-10",
+      "journal": "AC",
+      "lignes": {
+        "6111": [
+          "12000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2400.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-01",
+      "id": 9,
+      "date": "2025-01-20",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "30000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "5000.00"
+        ],
+        "7111": [
+          "0.00",
+          "25000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-01-PAY",
+      "id": 10,
+      "date": "2025-01-25",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "10000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01",
+      "id": 11,
+      "date": "2025-01-26",
+      "journal": "AE",
+      "lignes": {
+        "51111": [
+          "20000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-01",
+      "id": 12,
+      "date": "2025-01-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "5000.00",
+          "0.00"
+        ],
+        "3456": [
+          "1800.00",
+          "0.00"
+        ],
+        "34551": [
+          "0.00",
+          "4800.00"
+        ],
+        "34552": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01-REM",
+      "id": 13,
+      "date": "2025-02-01",
+      "journal": "AE",
+      "lignes": {
+        "51112": [
+          "20000.00",
+          "0.00"
+        ],
+        "51111": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-01-ENC",
+      "id": 14,
+      "date": "2025-02-05",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "20000.00",
+          "0.00"
+        ],
+        "51112": [
+          "0.00",
+          "20000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-SERVICE",
+      "id": 15,
+      "date": "2025-02-10",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "12000.00",
+          "0.00"
+        ],
+        "34552": [
+          "2400.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "AV-01",
+      "id": 16,
+      "date": "2025-02-10",
+      "journal": "AV",
+      "lignes": {
+        "7111": [
+          "2500.00",
+          "0.00"
+        ],
+        "4455": [
+          "500.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "3000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ACH-SERVICE-PAY",
+      "id": 17,
+      "date": "2025-02-15",
+      "journal": "BQ",
+      "lignes": {
+        "4411": [
+          "14400.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-02",
+      "id": 18,
+      "date": "2025-02-28",
+      "journal": "OD",
+      "lignes": {
+        "3456": [
+          "2900.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "500.00"
+        ],
+        "34552": [
+          "0.00",
+          "2400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-02",
+      "id": 19,
+      "date": "2025-03-01",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "18000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "3000.00"
+        ],
+        "7111": [
+          "0.00",
+          "15000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-F01",
+      "id": 20,
+      "date": "2025-03-01",
+      "journal": "AE",
+      "lignes": {
+        "4411": [
+          "14400.00",
+          "0.00"
+        ],
+        "4415": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-02-PAY",
+      "id": 21,
+      "date": "2025-03-05",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "5000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "5000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-F01-PAY",
+      "id": 22,
+      "date": "2025-03-20",
+      "journal": "BQ",
+      "lignes": {
+        "4415": [
+          "14400.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "14400.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-03",
+      "id": 23,
+      "date": "2025-03-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "3000.00",
+          "0.00"
+        ],
+        "34552": [
+          "0.00",
+          "2400.00"
+        ],
+        "3456": [
+          "0.00",
+          "600.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01",
+      "id": 24,
+      "date": "2025-04-01",
+      "journal": "AE",
+      "lignes": {
+        "3425": [
+          "10000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01-REM",
+      "id": 25,
+      "date": "2025-05-15",
+      "journal": "AE",
+      "lignes": {
+        "51132": [
+          "10000.00",
+          "0.00"
+        ],
+        "3425": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "EFF-C01-ENC",
+      "id": 26,
+      "date": "2025-05-16",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "9990.00",
+          "0.00"
+        ],
+        "61472": [
+          "10.00",
+          "0.00"
+        ],
+        "51132": [
+          "0.00",
+          "10000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-C01",
+      "id": 27,
+      "date": "2025-06-01",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "24000.00",
+          "0.00"
+        ],
+        "4421": [
+          "0.00",
+          "24000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-SERVICE",
+      "id": 28,
+      "date": "2025-06-15",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "144000.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "24000.00"
+        ],
+        "7124": [
+          "0.00",
+          "120000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AC-C01-IMP",
+      "id": 29,
+      "date": "2025-06-15",
+      "journal": "OD",
+      "lignes": {
+        "4421": [
+          "24000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "24000.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-SERVICE-PAY",
+      "id": 30,
+      "date": "2025-06-30",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "120000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "120000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-06",
+      "id": 31,
+      "date": "2025-06-30",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "24000.00",
+          "0.00"
+        ],
+        "3456": [
+          "0.00",
+          "4100.00"
+        ],
+        "4456": [
+          "0.00",
+          "19900.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-06-PAY",
+      "id": 32,
+      "date": "2025-07-20",
+      "journal": "BQ",
+      "lignes": {
+        "4456": [
+          "19900.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "19900.00"
+        ]
+      }
+    },
+    {
+      "reference": "INT-PPRF",
+      "id": 33,
+      "date": "2025-11-30",
+      "journal": "BQ",
+      "lignes": {
+        "5141": [
+          "800.00",
+          "0.00"
+        ],
+        "3453": [
+          "200.00",
+          "0.00"
+        ],
+        "7381": [
+          "0.00",
+          "1000.00"
+        ]
+      }
+    },
+    {
+      "reference": "ASS-01",
+      "id": 34,
+      "date": "2025-12-01",
+      "journal": "BQ",
+      "lignes": {
+        "6134": [
+          "12000.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "REF-02",
+      "id": 35,
+      "date": "2025-12-02",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "200.00",
+          "0.00"
+        ],
+        "34552": [
+          "40.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "240.00"
+        ]
+      }
+    },
+    {
+      "reference": "REF-002",
+      "id": 36,
+      "date": "2025-12-02",
+      "journal": "AC",
+      "lignes": {
+        "6125": [
+          "200.00",
+          "0.00"
+        ],
+        "34552": [
+          "40.00",
+          "0.00"
+        ],
+        "4411": [
+          "0.00",
+          "240.00"
+        ]
+      }
+    },
+    {
+      "reference": "VENTE-IMPAYEE",
+      "id": 37,
+      "date": "2025-12-10",
+      "journal": "VT",
+      "lignes": {
+        "3421": [
+          "14400.00",
+          "0.00"
+        ],
+        "4455": [
+          "0.00",
+          "2400.00"
+        ],
+        "7124": [
+          "0.00",
+          "12000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-REJET",
+      "id": 38,
+      "date": "2025-12-12",
+      "journal": "AE",
+      "lignes": {
+        "51111": [
+          "2000.00",
+          "0.00"
+        ],
+        "3421": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "CHQ-REJET-INV",
+      "id": 39,
+      "date": "2025-12-15",
+      "journal": "OD",
+      "lignes": {
+        "3421": [
+          "2000.00",
+          "0.00"
+        ],
+        "51111": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "AMENDE",
+      "id": 40,
+      "date": "2025-12-20",
+      "journal": "BQ",
+      "lignes": {
+        "6583": [
+          "500.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "500.00"
+        ]
+      }
+    },
+    {
+      "reference": "FRAIS-BQ",
+      "id": 41,
+      "date": "2025-12-31",
+      "journal": "BQ",
+      "lignes": {
+        "61473": [
+          "60.00",
+          "0.00"
+        ],
+        "5141": [
+          "0.00",
+          "60.00"
+        ]
+      }
+    },
+    {
+      "reference": "STOCK-FIN",
+      "id": 42,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "3111": [
+          "6600.00",
+          "0.00"
+        ],
+        "6114": [
+          "0.00",
+          "6600.00"
+        ]
+      }
+    },
+    {
+      "reference": "AMORT-2025",
+      "id": 43,
+      "date": "2025-12-31",
+      "journal": "AM",
+      "lignes": {
+        "61935": [
+          "4800.00",
+          "0.00"
+        ],
+        "28355": [
+          "0.00",
+          "4800.00"
+        ]
+      }
+    },
+    {
+      "reference": "CCA-2025",
+      "id": 44,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "3491": [
+          "11000.00",
+          "0.00"
+        ],
+        "6134": [
+          "0.00",
+          "11000.00"
+        ]
+      }
+    },
+    {
+      "reference": "FNP-2025",
+      "id": 46,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "6125": [
+          "3000.00",
+          "0.00"
+        ],
+        "4417": [
+          "0.00",
+          "3000.00"
+        ]
+      }
+    },
+    {
+      "reference": "PROV-RISQUE",
+      "id": 48,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "61955": [
+          "1500.00",
+          "0.00"
+        ],
+        "1518": [
+          "0.00",
+          "1500.00"
+        ]
+      }
+    },
+    {
+      "reference": "DEPR-CLIENT",
+      "id": 49,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "61964": [
+          "2000.00",
+          "0.00"
+        ],
+        "3942": [
+          "0.00",
+          "2000.00"
+        ]
+      }
+    },
+    {
+      "reference": "TVA-12",
+      "id": 50,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "4455": [
+          "2400.00",
+          "0.00"
+        ],
+        "4456": [
+          "0.00",
+          "2400.00"
+        ]
+      }
+    },
+    {
+      "reference": "IS-2025",
+      "id": 51,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "6701": [
+          "23420.25",
+          "0.00"
+        ],
+        "4453": [
+          "0.00",
+          "23420.25"
+        ]
+      }
+    },
+    {
+      "reference": "PPRF-IMP",
+      "id": 52,
+      "date": "2025-12-31",
+      "journal": "OD",
+      "lignes": {
+        "4453": [
+          "200.00",
+          "0.00"
+        ],
+        "3453": [
+          "0.00",
+          "200.00"
+        ]
+      }
+    }
+  ],
+  "limite_cycle": "Capital etacquisition présents danscette société ;autres opérations annuelles encoreàintercaler chronologiquement.",
+  "requetes_echouees": [
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:51095/api/avoirs",
+      "erreur": "net::ERR_ABORTED"
+    }
+  ],
+  "lettrage_fournisseur": "AAA",
+  "cycle": {
+    "factures": [
+      1,
+      2,
+      3
+    ],
+    "devis": 1,
+    "bc": 1,
+    "bl": 1,
+    "ecritures": 10,
+    "lignes": 24,
+    "total_debit_credit": "342000.00",
+    "stock": 100,
+    "cmup": 110,
+    "reste_vente": 20000
+  },
+  "suite777": {
+    "ecritures": 21,
+    "lignes": 52,
+    "debit_credit": "480900.00",
+    "stock": 60,
+    "cmup": 110,
+    "reste_vente2": 10000,
+    "avoir": 1,
+    "facture2": 5,
+    "prefixe_valide_inchange": true,
+    "imputation_credit_sans_nouvelle_ecriture": true
+  },
+  "semestre789": {
+    "ecritures": 31,
+    "lignes": 76,
+    "debit_credit": "864300.00",
+    "soldes": {
+      "1111": "-200000.00",
+      "2355": "24000.00",
+      "4456": "-19900.00",
+      "5141": "319390.00",
+      "6111": "22000.00",
+      "6125": "12000.00",
+      "61472": "10.00",
+      "7111": "-37500.00",
+      "7124": "-120000.00"
+    },
+    "references": [
+      "CAP-01",
+      "IMMO-ACQ",
+      "IMMO-PAY",
+      "AC-F01",
+      "ACH-01",
+      "AC-F01-IMP",
+      "ACH-01-PAY",
+      "ACH-02",
+      "VENTE-01",
+      "VENTE-01-PAY",
+      "CHQ-01",
+      "TVA-01",
+      "CHQ-01-REM",
+      "CHQ-01-ENC",
+      "ACH-SERVICE",
+      "AV-01",
+      "ACH-SERVICE-PAY",
+      "TVA-02",
+      "VENTE-02",
+      "EFF-F01",
+      "VENTE-02-PAY",
+      "EFF-F01-PAY",
+      "TVA-03",
+      "EFF-C01",
+      "EFF-C01-REM",
+      "EFF-C01-ENC",
+      "AC-C01",
+      "VENTE-SERVICE",
+      "AC-C01-IMP",
+      "VENTE-SERVICE-PAY",
+      "TVA-06"
+    ],
+    "stock": 60,
+    "cmup": 110,
+    "frais_effet": "10.00",
+    "ordre_chronologique": true,
+    "limite": "Arrêt30/06/2025 ;les écritures TVA sont saisies manuellement conformément aux fichesFIS015/016/017/018, pas des déclarations automatiques. Pas de clôture ni de dotation annuelle anticipée."
+  },
+  "ajustements791": [
+    {
+      "reference": "CCA-2025",
+      "id": 1,
+      "ecriture": 44,
+      "contrepassation2026": 45
+    },
+    {
+      "reference": "FNP-2025",
+      "id": 2,
+      "ecriture": 46,
+      "contrepassation2026": 47
+    },
+    {
+      "reference": "PROV-RISQUE",
+      "id": 3,
+      "ecriture": 48,
+      "contrepassation2026": null
+    },
+    {
+      "reference": "DEPR-CLIENT",
+      "id": 4,
+      "ecriture": 49,
+      "contrepassation2026": null
+    }
+  ],
+  "controle_cloture791": {
+    "exercice": 2025,
+    "date_debut": "2025-01-01",
+    "date_fin": "2025-12-31",
+    "date_fin_atteinte": true,
+    "est_clos": false,
+    "date_cloture": null,
+    "nb_ecritures": 50,
+    "total_charges": 64090.25,
+    "total_produits": 170500.0,
+    "resultat_net": 106409.75,
+    "type_resultat": "bénéfice",
+    "compte_resultat": "1191",
+    "equilibre": true,
+    "ecart": 0.0,
+    "apercu_a_nouveaux": [
+      {
+        "compte": "1111",
+        "debit": 0.0,
+        "credit": 200000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1518",
+        "debit": 0.0,
+        "credit": 1500.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "2355",
+        "debit": 24000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "28355",
+        "debit": 0.0,
+        "credit": 4800.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3111",
+        "debit": 6600.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3421",
+        "debit": 14400.0,
+        "credit": 0.0,
+        "tiers_id": 5,
+        "nature_auxiliaire": "client",
+        "compte_auxiliaire_snapshot": "C00000005",
+        "libelle_auxiliaire_snapshot": "Client Impayé Recette"
+      },
+      {
+        "compte": "34552",
+        "debit": 80.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3491",
+        "debit": 11000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3942",
+        "debit": 0.0,
+        "credit": 2000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4411",
+        "debit": 0.0,
+        "credit": 480.0,
+        "tiers_id": 8,
+        "nature_auxiliaire": "fournisseur",
+        "compte_auxiliaire_snapshot": "F00000008",
+        "libelle_auxiliaire_snapshot": "Fournisseur Contrôle Références Recette"
+      },
+      {
+        "compte": "4417",
+        "debit": 0.0,
+        "credit": 3000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4453",
+        "debit": 0.0,
+        "credit": 23220.25,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4456",
+        "debit": 0.0,
+        "credit": 2400.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "5141",
+        "debit": 287730.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1191",
+        "debit": 0.0,
+        "credit": 106409.75,
+        "resultat": true
+      }
+    ],
+    "total_an_debit": 343810.0,
+    "total_an_credit": 343810.0,
+    "dotations_manquantes": [],
+    "nb_dotations_manquantes": 0,
+    "total_dotations_manquantes": 0.0,
+    "nb_ecritures_brouillon": 0,
+    "ecritures_brouillon": [],
+    "nb_ajustements_inventaire": 4,
+    "stock_cloture": {
+      "exercice": 2025,
+      "date_fin": "2025-12-31",
+      "nb_articles": 1,
+      "inventaire_requis": true,
+      "inventaire_valide": true,
+      "inventaire_id": 1,
+      "inventaire_reference": "STOCK-FIN",
+      "valeur_physique_brute": 6600.0,
+      "valeur_comptable_brute": 6600.0,
+      "depreciations": 0.0,
+      "valeur_comptable_nette": 6600.0,
+      "ecart_brut": 0.0,
+      "valorisation_complete": true,
+      "diagnostics": [],
+      "stock_rapproche": true,
+      "ecriture_stock_id": 42,
+      "ecriture_stock_validee": true,
+      "lignes": [
+        {
+          "article_id": 1,
+          "code": "M-01",
+          "designation": "Marchandise de recette",
+          "quantite": 60.0,
+          "cmup": 110.0,
+          "valeur": 6600.0,
+          "nombres_diagnostics": {},
+          "compte_stock": "3111",
+          "compte_variation": "6114"
+        }
+      ]
+    },
+    "immobilisations_rapprochement": {
+      "brut_module": 24000.0,
+      "brut_comptable": 24000.0,
+      "ecart_brut": 0.0,
+      "amortissements_module": 4800.0,
+      "amortissements_comptables": 4800.0,
+      "ecart_amortissements": 0.0,
+      "vnc_module": 19200.0,
+      "vnc_comptable": 19200.0,
+      "ecart_vnc": 0.0,
+      "rapproche": true,
+      "details_comptes": [
+        {
+          "nature": "brut",
+          "compte": "2355",
+          "module": 24000.0,
+          "comptable": 24000.0,
+          "ecart": 0.0
+        },
+        {
+          "nature": "amortissement",
+          "compte": "28355",
+          "module": 4800.0,
+          "comptable": 4800.0,
+          "ecart": 0.0
+        }
+      ]
+    },
+    "nb_documents_non_comptabilises": 0,
+    "documents_non_comptabilises": [],
+    "affectation_resultat": null,
+    "resultat_anterieur_a_reclasser": null,
+    "fiscalite_is": {
+      "applicable": true,
+      "attendu": 22807.75,
+      "comptabilise": 23420.25,
+      "compte_charge_attendu": "6701",
+      "nature_impot": "IS",
+      "absente": false,
+      "coherente": false,
+      "a_comptabiliser": 0.0,
+      "resultat_comptable_avant_is": 129830.0,
+      "resultat_net_apres_is": null,
+      "deficits_a_confirmer": false
+    },
+    "fec_controle": {
+      "conforme": true,
+      "nb_bloquants": 0,
+      "nb_avertissements": 1,
+      "bloquants": []
+    }
+  },
+  "annuel791": {
+    "ecritures2025": 50,
+    "lignes2025": 118,
+    "debit_credit": "971560.25",
+    "contrepassations2026_brouillon": 2,
+    "lignes2026": 4,
+    "resultats": {
+      "banque": "287730.00",
+      "stock_valeur": "6600.00",
+      "total_actif_net": "337010.0",
+      "total_passif_net": "337010.0",
+      "resultat_net": "106409.75",
+      "caf": "112709.75"
+    },
+    "soldes": {
+      "1111": "-200000.00",
+      "1518": "-1500.00",
+      "2355": "24000.00",
+      "28355": "-4800.00",
+      "3111": "6600.00",
+      "3421": "14400.00",
+      "34552": "80.00",
+      "3491": "11000.00",
+      "3942": "-2000.00",
+      "4411": "-480.00",
+      "4417": "-3000.00",
+      "4453": "-23220.25",
+      "4456": "-2400.00",
+      "5141": "287730.00",
+      "6111": "22000.00",
+      "6114": "-6600.00",
+      "6125": "15400.00",
+      "6134": "1000.00",
+      "61472": "10.00",
+      "61473": "60.00",
+      "61935": "4800.00",
+      "61955": "1500.00",
+      "61964": "2000.00",
+      "6583": "500.00",
+      "6701": "23420.25",
+      "7111": "-37500.00",
+      "7124": "-132000.00",
+      "7381": "-1000.00"
+    },
+    "stock": 60,
+    "cmup": 110,
+    "originaux_semestre_inchanges": true,
+    "limite": "États annuels et flux produits testés, pas clôture définitive, déclarations fiscales ni recette humaine ;contrôles réels non contournés."
+  },
+  "controle_avant_cloture793": {
+    "exercice": 2025,
+    "date_debut": "2025-01-01",
+    "date_fin": "2025-12-31",
+    "date_fin_atteinte": true,
+    "est_clos": false,
+    "date_cloture": null,
+    "nb_ecritures": 50,
+    "total_charges": 64090.25,
+    "total_produits": 170500.0,
+    "resultat_net": 106409.75,
+    "type_resultat": "bénéfice",
+    "compte_resultat": "1191",
+    "equilibre": true,
+    "ecart": 0.0,
+    "apercu_a_nouveaux": [
+      {
+        "compte": "1111",
+        "debit": 0.0,
+        "credit": 200000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1518",
+        "debit": 0.0,
+        "credit": 1500.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "2355",
+        "debit": 24000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "28355",
+        "debit": 0.0,
+        "credit": 4800.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3111",
+        "debit": 6600.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3421",
+        "debit": 14400.0,
+        "credit": 0.0,
+        "tiers_id": 5,
+        "nature_auxiliaire": "client",
+        "compte_auxiliaire_snapshot": "C00000005",
+        "libelle_auxiliaire_snapshot": "Client Impayé Recette"
+      },
+      {
+        "compte": "34552",
+        "debit": 80.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3491",
+        "debit": 11000.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "3942",
+        "debit": 0.0,
+        "credit": 2000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4411",
+        "debit": 0.0,
+        "credit": 480.0,
+        "tiers_id": 8,
+        "nature_auxiliaire": "fournisseur",
+        "compte_auxiliaire_snapshot": "F00000008",
+        "libelle_auxiliaire_snapshot": "Fournisseur Contrôle Références Recette"
+      },
+      {
+        "compte": "4417",
+        "debit": 0.0,
+        "credit": 3000.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4453",
+        "debit": 0.0,
+        "credit": 23220.25,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "4456",
+        "debit": 0.0,
+        "credit": 2400.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "5141",
+        "debit": 287730.0,
+        "credit": 0.0,
+        "tiers_id": null,
+        "nature_auxiliaire": null,
+        "compte_auxiliaire_snapshot": null,
+        "libelle_auxiliaire_snapshot": null
+      },
+      {
+        "compte": "1191",
+        "debit": 0.0,
+        "credit": 106409.75,
+        "resultat": true
+      }
+    ],
+    "total_an_debit": 343810.0,
+    "total_an_credit": 343810.0,
+    "dotations_manquantes": [],
+    "nb_dotations_manquantes": 0,
+    "total_dotations_manquantes": 0.0,
+    "nb_ecritures_brouillon": 0,
+    "ecritures_brouillon": [],
+    "nb_ajustements_inventaire": 4,
+    "stock_cloture": {
+      "exercice": 2025,
+      "date_fin": "2025-12-31",
+      "nb_articles": 1,
+      "inventaire_requis": true,
+      "inventaire_valide": true,
+      "inventaire_id": 1,
+      "inventaire_reference": "STOCK-FIN",
+      "valeur_physique_brute": 6600.0,
+      "valeur_comptable_brute": 6600.0,
+      "depreciations": 0.0,
+      "valeur_comptable_nette": 6600.0,
+      "ecart_brut": 0.0,
+      "valorisation_complete": true,
+      "diagnostics": [],
+      "stock_rapproche": true,
+      "ecriture_stock_id": 42,
+      "ecriture_stock_validee": true,
+      "lignes": [
+        {
+          "article_id": 1,
+          "code": "M-01",
+          "designation": "Marchandise de recette",
+          "quantite": 60.0,
+          "cmup": 110.0,
+          "valeur": 6600.0,
+          "nombres_diagnostics": {},
+          "compte_stock": "3111",
+          "compte_variation": "6114"
+        }
+      ]
+    },
+    "immobilisations_rapprochement": {
+      "brut_module": 24000.0,
+      "brut_comptable": 24000.0,
+      "ecart_brut": 0.0,
+      "amortissements_module": 4800.0,
+      "amortissements_comptables": 4800.0,
+      "ecart_amortissements": 0.0,
+      "vnc_module": 19200.0,
+      "vnc_comptable": 19200.0,
+      "ecart_vnc": 0.0,
+      "rapproche": true,
+      "details_comptes": [
+        {
+          "nature": "brut",
+          "compte": "2355",
+          "module": 24000.0,
+          "comptable": 24000.0,
+          "ecart": 0.0
+        },
+        {
+          "nature": "amortissement",
+          "compte": "28355",
+          "module": 4800.0,
+          "comptable": 4800.0,
+          "ecart": 0.0
+        }
+      ]
+    },
+    "nb_documents_non_comptabilises": 0,
+    "documents_non_comptabilises": [],
+    "affectation_resultat": null,
+    "resultat_anterieur_a_reclasser": null,
+    "fiscalite_is": {
+      "applicable": true,
+      "attendu": 23420.25,
+      "comptabilise": 23420.25,
+      "compte_charge_attendu": "6701",
+      "nature_impot": "IS",
+      "absente": false,
+      "coherente": true,
+      "a_comptabiliser": 0.0,
+      "resultat_comptable_avant_is": 129830.0,
+      "resultat_net_apres_is": 106409.75,
+      "deficits_a_confirmer": false
+    },
+    "fec_controle": {
+      "conforme": true,
+      "nb_bloquants": 0,
+      "nb_avertissements": 1,
+      "bloquants": []
+    }
+  },
+  "cloture793": {
+    "resultat_net": "106409.75",
+    "reintegrations": "4000.00",
+    "benefice_fiscal": "133830.00",
+    "is": "23420.25",
+    "credit": "200.00",
+    "solde": "23220.25",
+    "an2026_id": 54,
+    "total_an": "343810.00",
+    "soldes_an": {
+      "1111": "-200000.00",
+      "1191": "-106409.75",
+      "1518": "-1500.00",
+      "2355": "24000.00",
+      "28355": "-4800.00",
+      "3111": "6600.00",
+      "3421": "14400.00",
+      "34552": "80.00",
+      "3491": "11000.00",
+      "3942": "-2000.00",
+      "4411": "-480.00",
+      "4417": "-3000.00",
+      "4453": "-23220.25",
+      "4456": "-2400.00",
+      "5141": "287730.00"
+    },
+    "contrepassations2026_validees": 2,
+    "cinquante_originaux2025_inchanges": true,
+    "ecriture_sur_clos_refusee": 423,
+    "liquidation_figee": true,
+    "cm_scenario": "0.00",
+    "cm_avant_parametrage": "3000.00",
+    "css_reference_manquante_visible": true,
+    "limite": "Hypothèses fiscales explicites du jeu fictif, pas validation réglementaire ;CMsanscopiecontrôle dédiée restePartiel. DéclarationsTVA/exportsannuels etrecettehumaine restentàqualifier."
+  }
+}

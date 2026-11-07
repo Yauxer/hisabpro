@@ -1,0 +1,3713 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_u1z9lljb",
+  "nonce": "77fccbf48f1b4d87bda973ce85e79a2d",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [
+    {
+      "id": "HP-LIA-010",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-LIA-011",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-LIA-013",
+      "statut": "Réussi"
+    },
+    {
+      "id": "HP-LIA-014",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "sources809": {
+    "balance_attendue_2025.csv": "7332d21461457ea65ff2729f64e68e68b6eb301c0eadcd995eea1e0bb37cea67",
+    "balance_attendue_2025.xlsx": "6b41b97c2cc081d22c4b803f8a8422f527411f5f17b992450ca205cf5ea52a26",
+    "a_nouveaux_attendus_2026.csv": "5dbbab1b6e331f56de38e4c0f0983113c16b2bbcd868210f18b7e37dc29357ce",
+    "images/LOGO_RECETTE_FICTIF.png": "0c1f8b82bf97c547591a7be72dfc611d88f700c9c5acffbd617e4af420c541c1"
+  },
+  "fichiers809": [
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette809_cible\\test_809_imports_versions_ouve1\\preview809.xlsx",
+      "sha256": "4304ef2b765f661c6d69b0f75461b2513d98d695a4c010e36a98ba14912e65f0"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette809_cible\\test_809_imports_versions_ouve1\\v1_809.xlsx",
+      "sha256": "6a901dc208e958db05a58a6776110a95166568a2ca16a5b3c5a07123ea620203"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette809_cible\\test_809_imports_versions_ouve1\\v1_809.pdf",
+      "sha256": "20f828b2faa44478295dd0334e247ba908d0545e73ba931db40371a05b0a8223"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette809_cible\\test_809_imports_versions_ouve1\\v1_relu809.xlsx",
+      "sha256": "4794a534479c82ab9c8385a1f8f703bb4c966beda5f9f153046d487028adf897"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette809_cible\\test_809_imports_versions_ouve1\\v1_relu809.pdf",
+      "sha256": "275ff55d26344d58e6b8c3a4d3f9851cd6b74b531800f9c90c0f3c061bc1f3a5"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette809_cible\\test_809_imports_versions_ouve1\\ouverture809.xlsx",
+      "sha256": "732d208986b52aa75a3d7963a1601189d29ff2c9b175fe39ff35c3d28bc1189d"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette809_cible\\test_809_imports_versions_ouve1\\ouverture809.pdf",
+      "sha256": "433abcff133111fb78c68c5d9a9129526329e8fba0175e8c68cc2d35cdde7029"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette809_cible\\test_809_imports_versions_ouve1\\comparatif809.xlsx",
+      "sha256": "627fe139dbbb1131f3f936d347fa1ebcab37dc5413c61b123e31f5afea03ac76"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette809_cible\\test_809_imports_versions_ouve1\\comparatif809.pdf",
+      "sha256": "a91ee03971e5ed313165bd03d036d478bc1564dcc4cfc026c95c2419e2967391"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette809_cible\\test_809_imports_versions_ouve1\\lecteur809.xlsx",
+      "sha256": "24b69d6fe1ae4b927a41551720bee9315fbbd9ac18f6ae75db215d9beb306b29"
+    },
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette809_cible\\test_809_imports_versions_ouve1\\lecteur809.pdf",
+      "sha256": "363da2a7490b793352297fa97478e5668f2e263cd8807aef2159b19088c93b63"
+    }
+  ],
+  "balances809": {
+    "versions": [
+      {
+        "id": 6,
+        "exercice": 2025,
+        "version": 1,
+        "created_at": "2026-10-25T12:29:35.743848",
+        "empreinte_sha256": "7d187e909dd6ade2ba775d4e5ee60f3bc7f12e2c945147a9bb6441c3f12eec0f",
+        "contenu": {
+          "schema_version": 1,
+          "exercice": 2025,
+          "periode": {
+            "debut": "2025-01-01",
+            "fin": "2025-12-31"
+          },
+          "sources": {
+            "n": [
+              {
+                "compte": "1111",
+                "debit": "0.00",
+                "credit": "200000.00"
+              },
+              {
+                "compte": "1518",
+                "debit": "0.00",
+                "credit": "1500.00"
+              },
+              {
+                "compte": "2355",
+                "debit": "24000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "28355",
+                "debit": "0.00",
+                "credit": "4800.00"
+              },
+              {
+                "compte": "3111",
+                "debit": "6600.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3421",
+                "debit": "14400.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "34552",
+                "debit": "80.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3491",
+                "debit": "11000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3942",
+                "debit": "0.00",
+                "credit": "2000.00"
+              },
+              {
+                "compte": "4411",
+                "debit": "0.00",
+                "credit": "480.00"
+              },
+              {
+                "compte": "4417",
+                "debit": "0.00",
+                "credit": "3000.00"
+              },
+              {
+                "compte": "4453",
+                "debit": "0.00",
+                "credit": "23220.25"
+              },
+              {
+                "compte": "4456",
+                "debit": "0.00",
+                "credit": "2400.00"
+              },
+              {
+                "compte": "5141",
+                "debit": "287730.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6111",
+                "debit": "22000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6114",
+                "debit": "0.00",
+                "credit": "6600.00"
+              },
+              {
+                "compte": "6125",
+                "debit": "15400.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6134",
+                "debit": "1000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61472",
+                "debit": "10.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61473",
+                "debit": "60.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61935",
+                "debit": "4800.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61955",
+                "debit": "1500.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61964",
+                "debit": "2000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6583",
+                "debit": "500.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6701",
+                "debit": "23420.25",
+                "credit": "0.00"
+              },
+              {
+                "compte": "7111",
+                "debit": "0.00",
+                "credit": "37500.00"
+              },
+              {
+                "compte": "7124",
+                "debit": "0.00",
+                "credit": "132000.00"
+              },
+              {
+                "compte": "7381",
+                "debit": "0.00",
+                "credit": "1000.00"
+              }
+            ],
+            "n1": null,
+            "noms_fichiers": {
+              "n": "balance_attendue_2025.csv"
+            }
+          },
+          "preparation": {
+            "mode": "balance_importee",
+            "statut": "preparation",
+            "pret_a_deposer": false,
+            "balance_n": {
+              "nb_comptes": 28,
+              "total_debit": 414500.25,
+              "total_credit": 414500.25
+            },
+            "balance_n1": null,
+            "etats": {
+              "bilan": {
+                "actif": {
+                  "immobilise": [
+                    {
+                      "code": "21",
+                      "libelle": "Immobilisations en non-valeurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "22",
+                      "libelle": "Immobilisations incorporelles",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "23",
+                      "libelle": "Immobilisations corporelles",
+                      "brut": 24000.0,
+                      "amort_prov": 4800.0,
+                      "net": 19200.0
+                    },
+                    {
+                      "code": "24/25",
+                      "libelle": "Immobilisations financières",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "27",
+                      "libelle": "Écarts de conversion - actif",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "circulant": [
+                    {
+                      "code": "31",
+                      "libelle": "Stocks",
+                      "brut": 6600.0,
+                      "amort_prov": 0.0,
+                      "net": 6600.0
+                    },
+                    {
+                      "code": "341",
+                      "libelle": "Fournisseurs débiteurs, avances",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "342",
+                      "libelle": "Clients et comptes rattachés",
+                      "brut": 14400.0,
+                      "amort_prov": 2000.0,
+                      "net": 12400.0
+                    },
+                    {
+                      "code": "343",
+                      "libelle": "Personnel - débiteur",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "345",
+                      "libelle": "État - débiteur",
+                      "brut": 80.0,
+                      "amort_prov": 0.0,
+                      "net": 80.0
+                    },
+                    {
+                      "code": "346",
+                      "libelle": "Comptes d'associés - débiteurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "348",
+                      "libelle": "Autres débiteurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "349",
+                      "libelle": "Comptes de régularisation - actif",
+                      "brut": 11000.0,
+                      "amort_prov": 0.0,
+                      "net": 11000.0
+                    },
+                    {
+                      "code": "350",
+                      "libelle": "Titres et valeurs de placement",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "37",
+                      "libelle": "Écarts de conversion - actif circulant",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "tresorerie": [
+                    {
+                      "code": "511",
+                      "libelle": "Chèques et valeurs à encaisser",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "514",
+                      "libelle": "Banques, TG et CCP",
+                      "brut": 287730.0,
+                      "amort_prov": 0.0,
+                      "net": 287730.0
+                    },
+                    {
+                      "code": "516",
+                      "libelle": "Caisses, régies d'avances",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "total": {
+                    "brut": 343810.0,
+                    "amort_prov": 6800.0,
+                    "net": 337010.0
+                  }
+                },
+                "passif": {
+                  "capitaux_propres": [
+                    {
+                      "code": "111",
+                      "libelle": "Capital social ou personnel",
+                      "montant": 200000.0
+                    },
+                    {
+                      "code": "112/113",
+                      "libelle": "Primes d'émission, fusion et apport",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "114/115",
+                      "libelle": "Réserves",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "116",
+                      "libelle": "Report à nouveau (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "118",
+                      "libelle": "Résultats nets en instance d'affectation (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "119_ANT",
+                      "libelle": "Résultat antérieur en attente d'affectation (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "RESULTAT",
+                      "libelle": "Résultat net de l'exercice (+/-)",
+                      "montant": 106409.75
+                    }
+                  ],
+                  "financement_permanent": [
+                    {
+                      "code": "131/135",
+                      "libelle": "Capitaux propres assimilés",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "141/148",
+                      "libelle": "Dettes de financement",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "151/155",
+                      "libelle": "Provisions durables pour risques et charges",
+                      "montant": 1500.0
+                    },
+                    {
+                      "code": "17",
+                      "libelle": "Écarts de conversion - passif",
+                      "montant": 0.0
+                    }
+                  ],
+                  "passif_circulant": [
+                    {
+                      "code": "441",
+                      "libelle": "Fournisseurs et comptes rattachés",
+                      "montant": 3480.0
+                    },
+                    {
+                      "code": "442",
+                      "libelle": "Clients créditeurs, avances et acomptes",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "443",
+                      "libelle": "Personnel - créditeur",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "444",
+                      "libelle": "Organismes sociaux",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "445",
+                      "libelle": "État - créditeur",
+                      "montant": 25620.25
+                    },
+                    {
+                      "code": "446",
+                      "libelle": "Comptes d'associés - créditeurs",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "448",
+                      "libelle": "Autres créanciers",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "449",
+                      "libelle": "Comptes de régularisation - passif",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "45",
+                      "libelle": "Autres provisions pour risques et charges",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "47",
+                      "libelle": "Écarts de conversion - passif circulant",
+                      "montant": 0.0
+                    }
+                  ],
+                  "tresorerie": [
+                    {
+                      "code": "552/553",
+                      "libelle": "Crédits d'escompte et de trésorerie",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "554",
+                      "libelle": "Banques (soldes créditeurs)",
+                      "montant": 0.0
+                    }
+                  ],
+                  "total": 337010.0
+                },
+                "equilibre": true,
+                "ecart": 0.0
+              },
+              "cpc": {
+                "I": 169500.0,
+                "II": 40170.0,
+                "III": 129330.0,
+                "IV": 1000.0,
+                "V": 0.0,
+                "VI": 1000.0,
+                "VII": 130330.0,
+                "VIII": 0.0,
+                "IX": 500.0,
+                "X": -500.0,
+                "XI": 129830.0,
+                "XII": 23420.25,
+                "resultat_net": 106409.75,
+                "lignes": [
+                  {
+                    "type": "titre",
+                    "code": "I",
+                    "libelle": "Produits d'exploitation",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Ventes de marchandises",
+                    "montant": 37500.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Ventes de biens et services produits",
+                    "montant": 132000.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Variation des stocks de produits",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Immobilisations produites par l'entreprise",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Subventions d'exploitation",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres produits d'exploitation",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Reprises d'exploitation / transferts",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "I",
+                    "libelle": "Total Produits d'exploitation",
+                    "montant": 169500.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "II",
+                    "libelle": "Charges d'exploitation",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Achats revendus de marchandises",
+                    "montant": 15400.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Achats consommés de matières et fournitures",
+                    "montant": 15400.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres charges externes",
+                    "montant": 1070.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Impôts et taxes",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Charges de personnel",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres charges d'exploitation",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Dotations d'exploitation",
+                    "montant": 8300.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "II",
+                    "libelle": "Total Charges d'exploitation",
+                    "montant": 40170.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "III",
+                    "libelle": "Résultat d'exploitation",
+                    "montant": 129330.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "IV",
+                    "libelle": "Produits financiers",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Produits des titres",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Gains de change",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Intérêts et autres produits financiers",
+                    "montant": 1000.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Reprises financières",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "IV",
+                    "libelle": "Total Produits financiers",
+                    "montant": 1000.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "V",
+                    "libelle": "Charges financières",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Charges d'intérêts",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Pertes de change",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres charges financières",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Dotations financières",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "V",
+                    "libelle": "Total Charges financières",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "VI",
+                    "libelle": "Résultat financier",
+                    "montant": 1000.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "VII",
+                    "libelle": "Résultat courant",
+                    "montant": 130330.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "VIII",
+                    "libelle": "Produits non courants",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Produits de cession d'immobilisations",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Subventions d'équilibre",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Reprises sur subventions d'investissement",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres produits non courants",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Reprises non courantes",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "VIII",
+                    "libelle": "Total Produits non courants",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "IX",
+                    "libelle": "Charges non courantes",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "VNA des immobilisations cédées",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Subventions accordées",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres charges non courantes",
+                    "montant": 500.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Dotations non courantes",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "IX",
+                    "libelle": "Total Charges non courantes",
+                    "montant": 500.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "X",
+                    "libelle": "Résultat non courant",
+                    "montant": -500.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "XI",
+                    "libelle": "Résultat avant impôts",
+                    "montant": 129830.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "XII",
+                    "libelle": "Impôts sur les résultats",
+                    "montant": 23420.25
+                  },
+                  {
+                    "type": "total",
+                    "code": "XV",
+                    "libelle": "Résultat net de l'exercice",
+                    "montant": 106409.75
+                  }
+                ]
+              },
+              "esg": {
+                "lignes": [
+                  {
+                    "code": "I",
+                    "libelle": "Marge brute",
+                    "montant": 22100.0
+                  },
+                  {
+                    "code": "II",
+                    "libelle": "Production de l'exercice",
+                    "montant": 132000.0
+                  },
+                  {
+                    "code": "III",
+                    "libelle": "Consommation de l'exercice",
+                    "montant": 16470.0
+                  },
+                  {
+                    "code": "IV",
+                    "libelle": "Valeur ajoutée",
+                    "montant": 137630.0
+                  },
+                  {
+                    "code": "V",
+                    "libelle": "Excédent brut d'exploitation",
+                    "montant": 137630.0
+                  },
+                  {
+                    "code": "VI",
+                    "libelle": "Résultat d'exploitation",
+                    "montant": 129330.0
+                  },
+                  {
+                    "code": "VII",
+                    "libelle": "Résultat financier",
+                    "montant": 1000.0
+                  },
+                  {
+                    "code": "VIII",
+                    "libelle": "Résultat courant",
+                    "montant": 130330.0
+                  },
+                  {
+                    "code": "IX",
+                    "libelle": "Résultat non courant",
+                    "montant": -500.0
+                  },
+                  {
+                    "code": "X",
+                    "libelle": "Résultat net",
+                    "montant": 106409.75
+                  },
+                  {
+                    "code": "CAF",
+                    "libelle": "Capacité d'autofinancement",
+                    "montant": 112709.75
+                  }
+                ],
+                "resultat_net": 106409.75,
+                "caf": 112709.75
+              }
+            },
+            "etats_n1": null,
+            "soldes": {
+              "1111": {
+                "debit": 0.0,
+                "credit": 200000.0
+              },
+              "1518": {
+                "debit": 0.0,
+                "credit": 1500.0
+              },
+              "2355": {
+                "debit": 24000.0,
+                "credit": 0.0
+              },
+              "28355": {
+                "debit": 0.0,
+                "credit": 4800.0
+              },
+              "3111": {
+                "debit": 6600.0,
+                "credit": 0.0
+              },
+              "3421": {
+                "debit": 14400.0,
+                "credit": 0.0
+              },
+              "34552": {
+                "debit": 80.0,
+                "credit": 0.0
+              },
+              "3491": {
+                "debit": 11000.0,
+                "credit": 0.0
+              },
+              "3942": {
+                "debit": 0.0,
+                "credit": 2000.0
+              },
+              "4411": {
+                "debit": 0.0,
+                "credit": 480.0
+              },
+              "4417": {
+                "debit": 0.0,
+                "credit": 3000.0
+              },
+              "4453": {
+                "debit": 0.0,
+                "credit": 23220.25
+              },
+              "4456": {
+                "debit": 0.0,
+                "credit": 2400.0
+              },
+              "5141": {
+                "debit": 287730.0,
+                "credit": 0.0
+              },
+              "6111": {
+                "debit": 22000.0,
+                "credit": 0.0
+              },
+              "6114": {
+                "debit": 0.0,
+                "credit": 6600.0
+              },
+              "6125": {
+                "debit": 15400.0,
+                "credit": 0.0
+              },
+              "6134": {
+                "debit": 1000.0,
+                "credit": 0.0
+              },
+              "61472": {
+                "debit": 10.0,
+                "credit": 0.0
+              },
+              "61473": {
+                "debit": 60.0,
+                "credit": 0.0
+              },
+              "61935": {
+                "debit": 4800.0,
+                "credit": 0.0
+              },
+              "61955": {
+                "debit": 1500.0,
+                "credit": 0.0
+              },
+              "61964": {
+                "debit": 2000.0,
+                "credit": 0.0
+              },
+              "6583": {
+                "debit": 500.0,
+                "credit": 0.0
+              },
+              "6701": {
+                "debit": 23420.25,
+                "credit": 0.0
+              },
+              "7111": {
+                "debit": 0.0,
+                "credit": 37500.0
+              },
+              "7124": {
+                "debit": 0.0,
+                "credit": 132000.0
+              },
+              "7381": {
+                "debit": 0.0,
+                "credit": 1000.0
+              }
+            },
+            "a_completer": [
+              "ETIC et échéances sur justificatifs",
+              "Flux du tableau de financement",
+              "Retraitements, liquidation et annexes fiscales",
+              "Référentiel DGI et format EDI applicable"
+            ],
+            "avertissements": [
+              "Préparation indépendante : aucune écriture ni archive annuelle n'est créée.",
+              "Utiliser une balance avant solde technique des charges et produits pour établir le CPC.",
+              "Balance N-1 non fournie : comparatif indisponible, aucun zéro historique déduit."
+            ]
+          }
+        }
+      },
+      {
+        "id": 7,
+        "exercice": 2025,
+        "version": 2,
+        "created_at": "2026-10-25T12:29:38.564544",
+        "empreinte_sha256": "2cb41880a19e16f5a248d20cb092216eb0fbfd2a56adaa3bc670838d1694b20a",
+        "contenu": {
+          "schema_version": 1,
+          "exercice": 2025,
+          "periode": {
+            "debut": "2025-01-01",
+            "fin": "2025-12-31"
+          },
+          "sources": {
+            "n": [
+              {
+                "compte": "1111",
+                "debit": "0.00",
+                "credit": "200000.00"
+              },
+              {
+                "compte": "1518",
+                "debit": "0.00",
+                "credit": "1500.00"
+              },
+              {
+                "compte": "2355",
+                "debit": "24000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "28355",
+                "debit": "0.00",
+                "credit": "4800.00"
+              },
+              {
+                "compte": "3111",
+                "debit": "6600.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3421",
+                "debit": "14400.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "34552",
+                "debit": "80.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3491",
+                "debit": "11000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3942",
+                "debit": "0.00",
+                "credit": "2000.00"
+              },
+              {
+                "compte": "4411",
+                "debit": "0.00",
+                "credit": "480.00"
+              },
+              {
+                "compte": "4417",
+                "debit": "0.00",
+                "credit": "3000.00"
+              },
+              {
+                "compte": "4453",
+                "debit": "0.00",
+                "credit": "23220.25"
+              },
+              {
+                "compte": "4456",
+                "debit": "0.00",
+                "credit": "2400.00"
+              },
+              {
+                "compte": "5141",
+                "debit": "287730.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6111",
+                "debit": "22000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6114",
+                "debit": "0.00",
+                "credit": "6600.00"
+              },
+              {
+                "compte": "6125",
+                "debit": "15400.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6134",
+                "debit": "1000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61472",
+                "debit": "10.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61473",
+                "debit": "60.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61935",
+                "debit": "4800.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61955",
+                "debit": "1500.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61964",
+                "debit": "2000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6583",
+                "debit": "500.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6701",
+                "debit": "23420.25",
+                "credit": "0.00"
+              },
+              {
+                "compte": "7111",
+                "debit": "0.00",
+                "credit": "37500.00"
+              },
+              {
+                "compte": "7124",
+                "debit": "0.00",
+                "credit": "132000.00"
+              },
+              {
+                "compte": "7381",
+                "debit": "0.00",
+                "credit": "1000.00"
+              }
+            ],
+            "n1": null,
+            "noms_fichiers": {
+              "n": "balance_attendue_2025.xlsx"
+            }
+          },
+          "preparation": {
+            "mode": "balance_importee",
+            "statut": "preparation",
+            "pret_a_deposer": false,
+            "balance_n": {
+              "nb_comptes": 28,
+              "total_debit": 414500.25,
+              "total_credit": 414500.25
+            },
+            "balance_n1": null,
+            "etats": {
+              "bilan": {
+                "actif": {
+                  "immobilise": [
+                    {
+                      "code": "21",
+                      "libelle": "Immobilisations en non-valeurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "22",
+                      "libelle": "Immobilisations incorporelles",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "23",
+                      "libelle": "Immobilisations corporelles",
+                      "brut": 24000.0,
+                      "amort_prov": 4800.0,
+                      "net": 19200.0
+                    },
+                    {
+                      "code": "24/25",
+                      "libelle": "Immobilisations financières",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "27",
+                      "libelle": "Écarts de conversion - actif",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "circulant": [
+                    {
+                      "code": "31",
+                      "libelle": "Stocks",
+                      "brut": 6600.0,
+                      "amort_prov": 0.0,
+                      "net": 6600.0
+                    },
+                    {
+                      "code": "341",
+                      "libelle": "Fournisseurs débiteurs, avances",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "342",
+                      "libelle": "Clients et comptes rattachés",
+                      "brut": 14400.0,
+                      "amort_prov": 2000.0,
+                      "net": 12400.0
+                    },
+                    {
+                      "code": "343",
+                      "libelle": "Personnel - débiteur",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "345",
+                      "libelle": "État - débiteur",
+                      "brut": 80.0,
+                      "amort_prov": 0.0,
+                      "net": 80.0
+                    },
+                    {
+                      "code": "346",
+                      "libelle": "Comptes d'associés - débiteurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "348",
+                      "libelle": "Autres débiteurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "349",
+                      "libelle": "Comptes de régularisation - actif",
+                      "brut": 11000.0,
+                      "amort_prov": 0.0,
+                      "net": 11000.0
+                    },
+                    {
+                      "code": "350",
+                      "libelle": "Titres et valeurs de placement",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "37",
+                      "libelle": "Écarts de conversion - actif circulant",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "tresorerie": [
+                    {
+                      "code": "511",
+                      "libelle": "Chèques et valeurs à encaisser",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "514",
+                      "libelle": "Banques, TG et CCP",
+                      "brut": 287730.0,
+                      "amort_prov": 0.0,
+                      "net": 287730.0
+                    },
+                    {
+                      "code": "516",
+                      "libelle": "Caisses, régies d'avances",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "total": {
+                    "brut": 343810.0,
+                    "amort_prov": 6800.0,
+                    "net": 337010.0
+                  }
+                },
+                "passif": {
+                  "capitaux_propres": [
+                    {
+                      "code": "111",
+                      "libelle": "Capital social ou personnel",
+                      "montant": 200000.0
+                    },
+                    {
+                      "code": "112/113",
+                      "libelle": "Primes d'émission, fusion et apport",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "114/115",
+                      "libelle": "Réserves",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "116",
+                      "libelle": "Report à nouveau (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "118",
+                      "libelle": "Résultats nets en instance d'affectation (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "119_ANT",
+                      "libelle": "Résultat antérieur en attente d'affectation (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "RESULTAT",
+                      "libelle": "Résultat net de l'exercice (+/-)",
+                      "montant": 106409.75
+                    }
+                  ],
+                  "financement_permanent": [
+                    {
+                      "code": "131/135",
+                      "libelle": "Capitaux propres assimilés",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "141/148",
+                      "libelle": "Dettes de financement",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "151/155",
+                      "libelle": "Provisions durables pour risques et charges",
+                      "montant": 1500.0
+                    },
+                    {
+                      "code": "17",
+                      "libelle": "Écarts de conversion - passif",
+                      "montant": 0.0
+                    }
+                  ],
+                  "passif_circulant": [
+                    {
+                      "code": "441",
+                      "libelle": "Fournisseurs et comptes rattachés",
+                      "montant": 3480.0
+                    },
+                    {
+                      "code": "442",
+                      "libelle": "Clients créditeurs, avances et acomptes",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "443",
+                      "libelle": "Personnel - créditeur",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "444",
+                      "libelle": "Organismes sociaux",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "445",
+                      "libelle": "État - créditeur",
+                      "montant": 25620.25
+                    },
+                    {
+                      "code": "446",
+                      "libelle": "Comptes d'associés - créditeurs",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "448",
+                      "libelle": "Autres créanciers",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "449",
+                      "libelle": "Comptes de régularisation - passif",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "45",
+                      "libelle": "Autres provisions pour risques et charges",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "47",
+                      "libelle": "Écarts de conversion - passif circulant",
+                      "montant": 0.0
+                    }
+                  ],
+                  "tresorerie": [
+                    {
+                      "code": "552/553",
+                      "libelle": "Crédits d'escompte et de trésorerie",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "554",
+                      "libelle": "Banques (soldes créditeurs)",
+                      "montant": 0.0
+                    }
+                  ],
+                  "total": 337010.0
+                },
+                "equilibre": true,
+                "ecart": 0.0
+              },
+              "cpc": {
+                "I": 169500.0,
+                "II": 40170.0,
+                "III": 129330.0,
+                "IV": 1000.0,
+                "V": 0.0,
+                "VI": 1000.0,
+                "VII": 130330.0,
+                "VIII": 0.0,
+                "IX": 500.0,
+                "X": -500.0,
+                "XI": 129830.0,
+                "XII": 23420.25,
+                "resultat_net": 106409.75,
+                "lignes": [
+                  {
+                    "type": "titre",
+                    "code": "I",
+                    "libelle": "Produits d'exploitation",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Ventes de marchandises",
+                    "montant": 37500.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Ventes de biens et services produits",
+                    "montant": 132000.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Variation des stocks de produits",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Immobilisations produites par l'entreprise",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Subventions d'exploitation",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres produits d'exploitation",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Reprises d'exploitation / transferts",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "I",
+                    "libelle": "Total Produits d'exploitation",
+                    "montant": 169500.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "II",
+                    "libelle": "Charges d'exploitation",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Achats revendus de marchandises",
+                    "montant": 15400.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Achats consommés de matières et fournitures",
+                    "montant": 15400.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres charges externes",
+                    "montant": 1070.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Impôts et taxes",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Charges de personnel",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres charges d'exploitation",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Dotations d'exploitation",
+                    "montant": 8300.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "II",
+                    "libelle": "Total Charges d'exploitation",
+                    "montant": 40170.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "III",
+                    "libelle": "Résultat d'exploitation",
+                    "montant": 129330.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "IV",
+                    "libelle": "Produits financiers",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Produits des titres",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Gains de change",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Intérêts et autres produits financiers",
+                    "montant": 1000.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Reprises financières",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "IV",
+                    "libelle": "Total Produits financiers",
+                    "montant": 1000.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "V",
+                    "libelle": "Charges financières",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Charges d'intérêts",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Pertes de change",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres charges financières",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Dotations financières",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "V",
+                    "libelle": "Total Charges financières",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "VI",
+                    "libelle": "Résultat financier",
+                    "montant": 1000.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "VII",
+                    "libelle": "Résultat courant",
+                    "montant": 130330.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "VIII",
+                    "libelle": "Produits non courants",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Produits de cession d'immobilisations",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Subventions d'équilibre",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Reprises sur subventions d'investissement",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres produits non courants",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Reprises non courantes",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "VIII",
+                    "libelle": "Total Produits non courants",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "IX",
+                    "libelle": "Charges non courantes",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "VNA des immobilisations cédées",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Subventions accordées",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres charges non courantes",
+                    "montant": 500.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Dotations non courantes",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "IX",
+                    "libelle": "Total Charges non courantes",
+                    "montant": 500.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "X",
+                    "libelle": "Résultat non courant",
+                    "montant": -500.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "XI",
+                    "libelle": "Résultat avant impôts",
+                    "montant": 129830.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "XII",
+                    "libelle": "Impôts sur les résultats",
+                    "montant": 23420.25
+                  },
+                  {
+                    "type": "total",
+                    "code": "XV",
+                    "libelle": "Résultat net de l'exercice",
+                    "montant": 106409.75
+                  }
+                ]
+              },
+              "esg": {
+                "lignes": [
+                  {
+                    "code": "I",
+                    "libelle": "Marge brute",
+                    "montant": 22100.0
+                  },
+                  {
+                    "code": "II",
+                    "libelle": "Production de l'exercice",
+                    "montant": 132000.0
+                  },
+                  {
+                    "code": "III",
+                    "libelle": "Consommation de l'exercice",
+                    "montant": 16470.0
+                  },
+                  {
+                    "code": "IV",
+                    "libelle": "Valeur ajoutée",
+                    "montant": 137630.0
+                  },
+                  {
+                    "code": "V",
+                    "libelle": "Excédent brut d'exploitation",
+                    "montant": 137630.0
+                  },
+                  {
+                    "code": "VI",
+                    "libelle": "Résultat d'exploitation",
+                    "montant": 129330.0
+                  },
+                  {
+                    "code": "VII",
+                    "libelle": "Résultat financier",
+                    "montant": 1000.0
+                  },
+                  {
+                    "code": "VIII",
+                    "libelle": "Résultat courant",
+                    "montant": 130330.0
+                  },
+                  {
+                    "code": "IX",
+                    "libelle": "Résultat non courant",
+                    "montant": -500.0
+                  },
+                  {
+                    "code": "X",
+                    "libelle": "Résultat net",
+                    "montant": 106409.75
+                  },
+                  {
+                    "code": "CAF",
+                    "libelle": "Capacité d'autofinancement",
+                    "montant": 112709.75
+                  }
+                ],
+                "resultat_net": 106409.75,
+                "caf": 112709.75
+              }
+            },
+            "etats_n1": null,
+            "soldes": {
+              "1111": {
+                "debit": 0.0,
+                "credit": 200000.0
+              },
+              "1518": {
+                "debit": 0.0,
+                "credit": 1500.0
+              },
+              "2355": {
+                "debit": 24000.0,
+                "credit": 0.0
+              },
+              "28355": {
+                "debit": 0.0,
+                "credit": 4800.0
+              },
+              "3111": {
+                "debit": 6600.0,
+                "credit": 0.0
+              },
+              "3421": {
+                "debit": 14400.0,
+                "credit": 0.0
+              },
+              "34552": {
+                "debit": 80.0,
+                "credit": 0.0
+              },
+              "3491": {
+                "debit": 11000.0,
+                "credit": 0.0
+              },
+              "3942": {
+                "debit": 0.0,
+                "credit": 2000.0
+              },
+              "4411": {
+                "debit": 0.0,
+                "credit": 480.0
+              },
+              "4417": {
+                "debit": 0.0,
+                "credit": 3000.0
+              },
+              "4453": {
+                "debit": 0.0,
+                "credit": 23220.25
+              },
+              "4456": {
+                "debit": 0.0,
+                "credit": 2400.0
+              },
+              "5141": {
+                "debit": 287730.0,
+                "credit": 0.0
+              },
+              "6111": {
+                "debit": 22000.0,
+                "credit": 0.0
+              },
+              "6114": {
+                "debit": 0.0,
+                "credit": 6600.0
+              },
+              "6125": {
+                "debit": 15400.0,
+                "credit": 0.0
+              },
+              "6134": {
+                "debit": 1000.0,
+                "credit": 0.0
+              },
+              "61472": {
+                "debit": 10.0,
+                "credit": 0.0
+              },
+              "61473": {
+                "debit": 60.0,
+                "credit": 0.0
+              },
+              "61935": {
+                "debit": 4800.0,
+                "credit": 0.0
+              },
+              "61955": {
+                "debit": 1500.0,
+                "credit": 0.0
+              },
+              "61964": {
+                "debit": 2000.0,
+                "credit": 0.0
+              },
+              "6583": {
+                "debit": 500.0,
+                "credit": 0.0
+              },
+              "6701": {
+                "debit": 23420.25,
+                "credit": 0.0
+              },
+              "7111": {
+                "debit": 0.0,
+                "credit": 37500.0
+              },
+              "7124": {
+                "debit": 0.0,
+                "credit": 132000.0
+              },
+              "7381": {
+                "debit": 0.0,
+                "credit": 1000.0
+              }
+            },
+            "a_completer": [
+              "ETIC et échéances sur justificatifs",
+              "Flux du tableau de financement",
+              "Retraitements, liquidation et annexes fiscales",
+              "Référentiel DGI et format EDI applicable"
+            ],
+            "avertissements": [
+              "Préparation indépendante : aucune écriture ni archive annuelle n'est créée.",
+              "Utiliser une balance avant solde technique des charges et produits pour établir le CPC.",
+              "Balance N-1 non fournie : comparatif indisponible, aucun zéro historique déduit."
+            ]
+          }
+        }
+      },
+      {
+        "id": 8,
+        "exercice": 2025,
+        "version": 3,
+        "created_at": "2026-10-25T12:29:39.002335",
+        "empreinte_sha256": "28e0a81550231b2d04d02de69f4dff1b821974fe7b1a961b9eff6f98d75f938e",
+        "contenu": {
+          "schema_version": 1,
+          "exercice": 2025,
+          "periode": {
+            "debut": "2025-01-01",
+            "fin": "2025-12-31"
+          },
+          "sources": {
+            "n": [
+              {
+                "compte": "1111",
+                "debit": "0.00",
+                "credit": "200000.00"
+              },
+              {
+                "compte": "1191",
+                "debit": "0.00",
+                "credit": "106409.75"
+              },
+              {
+                "compte": "1518",
+                "debit": "0.00",
+                "credit": "1500.00"
+              },
+              {
+                "compte": "2355",
+                "debit": "24000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "28355",
+                "debit": "0.00",
+                "credit": "4800.00"
+              },
+              {
+                "compte": "3111",
+                "debit": "6600.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3421",
+                "debit": "14400.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "34552",
+                "debit": "80.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3491",
+                "debit": "11000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3942",
+                "debit": "0.00",
+                "credit": "2000.00"
+              },
+              {
+                "compte": "4411",
+                "debit": "0.00",
+                "credit": "480.00"
+              },
+              {
+                "compte": "4417",
+                "debit": "0.00",
+                "credit": "3000.00"
+              },
+              {
+                "compte": "4453",
+                "debit": "0.00",
+                "credit": "23220.25"
+              },
+              {
+                "compte": "4456",
+                "debit": "0.00",
+                "credit": "2400.00"
+              },
+              {
+                "compte": "5141",
+                "debit": "287730.00",
+                "credit": "0.00"
+              }
+            ],
+            "n1": null,
+            "noms_fichiers": {
+              "n": "a_nouveaux_attendus_2026.csv"
+            }
+          },
+          "preparation": {
+            "mode": "balance_importee",
+            "statut": "preparation",
+            "pret_a_deposer": false,
+            "balance_n": {
+              "nb_comptes": 15,
+              "total_debit": 343810.0,
+              "total_credit": 343810.0
+            },
+            "balance_n1": null,
+            "etats": {
+              "bilan": {
+                "actif": {
+                  "immobilise": [
+                    {
+                      "code": "21",
+                      "libelle": "Immobilisations en non-valeurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "22",
+                      "libelle": "Immobilisations incorporelles",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "23",
+                      "libelle": "Immobilisations corporelles",
+                      "brut": 24000.0,
+                      "amort_prov": 4800.0,
+                      "net": 19200.0
+                    },
+                    {
+                      "code": "24/25",
+                      "libelle": "Immobilisations financières",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "27",
+                      "libelle": "Écarts de conversion - actif",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "circulant": [
+                    {
+                      "code": "31",
+                      "libelle": "Stocks",
+                      "brut": 6600.0,
+                      "amort_prov": 0.0,
+                      "net": 6600.0
+                    },
+                    {
+                      "code": "341",
+                      "libelle": "Fournisseurs débiteurs, avances",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "342",
+                      "libelle": "Clients et comptes rattachés",
+                      "brut": 14400.0,
+                      "amort_prov": 2000.0,
+                      "net": 12400.0
+                    },
+                    {
+                      "code": "343",
+                      "libelle": "Personnel - débiteur",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "345",
+                      "libelle": "État - débiteur",
+                      "brut": 80.0,
+                      "amort_prov": 0.0,
+                      "net": 80.0
+                    },
+                    {
+                      "code": "346",
+                      "libelle": "Comptes d'associés - débiteurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "348",
+                      "libelle": "Autres débiteurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "349",
+                      "libelle": "Comptes de régularisation - actif",
+                      "brut": 11000.0,
+                      "amort_prov": 0.0,
+                      "net": 11000.0
+                    },
+                    {
+                      "code": "350",
+                      "libelle": "Titres et valeurs de placement",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "37",
+                      "libelle": "Écarts de conversion - actif circulant",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "tresorerie": [
+                    {
+                      "code": "511",
+                      "libelle": "Chèques et valeurs à encaisser",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "514",
+                      "libelle": "Banques, TG et CCP",
+                      "brut": 287730.0,
+                      "amort_prov": 0.0,
+                      "net": 287730.0
+                    },
+                    {
+                      "code": "516",
+                      "libelle": "Caisses, régies d'avances",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "total": {
+                    "brut": 343810.0,
+                    "amort_prov": 6800.0,
+                    "net": 337010.0
+                  }
+                },
+                "passif": {
+                  "capitaux_propres": [
+                    {
+                      "code": "111",
+                      "libelle": "Capital social ou personnel",
+                      "montant": 200000.0
+                    },
+                    {
+                      "code": "112/113",
+                      "libelle": "Primes d'émission, fusion et apport",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "114/115",
+                      "libelle": "Réserves",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "116",
+                      "libelle": "Report à nouveau (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "118",
+                      "libelle": "Résultats nets en instance d'affectation (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "119_ANT",
+                      "libelle": "Résultat antérieur en attente d'affectation (+/-)",
+                      "montant": 106409.75
+                    },
+                    {
+                      "code": "RESULTAT",
+                      "libelle": "Résultat net de l'exercice (+/-)",
+                      "montant": 0.0
+                    }
+                  ],
+                  "financement_permanent": [
+                    {
+                      "code": "131/135",
+                      "libelle": "Capitaux propres assimilés",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "141/148",
+                      "libelle": "Dettes de financement",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "151/155",
+                      "libelle": "Provisions durables pour risques et charges",
+                      "montant": 1500.0
+                    },
+                    {
+                      "code": "17",
+                      "libelle": "Écarts de conversion - passif",
+                      "montant": 0.0
+                    }
+                  ],
+                  "passif_circulant": [
+                    {
+                      "code": "441",
+                      "libelle": "Fournisseurs et comptes rattachés",
+                      "montant": 3480.0
+                    },
+                    {
+                      "code": "442",
+                      "libelle": "Clients créditeurs, avances et acomptes",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "443",
+                      "libelle": "Personnel - créditeur",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "444",
+                      "libelle": "Organismes sociaux",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "445",
+                      "libelle": "État - créditeur",
+                      "montant": 25620.25
+                    },
+                    {
+                      "code": "446",
+                      "libelle": "Comptes d'associés - créditeurs",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "448",
+                      "libelle": "Autres créanciers",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "449",
+                      "libelle": "Comptes de régularisation - passif",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "45",
+                      "libelle": "Autres provisions pour risques et charges",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "47",
+                      "libelle": "Écarts de conversion - passif circulant",
+                      "montant": 0.0
+                    }
+                  ],
+                  "tresorerie": [
+                    {
+                      "code": "552/553",
+                      "libelle": "Crédits d'escompte et de trésorerie",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "554",
+                      "libelle": "Banques (soldes créditeurs)",
+                      "montant": 0.0
+                    }
+                  ],
+                  "total": 337010.0
+                },
+                "equilibre": true,
+                "ecart": 0.0
+              },
+              "cpc": {
+                "disponible": false,
+                "motif": "Classes 6/7 soldées et résultat technique présent : fournir la balance avant clôture pour le CPC/ESG.",
+                "resultat_net": null,
+                "lignes": []
+              },
+              "esg": {
+                "disponible": false,
+                "motif": "Classes 6/7 soldées et résultat technique présent : fournir la balance avant clôture pour le CPC/ESG.",
+                "resultat_net": null,
+                "caf": null,
+                "lignes": []
+              }
+            },
+            "etats_n1": null,
+            "soldes": {
+              "1111": {
+                "debit": 0.0,
+                "credit": 200000.0
+              },
+              "1191": {
+                "debit": 0.0,
+                "credit": 106409.75
+              },
+              "1518": {
+                "debit": 0.0,
+                "credit": 1500.0
+              },
+              "2355": {
+                "debit": 24000.0,
+                "credit": 0.0
+              },
+              "28355": {
+                "debit": 0.0,
+                "credit": 4800.0
+              },
+              "3111": {
+                "debit": 6600.0,
+                "credit": 0.0
+              },
+              "3421": {
+                "debit": 14400.0,
+                "credit": 0.0
+              },
+              "34552": {
+                "debit": 80.0,
+                "credit": 0.0
+              },
+              "3491": {
+                "debit": 11000.0,
+                "credit": 0.0
+              },
+              "3942": {
+                "debit": 0.0,
+                "credit": 2000.0
+              },
+              "4411": {
+                "debit": 0.0,
+                "credit": 480.0
+              },
+              "4417": {
+                "debit": 0.0,
+                "credit": 3000.0
+              },
+              "4453": {
+                "debit": 0.0,
+                "credit": 23220.25
+              },
+              "4456": {
+                "debit": 0.0,
+                "credit": 2400.0
+              },
+              "5141": {
+                "debit": 287730.0,
+                "credit": 0.0
+              }
+            },
+            "a_completer": [
+              "ETIC et échéances sur justificatifs",
+              "Flux du tableau de financement",
+              "Retraitements, liquidation et annexes fiscales",
+              "Référentiel DGI et format EDI applicable"
+            ],
+            "avertissements": [
+              "Préparation indépendante : aucune écriture ni archive annuelle n'est créée.",
+              "Utiliser une balance avant solde technique des charges et produits pour établir le CPC.",
+              "Balance N-1 non fournie : comparatif indisponible, aucun zéro historique déduit."
+            ]
+          }
+        }
+      },
+      {
+        "id": 9,
+        "exercice": 2026,
+        "version": 1,
+        "created_at": "2026-10-25T12:29:41.291924",
+        "empreinte_sha256": "87df36293d206a8e08ff9a2a0c4c8054b8f01e55e03aec91842a8215505bafcc",
+        "contenu": {
+          "schema_version": 1,
+          "exercice": 2026,
+          "periode": {
+            "debut": "2026-01-01",
+            "fin": "2026-12-31"
+          },
+          "sources": {
+            "n": [
+              {
+                "compte": "1111",
+                "debit": "0.00",
+                "credit": "200000.00"
+              },
+              {
+                "compte": "1191",
+                "debit": "0.00",
+                "credit": "106409.75"
+              },
+              {
+                "compte": "1518",
+                "debit": "0.00",
+                "credit": "1500.00"
+              },
+              {
+                "compte": "2355",
+                "debit": "24000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "28355",
+                "debit": "0.00",
+                "credit": "4800.00"
+              },
+              {
+                "compte": "3111",
+                "debit": "6600.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3421",
+                "debit": "14400.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "34552",
+                "debit": "80.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3491",
+                "debit": "11000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3942",
+                "debit": "0.00",
+                "credit": "2000.00"
+              },
+              {
+                "compte": "4411",
+                "debit": "0.00",
+                "credit": "480.00"
+              },
+              {
+                "compte": "4417",
+                "debit": "0.00",
+                "credit": "3000.00"
+              },
+              {
+                "compte": "4453",
+                "debit": "0.00",
+                "credit": "23220.25"
+              },
+              {
+                "compte": "4456",
+                "debit": "0.00",
+                "credit": "2400.00"
+              },
+              {
+                "compte": "5141",
+                "debit": "287730.00",
+                "credit": "0.00"
+              }
+            ],
+            "n1": [
+              {
+                "compte": "1111",
+                "debit": "0.00",
+                "credit": "200000.00"
+              },
+              {
+                "compte": "1518",
+                "debit": "0.00",
+                "credit": "1500.00"
+              },
+              {
+                "compte": "2355",
+                "debit": "24000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "28355",
+                "debit": "0.00",
+                "credit": "4800.00"
+              },
+              {
+                "compte": "3111",
+                "debit": "6600.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3421",
+                "debit": "14400.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "34552",
+                "debit": "80.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3491",
+                "debit": "11000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "3942",
+                "debit": "0.00",
+                "credit": "2000.00"
+              },
+              {
+                "compte": "4411",
+                "debit": "0.00",
+                "credit": "480.00"
+              },
+              {
+                "compte": "4417",
+                "debit": "0.00",
+                "credit": "3000.00"
+              },
+              {
+                "compte": "4453",
+                "debit": "0.00",
+                "credit": "23220.25"
+              },
+              {
+                "compte": "4456",
+                "debit": "0.00",
+                "credit": "2400.00"
+              },
+              {
+                "compte": "5141",
+                "debit": "287730.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6111",
+                "debit": "22000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6114",
+                "debit": "0.00",
+                "credit": "6600.00"
+              },
+              {
+                "compte": "6125",
+                "debit": "15400.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6134",
+                "debit": "1000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61472",
+                "debit": "10.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61473",
+                "debit": "60.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61935",
+                "debit": "4800.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61955",
+                "debit": "1500.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "61964",
+                "debit": "2000.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6583",
+                "debit": "500.00",
+                "credit": "0.00"
+              },
+              {
+                "compte": "6701",
+                "debit": "23420.25",
+                "credit": "0.00"
+              },
+              {
+                "compte": "7111",
+                "debit": "0.00",
+                "credit": "37500.00"
+              },
+              {
+                "compte": "7124",
+                "debit": "0.00",
+                "credit": "132000.00"
+              },
+              {
+                "compte": "7381",
+                "debit": "0.00",
+                "credit": "1000.00"
+              }
+            ],
+            "noms_fichiers": {
+              "n": "a_nouveaux_attendus_2026.csv",
+              "n1": "balance_attendue_2025.csv"
+            }
+          },
+          "preparation": {
+            "mode": "balance_importee",
+            "statut": "preparation",
+            "pret_a_deposer": false,
+            "balance_n": {
+              "nb_comptes": 15,
+              "total_debit": 343810.0,
+              "total_credit": 343810.0
+            },
+            "balance_n1": {
+              "nb_comptes": 28,
+              "total_debit": 414500.25,
+              "total_credit": 414500.25
+            },
+            "etats": {
+              "bilan": {
+                "actif": {
+                  "immobilise": [
+                    {
+                      "code": "21",
+                      "libelle": "Immobilisations en non-valeurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "22",
+                      "libelle": "Immobilisations incorporelles",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "23",
+                      "libelle": "Immobilisations corporelles",
+                      "brut": 24000.0,
+                      "amort_prov": 4800.0,
+                      "net": 19200.0
+                    },
+                    {
+                      "code": "24/25",
+                      "libelle": "Immobilisations financières",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "27",
+                      "libelle": "Écarts de conversion - actif",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "circulant": [
+                    {
+                      "code": "31",
+                      "libelle": "Stocks",
+                      "brut": 6600.0,
+                      "amort_prov": 0.0,
+                      "net": 6600.0
+                    },
+                    {
+                      "code": "341",
+                      "libelle": "Fournisseurs débiteurs, avances",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "342",
+                      "libelle": "Clients et comptes rattachés",
+                      "brut": 14400.0,
+                      "amort_prov": 2000.0,
+                      "net": 12400.0
+                    },
+                    {
+                      "code": "343",
+                      "libelle": "Personnel - débiteur",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "345",
+                      "libelle": "État - débiteur",
+                      "brut": 80.0,
+                      "amort_prov": 0.0,
+                      "net": 80.0
+                    },
+                    {
+                      "code": "346",
+                      "libelle": "Comptes d'associés - débiteurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "348",
+                      "libelle": "Autres débiteurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "349",
+                      "libelle": "Comptes de régularisation - actif",
+                      "brut": 11000.0,
+                      "amort_prov": 0.0,
+                      "net": 11000.0
+                    },
+                    {
+                      "code": "350",
+                      "libelle": "Titres et valeurs de placement",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "37",
+                      "libelle": "Écarts de conversion - actif circulant",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "tresorerie": [
+                    {
+                      "code": "511",
+                      "libelle": "Chèques et valeurs à encaisser",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "514",
+                      "libelle": "Banques, TG et CCP",
+                      "brut": 287730.0,
+                      "amort_prov": 0.0,
+                      "net": 287730.0
+                    },
+                    {
+                      "code": "516",
+                      "libelle": "Caisses, régies d'avances",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "total": {
+                    "brut": 343810.0,
+                    "amort_prov": 6800.0,
+                    "net": 337010.0
+                  }
+                },
+                "passif": {
+                  "capitaux_propres": [
+                    {
+                      "code": "111",
+                      "libelle": "Capital social ou personnel",
+                      "montant": 200000.0
+                    },
+                    {
+                      "code": "112/113",
+                      "libelle": "Primes d'émission, fusion et apport",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "114/115",
+                      "libelle": "Réserves",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "116",
+                      "libelle": "Report à nouveau (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "118",
+                      "libelle": "Résultats nets en instance d'affectation (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "119_ANT",
+                      "libelle": "Résultat antérieur en attente d'affectation (+/-)",
+                      "montant": 106409.75
+                    },
+                    {
+                      "code": "RESULTAT",
+                      "libelle": "Résultat net de l'exercice (+/-)",
+                      "montant": 0.0
+                    }
+                  ],
+                  "financement_permanent": [
+                    {
+                      "code": "131/135",
+                      "libelle": "Capitaux propres assimilés",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "141/148",
+                      "libelle": "Dettes de financement",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "151/155",
+                      "libelle": "Provisions durables pour risques et charges",
+                      "montant": 1500.0
+                    },
+                    {
+                      "code": "17",
+                      "libelle": "Écarts de conversion - passif",
+                      "montant": 0.0
+                    }
+                  ],
+                  "passif_circulant": [
+                    {
+                      "code": "441",
+                      "libelle": "Fournisseurs et comptes rattachés",
+                      "montant": 3480.0
+                    },
+                    {
+                      "code": "442",
+                      "libelle": "Clients créditeurs, avances et acomptes",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "443",
+                      "libelle": "Personnel - créditeur",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "444",
+                      "libelle": "Organismes sociaux",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "445",
+                      "libelle": "État - créditeur",
+                      "montant": 25620.25
+                    },
+                    {
+                      "code": "446",
+                      "libelle": "Comptes d'associés - créditeurs",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "448",
+                      "libelle": "Autres créanciers",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "449",
+                      "libelle": "Comptes de régularisation - passif",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "45",
+                      "libelle": "Autres provisions pour risques et charges",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "47",
+                      "libelle": "Écarts de conversion - passif circulant",
+                      "montant": 0.0
+                    }
+                  ],
+                  "tresorerie": [
+                    {
+                      "code": "552/553",
+                      "libelle": "Crédits d'escompte et de trésorerie",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "554",
+                      "libelle": "Banques (soldes créditeurs)",
+                      "montant": 0.0
+                    }
+                  ],
+                  "total": 337010.0
+                },
+                "equilibre": true,
+                "ecart": 0.0
+              },
+              "cpc": {
+                "disponible": false,
+                "motif": "Classes 6/7 soldées et résultat technique présent : fournir la balance avant clôture pour le CPC/ESG.",
+                "resultat_net": null,
+                "lignes": []
+              },
+              "esg": {
+                "disponible": false,
+                "motif": "Classes 6/7 soldées et résultat technique présent : fournir la balance avant clôture pour le CPC/ESG.",
+                "resultat_net": null,
+                "caf": null,
+                "lignes": []
+              }
+            },
+            "etats_n1": {
+              "bilan": {
+                "actif": {
+                  "immobilise": [
+                    {
+                      "code": "21",
+                      "libelle": "Immobilisations en non-valeurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "22",
+                      "libelle": "Immobilisations incorporelles",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "23",
+                      "libelle": "Immobilisations corporelles",
+                      "brut": 24000.0,
+                      "amort_prov": 4800.0,
+                      "net": 19200.0
+                    },
+                    {
+                      "code": "24/25",
+                      "libelle": "Immobilisations financières",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "27",
+                      "libelle": "Écarts de conversion - actif",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "circulant": [
+                    {
+                      "code": "31",
+                      "libelle": "Stocks",
+                      "brut": 6600.0,
+                      "amort_prov": 0.0,
+                      "net": 6600.0
+                    },
+                    {
+                      "code": "341",
+                      "libelle": "Fournisseurs débiteurs, avances",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "342",
+                      "libelle": "Clients et comptes rattachés",
+                      "brut": 14400.0,
+                      "amort_prov": 2000.0,
+                      "net": 12400.0
+                    },
+                    {
+                      "code": "343",
+                      "libelle": "Personnel - débiteur",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "345",
+                      "libelle": "État - débiteur",
+                      "brut": 80.0,
+                      "amort_prov": 0.0,
+                      "net": 80.0
+                    },
+                    {
+                      "code": "346",
+                      "libelle": "Comptes d'associés - débiteurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "348",
+                      "libelle": "Autres débiteurs",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "349",
+                      "libelle": "Comptes de régularisation - actif",
+                      "brut": 11000.0,
+                      "amort_prov": 0.0,
+                      "net": 11000.0
+                    },
+                    {
+                      "code": "350",
+                      "libelle": "Titres et valeurs de placement",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "37",
+                      "libelle": "Écarts de conversion - actif circulant",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "tresorerie": [
+                    {
+                      "code": "511",
+                      "libelle": "Chèques et valeurs à encaisser",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    },
+                    {
+                      "code": "514",
+                      "libelle": "Banques, TG et CCP",
+                      "brut": 287730.0,
+                      "amort_prov": 0.0,
+                      "net": 287730.0
+                    },
+                    {
+                      "code": "516",
+                      "libelle": "Caisses, régies d'avances",
+                      "brut": 0.0,
+                      "amort_prov": 0.0,
+                      "net": 0.0
+                    }
+                  ],
+                  "total": {
+                    "brut": 343810.0,
+                    "amort_prov": 6800.0,
+                    "net": 337010.0
+                  }
+                },
+                "passif": {
+                  "capitaux_propres": [
+                    {
+                      "code": "111",
+                      "libelle": "Capital social ou personnel",
+                      "montant": 200000.0
+                    },
+                    {
+                      "code": "112/113",
+                      "libelle": "Primes d'émission, fusion et apport",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "114/115",
+                      "libelle": "Réserves",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "116",
+                      "libelle": "Report à nouveau (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "118",
+                      "libelle": "Résultats nets en instance d'affectation (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "119_ANT",
+                      "libelle": "Résultat antérieur en attente d'affectation (+/-)",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "RESULTAT",
+                      "libelle": "Résultat net de l'exercice (+/-)",
+                      "montant": 106409.75
+                    }
+                  ],
+                  "financement_permanent": [
+                    {
+                      "code": "131/135",
+                      "libelle": "Capitaux propres assimilés",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "141/148",
+                      "libelle": "Dettes de financement",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "151/155",
+                      "libelle": "Provisions durables pour risques et charges",
+                      "montant": 1500.0
+                    },
+                    {
+                      "code": "17",
+                      "libelle": "Écarts de conversion - passif",
+                      "montant": 0.0
+                    }
+                  ],
+                  "passif_circulant": [
+                    {
+                      "code": "441",
+                      "libelle": "Fournisseurs et comptes rattachés",
+                      "montant": 3480.0
+                    },
+                    {
+                      "code": "442",
+                      "libelle": "Clients créditeurs, avances et acomptes",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "443",
+                      "libelle": "Personnel - créditeur",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "444",
+                      "libelle": "Organismes sociaux",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "445",
+                      "libelle": "État - créditeur",
+                      "montant": 25620.25
+                    },
+                    {
+                      "code": "446",
+                      "libelle": "Comptes d'associés - créditeurs",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "448",
+                      "libelle": "Autres créanciers",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "449",
+                      "libelle": "Comptes de régularisation - passif",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "45",
+                      "libelle": "Autres provisions pour risques et charges",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "47",
+                      "libelle": "Écarts de conversion - passif circulant",
+                      "montant": 0.0
+                    }
+                  ],
+                  "tresorerie": [
+                    {
+                      "code": "552/553",
+                      "libelle": "Crédits d'escompte et de trésorerie",
+                      "montant": 0.0
+                    },
+                    {
+                      "code": "554",
+                      "libelle": "Banques (soldes créditeurs)",
+                      "montant": 0.0
+                    }
+                  ],
+                  "total": 337010.0
+                },
+                "equilibre": true,
+                "ecart": 0.0
+              },
+              "cpc": {
+                "I": 169500.0,
+                "II": 40170.0,
+                "III": 129330.0,
+                "IV": 1000.0,
+                "V": 0.0,
+                "VI": 1000.0,
+                "VII": 130330.0,
+                "VIII": 0.0,
+                "IX": 500.0,
+                "X": -500.0,
+                "XI": 129830.0,
+                "XII": 23420.25,
+                "resultat_net": 106409.75,
+                "lignes": [
+                  {
+                    "type": "titre",
+                    "code": "I",
+                    "libelle": "Produits d'exploitation",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Ventes de marchandises",
+                    "montant": 37500.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Ventes de biens et services produits",
+                    "montant": 132000.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Variation des stocks de produits",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Immobilisations produites par l'entreprise",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Subventions d'exploitation",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres produits d'exploitation",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Reprises d'exploitation / transferts",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "I",
+                    "libelle": "Total Produits d'exploitation",
+                    "montant": 169500.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "II",
+                    "libelle": "Charges d'exploitation",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Achats revendus de marchandises",
+                    "montant": 15400.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Achats consommés de matières et fournitures",
+                    "montant": 15400.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres charges externes",
+                    "montant": 1070.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Impôts et taxes",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Charges de personnel",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres charges d'exploitation",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Dotations d'exploitation",
+                    "montant": 8300.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "II",
+                    "libelle": "Total Charges d'exploitation",
+                    "montant": 40170.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "III",
+                    "libelle": "Résultat d'exploitation",
+                    "montant": 129330.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "IV",
+                    "libelle": "Produits financiers",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Produits des titres",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Gains de change",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Intérêts et autres produits financiers",
+                    "montant": 1000.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Reprises financières",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "IV",
+                    "libelle": "Total Produits financiers",
+                    "montant": 1000.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "V",
+                    "libelle": "Charges financières",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Charges d'intérêts",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Pertes de change",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres charges financières",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Dotations financières",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "V",
+                    "libelle": "Total Charges financières",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "VI",
+                    "libelle": "Résultat financier",
+                    "montant": 1000.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "VII",
+                    "libelle": "Résultat courant",
+                    "montant": 130330.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "VIII",
+                    "libelle": "Produits non courants",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Produits de cession d'immobilisations",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Subventions d'équilibre",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Reprises sur subventions d'investissement",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres produits non courants",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Reprises non courantes",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "VIII",
+                    "libelle": "Total Produits non courants",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "titre",
+                    "code": "IX",
+                    "libelle": "Charges non courantes",
+                    "montant": null
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "VNA des immobilisations cédées",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Subventions accordées",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Autres charges non courantes",
+                    "montant": 500.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "",
+                    "libelle": "Dotations non courantes",
+                    "montant": 0.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "IX",
+                    "libelle": "Total Charges non courantes",
+                    "montant": 500.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "X",
+                    "libelle": "Résultat non courant",
+                    "montant": -500.0
+                  },
+                  {
+                    "type": "total",
+                    "code": "XI",
+                    "libelle": "Résultat avant impôts",
+                    "montant": 129830.0
+                  },
+                  {
+                    "type": "ligne",
+                    "code": "XII",
+                    "libelle": "Impôts sur les résultats",
+                    "montant": 23420.25
+                  },
+                  {
+                    "type": "total",
+                    "code": "XV",
+                    "libelle": "Résultat net de l'exercice",
+                    "montant": 106409.75
+                  }
+                ]
+              },
+              "esg": {
+                "lignes": [
+                  {
+                    "code": "I",
+                    "libelle": "Marge brute",
+                    "montant": 22100.0
+                  },
+                  {
+                    "code": "II",
+                    "libelle": "Production de l'exercice",
+                    "montant": 132000.0
+                  },
+                  {
+                    "code": "III",
+                    "libelle": "Consommation de l'exercice",
+                    "montant": 16470.0
+                  },
+                  {
+                    "code": "IV",
+                    "libelle": "Valeur ajoutée",
+                    "montant": 137630.0
+                  },
+                  {
+                    "code": "V",
+                    "libelle": "Excédent brut d'exploitation",
+                    "montant": 137630.0
+                  },
+                  {
+                    "code": "VI",
+                    "libelle": "Résultat d'exploitation",
+                    "montant": 129330.0
+                  },
+                  {
+                    "code": "VII",
+                    "libelle": "Résultat financier",
+                    "montant": 1000.0
+                  },
+                  {
+                    "code": "VIII",
+                    "libelle": "Résultat courant",
+                    "montant": 130330.0
+                  },
+                  {
+                    "code": "IX",
+                    "libelle": "Résultat non courant",
+                    "montant": -500.0
+                  },
+                  {
+                    "code": "X",
+                    "libelle": "Résultat net",
+                    "montant": 106409.75
+                  },
+                  {
+                    "code": "CAF",
+                    "libelle": "Capacité d'autofinancement",
+                    "montant": 112709.75
+                  }
+                ],
+                "resultat_net": 106409.75,
+                "caf": 112709.75
+              }
+            },
+            "soldes": {
+              "1111": {
+                "debit": 0.0,
+                "credit": 200000.0
+              },
+              "1191": {
+                "debit": 0.0,
+                "credit": 106409.75
+              },
+              "1518": {
+                "debit": 0.0,
+                "credit": 1500.0
+              },
+              "2355": {
+                "debit": 24000.0,
+                "credit": 0.0
+              },
+              "28355": {
+                "debit": 0.0,
+                "credit": 4800.0
+              },
+              "3111": {
+                "debit": 6600.0,
+                "credit": 0.0
+              },
+              "3421": {
+                "debit": 14400.0,
+                "credit": 0.0
+              },
+              "34552": {
+                "debit": 80.0,
+                "credit": 0.0
+              },
+              "3491": {
+                "debit": 11000.0,
+                "credit": 0.0
+              },
+              "3942": {
+                "debit": 0.0,
+                "credit": 2000.0
+              },
+              "4411": {
+                "debit": 0.0,
+                "credit": 480.0
+              },
+              "4417": {
+                "debit": 0.0,
+                "credit": 3000.0
+              },
+              "4453": {
+                "debit": 0.0,
+                "credit": 23220.25
+              },
+              "4456": {
+                "debit": 0.0,
+                "credit": 2400.0
+              },
+              "5141": {
+                "debit": 287730.0,
+                "credit": 0.0
+              }
+            },
+            "a_completer": [
+              "ETIC et échéances sur justificatifs",
+              "Flux du tableau de financement",
+              "Retraitements, liquidation et annexes fiscales",
+              "Référentiel DGI et format EDI applicable"
+            ],
+            "avertissements": [
+              "Préparation indépendante : aucune écriture ni archive annuelle n'est créée.",
+              "Utiliser une balance avant solde technique des charges et produits pour établir le CPC."
+            ]
+          }
+        }
+      }
+    ],
+    "journal_50_et_etats_inchanges": true,
+    "lecteur_refus403": true,
+    "sources_originelles_inchangees": true,
+    "comparatif_sans_faux_cpc": true
+  }
+}

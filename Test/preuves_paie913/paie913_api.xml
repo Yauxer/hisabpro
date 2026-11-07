@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="8" time="93.367" timestamp="2026-10-28T21:57:21.546350+01:00" hostname="Taiyou"><testcase classname="Test.test_paie913_frais_annuels_isole" name="test_913_douze_mois_connectes_oracle_et_inconnues" time="42.733" /><testcase classname="Test.test_paie913_frais_annuels_isole" name="test_913_mois_partiel_et_versions_doubles_sans_extrapoler" time="5.642" /><testcase classname="Test.test_paie913_frais_annuels_isole" name="test_913_sources_modifiees_ancien_cumul_et_reprise_preserves" time="5.596" /><testcase classname="Test.test_paie913_frais_annuels_isole" name="test_913_concurrence_reprise_et_conflit" time="6.935" /><testcase classname="Test.test_paie913_frais_annuels_isole" name="test_913_societes_profil_fk_et_immutabilite" time="9.063"><failure message="assert '0A000' in ('23514', '23503', '23505', '42501')&#10; +  where '0A000' = FeatureNotSupported('cannot truncate a table referenced in a foreign key constraint\nDETAIL:  Table &quot;paie_controle_fra...frais_annuels&quot;.\nHINT:  Truncate table &quot;paie_controle_frais_sources&quot; at the same time, or use TRUNCATE ... CASCADE.\n').pgcode&#10; +    where FeatureNotSupported('cannot truncate a table referenced in a foreign key constraint\nDETAIL:  Table &quot;paie_controle_fra...frais_annuels&quot;.\nHINT:  Truncate table &quot;paie_controle_frais_sources&quot; at the same time, or use TRUNCATE ... CASCADE.\n') = NotSupportedError('(psycopg2.errors.FeatureNotSupported) cannot truncate a table referenced in a foreign key constrain...frais_annuels&quot;.\nHINT:  Truncate table &quot;paie_controle_frais_sources&quot; at the same time, or use TRUNCATE ... CASCADE.\n').orig&#10; +      where NotSupportedError('(psycopg2.errors.FeatureNotSupported) cannot truncate a table referenced in a foreign key constrain...frais_annuels&quot;.\nHINT:  Truncate table &quot;paie_controle_frais_sources&quot; at the same time, or use TRUNCATE ... CASCADE.\n') = &lt;ExceptionInfo NotSupportedError('(psycopg2.errors.FeatureNotSupported) cannot truncate a table referenced in a foreig...uels&quot;.\nHINT:  Truncate table &quot;paie_controle_frais_sources&quot; at the same time, or use TRUNCATE ... CASCADE.\n') tblen=9&gt;.value">application = {'api_url': 'http://127.0.0.1:62011', 'web_url': 'http://127.0.0.1:62012', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_e7ek43ry'), 'nonce': 'c3ba8aefb5bd447d80f7cebeae0e3ac0', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000002034BBCD190&gt;, 'b': &lt;httpx.Client object at 0x00000203572F0990&gt;, 'l': &lt;httpx.Client object at 0x0000020357294D90&gt;, 'uid': 17, ...}
+
+    def test_913_societes_profil_fk_et_immutabilite(application,equipe):
+        eq=equipe;eid,_,_,_,p=mois_unique(eq);r=ok(eq['a'].post(F,json=demande(eid,[p])),201);assert eq['l'].get(F).status_code==403
+        with closing(client(application)[0]) as autre:
+            identite=ok(autre.get('/api/auth/me'));uid=identite['id']
+            for cap in CAPS:grant(autre,uid,cap)
+            activer(autre);assert autre.get(f'{F}/{r["id"]}').status_code==404 and autre.post(F,json=demande(eid,[p])).status_code==404
+            sql="INSERT INTO paie_controles_frais_annuels(societe_id,employe_id,annee,cle_idempotence,demande_sha256,contenu,empreinte,auteur_id,motif) VALUES(:s,:e,2026,:k,:h,CAST(:c AS jsonb),:h,:u,'FICTIF913')"
+            with pytest.raises(DBAPIError) as erreur:
+                with application['engine'].begin() as db:db.execute(text(sql),{'s':identite['societe_id'],'e':eid,'k':str(uuid4()),'h':'a'*64,'c':json.dumps(r['contenu']),'u':uid})
+            assert erreur.value.orig.pgcode=='23503'
+        role,u,_,_=role_client(application,eq['a'],'personnel')
+        with closing(role):
+            for cap in CAPS:grant(eq['a'],u['id'],cap)
+            assert role.get(F).status_code==200 and role.get(F+'/options').status_code==200 and role.post(F,json=demande(eid,[p])).status_code==201
+            assert role.get('/api/factures').status_code==403
+        for table in ['paie_controles_frais_annuels','paie_controle_frais_sources']:
+            for sql in [f'DELETE FROM {table}',f'TRUNCATE {table}',f'UPDATE {table} SET auteur_id=auteur_id']:
+&gt;               for moteur in [application['engine'],application['personnel_runtime']]:refuser(application,sql,{},engine=moteur)
+                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_paie913_frais_annuels_isole.py:108: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+app = {'api_url': 'http://127.0.0.1:62011', 'web_url': 'http://127.0.0.1:62012', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_e7ek43ry'), 'nonce': 'c3ba8aefb5bd447d80f7cebeae0e3ac0', ...}, ...}
+sql = 'TRUNCATE paie_controles_frais_annuels', params = {}
+engine = Engine(postgresql+psycopg2://hisabpro_recette@127.0.0.1:62007/hisabpro_recette_c3ba8aefb5bd)
+codes = ('23514', '23503', '23505', '42501')
+
+    def refuser(app,sql,params=None,engine=None,codes=('23514','23503','23505','42501')):
+        with pytest.raises(DBAPIError) as e:
+            with (engine or app['engine']).begin() as db:db.execute(text(sql),params or {})
+&gt;       assert e.value.orig.pgcode in codes
+E       assert '0A000' in ('23514', '23503', '23505', '42501')
+E        +  where '0A000' = FeatureNotSupported('cannot truncate a table referenced in a foreign key constraint\nDETAIL:  Table "paie_controle_fra...frais_annuels".\nHINT:  Truncate table "paie_controle_frais_sources" at the same time, or use TRUNCATE ... CASCADE.\n').pgcode
+E        +    where FeatureNotSupported('cannot truncate a table referenced in a foreign key constraint\nDETAIL:  Table "paie_controle_fra...frais_annuels".\nHINT:  Truncate table "paie_controle_frais_sources" at the same time, or use TRUNCATE ... CASCADE.\n') = NotSupportedError('(psycopg2.errors.FeatureNotSupported) cannot truncate a table referenced in a foreign key constrain...frais_annuels".\nHINT:  Truncate table "paie_controle_frais_sources" at the same time, or use TRUNCATE ... CASCADE.\n').orig
+E        +      where NotSupportedError('(psycopg2.errors.FeatureNotSupported) cannot truncate a table referenced in a foreign key constrain...frais_annuels".\nHINT:  Truncate table "paie_controle_frais_sources" at the same time, or use TRUNCATE ... CASCADE.\n') = &lt;ExceptionInfo NotSupportedError('(psycopg2.errors.FeatureNotSupported) cannot truncate a table referenced in a foreig...uels".\nHINT:  Truncate table "paie_controle_frais_sources" at the same time, or use TRUNCATE ... CASCADE.\n') tblen=9&gt;.value
+
+Test\test_personnel_dossiers875_isole.py:50: AssertionError</failure></testcase><testcase classname="Test.test_paie913_frais_annuels_isole" name="test_913_montants_http_invalides_sans_reecho[NaN]" time="4.653" /><testcase classname="Test.test_paie913_frais_annuels_isole" name="test_913_montants_http_invalides_sans_reecho[Infinity]" time="4.743" /><testcase classname="Test.test_paie913_frais_annuels_isole" name="test_913_montants_http_invalides_sans_reecho[True]" time="10.842" /></testsuite></testsuites>

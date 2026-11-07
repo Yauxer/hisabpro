@@ -1,0 +1,27 @@
+.page { display: flex; flex-direction: column; height: 100%; }
+
+.topbar {
+  background: var(--bg-primary);
+  border-bottom: 0.5px solid var(--border-light);
+  padding: 14px 24px;
+}
+
+.title { font-size: 15px; font-weight: 500; }
+
+.body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-tertiary);
+  font-size: 13px;
+}
+
+.soon i { font-size: 32px; }

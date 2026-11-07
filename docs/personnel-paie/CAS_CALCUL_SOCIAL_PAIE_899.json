@@ -1,0 +1,50 @@
+[
+  [
+    "PA-CALSOC01",
+    "Préparer les sources exactes du salarié",
+    "Cahier887 et accès Personnel protégés disponibles ; copie isolée restaurable, migrations113 à117 installées par le technicien.",
+    "Toutes les données P899, contrat, rémunération et PRIME_SOC899 du jeu. Autres champs d’identité facultatifs laissés vides.",
+    "Créer P899 avec nom et date d’entrée connue, enregistrer, soumettre et faire approuver indépendamment. Proposer son contrat CDI, soumettre et faire approuver ; sélectionner ce contrat pour proposer la rémunération9000.10 mensuelle et faire approuver. Dans Éléments de paie, créer PRIME_SOC899 avec les trois règles exactes, enregistrer et faire approuver. Saisir la variable800.01 de novembre avec source et justificatif, soumettre et faire approuver indépendamment.",
+    "Dossier actif et salaire mensuel approuvé, variable800.01 approuvée ; aucune donnée réelle ni taux légal inventé. Les motifs/références et les IDs des versions sont conservés."
+  ],
+  [
+    "PA-CALSOC02",
+    "Préparer les deux branches du régime",
+    "PA-CALSOC01 ; habilitations proposer et approuver sur deux comptes distincts.",
+    "REGIME_SOC899 ; B1_FICTIF et B2_FICTIF : paramètres complets du jeu ci-dessus.",
+    "04 · Charges sociales > Référentiel social > Créer une branche. Créer B1 puis B2 séparément ; conserver les composants distincts. Faire approuver chaque version par le décideur avec motif, référence et indépendance. Conserver la qualification À vérifier.",
+    "Deux branches approuvées pour le régime déclaré ; B1 plafonnée6000, B2 sans plafond. Aucun régime attribué automatiquement à P899 et aucune règle qualifiée juridiquement."
+  ],
+  [
+    "PA-CALSOC03",
+    "Calculer sur le brut conservé et comparer l’oracle",
+    "P899 seul, base9000.10 et unique gain800.01 ; deux branches approuvées.",
+    "Novembre2026, brut9800.11 ; régime REGIME_SOC899 ; parts soumises de base CNSS et AMO9000.10 ; contrôle CTRL-ELIG-P899-FICTIF ; motif Calcul social P899 FICTIF.",
+    "03 · Traitement > Nouvelle simulation du brut : novembre, sélectionner P899 seul, motif et confirmation de mois complet. Simuler et conserver. Depuis le résultat, Préparer les cotisations de ce brut > Nouvelle simulation sociale > Charger le brut. Choisir le régime, renseigner les deux parts de base et référence ; confirmer pour P899 les hypothèses du jeu et le mode pédagogique. Calculer et conserver.",
+    "Assiette CNSS9000.10+800.01−300=9500.11 ; AMO9800.11. B1 :6000×1%=60.00 et×2%=120.00. B2 :9800.11×3%=294.00 et×4%=392.00, arrondis par ligne. Totaux354.00 et512.00. IR/net/bulletin non calculés. Snapshot et empreinte conservés."
+  ],
+  [
+    "PA-CALSOC04",
+    "Conserver les inconnues et refuser une base globale",
+    "PA-CALSOC03 ; ne pas modifier les anciennes simulations.",
+    "Même brut. Essai1 : baseCNSS vide, baseAMO9000.10, référence et confirmation des faits renseignés. Essai2 : baseCNSS9800.11 à tort ; baseAMO9000.10. Essai3 : ne pas cocher la confirmation d’éligibilité. Motif Contrôle inconnus FICTIF899.",
+    "Créer une simulation distincte pour chaque essai. Un champ vide reste inconnu même après confirmation : aucune valeur n’est renseignée automatiquement. Relire les anomalies.",
+    "Essai1 : B1 inconnue, B2 encore294/392 ; total social À compléter, aucun zéro de secours. Essai2 : part de base supérieure au salaire9000.10, calcul bloqué car le gain serait compté deux fois. Essai3 : éligibilité non confirmée, calcul bloqué. Simulation initiale inchangée."
+  ],
+  [
+    "PA-CALSOC05",
+    "Détecter un brut périmé puis recalculer sans effacer",
+    "PA-CALSOC03 ; conserver l’ID du brut et de la première simulation sociale.",
+    "EXTRA_SOC899 et variable100.00 du jeu. Motifs/références d’approbation identiques avec suffixe EXTRA ; nouvelles simulations selon le jeu.",
+    "Créer et faire approuver la rubrique supplémentaire. Créer sa variable100.00 et la laisser en brouillon. Recalculer le social sur le brut initial : vérifier le refus de sources. Soumettre et faire approuver cette variable. Revenir au traitement pour conserver un nouveau brut de P899 ; suivre le lien vers les cotisations et charger ce nouvel ID. Calculer de nouveau. Réouvrir la simulation sociale initiale depuis la liste.",
+    "Brut initial devenu périmé : total indisponible, message Sources courantes différentes. Après préparation, nouveau brut9900.11 ; CNSS reste9500.11 car le gain100 est entièrement exclu dans l’hypothèse de plafond à l’opération ; AMO9900.11. Social357.00/516.00. Ancien résultat reste354.00/512.00, ancien brut9800.11."
+  ],
+  [
+    "PA-CALSOC06",
+    "Vérifier sécurité, preuves et limites",
+    "Deux sociétés, administrateur des habilitations et préparateur ; journal et soldes photographiés avant le jeu.",
+    "Révocation lire_remuneration, motif Fin accès recette899. IDs des snapshots, versions sources et empreintes à conserver.",
+    "Vérifier les paramètres et sources conservés dans le détail, les versions dans la liste et l’absence de bouton de validation définitive. Essayer un double clic pendant une même requête : une seule simulation. Comparer la comptabilité avant/après. Changer de société et vérifier l’isolation. Révoquer rémunération puis Actualiser.",
+    "Reprise identique idempotente ; un nouveau calcul volontaire conserve une nouvelle version. Détail inaccessible après révocation ; seconde société isolée. Aucune écriture, paiement, déclaration, IR, net bancaire ou bulletin créé. Recette utilisateur et production restent non validées."
+  ]
+]

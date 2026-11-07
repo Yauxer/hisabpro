@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="72.795" timestamp="2026-10-25T20:44:22.166332+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_avoir829_isole" name="test_829_avoir_integral_remboursement_et_piste_audit[1440]" time="47.410"><failure message="AssertionError: {&quot;detail&quot;:[{&quot;type&quot;:&quot;missing&quot;,&quot;loc&quot;:[&quot;query&quot;,&quot;exercice&quot;],&quot;msg&quot;:&quot;Field required&quot;,&quot;input&quot;:null}]}">application = {'api_url': 'http://127.0.0.1:54325', 'web_url': 'http://127.0.0.1:54326', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_78d1xh_r'), 'nonce': '96505fe82ac6404985afcfb07259ec6b', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette829_reprise/test_829_avoir_integral_rembou0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_829_avoir_integral_remboursement_et_piste_audit(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'avoir829') as (api,page,sid,preuve):
+      t=next(t for t in DATA['tiers'] if t['code']=='C-MARCH');tiers=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'client','compte_client':'3421'}),201)
+      a=next(a for a in DATA['articles'] if a['code']=='M-01');article=ok(api.post('/api/articles',json={'code':a['code'],'designation':a['designation'],'is_stockable':True,'stock_actuel':0,'prix_achat_ht':110,'prix_vente_ht':250,'tva':20,'compte_vente':'7111','compte_achat':'6111'}),201);aid=article['id'];ok(api.patch(f'/api/articles/{aid}/stock',json={'stock_actuel':200,'date':'2025-01-01','reference':'COPIE-FAC016-STOCK-INITIAL','note':'Précondition fictive indépendante :200unités disponibles avant vente2025 ;aucun mouvement réel corrigé.'}));b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      f=ok(api.post('/api/factures',json={'type':'vente','date':'2025-01-20','date_echeance':'2025-01-26','tiers':tiers['nom'],'tiers_id':tiers['id'],'reference':'VENTE-01','lignes':[{'article_id':aid,'description':article['designation'],'quantite':100,'prix_unitaire':250,'tva':20}]}),201);fid=f['id'];ok(api.post(f'/api/factures/{fid}/valider'));ok(api.post(f'/api/factures/{fid}/comptabiliser'));valider_journal(page,application,1);f=next(f for f in ok(api.get('/api/factures',params={'exercice':2025})) if f['id']==fid)
+      payer(page,application,f,tiers,30000,'2025-01-26','PAY-VENTE-01-VAR829',banque);valider_journal(page,application,1);source=core(application,sid);assert len(source)==2;avant_stock=stock829(application,sid,aid);assert D(avant_stock['quantite'])==100;avant_reg=ok(api.get(f'/api/factures/{fid}/reglements'));assert avant_reg['solde_restant']==0 and avant_reg['total_encaisse']==30000
+      page.goto(application['web_url']+'/factures');page.locator('tbody tr').filter(has_text=f['numero']).click();page.get_by_role('button',name='Créer un avoir',exact=True).click();m=page.get_by_role('dialog',name='Créer un avoir',exact=False);champ(m,"Date de l'avoir *").fill('2025-02-10');champ(m,"Nature de l'avoir",'select').select_option('retour_annulation');m.get_by_placeholder('Retour marchandise, remise après facture...').fill('Variante FAC016 — annulation intégrale fictive');m.get_by_role('checkbox',name='Retour physique de marchandise',exact=False).check();ligne=m.locator('tbody tr').filter(has_text=article['designation']);ligne.get_by_role('checkbox').check();ligne.locator('input[type=number]').fill('100')
+      with page.expect_response(lambda r:r.url.endswith('/api/avoirs') and r.request.method=='POST') as r:m.get_by_role('button',name="Créer l'avoir",exact=False).click()
+      av=ok(r.value,201);avid=av['id'];m.wait_for(state='hidden');assert av['total_ttc']==30000 and av['retour_stock'] and av['date']=='2025-02-10' and av['facture_id']==fid;assert core(application,sid)==source and stock829(application,sid,aid)==avant_stock
+      page.goto(application['web_url']+'/avoirs');page.locator('tbody tr').filter(has_text=av['numero']).click()
+      with page.expect_response(lambda r:r.url.endswith(f'/api/avoirs/{avid}/comptabiliser')) as r:page.get_by_role('button',name='Comptabiliser',exact=True).last.click()
+      ok(r.value);valider_journal(page,application,1);apres_retour=stock829(application,sid,aid);assert D(apres_retour['quantite'])==200 and apres_retour['mouvements']==avant_stock['mouvements']+1
+      page.goto(application['web_url']+'/avoirs');page.locator('tbody tr').filter(has_text=av['numero']).click();page.get_by_role('button',name='Rembourser',exact=True).click();m=page.get_by_role('dialog',name='Rembourser le crédit — '+av['numero'],exact=True);champ(m,'Montant (MAD)').fill('30000');champ(m,'Date').fill('2025-02-11');champ(m,'Mode','select').select_option('virement');champ(m,'Compte bancaire','select').select_option(str(banque['id']));m.get_by_placeholder('N° virement, chèque...').fill('REMBOURSEMENT-FAC016-829')
+      with page.expect_response(lambda r:r.url.endswith(f'/api/avoirs/{avid}/utiliser') and r.request.method=='POST') as r:m.get_by_role('button',name='Enregistrer le remboursement',exact=True).click()
+      remboursement=ok(r.value);m.wait_for(state='hidden');valider_journal(page,application,1);fin=core(application,sid);assert len(fin)==4 and all(e[7] for e in fin) and all(e in fin for e in source);assert stock829(application,sid,aid)==apres_retour
+      es=ok(api.get('/api/ecritures',params={'exercice':2025}));nouvelles=[e for e in es if e['id'] not in {e[0] for e in source}]
+      for jour,journal,attendu in [('2025-02-10','AV',{'7111':(25000,0),'4455':(5000,0),'3421':(0,30000)}),('2025-02-11','BQ',{'3421':(30000,0),'5141':(0,30000)})]:
+       e=next(e for e in nouvelles if e['date']==jour);assert e['journal']==journal and {l['compte']:(D(str(l['debit'])),D(str(l['credit']))) for l in e['lignes']}=={k:tuple(map(D,v)) for k,v in attendu.items()}
+&gt;     avoir=next(a for a in ok(api.get('/api/avoirs')) if a['id']==avid);assert avoir['statut']=='rembourse' and avoir['montant_utilise']==30000 and avoir['montant_disponible']==0 and len(avoir['utilisations'])==1 and avoir['utilisations'][0]['date_utilisation']=='2025-02-11'
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_avoir829_isole.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [422 Unprocessable Entity]&gt;, status = 200
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":[{"type":"missing","loc":["query","exercice"],"msg":"Field required","input":null}]}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_avoir829_isole" name="test_829_avoir_integral_remboursement_et_piste_audit[390]" time="22.235"><failure message="AssertionError: {&quot;detail&quot;:[{&quot;type&quot;:&quot;missing&quot;,&quot;loc&quot;:[&quot;query&quot;,&quot;exercice&quot;],&quot;msg&quot;:&quot;Field required&quot;,&quot;input&quot;:null}]}">application = {'api_url': 'http://127.0.0.1:54325', 'web_url': 'http://127.0.0.1:54326', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_78d1xh_r'), 'nonce': '96505fe82ac6404985afcfb07259ec6b', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette829_reprise/test_829_avoir_integral_rembou1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_829_avoir_integral_remboursement_et_piste_audit(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'avoir829') as (api,page,sid,preuve):
+      t=next(t for t in DATA['tiers'] if t['code']=='C-MARCH');tiers=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'client','compte_client':'3421'}),201)
+      a=next(a for a in DATA['articles'] if a['code']=='M-01');article=ok(api.post('/api/articles',json={'code':a['code'],'designation':a['designation'],'is_stockable':True,'stock_actuel':0,'prix_achat_ht':110,'prix_vente_ht':250,'tva':20,'compte_vente':'7111','compte_achat':'6111'}),201);aid=article['id'];ok(api.patch(f'/api/articles/{aid}/stock',json={'stock_actuel':200,'date':'2025-01-01','reference':'COPIE-FAC016-STOCK-INITIAL','note':'Précondition fictive indépendante :200unités disponibles avant vente2025 ;aucun mouvement réel corrigé.'}));b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+      f=ok(api.post('/api/factures',json={'type':'vente','date':'2025-01-20','date_echeance':'2025-01-26','tiers':tiers['nom'],'tiers_id':tiers['id'],'reference':'VENTE-01','lignes':[{'article_id':aid,'description':article['designation'],'quantite':100,'prix_unitaire':250,'tva':20}]}),201);fid=f['id'];ok(api.post(f'/api/factures/{fid}/valider'));ok(api.post(f'/api/factures/{fid}/comptabiliser'));valider_journal(page,application,1);f=next(f for f in ok(api.get('/api/factures',params={'exercice':2025})) if f['id']==fid)
+      payer(page,application,f,tiers,30000,'2025-01-26','PAY-VENTE-01-VAR829',banque);valider_journal(page,application,1);source=core(application,sid);assert len(source)==2;avant_stock=stock829(application,sid,aid);assert D(avant_stock['quantite'])==100;avant_reg=ok(api.get(f'/api/factures/{fid}/reglements'));assert avant_reg['solde_restant']==0 and avant_reg['total_encaisse']==30000
+      page.goto(application['web_url']+'/factures');page.locator('tbody tr').filter(has_text=f['numero']).click();page.get_by_role('button',name='Créer un avoir',exact=True).click();m=page.get_by_role('dialog',name='Créer un avoir',exact=False);champ(m,"Date de l'avoir *").fill('2025-02-10');champ(m,"Nature de l'avoir",'select').select_option('retour_annulation');m.get_by_placeholder('Retour marchandise, remise après facture...').fill('Variante FAC016 — annulation intégrale fictive');m.get_by_role('checkbox',name='Retour physique de marchandise',exact=False).check();ligne=m.locator('tbody tr').filter(has_text=article['designation']);ligne.get_by_role('checkbox').check();ligne.locator('input[type=number]').fill('100')
+      with page.expect_response(lambda r:r.url.endswith('/api/avoirs') and r.request.method=='POST') as r:m.get_by_role('button',name="Créer l'avoir",exact=False).click()
+      av=ok(r.value,201);avid=av['id'];m.wait_for(state='hidden');assert av['total_ttc']==30000 and av['retour_stock'] and av['date']=='2025-02-10' and av['facture_id']==fid;assert core(application,sid)==source and stock829(application,sid,aid)==avant_stock
+      page.goto(application['web_url']+'/avoirs');page.locator('tbody tr').filter(has_text=av['numero']).click()
+      with page.expect_response(lambda r:r.url.endswith(f'/api/avoirs/{avid}/comptabiliser')) as r:page.get_by_role('button',name='Comptabiliser',exact=True).last.click()
+      ok(r.value);valider_journal(page,application,1);apres_retour=stock829(application,sid,aid);assert D(apres_retour['quantite'])==200 and apres_retour['mouvements']==avant_stock['mouvements']+1
+      page.goto(application['web_url']+'/avoirs');page.locator('tbody tr').filter(has_text=av['numero']).click();page.get_by_role('button',name='Rembourser',exact=True).click();m=page.get_by_role('dialog',name='Rembourser le crédit — '+av['numero'],exact=True);champ(m,'Montant (MAD)').fill('30000');champ(m,'Date').fill('2025-02-11');champ(m,'Mode','select').select_option('virement');champ(m,'Compte bancaire','select').select_option(str(banque['id']));m.get_by_placeholder('N° virement, chèque...').fill('REMBOURSEMENT-FAC016-829')
+      with page.expect_response(lambda r:r.url.endswith(f'/api/avoirs/{avid}/utiliser') and r.request.method=='POST') as r:m.get_by_role('button',name='Enregistrer le remboursement',exact=True).click()
+      remboursement=ok(r.value);m.wait_for(state='hidden');valider_journal(page,application,1);fin=core(application,sid);assert len(fin)==4 and all(e[7] for e in fin) and all(e in fin for e in source);assert stock829(application,sid,aid)==apres_retour
+      es=ok(api.get('/api/ecritures',params={'exercice':2025}));nouvelles=[e for e in es if e['id'] not in {e[0] for e in source}]
+      for jour,journal,attendu in [('2025-02-10','AV',{'7111':(25000,0),'4455':(5000,0),'3421':(0,30000)}),('2025-02-11','BQ',{'3421':(30000,0),'5141':(0,30000)})]:
+       e=next(e for e in nouvelles if e['date']==jour);assert e['journal']==journal and {l['compte']:(D(str(l['debit'])),D(str(l['credit']))) for l in e['lignes']}=={k:tuple(map(D,v)) for k,v in attendu.items()}
+&gt;     avoir=next(a for a in ok(api.get('/api/avoirs')) if a['id']==avid);assert avoir['statut']=='rembourse' and avoir['montant_utilise']==30000 and avoir['montant_disponible']==0 and len(avoir['utilisations'])==1 and avoir['utilisations'][0]['date_utilisation']=='2025-02-11'
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Test\test_e2e_cahier_avoir829_isole.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+r = &lt;Response [422 Unprocessable Entity]&gt;, status = 200
+
+    def ok(r,status=200):
+     code=r.status_code if isinstance(r,httpx.Response) else r.status
+&gt;    assert code==status,(r.text if isinstance(r,httpx.Response) else r.text())
+            ^^^^^^^^^^^^
+E    AssertionError: {"detail":[{"type":"missing","loc":["query","exercice"],"msg":"Field required","input":null}]}
+
+Test\cahier_formulaires773_support.py:19: AssertionError</failure></testcase></testsuite></testsuites>

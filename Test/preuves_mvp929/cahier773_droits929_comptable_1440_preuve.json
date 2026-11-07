@@ -1,0 +1,25 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_3t4c38ll",
+  "nonce": "8e60374c0fd04ed28c6367d59071e7b5",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "droits929": {
+    "role": "comptable",
+    "consultation_registre_plan_diagnostic": true,
+    "commandes_selon_role": true,
+    "refus_API": {
+      "reclasser": 403,
+      "reconstituer-acquisitions": 403,
+      "corriger-amortissements": 403
+    },
+    "consultation_sans_mutation_metier_ni_sequence": true,
+    "aucune_mutation_emise_par_UI_pendant_consultation": true,
+    "reprise_admin_reellement_executee": null,
+    "recette_humaine": "Non effectuée automatiquement"
+  }
+}

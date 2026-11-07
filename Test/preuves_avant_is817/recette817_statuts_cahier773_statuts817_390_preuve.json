@@ -1,0 +1,22 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_i4cnh4k5",
+  "nonce": "9084dbf7768940c98e5b1ffe1b02f8e1",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "fichiers817": [
+    {
+      "chemin": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette817_statuts\\test_817_filtre_statuts_export1\\brouillons817.csv",
+      "sha256": "f9dc34bd8e4d13477184f4c4734f27e06f42d937754258988ae31551575699d9"
+    }
+  ],
+  "statuts817": {
+    "filtre_et_export_coherents": true,
+    "validation_rafraichie_sans_f5": true,
+    "lignes_financieres_preservees": true
+  }
+}

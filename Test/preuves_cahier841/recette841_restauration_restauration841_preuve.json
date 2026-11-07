@@ -1,0 +1,86 @@
+{
+  "erreur": null,
+  "tp_bases_classes_avis_sources_et_rendus_restaures": true,
+  "identites_mouvements_tiers_sources_et_rendus_restaures": true,
+  "scenario_annuel3650_sources_justificatifs_logos_restaures": true,
+  "pieces_octets_traces_dossier_manifestes_logos_identiques": true,
+  "cibles_supprimees": true,
+  "tables": 83,
+  "fichiers": {
+    "1/ecriture/15/PV-FICTIF452_d469f8fc.pdf": [
+      1449,
+      "a0dbecf3445f2212606daedcb2255cb02686129b254566e740cf59618b145960"
+    ],
+    "2/balance_preparation_documents/27/885f8f29bdc84d73a6c554710077c545.pdf": [
+      1451,
+      "4a1d3a56447e445b8e9cc602566cfa92315578f6d1cf1bbb7fc895222a9d9a50"
+    ],
+    "2/balance_preparation_documents/42/8ff7641285424f7282d2b5215e232993.pdf": [
+      3239,
+      "82a3b99b0d38650c8e51f72bdd548b3d4e0cb8de784c99349c69ba84fa5b92a7"
+    ],
+    "2/balance_preparation_documents/43/e472f606176f4e50b42908011c193f22.pdf": [
+      4204,
+      "34808e63c4b3e3c62ce99d9a08d4db199aab34f7a43838c3eb78f303be1d32cf"
+    ],
+    "2/balance_preparation_documents/44/bad7894103ac4fc9a08d5ffa844df3af.pdf": [
+      3163,
+      "1697efc2c732cadc7e6092ce4b56f92af4cc31fdc5eccd3604731c5152e43129"
+    ],
+    "3/ecriture/16/preuve452_20a10e42.pdf": [
+      1449,
+      "a0dbecf3445f2212606daedcb2255cb02686129b254566e740cf59618b145960"
+    ],
+    "3/ecriture/16/preuve452_4b2c8106.pdf": [
+      1471,
+      "0119f116eaee508dbc975f7c2be5ec90dfa43dffbb8959408abec2d5eb3915e3"
+    ],
+    "3/ecriture/17/preuve452_34da9def.pdf": [
+      1449,
+      "a0dbecf3445f2212606daedcb2255cb02686129b254566e740cf59618b145960"
+    ]
+  },
+  "acl": {
+    "relations": {
+      "nombre": 1350,
+      "sha256": "e174eaa8a016a8580beb9eedb225001a759000b73ba77bcbb4e219ebf47305d5"
+    },
+    "colonnes": {
+      "nombre": 32,
+      "sha256": "9b989521801d2af245e4a14d37ebbce041dfcb73ca44caa0b5d7a6238e391af6"
+    },
+    "fonctions": {
+      "nombre": 190,
+      "sha256": "bc9ddf947c9aed5d542a86d370e3540d0266322dcea2e9d3d92bc3cd1f153baa"
+    },
+    "schemas": {
+      "nombre": 4,
+      "sha256": "2a1643e5ff70a95419fcf697212dd759787847418ef19b0181fa1ac3f7d8da72"
+    },
+    "defauts": {
+      "nombre": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "schema_donnees_acl_sequences_identiques": true,
+  "fec2025_octets_identiques": true,
+  "refus_fec_brouillon_identique": true,
+  "decision091_et_pv_restitues": true,
+  "reprise_ecriture_append_only": true,
+  "role_runtime": [
+    "hisabpro",
+    "hisabpro",
+    true,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "source_preservee": true,
+  "dump_sha256": "ce3756b3289a284ea848f73bb6909b898dd7568bd330da835c1edea3889d1e39",
+  "candidat_produit_conserve": true,
+  "nb_sources_produit": 462,
+  "nb_fichiers_restaures": 8,
+  "perimetre": "Banc104 sur PostgreSQL natif éphémère nonce ; restauration réelle pg_dump/pg_restore, données fictives. Pas restauration du PostgreSQL utilisateur. Pas qualification individuelle automatique des fiches EXP du cahier."
+}

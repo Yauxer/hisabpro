@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="72.298" timestamp="2026-10-28T23:27:23.927882+01:00" hostname="Taiyou"><testcase classname="Test.test_paie919_restauration_isole" name="test_919_restauration_native_rattachement_et_snapshots" time="69.073" /></testsuite></testsuites>

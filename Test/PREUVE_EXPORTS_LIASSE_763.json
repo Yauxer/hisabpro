@@ -1,0 +1,77 @@
+{
+  "lot": 763,
+  "tests_executes": {
+    "referentiel763_cibles_finaux": {
+      "cas": 11,
+      "temps_secondes": 4.94,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "referentiel763_connexes": {
+      "cas": 21,
+      "temps_secondes": 91.62,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    }
+  },
+  "echecs_initiaux_conserves": [
+    {
+      "campagne": "referentiel763",
+      "reussis": 2,
+      "echecs": 1,
+      "cause": "Banc Node sans dépendance telechargerXlsxAvecLogo, devenue nécessaire après ajout des logos"
+    },
+    {
+      "campagne": "referentiel763_corrige",
+      "reussis": 2,
+      "echecs": 1,
+      "cause": "Lecture CFB du banc attendait Uint8Array, reçu ArrayBuffer"
+    }
+  ],
+  "production_inchangee": true,
+  "protections_inchangees": 117,
+  "build_frontend_reexecute": false,
+  "raison_absence_build": "Aucun fichier frontend modifié ; seuls les bancs de tests et documents sont modifiés",
+  "acces_officiels": [
+    {
+      "url": "https://www.tax.gov.ma",
+      "utc": "2026-10-23T08:56:12.642860+00:00",
+      "authentification": false,
+      "status": 403,
+      "adresse_finale": "https://www.tax.gov.ma/",
+      "type": "text/html; charset=UTF-8",
+      "octets": 12763,
+      "sha256": "af45c6d5f1025440e5a1afb772e8313179dc441db7296c8a2ed87c0a36383c46",
+      "pdf": false
+    },
+    {
+      "url": "https://www.tax.gov.ma/wps/portal/DGI/Tele-services/Simpl-IS",
+      "utc": "2026-10-23T08:56:12.642860+00:00",
+      "authentification": false,
+      "status": 403,
+      "adresse_finale": "https://www.tax.gov.ma/wps/portal/DGI/Tele-services/Simpl-IS",
+      "type": "text/html; charset=UTF-8",
+      "octets": 12763,
+      "sha256": "369656d2f46722fb92b31a33cd544a3645ec5a7825e129ea0f0eb84ec9ad4466",
+      "pdf": false
+    },
+    {
+      "url": "https://www.finances.gov.ma/Publication/dgi/2010/9370_cahierdescharges.pdf",
+      "utc": "2026-10-23T08:56:12.644368+00:00",
+      "authentification": false,
+      "erreur": "ConnectTimeout"
+    },
+    {
+      "url": "https://www.finances.gov.ma/Publication/dgi/2012/4036_adc_030f_08e.pdf",
+      "utc": "2026-10-23T08:56:12.644368+00:00",
+      "authentification": false,
+      "erreur": "ConnectTimeout"
+    }
+  ],
+  "catalogue_officiel_courant_obtenu": false,
+  "schema_edi_courant_obtenu": false,
+  "base_reelle_utilisee": false,
+  "recette_utilisateur_validee": false
+}

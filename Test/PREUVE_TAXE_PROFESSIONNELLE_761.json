@@ -1,0 +1,90 @@
+{
+  "lot": 761,
+  "tests_executes": {
+    "tp761_api": {
+      "cas": 53,
+      "temps_secondes": 51.95,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "tp761_ui": {
+      "cas": 8,
+      "temps_secondes": 63.87,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "tp761_restore": {
+      "cas": 1,
+      "temps_secondes": 66.51,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "tp761_diagnostic": {
+      "cas": 1,
+      "temps_secondes": 64.42,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "tp761_commune_finale": {
+      "cas": 287,
+      "temps_secondes": 478.03,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    },
+    "session761_annuel": {
+      "cas": 2,
+      "temps_secondes": 62.76,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0
+    }
+  },
+  "incident_initial": {
+    "reussis": 286,
+    "echecs": 1,
+    "temps_secondes": 467.37,
+    "cause": "inconnue, timeout connexion non reproduit",
+    "diagnostic_deselectionnes": 286,
+    "correction_produit_connexion": false,
+    "description": "Premier passage complet :286réussis et1échec467,37s, timeout20s sur le champ de connexion avant restauration. Cause inconnue, non reproduite lors du diagnostic1réussi/286désélectionnés64,73s, puis campagne finale287réussis. Aucun correctif produit de connexion, retry, délai étendu ou assertion affaiblie ; instrumentation de capture conservée si récidive. Les traces initiales sont conservées, pas remplacées par un résultat vert."
+  },
+  "sources_figees": 1237,
+  "protections_inchangees": 117,
+  "documents": {
+    "word_xml_crc": true,
+    "pdf_pages": 10,
+    "piece_fictive_pages": 2,
+    "excel_feuilles": 6,
+    "cas_humains_non_testes": 8,
+    "formules_office_executees": false,
+    "oracles_decimal_executes": true
+  },
+  "restauration": {
+    "schema": 104,
+    "tables": 83,
+    "fichiers": 8,
+    "anciens_temoins_preserves": true
+  },
+  "oracle": {
+    "valeur_locative": "42000.00",
+    "brut": "7200.00",
+    "avis": "7400.00",
+    "ecart": "-200.00"
+  },
+  "montant_du_confirme": null,
+  "pret_a_deposer": false,
+  "limites": [
+    "Préparation documentaire interne TP, pas déclaration administrative officielle",
+    "Classe, valeur locative, régime et situation annuelle doivent être justifiés et revus humainement",
+    "Extraits officiels indexés et notices DGCT consultés ; consolidation complète applicable et modèle administratif non obtenus",
+    "Simulation brute normale seulement ; aucun minimum universel, exonération, réduction, prorata, montant dû ou paiement confirmé",
+    "Arrondi HALF_UP par établissement : convention arithmétique documentaire, pas règle légale validée",
+    "Aucune base réelle utilisée ; aucun Journal, fiche immobilisation ou moteur fiscal protégé modifié",
+    "Recette utilisateur, Office natif, installation cible et production non validés ; RH/paie et point6 différés"
+  ]
+}

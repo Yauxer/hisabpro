@@ -1,0 +1,22 @@
+﻿"""Du cahier annuel à la clôture et au snapshot fiscal, en PostgreSQL temporaire."""
+import pytest
+from cahier_formulaires773_support import laboratoire,referentiels,DATA,ok
+from test_e2e_cahier_immobilisation785_isole import capital,acquisition
+from cahier_semestre789_support import semestre
+from cahier_annuel791_support import annuel
+from cahier_cloture793_support import cloturer_cahier
+from test_balance_etic_notes693_isole import (
+ application,application103,application102,application101,application100,application099,
+ application098,application097,application093,application092,application091,application090,
+ application089,application087,migration)
+
+from cahier_tva_echeances795_support import echeances_2026
+from cahier_etic805_support import completer_etic
+
+@pytest.mark.parametrize('largeur',[1440,390])
+def test_805_etic_documente_et_archive_nonforcee(application,largeur,tmp_path):
+ with laboratoire(application,largeur,tmp_path,'etic805f') as (api,page,sid,preuve):
+  tiers,articles=referentiels(api,page,application,sid,preuve);b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201)
+  capital(page,application,sid,preuve);immo=acquisition(api,page,application,sid,tiers['F-IMMO'],preuve);semestre(api,page,application,sid,tiers,articles,banque,preuve,tmp_path);annuel(api,page,application,sid,tiers,articles,banque,immo,preuve);cloturer_cahier(api,page,application,sid,preuve)
+
+  echeances_2026(api,page,application,sid,preuve);completer_etic(api,page,application,sid,preuve,tmp_path)

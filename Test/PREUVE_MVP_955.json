@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-30",
+  "nombre_distinct": 2,
+  "campagne_unique_verte": true,
+  "repartition": {
+    "Edge_API_PostgreSQL_natif_isole": 2
+  },
+  "resultats_distincts": [
+    {
+      "id": "Test.test_e2e_cm_copies955_isole::test_955_cm_exoneree_et_controle_non_exonere_independants[1440]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cm955_final"
+    },
+    {
+      "id": "Test.test_e2e_cm_copies955_isole::test_955_cm_exoneree_et_controle_non_exonere_independants[390]",
+      "famille": "Edge_API_PostgreSQL_natif_isole",
+      "statut": "reussi",
+      "campagne": "cm955_final"
+    }
+  ],
+  "selection": [
+    "Test/test_e2e_cm_copies955_isole.py"
+  ],
+  "duree_xml_s": 92.69,
+  "code_sortie": 0,
+  "execution": "PYTHON_DOTENV_DISABLED=1 ;SECRET_KEY fictive,DATABASE_URL inerte port1 ;python .codex-tests/lancer_session.py cm955_final <selection> ;fixtures PG/serveurs nonce.",
+  "historique_non_additionne": [],
+  "preuves": {
+    "Test/preuves_mvp955/cm955_1440_preuve.json": "83678b98ef0fad78c6bb605431f6259f87ea3b2df3cf45eb20493965a8af603a",
+    "Test/preuves_mvp955/cm955_390_preuve.json": "63a8d8da48f0aa77b2abff573cb392c9f162621fe97e989bf8a70ae90ec099b1",
+    "Test/preuves_mvp955/cm955_final.xml": "7c0ab718b04213570f0cb44ca8a2f68b3eabfbefa1b3d2ac888b8f2dccb28ec0"
+  },
+  "rattachement": "Test/QUALIFICATION_FICHES_955.json",
+  "fiches_qualifiees": 1,
+  "candidat": "Test/CANDIDAT_MVP_955.json",
+  "nombre_fichiers_candidat": 550,
+  "fichiers_produit_modifies": [],
+  "fichiers_produit_ajoutes": [],
+  "produit_identique_au_951": false,
+  "build": "Non relancé :frontend inchangé953 ;build isolé953214modules/10.29s,code0.",
+  "anciens_documents_preserves": 343,
+  "aucune_base_reelle": true,
+  "restauration": "Non rejouée ;preuves antérieures distinctes.",
+  "limites": "Hypothèses explicites du cahierfictif uniquement ;exonération réelle àdocumenter humainement. Copiescomptables48opérations avantIS,sansregistreimmobilisations/commercial reconstruit ni restaurationannuellecomplète. Aucun PostgreSQLréel. Recettehumaine,production etPersonnel/Paie inchangés.",
+  "produit_identique_au_953": true
+}

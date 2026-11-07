@@ -1,0 +1,302 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_un9_q7u5",
+  "nonce": "83443774f7484ebaa1372405c7fdd8f9",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 390,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "navigation841": {
+    "chargements": [
+      {
+        "tour": 1,
+        "route": "/cloture",
+        "statut": 200
+      },
+      {
+        "tour": 1,
+        "route": "/factures",
+        "statut": 200
+      },
+      {
+        "tour": 1,
+        "route": "/avoirs",
+        "statut": 200
+      },
+      {
+        "tour": 1,
+        "route": "/journal",
+        "statut": 200
+      },
+      {
+        "tour": 1,
+        "route": "/lettrage",
+        "statut": 200
+      },
+      {
+        "tour": 1,
+        "route": "/rapprochement",
+        "statut": 200
+      },
+      {
+        "tour": 1,
+        "route": "/livre-inventaire",
+        "statut": 200
+      },
+      {
+        "tour": 2,
+        "route": "/cloture",
+        "statut": 200
+      },
+      {
+        "tour": 2,
+        "route": "/factures",
+        "statut": 200
+      },
+      {
+        "tour": 2,
+        "route": "/avoirs",
+        "statut": 200
+      },
+      {
+        "tour": 2,
+        "route": "/journal",
+        "statut": 200
+      },
+      {
+        "tour": 2,
+        "route": "/lettrage",
+        "statut": 200
+      },
+      {
+        "tour": 2,
+        "route": "/rapprochement",
+        "statut": 200
+      },
+      {
+        "tour": 2,
+        "route": "/livre-inventaire",
+        "statut": 200
+      },
+      {
+        "tour": 3,
+        "route": "/cloture",
+        "statut": 200
+      },
+      {
+        "tour": 3,
+        "route": "/factures",
+        "statut": 200
+      },
+      {
+        "tour": 3,
+        "route": "/avoirs",
+        "statut": 200
+      },
+      {
+        "tour": 3,
+        "route": "/journal",
+        "statut": 200
+      },
+      {
+        "tour": 3,
+        "route": "/lettrage",
+        "statut": 200
+      },
+      {
+        "tour": 3,
+        "route": "/rapprochement",
+        "statut": 200
+      },
+      {
+        "tour": 3,
+        "route": "/livre-inventaire",
+        "statut": 200
+      },
+      {
+        "tour": 4,
+        "route": "/cloture",
+        "statut": 200
+      },
+      {
+        "tour": 4,
+        "route": "/factures",
+        "statut": 200
+      },
+      {
+        "tour": 4,
+        "route": "/avoirs",
+        "statut": 200
+      },
+      {
+        "tour": 4,
+        "route": "/journal",
+        "statut": 200
+      },
+      {
+        "tour": 4,
+        "route": "/lettrage",
+        "statut": 200
+      },
+      {
+        "tour": 4,
+        "route": "/rapprochement",
+        "statut": 200
+      },
+      {
+        "tour": 4,
+        "route": "/livre-inventaire",
+        "statut": 200
+      },
+      {
+        "tour": 5,
+        "route": "/cloture",
+        "statut": 200
+      },
+      {
+        "tour": 5,
+        "route": "/factures",
+        "statut": 200
+      },
+      {
+        "tour": 5,
+        "route": "/avoirs",
+        "statut": 200
+      },
+      {
+        "tour": 5,
+        "route": "/journal",
+        "statut": 200
+      },
+      {
+        "tour": 5,
+        "route": "/lettrage",
+        "statut": 200
+      },
+      {
+        "tour": 5,
+        "route": "/rapprochement",
+        "statut": 200
+      },
+      {
+        "tour": 5,
+        "route": "/livre-inventaire",
+        "statut": 200
+      },
+      {
+        "tour": 6,
+        "route": "/cloture",
+        "statut": 200
+      },
+      {
+        "tour": 6,
+        "route": "/factures",
+        "statut": 200
+      },
+      {
+        "tour": 6,
+        "route": "/avoirs",
+        "statut": 200
+      },
+      {
+        "tour": 6,
+        "route": "/journal",
+        "statut": 200
+      },
+      {
+        "tour": 6,
+        "route": "/lettrage",
+        "statut": 200
+      },
+      {
+        "tour": 6,
+        "route": "/rapprochement",
+        "statut": 200
+      },
+      {
+        "tour": 6,
+        "route": "/livre-inventaire",
+        "statut": 200
+      },
+      {
+        "tour": 7,
+        "route": "/cloture",
+        "statut": 200
+      },
+      {
+        "tour": 7,
+        "route": "/factures",
+        "statut": 200
+      },
+      {
+        "tour": 7,
+        "route": "/avoirs",
+        "statut": 200
+      },
+      {
+        "tour": 7,
+        "route": "/journal",
+        "statut": 200
+      },
+      {
+        "tour": 7,
+        "route": "/lettrage",
+        "statut": 200
+      },
+      {
+        "tour": 7,
+        "route": "/rapprochement",
+        "statut": 200
+      },
+      {
+        "tour": 7,
+        "route": "/livre-inventaire",
+        "statut": 200
+      },
+      {
+        "tour": 8,
+        "route": "/cloture",
+        "statut": 200
+      },
+      {
+        "tour": 8,
+        "route": "/factures",
+        "statut": 200
+      },
+      {
+        "tour": 8,
+        "route": "/avoirs",
+        "statut": 200
+      },
+      {
+        "tour": 8,
+        "route": "/journal",
+        "statut": 200
+      },
+      {
+        "tour": 8,
+        "route": "/lettrage",
+        "statut": 200
+      },
+      {
+        "tour": 8,
+        "route": "/rapprochement",
+        "statut": 200
+      },
+      {
+        "tour": 8,
+        "route": "/livre-inventaire",
+        "statut": 200
+      }
+    ],
+    "nb": 56,
+    "tous_200": true,
+    "polices_chargees": true,
+    "temoin_comptable_conserve": true,
+    "retry": 0,
+    "timeout_navigation_ms": 15000,
+    "limite": "Lecture sur société fictive et témoin100MAD ;ne reproduit pas toutes les saisies du scénario annuel ni la cause de l’arrêt mobile historique."
+  }
+}

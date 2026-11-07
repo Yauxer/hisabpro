@@ -1,0 +1,127 @@
+{
+  "resultats": [
+    {
+      "campagne": "recette843_cible",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 50.13,
+      "code": 1
+    },
+    {
+      "campagne": "recette843_connexes",
+      "cas": 39,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 43.64,
+      "code": 0
+    },
+    {
+      "campagne": "recette843_reprise",
+      "cas": 2,
+      "echecs": 2,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 54.94,
+      "code": 1
+    },
+    {
+      "campagne": "recette843_final",
+      "cas": 2,
+      "echecs": 0,
+      "erreurs": 0,
+      "ignores": 0,
+      "secondes": 53.35,
+      "code": 0
+    }
+  ],
+  "parcours": [
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_13qe0ndf",
+      "nonce": "d005d71678fe42828f01bb034cf7623d",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 1440,
+      "cas": [
+        {
+          "id": "HP-NEG-012",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-NEG-013",
+          "statut": "Réussi"
+        }
+      ],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "surpaiement843": {
+        "solde": 240,
+        "tentative": 241,
+        "ui_refus": true,
+        "api_statut": 409,
+        "detail": {
+          "detail": "Sur-règlement impossible : reste à payer 240.00 MAD, montant saisi 241.00 MAD."
+        },
+        "aucune_mutation": true,
+        "montant_exact_accepte": 240,
+        "ecriture_exacte_4411_5141": true
+      },
+      "acompte843": {
+        "montant_initial": 24000,
+        "montant_impute": 24000,
+        "disponible": 0,
+        "tentative": 1,
+        "statut": 409,
+        "detail": "Cet acompte est déjà entièrement imputé",
+        "commande_indisponible_UI": true,
+        "aucune_mutation": true
+      }
+    },
+    {
+      "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_13qe0ndf",
+      "nonce": "d005d71678fe42828f01bb034cf7623d",
+      "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+      "largeur": 390,
+      "cas": [
+        {
+          "id": "HP-NEG-012",
+          "statut": "Réussi"
+        },
+        {
+          "id": "HP-NEG-013",
+          "statut": "Réussi"
+        }
+      ],
+      "tiers": {},
+      "articles": {},
+      "erreur": null,
+      "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+      "surpaiement843": {
+        "solde": 240,
+        "tentative": 241,
+        "ui_refus": true,
+        "api_statut": 409,
+        "detail": {
+          "detail": "Sur-règlement impossible : reste à payer 240.00 MAD, montant saisi 241.00 MAD."
+        },
+        "aucune_mutation": true,
+        "montant_exact_accepte": 240,
+        "ecriture_exacte_4411_5141": true
+      },
+      "acompte843": {
+        "montant_initial": 24000,
+        "montant_impute": 24000,
+        "disponible": 0,
+        "tentative": 1,
+        "statut": 409,
+        "detail": "Cet acompte est déjà entièrement imputé",
+        "commande_indisponible_UI": true,
+        "aucune_mutation": true
+      }
+    }
+  ],
+  "limites": "Préconditions API et parcours négatifs UI réels sur PG natif isolé ;aucune donnée réelle. Produit/backend/migrations inchangés,aucun build nouveau nécessaire. Les100tests finaux841 sont historiques et ne sont pas recomptés ici. Réserves841 et production non validée conservées."
+}

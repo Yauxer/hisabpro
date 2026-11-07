@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="42.555" timestamp="2026-10-26T19:43:05.258128+01:00" hostname="Taiyou"><testcase classname="Test.test_e2e_cahier_reseau859_isole" name="test_859_reseau_erreur_reprise_et_paiement_refresh[1440]" time="27.450"><failure message="AssertionError: Locator expected to contain text 're.compile('part', re.IGNORECASE)'&#10;Actual value: None&#10;Error: element(s) not found &#10;Call log:&#10;  - Expect &quot;to_contain_text&quot; locator(&quot;tbody tr&quot;).filter(has_text=&quot;Fournisseur Contrôle Références Recette&quot;).locator(&quot;td[data-label=\&quot;Statut\&quot;]&quot;) with timeout 5000ms&#10;  - waiting for locator(&quot;tbody tr&quot;).filter(has_text=&quot;Fournisseur Contrôle Références Recette&quot;).locator(&quot;td[data-label=\&quot;Statut\&quot;]&quot;)&#10;&#10;Aria snapshot:&#10;- complementary &quot;Navigation principale&quot;:&#10;  - text: HisabPro ATLAS RECETTE HISABPRO SARL — FICTIVE&#10;  - navigation:&#10;    - link &quot;Tableau de bord&quot;:&#10;      - /url: /dashboard&#10;    - button &quot;Facturation&quot;&#10;    - link &quot;Cycle commercial&quot;:&#10;      - /url: /commercial&#10;    - link &quot;Situation financière&quot;:&#10;      - /url: /situation&#10;    - link &quot;Factures&quot;:&#10;      - /url: /factures&#10;    - link &quot;Avoirs&quot;:&#10;      - /url: /avoirs&#10;    - link &quot;Acomptes&quot;:&#10;      - /url: /acomptes&#10;    - link &quot;Effets &amp; Chèques&quot;:&#10;      - /url: /effets&#10;    - link &quot;Délais de paiement&quot;:&#10;      - /url: /delais-paiement&#10;    - link &quot;Clients / Fournisseurs&quot;:&#10;      - /url: /tiers&#10;    - link &quot;Articles&quot;:&#10;      - /url: /articles&#10;    - link &quot;Inventaire &amp; stock&quot;:&#10;      - /url: /inventaire&#10;    - button &quot;Comptabilité&quot;&#10;    - button &quot;Paie / GRH&quot;&#10;  - link &quot;Paramètres&quot;:&#10;    - /url: /parametres&#10;  - button &quot;Déconnexion&quot;&#10;- text: Exercice&#10;- button &quot;Aucun exercice précédent&quot; [disabled]&#10;- combobox &quot;Exercice comptable&quot;:&#10;  - option &quot;2026 — Ouvert&quot;&#10;  - option &quot;2025 — Ouvert&quot; [selected]&#10;- button &quot;Exercice 2026&quot;&#10;- text: Ouvert&#10;- button &quot;ATLAS RECETTE HISABPRO SARL — FICTIVE&quot;&#10;- text: 01/01/2025 — 31/12/2025&#10;- main:&#10;  - heading &quot;Factures&quot; [level=1]&#10;  - text: 1 facture en retard de paiement&#10;  - button &quot;Exporter CSV&quot;&#10;  - button &quot;Nouvelle facture&quot;&#10;  - paragraph: Indicateurs de facturation sur la période sélectionnée, factures validées hors proformas et annulations, nets des avoirs datés sur cette période. HT après remises, avant escompte. Coûts moyens indicatifs ; ne remplace pas le CA comptable.&#10;  - text: Facturation nette HT 0,00 MAD Ventes nettes TTC ▼ détail 0,00 MAD Achats nets TTC 240,00 MAD En attente 0 factures En retard 1 facture&#10;  - searchbox &quot;Rechercher une facture par numéro ou tiers&quot;&#10;  - button &quot;Tous&quot; [pressed]&#10;  - button &quot;Ventes&quot;&#10;  - button &quot;Achats&quot;&#10;  - button &quot;Tous statuts&quot; [pressed]&#10;  - button &quot;Payées&quot;&#10;  - button &quot;Part. payées&quot;&#10;  - button &quot;En attente&quot;&#10;  - button &quot;En retard&quot;&#10;  - text: Du&#10;  - textbox &quot;Date de début des factures et indicateurs&quot;&#10;  - text: au&#10;  - textbox &quot;Date de fin des factures et indicateurs&quot;&#10;  - status: 1 facture&#10;  - table:&#10;    - rowgroup:&#10;      - row &quot;N° Facture Type Date Tiers Articles HT TVA TTC Statut Échéance&quot;:&#10;        - columnheader &quot;N° Facture&quot;&#10;        - columnheader &quot;Type&quot;&#10;        - columnheader &quot;Date&quot;&#10;        - columnheader &quot;Tiers&quot;&#10;        - columnheader &quot;Articles&quot;&#10;        - columnheader &quot;HT&quot;&#10;        - columnheader &quot;TVA&quot;&#10;        - columnheader &quot;TTC&quot;&#10;        - columnheader &quot;Statut&quot;&#10;        - columnheader &quot;Échéance&quot;&#10;        - columnheader&#10;    - rowgroup:&#10;      - row &quot;FA-2025-001 Achat 02/12/25 Fournisseur Contrôle Références Recette 1×Service fictif plafond843 200,00 40,00 240,00 Validée Part. payée Compta 31/01/26 (268j retard) Suppression impossible (validée)&quot;:&#10;        - cell &quot;FA-2025-001&quot;&#10;        - cell &quot;Achat&quot;&#10;        - cell &quot;02/12/25&quot;&#10;        - cell &quot;Fournisseur Contrôle Références Recette&quot;:&#10;          - strong: Fournisseur Contrôle Références Recette&#10;        - cell &quot;1×Service fictif plafond843&quot;&#10;        - cell &quot;200,00&quot;&#10;        - cell &quot;40,00&quot;&#10;        - cell &quot;240,00&quot;&#10;        - cell &quot;Validée Part. payée Compta&quot;&#10;        - cell &quot;31/01/26 (268j retard)&quot;&#10;        - cell &quot;Suppression impossible (validée)&quot;:&#10;          - button &quot;Pièces jointes&quot;&#10;          - button &quot;Payer le fournisseur&quot;&#10;          - button &quot;Dupliquer la facture&quot;&#10;          - button &quot;Suppression impossible (validée)&quot; [disabled]">application = {'api_url': 'http://127.0.0.1:64906', 'web_url': 'http://127.0.0.1:64907', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_w_0f__v_'), 'nonce': 'bf87ebdd2be44c3ba10ceb93b3f80fbe', ...}, ...}
+largeur = 1440
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette859_corrige/test_859_reseau_erreur_reprise0')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_859_reseau_erreur_reprise_et_paiement_refresh(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'reseau859') as (api,page,sid,preuve):
+      b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201);t=next(t for t in DATA['tiers'] if t['code']=='F-CONTROLE');t=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'fournisseur','compte_fournisseur':'4411'}),201);e=ok(api.post('/api/ecritures',json={'date':'2025-01-01','date_piece':'2025-01-01','journal':'BQ','reference':'TEMOIN-859','libelle':'Témoin fictif reprise859','lignes':[{'compte':'5141','debit':100},{'compte':'1111','credit':100}]}),201);ok(api.post(f'/api/ecritures/{e["id"]}/valider'));f=facture843(api,t,'achat','2025-12-02',200,'02');valider843(api);avant=core(application,sid);aborts=[];post=[];page.on('request',lambda r:post.append(r.url) if r.method=='POST' and r.url.endswith('/api/reglements') else None)
+      pattern=re.compile(re.escape(application['api_url'])+r'/api/ecritures(?:\?.*)?$')
+      def couper(route):aborts.append({'methode':route.request.method,'chemin':'/api/ecritures'});route.abort('failed')
+      page.context.route(pattern,couper);page.goto(application['web_url']+'/journal');alerte=page.get_by_role('alert').filter(has=page.get_by_text('Connexion au serveur',exact=False));expect(alerte).to_be_visible();expect(alerte.get_by_role('button',name='Réessayer',exact=True)).to_be_visible();expect(page.get_by_role('button',name='Nouvelle écriture',exact=True)).to_have_count(0);assert aborts and core(application,sid)==avant and not post
+      page.context.unroute(pattern,couper)
+      with page.expect_response(lambda r:'/api/ecritures?' in r.url and r.request.method=='GET') as rr:alerte.get_by_role('button',name='Réessayer',exact=True).click()
+      assert rr.value.status==200;expect(page.get_by_text('TEMOIN-859',exact=True)).to_be_visible();assert core(application,sid)==avant;origine=page.evaluate('performance.timeOrigin');preuve['reseau859']={'transport_coupe':aborts,'message_francais_visible':True,'aucune_action_financiere_pendant_coupure':True,'reprise_200':True,'journal_conserve':True,'limite':'Coupure ciblée du transportGET Journal,autres API et actifs locaux réels disponibles ;aucune réponse métier fabriquée.'}
+      naviguer859(page,'/factures','Facturation');row=page.locator('tbody tr').filter(has_text=t['nom']);row.get_by_title('Payer le fournisseur',exact=True).click();m=page.get_by_role('dialog');champ(m,'Montant *').fill('120');champ(m,'Date *').fill('2025-12-03');champ(m,'Banque','select').select_option(b['banque']);m.get_by_placeholder('N° chèque, virement...').fill('PAY-859')
+      with page.expect_response(lambda r:r.url.endswith('/api/reglements') and r.request.method=='POST') as rr:m.get_by_role('button',name='Enregistrer',exact=True).click()
+&gt;     ok(rr.value,201);m.wait_for(state='hidden');expect(row.locator('td[data-label="Statut"]')).to_contain_text(re.compile('part',re.I));assert ok(api.get(f'/api/factures/{f["id"]}/reglements'))['solde_restant']==120
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to contain text 're.compile('part', re.IGNORECASE)'
+E     Actual value: None
+E     Error: element(s) not found 
+E     Call log:
+E       - Expect "to_contain_text" locator("tbody tr").filter(has_text="Fournisseur Contrôle Références Recette").locator("td[data-label=\"Statut\"]") with timeout 5000ms
+E       - waiting for locator("tbody tr").filter(has_text="Fournisseur Contrôle Références Recette").locator("td[data-label=\"Statut\"]")
+E     
+E     Aria snapshot:
+E     - complementary "Navigation principale":
+E       - text: HisabPro ATLAS RECETTE HISABPRO SARL — FICTIVE
+E       - navigation:
+E         - link "Tableau de bord":
+E           - /url: /dashboard
+E         - button "Facturation"
+E         - link "Cycle commercial":
+E           - /url: /commercial
+E         - link "Situation financière":
+E           - /url: /situation
+E         - link "Factures":
+E           - /url: /factures
+E         - link "Avoirs":
+E           - /url: /avoirs
+E         - link "Acomptes":
+E           - /url: /acomptes
+E         - link "Effets &amp; Chèques":
+E           - /url: /effets
+E         - link "Délais de paiement":
+E           - /url: /delais-paiement
+E         - link "Clients / Fournisseurs":
+E           - /url: /tiers
+E         - link "Articles":
+E           - /url: /articles
+E         - link "Inventaire &amp; stock":
+E           - /url: /inventaire
+E         - button "Comptabilité"
+E         - button "Paie / GRH"
+E       - link "Paramètres":
+E         - /url: /parametres
+E       - button "Déconnexion"
+E     - text: Exercice
+E     - button "Aucun exercice précédent" [disabled]
+E     - combobox "Exercice comptable":
+E       - option "2026 — Ouvert"
+E       - option "2025 — Ouvert" [selected]
+E     - button "Exercice 2026"
+E     - text: Ouvert
+E     - button "ATLAS RECETTE HISABPRO SARL — FICTIVE"
+E     - text: 01/01/2025 — 31/12/2025
+E     - main:
+E       - heading "Factures" [level=1]
+E       - text: 1 facture en retard de paiement
+E       - button "Exporter CSV"
+E       - button "Nouvelle facture"
+E       - paragraph: Indicateurs de facturation sur la période sélectionnée, factures validées hors proformas et annulations, nets des avoirs datés sur cette période. HT après remises, avant escompte. Coûts moyens indicatifs ; ne remplace pas le CA comptable.
+E       - text: Facturation nette HT 0,00 MAD Ventes nettes TTC ▼ détail 0,00 MAD Achats nets TTC 240,00 MAD En attente 0 factures En retard 1 facture
+E       - searchbox "Rechercher une facture par numéro ou tiers"
+E       - button "Tous" [pressed]
+E       - button "Ventes"
+E       - button "Achats"
+E       - button "Tous statuts" [pressed]
+E       - button "Payées"
+E       - button "Part. payées"
+E       - button "En attente"
+E       - button "En retard"
+E       - text: Du
+E       - textbox "Date de début des factures et indicateurs"
+E       - text: au
+E       - textbox "Date de fin des factures et indicateurs"
+E       - status: 1 facture
+E       - table:
+E         - rowgroup:
+E           - row "N° Facture Type Date Tiers Articles HT TVA TTC Statut Échéance":
+E             - columnheader "N° Facture"
+E             - columnheader "Type"
+E             - columnheader "Date"
+E             - columnheader "Tiers"
+E             - columnheader "Articles"
+E             - columnheader "HT"
+E             - columnheader "TVA"
+E             - columnheader "TTC"
+E             - columnheader "Statut"
+E             - columnheader "Échéance"
+E             - columnheader
+E         - rowgroup:
+E           - row "FA-2025-001 Achat 02/12/25 Fournisseur Contrôle Références Recette 1×Service fictif plafond843 200,00 40,00 240,00 Validée Part. payée Compta 31/01/26 (268j retard) Suppression impossible (validée)":
+E             - cell "FA-2025-001"
+E             - cell "Achat"
+E             - cell "02/12/25"
+E             - cell "Fournisseur Contrôle Références Recette":
+E               - strong: Fournisseur Contrôle Références Recette
+E             - cell "1×Service fictif plafond843"
+E             - cell "200,00"
+E             - cell "40,00"
+E             - cell "240,00"
+E             - cell "Validée Part. payée Compta"
+E             - cell "31/01/26 (268j retard)"
+E             - cell "Suppression impossible (validée)":
+E               - button "Pièces jointes"
+E               - button "Payer le fournisseur"
+E               - button "Dupliquer la facture"
+E               - button "Suppression impossible (validée)" [disabled]
+
+Test\test_e2e_cahier_reseau859_isole.py:31: AssertionError</failure></testcase><testcase classname="Test.test_e2e_cahier_reseau859_isole" name="test_859_reseau_erreur_reprise_et_paiement_refresh[390]" time="12.898"><failure message="AssertionError: Locator expected to contain text 're.compile('part', re.IGNORECASE)'&#10;Actual value: None&#10;Error: element(s) not found &#10;Call log:&#10;  - Expect &quot;to_contain_text&quot; locator(&quot;tbody tr&quot;).filter(has_text=&quot;Fournisseur Contrôle Références Recette&quot;).locator(&quot;td[data-label=\&quot;Statut\&quot;]&quot;) with timeout 5000ms&#10;  - waiting for locator(&quot;tbody tr&quot;).filter(has_text=&quot;Fournisseur Contrôle Références Recette&quot;).locator(&quot;td[data-label=\&quot;Statut\&quot;]&quot;)&#10;&#10;Aria snapshot:&#10;- button &quot;Ouvrir la navigation&quot;&#10;- button &quot;Aucun exercice précédent&quot; [disabled]&#10;- combobox &quot;Exercice comptable&quot;:&#10;  - option &quot;2026 — Ouvert&quot;&#10;  - option &quot;2025 — Ouvert&quot; [selected]&#10;- button &quot;Exercice 2026&quot;&#10;- button &quot;ATLAS RECETTE HISABPRO SARL — FICTIVE&quot;&#10;- main:&#10;  - heading &quot;Factures&quot; [level=1]&#10;  - text: 1 facture en retard de paiement&#10;  - button &quot;Exporter CSV&quot;&#10;  - button &quot;Nouvelle facture&quot;&#10;  - paragraph: Indicateurs de facturation sur la période sélectionnée, factures validées hors proformas et annulations, nets des avoirs datés sur cette période. HT après remises, avant escompte. Coûts moyens indicatifs ; ne remplace pas le CA comptable.&#10;  - text: Facturation nette HT 0,00 MAD Ventes nettes TTC ▼ détail 0,00 MAD Achats nets TTC 240,00 MAD En attente 0 factures En retard 1 facture&#10;  - searchbox &quot;Rechercher une facture par numéro ou tiers&quot;&#10;  - button &quot;Tous&quot; [pressed]&#10;  - button &quot;Ventes&quot;&#10;  - button &quot;Achats&quot;&#10;  - button &quot;Tous statuts&quot; [pressed]&#10;  - button &quot;Payées&quot;&#10;  - button &quot;Part. payées&quot;&#10;  - button &quot;En attente&quot;&#10;  - button &quot;En retard&quot;&#10;  - text: Du&#10;  - textbox &quot;Date de début des factures et indicateurs&quot;&#10;  - text: au&#10;  - textbox &quot;Date de fin des factures et indicateurs&quot;&#10;  - status: 1 facture&#10;  - table:&#10;    - rowgroup:&#10;      - row &quot;N° Facture Type Date Tiers Articles HT TVA TTC Statut Échéance&quot;:&#10;        - columnheader &quot;N° Facture&quot;&#10;        - columnheader &quot;Type&quot;&#10;        - columnheader &quot;Date&quot;&#10;        - columnheader &quot;Tiers&quot;&#10;        - columnheader &quot;Articles&quot;&#10;        - columnheader &quot;HT&quot;&#10;        - columnheader &quot;TVA&quot;&#10;        - columnheader &quot;TTC&quot;&#10;        - columnheader &quot;Statut&quot;&#10;        - columnheader &quot;Échéance&quot;&#10;        - columnheader&#10;    - rowgroup:&#10;      - row &quot;FA-2025-001 Achat 02/12/25 Fournisseur Contrôle Références Recette 1×Service fictif plafond843 200,00 40,00 240,00 Validée Part. payée Compta 31/01/26 (268j retard) Suppression impossible (validée)&quot;:&#10;        - cell &quot;FA-2025-001&quot;&#10;        - cell &quot;Achat&quot;&#10;        - cell &quot;02/12/25&quot;&#10;        - cell &quot;Fournisseur Contrôle Références Recette&quot;:&#10;          - strong: Fournisseur Contrôle Références Recette&#10;        - cell &quot;1×Service fictif plafond843&quot;&#10;        - cell &quot;200,00&quot;&#10;        - cell &quot;40,00&quot;&#10;        - cell &quot;240,00&quot;&#10;        - cell &quot;Validée Part. payée Compta&quot;&#10;        - cell &quot;31/01/26 (268j retard)&quot;&#10;        - cell &quot;Suppression impossible (validée)&quot;:&#10;          - button &quot;Pièces jointes&quot;&#10;          - button &quot;Payer le fournisseur&quot;&#10;          - button &quot;Dupliquer la facture&quot;&#10;          - button &quot;Suppression impossible (validée)&quot; [disabled]">application = {'api_url': 'http://127.0.0.1:64906', 'web_url': 'http://127.0.0.1:64907', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_w_0f__v_'), 'nonce': 'bf87ebdd2be44c3ba10ceb93b3f80fbe', ...}, ...}
+largeur = 390
+tmp_path = WindowsPath('C:/Users/Y_N_e/hisabpro - GPT/.codex-tests/recette859_corrige/test_859_reseau_erreur_reprise1')
+navigations_completes823 = None
+
+    @pytest.mark.parametrize('largeur',[1440,390])
+    def test_859_reseau_erreur_reprise_et_paiement_refresh(application,largeur,tmp_path,navigations_completes823):
+     with laboratoire(application,largeur,tmp_path,'reseau859') as (api,page,sid,preuve):
+      b=DATA['banque'];banque=ok(api.post('/api/banques',json={'banque':b['banque'],'rib':b['rib'],'compte_comptable':'5141','devise':'MAD'}),201);t=next(t for t in DATA['tiers'] if t['code']=='F-CONTROLE');t=ok(api.post('/api/tiers',json={'nom':t['nom'],'type':'fournisseur','compte_fournisseur':'4411'}),201);e=ok(api.post('/api/ecritures',json={'date':'2025-01-01','date_piece':'2025-01-01','journal':'BQ','reference':'TEMOIN-859','libelle':'Témoin fictif reprise859','lignes':[{'compte':'5141','debit':100},{'compte':'1111','credit':100}]}),201);ok(api.post(f'/api/ecritures/{e["id"]}/valider'));f=facture843(api,t,'achat','2025-12-02',200,'02');valider843(api);avant=core(application,sid);aborts=[];post=[];page.on('request',lambda r:post.append(r.url) if r.method=='POST' and r.url.endswith('/api/reglements') else None)
+      pattern=re.compile(re.escape(application['api_url'])+r'/api/ecritures(?:\?.*)?$')
+      def couper(route):aborts.append({'methode':route.request.method,'chemin':'/api/ecritures'});route.abort('failed')
+      page.context.route(pattern,couper);page.goto(application['web_url']+'/journal');alerte=page.get_by_role('alert').filter(has=page.get_by_text('Connexion au serveur',exact=False));expect(alerte).to_be_visible();expect(alerte.get_by_role('button',name='Réessayer',exact=True)).to_be_visible();expect(page.get_by_role('button',name='Nouvelle écriture',exact=True)).to_have_count(0);assert aborts and core(application,sid)==avant and not post
+      page.context.unroute(pattern,couper)
+      with page.expect_response(lambda r:'/api/ecritures?' in r.url and r.request.method=='GET') as rr:alerte.get_by_role('button',name='Réessayer',exact=True).click()
+      assert rr.value.status==200;expect(page.get_by_text('TEMOIN-859',exact=True)).to_be_visible();assert core(application,sid)==avant;origine=page.evaluate('performance.timeOrigin');preuve['reseau859']={'transport_coupe':aborts,'message_francais_visible':True,'aucune_action_financiere_pendant_coupure':True,'reprise_200':True,'journal_conserve':True,'limite':'Coupure ciblée du transportGET Journal,autres API et actifs locaux réels disponibles ;aucune réponse métier fabriquée.'}
+      naviguer859(page,'/factures','Facturation');row=page.locator('tbody tr').filter(has_text=t['nom']);row.get_by_title('Payer le fournisseur',exact=True).click();m=page.get_by_role('dialog');champ(m,'Montant *').fill('120');champ(m,'Date *').fill('2025-12-03');champ(m,'Banque','select').select_option(b['banque']);m.get_by_placeholder('N° chèque, virement...').fill('PAY-859')
+      with page.expect_response(lambda r:r.url.endswith('/api/reglements') and r.request.method=='POST') as rr:m.get_by_role('button',name='Enregistrer',exact=True).click()
+&gt;     ok(rr.value,201);m.wait_for(state='hidden');expect(row.locator('td[data-label="Statut"]')).to_contain_text(re.compile('part',re.I));assert ok(api.get(f'/api/factures/{f["id"]}/reglements'))['solde_restant']==120
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E     AssertionError: Locator expected to contain text 're.compile('part', re.IGNORECASE)'
+E     Actual value: None
+E     Error: element(s) not found 
+E     Call log:
+E       - Expect "to_contain_text" locator("tbody tr").filter(has_text="Fournisseur Contrôle Références Recette").locator("td[data-label=\"Statut\"]") with timeout 5000ms
+E       - waiting for locator("tbody tr").filter(has_text="Fournisseur Contrôle Références Recette").locator("td[data-label=\"Statut\"]")
+E     
+E     Aria snapshot:
+E     - button "Ouvrir la navigation"
+E     - button "Aucun exercice précédent" [disabled]
+E     - combobox "Exercice comptable":
+E       - option "2026 — Ouvert"
+E       - option "2025 — Ouvert" [selected]
+E     - button "Exercice 2026"
+E     - button "ATLAS RECETTE HISABPRO SARL — FICTIVE"
+E     - main:
+E       - heading "Factures" [level=1]
+E       - text: 1 facture en retard de paiement
+E       - button "Exporter CSV"
+E       - button "Nouvelle facture"
+E       - paragraph: Indicateurs de facturation sur la période sélectionnée, factures validées hors proformas et annulations, nets des avoirs datés sur cette période. HT après remises, avant escompte. Coûts moyens indicatifs ; ne remplace pas le CA comptable.
+E       - text: Facturation nette HT 0,00 MAD Ventes nettes TTC ▼ détail 0,00 MAD Achats nets TTC 240,00 MAD En attente 0 factures En retard 1 facture
+E       - searchbox "Rechercher une facture par numéro ou tiers"
+E       - button "Tous" [pressed]
+E       - button "Ventes"
+E       - button "Achats"
+E       - button "Tous statuts" [pressed]
+E       - button "Payées"
+E       - button "Part. payées"
+E       - button "En attente"
+E       - button "En retard"
+E       - text: Du
+E       - textbox "Date de début des factures et indicateurs"
+E       - text: au
+E       - textbox "Date de fin des factures et indicateurs"
+E       - status: 1 facture
+E       - table:
+E         - rowgroup:
+E           - row "N° Facture Type Date Tiers Articles HT TVA TTC Statut Échéance":
+E             - columnheader "N° Facture"
+E             - columnheader "Type"
+E             - columnheader "Date"
+E             - columnheader "Tiers"
+E             - columnheader "Articles"
+E             - columnheader "HT"
+E             - columnheader "TVA"
+E             - columnheader "TTC"
+E             - columnheader "Statut"
+E             - columnheader "Échéance"
+E             - columnheader
+E         - rowgroup:
+E           - row "FA-2025-001 Achat 02/12/25 Fournisseur Contrôle Références Recette 1×Service fictif plafond843 200,00 40,00 240,00 Validée Part. payée Compta 31/01/26 (268j retard) Suppression impossible (validée)":
+E             - cell "FA-2025-001"
+E             - cell "Achat"
+E             - cell "02/12/25"
+E             - cell "Fournisseur Contrôle Références Recette":
+E               - strong: Fournisseur Contrôle Références Recette
+E             - cell "1×Service fictif plafond843"
+E             - cell "200,00"
+E             - cell "40,00"
+E             - cell "240,00"
+E             - cell "Validée Part. payée Compta"
+E             - cell "31/01/26 (268j retard)"
+E             - cell "Suppression impossible (validée)":
+E               - button "Pièces jointes"
+E               - button "Payer le fournisseur"
+E               - button "Dupliquer la facture"
+E               - button "Suppression impossible (validée)" [disabled]
+
+Test\test_e2e_cahier_reseau859_isole.py:31: AssertionError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,35 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_w2vhctqd",
+  "nonce": "530af0fa26084d97a0972b778b43f027",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [
+    {
+      "id": "HP-SEC-007",
+      "statut": "Réussi"
+    }
+  ],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "pdf857": {
+    "UI": {
+      "pages": 1,
+      "identite_litterale": "Atlas <SARL> & associés",
+      "reference_litterale": "Réf <PIECE> & 857",
+      "nb_images": 1,
+      "sha256": "3a0806f327dff234cd839ec3fe64f58c9b5513c92e6215f6358383f458810c79"
+    },
+    "API": {
+      "pages": 1,
+      "identite_litterale": "Atlas <SARL> & associés",
+      "reference_litterale": "Réf <PIECE> & 857",
+      "nb_images": 1,
+      "sha256": "9264cef92754ec8968d9724ec5fa075265a702e276e817a1ae08c5617e300d9d"
+    },
+    "journal_identite_logo_conserves": true,
+    "chemin_pdf_ui": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\recette857_cible\\test_857_pdf_identite_litteral0\\facture857.pdf",
+    "limite": "PDF facture de cette copie uniquement ;pas une validation de tous les formats ou de conformité réglementaire."
+  }
+}

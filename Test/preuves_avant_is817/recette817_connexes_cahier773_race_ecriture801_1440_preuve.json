@@ -1,0 +1,23 @@
+{
+  "cible_isolee": "C:\\Users\\Y_N_e\\hisabpro - GPT\\.codex-tests\\hisabpro_pg_sfiyri6i",
+  "nonce": "f94f02d659664478a0d36cd8af7d8e42",
+  "source_sha256": "b43b21328e5ff5fed5f327022cb11f5c8c92dc6e1f47deb4d7a659fb93e157a7",
+  "largeur": 1440,
+  "cas": [],
+  "tiers": {},
+  "articles": {},
+  "erreur": null,
+  "preconditions": "Société et paramètres par API ;leurs formulaires ont été testés séparément769. Email de laboratoire unique ;autres valeurs exactes du cahier.",
+  "race801": {
+    "get_avant": [],
+    "get_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "post201_id": 1,
+    "api_apres_ids": [
+      1
+    ],
+    "transport": "Réponse GET réelle retenue sans modifier les données ;POST etvalidation réels.",
+    "creation_preservee_apres_get_ancien": true,
+    "numero_officiel_affiche": "BQ-2025-0001",
+    "validation_reelle_et_montants_preserves": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "societe": "RECETTE PERSONNEL879 — FICTIF, copie isolée",
+  "menu": "05 · Fiscalité salariale → Contrôle annuel IR",
+  "annee": "2026",
+  "rni_annuel_deja_etabli": "40000.01",
+  "personnes_charge_confirmees": "0",
+  "reference_rni": "RNI-FICTIF911",
+  "reference_famille": "FAMILLE-FICTIVE911",
+  "motif": "Contrôle annuel FICTIF911",
+  "confirmations": "Cadre général/RNI ; éligibilité fiscale de zéro personne ; périmètre arithmétique sans paie ou déclaration.",
+  "attendu_sans_arrondi": "0.0010",
+  "base_annuelle_arrondie": "40010.00",
+  "ir_avant_reduction_sur_base_arrondie": "1.0000",
+  "reduction_appliquee": "0.0000",
+  "ir_comparatif": "1.0000",
+  "ecart": "0.9990",
+  "source": "CGI2026 article167 page317, copieDGI duCRI, SHAfe03c94471aefd23a9be9de11da5bff0593b45a72c2f90939eeaae7298b413e1",
+  "essai_multiple": "RNI40010.00, mêmes personnes/références/confirmations ; base40010.00, impôt1.0000, écart0.0000.",
+  "essai_famille_inconnue": "RNI40000.01, personnes Inconnu, ne pas confirmer la famille ; base40010.00 connue, impôt après réduction À compléter.",
+  "essai_reduction": "RNI40000.01, personnes6 confirmées ; réduction appliquée1.0000 sur base arrondie, résultat0.0000, aucun crédit.",
+  "essai_zero": "RNI0.00 et personnes0 confirmés ; base0.00 connue, résultat0.0000.",
+  "attention": "Données fictives ; aucune retenue mensuelle, somme à verser, imputation, déclaration ou paie définitive."
+}

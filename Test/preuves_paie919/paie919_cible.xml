@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="9" skipped="0" tests="30" time="93.540" timestamp="2026-10-28T23:23:16.649425+01:00" hostname="Taiyou"><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_faits_independants_periode_longue_sans_prorata[kw0]" time="0.002" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_faits_independants_periode_longue_sans_prorata[kw1]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_faits_independants_periode_longue_sans_prorata[kw2]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_faits_independants_periode_longue_sans_prorata[kw3]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw0]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw1]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw2]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw3]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw4]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw5]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw6]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw7]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw8]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw9]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw10]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw11]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_dates_et_references_strictes[kw12]" time="0.001" /><testcase classname="Test.test_paie919_rattachement_unitaire" name="test_919_objet_vide_refuse_absence_historique_preservee" time="0.001" /><testcase classname="Test.test_paie919_rattachement_isole" name="test_919_faits_approbation_sources_sans_changer_le_brut" time="35.648"><failure message="AssertionError: assert '42501' == '23514'&#10;  &#10;  - 23514&#10;  + 42501">application = {'api_url': 'http://127.0.0.1:53971', 'web_url': 'http://127.0.0.1:53972', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_z706_a9x'), 'nonce': '8aef0c17d67e4bdb9d020ac401e28cd3', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000002BA4F941C50&gt;, 'b': &lt;httpx.Client object at 0x000002BA4FA4F390&gt;, 'l': &lt;httpx.Client object at 0x000002BA4F0F0710&gt;, 'uid': 5, ...}
+
+    def test_919_faits_approbation_sources_sans_changer_le_brut(application,equipe):
+        eq=equipe;avant=comptabilite(application,eq['sid']);eid,_,v=preparer(eq)
+        r=ok(eq['a'].get(f'{V}/{v["id"]}'));assert r['donnees']['rattachement_revenus']==declaration() and r['periode']=='2026-11-01' and r['date_effet']=='2026-11-15'
+        q=simuler(eq,[eid]);e=q['contenu']['employes'][0];assert e['brut']=='9800.11'
+        assert e['variables'][0]['rattachement_revenus']=={'reference_debut':'2025-01-01','reference_fin':'2025-12-31','versement_date':'2026-12-05'}
+        assert 'PRIME-ANNUELLE-FICTIVE919' not in json.dumps(q['contenu']) and 'VERSEMENT-DECLARE-FICTIF919' not in json.dumps(q['contenu'])
+        for engine in [application['engine'],application['personnel_runtime']]:
+            with pytest.raises(DBAPIError) as erreur:
+                with engine.begin() as db:db.execute(text("UPDATE paie_variables SET donnees=jsonb_set(donnees,'{rattachement_revenus,versement_date}','\"2026-11-01\"') WHERE id=:i"),{'i':v['id']})
+&gt;           assert erreur.value.orig.pgcode=='23514'
+E           AssertionError: assert '42501' == '23514'
+E             
+E             - 23514
+E             + 42501
+
+Test\test_paie919_rattachement_isole.py:41: AssertionError</failure></testcase><testcase classname="Test.test_paie919_rattachement_isole" name="test_919_anciens_json_sans_reconstruction_ni_dates_inventees" time="4.143" /><testcase classname="Test.test_paie919_rattachement_isole" name="test_919_garde_postgresql_native_json[r0]" time="4.122"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'Rattachement documentaire'&#10;  Actual message: &quot;(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,'{rattachement_revenus}',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {'r': '{}', 'i': 3}]\n(Background on this error at: https://sqlalche.me/e/20/f405)&quot;">application = {'api_url': 'http://127.0.0.1:53971', 'web_url': 'http://127.0.0.1:53972', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_z706_a9x'), 'nonce': '8aef0c17d67e4bdb9d020ac401e28cd3', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000002BA4F4633D0&gt;, 'b': &lt;httpx.Client object at 0x000002BA4FA4F690&gt;, 'l': &lt;httpx.Client object at 0x000002BA4FA69ED0&gt;, 'uid': 11, ...}
+r = {}
+
+    @pytest.mark.parametrize('r',[{},[],True,{'reference_debut':'2025-02-30'},declaration(reference_fin='2024-01-01'),declaration(versement_reference=''),declaration(versement_date=True),declaration(inconnu=1)])
+    def test_919_garde_postgresql_native_json(application,equipe,r):
+        eq=equipe;eid,_=salarie(eq);rid=rubrique(eq);v=envoyer(eq,eid,rid)
+        for engine in [application['engine'],application['personnel_runtime']]:
+&gt;           with pytest.raises(DBAPIError,match='Rattachement documentaire') as e:
+E           AssertionError: Regex pattern did not match.
+E             Expected regex: 'Rattachement documentaire'
+E             Actual message: "(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,'{rattachement_revenus}',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {'r': '{}', 'i': 3}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+
+Test\test_paie919_rattachement_isole.py:54: AssertionError</failure></testcase><testcase classname="Test.test_paie919_rattachement_isole" name="test_919_garde_postgresql_native_json[r1]" time="4.166"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'Rattachement documentaire'&#10;  Actual message: &quot;(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,'{rattachement_revenus}',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {'r': '[]', 'i': 4}]\n(Background on this error at: https://sqlalche.me/e/20/f405)&quot;">application = {'api_url': 'http://127.0.0.1:53971', 'web_url': 'http://127.0.0.1:53972', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_z706_a9x'), 'nonce': '8aef0c17d67e4bdb9d020ac401e28cd3', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000002BA4F546050&gt;, 'b': &lt;httpx.Client object at 0x000002BA4FA6B8D0&gt;, 'l': &lt;httpx.Client object at 0x000002BA4FA79FD0&gt;, 'uid': 14, ...}
+r = []
+
+    @pytest.mark.parametrize('r',[{},[],True,{'reference_debut':'2025-02-30'},declaration(reference_fin='2024-01-01'),declaration(versement_reference=''),declaration(versement_date=True),declaration(inconnu=1)])
+    def test_919_garde_postgresql_native_json(application,equipe,r):
+        eq=equipe;eid,_=salarie(eq);rid=rubrique(eq);v=envoyer(eq,eid,rid)
+        for engine in [application['engine'],application['personnel_runtime']]:
+&gt;           with pytest.raises(DBAPIError,match='Rattachement documentaire') as e:
+E           AssertionError: Regex pattern did not match.
+E             Expected regex: 'Rattachement documentaire'
+E             Actual message: "(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,'{rattachement_revenus}',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {'r': '[]', 'i': 4}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+
+Test\test_paie919_rattachement_isole.py:54: AssertionError</failure></testcase><testcase classname="Test.test_paie919_rattachement_isole" name="test_919_garde_postgresql_native_json[True]" time="4.251"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'Rattachement documentaire'&#10;  Actual message: &quot;(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,'{rattachement_revenus}',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {'r': 'true', 'i': 5}]\n(Background on this error at: https://sqlalche.me/e/20/f405)&quot;">application = {'api_url': 'http://127.0.0.1:53971', 'web_url': 'http://127.0.0.1:53972', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_z706_a9x'), 'nonce': '8aef0c17d67e4bdb9d020ac401e28cd3', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000002BA4F7D7050&gt;, 'b': &lt;httpx.Client object at 0x000002BA4F48AB10&gt;, 'l': &lt;httpx.Client object at 0x000002BA4F97E310&gt;, 'uid': 17, ...}
+r = True
+
+    @pytest.mark.parametrize('r',[{},[],True,{'reference_debut':'2025-02-30'},declaration(reference_fin='2024-01-01'),declaration(versement_reference=''),declaration(versement_date=True),declaration(inconnu=1)])
+    def test_919_garde_postgresql_native_json(application,equipe,r):
+        eq=equipe;eid,_=salarie(eq);rid=rubrique(eq);v=envoyer(eq,eid,rid)
+        for engine in [application['engine'],application['personnel_runtime']]:
+&gt;           with pytest.raises(DBAPIError,match='Rattachement documentaire') as e:
+E           AssertionError: Regex pattern did not match.
+E             Expected regex: 'Rattachement documentaire'
+E             Actual message: "(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,'{rattachement_revenus}',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {'r': 'true', 'i': 5}]\n(Background on this error at: https://sqlalche.me/e/20/f405)"
+
+Test\test_paie919_rattachement_isole.py:54: AssertionError</failure></testcase><testcase classname="Test.test_paie919_rattachement_isole" name="test_919_garde_postgresql_native_json[r3]" time="4.027"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'Rattachement documentaire'&#10;  Actual message: '(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,\'{rattachement_revenus}\',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {\'r\': \'{&quot;reference_debut&quot;: &quot;2025-02-30&quot;}\', \'i\': 6}]\n(Background on this error at: https://sqlalche.me/e/20/f405)'">application = {'api_url': 'http://127.0.0.1:53971', 'web_url': 'http://127.0.0.1:53972', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_z706_a9x'), 'nonce': '8aef0c17d67e4bdb9d020ac401e28cd3', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000002BA4F996850&gt;, 'b': &lt;httpx.Client object at 0x000002BA4FA50D50&gt;, 'l': &lt;httpx.Client object at 0x000002BA4FA7B490&gt;, 'uid': 20, ...}
+r = {'reference_debut': '2025-02-30'}
+
+    @pytest.mark.parametrize('r',[{},[],True,{'reference_debut':'2025-02-30'},declaration(reference_fin='2024-01-01'),declaration(versement_reference=''),declaration(versement_date=True),declaration(inconnu=1)])
+    def test_919_garde_postgresql_native_json(application,equipe,r):
+        eq=equipe;eid,_=salarie(eq);rid=rubrique(eq);v=envoyer(eq,eid,rid)
+        for engine in [application['engine'],application['personnel_runtime']]:
+&gt;           with pytest.raises(DBAPIError,match='Rattachement documentaire') as e:
+E           AssertionError: Regex pattern did not match.
+E             Expected regex: 'Rattachement documentaire'
+E             Actual message: '(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,\'{rattachement_revenus}\',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {\'r\': \'{"reference_debut": "2025-02-30"}\', \'i\': 6}]\n(Background on this error at: https://sqlalche.me/e/20/f405)'
+
+Test\test_paie919_rattachement_isole.py:54: AssertionError</failure></testcase><testcase classname="Test.test_paie919_rattachement_isole" name="test_919_garde_postgresql_native_json[r4]" time="3.673"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'Rattachement documentaire'&#10;  Actual message: '(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,\'{rattachement_revenus}\',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {\'r\': \'{&quot;reference_debut&quot;: &quot;2025-01-01&quot;, &quot;reference_fin&quot;: &quot;2024-01-01&quot;, &quot;reference_justification&quot;: &quot;PRIME-ANNUELLE-FICTIVE919&quot;, &quot;versement_date&quot;: &quot;2026-12-05&quot;, &quot;versement_reference&quot;: &quot;VERSEMENT-DECLARE-FICTIF919&quot;}\', \'i\': 7}]\n(Background on this error at: https://sqlalche.me/e/20/f405)'">application = {'api_url': 'http://127.0.0.1:53971', 'web_url': 'http://127.0.0.1:53972', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_z706_a9x'), 'nonce': '8aef0c17d67e4bdb9d020ac401e28cd3', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000002BA4FB83190&gt;, 'b': &lt;httpx.Client object at 0x000002BA4FB81010&gt;, 'l': &lt;httpx.Client object at 0x000002BA4FA659D0&gt;, 'uid': 23, ...}
+r = {'reference_debut': '2025-01-01', 'reference_fin': '2024-01-01', 'reference_justification': 'PRIME-ANNUELLE-FICTIVE919', 'versement_date': '2026-12-05', ...}
+
+    @pytest.mark.parametrize('r',[{},[],True,{'reference_debut':'2025-02-30'},declaration(reference_fin='2024-01-01'),declaration(versement_reference=''),declaration(versement_date=True),declaration(inconnu=1)])
+    def test_919_garde_postgresql_native_json(application,equipe,r):
+        eq=equipe;eid,_=salarie(eq);rid=rubrique(eq);v=envoyer(eq,eid,rid)
+        for engine in [application['engine'],application['personnel_runtime']]:
+&gt;           with pytest.raises(DBAPIError,match='Rattachement documentaire') as e:
+E           AssertionError: Regex pattern did not match.
+E             Expected regex: 'Rattachement documentaire'
+E             Actual message: '(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,\'{rattachement_revenus}\',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {\'r\': \'{"reference_debut": "2025-01-01", "reference_fin": "2024-01-01", "reference_justification": "PRIME-ANNUELLE-FICTIVE919", "versement_date": "2026-12-05", "versement_reference": "VERSEMENT-DECLARE-FICTIF919"}\', \'i\': 7}]\n(Background on this error at: https://sqlalche.me/e/20/f405)'
+
+Test\test_paie919_rattachement_isole.py:54: AssertionError</failure></testcase><testcase classname="Test.test_paie919_rattachement_isole" name="test_919_garde_postgresql_native_json[r5]" time="4.127"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'Rattachement documentaire'&#10;  Actual message: '(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,\'{rattachement_revenus}\',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {\'r\': \'{&quot;reference_debut&quot;: &quot;2025-01-01&quot;, &quot;reference_fin&quot;: &quot;2025-12-31&quot;, &quot;reference_justification&quot;: &quot;PRIME-ANNUELLE-FICTIVE919&quot;, &quot;versement_date&quot;: &quot;2026-12-05&quot;, &quot;versement_reference&quot;: &quot;&quot;}\', \'i\': 8}]\n(Background on this error at: https://sqlalche.me/e/20/f405)'">application = {'api_url': 'http://127.0.0.1:53971', 'web_url': 'http://127.0.0.1:53972', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_z706_a9x'), 'nonce': '8aef0c17d67e4bdb9d020ac401e28cd3', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000002BA4F484BD0&gt;, 'b': &lt;httpx.Client object at 0x000002BA4FA4F7D0&gt;, 'l': &lt;httpx.Client object at 0x000002BA4FA50810&gt;, 'uid': 26, ...}
+r = {'reference_debut': '2025-01-01', 'reference_fin': '2025-12-31', 'reference_justification': 'PRIME-ANNUELLE-FICTIVE919', 'versement_date': '2026-12-05', ...}
+
+    @pytest.mark.parametrize('r',[{},[],True,{'reference_debut':'2025-02-30'},declaration(reference_fin='2024-01-01'),declaration(versement_reference=''),declaration(versement_date=True),declaration(inconnu=1)])
+    def test_919_garde_postgresql_native_json(application,equipe,r):
+        eq=equipe;eid,_=salarie(eq);rid=rubrique(eq);v=envoyer(eq,eid,rid)
+        for engine in [application['engine'],application['personnel_runtime']]:
+&gt;           with pytest.raises(DBAPIError,match='Rattachement documentaire') as e:
+E           AssertionError: Regex pattern did not match.
+E             Expected regex: 'Rattachement documentaire'
+E             Actual message: '(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,\'{rattachement_revenus}\',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {\'r\': \'{"reference_debut": "2025-01-01", "reference_fin": "2025-12-31", "reference_justification": "PRIME-ANNUELLE-FICTIVE919", "versement_date": "2026-12-05", "versement_reference": ""}\', \'i\': 8}]\n(Background on this error at: https://sqlalche.me/e/20/f405)'
+
+Test\test_paie919_rattachement_isole.py:54: AssertionError</failure></testcase><testcase classname="Test.test_paie919_rattachement_isole" name="test_919_garde_postgresql_native_json[r6]" time="4.298"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'Rattachement documentaire'&#10;  Actual message: '(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,\'{rattachement_revenus}\',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {\'r\': \'{&quot;reference_debut&quot;: &quot;2025-01-01&quot;, &quot;reference_fin&quot;: &quot;2025-12-31&quot;, &quot;reference_justification&quot;: &quot;PRIME-ANNUELLE-FICTIVE919&quot;, &quot;versement_date&quot;: true, &quot;versement_reference&quot;: &quot;VERSEMENT-DECLARE-FICTIF919&quot;}\', \'i\': 9}]\n(Background on this error at: https://sqlalche.me/e/20/f405)'">application = {'api_url': 'http://127.0.0.1:53971', 'web_url': 'http://127.0.0.1:53972', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_z706_a9x'), 'nonce': '8aef0c17d67e4bdb9d020ac401e28cd3', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000002BA4FA4EE90&gt;, 'b': &lt;httpx.Client object at 0x000002BA4FA51AD0&gt;, 'l': &lt;httpx.Client object at 0x000002BA4F48CB10&gt;, 'uid': 29, ...}
+r = {'reference_debut': '2025-01-01', 'reference_fin': '2025-12-31', 'reference_justification': 'PRIME-ANNUELLE-FICTIVE919', 'versement_date': True, ...}
+
+    @pytest.mark.parametrize('r',[{},[],True,{'reference_debut':'2025-02-30'},declaration(reference_fin='2024-01-01'),declaration(versement_reference=''),declaration(versement_date=True),declaration(inconnu=1)])
+    def test_919_garde_postgresql_native_json(application,equipe,r):
+        eq=equipe;eid,_=salarie(eq);rid=rubrique(eq);v=envoyer(eq,eid,rid)
+        for engine in [application['engine'],application['personnel_runtime']]:
+&gt;           with pytest.raises(DBAPIError,match='Rattachement documentaire') as e:
+E           AssertionError: Regex pattern did not match.
+E             Expected regex: 'Rattachement documentaire'
+E             Actual message: '(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,\'{rattachement_revenus}\',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {\'r\': \'{"reference_debut": "2025-01-01", "reference_fin": "2025-12-31", "reference_justification": "PRIME-ANNUELLE-FICTIVE919", "versement_date": true, "versement_reference": "VERSEMENT-DECLARE-FICTIF919"}\', \'i\': 9}]\n(Background on this error at: https://sqlalche.me/e/20/f405)'
+
+Test\test_paie919_rattachement_isole.py:54: AssertionError</failure></testcase><testcase classname="Test.test_paie919_rattachement_isole" name="test_919_garde_postgresql_native_json[r7]" time="4.163"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'Rattachement documentaire'&#10;  Actual message: '(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,\'{rattachement_revenus}\',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {\'r\': \'{&quot;reference_debut&quot;: &quot;2025-01-01&quot;, &quot;reference_fin&quot;: &quot;2025-12-31&quot;, &quot;reference_justification&quot;: &quot;PRIME-ANNUELLE-FICTIVE919&quot;, &quot;versement_date&quot;: &quot;2026-12-05&quot;, &quot;versement_reference&quot;: &quot;VERSEMENT-DECLARE-FICTIF919&quot;, &quot;inconnu&quot;: 1}\', \'i\': 10}]\n(Background on this error at: https://sqlalche.me/e/20/f405)'">application = {'api_url': 'http://127.0.0.1:53971', 'web_url': 'http://127.0.0.1:53972', 'engine': Engine(postgresql+psycopg2://hisa...Users/Y_N_e/hisabpro - GPT/.codex-tests/hisabpro_pg_z706_a9x'), 'nonce': '8aef0c17d67e4bdb9d020ac401e28cd3', ...}, ...}
+equipe = {'a': &lt;httpx.Client object at 0x000002BA4F9F4DD0&gt;, 'b': &lt;httpx.Client object at 0x000002BA4FA653D0&gt;, 'l': &lt;httpx.Client object at 0x000002BA4FB73C90&gt;, 'uid': 32, ...}
+r = {'reference_debut': '2025-01-01', 'reference_fin': '2025-12-31', 'reference_justification': 'PRIME-ANNUELLE-FICTIVE919', 'versement_date': '2026-12-05', ...}
+
+    @pytest.mark.parametrize('r',[{},[],True,{'reference_debut':'2025-02-30'},declaration(reference_fin='2024-01-01'),declaration(versement_reference=''),declaration(versement_date=True),declaration(inconnu=1)])
+    def test_919_garde_postgresql_native_json(application,equipe,r):
+        eq=equipe;eid,_=salarie(eq);rid=rubrique(eq);v=envoyer(eq,eid,rid)
+        for engine in [application['engine'],application['personnel_runtime']]:
+&gt;           with pytest.raises(DBAPIError,match='Rattachement documentaire') as e:
+E           AssertionError: Regex pattern did not match.
+E             Expected regex: 'Rattachement documentaire'
+E             Actual message: '(psycopg2.errors.InsufficientPrivilege) permission denied for table paie_variables\n\n[SQL: UPDATE paie_variables SET donnees=jsonb_set(donnees,\'{rattachement_revenus}\',CAST(%(r)s AS jsonb)) WHERE id=%(i)s]\n[parameters: {\'r\': \'{"reference_debut": "2025-01-01", "reference_fin": "2025-12-31", "reference_justification": "PRIME-ANNUELLE-FICTIVE919", "versement_date": "2026-12-05", "versement_reference": "VERSEMENT-DECLARE-FICTIF919", "inconnu": 1}\', \'i\': 10}]\n(Background on this error at: https://sqlalche.me/e/20/f405)'
+
+Test\test_paie919_rattachement_isole.py:54: AssertionError</failure></testcase><testcase classname="Test.test_paie919_rattachement_isole" name="test_919_masquage_references_societes_et_revocation" time="6.893" /><testcase classname="Test.test_paie919_rattachement_isole" name="test_919_garde_absent_ne_casse_pas_saisie_historique" time="9.319" /></testsuite></testsuites>

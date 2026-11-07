@@ -1,0 +1,28 @@
+{
+  "rni_source": {
+    "id": 1,
+    "nom": "Salariée FICTIVE893",
+    "annee": 2026,
+    "empreinte": "77314bab5812b35a3742d53583a087d8230449397194322c2d601a2f08e709ee",
+    "matricule": "P909",
+    "employe_id": 2,
+    "regle_arrondi": {
+      "url": "https://casainvest.ma/sites/default/files/2026-02/Code%20impo%CC%82ts%202026.pdf",
+      "sens": "SUPERIEUR",
+      "unite": "10.00",
+      "reference": "CGI2026, article167, page imprimée317",
+      "document_sha256": "fe03c94471aefd23a9be9de11da5bff0593b45a72c2f90939eeaae7298b413e1",
+      "version_interne": "IR-BASE-ANNUELLE-2026-167-911",
+      "date_consultation": "2026-10-28"
+    },
+    "rni_avant_arrondis": "83881.0200",
+    "base_annuelle_utilisee": "83890.00",
+    "reference_controle_annuel": "ANNEE-FICTIVE913",
+    "source_annuelle_confirmee": true
+  },
+  "ir_avant_reduction": "7167.0000",
+  "ir_annuel_arithmetique": "5967.0000",
+  "mois_reellement_prepares": 12,
+  "comptabilite_inchangee": true,
+  "aucune_base_reelle": true
+}
