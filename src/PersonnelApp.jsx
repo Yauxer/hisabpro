@@ -26,7 +26,7 @@ function EspacePersonnel(){
     </div><main className={s.content}><Outlet/></main></div>
   </div>
 }
-export default function PersonnelApp(){return <BrowserRouter><Routes><Route path="/" element={<EspacePersonnel/>}>
+export default function PersonnelApp(){return <BrowserRouter basename={import.meta.env.BASE_URL}><Routes><Route path="/" element={<EspacePersonnel/>}>
   <Route index element={<Navigate to="/personnel-paie/personnel" replace/>}/>
   <Route path="personnel-paie/compte" element={<div style={{padding:20}}><CompteSecurite/></div>}/>
   <Route path="personnel-paie/personnel" element={<Personnel/>}/>
