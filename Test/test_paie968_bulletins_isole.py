@@ -64,6 +64,9 @@ def test_968_bulletin_avance_comptabilisation_paiement_etats(application, equipe
     net_sans_avance = Decimal(ap['brut']) - Decimal(ap['cotisations_salariales']) - Decimal('497.02')
     assert net_sans_avance > 400
     assert ap['ir_arithmetique'] == '497.0240' and ap['deja_etabli'] is None
+    # 977 : la caisse est alimentée avant le versement de l'avance en espèces.
+    ok(eq['a'].post('/api/ecritures', json={'date': '2026-11-01', 'journal': 'CA', 'libelle': 'Apport en caisse FICTIF968', 'est_validee': True,
+        'lignes': [{'compte': '5161', 'libelle': 'Caisse', 'debit': 5000, 'credit': 0}, {'compte': '1111', 'libelle': 'Apport', 'debit': 0, 'credit': 5000}]}), 201)
     av = ok(eq['a'].post(B + '/avances', json={'employe_id': eid, 'nature': 'AVANCE', 'date_octroi': '2026-11-03', 'montant': '1000.00',
                                                 'retenue_mensuelle': '400.00', 'mode_versement': 'especes', 'motif': 'Avance fictive968'}), 201)
     va = ok(eq['a'].post(f'{B}/avances/{av["id"]}/comptabiliser'), 201)

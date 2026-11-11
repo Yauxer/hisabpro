@@ -19,6 +19,7 @@ from services import (paie_campagnes_service as brut, paie_social_calcul_service
                       paie_ir_mensuel_service as mensuel, personnel_workflow_service as w)
 from services.paie_catalogue_schemas import Base
 from services.personnel_dossiers_service import montant_exact
+from services.tresorerie_service import verifier_sortie as verifier_sortie_caisse
 
 D = Decimal
 ZERO = D('0.00')
@@ -197,6 +198,7 @@ def comptabiliser_avance(db, user, ident):
     if a['ecriture_id']:
         raise HTTPException(409, 'Le versement de cette avance est déjà comptabilisé.')
     journal, tresorerie = TRESORERIE[a['mode_versement']]
+    verifier_sortie_caisse(db, sid, tresorerie, a['montant'], a['date_octroi'])  # lot 977
     libelle = f"{'Prêt' if a['nature'] == 'PRET' else 'Avance'} au personnel — {a['nom']}"
     e = ecrire(db, user, a['date_octroi'], journal, libelle, f'AV-{a["id"]}',
                [(COMPTES['avances'], libelle, a['montant'], ZERO), (tresorerie, libelle, ZERO, a['montant'])])
@@ -450,6 +452,7 @@ def payer(db, user, data):
     if total <= 0:
         raise HTTPException(409, 'Net total nul : aucun paiement à enregistrer.')
     journal, tresorerie = TRESORERIE[data.mode]
+    verifier_sortie_caisse(db, sid, tresorerie, total, data.date_paiement)  # lot 977
     noms = ', '.join(sorted({r['contenu']['nom'] for r in rows}))
     libelle = f'Paiement salaires — {noms}' if len(rows) <= 3 else f'Paiement salaires — {len(rows)} salariés'
     e = ecrire(db, user, data.date_paiement, journal, libelle, data.reference or f'PAIE-REG-{data.date_paiement:%Y%m%d}',

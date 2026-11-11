@@ -57,6 +57,24 @@ def _sc(soldes: Dict[str, Any], prefixes: Iterable[str]) -> Decimal:
     return money(total)
 
 
+def _sd_positifs(soldes: Dict[str, Any], prefixes: Iterable[str]) -> Decimal:
+    """Lot 977 : somme des seuls comptes à solde débiteur (présentation actif)."""
+    ps = tuple(prefixes)
+    return money(sum((max(ZERO, money(v.get("debit")) - money(v.get("credit"))) for c, v in (soldes or {}).items() if c.startswith(ps)), ZERO))
+
+
+def _sc_positifs(soldes: Dict[str, Any], prefixes: Iterable[str]) -> Decimal:
+    """Lot 977 : somme des seuls comptes à solde créditeur (présentation passif)."""
+    ps = tuple(prefixes)
+    return money(sum((max(ZERO, money(v.get("credit")) - money(v.get("debit"))) for c, v in (soldes or {}).items() if c.startswith(ps)), ZERO))
+
+
+def caisses_creditrices(soldes: Dict[str, Any]) -> Dict[str, Decimal]:
+    """Lot 977 : une caisse ne peut jamais être créditrice ; anomalie à corriger, jamais reclassée."""
+    return {c: money(money(v.get("credit")) - money(v.get("debit"))) for c, v in (soldes or {}).items()
+            if c.startswith("516") and money(v.get("credit")) - money(v.get("debit")) > ZERO}
+
+
 def calculer_cpc(soldes: Dict[str, Any]) -> Dict[str, Any]:
     pexpl = {
         "Ventes de marchandises": _sc(soldes, ("711",)),
@@ -155,7 +173,7 @@ def calculer_bilan(soldes: Dict[str, Any], resultat_net) -> Dict[str, Any]:
     ]
     treso=[
         aligne("511","Chèques et valeurs à encaisser",_sd(soldes,("511",))),
-        aligne("514","Banques, TG et CCP",_sd(soldes,("514",))),
+        aligne("514","Banques, TG et CCP",_sd_positifs(soldes,("514",))),
         aligne("516","Caisses, régies d'avances",_sd(soldes,("516",)),_sc(soldes,("59",))),
     ]
     def total_actif(rows):
@@ -190,7 +208,7 @@ def calculer_bilan(soldes: Dict[str, Any], resultat_net) -> Dict[str, Any]:
         pligne("45","Autres provisions pour risques et charges",_sc(soldes,("45",))),
         pligne("47","Écarts de conversion - passif circulant",_sc(soldes,("47",))),
     ]
-    tp=[pligne("552/553","Crédits d'escompte et de trésorerie",_sc(soldes,("552","553"))),pligne("554","Banques (soldes créditeurs)",_sc(soldes,("554",)))]
+    tp=[pligne("552/553","Crédits d'escompte et de trésorerie",_sc(soldes,("552","553"))),pligne("554","Banques (soldes créditeurs)",_sc(soldes,("554",))+_sc_positifs(soldes,("514",)))]
     total_cp=money(sum((money(x["montant"]) for x in cp),ZERO)); total_fp=money(total_cp+sum((money(x["montant"]) for x in fp),ZERO))
     total_pc=money(sum((money(x["montant"]) for x in pc),ZERO)); total_tp=money(sum((money(x["montant"]) for x in tp),ZERO)); total_passif=money(total_fp+total_pc+total_tp)
     ecart=money(total_actif["net"])-total_passif
@@ -462,6 +480,10 @@ def construire_liasse(db: Session, societe_id: int, exercice: int) -> Dict[str, 
     checks.append(_controle("IDENTITE_IF","Identifiant fiscal renseigné",bool((soc.identifiant_fiscal or "").strip()),"Renseignez l'IF dans les paramètres société."))
     checks.append(_controle("IDENTITE_ICE","ICE renseigné",bool((soc.ice or "").strip()),"Renseignez l'ICE dans les paramètres société."))
     checks.append(_controle("SOURCE_BALANCE","Balance générale équilibrée",src["controle"]["balance_equilibree"],f"Écart : {src['controle']['ecart_balance']:.2f} MAD"))
+    creditrices=caisses_creditrices(s)
+    checks.append(_controle("CAISSE_CREDITRICE","Aucune caisse créditrice",not creditrices,
+        ("Caisse créditrice : "+", ".join(f"{c} ({m:.2f} MAD)" for c,m in creditrices.items())+
+         ". Une caisse ne peut pas être créditrice : enregistrez l'alimentation manquante (solde d'ouverture, apport, retrait bancaire) ou corrigez la sortie par contrepassation.") if creditrices else ""))
     checks.append(_controle("BROUILLONS","Aucun brouillon dans l'exercice",src["source"]["brouillons_exclus"]==0,f"{src['source']['brouillons_exclus']} brouillon(s) exclu(s)."))
     clos=bool(src["source"].get("exercice_clos")) or bool(ex and ex.statut=="cloture")
     checks.append(_controle("EXERCICE_CLOTURE","Exercice comptable clôturé",clos,"La liasse peut être prévisualisée avant clôture, mais pas finalisée."))

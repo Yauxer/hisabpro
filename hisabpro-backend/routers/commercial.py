@@ -18,6 +18,7 @@ import valorisation
 from routers.factures import _libelle_ecriture
 from services.commercial_numero_service import reserver_numero_commercial
 from services.compta_mapping_service import compte_tiers, compte_tiers_facture, compte_tresorerie
+from services.tresorerie_service import verifier_sortie as verifier_sortie_caisse
 from services.auxiliaire_service import rattacher_tiers_aux_lignes
 from services.tva_regles_service import valider_tva
 from services.exercices_service import trouver_exercice_pour_date
@@ -1795,6 +1796,9 @@ def _ecriture_reception_reglement(db, societe_id, reglement, facture):
             treso = compte_tresorerie(
                 db, societe_id, mode=reglement.mode, banque=reglement.banque
             )
+            # Lot 977 : une caisse ne peut pas devenir créditrice.
+            verifier_sortie_caisse(db, societe_id, treso, reglement.montant, reglement.date,
+                                   exclure=getattr(reglement, 'ecriture_id', None))
             lignes = [
                 models.LigneEcriture(compte=tiers_compte, libelle=reglement.tiers, debit=reglement.montant, credit=0),
                 models.LigneEcriture(compte=treso,

@@ -125,6 +125,8 @@ def _verifier_periode_ouverte(db, societe_id, valeur, action="modifier"):
             "Passez la correction sur une période ouverte ultérieure via une contrepassation traçable.")
     return None
 
+from services.tresorerie_service import verifier_ecriture as verifier_caisse  # lot 977 : caisse jamais créditrice
+
 router = APIRouter(prefix="/api/ecritures", tags=["ecritures"])
 
 
@@ -739,6 +741,7 @@ def creer_ecriture(
     if valider:
         verifier_auxiliaires_avant_validation(ecriture.lignes)
         _verifier_chronologie_validation(db, ecriture)
+        verifier_caisse(db, ecriture)
         ecriture.est_validee = True
         ecriture.date_validation = _dt.now()
         ecriture.validee_par = current_user["id"]
@@ -1379,6 +1382,7 @@ def valider_ecriture(
     verifier_auxiliaires_avant_validation(ecriture.lignes)
 
     _verifier_chronologie_validation(db, ecriture)
+    verifier_caisse(db, ecriture)
     ecriture.est_validee = True
     ecriture.date_validation = _dt.now()
     ecriture.validee_par = current_user["id"]
@@ -1445,6 +1449,7 @@ def valider_lot(
             refusees.append({"id": eid, "motif": "sans ligne"}); continue
         try:
             verifier_auxiliaires_avant_validation(e.lignes)
+            verifier_caisse(db, e)
         except HTTPException as exc:
             refusees.append({"id": eid, "motif": exc.detail}); continue
 
@@ -1572,6 +1577,7 @@ def contrepasser_ecriture(
     db.flush()
 
     _verifier_chronologie_validation(db, correction)
+    verifier_caisse(db, correction)
     correction.est_validee = True
     correction.date_validation = _dt.now()
     correction.validee_par = current_user["id"]

@@ -30,6 +30,9 @@ def test_reglement_edition_montant_date_mode_commentaire_et_blocage(application,
             'tiers_id':tiers['id'],'reference': 'ACH-'+suffix if sens=='achat' else None,
             'lignes':[{'description':'Service laboratoire','quantite':1,'prix_unitaire':1000,'tva':20}]}), 201)
         ok(api.post(f"/api/factures/{f['id']}/valider"))
+        # 977 : la caisse est alimentée avant tout paiement fournisseur en espèces.
+        ok(api.post('/api/ecritures', json={'date':(aujourdhui - timedelta(days=5)).isoformat(),'journal':'CA','libelle':'Apport en caisse fictif',
+            'est_validee':True,'lignes':[{'compte':'5161','libelle':'Caisse','debit':5000,'credit':0},{'compte':'1111','libelle':'Apport','debit':0,'credit':5000}]}), 201)
         r = ok(api.post('/api/reglements', json={'facture_id':f['id'],'tiers':tiers['nom'],
             'date':initiale,'montant':400,'mode':'virement','comptabiliser':False}), 201)
         date_seule = ok(api.patch(f"/api/reglements/{r['id']}", json={'date':nouvelle}))
