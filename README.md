@@ -1,16 +1,38 @@
-# React + Vite
+# HisabPro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application marocaine de facturation, de comptabilité, de fiscalité et de paie, pensée pour les TPE/PME et les cabinets comptables. Elle suit le plan comptable marocain (CGNC) et prépare les déclarations (TVA, IS, liasse fiscale, paie).
 
-Currently, two official plugins are available:
+> HisabPro n'est ni certifié ni homologué par l'administration. Les déclarations se déposent sur les portails officiels (DGI, Damancom).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Documentation
 
-## React Compiler
+- **[Mode d'emploi utilisateur](docs/GUIDE_UTILISATEUR.md)** : ce que fait chaque écran, des parcours pas à pas et les questions fréquentes.
+- [Guide d'exploitation](docs/EXPLOITATION_HISABPRO.md) : installation, migrations, sauvegardes, déploiement.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Structure
 
-## Expanding the ESLint configuration
+| Dossier | Contenu |
+|---|---|
+| `src/` | Interface web (React + Vite). |
+| `hisabpro-backend/` | API (FastAPI + SQLAlchemy) et migrations SQL numérotées. |
+| `ops/` | Outils d'exploitation : migrations, sauvegarde PostgreSQL, initialisation d'une base de test. |
+| `Test/` | Tests automatisés (unitaires, PostgreSQL isolé, navigateur). |
+| `docs/` | Documentation. |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Lancer en local
+
+Prérequis : Node.js, Python 3.11+, PostgreSQL.
+
+```bash
+# API
+cd hisabpro-backend
+python -m venv .venv && .venv/Scripts/pip install -r requirements.txt   # sous Windows
+cp .env.example .env    # puis renseigner DATABASE_URL et SECRET_KEY
+python main.py          # http://localhost:8000
+
+# Interface (dans un autre terminal, à la racine)
+npm install
+npm run dev             # l'adresse s'affiche dans le terminal (chemin /hisabpro/)
+```
+
+Les migrations SQL se passent avec `ops/migrations_hisabpro.py`, comme décrit dans le guide d'exploitation.

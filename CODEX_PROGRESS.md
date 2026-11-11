@@ -39161,3 +39161,27 @@ ZIP différentiel : `HisabPro_Session_20261018_Commerce_GRH_530_551.zip` ; conte
 - Prochaine action : Retour du partenaire ; corriger son test (alimenter la caisse ou contrepasser le règlement).
 
 <!-- CODEX_STEP {"id": "CAISSE-977", "objectif": "Caisse jamais créditrice : refuser toute validation d'écriture rendant un compte 516 créditeur à sa date ; signaler les caisses créditrices existantes ; banques créditrices présentées au passif (554) au bilan.", "fichiers": ["hisabpro-backend/services/liasse_service.py"], "fait": "Caisse jamais créditrice : contrôle commun services/tresorerie_service.py branché sur règlement fournisseur espèces, écritures (création validée, validation unitaire, lot, correction) et paie espèces ; liasse : banques créditrices au passif 554, contrôle bloquant CAISSE_CREDITRICE ; écritures existantes non modifiées. Demande du partenaire (captures docs/Remarque_partenaire).", "tests": "test_caisse977_isole 2 passed ; non-régression 36 fichiers : 402 passed, 2 tests adaptés (alimentation de caisse) puis 4 passed ; échecs 086 et 09_3 antérieurs et sans rapport (assertions sur du code d'écran).", "limites": "Pas de contrainte PostgreSQL : une écriture insérée hors application n'est pas contrôlée. Comptes 511 non traités.", "zip": "C:\\Users\\Y_N_e\\hisabpro - GPT - Claude check\\HisabPro_977_Caisse_Non_Creditrice.zip", "prochaine": "Retour du partenaire ; corriger son test (alimenter la caisse ou contrepasser le règlement).", "statut": "termine", "date_utc": "2026-11-11T12:19:43+00:00"} -->
+
+## Journal actif — GUIDE-978 — en_cours — 2026-11-11T19:21:32+00:00
+
+- Objectif : Mode d'emploi utilisateur complet (docs/GUIDE_UTILISATEUR.md + page partageable), écrit à partir des écrans réels.
+- Fichiers : docs/GUIDE_UTILISATEUR.md, README.md
+- Accompli / point exact : Analyse initiale ; modifications à effectuer.
+- Tests et preuves : Non exécutés pour cette étape.
+- PostgreSQL réel / navigateur / limites : À préciser.
+- ZIP : Non livré
+- Prochaine action : Inventaire menus/écrans/boutons puis rédaction.
+
+<!-- CODEX_STEP {"id": "GUIDE-978", "objectif": "Mode d'emploi utilisateur complet (docs/GUIDE_UTILISATEUR.md + page partageable), écrit à partir des écrans réels.", "fichiers": ["docs/GUIDE_UTILISATEUR.md", "README.md"], "fait": "Analyse initiale ; modifications à effectuer.", "tests": "Non exécutés pour cette étape.", "limites": "À préciser.", "zip": null, "prochaine": "Inventaire menus/écrans/boutons puis rédaction.", "statut": "en_cours", "date_utc": "2026-11-11T19:21:32+00:00"} -->
+
+## Journal actif — GUIDE-978 — termine — 2026-11-11T19:27:58+00:00
+
+- Objectif : Mode d'emploi utilisateur complet (docs/GUIDE_UTILISATEUR.md + page partageable), écrit à partir des écrans réels.
+- Fichiers : docs/GUIDE_UTILISATEUR.md, README.md
+- Accompli / point exact : Mode d'emploi utilisateur docs/GUIDE_UTILISATEUR.md (8 parties : premiers pas, tableau de bord, facturation, comptabilité, paie, parcours, FAQ, limites) rédigé à partir des menus, écrans et boutons réels ; version partageable Claude Docs https://claude.ai/artifact/YAFRE8YFAgZJGLLTGK5JEC ; README remplacé (présentation HisabPro, liens, lancement local).
+- Tests et preuves : Aucun test applicatif (documentation). Affirmations vérifiées dans le code : régime TVA dans Paramètres, dotations depuis Immobilisations, export grand livre, délettrage, N° fournisseur obligatoire.
+- PostgreSQL réel / navigateur / limites : Pas de captures d'écran dans le guide ; non relu par un utilisateur final ; aide non intégrée à l'application.
+- ZIP : C:\Users\Y_N_e\hisabpro - GPT - Claude check\HisabPro_978_Guide_Utilisateur.zip
+- Prochaine action : Retour du partenaire sur le guide ; éventuellement aide contextuelle dans l'application.
+
+<!-- CODEX_STEP {"id": "GUIDE-978", "objectif": "Mode d'emploi utilisateur complet (docs/GUIDE_UTILISATEUR.md + page partageable), écrit à partir des écrans réels.", "fichiers": ["docs/GUIDE_UTILISATEUR.md", "README.md"], "fait": "Mode d'emploi utilisateur docs/GUIDE_UTILISATEUR.md (8 parties : premiers pas, tableau de bord, facturation, comptabilité, paie, parcours, FAQ, limites) rédigé à partir des menus, écrans et boutons réels ; version partageable Claude Docs https://claude.ai/artifact/YAFRE8YFAgZJGLLTGK5JEC ; README remplacé (présentation HisabPro, liens, lancement local).", "tests": "Aucun test applicatif (documentation). Affirmations vérifiées dans le code : régime TVA dans Paramètres, dotations depuis Immobilisations, export grand livre, délettrage, N° fournisseur obligatoire.", "limites": "Pas de captures d'écran dans le guide ; non relu par un utilisateur final ; aide non intégrée à l'application.", "zip": "C:\\Users\\Y_N_e\\hisabpro - GPT - Claude check\\HisabPro_978_Guide_Utilisateur.zip", "prochaine": "Retour du partenaire sur le guide ; éventuellement aide contextuelle dans l'application.", "statut": "termine", "date_utc": "2026-11-11T19:27:58+00:00"} -->
