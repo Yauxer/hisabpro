@@ -31,6 +31,7 @@ from auth import get_current_user, requiert_ecriture
 from database import get_db
 import models
 from services.tva_regles_service import est_sans_tva
+from services.compta_mapping_service import part_immobilisations_par_taux
 from services.tva_service import (
     D, ZERO, acompte_ttc_ventilation, ajouter_ventilation, allouer_paiement,
     appliquer_credit_periode, appliquer_pourcentage, date_paiement_effective, date_encaissement_acompte, delta_ventilation,
@@ -296,6 +297,19 @@ def _situation_facture_cutoff(db, societe, facture, cutoff, prorata_global, aler
     return situation
 
 
+def _part_immo_situation(db, societe_id, facture, situation, cutoff):
+    """Lot 979 : part « immobilisations » d'une situation TVA cumulée d'achat à une date."""
+    if not situation:
+        return {}
+    parts = part_immobilisations_par_taux(db, societe_id, facture, _avoirs_cutoff(db, societe_id, facture.id, cutoff))
+    out = {}
+    for taux, vals in situation.items():
+        f = parts.get(D(taux), ZERO)
+        if f:
+            out[taux] = {"base": money(D(vals.get("base")) * f), "tva": money(D(vals.get("tva")) * f)}
+    return out
+
+
 def _situation_acomptes_clients_cutoff(db, societe_id, cutoff, alertes=None):
     """TVA cumulée sur avances/acomptes clients encaissés, indépendamment de la facture finale."""
     out = {}
@@ -365,8 +379,21 @@ def _calculer_brut(db, societe, debut, fin, prorata_global, inclure_details=True
         else:
             ajouter_ventilation(recup_taux, delta)
             nature = (getattr(facture, "nature_tva_achat", None) or "charge").lower()
-            cible = recup_immo_taux if nature == "immobilisation" else recup_charges_taux
-            ajouter_ventilation(cible, delta)
+            if nature == "immobilisation":
+                ajouter_ventilation(recup_immo_taux, delta)
+            else:
+                # Lot 979 : dans une facture ordinaire, la part des lignes portant un
+                # compte d'immobilisation est déclarée en TVA sur immobilisations.
+                # Chaque situation cumulée est ventilée avec la part immobilisée à
+                # sa propre date (avoirs déduits), puis on fait la différence.
+                immo_part = delta_ventilation(_part_immo_situation(db, societe_id, facture, sit_fin, fin),
+                                              _part_immo_situation(db, societe_id, facture, sit_avant, avant))
+                charges_part = {}
+                for taux, vals in delta.items():
+                    i = immo_part.get(taux, {"base": ZERO, "tva": ZERO})
+                    charges_part[taux] = {"base": D(vals.get("base")) - D(i["base"]), "tva": D(vals.get("tva")) - D(i["tva"])}
+                ajouter_ventilation(recup_immo_taux, immo_part)
+                ajouter_ventilation(recup_charges_taux, charges_part)
             if inclure_details:
                 details_achats.append({
                     "facture_id": facture.id, "facture_numero": facture.numero,

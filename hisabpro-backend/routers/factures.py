@@ -19,6 +19,7 @@ from services.facturation_numero_service import prefixe_facture, reserver_numero
 from services.commercial_numero_service import reserver_numero_commercial
 from services.compta_mapping_service import (
     figer_comptes_facture, compte_tiers_facture, groupes_facture_par_compte, repartir_par_poids,
+    est_compte_immobilisation, tva_immobilisations_facture,
 )
 from services.echeancier_service import (
     echeances_persistantes_ou_defaut, normaliser_echeances, remplacer_echeancier_db, supprimer_echeancier_db,
@@ -1690,13 +1691,31 @@ def comptabiliser_facture(
             lignes_ecriture.append(models.LigneEcriture(compte="6142", libelle="Transports", debit=frais_transport_ht, credit=0))
         if frais_emballage_ht > 0:
             lignes_ecriture.append(models.LigneEcriture(compte=("3413" if (getattr(facture, "frais_emballage_mode", "perdu") == "consigne") else "6123"), libelle=("Emballages à rendre" if (getattr(facture, "frais_emballage_mode", "perdu") == "consigne") else "Achats emballages"), debit=frais_emballage_ht, credit=0))
-        if tva_deductible > 0:
+        # Lot 979 : la TVA des lignes portant un compte d'immobilisation va en
+        # 34551 (TVA récupérable sur immobilisations), celle des autres en 34552.
+        facteur_escompte = (total_base_tva / total_ht_comptable) if total_ht_comptable else D(1)
+        tva_immo = min(tva_immobilisations_facture(db, societe_id, facture, facteur_escompte), total_tva_globale)
+        tva_ded_immo = min(money(tva_immo * effective_pct / D(100)), tva_deductible)
+        tva_ded_charges = money(tva_deductible - tva_ded_immo)
+        if tva_ded_immo > 0:
             lignes_ecriture.append(models.LigneEcriture(
-                compte="34552", libelle="État — TVA récupérable sur charges", debit=tva_deductible, credit=0))
+                compte="34551", libelle="État — TVA récupérable sur immobilisations", debit=tva_ded_immo, credit=0))
+        if tva_ded_charges > 0:
+            lignes_ecriture.append(models.LigneEcriture(
+                compte="34552", libelle="État — TVA récupérable sur charges", debit=tva_ded_charges, credit=0))
         if tva_non_deductible > 0:
             # La TVA non déductible augmente le coût des mêmes achats ; elle est
             # donc répartie sur leurs comptes, pas envoyée arbitrairement en 6111.
-            allocation_non_ded = repartir_par_poids(tva_non_deductible, groupes_achats)
+            # Lot 979 : la part des immobilisations augmente leur coût d'entrée.
+            groupes_immo = {c: m for c, m in groupes_achats.items() if est_compte_immobilisation(c)}
+            groupes_charges = {c: m for c, m in groupes_achats.items() if not est_compte_immobilisation(c)}
+            non_ded_immo = min(money(tva_immo - tva_ded_immo), tva_non_deductible) if groupes_immo else ZERO
+            non_ded_charges = money(tva_non_deductible - non_ded_immo)
+            allocation_non_ded = {}
+            for montant_part, groupes_part in ((non_ded_immo, groupes_immo), (non_ded_charges, groupes_charges or groupes_achats)):
+                if montant_part > 0:
+                    for compte, montant in repartir_par_poids(montant_part, groupes_part).items():
+                        allocation_non_ded[compte] = money(allocation_non_ded.get(compte, ZERO) + montant)
             if allocation_non_ded:
                 for compte, montant in sorted(allocation_non_ded.items()):
                     lignes_ecriture.append(models.LigneEcriture(

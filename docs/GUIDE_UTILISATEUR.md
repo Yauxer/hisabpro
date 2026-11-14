@@ -170,7 +170,7 @@ Fiche de chaque tiers : identité (ICE, IF), coordonnées, **conditions de règl
 
 ### 3.10 Articles
 
-Fiche article : informations générales, prix et fiscalité (TVA), emballage et transport, nature (stocké ou non) et comptes comptables de vente et d'achat.
+Fiche article : informations générales, prix et fiscalité (TVA), emballage et transport, nature (stocké ou non) et comptes comptables de vente et d'achat. Le **compte d'achat** peut être un compte de charge (classe 6) ou un compte d'immobilisation (classe 2, par exemple 2355 matériel informatique) pour les biens durables achetés par facture.
 
 ### 3.11 Inventaire & stock
 
@@ -231,11 +231,13 @@ Comparez votre relevé bancaire avec la comptabilité. Le relevé se saisit à l
 
 Registre des immobilisations : acquisition (catégorie, comptes, date, valeur), puis **dotations aux amortissements**, calculées et générées depuis l'écran (journal AM). En fin de vie : **Cession / mise au rebut**, avec un aperçu du résultat de sortie, puis *Encaisser la cession*.
 
+**Achat d'une immobilisation par facture fournisseur.** Utilisez un article dont le compte d'achat est un compte d'immobilisation (classe 2). À la comptabilisation, la ligne est portée au compte d'actif, la TVA au compte **34551 TVA récupérable sur immobilisations** (la TVA des autres lignes reste en **34552 sur charges**) ; une facture qui ne contient que des immobilisations est due au fournisseur en **4481 Dettes sur acquisitions d'immobilisations**, une facture mixte reste en 4411. L'écran Immobilisations liste ensuite ces achats dans *Achats d'immobilisations sans fiche* : **Créer la fiche** démarre les amortissements sans nouvelle écriture ni seconde TVA. Le paiement se fait par les règlements de la facture.
+
 ### 4.8 Déclaration TVA
 
 La page reprend la TVA de la période selon votre régime (encaissement ou débit) et votre périodicité. Une barre de navigation mène à chaque section :
 
-- **Déclaration** : *Synthèse* (TVA collectée, récupérable, crédit antérieur, TVA due ou crédit), *Détail par taux*, *Préparation DGI* (les montants à reporter).
+- **Déclaration** : *Synthèse* (TVA collectée, récupérable, crédit antérieur, TVA due ou crédit), *Détail par taux*, *Préparation DGI* (les montants à reporter). La TVA récupérable est séparée entre **charges** et **immobilisations**, comme sur le formulaire de la DGI.
 - **Dépôt** : HisabPro **prépare** la déclaration ; **le dépôt se fait sur le portail de la DGI**. Une fois déposée, enregistrez la **date** et la **référence du dépôt** : la période est alors figée. Une erreur se corrige par une **rectificative**, avec un motif.
 - **RAS TVA** : retenues à la source sur la TVA.
 - **Paramètres** : régime et périodicité.

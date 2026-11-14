@@ -724,6 +724,109 @@ def creer(
     return _serialiser_immo(immo)
 
 
+# ── Lot 979 : fiche créée depuis une ligne de facture d'achat ────────────────
+PRESETS_IMMO = {  # mêmes valeurs que les catégories de l'écran Immobilisations
+    "2352": ("Matériel de bureau", "28352", "61935", 10), "2355": ("Matériel informatique", "28355", "61935", 5),
+    "2340": ("Véhicule", "2834", "61934", 5), "2351": ("Mobilier", "28351", "61935", 10),
+    "2220": ("Logiciel", "2822", "61922", 5), "2321": ("Bâtiment", "2832", "61932", 20),
+    "2311": ("Terrain", "2831", "61931", None), "2332": ("Outillage", "28332", "61933", 10),
+}
+
+
+class FicheDepuisFacture(BaseModel):
+    ligne_id: int
+    duree_amort: int | None = None
+    methode: str = "lineaire"
+    date_mise_en_service: date | None = None
+
+
+def _preset_compte(compte: str):
+    for prefixe in sorted(PRESETS_IMMO, key=len, reverse=True):
+        if compte.startswith(prefixe):
+            return PRESETS_IMMO[prefixe]
+    return ("Autre", "28" + compte[1:], "61938", 5)
+
+
+@router.get("/a-creer-depuis-factures")
+def a_creer_depuis_factures(current_user=Depends(get_current_user), db: Session = Depends(get_db)):
+    """Lot 979 : lignes d'achat comptabilisées sur un compte d'immobilisation, sans fiche."""
+    from services.compta_mapping_service import compte_ligne_facture, est_compte_immobilisation, _net_ligne, _coef_remises
+    societe_id = current_user["societe_id"]
+    existantes = {r for (r,) in db.query(models.Immobilisation.reference).filter(
+        models.Immobilisation.societe_id == societe_id, models.Immobilisation.reference.like("FA-%")).all()}
+    factures = db.query(models.Facture).filter(models.Facture.societe_id == societe_id, models.Facture.type == "achat",
+                                               models.Facture.est_comptabilisee == True).order_by(models.Facture.date.desc()).limit(500).all()  # noqa: E712
+    resultat = []
+    for f in factures:
+        for l in f.lignes:
+            compte = compte_ligne_facture(db, societe_id, l, est_vente=False)
+            if est_compte_immobilisation(compte) and f"FA-{f.id}-L{l.id}" not in existantes:
+                resultat.append({"facture_id": f.id, "facture": f.reference or f.numero, "date": f.date, "fournisseur": f.tiers,
+                                 "ligne_id": l.id, "designation": l.description, "compte": compte,
+                                 "montant_ht": float(money(_net_ligne(l) * _coef_remises(f))), "duree_defaut": _preset_compte(compte)[3]})
+    return resultat
+
+
+@router.post("/depuis-facture/{facture_id}", status_code=201)
+def creer_depuis_facture(facture_id: int, data: FicheDepuisFacture, current_user=Depends(requiert_ecriture), db: Session = Depends(get_db)):
+    """Crée la fiche d'une immobilisation achetée par facture, sans seconde écriture d'acquisition.
+
+    L'écriture de la facture porte déjà le compte d'actif et la TVA (34551) : la fiche
+    s'y rattache, sa TVA n'est pas recomptée dans la déclaration, et son paiement se
+    fait par le règlement de la facture.
+    """
+    from services.compta_mapping_service import compte_ligne_facture, est_compte_immobilisation, compte_tiers_facture, _net_ligne, _coef_remises
+    from services.tva_service import ventilation_facture, total_ventilation
+    societe_id = current_user["societe_id"]
+    facture = db.query(models.Facture).filter_by(id=facture_id, societe_id=societe_id).first()
+    if not facture or str(getattr(facture.type, "value", facture.type)) != "achat":
+        raise HTTPException(404, "Facture d'achat introuvable.")
+    if not facture.est_comptabilisee:
+        raise HTTPException(409, "Comptabilisez d'abord la facture : la fiche se rattache à son écriture.")
+    ligne = next((l for l in facture.lignes if l.id == data.ligne_id), None)
+    if not ligne:
+        raise HTTPException(404, "Ligne introuvable dans cette facture.")
+    compte = compte_ligne_facture(db, societe_id, ligne, est_vente=False)
+    if not est_compte_immobilisation(compte):
+        raise HTTPException(409, f"La ligne est imputée en {compte}, pas sur un compte d'immobilisation.")
+    reference = f"FA-{facture.id}-L{ligne.id}"
+    if db.query(models.Immobilisation.id).filter_by(societe_id=societe_id, reference=reference).first():
+        raise HTTPException(409, "Une fiche existe déjà pour cette ligne de facture.")
+    refs = [r for r in (facture.reference, facture.numero) if r]
+    ecriture = (db.query(models.Ecriture).filter(models.Ecriture.societe_id == societe_id, models.Ecriture.journal == "AC",
+                                                 models.Ecriture.reference.in_(refs)).order_by(models.Ecriture.id.asc()).first() if refs else None)
+    if not ecriture or not any(l.compte == compte for l in ecriture.lignes):
+        raise HTTPException(409, "Écriture d'achat de la facture introuvable ou sans le compte d'immobilisation.")
+    exercice = _exercice_ouvert_pour_date(db, societe_id, facture.date, "enregistrer")
+    tot = total_ventilation(ventilation_facture(facture, appliquer_escompte=True))
+    tot_hors = total_ventilation(ventilation_facture(facture, appliquer_escompte=False))
+    facteur = (Decimal(tot["base"]) / Decimal(tot_hors["base"])) if Decimal(tot_hors["base"]) else Decimal(1)
+    prix_ht = money(_net_ligne(ligne) * _coef_remises(facture) * facteur)
+    categorie, compte_amort, compte_dotation, duree_defaut = _preset_compte(compte)
+    pct_recup = Decimal(str(getattr(facture, "tva_deductible_pct", 100) or 0))
+    vent = ventilation_acquisition(prix_ht, Decimal(str(ligne.tva or 0)), pct_recup)
+    amortissable = duree_defaut is not None
+    duree = data.duree_amort or duree_defaut
+    coeff = coefficient_degressif(duree) if data.methode == "degressif" and duree else None
+    immo = models.Immobilisation(
+        societe_id=societe_id, designation=(ligne.description or "Immobilisation")[:200], reference=reference, categorie=categorie,
+        date_acquisition=facture.date, date_mise_en_service=data.date_mise_en_service or facture.date,
+        prix_acquisition_ht=prix_ht, taux_tva=Decimal(str(ligne.tva or 0)), qualification_tva="taxable",
+        tva_recuperable_pct=Decimal(str(getattr(facture, "tva_deductible_pct", 100) or 0)), tva_suivie_directement=False,
+        valeur_brute=vent["cout_entree"], valeur_residuelle=ZERO, fournisseur=facture.tiers, fournisseur_tiers_id=facture.tiers_id,
+        amortissable=amortissable, duree_amort=duree if amortissable else None, methode=data.methode,
+        taux_degressif=coeff, compte_immo=compte, compte_amort=compte_amort, compte_dotation=compte_dotation,
+        compte_tva="34551", compte_fournisseur=compte_tiers_facture(db, societe_id, facture), compte_reglement="5141",
+        compte_produit_cession="7512" if compte.startswith("22") else "7513", compte_vna_cession="6512" if compte.startswith("22") else "6513",
+        notes=f"Acquise par la facture {facture.reference or facture.numero} du {facture.date:%d/%m/%Y} ; payée par le règlement de la facture.",
+        ecriture_acquisition_id=ecriture.id,
+    )
+    db.add(immo)
+    db.commit()
+    db.refresh(immo)
+    return _serialiser_immo(immo)
+
+
 @router.post("/{immo_id}/payer")
 def payer_acquisition(
     immo_id: int,
@@ -733,6 +836,8 @@ def payer_acquisition(
 ):
     societe_id = current_user["societe_id"]
     immo = _get_immo(db, societe_id, immo_id, ecriture=True)
+    if str(immo.reference or "").startswith("FA-"):  # lot 979
+        raise HTTPException(409, "Immobilisation achetée par facture : enregistrez le paiement dans les règlements de la facture.")
     if immo.date_paiement or immo.ecriture_paiement_id:
         raise HTTPException(409, "Cette acquisition est déjà marquée comme payée")
     if data.date_paiement < immo.date_acquisition:

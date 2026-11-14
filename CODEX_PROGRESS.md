@@ -39185,3 +39185,39 @@ ZIP différentiel : `HisabPro_Session_20261018_Commerce_GRH_530_551.zip` ; conte
 - Prochaine action : Retour du partenaire sur le guide ; éventuellement aide contextuelle dans l'application.
 
 <!-- CODEX_STEP {"id": "GUIDE-978", "objectif": "Mode d'emploi utilisateur complet (docs/GUIDE_UTILISATEUR.md + page partageable), écrit à partir des écrans réels.", "fichiers": ["docs/GUIDE_UTILISATEUR.md", "README.md"], "fait": "Mode d'emploi utilisateur docs/GUIDE_UTILISATEUR.md (8 parties : premiers pas, tableau de bord, facturation, comptabilité, paie, parcours, FAQ, limites) rédigé à partir des menus, écrans et boutons réels ; version partageable Claude Docs https://claude.ai/artifact/YAFRE8YFAgZJGLLTGK5JEC ; README remplacé (présentation HisabPro, liens, lancement local).", "tests": "Aucun test applicatif (documentation). Affirmations vérifiées dans le code : régime TVA dans Paramètres, dotations depuis Immobilisations, export grand livre, délettrage, N° fournisseur obligatoire.", "limites": "Pas de captures d'écran dans le guide ; non relu par un utilisateur final ; aide non intégrée à l'application.", "zip": "C:\\Users\\Y_N_e\\hisabpro - GPT - Claude check\\HisabPro_978_Guide_Utilisateur.zip", "prochaine": "Retour du partenaire sur le guide ; éventuellement aide contextuelle dans l'application.", "statut": "termine", "date_utc": "2026-11-11T19:27:58+00:00"} -->
+
+## Journal actif — IMMO-979 — en_cours — 2026-11-14T01:45:01+00:00
+
+- Objectif : Achat d'immobilisation par facture d'achat : comptes de classe 2 autorisés sur l'article, TVA en 34551 (immobilisations) au lieu de 34552, fiche immobilisation reliée, déclaration TVA séparée.
+- Fichiers : hisabpro-backend/routers/factures.py, src/pages/Articles.jsx
+- Accompli / point exact : Analyse initiale ; modifications à effectuer.
+- Tests et preuves : Non exécutés pour cette étape.
+- PostgreSQL réel / navigateur / limites : À préciser.
+- ZIP : Non livré
+- Prochaine action : Analyser compte tiers, création de fiche immobilisation sans écriture, calcul TVA déductible.
+
+<!-- CODEX_STEP {"id": "IMMO-979", "objectif": "Achat d'immobilisation par facture d'achat : comptes de classe 2 autorisés sur l'article, TVA en 34551 (immobilisations) au lieu de 34552, fiche immobilisation reliée, déclaration TVA séparée.", "fichiers": ["hisabpro-backend/routers/factures.py", "src/pages/Articles.jsx"], "fait": "Analyse initiale ; modifications à effectuer.", "tests": "Non exécutés pour cette étape.", "limites": "À préciser.", "zip": null, "prochaine": "Analyser compte tiers, création de fiche immobilisation sans écriture, calcul TVA déductible.", "statut": "en_cours", "date_utc": "2026-11-14T01:45:01+00:00"} -->
+
+## Journal actif — IMMO-979 — en_cours — 2026-11-14T01:56:30+00:00
+
+- Objectif : Achat d'immobilisation par facture d'achat : comptes de classe 2 autorisés sur l'article, TVA en 34551 (immobilisations) au lieu de 34552, fiche immobilisation reliée, déclaration TVA séparée.
+- Fichiers : hisabpro-backend/routers/factures.py, src/pages/Articles.jsx
+- Accompli / point exact : Backend (factures, avoirs, tva, immobilisations, mapping) + front Articles/Immobilisations ; test isolé 979 OK ; correction ventilation TVA immo après avoir (part immobilisée calculée à chaque date de coupure)
+- Tests et preuves : Non exécutés pour cette étape.
+- PostgreSQL réel / navigateur / limites : À préciser.
+- ZIP : Non livré
+- Prochaine action : Régressions factures/avoirs/tva/immobilisations/ETIC, build Vite, docs, ZIP, commit/push
+
+<!-- CODEX_STEP {"id": "IMMO-979", "objectif": "Achat d'immobilisation par facture d'achat : comptes de classe 2 autorisés sur l'article, TVA en 34551 (immobilisations) au lieu de 34552, fiche immobilisation reliée, déclaration TVA séparée.", "fichiers": ["hisabpro-backend/routers/factures.py", "src/pages/Articles.jsx"], "fait": "Backend (factures, avoirs, tva, immobilisations, mapping) + front Articles/Immobilisations ; test isolé 979 OK ; correction ventilation TVA immo après avoir (part immobilisée calculée à chaque date de coupure)", "tests": "Non exécutés pour cette étape.", "limites": "À préciser.", "zip": null, "prochaine": "Régressions factures/avoirs/tva/immobilisations/ETIC, build Vite, docs, ZIP, commit/push", "statut": "en_cours", "date_utc": "2026-11-14T01:56:30+00:00"} -->
+
+## Journal actif — IMMO-979 — termine — 2026-11-14T02:11:37+00:00
+
+- Objectif : Achat d'immobilisation par facture d'achat : comptes de classe 2 autorisés sur l'article, TVA en 34551 (immobilisations) au lieu de 34552, fiche immobilisation reliée, déclaration TVA séparée.
+- Fichiers : hisabpro-backend/routers/factures.py, src/pages/Articles.jsx
+- Accompli / point exact : Comptes d'immobilisation (classe 2) sur les factures d'achat ; TVA 34551 immobilisations / 34552 charges (écriture, avoir, déclaration TVA) ; 4481 pour factures 100 % immobilisations ; création de fiche depuis la facture sans double écriture ; paiement FA- bloqué ; guides MD/Word et exploitation
+- Tests et preuves : test_immo_tva979_isole : OK ; 33 fichiers backend (mapping, TVA, avoirs, immobilisations, ETIC 106/107/111/112/130, caisse977) : 288 passed ; E2E immobilisations + facture achat TVA : 3 passed ; vite build OK ; py_compile OK
+- PostgreSQL réel / navigateur / limites : Factures mixtes restent en 4411 ; dettes 4481 hors analyses fondées sur 4411 (ETIC B7) ; écritures existantes non modifiées ; validation navigateur par l'utilisateur à faire
+- ZIP : C:\Users\Y_N_e\hisabpro - GPT - Claude check\HisabPro_979_Immobilisations_TVA.zip
+- Prochaine action : Recette navigateur : article compte 2355, facture d'achat, écriture 34551/4481, Créer la fiche ; commit + push GitHub
+
+<!-- CODEX_STEP {"id": "IMMO-979", "objectif": "Achat d'immobilisation par facture d'achat : comptes de classe 2 autorisés sur l'article, TVA en 34551 (immobilisations) au lieu de 34552, fiche immobilisation reliée, déclaration TVA séparée.", "fichiers": ["hisabpro-backend/routers/factures.py", "src/pages/Articles.jsx"], "fait": "Comptes d'immobilisation (classe 2) sur les factures d'achat ; TVA 34551 immobilisations / 34552 charges (écriture, avoir, déclaration TVA) ; 4481 pour factures 100 % immobilisations ; création de fiche depuis la facture sans double écriture ; paiement FA- bloqué ; guides MD/Word et exploitation", "tests": "test_immo_tva979_isole : OK ; 33 fichiers backend (mapping, TVA, avoirs, immobilisations, ETIC 106/107/111/112/130, caisse977) : 288 passed ; E2E immobilisations + facture achat TVA : 3 passed ; vite build OK ; py_compile OK", "limites": "Factures mixtes restent en 4411 ; dettes 4481 hors analyses fondées sur 4411 (ETIC B7) ; écritures existantes non modifiées ; validation navigateur par l'utilisateur à faire", "zip": "C:\\Users\\Y_N_e\\hisabpro - GPT - Claude check\\HisabPro_979_Immobilisations_TVA.zip", "prochaine": "Recette navigateur : article compte 2355, facture d'achat, écriture 34551/4481, Créer la fiche ; commit + push GitHub", "statut": "termine", "date_utc": "2026-11-14T02:11:37+00:00"} -->

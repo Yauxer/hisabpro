@@ -25,11 +25,11 @@ function ChampCompte({ value, onChange, classe, placeholder }) {
 
   function filtrer(val) {
     if (val && val.trim()) {
-      return rechercherCompte(val).filter(c => !classe || c.compte.startsWith(classe))
+      return rechercherCompte(val).filter(c => !classe || [].concat(classe).some(k => c.compte.startsWith(k)))
     }
     // Champ vide : proposer les comptes de la classe (les plus génériques d'abord)
     return PLAN_COMPTES
-      .filter(c => !classe || c.compte.startsWith(classe))
+      .filter(c => !classe || [].concat(classe).some(k => c.compte.startsWith(k)))
       .sort((a, b) => a.compte.length - b.compte.length || a.compte.localeCompare(b.compte))
       .slice(0, 15)
   }
@@ -293,7 +293,7 @@ function FormulaireArticle({ article, familles, annee, onFermer, onSuccess }) {
         <AdvancedSection title="Comptes comptables" icon="ti-book-2">
           <div className="hp-form-grid hp-form-grid--2">
             <div className="hp-field"><label>Compte de vente</label><ChampCompte classe="7" value={form.compte_vente} placeholder={famille?.compte_vente || '7111 (défaut famille)'} onChange={v => setForm(p => ({ ...p, compte_vente: v }))} /><span className="hp-field__hint">Vide = compte de la famille.</span></div>
-            <div className="hp-field"><label>Compte d'achat</label><ChampCompte classe="6" value={form.compte_achat} placeholder={famille?.compte_achat || '6111 (défaut famille)'} onChange={v => setForm(p => ({ ...p, compte_achat: v }))} /><span className="hp-field__hint">Vide = compte de la famille.</span></div>
+            <div className="hp-field"><label>Compte d'achat (charge 6xxx ou immobilisation 2xxx)</label><ChampCompte classe={['6', '2']} value={form.compte_achat} placeholder={famille?.compte_achat || '6111 (défaut famille)'} onChange={v => setForm(p => ({ ...p, compte_achat: v }))} /><span className="hp-field__hint">Vide = compte de la famille.</span></div>
           </div>
         </AdvancedSection>
 

@@ -866,6 +866,19 @@ export default function Immobilisations() {
   const [immoDetail, setImmoDetail] = useState(null)
   const [genDotations, setGenDotations] = useState(false)
   const [showReconciliation, setShowReconciliation] = useState(false)
+  const [aCreer, setACreer] = useState([])  // lot 979 : achats d'immobilisations par facture sans fiche
+  const chargerACreer = () => apiFetch('/api/immobilisations/a-creer-depuis-factures').then(setACreer).catch(() => setACreer([]))
+  useEffect(() => { chargerACreer() }, [])
+  async function creerDepuisFacture(x) {
+    const saisie = x.duree_defaut ? window.prompt(`Créer la fiche de « ${x.designation} » (${formatMAD(x.montant_ht)} MAD HT, compte ${x.compte}).
+Durée d'amortissement en années :`, String(x.duree_defaut)) : ''
+    if (saisie === null) return
+    try {
+      await apiFetch(`/api/immobilisations/depuis-facture/${x.facture_id}`, { method: 'POST', body: JSON.stringify({ ligne_id: x.ligne_id, duree_amort: saisie ? Number(saisie) : null }) })
+      notifier.succes(`Fiche créée pour « ${x.designation} ».`)
+      await Promise.all([charger(), chargerACreer()])
+    } catch (e) { notifier.erreur(e.message) }
+  }
 
   async function charger() {
     const requete = ++requeteChargement.current
@@ -930,6 +943,13 @@ export default function Immobilisations() {
         ].map(([label, val, icon, color], idx) => <div key={label} className={styles.kpiCard}><div className={styles.kpiLabel}><i className={`ti ${icon}`} style={{ color }} /> {label}</div><div className={styles.kpiValeur} style={{ color }}>{loading || erreurChargement ? '—' : idx === 3 ? `${val} biens` : `${formatMAD(val)} MAD`}</div></div>)}
       </div>
 
+      {aCreer.length > 0 && <div className={styles.card} aria-label="Achats d'immobilisations sans fiche">
+        <div className={styles.cardHeader}><span className={styles.cardTitle}>Achats d'immobilisations sans fiche</span><span style={{ fontSize: 11 }}>Créez la fiche pour démarrer les amortissements</span></div>
+        <div className={styles.tableWrapper}><table className={styles.table}><thead><tr><th>Facture</th><th>Date</th><th>Fournisseur</th><th>Désignation</th><th>Compte</th><th style={{ textAlign: 'right' }}>Montant HT</th><th /></tr></thead><tbody>
+          {aCreer.map(x => <tr key={`${x.facture_id}-${x.ligne_id}`}><td>{x.facture}</td><td>{x.date}</td><td>{x.fournisseur}</td><td>{x.designation}</td><td>{x.compte}</td><td style={{ textAlign: 'right' }}>{formatMAD(x.montant_ht)}</td>
+            <td>{ecriture && <button className={styles.btnSec} onClick={() => creerDepuisFacture(x)}>Créer la fiche</button>}</td></tr>)}
+        </tbody></table></div></div>}
+
       <div className={styles.card}>
         <div className={styles.cardHeader}><span className={styles.cardTitle}><i className="ti ti-building-factory" style={{ marginRight: 6 }} />Registre des immobilisations</span><span style={{ fontSize: 11 }}>{loading ? 'Lecture en cours…' : erreurChargement ? 'Lecture indisponible' : `Valeurs théoriques au ${today().split('-').reverse().join('/')} · ${immobilisations.length} bien(s)`}</span></div>
         {loading ? <div className={styles.vide}><i className="ti ti-loader-2 ti-spin" />Chargement...</div> : erreurChargement ? <div className={styles.vide} role="alert"><p>Impossible de charger le registre des immobilisations.</p><p>{erreurChargement}</p><button className={styles.btnSec} onClick={charger}>Réessayer le registre</button></div> : immobilisations.length === 0 ? <div className={styles.vide}><i className="ti ti-building-factory" />Aucune immobilisation</div> : <div className={styles.tableWrapper}>
@@ -945,7 +965,7 @@ export default function Immobilisations() {
               <td style={{ fontSize: 11 }}>{!immo.amortissable ? 'Non amortissable' : `${immo.duree_amort} ans · ${immo.methode === 'degressif' ? 'Dégressif' : 'Linéaire'}`}</td>
               <td style={{ fontSize: 11 }}>{immo.date_paiement ? <span style={{ color: '#3B6D11' }}>Payé · {immo.date_paiement}</span> : <span style={{ color: '#854F0B' }}>À payer</span>}</td>
               <td><div style={{ display: 'flex', gap: 4 }}>
-                {ecriture && immo.actif && !immo.date_paiement && immo.ecriture_acquisition_id && <button className={styles.btnAction} title="Marquer l’acquisition payée" onClick={e => { e.stopPropagation(); payer(immo) }}><i className="ti ti-cash" /><span className="libelle-action" aria-hidden="true">Marquer l’acquisition payée</span></button>}
+                {ecriture && immo.actif && !immo.date_paiement && immo.ecriture_acquisition_id && !String(immo.reference || '').startsWith('FA-') && <button className={styles.btnAction} title="Marquer l’acquisition payée" onClick={e => { e.stopPropagation(); payer(immo) }}><i className="ti ti-cash" /><span className="libelle-action" aria-hidden="true">Marquer l’acquisition payée</span></button>}
                 {ecriture && immo.actif && <button className={styles.btnAction} title="Modifier" onClick={e => { e.stopPropagation(); setEditImmo(immo); setShowForm(true) }}><i className="ti ti-pencil" /><span className="libelle-action" aria-hidden="true">Modifier</span></button>}
                 {ecriture && immo.actif && <button className={styles.btnAction} title="Cession / mise au rebut" onClick={e => { e.stopPropagation(); setSortieImmo(immo) }}><i className="ti ti-logout" /><span className="libelle-action" aria-hidden="true">Cession / mise au rebut</span></button>}
                 {ecriture && !immo.actif && immo.type_sortie === 'cession' && !immo.date_encaissement_cession && <button className={styles.btnAction} title="Encaisser la cession" onClick={e => { e.stopPropagation(); encaisserCession(immo) }}><i className="ti ti-cash-banknote" /><span className="libelle-action" aria-hidden="true">Encaisser la cession</span></button>}

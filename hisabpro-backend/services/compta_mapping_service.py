@@ -110,6 +110,7 @@ def compte_article(db, societe_id: int, article_id, *, est_vente: bool):
 def figer_comptes_facture(db, societe_id: int, facture):
     """Fige les comptes applicables au moment de la validation."""
     est_vente = _type_value(getattr(facture, "type", None)) == "vente"
+    deja_fige = _clean(getattr(facture, "compte_tiers_snapshot", None))
     facture.compte_tiers_snapshot = compte_tiers(
         db,
         societe_id,
@@ -127,6 +128,69 @@ def figer_comptes_facture(db, societe_id: int, facture):
             ligne.compte_achat_snapshot = compte_article(
                 db, societe_id, getattr(ligne, "article_id", None), est_vente=False
             )
+    # Lot 979 : une facture d'achat qui ne porte que sur des immobilisations
+    # est une dette sur acquisition d'immobilisations (4481), comme dans le
+    # module Immobilisations ; une facture mixte reste en 4411.
+    lignes = getattr(facture, "lignes", []) or []
+    if (not est_vente and not deja_fige and lignes
+            and all(est_compte_immobilisation(compte_ligne_facture(db, societe_id, l, est_vente=False)) for l in lignes)
+            and str(facture.compte_tiers_snapshot or "").startswith(DEFAULT_FOURNISSEUR)):
+        facture.compte_tiers_snapshot = COMPTE_DETTE_IMMOBILISATIONS
+
+
+COMPTE_DETTE_IMMOBILISATIONS = "4481"
+
+
+def est_compte_immobilisation(compte) -> bool:
+    """Lot 979 : compte d'actif immobilisé (classe 2), hors amortissements (28) et provisions (29)."""
+    c = str(compte or "").strip()
+    return c.startswith("2") and not c.startswith(("28", "29"))
+
+
+def _coef_remises(facture) -> Decimal:
+    return (D(1) - D(getattr(facture, "remise_globale", 0)) / HUNDRED) * (
+        D(1) - D(getattr(facture, "ristourne", 0)) / HUNDRED)
+
+
+def tva_immobilisations_facture(db, societe_id: int, facture, facteur_escompte=D(1)) -> Decimal:
+    """Lot 979 : TVA des lignes d'achat portant un compte d'immobilisation."""
+    coef = _coef_remises(facture)
+    total = ZERO
+    for ligne in getattr(facture, "lignes", []) or []:
+        if est_compte_immobilisation(compte_ligne_facture(db, societe_id, ligne, est_vente=False)):
+            total += _net_ligne(ligne) * coef * D(getattr(ligne, "tva", 0) or 0) / HUNDRED
+    return money(total * D(facteur_escompte))
+
+
+def part_immobilisations_par_taux(db, societe_id: int, facture, avoirs=()) -> dict:
+    """Lot 979 : part de la base HT immobilisée, taux par taux (déclaration de TVA).
+
+    Les avoirs déjà émis sont retirés de la ligne de facture qu'ils visent :
+    un avoir sur l'immobilisation réduit la part immobilisée, pas la part charges.
+    """
+    coef = _coef_remises(facture)
+    tot, imm = defaultdict(lambda: ZERO), defaultdict(lambda: ZERO)
+    lignes_immo = set()
+    for ligne in getattr(facture, "lignes", []) or []:
+        taux = D(getattr(ligne, "tva", 0) or 0)
+        base = _net_ligne(ligne) * coef
+        tot[taux] += base
+        if est_compte_immobilisation(compte_ligne_facture(db, societe_id, ligne, est_vente=False)):
+            imm[taux] += base
+            lignes_immo.add(getattr(ligne, "id", None))
+    for avoir in avoirs or ():
+        coef_a = (D(1) - D(getattr(avoir, "remise_globale_snapshot", 0)) / HUNDRED) * (
+            D(1) - D(getattr(avoir, "ristourne_snapshot", 0)) / HUNDRED)
+        for la in getattr(avoir, "lignes", []) or []:
+            taux = D(getattr(la, "tva", 0) or 0)
+            force = getattr(la, "montant_ht_force", None)
+            base = max(D(force), ZERO) if force is not None else max(_net_ligne(la) * coef_a, ZERO)
+            tot[taux] -= base
+            source = getattr(la, "facture_ligne_id", None)
+            if source in lignes_immo or (source is None and est_compte_immobilisation(
+                    compte_article(db, societe_id, getattr(la, "article_id", None), est_vente=False))):
+                imm[taux] -= base
+    return {t: min(max(imm[t], ZERO) / tot[t], D(1)) for t in tot if tot[t] > 0 and imm[t] > 0}
 
 
 def compte_ligne_facture(db, societe_id: int, ligne, *, est_vente: bool):

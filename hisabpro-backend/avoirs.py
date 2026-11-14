@@ -15,6 +15,7 @@ from services.commercial_numero_service import reserver_numero_commercial
 from services.tva_service import D, ZERO, money, total_ventilation, ventilation_avoir
 from services.compta_mapping_service import (
     compte_tiers_facture, groupes_avoir_par_compte, repartir_par_poids, compte_tresorerie,
+    est_compte_immobilisation,
 )
 from services.auxiliaire_service import rattacher_tiers_aux_lignes
 
@@ -987,7 +988,7 @@ def comptabiliser_avoir(
             )
         )["tva"])
         tva_deductible_source = sum(
-            (D(l.debit) - D(l.credit)) for l in ecriture_source.lignes if l.compte == "34552"
+            (D(l.debit) - D(l.credit)) for l in ecriture_source.lignes if l.compte in ("34551", "34552")  # lot 979
         )
         ratio_deductible = (tva_deductible_source / tva_facture) if tva_facture > ZERO else ZERO
         ratio_deductible = max(ZERO, min(D(1), ratio_deductible))
@@ -1002,15 +1003,20 @@ def comptabiliser_avoir(
         ]
         nature = (getattr(avoir, "nature_avoir", None) or "retour_annulation").lower()
         for compte, montant in sorted(groupes_achats.items()):
-            compte_ecriture = _compte_rrr(compte, False) if nature == "rrr" else compte
+            # Lot 979 : un RRR sur immobilisation diminue la valeur du bien, pas une charge.
+            compte_ecriture = _compte_rrr(compte, False) if nature == "rrr" and not est_compte_immobilisation(compte) else compte
             libelle_ligne = "RRR obtenus après facturation" if nature == "rrr" else "Avoir sur achats"
             lignes_ecriture.append(models.LigneEcriture(
                 compte=compte_ecriture, libelle=libelle_ligne, debit=0, credit=montant
             ))
-        if tva_deductible > ZERO:
-            lignes_ecriture.append(models.LigneEcriture(
-                compte="34552", libelle="État — TVA récupérable (avoir)", debit=0, credit=tva_deductible
-            ))
+        # Lot 979 : la TVA reprise suit la nature des lignes (34551 immobilisations, 34552 charges).
+        total_groupes = sum(groupes_achats.values(), ZERO)
+        part_immo = (sum((m for c, m in groupes_achats.items() if est_compte_immobilisation(c)), ZERO) / total_groupes) if total_groupes else ZERO
+        tva_ded_immo = money(tva_deductible * part_immo)
+        for compte_tva, montant_tva, libelle_tva in (("34551", tva_ded_immo, "État — TVA récupérable sur immobilisations (avoir)"),
+                                                     ("34552", money(tva_deductible - tva_ded_immo), "État — TVA récupérable (avoir)")):
+            if montant_tva > ZERO:
+                lignes_ecriture.append(models.LigneEcriture(compte=compte_tva, libelle=libelle_tva, debit=0, credit=montant_tva))
         if tva_non_deductible > ZERO:
             allocation_non_ded = repartir_par_poids(tva_non_deductible, groupes_achats)
             if allocation_non_ded:
