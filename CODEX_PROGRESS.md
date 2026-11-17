@@ -39221,3 +39221,51 @@ ZIP différentiel : `HisabPro_Session_20261018_Commerce_GRH_530_551.zip` ; conte
 - Prochaine action : Recette navigateur : article compte 2355, facture d'achat, écriture 34551/4481, Créer la fiche ; commit + push GitHub
 
 <!-- CODEX_STEP {"id": "IMMO-979", "objectif": "Achat d'immobilisation par facture d'achat : comptes de classe 2 autorisés sur l'article, TVA en 34551 (immobilisations) au lieu de 34552, fiche immobilisation reliée, déclaration TVA séparée.", "fichiers": ["hisabpro-backend/routers/factures.py", "src/pages/Articles.jsx"], "fait": "Comptes d'immobilisation (classe 2) sur les factures d'achat ; TVA 34551 immobilisations / 34552 charges (écriture, avoir, déclaration TVA) ; 4481 pour factures 100 % immobilisations ; création de fiche depuis la facture sans double écriture ; paiement FA- bloqué ; guides MD/Word et exploitation", "tests": "test_immo_tva979_isole : OK ; 33 fichiers backend (mapping, TVA, avoirs, immobilisations, ETIC 106/107/111/112/130, caisse977) : 288 passed ; E2E immobilisations + facture achat TVA : 3 passed ; vite build OK ; py_compile OK", "limites": "Factures mixtes restent en 4411 ; dettes 4481 hors analyses fondées sur 4411 (ETIC B7) ; écritures existantes non modifiées ; validation navigateur par l'utilisateur à faire", "zip": "C:\\Users\\Y_N_e\\hisabpro - GPT - Claude check\\HisabPro_979_Immobilisations_TVA.zip", "prochaine": "Recette navigateur : article compte 2355, facture d'achat, écriture 34551/4481, Créer la fiche ; commit + push GitHub", "statut": "termine", "date_utc": "2026-11-14T02:11:37+00:00"} -->
+
+## Journal actif — CYCLE-980 — en_cours — 2026-11-17T00:13:32+00:00
+
+- Objectif : Remarques partenaire 17/11 : (1) BL issu d'une facture refacturable -> boucle ; (2) modes de paiement différents facture/règlement ; (3) volet Trésorerie ; (4) alimentation caisse depuis banque
+- Fichiers : hisabpro-backend/routers/commercial.py hisabpro-backend/routers/factures.py src/pages/Factures.jsx src/pages/Commercial.jsx
+- Accompli / point exact : Analyse initiale ; modifications à effectuer.
+- Tests et preuves : Non exécutés pour cette étape.
+- PostgreSQL réel / navigateur / limites : À préciser.
+- ZIP : Non livré
+- Prochaine action : Corriger _situation_facturation_bl (facture d'origine) et refuser facture->BL pour factures issues d'un BL/BC
+
+<!-- CODEX_STEP {"id": "CYCLE-980", "objectif": "Remarques partenaire 17/11 : (1) BL issu d'une facture refacturable -> boucle ; (2) modes de paiement différents facture/règlement ; (3) volet Trésorerie ; (4) alimentation caisse depuis banque", "fichiers": ["hisabpro-backend/routers/commercial.py hisabpro-backend/routers/factures.py src/pages/Factures.jsx src/pages/Commercial.jsx"], "fait": "Analyse initiale ; modifications à effectuer.", "tests": "Non exécutés pour cette étape.", "limites": "À préciser.", "zip": null, "prochaine": "Corriger _situation_facturation_bl (facture d'origine) et refuser facture->BL pour factures issues d'un BL/BC", "statut": "en_cours", "date_utc": "2026-11-17T00:13:32+00:00"} -->
+
+## Journal actif — CYCLE-980 — en_cours — 2026-11-17T00:16:12+00:00
+
+- Objectif : Remarques partenaire 17/11 : (1) BL issu d'une facture refacturable -> boucle ; (2) modes de paiement différents facture/règlement ; (3) volet Trésorerie ; (4) alimentation caisse depuis banque
+- Fichiers : hisabpro-backend/routers/commercial.py hisabpro-backend/routers/factures.py src/pages/Factures.jsx src/pages/Commercial.jsx
+- Accompli / point exact : (1) BL issu de facture = facturé (commercial._facture_origine_bl), conversion refusée ; facture issue de BL/BC -> BL refusé, bouton masqué. (2) src/utils/modesReglement.js partagé (Factures, Commercial, Avoirs, Acomptes, ReglementParTiers) ; build OK
+- Tests et preuves : Non exécutés pour cette étape.
+- PostgreSQL réel / navigateur / limites : À préciser.
+- ZIP : Non livré
+- Prochaine action : Volet Trésorerie + virement banque->caisse ; tests
+
+<!-- CODEX_STEP {"id": "CYCLE-980", "objectif": "Remarques partenaire 17/11 : (1) BL issu d'une facture refacturable -> boucle ; (2) modes de paiement différents facture/règlement ; (3) volet Trésorerie ; (4) alimentation caisse depuis banque", "fichiers": ["hisabpro-backend/routers/commercial.py hisabpro-backend/routers/factures.py src/pages/Factures.jsx src/pages/Commercial.jsx"], "fait": "(1) BL issu de facture = facturé (commercial._facture_origine_bl), conversion refusée ; facture issue de BL/BC -> BL refusé, bouton masqué. (2) src/utils/modesReglement.js partagé (Factures, Commercial, Avoirs, Acomptes, ReglementParTiers) ; build OK", "tests": "Non exécutés pour cette étape.", "limites": "À préciser.", "zip": null, "prochaine": "Volet Trésorerie + virement banque->caisse ; tests", "statut": "en_cours", "date_utc": "2026-11-17T00:16:12+00:00"} -->
+
+## Journal actif — CYCLE-980 — en_cours — 2026-11-17T00:22:30+00:00
+
+- Objectif : Remarques partenaire 17/11 : (1) BL issu d'une facture refacturable -> boucle ; (2) modes de paiement différents facture/règlement ; (3) volet Trésorerie ; (4) alimentation caisse depuis banque
+- Fichiers : hisabpro-backend/routers/commercial.py hisabpro-backend/routers/factures.py src/pages/Factures.jsx src/pages/Commercial.jsx
+- Accompli / point exact : (3)(4) routers/tresorerie.py (situation + virements via 5115), inserer_ecriture partagé, SANS_AN_CLOTURE dans disponible(), page Tresorerie.jsx + sidebar + route ; build OK
+- Tests et preuves : Non exécutés pour cette étape.
+- PostgreSQL réel / navigateur / limites : À préciser.
+- ZIP : Non livré
+- Prochaine action : Test isolé test_cycle_tresorerie980_isole.py puis régressions
+
+<!-- CODEX_STEP {"id": "CYCLE-980", "objectif": "Remarques partenaire 17/11 : (1) BL issu d'une facture refacturable -> boucle ; (2) modes de paiement différents facture/règlement ; (3) volet Trésorerie ; (4) alimentation caisse depuis banque", "fichiers": ["hisabpro-backend/routers/commercial.py hisabpro-backend/routers/factures.py src/pages/Factures.jsx src/pages/Commercial.jsx"], "fait": "(3)(4) routers/tresorerie.py (situation + virements via 5115), inserer_ecriture partagé, SANS_AN_CLOTURE dans disponible(), page Tresorerie.jsx + sidebar + route ; build OK", "tests": "Non exécutés pour cette étape.", "limites": "À préciser.", "zip": null, "prochaine": "Test isolé test_cycle_tresorerie980_isole.py puis régressions", "statut": "en_cours", "date_utc": "2026-11-17T00:22:30+00:00"} -->
+
+## Journal actif — CYCLE-980 — termine — 2026-11-17T00:47:52+00:00
+
+- Objectif : Remarques partenaire 17/11 : (1) BL issu d'une facture refacturable -> boucle ; (2) modes de paiement différents facture/règlement ; (3) volet Trésorerie ; (4) alimentation caisse depuis banque
+- Fichiers : hisabpro-backend/routers/commercial.py hisabpro-backend/routers/factures.py src/pages/Factures.jsx src/pages/Commercial.jsx
+- Accompli / point exact : (1) BL tiré d'une facture = déjà facturé (refacturation refusée, bouton masqué) ; facture issue d'un BL/BC ne crée plus de BL. (2) Liste unique des modes de règlement (src/utils/modesReglement.js) sur facture, règlements, avoirs, acomptes, règlement par tiers. (3) Volet Comptabilité > Trésorerie (GET /api/tresorerie/situation). (4) Alimenter la caisse / virement de fonds via 5115 (POST /api/tresorerie/virements). Correction : AN de clôture exclus du disponible caisse.
+- Tests et preuves : test_cycle_tresorerie980_isole 3 passed ; test_e2e_tresorerie980_isole 1 passed ; 32 fichiers backend 544 passed ; 9 fichiers E2E (facturation, règlements, conversions, banque, avoir) 21 passed ; vite build OK ; py_compile OK
+- PostgreSQL réel / navigateur / limites : Soldes comptables uniquement ; banques partageant un compte = solde commun (signalé) ; recette navigateur utilisateur à faire
+- ZIP : C:\Users\Y_N_e\hisabpro - GPT - Claude check\HisabPro_980_Cycle_Tresorerie.zip
+- Prochaine action : Recette partenaire : facture -> BL (pas de Facturer), modes identiques, Trésorerie, Alimenter la caisse
+
+<!-- CODEX_STEP {"id": "CYCLE-980", "objectif": "Remarques partenaire 17/11 : (1) BL issu d'une facture refacturable -> boucle ; (2) modes de paiement différents facture/règlement ; (3) volet Trésorerie ; (4) alimentation caisse depuis banque", "fichiers": ["hisabpro-backend/routers/commercial.py hisabpro-backend/routers/factures.py src/pages/Factures.jsx src/pages/Commercial.jsx"], "fait": "(1) BL tiré d'une facture = déjà facturé (refacturation refusée, bouton masqué) ; facture issue d'un BL/BC ne crée plus de BL. (2) Liste unique des modes de règlement (src/utils/modesReglement.js) sur facture, règlements, avoirs, acomptes, règlement par tiers. (3) Volet Comptabilité > Trésorerie (GET /api/tresorerie/situation). (4) Alimenter la caisse / virement de fonds via 5115 (POST /api/tresorerie/virements). Correction : AN de clôture exclus du disponible caisse.", "tests": "test_cycle_tresorerie980_isole 3 passed ; test_e2e_tresorerie980_isole 1 passed ; 32 fichiers backend 544 passed ; 9 fichiers E2E (facturation, règlements, conversions, banque, avoir) 21 passed ; vite build OK ; py_compile OK", "limites": "Soldes comptables uniquement ; banques partageant un compte = solde commun (signalé) ; recette navigateur utilisateur à faire", "zip": "C:\\Users\\Y_N_e\\hisabpro - GPT - Claude check\\HisabPro_980_Cycle_Tresorerie.zip", "prochaine": "Recette partenaire : facture -> BL (pas de Facturer), modes identiques, Trésorerie, Alimenter la caisse", "statut": "termine", "date_utc": "2026-11-17T00:47:52+00:00"} -->

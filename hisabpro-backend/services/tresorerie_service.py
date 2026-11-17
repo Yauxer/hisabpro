@@ -11,6 +11,11 @@ from sqlalchemy import text
 
 ZERO = Decimal('0.00')
 
+# Lot 980 : les à-nouveaux générés par la clôture reprennent des soldes déjà
+# présents dans l'historique HisabPro ; les compter doublerait le solde. Les
+# à-nouveaux saisis (reprise d'ouverture) restent comptés.
+SANS_AN_CLOTURE = "NOT (e.journal = 'AN' AND coalesce(e.source, '') = 'cloture')"
+
 
 def est_caisse(compte):
     return str(compte or '').strip().startswith('516')
@@ -27,6 +32,7 @@ def disponible(db, sid, compte, jour, *, valides_seulement, exclure=None):
             SELECT e.date, sum(l.debit - l.credit) AS mvt
             FROM lignes_ecriture l JOIN ecritures e ON e.id = l.ecriture_id
             WHERE e.societe_id = :s AND l.compte = :c AND (NOT CAST(:v AS boolean) OR e.est_validee)
+              AND NOT (e.journal = 'AN' AND coalesce(e.source, '') = 'cloture')  -- SANS_AN_CLOTURE (lot 980)
               AND (CAST(:x AS integer) IS NULL OR e.id <> CAST(:x AS integer))
             GROUP BY e.date),
         c AS (SELECT date, sum(mvt) OVER (ORDER BY date) AS cumul FROM m)

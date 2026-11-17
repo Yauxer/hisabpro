@@ -2007,9 +2007,25 @@ def convertir_facture_en_bl(
         raise HTTPException(409, "Cette facture est encore en brouillon : validez-la avant de créer un bon de livraison.")
 
     # Bloquer si un BL existe déjà pour cette facture
-    bl_existant = db.query(models.BonLivraison).filter_by(facture_id=facture_id).first()
+    bl_existant = db.query(models.BonLivraison).filter_by(facture_id=facture_id, societe_id=current_user["societe_id"]).first()
     if bl_existant:
         raise HTTPException(400, f"Un bon de livraison ({bl_existant.numero}) existe déjà pour cette facture.")
+    # Lot 980 : une facture tirée d'un BL/BR ou d'un BC a déjà sa livraison (ou la
+    # suit depuis le BC). Un nouveau BL doublerait la livraison et le stock.
+    doc = "bon de réception" if facture.type == "achat" else "bon de livraison"
+    ligne_bl = next((l.source_ligne_bl_id for l in facture.lignes if l.source_ligne_bl_id), None)
+    if ligne_bl:
+        source = db.query(models.BonLivraison.numero).join(
+            models.LigneBonLivraison, models.LigneBonLivraison.bon_livraison_id == models.BonLivraison.id
+        ).filter(models.LigneBonLivraison.id == ligne_bl).scalar()
+        raise HTTPException(409, f"Cette facture a été établie depuis le {doc} {source or ''} : la livraison est déjà enregistrée.".replace("  ", " "))
+    ligne_bc = next((l.source_ligne_bc_id for l in facture.lignes if l.source_ligne_bc_id), None)
+    if ligne_bc:
+        source = db.query(models.BonCommande.numero).join(
+            models.LigneBonCommande, models.LigneBonCommande.bon_commande_id == models.BonCommande.id
+        ).filter(models.LigneBonCommande.id == ligne_bc).scalar()
+        raise HTTPException(409, f"Cette facture vient du bon de commande {source or ''} : créez le {doc} depuis ce bon de commande, "
+                                 "qui suit les quantités livrées.".replace("  ", " "))
 
     date_bl = data.date or date_cls.today().isoformat()
     try:

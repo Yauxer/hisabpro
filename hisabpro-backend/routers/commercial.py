@@ -424,10 +424,33 @@ def _facturation_validee_par_ligne_bl(db, societe_id, bl):
     return cumul, factures
 
 
+def _facture_origine_bl(db, societe_id, bl):
+    """Lot 980 : facture dont ce BL/BR a été tiré (conversion facture → BL).
+
+    Ce bon matérialise la livraison d'une facture existante : il ne doit jamais
+    être refacturé. Un BL facturé ensuite porte au contraire des lignes de
+    facture liées par ``source_ligne_bl_id`` ; son ``facture_id`` n'est alors
+    qu'un rappel de la première facture.
+    """
+    if not getattr(bl, "facture_id", None):
+        return None
+    ids = [l.id for l in bl.lignes]
+    if ids and db.query(models.LigneFacture.id).filter(models.LigneFacture.source_ligne_bl_id.in_(ids)).first():
+        return None
+    facture = db.query(models.Facture).filter_by(id=bl.facture_id, societe_id=societe_id).first()
+    return facture if _facture_active(facture) else None
+
+
 def _situation_facturation_bl(db, societe_id, bl):
     """Situation facturable exacte d'un BL/BR, ligne par ligne."""
-    reserve, factures_reservees = _facturation_par_ligne_bl(db, societe_id, bl)
-    valide, factures_validees = _facturation_validee_par_ligne_bl(db, societe_id, bl)
+    origine = _facture_origine_bl(db, societe_id, bl)
+    if origine is not None:
+        complet = {l.id: float(l.quantite_livree if l.quantite_livree is not None else (l.quantite_prevue or 0)) for l in bl.lignes}
+        reserve, factures_reservees = complet, {origine.id: origine.numero}
+        valide, factures_validees = (complet, {origine.id: origine.numero}) if _facture_validee_active(origine) else ({}, {})
+    else:
+        reserve, factures_reservees = _facturation_par_ligne_bl(db, societe_id, bl)
+        valide, factures_validees = _facturation_validee_par_ligne_bl(db, societe_id, bl)
     lignes = []
     total_ht = reserve_ht = valide_ht = 0.0
     q_total = q_reserve = q_valide = 0.0
@@ -2914,6 +2937,11 @@ def convertir_bl_en_facture(
     if not bl.lignes:
         raise HTTPException(400, f"Ce {doc} ne comporte aucune ligne à facturer.")
 
+    origine = _facture_origine_bl(db, societe_id, bl)
+    if origine is not None:
+        raise HTTPException(409,
+            f"Ce {doc} a été créé depuis la facture {origine.numero or origine.id} : "
+            "il est déjà facturé et ne peut pas donner une nouvelle facture.")
     situation_avant = _situation_facturation_bl(db, societe_id, bl)
     if situation_avant["solde"]:
         nums = ", ".join(situation_avant.get("facture_numeros") or [])

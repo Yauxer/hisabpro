@@ -7,7 +7,7 @@ HisabPro regroupe trois modules, accessibles depuis le menu de gauche :
 | Module | À quoi il sert |
 |---|---|
 | **Facturation** | Devis, commandes, livraisons, factures, avoirs, acomptes, règlements, chèques et effets, clients, fournisseurs, articles et stock. |
-| **Comptabilité** | Journal et écritures, plan comptable, grand livre, balances, lettrage, rapprochement bancaire, immobilisations, TVA, IS, liasse fiscale, clôture. |
+| **Comptabilité** | Journal et écritures, plan comptable, grand livre, balances, lettrage, trésorerie, rapprochement bancaire, immobilisations, TVA, IS, liasse fiscale, clôture. |
 | **Personnel & Paie** | Salariés, cotisations, calcul de la paie du mois, bulletins, avances, paiement et comptabilisation des salaires. |
 
 Les trois modules sont reliés : une facture validée produit son écriture comptable, un règlement produit son écriture de banque ou de caisse, la paie produit l'écriture des salaires.
@@ -106,6 +106,7 @@ C'est le cœur de la facturation. Les onglets suivent le parcours d'une vente ou
 **Vente classique** : Devis → accepté → Bon de commande → Bon de livraison → Facture → Règlement.
 **Achat classique** : Bon de commande fournisseur → Bon de réception → Facture fournisseur → Règlement.
 Chaque étape est facultative : on peut créer une facture directement.
+On peut aussi partir d'une facture validée et créer son bon de livraison (bouton camion de la liste des factures). Ce bon est alors **déjà facturé** : il ne propose plus *Facturer*. Une facture issue d'un bon de livraison ou d'un bon de commande ne propose pas non plus de nouveau bon de livraison : la livraison existe déjà, ou se fait depuis le bon de commande.
 
 ### 3.2 Factures
 
@@ -223,17 +224,23 @@ Exports Excel et PDF.
 
 Le lettrage relie une facture à son règlement sur un compte client ou fournisseur : les montants exactement opposés sont associés par un code. Un **règlement partiel** laisse le code ouvert jusqu'au solde complet. On peut *délettrer* en cas d'erreur.
 
-### 4.6 Rapprochement bancaire
+### 4.6 Trésorerie
+
+Vue d'ensemble de l'argent disponible, à la date choisie : **banques** (514…), **caisses** (516…), **chèques et effets à encaisser** (511…), crédits de trésorerie, et **trésorerie nette**. Chaque compte montre son solde validé, les brouillons non encore validés et la date du dernier mouvement ; les anomalies sont signalées (caisse créditrice, banque à découvert, virement sans contrepartie). Les derniers mouvements de banque et de caisse sont listés en bas.
+
+**Alimenter la caisse** (ou *Virement de fonds*) : choisissez le sens (banque → caisse, caisse → banque, ou entre banques), le montant, la date et la référence (n° du chèque de retrait, du bordereau). HisabPro affiche puis passe les deux écritures, par le compte de liaison **5115 Virements de fonds** : dans le journal BQ (débit 5115, crédit banque) et dans le journal CA (débit caisse, crédit 5115). Une caisse qui donne de l'argent ne peut pas devenir créditrice.
+
+### 4.7 Rapprochement bancaire
 
 Comparez votre relevé bancaire avec la comptabilité. Le relevé se saisit à la main (*Saisie manuelle*) ou s'importe (*Import Excel / CSV*). On pointe ensuite chaque ligne avec l'écriture correspondante ; les écarts restants indiquent une opération oubliée ou une erreur.
 
-### 4.7 Immobilisations
+### 4.8 Immobilisations
 
 Registre des immobilisations : acquisition (catégorie, comptes, date, valeur), puis **dotations aux amortissements**, calculées et générées depuis l'écran (journal AM). En fin de vie : **Cession / mise au rebut**, avec un aperçu du résultat de sortie, puis *Encaisser la cession*.
 
 **Achat d'une immobilisation par facture fournisseur.** Utilisez un article dont le compte d'achat est un compte d'immobilisation (classe 2). À la comptabilisation, la ligne est portée au compte d'actif, la TVA au compte **34551 TVA récupérable sur immobilisations** (la TVA des autres lignes reste en **34552 sur charges**) ; une facture qui ne contient que des immobilisations est due au fournisseur en **4481 Dettes sur acquisitions d'immobilisations**, une facture mixte reste en 4411. L'écran Immobilisations liste ensuite ces achats dans *Achats d'immobilisations sans fiche* : **Créer la fiche** démarre les amortissements sans nouvelle écriture ni seconde TVA. Le paiement se fait par les règlements de la facture.
 
-### 4.8 Déclaration TVA
+### 4.9 Déclaration TVA
 
 La page reprend la TVA de la période selon votre régime (encaissement ou débit) et votre périodicité. Une barre de navigation mène à chaque section :
 
@@ -242,7 +249,7 @@ La page reprend la TVA de la période selon votre régime (encaissement ou débi
 - **RAS TVA** : retenues à la source sur la TVA.
 - **Paramètres** : régime et périodicité.
 
-### 4.9 Résultat fiscal / IS
+### 4.10 Résultat fiscal / IS
 
 Le passage du résultat comptable au résultat fiscal, puis le calcul de l'impôt :
 
@@ -256,13 +263,13 @@ Le passage du résultat comptable au résultat fiscal, puis le calcul de l'impô
 
 Une fois les chiffres vérifiés, la **liquidation** est confirmée et figée.
 
-### 4.10 Liasse fiscale
+### 4.11 Liasse fiscale
 
 Le dossier fiscal annuel : bilan (actif et passif), CPC, état des soldes de gestion, tableau de financement, état des informations complémentaires (ETIC, tableaux T3 à T25), passage fiscal, IS et CM.
 
 La section **Contrôles de finalisation** liste ce qui empêche de finaliser : balance déséquilibrée, brouillons restants, exercice non clôturé, liquidation IS non confirmée, **caisse créditrice**, etc. Chaque contrôle indique quoi faire. Une fois tous les contrôles au vert, la liasse se finalise et s'archive. L'envoi électronique (EDI / SIMPL-IS) n'est pas encore activé : la liasse se dépose sur le portail de la DGI.
 
-### 4.11 Clôture d'exercice
+### 4.12 Clôture d'exercice
 
 En fin d'année :
 
@@ -272,7 +279,7 @@ En fin d'année :
 4. enregistrer l'**affectation du résultat** : décision ou PV, réserve légale, autres réserves, report à nouveau, dividendes ;
 5. clôturer : HisabPro génère les écritures de clôture et les **à-nouveaux** de l'exercice suivant.
 
-### 4.12 Livre d'inventaire
+### 4.13 Livre d'inventaire
 
 Document annuel regroupant le bilan (actif et passif), la synthèse du CPC, l'inventaire des stocks et des immobilisations, les écritures d'inventaire et la balance des comptes de bilan.
 
@@ -412,7 +419,7 @@ Registre des avances sur salaire et des prêts, avec la retenue mensuelle prévu
 
 Message : *« Caisse insuffisante (5161) au … : solde disponible … DH »*.
 
-Une caisse contient de l'argent physique : elle ne peut **jamais** être créditrice. Enregistrez d'abord l'argent qui y entre (solde d'ouverture, apport, retrait de la banque), avec une date antérieure ou égale au paiement (voir le [parcours 6.2](#62-un-achat-payé-en-espèces)). Une **banque**, elle, peut être créditrice (découvert) : elle apparaît alors au passif du bilan.
+Une caisse contient de l'argent physique : elle ne peut **jamais** être créditrice. Enregistrez d'abord l'argent qui y entre (solde d'ouverture, apport, ou retrait de la banque avec **Comptabilité → Trésorerie → Alimenter la caisse**), avec une date antérieure ou égale au paiement (voir le [parcours 6.2](#62-un-achat-payé-en-espèces)). Une **banque**, elle, peut être créditrice (découvert) : elle apparaît alors au passif du bilan.
 
 ### 7.2 Ma caisse est déjà créditrice, que faire ?
 

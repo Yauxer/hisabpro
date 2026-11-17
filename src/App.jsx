@@ -29,6 +29,7 @@ import Inventaire from './pages/Inventaire.jsx'
 import Commercial from './pages/Commercial.jsx'
 import DelaisPaiement from './pages/DelaisPaiement.jsx'
 import RapprochementBancaire from './pages/RapprochementBancaire.jsx'
+import Tresorerie from './pages/Tresorerie.jsx'
 import Lettrage from './pages/Lettrage.jsx'
 import Balances from './pages/Balances.jsx'
 import SituationFinanciere from './pages/SituationFinanciere.jsx'
@@ -92,6 +93,7 @@ export default function App() {
           <Route path="bilan"           element={<Bilan />} />
           <Route path="cpc"             element={<Bilan />} />
           <Route path="etic"            element={<Etic />} />
+          <Route path="tresorerie"      element={<Tresorerie />} />
           <Route path="rapprochement"   element={<RapprochementBancaire />} />
           <Route path="lettrage"          element={<Lettrage />} />
           <Route path="balances"          element={<Balances />} />

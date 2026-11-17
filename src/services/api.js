@@ -287,6 +287,12 @@ export const lettrageAPI = {
   },
 }
 
+// Lot 980 : volet Trésorerie (soldes et virements de fonds banque / caisse).
+export const tresorerieAPI = {
+  situation(au) { return request('GET', `/api/tresorerie/situation${au ? `?au=${encodeURIComponent(au)}` : ''}`) },
+  virement(data) { return request('POST', '/api/tresorerie/virements', data) },
+}
+
 export const rapprochementAPI = {
   propositions(compte, dateDebut, dateFin) {
     const p = new URLSearchParams({ date_debut: dateDebut, date_fin: dateFin })

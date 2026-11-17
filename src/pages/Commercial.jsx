@@ -18,6 +18,7 @@ import { dateLocaleISO, entierOuDefaut, nombreOuDefaut } from '../utils/formUtil
 import { QUALIFICATIONS_TVA, tauxTVAAvecHistorique, tvaEffective, qualificationParDefautPourTaux } from '../utils/tvaUtils.js'
 import { nombreArticleSaisie, nombreSaisieConnu, qualificationArticle, montantArticle, montantLignesSaisies } from '../utils/articlesNombres.js'
 import { notifier } from '../services/notifications.js'
+import { MODES_REGLEMENT, libelleMode } from '../utils/modesReglement.js'
 
 const API = API_BASE
 const formatMAD = valeur => valeur != null && valeur !== '' && Number.isFinite(Number(valeur)) ? formatMADBase(valeur) : 'À vérifier'
@@ -94,7 +95,6 @@ async function telechargerPDF(url, nomFichier) {
   return telechargerDocumentPDF(url, nomFichier)
 }
 
-const MODES_REGLEMENT = ['virement', 'cheque', 'especes', 'effet', 'carte', 'prelevement', 'autre']
 
 // ── Badges ────────────────────────────────────────────────────────────────────
 
@@ -764,7 +764,7 @@ function FormulaireReglement({ facture, onFermer, onSuccess }) {
           <div className={styles.formGroup}>
             <label className={styles.label}>Mode</label>
             <select className={styles.input} value={form.mode} onChange={e => setForm(p => ({ ...p, mode: e.target.value }))}>
-              {MODES_REGLEMENT.map(m => <option key={m} value={m}>{m.charAt(0).toUpperCase() + m.slice(1)}</option>)}
+              {MODES_REGLEMENT.map(m => <option key={m.val} value={m.val}>{m.label}</option>)}
             </select>
           </div>
         </div>
@@ -2266,15 +2266,7 @@ function FormulaireReglementComplet({ annee, onFermer, onSuccess, typeForce = nu
     finally { setLoading(false) }
   }
 
-  const MODES = [
-    { val: 'virement', label: 'Virement' },
-    { val: 'cheque',   label: 'Chèque' },
-    { val: 'especes',  label: 'Espèces' },
-    { val: 'effet',    label: 'Effet' },
-    { val: 'carte',    label: 'Carte' },
-    { val: 'prelevement', label: 'Prélèvement' },
-    { val: 'autre',    label: 'Autre' },
-  ]
+  const MODES = MODES_REGLEMENT
 
   return (
     <Modal titre="Nouveau règlement" icone="ti-coin" onFermer={onFermer} largeur="md">
@@ -2461,7 +2453,7 @@ function FormulaireEditionReglement({ reglement, onFermer, onSuccess }) {
   })
   const [loading, setLoading] = useState(false)
   const [erreur,  setErreur]  = useState('')
-  const MODES = ['virement', 'cheque', 'especes', 'effet', 'carte', 'prelevement', 'autre']
+  const MODES = MODES_REGLEMENT.map(m => m.val)
 
   async function handleSave() {
     if (!form.montant) return
@@ -2504,7 +2496,7 @@ function FormulaireEditionReglement({ reglement, onFermer, onSuccess }) {
             <label className={styles.label}>Mode</label>
             <select className={styles.input} value={form.mode}
               onChange={e => setForm(p => ({ ...p, mode: e.target.value }))}>
-              {MODES.map(m => <option key={m} value={m}>{m.charAt(0).toUpperCase() + m.slice(1)}</option>)}
+              {MODES.map(m => <option key={m} value={m}>{libelleMode(m)}</option>)}
             </select>
           </div>
         </div>
@@ -2739,7 +2731,7 @@ function OngletReglements({ annee, typeForce = null }) {
     const r = reglements.find(x => x.id === id)
     const detail = r ? `
 
-${r.tiers || 'Tiers'} — ${formatMAD(r.montant)} MAD — ${r.mode || ''} du ${String(r.date || '').split('-').reverse().join('/')}` : ''
+${r.tiers || 'Tiers'} — ${formatMAD(r.montant)} MAD — ${libelleMode(r.mode)} du ${String(r.date || '').split('-').reverse().join('/')}` : ''
     if (!confirm(`Supprimer ce règlement non comptabilisé ?${detail}
 
 Aucune écriture n'est touchée ; la facture redevient due de ce montant.`)) return
@@ -2844,7 +2836,7 @@ Aucune écriture n'est touchée ; la facture redevient due de ce montant.`)) ret
     virement: 'ti-building-bank', cheque: 'ti-writing', especes: 'ti-cash',
     effet: 'ti-clock', carte: 'ti-credit-card', prelevement: 'ti-repeat', autre: 'ti-dots'
   }
-  const MODES_FILTRES = ['TOUS', 'virement', 'cheque', 'especes', 'effet', 'carte', 'prelevement', 'autre']
+  const MODES_FILTRES = ['TOUS', ...MODES_REGLEMENT.map(m => m.val)]
 
   return (
     <div className={styles.ongletContent}>
@@ -2907,7 +2899,7 @@ Aucune écriture n'est touchée ; la facture redevient due de ce montant.`)) ret
               color: filtreMode === m ? '#fff' : 'var(--text-secondary)',
               borderColor: filtreMode === m ? 'var(--blue)' : 'var(--border-medium)',
             }}>
-            {m === 'TOUS' ? 'Tous modes' : m.charAt(0).toUpperCase() + m.slice(1)}
+            {m === 'TOUS' ? 'Tous modes' : libelleMode(m)}
           </button>
         ))}
         {!loading && !erreurChargement && totalRegle === null && <span role="alert" style={{ color: 'var(--red)' }}>
@@ -2967,7 +2959,7 @@ Aucune écriture n'est touchée ; la facture redevient due de ce montant.`)) ret
                     <td>
                       <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 12 }}>
                         <i className={`ti ${ICONES_MODE[r.mode] || 'ti-coin'}`} style={{ fontSize: 13, color: 'var(--blue)' }} />
-                        {r.mode.charAt(0).toUpperCase() + r.mode.slice(1)}
+                        {libelleMode(r.mode)}
                       </span>
                       {r.statut && r.statut !== 'complet' && (
                         <span style={{ fontSize: 9, color: r.statut === 'annule' || r.statut === 'rejete' ? 'var(--red)' : 'var(--text-tertiary)' }}>

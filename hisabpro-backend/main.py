@@ -13,6 +13,7 @@ from database import engine, Base, SessionLocal
 import models
 from auth import decode_token
 
+from routers import tresorerie  # lot 980
 from routers import auth, ecritures, factures, employes, parametres, societe, tiers, modeles, references, multi_societes, articles, etats, fec, cloture, utilisateurs, inventaire, tva, exercices, fiscalite, recouvrement, echeanciers, dashboard, production, delais_paiement, plan_comptable
 from routers import commercial
 from routers import banque
@@ -106,6 +107,7 @@ async def audit_actions_middleware(request: Request, call_next):
 # Routers
 app.include_router(auth.router)
 app.include_router(ecritures.router)
+app.include_router(tresorerie.router)  # lot 980 : volet Trésorerie
 app.include_router(factures.router)
 app.include_router(tva.router)
 app.include_router(fiscalite.router)

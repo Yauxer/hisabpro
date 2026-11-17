@@ -9,6 +9,7 @@ import styles from './Acomptes.module.css'
 import { API_BASE, peutEcrire } from '../services/api.js'
 import { dateLocaleISO, nombreOuDefaut } from '../utils/formUtils.js'
 import { QUALIFICATIONS_TVA, tauxTVAPourDate } from '../utils/tvaUtils.js'
+import { LIBELLES_MODES } from '../utils/modesReglement.js'
 
 const TOKEN = () => localStorage.getItem('hisabpro_token')
 const API = API_BASE
@@ -30,7 +31,7 @@ const STATUT_BADGE = {
   annule:     { bg: '#F3F4F6', color: '#6B7280', label: 'Annulé' },
 }
 
-const MODES = { virement: 'Virement', cheque: 'Chèque', especes: 'Espèces', effet: 'Effet', carte: 'Carte', prelevement: 'Prélèvement', autre: 'Autre' }
+const MODES = LIBELLES_MODES
 
 function BadgeStatut({ statut }) {
   const b = STATUT_BADGE[statut] || STATUT_BADGE.disponible

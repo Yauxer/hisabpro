@@ -36,6 +36,7 @@ const MODULES = [
       { to: '/fiscalite-is',    icon: 'ti-receipt-tax',  label: 'Résultat fiscal / IS' },
       { to: '/liasse-fiscale',  icon: 'ti-report',       label: 'Liasse fiscale' },
       { to: '/grand-livre',     icon: 'ti-table',        label: 'Grand livre' },
+      { to: '/tresorerie',      icon: 'ti-building-bank', label: 'Trésorerie' },
       { to: '/rapprochement',   icon: 'ti-scale',        label: 'Rapprochement bancaire' },
       { to: '/lettrage',          icon: 'ti-link',         label: 'Lettrage' },
       { to: '/balances',          icon: 'ti-report-analytics', label: 'Balances' },
@@ -92,7 +93,7 @@ export default function Sidebar({ mobileOuvert = false, onFermer }) {
   function moduleParDefaut() {
     const path = location.pathname
     if (['/commercial','/situation','/factures','/avoirs','/acomptes','/effets','/delais-paiement','/tiers','/articles','/inventaire'].some(p => path.startsWith(p))) return 'facturation'
-    if (['/journal','/plan-comptes','/declaration-tva','/fiscalite-is','/liasse-fiscale','/grand-livre','/bilan','/cpc','/etic','/rapprochement','/lettrage','/balances','/immobilisations','/cloture','/livre-inventaire'].some(p => path.startsWith(p))) return 'comptabilite'
+    if (['/journal','/plan-comptes','/declaration-tva','/fiscalite-is','/liasse-fiscale','/grand-livre','/bilan','/cpc','/etic','/tresorerie','/rapprochement','/lettrage','/balances','/immobilisations','/cloture','/livre-inventaire'].some(p => path.startsWith(p))) return 'comptabilite'
     if (['/cnss','/personnel-paie'].some(p => path.startsWith(p))) return 'paie_grh'
     return null
   }

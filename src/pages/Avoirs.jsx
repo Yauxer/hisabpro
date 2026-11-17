@@ -8,6 +8,7 @@ import { API_BASE, peutEcrire } from '../services/api.js'
 import { telechargerDocumentPDF, preparerEmailDocument } from '../services/documentsCommerciaux.js'
 import { dateLocaleISO, nombreOuDefaut } from '../utils/formUtils.js'
 import { notifier } from '../services/notifications.js'
+import { LIBELLES_MODES } from '../utils/modesReglement.js'
 
 const TOKEN = () => localStorage.getItem('hisabpro_token')
 const API = API_BASE
@@ -56,7 +57,7 @@ const NATURE_LABEL = {
   correction_prix: 'Correction de prix',
   autre: 'Autre avoir',
 }
-const MODES_PAIEMENT = { virement: 'Virement', cheque: 'Chèque', especes: 'Espèces', effet: 'Effet', carte: 'Carte', prelevement: 'Prélèvement', autre: 'Autre' }
+const MODES_PAIEMENT = LIBELLES_MODES
 
 function ModalUtiliserCredit({ avoir, typeUtilisation, onFermer, onSuccess }) {
   const [montant, setMontant] = useState(String(Number(avoir.montant_disponible || 0).toFixed(2)))

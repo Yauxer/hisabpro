@@ -22,11 +22,9 @@ import { factureEnRetard, dateEcheanceAffichee, joursCalendairesAvant } from '..
 import { QUALIFICATIONS_TVA, tauxTVAPourDate, tauxTVAAvecHistorique, tvaEffective, qualificationParDefautPourTaux } from '../utils/tvaUtils.js'
 import { nombreArticleSaisie, nombreSaisieConnu, qualificationArticle, montantLignesSaisies } from '../utils/articlesNombres.js'
 import { notifier } from '../services/notifications.js'
+import { MODES_REGLEMENT, libelleMode } from '../utils/modesReglement.js'
 
-const MODES_REGLEMENT_PREVUS = [
-  ['','— Non précisé —'], ['virement','Virement'], ['cheque','Chèque'], ['especes','Espèces'],
-  ['effet','Effet de commerce'], ['carte','Carte'], ['prelevement','Prélèvement'], ['autre','Autre'],
-]
+const MODES_REGLEMENT_PREVUS = [['', '— Non précisé —'], ...MODES_REGLEMENT.map(m => [m.val, m.label])]
 
 const formatMAD = valeur => typeof valeur === 'number' && Number.isFinite(valeur) ? formatMADBase(valeur) : 'À vérifier'
 
@@ -1475,7 +1473,7 @@ function FormulaireReglementPartiel({ facture, totalRegle, soldeEffectif = null,
     finally { setLoading(false) }
   }
 
-  const MODES = ['virement', 'cheque', 'especes', 'effet', 'autre']
+  const MODES = MODES_REGLEMENT.map(m => m.val)
   const estSolde = parseFloat(form.montant) >= solde - 0.01
 
   return (
@@ -1518,7 +1516,7 @@ function FormulaireReglementPartiel({ facture, totalRegle, soldeEffectif = null,
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
           <label style={{ fontSize: 11, color: 'var(--text-secondary)', fontWeight: 500 }}>Mode</label>
           <select className={styles.input} value={form.mode} onChange={e => setForm(p => ({ ...p, mode: e.target.value }))}>
-            {MODES.map(m => <option key={m} value={m}>{m.charAt(0).toUpperCase() + m.slice(1)}</option>)}
+            {MODES.map(m => <option key={m} value={m}>{libelleMode(m)}</option>)}
           </select>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
@@ -1526,7 +1524,7 @@ function FormulaireReglementPartiel({ facture, totalRegle, soldeEffectif = null,
           <input className={styles.input} type="text" placeholder="N° chèque, virement..."
             value={form.reference} onChange={e => setForm(p => ({ ...p, reference: e.target.value }))} />
         </div>
-        {['virement', 'cheque', 'effet'].includes(form.mode) && (
+        {['virement', 'cheque', 'effet', 'carte', 'prelevement'].includes(form.mode) && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
             <label style={{ fontSize: 11, color: 'var(--text-secondary)', fontWeight: 500 }}>Banque</label>
             {banques.length > 0 ? (
@@ -2154,7 +2152,7 @@ function DetailFacture({ facture, onFermer, onStatutChange }) {
               const enCours = ['portefeuille', 'encaissement', 'a_payer'].includes(r.statut)
               return (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 12, padding: '4px 0', borderBottom: i < reglements.length - 1 ? '0.5px solid var(--border-light)' : 'none' }}>
-                  <span style={{ color: 'var(--text-secondary)' }}>{r.date} — {r.mode}{r.reference ? ` ${r.reference}` : ''}</span>
+                  <span style={{ color: 'var(--text-secondary)' }}>{r.date} — {libelleMode(r.mode)}{r.reference ? ` ${r.reference}` : ''}</span>
                   {estInactif && (
                     <span style={{ fontSize: 9, padding: '1px 6px', borderRadius: 3, background: '#FCEBEB', color: '#A32D2D', fontWeight: 600 }}>
                       {estAnnule ? 'ANNULÉ — contrepassé' : 'REJETÉ — non compté'}
@@ -2719,7 +2717,7 @@ function ModalEncaissementRapide({ facture, onFermer, onSuccess }) {
                   return (
                     <div key={r.id} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 11 }}>
                       <span style={{ color: 'var(--text-secondary)', whiteSpace: 'nowrap' }}>{formatDate(r.date)}</span>
-                      <span style={{ color: 'var(--text-tertiary)' }}>{r.mode}{r.reference ? ` ${r.reference}` : ''}</span>
+                      <span style={{ color: 'var(--text-tertiary)' }}>{libelleMode(r.mode)}{r.reference ? ` ${r.reference}` : ''}</span>
                       <span style={{ marginLeft: 'auto', fontWeight: 600, textDecoration: estInactif ? 'line-through' : 'none', color: estInactif ? 'var(--text-tertiary)' : 'var(--text-primary)' }}>
                         {formatMAD(r.montant)} MAD
                       </span>
@@ -3314,7 +3312,7 @@ export default function Factures() {
                                 style={{ color: pjOuverte === f.id ? 'var(--blue)' : '' }}><i className="ti ti-paperclip" aria-hidden="true" /><span className="libelle-action" aria-hidden="true">Pièces jointes</span></button>
                             )}
                             {peutModifier && <>
-                            {f.type === 'vente' && f.est_validee && (
+                            {f.type === 'vente' && f.est_validee && !(f.lignes || []).some(l => l.source_ligne_bl_id || l.source_ligne_bc_id) && (
                               <button className={styles.btnAction}
                                 onClick={e => { e.stopPropagation(); setBlDateModal(f) }}
                                 title="Créer bon de livraison"

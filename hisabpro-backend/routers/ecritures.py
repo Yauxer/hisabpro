@@ -697,10 +697,22 @@ def creer_ecriture(
     db: Session = Depends(get_db),
 ):
     """Crée une nouvelle écriture comptable."""
+    ecriture = inserer_ecriture(db, current_user, data)
+    db.commit()
+    db.refresh(ecriture)
+    return ecriture
+
+
+def inserer_ecriture(db: Session, current_user: dict, data, *, source: str = "manuel", action_audit: str = "creation_manuelle"):
+    """Insère une écriture saisie (mêmes contrôles que la saisie manuelle), sans commit.
+
+    Lot 980 : partagée avec les virements de fonds de la trésorerie, qui créent
+    deux écritures dans une seule transaction.
+    """
     exercice_cible = _verifier_periode_ouverte(db, current_user["societe_id"], data.date, "créer")
     _verifier_equilibre(data.lignes)
     _verifier_comptes_plan(db, current_user["societe_id"], data.lignes)
-    _set_audit_context(db, current_user, "creation_manuelle")
+    _set_audit_context(db, current_user, action_audit)
     from datetime import datetime as _dt
     valider = bool(getattr(data, "est_validee", False))
     # COMPTA.3 : même lorsqu'on demande « valider dès la création », l'écriture
@@ -718,7 +730,7 @@ def creer_ecriture(
         libelle=data.libelle.strip(),
         reference=(data.reference or "").strip() or None,
         exercice=exercice_cible.annee,
-        source="manuel",
+        source=source,
     )
     db.add(ecriture)
     db.flush()
@@ -746,9 +758,6 @@ def creer_ecriture(
         ecriture.date_validation = _dt.now()
         ecriture.validee_par = current_user["id"]
         db.flush()
-
-    db.commit()
-    db.refresh(ecriture)
     return ecriture
 
 

@@ -4,6 +4,7 @@ import { API_BASE, getToken, facturesAPI, formatErreurAPI } from '../services/ap
 import { dateLocaleISO } from '../utils/formUtils.js'
 import { formatMAD } from '../data/donnees.js'
 import styles from '../pages/Commercial.module.css'
+import { MODES_REGLEMENT } from '../utils/modesReglement.js'
 
 // getRandomValues reste disponible pour une installation locale en réseau.
 function nouvelleOperation() {
@@ -124,8 +125,8 @@ export default function ReglementParTiers({ annee, typeForce, onFermer, onSucces
       </div>
       <div className={styles.formRow}>
         <label className={styles.label}>Mode<select className={styles.input} value={form.mode} disabled={envoi} onChange={e => modifier('mode', e.target.value)}>
-          {Object.entries({ virement: 'Virement', especes: 'Espèces', carte: 'Carte', prelevement: 'Prélèvement', autre: 'Autre' }).map(([v, l]) => <option key={v} value={v}>{l}</option>)}
-        </select></label>
+          {MODES_REGLEMENT.filter(m => !['cheque', 'effet'].includes(m.val)).map(m => <option key={m.val} value={m.val}>{m.label}</option>)}
+        </select><small style={{ fontSize: 10, color: 'var(--text-tertiary)' }}>Chèque ou effet : un règlement par facture, pour le suivi en portefeuille.</small></label>
         <label className={styles.label}>Banque<select className={styles.input} value={form.banque} disabled={envoi} onChange={e => modifier('banque', e.target.value)}>
           <option value="">Compte de trésorerie par défaut</option>
           {banques.filter(b => b.actif !== false).map(b => <option key={b.id} value={b.banque}>{b.banque}</option>)}
