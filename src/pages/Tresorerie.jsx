@@ -127,11 +127,13 @@ export default function Tresorerie() {
   const [erreur, setErreur] = useState('')
   const [chargement, setChargement] = useState(false)
   const [virement, setVirement] = useState(null)
+  const [especes, setEspeces] = useState([])  // lot 981 : espèces aux fournisseurs au-delà des limites
   const ecriture = peutEcrire()
 
   async function charger() {
     setChargement(true); setErreur('')
     try { setSituation(await tresorerieAPI.situation(au)) } catch (e) { setErreur(e.message) } finally { setChargement(false) }
+    tresorerieAPI.especesFournisseurs(`${String(au).slice(0, 4)}-01-01`, au).then(r => setEspeces(r.depassements || [])).catch(() => setEspeces([]))
   }
   useEffect(() => { charger() }, [au])
 
@@ -185,6 +187,20 @@ export default function Tresorerie() {
             </tr>)}</tbody>
           </table></div>
         </div>)}
+
+        {especes.length > 0 && <div className={styles.card} aria-label="Espèces aux fournisseurs au-delà des limites">
+          <div className={styles.cardHeader}><span className={styles.cardTitle}><i className="ti ti-alert-triangle" aria-hidden="true" />Fournisseurs payés en espèces au-delà de 5 000 MAD/jour ou 50 000 MAD/mois ({String(au).slice(0, 4)})</span></div>
+          <div className={styles.tableWrapper}><table className={styles.table}>
+            <thead><tr><th>Fournisseur</th><th>Mois</th><th className={styles.num}>Espèces versées</th><th className={styles.num}>Dans les limites</th><th className={styles.num}>Au-delà</th><th>Jours au-delà de 5 000</th></tr></thead>
+            <tbody>{especes.map(x => <tr key={`${x.fournisseur}-${x.mois}`}>
+              <td>{x.fournisseur}</td><td>{x.mois.slice(5)}/{x.mois.slice(0, 4)}</td>
+              <td className={styles.num}>{formatMAD(x.total_especes)}</td><td className={styles.num}>{formatMAD(x.montant_admis)}</td>
+              <td className={styles.num}><strong>{formatMAD(x.montant_au_dela)}</strong></td>
+              <td>{x.jours_au_dela.map(j => dateFr(j.date)).join(', ') || '—'}</td>
+            </tr>)}</tbody>
+          </table></div>
+          <div className={styles.discret} style={{ padding: '8px 16px' }}>CGI 2026 art. 11-II et 106-II : au-delà de ces limites, la charge n'est pas entièrement déductible et la TVA n'est pas récupérable. Les montants sont repris dans Résultat fiscal / IS (à confirmer) et signalés dans la déclaration de TVA.</div>
+        </div>}
 
         {situation.mouvements.length > 0 && <div className={styles.card}>
           <div className={styles.cardHeader}><span className={styles.cardTitle}><i className="ti ti-list" aria-hidden="true" />Derniers mouvements de banque et de caisse</span></div>

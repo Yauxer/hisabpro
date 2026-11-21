@@ -26,6 +26,7 @@ from database import get_db
 from routers.ecritures import inserer_ecriture
 from services.plan_comptable import libelle_compte
 from services.tresorerie_service import SANS_AN_CLOTURE, est_caisse
+from services import especes_fournisseurs_service as especes
 
 router = APIRouter(prefix="/api/tresorerie", tags=["tresorerie"])
 
@@ -134,6 +135,35 @@ def situation_tresorerie(
         "mouvements": [{**m, "date": m["date"].isoformat(), "debit": float(m["debit"] or 0), "credit": float(m["credit"] or 0)}
                        for m in mouvements],
     }
+
+
+@router.get("/especes-fournisseur")
+def especes_fournisseur(
+    jour: date = Query(..., alias="date"),
+    tiers_id: Optional[int] = Query(None),
+    tiers: Optional[str] = Query(None, max_length=200),
+    montant: Decimal = Query(Decimal("0"), ge=0),
+    exclure_reglement_id: Optional[int] = Query(None),
+    current_user=Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """Lot 981 : cumul des espèces versées à un fournisseur (jour, mois), avec le paiement en préparation."""
+    if not tiers_id and not (tiers or "").strip():
+        raise HTTPException(422, "Indiquez le fournisseur.")
+    return especes.cumuls(db, current_user["societe_id"], tiers_id=tiers_id, tiers=tiers, jour=jour,
+                          montant=montant, exclure_reglement_id=exclure_reglement_id)
+
+
+@router.get("/especes-fournisseurs")
+def especes_fournisseurs(
+    debut: date = Query(...), fin: date = Query(...),
+    current_user=Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """Lot 981 : fournisseurs payés en espèces au-delà de 5 000 DH/jour ou 50 000 DH/mois sur la période."""
+    if fin < debut:
+        raise HTTPException(422, "La date de fin précède la date de début.")
+    return {"reference": especes.REFERENCE, "depassements": especes.analyser(db, current_user["societe_id"], debut, fin)}
 
 
 class VirementFondsIn(BaseModel):

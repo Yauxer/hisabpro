@@ -133,7 +133,8 @@ def _candidat(*, identifiant: str, type_suggere: str, categorie: str, libelle: s
 def analyser_retraitements(*, charges_par_compte: dict[str, Decimal], produits_par_compte: dict[str, Decimal],
                             charges_sans_reference: Decimal = ZERO,
                             charges_sans_reference_par_compte: dict[str, Decimal] | None = None,
-                            vehicules_tourisme_superieurs_plafond: list[dict] | None = None):
+                            vehicules_tourisme_superieurs_plafond: list[dict] | None = None,
+                            especes_fournisseurs: list[dict] | None = None):
     """Construit l'analyse fiscale sans modifier le calcul tant qu'un candidat n'est pas confirmé."""
     automatiques = []
     candidats = []
@@ -263,6 +264,28 @@ def analyser_retraitements(*, charges_par_compte: dict[str, Decimal], produits_p
             questions=["Facture régulière ou pièce probante disponible ?", "La pièce est-elle établie au nom de la société et suffisamment renseignée ?"],
         ))
 
+    # Lot 981 : paiements en espèces aux fournisseurs au-delà des limites.
+    especes = especes_fournisseurs or []
+    if especes:
+        au_dela = sum((Decimal(str(x["montant_au_dela"])) for x in especes), ZERO)
+        detail = "; ".join(f"{x['fournisseur']} {x['mois']} : {x['montant_au_dela']:.2f}" for x in especes[:6])
+        candidats.append(_candidat(
+            identifiant="candidat:paiements_especes",
+            type_suggere="reintegration",
+            categorie="paiements_especes",
+            libelle=f"Paiements en espèces au-delà de 5 000 MAD/jour ou 50 000 MAD/mois par fournisseur ({len(especes)} fournisseur-mois)",
+            montant_detecte=au_dela,
+            compte_source="Règlements et acomptes fournisseurs en espèces",
+            reference="CGI 2026 art. 11-II",
+            commentaire=("Montant TTC payé en espèces au-delà des limites journalière et mensuelle, calculé depuis les règlements "
+                         "et acomptes fournisseurs. La part à réintégrer reste à confirmer : base HT ou TTC, charges concernées "
+                         "(art. 10-I-A, B et E), amortissements de biens payés en espèces, exception des animaux vivants et "
+                         "produits agricoles non transformés. Détail : " + detail + ("…" if len(especes) > 6 else "")),
+            questions=["Les achats concernés sont-ils des charges déductibles (et non des immobilisations ou des produits agricoles non transformés) ?",
+                       "La réintégration porte-t-elle sur l'excédent seulement, en HT ?",
+                       "Un autre moyen de paiement admis a-t-il été utilisé pour une partie ?"],
+        ))
+
     vehicules = vehicules_tourisme_superieurs_plafond or []
     if vehicules:
         candidats.append(_candidat(
@@ -282,7 +305,8 @@ def analyser_retraitements(*, charges_par_compte: dict[str, Decimal], produits_p
             "code": "paiements_especes",
             "libelle": "Paiements en espèces",
             "reference": "CGI 2026 art. 11-II",
-            "regle": "Contrôler les dépenses réglées hors moyens admis au-delà de 5 000 MAD/jour/fournisseur et 50 000 MAD/mois/fournisseur.",
+            "regle": "Contrôler les dépenses réglées hors moyens admis au-delà de 5 000 MAD/jour/fournisseur et 50 000 MAD/mois/fournisseur. "
+                     "Les règlements et acomptes fournisseurs en espèces sont analysés (candidat à confirmer) ; les écritures saisies à la main restent à contrôler.",
             "automatisable": False,
         },
         {

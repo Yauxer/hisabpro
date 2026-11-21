@@ -425,28 +425,38 @@ Une caisse contient de l'argent physique : elle ne peut **jamais** être crédit
 
 Rien n'est à supprimer : ajoutez l'entrée d'argent manquante avec une date antérieure ou égale à la sortie, ou annulez le paiement erroné par contrepassation. Le contrôle « Aucune caisse créditrice » de la liasse repasse alors au vert.
 
-### 7.3 Mon écriture ne se valide pas
+### 7.3 Que signifie l'alerte « Paiement en espèces au-delà des limites fiscales » ?
+
+Le CGI (article 11-II pour l'IS, article 106-II pour la TVA) limite les paiements en espèces à un **même fournisseur** à **5 000 DH par jour** et **50 000 DH par mois**. Ce n'est pas une interdiction : HisabPro enregistre le paiement. Mais au-delà, la charge n'est pas entièrement déductible du résultat fiscal et la TVA de l'achat n'est pas récupérable. Préférez un chèque barré, un virement ou une carte.
+
+L'alerte apparaît pendant la saisie d'un règlement ou d'un acompte fournisseur en espèces, en comptant ce qui a déjà été payé à ce fournisseur le même jour et le même mois. Les dépassements sont ensuite repris :
+
+- dans **Trésorerie** (tableau des fournisseurs payés en espèces au-delà des limites) ;
+- dans **Résultat fiscal / IS**, comme retraitement **à confirmer** (montant au-delà des limites) : rien n'est réintégré tant que vous ne l'avez pas confirmé, car la base exacte (HT ou TTC, charges concernées, exception des produits agricoles non transformés) dépend de chaque cas ;
+- dans la **déclaration de TVA**, en alerte, avec la TVA comprise dans ces paiements : à retirer de la TVA récupérable si elle y figure.
+
+### 7.4 Mon écriture ne se valide pas
 
 - **Déséquilibrée** : le total des débits doit égaler le total des crédits.
 - **Tiers manquant** : une ligne sur un compte client (3421) ou fournisseur (4411) doit être rattachée à un tiers.
 - **Brouillons plus anciens** : les écritures se valident dans l'ordre chronologique ; validez d'abord les plus anciennes (*Valider les brouillons* les traite dans l'ordre).
 - **Exercice ou période clôturé** : on ne peut plus y écrire ; passez la correction sur une période ouverte.
 
-### 7.4 Je me suis trompé sur une écriture validée
+### 7.5 Je me suis trompé sur une écriture validée
 
 On ne modifie pas une écriture définitive : **contrepassez-la** (bouton *Contrepasser* dans le Journal), puis saisissez la bonne écriture. Les deux restent visibles, c'est la piste d'audit.
 
-### 7.5 Quelle différence entre « valider » une facture et « valider » une écriture ?
+### 7.6 Quelle différence entre « valider » une facture et « valider » une écriture ?
 
 - **Valider une facture** la rend définitive et lui donne son numéro.
 - **Comptabiliser** crée son écriture, en brouillon.
 - **Valider l'écriture** au Journal la rend définitive et lui donne son numéro comptable.
 
-### 7.6 Pourquoi un salarié est « À compléter » dans la paie ?
+### 7.7 Pourquoi un salarié est « À compléter » dans la paie ?
 
 La raison est affichée : personnes à charge non renseignées, entrée ou sortie en cours de mois, contrat ou salaire non validé, prime non approuvée, cotisation non approuvée… Complétez la fiche ou la donnée indiquée, puis relancez le calcul.
 
-### 7.7 Pourquoi une page Paie affiche « Mise en service de la paie » ?
+### 7.8 Pourquoi une page Paie affiche « Mise en service de la paie » ?
 
 La paie n'est pas encore activée pour cette société, ou vos habilitations ne suffisent pas. Un administrateur clique sur *Tout activer maintenant*, ou vous accorde les droits dans **Personnel → Habilitations**.
 

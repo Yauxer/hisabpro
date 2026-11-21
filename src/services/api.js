@@ -291,6 +291,11 @@ export const lettrageAPI = {
 export const tresorerieAPI = {
   situation(au) { return request('GET', `/api/tresorerie/situation${au ? `?au=${encodeURIComponent(au)}` : ''}`) },
   virement(data) { return request('POST', '/api/tresorerie/virements', data) },
+  especesFournisseur(params) {
+    const p = new URLSearchParams(Object.entries(params).filter(([, v]) => v !== undefined && v !== null && v !== ''))
+    return request('GET', `/api/tresorerie/especes-fournisseur?${p}`)
+  },
+  especesFournisseurs(debut, fin) { return request('GET', `/api/tresorerie/especes-fournisseurs?debut=${debut}&fin=${fin}`) },
 }
 
 export const rapprochementAPI = {

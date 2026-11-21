@@ -19,6 +19,7 @@ import { QUALIFICATIONS_TVA, tauxTVAAvecHistorique, tvaEffective, qualificationP
 import { nombreArticleSaisie, nombreSaisieConnu, qualificationArticle, montantArticle, montantLignesSaisies } from '../utils/articlesNombres.js'
 import { notifier } from '../services/notifications.js'
 import { MODES_REGLEMENT, libelleMode } from '../utils/modesReglement.js'
+import AlerteEspecesFournisseur from '../components/AlerteEspecesFournisseur.jsx'
 
 const API = API_BASE
 const formatMAD = valeur => valeur != null && valeur !== '' && Number.isFinite(Number(valeur)) ? formatMADBase(valeur) : 'À vérifier'
@@ -807,6 +808,7 @@ function FormulaireReglement({ facture, onFermer, onSuccess }) {
           <textarea className={styles.textarea} rows={2} value={form.notes} onChange={e => setForm(p => ({ ...p, notes: e.target.value }))} />
         </div>
         </FormSection>
+        <AlerteEspecesFournisseur actif={facture?.type === 'achat'} mode={form.mode} date={form.date} montant={form.montant} tiersId={facture?.tiers_id} tiers={facture?.tiers} />
         {erreur && <div className={styles.erreur}><i className="ti ti-alert-circle" /> {erreur}</div>}
         <ActionBar hint={situation ? `Reste à payer : ${formatMAD(situation.solde_restant)} MAD` : 'Le règlement sera rattaché à la pièce sélectionnée.'}>
           <button className="hp-btn-secondary" type="button" onClick={onFermer}>Annuler</button>
@@ -2424,6 +2426,7 @@ function FormulaireReglementComplet({ annee, onFermer, onSuccess, typeForce = nu
           </div>
         )}
 
+        <AlerteEspecesFournisseur actif={(factureSelectee?.type || typeForce) === 'achat'} mode={form.mode} date={form.date} montant={form.montant} tiersId={factureSelectee?.tiers_id} tiers={factureSelectee?.tiers || tiers} />
         {erreur && <div className={styles.erreur}><i className="ti ti-alert-circle" /> {erreur}</div>}
         <div className={styles.formActions}>
           <button className={styles.btnSec} onClick={onFermer}>Annuler</button>
@@ -2541,6 +2544,7 @@ function FormulaireEditionReglement({ reglement, onFermer, onSuccess }) {
           <textarea id="reglement-edition-notes" className={styles.input} rows={3}
             value={form.notes} onChange={e => setForm(p => ({ ...p, notes: e.target.value }))} />
         </div>
+        <AlerteEspecesFournisseur actif={reglement.facture_type === 'achat'} mode={form.mode} date={form.date} montant={form.montant} tiersId={reglement.tiers_id} tiers={reglement.tiers} exclureReglementId={reglement.id} />
         {erreur && <div className={styles.erreur}><i className="ti ti-alert-circle" /> {erreur}</div>}
         <div className={styles.formActions}>
           <button className={styles.btnSec} onClick={onFermer}>Annuler</button>

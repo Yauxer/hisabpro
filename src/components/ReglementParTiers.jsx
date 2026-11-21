@@ -5,6 +5,7 @@ import { dateLocaleISO } from '../utils/formUtils.js'
 import { formatMAD } from '../data/donnees.js'
 import styles from '../pages/Commercial.module.css'
 import { MODES_REGLEMENT } from '../utils/modesReglement.js'
+import AlerteEspecesFournisseur from './AlerteEspecesFournisseur.jsx'
 
 // getRandomValues reste disponible pour une installation locale en réseau.
 function nouvelleOperation() {
@@ -111,6 +112,7 @@ export default function ReglementParTiers({ annee, typeForce, onFermer, onSucces
     <form className={styles.formContenu} onSubmit={enregistrer}>
       <p>Répartissez un paiement entre les factures du même {typeForce === 'vente' ? 'client' : 'fournisseur'}. Chaque montant conserve son règlement et son écriture. Les lignes partagent la référence du paiement.</p>
       <p>Chèques et effets : utilisez le règlement individuel et son cycle de suivi.</p>
+      <AlerteEspecesFournisseur actif={typeForce === 'achat' || ouvertes.some(f => f.type === 'achat')} mode={form.mode} date={form.date} montant={form.montant} tiersId={tiersId ? Number(tiersId) : null} />
       {erreur && <div className={styles.erreurForm} role="alert">{erreur}</div>}
       {factures.some(f => f.type === typeForce && f.montants_valides === false) && <p role="status">Les factures dont les montants sont à vérifier ne sont pas proposées.</p>}
       <label className={styles.label}>{typeForce === 'vente' ? 'Client' : 'Fournisseur'}

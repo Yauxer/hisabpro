@@ -682,15 +682,20 @@ export default function FormulaireEcriture({ onFermer, onSuccess, ecriture = nul
       }
     })
 
-    // 2. Cash > 5 000 MAD — limite légale paiements espèces fournisseur
+    // 2. Lot 981 — sortie d'espèces > 5 000 MAD vers un fournisseur ou une charge
+    // (CGI 2026 art. 11-II et 106-II). Ce n'est pas une interdiction : au-delà de
+    // 5 000 MAD par jour et 50 000 MAD par mois et par fournisseur, la charge n'est
+    // pas entièrement déductible et la TVA n'est pas récupérable. Un virement de
+    // fonds (banque, 5115) ou un autre compte de trésorerie n'est pas concerné.
+    const versTresorerie = lignes.some(l => /^(51|55)/.test(l.compte) && !l.compte.startsWith('516') && parseMontant(l.debit) > 0)
     lignes.forEach(l => {
-      if (l.compte.startsWith('5161')) {
+      if (l.compte.startsWith('516') && !versTresorerie) {
         const montant = parseMontant(l.credit)
         if (montant > 5000) {
           liste.push({
             type: 'warning',
             icon: 'ti-cash',
-            message: `Paiement en espèces de ${formatMAD(montant)} MAD dépasse la limite légale de 5 000 MAD par fournisseur`,
+            message: `Sortie d'espèces de ${formatMAD(montant)} MAD : payer un même fournisseur en espèces au-delà de 5 000 MAD par jour ou 50 000 MAD par mois rend la charge en partie non déductible et sa TVA non récupérable (CGI art. 11-II et 106-II). Préférez un chèque barré, un virement ou une carte.`,
           })
         }
       }

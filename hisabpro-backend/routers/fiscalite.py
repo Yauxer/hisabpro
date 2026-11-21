@@ -575,6 +575,9 @@ def situation_is(
         models.Immobilisation.vehicule_tourisme.is_(True),
         models.Immobilisation.valeur_brute > Decimal("400000.00"),
     ).all()
+    ex_dates = db.query(models.ExerciceComptable).filter_by(societe_id=societe_id, annee=exercice).first()
+    from services.especes_fournisseurs_service import analyser as analyser_especes  # lot 981
+    especes = analyser_especes(db, societe_id, ex_dates.date_debut, ex_dates.date_fin) if ex_dates else []
     analyse = analyser_retraitements(
         charges_par_compte=source["_charges_par_compte"],
         produits_par_compte=source["_produits_par_compte"],
@@ -583,6 +586,7 @@ def situation_is(
         vehicules_tourisme_superieurs_plafond=[
             {"id": i.id, "designation": i.designation, "valeur_brute": money(i.valeur_brute)} for i in vehicules
         ],
+        especes_fournisseurs=especes,
     )
     auto = analyse["automatiques"]
 

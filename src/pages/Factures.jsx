@@ -23,6 +23,7 @@ import { QUALIFICATIONS_TVA, tauxTVAPourDate, tauxTVAAvecHistorique, tvaEffectiv
 import { nombreArticleSaisie, nombreSaisieConnu, qualificationArticle, montantLignesSaisies } from '../utils/articlesNombres.js'
 import { notifier } from '../services/notifications.js'
 import { MODES_REGLEMENT, libelleMode } from '../utils/modesReglement.js'
+import AlerteEspecesFournisseur from '../components/AlerteEspecesFournisseur.jsx'
 
 const MODES_REGLEMENT_PREVUS = [['', '— Non précisé —'], ...MODES_REGLEMENT.map(m => [m.val, m.label])]
 
@@ -1560,6 +1561,7 @@ function FormulaireReglementPartiel({ facture, totalRegle, soldeEffectif = null,
         </div>
       )}
 
+      <AlerteEspecesFournisseur actif={facture?.type === 'achat'} mode={form.mode} date={form.date} montant={form.montant} tiersId={facture?.tiers_id} tiers={facture?.tiers} />
       {erreur && <div className={styles.erreurMsg}><i className="ti ti-alert-circle" /> {erreur}</div>}
 
       <div style={{ display: 'flex', gap: 8, justifyContent: 'flex-end' }}>

@@ -10,6 +10,7 @@ import { API_BASE, peutEcrire } from '../services/api.js'
 import { dateLocaleISO, nombreOuDefaut } from '../utils/formUtils.js'
 import { QUALIFICATIONS_TVA, tauxTVAPourDate } from '../utils/tvaUtils.js'
 import { LIBELLES_MODES } from '../utils/modesReglement.js'
+import AlerteEspecesFournisseur from '../components/AlerteEspecesFournisseur.jsx'
 
 const TOKEN = () => localStorage.getItem('hisabpro_token')
 const API = API_BASE
@@ -142,6 +143,7 @@ function FormulaireAcompte({ onFermer, onSuccess }) {
             <div className="hp-field"><label>Référence</label><input value={form.reference} onChange={e => setForm(p => ({ ...p, reference: e.target.value }))} placeholder="N° chèque, virement..." /></div>
           </div>
           {form.mode !== 'especes' && banques.length > 0 && <div className="hp-field" style={{ marginTop: 12 }}><label>Compte bancaire</label><select value={form.compte_bancaire_id || ''} onChange={e => { const id = e.target.value ? Number(e.target.value) : null; const b = banques.find(x => x.id === id); setForm(p => ({ ...p, compte_bancaire_id: id, banque: b?.banque || '' })) }}><option value="">— Compte bancaire par défaut —</option>{banques.map(b => <option key={b.id} value={b.id}>{b.banque}{b.agence ? ` — ${b.agence}` : ''} · {b.compte_comptable || '5141'}{b.rib ? ` · ${b.rib}` : ''}</option>)}</select></div>}
+          <div style={{ marginTop: 12 }}><AlerteEspecesFournisseur actif={form.type === 'fournisseur'} mode={form.mode} date={form.date} montant={form.montant} tiersId={form.tiers_id} tiers={form.tiers} /></div>
           {(form.mode === 'cheque' || form.mode === 'effet') && <div className="hp-field" style={{ marginTop: 12 }}><label>Échéance {form.mode === 'effet' ? <span className="hp-required">*</span> : null}</label><input type="date" min={form.date} value={form.date_echeance} onChange={e => setForm(p => ({ ...p, date_echeance: e.target.value }))} /><span className="hp-field__hint">Le chèque/effet restera « en attente » jusqu'à confirmation de son encaissement/paiement.</span></div>}
         </FormSection>
 

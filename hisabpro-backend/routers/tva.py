@@ -340,6 +340,38 @@ def _situation_acomptes_clients_cutoff(db, societe_id, cutoff, alertes=None):
     }
 
 
+def _alertes_especes_106(db, societe_id, debut, fin):
+    """Lot 981 : achats payés en espèces au-delà de 5 000 DH/jour ou 50 000 DH/mois par fournisseur.
+
+    CGI 2026 art. 106-II : leur TVA n'est pas déductible. Le montant affiché est
+    la TVA comprise dans les paiements de la période pour ces fournisseurs ; il
+    n'est pas retiré d'office de la TVA récupérable (lecture à confirmer).
+    """
+    from services.especes_fournisseurs_service import analyser as analyser_especes
+    from services.tresorerie_service import _dh
+    alertes = []
+    for x in analyser_especes(db, societe_id, debut, fin):
+        tva = ZERO
+        for p in x["paiements"]:
+            montant = D(str(p["montant"]))
+            if p["origine"] == "reglement" and p["facture_id"]:
+                f = db.query(models.Facture).options(joinedload(models.Facture.lignes)).filter_by(
+                    id=p["facture_id"], societe_id=societe_id).first()
+                tot = total_ventilation(ventilation_facture(f)) if f else None
+                if tot and tot["ttc"] > 0:
+                    tva += montant * tot["tva"] / tot["ttc"]
+            elif p["origine"] == "acompte":
+                a = db.query(models.Acompte).filter_by(id=p["id"], societe_id=societe_id).first()
+                taux = D(str(getattr(a, "taux_tva", 0) or 0)) if a and getattr(a, "tva_applicable", False) else ZERO
+                tva += montant * taux / (D(100) + taux)
+        mois = x["mois"][5:] + "/" + x["mois"][:4]
+        alertes.append(
+            f"Espèces versées à {x['fournisseur']} en {mois} : {_dh(x['total_especes'])} DH, au-delà de 5 000 DH par jour "
+            f"ou 50 000 DH par mois. La TVA de ces achats n'est pas récupérable (CGI art. 106-II) : TVA comprise dans ces "
+            f"paiements {_dh(money(tva))} DH, à vérifier et à retirer de la TVA récupérable si elle y figure.")
+    return alertes
+
+
 def _calculer_brut(db, societe, debut, fin, prorata_global, inclure_details=True):
     """Calcule collectée/récupérable de la période, avant crédit antérieur."""
     societe_id = societe.id
@@ -484,6 +516,9 @@ def _calculer_brut(db, societe, debut, fin, prorata_global, inclure_details=True
                 "origine": "acomptes_clients", "regime": "encaissement",
                 "ventilation": {taux_key(t): {"base": float(v["base"]), "tva": float(v["tva"])} for t, v in delta_acomptes.items()},
             })
+
+    if inclure_details:
+        alertes.update(_alertes_especes_106(db, societe_id, debut, fin))
 
     return {
         "collectee": finaliser_bloc(collectee_taux),
