@@ -1,11 +1,27 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { authAPI } from '../services/api.js'
+import { reveillerServeur } from '../services/reveilServeur.js'
 import styles from './Login.module.css'
 
 export default function Login({ onConnecte }) {
   const [mode,      setMode]      = useState('login') // 'login' | 'register'
   const [loading,   setLoading]   = useState(false)
   const [erreur,    setErreur]    = useState('')
+  // Lot 982 : état du serveur (réveil après inactivité sur la version de test).
+  const [serveur,   setServeur]   = useState('inconnu') // inconnu | reveil | pret | injoignable
+  const [lent,      setLent]      = useState(false)
+
+  useEffect(() => {
+    let actif = true
+    const attente = setTimeout(() => { if (actif) setServeur(s => (s === 'inconnu' ? 'reveil' : s)) }, 1500)
+    reveillerServeur().then(r => { if (actif) setServeur(r.ok ? 'pret' : 'injoignable') })
+    return () => { actif = false; clearTimeout(attente) }
+  }, [])
+
+  async function patienter(action) {
+    const minuterie = setTimeout(() => setLent(true), 3000)
+    try { return await action() } finally { clearTimeout(minuterie); setLent(false) }
+  }
 
   // Champs login
   const [email,    setEmail]    = useState('')
@@ -21,7 +37,7 @@ export default function Login({ onConnecte }) {
     setErreur('')
     setLoading(true)
     try {
-      await authAPI.login(email, password)
+      await patienter(() => authAPI.login(email, password))
       onConnecte()
     } catch (err) {
       setErreur(err.message)
@@ -35,7 +51,7 @@ export default function Login({ onConnecte }) {
     setErreur('')
     setLoading(true)
     try {
-      await authAPI.register(nom, email, password, raisonSociale, ville)
+      await patienter(() => authAPI.register(nom, email, password, raisonSociale, ville))
       onConnecte()
     } catch (err) {
       setErreur(err.message)
@@ -52,6 +68,13 @@ export default function Login({ onConnecte }) {
           <div className={styles.logoName}>HisabPro</div>
           <div className={styles.logoSub}>Comptabilité Marocaine</div>
         </div>
+
+        {(serveur === 'reveil' || lent) && <div className={styles.reveil} role="status">
+          <i className="ti ti-loader-2 ti-spin" aria-hidden="true" /> Démarrage du serveur… Après une période sans utilisation, il peut mettre jusqu'à une minute à répondre. Vous pouvez déjà saisir vos identifiants.
+        </div>}
+        {serveur === 'injoignable' && !lent && <div className={styles.reveil} role="status">
+          <i className="ti ti-wifi-off" aria-hidden="true" /> Le serveur ne répond pas pour l'instant. Réessayez dans un moment.
+        </div>}
 
         {/* Toggle login / register */}
         <div className={styles.toggle}>
@@ -96,7 +119,7 @@ export default function Login({ onConnecte }) {
             </div>
             {erreur && <div className={styles.erreur}><i className="ti ti-alert-circle" aria-hidden="true" /> {erreur}</div>}
             <button className={styles.btnSubmit} type="submit" disabled={loading}>
-              {loading ? 'Connexion...' : 'Se connecter'}
+              {loading ? (lent ? 'Réveil du serveur…' : 'Connexion...') : 'Se connecter'}
             </button>
           </form>
         )}
@@ -161,7 +184,7 @@ export default function Login({ onConnecte }) {
             </div>
             {erreur && <div className={styles.erreur}><i className="ti ti-alert-circle" aria-hidden="true" /> {erreur}</div>}
             <button className={styles.btnSubmit} type="submit" disabled={loading}>
-              {loading ? 'Création...' : 'Créer mon compte'}
+              {loading ? (lent ? 'Réveil du serveur…' : 'Création...') : 'Créer mon compte'}
             </button>
           </form>
         )}

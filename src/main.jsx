@@ -10,10 +10,13 @@ import { FacturesProvider }  from './data/FacturesContext.jsx'
 import { EmployesProvider }  from './data/EmployesContext.jsx'
 import { PersonnelAccesProvider } from './data/PersonnelAccesContext.jsx'
 import { isConnecte,authAPI } from './services/api.js'
+import { reveillerServeur } from './services/reveilServeur.js'
 import ErrorBoundary         from './components/ErrorBoundary.jsx'
 import Notifications         from './components/Notifications.jsx'
 import './styles/global.css'
 import './styles/forms.css'
+
+reveillerServeur()  // lot 982 : réveil du serveur de test dès l'ouverture
 
 function Root() {
   const [connecte, setConnecte] = useState(isConnecte())

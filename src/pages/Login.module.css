@@ -125,3 +125,6 @@
   font-size: 11px;
   color: var(--text-tertiary);
 }
+
+/* Lot 982 : réveil du serveur de test */
+.reveil { font-size: 12px; line-height: 1.45; color: #854F0B; background: #FAEEDA; border-radius: 8px; padding: 8px 10px; margin-bottom: 14px; display: flex; gap: 6px; align-items: flex-start; }

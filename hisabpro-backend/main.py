@@ -156,6 +156,18 @@ app.include_router(plan_comptable.router)
 def health():
     return {"status": "ok", "app": "HisabPro", "version": "1.0.0"}
 
+
+@app.get("/api/health/reveil")
+def health_reveil():
+    """Lot 982 : réveille aussi la base (un hébergeur gratuit suspend son calcul après inactivité)."""
+    from fastapi.responses import JSONResponse
+    try:
+        with engine.connect() as connexion:
+            connexion.execute(text("SELECT 1"))
+    except Exception:
+        return JSONResponse(status_code=503, content={"status": "ok", "base": "indisponible"})
+    return {"status": "ok", "base": "ok"}
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

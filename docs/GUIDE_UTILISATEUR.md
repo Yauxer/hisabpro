@@ -460,6 +460,10 @@ La raison est affichée : personnes à charge non renseignées, entrée ou sorti
 
 La paie n'est pas encore activée pour cette société, ou vos habilitations ne suffisent pas. Un administrateur clique sur *Tout activer maintenant*, ou vous accorde les droits dans **Personnel → Habilitations**.
 
+### 7.9 Pourquoi la connexion est-elle lente la première fois ?
+
+Sur la version de test en ligne, le serveur se met en veille quand personne ne l'utilise. Le premier accès peut alors prendre jusqu'à une minute : la page de connexion affiche « Démarrage du serveur… ». Vous pouvez saisir vos identifiants pendant ce temps ; ensuite, l'application répond normalement.
+
 ---
 
 ## 8. Ce que HisabPro ne fait pas encore
